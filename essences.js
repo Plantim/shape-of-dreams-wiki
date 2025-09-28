@@ -1,0 +1,780 @@
+// Attend que le contenu de la page HTML soit entièrement chargé avant d'exécuter le script.
+document.addEventListener('DOMContentLoaded', () => {
+    // --- VARIABLES D'ÉTAT ---
+    // Ces variables gardent en mémoire l'état actuel de la page.
+
+    let allEssences = []; // Contiendra toutes les essences après chargement du JSON.
+    let englishEssences = {}; // Contiendra les essences en anglais.
+    let allAchievements = {}; // Contiendra les données des succès (achievements.json).
+    let filteredEssences = []; // Contiendra les essences affichées après application des filtres.
+
+    // stockent l'état actuel de vos filtres et de votre barre de recherche
+    let activeRarityFilter = 'All'; // Le filtre de rareté actuellement sélectionné.
+    let activeElementFilter = 'All'; // Le filtre d'élément actuellement sélectionné.
+    let activeTagFilter = 'All'; // Le filtre de tag actuellement sélectionné.
+    // NOTE : Le filtre de voyageur (activeTravelerFilter) est retiré.
+
+    let searchQuery = ''; // Le texte actuellement tapé dans la barre de recherche.
+    let activeStatFilter = 'All'; // Le filtre AP/AD actuellement sélectionné.
+
+    // La variable de niveau est maintenue mais sera fixée à 0 car inutile pour les essences
+    let qualityPercentage = 100; // Toujours 100% de base pour les essences
+    
+    // NOTE : Le dictionnaire travelerNames est retiré.
+
+
+    // ==========================================================
+    // ▼▼▼ DICTIONNAIRE DE TRADUCTIONS COMPLET ▼▼▼
+    // Nous avons ajusté les textes pour qu'ils soient plus appropriés aux Essences.
+    // ==========================================================
+    const translations = {
+        'fr-FR': {
+            pageTitle: "Base de Données des Essences",
+            searchPlaceholder: "Rechercher une essence...",
+            rarityFilter: "Rareté:",
+            elementsFilter: "Éléments:",
+            tagsFilter: "Tags:",
+            levelLabel: "Qualité % :", // MODIFIÉ : Label pour la barre de niveau/qualité
+            allButton: "Tout"
+        },
+        'en-US': {
+            pageTitle: "Essences Database",
+            searchPlaceholder: "Search for an essence...",
+            rarityFilter: "Rarity:",
+            elementsFilter: "Elements:",
+            tagsFilter: "Tags:",
+            levelLabel: "Quality %:",
+            allButton: "All"
+        },
+        'de-DE': {
+            pageTitle: "Essenzdatenbank",
+            searchPlaceholder: "Essenz suchen...",
+            rarityFilter: "Seltenheit:",
+            elementsFilter: "Elemente:",
+            tagsFilter: "Tags:",
+            levelLabel: "Qualität %:",
+            allButton: "Alle"
+        },
+        'es-MX': {
+            pageTitle: "Base de Datos de Esencias",
+            searchPlaceholder: "Buscar una esencia...",
+            rarityFilter: "Rareza:",
+            elementsFilter: "Elementos:",
+            tagsFilter: "Etiquetas:",
+            levelLabel: "Calidad %:",
+            allButton: "Todos"
+        },
+        'it-IT': {
+            pageTitle: "Database delle Essenze",
+            searchPlaceholder: "Cerca un'essenza...",
+            rarityFilter: "Rarità:",
+            elementsFilter: "Elementi:",
+            tagsFilter: "Tag:",
+            levelLabel: "Qualità %:",
+            allButton: "Tutti"
+        },
+        'ja-JP': {
+            pageTitle: "エッセンスのデータベース",
+            searchPlaceholder: "エッセンスを検索...",
+            rarityFilter: "レア度:",
+            elementsFilter: "属性:",
+            tagsFilter: "タグ:",
+            levelLabel: "品質 %:",
+            allButton: "すべて"
+        },
+        'ko-KR': {
+            pageTitle: "에센스 데이터베이스",
+            searchPlaceholder: "에센스 검색...",
+            rarityFilter: "희귀도:",
+            elementsFilter: "속성:",
+            tagsFilter: "태그:",
+            levelLabel: "품질 %:",
+            allButton: "전체"
+        },
+        'pl-PL': {
+            pageTitle: "Baza Danych Esencji",
+            searchPlaceholder: "Szukaj esencji...",
+            rarityFilter: "Rzadkość:",
+            elementsFilter: "Żywioły:",
+            tagsFilter: "Tagi:",
+            levelLabel: "Jakość %:",
+            allButton: "Wszystko"
+        },
+        'pt-BR': {
+            pageTitle: "Banco de Dados de Essências",
+            searchPlaceholder: "Procurar uma essência...",
+            rarityFilter: "Raridade:",
+            elementsFilter: "Elementos:",
+            tagsFilter: "Tags:",
+            levelLabel: "Qualidade %:",
+            allButton: "Todos"
+        },
+        'ru-RU': {
+            pageTitle: "База данных Эссенций",
+            searchPlaceholder: "Поиск эссенции...",
+            rarityFilter: "Редкость:",
+            elementsFilter: "Элементы:",
+            tagsFilter: "Теги:",
+            levelLabel: "Качество %:",
+            allButton: "Все"
+        },
+        'tr-TR': {
+            pageTitle: "Öz Veritabanı",
+            searchPlaceholder: "Bir öz ara...",
+            rarityFilter: "Nadirlik:",
+            elementsFilter: "Elementler:",
+            tagsFilter: "Etiketler:",
+            levelLabel: "Kalite %:",
+            allButton: "Tümü"
+        },
+        'zh-CN': {
+            pageTitle: "精华数据库",
+            searchPlaceholder: "搜索精华...",
+            rarityFilter: "稀有度:",
+            elementsFilter: "元素:",
+            tagsFilter: "标签:",
+            levelLabel: "品质 %:",
+            allButton: "全部"
+        },
+        'zh-TW': {
+            pageTitle: "精華資料庫",
+            searchPlaceholder: "搜尋精華...",
+            rarityFilter: "稀有度:",
+            elementsFilter: "元素:",
+            tagsFilter: "標籤:",
+            levelLabel: "品質 %:",
+            allButton: "全部"
+        }
+    };
+    // ==========================================================
+    // ▲▲▲ FIN DU DICTIONNAIRE ▲▲▲
+    // ==========================================================
+    
+    // --- GESTION DE LA LANGUE ---
+    // (Fonctions inchangées)
+
+    const saveLanguage = (lang) => {
+        localStorage.setItem('preferredLanguage', lang);
+    };
+
+    const getLanguage = () => {
+        return localStorage.getItem('preferredLanguage') || navigator.language || 'en-US';
+    };
+
+    // --- INITIALISATION ---
+    
+    const init = async (lang) => {
+        
+        const langSelectorDesktop = document.getElementById('language-selector');
+        const langSelectorMobile = document.getElementById('language-selector-mobile');
+        if (langSelectorDesktop) {
+            langSelectorDesktop.value = lang;
+        }
+        if (langSelectorMobile) {
+            langSelectorMobile.value = lang;
+        }
+
+        const T = translations[lang] || translations['en-US'];
+
+        // Mise à jour du placeholder de recherche
+        document.getElementById('search-input').placeholder = T.searchPlaceholder;
+        // Le label de niveau est masqué, mais on peut le mettre à jour
+        const levelLabelElement = document.getElementById('level-label-text');
+        if (levelLabelElement) levelLabelElement.textContent = T.levelLabel;
+
+
+        try {
+            // 1. On charge les données anglaises (essences.json)
+            if (Object.keys(englishEssences).length === 0) {
+                const englishResponse = await fetch('rawdata/en-US/essences.json');
+                if (!englishResponse.ok) throw new Error("Le fichier de langue anglais (en-US/essences.json) est introuvable.");
+                englishEssences = await englishResponse.json();
+            }
+
+            // 2. On charge les données de la langue sélectionnée (essences.json)
+            const response = await fetch(`rawdata/${lang}/essences.json`);
+            let data; 
+
+            if (response.ok) {
+                data = await response.json();
+            } else {
+                console.warn(`Fichier essences.json pour la langue '${lang}' non trouvé. On charge 'fr-FR' à la place.`);
+                const fallbackResponse = await fetch('rawdata/fr-FR/essences.json');
+                if (!fallbackResponse.ok) throw new Error("Le fichier de langue par défaut 'fr-FR/essences.json' est introuvable.");
+                data = await fallbackResponse.json();
+            }
+
+            // 3. On fusionne les données anglaises avec les données de la langue sélectionnée.
+            allEssences = Object.keys(data).map(key => {
+                const translatedEssence = data[key];
+                const englishEssence = englishEssences[key] || {};
+                
+                const essence = {
+                    id: key, 
+                    name: translatedEssence.name || '',
+                    englishName: englishEssence.name || '',
+                    
+                    ...englishEssence, 
+                    ...translatedEssence,
+                };
+                
+                return essence;
+            });
+            // Renomme la variable pour la clarté (remplace allMemories)
+            let allMemories = allEssences; 
+            
+            // 4. Chargement des corrections est optionnel pour les Essences, mais on garde la structure si vous en ajoutez plus tard
+            try {
+                // NOTE: Vous aurez besoin de créer un fichier rawdata/corrections_essences.json si vous avez des corrections spécifiques aux essences
+                const correctionsResponse = await fetch('rawdata/corrections_essences.json'); 
+                if (correctionsResponse.ok) {
+                    const correctionsData = await correctionsResponse.json();
+                    
+                    allEssences = allEssences.map(essence => {
+                        const correction = correctionsData[essence.id];
+                        
+                        if (correction) {
+                            const correctedEssence = { ...essence, ...correction };
+                            const originalTags = essence.tags || [];
+                            const correctionTags = correction.tags || [];
+                            correctedEssence.tags = Array.from(new Set([...originalTags, ...correctionTags]));
+                            
+                            if (essence.informations && correction.informations) {
+                                correctedEssence.informations = { ...essence.informations, ...correction.informations };
+                            }
+                            
+                            return correctedEssence;
+                        }
+                        return essence;
+                    });
+
+                } else {
+                    console.info("Fichier de corrections (corrections_essences.json) non trouvé. Aucune correction spécifique aux essences appliquée.");
+                }
+            } catch (e) {
+                console.error("Erreur lors de l'application des corrections manuelles aux essences:", e);
+            }
+
+
+            // 5. Chargement des Achievements
+            try {
+                const achievementResponse = await fetch(`rawdata/${lang}/achievements.json`);
+                if (achievementResponse.ok) {
+                    allAchievements = await achievementResponse.json();
+                } else {
+                    console.warn(`Fichier d'Achievements pour la langue '${lang}' non trouvé.`);
+                    allAchievements = {};
+                }
+            } catch (e) {
+                console.error("Erreur lors du chargement des achievements:", e);
+                allAchievements = {};
+            }
+
+
+            // Une fois les données chargées, on lance les fonctions pour construire la page.
+            populateFilters(); 
+            applyFilters(); 
+
+        } catch (error) {
+            console.error('Erreur lors du chargement des essences:', error);
+            document.getElementById('memories-container').innerHTML = `<p class="text-center text-red-500">Oups, une erreur est survenue lors du chargement des essences !<br>Message technique : ${error.message}</p>`;
+        }
+    };
+
+    // --- GESTION DES ÉVÉNEMENTS ---
+    // (Fonctions inchangées, mais levelSlider est inactif)
+
+    const setupSearch = () => {
+        const searchInput = document.getElementById('search-input');
+        if (searchInput) {
+            searchInput.addEventListener('input', (event) => {
+                searchQuery = event.target.value.toLowerCase();
+                applyFilters();
+            });
+        }
+    };
+
+
+    // Met en place l'écouteur d'événements pour le slider de qualité. 
+    const setupLevelSlider = () => {
+        const qualitySlider = document.getElementById('level-slider');
+        const qualityValueSpan = document.getElementById('level-value');
+        
+        if (qualitySlider && qualityValueSpan) {
+            // Configuration de la plage de valeurs
+            qualitySlider.min = 100;
+            qualitySlider.max = 5000;
+            qualitySlider.step = 100; // Incrémentation par 100
+            
+            qualitySlider.value = qualityPercentage;
+            qualityValueSpan.textContent = qualityPercentage; 
+            
+            qualitySlider.addEventListener('input', (event) => {
+                qualityPercentage = parseInt(event.target.value, 10);
+                qualityValueSpan.textContent = qualityPercentage;
+                applyFilters();
+            });
+        }
+    };
+
+    const setupLanguageSelector = () => {
+        const selectors = ['language-selector', 'language-selector-mobile']
+            .map(id => document.getElementById(id)).filter(s => s !== null);
+
+        selectors.forEach(selector => {
+            selector.addEventListener('change', (event) => {
+                const selectedLang = event.target.value;
+                saveLanguage(selectedLang); 
+                selectors.forEach(s => {
+                    if (s !== event.target) {
+                        s.value = selectedLang;
+                    }
+                });
+                init(selectedLang);
+            });
+        });
+    };
+
+    // --- POPULATION DES FILTRES ---
+    
+    const populateFilters = () => {
+        populateRarityFilter();
+        populateElementsFilter();
+        populateTagsFilter();
+        populateStatFilter();
+        // NOTE : populateTravelerFilter est retiré.
+    };
+
+    // NOTE : populateRarityFilter est inchangé.
+    const populateRarityFilter = () => {
+        const T = translations[getLanguage()] || translations['en-US'];
+        const rarities = ['All', 'Common', 'Rare', 'Epic', 'Legendary', 'Unique']; // Raretés Essences
+        const rarityContainer = document.getElementById('rarity-filters');
+        
+        rarityContainer.innerHTML = `<span class="font-bold">${T.rarityFilter}</span>`; 
+
+        rarities.forEach(rarity => {
+            const button = document.createElement('button');
+            button.className = 'btn btn-sm rarity-filter-btn';
+            if (rarity === activeRarityFilter) button.classList.add('btn-active');
+            button.textContent = rarity === 'All' ? T.allButton : rarity;
+            button.dataset.rarity = rarity;
+            rarityContainer.appendChild(button);
+        });
+        
+        document.querySelectorAll('.rarity-filter-btn').forEach(button => {
+            button.addEventListener('click', (event) => {
+                document.querySelectorAll('.rarity-filter-btn').forEach(btn => btn.classList.remove('btn-active'));
+                event.target.classList.add('btn-active');
+                activeRarityFilter = event.target.dataset.rarity; 
+                applyFilters(); 
+            });
+        });
+    };
+
+    // NOTE : populateElementsFilter utilise allEssences au lieu de allMemories.
+    const populateElementsFilter = () => {
+        const T = translations[getLanguage()] || translations['en-US'];
+        const elementalTags = ['cold', 'fire', 'light', 'dark', 'heal', 'shield', 'mobility', 'attack']; // Tags communs pour Essences
+        const elementsContainer = document.getElementById('elements-filters');
+        
+        elementsContainer.innerHTML = `<span class="font-bold">${T.elementsFilter}</span>`;
+        
+        const allButton = document.createElement('button');
+        allButton.className = 'btn btn-sm element-filter-btn';
+        if ('All' === activeElementFilter) allButton.classList.add('btn-active');
+        allButton.textContent = T.allButton;
+        allButton.dataset.element = 'All';
+        elementsContainer.appendChild(allButton);
+        
+        elementalTags.forEach(element => {
+            const button = document.createElement('button');
+            button.className = 'btn btn-sm element-filter-btn';
+            if (element === activeElementFilter) button.classList.add('btn-active');
+            button.textContent = element.charAt(0).toUpperCase() + element.slice(1);
+            button.dataset.element = element;
+            elementsContainer.appendChild(button);
+        });
+
+        document.querySelectorAll('.element-filter-btn').forEach(button => {
+            button.addEventListener('click', (event) => {
+                document.querySelectorAll('.element-filter-btn').forEach(btn => btn.classList.remove('btn-active'));
+                event.target.classList.add('btn-active');
+                activeElementFilter = event.target.dataset.element;
+                applyFilters();
+            });
+        });
+    };
+
+    // NOTE : populateTagsFilter est inchangé.
+    const populateTagsFilter = () => {
+        const T = translations[getLanguage()] || translations['en-US'];
+        const elementalTags = ['cold', 'fire', 'light', 'dark'];
+        const allTags = [...new Set(allEssences.flatMap(m => m.tags || []))].sort(); // Utilise allEssences
+        const tagsContainer = document.getElementById('tags-filters');
+
+        tagsContainer.innerHTML = `<span class="font-bold">${T.tagsFilter}</span>`;
+
+        const otherTags = allTags.filter(tag => !elementalTags.includes(tag.toLowerCase()));
+        
+        const allButton = document.createElement('button');
+        allButton.className = 'btn btn-sm tag-filter-btn';
+        if ('All' === activeTagFilter) allButton.classList.add('btn-active');
+        allButton.textContent = T.allButton; 
+        allButton.dataset.tag = 'All';
+        tagsContainer.appendChild(allButton);
+
+        otherTags.forEach(tag => {
+            const button = document.createElement('button');
+            button.className = 'btn btn-sm tag-filter-btn';
+            if (tag.toLowerCase() === activeTagFilter) button.classList.add('btn-active');
+            button.textContent = tag;
+            button.dataset.tag = tag.toLowerCase();
+            tagsContainer.appendChild(button);
+        });
+        
+        document.getElementById('tags-filters').addEventListener('click', (event) => {
+            if (event.target.classList.contains('tag-filter-btn')) {
+                document.querySelectorAll('.tag-filter-btn').forEach(btn => btn.classList.remove('btn-active'));
+                event.target.classList.add('btn-active');
+                activeTagFilter = event.target.dataset.tag;
+                applyFilters();
+            }
+        });
+    };
+
+    // NOTE : populateStatFilter est inchangé, mais on filtre sur les Essences.
+    const populateStatFilter = () => {
+        const T = translations[getLanguage()] || translations['en-US'];
+        const statTypes = ['All', 'AP', 'AD'];
+        const statContainer = document.getElementById('stat-filters');
+        
+        statContainer.innerHTML = `<span class="font-bold">Stats:</span>`; 
+
+        statTypes.forEach(stat => {
+            const button = document.createElement('button');
+            button.className = 'btn btn-sm stat-filter-btn rarity-filter-btn';
+            if (stat === activeStatFilter) button.classList.add('btn-active');
+            
+
+            if (stat === 'AP') {
+                button.innerHTML = `<img src="sprites/1.png" class="inline-sprite" alt="AP Stat" style="width: 1.2em; height: 1.2em;" />`;
+            } else if (stat === 'AD') {
+                button.innerHTML = `<img src="sprites/2.png" class="inline-sprite" alt="AD Stat" style="width: 1.2em; height: 1.2em;" />`;
+            } else {
+                button.textContent = T.allButton;
+            }
+            
+            button.dataset.stat = stat; 
+            statContainer.appendChild(button);
+
+            button.addEventListener('click', (event) => {
+                document.querySelectorAll('.stat-filter-btn').forEach(btn => btn.classList.remove('btn-active'));
+                
+                event.currentTarget.classList.add('btn-active'); 
+                
+                activeStatFilter = event.currentTarget.dataset.stat; 
+                applyFilters(); 
+            });
+
+        });
+        
+    };
+
+    // NOTE : populateTravelerFilter est retiré.
+
+
+    
+    // --- LOGIQUE DE FILTRAGE ---
+    
+    const applyFilters = () => {
+        // Utilise allEssences pour le filtrage
+        filteredEssences = allEssences.filter(essence => { 
+            // Test 1: La recherche textuelle (nom)
+            const matchesSearch = essence.name.toLowerCase().includes(searchQuery) ||
+                      (essence.englishName && essence.englishName.toLowerCase().includes(searchQuery));
+            
+            // Test 2: Le filtre de rareté
+            const matchesRarity = activeRarityFilter === 'All' || essence.rarity === activeRarityFilter;
+            
+            // Test 3: Le filtre d'élément
+            const matchesElement = activeElementFilter === 'All' || (essence.tags && essence.tags.map(tag => tag.toLowerCase()).includes(activeElementFilter.toLowerCase()));
+            
+            // Test 4: Le filtre de tag (en excluant les éléments déjà gérés)
+            const isElementalTag = ['cold', 'fire', 'light', 'dark'].includes(activeTagFilter.toLowerCase());
+            const matchesTag = activeTagFilter === 'All' || (!isElementalTag && essence.tags && essence.tags.map(tag => tag.toLowerCase()).includes(activeTagFilter.toLowerCase()));
+            
+            // TEST 5: Le filtre de statistiques (AP/AD)
+            let matchesStat = true;
+            // On vérifie le rawDescVars pour les valeurs basicAP et basicAD
+            const hasDescVars = essence.rawDescVars && essence.rawDescVars.length > 0;
+            if (activeStatFilter === 'AP') {
+                matchesStat = hasDescVars && essence.rawDescVars.some(descVar => 
+                    descVar.data && (descVar.data.basicAP || 0) > 0
+                );
+            } else if (activeStatFilter === 'AD') {
+                matchesStat = hasDescVars && essence.rawDescVars.some(descVar => 
+                    descVar.data && (descVar.data.basicAD || 0) > 0
+                );
+            }
+            // NOTE : Test 6 (traveler) est retiré.
+
+            // Une essence est gardée si elle passe TOUS les tests.
+            return matchesSearch && matchesRarity && matchesElement && matchesTag && matchesStat;
+
+        });
+
+        // Utilise filteredEssences pour le rendu
+        renderEssences(filteredEssences);
+    };
+
+    // --- LOGIQUE D'AFFICHAGE (RENDU) ---
+    // Fonction renommée pour la clarté (renderEssences au lieu de renderMemories)
+    const renderEssences = (essencesToRender) => {
+        const container = document.getElementById('memories-container'); // Garde le même ID pour minimiser les changements HTML
+        container.innerHTML = '';
+    
+        const cardContainer = document.createElement('div');
+        cardContainer.className = 'w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-6';
+        container.appendChild(cardContainer);
+
+        const essencesByRarity = essencesToRender.reduce((acc, essence) => {
+            const rarity = essence.rarity || 'Inconnue';
+            if (!acc[rarity]) acc[rarity] = [];
+            acc[rarity].push(essence);
+            return acc;
+        }, {});
+    
+        // Ordre d'affichage des raretés des Essences
+        const rarityOrder = ['Common', 'Rare', 'Epic', 'Legendary', 'Unique'];
+    
+        rarityOrder.forEach(rarity => {
+            const essencesInRarity = essencesByRarity[rarity];
+            if (essencesInRarity && essencesInRarity.length > 0) {
+    
+                essencesInRarity.forEach(essence => { // essence au lieu de memory
+                    const card = document.createElement('div');
+                    const cardBackgroundColorClass = getRarityBackgroundColorClass(essence.rarity);
+
+                    const currentLang = getLanguage();
+                    let cardTitleHtml = `<span class="card-name-main card-name-separator">${essence.name}</span>`;
+                    if (currentLang !== 'en-US' && essence.englishName) {
+                        const englishNameHtml = `<span class="english-name-wrapper">(${essence.englishName})</span>`; 
+                        cardTitleHtml = `<span class="inline-flex flex-wrap items-baseline justify-start w-full">` + cardTitleHtml + `&nbsp;` + englishNameHtml + `</span>`;
+                    }
+                    
+                    // ...
+                    card.className = `card w-full shadow-xl rounded-xl relative ${cardBackgroundColorClass}`;
+    
+                    // MODIFIÉ : Passage du qualityPercentage à la fonction
+                    const formattedDescription = processDescription(essence, qualityPercentage);
+                    const rarityColorClass = getRarityColorClass(essence.rarity);
+
+                    let tagsHtml = '';
+                    if (essence.tags && essence.tags.length > 0) {
+                        tagsHtml = essence.tags.map(tag => `<div class="badge badge-sm text-xs text-gray-300">${tag}</div>`).join('');
+                    }
+                    // Les essences n'ont pas de temps de recharge (cooldownTime)
+                    const cooldownHtml = ''; 
+                    
+                    // Les essences n'ont pas d'informations clés ni de lieu.
+                    const keyInformationsHtml = ''; 
+                    
+                    // Récupération de l'HTML de la condition de déblocage
+                    const achievementHtml = getAchievementHtml(essence); 
+                    
+                    
+                    card.innerHTML = `
+                        ${cooldownHtml}
+                        <div class="flex flex-row p-2 items-center">
+                            <figure class="mr-4 flex-shrink-0">
+                                <img src="images/${essence.image}" alt="${essence.name}" class="rounded-xl w-16 h-16" />
+                            </figure>
+                            <div class="flex flex-col items-start text-left pr-14">
+                                <h2 class="card-title text-xl font-semibold flex flex-col items-start">${cardTitleHtml}</h2>
+                                
+                                <span class="text-sm ${rarityColorClass} mt-0">${essence.rarity}</span>
+                                
+                                <div class="flex flex-wrap gap-1 justify-start mt-1 ml-[-0.4rem]">
+                                    ${tagsHtml}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mx-2 mb-2 mt-0 bg-black/40 p-3 rounded-xl">
+                            <p class="text-sm">${formattedDescription}</p>
+                            ${achievementHtml} 
+                            ${keyInformationsHtml} 
+                        </div>
+                    `;
+    
+                    cardContainer.appendChild(card);
+                });
+            }
+        });
+    };
+
+    // --- FONCTIONS UTILITAIRES (HELPERS) ---
+
+    // NOTE : renderKeyInformations est retiré (essences n'ont pas 'informations')
+
+    // Nouvelle fonction pour générer le HTML de la condition de déblocage (Achievement)
+    function getAchievementHtml(essence) { // essence au lieu de memory
+        const achievementKey = essence.achievementKey;
+
+        if (!achievementKey) {
+            return '';
+        }
+
+        const achievement = allAchievements[achievementKey];
+
+        const achName = achievement ? achievement.name : essence.achievementName;
+        const achDesc = achievement ? achievement.description : essence.achievementDescription;
+
+        if (!achName || !achDesc) {
+            return '';
+        }
+
+        const html = `
+            <div class="achievement-info mt-2 pt-2 border-t border-gray-700/50">
+                <p class="text-xs italic text-gray-500">
+                    <b>Condition de déblocage :</b> 
+                    <span class="text-yellow-600 font-semibold">${achName}</span> 
+                    (${achDesc})
+                </p>
+            </div>
+        `;
+        return html;
+    }
+
+
+    // Transforme les balises personnalisées du JSON (couleurs, sprites) en vrai HTML.
+    function formatText(text) {
+        if (!text) return '';
+        let formattedText = text.replace(/<color=(.*?)>/g, (match, color) => {
+            const cssColor = color.startsWith('#') ? color : color.toLowerCase();
+            return `<span style="color: ${cssColor}">`;
+        });
+        formattedText = formattedText.replace(/<\/color>/g, '</span>');
+        formattedText = formattedText.replace(/<sprite=(\d+)>/g, (match, spriteId) => {
+            return `<img src="sprites/${spriteId}.png" class="inline-sprite" alt="Sprite">`;
+        });
+        formattedText = formattedText.replace(/\n/g, '<br>');
+        return formattedText;
+    }
+
+    // ProcessDescription avec calcul de Quality Percentage (level)
+    function processDescription(essence, qualityPercentage) {
+        if (!essence.rawDesc) {
+            return formatText(essence.description);
+        }
+
+        let description = essence.rawDesc;
+        const qualityMultiplier = qualityPercentage;
+
+        if (essence.rawDescVars) {
+            essence.rawDescVars.forEach((descVar, index) => {
+                let valueToRender = descVar.rendered;
+                
+                if (descVar.rendered.includes('<sprite=5>')) {
+                    
+                    const hasCalculableData = descVar.data && (
+                        (descVar.data.basicConstant || 0) > 0 ||
+                        (descVar.data.basicAP || 0) > 0 ||
+                        (descVar.data.basicAD || 0) > 0 ||
+                        (descVar.data.basicLvl || 0) > 0 ||
+                        (descVar.data.basicAddedMultiplierPerLevel || 0) > 0
+                    );
+
+                    if (!hasCalculableData || descVar.scalingType === 'unknown') {
+                        const numericValueMatch = valueToRender.match(/[\d.,]+/);
+                        if(numericValueMatch) {
+                           valueToRender = valueToRender.replace(numericValueMatch[0], `${numericValueMatch[0]}?`);
+                        } else {
+                           valueToRender += "?";
+                        }
+
+                    } else {
+                        const basicConstant = descVar.data.basicConstant || 0;
+                        const basicAP = descVar.data.basicAP || 0;
+                        const basicAD = descVar.data.basicAD || 0;
+                        const basicLvl = descVar.data.basicLvl || 0;
+                        const basicAddedMultiplierPerLevel = descVar.data.basicAddedMultiplierPerLevel || 0;
+                        
+                        let finalValue = (basicConstant + basicAP + basicAD + basicLvl) * (1 + qualityMultiplier * basicAddedMultiplierPerLevel) + 
+                                        (basicLvl * qualityMultiplier); 
+                        
+                        const calculatedValue = (Math.round((finalValue + Number.EPSILON) * 100) / 100);
+
+                        let valueToInsert;
+                        const isP0Format = descVar.format === "P0";
+                        // --- CORRECTION 2 : Détecter le format où la valeur est DÉJÀ un pourcentage ---
+                        const isAlreadyPercentage = descVar.format.includes("'%'");
+
+                        if (isAlreadyPercentage) {
+                            // Si le format est #,##0'%', on n'effectue PAS de multiplication par 100.
+                            valueToInsert = `${parseFloat(calculatedValue.toFixed(2))}%`;
+                        } else if (isP0Format || descVar.rendered.includes('%')) {
+                            // Pour les formats P0 ou les autres cas avec un '%', on traite la valeur comme un ratio.
+                            valueToInsert = `${parseFloat((calculatedValue * 100).toFixed(2))}%`;
+                        } else {
+                            // C'est un nombre brut, sans pourcentage.
+                            valueToInsert = parseFloat(calculatedValue.toFixed(2));
+                        }
+                        
+                        if (valueToRender.includes('<color=')) {
+                            const numericValueMatch = valueToRender.match(/<color=.*?>(.*?)<\/color>/);
+                            if (numericValueMatch && numericValueMatch[1]) {
+                                valueToRender = valueToRender.replace(numericValueMatch[1], valueToInsert);
+                            }
+                        } else {
+                            // --- CORRECTION 1 : Remplacer le nombre ET le % optionnel pour éviter les doublons ---
+                            const numericAndPercentMatch = valueToRender.match(/[\d.,]+%?/);
+                            if(numericAndPercentMatch) {
+                                valueToRender = valueToRender.replace(numericAndPercentMatch[0], valueToInsert);
+                            }
+                        }
+                    }
+                }
+                
+                description = description.replace(`{${index}}`, valueToRender);
+            });
+        }
+        return formatText(description);
+    }
+
+    // Retourne la classe CSS de couleur de texte en fonction de la rareté.
+    function getRarityColorClass(rarity) {
+        switch(rarity) {
+            case 'Common': return 'rarity-Common';
+            case 'Rare': return 'rarity-Rare';
+            case 'Epic': return 'rarity-Epic';
+            case 'Legendary': return 'rarity-Legendary';
+            case 'Unique': return 'rarity-Unique';
+            // Les raretés Character et Identity sont retirées pour les Essences
+            default: return 'text-white';
+        }
+    }
+
+    // Retourne la classe CSS de couleur de fond de la carte en fonction de la rareté.
+    function getRarityBackgroundColorClass(rarity) {
+        switch(rarity) {
+            case 'Common': return 'card-bg-Common';
+            case 'Rare': return 'card-bg-Rare';
+            case 'Epic': return 'card-bg-Epic';
+            case 'Legendary': return 'card-bg-Legendary';
+            case 'Unique': return 'card-bg-Unique';
+            // Les raretés Character et Identity sont retirées pour les Essences
+            default: return 'bg-gray-800';
+        }
+    }
+
+    // --- DÉMARRAGE DU SCRIPT ---
+    
+    setupSearch(); 
+    setupLevelSlider(); 
+    setupLanguageSelector();
+
+    // On récupère la langue sauvegardée (ou celle du navigateur) et on lance l'initialisation.
+    const currentLang = getLanguage();
+    init(currentLang);
+});

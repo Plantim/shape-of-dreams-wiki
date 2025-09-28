@@ -1,0 +1,52 @@
+{
+  "St_C_BeamOfLight": {
+    "name": "Rayon de Lumière",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Se concentre pour tirer un rayon sur un ennemi pendant 1.7<sprite=5> sec, infligeant des <color=yellow>dégâts de lumière</color> de <sprite=1><color=#16D7FF>507%</color><sprite=5> toutes les sec, et <color=yellow>soigne</color> les PV de l'allié proche ayant le taux de PV le plus bas de <sprite=1><color=#16D7FF>73%</color><sprite=5> toutes les sec.",
+    "rawDesc": "Se concentre pour tirer un rayon sur un ennemi pendant {0} sec, infligeant des <color=yellow>dégâts de lumière</color> de {1} toutes les sec, et <color=yellow>soigne</color> les PV de l'allié proche ayant le taux de PV le plus bas de {2} toutes les sec.",
+    "rawDescVars": [
+      {
+        "rendered": "1.7<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "(ticks-1)*tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>507%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "tickDamage/tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>73%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "tickHeal/tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "Dégâts de lumière contre des ennemis et soins aux alliés",
+    "rarity": "Common",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "WIP"
+    ],
+    "image": "St_C_BeamOfLight.png",
+    "lore": "-- Journal d'expérience, le 20 janvier, 3e année\n-- Auteur : Carrier Bayonnette\n-- Sujet d'étude : Rayon de Lumière\n\n\nCobaye : Jeune veuve présentant une large brûlure qui s'étend du visage jusqu'en dessous des épaules, ainsi qu'une plaie infectée sur la pommette.\nRésultat : Réduction notable de la plaie faciale. La marque de brûlure semble légèrement atténuée.\n\nCobaye : Jeune garçon atteint d'une plaie ouverte dans le dos, infligée par un coup de fouet.\nRésultat : Guérison significative de la blessure dorsale. Le sujet affirme que sa « kleptomanie » a disparu et réclame sa libération.\n\nCobaye : Jeff, le tueur en série tristement célèbre ! Blessé par balle à la cheville et au poignet.\nRésultat : S'est plaint d'une douleur crânienne intense, suivie d'un bruit interne évoquant une petite explosion, avant de perdre connaissance.\nParticularité : Respire encore, mais toujours inconscient.\n\n\nPS : Sa Majesté le Roi Logit a gracieusement fourni dix condamnés à mort supplémentaires.\nBien que de nombreux aspects du rayon restent à élucider, je suis certain d'une chose. Ce pouvoir des rêves sauvera de nombreuses vies.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": "",
+    "WIP_key": "WIP_description",
+    "informations":
+    {
+      "WIP_key": "WIP_objet"
+    }
+  }
+
+}

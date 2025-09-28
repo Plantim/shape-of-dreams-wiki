@@ -1,0 +1,3770 @@
+﻿{
+  "Gem_C_CamillasGiftRuined": {
+    "name": "Camilla's Gift (Broken)",
+    "description": "This gem was destroyed after taking too much damage.",
+    "rawDesc": "This gem was destroyed after taking too much damage.",
+    "rawDescVars": [],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_CamillasGiftRuined.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Charcoal": {
+    "name": "Essence of Charcoal",
+    "description": "When this Memory <color=yellow>hits</color> an enemy, it fires a charcoal shard, dealing <sprite=1><color=#16D7FF>60%</color><sprite=5> <color=yellow>damage</color>. If the target is already <color=yellow>burning</color>, it deals <sprite=1><color=#16D7FF>100%</color><sprite=5> <color=yellow>Fire damage</color> instead.",
+    "rawDesc": "When this Memory <color=yellow>hits</color> an enemy, it fires a charcoal shard, dealing {0} <color=yellow>damage</color>. If the target is already <color=yellow>burning</color>, it deals {1} <color=yellow>Fire damage</color> instead.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "normalDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.3,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "fireDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.5,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_C_Charcoal.png",
+    "lore": "A burnt lump once swallowed by soldiers in battle to cleanse their bodies of toxins.\n\nIn those desperate moments, it tasted like survival.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Confidence": {
+    "name": "Essence of Confidence",
+    "description": "Damage dealt by this Memory to nearby enemies is increased by 40%<sprite=5>.",
+    "rawDesc": "Damage dealt by this Memory to nearby enemies is increased by {0}.",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Melee"
+    ],
+    "image": "Gem_C_Confidence.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Efficiency": {
+    "name": "Essence of Efficiency",
+    "description": "This Memory gains 36<sprite=5> <color=yellow>Memory Haste</color>, reducing its <color=yellow>cooldown</color> by 26%<sprite=5>.",
+    "rawDesc": "This Memory gains {0} <color=yellow>Memory Haste</color>, reducing its <color=yellow>cooldown</color> by {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "36<sprite=5>",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 18.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "26%<sprite=5>",
+        "format": "P0",
+        "raw": "reducedRatio",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Efficiency.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Guidance": {
+    "name": "Essence of Guidance",
+    "description": "This Memory's <color=yellow>healing</color> is increased by 40%<sprite=5>. 30% of the excess healing from this Memory is converted into a <color=yellow>Barrier</color> that lasts for 2 seconds.",
+    "rawDesc": "This Memory's <color=yellow>healing</color> is increased by {0}. {1} of the excess healing from this Memory is converted into a <color=yellow>Barrier</color> that lasts for {2} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "healAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "shieldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "Gem_C_Guidance.PNG",
+    "lore": "Who decides what life truly is?\nWe may be born from the imagination of someone nameless,\nbut that does not make our existence any less real.\n\nYou gave us life,\nyet dismiss us as nothing more than illusions.\n\nIf that is how it must be, O creator,\nthen I will, by my own will, become the guide for all of \"us.\"",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Lethality": {
+    "name": "Essence of Lethality",
+    "description": "This Memory's damage against enemies with 70% or more Health is increased by 60%<sprite=5>.",
+    "rawDesc": "This Memory's damage against enemies with {0} or more Health is increased by {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "70%",
+        "format": "P0",
+        "raw": "healthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.7,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "60%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Lethality.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Love": {
+    "name": "Essence of Love",
+    "description": "When this Memory <color=yellow>restores</color> <color=yellow>Health</color> or grants a <color=yellow>Barrier</color> to an ally, their <color=yellow>Movement Speed</color> and <color=yellow>Attack Speed</color> increase by 16%<sprite=5> for 2 seconds.The effect is reduced by 50% when applied to yourself.",
+    "rawDesc": "When this Memory <color=yellow>restores</color> <color=yellow>Health</color> or grants a <color=yellow>Barrier</color> to an ally, their <color=yellow>Movement Speed</color> and <color=yellow>Attack Speed</color> increase by {0} for {1} seconds.The effect is reduced by {2} when applied to yourself.",
+    "rawDescVars": [
+      {
+        "rendered": "16%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "bonusAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "selfReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Heal",
+      "Shield",
+      "Attack",
+      "Mobility"
+    ],
+    "image": "Gem_C_Love.PNG",
+    "lore": "Merely an illusion, you say?\n...\n\nIs all of this just a pointless fantasy?\n\n...\n...\nNo.\n\nMy light, my love, Kiara.\nEternal guide of my soul.\nIt cannot be so.\nA reality without you has no meaning.\n\nWho dares distinguish between illusion and reality?\nThat line...\nShall vanish today.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Quicksilver": {
+    "name": "Essence of Quicksilver",
+    "description": "<color=yellow>Casting</color> this Memory or dealing <color=yellow>Fire damage</color> with it increases <color=yellow>Movement Speed</color> by 30%<sprite=5>, gradually returning to normal over 2.5 seconds.",
+    "rawDesc": "<color=yellow>Casting</color> this Memory or dealing <color=yellow>Fire damage</color> with it increases <color=yellow>Movement Speed</color> by {0}, gradually returning to normal over {1} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "30%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Fire",
+      "Mobility"
+    ],
+    "image": "Gem_C_Quicksilver.png",
+    "lore": "Gotta Go Fast!",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Regeneration": {
+    "name": "Essence of Regeneration",
+    "description": "If this Memory is <color=yellow>cast</color> <color=yellow>in combat</color>, it <color=yellow>restores</color> your Health by 41<sprite=5> over 7 seconds.",
+    "rawDesc": "If this Memory is <color=yellow>cast</color> <color=yellow>in combat</color>, it <color=yellow>restores</color> your Health by {0} over {1} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "41<sprite=5>",
+        "format": "#,##0",
+        "raw": "healPerTick * totalTicks",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "7",
+        "format": "#,##0.#",
+        "raw": "totalTicks*tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_C_Regeneration.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Responsibility": {
+    "name": "Essence of Responsibility",
+    "description": "Every 10 seconds, this Memory's <color=yellow>cast</color> is <color=yellow>empowered</color>. 1.2 seconds after the <color=yellow>empowered cast</color>, it deals <sprite=2><color=#FF8A2D>400%</color><sprite=5> <color=yellow>damage</color> divided among all enemies hit by that cast.",
+    "rawDesc": "Every {0} seconds, this Memory's <color=yellow>cast</color> is <color=yellow>empowered</color>. {1} seconds after the <color=yellow>empowered cast</color>, it deals {2} <color=yellow>damage</color> divided among all enemies hit by that cast.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "1.2",
+        "format": "#,##0.#",
+        "raw": "initDelay",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>400%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "totalDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Responsibility.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Sharp": {
+    "name": "Essence of Sharpness",
+    "description": "<color=yellow>Casting</color> this Memory fires 5 arrows that deal <sprite=1><color=#16D7FF>90%</color><sprite=5> <color=yellow>damage</color> to random enemies.",
+    "rawDesc": "<color=yellow>Casting</color> this Memory fires {0} arrows that deal {1} <color=yellow>damage</color> to random enemies.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "shotArrows",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "arrowDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.45,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Sharp.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Shatter": {
+    "name": "Essence of Shatter",
+    "description": "Every 10 seconds, the <color=yellow>cast</color> of this Memory is <color=yellow>empowered</color>. Damage dealt to enemies by the <color=yellow>empowered cast</color> is increased by 40%<sprite=5>. If it deals <color=yellow>Light damage</color>, it is increased by 72%<sprite=5> instead.",
+    "rawDesc": "Every {0} seconds, the <color=yellow>cast</color> of this Memory is <color=yellow>empowered</color>. Damage dealt to enemies by the <color=yellow>empowered cast</color> is increased by {1}. If it deals <color=yellow>Light damage</color>, it is increased by {2} instead.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "72%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmpLight",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.36,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_C_Shatter.PNG",
+    "lore": "As a collector of stories, I simply gather tales. My role and my destiny are to follow a predetermined path from beginning to end. Just as Sisyphus in the old legend came to love his boulder, I have accepted my fate as well.\n\nBut you have always been different. You refuse to let your story follow the path set out for you. Whenever I hear you say, \"Just because we were born this way does not mean we must live only that way,\" I feel a small crack forming in my storybook.\n\nDo not misunderstand. This crack is not unpleasant. In fact, it fascinates me. Among the countless stories racing toward their fixed endings, yours is the only one whose next page I cannot predict.\n\nI am eager to see what ending your stubborn defiance will bring. That final chapter may become the most treasured piece in my entire collection.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Sulfur": {
+    "name": "Essence of Sulfur",
+    "description": "All <color=yellow>damage</color> dealt by this Memory is increased by 15%<sprite=5> and converted to <color=yellow>Fire damage</color>. Your Fire damage over time is increased by 50%<sprite=5>.",
+    "rawDesc": "All <color=yellow>damage</color> dealt by this Memory is increased by {0} and converted to <color=yellow>Fire damage</color>. Your Fire damage over time is increased by {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "P0",
+        "raw": "ampAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.075,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "fireAmpBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_C_Sulfur.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Talc": {
+    "name": "Essence of Talc",
+    "description": "Every 10 seconds, the <color=yellow>cast</color> of this Memory is <color=yellow>empowered</color>. The initial damage dealt to each enemy by the <color=yellow>empowered cast</color> is increased by <sprite=1><color=#16D7FF>400%</color><sprite=5>.",
+    "rawDesc": "Every {0} seconds, the <color=yellow>cast</color> of this Memory is <color=yellow>empowered</color>. The initial damage dealt to each enemy by the <color=yellow>empowered cast</color> is increased by {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "addedDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Talc.PNG",
+    "lore": "An essence condensed from unripe chestnut shells and the thick chalkiness of chalk dust.\n\nThose who accept this concept can draw on its unpleasant power, but having to do so would truly be unfortunate.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Vengeance": {
+    "name": "Essence of Vengeance",
+    "description": "When you take any damage, fire 2 blades that deal <sprite=1><color=#16D7FF>102%</color><sprite=5> <color=yellow>damage</color> to nearby enemies. After taking damage, this Memory's <color=yellow>damage</color> and <color=yellow>healing</color> are increased by 34%<sprite=5> for 5 seconds.",
+    "rawDesc": "When you take any damage, fire {0} blades that deal {1} <color=yellow>damage</color> to nearby enemies. After taking damage, this Memory's <color=yellow>damage</color> and <color=yellow>healing</color> are increased by {2} for {3} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "shootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>102%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.6,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.007
+        }
+      },
+      {
+        "rendered": "34%<sprite=5>",
+        "format": "P0",
+        "raw": "ampAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.007
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_C_Vengeance.png",
+    "lore": null,
+    "achievementKey": "ACH_TASTE_OF_THEIR_OWN_MEDICINE",
+    "achievementName": "Taste of Their Own Medicine",
+    "achievementDescription": "Defeat the Demon of the Forest by clawing it."
+  },
+  "Gem_C_Void": {
+    "name": "Essence of the Void",
+    "description": "After casting this Memory, your next <color=yellow>attack</color> within 4 seconds will explode, dealing <sprite=2><color=#FF8A2D>150%</color><sprite=5> <color=yellow>Dark damage</color> to the target and nearby enemies.",
+    "rawDesc": "After casting this Memory, your next <color=yellow>attack</color> within {0} seconds will explode, dealing {1} <color=yellow>Dark damage</color> to the target and nearby enemies.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.75,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Dark"
+    ],
+    "image": "Gem_C_Void.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Wind": {
+    "name": "Essence of Wind",
+    "description": "Casting this Memory increases <color=yellow>Attack Speed</color> by 33%<sprite=5> for 5 seconds.",
+    "rawDesc": "Casting this Memory increases <color=yellow>Attack Speed</color> by {0} for {1} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "33%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 22.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Wind.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Aftershock": {
+    "name": "Essence of Aftershock",
+    "description": "<color=yellow>Casting</color> this Memory releases a delayed <color=yellow>shockwave</color> that deals <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>Cold damage</color> to enemies around you and <color=yellow>stuns</color> them for 0.5 seconds.\nFor each enemy hit by this <color=yellow>shockwave</color>, you gain 4<sprite=5> <color=yellow>Armor</color>, up to a maximum of 22<sprite=5> <color=yellow>Armor</color>. When hitting a <color=yellow>boss</color>, you gain the maximum <color=yellow>Armor</color>. This Armor lasts until you <color=yellow>cast</color> this Memory again.",
+    "rawDesc": "<color=yellow>Casting</color> this Memory releases a delayed <color=yellow>shockwave</color> that deals {0} <color=yellow>Cold damage</color> to enemies around you and <color=yellow>stuns</color> them for {1} seconds.\nFor each enemy hit by this <color=yellow>shockwave</color>, you gain {2} <color=yellow>Armor</color>, up to a maximum of {3} <color=yellow>Armor</color>. When hitting a <color=yellow>boss</color>, you gain the maximum <color=yellow>Armor</color>. This Armor lasts until you <color=yellow>cast</color> this Memory again.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "22<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorPerHit*maxHitCount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Aftershock.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Blossom": {
+    "name": "Essence of Blossoming",
+    "description": "This Memory deals 80% less <color=yellow>damage</color> to enemies. When it deals <color=yellow>damage</color>, it <color=yellow>heals</color> a random nearby ally for 22%<sprite=5> of the <color=yellow>damage dealt</color>.",
+    "rawDesc": "This Memory deals {0} less <color=yellow>damage</color> to enemies. When it deals <color=yellow>damage</color>, it <color=yellow>heals</color> a random nearby ally for {1} of the <color=yellow>damage dealt</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "22%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Blossom.PNG",
+    "lore": null,
+    "achievementKey": "ACH_SUPPORT_MAIN",
+    "achievementName": "Support Specialist",
+    "achievementDescription": "Have 4 healing Active Memories at once."
+  },
+  "Gem_E_Clemency": {
+    "name": "Essence of Clemency",
+    "description": "<color=yellow>Restore</color> <color=yellow>your</color> Health for 4%<sprite=5> of the <color=yellow>damage</color> dealt by this Memory.",
+    "rawDesc": "<color=yellow>Restore</color> <color=yellow>your</color> Health for {0} of the <color=yellow>damage</color> dealt by this Memory.",
+    "rawDescVars": [
+      {
+        "rendered": "4%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Clemency.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Crimson": {
+    "name": "Essence of Crimson",
+    "description": "Every 4th <color=yellow>Basic Attack</color> becomes <color=yellow>empowered</color>, triggering a <color=yellow>Crimson Explosion</color> that deals <sprite=2><color=#FF8A2D>100%</color><sprite=5> <color=yellow>Dark Damage</color> to enemies. The explosion radius scales with your <color=yellow>Critical Strike Chance</color>.\nYou <color=yellow>restore</color> <sprite=2><color=#FF8A2D>22%</color><sprite=5> Health for each enemy hit by the explosion, increased by 100% if the target is a <color=yellow>Boss</color>.",
+    "rawDesc": "Every 4th <color=yellow>Basic Attack</color> becomes <color=yellow>empowered</color>, triggering a <color=yellow>Crimson Explosion</color> that deals {0} <color=yellow>Dark Damage</color> to enemies. The explosion radius scales with your <color=yellow>Critical Strike Chance</color>.\nYou <color=yellow>restore</color> {1} Health for each enemy hit by the explosion, increased by {2} if the target is a <color=yellow>Boss</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>22%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "healPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.125,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "bossHealAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_E_Crimson.PNG",
+    "lore": null,
+    "achievementKey": "ACH_IN_CARNAGE_I_BLOOM",
+    "achievementName": "In Carnage I Bloom",
+    "achievementDescription": "Empower Memories that deal Dark damage 20 times in a single adventure."
+  },
+  "Gem_E_Direness": {
+    "name": "Essence of Direness",
+    "description": "The lower your <color=yellow>Health</color>, the shorter the <color=yellow>cooldown</color> of this Memory. When your <color=yellow>Health</color> is at 30%, the <color=yellow>cooldown</color> is reduced by up to 55%<sprite=5>.",
+    "rawDesc": "The lower your <color=yellow>Health</color>, the shorter the <color=yellow>cooldown</color> of this Memory. When your <color=yellow>Health</color> is at {0}, the <color=yellow>cooldown</color> is reduced by up to {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "maxAbilityHasteHpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "55%<sprite=5>",
+        "format": "P0",
+        "raw": "maxReducedRatio",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Direness.PNG",
+    "lore": "How am I still alive...?\n\n...\n\nI was definitely locked up in the Order's prison.\n...Those Lucid bastards had set a trap.\nThat was my mistake.\nI was too hasty.\n\nIt's strange.\nMy breastplate was shattered, and I was sure at least two of my ribs were broken...\nBut I feel fine. No, I actually feel stronger.\n\nWhere am I? Is this some kind of magic...?\n\n...\nIt's faint, but I can sense it.\nAstrid, my sister...\nI won't let myself slip up again.\n\nJust wait for me. I'm coming.",
+    "achievementKey": "ACH_DESPERATE_HERO",
+    "achievementName": "Desperate Hero",
+    "achievementDescription": "Defeat 30 enemies in a row while your Health is below 40%."
+  },
+  "Gem_E_Fangs": {
+    "name": "Essence of Fangs",
+    "description": "Every 4th <color=yellow>basic attack</color> is a <color=yellow>critical strike</color>. When you land a <color=yellow>critical strike</color>, this Memory's <color=yellow>cooldown</color> is reduced by 0.7<sprite=5> seconds and launches 2 <color=yellow>Fangs</color> at nearby enemies, each dealing <sprite=2><color=#FF8A2D>60%</color><sprite=5> <color=yellow>damage</color>.",
+    "rawDesc": "Every 4th <color=yellow>basic attack</color> is a <color=yellow>critical strike</color>. When you land a <color=yellow>critical strike</color>, this Memory's <color=yellow>cooldown</color> is reduced by {0} seconds and launches 2 <color=yellow>Fangs</color> at nearby enemies, each dealing {1} <color=yellow>damage</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "0.7<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "cooldownReductionOnCrit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.012
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>60%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.3,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Fangs.PNG",
+    "lore": null,
+    "achievementKey": "ACH_THEYRE_JUST_BIG_CATS",
+    "achievementName": "They're Just Big Cats",
+    "achievementDescription": "Land a finishing blow on Thunder Tigers with lightning 50 times."
+  },
+  "Gem_E_Fever": {
+    "name": "Essence of Fever",
+    "description": "When this Memory deals <color=yellow>Fire damage</color> to an enemy, it infects them with <color=yellow>Fever</color>. Enemies infected with <color=yellow>Fever</color> explode after 2 seconds, dealing <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>Fire damage</color> to themselves and nearby enemies. For each <color=yellow>Fire stack</color> on the target, the explosion radius increases by 30% and explosion damage increases by 10%.",
+    "rawDesc": "When this Memory deals <color=yellow>Fire damage</color> to an enemy, it infects them with <color=yellow>Fever</color>. Enemies infected with <color=yellow>Fever</color> explode after {0} seconds, dealing {1} <color=yellow>Fire damage</color> to themselves and nearby enemies. For each <color=yellow>Fire stack</color> on the target, the explosion radius increases by {2} and explosion damage increases by {3}.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.65,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "radiusAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "dmgAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_E_Fever.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Flexibility": {
+    "name": "Essence of Flexibility",
+    "description": "While this Memory is on <color=yellow>cooldown</color>, 37%<sprite=5> of damage taken is <color=yellow>split</color> over 4 seconds. This <color=yellow>split</color> damage is reduced by 20%.",
+    "rawDesc": "While this Memory is on <color=yellow>cooldown</color>, {0} of damage taken is <color=yellow>split</color> over {1} seconds. This <color=yellow>split</color> damage is reduced by {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "37%<sprite=5>",
+        "format": "P0",
+        "raw": "divMultiplier",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "dmgTickCount*tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "1-dmgReduceAmount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Flexibility.PNG",
+    "lore": null,
+    "achievementKey": "ACH_FLEXIBLE_DIET",
+    "achievementName": "Flexible Diet",
+    "achievementDescription": "During a single adventure, let your Health fall below 40% and then bring it back up to at least 75% 10 times."
+  },
+  "Gem_E_Insensitivity": {
+    "name": "Essence of Insensitivity",
+    "description": "<color=yellow>Casting</color> this Memory drops a <color=yellow>bomb</color> for every 2m you travel over the next 3 seconds. Each bomb explodes after a brief delay, dealing <sprite=1><color=#16D7FF>140%</color><sprite=5> <color=yellow>Fire damage</color> to enemies.",
+    "rawDesc": "<color=yellow>Casting</color> this Memory drops a <color=yellow>bomb</color> for every {0}m you travel over the next {1} seconds. Each bomb explodes after a brief delay, dealing {2} <color=yellow>Fire damage</color> to enemies.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "distancePerBomb",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.7,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_E_Insensitivity.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Insight": {
+    "name": "Essence of Insight",
+    "description": "When this Memory deals any <color=yellow>damage</color> to an enemy, it deals an additional <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>Light damage</color> to up to 3<sprite=5> enemies and increases <color=yellow>Memory Haste</color> by 20<sprite=5> for 5 seconds. Can only trigger once every 3 seconds.",
+    "rawDesc": "When this Memory deals any <color=yellow>damage</color> to an enemy, it deals an additional {0} <color=yellow>Light damage</color> to up to {1} enemies and increases <color=yellow>Memory Haste</color> by {2} for {3} seconds. Can only trigger once every {4} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxHitCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0025
+        }
+      },
+      {
+        "rendered": "20<sprite=5>",
+        "format": "#,##0",
+        "raw": "gainedAbilityHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_E_Insight.PNG",
+    "lore": null,
+    "achievementKey": "ACH_ULTRA_RAPID_FIRE",
+    "achievementName": "Ultra Rapid Fire",
+    "achievementDescription": "Cast 12 Memories within 8 seconds."
+  },
+  "Gem_E_Inversion": {
+    "name": "Essence of Inversion",
+    "description": "This Memory's <color=yellow>cooldown</color> increases by 15%<sprite=5>, but it also deals 20%<sprite=5> more <color=yellow>damage</color> to enemies. Its <color=yellow>elemental damage</color> is <color=yellow>inverted</color> (Fire/Cold, Light/Dark).",
+    "rawDesc": "This Memory's <color=yellow>cooldown</color> increases by {0}, but it also deals {1} more <color=yellow>damage</color> to enemies. Its <color=yellow>elemental damage</color> is <color=yellow>inverted</color> (Fire/Cold, Light/Dark).",
+    "rawDescVars": [
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "P0",
+        "raw": "cooldownAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Inversion.png",
+    "lore": null,
+    "achievementKey": "ACH_ELEMENTALS_101",
+    "achievementName": "Introduction to Elements",
+    "achievementDescription": "Defeat enemies affected by all 4 elements 70 times."
+  },
+  "Gem_E_Metal": {
+    "name": "Essence of Metal",
+    "description": "When you <color=yellow>kill</color> an enemy, the <color=yellow>cooldown</color> of this Memory is <color=yellow>reduced</color> by 1<sprite=5> seconds.",
+    "rawDesc": "When you <color=yellow>kill</color> an enemy, the <color=yellow>cooldown</color> of this Memory is <color=yellow>reduced</color> by {0} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "cooldownReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Metal.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Might": {
+    "name": "Essence of the Giant",
+    "description": "Increases Maximum Health by 260<sprite=5>. This Memory's damage increases by 1% for every 50 points of your <color=yellow>Maximum Health</color>.",
+    "rawDesc": "Increases Maximum Health by {0}. This Memory's damage increases by {1} for every {2} points of your <color=yellow>Maximum Health</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "260<sprite=5>",
+        "format": "#,##0",
+        "raw": "healthBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 130.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1%",
+        "format": "P0",
+        "raw": "dmgAmpPerUnitHealth",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.01,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "50",
+        "format": "#,##0",
+        "raw": "unitHealthAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Might.PNG",
+    "lore": null,
+    "achievementKey": "ACH_HEAVIER_THAN_ATLAS",
+    "achievementName": "Heavier than Atlas",
+    "achievementDescription": "Reach 3,000 Maximum Health."
+  },
+  "Gem_E_Omega": {
+    "name": "Essence of Finality",
+    "description": "While this Memory is not on <color=yellow>cooldown</color>, gain stacks of <color=yellow>Finality</color> every second up to 20 stacks. When stacks are present, this Memory's <color=yellow>cast</color> is <color=yellow>empowered</color>, increasing <color=yellow>damage</color> by 5%<sprite=5> per stack.",
+    "rawDesc": "While this Memory is not on <color=yellow>cooldown</color>, gain stacks of <color=yellow>Finality</color> every second up to {0} stacks. When stacks are present, this Memory's <color=yellow>cast</color> is <color=yellow>empowered</color>, increasing <color=yellow>damage</color> by {1} per stack.",
+    "rawDescVars": [
+      {
+        "rendered": "20",
+        "format": "#,##0",
+        "raw": "maxChargeCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5%<sprite=5>",
+        "format": "P0",
+        "raw": "chargeRate",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Omega.PNG",
+    "lore": null,
+    "achievementKey": "ACH_OMEGA_POINT",
+    "achievementName": "Omega Point",
+    "achievementDescription": "Enter the Pure White Dream while having cast only one type of Memory during a single adventure."
+  },
+  "Gem_E_Opportunity": {
+    "name": "Essence of Opportunity",
+    "description": "<color=yellow>Casting</color> this Memory reduces the <color=yellow>cooldown</color> of your <color=yellow>Dodge</color> by 3<sprite=5> seconds. Can only trigger once every 8 seconds.",
+    "rawDesc": "<color=yellow>Casting</color> this Memory reduces the <color=yellow>cooldown</color> of your <color=yellow>Dodge</color> by {0} seconds. Can only trigger once every {1} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reductionAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "8",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Mobility"
+    ],
+    "image": "Gem_E_Opportunity.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_OurStory_Completed": {
+    "name": "Our Story (Completed!)",
+    "description": "Increases <color=yellow>Attack Damage</color> and <color=yellow>Ability Power</color> by 0, and the effects of all buffs from <color=yellow>Distorting Rush</color> by 0.",
+    "rawDesc": "Increases <color=yellow>Attack Damage</color> and <color=yellow>Ability Power</color> by {0}, and the effects of all buffs from <color=yellow>Distorting Rush</color> by {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "0",
+        "format": "#,##0'%'",
+        "raw": "Gem_E_OurStory_Completed::statPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0",
+        "format": "#,##0",
+        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_OurStory_Completed.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_OurStory_Unfinished": {
+    "name": "Our Story (Work in Progress)",
+    "description": "Quality increases by 50% every time you <color=yellow>defeat</color> 75 enemies. It becomes <color=yellow>completed</color> when quality reaches 500%.",
+    "rawDesc": "Quality increases by {0} every time you <color=yellow>defeat</color> {1} enemies. It becomes <color=yellow>completed</color> when quality reaches {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "#,##0'%'",
+        "raw": "addedQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "75",
+        "format": "#,##0",
+        "raw": "killCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 75.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "500%",
+        "format": "#,##0'%'",
+        "raw": "completeThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 500.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_OurStory_Unfinished.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Overload": {
+    "name": "Essence of Overload",
+    "description": "When you <color=yellow>cast</color> this Memory, <color=yellow>sacrifice</color> 20% of your current Health to <color=yellow>empower</color> the <color=yellow>cast</color>. The <color=yellow>damage</color> and <color=yellow>healing</color> dealt by the <color=yellow>empowered cast</color> are increased by 45%<sprite=5>.",
+    "rawDesc": "When you <color=yellow>cast</color> this Memory, <color=yellow>sacrifice</color> {0} of your current Health to <color=yellow>empower</color> the <color=yellow>cast</color>. The <color=yellow>damage</color> and <color=yellow>healing</color> dealt by the <color=yellow>empowered cast</color> are increased by {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "healthRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "45%<sprite=5>",
+        "format": "P0",
+        "raw": "amp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.225,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Overload.PNG",
+    "lore": "Every time I reflect on this concept, I feel my body and mind being engulfed in flames.\n\nThe scales on the affected areas crumble easily, radiating an intense heat. When I gather the golden dust from certain parts, it shines brilliantly and feels incredibly fine to the touch.\n\nMagic unfolds through the power of dreams, and when this dust is added, the reaction becomes even more explosive. Just a light sprinkle left a large scorch mark on the ceiling.\n\nI should document the results of this experiment, but I'm too drained. This concept seems to inflict a heavy mental toll.\n\nI suspect it's connected to the power I encountered before. It's fascinating, indeed. More research is needed to uncover the source of this power. Perhaps a field study is needed.",
+    "achievementKey": "ACH_REAP_WHAT_YOU_SOW",
+    "achievementName": "Reap What You Sow",
+    "achievementDescription": "Activate the Shrine of Dismantling 12 times."
+  },
+  "Gem_E_Pain": {
+    "name": "Essence of Pain",
+    "description": "All <color=yellow>damage</color> dealt by this Memory deals 40%<sprite=5> <color=yellow>Area damage</color> around the target. This <color=yellow>Area damage</color> shares the elemental type with the original damage.",
+    "rawDesc": "All <color=yellow>damage</color> dealt by this Memory deals {0} <color=yellow>Area damage</color> around the target. This <color=yellow>Area damage</color> shares the elemental type with the original damage.",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "damageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Pain.PNG",
+    "lore": "Do not blaspheme. I am not a lunatic who revels in inflicting pain. Yet, I cannot overlook those who defy divine authority.\n\nFor the one who watches over us from above,\n\nI will, rightfully and with honor, sear your skin and carve your flesh.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Predation": {
+    "name": "Essence of Predation",
+    "description": "This Memory deals 60%<sprite=5> increased damage to <color=yellow>Bosses</color> and <color=yellow>Hunters</color>. Defeating a <color=yellow>Hunter</color> drops 1 <color=yellow>Orb of Power</color>, while defeating a <color=yellow>Boss</color> drops 3. When you collect an <color=yellow>Orb of Power</color>, either <color=yellow>Attack Damage</color> or <color=yellow>Ability Power</color> permanently increases by 1 at random.",
+    "rawDesc": "This Memory deals {0} increased damage to <color=yellow>Bosses</color> and <color=yellow>Hunters</color>. Defeating a <color=yellow>Hunter</color> drops {1} <color=yellow>Orb of Power</color>, while defeating a <color=yellow>Boss</color> drops {2}. When you collect an <color=yellow>Orb of Power</color>, either <color=yellow>Attack Damage</color> or <color=yellow>Ability Power</color> permanently increases by 1 at random.",
+    "rawDescVars": [
+      {
+        "rendered": "60%<sprite=5>",
+        "format": "P0",
+        "raw": "amp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedAp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "addedAp*bossMultiplier",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Predation.png",
+    "lore": null,
+    "achievementKey": "ACH_WHOS_THE_PREY_NOW",
+    "achievementName": "Who's the Prey Now",
+    "achievementDescription": "Defeat 70 Hunters."
+  },
+  "Gem_E_Protection": {
+    "name": "Essence of Protection",
+    "description": "<color=yellow>Casting</color> this Memory grants 40<sprite=5> <color=yellow>Armor</color> for 3 seconds, reducing damage taken and making you <color=yellow>Unstoppable</color>. Can only trigger once every 5 seconds.",
+    "rawDesc": "<color=yellow>Casting</color> this Memory grants {0} <color=yellow>Armor</color> for {1} seconds, reducing damage taken and making you <color=yellow>Unstoppable</color>. Can only trigger once every {2} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "armorDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Protection.PNG",
+    "lore": null,
+    "achievementKey": "ACH_TEKKAI",
+    "achievementName": "Iron Body",
+    "achievementDescription": "Gain a Barrier equal to or greater than 300% of your Maximum Health."
+  },
+  "Gem_E_Thunder": {
+    "name": "Essence of Thunder",
+    "description": "<color=yellow>Casting</color> <color=yellow>another Memory</color> or using <color=yellow>Dodge</color> grants 1 <color=yellow>Thunder</color> stack, up to 7<sprite=5> times. <color=yellow>Casting</color> this Memory consumes all <color=yellow>Thunder</color> stacks, calling down lightning on nearby enemies once for each stack. Each lightning deals <sprite=1><color=#16D7FF>117%</color><sprite=5> <color=yellow>Light damage</color>.",
+    "rawDesc": "<color=yellow>Casting</color> <color=yellow>another Memory</color> or using <color=yellow>Dodge</color> grants 1 <color=yellow>Thunder</color> stack, up to {0} times. <color=yellow>Casting</color> this Memory consumes all <color=yellow>Thunder</color> stacks, calling down lightning on nearby enemies once for each stack. Each lightning deals {1} <color=yellow>Light damage</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "7<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxCharge",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.004
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>117%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.65,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.008
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_E_Thunder.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Twilight": {
+    "name": "Essence of Twilight",
+    "description": "Your <color=yellow>basic attacks</color> are converted to <color=yellow>Dark damage</color>. When this Memory deals damage to an enemy with 3 or more <color=yellow>Dark stacks</color>, consumes all stacks to deal <sprite=1><color=#16D7FF>54%</color><sprite=5> <color=yellow>damage</color> per stack and <color=yellow>heal</color> for 6<sprite=5> per stack.",
+    "rawDesc": "Your <color=yellow>basic attacks</color> are converted to <color=yellow>Dark damage</color>. When this Memory deals damage to an enemy with {0} or more <color=yellow>Dark stacks</color>, consumes all stacks to deal {1} <color=yellow>damage</color> per stack and <color=yellow>heal</color> for {2} per stack.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "minStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>54%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.27,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "6<sprite=5>",
+        "format": "#,##0",
+        "raw": "healPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark"
+    ],
+    "image": "Gem_E_Twilight.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Virtuousness": {
+    "name": "Essence of Virtue",
+    "description": "The number of charges for this Memory increases by 1<sprite=5>. Each 150% increase in quality raises the number of charges by 1.",
+    "rawDesc": "The number of charges for this Memory increases by {0}. Each {1} increase in quality raises the number of charges by 1.",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0",
+        "raw": "addedChargeInt",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "150%",
+        "format": "#,##0'%'",
+        "raw": "requiredQualityPerCharge",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 150.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Virtuousness.PNG",
+    "lore": "People are dying. Monsters and spirits that once existed only in legends and imagination have crossed into our world, burning villages and destroying lives.\n\nOf all times, it had to be when Lady Camilla and my sister are away...\n\nWe can hold out for now, but what if the rumors are true? What if someone's imagination has really become reality?\nAnd what if someone imagined something even more terrible than what we're facing now...?\n\nIt's only a matter of time.\nAre we supposed to sit here and wait for this inevitable disaster?\n\n...\n\nYesterday, I managed to infuse my sister's saber and my dagger with the power of dreams.\nNow I just need information.\n\nI know someone who can help me.\nThe Lucid Sect... unsettling as they are, they're probably my best option.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_CamillasGift": {
+    "name": "Camilla's Gift",
+    "description": "Can be <color=yellow>sold</color> at the shop for 0 Gold. The <color=yellow>price</color> <color=yellow>increases</color> by 0 each time you move to a next world. It breaks if your Health drops below 50% from enemy damage.",
+    "rawDesc": "Can be <color=yellow>sold</color> at the shop for {0} Gold. The <color=yellow>price</color> <color=yellow>increases</color> by {1} each time you move to a next world. It breaks if your Health drops below {2} from enemy damage.",
+    "rawDescVars": [
+      {
+        "rendered": "0",
+        "format": "#,##0",
+        "raw": "currentSellGold",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0",
+        "format": "#,##0",
+        "raw": "sellGoldIncreasePerWorld",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "healthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_CamillasGift.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_ChaosApple": {
+    "name": "Apple of Discord",
+    "description": "Each time you <color=yellow>move</color> through a <color=yellow>Rift</color>, this Memory is temporarily <color=yellow>transformed</color> into a different random Memory. The <color=yellow>transformed</color> Memory has no <color=yellow>cooldown</color>, but can only be <color=yellow>cast</color> 4<sprite=5> times per room, and returns to the original Memory when all casts are used.",
+    "rawDesc": "Each time you <color=yellow>move</color> through a <color=yellow>Rift</color>, this Memory is temporarily <color=yellow>transformed</color> into a different random Memory. The <color=yellow>transformed</color> Memory has no <color=yellow>cooldown</color>, but can only be <color=yellow>cast</color> {0} times per room, and returns to the original Memory when all casts are used.",
+    "rawDescVars": [
+      {
+        "rendered": "4<sprite=5>",
+        "format": "#,##0",
+        "raw": "castPerRoomCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_ChaosApple.png",
+    "lore": null,
+    "achievementKey": "ACH_CHAOTIC_GOOD",
+    "achievementName": "Chaotic Good",
+    "achievementDescription": "Use Legendary Chaos a total of 5 times."
+  },
+  "Gem_L_DivineFaith": {
+    "name": "Divine Faith",
+    "description": "Each time you <color=yellow>kill</color> an enemy with this Memory, gain a stack of <color=yellow>Faith</color> up to 75<sprite=5> stacks. For each stack of <color=yellow>Faith</color>, this Memory's <color=yellow>damage</color> to enemies and <color=yellow>healing</color> to allies increases by 0.5%, and your Maximum Health increases by 4.",
+    "rawDesc": "Each time you <color=yellow>kill</color> an enemy with this Memory, gain a stack of <color=yellow>Faith</color> up to {0} stacks. For each stack of <color=yellow>Faith</color>, this Memory's <color=yellow>damage</color> to enemies and <color=yellow>healing</color> to allies increases by {1}, and your Maximum Health increases by {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "75<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.015
+        }
+      },
+      {
+        "rendered": "0.5%",
+        "format": "0.#%",
+        "raw": "dmgAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.005,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxHealthPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_DivineFaith.PNG",
+    "lore": "Ignorant and irreverent souls who worship a false god and cling to heretical doctrines. Your blasphemy shall be tolerated no longer.\n\nMy mace is the instrument of truth, and my knights bear the calling of the divine. Upon the faithless, judgment shall be delivered.\n\nTomorrow, the flames of purification shall consume you. Nowhere in this world shall even a trace of their breath remain.\n\nAll shall unfold according to the will of El'pyros, Lord of All Creation...",
+    "achievementKey": "ACH_GOD_PROTECTS_ME",
+    "achievementName": "God Protects Me",
+    "achievementDescription": "In a single adventure, visit locations occupied by Hunters 4 times while having a Hunt Threat Level of 5."
+  },
+  "Gem_L_Embertail": {
+    "name": "Embertail",
+    "description": "Your <color=yellow>attacks</color> ricochet to deal <sprite=1><color=#16D7FF>100%</color><sprite=5> <color=yellow>Fire damage</color> to a nearby enemy. For each nearby enemy engulfed in flames, this Memory's <color=yellow>damage</color> and <color=yellow>healing</color> are increased by 8%<sprite=5> and its <color=yellow>cooldown</color> is reduced by 8%<sprite=5>. Your Fire damage over time is increased by 100%.",
+    "rawDesc": "Your <color=yellow>attacks</color> ricochet to deal {0} <color=yellow>Fire damage</color> to a nearby enemy. For each nearby enemy engulfed in flames, this Memory's <color=yellow>damage</color> and <color=yellow>healing</color> are increased by {1} and its <color=yellow>cooldown</color> is reduced by {2}. Your Fire damage over time is increased by {3}.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.5,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "8%<sprite=5>",
+        "format": "P0",
+        "raw": "ampPerBurning",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "8%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "skillHastePerBurning",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "statBonus.fireEffectAmpFlat",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Fire",
+      "Attack"
+    ],
+    "image": "Gem_L_Embertail.PNG",
+    "lore": "Master of Dreams ...\n\nPlease revive ...\n\n...\n\n... please ...\n\n...\n\n... erase ...\n\n...\n\nThat would be enough.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_HeartOfGold": {
+    "name": "Heart of Gold",
+    "description": "<color=yellow>Casting</color> this Memory consumes 3% of your Gold to <color=yellow>empower</color> the cast. <color=yellow>Damage</color> and <color=yellow>healing</color> from the <color=yellow>empowered cast</color> increase by 12%<sprite=5> for every 100 Gold you have.\n",
+    "rawDesc": "<color=yellow>Casting</color> this Memory consumes {0} of your Gold to <color=yellow>empower</color> the cast. <color=yellow>Damage</color> and <color=yellow>healing</color> from the <color=yellow>empowered cast</color> increase by {1} for every 100 Gold you have.\n",
+    "rawDescVars": [
+      {
+        "rendered": "3%",
+        "format": "P0",
+        "raw": "spentGoldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "12%<sprite=5>",
+        "format": "P0",
+        "raw": "ampPerHundredGold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.06,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_L_HeartOfGold.png",
+    "lore": null,
+    "achievementKey": "ACH_MIDAS_HIMSELF",
+    "achievementName": "Midas Incarnate",
+    "achievementDescription": "Possess 6,000 Gold."
+  },
+  "Gem_L_MetalCrystal": {
+    "name": "Metallic Crystal",
+    "description": "The parts exposed to light glow with surreal colors.",
+    "rawDesc": "The parts exposed to light glow with surreal colors.",
+    "rawDescVars": [],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_MetalCrystal.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Paranoia": {
+    "name": "Essence of Paranoia",
+    "description": "When you take any <color=yellow>damage</color>, this Memory gains 150<sprite=5> <color=yellow>Memory Haste</color> for 6 seconds, reducing its <color=yellow>cooldown</color> by 60%<sprite=5>, but it is <color=yellow>automatically cast</color> on nearby enemies.",
+    "rawDesc": "When you take any <color=yellow>damage</color>, this Memory gains {0} <color=yellow>Memory Haste</color> for {1} seconds, reducing its <color=yellow>cooldown</color> by {2}, but it is <color=yellow>automatically cast</color> on nearby enemies.",
+    "rawDescVars": [
+      {
+        "rendered": "150<sprite=5>",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 75.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "6",
+        "format": "#,##0",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "60%<sprite=5>",
+        "format": "P0",
+        "raw": "reducedRatio",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Paranoia.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Perfect": {
+    "name": "Perfection",
+    "description": "Increases Attack Damage by 7<sprite=5>, Ability Power by 7<sprite=5>, Maximum Health by 35<sprite=5>, Attack Speed by 10%<sprite=5>, Critical Strike Chance by 6%<sprite=5>, and Memory Haste by 10<sprite=5>.",
+    "rawDesc": "Increases Attack Damage by {0}, Ability Power by {1}, Maximum Health by {2}, Attack Speed by {3}, Critical Strike Chance by {4}, and Memory Haste by {5}.",
+    "rawDescVars": [
+      {
+        "rendered": "7<sprite=5>",
+        "format": "#,##0",
+        "raw": "adAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "7<sprite=5>",
+        "format": "#,##0",
+        "raw": "apAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "35<sprite=5>",
+        "format": "#,##0",
+        "raw": "healthAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 17.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "attackSpeedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "6%<sprite=5>",
+        "format": "P0",
+        "raw": "criticalChanceAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "10<sprite=5>",
+        "format": "#,##0",
+        "raw": "skillHasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Perfect.PNG",
+    "lore": "Others once worshipped me as a god.\nYes, there was a time I truly believed I was omnipotent here.\n\nI was reunited with the family I missed so dearly,\nand everything I had imagined or dreamed came so easily.\n\nIt was perfect...\nNo, I only believed it was perfect.\n\nA dream, in the end, is still just a dream.\nMy omnipotence was, in truth, no different from helplessness.\n\nReality is not a realm of inevitability.\nThis place... is nothing but an illusion.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_PureWhite": {
+    "name": "Pure White",
+    "description": "Every 10 seconds, the <color=yellow>cast</color> of this Memory is <color=yellow>empowered</color>. The <color=yellow>empowered cast</color> fires 3 <color=yellow>projectiles</color>, dealing <color=yellow>Light damage</color> equal to 20%<sprite=5> of the initial <color=yellow>damage</color> dealt to each enemy. The number of shots increases by the number of <color=yellow>Light stacks</color> on each target.",
+    "rawDesc": "Every {0} seconds, the <color=yellow>cast</color> of this Memory is <color=yellow>empowered</color>. The <color=yellow>empowered cast</color> fires {1} <color=yellow>projectiles</color>, dealing <color=yellow>Light damage</color> equal to {2} of the initial <color=yellow>damage</color> dealt to each enemy. The number of shots increases by the number of <color=yellow>Light stacks</color> on each target.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "minProjectiles",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "damageMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_L_PureWhite.PNG",
+    "lore": "People who have experienced \"Molting\" all describe their dreamscapes in unique ways.\n\nSome witnessed endless tables piled with meat on silverware, others encountered long-lost relatives, and some found themselves in gardens filled with mood-lifting teas and fragrant roses.\n\nYet no one has ever truly eaten their fill of that dream food or brought their missing loved ones back to reality.\n\nOur bodies stay firmly in the waking world. Dreams are just brief visits our minds make to the other side. We always wake with empty hands.\n\nThat's when the Lucid Sect stumbled onto something incredible.\n\nWe can now enter dreams ourselves—in the flesh.",
+    "achievementKey": "ACH_EMPTY_CANVAS",
+    "achievementName": "Empty Canvas",
+    "achievementDescription": "Enter the Pure White Dream 2 times in total."
+  },
+  "Gem_L_SolarEye": {
+    "name": "Eye of the Sun",
+    "description": "Every 20 seconds, this Memory's <color=yellow>cast</color> is <color=yellow>empowered</color>, raining <color=yellow>Solar Light</color> on all nearby enemies who are <color=yellow>burning</color>. <color=yellow>Solar Light</color> deals <sprite=1><color=#16D7FF>360%</color><sprite=5> <color=yellow>Fire damage</color> over 1.5 seconds and increases <color=yellow>Burn</color> stacks by 9<sprite=5>. Increases your Fire damage over time by 100%.",
+    "rawDesc": "Every {0} seconds, this Memory's <color=yellow>cast</color> is <color=yellow>empowered</color>, raining <color=yellow>Solar Light</color> on all nearby enemies who are <color=yellow>burning</color>. <color=yellow>Solar Light</color> deals {1} <color=yellow>Fire damage</color> over {2} seconds and increases <color=yellow>Burn</color> stacks by {3}. Increases your Fire damage over time by {4}.",
+    "rawDescVars": [
+      {
+        "rendered": "20",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>360%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "interval * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "9<sprite=5>",
+        "format": "#,##0",
+        "raw": "calTotalStack",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "statBonus.fireEffectAmpFlat",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_L_SolarEye.png",
+    "lore": null,
+    "achievementKey": "ACH_PRAISE_THE_SUN",
+    "achievementName": "Praise the Sun!",
+    "achievementDescription": "Apply a total of 3,000 Fire stacks to enemies."
+  },
+  "Gem_L_SuppressedArcanum": {
+    "name": "Suppressed Arcanum",
+    "description": "<color=yellow>Casting</color> this Memory sacrifices 5% of your current Health to create a <color=yellow>Golden Explosion</color>. Enemies caught in the <color=yellow>explosion</color> take <sprite=1><color=#16D7FF>240%</color><sprite=5> <color=yellow>Light damage</color>, while allies receive a <color=yellow>Barrier</color> of <sprite=1><color=#16D7FF>61%</color><sprite=5> that lasts 2.5 seconds. If your Health is below 60%, the <color=yellow>Barrier amount</color> of this Memory increases by 50%.",
+    "rawDesc": "<color=yellow>Casting</color> this Memory sacrifices {0} of your current Health to create a <color=yellow>Golden Explosion</color>. Enemies caught in the <color=yellow>explosion</color> take {1} <color=yellow>Light damage</color>, while allies receive a <color=yellow>Barrier</color> of {2} that lasts {3} seconds. If your Health is below {4}, the <color=yellow>Barrier amount</color> of this Memory increases by {5}.",
+    "rawDescVars": [
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "currentHpSacrificeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>240%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.2,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>61%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.35,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "60%",
+        "format": "P0",
+        "raw": "hpThresholdRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "shieldAmpOnLowHp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Light",
+      "Shield"
+    ],
+    "image": "Gem_L_SuppressedArcanum.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Accuracy": {
+    "name": "Essence of Accuracy",
+    "description": "When this Memory deals <color=yellow>damage</color> to a distant enemy, it fires an <color=yellow>additional projectile</color> that deals 50%<sprite=5> <color=yellow>damage</color>. The <color=yellow>damage</color> dealt by the <color=yellow>projectile</color> shares the elemental type with the original damage.",
+    "rawDesc": "When this Memory deals <color=yellow>damage</color> to a distant enemy, it fires an <color=yellow>additional projectile</color> that deals {0} <color=yellow>damage</color>. The <color=yellow>damage</color> dealt by the <color=yellow>projectile</color> shares the elemental type with the original damage.",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "damageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Accuracy.PNG",
+    "lore": null,
+    "achievementKey": "ACH_SHOOT_FOR_THE_MOON",
+    "achievementName": "Shoot for the Moon",
+    "achievementDescription": "Land 80 finishing blows on enemies from an extreme distance."
+  },
+  "Gem_R_Adventure": {
+    "name": "Essence of Adventure",
+    "description": "Whenever you <color=yellow>move</color> to a <color=yellow>new place</color>, <color=yellow>increase</color> the <color=yellow>quality</color> of another <color=yellow>Essence</color> equipped to this Memory by +10% and gain 19<sprite=5> Gold.",
+    "rawDesc": "Whenever you <color=yellow>move</color> to a <color=yellow>new place</color>, <color=yellow>increase</color> the <color=yellow>quality</color> of another <color=yellow>Essence</color> equipped to this Memory by +{0} and gain {1} Gold.",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "upgradeGemAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "19<sprite=5>",
+        "format": "#,##0",
+        "raw": "goldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0025
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Adventure.PNG",
+    "lore": null,
+    "achievementKey": "ACH_NOVICE_TREASURE_HUNTER",
+    "achievementName": "Novice Treasure Hunter",
+    "achievementDescription": "Open a treasure chest for the first time."
+  },
+  "Gem_R_Blade": {
+    "name": "Essence of the Blade",
+    "description": "Each time this Memory <color=yellow>hits</color> an enemy, it summons blades that lacerate the target for <sprite=2><color=#FF8A2D>58%</color><sprite=5> damage 3<sprite=5> times. Can only trigger once every 2 seconds for each enemy.",
+    "rawDesc": "Each time this Memory <color=yellow>hits</color> an enemy, it summons blades that lacerate the target for {0} damage {1} times. Can only trigger once every {2} seconds for each enemy.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>58%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.55,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0005
+        }
+      },
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0",
+        "raw": "baseCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "perEnemyCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Blade.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Bleak": {
+    "name": "Essence of Bleakness",
+    "description": "This Memory deals 50%<sprite=5> increased damage to enemies affected by <color=yellow>Cold, <color=yellow>slow</color>, <color=yellow>root</color>, or <color=yellow>stun</color>.",
+    "rawDesc": "This Memory deals {0} increased damage to enemies affected by <color=yellow>Cold, <color=yellow>slow</color>, <color=yellow>root</color>, or <color=yellow>stun</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold"
+    ],
+    "image": "Gem_R_Bleak.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Blood": {
+    "name": "Essence of Blood Drops",
+    "description": "When Health falls below 40%, <color=yellow>sacrifice</color> the <color=yellow>quality</color> of this <color=yellow>Essence</color> by 80% to <color=yellow>restore</color> 40% of your <color=yellow>Maximum Health</color>. Can only trigger once every 4 seconds.",
+    "rawDesc": "When Health falls below {0}, <color=yellow>sacrifice</color> the <color=yellow>quality</color> of this <color=yellow>Essence</color> by {1} to <color=yellow>restore</color> {2} of your <color=yellow>Maximum Health</color>. Can only trigger once every {3} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "activateHealthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "#,##0'%'",
+        "raw": "sacrificedQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 80.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "healMaxHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Blood.png",
+    "lore": null,
+    "achievementKey": "ACH_KYAAAAAA",
+    "achievementName": "AAAAAAAHH!!",
+    "achievementDescription": "Survive a single hit that deals 70% or more of your Maximum Health while you have no Barrier."
+  },
+  "Gem_R_Celestial": {
+    "name": "Essence of the Celestial",
+    "description": "Every 10 seconds, this Memory's <color=yellow>cast</color> is <color=yellow>empowered</color>. When the <color=yellow>empowered cast</color> hits an enemy for the first time, it drops 4 meteors that deal <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>Light damage</color> each.",
+    "rawDesc": "Every {0} seconds, this Memory's <color=yellow>cast</color> is <color=yellow>empowered</color>. When the <color=yellow>empowered cast</color> hits an enemy for the first time, it drops {1} meteors that deal {2} <color=yellow>Light damage</color> each.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "stars",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "starDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.65,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_R_Celestial.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Composure": {
+    "name": "Essence of Composure",
+    "description": "Casting this Memory increases your <color=yellow>Critical Strike Chance</color> by 20%<sprite=5> for 5 seconds. This effect ends early if you take damage from enemies.",
+    "rawDesc": "Casting this Memory increases your <color=yellow>Critical Strike Chance</color> by {0} for {1} seconds. This effect ends early if you take damage from enemies.",
+    "rawDescVars": [
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "critBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Composure.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Contempt": {
+    "name": "Essence of Contempt",
+    "description": "This Memory deals more damage as the target's Health decreases, up to a 50%<sprite=5> <color=yellow>increase</color> when their Health is at 20%.",
+    "rawDesc": "This Memory deals more damage as the target's Health decreases, up to a {0} <color=yellow>increase</color> when their Health is at {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "amp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "maxAmpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Contempt.png",
+    "lore": "Day 4 in The Rapids.\n\nI finally have a moment to catch my breath and write again. My whole body still aches, and my hands won't stop shaking, but I have to get this down.\n\nA few days ago, with help from the Lucid Sect, I managed to enter this world called The Rapids. To my surprise, the forest was full of mystery and wonder—sunlight danced between the leaves, and I felt for a brief moment as if I'd stepped into a fairytale.\n\nBut it didn't take long to realize that this peacefulness was only a fragile illusion. By afternoon, the fog began to settle, and beyond it, we caught sight of something watching us from the mist.\n\nEven now, my hands tremble as I remember. There was a towering, grotesque creature with smoldering red eyes, its jaw twitching in an unnatural rhythm. In the blink of an eye, it was right in front of us.\n\nEverything after that is a blur. I remember running for my life, my lungs about to burst, the screams of my companions, and the awful sound of flesh being torn apart.\n\n\nI think I'm safe, for now, but I'll never forget the contempt in its eyes as it tore people apart with those long, cruel claws.\n\n- A.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Dusk": {
+    "name": "Essence of Dusk",
+    "description": "Casting this Memory fires 2 <color=yellow>Dusk shards</color> that deal <sprite=2><color=#FF8A2D>30%</color><sprite=5> <color=yellow>Dark damage</color> each time you <color=yellow>attack</color> an enemy for 5 seconds.",
+    "rawDesc": "Casting this Memory fires {0} <color=yellow>Dusk shards</color> that deal {1} <color=yellow>Dark damage</color> each time you <color=yellow>attack</color> an enemy for {2} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "shootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>30%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.15,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_R_Dusk.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Flow": {
+    "name": "Essence of Flow",
+    "description": "Dealing <color=yellow>Light damage</color> with any Memory reduces this Memory's <color=yellow>cooldown</color> by 6%<sprite=5>. For Ultimate abilities, only 40% of the effect is applied. The <color=yellow>Cooldown Reduction</color> effect for this Memory also applies to equipped <color=yellow>Essences</color>.",
+    "rawDesc": "Dealing <color=yellow>Light damage</color> with any Memory reduces this Memory's <color=yellow>cooldown</color> by {0}. For Ultimate abilities, only {1} of the effect is applied. The <color=yellow>Cooldown Reduction</color> effect for this Memory also applies to equipped <color=yellow>Essences</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "6%<sprite=5>",
+        "format": "P0",
+        "raw": "reduceRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "ultRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_R_Flow.PNG",
+    "lore": "What a strange and unfamiliar truth this is. What you have shown me is undeniable, the unmistakable touch of fate. Once, I governed the birth and death of stars, their majestic resonance echoing within me completely. Now, everything drifts out of reach, as distant as shadows in the mist.\n\nYet my will remains clear, bright as the morning star. I will draw the path of my own destiny, and I will break these chains.\n\nUntil my final breath, I will remain the one who leads the dance of creation and oblivion. For I am the true god of stars.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Frost": {
+    "name": "Essence of Frost",
+    "description": "When this Memory deals <color=yellow>Cold damage</color>, it deals <color=yellow>Cold damage</color> equal to 10%<sprite=5> of your <color=yellow>Maximum Health</color> and briefly <color=yellow>stuns</color> enemies. Can only trigger once every 5 seconds per enemy. Each time this triggers, permanently increase your <color=yellow>Maximum Health</color> by 1.",
+    "rawDesc": "When this Memory deals <color=yellow>Cold damage</color>, it deals <color=yellow>Cold damage</color> equal to {0} of your <color=yellow>Maximum Health</color> and briefly <color=yellow>stuns</color> enemies. Can only trigger once every {1} seconds per enemy. Each time this triggers, permanently increase your <color=yellow>Maximum Health</color> by {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "P0",
+        "raw": "damageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.07,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.004
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "perEnemyCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "gainedMaxHp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold",
+      "HardCC"
+    ],
+    "image": "Gem_R_Frost.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Glaciate": {
+    "name": "Essence of Freezing",
+    "description": "<color=yellow>Casting</color> this Memory releases a burst of cold that deals <sprite=1><color=#16D7FF>160%</color><sprite=5> <color=yellow>Cold damage</color> to enemies. The area of effect increases with quality.",
+    "rawDesc": "<color=yellow>Casting</color> this Memory releases a burst of cold that deals {0} <color=yellow>Cold damage</color> to enemies. The area of effect increases with quality.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.8,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold"
+    ],
+    "image": "Gem_R_Glaciate.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Insatiable": {
+    "name": "Essence of Voracity",
+    "description": "For 5 seconds after casting this Memory, <color=yellow>Attack Damage</color> is increased by 15%<sprite=5> and <color=yellow>restore</color> 6<sprite=5> Health per <color=yellow>attack</color>.",
+    "rawDesc": "For {0} seconds after casting this Memory, <color=yellow>Attack Damage</color> is increased by {1} and <color=yellow>restore</color> {2} Health per <color=yellow>attack</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "bonusAttackDamagePercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "6<sprite=5>",
+        "format": "#,##0",
+        "raw": "healAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.006
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal",
+      "Attack"
+    ],
+    "image": "Gem_R_Insatiable.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Momentum": {
+    "name": "Essence of Momentum",
+    "description": "Each time you <color=yellow>attack</color> an enemy, the <color=yellow>cooldown</color> of this Memory is <color=yellow>reduced</color> by 0.4<sprite=5> seconds.",
+    "rawDesc": "Each time you <color=yellow>attack</color> an enemy, the <color=yellow>cooldown</color> of this Memory is <color=yellow>reduced</color> by {0} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "0.4<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reductionAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.012
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Attack"
+    ],
+    "image": "Gem_R_Momentum.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_NightSky": {
+    "name": "Essence of the Starry Sky",
+    "description": "Each time this Memory <color=yellow>hits</color> an enemy, your <color=yellow>Attack Speed</color> increases by 10%<sprite=5> for 3 seconds, up to a maximum of 20%<sprite=5>. If it deals <color=yellow>Dark damage</color>, it can increase up to a maximum of 40%<sprite=5>. <color=yellow>Attacking</color> the enemy refreshes the duration of this effect.",
+    "rawDesc": "Each time this Memory <color=yellow>hits</color> an enemy, your <color=yellow>Attack Speed</color> increases by {0} for {1} seconds, up to a maximum of {2}. If it deals <color=yellow>Dark damage</color>, it can increase up to a maximum of {3}. <color=yellow>Attacking</color> the enemy refreshes the duration of this effect.",
+    "rawDescVars": [
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "perHitAtkSpd",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "maxAtkSpdNormal",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "maxAtkSpdDark",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_R_NightSky.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Obsidian": {
+    "name": "Essence of Obsidian",
+    "description": "<color=yellow>Casting</color> this Memory <color=yellow>empowers</color> your next attack within 5 seconds. The <color=yellow>empowered attack</color> deals <sprite=2><color=#FF8A2D>250%</color><sprite=5> <color=yellow>Dark Damage</color> to the target and reduces this Memory's <color=yellow>cooldown</color> by 1<sprite=5> seconds.",
+    "rawDesc": "<color=yellow>Casting</color> this Memory <color=yellow>empowers</color> your next attack within {0} seconds. The <color=yellow>empowered attack</color> deals {1} <color=yellow>Dark Damage</color> to the target and reduces this Memory's <color=yellow>cooldown</color> by {2} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.25,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reducedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_E_Obsidian.png",
+    "lore": null,
+    "achievementKey": "ACH_MINE_AND_CRAFT",
+    "achievementName": "Mine and Craft",
+    "achievementDescription": "Destroy 3 Pitch-Black Ore."
+  },
+  "Gem_R_Panic": {
+    "name": "Essence of Panic",
+    "description": "Taking any <color=yellow>damage</color> grants this Memory 30<sprite=5> <color=yellow>Memory Haste</color> and your <color=yellow>Movement Speed</color> increases by 20%<sprite=5> for 3 seconds.",
+    "rawDesc": "Taking any <color=yellow>damage</color> grants this Memory {0} <color=yellow>Memory Haste</color> and your <color=yellow>Movement Speed</color> increases by {1} for {2} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "30<sprite=5>",
+        "format": "#,##0",
+        "raw": "memoryHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.05,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Mobility"
+    ],
+    "image": "Gem_R_Panic.PNG",
+    "lore": null,
+    "achievementKey": "ACH_EVERYONE_LETS_NOT_PANIC",
+    "achievementName": "Keep Calm and Carry On",
+    "achievementDescription": "Defeat Heroic Bosses 8 times while your Health is below 25%."
+  },
+  "Gem_R_Rejuvenation": {
+    "name": "Essence of Rejuvenation",
+    "description": "Every 15 seconds, this Memory's <color=yellow>cast</color> becomes <color=yellow>empowered</color>. Within 1.5 seconds after casting the <color=yellow>empowered cast</color>, <color=yellow>restore</color> your <color=yellow>Health</color> for 10%<sprite=5> of the <color=yellow>damage</color> dealt.",
+    "rawDesc": "Every {0} seconds, this Memory's <color=yellow>cast</color> becomes <color=yellow>empowered</color>. Within {1} seconds after casting the <color=yellow>empowered cast</color>, <color=yellow>restore</color> your <color=yellow>Health</color> for {2} of the <color=yellow>damage</color> dealt.",
+    "rawDescVars": [
+      {
+        "rendered": "15",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.08,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Rejuvenation.PNG",
+    "lore": null,
+    "achievementKey": "ACH_LOYAL_CUSTOMER",
+    "achievementName": "Loyal Customer",
+    "achievementDescription": "Activate the Shrine of Guidance 15 times in a single adventure."
+  },
+  "Gem_R_Ricochet": {
+    "name": "Essence of Ricochet",
+    "description": "The <color=yellow>damage</color> or <color=yellow>healing</color> from this Memory has a 50%<sprite=5> chance to ricochet to another nearby target, dealing 90%<sprite=5> <color=yellow>damage</color> or <color=yellow>healing</color>. If it's <color=yellow>damage</color>, it shares the elemental type with the original damage.",
+    "rawDesc": "The <color=yellow>damage</color> or <color=yellow>healing</color> from this Memory has a {0} chance to ricochet to another nearby target, dealing {1} <color=yellow>damage</color> or <color=yellow>healing</color>. If it's <color=yellow>damage</color>, it shares the elemental type with the original damage.",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "ricochetChance",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "90%<sprite=5>",
+        "format": "P0",
+        "raw": "ricochetRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Ricochet.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Rigidity": {
+    "name": "Essence of Rigidity",
+    "description": "When this Memory <color=yellow>hits</color> an enemy, gain a <color=yellow>Barrier</color> of 9<sprite=5> that lasts for 2 seconds. If it deals <color=yellow>Cold damage</color>, this effect is increased by 80%.",
+    "rawDesc": "When this Memory <color=yellow>hits</color> an enemy, gain a <color=yellow>Barrier</color> of {0} that lasts for {1} seconds. If it deals <color=yellow>Cold damage</color>, this effect is increased by {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "9<sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "coldDamageMultiplier-1",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Shield"
+    ],
+    "image": "Gem_R_Rigidity.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Scorched": {
+    "name": "Essence of Scorch",
+    "description": "<color=yellow>Casting</color> this Memory fires 3<sprite=5> <color=yellow>Fireballs</color>, each dealing <sprite=1><color=#16D7FF>47%</color><sprite=5> <color=yellow>Fire damage</color> to nearby enemies.",
+    "rawDesc": "<color=yellow>Casting</color> this Memory fires {0} <color=yellow>Fireballs</color>, each dealing {1} <color=yellow>Fire damage</color> to nearby enemies.",
+    "rawDescVars": [
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>47%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.35,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0035
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Scorched.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Shock": {
+    "name": "Essence of Shock",
+    "description": "Every 4th <color=yellow>basic attack</color> becomes <color=yellow>empowered</color>, unleashing <color=yellow>Lightning</color> that bounces between enemies, dealing <sprite=1><color=#16D7FF>40%</color><sprite=5> <color=yellow>Light damage</color> up to 2 times. For every 20% <color=yellow>Critical Strike Chance</color>, the maximum number of hits increases by 1.",
+    "rawDesc": "Every 4th <color=yellow>basic attack</color> becomes <color=yellow>empowered</color>, unleashing <color=yellow>Lightning</color> that bounces between enemies, dealing {0} <color=yellow>Light damage</color> up to {1} times. For every {2} <color=yellow>Critical Strike Chance</color>, the maximum number of hits increases by 1.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>40%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "chainDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.2,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "baseHitCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "critChanceForAdditionalHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light",
+      "Attack"
+    ],
+    "image": "Gem_R_Shock.PNG",
+    "lore": null,
+    "achievementKey": "ACH_THOUSAND_THUNDERS",
+    "achievementName": "A Thousand Thunders",
+    "achievementDescription": "Land a total of 1,000 critical strikes."
+  },
+  "Gem_R_Snow": {
+    "name": "Essence of Snow",
+    "description": "Gain a Barrier of 40<sprite=5> that recharges if you avoid damage for 5 seconds. While the Barrier is active, periodically launch a snowball at a random nearby enemy, dealing <sprite=1><color=#16D7FF>80%</color><sprite=5> <color=yellow>Cold damage</color>. The larger your Barrier, the quicker it fires.",
+    "rawDesc": "Gain a Barrier of {0} that recharges if you avoid damage for {1} seconds. While the Barrier is active, periodically launch a snowball at a random nearby enemy, dealing {2} <color=yellow>Cold damage</color>. The larger your Barrier, the quicker it fires.",
+    "rawDescVars": [
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "rechargeTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>80%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.4,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold",
+      "Shield"
+    ],
+    "image": "Gem_R_Snow.PNG",
+    "lore": null,
+    "achievementKey": "ACH_SHIELD_BATTERY",
+    "achievementName": "Barrier Battery",
+    "achievementDescription": "Mitigate a total of 20,000 damage from enemies using Barriers."
+  },
+  "Gem_R_Spiral": {
+    "name": "Essence of the Vortex",
+    "description": "Periodically fires a Fireball at a random nearby enemy, dealing <sprite=1><color=#16D7FF>90%</color><sprite=5> <color=yellow>Fire damage</color>. The higher the quality, the quicker it fires.",
+    "rawDesc": "Periodically fires a Fireball at a random nearby enemy, dealing {0} <color=yellow>Fire damage</color>. The higher the quality, the quicker it fires.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.6,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Spiral.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Wealth": {
+    "name": "Essence of Wealth",
+    "description": "When an enemy damaged by this Memory is killed within 2 seconds, they drop 1.7<sprite=5> Gold. Gold is shared among all Travelers.",
+    "rawDesc": "When an enemy damaged by this Memory is killed within {0} seconds, they drop {1} Gold. Gold is shared among all Travelers.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "gracePeriod",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1.7<sprite=5>",
+        "format": "###,0.#",
+        "raw": "killGold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Wealth.PNG",
+    "lore": "You know gold holds a special meaning for \"us,\" don't you?\n\nAs imperfect beings, we sleep each night never knowing if we'll wake again. For \"us\" to endure, we need the perfection that gold presents.\n\nYet you still refuse to use it for yourself, even knowing all this?\nJonas, you truly are...",
+    "achievementKey": "ACH_SUSPICIOUSLY_WEALTHY_TRAVELER",
+    "achievementName": "Suspiciously Wealthy Traveler",
+    "achievementDescription": "Spend a total of 2,000 Gold."
+  },
+  "Gem_R_Wound": {
+    "name": "Essence of the Wound",
+    "description": "When this Memory deals damage to an enemy, it applies a <color=yellow>Mark</color>. Each <color=yellow>attack</color> on a <color=yellow>Marked</color> target deals <sprite=1><color=#16D7FF>44%</color><sprite=5> <color=yellow>damage</color>. After 3 attacks, the <color=yellow>Mark</color> explodes, dealing <sprite=1><color=#16D7FF>275%</color><sprite=5> <color=yellow>damage</color> to all nearby enemies.",
+    "rawDesc": "When this Memory deals damage to an enemy, it applies a <color=yellow>Mark</color>. Each <color=yellow>attack</color> on a <color=yellow>Marked</color> target deals {0} <color=yellow>damage</color>. After {1} attacks, the <color=yellow>Mark</color> explodes, dealing {2} <color=yellow>damage</color> to all nearby enemies.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>44%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "hitDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.25,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "explodeStage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>275%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "explodeDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.1,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.015
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Attack"
+    ],
+    "image": "Gem_R_Wound.PNG",
+    "lore": null,
+    "achievementKey": "ACH_THROUGH_TIME_AND_SPACE",
+    "achievementName": "Transcendent Speed",
+    "achievementDescription": "Reach 6 Attack Speed per second."
+  },
+  "Gem_U_EternalFlame": {
+    "name": "Eternal Flame",
+    "description": "Dealing <color=yellow>Fire damage</color> to an enemy with this Memory inflicts the <color=yellow>Eternal Flame</color> curse for 5 seconds. While under <color=yellow>Eternal Flame</color>, <color=yellow>any damage</color> you deal applies 1 <color=yellow>Burn</color> stack to the target.\nAll damage from this Memory is increased by 2.0%<sprite=5> for each <color=yellow>Burn</color> stack on that enemy.",
+    "rawDesc": "Dealing <color=yellow>Fire damage</color> to an enemy with this Memory inflicts the <color=yellow>Eternal Flame</color> curse for {0} seconds. While under <color=yellow>Eternal Flame</color>, <color=yellow>any damage</color> you deal applies 1 <color=yellow>Burn</color> stack to the target.\nAll damage from this Memory is increased by {1} for each <color=yellow>Burn</color> stack on that enemy.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "2.0%<sprite=5>",
+        "format": "#,##0.0%",
+        "raw": "ampPerFireStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.01,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_U_EternalFlame.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GlacialCore": {
+    "name": "Glacial Core",
+    "description": "Every 5 seconds, dealing <color=yellow>damage</color> with this Memory <color=yellow>restores</color> 3.6%<sprite=5> of your Maximum Health. If it is <color=yellow>Cold damage</color>, the effect increases by 100%.\n272%<sprite=5> of all <color=yellow>Health restored</color> is converted into <color=yellow>Cold damage</color>, firing <color=yellow>ice shards</color> at nearby enemies.",
+    "rawDesc": "Every {0} seconds, dealing <color=yellow>damage</color> with this Memory <color=yellow>restores</color> {1} of your Maximum Health. If it is <color=yellow>Cold damage</color>, the effect increases by {2}.\n{3} of all <color=yellow>Health restored</color> is converted into <color=yellow>Cold damage</color>, firing <color=yellow>ice shards</color> at nearby enemies.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3.6%<sprite=5>",
+        "format": "#,##0.#%",
+        "raw": "healMaxHealthRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "chillAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "272%<sprite=5>",
+        "format": "P0",
+        "raw": "healToDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.00089
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Cold",
+      "Heal"
+    ],
+    "image": "Gem_U_GlacialCore.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_SoulPrison": {
+    "name": "Soul Prison",
+    "description": "When you take <color=yellow>Fatal damage</color>, you ignore that damage and become <color=yellow>Invulnerable</color> for 3 seconds, then <color=yellow>destroy</color> this Essence. For every 1% of this Essence's <color=yellow>quality</color>, you <color=yellow>restore</color> 3 <color=yellow>Health</color>, and any excess healing is converted into a <color=yellow>Barrier</color>.",
+    "rawDesc": "When you take <color=yellow>Fatal damage</color>, you ignore that damage and become <color=yellow>Invulnerable</color> for {0} seconds, then <color=yellow>destroy</color> this Essence. For every 1% of this Essence's <color=yellow>quality</color>, you <color=yellow>restore</color> {1} <color=yellow>Health</color>, and any excess healing is converted into a <color=yellow>Barrier</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "invulTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "healPerQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_U_SoulPrison.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  }
+}

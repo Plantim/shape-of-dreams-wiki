@@ -1,0 +1,3757 @@
+﻿{
+  "Gem_C_CamillasGiftRuined": {
+    "name": "Dar Kamilli (zniszczony)",
+    "description": "Został zniszczony wskutek poważnych obrażeń.",
+    "rawDesc": "Został zniszczony wskutek poważnych obrażeń.",
+    "rawDescVars": [],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_CamillasGiftRuined.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Charcoal": {
+    "name": "Esencja Węgla Drzewnego",
+    "description": "Gdy to wspomnienie <color=yellow>Trafia</color> wroga, wystrzeliwuje odłamek węgla drzewnego, zadając <sprite=1><color=#16D7FF>60%</color><sprite=5> <color=yellow>Obrażeń</color>. Jeśli cel już jest <color=yellow>Podpalony</color>, zamiast tego zadanych zostaje <sprite=1><color=#16D7FF>100%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color>.",
+    "rawDesc": "Gdy to wspomnienie <color=yellow>Trafia</color> wroga, wystrzeliwuje odłamek węgla drzewnego, zadając {0} <color=yellow>Obrażeń</color>. Jeśli cel już jest <color=yellow>Podpalony</color>, zamiast tego zadanych zostaje {1} <color=yellow>Obrażeń od Ognia</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "normalDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.3,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "fireDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.5,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_C_Charcoal.png",
+    "lore": "Na polu bitwy żołnierze czasem połykali zwęglone bryłki, by oczyścić organizm z toksyn.\n\nW tych rozpaczliwych momentach, \ndało się czuć smak przetrwania..",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Confidence": {
+    "name": "Esencja Pewności Siebie",
+    "description": "To wspomnienie zwiększa liczbę obrażeń zadawanych pobliskim wrogom o 40%<sprite=5>.",
+    "rawDesc": "To wspomnienie zwiększa liczbę obrażeń zadawanych pobliskim wrogom o {0}.",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Melee"
+    ],
+    "image": "Gem_C_Confidence.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Efficiency": {
+    "name": "Esencja Wydajności",
+    "description": "To wspomnienie zyskuje <color=yellow>Przyspieszenie Wspomnienia</color> o wartości 36<sprite=5>, a jego <color=yellow>Czas Odnawiania</color> zostaje skrócony o 26%<sprite=5>.",
+    "rawDesc": "To wspomnienie zyskuje <color=yellow>Przyspieszenie Wspomnienia</color> o wartości {0}, a jego <color=yellow>Czas Odnawiania</color> zostaje skrócony o {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "36<sprite=5>",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 18.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "26%<sprite=5>",
+        "format": "P0",
+        "raw": "reducedRatio",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Efficiency.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Guidance": {
+    "name": "Esencja Przewodnictwa",
+    "description": "<color=yellow>Stopień Leczenia</color> tego wspomnienia zostaje zwiększony o 40%<sprite=5>. Nadwyżka leczenia tego wspomnienia wynosi 30% i konwertowana jest na <color=yellow>Tarczę</color>, która utrzymuje się przez 2 sek.",
+    "rawDesc": "<color=yellow>Stopień Leczenia</color> tego wspomnienia zostaje zwiększony o {0}. Nadwyżka leczenia tego wspomnienia wynosi {1} i konwertowana jest na <color=yellow>Tarczę</color>, która utrzymuje się przez {2} sek.",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "healAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "shieldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "Gem_C_Guidance.PNG",
+    "lore": "Kto decyduje o istocie życia?\nJesteśmy bytami zrodzonymi w wyobraźni kogoś nieznanego,\nale to nie jest powód do negowania naszej rzeczywistości.\n\nObdarzyłeś nas życiem,\na mimo to traktujesz nas jedynie jak iluzję.\n\nJeśli tak, o Stwórco, \nto ja sam stanę się przewodnikiem dla nas wszystkich.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Lethality": {
+    "name": "Esencja Śmiertelności",
+    "description": "Wrogom, których zdrowie wynosi co najmniej 70%, to wspomnienie zadaje 60%<sprite=5> więcej obrażeń.",
+    "rawDesc": "Wrogom, których zdrowie wynosi co najmniej {0}, to wspomnienie zadaje {1} więcej obrażeń.",
+    "rawDescVars": [
+      {
+        "rendered": "70%",
+        "format": "P0",
+        "raw": "healthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.7,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "60%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Lethality.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Love": {
+    "name": "Esencja Miłości",
+    "description": "Gdy to wspomnienie <color=yellow>Odzyskuje</color> <color=yellow>Zdrowie</color> lub przyznaje <color=yellow>Tarczę</color> sojusznikowi, jego <color=yellow>Szybkość Ruchu</color> i <color=yellow>Szybkość Ataku</color> zwiększa się o 16%<sprite=5> na 2 sek. Efekt jest zmniejszony o 50%, gdy jest zastosowany względem siebie.",
+    "rawDesc": "Gdy to wspomnienie <color=yellow>Odzyskuje</color> <color=yellow>Zdrowie</color> lub przyznaje <color=yellow>Tarczę</color> sojusznikowi, jego <color=yellow>Szybkość Ruchu</color> i <color=yellow>Szybkość Ataku</color> zwiększa się o {0} na {1} sek. Efekt jest zmniejszony o {2}, gdy jest zastosowany względem siebie.",
+    "rawDescVars": [
+      {
+        "rendered": "16%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "bonusAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "selfReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Heal",
+      "Shield",
+      "Attack",
+      "Mobility"
+    ],
+    "image": "Gem_C_Love.PNG",
+    "lore": "To tylko iluzja...?\n...\n\nCzy to wszystko naprawdę jest tylko pustą fantazją...\n\n...\n...\nNie.\n\nMoje światło, moja miłość, Kiara.\nWieczna przewodniczko mojej duszy.\nTo niemożliwe.\nRzeczywistość bez ciebie nie ma żadnego znaczenia.\n\nKto śmie rozdzielać iluzję od rzeczywistości?\nTa granica...\nOd dziś przestaje istnieć.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Quicksilver": {
+    "name": "Esencja Rtęci",
+    "description": "Po <color=yellow>Użyciu</color> tego wspomnienia lub zadaniu nim <color=yellow>Obrażeń od Ognia</color>, <color=yellow>Szybkość Ruchu</color> zwiększy się o 30%<sprite=5> i przez 2.5 sek. będzie wracać do normy.",
+    "rawDesc": "Po <color=yellow>Użyciu</color> tego wspomnienia lub zadaniu nim <color=yellow>Obrażeń od Ognia</color>, <color=yellow>Szybkość Ruchu</color> zwiększy się o {0} i przez {1} sek. będzie wracać do normy.",
+    "rawDescVars": [
+      {
+        "rendered": "30%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Fire",
+      "Mobility"
+    ],
+    "image": "Gem_C_Quicksilver.png",
+    "lore": "Trzeba pędzić!",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Regeneration": {
+    "name": "Esencja Regeneracji",
+    "description": "Dzięki <color=yellow>Użyciu</color> tego wspomnienia <color=yellow>w Bitwie</color>, w ciągu 7 sek. <color=yellow>Odzyskujesz</color> zdrowie o wartość 41<sprite=5>.",
+    "rawDesc": "Dzięki <color=yellow>Użyciu</color> tego wspomnienia <color=yellow>w Bitwie</color>, w ciągu {0} sek. <color=yellow>Odzyskujesz</color> zdrowie o wartość {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "7",
+        "format": "#,##0.#",
+        "raw": "totalTicks*tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "41<sprite=5>",
+        "format": "#,##0",
+        "raw": "healPerTick * totalTicks",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_C_Regeneration.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Responsibility": {
+    "name": "Esencja Odpowiedzialności",
+    "description": "Co 10 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. Po 1.2 sek. <color=yellow>Wzmocnionego Użycia</color> <sprite=2><color=#FF8A2D>400%</color><sprite=5> <color=yellow>Obrażeń</color> dzielonych jest pomiędzy wszystkich trafionych wrogów.",
+    "rawDesc": "Co {0} sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. Po {1} sek. <color=yellow>Wzmocnionego Użycia</color> {2} <color=yellow>Obrażeń</color> dzielonych jest pomiędzy wszystkich trafionych wrogów.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "1.2",
+        "format": "#,##0.#",
+        "raw": "initDelay",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>400%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "totalDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Responsibility.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Sharp": {
+    "name": "Esencja Ostrości",
+    "description": "Podczas <color=yellow>Użycia</color> tego wspomnienia zadajesz <sprite=1><color=#16D7FF>90%</color><sprite=5> <color=yellow>Obrażeń</color> losowemu wrogowi, wystrzeliwując strzały x5.",
+    "rawDesc": "Podczas <color=yellow>Użycia</color> tego wspomnienia zadajesz {0} <color=yellow>Obrażeń</color> losowemu wrogowi, wystrzeliwując strzały x{1}.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "arrowDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.45,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "shotArrows",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Sharp.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Shatter": {
+    "name": "Esencja Rozbicia",
+    "description": "Co 10 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. <color=yellow>Wzmocnione Użycie</color> zwiększa liczbę obrażeń zadawanych wrogom o 40%<sprite=5>.W przypadku <color=yellow>Obrażeń od Światła</color> zwiększają się one o 72%<sprite=5>.",
+    "rawDesc": "Co {0} sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. <color=yellow>Wzmocnione Użycie</color> zwiększa liczbę obrażeń zadawanych wrogom o {1}.W przypadku <color=yellow>Obrażeń od Światła</color> zwiększają się one o {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "72%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmpLight",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.36,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_C_Shatter.PNG",
+    "lore": "Urodziłem się jako kolekcjoner opowieści, więc po prostu je zbieram. Moim zadaniem i przeznaczeniem jest podążać wyznaczoną ścieżką od początku do końca, bez słowa sprzeciwu. Tak jak mityczny Syzyf pokochał swój głaz, tak i ja zaakceptowałem swój los.\n\nAle ty... zawsze byłeś inny. Ty odmawiasz podążania wyznaczoną ścieżką swojej opowieści. Za każdym razem, gdy słyszę twój głos mówiący:\n„To, że tak się urodziliśmy, nie znaczy, że musimy tak żyć”, czuję, jak w mojej masywnej księdze opowieści pojawia się drobne „pęknięcie”.\n\nNie zrozum mnie źle. To pęknięcie nie jest nieprzyjemne, wręcz przeciwnie – jest niesamowicie fascynujące. Wśród niezliczonych historii zmierzających do z góry ustalonego końca, tylko twojej nie potrafię przewidzieć – twoja opowieść jest jedyną, której kolejna strona jest dla mnie tajemnicą.\n\nCzekam z niecierpliwością na to, do jakiego końca doprowadzi cię twój uparty sprzeciw... Na ostatnią stronę, która stanie się moim najcenniejszym eksponatem.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Sulfur": {
+    "name": "Esencja Siarki",
+    "description": "Wszystkie <color=yellow>Obrażenia</color> zadawane przez to wspomnienie są zwiększane o 15%<sprite=5> i zamieniane na <color=yellow>Obrażenia od Ognia</color>. Moja obrażenia od ognia z czasem zwiększają się o 50%<sprite=5>.",
+    "rawDesc": "Wszystkie <color=yellow>Obrażenia</color> zadawane przez to wspomnienie są zwiększane o {0} i zamieniane na <color=yellow>Obrażenia od Ognia</color>. Moja obrażenia od ognia z czasem zwiększają się o {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "P0",
+        "raw": "ampAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.075,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "fireAmpBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_C_Sulfur.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Talc": {
+    "name": "Esencja Talku",
+    "description": "Co 10 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. Pierwsza liczba obrażeń zadanych indywidualnemu przeciwnikowi poprzez <color=yellow>Wzmocnione Użycie</color> zwiększa się o <sprite=1><color=#16D7FF>400%</color><sprite=5>.",
+    "rawDesc": "Co {0} sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. Pierwsza liczba obrażeń zadanych indywidualnemu przeciwnikowi poprzez <color=yellow>Wzmocnione Użycie</color> zwiększa się o {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "addedDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Talc.PNG",
+    "lore": "Skondensowana esencja niedojrzałych łupin kasztana i ziarnistość kredowego pyłu. Ci, którzy przyjmą jej idee, mogą być w stanie wydobyć z niej złą moc, ale każda sytuacja dająca okazję do jej wykorzystania, z pewnością będzie niefortunna.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Vengeance": {
+    "name": "Esencja Zemsty",
+    "description": "Gdy otrzymasz jakiekolwiek obrażenia, wystrzeliwujesz w pobliskich wrogów Ostrza x2 zadające <sprite=1><color=#16D7FF>102%</color><sprite=5> <color=yellow>Obrażeń</color>. Po otrzymaniu obrażeń, <color=yellow>Liczba Obrażeń</color> i <color=yellow>Stopień Leczenia</color> tego wspomnienia wzrastają na 5 sek. o 34%<sprite=5>.",
+    "rawDesc": "Gdy otrzymasz jakiekolwiek obrażenia, wystrzeliwujesz w pobliskich wrogów Ostrza x{0} zadające {1} <color=yellow>Obrażeń</color>. Po otrzymaniu obrażeń, <color=yellow>Liczba Obrażeń</color> i <color=yellow>Stopień Leczenia</color> tego wspomnienia wzrastają na {2} sek. o {3}.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "shootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>102%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.6,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.007
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "34%<sprite=5>",
+        "format": "P0",
+        "raw": "ampAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.007
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_C_Vengeance.png",
+    "lore": null,
+    "achievementKey": "ACH_TASTE_OF_THEIR_OWN_MEDICINE",
+    "achievementName": "Zasłużona kara",
+    "achievementDescription": "Eliminuj demona lasu, drapiąc go pazurami."
+  },
+  "Gem_C_Void": {
+    "name": "Esencja Pustki",
+    "description": "Po zainicjowaniu tego wspomnienia, Twój następny <color=yellow>Atak</color> w ciągu 4 sek. przyjmie formę eksplozji, zadającej <sprite=2><color=#FF8A2D>150%</color><sprite=5> <color=yellow>Obrażeń od Ciemności</color> celowi oraz pobliskim wrogom.",
+    "rawDesc": "Po zainicjowaniu tego wspomnienia, Twój następny <color=yellow>Atak</color> w ciągu {0} sek. przyjmie formę eksplozji, zadającej {1} <color=yellow>Obrażeń od Ciemności</color> celowi oraz pobliskim wrogom.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.75,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Dark"
+    ],
+    "image": "Gem_C_Void.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Wind": {
+    "name": "Esencja Wiatru",
+    "description": "Po użyciu tego wspomnienia, przez 5 sek. <color=yellow>Szybkość Ataku</color> wzrasta o 33%<sprite=5>.",
+    "rawDesc": "Po użyciu tego wspomnienia, przez {0} sek. <color=yellow>Szybkość Ataku</color> wzrasta o {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "33%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 22.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Wind.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Aftershock": {
+    "name": "Esencja Wstrząsu",
+    "description": "Po <color=yellow>Użyciu</color> tego wspomnienia, po chwili wystrzelona zostaje <color=yellow>Fala Uderzeniowa</color>, która zadaje <sprite=1><color=#16D7FF>200%</color><sprite=5><color=yellow>Obrażeń od Zimna</color> pobliskim wrogom i <color=yellow>Ogłusza</color> ich na 0.5 sek.\nZa każdego trafionego <color=yellow>Falą Uderzeniową</color> wroga otrzymujesz <color=yellow>Zbroję</color> x4<sprite=5>, maksymalnie do 22<sprite=5> <color=yellow>Zbroi</color>. Trafienie <color=yellow>Bossa</color> zapewnia <color=yellow>Zbroję</color> absolutną. Zbroja ta utrzymuje się do następnego <color=yellow>Użycia</color> tego wspomnienia.",
+    "rawDesc": "Po <color=yellow>Użyciu</color> tego wspomnienia, po chwili wystrzelona zostaje <color=yellow>Fala Uderzeniowa</color>, która zadaje {0}<color=yellow>Obrażeń od Zimna</color> pobliskim wrogom i <color=yellow>Ogłusza</color> ich na {1} sek.\nZa każdego trafionego <color=yellow>Falą Uderzeniową</color> wroga otrzymujesz <color=yellow>Zbroję</color> x{2}, maksymalnie do {3} <color=yellow>Zbroi</color>. Trafienie <color=yellow>Bossa</color> zapewnia <color=yellow>Zbroję</color> absolutną. Zbroja ta utrzymuje się do następnego <color=yellow>Użycia</color> tego wspomnienia.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "22<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorPerHit*maxHitCount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Aftershock.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Blossom": {
+    "name": "Esencja Kwitnienia",
+    "description": "Wszystkie <color=yellow>Obrażenia</color> zadawane wrogom przez to wspomnienie są zmniejszone o 80%. Zadając <color=yellow>Obrażenia</color> tym wspomnieniem, losowy pobliski sojusznik <color=yellow>Odzyskuje</color> <color=yellow>Zdrowie</color> o wartość 22%<sprite=5> <color=yellow>Liczby Obrażeń</color>.",
+    "rawDesc": "Wszystkie <color=yellow>Obrażenia</color> zadawane wrogom przez to wspomnienie są zmniejszone o {0}. Zadając <color=yellow>Obrażenia</color> tym wspomnieniem, losowy pobliski sojusznik <color=yellow>Odzyskuje</color> <color=yellow>Zdrowie</color> o wartość {1} <color=yellow>Liczby Obrażeń</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "22%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Blossom.PNG",
+    "lore": null,
+    "achievementKey": "ACH_SUPPORT_MAIN",
+    "achievementName": "Mistrz Wsparcia",
+    "achievementDescription": "Posiadaj jednocześnie aktywne wspomnienia z efektem leczenia x4."
+  },
+  "Gem_E_Clemency": {
+    "name": "Esencja Łaski",
+    "description": "<color=yellow>Odzyskujesz</color> <color=yellow>Swoje</color> <color=yellow>Zdrowie</color> o wartość 4%<sprite=5> <color=yellow>Obrażeń</color> zadanych przez to wspomnienie.",
+    "rawDesc": "<color=yellow>Odzyskujesz</color> <color=yellow>Swoje</color> <color=yellow>Zdrowie</color> o wartość {0} <color=yellow>Obrażeń</color> zadanych przez to wspomnienie.",
+    "rawDescVars": [
+      {
+        "rendered": "4%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Clemency.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Crimson": {
+    "name": "Esencja Karmazynowa",
+    "description": "Co czwarty <color=yellow>Atak Podstawowy</color> jest <color=yellow>Wzmocniony</color>, powodując <color=yellow>Burgundową Eksplozję</color>, która zadaje przeciwnikom <sprite=2><color=#FF8A2D>100%</color><sprite=5> <color=yellow>Obrażeń od Ciemności</color>.\nZasięg eksplozji zwiększa się proporcjonalnie do <color=yellow>Szansy na Trafienie Krytyczne</color>. Za każdego wroga trafionego eksplozją <color=yellow>Odzyskujesz</color> <sprite=2><color=#FF8A2D>22%</color><sprite=5> swojego zdrowia, a jeśli celem jest <color=yellow>Boss</color>, poziom odzyskanego zdrowia zwiększa się o 100%.",
+    "rawDesc": "Co czwarty <color=yellow>Atak Podstawowy</color> jest <color=yellow>Wzmocniony</color>, powodując <color=yellow>Burgundową Eksplozję</color>, która zadaje przeciwnikom {0} <color=yellow>Obrażeń od Ciemności</color>.\nZasięg eksplozji zwiększa się proporcjonalnie do <color=yellow>Szansy na Trafienie Krytyczne</color>. Za każdego wroga trafionego eksplozją <color=yellow>Odzyskujesz</color> {1} swojego zdrowia, a jeśli celem jest <color=yellow>Boss</color>, poziom odzyskanego zdrowia zwiększa się o {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>22%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "healPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.125,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "bossHealAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_E_Crimson.PNG",
+    "lore": null,
+    "achievementKey": "ACH_IN_CARNAGE_I_BLOOM",
+    "achievementName": "Rozkwitam w rzezi",
+    "achievementDescription": "Wzmocnij wspomnienie zadające Obrażenia od Ciemności 20 razy podczas jednej przygody."
+  },
+  "Gem_E_Direness": {
+    "name": "Esencja Desperacji",
+    "description": "Im słabsze moje <color=yellow>Zdrowie</color>, tym krótszy <color=yellow>Czas Odnawiania</color> tego wspomnienia. Przy <color=yellow>Zdrowiu</color> o wartości 30% skraca się on maksymalnie o 55%<sprite=5>.",
+    "rawDesc": "Im słabsze moje <color=yellow>Zdrowie</color>, tym krótszy <color=yellow>Czas Odnawiania</color> tego wspomnienia. Przy <color=yellow>Zdrowiu</color> o wartości {0} skraca się on maksymalnie o {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "maxAbilityHasteHpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "55%<sprite=5>",
+        "format": "P0",
+        "raw": "maxReducedRatio",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Direness.PNG",
+    "lore": "Jak to możliwe, że wciąż żyję...?\n\n...\n\nPrzecież byłem zamknięty w więzieniu Zakonu.\n...Dranie z Zakonu Jasności zastawili na mnie pułapkę.\nTo mój błąd.\nByłem zbyt pochopny.\n\nTo dziwne.\nMój napierśnik był roztrzaskany, myślałem, że mam połamane co najmniej dwa żebra...\nA jednak nic mi nie jest. Co więcej... czuję się silniejszy.\n\nGdzie ja jestem...? Czy to też jakaś magia...?\n\n...\nSłabo... ale wyraźnie, czuję to.\nAstrid, moja siostro...\nJuż nigdy nie popełnię tego błędu.\n\nPoczekaj jeszcze chwilę, już do ciebie idę.",
+    "achievementKey": "ACH_DESPERATE_HERO",
+    "achievementName": "Zdesperowany bohater",
+    "achievementDescription": "Mając mniej niż 40% zdrowia, eliminuj 30 wrogów z rzędu."
+  },
+  "Gem_E_Fangs": {
+    "name": "Esencja Kłów",
+    "description": "Co czwarty <color=yellow>Atak Podstawowy</color> zadaje <color=yellow>Trafienie Krytyczne</color>. Po aktywacji <color=yellow>Trafienia Krytycznego</color> <color=yellow>Czas Odnawiania</color> tego wspomnienia zostaje skrócony o 0.7<sprite=5> sek., a w pobliskich wrogów wystrzelone zostają 2 <color=yellow>Kły</color>, zadające każdemu <sprite=2><color=#FF8A2D>60%</color><sprite=5> <color=yellow>Obrażeń</color>.",
+    "rawDesc": "Co czwarty <color=yellow>Atak Podstawowy</color> zadaje <color=yellow>Trafienie Krytyczne</color>. Po aktywacji <color=yellow>Trafienia Krytycznego</color> <color=yellow>Czas Odnawiania</color> tego wspomnienia zostaje skrócony o {0} sek., a w pobliskich wrogów wystrzelone zostają 2 <color=yellow>Kły</color>, zadające każdemu {1} <color=yellow>Obrażeń</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "0.7<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "cooldownReductionOnCrit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.012
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>60%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.3,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Fangs.PNG",
+    "lore": null,
+    "achievementKey": "ACH_THEYRE_JUST_BIG_CATS",
+    "achievementName": "To tylko nieco duże koty",
+    "achievementDescription": "Zadaj ostateczny cios Tygrysowi Grzmotu za pomocą błyskawic 50 raz(y)."
+  },
+  "Gem_E_Fever": {
+    "name": "Esencja Gorączki",
+    "description": "To wspomnienie zadaje wrogowi <color=yellow>Obrażenia od Ognia</color>, wywołuje <color=yellow>Gorączkę</color>. Wróg z wywołaną <color=yellow>Gorączką</color> eksploduje po 2 sek., zadając sobie i pobliskim wrogom <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>Obrażenia od Ognia</color>. Zasięg eksplozji zwiększa się o 30%, a liczba obrażeń od eksplozji o 10% za każdy <color=yellow>Ładunek Ognia</color> zastosowany na celu.",
+    "rawDesc": "To wspomnienie zadaje wrogowi <color=yellow>Obrażenia od Ognia</color>, wywołuje <color=yellow>Gorączkę</color>. Wróg z wywołaną <color=yellow>Gorączką</color> eksploduje po {0} sek., zadając sobie i pobliskim wrogom {1} <color=yellow>Obrażenia od Ognia</color>. Zasięg eksplozji zwiększa się o {2}, a liczba obrażeń od eksplozji o {3} za każdy <color=yellow>Ładunek Ognia</color> zastosowany na celu.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.65,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "radiusAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "dmgAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_E_Fever.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Flexibility": {
+    "name": "Esencja Elastyczności",
+    "description": "Gdy wspomnienie to jest w <color=yellow>Czasie Odnawiania</color>, otrzymana liczba obrażeń w wysokości 37%<sprite=5> jest <color=yellow>Dzielona</color> – obrażenia rozkładają się na okres 4 sek. Otrzymywana w ten sposób <color=yellow>Dzielona</color> liczba obrażeń jest zmniejszona o 20%.",
+    "rawDesc": "Gdy wspomnienie to jest w <color=yellow>Czasie Odnawiania</color>, otrzymana liczba obrażeń w wysokości {0} jest <color=yellow>Dzielona</color> – obrażenia rozkładają się na okres {1} sek. Otrzymywana w ten sposób <color=yellow>Dzielona</color> liczba obrażeń jest zmniejszona o {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "37%<sprite=5>",
+        "format": "P0",
+        "raw": "divMultiplier",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "dmgTickCount*tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "1-dmgReduceAmount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Flexibility.PNG",
+    "lore": null,
+    "achievementKey": "ACH_FLEXIBLE_DIET",
+    "achievementName": "Elastyczna dieta",
+    "achievementDescription": "Podczas jednej przygody powtórz 10 razy sytuację, w której twoje zdrowie spada poniżej 40%, a następnie wzrasta powyżej 75%."
+  },
+  "Gem_E_Insensitivity": {
+    "name": "Esencja Obojętności",
+    "description": "Po <color=yellow>Użyciu</color> tego wspomnienia, przez 3 sek. rzucasz <color=yellow>Bomby</color> co 2m podczas każdego ruchu. Po krótkim czasie następuje eksplozja, zadająca wrogom <sprite=1><color=#16D7FF>140%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color>.",
+    "rawDesc": "Po <color=yellow>Użyciu</color> tego wspomnienia, przez {0} sek. rzucasz <color=yellow>Bomby</color> co {1}m podczas każdego ruchu. Po krótkim czasie następuje eksplozja, zadająca wrogom {2} <color=yellow>Obrażeń od Ognia</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "distancePerBomb",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.7,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_E_Insensitivity.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Insight": {
+    "name": "Esencja Wglądu",
+    "description": "Gdy wspomnienie to zada jakiekolwiek <color=yellow>Obrażenia</color> wrogowi, maksymalnie 3<sprite=5> z nich zadaje dodatkowo <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>Obrażeń od Światła</color>, a <color=yellow>Przyspieszenie Wspomnienia</color> zwiększa się na 5 sek. o 20<sprite=5>. Można je aktywować tylko raz na 3 sek.",
+    "rawDesc": "Gdy wspomnienie to zada jakiekolwiek <color=yellow>Obrażenia</color> wrogowi, maksymalnie {0} z nich zadaje dodatkowo {1} <color=yellow>Obrażeń od Światła</color>, a <color=yellow>Przyspieszenie Wspomnienia</color> zwiększa się na {2} sek. o {3}. Można je aktywować tylko raz na {4} sek.",
+    "rawDescVars": [
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxHitCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0025
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20<sprite=5>",
+        "format": "#,##0",
+        "raw": "gainedAbilityHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_E_Insight.PNG",
+    "lore": null,
+    "achievementKey": "ACH_ULTRA_RAPID_FIRE",
+    "achievementName": "Ultra Szybki Ogień",
+    "achievementDescription": "W ciągu 8 sek. użyj wspomnienia 12 razy."
+  },
+  "Gem_E_Inversion": {
+    "name": "Esencja Odwrócenia",
+    "description": "<color=yellow>Czas Odnawiania</color> tego wspomnienia zwiększa się o 15%<sprite=5>, ale jednocześnie <color=yellow>Liczba Obrażeń</color> zadawanych wrogom wzrasta o 20%<sprite=5>. <color=yellow>Obrażenia od Żywiołów</color> zadawane przez to wspomnienie zostają <color=yellow>Odwrócone</color>. (Ogień/Zimno, Światło/Ciemność)",
+    "rawDesc": "<color=yellow>Czas Odnawiania</color> tego wspomnienia zwiększa się o {0}, ale jednocześnie <color=yellow>Liczba Obrażeń</color> zadawanych wrogom wzrasta o {1}. <color=yellow>Obrażenia od Żywiołów</color> zadawane przez to wspomnienie zostają <color=yellow>Odwrócone</color>. (Ogień/Zimno, Światło/Ciemność)",
+    "rawDescVars": [
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "P0",
+        "raw": "cooldownAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Inversion.png",
+    "lore": null,
+    "achievementKey": "ACH_ELEMENTALS_101",
+    "achievementName": "Wstęp do Nauki o Żywiołach",
+    "achievementDescription": "Eliminuj 70 razy wrogów dotkniętych wszystkimi czterema żywioły."
+  },
+  "Gem_E_Metal": {
+    "name": "Esencja Metalu",
+    "description": "Gdy <color=yellow>Eliminujesz</color> wroga, <color=yellow>Czas Odnawiania</color> tego wspomnienia zostaje <color=yellow>Skrócony</color> o 1<sprite=5> sek.",
+    "rawDesc": "Gdy <color=yellow>Eliminujesz</color> wroga, <color=yellow>Czas Odnawiania</color> tego wspomnienia zostaje <color=yellow>Skrócony</color> o {0} sek.",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "cooldownReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Metal.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Might": {
+    "name": "Esencja Giganta",
+    "description": "Maksymalne zdrowie zwiększa się o 260<sprite=5>. Liczba obrażeń zadawanych wrogom przez to wspomnienie zwiększa się o 1% za każde 50 pkt. mojego <color=yellow>Maksymalnego Zdrowia</color>.",
+    "rawDesc": "Maksymalne zdrowie zwiększa się o {0}. Liczba obrażeń zadawanych wrogom przez to wspomnienie zwiększa się o {1} za każde {2} pkt. mojego <color=yellow>Maksymalnego Zdrowia</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "260<sprite=5>",
+        "format": "#,##0",
+        "raw": "healthBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 130.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1%",
+        "format": "P0",
+        "raw": "dmgAmpPerUnitHealth",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.01,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "50",
+        "format": "#,##0",
+        "raw": "unitHealthAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Might.PNG",
+    "lore": null,
+    "achievementKey": "ACH_HEAVIER_THAN_ATLAS",
+    "achievementName": "Cięższy niż potężna góra",
+    "achievementDescription": "Osiągnij Maksymalne Zdrowie na poziomie 3,000."
+  },
+  "Gem_E_Omega": {
+    "name": "Esencja Końca",
+    "description": "Gdy wspomnienie to nie jest w <color=yellow>Czasie Odnawiania</color>, co sekundę zyskujesz ładunek <color=yellow>Końca</color>, a maksymalnie do 20 ładunków. Gdy posiadasz ładunki, <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>, zwiększając <color=yellow>Liczbę Obrażeń</color> o 5%<sprite=5> za każdy ładunek.",
+    "rawDesc": "Gdy wspomnienie to nie jest w <color=yellow>Czasie Odnawiania</color>, co sekundę zyskujesz ładunek <color=yellow>Końca</color>, a maksymalnie do {0} ładunków. Gdy posiadasz ładunki, <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>, zwiększając <color=yellow>Liczbę Obrażeń</color> o {1} za każdy ładunek.",
+    "rawDescVars": [
+      {
+        "rendered": "20",
+        "format": "#,##0",
+        "raw": "maxChargeCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5%<sprite=5>",
+        "format": "P0",
+        "raw": "chargeRate",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Omega.PNG",
+    "lore": null,
+    "achievementKey": "ACH_OMEGA_POINT",
+    "achievementName": "Punkt Omega",
+    "achievementDescription": "Wejdź do Czysto Białego Snu, przy użyciu tylko jednego rodzaju wspomnień podczas całej przygody."
+  },
+  "Gem_E_Opportunity": {
+    "name": "Esencja Okazji",
+    "description": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, <color=yellow>Czas Odnawiania</color> <color=yellow>Sztuki Uniku</color> zostanie skrócony o 3<sprite=5> sek. Można je aktywować tylko raz na 8 sek.",
+    "rawDesc": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, <color=yellow>Czas Odnawiania</color> <color=yellow>Sztuki Uniku</color> zostanie skrócony o {0} sek. Można je aktywować tylko raz na {1} sek.",
+    "rawDescVars": [
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reductionAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "8",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Mobility"
+    ],
+    "image": "Gem_E_Opportunity.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_OurStory_Completed": {
+    "name": "Nasza historia (zakończona!)",
+    "description": "<color=yellow>Moc Ataku</color> oraz <color=yellow>Moc Umiejętności</color> zwiększają się o 0, a wszystkie korzystne efekty <color=yellow>Zniekształconego Pędu</color> zwiększają się o 0.",
+    "rawDesc": "<color=yellow>Moc Ataku</color> oraz <color=yellow>Moc Umiejętności</color> zwiększają się o {0}, a wszystkie korzystne efekty <color=yellow>Zniekształconego Pędu</color> zwiększają się o {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "0",
+        "format": "#,##0'%'",
+        "raw": "Gem_E_OurStory_Completed::statPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0",
+        "format": "#,##0",
+        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_OurStory_Completed.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_OurStory_Unfinished": {
+    "name": "Nasza historia (w trakcie pisania)",
+    "description": "Za każdym razem, gdy <color=yellow>Eliminujesz</color> wroga 75 razy, jakość wzrasta o 50%. Po osiągnięciu jakości 500%, zostaje ona <color=yellow>Zakończona</color>.",
+    "rawDesc": "Za każdym razem, gdy <color=yellow>Eliminujesz</color> wroga {0} razy, jakość wzrasta o {1}. Po osiągnięciu jakości {2}, zostaje ona <color=yellow>Zakończona</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "75",
+        "format": "#,##0",
+        "raw": "killCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 75.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "#,##0'%'",
+        "raw": "addedQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "500%",
+        "format": "#,##0'%'",
+        "raw": "completeThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 500.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_OurStory_Unfinished.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Overload": {
+    "name": "Esencja Przeciążenia",
+    "description": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, <color=yellow>Poświęcasz</color> 20% swojego obecnego zdrowia w celu <color=yellow>Wzmocnienia</color> <color=yellow>Użycia</color>. <color=yellow>Wzmocnienie Użycia</color> zwiększa zadawaną <color=yellow>Liczbę Obrażeń</color> i <color=yellow>Stopień Leczenia</color> o 45%<sprite=5>.",
+    "rawDesc": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, <color=yellow>Poświęcasz</color> {0} swojego obecnego zdrowia w celu <color=yellow>Wzmocnienia</color> <color=yellow>Użycia</color>. <color=yellow>Wzmocnienie Użycia</color> zwiększa zadawaną <color=yellow>Liczbę Obrażeń</color> i <color=yellow>Stopień Leczenia</color> o {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "healthRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "45%<sprite=5>",
+        "format": "P0",
+        "raw": "amp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.225,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Overload.PNG",
+    "lore": "Za każdym razem, gdy rozmyślam o tej koncepcji,\nczuję, jak moje ciało i umysł płoną\n\nŁuski na dotkniętych obszarach łatwo się kruszyły i były gorące,\na gdy zebrałem złoty pył powstały w niektórych miejscach, okazał się lśniący i bardzo drobny.\n\nMagia, która manifestuje się poprzez moc snów,\na gdy doda się do niej ten pył, reakcja staje się gwałtowna.\nWystarczyła odrobina, by na suficie pojawiła się wielka plama sadzy.\n\nPowinienem zapisać wyniki tego eksperymentu, ale jestem zbyt zmęczony.\nTa koncepcja wywołuje niemałe zmęczenie psychiczne.\n\nPrzypuszczam, że jest to powiązane z mocą, którą już wcześniej odkryłem.\nTo bardzo intrygujące.\nPotrzebne są dalsze badania nad źródłem tej mocy.\nByć może konieczna będzie wyprawa w teren.",
+    "achievementKey": "ACH_REAP_WHAT_YOU_SOW",
+    "achievementName": "Co zasiejesz, to zbierzesz",
+    "achievementDescription": "Uruchom Sanktuarium Rozbicia łącznie 12 razy."
+  },
+  "Gem_E_Pain": {
+    "name": "Esencja Bólu",
+    "description": "Wszystkie <color=yellow>Obrażenia</color> zadawane przez to wspomnienie zadają dodatkowo 40%<sprite=5> <color=yellow>Obrażeń Obszarowych</color> wokół celu. <color=yellow>Obrażenia Obszarowe</color> reprezentują ten sam typ obrażeń i elementów co oryginalne obrażenia.",
+    "rawDesc": "Wszystkie <color=yellow>Obrażenia</color> zadawane przez to wspomnienie zadają dodatkowo {0} <color=yellow>Obrażeń Obszarowych</color> wokół celu. <color=yellow>Obrażenia Obszarowe</color> reprezentują ten sam typ obrażeń i elementów co oryginalne obrażenia.",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "damageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Pain.PNG",
+    "lore": "Nie bluźnij. Nie jestem szaleńcem, który czerpie przyjemność z zadawania bólu. \nAle nigdy nie zlekceważę tych, którzy buntują się przeciw boskiej władzy. \n\nDla Tego, który patrzy na nas z niebios,\n\nzrobię to, co należy, i z dumą\nobedrę cię ze skóry\ni rozczłonkuję twoje ciało.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Predation": {
+    "name": "Esencja Drapieżnictwa",
+    "description": "To wspomnienie zwiększa <color=yellow>Liczbę Obrażeń</color> zadawanych <color=yellow>Bossowi</color> i <color=yellow>Tropicielowi</color> o 60%<sprite=5>. Po eliminacji <color=yellow>Tropiciela</color> spada <color=yellow>Kula Mocy</color> x1, a po eliminacji <color=yellow>Bossa</color> x3. Zebranie <color=yellow>Kuli Mocy</color> losowo zwiększa na stałe <color=yellow>Moc Ataku</color> lub <color=yellow>Moc Umiejętności</color> o 1.",
+    "rawDesc": "To wspomnienie zwiększa <color=yellow>Liczbę Obrażeń</color> zadawanych <color=yellow>Bossowi</color> i <color=yellow>Tropicielowi</color> o {0}. Po eliminacji <color=yellow>Tropiciela</color> spada <color=yellow>Kula Mocy</color> x{1}, a po eliminacji <color=yellow>Bossa</color> x{2}. Zebranie <color=yellow>Kuli Mocy</color> losowo zwiększa na stałe <color=yellow>Moc Ataku</color> lub <color=yellow>Moc Umiejętności</color> o 1.",
+    "rawDescVars": [
+      {
+        "rendered": "60%<sprite=5>",
+        "format": "P0",
+        "raw": "amp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedAp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "addedAp*bossMultiplier",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Predation.png",
+    "lore": null,
+    "achievementKey": "ACH_WHOS_THE_PREY_NOW",
+    "achievementName": "Kto tu jest teraz ofiarą?",
+    "achievementDescription": "Eliminuj Tropiciela 70 razy."
+  },
+  "Gem_E_Protection": {
+    "name": "Esencja Ochrony",
+    "description": "Po <color=yellow>Użyciu</color> tego wspomnienia otrzymujesz na 3 sek. <color=yellow>Zbroję</color> o wartości 40<sprite=5>, co zmniejsza otrzymywane obrażenia i zapewnia stan bycia <color=yellow>Niepowstrzymanym</color>. Efekt może być aktywowany tylko raz na 5 sek.",
+    "rawDesc": "Po <color=yellow>Użyciu</color> tego wspomnienia otrzymujesz na {0} sek. <color=yellow>Zbroję</color> o wartości {1}, co zmniejsza otrzymywane obrażenia i zapewnia stan bycia <color=yellow>Niepowstrzymanym</color>. Efekt może być aktywowany tylko raz na {2} sek.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "armorDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Protection.PNG",
+    "lore": null,
+    "achievementKey": "ACH_TEKKAI",
+    "achievementName": "Sztabka żelaza",
+    "achievementDescription": "Zdobądź tarczę o wartości co najmniej 300% swojego Maksymalnego Zdrowia."
+  },
+  "Gem_E_Thunder": {
+    "name": "Esencja Grzmotu",
+    "description": "Gdy <color=yellow>Używasz</color> <color=yellow>Innego Wspomnienia</color> lub korzystasz z <color=yellow>Uniku</color>, zyskujesz 1 ładunek <color=yellow>Grzmotu</color>, a maksymalna ilość doładowań to 7<sprite=5>. Gdy <color=yellow>Używasz</color> tego wspomnienia, zużywasz wszystkie ładunki <color=yellow>Grzmotu</color>, rzucając tyle błyskawic na pobliskich wrogów, ile miałeś ładunków. Każda błyskawica zadaje <sprite=1><color=#16D7FF>117%</color><sprite=5> <color=yellow>Obrażeń od Światła</color>.",
+    "rawDesc": "Gdy <color=yellow>Używasz</color> <color=yellow>Innego Wspomnienia</color> lub korzystasz z <color=yellow>Uniku</color>, zyskujesz 1 ładunek <color=yellow>Grzmotu</color>, a maksymalna ilość doładowań to {0}. Gdy <color=yellow>Używasz</color> tego wspomnienia, zużywasz wszystkie ładunki <color=yellow>Grzmotu</color>, rzucając tyle błyskawic na pobliskich wrogów, ile miałeś ładunków. Każda błyskawica zadaje {1} <color=yellow>Obrażeń od Światła</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "7<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxCharge",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.004
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>117%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.65,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.008
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_E_Thunder.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Twilight": {
+    "name": "Esencja Zmroku",
+    "description": "<color=yellow>Ataki Podstawowe</color> zadają teraz <color=yellow>Obrażenia od Ciemności</color>. Gdy to wspomnienie zadaje obrażenia wrogowi, jeśli cel ma co najmniej <color=yellow>Ładunków Ciemności</color> x3, wszystkie te ładunki zostają zużyte, zadając <sprite=1><color=#16D7FF>54%</color><sprite=5> <color=yellow>Obrażeń</color> za każdy ładunek i <color=yellow>Odzyskując</color> zdrowie o wartości 6<sprite=5> za każdy ładunek.",
+    "rawDesc": "<color=yellow>Ataki Podstawowe</color> zadają teraz <color=yellow>Obrażenia od Ciemności</color>. Gdy to wspomnienie zadaje obrażenia wrogowi, jeśli cel ma co najmniej <color=yellow>Ładunków Ciemności</color> x{0}, wszystkie te ładunki zostają zużyte, zadając {1} <color=yellow>Obrażeń</color> za każdy ładunek i <color=yellow>Odzyskując</color> zdrowie o wartości {2} za każdy ładunek.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "minStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>54%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.27,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "6<sprite=5>",
+        "format": "#,##0",
+        "raw": "healPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark"
+    ],
+    "image": "Gem_E_Twilight.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Virtuousness": {
+    "name": "Esencja Szlachetności",
+    "description": "Liczba doładowań tego wspomnienia wzrasta o 1<sprite=5>. Za każdym razem, gdy jakość wzrasta o 150%, liczba ładowań wzrasta o 1.",
+    "rawDesc": "Liczba doładowań tego wspomnienia wzrasta o {0}. Za każdym razem, gdy jakość wzrasta o {1}, liczba ładowań wzrasta o 1.",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0",
+        "raw": "addedChargeInt",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "150%",
+        "format": "#,##0'%'",
+        "raw": "requiredQualityPerCharge",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 150.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Virtuousness.PNG",
+    "lore": "Ludzie umierają. Potwory i duchy, które dotąd istniały tylko w legendach, przeniknęły do rzeczywistości, paląc wioski i niszcząc nasze życie.\n\nAkurat wtedy, gdy nie było Kamilli i siostry...\n\nNa razie jeszcze da się wytrzymać... \nAle jeśli naprawdę, jak mówią plotki, czyjaś wyobraźnia się spełniła?\nA jeśli... ktoś... wyobraził sobie coś jeszcze straszniejszego...?\n\nTo tylko kwestia czasu.\nCzy mamy po prostu siedzieć i czekać na tę nieuniknioną katastrofę?\n\n...\n\nUdało się! \nWczoraj w końcu udało mi się nasycić mocą snu szablę, którą zostawiła siostra, i mój sztylet. \nŚwiat Snów naprawdę istnieje.\nTeraz potrzebuję tylko informacji.\n\nZnam kogoś, kto może rozwiązać ten problem.\nZakon Jasności... niechętnie, ale to najpewniejszy wybór.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_CamillasGift": {
+    "name": "Dar Kamilli",
+    "description": "Możesz dokonać <color=yellow>Sprzedaży</color> w sklepie, aby otrzymać Kawałki Złota x0. Za każdym razem, gdy przechodzisz do kolejnego świata, <color=yellow>Cena</color> <color=yellow>Wzrasta</color> o 0. Jeśli otrzymasz obrażenia od wrogów i twoje zdrowie spadnie poniżej 50%, przedmiot zostaje zniszczony.",
+    "rawDesc": "Możesz dokonać <color=yellow>Sprzedaży</color> w sklepie, aby otrzymać Kawałki Złota x{0}. Za każdym razem, gdy przechodzisz do kolejnego świata, <color=yellow>Cena</color> <color=yellow>Wzrasta</color> o {1}. Jeśli otrzymasz obrażenia od wrogów i twoje zdrowie spadnie poniżej {2}, przedmiot zostaje zniszczony.",
+    "rawDescVars": [
+      {
+        "rendered": "0",
+        "format": "#,##0",
+        "raw": "currentSellGold",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0",
+        "format": "#,##0",
+        "raw": "sellGoldIncreasePerWorld",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "healthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_CamillasGift.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_ChaosApple": {
+    "name": "Jabłko Chaosu",
+    "description": "Za każdym razem, gdy <color=yellow>Przemieszczasz się</color> przez <color=yellow>Szczelinę</color>, to wspomnienie zostaje <color=yellow>Zdegradowane</color> do innego losowego wspomnienia. <color=yellow>Czas Odnawiania</color> <color=yellow>Zdegradowanego</color> wspomnienia zostaje usunięty, ale możesz go <color=yellow>Użyć</color> tylko 4<sprite=5>razy na pokój.",
+    "rawDesc": "Za każdym razem, gdy <color=yellow>Przemieszczasz się</color> przez <color=yellow>Szczelinę</color>, to wspomnienie zostaje <color=yellow>Zdegradowane</color> do innego losowego wspomnienia. <color=yellow>Czas Odnawiania</color> <color=yellow>Zdegradowanego</color> wspomnienia zostaje usunięty, ale możesz go <color=yellow>Użyć</color> tylko {0}razy na pokój.",
+    "rawDescVars": [
+      {
+        "rendered": "4<sprite=5>",
+        "format": "#,##0",
+        "raw": "castPerRoomCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_ChaosApple.png",
+    "lore": null,
+    "achievementKey": "ACH_CHAOTIC_GOOD",
+    "achievementName": "Chaotyczne dobro",
+    "achievementDescription": "Użyj legendarnego Chaosu łącznie 5 razy."
+  },
+  "Gem_L_DivineFaith": {
+    "name": "Święta wiara",
+    "description": "Za każdym razem, gdy tym wspomnieniem <color=yellow>Eliminujesz</color> wroga, zyskujesz ładunek <color=yellow>Wiary</color>, do maksymalnie 75<sprite=5> ładunków. Na każdy ładunek <color=yellow>Wiary</color>, <color=yellow>Liczba Obrażeń</color> zadawanych przez to wspomnienie wrogom oraz <color=yellow>Odzyskane zdrowie</color> dawane sojusznikom wzrastają o 0.5%, a twoje maksymalne zdrowie zwiększa się o 4.",
+    "rawDesc": "Za każdym razem, gdy tym wspomnieniem <color=yellow>Eliminujesz</color> wroga, zyskujesz ładunek <color=yellow>Wiary</color>, do maksymalnie {0} ładunków. Na każdy ładunek <color=yellow>Wiary</color>, <color=yellow>Liczba Obrażeń</color> zadawanych przez to wspomnienie wrogom oraz <color=yellow>Odzyskane zdrowie</color> dawane sojusznikom wzrastają o {1}, a twoje maksymalne zdrowie zwiększa się o {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "75<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.015
+        }
+      },
+      {
+        "rendered": "0.5%",
+        "format": "0.#%",
+        "raw": "dmgAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.005,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxHealthPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_DivineFaith.PNG",
+    "lore": "Wy, którzy czcicie fałszywych bogów i podążacie za zasadami herezji,\njesteście nieświadomi i bluźnierczy.\nNie będę już dłużej tolerować tego świętokradztwa.\n\nMój buzdygan jest narzędziem prawdy,\nmoja święta drużyna wypełnia wolę boską,\na na niewiernych spadnie sprawiedliwy sąd.\n\nJutro, płomienie oczyszczenia pochłoną ich wszystkich.\nNie usłyszycie już ich oddechu nigdzie na świecie.\n\nWszystko zgodnie z wolą Elpirosa, Pana Wszechrzeczy...",
+    "achievementKey": "ACH_GOD_PROTECTS_ME",
+    "achievementName": "Bóg mnie chroni",
+    "achievementDescription": "Odwiedź miejsca zajęte przez Tropicieli 4 razy podczas jednej przygody, przy poziomie zagrożenia śledzeniem wynoszącym 5."
+  },
+  "Gem_L_Embertail": {
+    "name": "Ognisty Ogon",
+    "description": "Mój <color=yellow>Atak</color> odbija się, zadając <sprite=1><color=#16D7FF>100%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color> jednemu z pobliskich wrogów. Za każdego pobliskiego wroga spowitego ogniem, <color=yellow>Liczba Obrażeń</color> i <color=yellow>Stopień Leczenia</color> tego wspomniena wzrastają o 8%<sprite=5>, a <color=yellow>Czas Odnawiania</color> szybko skraca się o 8%<sprite=5>. Moje obrażenia stałe zadawane ogniem wzrastają o 100%.",
+    "rawDesc": "Mój <color=yellow>Atak</color> odbija się, zadając {0} <color=yellow>Obrażeń od Ognia</color> jednemu z pobliskich wrogów. Za każdego pobliskiego wroga spowitego ogniem, <color=yellow>Liczba Obrażeń</color> i <color=yellow>Stopień Leczenia</color> tego wspomniena wzrastają o {1}, a <color=yellow>Czas Odnawiania</color> szybko skraca się o {2}. Moje obrażenia stałe zadawane ogniem wzrastają o {3}.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.5,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "8%<sprite=5>",
+        "format": "P0",
+        "raw": "ampPerBurning",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "8%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "skillHastePerBurning",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "statBonus.fireEffectAmpFlat",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Fire",
+      "Attack"
+    ],
+    "image": "Gem_L_Embertail.PNG",
+    "lore": "Władco snów...\n\n...przywróć do życia...\n\n...\n\n...proszę...\n\n...\n\n...proszę wymaż...\n\n...\n\nTo wystarczy.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_HeartOfGold": {
+    "name": "Serce ze złota",
+    "description": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, korzystasz z 3% posiadanego złota, dla <color=yellow>Wzmocnienia</color> użycia. <color=yellow>Wzmocnione Użycie</color> zwiększa <color=yellow>Liczbę Obrażeń</color> i <color=yellow>Stopień Leczenia</color> proporcjonalnie do ilości posiadanego złota – o 12%<sprite=5> za każde 100 sztuk złota.\n",
+    "rawDesc": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, korzystasz z {0} posiadanego złota, dla <color=yellow>Wzmocnienia</color> użycia. <color=yellow>Wzmocnione Użycie</color> zwiększa <color=yellow>Liczbę Obrażeń</color> i <color=yellow>Stopień Leczenia</color> proporcjonalnie do ilości posiadanego złota – o {1} za każde 100 sztuk złota.\n",
+    "rawDescVars": [
+      {
+        "rendered": "3%",
+        "format": "P0",
+        "raw": "spentGoldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "12%<sprite=5>",
+        "format": "P0",
+        "raw": "ampPerHundredGold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.06,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_L_HeartOfGold.png",
+    "lore": null,
+    "achievementKey": "ACH_MIDAS_HIMSELF",
+    "achievementName": "Sam Midas",
+    "achievementDescription": "Zgromadź 6,000 sztuk złota."
+  },
+  "Gem_L_MetalCrystal": {
+    "name": "Kryształ metalu",
+    "description": "Oświetlone fragmenty lśnią nierealnymi barwami.",
+    "rawDesc": "Oświetlone fragmenty lśnią nierealnymi barwami.",
+    "rawDescVars": [],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_MetalCrystal.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Paranoia": {
+    "name": "Esencja Paranoi",
+    "description": "Gdy otrzymasz jakiekolwiek <color=yellow>Obrażenia</color>, na 6 sek. wspomnienie to zyskuje <color=yellow>Przyspieszenie Wspomnienia</color> o wartości 150<sprite=5>, a jego <color=yellow>Czas Odnawiania</color> zostaje zmniejszony o 60%<sprite=5>, ale następuje jego <color=yellow>Automatycznie Użycie</color> na pobliskich wrogach.",
+    "rawDesc": "Gdy otrzymasz jakiekolwiek <color=yellow>Obrażenia</color>, na {0} sek. wspomnienie to zyskuje <color=yellow>Przyspieszenie Wspomnienia</color> o wartości {1}, a jego <color=yellow>Czas Odnawiania</color> zostaje zmniejszony o {2}, ale następuje jego <color=yellow>Automatycznie Użycie</color> na pobliskich wrogach.",
+    "rawDescVars": [
+      {
+        "rendered": "6",
+        "format": "#,##0",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "150<sprite=5>",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 75.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "60%<sprite=5>",
+        "format": "P0",
+        "raw": "reducedRatio",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Paranoia.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Perfect": {
+    "name": "Doskonałość",
+    "description": "Moc Ataku zostaje zwiększona o 7<sprite=5>, Moc Umiejętności o 7<sprite=5>, Maksymalne Zdrowie o 35<sprite=5>, Szybkość Ataku o 10%<sprite=5>, Szansa na Trafienie Krytyczne o 6%<sprite=5>, a Przyspieszenie Wspomnienia o 10<sprite=5>.",
+    "rawDesc": "Moc Ataku zostaje zwiększona o {0}, Moc Umiejętności o {1}, Maksymalne Zdrowie o {2}, Szybkość Ataku o {3}, Szansa na Trafienie Krytyczne o {4}, a Przyspieszenie Wspomnienia o {5}.",
+    "rawDescVars": [
+      {
+        "rendered": "7<sprite=5>",
+        "format": "#,##0",
+        "raw": "adAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "7<sprite=5>",
+        "format": "#,##0",
+        "raw": "apAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "35<sprite=5>",
+        "format": "#,##0",
+        "raw": "healthAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 17.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "attackSpeedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "6%<sprite=5>",
+        "format": "P0",
+        "raw": "criticalChanceAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "10<sprite=5>",
+        "format": "#,##0",
+        "raw": "skillHasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Perfect.PNG",
+    "lore": "Byli tacy, którzy czcili mnie jak boga.\nTak, kiedyś naprawdę wierzyłem, że tutaj jestem wszechmocny.\n\nPonownie spotkałem się z ukochaną rodziną,\nwszystko, o czym marzyłem i śniłem, osiągałem z łatwością.\n\nByło idealnie...\nNie, po prostu dałem się zwieść, myśląc, że jest idealnie.\n\nSen pozostaje tylko snem.\nMoja wszechmoc okazała się niczym innym jak bezsilnością.\n\nRzeczywistość nie jest światem przeznaczenia.\nTo miejsce...\njest tylko iluzją.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_PureWhite": {
+    "name": "Czysta biel",
+    "description": "Co 10 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. <color=yellow>Wzmocnione Użycie</color> wystrzeliwuje <color=yellow>Naboje</color> x3, które zadają <color=yellow>Obrażenia od Światła</color> równe początkowym <color=yellow>Obrażeniom</color> 20%<sprite=5> zadawanym indywidualnemu wrogowi. Liczba strzałów zwiększa się o liczbę <color=yellow>Ładunków Światła</color> na każdym celu.",
+    "rawDesc": "Co {0} sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. <color=yellow>Wzmocnione Użycie</color> wystrzeliwuje <color=yellow>Naboje</color> x{1}, które zadają <color=yellow>Obrażenia od Światła</color> równe początkowym <color=yellow>Obrażeniom</color> {2} zadawanym indywidualnemu wrogowi. Liczba strzałów zwiększa się o liczbę <color=yellow>Ładunków Światła</color> na każdym celu.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "minProjectiles",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "damageMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_L_PureWhite.PNG",
+    "lore": "Wielu ludzi, którzy twierdzą, że doświadczyli „zrzucenia powłoki”, opisuje swoje sny na różne sposoby.\n\nDla jednych to góra mięsa na srebrnej zastawie, dla innych stół w nieskończenie rozległym pokoju, jeszcze inni widzieli tam wszystkich zaginionych bliskich, a niektórzy mówią o ogrodzie pełnym róż i herbaty o przyjemnym zapachu.\n\nJednak nikt nigdy nie powiedział, że najadł się tych pysznych potraw, ani nie zabrał ukochanych osób z powrotem do rzeczywistości.\n\nTo dlatego, że nasze ciała pozostają w rzeczywistości. Śnienie to tylko chwilowa wizyta naszego umysłu w świecie po drugiej stronie. Gdy budzimy się ze snu, w naszych dłoniach nie zostaje nic.\n\nTymczasem Zakon Jasności dokonał bardzo interesującego odkrycia.\n\nOto bowiem możemy już wejść do snu bezpośrednio.",
+    "achievementKey": "ACH_EMPTY_CANVAS",
+    "achievementName": "Puste Płótno",
+    "achievementDescription": "Wejdź do Czysto Białego Snu łącznie 2 razy."
+  },
+  "Gem_L_SolarEye": {
+    "name": "Oko Słońca",
+    "description": "Co 20 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>, zsyłając <color=yellow>Światło Słońca</color> na wszystkich pobliskich wrogów, którzy już <color=yellow>Płoną</color>. <color=yellow>Światło Słońca</color> przez 1.5 sek. zadaje łącznie <sprite=1><color=#16D7FF>360%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color> i zwiększa ładunki <color=yellow>Poparzenia</color> o 9<sprite=5>.\nStałe obrażenia zadawane moim ogniem wzrastają o 100%.",
+    "rawDesc": "Co {0} sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>, zsyłając <color=yellow>Światło Słońca</color> na wszystkich pobliskich wrogów, którzy już <color=yellow>Płoną</color>. <color=yellow>Światło Słońca</color> przez {1} sek. zadaje łącznie {2} <color=yellow>Obrażeń od Ognia</color> i zwiększa ładunki <color=yellow>Poparzenia</color> o {3}.\nStałe obrażenia zadawane moim ogniem wzrastają o {4}.",
+    "rawDescVars": [
+      {
+        "rendered": "20",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "interval * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>360%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "9<sprite=5>",
+        "format": "#,##0",
+        "raw": "calTotalStack",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "statBonus.fireEffectAmpFlat",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_L_SolarEye.png",
+    "lore": null,
+    "achievementKey": "ACH_PRAISE_THE_SUN",
+    "achievementName": "Niech żyje Słońce!",
+    "achievementDescription": "Nałóż łącznie ładunki ognia x3,000 na wrogów."
+  },
+  "Gem_L_SuppressedArcanum": {
+    "name": "Uciskane Arkanum",
+    "description": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, poświęcasz 5% swojego obecnego zdrowia, wywołując <color=yellow>Złotą Eksplozję</color>. Wrogowie w zasięgu <color=yellow>Eksplozji</color> otrzymują <sprite=1><color=#16D7FF>240%</color><sprite=5> <color=yellow>Obrażeń od Światła</color>, a sojusznicy - utrzymujące się przez 2.5 sek <color=yellow>Tarcze</color> o wartości <sprite=1><color=#16D7FF>61%</color><sprite=5>. Jeśli twoje zdrowie wynosi 60% lub mniej, <color=yellow>Ilość Tarcz</color> tego wspomnienia wzrasta o 50%.",
+    "rawDesc": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, poświęcasz {0} swojego obecnego zdrowia, wywołując <color=yellow>Złotą Eksplozję</color>. Wrogowie w zasięgu <color=yellow>Eksplozji</color> otrzymują {1} <color=yellow>Obrażeń od Światła</color>, a sojusznicy - utrzymujące się przez {2} sek <color=yellow>Tarcze</color> o wartości {3}. Jeśli twoje zdrowie wynosi {4} lub mniej, <color=yellow>Ilość Tarcz</color> tego wspomnienia wzrasta o {5}.",
+    "rawDescVars": [
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "currentHpSacrificeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>240%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.2,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>61%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.35,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "60%",
+        "format": "P0",
+        "raw": "hpThresholdRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "shieldAmpOnLowHp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Light",
+      "Shield"
+    ],
+    "image": "Gem_L_SuppressedArcanum.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Accuracy": {
+    "name": "Esencja Precyzji",
+    "description": "Gdy wspomnienie to zadaje <color=yellow>Obrażenia</color> odległym wrogom, wystrzeliwany jest <color=yellow>Dodatkowe Pociski</color>, zadający 50%<sprite=5> <color=yellow>Obrażeń</color> danemu celowi. <color=yellow>Pociski</color> dziedziczą typ i elementy oryginalnych <color=yellow>Obrażeń</color>.",
+    "rawDesc": "Gdy wspomnienie to zadaje <color=yellow>Obrażenia</color> odległym wrogom, wystrzeliwany jest <color=yellow>Dodatkowe Pociski</color>, zadający {0} <color=yellow>Obrażeń</color> danemu celowi. <color=yellow>Pociski</color> dziedziczą typ i elementy oryginalnych <color=yellow>Obrażeń</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "damageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Accuracy.PNG",
+    "lore": null,
+    "achievementKey": "ACH_SHOOT_FOR_THE_MOON",
+    "achievementName": "Celuj w Księżyc",
+    "achievementDescription": "Zadaj ostateczny cios wrogowi z bardzo dużej odległości 80 razy."
+  },
+  "Gem_R_Adventure": {
+    "name": "Esencja Przygody",
+    "description": "Za każdym razem, gdy <color=yellow>Przemieszczasz się</color> do <color=yellow>Nowego Miejsca</color>, <color=yellow>Zwiększasz</color> <color=yellow>Jakość</color> innej <color=yellow>Esencji</color> wmontowanej w tym wspomnieniu o +10% i otrzymujesz Kawałki Złota x19<sprite=5>.",
+    "rawDesc": "Za każdym razem, gdy <color=yellow>Przemieszczasz się</color> do <color=yellow>Nowego Miejsca</color>, <color=yellow>Zwiększasz</color> <color=yellow>Jakość</color> innej <color=yellow>Esencji</color> wmontowanej w tym wspomnieniu o +{0} i otrzymujesz Kawałki Złota x{1}.",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "upgradeGemAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "19<sprite=5>",
+        "format": "#,##0",
+        "raw": "goldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0025
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Adventure.PNG",
+    "lore": null,
+    "achievementKey": "ACH_NOVICE_TREASURE_HUNTER",
+    "achievementName": "Początkujący Łowca Skarbów",
+    "achievementDescription": "Otwórz skrzynię skarbów po raz pierwszy."
+  },
+  "Gem_R_Blade": {
+    "name": "Esencja Ostrza",
+    "description": "Za każdym razem, gdy wspomnienie to <color=yellow>Trafia</color> wroga, przywołuje ono ostrza, które zadają <sprite=2><color=#FF8A2D>58%</color><sprite=5> Obrażeń i tną cel 3<sprite=5> razy. Może się aktywować na każdym wrogu tylko raz na 2 sek.",
+    "rawDesc": "Za każdym razem, gdy wspomnienie to <color=yellow>Trafia</color> wroga, przywołuje ono ostrza, które zadają {0} Obrażeń i tną cel {1} razy. Może się aktywować na każdym wrogu tylko raz na {2} sek.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>58%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.55,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0005
+        }
+      },
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0",
+        "raw": "baseCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "perEnemyCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Blade.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Bleak": {
+    "name": "Esencja Spustoszenia",
+    "description": "To wspomnienie zadaje 50%<sprite=5> więcej obrażeń wrogom dotkniętym <color=yellow>Zimnem</color> lub będącym w stanie <color=yellow>Spowolnienia</color>, <color=yellow>Unieruchomienia</color> lub <color=yellow>Ogłuszenia</color>.",
+    "rawDesc": "To wspomnienie zadaje {0} więcej obrażeń wrogom dotkniętym <color=yellow>Zimnem</color> lub będącym w stanie <color=yellow>Spowolnienia</color>, <color=yellow>Unieruchomienia</color> lub <color=yellow>Ogłuszenia</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold"
+    ],
+    "image": "Gem_R_Bleak.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Blood": {
+    "name": "Esencja Kropli Krwi",
+    "description": "Gdy twoje zdrowie spadnie poniżej 40%, <color=yellow>Poświęcasz</color> 80% <color=yellow>Jakość</color> tej <color=yellow>Esencji</color> i <color=yellow>Odzyskujesz</color> 40% <color=yellow>Maksymalnego Zdrowia</color>. Można aktywować tylko raz na 4 sek.",
+    "rawDesc": "Gdy twoje zdrowie spadnie poniżej {0}, <color=yellow>Poświęcasz</color> {1} <color=yellow>Jakość</color> tej <color=yellow>Esencji</color> i <color=yellow>Odzyskujesz</color> {2} <color=yellow>Maksymalnego Zdrowia</color>. Można aktywować tylko raz na {3} sek.",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "activateHealthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "#,##0'%'",
+        "raw": "sacrificedQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 80.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "healMaxHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Blood.png",
+    "lore": null,
+    "achievementKey": "ACH_KYAAAAAA",
+    "achievementName": "Kyaaaa!!",
+    "achievementDescription": "Przetrwaj bez aktywnej Tarczy, otrzymując pojedyncze obrażenia równe co najmniej 70% Maksymalnego Zdrowia."
+  },
+  "Gem_R_Celestial": {
+    "name": "Esencja Ciała Niebieskiego",
+    "description": "Co 10 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. <color=yellow>Wzmocnione Użycie</color> objawia się rzucaniem 4 Spadającymi Gwiazdami, które zadają <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>Obrażeń od Światła</color> za każdym razem, gdy po raz pierwszy trafiają indywidualnego wroga.",
+    "rawDesc": "Co {0} sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. <color=yellow>Wzmocnione Użycie</color> objawia się rzucaniem {1} Spadającymi Gwiazdami, które zadają {2} <color=yellow>Obrażeń od Światła</color> za każdym razem, gdy po raz pierwszy trafiają indywidualnego wroga.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "stars",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "starDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.65,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_R_Celestial.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Composure": {
+    "name": "Esencja Opanowania",
+    "description": "Po <color=yellow>Użyciu</color> tego wspomnienia, przez 5 sek. <color=yellow>Szansa na Trafienie Krytyczne</color> wzrasta o 20%<sprite=5>. Otrzymanie obrażeń od wroga kończy ten efekt przedwcześnie.",
+    "rawDesc": "Po <color=yellow>Użyciu</color> tego wspomnienia, przez {0} sek. <color=yellow>Szansa na Trafienie Krytyczne</color> wzrasta o {1}. Otrzymanie obrażeń od wroga kończy ten efekt przedwcześnie.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "critBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Composure.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Contempt": {
+    "name": "Esencja Pogardy",
+    "description": "<color=yellow>Obrażenia</color> zadawane przez to wspomnienie wzrastają wraz ze spadkiem zdrowia celu – przy 20% zdrowia, obrażenia <color=yellow>Zwiększają się</color> maksymalnie o 50%<sprite=5>.",
+    "rawDesc": "<color=yellow>Obrażenia</color> zadawane przez to wspomnienie wzrastają wraz ze spadkiem zdrowia celu – przy {0} zdrowia, obrażenia <color=yellow>Zwiększają się</color> maksymalnie o {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "maxAmpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "amp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Contempt.png",
+    "lore": "- Czwarty dzień od wejścia do Bystrza.\n\nW końcu mogę złapać oddech i znów pisać dziennik.\nCałe ciało wciąż mi drży, a ręce nie chcą się uspokoić... ale muszę to wszystko spisać.\n\nKilka dni temu, dzięki pomocy Zakonu Jasności, w końcu udało mi się wejść do świata zwanego Bystrzem.\nWbrew oczekiwaniom, las był pełen tajemnic, a światło tańczyło pomiędzy liśćmi w sposób tak piękny, że czułem się, jakbym trafił do baśniowej krainy.\n\nJednak... nie minęło wiele czasu, zanim zrozumiałem, że ten spokojny widok to tylko złudzenie.\nPo południu opadła mgła, a my dostrzegliśmy coś po jej drugiej stronie.\n\nNa samo wspomnienie tamtej chwili dłonie znów zaczynają mi drżeć...\nOlbrzymia, przerażająca istota o płonących, czerwonych oczach... obserwowała nas, poruszając nieregularnie paszczą. I nagle, w jednej chwili, \n„to coś” znalazło się tuż przed nami.\n\nMoje dalsze wspomnienia są chaotyczne.\nPamiętam tylko... jak biegłem na oślep, aż brakowało mi tchu, \nkrzyki towarzyszy i dźwięk rozdzieranych ciał.\n\n\nTeraz chyba jesteśmy bezpieczni...\nAle pogardliwe spojrzenie tamtej bestii, która rozszarpywała ludzi długimi pazurami,\n\nnigdy nie zniknie z mej pamięci.\n\n- A.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Dusk": {
+    "name": "Esencja Zmierzchu",
+    "description": "Po użyciu tego wspomnienia, przez 5 sek. podczas każdego <color=yellow>Ataku</color> na wroga wystrzeliwujesz <color=yellow>Kawałki Zmierzchu</color> x2, zadające <sprite=2><color=#FF8A2D>30%</color><sprite=5> <color=yellow>Obrażeń od Ciemności</color>.",
+    "rawDesc": "Po użyciu tego wspomnienia, przez {0} sek. podczas każdego <color=yellow>Ataku</color> na wroga wystrzeliwujesz <color=yellow>Kawałki Zmierzchu</color> x{1}, zadające {2} <color=yellow>Obrażeń od Ciemności</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "shootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>30%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.15,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_R_Dusk.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Flow": {
+    "name": "Esencja Przepływu",
+    "description": "Gdy dowolne wspomnienie zadaje <color=yellow>Obrażenia od Światła</color>, <color=yellow>Czas Odnawiania</color> tego wspomnienia zostaje skrócony o 6%<sprite=5>. W przypadku skorzystania z Najwyższej Umiejętności, efekt wynosi tylko 40%. Efekt <color=yellow>Skrócenia Czasu Odnawiania</color> tego wspomnienia dotyczy również wmontowanych w nim <color=yellow>Esencji</color>.",
+    "rawDesc": "Gdy dowolne wspomnienie zadaje <color=yellow>Obrażenia od Światła</color>, <color=yellow>Czas Odnawiania</color> tego wspomnienia zostaje skrócony o {0}. W przypadku skorzystania z Najwyższej Umiejętności, efekt wynosi tylko {1}. Efekt <color=yellow>Skrócenia Czasu Odnawiania</color> tego wspomnienia dotyczy również wmontowanych w nim <color=yellow>Esencji</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "6%<sprite=5>",
+        "format": "P0",
+        "raw": "reduceRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "ultRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_R_Flow.PNG",
+    "lore": "Jakże obca to prawda... To, co mi ukazałeś, było niepodważalną prawdą, dotykiem przeznaczenia. \nKiedyś władałem narodzinami i śmiercią gwiazd, czując w pełni ich majestatyczne wibracje, \nlecz teraz wszystko wydaje się odległe niczym cienie we mgle. \n\nJednak moja wola pozostaje wyraźna niczym gwiazda poranna. \nSam wyznaczę fale mojego losu, \na te kajdany na pewno zrzucę. \n\nAż do ostatniego tchnienia, pozostanę tym, który prowadzi taniec stworzenia i zagłady. To ja jestem prawdziwym bogiem gwiazd.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Frost": {
+    "name": "Esencja Mrozu",
+    "description": "Gdy to wspomnienie zadaje <color=yellow>Obrażenia od Zimna</color>, zadaje dodatkowo <color=yellow>Obrażenia od Zimna</color> równe 10%<sprite=5> twojego <color=yellow>Maksymalnego Zdrowia</color> i na krótko <color=yellow>Ogłusza</color> cel. Można aktywować na każdym przeciwniku tylko raz na 5 sek. Za każdym razem, gdy efekt jest aktywowany, twoje <color=yellow>Maksymalne Zdrowie</color> zwiększa się trwale o 1.",
+    "rawDesc": "Gdy to wspomnienie zadaje <color=yellow>Obrażenia od Zimna</color>, zadaje dodatkowo <color=yellow>Obrażenia od Zimna</color> równe {0} twojego <color=yellow>Maksymalnego Zdrowia</color> i na krótko <color=yellow>Ogłusza</color> cel. Można aktywować na każdym przeciwniku tylko raz na {1} sek. Za każdym razem, gdy efekt jest aktywowany, twoje <color=yellow>Maksymalne Zdrowie</color> zwiększa się trwale o {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "P0",
+        "raw": "damageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.07,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.004
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "perEnemyCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "gainedMaxHp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold",
+      "HardCC"
+    ],
+    "image": "Gem_R_Frost.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Glaciate": {
+    "name": "Esencja Zlodowacenia",
+    "description": "Po <color=yellow>Użyciu</color> tego wspomnienia wyzwalana jest fala zimna, zadająca wrogom <sprite=1><color=#16D7FF>160%</color><sprite=5> <color=yellow>Obrażeń od Zimna</color>. Im wyższa jakość wspomnienia, tym większy zasięg fali.",
+    "rawDesc": "Po <color=yellow>Użyciu</color> tego wspomnienia wyzwalana jest fala zimna, zadająca wrogom {0} <color=yellow>Obrażeń od Zimna</color>. Im wyższa jakość wspomnienia, tym większy zasięg fali.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.8,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold"
+    ],
+    "image": "Gem_R_Glaciate.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Insatiable": {
+    "name": "Esencja Obżarstwa",
+    "description": "Po użyciu tego wspomnienia, przez 5 sek. <color=yellow>Moc Ataku</color> wzrasta o 15%<sprite=5>, a każdy <color=yellow>Atak</color> <color=yellow>Odzyskuje</color> zdrowie o wartości 6<sprite=5>.",
+    "rawDesc": "Po użyciu tego wspomnienia, przez {0} sek. <color=yellow>Moc Ataku</color> wzrasta o {1}, a każdy <color=yellow>Atak</color> <color=yellow>Odzyskuje</color> zdrowie o wartości {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "bonusAttackDamagePercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "6<sprite=5>",
+        "format": "#,##0",
+        "raw": "healAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.006
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal",
+      "Attack"
+    ],
+    "image": "Gem_R_Insatiable.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Momentum": {
+    "name": "Esencja Impetu",
+    "description": "Każdy <color=yellow>Atak</color> na wroga powoduje, że <color=yellow>Czas Odnawiania</color> tego wspomnienia zostaje <color=yellow>Skrócony</color> o 0.4<sprite=5> sek.",
+    "rawDesc": "Każdy <color=yellow>Atak</color> na wroga powoduje, że <color=yellow>Czas Odnawiania</color> tego wspomnienia zostaje <color=yellow>Skrócony</color> o {0} sek.",
+    "rawDescVars": [
+      {
+        "rendered": "0.4<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reductionAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.012
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Attack"
+    ],
+    "image": "Gem_R_Momentum.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_NightSky": {
+    "name": "Esencja Nocnego Nieba",
+    "description": "Za każdym razem, gdy wspomnienie to <color=yellow>Trafia</color> wroga, na 3 sek. <color=yellow>Szybkość Ataku</color> wzrasta o 10%<sprite=5>, a maksymalnie o 20%<sprite=5>. W przypadku <color=yellow>Obrażeń od Ciemności</color>, maksymalny wzrost wynosi 40%<sprite=5>. Czas trwania efektu odnawia się przy każdym <color=yellow>Ataku</color> na przeciwnika.",
+    "rawDesc": "Za każdym razem, gdy wspomnienie to <color=yellow>Trafia</color> wroga, na {0} sek. <color=yellow>Szybkość Ataku</color> wzrasta o {1}, a maksymalnie o {2}. W przypadku <color=yellow>Obrażeń od Ciemności</color>, maksymalny wzrost wynosi {3}. Czas trwania efektu odnawia się przy każdym <color=yellow>Ataku</color> na przeciwnika.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "perHitAtkSpd",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "maxAtkSpdNormal",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "maxAtkSpdDark",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_R_NightSky.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Obsidian": {
+    "name": "Esencja Obsydianu",
+    "description": "Gdy <color=yellow>Użyjesz</color> tego wspomniena, twój następny atak zostaje wzmocniony, zadając celowi <sprite=2><color=#FF8A2D>250%</color><sprite=5><color=yellow>Obrażenia od Ciemności</color> i skracając <color=yellow>Czas Odnawiania</color> tego wspomnienia o 1<sprite=5>sek.",
+    "rawDesc": "Gdy <color=yellow>Użyjesz</color> tego wspomniena, twój następny atak zostaje wzmocniony, zadając celowi {0}<color=yellow>Obrażenia od Ciemności</color> i skracając <color=yellow>Czas Odnawiania</color> tego wspomnienia o {1}sek.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.25,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reducedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_E_Obsidian.png",
+    "lore": null,
+    "achievementKey": "ACH_MINE_AND_CRAFT",
+    "achievementName": "Górnictwo i Rzemiosło",
+    "achievementDescription": "Zniszcz czarny jak smoła kamieni x3."
+  },
+  "Gem_R_Panic": {
+    "name": "Esencja Paniki",
+    "description": "Gdy otrzymasz jakiekolwiek <color=yellow>Obrażenia</color>, na 3 sek. wspomnienie to zyskuje <color=yellow>Przyspieszenie Wspomnienia</color> o wartości 30<sprite=5>, a w tym czasie <color=yellow>Szybkość Ruchu</color> wzrasta o 20%<sprite=5>.",
+    "rawDesc": "Gdy otrzymasz jakiekolwiek <color=yellow>Obrażenia</color>, na {0} sek. wspomnienie to zyskuje <color=yellow>Przyspieszenie Wspomnienia</color> o wartości {1}, a w tym czasie <color=yellow>Szybkość Ruchu</color> wzrasta o {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "30<sprite=5>",
+        "format": "#,##0",
+        "raw": "memoryHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.05,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Mobility"
+    ],
+    "image": "Gem_R_Panic.PNG",
+    "lore": null,
+    "achievementKey": "ACH_EVERYONE_LETS_NOT_PANIC",
+    "achievementName": "Zachowaj opanowanie i działaj spokojnie",
+    "achievementDescription": "Eliminuj heroicznego Bossa 8 raz(y), mając mniej niż 25% zdrowia."
+  },
+  "Gem_R_Rejuvenation": {
+    "name": "Esencja Odmłodzenia",
+    "description": "Co 15 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. Dzięki <color=yellow>Wzmocnionemu Użyciu</color> <color=yellow>Odzyskujesz</color> <color=yellow>Swoje</color> <color=yellow>Zdrowie</color> równe 10%<sprite=5> <color=yellow>Obrażeń</color> zadanych w ciągu 1.5 sek. od użycia.",
+    "rawDesc": "Co {0} sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. Dzięki <color=yellow>Wzmocnionemu Użyciu</color> <color=yellow>Odzyskujesz</color> <color=yellow>Swoje</color> <color=yellow>Zdrowie</color> równe {1} <color=yellow>Obrażeń</color> zadanych w ciągu {2} sek. od użycia.",
+    "rawDescVars": [
+      {
+        "rendered": "15",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.08,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Rejuvenation.PNG",
+    "lore": null,
+    "achievementKey": "ACH_LOYAL_CUSTOMER",
+    "achievementName": "Stały Klient",
+    "achievementDescription": "Uruchom Sanktuarium Przewodnictwa 15 razy podczas jednej przygody."
+  },
+  "Gem_R_Ricochet": {
+    "name": "Esencja Rykoszetu",
+    "description": "<color=yellow>Obrażenia</color> lub <color=yellow>Stopień Leczenia</color>, które daje to wspomnienie, mają 50%<sprite=5> szans na odbicie się od innego pobliskiego celu, zadając 90%<sprite=5> <color=yellow>Obrażeń</color> lub <color=yellow>Leczenia</color>. Jeśli to <color=yellow>Obrażenia</color>, reprezentują one ten sam typ obrażeń i elementów co oryginalne obrażenia.",
+    "rawDesc": "<color=yellow>Obrażenia</color> lub <color=yellow>Stopień Leczenia</color>, które daje to wspomnienie, mają {0} szans na odbicie się od innego pobliskiego celu, zadając {1} <color=yellow>Obrażeń</color> lub <color=yellow>Leczenia</color>. Jeśli to <color=yellow>Obrażenia</color>, reprezentują one ten sam typ obrażeń i elementów co oryginalne obrażenia.",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "ricochetChance",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "90%<sprite=5>",
+        "format": "P0",
+        "raw": "ricochetRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Ricochet.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Rigidity": {
+    "name": "Esencja Stanowczości",
+    "description": "Gdy wspomnienie to <color=yellow>Trafia</color> wroga, zyskujesz <color=yellow>Tarcze</color> x9<sprite=5>, ochraniające przez 2 sek. Jeśli są to <color=yellow>Obrażenia od Zimna</color>, efekt ten zwiększa się o 80%.",
+    "rawDesc": "Gdy wspomnienie to <color=yellow>Trafia</color> wroga, zyskujesz <color=yellow>Tarcze</color> x{0}, ochraniające przez {1} sek. Jeśli są to <color=yellow>Obrażenia od Zimna</color>, efekt ten zwiększa się o {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "9<sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "coldDamageMultiplier-1",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Shield"
+    ],
+    "image": "Gem_R_Rigidity.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Scorched": {
+    "name": "Esencja Zwęglenia",
+    "description": "Przy <color=yellow>Użyciu</color> tego wspomnienia rzucasz <color=yellow>Kule Ognia</color> x3<sprite=5>, które zadają <sprite=1><color=#16D7FF>47%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color> pobliskim wrogom.",
+    "rawDesc": "Przy <color=yellow>Użyciu</color> tego wspomnienia rzucasz <color=yellow>Kule Ognia</color> x{0}, które zadają {1} <color=yellow>Obrażeń od Ognia</color> pobliskim wrogom.",
+    "rawDescVars": [
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>47%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.35,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0035
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Scorched.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Shock": {
+    "name": "Esencja Szoku",
+    "description": "Co czwarty <color=yellow>Atak Podstawowy</color> jest <color=yellow>Wzmocniony</color> - wystrzelona zostaje <color=yellow>Błyskawica</color>, która odbija się od wrogów i maksymalnie 2 razy zadaje <sprite=1><color=#16D7FF>40%</color><sprite=5> <color=yellow>Obrażeń od Światła</color>. Na każde 20% <color=yellow>Szans na Trafienie Krytyczne</color>, maksymalna liczba zadawanych obrażeń zwiększa się o 1.",
+    "rawDesc": "Co czwarty <color=yellow>Atak Podstawowy</color> jest <color=yellow>Wzmocniony</color> - wystrzelona zostaje <color=yellow>Błyskawica</color>, która odbija się od wrogów i maksymalnie {0} razy zadaje {1} <color=yellow>Obrażeń od Światła</color>. Na każde {2} <color=yellow>Szans na Trafienie Krytyczne</color>, maksymalna liczba zadawanych obrażeń zwiększa się o 1.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "baseHitCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>40%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "chainDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.2,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "critChanceForAdditionalHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light",
+      "Attack"
+    ],
+    "image": "Gem_R_Shock.PNG",
+    "lore": null,
+    "achievementKey": "ACH_THOUSAND_THUNDERS",
+    "achievementName": "Tysiąc Grzmotów",
+    "achievementDescription": "Zadaj trafienie krytyczne łącznie 1,000 razy."
+  },
+  "Gem_R_Snow": {
+    "name": "Esencja Śniegu",
+    "description": "Jeśli przez 5 sek. nie otrzymasz obrażeń, zyskujesz doładowujące się tarcze x40<sprite=5>. Gdy posiadasz tarcze, okresowo wystrzeliwujesz śnieżkę w losowego pobliskiego wroga, zadając mu <sprite=1><color=#16D7FF>80%</color><sprite=5> <color=yellow>Obrażeń od Zimna</color>. Im większa ilość tarcz, tym szybciej wystrzeliwujesz śnieżki.",
+    "rawDesc": "Jeśli przez {0} sek. nie otrzymasz obrażeń, zyskujesz doładowujące się tarcze x{1}. Gdy posiadasz tarcze, okresowo wystrzeliwujesz śnieżkę w losowego pobliskiego wroga, zadając mu {2} <color=yellow>Obrażeń od Zimna</color>. Im większa ilość tarcz, tym szybciej wystrzeliwujesz śnieżki.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "rechargeTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>80%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.4,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold",
+      "Shield"
+    ],
+    "image": "Gem_R_Snow.PNG",
+    "lore": null,
+    "achievementKey": "ACH_SHIELD_BATTERY",
+    "achievementName": "Bateria Tarczy",
+    "achievementDescription": "Zredukuj łącznie 20,000 obrażeń od wrogów za pomocą Tarczy."
+  },
+  "Gem_R_Spiral": {
+    "name": "Esencja Wiru",
+    "description": "Okresowo, w losowego pobliskiego wroga, wystrzeliwane są kula ognia, zadające <sprite=1><color=#16D7FF>90%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color>. Im wyższa jakość, tym szybciej kule są wystrzeliwane.",
+    "rawDesc": "Okresowo, w losowego pobliskiego wroga, wystrzeliwane są kula ognia, zadające {0} <color=yellow>Obrażeń od Ognia</color>. Im wyższa jakość, tym szybciej kule są wystrzeliwane.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.6,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Spiral.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Wealth": {
+    "name": "Esencja Bogactwa",
+    "description": "Jeśli wróg otrzyma obrażenia od tego wspomnienia i zostanie wyeliminowany w ciągu 2 sek., upuści Złoto x1.7<sprite=5>. Złoto jest wóczas dzielone pomiędzy wszystkich Wędrowców.",
+    "rawDesc": "Jeśli wróg otrzyma obrażenia od tego wspomnienia i zostanie wyeliminowany w ciągu {0} sek., upuści Złoto x{1}. Złoto jest wóczas dzielone pomiędzy wszystkich Wędrowców.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "gracePeriod",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1.7<sprite=5>",
+        "format": "###,0.#",
+        "raw": "killGold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Wealth.PNG",
+    "lore": "Wiesz przecież, że złoto ma dla „nas” szczególne znaczenie...\n\nIstoty takie jak „my”, które zasypiają niepewne tego, czy kiedykolwiek się obudzą, potrzebują doskonałości, którą daje złoto, by przetrwać.\n\nMimo to... nie chcesz go użyć dla siebie?\nJonas, czy naprawdę...",
+    "achievementKey": "ACH_SUSPICIOUSLY_WEALTHY_TRAVELER",
+    "achievementName": "Podejrzanie Bogaty Wędrowiec",
+    "achievementDescription": "Zużyj łącznie 2,000 sztuk złota."
+  },
+  "Gem_R_Wound": {
+    "name": "Esencja Rany",
+    "description": "Gdy to wspomnienie zadaje obrażenia wrogowi, ryje <color=yellow>Znak</color>. Każdy <color=yellow>Atak</color> na <color=yellow>Znak</color> zadaje <sprite=1><color=#16D7FF>44%</color><sprite=5><color=yellow>Obrażeń</color>, a po 3 atakach, <color=yellow>Znak</color> eksploduje, zadając <sprite=1><color=#16D7FF>275%</color><sprite=5> <color=yellow>Obrażeń</color> wszystkim pobliskim wrogom.",
+    "rawDesc": "Gdy to wspomnienie zadaje obrażenia wrogowi, ryje <color=yellow>Znak</color>. Każdy <color=yellow>Atak</color> na <color=yellow>Znak</color> zadaje {0}<color=yellow>Obrażeń</color>, a po {1} atakach, <color=yellow>Znak</color> eksploduje, zadając {2} <color=yellow>Obrażeń</color> wszystkim pobliskim wrogom.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>44%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "hitDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.25,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "explodeStage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>275%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "explodeDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.1,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.015
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Attack"
+    ],
+    "image": "Gem_R_Wound.PNG",
+    "lore": null,
+    "achievementKey": "ACH_THROUGH_TIME_AND_SPACE",
+    "achievementName": "Transcendentna szybkość",
+    "achievementDescription": "Osiągnij szybkość ataku 6 na sek."
+  },
+  "Gem_U_EternalFlame": {
+    "name": "Wieczny Płomień",
+    "description": "Gdy wspomnienie to zadaje wrogowi <color=yellow>Obrażenia od Ognia</color>, nakłada na niego klątwę <color=yellow>Wiecznego Płomienia</color> na 5 sek. Cel, pod wpływem klątwy <color=yellow>Wiecznego Płomienia</color>, otrzymuje 1 dodatkowy ładunek <color=yellow>Poparzenia</color> za każdym razem, gdy otrzyma ode mnie <color=yellow>Jakiekolwiek Obrażenia</color>.\nWszystkie obrażenia zadawane przez to wspomnienie wrogowi są zwiększane o 2.0%<sprite=5> za każdy ładunek <color=yellow>Poparzenia</color> umieszczony na celu.",
+    "rawDesc": "Gdy wspomnienie to zadaje wrogowi <color=yellow>Obrażenia od Ognia</color>, nakłada na niego klątwę <color=yellow>Wiecznego Płomienia</color> na {0} sek. Cel, pod wpływem klątwy <color=yellow>Wiecznego Płomienia</color>, otrzymuje 1 dodatkowy ładunek <color=yellow>Poparzenia</color> za każdym razem, gdy otrzyma ode mnie <color=yellow>Jakiekolwiek Obrażenia</color>.\nWszystkie obrażenia zadawane przez to wspomnienie wrogowi są zwiększane o {1} za każdy ładunek <color=yellow>Poparzenia</color> umieszczony na celu.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "2.0%<sprite=5>",
+        "format": "#,##0.0%",
+        "raw": "ampPerFireStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.01,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_U_EternalFlame.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GlacialCore": {
+    "name": "Rdzeń lodowca",
+    "description": "Raz na 5 sek., gdy zadajesz <color=yellow>Obrażenia</color> tym wspomnieniem, <color=yellow>Odzyskujesz</color> <color=yellow>Zdrowie</color> równe 3.6%<sprite=5> twojego maksymalnego zdrowia. Jeśli są to <color=yellow>Obrażenia od Zimna</color>, efekt zostaje zwiększony o 100%.\nW pobliskich wrogów wystrzelone zostają <color=yellow>Kawałki Lodu</color>, które zadają <color=yellow>Obrażenia od Zimna</color>równe 272%<sprite=5> całego twojego <color=yellow>Odzyskanego Zdrowia</color>.",
+    "rawDesc": "Raz na {0} sek., gdy zadajesz <color=yellow>Obrażenia</color> tym wspomnieniem, <color=yellow>Odzyskujesz</color> <color=yellow>Zdrowie</color> równe {1} twojego maksymalnego zdrowia. Jeśli są to <color=yellow>Obrażenia od Zimna</color>, efekt zostaje zwiększony o {2}.\nW pobliskich wrogów wystrzelone zostają <color=yellow>Kawałki Lodu</color>, które zadają <color=yellow>Obrażenia od Zimna</color>równe {3} całego twojego <color=yellow>Odzyskanego Zdrowia</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3.6%<sprite=5>",
+        "format": "#,##0.#%",
+        "raw": "healMaxHealthRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "chillAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "272%<sprite=5>",
+        "format": "P0",
+        "raw": "healToDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.00089
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Cold",
+      "Heal"
+    ],
+    "image": "Gem_U_GlacialCore.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_SoulPrison": {
+    "name": "Więzienie Dusz",
+    "description": "Gdy otrzymasz <color=yellow>Śmiertelne Obrażenia</color>, ignorujesz je i stajesz się <color=yellow>Niezniszczalny</color> na 3 sek., a dana esencja zostaje <color=yellow>Zniszczona</color>. W tym momencie <color=yellow>Odzyskujesz</color> <color=yellow>Zdrowie</color> w ilości 3 za każdy 1% <color=yellow>Jakości</color> tej esencji, a nadwyżka odzyskanego zdrowia konwertowana jest na <color=yellow>Tarczę</color>.",
+    "rawDesc": "Gdy otrzymasz <color=yellow>Śmiertelne Obrażenia</color>, ignorujesz je i stajesz się <color=yellow>Niezniszczalny</color> na {0} sek., a dana esencja zostaje <color=yellow>Zniszczona</color>. W tym momencie <color=yellow>Odzyskujesz</color> <color=yellow>Zdrowie</color> w ilości {1} za każdy 1% <color=yellow>Jakości</color> tej esencji, a nadwyżka odzyskanego zdrowia konwertowana jest na <color=yellow>Tarczę</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "invulTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "healPerQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_U_SoulPrison.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  }
+}

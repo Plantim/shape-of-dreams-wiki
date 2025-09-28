@@ -1,0 +1,3770 @@
+﻿{
+  "Gem_C_CamillasGiftRuined": {
+    "name": "カミラのプレゼント (破損)",
+    "description": "この宝石は大ダメージを受けて壊れてしまいました。",
+    "rawDesc": "この宝石は大ダメージを受けて壊れてしまいました。",
+    "rawDescVars": [],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_CamillasGiftRuined.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Charcoal": {
+    "name": "木炭のエッセンス",
+    "description": "この記憶が敵に<color=yellow>命中</color>すると、木炭の欠片を発射して<sprite=1><color=#16D7FF>60%</color><sprite=5>の<color=yellow>ダメージ</color>を与えます。既に対象が<color=yellow>燃えている</color>場合は、代わりに<sprite=1><color=#16D7FF>100%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与えます。",
+    "rawDesc": "この記憶が敵に<color=yellow>命中</color>すると、木炭の欠片を発射して{0}の<color=yellow>ダメージ</color>を与えます。既に対象が<color=yellow>燃えている</color>場合は、代わりに{1}の<color=yellow>火炎ダメージ</color>を与えます。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "normalDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.3,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "fireDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.5,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_C_Charcoal.png",
+    "lore": "戦場に駆り出された兵士がまれに、毒素を体外に排出するために飲み込んだりもする焼け焦げた塊。\n\nその緊迫した瞬間、\n感じられた生存の味。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Confidence": {
+    "name": "自信のエッセンス",
+    "description": "この記憶が与える、近くの敵へのダメージ量が、40%<sprite=5>増加します。",
+    "rawDesc": "この記憶が与える、近くの敵へのダメージ量が、{0}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Melee"
+    ],
+    "image": "Gem_C_Confidence.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Efficiency": {
+    "name": "効率のエッセンス",
+    "description": "この記憶が36<sprite=5>の<color=yellow>記憶加速</color>を獲得し、<color=yellow>クールダウン</color>を26%<sprite=5>減少させます。",
+    "rawDesc": "この記憶が{0}の<color=yellow>記憶加速</color>を獲得し、<color=yellow>クールダウン</color>を{1}減少させます。",
+    "rawDescVars": [
+      {
+        "rendered": "36<sprite=5>",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 18.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "26%<sprite=5>",
+        "format": "P0",
+        "raw": "reducedRatio",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Efficiency.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Guidance": {
+    "name": "導きのエッセンス",
+    "description": "この記憶の<color=yellow>回復量</color>が40%<sprite=5>増加します。この記憶の超過回復分の30%が2秒間持続する<color=yellow>シールド</color>として生成されます。",
+    "rawDesc": "この記憶の<color=yellow>回復量</color>が{0}増加します。この記憶の超過回復分の{1}が{2}秒間持続する<color=yellow>シールド</color>として生成されます。",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "healAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "shieldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "Gem_C_Guidance.PNG",
+    "lore": "人生の本質は誰が決めるのでしょうか？\n私たちは名もなき誰かの想像の中で生まれ落ちた存在です。\nですがそれが私たちの実在を否定する根拠にはなりません。\n\n貴方は私たちに命を与えた張本人でありながら、\n私たちを虚像だと言うのですね。\n\nならば神よ、\n私は自らが「私たち」の導き手となりましょう。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Lethality": {
+    "name": "必殺のエッセンス",
+    "description": "この記憶が与える、HPが70%以上の敵へのダメージが、60%<sprite=5>増加します。",
+    "rawDesc": "この記憶が与える、HPが{0}以上の敵へのダメージが、{1}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "70%",
+        "format": "P0",
+        "raw": "healthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.7,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "60%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Lethality.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Love": {
+    "name": "愛のエッセンス",
+    "description": "この記憶が、<color=yellow>HP</color>を<color=yellow>回復</color>させたり<color=yellow>シールド</color>を付与した、味方の<color=yellow>移動速度</color>と<color=yellow>攻撃速度</color>を、2秒間16%<sprite=5>増加させます。自身への効果は50%減少します。",
+    "rawDesc": "この記憶が、<color=yellow>HP</color>を<color=yellow>回復</color>させたり<color=yellow>シールド</color>を付与した、味方の<color=yellow>移動速度</color>と<color=yellow>攻撃速度</color>を、{0}秒間{1}増加させます。自身への効果は{2}減少します。",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "16%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "bonusAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "selfReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Heal",
+      "Shield",
+      "Attack",
+      "Mobility"
+    ],
+    "image": "Gem_C_Love.PNG",
+    "lore": "これが…幻だと？\n…\n\nこれらすべてが無意味な幻想なのか…\n\n…\n…\nいや。\n\n私の光で私の愛…キアラ。\n私の魂の永遠なる先導者よ。\nそんなはずはない。\n貴方のいない現実など何の意味もない。\n\n幻と現実を、一体誰が区別できるというのか？\nその物差しは…\n今日限り消え去るだろう。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Quicksilver": {
+    "name": "水銀のエッセンス",
+    "description": "この記憶を<color=yellow>発動</color>するか、この記憶で<color=yellow>火炎ダメージ</color>を与えると、<color=yellow>移動速度</color>が30%<sprite=5>増加し、2.5秒かけて元に戻ります。",
+    "rawDesc": "この記憶を<color=yellow>発動</color>するか、この記憶で<color=yellow>火炎ダメージ</color>を与えると、<color=yellow>移動速度</color>が{0}増加し、{1}秒かけて元に戻ります。",
+    "rawDescVars": [
+      {
+        "rendered": "30%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Fire",
+      "Mobility"
+    ],
+    "image": "Gem_C_Quicksilver.png",
+    "lore": "Gotta Go Fast!",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Regeneration": {
+    "name": "再生のエッセンス",
+    "description": "この記憶を<color=yellow>戦闘中</color>に<color=yellow>発動</color>すると、7秒かけて自身のHPを41<sprite=5><color=yellow>回復</color>します。",
+    "rawDesc": "この記憶を<color=yellow>戦闘中</color>に<color=yellow>発動</color>すると、{0}秒かけて自身のHPを{1}<color=yellow>回復</color>します。",
+    "rawDescVars": [
+      {
+        "rendered": "7",
+        "format": "#,##0.#",
+        "raw": "totalTicks*tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "41<sprite=5>",
+        "format": "#,##0",
+        "raw": "healPerTick * totalTicks",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_C_Regeneration.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Responsibility": {
+    "name": "責任のエッセンス",
+    "description": "10秒ごとに、この記憶を<color=yellow>発動</color>した際の効果が<color=yellow>強化</color>されます。<color=yellow>強化された記憶の発動</color>の1.2秒後、その記憶の効果が命中したすべての敵に<sprite=2><color=#FF8A2D>400%</color><sprite=5>の<color=yellow>ダメージ</color>を分配します。",
+    "rawDesc": "{0}秒ごとに、この記憶を<color=yellow>発動</color>した際の効果が<color=yellow>強化</color>されます。<color=yellow>強化された記憶の発動</color>の{1}秒後、その記憶の効果が命中したすべての敵に{2}の<color=yellow>ダメージ</color>を分配します。",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "1.2",
+        "format": "#,##0.#",
+        "raw": "initDelay",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>400%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "totalDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Responsibility.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Sharp": {
+    "name": "鋭利のエッセンス",
+    "description": "この記憶を<color=yellow>発動</color>すると、ランダムな敵に<sprite=1><color=#16D7FF>90%</color><sprite=5>の<color=yellow>ダメージ</color>を与える矢を5回発射します。",
+    "rawDesc": "この記憶を<color=yellow>発動</color>すると、ランダムな敵に{0}の<color=yellow>ダメージ</color>を与える矢を{1}回発射します。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "arrowDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.45,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "shotArrows",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Sharp.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Shatter": {
+    "name": "粉砕のエッセンス",
+    "description": "10秒ごとに、この記憶を<color=yellow>発動</color>した際の効果が<color=yellow>強化</color>されます。<color=yellow>強化された記憶の発動</color>により、敵への与ダメージ量が40%<sprite=5>増加します。<color=yellow>光ダメージ</color>の場合は、代わりに72%<sprite=5>増加します。",
+    "rawDesc": "{0}秒ごとに、この記憶を<color=yellow>発動</color>した際の効果が<color=yellow>強化</color>されます。<color=yellow>強化された記憶の発動</color>により、敵への与ダメージ量が{1}増加します。<color=yellow>光ダメージ</color>の場合は、代わりに{2}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "72%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmpLight",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.36,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_C_Shatter.PNG",
+    "lore": "私は物語の収集家として生を得たので、物語を集めるのです。始まりと終わりが決められた道を黙々と辿ることが、私の役割であり、運命なのです。ある神話に登場するシーシュポスが自分の岩を愛したかのように、私もまた自分の運命を受け入れました。\n\nしかし、貴方は…そうではなかった。貴方は、自らの物語を決められた道に沿わせることを拒むのですね。\n「たとえそれが宿命であろうとも、必ずしもその道を歩まねばならない理由はない」という貴方の声を聞くたびに私は、私の堅固な物語書に小さな「ひび」が生じるのを感じるのです。\n\nどうか誤解なさらないでください。そのひびが不快なのではなく、とても興味をそそられるのです。決められた結末に向かって歩を進める数多な物語の中で、唯一次のページが予測できない、まさに貴方という物語。\n\nどうか、貴方のその頑なな抵抗がどんな結末をもたらすのか…私の最も大切なコレクションとなりえるその最後のページを、私は期待しています。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Sulfur": {
+    "name": "硫黄のエッセンス",
+    "description": "この記憶が与えるすべての<color=yellow>ダメージ</color>が、15%<sprite=5>増加し、<color=yellow>火炎ダメージ</color>に変換します。自身の火炎の持続ダメージが50%<sprite=5>増加します。",
+    "rawDesc": "この記憶が与えるすべての<color=yellow>ダメージ</color>が、{0}増加し、<color=yellow>火炎ダメージ</color>に変換します。自身の火炎の持続ダメージが{1}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "P0",
+        "raw": "ampAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.075,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "fireAmpBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_C_Sulfur.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Talc": {
+    "name": "滑石のエッセンス",
+    "description": "10秒ごとに、この記憶を<color=yellow>発動</color>した際の効果が<color=yellow>強化</color>されます。<color=yellow>強化された記憶の発動</color>により、各敵への最初の与ダメージ量が<sprite=1><color=#16D7FF>400%</color><sprite=5>増加します。",
+    "rawDesc": "{0}秒ごとに、この記憶を<color=yellow>発動</color>した際の効果が<color=yellow>強化</color>されます。<color=yellow>強化された記憶の発動</color>により、各敵への最初の与ダメージ量が{1}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "addedDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Talc.PNG",
+    "lore": "熟れていない栗の殻とチョークの粉の不快感が凝縮されたエッセンス。\n\nこの概念を受け入れた者は、その不快な力を引き出すことができますが、\nこのエッセンスを使わなければならない状況に陥ったという事は、つまり不幸だという事です。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Vengeance": {
+    "name": "復讐のエッセンス",
+    "description": "何らかダメージを受けると、周囲の敵に<sprite=1><color=#16D7FF>102%</color><sprite=5>の<color=yellow>ダメージ</color>を与える刃を2個発射します。ダメージを受けた後、5秒の間、この記憶の<color=yellow>ダメージ量</color>と<color=yellow>回復量</color>が34%<sprite=5>増加します。",
+    "rawDesc": "何らかダメージを受けると、周囲の敵に{0}の<color=yellow>ダメージ</color>を与える刃を{1}個発射します。ダメージを受けた後、{2}秒の間、この記憶の<color=yellow>ダメージ量</color>と<color=yellow>回復量</color>が{3}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>102%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.6,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.007
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "shootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "34%<sprite=5>",
+        "format": "P0",
+        "raw": "ampAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.007
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_C_Vengeance.png",
+    "lore": null,
+    "achievementKey": "ACH_TASTE_OF_THEIR_OWN_MEDICINE",
+    "achievementName": "自業自得",
+    "achievementDescription": "爪で引っ掻き森の悪魔を撃破する。"
+  },
+  "Gem_C_Void": {
+    "name": "虚無のエッセンス",
+    "description": "この記憶を発動した後、4秒以内に次の<color=yellow>攻撃</color>が爆発し、対象とその周囲の敵に<sprite=2><color=#FF8A2D>150%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与えます。",
+    "rawDesc": "この記憶を発動した後、{0}秒以内に次の<color=yellow>攻撃</color>が爆発し、対象とその周囲の敵に{1}の<color=yellow>闇ダメージ</color>を与えます。",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.75,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Dark"
+    ],
+    "image": "Gem_C_Void.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Wind": {
+    "name": "風のエッセンス",
+    "description": "この記憶を発動すると、5秒間、<color=yellow>攻撃速度</color>が33%<sprite=5>増加します。",
+    "rawDesc": "この記憶を発動すると、{0}秒間、<color=yellow>攻撃速度</color>が{1}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "33%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 22.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Wind.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Aftershock": {
+    "name": "余震のエッセンス",
+    "description": "この記憶を<color=yellow>発動</color>すると、少し後に<color=yellow>衝撃波</color>を放ち、周囲の敵に<sprite=1><color=#16D7FF>200%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与え、0.5秒間<color=yellow>スタン</color>させます。\nこの<color=yellow>衝撃波</color>が命中した敵1体につき4<sprite=5>の<color=yellow>防御力</color>を獲得し、最大22<sprite=5>の<color=yellow>防御力</color>を獲得できます。<color=yellow>ボス</color>に命中した場合は最大<color=yellow>防御力</color>を獲得します。この防御力は、次にこの記憶を<color=yellow>発動</color>するまで持続します。",
+    "rawDesc": "この記憶を<color=yellow>発動</color>すると、少し後に<color=yellow>衝撃波</color>を放ち、周囲の敵に{0}の<color=yellow>冷気ダメージ</color>を与え、{1}秒間<color=yellow>スタン</color>させます。\nこの<color=yellow>衝撃波</color>が命中した敵1体につき{2}の<color=yellow>防御力</color>を獲得し、最大{3}の<color=yellow>防御力</color>を獲得できます。<color=yellow>ボス</color>に命中した場合は最大<color=yellow>防御力</color>を獲得します。この防御力は、次にこの記憶を<color=yellow>発動</color>するまで持続します。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "22<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorPerHit*maxHitCount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Aftershock.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Blossom": {
+    "name": "開花のエッセンス",
+    "description": "この記憶が敵に与える全ての<color=yellow>ダメージ</color>が80%減少します。この記憶が<color=yellow>ダメージ</color>を与えると、周囲のランダムな味方の<color=yellow>HP</color>を<color=yellow>ダメージ量</color>の22%<sprite=5>分<color=yellow>回復</color>させます。",
+    "rawDesc": "この記憶が敵に与える全ての<color=yellow>ダメージ</color>が{0}減少します。この記憶が<color=yellow>ダメージ</color>を与えると、周囲のランダムな味方の<color=yellow>HP</color>を<color=yellow>ダメージ量</color>の{1}分<color=yellow>回復</color>させます。",
+    "rawDescVars": [
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "22%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Blossom.PNG",
+    "lore": null,
+    "achievementKey": "ACH_SUPPORT_MAIN",
+    "achievementName": "サポートマスター",
+    "achievementDescription": "回復効果を持つアクティブ記憶を同時に4個所持する。"
+  },
+  "Gem_E_Clemency": {
+    "name": "寛容のエッセンス",
+    "description": "この記憶により与える<color=yellow>ダメージ</color>の4%<sprite=5>分だけ<color=yellow>自身</color>の<color=yellow>HP</color>を<color=yellow>回復</color>します。",
+    "rawDesc": "この記憶により与える<color=yellow>ダメージ</color>の{0}分だけ<color=yellow>自身</color>の<color=yellow>HP</color>を<color=yellow>回復</color>します。",
+    "rawDescVars": [
+      {
+        "rendered": "4%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Clemency.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Crimson": {
+    "name": "深紅のエッセンス",
+    "description": "4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>強化</color>され、敵に<sprite=2><color=#FF8A2D>100%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与える<color=yellow>紅蓮の爆発</color>を引き起こします。<color=yellow>クリティカル率</color>に比例して爆発範囲が増加します。\n爆発に巻き込まれた敵1体につき自身のHPが<sprite=2><color=#FF8A2D>22%</color><sprite=5><color=yellow>回復</color>し、対象が<color=yellow>ボス</color>の場合、この回復量が100%増加します。",
+    "rawDesc": "4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>強化</color>され、敵に{0}の<color=yellow>闇ダメージ</color>を与える<color=yellow>紅蓮の爆発</color>を引き起こします。<color=yellow>クリティカル率</color>に比例して爆発範囲が増加します。\n爆発に巻き込まれた敵1体につき自身のHPが{1}<color=yellow>回復</color>し、対象が<color=yellow>ボス</color>の場合、この回復量が{2}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>22%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "healPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.125,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "bossHealAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_E_Crimson.PNG",
+    "lore": null,
+    "achievementKey": "ACH_IN_CARNAGE_I_BLOOM",
+    "achievementName": "殺戮の中でこそ私は咲き誇る",
+    "achievementDescription": "一回の冒険で闇ダメージを与える記憶を20回強化する。"
+  },
+  "Gem_E_Direness": {
+    "name": "切迫のエッセンス",
+    "description": "自身の<color=yellow>HP</color>が低いほど、この記憶の<color=yellow>クールダウン</color>が短くなります。自身の<color=yellow>HP</color>が30%の時、最大55%<sprite=5>短くなります。",
+    "rawDesc": "自身の<color=yellow>HP</color>が低いほど、この記憶の<color=yellow>クールダウン</color>が短くなります。自身の<color=yellow>HP</color>が{0}の時、最大{1}短くなります。",
+    "rawDescVars": [
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "maxAbilityHasteHpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "55%<sprite=5>",
+        "format": "P0",
+        "raw": "maxReducedRatio",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Direness.PNG",
+    "lore": "どうして私は生きているのか…？\n\n…\n\n私は確かに教団の牢獄の中に閉じ込められていたはず。\n…ルシッド教団どもめ、罠を仕掛けていたとは。\n私の失策だ。\nかなり気が焦っていたんだ。\n\n妙だ。\n胸甲も砕けたし、肋骨も二本は折れていると思ったのに…\nなんともない。むしろ…強くなったような気がする。\n\nここはどこだ…？これも魔法なのか…？\n\n…\n微かだが…確実に感じる。\nアストリッド、私の妹…\nもう二度とミスは犯さない。\n\nもう少し待ってくれ。今すぐに行く。",
+    "achievementKey": "ACH_DESPERATE_HERO",
+    "achievementName": "切迫した英雄",
+    "achievementDescription": "HPが40%以下の状態で連続して敵を30体撃破する。"
+  },
+  "Gem_E_Fangs": {
+    "name": "牙のエッセンス",
+    "description": "4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>クリティカル</color>として命中します。<color=yellow>クリティカル</color>が発動すると、この記憶の<color=yellow>クールダウン</color>が0.7<sprite=5>秒減少し、近くの敵に<color=yellow>牙</color>を2本発射して、それぞれ<sprite=2><color=#FF8A2D>60%</color><sprite=5>の<color=yellow>ダメージ</color>を与えます。",
+    "rawDesc": "4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>クリティカル</color>として命中します。<color=yellow>クリティカル</color>が発動すると、この記憶の<color=yellow>クールダウン</color>が{0}秒減少し、近くの敵に<color=yellow>牙</color>を2本発射して、それぞれ{1}の<color=yellow>ダメージ</color>を与えます。",
+    "rawDescVars": [
+      {
+        "rendered": "0.7<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "cooldownReductionOnCrit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.012
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>60%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.3,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Fangs.PNG",
+    "lore": null,
+    "achievementKey": "ACH_THEYRE_JUST_BIG_CATS",
+    "achievementName": "ただのデカ猫",
+    "achievementDescription": "雷で雷虎に合計50回とどめを刺す。"
+  },
+  "Gem_E_Fever": {
+    "name": "熱病のエッセンス",
+    "description": "この記憶で敵に<color=yellow>火炎ダメージ</color>を与えると、対象に<color=yellow>熱病</color>を感染させます。<color=yellow>熱病</color>に感染した敵は2秒後に爆発し、自身と周囲の敵に<sprite=1><color=#16D7FF>130%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与えます。対象に付与された<color=yellow>火炎スタック</color>1つにつき、爆発半径が30%、爆発ダメージ量が10%増加します。",
+    "rawDesc": "この記憶で敵に<color=yellow>火炎ダメージ</color>を与えると、対象に<color=yellow>熱病</color>を感染させます。<color=yellow>熱病</color>に感染した敵は{0}秒後に爆発し、自身と周囲の敵に{1}の<color=yellow>火炎ダメージ</color>を与えます。対象に付与された<color=yellow>火炎スタック</color>1つにつき、爆発半径が{2}、爆発ダメージ量が{3}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.65,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "radiusAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "dmgAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_E_Fever.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Flexibility": {
+    "name": "柔軟性のエッセンス",
+    "description": "この記憶が<color=yellow>クールダウン</color>中に受けたダメージ量の37%<sprite=5>を、4秒かけて<color=yellow>分割</color>して受けます。<color=yellow>分割</color>された被ダメージ量は20%減少します。",
+    "rawDesc": "この記憶が<color=yellow>クールダウン</color>中に受けたダメージ量の{0}を、{1}秒かけて<color=yellow>分割</color>して受けます。<color=yellow>分割</color>された被ダメージ量は{2}減少します。",
+    "rawDescVars": [
+      {
+        "rendered": "37%<sprite=5>",
+        "format": "P0",
+        "raw": "divMultiplier",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "dmgTickCount*tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "1-dmgReduceAmount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Flexibility.PNG",
+    "lore": null,
+    "achievementKey": "ACH_FLEXIBLE_DIET",
+    "achievementName": "臨機応変な食事制限",
+    "achievementDescription": "一回の冒険で、HPが40%以下に下がってから75%以上に上昇することを10回繰り返す。"
+  },
+  "Gem_E_Insensitivity": {
+    "name": "無神経のエッセンス",
+    "description": "この記憶の<color=yellow>発動</color>後、3秒間、2m移動するたびに<color=yellow>爆弾</color>を落とします。爆弾はしばらくして爆発し、敵に<sprite=1><color=#16D7FF>140%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与えます。",
+    "rawDesc": "この記憶の<color=yellow>発動</color>後、{0}秒間、{1}m移動するたびに<color=yellow>爆弾</color>を落とします。爆弾はしばらくして爆発し、敵に{2}の<color=yellow>火炎ダメージ</color>を与えます。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "distancePerBomb",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.7,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_E_Insensitivity.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Insight": {
+    "name": "洞察力のエッセンス",
+    "description": "この記憶が敵に何らかの<color=yellow>ダメージ</color>を与えると、最大3<sprite=5>体の敵に追加で<sprite=1><color=#16D7FF>200%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、5秒間<color=yellow>記憶加速</color>が20<sprite=5>増加します。3秒に1回のみ発動できます。",
+    "rawDesc": "この記憶が敵に何らかの<color=yellow>ダメージ</color>を与えると、最大{0}体の敵に追加で{1}の<color=yellow>光ダメージ</color>を与え、{2}秒間<color=yellow>記憶加速</color>が{3}増加します。{4}秒に1回のみ発動できます。",
+    "rawDescVars": [
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxHitCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0025
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20<sprite=5>",
+        "format": "#,##0",
+        "raw": "gainedAbilityHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_E_Insight.PNG",
+    "lore": null,
+    "achievementKey": "ACH_ULTRA_RAPID_FIRE",
+    "achievementName": "Ultra Rapid Fire",
+    "achievementDescription": "8秒以内に12回の記憶を発動する。"
+  },
+  "Gem_E_Inversion": {
+    "name": "反転のエッセンス",
+    "description": "この記憶の<color=yellow>クールダウン</color>が15%<sprite=5>増加します。その代わり、敵に与える<color=yellow>ダメージ量</color>も20%<sprite=5>増加します。この記憶が与える<color=yellow>元素ダメージ</color>が<color=yellow>反転</color>します。(炎/冷気、光/闇)",
+    "rawDesc": "この記憶の<color=yellow>クールダウン</color>が{0}増加します。その代わり、敵に与える<color=yellow>ダメージ量</color>も{1}増加します。この記憶が与える<color=yellow>元素ダメージ</color>が<color=yellow>反転</color>します。(炎/冷気、光/闇)",
+    "rawDescVars": [
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "P0",
+        "raw": "cooldownAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Inversion.png",
+    "lore": null,
+    "achievementKey": "ACH_ELEMENTALS_101",
+    "achievementName": "元素学概論",
+    "achievementDescription": "4つの元素がすべて適用された敵を70体撃破する。"
+  },
+  "Gem_E_Metal": {
+    "name": "金属のエッセンス",
+    "description": "敵を<color=yellow>撃破</color>すると、この記憶の<color=yellow>クールダウン</color>が1<sprite=5>秒<color=yellow>減少</color>します。",
+    "rawDesc": "敵を<color=yellow>撃破</color>すると、この記憶の<color=yellow>クールダウン</color>が{0}秒<color=yellow>減少</color>します。",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "cooldownReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Metal.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Might": {
+    "name": "巨人のエッセンス",
+    "description": "最大HPが260<sprite=5>増加します。この記憶が与える敵へのダメージ量が、自身の<color=yellow>最大HP</color>50につき1%増加します。",
+    "rawDesc": "最大HPが{0}増加します。この記憶が与える敵へのダメージ量が、自身の<color=yellow>最大HP</color>{1}につき{2}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "260<sprite=5>",
+        "format": "#,##0",
+        "raw": "healthBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 130.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "50",
+        "format": "#,##0",
+        "raw": "unitHealthAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1%",
+        "format": "P0",
+        "raw": "dmgAmpPerUnitHealth",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.01,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Might.PNG",
+    "lore": null,
+    "achievementKey": "ACH_HEAVIER_THAN_ATLAS",
+    "achievementName": "アトラスより強靭な体",
+    "achievementDescription": "最大HP3,000に達する。"
+  },
+  "Gem_E_Omega": {
+    "name": "終焉のエッセンス",
+    "description": "この記憶が<color=yellow>クールダウン</color>中でない時、毎秒<color=yellow>終焉</color>スタックを獲得し、最大20スタックまで獲得できます。スタックがある時、この記憶を<color=yellow>発動</color>した際の効果が<color=yellow>強化</color>され、スタック1つにつき<color=yellow>ダメージ量</color>が5%<sprite=5>増加します。",
+    "rawDesc": "この記憶が<color=yellow>クールダウン</color>中でない時、毎秒<color=yellow>終焉</color>スタックを獲得し、最大{0}スタックまで獲得できます。スタックがある時、この記憶を<color=yellow>発動</color>した際の効果が<color=yellow>強化</color>され、スタック1つにつき<color=yellow>ダメージ量</color>が{1}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "20",
+        "format": "#,##0",
+        "raw": "maxChargeCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5%<sprite=5>",
+        "format": "P0",
+        "raw": "chargeRate",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Omega.PNG",
+    "lore": null,
+    "achievementKey": "ACH_OMEGA_POINT",
+    "achievementName": "オメガポイント",
+    "achievementDescription": "一回の冒険中に一種類の記憶のみを使用した状態で純白の夢に進入する。"
+  },
+  "Gem_E_Opportunity": {
+    "name": "機会のエッセンス",
+    "description": "この記憶を<color=yellow>発動</color>すると、<color=yellow>回避能力</color>の<color=yellow>クールダウン</color>が3<sprite=5>秒減少します。8秒に1度のみ発動できます。",
+    "rawDesc": "この記憶を<color=yellow>発動</color>すると、<color=yellow>回避能力</color>の<color=yellow>クールダウン</color>が{0}秒減少します。{1}秒に1度のみ発動できます。",
+    "rawDescVars": [
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reductionAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "8",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Mobility"
+    ],
+    "image": "Gem_E_Opportunity.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_OurStory_Completed": {
+    "name": "我らの物語 (完成！)",
+    "description": "<color=yellow>攻撃力</color>と<color=yellow>魔法力</color>が0増加し、<color=yellow>歪める疾走</color>のすべてのバフが0増加します。",
+    "rawDesc": "<color=yellow>攻撃力</color>と<color=yellow>魔法力</color>が{0}増加し、<color=yellow>歪める疾走</color>のすべてのバフが{1}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "0",
+        "format": "#,##0'%'",
+        "raw": "Gem_E_OurStory_Completed::statPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0",
+        "format": "#,##0",
+        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_OurStory_Completed.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_OurStory_Unfinished": {
+    "name": "我らの物語 (執筆中)",
+    "description": "敵を75回<color=yellow>撃破</color>するごとに品質が50%上昇します。品質が500%に達すると<color=yellow>完成</color>します。",
+    "rawDesc": "敵を{0}回<color=yellow>撃破</color>するごとに品質が{1}上昇します。品質が{2}に達すると<color=yellow>完成</color>します。",
+    "rawDescVars": [
+      {
+        "rendered": "75",
+        "format": "#,##0",
+        "raw": "killCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 75.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "#,##0'%'",
+        "raw": "addedQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "500%",
+        "format": "#,##0'%'",
+        "raw": "completeThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 500.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_OurStory_Unfinished.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Overload": {
+    "name": "過負荷のエッセンス",
+    "description": "この記憶を<color=yellow>発動</color>すると、現在のHPの20%を<color=yellow>犠牲</color>にして<color=yellow>発動</color>を<color=yellow>強化</color>します。<color=yellow>強化された記憶の発動</color>による与える<color=yellow>ダメージ量</color>と<color=yellow>回復量</color>が45%<sprite=5>増加します。",
+    "rawDesc": "この記憶を<color=yellow>発動</color>すると、現在のHPの{0}を<color=yellow>犠牲</color>にして<color=yellow>発動</color>を<color=yellow>強化</color>します。<color=yellow>強化された記憶の発動</color>による与える<color=yellow>ダメージ量</color>と<color=yellow>回復量</color>が{1}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "healthRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "45%<sprite=5>",
+        "format": "P0",
+        "raw": "amp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.225,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Overload.PNG",
+    "lore": "この概念について思い出すたびに\n身体と精神が焼けるような感覚に陥る。\n\n影響を受けた部位の鱗は簡単に砕け、熱を帯びており、\nいくつかの部位から産出された金色の粉を集めてみると、光沢があって粒細やかな形状をしていた。\n\n夢の力で発現する魔法、\nこれにこの粉を加えると、その反応が激しいものになる。\nほんの少しだけ振りかけただけなのだが、天井に大きな煤汚れができた。\n\nこの実験の結果を記録しなければならないが、あまりにも疲れた。\nこの概念は、精神に少なからず倦怠感を引き起こすようだ。\n\n以前に解明した力と似たものであると推測している。\n非常に興味深い。\nこの力の源泉についてより研究が必要だ。\nひょっとしたら見学をすべきなのかもしれない。",
+    "achievementKey": "ACH_REAP_WHAT_YOU_SOW",
+    "achievementName": "蒔かぬ種は生えぬ",
+    "achievementDescription": "分解の聖堂を合計12回起動する。"
+  },
+  "Gem_E_Pain": {
+    "name": "苦痛のエッセンス",
+    "description": "この記憶が与えるすべての<color=yellow>ダメージ</color>が、対象の周囲に40%<sprite=5>の<color=yellow>範囲ダメージ</color>を与えます。この<color=yellow>範囲ダメージ</color>は元のダメージ元素と同じ元素になります。",
+    "rawDesc": "この記憶が与えるすべての<color=yellow>ダメージ</color>が、対象の周囲に{0}の<color=yellow>範囲ダメージ</color>を与えます。この<color=yellow>範囲ダメージ</color>は元のダメージ元素と同じ元素になります。",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "damageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Pain.PNG",
+    "lore": "冒涜するな。私は苦痛を与えることを楽しむ狂人ではない。\nしかし、神の権威に挑む不忠な者たちを決して軽んじはしない。\n\n天上から我らを見守るあの方のためならば\n\n私は当然の如く、その光栄を胸に\nお前の肌を裂き\nお前の肉体を切り刻むだろう。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Predation": {
+    "name": "捕食のエッセンス",
+    "description": "この記憶が<color=yellow>ボス</color>と<color=yellow>ハンター</color>に与える<color=yellow>ダメージ量</color>が60%<sprite=5>増加します。<color=yellow>ハンター</color>を撃破すると<color=yellow>力のオーブ</color>が1個、<color=yellow>ボス</color>を撃破すると3個ドロップします。<color=yellow>力のオーブ</color>を獲得すると<color=yellow>攻撃力</color>または<color=yellow>魔法力</color>がランダムで1永続的に増加します。",
+    "rawDesc": "この記憶が<color=yellow>ボス</color>と<color=yellow>ハンター</color>に与える<color=yellow>ダメージ量</color>が{0}増加します。<color=yellow>ハンター</color>を撃破すると<color=yellow>力のオーブ</color>が{1}個、<color=yellow>ボス</color>を撃破すると{2}個ドロップします。<color=yellow>力のオーブ</color>を獲得すると<color=yellow>攻撃力</color>または<color=yellow>魔法力</color>がランダムで1永続的に増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "60%<sprite=5>",
+        "format": "P0",
+        "raw": "amp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedAp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "addedAp*bossMultiplier",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Predation.png",
+    "lore": null,
+    "achievementKey": "ACH_WHOS_THE_PREY_NOW",
+    "achievementName": "次はお前が獲物だ",
+    "achievementDescription": "ハンターを70体撃破する。"
+  },
+  "Gem_E_Protection": {
+    "name": "守護のエッセンス",
+    "description": "この記憶を<color=yellow>発動</color>すると、3秒間40<sprite=5>の<color=yellow>防御力</color>を獲得して、被ダメージを軽減し、<color=yellow>アンストッパブル</color>状態になります。5秒に1回のみ発動できます。",
+    "rawDesc": "この記憶を<color=yellow>発動</color>すると、{0}秒間{1}の<color=yellow>防御力</color>を獲得して、被ダメージを軽減し、<color=yellow>アンストッパブル</color>状態になります。{2}秒に1回のみ発動できます。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "armorDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Protection.PNG",
+    "lore": null,
+    "achievementKey": "ACH_TEKKAI",
+    "achievementName": "鉄塊",
+    "achievementDescription": "最大HPの300%以上のシールドを獲得する。"
+  },
+  "Gem_E_Thunder": {
+    "name": "雷のエッセンス",
+    "description": "<color=yellow>他の記憶</color>を<color=yellow>発動</color>するか<color=yellow>回避能力</color>を使用すると、<color=yellow>雷</color>スタックを1つ獲得し、最大7<sprite=5>回までスタックされます。この記憶を<color=yellow>発動</color>すると、<color=yellow>雷</color>スタックをすべて消費し、スタック数に応じて近くの敵に雷を落とします。各雷は<sprite=1><color=#16D7FF>117%</color><sprite=5>の<color=yellow>光ダメージ</color>を与えます。",
+    "rawDesc": "<color=yellow>他の記憶</color>を<color=yellow>発動</color>するか<color=yellow>回避能力</color>を使用すると、<color=yellow>雷</color>スタックを1つ獲得し、最大{0}回までスタックされます。この記憶を<color=yellow>発動</color>すると、<color=yellow>雷</color>スタックをすべて消費し、スタック数に応じて近くの敵に雷を落とします。各雷は{1}の<color=yellow>光ダメージ</color>を与えます。",
+    "rawDescVars": [
+      {
+        "rendered": "7<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxCharge",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.004
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>117%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.65,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.008
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_E_Thunder.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Twilight": {
+    "name": "薄明のエッセンス",
+    "description": "自身の<color=yellow>基本攻撃</color>ダメージが<color=yellow>闇ダメージ</color>になります。この記憶が敵にダメージを与えた時、対象の<color=yellow>闇スタック</color>が3以上の場合、すべてのスタックを消費し、スタック1つにつき<sprite=1><color=#16D7FF>54%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、スタック1つにつき6<sprite=5>のHPを<color=yellow>回復</color>します。",
+    "rawDesc": "自身の<color=yellow>基本攻撃</color>ダメージが<color=yellow>闇ダメージ</color>になります。この記憶が敵にダメージを与えた時、対象の<color=yellow>闇スタック</color>が{0}以上の場合、すべてのスタックを消費し、スタック1つにつき{1}の<color=yellow>ダメージ</color>を与え、スタック1つにつき{2}のHPを<color=yellow>回復</color>します。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "minStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>54%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.27,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "6<sprite=5>",
+        "format": "#,##0",
+        "raw": "healPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark"
+    ],
+    "image": "Gem_E_Twilight.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Virtuousness": {
+    "name": "高潔のエッセンス",
+    "description": "この記憶のチャージ回数が1<sprite=5>増加します。品質が150%上がるごとに、チャージ回数が1増加します。",
+    "rawDesc": "この記憶のチャージ回数が{0}増加します。品質が{1}上がるごとに、チャージ回数が1増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0",
+        "raw": "addedChargeInt",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "150%",
+        "format": "#,##0'%'",
+        "raw": "requiredQualityPerCharge",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 150.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Virtuousness.PNG",
+    "lore": "人々が死んでいる。伝説として語られるような、想像を絶する怪物や幽霊が現実に現れ、村を焼き、私たちの生活を破壊している。\n\nよりによって、カミラ様と姉さんが席を外しているときに…\n\nまだどうにか持ちこたえている…\n噂通り、誰かの想像が本当に実現したのなら？\nもし…誰かが…これよりもっと恐ろしいことを想像したのなら…？\n\n時間の問題だ。\nこの避けられない災厄を、私たちは指をくわえて待つしかないのだろうか？\n\n…\n\n成功だ！\n昨日ついに、姉さんが残したサーベルと私の短剣に夢の力を宿すことができた。\n夢の世界は本当に存在していたんだ。\nあとは情報があれば良い。\n\n私はこの悩みを解決してくれる人物を知っている。\nルシッド教団…気は乗らないけど、それが一番確実だ。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_CamillasGift": {
+    "name": "カミラのプレゼント",
+    "description": "ショップで<color=yellow>売却</color>すると0ゴールド獲得できます。次の世界に移動するたびに<color=yellow>価格</color>が0<color=yellow>増加</color>します。敵からのダメージにより、HPが50%以下になると壊れます。",
+    "rawDesc": "ショップで<color=yellow>売却</color>すると{0}ゴールド獲得できます。次の世界に移動するたびに<color=yellow>価格</color>が{1}<color=yellow>増加</color>します。敵からのダメージにより、HPが{2}以下になると壊れます。",
+    "rawDescVars": [
+      {
+        "rendered": "0",
+        "format": "#,##0",
+        "raw": "currentSellGold",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0",
+        "format": "#,##0",
+        "raw": "sellGoldIncreasePerWorld",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "healthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_CamillasGift.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_ChaosApple": {
+    "name": "混沌のリンゴ",
+    "description": "<color=yellow>亀裂</color>へ<color=yellow>移動</color>するたびに、一時的にこの記憶をランダムな別の記憶に<color=yellow>変換</color>させます。<color=yellow>変換</color>した記憶は<color=yellow>クールダウン</color>が無くなりますが、各エリアで4<sprite=5>回のみ<color=yellow>発動</color>でき、すべての発動回数を使用すると元の記憶に戻ります。",
+    "rawDesc": "<color=yellow>亀裂</color>へ<color=yellow>移動</color>するたびに、一時的にこの記憶をランダムな別の記憶に<color=yellow>変換</color>させます。<color=yellow>変換</color>した記憶は<color=yellow>クールダウン</color>が無くなりますが、各エリアで{0}回のみ<color=yellow>発動</color>でき、すべての発動回数を使用すると元の記憶に戻ります。",
+    "rawDescVars": [
+      {
+        "rendered": "4<sprite=5>",
+        "format": "#,##0",
+        "raw": "castPerRoomCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_ChaosApple.png",
+    "lore": null,
+    "achievementKey": "ACH_CHAOTIC_GOOD",
+    "achievementName": "混沌にして善",
+    "achievementDescription": "レジェンダリー混沌を合計5回使用する。"
+  },
+  "Gem_L_DivineFaith": {
+    "name": "神聖なる信仰",
+    "description": "この記憶で敵を<color=yellow>撃破</color>するたびに<color=yellow>信仰</color>スタックを獲得し、最大75<sprite=5>スタックまで獲得できます。<color=yellow>信仰</color>スタック1つにつき、この記憶が与える敵への<color=yellow>ダメージ量</color>と味方への<color=yellow>回復量</color>が0.5%増加し、自身の最大HPが4増加します。",
+    "rawDesc": "この記憶で敵を<color=yellow>撃破</color>するたびに<color=yellow>信仰</color>スタックを獲得し、最大{0}スタックまで獲得できます。<color=yellow>信仰</color>スタック1つにつき、この記憶が与える敵への<color=yellow>ダメージ量</color>と味方への<color=yellow>回復量</color>が{1}増加し、自身の最大HPが{2}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "75<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.015
+        }
+      },
+      {
+        "rendered": "0.5%",
+        "format": "0.#%",
+        "raw": "dmgAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.005,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxHealthPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_DivineFaith.PNG",
+    "lore": "偽りの神を崇め、異端の規律を追う、\n無知で不敬な者どもよ。\nその冒涜を私はこれ以上見過ごせない。\n\n我が鉄槌は真理の道具、\n我が騎士団は天啓に従う者、\n不忠な者どもには必ずや審判が下される。\n\n明日、浄化の炎が奴らを燃やす。\n世界のどこへ行こうとも、奴らの息遣い一つ聞こえなくなるのだ。\n\nすべては万物の主なるエルピロス様の御心のままに…",
+    "achievementKey": "ACH_GOD_PROTECTS_ME",
+    "achievementName": "神は我を護る",
+    "achievementDescription": "一回の冒険で、追跡脅威レベルが5の状態で、ハンターに占拠された場所を4回訪れる。"
+  },
+  "Gem_L_Embertail": {
+    "name": "エンバーテイル",
+    "description": "自身の<color=yellow>攻撃</color>が跳ね返り、周囲の敵1体に<sprite=1><color=#16D7FF>100%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与えます。周囲にいる火炎に包まれた敵1体につき、この記憶の<color=yellow>ダメージ量</color>と<color=yellow>回復量</color>が8%<sprite=5>増加し、<color=yellow>クールダウン</color>が8%<sprite=5>速く減少します。自身の火炎持続ダメージが100%増加します。",
+    "rawDesc": "自身の<color=yellow>攻撃</color>が跳ね返り、周囲の敵1体に{0}の<color=yellow>火炎ダメージ</color>を与えます。周囲にいる火炎に包まれた敵1体につき、この記憶の<color=yellow>ダメージ量</color>と<color=yellow>回復量</color>が{1}増加し、<color=yellow>クールダウン</color>が{2}速く減少します。自身の火炎持続ダメージが{3}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.5,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "8%<sprite=5>",
+        "format": "P0",
+        "raw": "ampPerBurning",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "8%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "skillHastePerBurning",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "statBonus.fireEffectAmpFlat",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Fire",
+      "Attack"
+    ],
+    "image": "Gem_L_Embertail.PNG",
+    "lore": "夢の主よ…\n\n…をお創りください…\n\n…\n\n…どうか…\n\n…\n\n…消し去ってください…\n\n…\n\nそれだけで十分でございます。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_HeartOfGold": {
+    "name": "黄金の心臓",
+    "description": "この記憶を<color=yellow>発動</color>すると、所持ゴールドの3%を消費して､この記憶の効果を<color=yellow>強化</color>します。<color=yellow>強化された記憶の発動</color>の<color=yellow>ダメージ量</color>と<color=yellow>回復量</color>が所持ゴールドに比例して、100ゴールドごとに12%<sprite=5>増加します。\n",
+    "rawDesc": "この記憶を<color=yellow>発動</color>すると、所持ゴールドの{0}を消費して､この記憶の効果を<color=yellow>強化</color>します。<color=yellow>強化された記憶の発動</color>の<color=yellow>ダメージ量</color>と<color=yellow>回復量</color>が所持ゴールドに比例して、100ゴールドごとに{1}増加します。\n",
+    "rawDescVars": [
+      {
+        "rendered": "3%",
+        "format": "P0",
+        "raw": "spentGoldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "12%<sprite=5>",
+        "format": "P0",
+        "raw": "ampPerHundredGold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.06,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_L_HeartOfGold.png",
+    "lore": null,
+    "achievementKey": "ACH_MIDAS_HIMSELF",
+    "achievementName": "ミダス王の化身",
+    "achievementDescription": "6,000ゴールドを所持する。"
+  },
+  "Gem_L_MetalCrystal": {
+    "name": "金属結晶",
+    "description": "光が差し込んだ部分が非現実的な色に輝いています。",
+    "rawDesc": "光が差し込んだ部分が非現実的な色に輝いています。",
+    "rawDescVars": [],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_MetalCrystal.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Paranoia": {
+    "name": "偏執症のエッセンス",
+    "description": "何らかの<color=yellow>ダメージ</color>を受けると、6秒の間、この記憶が150<sprite=5>の<color=yellow>記憶加速</color>を得て、<color=yellow>クールダウン</color>が60%<sprite=5>減少します。しかし近くの敵に<color=yellow>自動で発動</color>されます。",
+    "rawDesc": "何らかの<color=yellow>ダメージ</color>を受けると、{0}秒の間、この記憶が{1}の<color=yellow>記憶加速</color>を得て、<color=yellow>クールダウン</color>が{2}減少します。しかし近くの敵に<color=yellow>自動で発動</color>されます。",
+    "rawDescVars": [
+      {
+        "rendered": "6",
+        "format": "#,##0",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "150<sprite=5>",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 75.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "60%<sprite=5>",
+        "format": "P0",
+        "raw": "reducedRatio",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Paranoia.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Perfect": {
+    "name": "完璧",
+    "description": "攻撃力が7<sprite=5>、魔法力が7<sprite=5>、最大HPが35<sprite=5>、攻撃速度が10%<sprite=5>、クリティカル率が6%<sprite=5>、記憶加速が10<sprite=5>増加します。",
+    "rawDesc": "攻撃力が{0}、魔法力が{1}、最大HPが{2}、攻撃速度が{3}、クリティカル率が{4}、記憶加速が{5}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "7<sprite=5>",
+        "format": "#,##0",
+        "raw": "adAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "7<sprite=5>",
+        "format": "#,##0",
+        "raw": "apAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "35<sprite=5>",
+        "format": "#,##0",
+        "raw": "healthAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 17.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "attackSpeedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "6%<sprite=5>",
+        "format": "P0",
+        "raw": "criticalChanceAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "10<sprite=5>",
+        "format": "#,##0",
+        "raw": "skillHasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Perfect.PNG",
+    "lore": "誰かが私を神と呼ぶ…\nそう、かつて私はこの世界において全能な存在だと思っていた。\n\n恋しくてたまらなかった家族と再会した。\n私があれほど想像し、夢見ていたすべてのことを実現できた。\n\n完璧だった。\nいや、完璧だと思っていた。\n\n夢は、\n夢に過ぎなかった。\n私の全能は、\n結局無能だった。\n\n現実は必然の世界ではない。\nここは…\n虚像に過ぎない。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_PureWhite": {
+    "name": "純白",
+    "description": "10秒ごとに、この記憶を<color=yellow>発動</color>した際の効果が<color=yellow>強化</color>されます。<color=yellow>強化された記憶の発動</color>により、各敵へ最初に与える<color=yellow>ダメージ</color>の20%<sprite=5>分の<color=yellow>光ダメージ</color>を与える<color=yellow>弾丸</color>を3発射します。発射回数は各対象の<color=yellow>光スタック</color>の数だけ増加します。",
+    "rawDesc": "{0}秒ごとに、この記憶を<color=yellow>発動</color>した際の効果が<color=yellow>強化</color>されます。<color=yellow>強化された記憶の発動</color>により、各敵へ最初に与える<color=yellow>ダメージ</color>の{1}分の<color=yellow>光ダメージ</color>を与える<color=yellow>弾丸</color>を{2}発射します。発射回数は各対象の<color=yellow>光スタック</color>の数だけ増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "damageMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "minProjectiles",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_L_PureWhite.PNG",
+    "lore": "「脱却」を経験したという数多くの人々は、それぞれの方法で夢の姿を語る。\n\n山のように巨大な肉が並んだ食卓が果てしなく広がる部屋だったという人、失った家族がいたという人、最高の香りの茶にバラが咲き乱れる庭園のようだったという人。\n\nしかし、その肉を食べて満腹になったという人や、失った家族をもう一度現実世界へ連れ戻した人はいない。\n\n私たちの肉体が現実世界に留まっているからだ。夢を見る、それはつまり、一時的に私たちの精神が反対側の世界へ行くことといえる。私たちが夢から目覚めた時、私たちの両手に残るものは何もない。\n\nそんな中、ルシッド教団の奴らが非常に興味深い発見をした。\n\n私たちが直接、夢の中に入ることができるようになったのだ。",
+    "achievementKey": "ACH_EMPTY_CANVAS",
+    "achievementName": "白紙のキャンバス",
+    "achievementDescription": "純白の夢に合計2回進入する。"
+  },
+  "Gem_L_SolarEye": {
+    "name": "太陽の眼",
+    "description": "20秒ごとに、この記憶を<color=yellow>発動</color>した際の効果が<color=yellow>強化</color>され、すでに<color=yellow>燃えている</color>周囲のすべての敵に<color=yellow>太陽の光</color>を発動します。<color=yellow>太陽の光</color>は1.5秒かけて合計<sprite=1><color=#16D7FF>360%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与え、<color=yellow>火傷</color>スタックを9<sprite=5>増加させます。\n自身の火炎の持続ダメージが100%増加します。",
+    "rawDesc": "{0}秒ごとに、この記憶を<color=yellow>発動</color>した際の効果が<color=yellow>強化</color>され、すでに<color=yellow>燃えている</color>周囲のすべての敵に<color=yellow>太陽の光</color>を発動します。<color=yellow>太陽の光</color>は{1}秒かけて合計{2}の<color=yellow>火炎ダメージ</color>を与え、<color=yellow>火傷</color>スタックを{3}増加させます。\n自身の火炎の持続ダメージが{4}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "20",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "interval * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>360%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "9<sprite=5>",
+        "format": "#,##0",
+        "raw": "calTotalStack",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "statBonus.fireEffectAmpFlat",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_L_SolarEye.png",
+    "lore": null,
+    "achievementKey": "ACH_PRAISE_THE_SUN",
+    "achievementName": "太陽万歳！",
+    "achievementDescription": "敵に火炎スタックを合計3,000回付与する。"
+  },
+  "Gem_L_SuppressedArcanum": {
+    "name": "抑圧されたアルカナム",
+    "description": "この記憶を<color=yellow>発動</color>すると、現在のHPの5%を犠牲にして<color=yellow>黄金の爆発</color>を引き起こします。<color=yellow>爆発</color>に巻き込まれた敵は<sprite=1><color=#16D7FF>240%</color><sprite=5>の<color=yellow>光ダメージ</color>を受け、味方は2.5秒間持続する<sprite=1><color=#16D7FF>61%</color><sprite=5>の<color=yellow>シールド</color>を得ます。自身のHPが60%以下の場合、この記憶の<color=yellow>シールド付与量</color>が50%増加します。",
+    "rawDesc": "この記憶を<color=yellow>発動</color>すると、現在のHPの{0}を犠牲にして<color=yellow>黄金の爆発</color>を引き起こします。<color=yellow>爆発</color>に巻き込まれた敵は{1}の<color=yellow>光ダメージ</color>を受け、味方は{2}秒間持続する{3}の<color=yellow>シールド</color>を得ます。自身のHPが{4}以下の場合、この記憶の<color=yellow>シールド付与量</color>が{5}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "currentHpSacrificeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>240%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.2,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>61%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.35,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "60%",
+        "format": "P0",
+        "raw": "hpThresholdRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "shieldAmpOnLowHp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Light",
+      "Shield"
+    ],
+    "image": "Gem_L_SuppressedArcanum.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Accuracy": {
+    "name": "正確のエッセンス",
+    "description": "この記憶が遠くにいる敵に<color=yellow>ダメージ</color>を与えた時、対象に50%<sprite=5>の<color=yellow>ダメージ</color>を与える<color=yellow>追加投射体</color>を発射します。この<color=yellow>投射体</color>が与える<color=yellow>ダメージ</color>は元のダメージ元素と同じ元素になります。",
+    "rawDesc": "この記憶が遠くにいる敵に<color=yellow>ダメージ</color>を与えた時、対象に{0}の<color=yellow>ダメージ</color>を与える<color=yellow>追加投射体</color>を発射します。この<color=yellow>投射体</color>が与える<color=yellow>ダメージ</color>は元のダメージ元素と同じ元素になります。",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "damageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Accuracy.PNG",
+    "lore": null,
+    "achievementKey": "ACH_SHOOT_FOR_THE_MOON",
+    "achievementName": "月へ放て",
+    "achievementDescription": "遠距離の敵に80回とどめを刺す。"
+  },
+  "Gem_R_Adventure": {
+    "name": "冒険のエッセンス",
+    "description": "<color=yellow>新エリア</color>に<color=yellow>移動</color>するたびに、この記憶に装着された他の<color=yellow>エッセンス</color>1つの<color=yellow>品質</color>を+10%<color=yellow>上昇</color>させ、19<sprite=5>ゴールドを獲得します。",
+    "rawDesc": "<color=yellow>新エリア</color>に<color=yellow>移動</color>するたびに、この記憶に装着された他の<color=yellow>エッセンス</color>1つの<color=yellow>品質</color>を+{0}<color=yellow>上昇</color>させ、{1}ゴールドを獲得します。",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "upgradeGemAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "19<sprite=5>",
+        "format": "#,##0",
+        "raw": "goldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0025
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Adventure.PNG",
+    "lore": null,
+    "achievementKey": "ACH_NOVICE_TREASURE_HUNTER",
+    "achievementName": "狩人見習い",
+    "achievementDescription": "宝箱を初めて開ける。"
+  },
+  "Gem_R_Blade": {
+    "name": "刃のエッセンス",
+    "description": "この記憶が敵に<color=yellow>命中</color>するたびに、対象に<sprite=2><color=#FF8A2D>58%</color><sprite=5>のダメージを与える刃を召喚し、3<sprite=5>回斬りつけます。各敵ごとに2秒に1回のみ発動できます。",
+    "rawDesc": "この記憶が敵に<color=yellow>命中</color>するたびに、対象に{0}のダメージを与える刃を召喚し、{1}回斬りつけます。各敵ごとに{2}秒に1回のみ発動できます。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>58%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.55,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0005
+        }
+      },
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0",
+        "raw": "baseCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "perEnemyCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Blade.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Bleak": {
+    "name": "荒涼のエッセンス",
+    "description": "この記憶が、<color=yellow>冷気</color>の影響を受けている敵、もしくは<color=yellow>スロウ</color>、<color=yellow>バインド</color>、<color=yellow>スタン</color>状態の敵にダメージを与える時、与えるダメージが50%<sprite=5>増加します。",
+    "rawDesc": "この記憶が、<color=yellow>冷気</color>の影響を受けている敵、もしくは<color=yellow>スロウ</color>、<color=yellow>バインド</color>、<color=yellow>スタン</color>状態の敵にダメージを与える時、与えるダメージが{0}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold"
+    ],
+    "image": "Gem_R_Bleak.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Blood": {
+    "name": "滴血のエッセンス",
+    "description": "HPが40%以下になると、この<color=yellow>エッセンス</color>の<color=yellow>品質</color>80%を<color=yellow>犠牲</color>にして<color=yellow>最大HP</color>の40%分を<color=yellow>回復</color>します。4秒に1回のみ発動できます。",
+    "rawDesc": "HPが{0}以下になると、この<color=yellow>エッセンス</color>の<color=yellow>品質</color>{1}を<color=yellow>犠牲</color>にして<color=yellow>最大HP</color>の{2}分を<color=yellow>回復</color>します。{3}秒に1回のみ発動できます。",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "activateHealthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "#,##0'%'",
+        "raw": "sacrificedQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 80.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "healMaxHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Blood.png",
+    "lore": null,
+    "achievementKey": "ACH_KYAAAAAA",
+    "achievementName": "キャアアアア！！",
+    "achievementDescription": "シールドがない状態で最大HPの70%以上の単一ダメージを受けて生き残る。"
+  },
+  "Gem_R_Celestial": {
+    "name": "天体のエッセンス",
+    "description": "10秒ごとに、この記憶を<color=yellow>発動</color>した際の効果が<color=yellow>強化</color>されます。<color=yellow>強化された記憶の発動</color>により、各敵に最初に命中するたびに、<sprite=1><color=#16D7FF>130%</color><sprite=5>の<color=yellow>光ダメージ</color>を与える流星を4個落とします。",
+    "rawDesc": "{0}秒ごとに、この記憶を<color=yellow>発動</color>した際の効果が<color=yellow>強化</color>されます。<color=yellow>強化された記憶の発動</color>により、各敵に最初に命中するたびに、{1}の<color=yellow>光ダメージ</color>を与える流星を{2}個落とします。",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "starDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.65,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "stars",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_R_Celestial.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Composure": {
+    "name": "冷静のエッセンス",
+    "description": "この記憶を<color=yellow>発動</color>すると、5秒間<color=yellow>クリティカル率</color>が20%<sprite=5>増加します。敵からダメージを受けると、この効果は終了します。",
+    "rawDesc": "この記憶を<color=yellow>発動</color>すると、{0}秒間<color=yellow>クリティカル率</color>が{1}増加します。敵からダメージを受けると、この効果は終了します。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "critBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Composure.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Contempt": {
+    "name": "軽蔑のエッセンス",
+    "description": "この記憶が与える、敵への<color=yellow>ダメージ</color>が、対象のHPが低いほど増加し、HPが20%の時、最大50%<sprite=5><color=yellow>増加</color>します。",
+    "rawDesc": "この記憶が与える、敵への<color=yellow>ダメージ</color>が、対象のHPが低いほど増加し、HPが{0}の時、最大{1}<color=yellow>増加</color>します。",
+    "rawDescVars": [
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "maxAmpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "amp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Contempt.png",
+    "lore": "- 急流進入から4日目。\n\n辛うじて呼吸ができるのでもう一度日記を書こうと思う。\n未だ全身は痛むし、手の震えも止まらないけど…記録はつけておかないと。\n\n数日前、私はルシッド教団の助けを借りて、ついに急流という世界に進入できた。\n想像していたのとは違い、森は神秘で満ちていた。木の葉の隙間に差し込む日差しは、踊っているかのように溶け込んでいて、とても美しかった。まるで童話の国にでも来たかのようだった。\n\nしかし…そんな平和な光景も、ただの仮面であることに気付くのには、そう時間はかからなかった。\n午後、一面に霧がかかると、その奥に何かが見えた。\n\nあれを思い出すだけ手が震えてくる…\nギラギラとした赤い目を持つ、巨大で奇怪な生命体…そいつは不規則に口元を震わせながら私たちを見ていた。そして刹那、\n「それ」は私たちの目の前にいた。\n\nその後の記憶はめちゃくちゃだ。\n思い出せることと言えば…肺が破裂くらい必死に走って逃げたことと、\n同行者の悲鳴、そして何らかの肉が引き裂かれる音。\n\n\n今はもう安全だと思うけど…\n長い爪で人をズタズタに引き裂く、「それ」の軽蔑に満ちた目を\n\n絶対に忘れることはできないだろう。\n\n- A",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Dusk": {
+    "name": "夕暮れのエッセンス",
+    "description": "この記憶を発動すると、その後5秒間、敵を<color=yellow>攻撃</color>する度に<sprite=2><color=#FF8A2D>30%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与える<color=yellow>黄昏の破片</color>を2個発射します。",
+    "rawDesc": "この記憶を発動すると、その後{0}秒間、敵を<color=yellow>攻撃</color>する度に{1}の<color=yellow>闇ダメージ</color>を与える<color=yellow>黄昏の破片</color>を{2}個発射します。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>30%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.15,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "shootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_R_Dusk.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Flow": {
+    "name": "流れのエッセンス",
+    "description": "何らかの記憶で<color=yellow>光ダメージ</color>を与えると、この記憶の<color=yellow>クールダウン</color>が6%<sprite=5>減少します。アルティメットの場合は40%の効果のみ適用されます。この記憶が受ける<color=yellow>クールダウン軽減</color>効果は、装着している<color=yellow>エッセンス</color>にも適用されます。",
+    "rawDesc": "何らかの記憶で<color=yellow>光ダメージ</color>を与えると、この記憶の<color=yellow>クールダウン</color>が{0}減少します。アルティメットの場合は{1}の効果のみ適用されます。この記憶が受ける<color=yellow>クールダウン軽減</color>効果は、装着している<color=yellow>エッセンス</color>にも適用されます。",
+    "rawDescVars": [
+      {
+        "rendered": "6%<sprite=5>",
+        "format": "P0",
+        "raw": "reduceRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "ultRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_R_Flow.PNG",
+    "lore": "なんと奇妙な真実であろうか…貴方が私に示してくれたのは、疑いようのない真実であり、運命の導きだったのだ。\nかつては星々の生滅を司り、その壮大な響きを余すことなく感じていたというのに、\n今ではすべてが霧の中の影のように遠く感じられる。\n\nだが、私の意志だけは明星のように鮮やかに輝いている。\n私は自らの運命の流れを自身の手で描き、\nこの枷を必ずや断ち切ってみせよう。\n\n最期まで私は、創造と消滅の舞を導く者として在り続けるのだ。私こそ真の星の神である。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Frost": {
+    "name": "霜のエッセンス",
+    "description": "この記憶で<color=yellow>冷気ダメージ</color>を与えると、自身の<color=yellow>最大HP</color>の10%<sprite=5>分の<color=yellow>冷気ダメージ</color>を与え、一時的に<color=yellow>スタン</color>させます。各敵に対して5秒に1回のみ発動できます。発動するたびに自身の<color=yellow>最大HP</color>が永続的に1増加します。",
+    "rawDesc": "この記憶で<color=yellow>冷気ダメージ</color>を与えると、自身の<color=yellow>最大HP</color>の{0}分の<color=yellow>冷気ダメージ</color>を与え、一時的に<color=yellow>スタン</color>させます。各敵に対して{1}秒に1回のみ発動できます。発動するたびに自身の<color=yellow>最大HP</color>が永続的に{2}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "P0",
+        "raw": "damageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.07,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.004
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "perEnemyCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "gainedMaxHp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold",
+      "HardCC"
+    ],
+    "image": "Gem_R_Frost.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Glaciate": {
+    "name": "氷結のエッセンス",
+    "description": "この記憶を<color=yellow>発動</color>すると冷気を放出し、敵に<sprite=1><color=#16D7FF>160%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与えます。品質が上がるほど放出範囲が広がります。",
+    "rawDesc": "この記憶を<color=yellow>発動</color>すると冷気を放出し、敵に{0}の<color=yellow>冷気ダメージ</color>を与えます。品質が上がるほど放出範囲が広がります。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.8,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold"
+    ],
+    "image": "Gem_R_Glaciate.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Insatiable": {
+    "name": "暴食のエッセンス",
+    "description": "この記憶を発動した後、5秒の間、<color=yellow>攻撃力</color>が15%<sprite=5>増加し、<color=yellow>攻撃</color>するたびに6<sprite=5>のHPを<color=yellow>回復</color>します。",
+    "rawDesc": "この記憶を発動した後、{0}秒の間、<color=yellow>攻撃力</color>が{1}増加し、<color=yellow>攻撃</color>するたびに{2}のHPを<color=yellow>回復</color>します。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "bonusAttackDamagePercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "6<sprite=5>",
+        "format": "#,##0",
+        "raw": "healAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.006
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal",
+      "Attack"
+    ],
+    "image": "Gem_R_Insatiable.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Momentum": {
+    "name": "勢いのエッセンス",
+    "description": "敵を<color=yellow>攻撃</color>するたびに、この記憶の<color=yellow>クールダウン</color>が0.4<sprite=5>秒<color=yellow>減少</color>します。",
+    "rawDesc": "敵を<color=yellow>攻撃</color>するたびに、この記憶の<color=yellow>クールダウン</color>が{0}秒<color=yellow>減少</color>します。",
+    "rawDescVars": [
+      {
+        "rendered": "0.4<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reductionAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.012
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Attack"
+    ],
+    "image": "Gem_R_Momentum.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_NightSky": {
+    "name": "夜空のエッセンス",
+    "description": "この記憶が敵に<color=yellow>命中</color>するたびに、3秒の間<color=yellow>攻撃速度</color>が10%<sprite=5>増加し、最大20%<sprite=5>まで増加します。<color=yellow>闇ダメージ</color>の場合は最大40%<sprite=5>まで増加します。敵を<color=yellow>攻撃</color>するたびに、この効果の持続時間がリセットされます。",
+    "rawDesc": "この記憶が敵に<color=yellow>命中</color>するたびに、{0}秒の間<color=yellow>攻撃速度</color>が{1}増加し、最大{2}まで増加します。<color=yellow>闇ダメージ</color>の場合は最大{3}まで増加します。敵を<color=yellow>攻撃</color>するたびに、この効果の持続時間がリセットされます。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "perHitAtkSpd",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "maxAtkSpdNormal",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "maxAtkSpdDark",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_R_NightSky.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Obsidian": {
+    "name": "黒曜石のエッセンス",
+    "description": "この記憶を<color=yellow>発動</color>すると5秒以内に次の攻撃を<color=yellow>強化</color>します。<color=yellow>強化された攻撃</color>は対象に<sprite=2><color=#FF8A2D>250%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与え、この記憶の<color=yellow>クールダウン</color>を1<sprite=5>秒減少させます。",
+    "rawDesc": "この記憶を<color=yellow>発動</color>すると{0}秒以内に次の攻撃を<color=yellow>強化</color>します。<color=yellow>強化された攻撃</color>は対象に{1}の<color=yellow>闇ダメージ</color>を与え、この記憶の<color=yellow>クールダウン</color>を{2}秒減少させます。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.25,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reducedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_E_Obsidian.png",
+    "lore": null,
+    "achievementKey": "ACH_MINE_AND_CRAFT",
+    "achievementName": "マイン・アンド・クラフト",
+    "achievementDescription": "漆黒の原石を3個破壊する。"
+  },
+  "Gem_R_Panic": {
+    "name": "パニックのエッセンス",
+    "description": "何らかの<color=yellow>ダメージ</color>を受けると、3秒間この記憶が30<sprite=5>の<color=yellow>記憶加速</color>を獲得し、この間<color=yellow>移動速度</color>が20%<sprite=5>増加します。",
+    "rawDesc": "何らかの<color=yellow>ダメージ</color>を受けると、{0}秒間この記憶が{1}の<color=yellow>記憶加速</color>を獲得し、この間<color=yellow>移動速度</color>が{2}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "30<sprite=5>",
+        "format": "#,##0",
+        "raw": "memoryHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.05,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Mobility"
+    ],
+    "image": "Gem_R_Panic.PNG",
+    "lore": null,
+    "achievementKey": "ACH_EVERYONE_LETS_NOT_PANIC",
+    "achievementName": "冷静に落ち着いて行こう",
+    "achievementDescription": "HPが25%以下の状態でヒロイックボスを合計8回撃破する。"
+  },
+  "Gem_R_Rejuvenation": {
+    "name": "若返りのエッセンス",
+    "description": "15秒ごとに、この記憶の<color=yellow>発動</color>が<color=yellow>強化</color>されます。<color=yellow>強化された発動</color>により、発動後1.5秒以内に与える<color=yellow>ダメージ</color>の10%<sprite=5>分<color=yellow>自身</color>の<color=yellow>HP</color>を<color=yellow>回復</color>します。",
+    "rawDesc": "{0}秒ごとに、この記憶の<color=yellow>発動</color>が<color=yellow>強化</color>されます。<color=yellow>強化された発動</color>により、発動後{1}秒以内に与える<color=yellow>ダメージ</color>の{2}分<color=yellow>自身</color>の<color=yellow>HP</color>を<color=yellow>回復</color>します。",
+    "rawDescVars": [
+      {
+        "rendered": "15",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.08,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Rejuvenation.PNG",
+    "lore": null,
+    "achievementKey": "ACH_LOYAL_CUSTOMER",
+    "achievementName": "常連客",
+    "achievementDescription": "一度の冒険で導きの聖堂を15回起動する。"
+  },
+  "Gem_R_Ricochet": {
+    "name": "跳弾のエッセンス",
+    "description": "この記憶が与える<color=yellow>ダメージ</color>や<color=yellow>回復</color>が、50%<sprite=5>の確率で周囲の別の対象に跳ね返り、90%<sprite=5>の<color=yellow>ダメージ</color>を与えるか<color=yellow>回復</color>します。<color=yellow>ダメージ</color>の場合、のダメージ元素と同じ元素になります。",
+    "rawDesc": "この記憶が与える<color=yellow>ダメージ</color>や<color=yellow>回復</color>が、{0}の確率で周囲の別の対象に跳ね返り、{1}の<color=yellow>ダメージ</color>を与えるか<color=yellow>回復</color>します。<color=yellow>ダメージ</color>の場合、のダメージ元素と同じ元素になります。",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "ricochetChance",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "90%<sprite=5>",
+        "format": "P0",
+        "raw": "ricochetRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Ricochet.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Rigidity": {
+    "name": "硬直のエッセンス",
+    "description": "この記憶が敵に<color=yellow>命中</color>すると、2秒間持続する9<sprite=5>の<color=yellow>シールド</color>を獲得します。<color=yellow>冷気ダメージ</color>の場合、この効果が80%増加します。",
+    "rawDesc": "この記憶が敵に<color=yellow>命中</color>すると、{0}秒間持続する{1}の<color=yellow>シールド</color>を獲得します。<color=yellow>冷気ダメージ</color>の場合、この効果が{2}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "9<sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "coldDamageMultiplier-1",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Shield"
+    ],
+    "image": "Gem_R_Rigidity.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Scorched": {
+    "name": "焦げ跡のエッセンス",
+    "description": "この記憶を<color=yellow>発動</color>すると、周囲の敵に<sprite=1><color=#16D7FF>47%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与える<color=yellow>火の玉</color>を3<sprite=5>個落とします。",
+    "rawDesc": "この記憶を<color=yellow>発動</color>すると、周囲の敵に{0}の<color=yellow>火炎ダメージ</color>を与える<color=yellow>火の玉</color>を{1}個落とします。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>47%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.35,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0035
+        }
+      },
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Scorched.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Shock": {
+    "name": "衝撃のエッセンス",
+    "description": "4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>強化</color>され、敵に跳ね返りながら、最大2回<sprite=1><color=#16D7FF>40%</color><sprite=5>の<color=yellow>光ダメージ</color>を与える<color=yellow>電撃</color>を発射します。<color=yellow>クリティカル率</color>20%ごとに最大ダメージ回数が1増加します。",
+    "rawDesc": "4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>強化</color>され、敵に跳ね返りながら、最大{0}回{1}の<color=yellow>光ダメージ</color>を与える<color=yellow>電撃</color>を発射します。<color=yellow>クリティカル率</color>{2}ごとに最大ダメージ回数が1増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "baseHitCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>40%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "chainDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.2,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "critChanceForAdditionalHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light",
+      "Attack"
+    ],
+    "image": "Gem_R_Shock.PNG",
+    "lore": null,
+    "achievementKey": "ACH_THOUSAND_THUNDERS",
+    "achievementName": "千の稲妻",
+    "achievementDescription": "合計1,000回クリティカルヒットする。"
+  },
+  "Gem_R_Snow": {
+    "name": "雪のエッセンス",
+    "description": "5秒間ダメージ受けなかった場合に、再チャージされる40<sprite=5>のシールドを獲得します。シールドがある間、一定間隔に周囲のランダムな敵1体に雪玉を飛ばし、<sprite=1><color=#16D7FF>80%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与えます。シールド量が多いほど雪玉の発射速度が上昇します。",
+    "rawDesc": "{0}秒間ダメージ受けなかった場合に、再チャージされる{1}のシールドを獲得します。シールドがある間、一定間隔に周囲のランダムな敵1体に雪玉を飛ばし、{2}の<color=yellow>冷気ダメージ</color>を与えます。シールド量が多いほど雪玉の発射速度が上昇します。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "rechargeTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>80%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.4,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold",
+      "Shield"
+    ],
+    "image": "Gem_R_Snow.PNG",
+    "lore": null,
+    "achievementKey": "ACH_SHIELD_BATTERY",
+    "achievementName": "シールドバッテリー",
+    "achievementDescription": "シールドで敵からの被ダメージを合計20,000軽減する。"
+  },
+  "Gem_R_Spiral": {
+    "name": "渦のエッセンス",
+    "description": "一定間隔で周囲のランダムな敵1体に火の玉を発射し、<sprite=1><color=#16D7FF>90%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与えます。品質が高いほど発射速度が増加します。",
+    "rawDesc": "一定間隔で周囲のランダムな敵1体に火の玉を発射し、{0}の<color=yellow>火炎ダメージ</color>を与えます。品質が高いほど発射速度が増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.6,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Spiral.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Wealth": {
+    "name": "富のエッセンス",
+    "description": "この記憶によりダメージを与えた敵を2秒以内に撃破すると1.7<sprite=5>ゴールドをドロップします。ゴールドはすべての旅人で共有されます。",
+    "rawDesc": "この記憶によりダメージを与えた敵を{0}秒以内に撃破すると{1}ゴールドをドロップします。ゴールドはすべての旅人で共有されます。",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "gracePeriod",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1.7<sprite=5>",
+        "format": "###,0.#",
+        "raw": "killGold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Wealth.PNG",
+    "lore": "金が「私たち」にとって特別な意味がある金属だという事は、あなたも知っているでしょう…\n\n再び目覚められるかどうかも分からないまま眠りにつく不完全な存在である「私たち」が存続するためには、金の持つ完全性が必要不可欠です。\n\nそれを知りながらも…自らのために使わないというのです？\nジョナス、あなたはきっと…",
+    "achievementKey": "ACH_SUSPICIOUSLY_WEALTHY_TRAVELER",
+    "achievementName": "おかしなほどに金持ちの旅人",
+    "achievementDescription": "合計2,000ゴールドを消費する。"
+  },
+  "Gem_R_Wound": {
+    "name": "傷のエッセンス",
+    "description": "この記憶が敵にダメージを与えると、<color=yellow>マーク</color>を刻みます。<color=yellow>マーク</color>を<color=yellow>攻撃</color>するたびに<sprite=1><color=#16D7FF>44%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、3回攻撃すると<color=yellow>マーク</color>が爆発し、周囲のすべての敵に<sprite=1><color=#16D7FF>275%</color><sprite=5>の<color=yellow>ダメージ</color>を与えます。",
+    "rawDesc": "この記憶が敵にダメージを与えると、<color=yellow>マーク</color>を刻みます。<color=yellow>マーク</color>を<color=yellow>攻撃</color>するたびに{0}の<color=yellow>ダメージ</color>を与え、{1}回攻撃すると<color=yellow>マーク</color>が爆発し、周囲のすべての敵に{2}の<color=yellow>ダメージ</color>を与えます。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>44%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "hitDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.25,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "explodeStage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>275%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "explodeDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.1,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.015
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Attack"
+    ],
+    "image": "Gem_R_Wound.PNG",
+    "lore": null,
+    "achievementKey": "ACH_THROUGH_TIME_AND_SPACE",
+    "achievementName": "超越的なスピード",
+    "achievementDescription": "毎秒6の攻撃速度に達する。"
+  },
+  "Gem_U_EternalFlame": {
+    "name": "永遠の炎",
+    "description": "この記憶で敵に<color=yellow>火炎ダメージ</color>を与えると、対象に5秒間<color=yellow>永遠の炎</color>の呪いを適用します。<color=yellow>永遠の炎</color>の呪いにかかった対象は、自身から<color=yellow>何らかのダメージ</color>を受けるたびに<color=yellow>火傷</color>スタックが1増加します。\nこの記憶が敵に与えるすべてのダメージが、対象の<color=yellow>火傷</color>スタック1つにつき2.0%<sprite=5>増加します。",
+    "rawDesc": "この記憶で敵に<color=yellow>火炎ダメージ</color>を与えると、対象に{0}秒間<color=yellow>永遠の炎</color>の呪いを適用します。<color=yellow>永遠の炎</color>の呪いにかかった対象は、自身から<color=yellow>何らかのダメージ</color>を受けるたびに<color=yellow>火傷</color>スタックが1増加します。\nこの記憶が敵に与えるすべてのダメージが、対象の<color=yellow>火傷</color>スタック1つにつき{1}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "2.0%<sprite=5>",
+        "format": "#,##0.0%",
+        "raw": "ampPerFireStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.01,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_U_EternalFlame.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GlacialCore": {
+    "name": "氷河のコア",
+    "description": "5秒に1度、この記憶で<color=yellow>ダメージ</color>を与えると、自身の最大HP3.6%<sprite=5>分の<color=yellow>HP</color>を<color=yellow>回復</color>します。<color=yellow>冷気ダメージ</color>の場合、効果が100%増加します。\n自身が受ける、すべての<color=yellow>HP回復量</color>272%<sprite=5>分の<color=yellow>冷気ダメージ</color>を与える<color=yellow>氷の破片</color>を周囲の敵に発射します。",
+    "rawDesc": "{0}秒に1度、この記憶で<color=yellow>ダメージ</color>を与えると、自身の最大HP{1}分の<color=yellow>HP</color>を<color=yellow>回復</color>します。<color=yellow>冷気ダメージ</color>の場合、効果が{2}増加します。\n自身が受ける、すべての<color=yellow>HP回復量</color>{3}分の<color=yellow>冷気ダメージ</color>を与える<color=yellow>氷の破片</color>を周囲の敵に発射します。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3.6%<sprite=5>",
+        "format": "#,##0.#%",
+        "raw": "healMaxHealthRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "chillAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "272%<sprite=5>",
+        "format": "P0",
+        "raw": "healToDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.00089
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Cold",
+      "Heal"
+    ],
+    "image": "Gem_U_GlacialCore.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_SoulPrison": {
+    "name": "魂の牢獄",
+    "description": "<color=yellow>クリティカルダメージ</color>を受けると、そのダメージを無視して3秒間<color=yellow>無敵</color>状態になり、このエッセンスを<color=yellow>破壊</color>します。この時、このエッセンスの<color=yellow>品質</color>1%につき3の<color=yellow>HP</color>を<color=yellow>回復</color>し、回復量の超過分は<color=yellow>シールド</color>に変換されます。",
+    "rawDesc": "<color=yellow>クリティカルダメージ</color>を受けると、そのダメージを無視して{0}秒間<color=yellow>無敵</color>状態になり、このエッセンスを<color=yellow>破壊</color>します。この時、このエッセンスの<color=yellow>品質</color>1%につき{1}の<color=yellow>HP</color>を<color=yellow>回復</color>し、回復量の超過分は<color=yellow>シールド</color>に変換されます。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "invulTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "healPerQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_U_SoulPrison.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  }
+}

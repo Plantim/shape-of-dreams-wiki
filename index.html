@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Shape of Dreams</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white min-h-screen" data-theme="black">
+
+    <div class="navbar bg-base-100/20 p-4 sticky top-0 z-50">
+        <div class="flex-1">
+            <a href="index.html" class="btn btn-ghost text-xl">Accueil</a>
+            <a href="memories.html" class="btn btn-ghost text-xl">Mémoires</a>
+            <a href="essences.html" class="btn btn-ghost text-xl">Essences</a>
+        </div>
+    </div>
+
+    <main class="container mx-auto px-4 py-12">
+        <div class="text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">Wiki de Shape of Dreams</h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-12">Votre guide complet pour explorer les Mémoires et les Essences du jeu.</p>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+            
+            <a href="memories.html" class="card w-full md:w-96 bg-gray-800 shadow-xl image-full transform transition-transform duration-300 hover:scale-105">
+                <figure><img src="https://i.imgur.com/example-memory-bg.png" alt="Mémoires" class="opacity-30"/></figure>
+                <div class="card-body justify-center items-center">
+                    <h2 class="card-title text-4xl font-bold">Mémoires</h2>
+                    <p class="text-center mt-2">Explorez toutes les mémoires disponibles, leurs effets et leurs synergies.</p>
+                </div>
+            </a>
+
+            <a href="essences.html" class="card w-full md:w-96 bg-gray-800 shadow-xl image-full transform transition-transform duration-300 hover:scale-105">
+                <figure><img src="https://i.imgur.com/example-essence-bg.png" alt="Essences" class="opacity-30"/></figure>
+                <div class="card-body justify-center items-center">
+                    <h2 class="card-title text-4xl font-bold">Essences</h2>
+                    <p class="text-center mt-2">Découvrez les essences pour améliorer et personnaliser vos mémoires.</p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer class="text-center p-4 mt-12 text-gray-500">
+        <p>Créé pour la communauté de Shape of Dreams</p>
+    </footer>
+
+</body>
+</html>

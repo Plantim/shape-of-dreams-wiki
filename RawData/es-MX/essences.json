@@ -1,0 +1,3757 @@
+﻿{
+  "Gem_C_CamillasGiftRuined": {
+    "name": "Regalo de Camila (Roto)",
+    "description": "Se ha roto por recibir un gran daño.",
+    "rawDesc": "Se ha roto por recibir un gran daño.",
+    "rawDescVars": [],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_CamillasGiftRuined.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Charcoal": {
+    "name": "Esencia de Carbón",
+    "description": "Cuando esta memoria <color=yellow>impacta</color> a un enemigo, dispara un fragmento de carbón que causa <sprite=1><color=#16D7FF>60%</color><sprite=5> de <color=yellow>daño</color>. Si el objetivo ya está <color=yellow>en llamas</color>, causa <sprite=1><color=#16D7FF>100%</color><sprite=5> de <color=yellow>daño de fuego</color> en su lugar.",
+    "rawDesc": "Cuando esta memoria <color=yellow>impacta</color> a un enemigo, dispara un fragmento de carbón que causa {0} de <color=yellow>daño</color>. Si el objetivo ya está <color=yellow>en llamas</color>, causa {1} de <color=yellow>daño de fuego</color> en su lugar.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "normalDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.3,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "fireDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.5,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_C_Charcoal.png",
+    "lore": "Un trozo ennegrecido que los soldados a veces tragaban en el campo de batalla para filtrar toxinas de sus cuerpos.\n\nEn ese momento desesperado,\nse podía saborear la supervivencia.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Confidence": {
+    "name": "Esencia de Confianza",
+    "description": "El daño causado por esta memoria a los enemigos cercanos aumenta un 40%<sprite=5>.",
+    "rawDesc": "El daño causado por esta memoria a los enemigos cercanos aumenta un {0}.",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Melee"
+    ],
+    "image": "Gem_C_Confidence.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Efficiency": {
+    "name": "Esencia de Eficiencia",
+    "description": "Esta Memoria obtiene <color=yellow>celeridad de memoria</color> de 36<sprite=5>, reduciendo su <color=yellow>tiempo de reutilización</color> un 26%<sprite=5>.",
+    "rawDesc": "Esta Memoria obtiene <color=yellow>celeridad de memoria</color> de {0}, reduciendo su <color=yellow>tiempo de reutilización</color> un {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "36<sprite=5>",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 18.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "26%<sprite=5>",
+        "format": "P0",
+        "raw": "reducedRatio",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Efficiency.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Guidance": {
+    "name": "Esencia de Guía",
+    "description": "La <color=yellow>cantidad de recuperación</color> de esta memoria aumenta un 40%<sprite=5>. Un 30% del exceso de recuperación de esta memoria se convierte en un <color=yellow>escudo</color> que dura 2 segundos.",
+    "rawDesc": "La <color=yellow>cantidad de recuperación</color> de esta memoria aumenta un {0}. Un {1} del exceso de recuperación de esta memoria se convierte en un <color=yellow>escudo</color> que dura {2} segundos.",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "healAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "shieldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "Gem_C_Guidance.PNG",
+    "lore": "¿Quién determina la esencia de la vida?\nAunque somos seres nacidos de la imaginación de alguien sin nombre,\neso no justifica negar nuestra existencia.\n\nNos diste vida,\n¿pero nos consideras meras ilusiones?\n\nEntonces, oh deidad,\nyo mismo me convertiré en el guía de «nosotros».",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Lethality": {
+    "name": "Esencia de Letalidad",
+    "description": "El daño que esta memoria causa a enemigos con más de 70% de salud aumenta un 60%<sprite=5>.",
+    "rawDesc": "El daño que esta memoria causa a enemigos con más de {0} de salud aumenta un {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "70%",
+        "format": "P0",
+        "raw": "healthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.7,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "60%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Lethality.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Love": {
+    "name": "Esencia de Amor",
+    "description": "Esta memoria <color=yellow>recupera</color> <color=yellow>salud</color> o concede un <color=yellow>escudo</color> a un aliado, aumenta su <color=yellow>velocidad de movimiento</color> y <color=yellow>velocidad de ataque</color> un 16%<sprite=5> durante 2 segundos. El efecto se reduce un 50% cuando se aplica a uno mismo.",
+    "rawDesc": "Esta memoria <color=yellow>recupera</color> <color=yellow>salud</color> o concede un <color=yellow>escudo</color> a un aliado, aumenta su <color=yellow>velocidad de movimiento</color> y <color=yellow>velocidad de ataque</color> un {0} durante {1} segundos. El efecto se reduce un {2} cuando se aplica a uno mismo.",
+    "rawDescVars": [
+      {
+        "rendered": "16%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "bonusAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "selfReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Heal",
+      "Shield",
+      "Attack",
+      "Mobility"
+    ],
+    "image": "Gem_C_Love.PNG",
+    "lore": "¿Dices que no es más que una ilusión...?\n...\n\n¿Todo esto es solo un sueño sin sentido...?\n\n...\n...\nNo.\n\nMi luz, mi amor, Kiara.\nGuía eterna de mi alma.\nNo puede ser.\nUna realidad sin ti no tiene sentido alguno.\n\n¿Quién se atreve a separar la ilusión de la realidad?\nEse criterio...\nA partir de hoy, dejará de existir.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Quicksilver": {
+    "name": "Esencia de Mercurio",
+    "description": "Al <color=yellow>conjurar</color> esta memoria o causar <color=yellow>daño de fuego</color> con ella, aumenta un 30%<sprite=5> de la <color=yellow>velocidad de movimiento</color> y vuelve a la normalidad durante 2.5 segundos.",
+    "rawDesc": "Al <color=yellow>conjurar</color> esta memoria o causar <color=yellow>daño de fuego</color> con ella, aumenta un {0} de la <color=yellow>velocidad de movimiento</color> y vuelve a la normalidad durante {1} segundos.",
+    "rawDescVars": [
+      {
+        "rendered": "30%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Fire",
+      "Mobility"
+    ],
+    "image": "Gem_C_Quicksilver.png",
+    "lore": "¡Tengo que ir rápido!",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Regeneration": {
+    "name": "Esencia de Regeneración",
+    "description": "Si se <color=yellow>conjura</color> esta memoria durante el <color=yellow>combate</color>, <color=yellow>recupera</color> 41<sprite=5> de la salud propia durante 7 segundos.",
+    "rawDesc": "Si se <color=yellow>conjura</color> esta memoria durante el <color=yellow>combate</color>, <color=yellow>recupera</color> {0} de la salud propia durante {1} segundos.",
+    "rawDescVars": [
+      {
+        "rendered": "41<sprite=5>",
+        "format": "#,##0",
+        "raw": "healPerTick * totalTicks",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "7",
+        "format": "#,##0.#",
+        "raw": "totalTicks*tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_C_Regeneration.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Responsibility": {
+    "name": "Esencia de Responsabilidad",
+    "description": "Cada 10 segundos, la <color=yellow>conjuración</color> de esta memoria se <color=yellow>fortalece</color>. 1.2 segundos después de una <color=yellow>conjuración fortalecida</color>, reparte <sprite=2><color=#FF8A2D>400%</color><sprite=5> de <color=yellow>daño</color> entre todos los enemigos impactados por la conjuración.",
+    "rawDesc": "Cada {0} segundos, la <color=yellow>conjuración</color> de esta memoria se <color=yellow>fortalece</color>. {1} segundos después de una <color=yellow>conjuración fortalecida</color>, reparte {2} de <color=yellow>daño</color> entre todos los enemigos impactados por la conjuración.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "1.2",
+        "format": "#,##0.#",
+        "raw": "initDelay",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>400%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "totalDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Responsibility.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Sharp": {
+    "name": "Esencia de Filo",
+    "description": "Al <color=yellow>conjurar</color> esta memoria, dispara 5 flechas que causan <sprite=1><color=#16D7FF>90%</color><sprite=5> de <color=yellow>daño</color> a un enemigo aleatorio.",
+    "rawDesc": "Al <color=yellow>conjurar</color> esta memoria, dispara {0} flechas que causan {1} de <color=yellow>daño</color> a un enemigo aleatorio.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "shotArrows",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "arrowDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.45,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Sharp.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Shatter": {
+    "name": "Esencia de Fragmentación",
+    "description": "Cada 10 segundos, la <color=yellow>conjuración</color> de esta memoria se <color=yellow>fortalece</color>. El daño causado a los enemigos con la <color=yellow>conjuración fortalecida</color> aumenta un 40%<sprite=5>. Si es <color=yellow>daño de Luz</color>, aumenta un 72%<sprite=5> en su lugar.",
+    "rawDesc": "Cada {0} segundos, la <color=yellow>conjuración</color> de esta memoria se <color=yellow>fortalece</color>. El daño causado a los enemigos con la <color=yellow>conjuración fortalecida</color> aumenta un {1}. Si es <color=yellow>daño de Luz</color>, aumenta un {2} en su lugar.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "72%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmpLight",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.36,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_C_Shatter.PNG",
+    "lore": "Nací como un coleccionista de historias, así que simplemente me dedico a reunir relatos. Seguir el camino marcado, desde el principio hasta el final, es mi papel y mi destino. Así como Sísifo, aquel personaje de las leyendas, llegó a amar su roca, yo también he aceptado mi destino.\n\nPero tú... siempre has sido diferente. Te niegas a seguir el camino predestinado por tu propia historia.\nCada vez que escucho tu voz diciendo: «El hecho de que hayamos nacido así no significa que debamos vivir de esa manera,» siento que en mi sólido libro de historias aparece una pequeña «fractura».\n\nNo me malinterpretes. Esa fractura no me resulta desagradable, sino increíblemente fascinante. Entre tantas historias que corren hacia un final predeterminado, el tuyo es el único capítulo siguiente que no puedo predecir: esa es tu historia.\n\nPor favor, espero con ansias ver a dónde te lleva esa obstinada resistencia tuya... Esperaré con entusiasmo la última página, que será mi posesión más preciada.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Sulfur": {
+    "name": "Esencia de Azufre",
+    "description": "Todo el <color=yellow>daño</color> causado por esta memoria aumenta un 15%<sprite=5> y se convierte en <color=yellow>daño de fuego</color>. El daño de fuego continuo aumenta un 50%<sprite=5>.",
+    "rawDesc": "Todo el <color=yellow>daño</color> causado por esta memoria aumenta un {0} y se convierte en <color=yellow>daño de fuego</color>. El daño de fuego continuo aumenta un {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "P0",
+        "raw": "ampAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.075,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "fireAmpBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_C_Sulfur.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Talc": {
+    "name": "Esencia de Talco",
+    "description": "Cada 10 segundos, la <color=yellow>conjuración</color> de esta memoria se <color=yellow>fortalece</color>. La <color=yellow>conjuración fortalecida</color> aumenta el daño inicial contra enemigos individuales en <sprite=1><color=#16D7FF>400%</color><sprite=5>.",
+    "rawDesc": "Cada {0} segundos, la <color=yellow>conjuración</color> de esta memoria se <color=yellow>fortalece</color>. La <color=yellow>conjuración fortalecida</color> aumenta el daño inicial contra enemigos individuales en {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "addedDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Talc.PNG",
+    "lore": "Una esencia que condensa la sequedad de cáscaras nocturnas inmaduras y del polvo de tiza.\n\nQuien reciba esta noción podrá extraer su desagradable poder,\npero sin duda sería desafortunado encontrarse en una situación donde se necesite usar esta noción tan desagradable.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Vengeance": {
+    "name": "Esencia de Venganza",
+    "description": "Al recibir cualquier daño, dispara 2 hojas que infligen <sprite=1><color=#16D7FF>102%</color><sprite=5> de <color=yellow>daño</color> a enemigos cercanos. Después de recibir daño, el <color=yellow>daño</color> y la <color=yellow>recuperación</color> de esta memoria aumentan un 34%<sprite=5> durante 5 segundos.",
+    "rawDesc": "Al recibir cualquier daño, dispara {0} hojas que infligen {1} de <color=yellow>daño</color> a enemigos cercanos. Después de recibir daño, el <color=yellow>daño</color> y la <color=yellow>recuperación</color> de esta memoria aumentan un {2} durante {3} segundos.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "shootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>102%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.6,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.007
+        }
+      },
+      {
+        "rendered": "34%<sprite=5>",
+        "format": "P0",
+        "raw": "ampAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.007
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_C_Vengeance.png",
+    "lore": null,
+    "achievementKey": "ACH_TASTE_OF_THEIR_OWN_MEDICINE",
+    "achievementName": "Probando su propia medicina",
+    "achievementDescription": "Derrota al Demonio del Bosque desgarrándolo."
+  },
+  "Gem_C_Void": {
+    "name": "Esencia de Vacío",
+    "description": "Después de conjurar esta memoria, el siguiente <color=yellow>ataque</color> dentro de 4 segundos explotará, causando <sprite=2><color=#FF8A2D>150%</color><sprite=5> de <color=yellow>daño oscuro</color> al objetivo y a los enemigos cercanos a él.",
+    "rawDesc": "Después de conjurar esta memoria, el siguiente <color=yellow>ataque</color> dentro de {0} segundos explotará, causando {1} de <color=yellow>daño oscuro</color> al objetivo y a los enemigos cercanos a él.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.75,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Dark"
+    ],
+    "image": "Gem_C_Void.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Wind": {
+    "name": "Esencia de Viento",
+    "description": "Al conjurar esta memoria, aumenta la <color=yellow>velocidad de ataque</color> un 33%<sprite=5> durante 5 segundos.",
+    "rawDesc": "Al conjurar esta memoria, aumenta la <color=yellow>velocidad de ataque</color> un {0} durante {1} segundos.",
+    "rawDescVars": [
+      {
+        "rendered": "33%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 22.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Wind.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Aftershock": {
+    "name": "Esencia de Sismo",
+    "description": "Al <color=yellow>conjurar</color> esta memoria, dispara una <color=yellow>onda de choque</color> después de un momento que causa <sprite=1><color=#16D7FF>200%</color><sprite=5> de <color=yellow>daño de frío</color> a los enemigos cercanos y los <color=yellow>aturde</color> durante 0.5 segundos.\nPor cada enemigo impactado por esta <color=yellow>onda de choque</color>, obtienes 4<sprite=5> de <color=yellow>defensa</color>, hasta un máximo de 22<sprite=5> de <color=yellow>defensa</color>. Al impactar a un <color=yellow>jefe</color>, obtienes la <color=yellow>defensa</color> máxima. Esta defensa dura hasta que vuelvas a <color=yellow>conjurar</color> esta memoria.",
+    "rawDesc": "Al <color=yellow>conjurar</color> esta memoria, dispara una <color=yellow>onda de choque</color> después de un momento que causa {0} de <color=yellow>daño de frío</color> a los enemigos cercanos y los <color=yellow>aturde</color> durante {1} segundos.\nPor cada enemigo impactado por esta <color=yellow>onda de choque</color>, obtienes {2} de <color=yellow>defensa</color>, hasta un máximo de {3} de <color=yellow>defensa</color>. Al impactar a un <color=yellow>jefe</color>, obtienes la <color=yellow>defensa</color> máxima. Esta defensa dura hasta que vuelvas a <color=yellow>conjurar</color> esta memoria.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "22<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorPerHit*maxHitCount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Aftershock.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Blossom": {
+    "name": "Esencia de Florecimiento",
+    "description": "Todo el <color=yellow>daño</color> que esta memoria causa a los enemigos se reduce un 80%. Cuando esta memoria causa <color=yellow>daño</color>, <color=yellow>recupera</color> la <color=yellow>salud</color> de un aliado aleatorio cercano hasta un 22%<sprite=5> del <color=yellow>daño</color>.",
+    "rawDesc": "Todo el <color=yellow>daño</color> que esta memoria causa a los enemigos se reduce un {0}. Cuando esta memoria causa <color=yellow>daño</color>, <color=yellow>recupera</color> la <color=yellow>salud</color> de un aliado aleatorio cercano hasta un {1} del <color=yellow>daño</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "22%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Blossom.PNG",
+    "lore": null,
+    "achievementKey": "ACH_SUPPORT_MAIN",
+    "achievementName": "Maestro del soporte",
+    "achievementDescription": "Posee 4 memorias activas con efecto de recuperación al mismo tiempo."
+  },
+  "Gem_E_Clemency": {
+    "name": "Esencia de Clemencia",
+    "description": "<color=yellow>Recupera</color> la <color=yellow>salud</color> <color=yellow>propia</color> hasta un 4%<sprite=5> del <color=yellow>daño</color> causado con esta memoria.",
+    "rawDesc": "<color=yellow>Recupera</color> la <color=yellow>salud</color> <color=yellow>propia</color> hasta un {0} del <color=yellow>daño</color> causado con esta memoria.",
+    "rawDescVars": [
+      {
+        "rendered": "4%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Clemency.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Crimson": {
+    "name": "Esencia Carmesí",
+    "description": "Cada 4º <color=yellow>ataque básico</color> se <color=yellow>fortalece</color> y causa una <color=yellow>explosión escarlata</color> que causa <sprite=2><color=#FF8A2D>100%</color><sprite=5> de <color=yellow>daño oscuro</color> a los enemigos. El radio de la explosión aumenta en proporción a tu <color=yellow>probabilidad de golpe crítico</color>.\n<color=yellow>Recuperas</color> <sprite=2><color=#FF8A2D>22%</color><sprite=5> de salud por cada enemigo afectado por la explosión, y esta recuperación aumenta un 100% si el objetivo es un <color=yellow>jefe</color>.",
+    "rawDesc": "Cada 4º <color=yellow>ataque básico</color> se <color=yellow>fortalece</color> y causa una <color=yellow>explosión escarlata</color> que causa {0} de <color=yellow>daño oscuro</color> a los enemigos. El radio de la explosión aumenta en proporción a tu <color=yellow>probabilidad de golpe crítico</color>.\n<color=yellow>Recuperas</color> {1} de salud por cada enemigo afectado por la explosión, y esta recuperación aumenta un {2} si el objetivo es un <color=yellow>jefe</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>22%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "healPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.125,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "bossHealAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_E_Crimson.PNG",
+    "lore": null,
+    "achievementKey": "ACH_IN_CARNAGE_I_BLOOM",
+    "achievementName": "En la masacre florezco",
+    "achievementDescription": "Fortalece las memorias que causan daño oscuro 20 veces en una sola aventura."
+  },
+  "Gem_E_Direness": {
+    "name": "Esencia de Desesperación",
+    "description": "Cuanto más baja sea tu <color=yellow>salud</color>, más corto será el <color=yellow>tiempo de reutilización</color> de esta memoria. Cuando tu <color=yellow>salud</color> esté en 30%, se reducirá hasta un máximo de 55%<sprite=5>.",
+    "rawDesc": "Cuanto más baja sea tu <color=yellow>salud</color>, más corto será el <color=yellow>tiempo de reutilización</color> de esta memoria. Cuando tu <color=yellow>salud</color> esté en {0}, se reducirá hasta un máximo de {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "maxAbilityHasteHpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "55%<sprite=5>",
+        "format": "P0",
+        "raw": "maxReducedRatio",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Direness.PNG",
+    "lore": "¿Cómo es que sigo vivo...?\n\n...\n\nEstaba seguro de estar encerrado en la prisión de la Orden.\n... Esos bastardos de la Secta Lúcida, me tendieron una trampa.\nFue mi error.\nFui demasiado imprudente.\n\nQué extraño.\nMi armadura estaba destrozada y juraba que tenía al menos dos costillas rotas...\nPero no siento nada. De hecho... me siento más fuerte.\n\n¿Dónde estoy...? ¿Será esto magia también...?\n\n...\nDébilmente... pero con certeza, puedo sentirla.\nAstrid, hermana mía...\nNo volveré a cometer errores.\n\nEspera un poco más, ya voy en camino.",
+    "achievementKey": "ACH_DESPERATE_HERO",
+    "achievementName": "Héroe desesperado",
+    "achievementDescription": "Derrota a 30 enemigos consecutivamente mientras tu salud está por debajo de 40%."
+  },
+  "Gem_E_Fangs": {
+    "name": "Esencia de Colmillos",
+    "description": "Cada 4º <color=yellow>ataque básico</color> impacta con un <color=yellow>golpe crítico</color>. Cuando se activa un <color=yellow>golpe crítico</color>, el <color=yellow>tiempo de reutilización</color> de esta memoria se reduce en 0.7<sprite=5> segundos y dispara 2 <color=yellow>colmillos</color> a los enemigos cercanos, causando <sprite=2><color=#FF8A2D>60%</color><sprite=5> de <color=yellow>daño</color> cada uno.",
+    "rawDesc": "Cada 4º <color=yellow>ataque básico</color> impacta con un <color=yellow>golpe crítico</color>. Cuando se activa un <color=yellow>golpe crítico</color>, el <color=yellow>tiempo de reutilización</color> de esta memoria se reduce en {0} segundos y dispara 2 <color=yellow>colmillos</color> a los enemigos cercanos, causando {1} de <color=yellow>daño</color> cada uno.",
+    "rawDescVars": [
+      {
+        "rendered": "0.7<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "cooldownReductionOnCrit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.012
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>60%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.3,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Fangs.PNG",
+    "lore": null,
+    "achievementKey": "ACH_THEYRE_JUST_BIG_CATS",
+    "achievementName": "Solo es un gato grande",
+    "achievementDescription": "Asesta un total de 50 golpes finales con relámpago al Tigre del Trueno."
+  },
+  "Gem_E_Fever": {
+    "name": "Esencia de Fiebre",
+    "description": "Cuando causas <color=yellow>daño de fuego</color> con esta memoria, infectas al objetivo con <color=yellow>Fiebre</color>. Los enemigos infectados con <color=yellow>Fiebre</color> explotan después de 2 segundos, causando <sprite=1><color=#16D7FF>130%</color><sprite=5> de <color=yellow>daño de fuego</color> a sí mismos y a los enemigos cercanos. Por cada <color=yellow>acumulación de fuego</color> del objetivo, el radio de explosión aumenta un 30% y el daño de explosión aumenta un 10%.",
+    "rawDesc": "Cuando causas <color=yellow>daño de fuego</color> con esta memoria, infectas al objetivo con <color=yellow>Fiebre</color>. Los enemigos infectados con <color=yellow>Fiebre</color> explotan después de {0} segundos, causando {1} de <color=yellow>daño de fuego</color> a sí mismos y a los enemigos cercanos. Por cada <color=yellow>acumulación de fuego</color> del objetivo, el radio de explosión aumenta un {2} y el daño de explosión aumenta un {3}.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.65,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "radiusAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "dmgAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_E_Fever.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Flexibility": {
+    "name": "Esencia de Flexibilidad",
+    "description": "Cuando esta memoria está en medio del <color=yellow>tiempo de reutilización</color>, 37%<sprite=5> del daño recibido se <color=yellow>distribuye</color> durante 4 segundos. El daño <color=yellow>distribuido</color> se reduce un 20%.",
+    "rawDesc": "Cuando esta memoria está en medio del <color=yellow>tiempo de reutilización</color>, {0} del daño recibido se <color=yellow>distribuye</color> durante {1} segundos. El daño <color=yellow>distribuido</color> se reduce un {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "37%<sprite=5>",
+        "format": "P0",
+        "raw": "divMultiplier",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "dmgTickCount*tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "1-dmgReduceAmount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Flexibility.PNG",
+    "lore": null,
+    "achievementKey": "ACH_FLEXIBLE_DIET",
+    "achievementName": "Dieta flexible",
+    "achievementDescription": "En una sola aventura, repite 10 veces tener tu salud por debajo de 40% y luego aumentarla por encima de 75%."
+  },
+  "Gem_E_Insensitivity": {
+    "name": "Esencia de Insensibilidad",
+    "description": "Después de <color=yellow>conjurar</color> esta memoria, cada vez que te muevas 2m durante 3 segundos, dejarás caer una <color=yellow>bomba</color>. La bomba explota poco después, causando <sprite=1><color=#16D7FF>140%</color><sprite=5> de <color=yellow>daño de fuego</color> a los enemigos.",
+    "rawDesc": "Después de <color=yellow>conjurar</color> esta memoria, cada vez que te muevas {0}m durante {1} segundos, dejarás caer una <color=yellow>bomba</color>. La bomba explota poco después, causando {2} de <color=yellow>daño de fuego</color> a los enemigos.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "distancePerBomb",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.7,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_E_Insensitivity.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Insight": {
+    "name": "Esencia de Perspicacia",
+    "description": "Cuando esta memoria cause cualquier <color=yellow>daño</color> a un enemigo, causa <sprite=1><color=#16D7FF>200%</color><sprite=5> de <color=yellow>daño de luz</color> adicional a un máximo de 3<sprite=5> enemigos y aumenta la <color=yellow>celeridad de memoria</color> en 20<sprite=5> durante 5 segundos. Solo puede activarse una vez cada 3 segundos.",
+    "rawDesc": "Cuando esta memoria cause cualquier <color=yellow>daño</color> a un enemigo, causa {0} de <color=yellow>daño de luz</color> adicional a un máximo de {1} enemigos y aumenta la <color=yellow>celeridad de memoria</color> en {2} durante {3} segundos. Solo puede activarse una vez cada {4} segundos.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxHitCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0025
+        }
+      },
+      {
+        "rendered": "20<sprite=5>",
+        "format": "#,##0",
+        "raw": "gainedAbilityHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_E_Insight.PNG",
+    "lore": null,
+    "achievementKey": "ACH_ULTRA_RAPID_FIRE",
+    "achievementName": "Fuego ultra rápido",
+    "achievementDescription": "Conjura memorias 12 veces en menos de 8 segundos."
+  },
+  "Gem_E_Inversion": {
+    "name": "Esencia de Inversión",
+    "description": "El <color=yellow>tiempo de reutilización</color> de esta memoria aumenta un 15%<sprite=5>, pero el <color=yellow>daño</color> causado a los enemigos también aumenta un 20%<sprite=5>. El <color=yellow>daño elemental</color> que causa esta memoria se <color=yellow>invierte</color>. (Fuego/Frío, Luz/Oscuridad)",
+    "rawDesc": "El <color=yellow>tiempo de reutilización</color> de esta memoria aumenta un {0}, pero el <color=yellow>daño</color> causado a los enemigos también aumenta un {1}. El <color=yellow>daño elemental</color> que causa esta memoria se <color=yellow>invierte</color>. (Fuego/Frío, Luz/Oscuridad)",
+    "rawDescVars": [
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "P0",
+        "raw": "cooldownAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Inversion.png",
+    "lore": null,
+    "achievementKey": "ACH_ELEMENTALS_101",
+    "achievementName": "Introducción a los elementos",
+    "achievementDescription": "Derrota a 70 enemigos afectados por los 4 elementos."
+  },
+  "Gem_E_Metal": {
+    "name": "Esencia de Metal",
+    "description": "Al <color=yellow>derrotar</color> a un enemigo, el <color=yellow>tiempo de reutilización</color> de esta memoria se <color=yellow>reduce</color> en 1<sprite=5> segundo(s).",
+    "rawDesc": "Al <color=yellow>derrotar</color> a un enemigo, el <color=yellow>tiempo de reutilización</color> de esta memoria se <color=yellow>reduce</color> en {0} segundo(s).",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "cooldownReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Metal.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Might": {
+    "name": "Esencia de Gigante",
+    "description": "Aumenta la salud máxima en 260<sprite=5>. El daño que causa esta memoria al enemigo aumenta un 1% por cada 50 de <color=yellow>salud Máxima</color>.",
+    "rawDesc": "Aumenta la salud máxima en {0}. El daño que causa esta memoria al enemigo aumenta un {1} por cada {2} de <color=yellow>salud Máxima</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "260<sprite=5>",
+        "format": "#,##0",
+        "raw": "healthBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 130.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1%",
+        "format": "P0",
+        "raw": "dmgAmpPerUnitHealth",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.01,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "50",
+        "format": "#,##0",
+        "raw": "unitHealthAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Might.PNG",
+    "lore": null,
+    "achievementKey": "ACH_HEAVIER_THAN_ATLAS",
+    "achievementName": "Más pesado que Atlas",
+    "achievementDescription": "Alcanza 3,000 de salud máxima."
+  },
+  "Gem_E_Omega": {
+    "name": "Esencia de Final",
+    "description": "Mientras esta memoria no esté en medio del <color=yellow>tiempo de reutilización</color>, gana acumulaciones de <color=yellow>Final</color> cada segundo hasta 20 acumulaciones. Cuando tiene acumulaciones, la <color=yellow>conjuración</color> de esta memoria se <color=yellow>fortalece</color>, aumentando el <color=yellow>daño</color> un 5%<sprite=5> por cada acumulación.",
+    "rawDesc": "Mientras esta memoria no esté en medio del <color=yellow>tiempo de reutilización</color>, gana acumulaciones de <color=yellow>Final</color> cada segundo hasta {0} acumulaciones. Cuando tiene acumulaciones, la <color=yellow>conjuración</color> de esta memoria se <color=yellow>fortalece</color>, aumentando el <color=yellow>daño</color> un {1} por cada acumulación.",
+    "rawDescVars": [
+      {
+        "rendered": "20",
+        "format": "#,##0",
+        "raw": "maxChargeCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5%<sprite=5>",
+        "format": "P0",
+        "raw": "chargeRate",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Omega.PNG",
+    "lore": null,
+    "achievementKey": "ACH_OMEGA_POINT",
+    "achievementName": "Punto omega",
+    "achievementDescription": "Entra al Sueño Prístino habiendo conjurado solo un tipo de memoria durante la aventura."
+  },
+  "Gem_E_Opportunity": {
+    "name": "Esencia de Oportunidad",
+    "description": "Al <color=yellow>conjurar</color> esta memoria, el <color=yellow>tiempo de reutilización</color> de la <color=yellow>habilidad de evasión</color> se reduce en 3<sprite=5> segundos. Solo puede activarse una vez cada 8 segundos.",
+    "rawDesc": "Al <color=yellow>conjurar</color> esta memoria, el <color=yellow>tiempo de reutilización</color> de la <color=yellow>habilidad de evasión</color> se reduce en {0} segundos. Solo puede activarse una vez cada {1} segundos.",
+    "rawDescVars": [
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reductionAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "8",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Mobility"
+    ],
+    "image": "Gem_E_Opportunity.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_OurStory_Completed": {
+    "name": "Nuestra Historia (¡Completada!)",
+    "description": "Aumenta el <color=yellow>daño de ataque</color> y el <color=yellow>poder de habilidad</color> un 0, y aumenta todos los efectos beneficiosos de <color=yellow>Carrera Distorsionada</color> en 0.",
+    "rawDesc": "Aumenta el <color=yellow>daño de ataque</color> y el <color=yellow>poder de habilidad</color> un {0}, y aumenta todos los efectos beneficiosos de <color=yellow>Carrera Distorsionada</color> en {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "0",
+        "format": "#,##0'%'",
+        "raw": "Gem_E_OurStory_Completed::statPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0",
+        "format": "#,##0",
+        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_OurStory_Completed.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_OurStory_Unfinished": {
+    "name": "Nuestra Historia (Escribiendo)",
+    "description": "Cada vez que <color=yellow>derrotes</color> a un enemigo 75 veces, la calidad aumenta un 50%. Se <color=yellow>completa</color> cuando la calidad alcanza un 500%.",
+    "rawDesc": "Cada vez que <color=yellow>derrotes</color> a un enemigo {0} veces, la calidad aumenta un {1}. Se <color=yellow>completa</color> cuando la calidad alcanza un {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "75",
+        "format": "#,##0",
+        "raw": "killCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 75.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "#,##0'%'",
+        "raw": "addedQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "500%",
+        "format": "#,##0'%'",
+        "raw": "completeThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 500.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_OurStory_Unfinished.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Overload": {
+    "name": "Esencia de Sobrecarga",
+    "description": "Al <color=yellow>conjurar</color> esta memoria, <color=yellow>sacrifica</color> un 20% de la salud actual para <color=yellow>fortalecer</color> la <color=yellow>conjuración</color>. El <color=yellow>daño</color> y la <color=yellow>recuperación</color> causados por la <color=yellow>conjuración fortalecida</color> aumentan un 45%<sprite=5>.",
+    "rawDesc": "Al <color=yellow>conjurar</color> esta memoria, <color=yellow>sacrifica</color> un {0} de la salud actual para <color=yellow>fortalecer</color> la <color=yellow>conjuración</color>. El <color=yellow>daño</color> y la <color=yellow>recuperación</color> causados por la <color=yellow>conjuración fortalecida</color> aumentan un {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "healthRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "45%<sprite=5>",
+        "format": "P0",
+        "raw": "amp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.225,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Overload.PNG",
+    "lore": "Cada vez que recuerdo esta noción,\nsiento que mi cuerpo y mente se consumen en llamas.\n\nLas escamas en las áreas afectadas se desmoronaron fácilmente y estaban calientes,\ny al recolectar el polvo dorado secretado de algunas partes, noté que era brillante y de textura muy fina.\n\nLa magia manifestada por el poder de los sueños,\nal añadir este polvo, su reacción se vuelve violenta.\nIncluso esparciendo solo un poco, se formó una gran mancha de hollín en el techo.\n\nDebo registrar los resultados de este experimento, pero estoy muy cansado.\nEsta noción parece causar una fatiga mental considerable.\n\nEstoy especulando que es similar en contexto al poder que descubrí antes.\nMuy interesante.\nSe necesita más investigación acerca del origen de este poder.\nTal vez se requiera un estudio de campo.",
+    "achievementKey": "ACH_REAP_WHAT_YOU_SOW",
+    "achievementName": "Cosecharás lo que siembras",
+    "achievementDescription": "Activa el Santuario de Desintegración un total de 12 veces."
+  },
+  "Gem_E_Pain": {
+    "name": "Esencia de Dolor",
+    "description": "Todo el <color=yellow>daño</color> causado por esta memoria también causa un 40%<sprite=5> de <color=yellow>daño de área</color> alrededor del objetivo. Este <color=yellow>daño de área</color> comparte el tipo elemental del daño original.",
+    "rawDesc": "Todo el <color=yellow>daño</color> causado por esta memoria también causa un {0} de <color=yellow>daño de área</color> alrededor del objetivo. Este <color=yellow>daño de área</color> comparte el tipo elemental del daño original.",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "damageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Pain.PNG",
+    "lore": "No me insultes. No soy un desquiciado que disfruta de infligir dolor a los demás.\nPero nunca tomaré a la ligera a aquellos infieles que desafían la autoridad de Dios.\n\nPor aquel que nos observa desde los cielos,\n\ncon justicia y gloria,\ndesgarraré tu piel\ny despedazaré tu carne.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Predation": {
+    "name": "Esencia de Depredación",
+    "description": "El <color=yellow>daño</color> que causa esta memoria a <color=yellow>jefes</color> y <color=yellow>cazadores</color> aumenta un 60%<sprite=5>. Derrotar a un <color=yellow>cazador</color> hace que <color=yellow>Orbe de Poder</color> caiga x1, y derrotar a un <color=yellow>jefe</color> hace que caiga x3. Al obtener un <color=yellow>Orbe de Poder</color>, tu <color=yellow>daño de ataque</color> o <color=yellow>poder de habilidad</color> aumenta aleatoriamente en 1 de forma permanente.",
+    "rawDesc": "El <color=yellow>daño</color> que causa esta memoria a <color=yellow>jefes</color> y <color=yellow>cazadores</color> aumenta un {0}. Derrotar a un <color=yellow>cazador</color> hace que <color=yellow>Orbe de Poder</color> caiga x{1}, y derrotar a un <color=yellow>jefe</color> hace que caiga x{2}. Al obtener un <color=yellow>Orbe de Poder</color>, tu <color=yellow>daño de ataque</color> o <color=yellow>poder de habilidad</color> aumenta aleatoriamente en 1 de forma permanente.",
+    "rawDescVars": [
+      {
+        "rendered": "60%<sprite=5>",
+        "format": "P0",
+        "raw": "amp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedAp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "addedAp*bossMultiplier",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Predation.png",
+    "lore": null,
+    "achievementKey": "ACH_WHOS_THE_PREY_NOW",
+    "achievementName": "¿Quién es la presa ahora?",
+    "achievementDescription": "Derrota a cazadores 70 veces."
+  },
+  "Gem_E_Protection": {
+    "name": "Esencia de Protección",
+    "description": "Al <color=yellow>conjurar</color> esta memoria, obtienes 40<sprite=5> de <color=yellow>defensa</color> durante 3 segundos, reduciendo el daño recibido y volviéndote <color=yellow>imparable</color>. Solo puede activarse una vez cada 5 segundos.",
+    "rawDesc": "Al <color=yellow>conjurar</color> esta memoria, obtienes {0} de <color=yellow>defensa</color> durante {1} segundos, reduciendo el daño recibido y volviéndote <color=yellow>imparable</color>. Solo puede activarse una vez cada {2} segundos.",
+    "rawDescVars": [
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "armorDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Protection.PNG",
+    "lore": null,
+    "achievementKey": "ACH_TEKKAI",
+    "achievementName": "Tekkai",
+    "achievementDescription": "Obtén un escudo equivalente al 300% o más de tu salud máxima."
+  },
+  "Gem_E_Thunder": {
+    "name": "Esencia de Trueno",
+    "description": "Al <color=yellow>conjurar</color> <color=yellow>otra memoria</color> o usar <color=yellow>habilidad de evasión</color>, gana 1 acumulación de <color=yellow>trueno</color>, hasta un máximo de 7<sprite=5>. Al <color=yellow>conjurar</color> esta memoria, consume todas las acumulaciones de <color=yellow>trueno</color>, invocando rayos sobre los enemigos cercanos por cada acumulación. Cada rayo causa <sprite=1><color=#16D7FF>117%</color><sprite=5> de <color=yellow>daño de luz</color>.",
+    "rawDesc": "Al <color=yellow>conjurar</color> <color=yellow>otra memoria</color> o usar <color=yellow>habilidad de evasión</color>, gana 1 acumulación de <color=yellow>trueno</color>, hasta un máximo de {0}. Al <color=yellow>conjurar</color> esta memoria, consume todas las acumulaciones de <color=yellow>trueno</color>, invocando rayos sobre los enemigos cercanos por cada acumulación. Cada rayo causa {1} de <color=yellow>daño de luz</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "7<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxCharge",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.004
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>117%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.65,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.008
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_E_Thunder.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Twilight": {
+    "name": "Esencia de Crepúsculo",
+    "description": "Convierte el daño de los <color=yellow>ataques básicos</color> en <color=yellow>daño oscuro</color>. Cuando esta memoria causa daño a un enemigo con 3 o más <color=yellow>acumulaciones de oscuridad</color>, las consume todas para causar <sprite=1><color=#16D7FF>54%</color><sprite=5> de <color=yellow>daño</color> por acumulación y <color=yellow>recuperar</color> hasta 6<sprite=5> de salud por acumulación.",
+    "rawDesc": "Convierte el daño de los <color=yellow>ataques básicos</color> en <color=yellow>daño oscuro</color>. Cuando esta memoria causa daño a un enemigo con {0} o más <color=yellow>acumulaciones de oscuridad</color>, las consume todas para causar {1} de <color=yellow>daño</color> por acumulación y <color=yellow>recuperar</color> hasta {2} de salud por acumulación.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "minStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>54%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.27,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "6<sprite=5>",
+        "format": "#,##0",
+        "raw": "healPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark"
+    ],
+    "image": "Gem_E_Twilight.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Virtuousness": {
+    "name": "Esencia de Virtud",
+    "description": "Aumenta la cantidad de cargas de esta memoria en 1<sprite=5>. Por cada 150% de calidad, la carga aumenta en 1.",
+    "rawDesc": "Aumenta la cantidad de cargas de esta memoria en {0}. Por cada {1} de calidad, la carga aumenta en 1.",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0",
+        "raw": "addedChargeInt",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "150%",
+        "format": "#,##0'%'",
+        "raw": "requiredQualityPerCharge",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 150.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Virtuousness.PNG",
+    "lore": "La gente está muriendo. Monstruos y fantasmas horribles, que solo existían en leyendas y en la imaginación, están cruzando a la realidad, quemando aldeas y destruyendo nuestras vidas.\n\nJusto cuando Camila y mi hermana no están...\n\nPor ahora podemos resistir... \n¿Pero si de verdad, como dicen los rumores, los sueños de alguien se están haciendo realidad?\n¿Y si... alguien... ha imaginado algo aún más terrible que esto...?\n\nEs cuestión de tiempo.\n¿De verdad solo podemos sentarnos y esperar que ocurra un desastre inevitable?\n\n...\n\n¡Lo logré!\nAyer finalmente conseguí imbuir el poder de los sueños en el sable que dejó mi hermana en mi daga.\nEl Mundo de los Sueños realmente existe.\nAhora solo necesito información.\n\nConozco a alguien que puede ayudarme con este dilema.\nLa Secta Lúcida... me da mala espina, pero es la opción más segura.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_CamillasGift": {
+    "name": "Regalo de Camila",
+    "description": "Puedes obtener 0 de oro al <color=yellow>venderlo</color> en la tienda. El <color=yellow>costo</color> <color=yellow>aumenta</color> 0 cada vez que avanzas al mundo siguiente. Se destruye si tu salud cae por debajo de 50% debido al daño causado por los enemigos.",
+    "rawDesc": "Puedes obtener {0} de oro al <color=yellow>venderlo</color> en la tienda. El <color=yellow>costo</color> <color=yellow>aumenta</color> {1} cada vez que avanzas al mundo siguiente. Se destruye si tu salud cae por debajo de {2} debido al daño causado por los enemigos.",
+    "rawDescVars": [
+      {
+        "rendered": "0",
+        "format": "#,##0",
+        "raw": "currentSellGold",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0",
+        "format": "#,##0",
+        "raw": "sellGoldIncreasePerWorld",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "healthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_CamillasGift.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_ChaosApple": {
+    "name": "Manzana de Caos",
+    "description": "Cada vez que te <color=yellow>mueves</color> a través de una <color=yellow>Fisura</color>, <color=yellow>transmuta</color> esta memoria en otra memoria aleatoria. La memoria <color=yellow>transmutada</color> no tiene <color=yellow>tiempo de reutilización</color>, pero solo puede ser <color=yellow>conjurada</color> 4<sprite=5> veces en cada habitación.",
+    "rawDesc": "Cada vez que te <color=yellow>mueves</color> a través de una <color=yellow>Fisura</color>, <color=yellow>transmuta</color> esta memoria en otra memoria aleatoria. La memoria <color=yellow>transmutada</color> no tiene <color=yellow>tiempo de reutilización</color>, pero solo puede ser <color=yellow>conjurada</color> {0} veces en cada habitación.",
+    "rawDescVars": [
+      {
+        "rendered": "4<sprite=5>",
+        "format": "#,##0",
+        "raw": "castPerRoomCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_ChaosApple.png",
+    "lore": null,
+    "achievementKey": "ACH_CHAOTIC_GOOD",
+    "achievementName": "Bondad caótica",
+    "achievementDescription": "Usa un caos legendario un total de 5 veces."
+  },
+  "Gem_L_DivineFaith": {
+    "name": "Fe Divina",
+    "description": "Cada vez que <color=yellow>derrotes</color> a un enemigo con esta memoria, obtienes acumulaciones de <color=yellow>Fe</color> hasta un máximo de 75<sprite=5>. Por cada acumulación de <color=yellow>Fe</color>, el <color=yellow>daño</color> que esta memoria causa a los enemigos y la <color=yellow>recuperación</color> que proporciona a los aliados aumenta en 0.5%, y tu salud máxima aumenta un 4.",
+    "rawDesc": "Cada vez que <color=yellow>derrotes</color> a un enemigo con esta memoria, obtienes acumulaciones de <color=yellow>Fe</color> hasta un máximo de {0}. Por cada acumulación de <color=yellow>Fe</color>, el <color=yellow>daño</color> que esta memoria causa a los enemigos y la <color=yellow>recuperación</color> que proporciona a los aliados aumenta en {1}, y tu salud máxima aumenta un {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "75<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.015
+        }
+      },
+      {
+        "rendered": "0.5%",
+        "format": "0.#%",
+        "raw": "dmgAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.005,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxHealthPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_DivineFaith.PNG",
+    "lore": "Ustedes que sirven a dioses falsos y siguen doctrinas heréticas,\nignorantemente impíos.\nNo toleraré más esta blasfemia.\n\nMi mazo es el instrumento de la verdad,\nmi orden de caballeros son los ejecutores de la voluntad divina,\ny el juicio caerá sobre todos aquellos infieles.\n\nMañana, las llamas purificadoras los consumirán.\nNi un solo aliento suyo se escuchará en ningún rincón del mundo.\n\nTodo según la voluntad de El'pyros, soberano de toda la creación...",
+    "achievementKey": "ACH_GOD_PROTECTS_ME",
+    "achievementName": "Dios me protege",
+    "achievementDescription": "En una sola aventura, visita 4 lugares ocupados por cazadores mientras tienes un nivel 5 de amenaza de rastreo."
+  },
+  "Gem_L_Embertail": {
+    "name": "Cola en Llamas",
+    "description": "Los <color=yellow>ataques</color> rebotan y causan <color=yellow>daño de fuego</color> de <sprite=1><color=#16D7FF>100%</color><sprite=5> a un enemigo cercano. Por cada enemigo cercano envuelto en llamas, el <color=yellow>daño</color> y la <color=yellow>recuperación</color> de esta memoria aumentan un 8%<sprite=5> y su <color=yellow>tiempo de reutilización</color> se reduce un 8%<sprite=5> rápidamente. El daño de fuego continuo aumenta un 100%.",
+    "rawDesc": "Los <color=yellow>ataques</color> rebotan y causan <color=yellow>daño de fuego</color> de {0} a un enemigo cercano. Por cada enemigo cercano envuelto en llamas, el <color=yellow>daño</color> y la <color=yellow>recuperación</color> de esta memoria aumentan un {1} y su <color=yellow>tiempo de reutilización</color> se reduce un {2} rápidamente. El daño de fuego continuo aumenta un {3}.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.5,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "8%<sprite=5>",
+        "format": "P0",
+        "raw": "ampPerBurning",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "8%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "skillHastePerBurning",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "statBonus.fireEffectAmpFlat",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Fire",
+      "Attack"
+    ],
+    "image": "Gem_L_Embertail.PNG",
+    "lore": "Oh, soberano de los sueños...\n\n... revívelo...\n\n...\n\n... por favor...\n\n...\n\n... bórralo...\n\n...\n\nCon eso será suficiente.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_HeartOfGold": {
+    "name": "Corazón de Oro",
+    "description": "Al <color=yellow>conjurar</color> esta memoria, consume un 3% del oro que posees para <color=yellow>fortalecer</color> la conjuración. El <color=yellow>daño</color> y la <color=yellow>recuperación</color> de la <color=yellow>conjuración fortalecida</color> aumentan un 12%<sprite=5> por cada 100 de oro que poseas.\n",
+    "rawDesc": "Al <color=yellow>conjurar</color> esta memoria, consume un {0} del oro que posees para <color=yellow>fortalecer</color> la conjuración. El <color=yellow>daño</color> y la <color=yellow>recuperación</color> de la <color=yellow>conjuración fortalecida</color> aumentan un {1} por cada 100 de oro que poseas.\n",
+    "rawDescVars": [
+      {
+        "rendered": "3%",
+        "format": "P0",
+        "raw": "spentGoldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "12%<sprite=5>",
+        "format": "P0",
+        "raw": "ampPerHundredGold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.06,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_L_HeartOfGold.png",
+    "lore": null,
+    "achievementKey": "ACH_MIDAS_HIMSELF",
+    "achievementName": "Reencarnación de Midas",
+    "achievementDescription": "Posee 6,000 de oro."
+  },
+  "Gem_L_MetalCrystal": {
+    "name": "Cristal Metálico",
+    "description": "La parte que recibe la luz brilla con colores fantásticos.",
+    "rawDesc": "La parte que recibe la luz brilla con colores fantásticos.",
+    "rawDescVars": [],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_MetalCrystal.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Paranoia": {
+    "name": "Esencia de Paranoia",
+    "description": "Al recibir cualquier <color=yellow>daño</color>, esta memoria obtiene 150<sprite=5> de <color=yellow>celeridad de memoria</color> durante 6 segundos, reduciendo su <color=yellow>tiempo de reutilización</color> un 60%<sprite=5>, pero se <color=yellow>conjura automáticamente</color> en enemigos cercanos.",
+    "rawDesc": "Al recibir cualquier <color=yellow>daño</color>, esta memoria obtiene {0} de <color=yellow>celeridad de memoria</color> durante {1} segundos, reduciendo su <color=yellow>tiempo de reutilización</color> un {2}, pero se <color=yellow>conjura automáticamente</color> en enemigos cercanos.",
+    "rawDescVars": [
+      {
+        "rendered": "150<sprite=5>",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 75.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "6",
+        "format": "#,##0",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "60%<sprite=5>",
+        "format": "P0",
+        "raw": "reducedRatio",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Paranoia.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Perfect": {
+    "name": "Perfección",
+    "description": "Aumenta el daño de ataque en 7<sprite=5>, el poder de habilidad en 7<sprite=5>, la salud máxima en 35<sprite=5>, la velocidad de ataque un 10%<sprite=5>, la probabilidad de golpe crítico un 6%<sprite=5> y la celeridad de memoria en 10<sprite=5>.",
+    "rawDesc": "Aumenta el daño de ataque en {0}, el poder de habilidad en {1}, la salud máxima en {2}, la velocidad de ataque un {3}, la probabilidad de golpe crítico un {4} y la celeridad de memoria en {5}.",
+    "rawDescVars": [
+      {
+        "rendered": "7<sprite=5>",
+        "format": "#,##0",
+        "raw": "adAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "7<sprite=5>",
+        "format": "#,##0",
+        "raw": "apAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "35<sprite=5>",
+        "format": "#,##0",
+        "raw": "healthAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 17.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "attackSpeedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "6%<sprite=5>",
+        "format": "P0",
+        "raw": "criticalChanceAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "10<sprite=5>",
+        "format": "#,##0",
+        "raw": "skillHasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Perfect.PNG",
+    "lore": "Algunos me adoraban como a un dios.\nSí, hubo un tiempo en que incluso yo creía ser omnipotente en este lugar.\n\nPodía reunirme con mi añorada familia\ny lograr sin esfuerzo todo lo que había imaginado y soñado.\n\nEra perfecto...\nNo. Solo me engañaba creyendo que lo era.\n\nLos sueños son solo eso, sueños.\nMi supuesta omnipotencia no era más que incompetencia.\n\nLa realidad no es un mundo de inevitabilidades.\nEste lugar...\nno es más que una ilusión.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_PureWhite": {
+    "name": "Blanco Puro",
+    "description": "Cada 10 segundos, la <color=yellow>conjuración</color> de esta memoria se <color=yellow>fortalece</color>. La <color=yellow>conjuración fortalecida</color> dispara 3 <color=yellow>proyectiles</color> que causan <color=yellow>daño de luz</color> de hasta un 20%<sprite=5> del primer <color=yellow>daño</color> causado a cada enemigo. El número de disparos aumenta según la cantidad de <color=yellow>acumulaciones de luz</color> en cada objetivo.",
+    "rawDesc": "Cada {0} segundos, la <color=yellow>conjuración</color> de esta memoria se <color=yellow>fortalece</color>. La <color=yellow>conjuración fortalecida</color> dispara {1} <color=yellow>proyectiles</color> que causan <color=yellow>daño de luz</color> de hasta un {2} del primer <color=yellow>daño</color> causado a cada enemigo. El número de disparos aumenta según la cantidad de <color=yellow>acumulaciones de luz</color> en cada objetivo.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "minProjectiles",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "damageMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_L_PureWhite.PNG",
+    "lore": "Innumerables personas que han experimentado la «Liberación» describen la apariencia de los sueños a su manera.\n\nAlgunos dicen que era una habitación con una mesa interminable llena de montañas de carne sobre vajilla de plata, otros que todos sus familiares perdidos estaban allí, y algunos que era como un jardín lleno de té y rosas con un aroma que levantaba el ánimo.\n\nSin embargo, nunca he visto a nadie que haya comido esa deliciosa comida hasta saciarse o que haya traído a la realidad a esos familiares que tanto anhelaba ver.\n\nEs porque nuestros cuerpos permanecen en la realidad. Soñar es simplemente una visita breve que nuestra mente hace al mundo opuesto. Cuando despertamos de un sueño, no queda nada en nuestras manos.\n\nMientras tanto, los fanáticos de Lucid hicieron un descubrimiento muy interesante.\n\nNos hemos vuelto capaces de entrar directamente a los sueños.",
+    "achievementKey": "ACH_EMPTY_CANVAS",
+    "achievementName": "Lienzo en blanco",
+    "achievementDescription": "Entra al Sueño Prístino un total de 2 veces en total."
+  },
+  "Gem_L_SolarEye": {
+    "name": "Ojo Solar",
+    "description": "Cada 20 segundos, la <color=yellow>conjuración</color> de esta memoria se <color=yellow>fortalece</color>, invocando <color=yellow>luz solar</color> sobre todos los enemigos cercanos que estén <color=yellow>en llamas</color>. La <color=yellow>luz solar</color> causa un total de <sprite=1><color=#16D7FF>360%</color><sprite=5> de <color=yellow>daño de fuego</color> durante 1.5 segundos y aumenta las acumulaciones de <color=yellow>quemadura</color> en 9<sprite=5>.\nEl daño de fuego continuo aumenta un 100%.",
+    "rawDesc": "Cada {0} segundos, la <color=yellow>conjuración</color> de esta memoria se <color=yellow>fortalece</color>, invocando <color=yellow>luz solar</color> sobre todos los enemigos cercanos que estén <color=yellow>en llamas</color>. La <color=yellow>luz solar</color> causa un total de {1} de <color=yellow>daño de fuego</color> durante {2} segundos y aumenta las acumulaciones de <color=yellow>quemadura</color> en {3}.\nEl daño de fuego continuo aumenta un {4}.",
+    "rawDescVars": [
+      {
+        "rendered": "20",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>360%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "interval * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "9<sprite=5>",
+        "format": "#,##0",
+        "raw": "calTotalStack",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "statBonus.fireEffectAmpFlat",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_L_SolarEye.png",
+    "lore": null,
+    "achievementKey": "ACH_PRAISE_THE_SUN",
+    "achievementName": "¡Alabado sea el sol!",
+    "achievementDescription": "Aplica un total de 3,000 acumulaciones de fuego a los enemigos."
+  },
+  "Gem_L_SuppressedArcanum": {
+    "name": "Arcanum Suprimido",
+    "description": "Al <color=yellow>conjurar</color> esta memoria, sacrifica un 5% de la salud actual para crear una <color=yellow>explosión dorada</color>. Los enemigos atrapados en la <color=yellow>explosión</color> reciben <sprite=1><color=#16D7FF>240%</color><sprite=5> de <color=yellow>daño de luz</color>, y los aliados obtienen un <color=yellow>escudo</color> de <sprite=1><color=#16D7FF>61%</color><sprite=5> que dura 2.5 segundos. Si tu salud está por debajo del 60%, la <color=yellow>cantidad de escudo otorgado</color> por esta memoria aumenta un 50%.",
+    "rawDesc": "Al <color=yellow>conjurar</color> esta memoria, sacrifica un {0} de la salud actual para crear una <color=yellow>explosión dorada</color>. Los enemigos atrapados en la <color=yellow>explosión</color> reciben {1} de <color=yellow>daño de luz</color>, y los aliados obtienen un <color=yellow>escudo</color> de {2} que dura {3} segundos. Si tu salud está por debajo del {4}, la <color=yellow>cantidad de escudo otorgado</color> por esta memoria aumenta un {5}.",
+    "rawDescVars": [
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "currentHpSacrificeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>240%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.2,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>61%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.35,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "60%",
+        "format": "P0",
+        "raw": "hpThresholdRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "shieldAmpOnLowHp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Light",
+      "Shield"
+    ],
+    "image": "Gem_L_SuppressedArcanum.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Accuracy": {
+    "name": "Esencia de Precisión",
+    "description": "Cuando esta memoria causa <color=yellow>daño</color> a un enemigo lejano, dispara un <color=yellow>proyectil adicional</color> que causa un 50%<sprite=5> de <color=yellow>daño</color>. El <color=yellow>daño</color> causado por este <color=yellow>proyectil</color> comparte el tipo elemental del daño original.",
+    "rawDesc": "Cuando esta memoria causa <color=yellow>daño</color> a un enemigo lejano, dispara un <color=yellow>proyectil adicional</color> que causa un {0} de <color=yellow>daño</color>. El <color=yellow>daño</color> causado por este <color=yellow>proyectil</color> comparte el tipo elemental del daño original.",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "damageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Accuracy.PNG",
+    "lore": null,
+    "achievementKey": "ACH_SHOOT_FOR_THE_MOON",
+    "achievementName": "Apunta a la luna",
+    "achievementDescription": "Asesta 80 golpes finales a enemigos que estén muy alejados."
+  },
+  "Gem_R_Adventure": {
+    "name": "Esencia de Aventura",
+    "description": "Cada vez que te <color=yellow>mueves</color> a un <color=yellow>nuevo lugar</color>, <color=yellow>aumenta</color> un +10% la <color=yellow>calidad</color> de otra <color=yellow>esencia</color> equipada en esta memoria y obtienes 19<sprite=5> de oro.",
+    "rawDesc": "Cada vez que te <color=yellow>mueves</color> a un <color=yellow>nuevo lugar</color>, <color=yellow>aumenta</color> un +{0} la <color=yellow>calidad</color> de otra <color=yellow>esencia</color> equipada en esta memoria y obtienes {1} de oro.",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "upgradeGemAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "19<sprite=5>",
+        "format": "#,##0",
+        "raw": "goldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0025
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Adventure.PNG",
+    "lore": null,
+    "achievementKey": "ACH_NOVICE_TREASURE_HUNTER",
+    "achievementName": "Aprendiz de cazatesoros",
+    "achievementDescription": "Abre un cofre del tesoro por primera vez."
+  },
+  "Gem_R_Blade": {
+    "name": "Esencia de Cuchilla",
+    "description": "Cada vez que esta memoria <color=yellow>impacta</color> a un enemigo, invoca cuchillas que cortan al objetivo 3<sprite=5> veces, causando <sprite=2><color=#FF8A2D>58%</color><sprite=5> de daño. Solo puede activarse una vez cada 2 segundos por cada enemigo.",
+    "rawDesc": "Cada vez que esta memoria <color=yellow>impacta</color> a un enemigo, invoca cuchillas que cortan al objetivo {0} veces, causando {1} de daño. Solo puede activarse una vez cada {2} segundos por cada enemigo.",
+    "rawDescVars": [
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0",
+        "raw": "baseCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>58%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.55,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0005
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "perEnemyCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Blade.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Bleak": {
+    "name": "Esencia de Desolación",
+    "description": "Aumenta un 50%<sprite=5> del daño causado por esta memoria a los enemigos afectados por <color=yellow>frío</color> o en estado <color=yellow>ralentizado</color>, <color=yellow>atado</color> o <color=yellow>aturdido</color>.",
+    "rawDesc": "Aumenta un {0} del daño causado por esta memoria a los enemigos afectados por <color=yellow>frío</color> o en estado <color=yellow>ralentizado</color>, <color=yellow>atado</color> o <color=yellow>aturdido</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold"
+    ],
+    "image": "Gem_R_Bleak.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Blood": {
+    "name": "Esencia de Gota de Sangre",
+    "description": "Cuando la salud cae por debajo de 40%, <color=yellow>sacrifica</color> un 80% de la <color=yellow>calidad</color> de esta <color=yellow>esencia</color> para <color=yellow>recuperar</color> un 40% de la <color=yellow>salud máxima</color>. Solo puede activarse una vez cada 4 segundos.",
+    "rawDesc": "Cuando la salud cae por debajo de {0}, <color=yellow>sacrifica</color> un {1} de la <color=yellow>calidad</color> de esta <color=yellow>esencia</color> para <color=yellow>recuperar</color> un {2} de la <color=yellow>salud máxima</color>. Solo puede activarse una vez cada {3} segundos.",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "activateHealthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "#,##0'%'",
+        "raw": "sacrificedQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 80.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "healMaxHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Blood.png",
+    "lore": null,
+    "achievementKey": "ACH_KYAAAAAA",
+    "achievementName": "¡¡Kyaaaa!!",
+    "achievementDescription": "Sobrevive después de recibir un solo daño de al menos 70% de tu salud máxima sin tener un escudo."
+  },
+  "Gem_R_Celestial": {
+    "name": "Esencia Celestial",
+    "description": "Cada 10 segundos, la <color=yellow>conjuración</color> de esta memoria se <color=yellow>fortalece</color>. Cada vez que una <color=yellow>conjuración fortalecida</color> impacta a un enemigo por primera vez, invoca 4 estrellas fugaces que causan <sprite=1><color=#16D7FF>130%</color><sprite=5> de <color=yellow>daño de luz</color>.",
+    "rawDesc": "Cada {0} segundos, la <color=yellow>conjuración</color> de esta memoria se <color=yellow>fortalece</color>. Cada vez que una <color=yellow>conjuración fortalecida</color> impacta a un enemigo por primera vez, invoca {1} estrellas fugaces que causan {2} de <color=yellow>daño de luz</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "stars",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "starDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.65,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_R_Celestial.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Composure": {
+    "name": "Esencia de Sosiego",
+    "description": "Al <color=yellow>conjurar</color> esta memoria, aumenta la <color=yellow>probabilidad de golpe crítico</color> un 20%<sprite=5> durante 5 segundos. Este efecto termina antes si recibes daño de un enemigo.",
+    "rawDesc": "Al <color=yellow>conjurar</color> esta memoria, aumenta la <color=yellow>probabilidad de golpe crítico</color> un {0} durante {1} segundos. Este efecto termina antes si recibes daño de un enemigo.",
+    "rawDescVars": [
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "critBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Composure.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Contempt": {
+    "name": "Esencia de Desprecio",
+    "description": "El <color=yellow>daño</color> que esta memoria causa a los enemigos aumenta cuanto menor sea su salud, <color=yellow>aumentando</color> hasta un 50%<sprite=5> cuando la salud del objetivo está en 20%.",
+    "rawDesc": "El <color=yellow>daño</color> que esta memoria causa a los enemigos aumenta cuanto menor sea su salud, <color=yellow>aumentando</color> hasta un {0} cuando la salud del objetivo está en {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "amp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "maxAmpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Contempt.png",
+    "lore": "- Día 4 después de entrar a los Rápidos.\n\nPor fin puedo respirar lo suficiente para escribir en mi diario nuevamente.\nAunque todo mi cuerpo cruje y mis manos tiemblan... debo dejar constancia de esto.\n\nHace unos días, con la ayuda de la Secta Lúcida, finalmente pude entrar al mundo conocido como los Rápidos.\nContrario a lo que esperaba, el bosque estaba lleno de misterio, y la luz que se filtraba entre las hojas de los árboles, como si bailara, era increíblemente hermosa. Era como haber entrado en un mundo de cuento de hadas.\n\nSin embargo... no tardé mucho en darme cuenta de que esta apariencia pacífica no era más que una fachada.\nAl caer la tarde, la niebla descendió y descubrimos algo más allá de ella.\n\nAún al recordarlo ahora, mis manos no dejan de temblar...\nUna criatura enorme y grotesca con ojos de un color rojo ardiente... En un momento, movía su hocico de manera irregular mientras nos observaba. Y en un instante, \n«eso» estaba justo frente a nosotros.\n\nMis recuerdos de lo que siguió no son claros.\nLo que recuerdo... es correr hasta que mis pulmones parecían estar a punto de estallar,\nlos gritos de mis compañeros, y el sonido de carne siendo desgarrada.\n\n\nParece que ahora estoy a salvo, pero...\nJamás podré olvidar esos ojos llenos de desprecio\n\nmientras desgarraba a esas personas con sus largas garras.\n\n- A.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Dusk": {
+    "name": "Esencia de Ocaso",
+    "description": "Al conjurar esta memoria, y durante 5 segundos, cada <color=yellow>ataque</color> a un enemigo dispara 2 <color=yellow>fragmentos de ocaso</color> que causan <sprite=2><color=#FF8A2D>30%</color><sprite=5> de <color=yellow>daño oscuro</color>.",
+    "rawDesc": "Al conjurar esta memoria, y durante {0} segundos, cada <color=yellow>ataque</color> a un enemigo dispara {1} <color=yellow>fragmentos de ocaso</color> que causan {2} de <color=yellow>daño oscuro</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "shootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>30%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.15,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_R_Dusk.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Flow": {
+    "name": "Esencia de Flujo",
+    "description": "Cuando causas <color=yellow>daño de luz</color> con cualquier memoria, el <color=yellow>tiempo de reutilización</color> de esta memoria se reduce un 6%<sprite=5>. Para las habilidades definitivas, solo recibe un 40% del efecto. Los efectos de <color=yellow>reducción de tiempo de reutilización</color> que recibe esta memoria también se aplican a las <color=yellow>esencias</color> equipadas.",
+    "rawDesc": "Cuando causas <color=yellow>daño de luz</color> con cualquier memoria, el <color=yellow>tiempo de reutilización</color> de esta memoria se reduce un {0}. Para las habilidades definitivas, solo recibe un {1} del efecto. Los efectos de <color=yellow>reducción de tiempo de reutilización</color> que recibe esta memoria también se aplican a las <color=yellow>esencias</color> equipadas.",
+    "rawDescVars": [
+      {
+        "rendered": "6%<sprite=5>",
+        "format": "P0",
+        "raw": "reduceRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "ultRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_R_Flow.PNG",
+    "lore": "Qué verdad tan extraña... Lo que me mostraste fue una verdad innegable, el toque del destino.\nUna vez controlé el nacimiento y muerte de las estrellas, sintiendo plenamente su grandioso eco,\npero ahora todo es tan distante como sombras en la niebla.\n\nSin embargo, mi voluntad permanece tan clara como la estrella del alba.\nTrazaré las olas de mi propio destino,\ny romperé estas cadenas sin falta.\n\nHasta mi último aliento, seguiré siendo quien guíe la danza de la creación y destrucción. Yo soy en definitiva el dios de las estrellas.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Frost": {
+    "name": "Esencia de Escarcha",
+    "description": "Cuando causas <color=yellow>daño de frío</color> con esta memoria, causas <color=yellow>daño de frío</color> de hasta un 10%<sprite=5> de tu <color=yellow>salud máxima</color> y <color=yellow>aturdes</color> brevemente al objetivo. Solo puede activarse una vez cada 5 segundos por enemigo. Cada vez que se activa, la <color=yellow>salud máxima</color> aumenta permanentemente en 1.",
+    "rawDesc": "Cuando causas <color=yellow>daño de frío</color> con esta memoria, causas <color=yellow>daño de frío</color> de hasta un {0} de tu <color=yellow>salud máxima</color> y <color=yellow>aturdes</color> brevemente al objetivo. Solo puede activarse una vez cada {1} segundos por enemigo. Cada vez que se activa, la <color=yellow>salud máxima</color> aumenta permanentemente en {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "P0",
+        "raw": "damageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.07,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.004
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "perEnemyCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "gainedMaxHp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold",
+      "HardCC"
+    ],
+    "image": "Gem_R_Frost.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Glaciate": {
+    "name": "Esencia de Congelación",
+    "description": "Al <color=yellow>conjurar</color> esta memoria, emana frío que causa <sprite=1><color=#16D7FF>160%</color><sprite=5> de <color=yellow>daño de frío</color> a los enemigos. El área de efecto aumenta con la calidad.",
+    "rawDesc": "Al <color=yellow>conjurar</color> esta memoria, emana frío que causa {0} de <color=yellow>daño de frío</color> a los enemigos. El área de efecto aumenta con la calidad.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.8,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold"
+    ],
+    "image": "Gem_R_Glaciate.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Insatiable": {
+    "name": "Esencia de Insaciabilidad",
+    "description": "Después de conjurar esta memoria, aumenta el <color=yellow>daño de ataque</color> un 15%<sprite=5> y <color=yellow>recupera</color> 6<sprite=5> de salud con cada <color=yellow>ataque</color> durante 5 segundos.",
+    "rawDesc": "Después de conjurar esta memoria, aumenta el <color=yellow>daño de ataque</color> un {0} y <color=yellow>recupera</color> {1} de salud con cada <color=yellow>ataque</color> durante {2} segundos.",
+    "rawDescVars": [
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "bonusAttackDamagePercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "6<sprite=5>",
+        "format": "#,##0",
+        "raw": "healAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.006
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal",
+      "Attack"
+    ],
+    "image": "Gem_R_Insatiable.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Momentum": {
+    "name": "Esencia de Ímpetu",
+    "description": "Cada vez que <color=yellow>ataques</color> a un enemigo, el <color=yellow>tiempo de reutilización</color> de esta memoria se <color=yellow>reduce</color> en 0.4<sprite=5> segundos.",
+    "rawDesc": "Cada vez que <color=yellow>ataques</color> a un enemigo, el <color=yellow>tiempo de reutilización</color> de esta memoria se <color=yellow>reduce</color> en {0} segundos.",
+    "rawDescVars": [
+      {
+        "rendered": "0.4<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reductionAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.012
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Attack"
+    ],
+    "image": "Gem_R_Momentum.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_NightSky": {
+    "name": "Esencia de Cielo Nocturno",
+    "description": "Cada vez que esta memoria <color=yellow>impacta</color> a un enemigo, aumenta la <color=yellow>velocidad de ataque</color> un 10%<sprite=5> durante 3 segundos, hasta un máximo de 20%<sprite=5>. Si es <color=yellow>daño oscuro</color>, puede aumentar hasta un máximo de 40%<sprite=5>. La duración de este efecto se restablece cada vez que <color=yellow>atacas</color> a un enemigo.",
+    "rawDesc": "Cada vez que esta memoria <color=yellow>impacta</color> a un enemigo, aumenta la <color=yellow>velocidad de ataque</color> un {0} durante {1} segundos, hasta un máximo de {2}. Si es <color=yellow>daño oscuro</color>, puede aumentar hasta un máximo de {3}. La duración de este efecto se restablece cada vez que <color=yellow>atacas</color> a un enemigo.",
+    "rawDescVars": [
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "perHitAtkSpd",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "maxAtkSpdNormal",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "maxAtkSpdDark",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_R_NightSky.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Obsidian": {
+    "name": "Esencia de Obsidiana",
+    "description": "Al <color=yellow>conjurar</color> esta memoria, tu siguiente ataque se fortalece, causando <sprite=2><color=#FF8A2D>250%</color><sprite=5> de <color=yellow>daño oscuro</color> al objetivo y reduciendo el <color=yellow>tiempo de reutilización</color> de esta memoria en 1<sprite=5> segundos.",
+    "rawDesc": "Al <color=yellow>conjurar</color> esta memoria, tu siguiente ataque se fortalece, causando {0} de <color=yellow>daño oscuro</color> al objetivo y reduciendo el <color=yellow>tiempo de reutilización</color> de esta memoria en {1} segundos.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.25,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reducedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_E_Obsidian.png",
+    "lore": null,
+    "achievementKey": "ACH_MINE_AND_CRAFT",
+    "achievementName": "Mina y artesanía",
+    "achievementDescription": "Destruye 3 minerales negruzcos."
+  },
+  "Gem_R_Panic": {
+    "name": "Esencia de Pánico",
+    "description": "Cuando recibes cualquier <color=yellow>daño</color>, esta memoria obtiene 30<sprite=5> de <color=yellow>celeridad de memoria</color> y la <color=yellow>velocidad de movimiento</color> aumenta un 20%<sprite=5> durante 3 segundos.",
+    "rawDesc": "Cuando recibes cualquier <color=yellow>daño</color>, esta memoria obtiene {0} de <color=yellow>celeridad de memoria</color> y la <color=yellow>velocidad de movimiento</color> aumenta un {1} durante {2} segundos.",
+    "rawDescVars": [
+      {
+        "rendered": "30<sprite=5>",
+        "format": "#,##0",
+        "raw": "memoryHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.05,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Mobility"
+    ],
+    "image": "Gem_R_Panic.PNG",
+    "lore": null,
+    "achievementKey": "ACH_EVERYONE_LETS_NOT_PANIC",
+    "achievementName": "Mantén la calma y sigue adelante",
+    "achievementDescription": "Derrota a un jefe épico un total de 8 veces mientras tu salud está por debajo de 25%."
+  },
+  "Gem_R_Rejuvenation": {
+    "name": "Esencia de Rejuvenecimiento",
+    "description": "Cada 15 segundos, la <color=yellow>conjuración</color> de esta memoria se <color=yellow>fortalece</color>. La <color=yellow>conjuración fortalecida</color> <color=yellow>recupera</color> <color=yellow>salud</color> <color=yellow>propia</color> equivalente al 10%<sprite=5> del <color=yellow>daño</color> causado dentro de 1.5 segundos después de conjurar.",
+    "rawDesc": "Cada {0} segundos, la <color=yellow>conjuración</color> de esta memoria se <color=yellow>fortalece</color>. La <color=yellow>conjuración fortalecida</color> <color=yellow>recupera</color> <color=yellow>salud</color> <color=yellow>propia</color> equivalente al {1} del <color=yellow>daño</color> causado dentro de {2} segundos después de conjurar.",
+    "rawDescVars": [
+      {
+        "rendered": "15",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.08,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Rejuvenation.PNG",
+    "lore": null,
+    "achievementKey": "ACH_LOYAL_CUSTOMER",
+    "achievementName": "Cliente frecuente",
+    "achievementDescription": "Activa el Santuario de la Guía 15 veces en una sola aventura."
+  },
+  "Gem_R_Ricochet": {
+    "name": "Esencia de Rebote",
+    "description": "El <color=yellow>daño</color> o <color=yellow>recuperación</color> causados por esta memoria tienen un 50%<sprite=5> de probabilidad de rebotar a otro objetivo cercano, causando un 90%<sprite=5> de <color=yellow>daño</color> o <color=yellow>recuperación</color>. Si es <color=yellow>daño</color>, comparte el tipo elemental del daño original.",
+    "rawDesc": "El <color=yellow>daño</color> o <color=yellow>recuperación</color> causados por esta memoria tienen un {0} de probabilidad de rebotar a otro objetivo cercano, causando un {1} de <color=yellow>daño</color> o <color=yellow>recuperación</color>. Si es <color=yellow>daño</color>, comparte el tipo elemental del daño original.",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "ricochetChance",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "90%<sprite=5>",
+        "format": "P0",
+        "raw": "ricochetRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Ricochet.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Rigidity": {
+    "name": "Esencia de Rigidez",
+    "description": "Cuando esta memoria <color=yellow>impacta</color> a un enemigo, obtienes un <color=yellow>escudo</color> de 9<sprite=5> que dura 2 segundos. Si es <color=yellow>daño de frío</color>, el efecto aumenta un 80%.",
+    "rawDesc": "Cuando esta memoria <color=yellow>impacta</color> a un enemigo, obtienes un <color=yellow>escudo</color> de {0} que dura {1} segundos. Si es <color=yellow>daño de frío</color>, el efecto aumenta un {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "9<sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "coldDamageMultiplier-1",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Shield"
+    ],
+    "image": "Gem_R_Rigidity.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Scorched": {
+    "name": "Esencia de Calcinación",
+    "description": "Al <color=yellow>conjurar</color> esta memoria, invoca 3<sprite=5> <color=yellow>esferas de fuego</color> que causan <sprite=1><color=#16D7FF>47%</color><sprite=5> de <color=yellow>daño de fuego</color> a los enemigos cercanos.",
+    "rawDesc": "Al <color=yellow>conjurar</color> esta memoria, invoca {0} <color=yellow>esferas de fuego</color> que causan {1} de <color=yellow>daño de fuego</color> a los enemigos cercanos.",
+    "rawDescVars": [
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>47%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.35,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0035
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Scorched.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Shock": {
+    "name": "Esencia de Impacto",
+    "description": "Cada 4º <color=yellow>ataque básico</color> es <color=yellow>fortalecido</color> y dispara un <color=yellow>choque eléctrico</color> que rebota entre enemigos, causando <color=yellow>daño de luz</color> de <sprite=1><color=#16D7FF>40%</color><sprite=5> hasta 2 veces. Por cada 20% de <color=yellow>probabilidad de golpe crítico</color>, el número máximo de impactos aumenta en 1.",
+    "rawDesc": "Cada 4º <color=yellow>ataque básico</color> es <color=yellow>fortalecido</color> y dispara un <color=yellow>choque eléctrico</color> que rebota entre enemigos, causando <color=yellow>daño de luz</color> de {0} hasta {1} veces. Por cada {2} de <color=yellow>probabilidad de golpe crítico</color>, el número máximo de impactos aumenta en 1.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>40%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "chainDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.2,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "baseHitCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "critChanceForAdditionalHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light",
+      "Attack"
+    ],
+    "image": "Gem_R_Shock.PNG",
+    "lore": null,
+    "achievementKey": "ACH_THOUSAND_THUNDERS",
+    "achievementName": "Mil truenos",
+    "achievementDescription": "Impacta un total de 1,000 golpes críticos."
+  },
+  "Gem_R_Snow": {
+    "name": "Esencia de Nieve",
+    "description": "Si no recibes daño durante 5 segundos, obtienes un escudo recargable de 40<sprite=5>. Mientras tengas el escudo, periódicamente lanzas una bola de nieve a un enemigo aleatorio cercano, causando <sprite=1><color=#16D7FF>80%</color><sprite=5> de <color=yellow>daño de frío</color>. La velocidad de lanzamiento aumenta según la cantidad de escudo que tengas.",
+    "rawDesc": "Si no recibes daño durante {0} segundos, obtienes un escudo recargable de {1}. Mientras tengas el escudo, periódicamente lanzas una bola de nieve a un enemigo aleatorio cercano, causando {2} de <color=yellow>daño de frío</color>. La velocidad de lanzamiento aumenta según la cantidad de escudo que tengas.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "rechargeTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>80%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.4,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold",
+      "Shield"
+    ],
+    "image": "Gem_R_Snow.PNG",
+    "lore": null,
+    "achievementKey": "ACH_SHIELD_BATTERY",
+    "achievementName": "Batería de escudo",
+    "achievementDescription": "Reduce un total de 20,000 de daño causado por el enemigo mediante escudos."
+  },
+  "Gem_R_Spiral": {
+    "name": "Esencia de Torbellino",
+    "description": "Periódicamente, dispara una esfera de fuego a un enemigo aleatorio cercano, causando <sprite=1><color=#16D7FF>90%</color><sprite=5> de <color=yellow>daño de fuego</color>. La velocidad de disparo aumenta con la calidad.",
+    "rawDesc": "Periódicamente, dispara una esfera de fuego a un enemigo aleatorio cercano, causando {0} de <color=yellow>daño de fuego</color>. La velocidad de disparo aumenta con la calidad.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.6,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Spiral.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Wealth": {
+    "name": "Esencia de Riqueza",
+    "description": "Si un enemigo con daño causado por esta memoria es derrotado dentro de 2 segundos, dejará caer 1.7<sprite=5> de oro. El oro se comparte entre todos los viajeros.",
+    "rawDesc": "Si un enemigo con daño causado por esta memoria es derrotado dentro de {0} segundos, dejará caer {1} de oro. El oro se comparte entre todos los viajeros.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "gracePeriod",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1.7<sprite=5>",
+        "format": "###,0.#",
+        "raw": "killGold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Wealth.PNG",
+    "lore": "¿Acaso no sabes que el oro tiene un significado especial para «nosotros»...?\n\nSomos seres imperfectos que siempre nos dormimos sin la certeza de poder despertar de nuevo. Para «nosotros» sobrevivir, dependemos de la pureza que posee el oro.\n\n¿Y aun sabiéndolo... no lo usarás para ti mismo?\nJonas, tú realmente...",
+    "achievementKey": "ACH_SUSPICIOUSLY_WEALTHY_TRAVELER",
+    "achievementName": "Viajero sospechosamente adinerado",
+    "achievementDescription": "Gasta un total de 2,000 de oro."
+  },
+  "Gem_R_Wound": {
+    "name": "Esencia de Herida",
+    "description": "Cuando esta memoria causa daño a un enemigo, le aplica una <color=yellow>marca</color>. Con cada <color=yellow>ataque</color> a la <color=yellow>marca</color> causa <sprite=1><color=#16D7FF>44%</color><sprite=5> de <color=yellow>daño</color>, y después de 3 ataques, la <color=yellow>marca</color> explota causando <sprite=1><color=#16D7FF>275%</color><sprite=5> de <color=yellow>daño</color> a todos los enemigos cercanos.",
+    "rawDesc": "Cuando esta memoria causa daño a un enemigo, le aplica una <color=yellow>marca</color>. Con cada <color=yellow>ataque</color> a la <color=yellow>marca</color> causa {0} de <color=yellow>daño</color>, y después de {1} ataques, la <color=yellow>marca</color> explota causando {2} de <color=yellow>daño</color> a todos los enemigos cercanos.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>44%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "hitDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.25,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "explodeStage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>275%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "explodeDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.1,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.015
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Attack"
+    ],
+    "image": "Gem_R_Wound.PNG",
+    "lore": null,
+    "achievementKey": "ACH_THROUGH_TIME_AND_SPACE",
+    "achievementName": "Velocidad trascendental",
+    "achievementDescription": "Alcanza una velocidad de ataque de 6 por segundo."
+  },
+  "Gem_U_EternalFlame": {
+    "name": "Llama Eterna",
+    "description": "Cuando causas <color=yellow>daño de fuego</color> a un enemigo con esta memoria, aplicas una maldición de <color=yellow>llama eterna</color> al objetivo durante 5 segundos. Cada vez que el objetivo maldecido por la <color=yellow>llama eterna</color> recibe <color=yellow>cualquier daño</color> de ti, aumenta en 1 la acumulación de <color=yellow>quemadura</color>.\nTodo el daño que esta memoria causa al enemigo aumenta un 2.0%<sprite=5> por cada acumulación de <color=yellow>quemadura</color> del objetivo.",
+    "rawDesc": "Cuando causas <color=yellow>daño de fuego</color> a un enemigo con esta memoria, aplicas una maldición de <color=yellow>llama eterna</color> al objetivo durante {0} segundos. Cada vez que el objetivo maldecido por la <color=yellow>llama eterna</color> recibe <color=yellow>cualquier daño</color> de ti, aumenta en 1 la acumulación de <color=yellow>quemadura</color>.\nTodo el daño que esta memoria causa al enemigo aumenta un {1} por cada acumulación de <color=yellow>quemadura</color> del objetivo.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "2.0%<sprite=5>",
+        "format": "#,##0.0%",
+        "raw": "ampPerFireStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.01,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_U_EternalFlame.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GlacialCore": {
+    "name": "Núcleo Glacial",
+    "description": "Una vez cada 5 segundos, <color=yellow>recuperas</color> <color=yellow>salud</color> equivalente al 3.6%<sprite=5> de tu salud máxima cuando causas <color=yellow>daño</color> con esta memoria. Si es <color=yellow>daño de frío</color>, el efecto aumenta en un 100%.\nCada vez que <color=yellow>recuperas salud</color>, disparas <color=yellow>fragmentos de hielo</color> a los enemigos cercanos que causan <color=yellow>daño de frío</color> de hasta un 272%<sprite=5> de la salud recuperada.",
+    "rawDesc": "Una vez cada {0} segundos, <color=yellow>recuperas</color> <color=yellow>salud</color> equivalente al {1} de tu salud máxima cuando causas <color=yellow>daño</color> con esta memoria. Si es <color=yellow>daño de frío</color>, el efecto aumenta en un {2}.\nCada vez que <color=yellow>recuperas salud</color>, disparas <color=yellow>fragmentos de hielo</color> a los enemigos cercanos que causan <color=yellow>daño de frío</color> de hasta un {3} de la salud recuperada.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3.6%<sprite=5>",
+        "format": "#,##0.#%",
+        "raw": "healMaxHealthRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "chillAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "272%<sprite=5>",
+        "format": "P0",
+        "raw": "healToDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.00089
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Cold",
+      "Heal"
+    ],
+    "image": "Gem_U_GlacialCore.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_SoulPrison": {
+    "name": "Prisión de Almas",
+    "description": "Al recibir <color=yellow>daño letal</color>, ignoras dicho daño, te vuelves <color=yellow>invulnerable</color> durante 3 segundos, y se <color=yellow>destruye</color> esta esencia. Por cada 1% de <color=yellow>calidad</color> de esta esencia, <color=yellow>recuperas</color> 3 de <color=yellow>salud</color>, y el exceso de recuperación se convierte en un <color=yellow>escudo</color>.",
+    "rawDesc": "Al recibir <color=yellow>daño letal</color>, ignoras dicho daño, te vuelves <color=yellow>invulnerable</color> durante {0} segundos, y se <color=yellow>destruye</color> esta esencia. Por cada 1% de <color=yellow>calidad</color> de esta esencia, <color=yellow>recuperas</color> {1} de <color=yellow>salud</color>, y el exceso de recuperación se convierte en un <color=yellow>escudo</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "invulTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "healPerQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_U_SoulPrison.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  }
+}

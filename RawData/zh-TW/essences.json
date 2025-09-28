@@ -1,0 +1,3770 @@
+﻿{
+  "Gem_C_CamillasGiftRuined": {
+    "name": "卡米拉的禮物（破碎）",
+    "description": "這顆寶石因受到重創而破碎了。",
+    "rawDesc": "這顆寶石因受到重創而破碎了。",
+    "rawDescVars": [],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_CamillasGiftRuined.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Charcoal": {
+    "name": "木炭精華",
+    "description": "當此記憶<color=yellow>命中</color>敵人時，會發射木炭碎片造成<sprite=1><color=#16D7FF>60%</color><sprite=5>的<color=yellow>傷害</color>。如果目標已經被<color=yellow>點燃</color>，則改為造成<sprite=1><color=#16D7FF>100%</color><sprite=5>的<color=yellow>火焰傷害</color>。",
+    "rawDesc": "當此記憶<color=yellow>命中</color>敵人時，會發射木炭碎片造成{0}的<color=yellow>傷害</color>。如果目標已經被<color=yellow>點燃</color>，則改為造成{1}的<color=yellow>火焰傷害</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "normalDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.3,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "fireDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.5,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_C_Charcoal.png",
+    "lore": "在戰場上，士兵們有時會吞下燒焦的黑色塊狀物，以過濾體內的毒素。\n\n在那絕望的時刻，\n所感受到的，是求生的滋味。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Confidence": {
+    "name": "自信精華",
+    "description": "此記憶對附近的敵人造成的傷害量增加40%<sprite=5>。",
+    "rawDesc": "此記憶對附近的敵人造成的傷害量增加{0}。",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Melee"
+    ],
+    "image": "Gem_C_Confidence.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Efficiency": {
+    "name": "效率精華",
+    "description": "此記憶獲得36<sprite=5>的<color=yellow>記憶加速</color>，使<color=yellow>冷卻時間</color>減少26%<sprite=5>。",
+    "rawDesc": "此記憶獲得{0}的<color=yellow>記憶加速</color>，使<color=yellow>冷卻時間</color>減少{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "36<sprite=5>",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 18.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "26%<sprite=5>",
+        "format": "P0",
+        "raw": "reducedRatio",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Efficiency.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Guidance": {
+    "name": "引導精華",
+    "description": "此記憶的<color=yellow>治療量</color>增加40%<sprite=5>。此記憶的治療超額部分的30%會在2秒內轉化為持續的<color=yellow>護盾</color>。",
+    "rawDesc": "此記憶的<color=yellow>治療量</color>增加{0}。此記憶的治療超額部分的{1}會在{2}秒內轉化為持續的<color=yellow>護盾</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "healAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "shieldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "Gem_C_Guidance.PNG",
+    "lore": "什麼才是生命的本質，這由誰來決定呢？\n我們雖然是誕生於無名之人的想像之中，\n但這並不能成為否定我們存在的理由。\n\n你賦予了我們生命，\n卻又僅僅將我們視為虛幻之物嗎？\n\n那麼，神啊，\n我將成為我自己，也是『我們』的引導者。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Lethality": {
+    "name": "致命精華",
+    "description": "此記憶對生命值高於70%的敵人造成的傷害增加60%<sprite=5>。",
+    "rawDesc": "此記憶對生命值高於{0}的敵人造成的傷害增加{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "70%",
+        "format": "P0",
+        "raw": "healthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.7,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "60%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Lethality.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Love": {
+    "name": "愛之精華",
+    "description": "此記憶為友軍<color=yellow>恢復</color><color=yellow>生命值</color>或賦予<color=yellow>護盾</color>時，該友軍的<color=yellow>移動速度</color>與<color=yellow>攻擊速度</color>提升16%<sprite=5>，持續2秒。若對自己生效，效果減少50%。",
+    "rawDesc": "此記憶為友軍<color=yellow>恢復</color><color=yellow>生命值</color>或賦予<color=yellow>護盾</color>時，該友軍的<color=yellow>移動速度</color>與<color=yellow>攻擊速度</color>提升{0}，持續{1}秒。若對自己生效，效果減少{2}。",
+    "rawDescVars": [
+      {
+        "rendered": "16%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "bonusAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "selfReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Heal",
+      "Shield",
+      "Attack",
+      "Mobility"
+    ],
+    "image": "Gem_C_Love.PNG",
+    "lore": "只是虛幻…而已嗎？\n…\n\n這一切真的只是徒勞的幻想嗎…\n\n…\n…\n不。\n\n我的光，我的愛，奇亞拉。\n我靈魂永恆的指引者。\n絕不可能如此。\n沒有你的現實毫無意義。\n\n誰又能妄自區分虛幻與現實？\n那種標準…\n從今天起將不復存在。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Quicksilver": {
+    "name": "水銀精華",
+    "description": "當<color=yellow>施放</color>此記憶或用此記憶造成<color=yellow>火焰傷害</color>時，<color=yellow>移動速度</color>將增加30%<sprite=5>，並在2.5秒內恢復原狀。",
+    "rawDesc": "當<color=yellow>施放</color>此記憶或用此記憶造成<color=yellow>火焰傷害</color>時，<color=yellow>移動速度</color>將增加{0}，並在{1}秒內恢復原狀。",
+    "rawDescVars": [
+      {
+        "rendered": "30%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Fire",
+      "Mobility"
+    ],
+    "image": "Gem_C_Quicksilver.png",
+    "lore": "飛速前進",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Regeneration": {
+    "name": "再生精華",
+    "description": "在<color=yellow>戰鬥中</color><color=yellow>施放</color>這個記憶時，將在7秒內<color=yellow>恢復</color>41<sprite=5>的生命值。",
+    "rawDesc": "在<color=yellow>戰鬥中</color><color=yellow>施放</color>這個記憶時，將在{0}秒內<color=yellow>恢復</color>{1}的生命值。",
+    "rawDescVars": [
+      {
+        "rendered": "7",
+        "format": "#,##0.#",
+        "raw": "totalTicks*tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "41<sprite=5>",
+        "format": "#,##0",
+        "raw": "healPerTick * totalTicks",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_C_Regeneration.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Responsibility": {
+    "name": "責任精華",
+    "description": "每隔10秒，此記憶的<color=yellow>施放</color>會被<color=yellow>強化</color>。在<color=yellow>強化施放</color>後的1.2秒，該次施放命中的所有敵人將分攤<sprite=2><color=#FF8A2D>400%</color><sprite=5>點<color=yellow>傷害</color>。",
+    "rawDesc": "每隔{0}秒，此記憶的<color=yellow>施放</color>會被<color=yellow>強化</color>。在<color=yellow>強化施放</color>後的{1}秒，該次施放命中的所有敵人將分攤{2}點<color=yellow>傷害</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "1.2",
+        "format": "#,##0.#",
+        "raw": "initDelay",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>400%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "totalDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Responsibility.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Sharp": {
+    "name": "銳利精華",
+    "description": "<color=yellow>施放</color>此記憶時，將向隨機敵人發射5次造成<sprite=1><color=#16D7FF>90%</color><sprite=5>的<color=yellow>傷害</color>的箭矢。",
+    "rawDesc": "<color=yellow>施放</color>此記憶時，將向隨機敵人發射{0}次造成{1}的<color=yellow>傷害</color>的箭矢。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "shotArrows",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "arrowDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.45,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Sharp.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Shatter": {
+    "name": "破碎精華",
+    "description": "每隔10秒，此記憶的<color=yellow>施放</color>將被<color=yellow>強化</color>。<color=yellow>強化施放</color>對敵人造成的傷害量增加40%<sprite=5>。若為<color=yellow>光明傷害</color>，則增加72%<sprite=5>。",
+    "rawDesc": "每隔{0}秒，此記憶的<color=yellow>施放</color>將被<color=yellow>強化</color>。<color=yellow>強化施放</color>對敵人造成的傷害量增加{1}。若為<color=yellow>光明傷害</color>，則增加{2}。",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "72%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmpLight",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.36,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_C_Shatter.PNG",
+    "lore": "我生來就是故事的收藏者，只是默默地收集著各種故事。順著既定的起點與終點前行，這既是我的角色，也是我的命運。就像傳說中的西西弗斯愛上了自己的巨石一樣，我也接受了自己的命運。\n\n但你…總是與眾不同。你拒絕讓自己的故事走上既定的道路。每當聽到你說『就算我們生來如此，也不必只能如此而活』時，我都能感受到我的堅固故事書上出現了一道小小的『破損』。\n\n別誤會。這道破損並不令人不快，反而異常有趣。在無數奔向既定結局的故事中，唯有你這個故事，是我無法預測下一頁的存在。\n\n請讓我期待，你那固執的抗爭會帶來怎樣的結局…那將成為我最珍貴的收藏品的最後一頁，我會靜候其成。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Sulfur": {
+    "name": "硫磺精華",
+    "description": "此記憶造成的所有<color=yellow>傷害</color>增加15%<sprite=5>，並轉化為<color=yellow>火焰傷害</color>。自身的火焰持續傷害增加50%<sprite=5>。",
+    "rawDesc": "此記憶造成的所有<color=yellow>傷害</color>增加{0}，並轉化為<color=yellow>火焰傷害</color>。自身的火焰持續傷害增加{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "P0",
+        "raw": "ampAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.075,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "fireAmpBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_C_Sulfur.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Talc": {
+    "name": "滑石精華",
+    "description": "每隔10秒，此記憶的<color=yellow>施放</color>將被<color=yellow>強化</color>。<color=yellow>強化施放</color>對單個敵人首次造成的傷害量增加<sprite=1><color=#16D7FF>400%</color><sprite=5>。",
+    "rawDesc": "每隔{0}秒，此記憶的<color=yellow>施放</color>將被<color=yellow>強化</color>。<color=yellow>強化施放</color>對單個敵人首次造成的傷害量增加{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "addedDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Talc.PNG",
+    "lore": "未熟的栗子殼與粉筆粉末混合出的那股苦澀乾澀之氣，所凝聚而成的精髓。\n\n接受這種觀念的人，雖能引出那令人不快的力量，\n但若真到了必須依賴這等令人厭惡的觀念之時，想必是相當不幸吧。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Vengeance": {
+    "name": "報復精華",
+    "description": "受到任何傷害時，向周圍敵人發射2把刀刃，造成<sprite=1><color=#16D7FF>102%</color><sprite=5>的<color=yellow>傷害</color>。受到傷害過後的5秒內，此記憶的<color=yellow>傷害量</color>和<color=yellow>治療量</color>增加34%<sprite=5>。",
+    "rawDesc": "受到任何傷害時，向周圍敵人發射{0}把刀刃，造成{1}的<color=yellow>傷害</color>。受到傷害過後的{2}秒內，此記憶的<color=yellow>傷害量</color>和<color=yellow>治療量</color>增加{3}。",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "shootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>102%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.6,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.007
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "34%<sprite=5>",
+        "format": "P0",
+        "raw": "ampAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.007
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_C_Vengeance.png",
+    "lore": null,
+    "achievementKey": "ACH_TASTE_OF_THEIR_OWN_MEDICINE",
+    "achievementName": "自食其果",
+    "achievementDescription": "使用爪子撕裂並擊殺森林之魔。"
+  },
+  "Gem_C_Void": {
+    "name": "虛空精華",
+    "description": "施放此記憶後，在4秒內的下一次<color=yellow>攻擊</color>會爆炸，對目標及其周圍的敵人造成<sprite=2><color=#FF8A2D>150%</color><sprite=5>的<color=yellow>黑暗傷害</color>。",
+    "rawDesc": "施放此記憶後，在{0}秒內的下一次<color=yellow>攻擊</color>會爆炸，對目標及其周圍的敵人造成{1}的<color=yellow>黑暗傷害</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.75,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Dark"
+    ],
+    "image": "Gem_C_Void.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Wind": {
+    "name": "風之精華",
+    "description": "施放此記憶時，5秒內<color=yellow>攻擊速度</color>增加33%<sprite=5>。",
+    "rawDesc": "施放此記憶時，{0}秒內<color=yellow>攻擊速度</color>增加{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "33%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 22.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Wind.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Aftershock": {
+    "name": "餘震精華",
+    "description": "<color=yellow>施放</color>此記憶時，稍後會發射<color=yellow>衝擊波</color>，對周圍敵人造成<sprite=1><color=#16D7FF>200%</color><sprite=5>的<color=yellow>冰寒傷害</color>並使其<color=yellow>暈眩</color>0.5秒。\n<color=yellow>衝擊波</color>每命中一個敵人將獲得4<sprite=5>的<color=yellow>防禦力</color>，最多獲得22<sprite=5>的<color=yellow>防禦力</color>。命中<color=yellow>首領</color>時獲得最大<color=yellow>防禦力</color>。此防禦力持續到下次<color=yellow>施放</color>此記憶為止。",
+    "rawDesc": "<color=yellow>施放</color>此記憶時，稍後會發射<color=yellow>衝擊波</color>，對周圍敵人造成{0}的<color=yellow>冰寒傷害</color>並使其<color=yellow>暈眩</color>{1}秒。\n<color=yellow>衝擊波</color>每命中一個敵人將獲得{2}的<color=yellow>防禦力</color>，最多獲得{3}的<color=yellow>防禦力</color>。命中<color=yellow>首領</color>時獲得最大<color=yellow>防禦力</color>。此防禦力持續到下次<color=yellow>施放</color>此記憶為止。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "22<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorPerHit*maxHitCount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Aftershock.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Blossom": {
+    "name": "綻放精華",
+    "description": "此記憶對敵人造成的所有<color=yellow>傷害</color>將減少80%。當此記憶造成<color=yellow>傷害</color>時，會使周圍隨機友軍的<color=yellow>生命值</color>恢復相當於<color=yellow>傷害量</color>22%<sprite=5>的數值。",
+    "rawDesc": "此記憶對敵人造成的所有<color=yellow>傷害</color>將減少{0}。當此記憶造成<color=yellow>傷害</color>時，會使周圍隨機友軍的<color=yellow>生命值</color>恢復相當於<color=yellow>傷害量</color>{1}的數值。",
+    "rawDescVars": [
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "22%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Blossom.PNG",
+    "lore": null,
+    "achievementKey": "ACH_SUPPORT_MAIN",
+    "achievementName": "輔助大師",
+    "achievementDescription": "同時擁有4個具有治療效果的主動記憶。"
+  },
+  "Gem_E_Clemency": {
+    "name": "寬容精華",
+    "description": "此記憶造成的<color=yellow>傷害</color>中的4%<sprite=5>將<color=yellow>恢復</color><color=yellow>自身</color>的<color=yellow>生命值</color>。",
+    "rawDesc": "此記憶造成的<color=yellow>傷害</color>中的{0}將<color=yellow>恢復</color><color=yellow>自身</color>的<color=yellow>生命值</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "4%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Clemency.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Crimson": {
+    "name": "緋紅精華",
+    "description": "每第4次<color=yellow>基本攻擊</color>會被<color=yellow>強化</color>，對敵人造成<sprite=2><color=#FF8A2D>100%</color><sprite=5>的<color=yellow>黑暗傷害</color>並引發<color=yellow>深紅爆炸</color>。<color=yellow>致命率</color>越高，爆炸範圍越大。\n每命中一名被爆炸波及的敵人，自身會<color=yellow>恢復</color><sprite=2><color=#FF8A2D>22%</color><sprite=5>生命值，若目標為<color=yellow>首領</color>，恢復量增加100%。",
+    "rawDesc": "每第4次<color=yellow>基本攻擊</color>會被<color=yellow>強化</color>，對敵人造成{0}的<color=yellow>黑暗傷害</color>並引發<color=yellow>深紅爆炸</color>。<color=yellow>致命率</color>越高，爆炸範圍越大。\n每命中一名被爆炸波及的敵人，自身會<color=yellow>恢復</color>{1}生命值，若目標為<color=yellow>首領</color>，恢復量增加{2}。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>22%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "healPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.125,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "bossHealAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_E_Crimson.PNG",
+    "lore": null,
+    "achievementKey": "ACH_IN_CARNAGE_I_BLOOM",
+    "achievementName": "在屠殺中綻放",
+    "achievementDescription": "在一次冒險中強化造成黑暗傷害的記憶20次。"
+  },
+  "Gem_E_Direness": {
+    "name": "絕望精華",
+    "description": "自身的<color=yellow>生命值</color>越低，這個記憶的<color=yellow>冷卻時間</color>越短。當自身的<color=yellow>生命值</color>為30%時，最多可減少55%<sprite=5>。",
+    "rawDesc": "自身的<color=yellow>生命值</color>越低，這個記憶的<color=yellow>冷卻時間</color>越短。當自身的<color=yellow>生命值</color>為{0}時，最多可減少{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "maxAbilityHasteHpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "55%<sprite=5>",
+        "format": "P0",
+        "raw": "maxReducedRatio",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Direness.PNG",
+    "lore": "我怎麼還活著…？\n\n…\n\n明明我被關在教團的牢房裡。\n…清醒教派那群傢伙，竟然設下陷阱。\n是我的失誤。\n太過急躁了。\n\n真奇怪。\n胸甲也碎了，肋骨好像也斷了兩根…\n卻一點事都沒有。反而…感覺更強大了。\n\n這裡是哪裡…？這也是魔法嗎…？\n\n…\n雖然模糊…但我確實感覺到了。\n阿斯特麗德，我的妹妹…\n我絕不會再犯錯了。\n\n再等我一下，我馬上就去找妳。",
+    "achievementKey": "ACH_DESPERATE_HERO",
+    "achievementName": "絕望的英雄",
+    "achievementDescription": "在生命值降至40%以下的狀態，連續擊殺30名敵人。"
+  },
+  "Gem_E_Fangs": {
+    "name": "尖牙精華",
+    "description": "每個第4次<color=yellow>基本攻擊</color>必定造成<color=yellow>致命一擊</color>。觸發<color=yellow>致命一擊</color>時，此記憶的<color=yellow>冷卻時間</color>減少0.7<sprite=5>秒，並向附近敵人發射2個<color=yellow>尖牙</color>，各造成<sprite=2><color=#FF8A2D>60%</color><sprite=5>點<color=yellow>傷害</color>。",
+    "rawDesc": "每個第4次<color=yellow>基本攻擊</color>必定造成<color=yellow>致命一擊</color>。觸發<color=yellow>致命一擊</color>時，此記憶的<color=yellow>冷卻時間</color>減少{0}秒，並向附近敵人發射2個<color=yellow>尖牙</color>，各造成{1}點<color=yellow>傷害</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "0.7<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "cooldownReductionOnCrit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.012
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>60%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.3,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Fangs.PNG",
+    "lore": null,
+    "achievementKey": "ACH_THEYRE_JUST_BIG_CATS",
+    "achievementName": "就只是隻大貓咪",
+    "achievementDescription": "用閃電對雷虎造成總共50次最後一擊。"
+  },
+  "Gem_E_Fever": {
+    "name": "熱病精華",
+    "description": "透過此記憶對敵人造成<color=yellow>火焰傷害</color>時，會將<color=yellow>熱病</color>傳染給目標。被<color=yellow>熱病</color>感染的敵人在2秒後爆炸，對自身及周圍的敵人造成<sprite=1><color=#16D7FF>130%</color><sprite=5>的<color=yellow>火焰傷害</color>。目標身上套用的每層<color=yellow>火焰疊加</color>，爆炸範圍增加30%，爆炸傷害量增加10%。",
+    "rawDesc": "透過此記憶對敵人造成<color=yellow>火焰傷害</color>時，會將<color=yellow>熱病</color>傳染給目標。被<color=yellow>熱病</color>感染的敵人在{0}秒後爆炸，對自身及周圍的敵人造成{1}的<color=yellow>火焰傷害</color>。目標身上套用的每層<color=yellow>火焰疊加</color>，爆炸範圍增加{2}，爆炸傷害量增加{3}。",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.65,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "radiusAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "dmgAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_E_Fever.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Flexibility": {
+    "name": "靈活精華",
+    "description": "當此記憶處於<color=yellow>冷卻</color>狀態時，受到的傷害將以37%<sprite=5>4秒為單位<color=yellow>分散</color>承受。透過<color=yellow>分散</color>，實際受到的傷害量減少20%。",
+    "rawDesc": "當此記憶處於<color=yellow>冷卻</color>狀態時，受到的傷害將以{0}{1}秒為單位<color=yellow>分散</color>承受。透過<color=yellow>分散</color>，實際受到的傷害量減少{2}。",
+    "rawDescVars": [
+      {
+        "rendered": "37%<sprite=5>",
+        "format": "P0",
+        "raw": "divMultiplier",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "dmgTickCount*tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "1-dmgReduceAmount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Flexibility.PNG",
+    "lore": null,
+    "achievementKey": "ACH_FLEXIBLE_DIET",
+    "achievementName": "靈活飲食",
+    "achievementDescription": "在一次冒險中，讓生命值降至40%以下後再恢復到75%以上，重複10次。"
+  },
+  "Gem_E_Insensitivity": {
+    "name": "無神經的精華",
+    "description": "<color=yellow>施放</color>此記憶後，在3秒內，每移動2公尺會投下一顆<color=yellow>炸彈</color>。炸彈會在短暫延遲後爆炸，對敵人造成<sprite=1><color=#16D7FF>140%</color><sprite=5>的<color=yellow>火焰傷害</color>。",
+    "rawDesc": "<color=yellow>施放</color>此記憶後，在{0}秒內，每移動{1}公尺會投下一顆<color=yellow>炸彈</color>。炸彈會在短暫延遲後爆炸，對敵人造成{2}的<color=yellow>火焰傷害</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "distancePerBomb",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.7,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_E_Insensitivity.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Insight": {
+    "name": "洞察力精華",
+    "description": "當此記憶對敵人造成任何<color=yellow>傷害</color>時，對最多3<sprite=5>名敵人額外造成<sprite=1><color=#16D7FF>200%</color><sprite=5>的<color=yellow>光明傷害</color>，並使<color=yellow>記憶加速</color>在5秒內增加20<sprite=5>。每3秒只能觸發一次。",
+    "rawDesc": "當此記憶對敵人造成任何<color=yellow>傷害</color>時，對最多{0}名敵人額外造成{1}的<color=yellow>光明傷害</color>，並使<color=yellow>記憶加速</color>在{2}秒內增加{3}。每{4}秒只能觸發一次。",
+    "rawDescVars": [
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxHitCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0025
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20<sprite=5>",
+        "format": "#,##0",
+        "raw": "gainedAbilityHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_E_Insight.PNG",
+    "lore": null,
+    "achievementKey": "ACH_ULTRA_RAPID_FIRE",
+    "achievementName": "無限火力",
+    "achievementDescription": "在8秒內施放12次記憶。"
+  },
+  "Gem_E_Inversion": {
+    "name": "反轉精華",
+    "description": "此記憶的<color=yellow>冷卻時間</color>增加15%<sprite=5>，但對敵人造成的<color=yellow>傷害量</color>也增加20%<sprite=5>。此記憶造成的<color=yellow>元素傷害</color>會<color=yellow>反轉</color>。（火焰/冰寒，光明/黑暗）",
+    "rawDesc": "此記憶的<color=yellow>冷卻時間</color>增加{0}，但對敵人造成的<color=yellow>傷害量</color>也增加{1}。此記憶造成的<color=yellow>元素傷害</color>會<color=yellow>反轉</color>。（火焰/冰寒，光明/黑暗）",
+    "rawDescVars": [
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "P0",
+        "raw": "cooldownAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Inversion.png",
+    "lore": null,
+    "achievementKey": "ACH_ELEMENTALS_101",
+    "achievementName": "元素學概論",
+    "achievementDescription": "擊殺所有同時套用4種元素影響的敵人共70次。"
+  },
+  "Gem_E_Metal": {
+    "name": "金屬精華",
+    "description": "當敵人被<color=yellow>擊殺</color>時，此記憶的<color=yellow>冷卻時間</color>將減少1<sprite=5>秒。",
+    "rawDesc": "當敵人被<color=yellow>擊殺</color>時，此記憶的<color=yellow>冷卻時間</color>將減少{0}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "cooldownReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Metal.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Might": {
+    "name": "巨人精華",
+    "description": "最大生命值增加260<sprite=5>。此記憶對敵人造成的傷害量隨著自身的<color=yellow>最大生命值</color>每增加50，則增加1%。",
+    "rawDesc": "最大生命值增加{0}。此記憶對敵人造成的傷害量隨著自身的<color=yellow>最大生命值</color>每增加{1}，則增加{2}。",
+    "rawDescVars": [
+      {
+        "rendered": "260<sprite=5>",
+        "format": "#,##0",
+        "raw": "healthBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 130.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "50",
+        "format": "#,##0",
+        "raw": "unitHealthAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1%",
+        "format": "P0",
+        "raw": "dmgAmpPerUnitHealth",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.01,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Might.PNG",
+    "lore": null,
+    "achievementKey": "ACH_HEAVIER_THAN_ATLAS",
+    "achievementName": "比泰山還重",
+    "achievementDescription": "最大生命值達到3000。"
+  },
+  "Gem_E_Omega": {
+    "name": "終極精華",
+    "description": "當此記憶不在<color=yellow>冷卻</color>狀態時，每秒獲得<color=yellow>終極</color>疊加，最多可獲得20疊加。當有疊加時，此記憶的<color=yellow>施放</color>將被<color=yellow>強化</color>，每疊加增加<color=yellow>傷害量</color>5%<sprite=5>。",
+    "rawDesc": "當此記憶不在<color=yellow>冷卻</color>狀態時，每秒獲得<color=yellow>終極</color>疊加，最多可獲得{0}疊加。當有疊加時，此記憶的<color=yellow>施放</color>將被<color=yellow>強化</color>，每疊加增加<color=yellow>傷害量</color>{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "20",
+        "format": "#,##0",
+        "raw": "maxChargeCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5%<sprite=5>",
+        "format": "P0",
+        "raw": "chargeRate",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Omega.PNG",
+    "lore": null,
+    "achievementKey": "ACH_OMEGA_POINT",
+    "achievementName": "奧米加點數",
+    "achievementDescription": "在一次冒險中僅施放一種記憶，並進入純白之夢。"
+  },
+  "Gem_E_Opportunity": {
+    "name": "機會精華",
+    "description": "<color=yellow>施放</color>此記憶時，<color=yellow>閃避技能</color>的<color=yellow>冷卻時間</color>減少3<sprite=5>秒。每8秒只能觸發一次。",
+    "rawDesc": "<color=yellow>施放</color>此記憶時，<color=yellow>閃避技能</color>的<color=yellow>冷卻時間</color>減少{0}秒。每{1}秒只能觸發一次。",
+    "rawDescVars": [
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reductionAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "8",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Mobility"
+    ],
+    "image": "Gem_E_Opportunity.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_OurStory_Completed": {
+    "name": "我們的故事（完成！）",
+    "description": "<color=yellow>攻擊力</color>與<color=yellow>技能威力</color>提升0，且<color=yellow>扭曲疾走</color>的所有增益效果提升0。",
+    "rawDesc": "<color=yellow>攻擊力</color>與<color=yellow>技能威力</color>提升{0}，且<color=yellow>扭曲疾走</color>的所有增益效果提升{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "0",
+        "format": "#,##0'%'",
+        "raw": "Gem_E_OurStory_Completed::statPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0",
+        "format": "#,##0",
+        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_OurStory_Completed.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_OurStory_Unfinished": {
+    "name": "我們的故事（撰寫中）",
+    "description": "每當<color=yellow>擊敗</color>敵人75次時，品質將提升50%。當品質達到500%時即<color=yellow>完成</color>。",
+    "rawDesc": "每當<color=yellow>擊敗</color>敵人{0}次時，品質將提升{1}。當品質達到{2}時即<color=yellow>完成</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "75",
+        "format": "#,##0",
+        "raw": "killCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 75.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "#,##0'%'",
+        "raw": "addedQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "500%",
+        "format": "#,##0'%'",
+        "raw": "completeThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 500.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_OurStory_Unfinished.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Overload": {
+    "name": "過載精華",
+    "description": "<color=yellow>施放</color>此記憶時，<color=yellow>犧牲</color>目前生命值的20%來<color=yellow>強化</color><color=yellow>施放</color>。<color=yellow>強化施放</color>造成的<color=yellow>傷害量</color>和<color=yellow>治療量</color>增加45%<sprite=5>。",
+    "rawDesc": "<color=yellow>施放</color>此記憶時，<color=yellow>犧牲</color>目前生命值的{0}來<color=yellow>強化</color><color=yellow>施放</color>。<color=yellow>強化施放</color>造成的<color=yellow>傷害量</color>和<color=yellow>治療量</color>增加{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "healthRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "45%<sprite=5>",
+        "format": "P0",
+        "raw": "amp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.225,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Overload.PNG",
+    "lore": "每當我回想起這個觀念，\n身體與精神彷彿都在被灼燒，痛楚難以言喻。\n\n受到影響的部位鱗片變得脆弱易碎，並且灼熱異常。\n我將某些部位產出的金色粉末收集起來，發現它具有光澤且極為細緻。\n\n將這些粉末添加進以夢之力啟動的魔法中，\n反應變得劇烈無比。\n僅僅是撒入一點點，天花板就留下了大片煤煙的痕跡。\n\n本應記錄本次實驗結果，但我實在太疲憊了。\n這個觀念似乎對精神造成了不小的負擔。\n\n推測與之前發現的力量有相似之處。\n非常有趣。\n需要對這股力量的源頭進行更多研究。\n或許…需要進行一次考察。",
+    "achievementKey": "ACH_REAP_WHAT_YOU_SOW",
+    "achievementName": "一分耕耘一分收穫",
+    "achievementDescription": "操作分解的聖所共12次。"
+  },
+  "Gem_E_Pain": {
+    "name": "痛苦精華",
+    "description": "此記憶造成的所有<color=yellow>傷害</color>會對目標周圍造成40%<sprite=5>的<color=yellow>範圍傷害</color>。此<color=yellow>範圍傷害</color>會與原始傷害和元素類型相同。",
+    "rawDesc": "此記憶造成的所有<color=yellow>傷害</color>會對目標周圍造成{0}的<color=yellow>範圍傷害</color>。此<color=yellow>範圍傷害</color>會與原始傷害和元素類型相同。",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "damageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Pain.PNG",
+    "lore": "別褻瀆我。我不是那種以施加痛苦為樂的瘋子。\n但對於那些膽敢挑戰神之權威的不忠之徒，我絕不會手下留情。\n\n為了高懸於天的祂，\n\n我理所當然，並且心懷榮耀地，\n剝去你的皮膚\n並將你的肉體切割。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Predation": {
+    "name": "掠食精華",
+    "description": "此記憶對<color=yellow>首領</color>與<color=yellow>追蹤者</color>造成的<color=yellow>傷害量</color>增加60%<sprite=5>。擊殺<color=yellow>追蹤者</color>時會掉落1個<color=yellow>力量寶珠</color>，擊殺<color=yellow>首領</color>時會掉落3個。獲得<color=yellow>力量寶珠</color>時，<color=yellow>攻擊力</color>或<color=yellow>技能威力</color>將隨機永久增加1。",
+    "rawDesc": "此記憶對<color=yellow>首領</color>與<color=yellow>追蹤者</color>造成的<color=yellow>傷害量</color>增加{0}。擊殺<color=yellow>追蹤者</color>時會掉落{1}個<color=yellow>力量寶珠</color>，擊殺<color=yellow>首領</color>時會掉落{2}個。獲得<color=yellow>力量寶珠</color>時，<color=yellow>攻擊力</color>或<color=yellow>技能威力</color>將隨機永久增加1。",
+    "rawDescVars": [
+      {
+        "rendered": "60%<sprite=5>",
+        "format": "P0",
+        "raw": "amp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedAp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "addedAp*bossMultiplier",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Predation.png",
+    "lore": null,
+    "achievementKey": "ACH_WHOS_THE_PREY_NOW",
+    "achievementName": "現在誰是獵物呢",
+    "achievementDescription": "擊殺追蹤者70次。"
+  },
+  "Gem_E_Protection": {
+    "name": "保護精華",
+    "description": "<color=yellow>施放</color>此記憶時，將在3秒內獲得40<sprite=5>的<color=yellow>防禦力</color>，從而減少受到的傷害並進入<color=yellow>無法阻擋</color>狀態。每5秒只能觸發一次。",
+    "rawDesc": "<color=yellow>施放</color>此記憶時，將在{0}秒內獲得{1}的<color=yellow>防禦力</color>，從而減少受到的傷害並進入<color=yellow>無法阻擋</color>狀態。每{2}秒只能觸發一次。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "armorDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Protection.PNG",
+    "lore": null,
+    "achievementKey": "ACH_TEKKAI",
+    "achievementName": "鐵塊",
+    "achievementDescription": "獲得相當於最大生命值300%以上的護盾。"
+  },
+  "Gem_E_Thunder": {
+    "name": "雷霆精華",
+    "description": "當<color=yellow>施放</color><color=yellow>其他記憶</color>或使用<color=yellow>閃避技能</color>時，獲得1層<color=yellow>雷霆</color>疊加，最多可充能7<sprite=5>次。<color=yellow>施放</color>此記憶時，消耗所有<color=yellow>雷霆</color>疊加，對附近的敵人釋放等同於疊加數量的閃電，每道閃電造成<sprite=1><color=#16D7FF>117%</color><sprite=5>的<color=yellow>光明傷害</color>。",
+    "rawDesc": "當<color=yellow>施放</color><color=yellow>其他記憶</color>或使用<color=yellow>閃避技能</color>時，獲得1層<color=yellow>雷霆</color>疊加，最多可充能{0}次。<color=yellow>施放</color>此記憶時，消耗所有<color=yellow>雷霆</color>疊加，對附近的敵人釋放等同於疊加數量的閃電，每道閃電造成{1}的<color=yellow>光明傷害</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "7<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxCharge",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.004
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>117%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.65,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.008
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_E_Thunder.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Twilight": {
+    "name": "暮光精華",
+    "description": "自身的<color=yellow>基本攻擊</color>傷害轉為<color=yellow>黑暗傷害</color>。當此記憶對敵人造成傷害時，如果目標的<color=yellow>黑暗疊加</color>達到3以上，則消耗所有疊加，每層疊加造成<sprite=1><color=#16D7FF>54%</color><sprite=5>的<color=yellow>傷害</color>，並每層疊加<color=yellow>恢復</color>6<sprite=5>的生命值。",
+    "rawDesc": "自身的<color=yellow>基本攻擊</color>傷害轉為<color=yellow>黑暗傷害</color>。當此記憶對敵人造成傷害時，如果目標的<color=yellow>黑暗疊加</color>達到{0}以上，則消耗所有疊加，每層疊加造成{1}的<color=yellow>傷害</color>，並每層疊加<color=yellow>恢復</color>{2}的生命值。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "minStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>54%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.27,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "6<sprite=5>",
+        "format": "#,##0",
+        "raw": "healPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark"
+    ],
+    "image": "Gem_E_Twilight.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Virtuousness": {
+    "name": "高潔精華",
+    "description": "此記憶的充能次數增加1<sprite=5>。每當品質增加150%時，充能次數增加1。",
+    "rawDesc": "此記憶的充能次數增加{0}。每當品質增加{1}時，充能次數增加1。",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0",
+        "raw": "addedChargeInt",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "150%",
+        "format": "#,##0'%'",
+        "raw": "requiredQualityPerCharge",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 150.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Virtuousness.PNG",
+    "lore": "人們正在死去。那些只存在於傳說中的可怕怪物與鬼魂，如今跨越現實，焚燒村莊，摧毀我們的生活。\n\n偏偏在卡蜜拉大人和姊姊都不在的時候…\n\n雖然目前還能勉強撐住…\n但如果傳聞是真的，有人的想像真的成真了呢？\n如果…有人…想像出了比現在更可怕的東西呢…？\n\n只是時間問題。\n我們只能坐等這場必然的災難嗎？\n\n…\n\n成功了！\n昨天終於成功將夢的力量注入姊姊留下的軍刀和我的匕首裡。\n夢之世界真的存在。\n現在我只需要資訊。\n\n我知道有個人能解決這個問題。\n清醒教派…雖然讓人不安，但最可靠。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_CamillasGift": {
+    "name": "卡米拉的禮物",
+    "description": "可以在商店<color=yellow>出售</color>獲得0金幣。每次移動到下一個世界時，<color=yellow>價格</color>會<color=yellow>增加</color>0。如果受到敵人傷害導致生命值低於50%，則會破碎。",
+    "rawDesc": "可以在商店<color=yellow>出售</color>獲得{0}金幣。每次移動到下一個世界時，<color=yellow>價格</color>會<color=yellow>增加</color>{1}。如果受到敵人傷害導致生命值低於{2}，則會破碎。",
+    "rawDescVars": [
+      {
+        "rendered": "0",
+        "format": "#,##0",
+        "raw": "currentSellGold",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0",
+        "format": "#,##0",
+        "raw": "sellGoldIncreasePerWorld",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "healthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_CamillasGift.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_ChaosApple": {
+    "name": "混沌蘋果",
+    "description": "每次透過<color=yellow>裂隙</color><color=yellow>移動</color>時，會暫時將此記憶<color=yellow>變質</color>為隨機的其他記憶。<color=yellow>變質</color>後的記憶<color=yellow>冷卻時間</color>會被移除，但每個房間只能<color=yellow>施放</color>4<sprite=5>次，當所有施放次數用盡後，會恢復為原本的記憶。",
+    "rawDesc": "每次透過<color=yellow>裂隙</color><color=yellow>移動</color>時，會暫時將此記憶<color=yellow>變質</color>為隨機的其他記憶。<color=yellow>變質</color>後的記憶<color=yellow>冷卻時間</color>會被移除，但每個房間只能<color=yellow>施放</color>{0}次，當所有施放次數用盡後，會恢復為原本的記憶。",
+    "rawDescVars": [
+      {
+        "rendered": "4<sprite=5>",
+        "format": "#,##0",
+        "raw": "castPerRoomCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_ChaosApple.png",
+    "lore": null,
+    "achievementKey": "ACH_CHAOTIC_GOOD",
+    "achievementName": "混沌善良",
+    "achievementDescription": "使用傳說混沌共5次。"
+  },
+  "Gem_L_DivineFaith": {
+    "name": "神聖信仰",
+    "description": "每當使用此記憶<color=yellow>擊殺</color>敵人時，便會獲得<color=yellow>信仰</color>疊加，最多可獲得75<sprite=5>層疊加。每層<color=yellow>信仰</color>使這個記憶對敵人造成的<color=yellow>傷害量</color>和對友軍的<color=yellow>治療量</color>增加0.5%，並使自身的最大生命值增加4。",
+    "rawDesc": "每當使用此記憶<color=yellow>擊殺</color>敵人時，便會獲得<color=yellow>信仰</color>疊加，最多可獲得{0}層疊加。每層<color=yellow>信仰</color>使這個記憶對敵人造成的<color=yellow>傷害量</color>和對友軍的<color=yellow>治療量</color>增加{1}，並使自身的最大生命值增加{2}。",
+    "rawDescVars": [
+      {
+        "rendered": "75<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.015
+        }
+      },
+      {
+        "rendered": "0.5%",
+        "format": "0.#%",
+        "raw": "dmgAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.005,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxHealthPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_DivineFaith.PNG",
+    "lore": "你們這些侍奉虛假之神、追隨異端教條的無知與褻瀆者。\n我再也不會坐視這等褻瀆行為。\n\n我的鐵鎚是真理的工具，\n我的騎士團是實踐神意的使者，\n不忠之人必將迎來審判。\n\n明日，淨化之火將焚燒他們。\n世上再無他們的氣息。\n\n一切皆遵循萬物之主——埃爾皮洛斯的旨意…",
+    "achievementKey": "ACH_GOD_PROTECTS_ME",
+    "achievementName": "神的庇護",
+    "achievementDescription": "在一次冒險中，當追蹤威脅等級為5時，訪問被追蹤者佔領的地點4次。"
+  },
+  "Gem_L_Embertail": {
+    "name": "火焰尾",
+    "description": "自身的<color=yellow>攻擊</color>會彈射，對周圍的一個敵人造成<sprite=1><color=#16D7FF>100%</color><sprite=5>的<color=yellow>火焰傷害</color>。每有一個被火焰包圍的敵人，此記憶的<color=yellow>傷害量</color>和<color=yellow>治療量</color>增加8%<sprite=5>，<color=yellow>冷卻時間</color>減少8%<sprite=5>。自身的火焰持續傷害增加100%。",
+    "rawDesc": "自身的<color=yellow>攻擊</color>會彈射，對周圍的一個敵人造成{0}的<color=yellow>火焰傷害</color>。每有一個被火焰包圍的敵人，此記憶的<color=yellow>傷害量</color>和<color=yellow>治療量</color>增加{1}，<color=yellow>冷卻時間</color>減少{2}。自身的火焰持續傷害增加{3}。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.5,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "8%<sprite=5>",
+        "format": "P0",
+        "raw": "ampPerBurning",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "8%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "skillHastePerBurning",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "statBonus.fireEffectAmpFlat",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Fire",
+      "Attack"
+    ],
+    "image": "Gem_L_Embertail.PNG",
+    "lore": "夢之主…\n\n請讓他…復活吧\n\n…懇請您…\n\n…抹去這一切\n\n…\n\n如此便已足夠。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_HeartOfGold": {
+    "name": "黃金之心",
+    "description": "<color=yellow>施放</color>此記憶時，將使用持有的金幣的3%來<color=yellow>強化</color>施放。<color=yellow>強化施放</color>的<color=yellow>傷害量</color>和<color=yellow>治療量</color>將根據持有的金幣增加，每100金幣增加12%<sprite=5>。\n",
+    "rawDesc": "<color=yellow>施放</color>此記憶時，將使用持有的金幣的{0}來<color=yellow>強化</color>施放。<color=yellow>強化施放</color>的<color=yellow>傷害量</color>和<color=yellow>治療量</color>將根據持有的金幣增加，每100金幣增加{1}。\n",
+    "rawDescVars": [
+      {
+        "rendered": "3%",
+        "format": "P0",
+        "raw": "spentGoldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "12%<sprite=5>",
+        "format": "P0",
+        "raw": "ampPerHundredGold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.06,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_L_HeartOfGold.png",
+    "lore": null,
+    "achievementKey": "ACH_MIDAS_HIMSELF",
+    "achievementName": "米達斯的化身",
+    "achievementDescription": "擁有6000金幣。"
+  },
+  "Gem_L_MetalCrystal": {
+    "name": "金屬結晶",
+    "description": "被光照射的部分閃耀著不真實的色彩。",
+    "rawDesc": "被光照射的部分閃耀著不真實的色彩。",
+    "rawDescVars": [],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_MetalCrystal.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Paranoia": {
+    "name": "偏執狂精華",
+    "description": "受到任何<color=yellow>傷害</color>時，此記憶在6秒內獲得150<sprite=5>的<color=yellow>記憶加速</color>，使<color=yellow>冷卻時間</color>減少60%<sprite=5>，但會對附近的敵人<color=yellow>自動施放</color>。",
+    "rawDesc": "受到任何<color=yellow>傷害</color>時，此記憶在{0}秒內獲得{1}的<color=yellow>記憶加速</color>，使<color=yellow>冷卻時間</color>減少{2}，但會對附近的敵人<color=yellow>自動施放</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "6",
+        "format": "#,##0",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "150<sprite=5>",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 75.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "60%<sprite=5>",
+        "format": "P0",
+        "raw": "reducedRatio",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Paranoia.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Perfect": {
+    "name": "完美",
+    "description": "攻擊力增加7<sprite=5>，技能威力增加7<sprite=5>，最大生命值增加35<sprite=5>，攻擊速度增加10%<sprite=5>，致命率增加6%<sprite=5>，記憶加速增加10<sprite=5>。",
+    "rawDesc": "攻擊力增加{0}，技能威力增加{1}，最大生命值增加{2}，攻擊速度增加{3}，致命率增加{4}，記憶加速增加{5}。",
+    "rawDescVars": [
+      {
+        "rendered": "7<sprite=5>",
+        "format": "#,##0",
+        "raw": "adAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "7<sprite=5>",
+        "format": "#,##0",
+        "raw": "apAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "35<sprite=5>",
+        "format": "#,##0",
+        "raw": "healthAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 17.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "attackSpeedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "6%<sprite=5>",
+        "format": "P0",
+        "raw": "criticalChanceAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "10<sprite=5>",
+        "format": "#,##0",
+        "raw": "skillHasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Perfect.PNG",
+    "lore": "曾經有人把我當作神來崇拜。\n沒錯，曾幾何時，我也在這裡相信自己是全能的。\n\n能與思念的家人重逢，\n輕易實現所有幻想與夢想。\n\n那時候，一切都很完美…\n不，其實只是我誤以為完美罷了。\n\n夢終究只是夢。\n我的全能，實際上與無能無異。\n\n現實並非必然的世界。\n這裡…\n只是一場虛幻。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_PureWhite": {
+    "name": "純白",
+    "description": "每10秒，此記憶的<color=yellow>施放</color>會被<color=yellow>強化</color>。<color=yellow>強化施放</color>首次對單個敵人造成的<color=yellow>傷害</color>中的20%<sprite=5>會以<color=yellow>光明傷害</color>形式發射3顆<color=yellow>彈</color>。發射次數會根據每個目標的<color=yellow>光明疊加</color>數量增加。",
+    "rawDesc": "每{0}秒，此記憶的<color=yellow>施放</color>會被<color=yellow>強化</color>。<color=yellow>強化施放</color>首次對單個敵人造成的<color=yellow>傷害</color>中的{1}會以<color=yellow>光明傷害</color>形式發射{2}顆<color=yellow>彈</color>。發射次數會根據每個目標的<color=yellow>光明疊加</color>數量增加。",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "damageMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "minProjectiles",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_L_PureWhite.PNG",
+    "lore": "那些聲稱自己曾經歷「蛻變」的人們，對夢的模樣各有不同的描述。\n\n有人說是像堆積成山的肉，那餐桌無邊無際；有人說失散的家人都在那裡；還有人說是充滿玫瑰與香氣茶的花園。\n\n但沒有人說吃了那美味的食物後感到飽腹，也沒有人能將那些想念的家人帶回現實。\n\n因為我們的肉體留在現實中。夢境不過是我們的精神暫時訪問另一個世界。當我們從夢中醒來，手中什麼也沒有。\n\n然而，清醒教派發現了一件非常有趣的事。\n\n我們可以直接進入夢境。",
+    "achievementKey": "ACH_EMPTY_CANVAS",
+    "achievementName": "空白畫布",
+    "achievementDescription": "總共進入純白之夢2次。"
+  },
+  "Gem_L_SolarEye": {
+    "name": "太陽之眼",
+    "description": "每隔20秒，此記憶的<color=yellow>施放</color>將被<color=yellow>強化</color>，對已經<color=yellow>點燃</color>的所有周圍敵人施放<color=yellow>太陽之光</color>。<color=yellow>太陽之光</color>將在1.5秒內造成總計<sprite=1><color=#16D7FF>360%</color><sprite=5>的<color=yellow>火焰傷害</color>，並增加9<sprite=5>層<color=yellow>燒傷</color>疊加。\n自身的火焰持續傷害增加100%。",
+    "rawDesc": "每隔{0}秒，此記憶的<color=yellow>施放</color>將被<color=yellow>強化</color>，對已經<color=yellow>點燃</color>的所有周圍敵人施放<color=yellow>太陽之光</color>。<color=yellow>太陽之光</color>將在{1}秒內造成總計{2}的<color=yellow>火焰傷害</color>，並增加{3}層<color=yellow>燒傷</color>疊加。\n自身的火焰持續傷害增加{4}。",
+    "rawDescVars": [
+      {
+        "rendered": "20",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "interval * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>360%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "9<sprite=5>",
+        "format": "#,##0",
+        "raw": "calTotalStack",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "statBonus.fireEffectAmpFlat",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_L_SolarEye.png",
+    "lore": null,
+    "achievementKey": "ACH_PRAISE_THE_SUN",
+    "achievementName": "讚頌太陽！",
+    "achievementDescription": "對敵人施加總共3000層火焰疊加。"
+  },
+  "Gem_L_SuppressedArcanum": {
+    "name": "壓抑的阿卡努姆",
+    "description": "<color=yellow>施放</color>此記憶時，將犧牲目前生命值的5%，引爆<color=yellow>金色爆炸</color>。被<color=yellow>爆炸</color>波及的敵人將受到<sprite=1><color=#16D7FF>240%</color><sprite=5>的<color=yellow>光明傷害</color>，而友軍則獲得持續2.5秒的<sprite=1><color=#16D7FF>61%</color><sprite=5><color=yellow>護盾</color>。當自身生命值低於60%以下時，此記憶的<color=yellow>護盾賦予量</color>增加50%。",
+    "rawDesc": "<color=yellow>施放</color>此記憶時，將犧牲目前生命值的{0}，引爆<color=yellow>金色爆炸</color>。被<color=yellow>爆炸</color>波及的敵人將受到{1}的<color=yellow>光明傷害</color>，而友軍則獲得持續{2}秒的{3}<color=yellow>護盾</color>。當自身生命值低於{4}以下時，此記憶的<color=yellow>護盾賦予量</color>增加{5}。",
+    "rawDescVars": [
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "currentHpSacrificeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>240%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.2,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>61%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.35,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "60%",
+        "format": "P0",
+        "raw": "hpThresholdRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "shieldAmpOnLowHp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Light",
+      "Shield"
+    ],
+    "image": "Gem_L_SuppressedArcanum.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Accuracy": {
+    "name": "精準精華",
+    "description": "當此記憶對遠處的敵人造成<color=yellow>傷害</color>時，會發射一個<color=yellow>額外投射物</color>，對目標造成50%<sprite=5>的<color=yellow>傷害</color>。這個<color=yellow>投射物</color>造成的<color=yellow>傷害</color>將與原始傷害和元素類型相同。",
+    "rawDesc": "當此記憶對遠處的敵人造成<color=yellow>傷害</color>時，會發射一個<color=yellow>額外投射物</color>，對目標造成{0}的<color=yellow>傷害</color>。這個<color=yellow>投射物</color>造成的<color=yellow>傷害</color>將與原始傷害和元素類型相同。",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "damageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Accuracy.PNG",
+    "lore": null,
+    "achievementKey": "ACH_SHOOT_FOR_THE_MOON",
+    "achievementName": "向月亮射擊",
+    "achievementDescription": "對遠距離的敵人進行80次最後一擊。"
+  },
+  "Gem_R_Adventure": {
+    "name": "冒險精華",
+    "description": "每當<color=yellow>移動</color>到<color=yellow>新地點</color>時，提升此記憶所裝備的另一個<color=yellow>精華</color><color=yellow>品質</color>+10%，並獲得19<sprite=5>金幣。",
+    "rawDesc": "每當<color=yellow>移動</color>到<color=yellow>新地點</color>時，提升此記憶所裝備的另一個<color=yellow>精華</color><color=yellow>品質</color>+{0}，並獲得{1}金幣。",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "upgradeGemAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "19<sprite=5>",
+        "format": "#,##0",
+        "raw": "goldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0025
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Adventure.PNG",
+    "lore": null,
+    "achievementKey": "ACH_NOVICE_TREASURE_HUNTER",
+    "achievementName": "新手寶藏獵人",
+    "achievementDescription": "首次開啟寶箱。"
+  },
+  "Gem_R_Blade": {
+    "name": "刀刃精華",
+    "description": "此記憶每次<color=yellow>命中</color>敵人時，召喚一把刀刃對目標造成<sprite=2><color=#FF8A2D>58%</color><sprite=5>的傷害，並連續切割3<sprite=5>次。每個敵人每2秒只能觸發一次。",
+    "rawDesc": "此記憶每次<color=yellow>命中</color>敵人時，召喚一把刀刃對目標造成{0}的傷害，並連續切割{1}次。每個敵人每{2}秒只能觸發一次。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>58%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.55,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0005
+        }
+      },
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0",
+        "raw": "baseCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "perEnemyCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Blade.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Bleak": {
+    "name": "荒涼精華",
+    "description": "當此記憶受到<color=yellow>冰寒</color>影響或對<color=yellow>緩速</color>、<color=yellow>禁錮</color>、<color=yellow>暈眩</color>狀態的敵人造成傷害時，傷害增加50%<sprite=5>。",
+    "rawDesc": "當此記憶受到<color=yellow>冰寒</color>影響或對<color=yellow>緩速</color>、<color=yellow>禁錮</color>、<color=yellow>暈眩</color>狀態的敵人造成傷害時，傷害增加{0}。",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold"
+    ],
+    "image": "Gem_R_Bleak.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Blood": {
+    "name": "血滴精華",
+    "description": "當生命值降至40%以下時，犧牲此<color=yellow>精華</color>的<color=yellow>品質</color>80%，<color=yellow>恢復</color><color=yellow>最大生命值</color>的40%。每4秒只能發動一次。",
+    "rawDesc": "當生命值降至{0}以下時，犧牲此<color=yellow>精華</color>的<color=yellow>品質</color>{1}，<color=yellow>恢復</color><color=yellow>最大生命值</color>的{2}。每{3}秒只能發動一次。",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "activateHealthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "#,##0'%'",
+        "raw": "sacrificedQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 80.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "healMaxHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Blood.png",
+    "lore": null,
+    "achievementKey": "ACH_KYAAAAAA",
+    "achievementName": "呀啊啊啊！！",
+    "achievementDescription": "在沒有護盾的情況下，承受單次傷害達到最大生命值的70%以上並存活下來。"
+  },
+  "Gem_R_Celestial": {
+    "name": "天體精華",
+    "description": "每隔10秒，此記憶的<color=yellow>施放</color>將被<color=yellow>強化</color>。<color=yellow>強化施放</color>首次命中單個敵人時，將召喚4顆流星，每顆造成<sprite=1><color=#16D7FF>130%</color><sprite=5>的<color=yellow>光明傷害</color>。",
+    "rawDesc": "每隔{0}秒，此記憶的<color=yellow>施放</color>將被<color=yellow>強化</color>。<color=yellow>強化施放</color>首次命中單個敵人時，將召喚{1}顆流星，每顆造成{2}的<color=yellow>光明傷害</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "stars",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "starDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.65,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_R_Celestial.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Composure": {
+    "name": "沉著精華",
+    "description": "<color=yellow>施放</color>此記憶後，5秒期間，<color=yellow>致命率</color>增加20%<sprite=5>。受到敵人傷害時，此效果會提前結束。",
+    "rawDesc": "<color=yellow>施放</color>此記憶後，{0}秒期間，<color=yellow>致命率</color>增加{1}。受到敵人傷害時，此效果會提前結束。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "critBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Composure.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Contempt": {
+    "name": "蔑視精華",
+    "description": "此記憶對敵人造成的<color=yellow>傷害</color>會隨著目標的生命值越低而增加，當生命值為20%時，傷害最多<color=yellow>增加</color>50%<sprite=5>。",
+    "rawDesc": "此記憶對敵人造成的<color=yellow>傷害</color>會隨著目標的生命值越低而增加，當生命值為{0}時，傷害最多<color=yellow>增加</color>{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "maxAmpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "amp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Contempt.png",
+    "lore": "- 進入急流後第4天。\n\n終於能稍微喘口氣，重新開始寫日誌。\n雖然全身還是僵硬發抖…但還是得留下記錄。\n\n幾天前，在清醒教派的幫助下，我終於進入了名為急流的世界。\n與預想不同，森林充滿了神秘，陽光在樹葉間跳舞般灑落，景色美得令人驚嘆。彷彿走進了童話世界。\n\n然而…我很快就明白，這份平靜只是表象。\n午後，霧氣降臨，我們在霧的彼端發現了某種東西。\n\n回想那一刻，手還是止不住顫抖…\n那是一個擁有熾紅雙眼、巨大而詭異的生物…當時牠不規則地張合著嘴，靜靜地注視著我們。就在一瞬間，\n「那東西」已經逼近到我們眼前。\n\n之後的記憶一片混亂。\n只記得…拼命奔逃，肺部幾乎要炸裂，\n同伴的慘叫聲，還有某種血肉撕裂的聲音。\n\n\n現在應該算安全了…\n但那隻用長爪將人撕成碎片的「牠」的蔑視眼神，\n\n我想我這輩子都無法忘記。\n\n- A.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Dusk": {
+    "name": "黃昏精華",
+    "description": "施放此記憶時，在接下來的5秒內，每次<color=yellow>攻擊</color>敵人時，將發射2個造成<sprite=2><color=#FF8A2D>30%</color><sprite=5>的<color=yellow>黑暗傷害</color>的<color=yellow>黃昏碎片</color>。",
+    "rawDesc": "施放此記憶時，在接下來的{0}秒內，每次<color=yellow>攻擊</color>敵人時，將發射{1}個造成{2}的<color=yellow>黑暗傷害</color>的<color=yellow>黃昏碎片</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "shootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>30%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.15,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_R_Dusk.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Flow": {
+    "name": "流動精華",
+    "description": "當任何記憶造成<color=yellow>光明傷害</color>時，該記憶的<color=yellow>冷卻時間</color>將減少6%<sprite=5>。若為終極技，則只獲得40%的效果。此記憶受到的<color=yellow>冷卻時間減少</color>效果也會應用於裝備的<color=yellow>精華</color>上。",
+    "rawDesc": "當任何記憶造成<color=yellow>光明傷害</color>時，該記憶的<color=yellow>冷卻時間</color>將減少{0}。若為終極技，則只獲得{1}的效果。此記憶受到的<color=yellow>冷卻時間減少</color>效果也會應用於裝備的<color=yellow>精華</color>上。",
+    "rawDescVars": [
+      {
+        "rendered": "6%<sprite=5>",
+        "format": "P0",
+        "raw": "reduceRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "ultRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_R_Flow.PNG",
+    "lore": "多麼陌生的真相啊…你向我展現的，是無可置疑的真理，也是命運的指引。\n曾幾何時，我主宰著群星的生滅，能夠全然感受那壯闊的共鳴，\n如今一切卻如迷霧中的影子般遙不可及。\n\n然而，唯有我的意志依然如晨星般清晰。\n我將親手劃定自己命運的波濤，\n必將斬斷那一切枷鎖。\n\n直到最後一息，我都將是引領創造與毀滅之舞的人。我，就是名副其實的星之神。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Frost": {
+    "name": "雪霜精華",
+    "description": "當此記憶造成<color=yellow>冰寒傷害</color>時，將對敵人造成相當於自身<color=yellow>最大生命值</color>的10%<sprite=5>的<color=yellow>冰寒傷害</color>，並使其短暫<color=yellow>暈眩</color>。每個敵人每5秒只能觸發一次。每次觸發時，自身<color=yellow>最大生命值</color>將永久增加1。",
+    "rawDesc": "當此記憶造成<color=yellow>冰寒傷害</color>時，將對敵人造成相當於自身<color=yellow>最大生命值</color>的{0}的<color=yellow>冰寒傷害</color>，並使其短暫<color=yellow>暈眩</color>。每個敵人每{1}秒只能觸發一次。每次觸發時，自身<color=yellow>最大生命值</color>將永久增加{2}。",
+    "rawDescVars": [
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "P0",
+        "raw": "damageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.07,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.004
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "perEnemyCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "gainedMaxHp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold",
+      "HardCC"
+    ],
+    "image": "Gem_R_Frost.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Glaciate": {
+    "name": "冰封精華",
+    "description": "<color=yellow>施放</color>此記憶時，會散發出冰寒，對敵人造成<sprite=1><color=#16D7FF>160%</color><sprite=5>的<color=yellow>冰寒傷害</color>。品質增加將擴大散發範圍。",
+    "rawDesc": "<color=yellow>施放</color>此記憶時，會散發出冰寒，對敵人造成{0}的<color=yellow>冰寒傷害</color>。品質增加將擴大散發範圍。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.8,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold"
+    ],
+    "image": "Gem_R_Glaciate.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Insatiable": {
+    "name": "貪食精華",
+    "description": "施放此記憶後5秒內<color=yellow>攻擊力</color>增加15%<sprite=5>，並且每次<color=yellow>攻擊</color><color=yellow>恢復</color>6<sprite=5>的生命值。",
+    "rawDesc": "施放此記憶後{0}秒內<color=yellow>攻擊力</color>增加{1}，並且每次<color=yellow>攻擊</color><color=yellow>恢復</color>{2}的生命值。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "bonusAttackDamagePercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "6<sprite=5>",
+        "format": "#,##0",
+        "raw": "healAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.006
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal",
+      "Attack"
+    ],
+    "image": "Gem_R_Insatiable.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Momentum": {
+    "name": "餘勢精華",
+    "description": "每次<color=yellow>攻擊</color>敵人時，此記憶的<color=yellow>冷卻時間</color><color=yellow>減少</color>0.4<sprite=5>秒。",
+    "rawDesc": "每次<color=yellow>攻擊</color>敵人時，此記憶的<color=yellow>冷卻時間</color><color=yellow>減少</color>{0}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "0.4<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reductionAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.012
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Attack"
+    ],
+    "image": "Gem_R_Momentum.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_NightSky": {
+    "name": "夜空精華",
+    "description": "當這記憶<color=yellow>命中</color>敵人時，<color=yellow>攻擊速度</color>將在3秒內增加10%<sprite=5>，可累積至最高20%<sprite=5>。如果是<color=yellow>黑暗傷害</color>，則可增加至最高40%<sprite=5>。每次<color=yellow>攻擊</color>敵人時，此效果的持續時間將重置。",
+    "rawDesc": "當這記憶<color=yellow>命中</color>敵人時，<color=yellow>攻擊速度</color>將在{0}秒內增加{1}，可累積至最高{2}。如果是<color=yellow>黑暗傷害</color>，則可增加至最高{3}。每次<color=yellow>攻擊</color>敵人時，此效果的持續時間將重置。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "perHitAtkSpd",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "maxAtkSpdNormal",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "maxAtkSpdDark",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_R_NightSky.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Obsidian": {
+    "name": "黑曜石精華",
+    "description": "當你<color=yellow>施放</color>此記憶時，5秒內的下一次攻擊會被<color=yellow>強化</color>。<color=yellow>強化攻擊</color>會對目標造成<sprite=2><color=#FF8A2D>250%</color><sprite=5>的<color=yellow>黑暗傷害</color>，並使此記憶的<color=yellow>冷卻時間</color>減少1<sprite=5>秒。",
+    "rawDesc": "當你<color=yellow>施放</color>此記憶時，{0}秒內的下一次攻擊會被<color=yellow>強化</color>。<color=yellow>強化攻擊</color>會對目標造成{1}的<color=yellow>黑暗傷害</color>，並使此記憶的<color=yellow>冷卻時間</color>減少{2}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.25,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reducedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_E_Obsidian.png",
+    "lore": null,
+    "achievementKey": "ACH_MINE_AND_CRAFT",
+    "achievementName": "挖礦與工藝",
+    "achievementDescription": "摧毀3個漆黑原石。"
+  },
+  "Gem_R_Panic": {
+    "name": "恐慌精華",
+    "description": "當受到任何<color=yellow>傷害</color>時，這個記憶會在3秒內獲得30<sprite=5>的<color=yellow>記憶加速</color>，並且移動時<color=yellow>移動速度</color>提升20%<sprite=5>。",
+    "rawDesc": "當受到任何<color=yellow>傷害</color>時，這個記憶會在{0}秒內獲得{1}的<color=yellow>記憶加速</color>，並且移動時<color=yellow>移動速度</color>提升{2}。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "30<sprite=5>",
+        "format": "#,##0",
+        "raw": "memoryHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.05,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Mobility"
+    ],
+    "image": "Gem_R_Panic.PNG",
+    "lore": null,
+    "achievementKey": "ACH_EVERYONE_LETS_NOT_PANIC",
+    "achievementName": "保持冷靜，沉穩地前進吧",
+    "achievementDescription": "在生命值低於25%以下的狀態下，累計擊殺英雄首領8次。"
+  },
+  "Gem_R_Rejuvenation": {
+    "name": "回春精華",
+    "description": "每隔15秒，此記憶的<color=yellow>施放</color>會被<color=yellow>強化</color>一次。<color=yellow>強化施放</color>在施放後1.5秒內造成的<color=yellow>傷害</color>的10%<sprite=5>，將用於<color=yellow>自身</color><color=yellow>生命值</color><color=yellow>恢復</color>。",
+    "rawDesc": "每隔{0}秒，此記憶的<color=yellow>施放</color>會被<color=yellow>強化</color>一次。<color=yellow>強化施放</color>在施放後{1}秒內造成的<color=yellow>傷害</color>的{2}，將用於<color=yellow>自身</color><color=yellow>生命值</color><color=yellow>恢復</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "15",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.08,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Rejuvenation.PNG",
+    "lore": null,
+    "achievementKey": "ACH_LOYAL_CUSTOMER",
+    "achievementName": "常客",
+    "achievementDescription": "在一次冒險中操作指引聖所15次。"
+  },
+  "Gem_R_Ricochet": {
+    "name": "彈射精華",
+    "description": "此記憶造成的<color=yellow>傷害</color>或<color=yellow>治療</color>有50%<sprite=5>的機率反彈到附近的其他目標，造成90%<sprite=5>的<color=yellow>傷害</color>或<color=yellow>治療</color>。若為<color=yellow>傷害</color>，則與原始傷害共享元素類型。",
+    "rawDesc": "此記憶造成的<color=yellow>傷害</color>或<color=yellow>治療</color>有{0}的機率反彈到附近的其他目標，造成{1}的<color=yellow>傷害</color>或<color=yellow>治療</color>。若為<color=yellow>傷害</color>，則與原始傷害共享元素類型。",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "ricochetChance",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "90%<sprite=5>",
+        "format": "P0",
+        "raw": "ricochetRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Ricochet.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Rigidity": {
+    "name": "剛性精華",
+    "description": "當此記憶<color=yellow>命中</color>敵人時，獲得持續2秒的9<sprite=5><color=yellow>護盾</color>。若造成<color=yellow>冰寒傷害</color>，則此效果增加80%。",
+    "rawDesc": "當此記憶<color=yellow>命中</color>敵人時，獲得持續{0}秒的{1}<color=yellow>護盾</color>。若造成<color=yellow>冰寒傷害</color>，則此效果增加{2}。",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "9<sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "coldDamageMultiplier-1",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Shield"
+    ],
+    "image": "Gem_R_Rigidity.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Scorched": {
+    "name": "燒灼精華",
+    "description": "<color=yellow>施放</color>此記憶時，對周圍敵人造成<sprite=1><color=#16D7FF>47%</color><sprite=5>的<color=yellow>火焰傷害</color>，並且落下3<sprite=5>個<color=yellow>火球</color>。",
+    "rawDesc": "<color=yellow>施放</color>此記憶時，對周圍敵人造成{0}的<color=yellow>火焰傷害</color>，並且落下{1}個<color=yellow>火球</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>47%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.35,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0035
+        }
+      },
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Scorched.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Shock": {
+    "name": "震撼精華",
+    "description": "每第4次<color=yellow>基本攻擊</color>會被<color=yellow>強化</color>，發射<color=yellow>電擊</color>彈射至敵人，最多造成2次<sprite=1><color=#16D7FF>40%</color><sprite=5>的<color=yellow>光明傷害</color>。每20%點<color=yellow>致命率</color>增加1次最大傷害次數。",
+    "rawDesc": "每第4次<color=yellow>基本攻擊</color>會被<color=yellow>強化</color>，發射<color=yellow>電擊</color>彈射至敵人，最多造成{0}次{1}的<color=yellow>光明傷害</color>。每{2}點<color=yellow>致命率</color>增加1次最大傷害次數。",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "baseHitCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>40%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "chainDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.2,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "critChanceForAdditionalHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light",
+      "Attack"
+    ],
+    "image": "Gem_R_Shock.PNG",
+    "lore": null,
+    "achievementKey": "ACH_THOUSAND_THUNDERS",
+    "achievementName": "千雷轟頂",
+    "achievementDescription": "累計造成1000次致命一擊。"
+  },
+  "Gem_R_Snow": {
+    "name": "雪之精華",
+    "description": "在5秒內未受到傷害時，會獲得可再充能的40<sprite=5>護盾。自身擁有護盾時，會定期向附近隨機一名敵人發射雪球，造成<sprite=1><color=#16D7FF>80%</color><sprite=5>的<color=yellow>冰寒傷害</color>。護盾量越高，發射速度越快。",
+    "rawDesc": "在{0}秒內未受到傷害時，會獲得可再充能的{1}護盾。自身擁有護盾時，會定期向附近隨機一名敵人發射雪球，造成{2}的<color=yellow>冰寒傷害</color>。護盾量越高，發射速度越快。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "rechargeTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>80%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.4,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold",
+      "Shield"
+    ],
+    "image": "Gem_R_Snow.PNG",
+    "lore": null,
+    "achievementKey": "ACH_SHIELD_BATTERY",
+    "achievementName": "護盾電池",
+    "achievementDescription": "使用護盾減免敵人造成的20000傷害。"
+  },
+  "Gem_R_Spiral": {
+    "name": "漩渦精華",
+    "description": "定期向周圍隨機一個敵人發射火球，造成<sprite=1><color=#16D7FF>90%</color><sprite=5>的<color=yellow>火焰傷害</color>。品質越高，發射速度越快。",
+    "rawDesc": "定期向周圍隨機一個敵人發射火球，造成{0}的<color=yellow>火焰傷害</color>。品質越高，發射速度越快。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.6,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Spiral.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Wealth": {
+    "name": "財富精華",
+    "description": "若此記憶造成傷害的敵人在2秒內被擊殺，則會掉落1.7<sprite=5>金幣。金幣將與所有旅行者共享。",
+    "rawDesc": "若此記憶造成傷害的敵人在{0}秒內被擊殺，則會掉落{1}金幣。金幣將與所有旅行者共享。",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "gracePeriod",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1.7<sprite=5>",
+        "format": "###,0.#",
+        "raw": "killGold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Wealth.PNG",
+    "lore": "你也知道，黃金對『我們』而言，是具有特殊意義的金屬吧…\n\n那些每次入睡時都無法確信自己是否還能再度醒來的不完全存在。為了讓『我們』存活，必須依靠黃金所蘊含的完全性。\n\n明知如此…卻仍打算不為自己使用嗎？\n喬納斯，你當真…",
+    "achievementKey": "ACH_SUSPICIOUSLY_WEALTHY_TRAVELER",
+    "achievementName": "財富異常的旅行者",
+    "achievementDescription": "總共花費2000金幣。"
+  },
+  "Gem_R_Wound": {
+    "name": "傷痕精華",
+    "description": "當此記憶對敵人造成傷害時，會刻下<color=yellow>標記</color>。每次<color=yellow>攻擊</color><color=yellow>標記</color>時，造成<sprite=1><color=#16D7FF>44%</color><sprite=5>的<color=yellow>傷害</color>，攻擊3次後，<color=yellow>標記</color>會爆炸，對周圍所有敵人造成<sprite=1><color=#16D7FF>275%</color><sprite=5>的<color=yellow>傷害</color>。",
+    "rawDesc": "當此記憶對敵人造成傷害時，會刻下<color=yellow>標記</color>。每次<color=yellow>攻擊</color><color=yellow>標記</color>時，造成{0}的<color=yellow>傷害</color>，攻擊{1}次後，<color=yellow>標記</color>會爆炸，對周圍所有敵人造成{2}的<color=yellow>傷害</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>44%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "hitDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.25,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "explodeStage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>275%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "explodeDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.1,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.015
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Attack"
+    ],
+    "image": "Gem_R_Wound.PNG",
+    "lore": null,
+    "achievementKey": "ACH_THROUGH_TIME_AND_SPACE",
+    "achievementName": "超越時空的速度",
+    "achievementDescription": "達到每秒6的攻擊速度。"
+  },
+  "Gem_U_EternalFlame": {
+    "name": "永恆火焰",
+    "description": "當此記憶對敵人造成<color=yellow>火焰傷害</color>時，會對目標施加<color=yellow>永恆火焰</color>詛咒，持續5秒。被<color=yellow>永恆火焰</color>詛咒的目標每次從我受到<color=yellow>任何傷害</color>時，<color=yellow>燒傷</color>層數增加1。\n此記憶對敵人造成的所有傷害會根據目標的<color=yellow>燒傷</color>層數每層增加2.0%<sprite=5>。",
+    "rawDesc": "當此記憶對敵人造成<color=yellow>火焰傷害</color>時，會對目標施加<color=yellow>永恆火焰</color>詛咒，持續{0}秒。被<color=yellow>永恆火焰</color>詛咒的目標每次從我受到<color=yellow>任何傷害</color>時，<color=yellow>燒傷</color>層數增加1。\n此記憶對敵人造成的所有傷害會根據目標的<color=yellow>燒傷</color>層數每層增加{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "2.0%<sprite=5>",
+        "format": "#,##0.0%",
+        "raw": "ampPerFireStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.01,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_U_EternalFlame.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GlacialCore": {
+    "name": "冰川之核",
+    "description": "每隔5秒，透過此記憶造成<color=yellow>傷害</color>時，自身可<color=yellow>恢復</color>相當於最大生命值3.6%<sprite=5>的<color=yellow>生命</color>。若為<color=yellow>冰寒傷害</color>，效果增加100%。自身受到的所有<color=yellow>生命值恢復</color>中的272%<sprite=5>轉化為<color=yellow>冰寒傷害</color>，對敵人發射<color=yellow>冰塊碎片</color>。",
+    "rawDesc": "每隔{0}秒，透過此記憶造成<color=yellow>傷害</color>時，自身可<color=yellow>恢復</color>相當於最大生命值{1}的<color=yellow>生命</color>。若為<color=yellow>冰寒傷害</color>，效果增加{2}。自身受到的所有<color=yellow>生命值恢復</color>中的{3}轉化為<color=yellow>冰寒傷害</color>，對敵人發射<color=yellow>冰塊碎片</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3.6%<sprite=5>",
+        "format": "#,##0.#%",
+        "raw": "healMaxHealthRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "chillAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "272%<sprite=5>",
+        "format": "P0",
+        "raw": "healToDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.00089
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Cold",
+      "Heal"
+    ],
+    "image": "Gem_U_GlacialCore.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_SoulPrison": {
+    "name": "靈魂牢籠",
+    "description": "受到<color=yellow>致命傷害</color>時，無視該傷害並在3秒內獲得<color=yellow>無敵</color>狀態，同時<color=yellow>摧毀</color>此精華。此時，此精華每1%的<color=yellow>品質</color>將<color=yellow>恢復</color>3點<color=yellow>生命值</color>，超額恢復的生命值將轉換為<color=yellow>護盾</color>。",
+    "rawDesc": "受到<color=yellow>致命傷害</color>時，無視該傷害並在{0}秒內獲得<color=yellow>無敵</color>狀態，同時<color=yellow>摧毀</color>此精華。此時，此精華每1%的<color=yellow>品質</color>將<color=yellow>恢復</color>{1}點<color=yellow>生命值</color>，超額恢復的生命值將轉換為<color=yellow>護盾</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "invulTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "healPerQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_U_SoulPrison.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  }
+}

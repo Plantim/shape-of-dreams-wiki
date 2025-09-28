@@ -1,0 +1,153 @@
+
+/* ---------------------------------------------------
+   Apparence du site
+   -------------------------------------------------- */
+
+/* Fond du site et police */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #282A2C;
+}
+
+/* Taille maximale du conteneur selon la taille de l'écran*/
+/* Pour les écrans de 1000px et plus */
+@media (min-width: 1000px) {
+  .custom-container.container {
+    max-width: 1400px;
+  }
+}
+/* Pour les écrans de 2000px et plus */
+@media (min-width: 2000px) {
+  .custom-container.container {
+    max-width: 1500px;
+  }
+}
+
+/* ---------------------------------------------------
+   Cartes - couleurs
+   -------------------------------------------------- */
+
+/* Couleurs pour les textes de rareté */
+.rarity-Common { color: #aab3bf; }
+.rarity-Rare { color: #5088f8; }
+.rarity-Epic { color: #b485ff; }
+.rarity-Legendary { color: #ff8e50; }
+.rarity-Unique { color: #ffc850; }
+.rarity-Character { color: #4de2b1; }
+.rarity-Identity { color: #ff8e50; }
+
+/* Styles de fond de carte selon la rareté */
+.card-bg-Common {
+    /* Gris très léger */
+    background-color: rgba(74, 85, 104, 0.4);
+    border: 3px solid #4a5568; 
+}
+.card-bg-Rare {
+    /* Bleu très léger */
+    background-color: rgba(33, 63, 100, 0.4);
+    border: 3px solid #213f64; 
+}
+.card-bg-Epic {
+    /* Violet très léger */
+    background-color: rgba(74, 63, 95, 0.4);
+    border: 3px solid #4a3f5f; 
+}
+.card-bg-Legendary {
+    /* Rouge brique très léger */
+    background-color: rgba(119, 55, 55, 0.4);
+    border: 3px solid #773737; 
+}
+.card-bg-Unique {
+    /* Jaune terreux très léger */
+    background-color: rgba(105, 94, 31, 0.4);
+    /* NOTE: J'ai laissé la bordure en #ffc850 (jaune vif) pour la démarcation, car le fond est très sombre. */
+    border: 3px solid #b4a321cb; 
+}
+.card-bg-Character {
+    /* Bleu-vert très léger */
+    background-color: rgba(30, 83, 90, 0.4);
+    border: 3px solid #1E535A; 
+}
+.card-bg-Identity {
+    /* Orange très léger (subtil) */
+    background-color: rgba(185, 80, 26, 0.2);
+    /* Couleur de bordure assortie (orange/marron foncé) */
+    border: 2px solid #b94f1ac4;
+    /* en violet très léger   */
+    /* background-color: rgba(109, 40, 97, 0.4);
+    border: 2px solid #6d2861; */
+}
+
+
+/* ---------------------------------------------------
+   Cartes - textes
+   -------------------------------------------------- */
+
+/* Style pour les sprites inline */
+.inline-sprite {
+    height: 1.2em;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Ajout d'un contour noir au nom des cartes */
+.card-title {
+    text-shadow:
+        0 0 1px #000,
+        0 0 1px #000;
+}
+
+
+/* Styles pour le nom anglais entre parenthèses */
+.english-name-wrapper {
+    /* Forcer l'élément à suivre le texte en ligne */
+    display: inline;  
+    /* Ajouter la marge à gauche qui ne sera appliquée que si l'élément est sur la même ligne */
+     
+    /* Met la police un peu plus petite */
+    font-size: 0.70em; 
+    /* Couleur du texte */
+    color: #aab3bf;    
+    /* Force le nom anglais à rester sur la même ligne, mais il peut s'enrouler si le nom principal est trop long */
+    /* white-space: nowrap;  */
+    /* Met la police en normal (non-gras) */
+    font-weight: 400;  
+}
+
+
+/* ---------------------------------------------------
+   Boutons filtres
+   -------------------------------------------------- */
+
+/* Si bouton actif (RÈGLE PLUS SPÉCIFIQUE) */
+.rarity-filter-btn.btn-active,
+.element-filter-btn.btn-active,
+.tag-filter-btn.btn-active {
+    /* Fond très clair pour le mettre en évidence */
+    background-color: #f3f4f6bb; 
+    /* Texte sombre */
+    color: #1e232c; 
+    /* Bordure bleu pour l'identité visuelle */
+    border: 1px solid #5088f8; 
+    /* Éclat lumineux bleu pour le mettre en évidence */
+    box-shadow: none; 
+}
+
+/* Style pour les boutons de filtre inactifs */
+.rarity-filter-btn, .element-filter-btn, .tag-filter-btn {
+    /* Rend les boutons semi-transparents pour s'accorder au fond */
+    background-color: rgba(255, 255, 255, 0.1); 
+    /* Bordure très légère */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    /* Réduit le padding du bouton pour le rendre plus compact (optionnel) */
+    padding: 0.25rem 0.5rem; 
+    /* Réduit la taille du texte si vous ne l'avez pas déjà fait dans memories.js */
+    font-size: 0.875rem; 
+}
+
+/* Nouveau style pour le fond du conteneur de filtres */
+.filters-background {
+    /* Noir très sombre avec une légère opacité pour le différencier subtilement du fond du site */
+    background-color: #282A2C; 
+}

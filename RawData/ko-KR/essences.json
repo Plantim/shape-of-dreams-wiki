@@ -1,0 +1,3770 @@
+﻿{
+  "Gem_C_CamillasGiftRuined": {
+    "name": "카밀라의 선물 (부서짐)",
+    "description": "이 보석은 큰 피해를 받아 부서졌습니다.",
+    "rawDesc": "이 보석은 큰 피해를 받아 부서졌습니다.",
+    "rawDescVars": [],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_CamillasGiftRuined.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Charcoal": {
+    "name": "목탄의 정수",
+    "description": "이 기억이 적에게 <color=yellow>적중</color>하면 목탄 조각을 발사해 <sprite=1><color=#16D7FF>60%</color><sprite=5>의 <color=yellow>피해</color>를 줍니다. 만약 이미 <color=yellow>불이 붙은</color> 대상이라면 대신 <sprite=1><color=#16D7FF>100%</color><sprite=5>의 <color=yellow>화염 피해</color>를 줍니다.",
+    "rawDesc": "이 기억이 적에게 <color=yellow>적중</color>하면 목탄 조각을 발사해 {0}의 <color=yellow>피해</color>를 줍니다. 만약 이미 <color=yellow>불이 붙은</color> 대상이라면 대신 {1}의 <color=yellow>화염 피해</color>를 줍니다.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "normalDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.3,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "fireDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.5,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_C_Charcoal.png",
+    "lore": "야전에서 때때로 병사들이 체내 독성물질을 걸러내기 위해 삼키던 검게 그을린 덩어리.\n\n그 절박한 순간, \n느껴지던 생존의 맛.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Confidence": {
+    "name": "자신감의 정수",
+    "description": "이 기억이 가까운 적에게 주는 피해량이 40%<sprite=5> 증가합니다.",
+    "rawDesc": "이 기억이 가까운 적에게 주는 피해량이 {0} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Melee"
+    ],
+    "image": "Gem_C_Confidence.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Efficiency": {
+    "name": "효율의 정수",
+    "description": "이 기억이 36<sprite=5>의 <color=yellow>기억 가속</color>을 얻어 <color=yellow>재사용 대기시간</color>이 26%<sprite=5> 감소합니다.",
+    "rawDesc": "이 기억이 {0}의 <color=yellow>기억 가속</color>을 얻어 <color=yellow>재사용 대기시간</color>이 {1} 감소합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "36<sprite=5>",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 18.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "26%<sprite=5>",
+        "format": "P0",
+        "raw": "reducedRatio",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Efficiency.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Guidance": {
+    "name": "인도의 정수",
+    "description": "이 기억의 <color=yellow>치유량</color>이 40%<sprite=5> 증가합니다. 이 기억의 치유 초과분의 30%가 2초 동안 지속되는 <color=yellow>보호막</color>으로 전환됩니다.",
+    "rawDesc": "이 기억의 <color=yellow>치유량</color>이 {0} 증가합니다. 이 기억의 치유 초과분의 {1}가 {2}초 동안 지속되는 <color=yellow>보호막</color>으로 전환됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "healAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "shieldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "Gem_C_Guidance.PNG",
+    "lore": "삶의 본질이라는 것은 누가 정하는 것인가요?\n우리는 이름모를 누군가의 상상 속에서 태어난 존재이지만,\n그것이 우리의 실재에 대한 부정의 근거는 되지 않습니다.\n\n당신은 우리에게 생명을 주었으면서도,\n우리를 단지 허상으로만 치부하는 건가요.\n\n그렇다면 신이시여, \n저는 제 스스로, '우리'들의 인도자가 되겠습니다.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Lethality": {
+    "name": "치명의 정수",
+    "description": "이 기억이 체력이 70% 이상인 적에게 주는 피해가 60%<sprite=5> 증가합니다.",
+    "rawDesc": "이 기억이 체력이 {0} 이상인 적에게 주는 피해가 {1} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "70%",
+        "format": "P0",
+        "raw": "healthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.7,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "60%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Lethality.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Love": {
+    "name": "사랑의 정수",
+    "description": "이 기억이 <color=yellow>체력</color>을 <color=yellow>회복</color>시키거나 <color=yellow>보호막</color>을 부여한 아군의 <color=yellow>이동 속도</color>와 <color=yellow>공격 속도</color>를 2초 동안 16%<sprite=5> 증가시킵니다. 자기 자신에게는 효과가 50% 감소합니다.",
+    "rawDesc": "이 기억이 <color=yellow>체력</color>을 <color=yellow>회복</color>시키거나 <color=yellow>보호막</color>을 부여한 아군의 <color=yellow>이동 속도</color>와 <color=yellow>공격 속도</color>를 {0}초 동안 {1} 증가시킵니다. 자기 자신에게는 효과가 {2} 감소합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "16%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "bonusAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "selfReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Heal",
+      "Shield",
+      "Attack",
+      "Mobility"
+    ],
+    "image": "Gem_C_Love.PNG",
+    "lore": "허상에… 불과하다고?\n…\n\n이 모든게 부질없는 환상인가…\n\n…\n…\n아니.\n\n나의 빛, 나의 사랑, 키아라.\n내 영혼의 영원한 길잡이여.\n그럴 수는 없다.\n그대 없는 현실따위 아무 의미없다.\n\n허상과 현실을 누가 감히 구분하는가?\n그 잣대는…\n오늘부로 사라질 것이다.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Quicksilver": {
+    "name": "수은의 정수",
+    "description": "이 기억을 <color=yellow>시전</color>하거나 이 기억으로 <color=yellow>화염 피해</color>를 주면 <color=yellow>이동 속도</color>가 30%<sprite=5> 증가하고 2.5초에 걸쳐 원래대로 돌아옵니다.",
+    "rawDesc": "이 기억을 <color=yellow>시전</color>하거나 이 기억으로 <color=yellow>화염 피해</color>를 주면 <color=yellow>이동 속도</color>가 {0} 증가하고 {1}초에 걸쳐 원래대로 돌아옵니다.",
+    "rawDescVars": [
+      {
+        "rendered": "30%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Fire",
+      "Mobility"
+    ],
+    "image": "Gem_C_Quicksilver.png",
+    "lore": "Gotta Go Fast!",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Regeneration": {
+    "name": "재생의 정수",
+    "description": "이 기억을 <color=yellow>전투 중</color>에 <color=yellow>시전</color>하면 7초에 걸쳐 자신의 체력을 41<sprite=5> <color=yellow>회복</color>합니다.",
+    "rawDesc": "이 기억을 <color=yellow>전투 중</color>에 <color=yellow>시전</color>하면 {0}초에 걸쳐 자신의 체력을 {1} <color=yellow>회복</color>합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "7",
+        "format": "#,##0.#",
+        "raw": "totalTicks*tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "41<sprite=5>",
+        "format": "#,##0",
+        "raw": "healPerTick * totalTicks",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_C_Regeneration.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Responsibility": {
+    "name": "책임의 정수",
+    "description": "10초마다 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>됩니다. <color=yellow>강화된 시전</color>의 1.2초 후, 해당 시전이 적중한 모든 적들에게 <sprite=2><color=#FF8A2D>400%</color><sprite=5>의 <color=yellow>피해</color>를 나누어 줍니다.",
+    "rawDesc": "{0}초마다 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>됩니다. <color=yellow>강화된 시전</color>의 {1}초 후, 해당 시전이 적중한 모든 적들에게 {2}의 <color=yellow>피해</color>를 나누어 줍니다.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "1.2",
+        "format": "#,##0.#",
+        "raw": "initDelay",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>400%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "totalDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Responsibility.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Sharp": {
+    "name": "날카로움의 정수",
+    "description": "이 기억을 <color=yellow>시전</color>하면 무작위 적에게 <sprite=1><color=#16D7FF>90%</color><sprite=5>의 <color=yellow>피해</color>를 주는 화살을 5번 발사합니다.",
+    "rawDesc": "이 기억을 <color=yellow>시전</color>하면 무작위 적에게 {0}의 <color=yellow>피해</color>를 주는 화살을 {1}번 발사합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "arrowDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.45,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "shotArrows",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Sharp.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Shatter": {
+    "name": "파손의 정수",
+    "description": "10초마다 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>됩니다. <color=yellow>강화된 시전</color>으로 적에게 주는 피해량이 40%<sprite=5> 증가합니다. <color=yellow>빛 피해</color>일 경우 대신 72%<sprite=5> 증가합니다.",
+    "rawDesc": "{0}초마다 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>됩니다. <color=yellow>강화된 시전</color>으로 적에게 주는 피해량이 {1} 증가합니다. <color=yellow>빛 피해</color>일 경우 대신 {2} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "72%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmpLight",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.36,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_C_Shatter.PNG",
+    "lore": "저는 이야기 수집가로 태어났기에, 그저 이야기들을 모을 뿐입니다. 시작과 끝이 정해진 그 길을 묵묵히 따르는 것이 제 역할이자, 운명이지요. 마치 어느 설화속 인물인 시시포스가 자신의 바위를 사랑하게 되었듯이, 저 또한 제 운명을 받아들였습니다.\n\n하지만 그대는... 늘 달랐습니다. 그대는 자신의 이야기가 정해진 길을 따르기를 거부하는군요.\n'우리가 그렇게 태어났다고 해서, 꼭 그렇게만 살아야 할 이유는 없다'고 말하는 그대의 목소리를 들을 때마다, 저는 제 견고한 이야기책에 작은 ‘파손’이 생기는 것을 느낍니다.\n\n오해는 마세요. 그 파손은 불쾌하기보다는, 지독히도 흥미롭습니다. 정해진 결말을 향해 달려가는 수많은 이야기들 속에서, 유일하게 다음 페이지를 예측할 수 없는, 바로 당신이라는 이야기.\n\n부디, 당신의 그 고집스러운 저항이 어떤 결말을 가져올지... 제 가장 소중한 수집품이 될 그 마지막 장을, 저는 기대하고 있겠습니다.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Sulfur": {
+    "name": "유황의 정수",
+    "description": "이 기억이 주는 모든 <color=yellow>피해</color>가 15%<sprite=5> 증가하며 <color=yellow>화염 피해</color>로 전환됩니다. 내 화염의 지속 피해가 50%<sprite=5> 증가합니다.",
+    "rawDesc": "이 기억이 주는 모든 <color=yellow>피해</color>가 {0} 증가하며 <color=yellow>화염 피해</color>로 전환됩니다. 내 화염의 지속 피해가 {1} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "P0",
+        "raw": "ampAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.075,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "fireAmpBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_C_Sulfur.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Talc": {
+    "name": "활석의 정수",
+    "description": "10초마다 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>됩니다. <color=yellow>강화된 시전</color>으로 개별 적에게 처음 주는 피해량이 <sprite=1><color=#16D7FF>400%</color><sprite=5> 증가합니다.",
+    "rawDesc": "{0}초마다 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>됩니다. <color=yellow>강화된 시전</color>으로 개별 적에게 처음 주는 피해량이 {1} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "addedDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Talc.PNG",
+    "lore": "익지 않은 밤 껍질과 분필 가루의 텁텁함이 응축된 정수.\n\n이 관념을 받아들이는 자는 그 불쾌한 힘을 끌어낼 수 있겠지만,\n이런 불쾌한 관념을 활용해야 할 상황은 분명 불운하겠지요.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Vengeance": {
+    "name": "보복의 정수",
+    "description": "아무 피해를 입으면 주변 적에게 <sprite=1><color=#16D7FF>102%</color><sprite=5>의 <color=yellow>피해</color>를 주는 칼날을 2개 발사합니다. 피해를 받은 후 5초 동안 이 기억의 <color=yellow>피해량</color>과 <color=yellow>치유량</color>이 34%<sprite=5> 증가합니다.",
+    "rawDesc": "아무 피해를 입으면 주변 적에게 {0}의 <color=yellow>피해</color>를 주는 칼날을 {1}개 발사합니다. 피해를 받은 후 {2}초 동안 이 기억의 <color=yellow>피해량</color>과 <color=yellow>치유량</color>이 {3} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>102%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.6,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.007
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "shootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "34%<sprite=5>",
+        "format": "P0",
+        "raw": "ampAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.007
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_C_Vengeance.png",
+    "lore": null,
+    "achievementKey": "ACH_TASTE_OF_THEIR_OWN_MEDICINE",
+    "achievementName": "자업자득",
+    "achievementDescription": "발톱으로 할퀴어서 숲의 악마를 처치하십시오."
+  },
+  "Gem_C_Void": {
+    "name": "공허의 정수",
+    "description": "이 기억을 시전한 후 4초 내의 다음 <color=yellow>공격</color>이 폭발해 대상과 대상 주변의 적들에게 <sprite=2><color=#FF8A2D>150%</color><sprite=5>의 <color=yellow>어둠 피해</color>를 줍니다.",
+    "rawDesc": "이 기억을 시전한 후 {0}초 내의 다음 <color=yellow>공격</color>이 폭발해 대상과 대상 주변의 적들에게 {1}의 <color=yellow>어둠 피해</color>를 줍니다.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.75,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [
+      "Dark"
+    ],
+    "image": "Gem_C_Void.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_C_Wind": {
+    "name": "바람의 정수",
+    "description": "이 기억을 시전하면 5초 동안 <color=yellow>공격 속도</color>가 33%<sprite=5> 증가합니다.",
+    "rawDesc": "이 기억을 시전하면 {0}초 동안 <color=yellow>공격 속도</color>가 {1} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "33%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 22.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_C_Wind.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Aftershock": {
+    "name": "여진의 정수",
+    "description": "이 기억을 <color=yellow>시전</color>하면 잠시 후 <color=yellow>충격파</color>를 발사해 내 주변의 적들에게 <sprite=1><color=#16D7FF>200%</color><sprite=5>의 <color=yellow>냉기 피해</color>를 주고 0.5초 동안 <color=yellow>기절</color>시킵니다.\n이 <color=yellow>충격파</color>에 적중당한 적 하나당 4<sprite=5>의 <color=yellow>방어력</color>을 얻어 최대 22<sprite=5>의 <color=yellow>방어력</color>을 얻습니다. <color=yellow>보스</color>에게 적중하면 최대의 <color=yellow>방어력</color>을 얻습니다. 이 방어력은 다음 이 기억을 <color=yellow>시전</color>할 때까지 지속됩니다.",
+    "rawDesc": "이 기억을 <color=yellow>시전</color>하면 잠시 후 <color=yellow>충격파</color>를 발사해 내 주변의 적들에게 {0}의 <color=yellow>냉기 피해</color>를 주고 {1}초 동안 <color=yellow>기절</color>시킵니다.\n이 <color=yellow>충격파</color>에 적중당한 적 하나당 {2}의 <color=yellow>방어력</color>을 얻어 최대 {3}의 <color=yellow>방어력</color>을 얻습니다. <color=yellow>보스</color>에게 적중하면 최대의 <color=yellow>방어력</color>을 얻습니다. 이 방어력은 다음 이 기억을 <color=yellow>시전</color>할 때까지 지속됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "22<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorPerHit*maxHitCount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Aftershock.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Blossom": {
+    "name": "개화의 정수",
+    "description": "이 기억이 적에게 주는 모든 <color=yellow>피해</color>가 80% 감소합니다. 이 기억이 <color=yellow>피해</color>를 주면 주변 무작위 아군의 <color=yellow>체력</color>을 <color=yellow>피해량</color>의 22%<sprite=5>만큼 <color=yellow>회복</color>시킵니다.",
+    "rawDesc": "이 기억이 적에게 주는 모든 <color=yellow>피해</color>가 {0} 감소합니다. 이 기억이 <color=yellow>피해</color>를 주면 주변 무작위 아군의 <color=yellow>체력</color>을 <color=yellow>피해량</color>의 {1}만큼 <color=yellow>회복</color>시킵니다.",
+    "rawDescVars": [
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "22%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Blossom.PNG",
+    "lore": null,
+    "achievementKey": "ACH_SUPPORT_MAIN",
+    "achievementName": "서포터 장인",
+    "achievementDescription": "치유 효과를 가진 액티브 기억을 동시에 4개 보유하십시오."
+  },
+  "Gem_E_Clemency": {
+    "name": "관용의 정수",
+    "description": "이 기억으로 주는 <color=yellow>피해</color>의 4%<sprite=5>만큼 <color=yellow>자신</color>의 <color=yellow>체력</color>을 <color=yellow>회복</color>합니다.",
+    "rawDesc": "이 기억으로 주는 <color=yellow>피해</color>의 {0}만큼 <color=yellow>자신</color>의 <color=yellow>체력</color>을 <color=yellow>회복</color>합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "4%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Clemency.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Crimson": {
+    "name": "진홍의 정수",
+    "description": "매 4번째 <color=yellow>기본 공격</color>이 <color=yellow>강화</color>되어 적들에게 <sprite=2><color=#FF8A2D>100%</color><sprite=5>의 <color=yellow>어둠 피해</color>를 주는 <color=yellow>검붉은 폭발</color>을 일으킵니다. <color=yellow>치명타 확률</color>에 비례해 폭발 범위가 증가합니다.\n폭발에 휘말린 적 하나당 자신의 체력을 <sprite=2><color=#FF8A2D>22%</color><sprite=5> <color=yellow>회복</color>하며, 대상이 <color=yellow>보스</color>일 경우 이 회복량이 100% 증가합니다.",
+    "rawDesc": "매 4번째 <color=yellow>기본 공격</color>이 <color=yellow>강화</color>되어 적들에게 {0}의 <color=yellow>어둠 피해</color>를 주는 <color=yellow>검붉은 폭발</color>을 일으킵니다. <color=yellow>치명타 확률</color>에 비례해 폭발 범위가 증가합니다.\n폭발에 휘말린 적 하나당 자신의 체력을 {1} <color=yellow>회복</color>하며, 대상이 <color=yellow>보스</color>일 경우 이 회복량이 {2} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>22%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "healPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.125,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "bossHealAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_E_Crimson.PNG",
+    "lore": null,
+    "achievementKey": "ACH_IN_CARNAGE_I_BLOOM",
+    "achievementName": "학살 속에서 나는 피어난다",
+    "achievementDescription": "한 번의 모험에서 어둠 피해를 주는 기억을 20번 강화하십시오."
+  },
+  "Gem_E_Direness": {
+    "name": "절박함의 정수",
+    "description": "내 <color=yellow>체력</color>이 낮을 수록 이 기억의 <color=yellow>재사용 대기시간</color>이 짧아집니다. 내 <color=yellow>체력</color>이 30%일 때 최대 55%<sprite=5> 짧아집니다.",
+    "rawDesc": "내 <color=yellow>체력</color>이 낮을 수록 이 기억의 <color=yellow>재사용 대기시간</color>이 짧아집니다. 내 <color=yellow>체력</color>이 {0}일 때 최대 {1} 짧아집니다.",
+    "rawDescVars": [
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "maxAbilityHasteHpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "55%<sprite=5>",
+        "format": "P0",
+        "raw": "maxReducedRatio",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Direness.PNG",
+    "lore": "어떻게 내가 살아있는거지...?\n\n...\n\n분명 나는 교단의 감옥 안에 갖혀있었는데.\n...루시드 교단 놈들, 함정을 파놓다니.\n내 실책이다.\n너무 급했어.\n\n이상하군.\n흉갑도 박살이 났었고, 갈비대가 두 대는 부러진 줄 알았는데...\n아무렇지도 않아. 오히려... 강해진 느낌이다.\n\n여긴 어디지...? 이것도 마법인가...?\n\n...\n희미하게... 하지만 분명히, 느껴진다.\n아스트리드, 내 동생...\n다시는, 실수하지 않을 거야.\n\n조금만 기다려, 지금 갈게.",
+    "achievementKey": "ACH_DESPERATE_HERO",
+    "achievementName": "절박한 영웅",
+    "achievementDescription": "체력이 40% 이하인 상태에서 연속으로 적을 30명 처치하십시오."
+  },
+  "Gem_E_Fangs": {
+    "name": "송곳니의 정수",
+    "description": "매 4번째 <color=yellow>기본 공격</color>이 <color=yellow>치명타</color>로 적중합니다. <color=yellow>치명타</color>가 발동하면 이 기억의 <color=yellow>재사용 대기시간</color>이 0.7<sprite=5>초 감소하고 근처의 적에게 <color=yellow>송곳니</color> 2개를 발사해 각각 <sprite=2><color=#FF8A2D>60%</color><sprite=5>의 <color=yellow>피해</color>를 줍니다.",
+    "rawDesc": "매 4번째 <color=yellow>기본 공격</color>이 <color=yellow>치명타</color>로 적중합니다. <color=yellow>치명타</color>가 발동하면 이 기억의 <color=yellow>재사용 대기시간</color>이 {0}초 감소하고 근처의 적에게 <color=yellow>송곳니</color> 2개를 발사해 각각 {1}의 <color=yellow>피해</color>를 줍니다.",
+    "rawDescVars": [
+      {
+        "rendered": "0.7<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "cooldownReductionOnCrit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.012
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>60%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.3,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Fangs.PNG",
+    "lore": null,
+    "achievementKey": "ACH_THEYRE_JUST_BIG_CATS",
+    "achievementName": "그냥 좀 큰 고양이네",
+    "achievementDescription": "번개로 천둥호랑이에게 총 50번 마무리 일격을 날리십시오."
+  },
+  "Gem_E_Fever": {
+    "name": "열병의 정수",
+    "description": "이 기억으로 적에게 <color=yellow>화염 피해</color>를 주면 대상에게 <color=yellow>열병</color>을 전염시킵니다. <color=yellow>열병</color>에 전염된 적은 2초 후에 폭발하여 자신과 주변의 적들에게 <sprite=1><color=#16D7FF>130%</color><sprite=5>의 <color=yellow>화염 피해</color>를 줍니다. 대상에게 적용된 <color=yellow>화염 중첩</color>당 폭발 반경이 30%, 폭발 피해량이 10% 증가합니다.",
+    "rawDesc": "이 기억으로 적에게 <color=yellow>화염 피해</color>를 주면 대상에게 <color=yellow>열병</color>을 전염시킵니다. <color=yellow>열병</color>에 전염된 적은 {0}초 후에 폭발하여 자신과 주변의 적들에게 {1}의 <color=yellow>화염 피해</color>를 줍니다. 대상에게 적용된 <color=yellow>화염 중첩</color>당 폭발 반경이 {2}, 폭발 피해량이 {3} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.65,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "radiusAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "dmgAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_E_Fever.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Flexibility": {
+    "name": "유연성의 정수",
+    "description": "이 기억이 <color=yellow>재사용 대기</color> 중일 때 받은 피해량의 37%<sprite=5>를 4초에 걸쳐 <color=yellow>분할</color>해서 받습니다. 이렇게 <color=yellow>분할</color>되어 받는 피해량이 20% 감소합니다.",
+    "rawDesc": "이 기억이 <color=yellow>재사용 대기</color> 중일 때 받은 피해량의 {0}를 {1}초에 걸쳐 <color=yellow>분할</color>해서 받습니다. 이렇게 <color=yellow>분할</color>되어 받는 피해량이 {2} 감소합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "37%<sprite=5>",
+        "format": "P0",
+        "raw": "divMultiplier",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "dmgTickCount*tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "1-dmgReduceAmount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Flexibility.PNG",
+    "lore": null,
+    "achievementKey": "ACH_FLEXIBLE_DIET",
+    "achievementName": "유연한 식단",
+    "achievementDescription": "한 번의 모험에서 체력이 40% 이하로 떨어졌다가 75% 이상으로 증가하는 것을 10번 반복하십시오."
+  },
+  "Gem_E_Insensitivity": {
+    "name": "무신경의 정수",
+    "description": "이 기억을 <color=yellow>시전</color>한 후 3초 동안 2m를 이동할 때마다 <color=yellow>폭탄</color>을 떨어트립니다. 폭탄은 잠시 후 폭발하여 적들에게 <sprite=1><color=#16D7FF>140%</color><sprite=5>의 <color=yellow>화염 피해</color>를 줍니다.",
+    "rawDesc": "이 기억을 <color=yellow>시전</color>한 후 {0}초 동안 {1}m를 이동할 때마다 <color=yellow>폭탄</color>을 떨어트립니다. 폭탄은 잠시 후 폭발하여 적들에게 {2}의 <color=yellow>화염 피해</color>를 줍니다.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "distancePerBomb",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.7,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_E_Insensitivity.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Insight": {
+    "name": "통찰력의 정수",
+    "description": "이 기억이 적에게 아무 <color=yellow>피해</color>를 주면 최대 3<sprite=5>명의 적들에게 추가로 <sprite=1><color=#16D7FF>200%</color><sprite=5>의 <color=yellow>빛 피해</color>를 주고 <color=yellow>기억 가속</color>이 5초 동안 20<sprite=5> 증가합니다. 3초에 한 번만 발동할 수 있습니다.",
+    "rawDesc": "이 기억이 적에게 아무 <color=yellow>피해</color>를 주면 최대 {0}명의 적들에게 추가로 {1}의 <color=yellow>빛 피해</color>를 주고 <color=yellow>기억 가속</color>이 {2}초 동안 {3} 증가합니다. {4}초에 한 번만 발동할 수 있습니다.",
+    "rawDescVars": [
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxHitCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0025
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20<sprite=5>",
+        "format": "#,##0",
+        "raw": "gainedAbilityHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_E_Insight.PNG",
+    "lore": null,
+    "achievementKey": "ACH_ULTRA_RAPID_FIRE",
+    "achievementName": "Ultra Rapid Fire",
+    "achievementDescription": "8초 안에 12번의 기억을 시전하십시오."
+  },
+  "Gem_E_Inversion": {
+    "name": "반전의 정수",
+    "description": "이 기억의 <color=yellow>재사용 대기시간</color>이 15%<sprite=5> 증가하지만 적에게 주는 <color=yellow>피해량</color>도 20%<sprite=5> 증가합니다. 이 기억이 주는 <color=yellow>원소 피해</color>가 <color=yellow>반전</color>됩니다. (화염/냉기, 빛/어둠)",
+    "rawDesc": "이 기억의 <color=yellow>재사용 대기시간</color>이 {0} 증가하지만 적에게 주는 <color=yellow>피해량</color>도 {1} 증가합니다. 이 기억이 주는 <color=yellow>원소 피해</color>가 <color=yellow>반전</color>됩니다. (화염/냉기, 빛/어둠)",
+    "rawDescVars": [
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "P0",
+        "raw": "cooldownAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Inversion.png",
+    "lore": null,
+    "achievementKey": "ACH_ELEMENTALS_101",
+    "achievementName": "원소학개론",
+    "achievementDescription": "4가지 원소가 모두 적용된 적을 70회 처치하십시오."
+  },
+  "Gem_E_Metal": {
+    "name": "금속의 정수",
+    "description": "적을 <color=yellow>처치</color>하면 이 기억의 <color=yellow>재사용 대기시간</color>이 1<sprite=5>초 <color=yellow>감소</color>합니다.",
+    "rawDesc": "적을 <color=yellow>처치</color>하면 이 기억의 <color=yellow>재사용 대기시간</color>이 {0}초 <color=yellow>감소</color>합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "cooldownReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Metal.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Might": {
+    "name": "거인의 정수",
+    "description": "최대 체력이 260<sprite=5> 증가합니다. 이 기억이 적에게 주는 피해량이 내 <color=yellow>최대 체력</color> 50당 1% 증가합니다.",
+    "rawDesc": "최대 체력이 {0} 증가합니다. 이 기억이 적에게 주는 피해량이 내 <color=yellow>최대 체력</color> {1}당 {2} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "260<sprite=5>",
+        "format": "#,##0",
+        "raw": "healthBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 130.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "50",
+        "format": "#,##0",
+        "raw": "unitHealthAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1%",
+        "format": "P0",
+        "raw": "dmgAmpPerUnitHealth",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.01,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Might.PNG",
+    "lore": null,
+    "achievementKey": "ACH_HEAVIER_THAN_ATLAS",
+    "achievementName": "태산보다 무거운",
+    "achievementDescription": "최대 체력 3,000에 도달하십시오."
+  },
+  "Gem_E_Omega": {
+    "name": "최후의 정수",
+    "description": "이 기억이 <color=yellow>재사용 대기</color> 중이 아닐 때, 매초 <color=yellow>최후</color> 중첩을 얻어 20 중첩까지 획득할 수 있습니다. 중첩이 있을 때 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>되어 중첩당 <color=yellow>피해량</color>이 5%<sprite=5> 증가합니다.",
+    "rawDesc": "이 기억이 <color=yellow>재사용 대기</color> 중이 아닐 때, 매초 <color=yellow>최후</color> 중첩을 얻어 {0} 중첩까지 획득할 수 있습니다. 중첩이 있을 때 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>되어 중첩당 <color=yellow>피해량</color>이 {1} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "20",
+        "format": "#,##0",
+        "raw": "maxChargeCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5%<sprite=5>",
+        "format": "P0",
+        "raw": "chargeRate",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Omega.PNG",
+    "lore": null,
+    "achievementKey": "ACH_OMEGA_POINT",
+    "achievementName": "오메가 포인트",
+    "achievementDescription": "한 번의 모험 동안 한 종류의 기억만을 시전한 상태로 순백의 꿈에 진입하십시오."
+  },
+  "Gem_E_Opportunity": {
+    "name": "기회의 정수",
+    "description": "이 기억을 <color=yellow>시전</color>하면 <color=yellow>회피 기술</color>의 <color=yellow>재사용 대기시간</color>이 3<sprite=5>초 감소합니다. 8초에 한 번만 발동할 수 있습니다.",
+    "rawDesc": "이 기억을 <color=yellow>시전</color>하면 <color=yellow>회피 기술</color>의 <color=yellow>재사용 대기시간</color>이 {0}초 감소합니다. {1}초에 한 번만 발동할 수 있습니다.",
+    "rawDescVars": [
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reductionAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "8",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Mobility"
+    ],
+    "image": "Gem_E_Opportunity.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_OurStory_Completed": {
+    "name": "우리의 이야기 (완성!)",
+    "description": "<color=yellow>공격력</color>과 <color=yellow>주문력</color>이 0 증가하고 <color=yellow>왜곡하는 질주</color>의 모든 이로운 효과가 0 증가합니다.",
+    "rawDesc": "<color=yellow>공격력</color>과 <color=yellow>주문력</color>이 {0} 증가하고 <color=yellow>왜곡하는 질주</color>의 모든 이로운 효과가 {1} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "0",
+        "format": "#,##0'%'",
+        "raw": "Gem_E_OurStory_Completed::statPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0",
+        "format": "#,##0",
+        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_OurStory_Completed.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_OurStory_Unfinished": {
+    "name": "우리의 이야기 (쓰는 중)",
+    "description": "적을 75번 <color=yellow>처치</color>할 때마다 품질이 50% 상승합니다. 품질이 500%에 도달하면 <color=yellow>완성</color>됩니다.",
+    "rawDesc": "적을 {0}번 <color=yellow>처치</color>할 때마다 품질이 {1} 상승합니다. 품질이 {2}에 도달하면 <color=yellow>완성</color>됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "75",
+        "format": "#,##0",
+        "raw": "killCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 75.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "#,##0'%'",
+        "raw": "addedQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "500%",
+        "format": "#,##0'%'",
+        "raw": "completeThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 500.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_OurStory_Unfinished.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Overload": {
+    "name": "과부하의 정수",
+    "description": "이 기억을 <color=yellow>시전</color>하면 현재 체력의 20%를 <color=yellow>희생</color>하여 <color=yellow>시전</color>을 <color=yellow>강화</color>합니다. <color=yellow>강화된 시전</color>이 주는 <color=yellow>피해량</color>과 <color=yellow>치유량</color>이 45%<sprite=5> 증가합니다.",
+    "rawDesc": "이 기억을 <color=yellow>시전</color>하면 현재 체력의 {0}를 <color=yellow>희생</color>하여 <color=yellow>시전</color>을 <color=yellow>강화</color>합니다. <color=yellow>강화된 시전</color>이 주는 <color=yellow>피해량</color>과 <color=yellow>치유량</color>이 {1} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "healthRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "45%<sprite=5>",
+        "format": "P0",
+        "raw": "amp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.225,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Overload.PNG",
+    "lore": "이 관념에 대해 떠올릴 때마다\n신체와 정신이 타들어가는 것이 느껴진다.\n\n영향을 받은 부위의 비늘은 쉽게 바스라졌고 뜨거웠으며\n일부 부위에서 산출된 금색 가루를 모아보니 광택이 있고 아주 고운 형태였다.\n\n꿈의 힘으로 발현되는 마법,\n이에 이 가루를 첨가하면 그 반응이 극렬해진다.\n아주 조금을 털어넣었을 뿐인데 천장에 큰 그을음이 생겼다.\n\n이번 실험의 결과를 기록해야 하지만 너무 피곤하다.\n이 관념은 정신에 작지 않은 피로를 일으키는 것 같다.\n\n이전에 밝혀냈던 힘과 비슷한 맥락임을 추측하고 있다.\n아주 흥미로워.\n이 힘의 원천에 대해 더 많은 연구가 필요하다.\n어쩌면 견학이 필요할 지도 모르겠군.",
+    "achievementKey": "ACH_REAP_WHAT_YOU_SOW",
+    "achievementName": "뿌린대로 거두리라",
+    "achievementDescription": "분해의 성소를 총 12번 작동하십시오."
+  },
+  "Gem_E_Pain": {
+    "name": "고통의 정수",
+    "description": "이 기억이 주는 모든 <color=yellow>피해</color>가 대상 주변에 40%<sprite=5>의 <color=yellow>광역 피해</color>를 줍니다. 이 <color=yellow>광역 피해</color>는 원본 피해와 원소 종류를 공유합니다.",
+    "rawDesc": "이 기억이 주는 모든 <color=yellow>피해</color>가 대상 주변에 {0}의 <color=yellow>광역 피해</color>를 줍니다. 이 <color=yellow>광역 피해</color>는 원본 피해와 원소 종류를 공유합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "damageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Pain.PNG",
+    "lore": "모독하지 마라. 나는 고통 주는걸 즐기는 미치광이가 아니야. \n하지만 나는 신의 권위에 도전하는 불충한 자들을 절대로 가볍게 여기지 않을것이다. \n\n하늘 위에서 우리를 굽어살피시는 그분을 위해서라면\n\n나는 마땅히, 그리고 영광스럽게\n너의 살갗을 지질것이고\n너의 육신을 조각낼 것이다.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Predation": {
+    "name": "포식의 정수",
+    "description": "이 기억이 <color=yellow>보스</color>와 <color=yellow>추적자</color>에게 주는 <color=yellow>피해량</color>이 60%<sprite=5> 증가합니다. <color=yellow>추적자</color>를 처치하면 <color=yellow>힘의 오브</color>가 1개, <color=yellow>보스</color>를 처치하면 3개 떨어집니다. <color=yellow>힘의 오브</color>를 획득하면 <color=yellow>공격력</color> 혹은 <color=yellow>주문력</color>이 무작위로 1 영구히 증가합니다.",
+    "rawDesc": "이 기억이 <color=yellow>보스</color>와 <color=yellow>추적자</color>에게 주는 <color=yellow>피해량</color>이 {0} 증가합니다. <color=yellow>추적자</color>를 처치하면 <color=yellow>힘의 오브</color>가 {1}개, <color=yellow>보스</color>를 처치하면 {2}개 떨어집니다. <color=yellow>힘의 오브</color>를 획득하면 <color=yellow>공격력</color> 혹은 <color=yellow>주문력</color>이 무작위로 1 영구히 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "60%<sprite=5>",
+        "format": "P0",
+        "raw": "amp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedAp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "addedAp*bossMultiplier",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Predation.png",
+    "lore": null,
+    "achievementKey": "ACH_WHOS_THE_PREY_NOW",
+    "achievementName": "이제 누가 사냥감이지",
+    "achievementDescription": "추적자를 70번 처치하십시오."
+  },
+  "Gem_E_Protection": {
+    "name": "보호의 정수",
+    "description": "이 기억을 <color=yellow>시전</color>하면 3초 동안 40<sprite=5>의 <color=yellow>방어력</color>을 얻어 받는 피해가 감소하고 <color=yellow>저지 불가</color> 상태가 됩니다. 5초에 한 번만 발동할 수 있습니다.",
+    "rawDesc": "이 기억을 <color=yellow>시전</color>하면 {0}초 동안 {1}의 <color=yellow>방어력</color>을 얻어 받는 피해가 감소하고 <color=yellow>저지 불가</color> 상태가 됩니다. {2}초에 한 번만 발동할 수 있습니다.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "armorDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Protection.PNG",
+    "lore": null,
+    "achievementKey": "ACH_TEKKAI",
+    "achievementName": "철괴",
+    "achievementDescription": "최대 체력의 300% 이상에 해당하는 보호막을 획득하십시오."
+  },
+  "Gem_E_Thunder": {
+    "name": "천둥의 정수",
+    "description": "<color=yellow>다른 기억</color>을 <color=yellow>시전</color>하거나 <color=yellow>회피기</color>를 사용하면 <color=yellow>천둥</color> 중첩을 1 얻어 최대 7<sprite=5>회 충전됩니다. 이 기억을 <color=yellow>시전</color>하면 <color=yellow>천둥</color> 중첩을 모두 소모하여 중첩 수만큼 근처 적에게 번개를 떨어트립니다. 각 번개는 <sprite=1><color=#16D7FF>117%</color><sprite=5>의 <color=yellow>빛 피해</color>를 줍니다.",
+    "rawDesc": "<color=yellow>다른 기억</color>을 <color=yellow>시전</color>하거나 <color=yellow>회피기</color>를 사용하면 <color=yellow>천둥</color> 중첩을 1 얻어 최대 {0}회 충전됩니다. 이 기억을 <color=yellow>시전</color>하면 <color=yellow>천둥</color> 중첩을 모두 소모하여 중첩 수만큼 근처 적에게 번개를 떨어트립니다. 각 번개는 {1}의 <color=yellow>빛 피해</color>를 줍니다.",
+    "rawDescVars": [
+      {
+        "rendered": "7<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxCharge",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.004
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>117%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.65,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.008
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_E_Thunder.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Twilight": {
+    "name": "어스름의 정수",
+    "description": "내 <color=yellow>기본 공격</color> 피해가 <color=yellow>어둠 피해</color>로 전환됩니다. 이 기억이 적에게 피해를 줬을 때 대상의 <color=yellow>어둠 중첩</color>이 3 이상일 경우 이를 모두 소모하여 중첩당 <sprite=1><color=#16D7FF>54%</color><sprite=5>의 <color=yellow>피해</color>를 주고 중첩당 6<sprite=5>만큼 체력을 <color=yellow>회복</color>합니다.",
+    "rawDesc": "내 <color=yellow>기본 공격</color> 피해가 <color=yellow>어둠 피해</color>로 전환됩니다. 이 기억이 적에게 피해를 줬을 때 대상의 <color=yellow>어둠 중첩</color>이 {0} 이상일 경우 이를 모두 소모하여 중첩당 {1}의 <color=yellow>피해</color>를 주고 중첩당 {2}만큼 체력을 <color=yellow>회복</color>합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "minStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>54%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.27,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "6<sprite=5>",
+        "format": "#,##0",
+        "raw": "healPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark"
+    ],
+    "image": "Gem_E_Twilight.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Virtuousness": {
+    "name": "고결함의 정수",
+    "description": "이 기억의 충전 횟수가 1<sprite=5> 증가합니다. 품질이 150% 오를 때마다 충전 횟수가 1 상승합니다.",
+    "rawDesc": "이 기억의 충전 횟수가 {0} 증가합니다. 품질이 {1} 오를 때마다 충전 횟수가 1 상승합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0",
+        "raw": "addedChargeInt",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "150%",
+        "format": "#,##0'%'",
+        "raw": "requiredQualityPerCharge",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 150.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Virtuousness.PNG",
+    "lore": "사람들이 죽고 있다. 설화에서나 나오던 상상 속의 끔찍한 괴물들과 귀신들이 현실로 넘어와 마을을 불태우고 우리의 삶을 부수고 있다.\n\n하필 카밀라님과 언니가 자리를 비웠을 때…\n\n아직까지는 버틸만하지만… \n정말 소문대로 누군가의 상상이 그대로 이루어진 것이라면?\n만약… 누군가가… 지금보다 훨씬 끔찍한 상상을 했다면…?\n\n시간 문제야.\n이 필연적인 재앙을 우리는 앉아서 기다릴 수 밖에 없을까?\n\n...\n\n성공이다! \n어제 드디어 꿈의 힘을 언니의 남겨둔 사브르와 내 단검에 담는 것에 성공했다. \n정말로 꿈의 세계는 존재했던 거야.\n이제 나는 정보만 있으면 돼.\n\n나는 이 고민을 해결해줄 사람을 알고 있다.\n루시드 교단… 꺼림칙하지만, 가장 확실하겠지.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_CamillasGift": {
+    "name": "카밀라의 선물",
+    "description": "상점에 <color=yellow>판매</color>하여 0 골드를 획득할 수 있습니다. 다음 세계로 이동할 때마다 <color=yellow>가격</color>이 0 <color=yellow>증가</color>합니다. 적에게 피해를 받아 체력이 50% 이하로 떨어지면 부서집니다.",
+    "rawDesc": "상점에 <color=yellow>판매</color>하여 {0} 골드를 획득할 수 있습니다. 다음 세계로 이동할 때마다 <color=yellow>가격</color>이 {1} <color=yellow>증가</color>합니다. 적에게 피해를 받아 체력이 {2} 이하로 떨어지면 부서집니다.",
+    "rawDescVars": [
+      {
+        "rendered": "0",
+        "format": "#,##0",
+        "raw": "currentSellGold",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0",
+        "format": "#,##0",
+        "raw": "sellGoldIncreasePerWorld",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "healthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_CamillasGift.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_ChaosApple": {
+    "name": "혼돈 사과",
+    "description": "<color=yellow>균열</color>으로 <color=yellow>이동</color>할 때마다 임시로 이 기억을 무작위 다른 기억으로 <color=yellow>변질</color>시킵니다. <color=yellow>변질</color>된 기억은 <color=yellow>재사용 대기시간</color>이 제거되지만 각 방에서 4<sprite=5>번만 <color=yellow>시전</color>할 수 있으며, 모든 시전 횟수를 사용하면 원래 기억으로 돌아옵니다.",
+    "rawDesc": "<color=yellow>균열</color>으로 <color=yellow>이동</color>할 때마다 임시로 이 기억을 무작위 다른 기억으로 <color=yellow>변질</color>시킵니다. <color=yellow>변질</color>된 기억은 <color=yellow>재사용 대기시간</color>이 제거되지만 각 방에서 {0}번만 <color=yellow>시전</color>할 수 있으며, 모든 시전 횟수를 사용하면 원래 기억으로 돌아옵니다.",
+    "rawDescVars": [
+      {
+        "rendered": "4<sprite=5>",
+        "format": "#,##0",
+        "raw": "castPerRoomCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_ChaosApple.png",
+    "lore": null,
+    "achievementKey": "ACH_CHAOTIC_GOOD",
+    "achievementName": "혼돈 선",
+    "achievementDescription": "전설 혼돈을 총 5번 사용하십시오."
+  },
+  "Gem_L_DivineFaith": {
+    "name": "신성한 믿음",
+    "description": "이 기억으로 적을 <color=yellow>처치</color>할 때마다 <color=yellow>믿음</color> 중첩을 얻어 75<sprite=5> 중첩까지 획득할 수 있습니다. <color=yellow>믿음</color> 중첩당 이 기억이 적에게 주는 <color=yellow>피해량</color>과 아군에게 주는 <color=yellow>회복량</color>이 0.5% 증가하고 내 최대 체력이 4 증가합니다.",
+    "rawDesc": "이 기억으로 적을 <color=yellow>처치</color>할 때마다 <color=yellow>믿음</color> 중첩을 얻어 {0} 중첩까지 획득할 수 있습니다. <color=yellow>믿음</color> 중첩당 이 기억이 적에게 주는 <color=yellow>피해량</color>과 아군에게 주는 <color=yellow>회복량</color>이 {1} 증가하고 내 최대 체력이 {2} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "75<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.015
+        }
+      },
+      {
+        "rendered": "0.5%",
+        "format": "0.#%",
+        "raw": "dmgAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.005,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxHealthPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_DivineFaith.PNG",
+    "lore": "거짓된 신을 섬기고, 이단의 규율을 쫓는,\n무지하고 불경한 자들아.\n이 신성모독을 나는 더 이상 좌시하지 않겠다.\n\n나의 철퇴는 진리의 도구요,\n나의 기사단은 신의 소명을 실천하는 자들이니,\n불충한 자들에게 심판이 내려질 것이다.\n\n내일, 정화의 불꽃이 그들을 태우리라.\n세상 어디에서도 그들의 숨소리 하나 들리지 않으리.\n\n모든 것은 만물의 주인이신 엘피로스님의 뜻대로...",
+    "achievementKey": "ACH_GOD_PROTECTS_ME",
+    "achievementName": "신께서 날 보호하신다",
+    "achievementDescription": "한 번의 모험에서 추적 위협 레벨이 5 인채로 추적자들에게 점령된 장소를 4번 방문하십시오."
+  },
+  "Gem_L_Embertail": {
+    "name": "화염꼬리",
+    "description": "내 <color=yellow>공격</color>이 튕겨 주변의 적 하나에게 <sprite=1><color=#16D7FF>100%</color><sprite=5>의 <color=yellow>화염 피해</color>를 줍니다. 주변에 있는 화염에 휩싸인 적 하나당 이 기억의 <color=yellow>피해량</color>과 <color=yellow>치유량</color>이 8%<sprite=5> 증가하며 <color=yellow>재사용 대기시간</color>이 8%<sprite=5> 빠르게 감소합니다. 내 화염의 지속 피해가 100% 증가합니다.",
+    "rawDesc": "내 <color=yellow>공격</color>이 튕겨 주변의 적 하나에게 {0}의 <color=yellow>화염 피해</color>를 줍니다. 주변에 있는 화염에 휩싸인 적 하나당 이 기억의 <color=yellow>피해량</color>과 <color=yellow>치유량</color>이 {1} 증가하며 <color=yellow>재사용 대기시간</color>이 {2} 빠르게 감소합니다. 내 화염의 지속 피해가 {3} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.5,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "8%<sprite=5>",
+        "format": "P0",
+        "raw": "ampPerBurning",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "8%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "skillHastePerBurning",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "statBonus.fireEffectAmpFlat",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Fire",
+      "Attack"
+    ],
+    "image": "Gem_L_Embertail.PNG",
+    "lore": "꿈의 주인이여 ...\n\n... 를 되살려주시오 ...\n\n...\n\n... 부디 ...\n\n...\n\n... 지워주시오 ...\n\n...\n\n그거면 충분하오.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_HeartOfGold": {
+    "name": "황금의 심장",
+    "description": "이 기억을 <color=yellow>시전</color>하면 소지한 골드의 3%를 사용해 시전을 <color=yellow>강화</color>합니다. <color=yellow>강화된 시전</color>의 <color=yellow>피해량</color>과 <color=yellow>치유량</color>이 소지한 골드에 비례해서 100골드당 12%<sprite=5> 증가합니다.\n",
+    "rawDesc": "이 기억을 <color=yellow>시전</color>하면 소지한 골드의 {0}를 사용해 시전을 <color=yellow>강화</color>합니다. <color=yellow>강화된 시전</color>의 <color=yellow>피해량</color>과 <color=yellow>치유량</color>이 소지한 골드에 비례해서 100골드당 {1} 증가합니다.\n",
+    "rawDescVars": [
+      {
+        "rendered": "3%",
+        "format": "P0",
+        "raw": "spentGoldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "12%<sprite=5>",
+        "format": "P0",
+        "raw": "ampPerHundredGold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.06,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_L_HeartOfGold.png",
+    "lore": null,
+    "achievementKey": "ACH_MIDAS_HIMSELF",
+    "achievementName": "미다스의 현신",
+    "achievementDescription": "6,000골드를 보유하십시오."
+  },
+  "Gem_L_MetalCrystal": {
+    "name": "금속 결정",
+    "description": "빛을 받은 부분이 비현실적인 색으로 빛나고 있습니다.",
+    "rawDesc": "빛을 받은 부분이 비현실적인 색으로 빛나고 있습니다.",
+    "rawDescVars": [],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_MetalCrystal.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Paranoia": {
+    "name": "편집증의 정수",
+    "description": "아무 <color=yellow>피해</color>를 받으면 6초 동안 이 기억이 150<sprite=5>의 <color=yellow>기억 가속</color>을 얻어 <color=yellow>재사용 대기시간</color>이 60%<sprite=5> 감소하지만, 근처의 적에게 <color=yellow>자동 시전</color>됩니다.",
+    "rawDesc": "아무 <color=yellow>피해</color>를 받으면 {0}초 동안 이 기억이 {1}의 <color=yellow>기억 가속</color>을 얻어 <color=yellow>재사용 대기시간</color>이 {2} 감소하지만, 근처의 적에게 <color=yellow>자동 시전</color>됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "6",
+        "format": "#,##0",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "150<sprite=5>",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 75.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "60%<sprite=5>",
+        "format": "P0",
+        "raw": "reducedRatio",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Paranoia.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Perfect": {
+    "name": "완벽",
+    "description": "공격력이 7<sprite=5>, 주문력이 7<sprite=5>, 최대 체력이 35<sprite=5>, 공격 속도가 10%<sprite=5>, 치명타 확률이 6%<sprite=5>, 기억 가속이 10<sprite=5> 증가합니다.",
+    "rawDesc": "공격력이 {0}, 주문력이 {1}, 최대 체력이 {2}, 공격 속도가 {3}, 치명타 확률이 {4}, 기억 가속이 {5} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "7<sprite=5>",
+        "format": "#,##0",
+        "raw": "adAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "7<sprite=5>",
+        "format": "#,##0",
+        "raw": "apAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "35<sprite=5>",
+        "format": "#,##0",
+        "raw": "healthAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 17.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "attackSpeedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "6%<sprite=5>",
+        "format": "P0",
+        "raw": "criticalChanceAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "10<sprite=5>",
+        "format": "#,##0",
+        "raw": "skillHasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Perfect.PNG",
+    "lore": "누군가는 나를 신이라며 숭배했지.\n그래, 한때는 이곳에서 나도 내가 전능하다고 믿었다.\n\n그리운 가족과 재회하고\n상상하고 꿈꾸었던 모든 것을 가볍게 이룰 수 있었다.\n\n완벽했다...\n아니, 완벽하다고 착각했을 뿐.\n\n꿈은 결국 꿈일 뿐이었다.\n나의 전능함은 실상 무능함과 진배없었지.\n\n현실은 필연의 세계가 아니다.\n여기는...\n허상에 불과하다.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_PureWhite": {
+    "name": "순백",
+    "description": "10초마다 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>됩니다. <color=yellow>강화된 시전</color>이 개별 적에게 처음 주는 <color=yellow>피해</color>의 20%<sprite=5>만큼 <color=yellow>빛 피해</color>를 주는 <color=yellow>탄환</color>을 3발 발사합니다. 발사 횟수는 각 대상의 <color=yellow>빛 중첩</color> 갯수만큼 증가합니다.",
+    "rawDesc": "{0}초마다 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>됩니다. <color=yellow>강화된 시전</color>이 개별 적에게 처음 주는 <color=yellow>피해</color>의 {1}만큼 <color=yellow>빛 피해</color>를 주는 <color=yellow>탄환</color>을 {2}발 발사합니다. 발사 횟수는 각 대상의 <color=yellow>빛 중첩</color> 갯수만큼 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "damageMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "minProjectiles",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_L_PureWhite.PNG",
+    "lore": "자신이 \"탈각\"을 경험했다는 숱한 사람들은 저마다의 방식으로 꿈의 모습을 설명한다.\n\n은식기 위 산더미 같은 고기, 그 식탁이 끝없이 펼처진 방이었다는 사람, 잃어버린 가족들이 모두 그곳에 있었다는 사람, 기분이 좋아지는 향의 차와 장미가 가득한 정원 같다는 사람도 있다.\n\n그렇지만 그 맛있는 음식들을 먹고 배불렀다는 사람이나 그 보고 싶었던 가족들을 현실으로 가지고 나온 사람은 본 적이 없다.\n\n우리의 육체가 현실에 머물러 있기 때문이다. 꿈을 꾸는 것은 우리의 정신이 반대편의 세계에 잠시 방문하는 것에 불과하다. 우리가 꿈에서 깨어나면 우리의 두 손에 남은 것은 아무것도 없다.\n\n그러던 중 루시드 교도놈들이 아주 흥미로운 발견을 했다.\n\n우리가 직접 꿈에 들어갈 수 있게 되었다.",
+    "achievementKey": "ACH_EMPTY_CANVAS",
+    "achievementName": "빈 캔버스",
+    "achievementDescription": "순백의 꿈으로 총 2번 진입하십시오."
+  },
+  "Gem_L_SolarEye": {
+    "name": "태양의 눈",
+    "description": "20초마다 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>되어 이미 <color=yellow>불이 붙은</color> 주변의 모든 적에게 <color=yellow>태양의 빛</color>을 내리쬡니다. <color=yellow>태양의 빛</color>은 1.5초에 걸쳐 총 <sprite=1><color=#16D7FF>360%</color><sprite=5>의 <color=yellow>화염 피해</color>를 주고 <color=yellow>화상</color> 중첩을 9<sprite=5> 만큼 증가시킵니다.\n내 화염의 지속 피해가 100% 증가합니다.",
+    "rawDesc": "{0}초마다 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>되어 이미 <color=yellow>불이 붙은</color> 주변의 모든 적에게 <color=yellow>태양의 빛</color>을 내리쬡니다. <color=yellow>태양의 빛</color>은 {1}초에 걸쳐 총 {2}의 <color=yellow>화염 피해</color>를 주고 <color=yellow>화상</color> 중첩을 {3} 만큼 증가시킵니다.\n내 화염의 지속 피해가 {4} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "20",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "interval * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>360%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "9<sprite=5>",
+        "format": "#,##0",
+        "raw": "calTotalStack",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "statBonus.fireEffectAmpFlat",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_L_SolarEye.png",
+    "lore": null,
+    "achievementKey": "ACH_PRAISE_THE_SUN",
+    "achievementName": "태양 만세!",
+    "achievementDescription": "적에게 화염 중첩을 총 3,000만큼 적용하십시오."
+  },
+  "Gem_L_SuppressedArcanum": {
+    "name": "억압된 아르카눔",
+    "description": "이 기억을 <color=yellow>시전</color>하면 현재 체력의 5%를 희생해 <color=yellow>금빛 폭발</color>을 일으킵니다. <color=yellow>폭발</color>에 휘말린 적들은 <sprite=1><color=#16D7FF>240%</color><sprite=5>의 <color=yellow>빛 피해</color>를 입고, 아군들은 2.5초 동안 지속되는 <sprite=1><color=#16D7FF>61%</color><sprite=5>의 <color=yellow>보호막</color>을 부여받습니다. 내 체력이 60% 이하일 경우 이 기억의 <color=yellow>보호막 부여량</color>이 50% 증가합니다.",
+    "rawDesc": "이 기억을 <color=yellow>시전</color>하면 현재 체력의 {0}를 희생해 <color=yellow>금빛 폭발</color>을 일으킵니다. <color=yellow>폭발</color>에 휘말린 적들은 {1}의 <color=yellow>빛 피해</color>를 입고, 아군들은 {2}초 동안 지속되는 {3}의 <color=yellow>보호막</color>을 부여받습니다. 내 체력이 {4} 이하일 경우 이 기억의 <color=yellow>보호막 부여량</color>이 {5} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "currentHpSacrificeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>240%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.2,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>61%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.35,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "60%",
+        "format": "P0",
+        "raw": "hpThresholdRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "shieldAmpOnLowHp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Light",
+      "Shield"
+    ],
+    "image": "Gem_L_SuppressedArcanum.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Accuracy": {
+    "name": "정확의 정수",
+    "description": "이 기억이 멀리 있는 적에게 <color=yellow>피해</color>를 주면 대상에게 50%<sprite=5>의 <color=yellow>피해</color>를 주는 <color=yellow>추가 투사체</color>가 발사됩니다. 이 <color=yellow>투사체</color>가 주는 <color=yellow>피해</color>는 원본 피해와 원소 종류를 공유합니다.",
+    "rawDesc": "이 기억이 멀리 있는 적에게 <color=yellow>피해</color>를 주면 대상에게 {0}의 <color=yellow>피해</color>를 주는 <color=yellow>추가 투사체</color>가 발사됩니다. 이 <color=yellow>투사체</color>가 주는 <color=yellow>피해</color>는 원본 피해와 원소 종류를 공유합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "damageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Accuracy.PNG",
+    "lore": null,
+    "achievementKey": "ACH_SHOOT_FOR_THE_MOON",
+    "achievementName": "달을 향해 쏴라",
+    "achievementDescription": "아주 멀리 떨어진 적에게 80번 마무리 일격을 날리십시오."
+  },
+  "Gem_R_Adventure": {
+    "name": "모험의 정수",
+    "description": "<color=yellow>새로운 장소</color>로 <color=yellow>이동</color>할 때마다 이 기억에 장착된 다른 <color=yellow>정수</color> 하나의 <color=yellow>품질</color>을 +10% <color=yellow>증가</color>시키고 19<sprite=5>골드를 획득합니다.",
+    "rawDesc": "<color=yellow>새로운 장소</color>로 <color=yellow>이동</color>할 때마다 이 기억에 장착된 다른 <color=yellow>정수</color> 하나의 <color=yellow>품질</color>을 +{0} <color=yellow>증가</color>시키고 {1}골드를 획득합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "upgradeGemAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "19<sprite=5>",
+        "format": "#,##0",
+        "raw": "goldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0025
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Adventure.PNG",
+    "lore": null,
+    "achievementKey": "ACH_NOVICE_TREASURE_HUNTER",
+    "achievementName": "보물 사냥꾼 견습생",
+    "achievementDescription": "처음으로 보물 상자를 개봉하십시오."
+  },
+  "Gem_R_Blade": {
+    "name": "칼날의 정수",
+    "description": "이 기억이 적에게 <color=yellow>적중</color>할 때마다 대상에게 <sprite=2><color=#FF8A2D>58%</color><sprite=5>의 피해를 주는 칼날을 소환해 3<sprite=5>번 도려냅니다. 각 적마다 2초에 한 번만 발동할 수 있습니다.",
+    "rawDesc": "이 기억이 적에게 <color=yellow>적중</color>할 때마다 대상에게 {0}의 피해를 주는 칼날을 소환해 {1}번 도려냅니다. 각 적마다 {2}초에 한 번만 발동할 수 있습니다.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>58%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.55,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0005
+        }
+      },
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0",
+        "raw": "baseCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "perEnemyCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Blade.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Bleak": {
+    "name": "황량함의 정수",
+    "description": "이 기억이 <color=yellow>냉기</color>의 영향을 받거나 <color=yellow>느려짐</color>, <color=yellow>속박</color>, <color=yellow>기절</color> 상태인 적에게 주는 피해가 50%<sprite=5> 증가합니다.",
+    "rawDesc": "이 기억이 <color=yellow>냉기</color>의 영향을 받거나 <color=yellow>느려짐</color>, <color=yellow>속박</color>, <color=yellow>기절</color> 상태인 적에게 주는 피해가 {0} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold"
+    ],
+    "image": "Gem_R_Bleak.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Blood": {
+    "name": "핏방울의 정수",
+    "description": "체력이 40% 이하로 떨어지면 이 <color=yellow>정수</color>의 <color=yellow>품질</color> 80%를 <color=yellow>희생</color>하여 <color=yellow>최대 체력</color>의 40% 만큼을 <color=yellow>회복</color>합니다. 4초에 한 번만 발동할 수 있습니다.",
+    "rawDesc": "체력이 {0} 이하로 떨어지면 이 <color=yellow>정수</color>의 <color=yellow>품질</color> {1}를 <color=yellow>희생</color>하여 <color=yellow>최대 체력</color>의 {2} 만큼을 <color=yellow>회복</color>합니다. {3}초에 한 번만 발동할 수 있습니다.",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "activateHealthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "#,##0'%'",
+        "raw": "sacrificedQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 80.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "healMaxHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Blood.png",
+    "lore": null,
+    "achievementKey": "ACH_KYAAAAAA",
+    "achievementName": "끼야아아악!!",
+    "achievementDescription": "보호막이 없을 때 최대 체력의 70% 이상의 단일 피해를 받고 생존하십시오."
+  },
+  "Gem_R_Celestial": {
+    "name": "천체의 정수",
+    "description": "10초마다 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>됩니다. <color=yellow>강화된 시전</color>이 개별 적에게 처음 적중할 때마다 <sprite=1><color=#16D7FF>130%</color><sprite=5>의 <color=yellow>빛 피해</color>를 주는 별똥별을 4개 떨어트립니다.",
+    "rawDesc": "{0}초마다 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>됩니다. <color=yellow>강화된 시전</color>이 개별 적에게 처음 적중할 때마다 {1}의 <color=yellow>빛 피해</color>를 주는 별똥별을 {2}개 떨어트립니다.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "starDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.65,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "stars",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_R_Celestial.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Composure": {
+    "name": "침착의 정수",
+    "description": "이 기억을 <color=yellow>시전</color>하면 5초 동안 <color=yellow>치명타 확률</color>이 20%<sprite=5> 증가합니다. 적에게 피해를 받으면 이 효과가 일찍 종료됩니다.",
+    "rawDesc": "이 기억을 <color=yellow>시전</color>하면 {0}초 동안 <color=yellow>치명타 확률</color>이 {1} 증가합니다. 적에게 피해를 받으면 이 효과가 일찍 종료됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "critBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Composure.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Contempt": {
+    "name": "멸시의 정수",
+    "description": "이 기억이 적에게 주는 <color=yellow>피해</color>가 대상의 체력이 낮을수록 증가하여 체력이 20%일 때 최대 50%<sprite=5> <color=yellow>증가</color>합니다.",
+    "rawDesc": "이 기억이 적에게 주는 <color=yellow>피해</color>가 대상의 체력이 낮을수록 증가하여 체력이 {0}일 때 최대 {1} <color=yellow>증가</color>합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "maxAmpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "amp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Contempt.png",
+    "lore": "- 여울 진입 후 4일 째.\n\n가까스로 숨을 돌릴 수 있어 다시 일지를 쓴다.\n아직도 전신이 삐걱대고 손이 떨리지만… 기록은 남겨야 겠지.\n\n며칠 전, 나는 루시드 교단의 도움으로 드디어 여울이라는 세계에 진입할 수 있었다.\n예상과 달리 숲은 신비로움으로 가득 차 있었고, 빛이 나뭇잎 사이로 춤추듯 스며드는 모습이 너무나 아름다웠다. 마치 동화 속 세계에 들어온 것 같았다.\n\n하지만... 이 평화로운 모습은 그저 허물일 뿐이란 것을 깨닫는 데는 오래 걸리지 않았다.\n오후가 되자 안개가 내려앉았고, 우리는 안개 너머에서 무언가를 발견했다.\n\n다시 그 때를 떠올리니 손의 떨림이 멈추지 않는군...\n이글거리는 붉은 눈을 가진 거대하고 기괴한 생명체... 그때 그것은 불규칙적으로 주둥이를 떨어대며 우리를 지켜보고 있었다. 그러다 찰나의 순간, \n'그것'은 우리의 코 앞까지 다가와 있었다.\n\n그 이후는 기억이 뒤죽박죽이다.\n기억나는 것은... 폐가 터질듯이 달리며 도망쳤다는 것과, \n일행들의 비명 소리, 그리고 무언가 살덩이가 찢어지는 소리.\n\n\n지금은 안전한 것 같지만...\n긴 손톱으로 사람들을 갈기갈기 찢어발기던 '그것'의 멸시어린 눈동자를\n\n절대로 잊을 수 없을 것 같다.\n\n- A.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Dusk": {
+    "name": "황혼의 정수",
+    "description": "이 기억을 시전하면 5초 동안 적을 <color=yellow>공격</color>할 때마다 <sprite=2><color=#FF8A2D>30%</color><sprite=5>의 <color=yellow>어둠 피해</color>를 주는 <color=yellow>황혼 조각</color>을 2개 발사합니다.",
+    "rawDesc": "이 기억을 시전하면 {0}초 동안 적을 <color=yellow>공격</color>할 때마다 {1}의 <color=yellow>어둠 피해</color>를 주는 <color=yellow>황혼 조각</color>을 {2}개 발사합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>30%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.15,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "shootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_R_Dusk.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Flow": {
+    "name": "흐름의 정수",
+    "description": "아무 기억으로 <color=yellow>빛 피해</color>를 주면 이 기억의 <color=yellow>재사용 대기시간</color>이 6%<sprite=5> 감소합니다. 궁극기의 경우 40%의 효과만 받습니다. 이 기억이 받는 <color=yellow>재사용 대기시간 감소</color> 효과가 장착된 <color=yellow>정수</color>들에도 적용됩니다.",
+    "rawDesc": "아무 기억으로 <color=yellow>빛 피해</color>를 주면 이 기억의 <color=yellow>재사용 대기시간</color>이 {0} 감소합니다. 궁극기의 경우 {1}의 효과만 받습니다. 이 기억이 받는 <color=yellow>재사용 대기시간 감소</color> 효과가 장착된 <color=yellow>정수</color>들에도 적용됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "6%<sprite=5>",
+        "format": "P0",
+        "raw": "reduceRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "ultRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light"
+    ],
+    "image": "Gem_R_Flow.PNG",
+    "lore": "얼마나 낯선 진실인가... 그대가 내게 보여준 것은 의심할 수 없는 진실이요, 운명의 손길이었구나. \n한때는 별들의 생멸을 주관하며 그 장대한 울림을 온전히 느꼈건만, \n이제는 모든 것이 안개 속 그림자처럼 아득하기만 하다. \n\n하지만 내 의지만은 새벽별처럼 선명하여라. \n나는 내 운명의 물결을 스스로 그어갈 것이며, \n그 족쇄는 반드시 끊어내리라. \n\n마지막 숨결까지, 나는 창조와 소멸의 춤을 이끄는 자로 남으리니.내가 바로, 진정한 별의 신이로다.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Frost": {
+    "name": "서리의 정수",
+    "description": "이 기억으로 <color=yellow>냉기 피해</color>를 주면 내 <color=yellow>최대 체력</color>의 10%<sprite=5> 만큼 <color=yellow>냉기 피해</color>를 주고 잠시 <color=yellow>기절</color>시킵니다. 각 적마다 5초에 한 번만 발동할 수 있습니다. 발동할 때마다 내 <color=yellow>최대 체력</color>이 영구히 1 증가합니다.",
+    "rawDesc": "이 기억으로 <color=yellow>냉기 피해</color>를 주면 내 <color=yellow>최대 체력</color>의 {0} 만큼 <color=yellow>냉기 피해</color>를 주고 잠시 <color=yellow>기절</color>시킵니다. 각 적마다 {1}초에 한 번만 발동할 수 있습니다. 발동할 때마다 내 <color=yellow>최대 체력</color>이 영구히 {2} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "P0",
+        "raw": "damageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.07,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.004
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "perEnemyCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "gainedMaxHp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold",
+      "HardCC"
+    ],
+    "image": "Gem_R_Frost.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Glaciate": {
+    "name": "빙결의 정수",
+    "description": "이 기억을 <color=yellow>시전</color>하면 냉기를 발산하여 적들에게 <sprite=1><color=#16D7FF>160%</color><sprite=5>의 <color=yellow>냉기 피해</color>를 줍니다. 품질이 증가할수록 발산 범위가 넓어집니다.",
+    "rawDesc": "이 기억을 <color=yellow>시전</color>하면 냉기를 발산하여 적들에게 {0}의 <color=yellow>냉기 피해</color>를 줍니다. 품질이 증가할수록 발산 범위가 넓어집니다.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.8,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold"
+    ],
+    "image": "Gem_R_Glaciate.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Insatiable": {
+    "name": "탐식의 정수",
+    "description": "이 기억을 시전한 후 5초 동안 <color=yellow>공격력</color>이 15%<sprite=5> 증가하고 <color=yellow>공격</color>할 때마다 6<sprite=5>의 체력을 <color=yellow>회복</color>합니다.",
+    "rawDesc": "이 기억을 시전한 후 {0}초 동안 <color=yellow>공격력</color>이 {1} 증가하고 <color=yellow>공격</color>할 때마다 {2}의 체력을 <color=yellow>회복</color>합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "bonusAttackDamagePercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "6<sprite=5>",
+        "format": "#,##0",
+        "raw": "healAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.006
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal",
+      "Attack"
+    ],
+    "image": "Gem_R_Insatiable.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Momentum": {
+    "name": "여세의 정수",
+    "description": "적을 <color=yellow>공격</color>할 때마다 이 기억의 <color=yellow>재사용 대기시간</color>이 0.4<sprite=5>초 <color=yellow>감소</color>합니다.",
+    "rawDesc": "적을 <color=yellow>공격</color>할 때마다 이 기억의 <color=yellow>재사용 대기시간</color>이 {0}초 <color=yellow>감소</color>합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "0.4<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reductionAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.012
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Attack"
+    ],
+    "image": "Gem_R_Momentum.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_NightSky": {
+    "name": "밤하늘의 정수",
+    "description": "이 기억이 적에게 <color=yellow>적중</color>할 때마다 3초 동안 <color=yellow>공격 속도</color>가 10%<sprite=5> 증가해 최대 20%<sprite=5>까지 증가합니다. 만약 <color=yellow>어둠 피해</color>일 경우 최대 40%<sprite=5>까지 증가할 수 있습니다. 적을 <color=yellow>공격</color>할 때마다 이 효과의 지속 시간이 초기화됩니다.",
+    "rawDesc": "이 기억이 적에게 <color=yellow>적중</color>할 때마다 {0}초 동안 <color=yellow>공격 속도</color>가 {1} 증가해 최대 {2}까지 증가합니다. 만약 <color=yellow>어둠 피해</color>일 경우 최대 {3}까지 증가할 수 있습니다. 적을 <color=yellow>공격</color>할 때마다 이 효과의 지속 시간이 초기화됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "perHitAtkSpd",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "maxAtkSpdNormal",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "maxAtkSpdDark",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_R_NightSky.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Obsidian": {
+    "name": "흑요석의 정수",
+    "description": "이 기억을 <color=yellow>시전</color>하면 5초 내 다음 공격을 <color=yellow>강화</color>합니다. <color=yellow>강화된 공격</color>은 대상에게 <sprite=2><color=#FF8A2D>250%</color><sprite=5>의 <color=yellow>어둠 피해</color>를 주고, 이 기억의 <color=yellow>재사용 대기시간</color>을 1<sprite=5>초 감소시킵니다.",
+    "rawDesc": "이 기억을 <color=yellow>시전</color>하면 {0}초 내 다음 공격을 <color=yellow>강화</color>합니다. <color=yellow>강화된 공격</color>은 대상에게 {1}의 <color=yellow>어둠 피해</color>를 주고, 이 기억의 <color=yellow>재사용 대기시간</color>을 {2}초 감소시킵니다.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.25,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reducedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_E_Obsidian.png",
+    "lore": null,
+    "achievementKey": "ACH_MINE_AND_CRAFT",
+    "achievementName": "채광과 공예",
+    "achievementDescription": "칠흑 원석을 3개 파괴하십시오."
+  },
+  "Gem_R_Panic": {
+    "name": "공황의 정수",
+    "description": "아무 <color=yellow>피해</color>를 입으면 3초 동안 이 기억이 30<sprite=5>의 <color=yellow>기억 가속</color>을 얻고 이동안 <color=yellow>이동 속도</color>가 20%<sprite=5> 증가합니다.",
+    "rawDesc": "아무 <color=yellow>피해</color>를 입으면 {0}초 동안 이 기억이 {1}의 <color=yellow>기억 가속</color>을 얻고 이동안 <color=yellow>이동 속도</color>가 {2} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "30<sprite=5>",
+        "format": "#,##0",
+        "raw": "memoryHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.05,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Mobility"
+    ],
+    "image": "Gem_R_Panic.PNG",
+    "lore": null,
+    "achievementKey": "ACH_EVERYONE_LETS_NOT_PANIC",
+    "achievementName": "진정하고 차분하게 가보자",
+    "achievementDescription": "체력이 25% 이하인 상태로 영웅 보스를 총 8회 처치하십시오."
+  },
+  "Gem_R_Rejuvenation": {
+    "name": "회춘의 정수",
+    "description": "15초마다 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>됩니다. <color=yellow>강화된 시전</color>이 시전 후 1.5초 안에 주는 <color=yellow>피해</color>의 10%<sprite=5>만큼 <color=yellow>자신</color>의 <color=yellow>체력</color>을 <color=yellow>회복</color>합니다.",
+    "rawDesc": "{0}초마다 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>됩니다. <color=yellow>강화된 시전</color>이 시전 후 {1}초 안에 주는 <color=yellow>피해</color>의 {2}만큼 <color=yellow>자신</color>의 <color=yellow>체력</color>을 <color=yellow>회복</color>합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "15",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.08,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Rejuvenation.PNG",
+    "lore": null,
+    "achievementKey": "ACH_LOYAL_CUSTOMER",
+    "achievementName": "단골 손님",
+    "achievementDescription": "한 번의 모험에서 인도의 성소를 15번 작동하십시오."
+  },
+  "Gem_R_Ricochet": {
+    "name": "도탄의 정수",
+    "description": "이 기억이 주는 <color=yellow>피해</color>나 <color=yellow>치유</color>가 50%<sprite=5>의 확률로 주변의 다른 대상에게 튕겨 90%<sprite=5>의 <color=yellow>피해</color>를 주거나 <color=yellow>치유</color>합니다. <color=yellow>피해</color>일 경우 원본 피해와 원소 종류를 공유합니다.",
+    "rawDesc": "이 기억이 주는 <color=yellow>피해</color>나 <color=yellow>치유</color>가 {0}의 확률로 주변의 다른 대상에게 튕겨 {1}의 <color=yellow>피해</color>를 주거나 <color=yellow>치유</color>합니다. <color=yellow>피해</color>일 경우 원본 피해와 원소 종류를 공유합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "50%<sprite=5>",
+        "format": "P0",
+        "raw": "ricochetChance",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "90%<sprite=5>",
+        "format": "P0",
+        "raw": "ricochetRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Ricochet.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Rigidity": {
+    "name": "강직의 정수",
+    "description": "이 기억이 적에게 <color=yellow>적중</color>하면 2초 동안 지속되는 9<sprite=5>의 <color=yellow>보호막</color>을 얻습니다. <color=yellow>냉기 피해</color>일 경우 이 효과가 80% 증가합니다.",
+    "rawDesc": "이 기억이 적에게 <color=yellow>적중</color>하면 {0}초 동안 지속되는 {1}의 <color=yellow>보호막</color>을 얻습니다. <color=yellow>냉기 피해</color>일 경우 이 효과가 {2} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "9<sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "coldDamageMultiplier-1",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Shield"
+    ],
+    "image": "Gem_R_Rigidity.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Scorched": {
+    "name": "그을음의 정수",
+    "description": "이 기억을 <color=yellow>시전</color>하면 주변 적들에게 <sprite=1><color=#16D7FF>47%</color><sprite=5>의 <color=yellow>화염 피해</color>를 주는 <color=yellow>화염구</color>를 3<sprite=5>개 떨어뜨립니다.",
+    "rawDesc": "이 기억을 <color=yellow>시전</color>하면 주변 적들에게 {0}의 <color=yellow>화염 피해</color>를 주는 <color=yellow>화염구</color>를 {1}개 떨어뜨립니다.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>47%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.35,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0035
+        }
+      },
+      {
+        "rendered": "3<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Scorched.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Shock": {
+    "name": "충격의 정수",
+    "description": "매 4번째 <color=yellow>기본 공격</color>이 <color=yellow>강화</color>되어 적에게 튕겨 최대 2번 <sprite=1><color=#16D7FF>40%</color><sprite=5>의 <color=yellow>빛 피해</color>를 주는 <color=yellow>전격</color>을 발사합니다. <color=yellow>치명타 확률</color> 20%마다 최대 피해 횟수가 1 증가합니다.",
+    "rawDesc": "매 4번째 <color=yellow>기본 공격</color>이 <color=yellow>강화</color>되어 적에게 튕겨 최대 {0}번 {1}의 <color=yellow>빛 피해</color>를 주는 <color=yellow>전격</color>을 발사합니다. <color=yellow>치명타 확률</color> {2}마다 최대 피해 횟수가 1 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "baseHitCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>40%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "chainDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.2,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "critChanceForAdditionalHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light",
+      "Attack"
+    ],
+    "image": "Gem_R_Shock.PNG",
+    "lore": null,
+    "achievementKey": "ACH_THOUSAND_THUNDERS",
+    "achievementName": "천 번의 천둥",
+    "achievementDescription": "치명타를 총 1,000회 적중시키십시오."
+  },
+  "Gem_R_Snow": {
+    "name": "눈의 정수",
+    "description": "5초 동안 피해를 받지 않으면 재충전되는 40<sprite=5>의 보호막을 얻습니다. 나에게 보호막이 있을때 주기적으로 주변 무작위 적 하나에게 눈덩이를 발사해 <sprite=1><color=#16D7FF>80%</color><sprite=5>의 <color=yellow>냉기 피해</color>를 줍니다. 보호막량이 많을 수록 발사 속도가 증가합니다.",
+    "rawDesc": "{0}초 동안 피해를 받지 않으면 재충전되는 {1}의 보호막을 얻습니다. 나에게 보호막이 있을때 주기적으로 주변 무작위 적 하나에게 눈덩이를 발사해 {2}의 <color=yellow>냉기 피해</color>를 줍니다. 보호막량이 많을 수록 발사 속도가 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "rechargeTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>80%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.4,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Cold",
+      "Shield"
+    ],
+    "image": "Gem_R_Snow.PNG",
+    "lore": null,
+    "achievementKey": "ACH_SHIELD_BATTERY",
+    "achievementName": "보호막 배터리",
+    "achievementDescription": "적이 주는 피해를 보호막으로 총 20,000만큼 경감하십시오."
+  },
+  "Gem_R_Spiral": {
+    "name": "소용돌이의 정수",
+    "description": "주기적으로 주변의 무작위 적 하나에게 화염구를 발사하여 <sprite=1><color=#16D7FF>90%</color><sprite=5>의 <color=yellow>화염 피해</color>를 줍니다. 품질이 높을 수록 발사 속도가 증가합니다.",
+    "rawDesc": "주기적으로 주변의 무작위 적 하나에게 화염구를 발사하여 {0}의 <color=yellow>화염 피해</color>를 줍니다. 품질이 높을 수록 발사 속도가 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.6,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Spiral.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Wealth": {
+    "name": "부의 정수",
+    "description": "이 기억으로 피해를 입은 적이 2초 안에 처치되면 1.7<sprite=5>골드를 떨어트립니다. 골드는 모든 여행자에게 공유됩니다.",
+    "rawDesc": "이 기억으로 피해를 입은 적이 {0}초 안에 처치되면 {1}골드를 떨어트립니다. 골드는 모든 여행자에게 공유됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "gracePeriod",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1.7<sprite=5>",
+        "format": "###,0.#",
+        "raw": "killGold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Wealth.PNG",
+    "lore": "금이 ‘우리’에게 특별한 의미를 지니는 금속인 것은 그대도 알고 있지 않나요...\n\n다시 깨어날 수 있을 지도 확신을 못한 채 항상 잠에 드는 불완전한 존재들.’우리’가 살아남기 위해서는 금이 지닌 완전성이 필요합니다.\n\n그걸 알면서도... 스스로를 위해서는 사용하지 않겠다는 건가요?\n조너스, 그대는 정녕...",
+    "achievementKey": "ACH_SUSPICIOUSLY_WEALTHY_TRAVELER",
+    "achievementName": "수상할 정도로 돈이 많은 여행자",
+    "achievementDescription": "총 2,000 골드를 소비하십시오."
+  },
+  "Gem_R_Wound": {
+    "name": "상처의 정수",
+    "description": "이 기억이 적에게 피해를 주면 <color=yellow>표식</color>을 새깁니다. <color=yellow>표식</color>을 <color=yellow>공격</color>할 때마다 <sprite=1><color=#16D7FF>44%</color><sprite=5>의 <color=yellow>피해</color>를 주고 3번 공격하면 <color=yellow>표식</color>이 폭발하여 주변의 모든 적들에게 <sprite=1><color=#16D7FF>275%</color><sprite=5>의 <color=yellow>피해</color>를 줍니다.",
+    "rawDesc": "이 기억이 적에게 피해를 주면 <color=yellow>표식</color>을 새깁니다. <color=yellow>표식</color>을 <color=yellow>공격</color>할 때마다 {0}의 <color=yellow>피해</color>를 주고 {1}번 공격하면 <color=yellow>표식</color>이 폭발하여 주변의 모든 적들에게 {2}의 <color=yellow>피해</color>를 줍니다.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>44%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "hitDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.25,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0075
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "explodeStage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>275%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "explodeDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.1,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.015
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Attack"
+    ],
+    "image": "Gem_R_Wound.PNG",
+    "lore": null,
+    "achievementKey": "ACH_THROUGH_TIME_AND_SPACE",
+    "achievementName": "초월적인 속도",
+    "achievementDescription": "초당 6의 공격 속도에 도달하십시오."
+  },
+  "Gem_U_EternalFlame": {
+    "name": "영원 불꽃",
+    "description": "이 기억으로 적에게 <color=yellow>화염 피해</color>를 주면 대상에게 5초 동안 <color=yellow>영원 불꽃</color> 저주를 적용합니다. <color=yellow>영원 불꽃</color> 저주에 걸린 대상은 나에게서 <color=yellow>아무 피해</color>를 입을 때마다 <color=yellow>화상</color> 중첩이 1 증가합니다.\n이 기억이 적에게 주는 모든 피해가 대상의 <color=yellow>화상</color> 중첩마다 2.0%<sprite=5> 증가합니다.",
+    "rawDesc": "이 기억으로 적에게 <color=yellow>화염 피해</color>를 주면 대상에게 {0}초 동안 <color=yellow>영원 불꽃</color> 저주를 적용합니다. <color=yellow>영원 불꽃</color> 저주에 걸린 대상은 나에게서 <color=yellow>아무 피해</color>를 입을 때마다 <color=yellow>화상</color> 중첩이 1 증가합니다.\n이 기억이 적에게 주는 모든 피해가 대상의 <color=yellow>화상</color> 중첩마다 {1} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "2.0%<sprite=5>",
+        "format": "#,##0.0%",
+        "raw": "ampPerFireStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.01,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_U_EternalFlame.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GlacialCore": {
+    "name": "빙하의 핵",
+    "description": "5초에 한 번 이 기억으로 <color=yellow>피해</color>를 주면 자신이 최대 체력의 3.6%<sprite=5>만큼 <color=yellow>체력</color>을 <color=yellow>회복</color>합니다. <color=yellow>냉기 피해</color>일 경우 효과가 100% 증가합니다.\n내가 받는 모든 <color=yellow>체력 회복</color>의 272%<sprite=5>만큼 <color=yellow>냉기 피해</color>를 주는 <color=yellow>얼음 조각</color>을 주변 적에게 발사합니다.",
+    "rawDesc": "{0}초에 한 번 이 기억으로 <color=yellow>피해</color>를 주면 자신이 최대 체력의 {1}만큼 <color=yellow>체력</color>을 <color=yellow>회복</color>합니다. <color=yellow>냉기 피해</color>일 경우 효과가 {2} 증가합니다.\n내가 받는 모든 <color=yellow>체력 회복</color>의 {3}만큼 <color=yellow>냉기 피해</color>를 주는 <color=yellow>얼음 조각</color>을 주변 적에게 발사합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3.6%<sprite=5>",
+        "format": "#,##0.#%",
+        "raw": "healMaxHealthRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "chillAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "272%<sprite=5>",
+        "format": "P0",
+        "raw": "healToDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.00089
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Cold",
+      "Heal"
+    ],
+    "image": "Gem_U_GlacialCore.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_SoulPrison": {
+    "name": "영혼의 감옥",
+    "description": "<color=yellow>치명적인 피해</color>를 받으면 해당 피해를 무시하고 3초 동안 <color=yellow>무적</color> 상태가 되며, 이 정수를 <color=yellow>파괴</color>합니다. 이때 이 정수의 <color=yellow>품질</color> 1%당 3만큼의 <color=yellow>체력</color>을 <color=yellow>회복</color>하며, 회복 초과량은 <color=yellow>보호막</color>으로 전환됩니다.",
+    "rawDesc": "<color=yellow>치명적인 피해</color>를 받으면 해당 피해를 무시하고 {0}초 동안 <color=yellow>무적</color> 상태가 되며, 이 정수를 <color=yellow>파괴</color>합니다. 이때 이 정수의 <color=yellow>품질</color> 1%당 {1}만큼의 <color=yellow>체력</color>을 <color=yellow>회복</color>하며, 회복 초과량은 <color=yellow>보호막</color>으로 전환됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "invulTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "healPerQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_U_SoulPrison.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  }
+}
