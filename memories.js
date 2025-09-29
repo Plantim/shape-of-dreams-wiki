@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let translations = {}; // Contiendra les traductions pour l'interface utilisateur.
 
     // stockent l'état actuel de vos filtres et de votre barre de recherche
-    let activeRarityFilter = 'All'; // Le filtre de rareté actuellement sélectionné.
-    let activeElementFilter = 'All'; // Le filtre d'élément actuellement sélectionné.
-    let activeTagFilter = 'All'; // Le filtre de tag actuellement sélectionné.
-    let activeTravelerFilter = 'All'; // Le filtre de voyageur actuellement sélectionné.
+    let activeRarityFilter = ''; // Singulier et initialisé comme une chaîne vide
+    let activeElementFilter = '';
+    let activeTagFilter = '';
+    let activeTravelerFilter = '';
 
     let searchQuery = ''; // Le texte actuellement tapé dans la barre de recherche.
-    let activeStatFilter = 'All'; // Le filtre AP/AD actuellement sélectionné.
+    let activeStatFilter = ''; // filtre AD/AP Initialisé comme une chaîne vide
 
     // Nouvelle variable d'état pour le niveau
     let currentLevel = 0;
@@ -282,10 +282,10 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Crée les boutons pour les filtres de rareté.
-    const populateRarityFilter = () => {
+    const populateRarityFilter = () => {       
         const T = translations[getLanguage()] || translations['en-US']; // On récupère la langue actuelle
         const currentLang = getLanguage(); // <-- On récupère la langue actuelle pour la traduction des noms de voyageurs
-        const rarities = ['All', 'Common', 'Rare', 'Epic', 'Legendary', 'Unique', 'Character', 'Identity'];
+        const rarities = ['Common', 'Rare', 'Epic', 'Legendary', 'Unique', 'Character', 'Identity']; // On retire 'All'
         const rarityContainer = document.getElementById('rarity-filters'); // Le conteneur où les boutons seront ajoutés.
         
         // On utilise la traduction pour le titre du filtre
@@ -294,20 +294,24 @@ document.addEventListener('DOMContentLoaded', () => {
         rarities.forEach(rarity => {
             const button = document.createElement('button');
             button.className = 'btn btn-sm rarity-filter-btn';
-            if (rarity === activeRarityFilter) button.classList.add('btn-active');// Le bouton "All" est actif par défaut.
-            // On utilise la traduction pour le bouton "Tout"
-            button.textContent = rarity === 'All' ? T.allButton : getKeywordDisplayName(rarity, 'rarities', currentLang);
-            button.dataset.rarity = rarity;// Stocke la valeur du filtre dans l'attribut `data-`.
+            // Si la rareté est déjà dans notre liste de filtres actifs, on la met en surbrillance
+            if (activeRarityFilter === rarity) {
+            button.classList.add('btn-active');
+            }
+            button.textContent = getKeywordDisplayName(rarity, 'rarities', currentLang);
+            button.dataset.rarity = rarity;
             rarityContainer.appendChild(button);
         });
         
         // Ajoute un écouteur de clic à chaque bouton de rareté.
         document.querySelectorAll('.rarity-filter-btn').forEach(button => {
             button.addEventListener('click', (event) => {
-                document.querySelectorAll('.rarity-filter-btn').forEach(btn => btn.classList.remove('btn-active'));
-                event.target.classList.add('btn-active');
-                activeRarityFilter = event.target.dataset.rarity; // Met à jour le filtre actif.
-                applyFilters(); // Relance le filtrage.
+                const rarity = event.target.dataset.rarity;
+                // Si on clique sur le bouton déjà actif, on le désactive. Sinon, on l'active.
+                activeRarityFilter = activeRarityFilter === rarity ? '' : rarity;
+                // On rafraîchit tous les boutons pour refléter le nouvel état
+                populateRarityFilter();
+                applyFilters();
             });
         });
     };
@@ -316,34 +320,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const populateElementsFilter = () => {
         // 1. On récupère les traductions au début de la fonction
         const T = translations[getLanguage()] || translations['en-US'];
-        const currentLang = getLanguage(); // <-- On récupère la langue
+        const currentLang = getLanguage();
         const elementalTags = ['Cold', 'Fire', 'Light', 'Dark'];
         const elementsContainer = document.getElementById('elements-filters');
         
         // 2. On utilise la traduction pour le titre du filtre
         elementsContainer.innerHTML = `<span class="font-bold">${T.elementsFilter}</span>`;
-        
-        const allButton = document.createElement('button');
-        allButton.className = 'btn btn-sm element-filter-btn';
-        if ('All' === activeElementFilter) allButton.classList.add('btn-active');
-        allButton.textContent = T.allButton;
-        allButton.dataset.element = 'All';
-        elementsContainer.appendChild(allButton);
-        
+
+
         elementalTags.forEach(element => {
             const button = document.createElement('button');
             button.className = 'btn btn-sm element-filter-btn';
-            if (element === activeElementFilter) button.classList.add('btn-active');
+            if (activeElementFilter === element) {
+                button.classList.add('btn-active');
+            }
             button.textContent = getKeywordDisplayName(element, 'elements', currentLang);
             button.dataset.element = element;
             elementsContainer.appendChild(button);
-        });
+        });        
+
 
         document.querySelectorAll('.element-filter-btn').forEach(button => {
             button.addEventListener('click', (event) => {
-                document.querySelectorAll('.element-filter-btn').forEach(btn => btn.classList.remove('btn-active'));
-                event.target.classList.add('btn-active');
-                activeElementFilter = event.target.dataset.element;
+                const element = event.target.dataset.element;
+                activeElementFilter = activeElementFilter === element ? '' : element;
+                populateElementsFilter();
                 applyFilters();
             });
         });
@@ -353,47 +354,43 @@ document.addEventListener('DOMContentLoaded', () => {
     const populateTagsFilter = () => {
         // 1. On récupère les traductions
         const T = translations[getLanguage()] || translations['en-US'];
-        const currentLang = getLanguage(); // <-- On récupère la langue
-        const elementalTags = ['cold', 'fire', 'light', 'dark'];
+        const currentLang = getLanguage();
+        const elementalTags = ['Cold', 'Fire', 'Light', 'Dark'];
         const allTags = [...new Set(allMemories.flatMap(m => m.tags || []))].sort();
         const tagsContainer = document.getElementById('tags-filters');
 
         // 2. On utilise la traduction pour le titre du filtre
         tagsContainer.innerHTML = `<span class="font-bold">${T.tagsFilter}</span>`;
 
-        const otherTags = allTags.filter(tag => !elementalTags.includes(tag.toLowerCase()));
-        
-        const allButton = document.createElement('button');
-        allButton.className = 'btn btn-sm tag-filter-btn';
-        if ('All' === activeTagFilter) allButton.classList.add('btn-active');
-        // 3. On utilise la traduction pour le bouton "Tout"
-        allButton.textContent = T.allButton; 
-        allButton.dataset.tag = 'All';
-        tagsContainer.appendChild(allButton);
+        const otherTags = allTags.filter(tag => !elementalTags.includes(tag));
 
         otherTags.forEach(tag => {
             const button = document.createElement('button');
             button.className = 'btn btn-sm tag-filter-btn';
-            if (tag.toLowerCase() === activeTagFilter) button.classList.add('btn-active');
+            const tagValue = tag.toLowerCase();
+            if (activeTagFilter === tagValue) {
+                button.classList.add('btn-active');
+            }
             button.textContent = getKeywordDisplayName(tag, 'tags', currentLang);
-            button.dataset.tag = tag.toLowerCase();
+            button.dataset.tag = tagValue;
             tagsContainer.appendChild(button);
         });
-        
-        document.getElementById('tags-filters').addEventListener('click', (event) => {
-            if (event.target.classList.contains('tag-filter-btn')) {
-                document.querySelectorAll('.tag-filter-btn').forEach(btn => btn.classList.remove('btn-active'));
-                event.target.classList.add('btn-active');
-                activeTagFilter = event.target.dataset.tag;
+
+        document.querySelectorAll('.tag-filter-btn').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const tag = event.target.dataset.tag;
+                activeTagFilter = activeTagFilter === tag ? '' : tag;
+                populateTagsFilter();
                 applyFilters();
-            }
+            });
         });
     };
+
 
     // Crée les boutons pour les filtres de statistiques (AP/AD).
     const populateStatFilter = () => {
         const T = translations[getLanguage()] || translations['en-US']; // On récupère la langue actuelle
-        const statTypes = ['All', 'AP', 'AD']; // Les types de statistiques à filtrer
+        const statTypes = ['AP', 'AD']; // Les types de statistiques à filtrer
         const statContainer = document.getElementById('stat-filters'); // Le conteneur où les boutons seront ajoutés.
         
         // On utilise la traduction dynamique au lieu du texte en dur
@@ -401,127 +398,148 @@ document.addEventListener('DOMContentLoaded', () => {
 
         statTypes.forEach(stat => {
             const button = document.createElement('button');
-            // On réutilise la même classe pour le style et le comportement que les autres filtres
-            button.className = 'btn btn-sm stat-filter-btn rarity-filter-btn';
-            if (stat === activeStatFilter) button.classList.add('btn-active');
+            // On garde vos classes pour la cohérence du style
+            button.className = 'btn btn-sm stat-filter-btn rarity-filter-btn'; 
             
-
+            // On applique la classe 'btn-active' si le filtre correspond
+            if (stat === activeStatFilter) {
+                button.classList.add('btn-active');
+            }
+            
+            
             if (stat === 'AP') {
                 // Remplace le texte "AP" par l'image du sprite 1
                 button.innerHTML = `<img src="sprites/1.png" class="inline-sprite" alt="AP Stat" style="width: 1.2em; height: 1.2em;" />`;
             } else if (stat === 'AD') {
                 // Remplace le texte "AD" par l'image du sprite 2
                 button.innerHTML = `<img src="sprites/2.png" class="inline-sprite" alt="AD Stat" style="width: 1.2em; height: 1.2em;" />`;
-            } else {
-                // Utilise la traduction pour le bouton "Tout"
-                button.textContent = T.allButton;
             }
 
-            // On utilise la traduction pour le bouton "Tout"
-            
-            button.dataset.stat = stat; // Stocke la valeur du filtre
+            button.dataset.stat = stat;
             statContainer.appendChild(button);
-
-            button.addEventListener('click', (event) => {
-                // S'assurer que tous les boutons de cette catégorie sont désactivés
-                document.querySelectorAll('.stat-filter-btn').forEach(btn => btn.classList.remove('btn-active'));
-                
-                // Activer le bouton cliqué
-                event.currentTarget.classList.add('btn-active'); // On utilise currentTarget pour cibler le bouton
-                
-                activeStatFilter = event.currentTarget.dataset.stat; 
-                applyFilters(); 
-            });
-
-        });
-        
-    };
-
-    // Crée les boutons pour les filtres de voyageurs.
-    const populateTravelerFilter = () => {
-        const T = translations[getLanguage()] || translations['en-US'];
-        const currentLang = getLanguage(); // Récupère la langue actuelle pour la traduction
-        const travelers = [...new Set(allMemories.map(m => m.traveler).filter(t => t && t !== ''))].sort();
-        const travelersContainer = document.getElementById('traveler-filters');
-
-        // On utilise la traduction dynamique au lieu du texte en dur
-        travelersContainer.innerHTML = `<span class="font-bold">${T.travelerFilter}</span>`;
-
-        const allButton = document.createElement('button');
-        allButton.className = 'btn btn-sm traveler-filter-btn rarity-filter-btn'; // On réutilise la classe de style
-        if ('All' === activeTravelerFilter) allButton.classList.add('btn-active');
-        allButton.textContent = T.allButton;
-        allButton.dataset.traveler = 'All';
-        travelersContainer.appendChild(allButton);
-
-        travelers.forEach(travelerKey => {
-            const button = document.createElement('button');
-            const travelerName = getTravelerDisplayName(travelerKey, currentLang);
-
-            button.className = 'btn btn-sm traveler-filter-btn rarity-filter-btn';
-            if (travelerKey === activeTravelerFilter) button.classList.add('btn-active');
-            button.textContent = travelerName;
-            button.dataset.traveler = travelerKey;
-            travelersContainer.appendChild(button);
         });
 
-        document.querySelectorAll('.traveler-filter-btn').forEach(button => {
+        document.querySelectorAll('.stat-filter-btn').forEach(button => {
             button.addEventListener('click', (event) => {
-                document.querySelectorAll('.traveler-filter-btn').forEach(btn => btn.classList.remove('btn-active'));
-                event.target.classList.add('btn-active');
-                activeTravelerFilter = event.target.dataset.traveler;
+                const stat = event.currentTarget.dataset.stat;
+                
+                // Si on clique sur le bouton déjà actif, on le désactive. Sinon, on l'active.
+                activeStatFilter = activeStatFilter === stat ? '' : stat;
+                
+                // On rafraîchit les boutons pour mettre à jour l'état visuel
+                populateStatFilter(); 
                 applyFilters();
             });
         });
     };
 
 
-    
+    // Crée les boutons pour les filtres de voyageurs.
+    const populateTravelerFilter = () => {
+        const T = translations[getLanguage()] || translations['en-US'];
+        const currentLang = getLanguage();
+
+        // 1. Définissez l'ordre que vous souhaitez ici.
+        // Utilisez les clés internes des voyageurs (ex: "Hero_Mist").
+        const customOrder = [
+            "Hero_Lacerta",
+            "Hero_Mist",
+            "Hero_Yubar",
+            "Hero_Vesper",
+            "Hero_Aurena",
+            "Hero_Bismuth",
+            "Hero_Nachia",
+            "Hero_Husk"
+        ];
+
+        // 2. On récupère les voyageurs et on les trie selon votre liste.
+        const travelers = [...new Set(allMemories.map(m => m.traveler).filter(Boolean))]
+            .sort((a, b) => {
+                const indexA = customOrder.indexOf(a);
+                const indexB = customOrder.indexOf(b);
+                // Si un voyageur n'est pas dans votre liste, on le met à la fin.
+                if (indexA === -1) return 1;
+                if (indexB === -1) return -1;
+                return indexA - indexB;
+            });
+
+        const travelersContainer = document.getElementById('traveler-filters');
+
+        // On utilise la traduction dynamique au lieu du texte en dur
+        travelersContainer.innerHTML = `<span class="font-bold">${T.travelerFilter}</span>`;
+
+        travelers.forEach(travelerKey => {
+            const button = document.createElement('button');
+            button.className = 'btn btn-sm traveler-filter-btn';
+            if (activeTravelerFilter === travelerKey) {
+                button.classList.add('btn-active');
+            }
+            button.textContent = getTravelerDisplayName(travelerKey, currentLang);
+            button.dataset.traveler = travelerKey;
+            travelersContainer.appendChild(button);
+        });
+
+        document.querySelectorAll('.traveler-filter-btn').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const traveler = event.target.dataset.traveler;
+                activeTravelerFilter = activeTravelerFilter === traveler ? '' : traveler;
+                populateTravelerFilter();
+                applyFilters();
+            });
+        });
+    };
+
     // --- LOGIQUE DE FILTRAGE ---
-    // C'est ici que la magie opère.
     const applyFilters = () => {
         // La méthode `.filter()` crée un nouveau tableau avec uniquement les éléments qui passent le test.
         filteredMemories = allMemories.filter(memory => {
             // Test 1: La recherche textuelle (nom)
             // On vérifie si le nom ou le nom anglais contient la chaîne recherchée (insensible à la casse).
-            const matchesSearch = memory.name.toLowerCase().includes(searchQuery) ||
-                      (memory.englishName && memory.englishName.toLowerCase().includes(searchQuery));
+            const searchMatch = !searchQuery || 
+                (memory.name && memory.name.toLowerCase().includes(searchQuery)) ||
+                (memory.englishName && memory.englishName.toLowerCase().includes(searchQuery)) ||
+                (memory.description && memory.description.toLowerCase().includes(searchQuery));
+
+            // Si le filtre est une chaîne vide, la condition est vraie (on montre tout)
+            // Sinon, on vérifie la correspondance exacte.
             
-            // Test 2: Le filtre de rareté
-            const matchesRarity = activeRarityFilter === 'All' || memory.rarity === activeRarityFilter;
+            // Filtre de Rareté : la rareté doit être dans la liste des filtres actifs
+            const rarityMatch = !activeRarityFilter || memory.rarity === activeRarityFilter;
             
-            // Test 3: Le filtre d'élément
-            const matchesElement = activeElementFilter === 'All' || (memory.tags && memory.tags.map(tag => tag.toLowerCase()).includes(activeElementFilter.toLowerCase()));
+            // Filtre d'Élément : l'élément doit être dans la liste
+            const elementMatch = !activeElementFilter || (memory.tags && memory.tags.includes(activeElementFilter));
             
-            // Test 4: Le filtre de tag (en excluant les éléments déjà gérés)
-            const isElementalTag = ['cold', 'fire', 'light', 'dark'].includes(activeTagFilter.toLowerCase());
-            const matchesTag = activeTagFilter === 'All' || (!isElementalTag && memory.tags && memory.tags.map(tag => tag.toLowerCase()).includes(activeTagFilter.toLowerCase()));
+            // Filtre de Voyageur : le voyageur doit être dans la liste
+            const travelerMatch = !activeTravelerFilter || memory.traveler === activeTravelerFilter;
             
-            // TEST 5: Le filtre de statistiques (AP/AD)
-            let matchesStat = true;
+            // Filtre de Tag : au moins un des tags de la mémoire doit être dans la liste
+            const tagMatch = !activeTagFilter || (memory.tags && memory.tags.map(t => t.toLowerCase()).includes(activeTagFilter));
+            
+            // Filtre de Stat (inchangé, car c'est une sélection unique)
+            let statMatch = true;
             // On vérifie le rawDescVars pour les valeurs basicAP et basicAD
             const hasDescVars = memory.rawDescVars && memory.rawDescVars.length > 0;
+            
             if (activeStatFilter === 'AP') {
-                // Est AP si au moins une variable de description utilise basicAP > 0
-                matchesStat = hasDescVars && memory.rawDescVars.some(descVar => 
-                    descVar.data && (descVar.data.basicAP || 0) > 0
+                statMatch = hasDescVars && memory.rawDescVars.some(descVar => 
+                    // Condition 1: Vérifie les données AP (comme avant)
+                    (descVar.data && ((descVar.data.basicAP || 0) > 0 || (descVar.data.addedAP || 0) > 0)) ||
+                    // Condition 2: OU vérifie la présence des sprites AP dans le texte rendu
+                    (descVar.rendered && (descVar.rendered.includes('<sprite=1>') || descVar.rendered.includes('<sprite=4>')))
                 );
             } else if (activeStatFilter === 'AD') {
-                // Est AD si au moins une variable de description utilise basicAD > 0
-                matchesStat = hasDescVars && memory.rawDescVars.some(descVar => 
-                    descVar.data && (descVar.data.basicAD || 0) > 0
+                statMatch = hasDescVars && memory.rawDescVars.some(descVar => 
+                    // Condition 1: Vérifie les données AD (comme avant)
+                    (descVar.data && ((descVar.data.basicAD || 0) > 0 || (descVar.data.addedAD || 0) > 0)) ||
+                    // Condition 2: OU vérifie la présence du sprite AD dans le texte rendu
+                    (descVar.rendered && descVar.rendered.includes('<sprite=2>'))
                 );
             }
-
-            // TEST 6: Le filtre de voyageur (traveler) 
-            const matchesTraveler = activeTravelerFilter === 'All' || memory.traveler === activeTravelerFilter;
-
-
+            
             // Une mémoire est gardée si elle passe TOUS les tests.
-            return matchesSearch && matchesRarity && matchesElement && matchesTag && matchesStat && matchesTraveler; // <-- activeTravelerFilter ajouté ici
-
+            return searchMatch && rarityMatch && elementMatch && travelerMatch && tagMatch && statMatch;
         });
-
+        
         // Une fois le filtrage terminé, on met à jour l'affichage.
         renderMemories(filteredMemories);
     };

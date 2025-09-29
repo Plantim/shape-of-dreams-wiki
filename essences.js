@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let allKeywords = {}; // Contiendra les traductions des mots-clés (rarités, éléments, tags).
 
     // stockent l'état actuel de vos filtres et de votre barre de recherche
-    let activeRarityFilter = 'All'; // Le filtre de rareté actuellement sélectionné.
-    let activeElementFilter = 'All'; // Le filtre d'élément actuellement sélectionné.
-    let activeTagFilter = 'All'; // Le filtre de tag actuellement sélectionné.
+    let activeRarityFilter = '';
+    let activeElementFilter = '';
+    let activeTagFilter = '';
     // NOTE : Le filtre de voyageur (activeTravelerFilter) est retiré.
 
     let searchQuery = ''; // Le texte actuellement tapé dans la barre de recherche.
@@ -243,53 +243,43 @@ document.addEventListener('DOMContentLoaded', () => {
     // NOTE : populateRarityFilter est inchangé.
     const populateRarityFilter = () => {
         const T = translations[getLanguage()] || translations['en-US'];
-        const currentLang = getLanguage(); // <-- On récupère la langue
-        const rarities = ['All', 'Common', 'Rare', 'Epic', 'Legendary', 'Unique']; // Raretés Essences
+        const currentLang = getLanguage();
+        const rarities = ['Common', 'Rare', 'Epic', 'Legendary', 'Unique'];
         const rarityContainer = document.getElementById('rarity-filters');
         
-        rarityContainer.innerHTML = `<span class="font-bold">${T.rarityFilter}</span>`; 
+        rarityContainer.innerHTML = `<span class="font-bold">${T.rarityFilter}</span>`;
 
         rarities.forEach(rarity => {
             const button = document.createElement('button');
             button.className = 'btn btn-sm rarity-filter-btn';
-            if (rarity === activeRarityFilter) button.classList.add('btn-active');
-            button.textContent = rarity === 'All' ? T.allButton : getKeywordDisplayName(rarity, 'rarities', currentLang);
+            if (activeRarityFilter === rarity) button.classList.add('btn-active');
+            button.textContent = getKeywordDisplayName(rarity, 'rarities', currentLang);
             button.dataset.rarity = rarity;
             rarityContainer.appendChild(button);
         });
         
         document.querySelectorAll('.rarity-filter-btn').forEach(button => {
             button.addEventListener('click', (event) => {
-                document.querySelectorAll('.rarity-filter-btn').forEach(btn => btn.classList.remove('btn-active'));
-                event.target.classList.add('btn-active');
-                activeRarityFilter = event.target.dataset.rarity; 
-                applyFilters(); 
+                const rarity = event.target.dataset.rarity;
+                activeRarityFilter = activeRarityFilter === rarity ? '' : rarity;
+                populateRarityFilter();
+                applyFilters();
             });
         });
     };
 
-    // NOTE : populateElementsFilter utilise allEssences au lieu de allMemories.
     const populateElementsFilter = () => {
         const T = translations[getLanguage()] || translations['en-US'];
-        const currentLang = getLanguage(); // <-- On récupère la langue
-        const elementalTags = ['Cold', 'Fire', 'Light', 'Dark']; 
+        const currentLang = getLanguage();
+        const elementalTags = ['Cold', 'Fire', 'Light', 'Dark'];
         const elementsContainer = document.getElementById('elements-filters');
         
         elementsContainer.innerHTML = `<span class="font-bold">${T.elementsFilter}</span>`;
-        
-        const allButton = document.createElement('button');
-        allButton.className = 'btn btn-sm element-filter-btn';
-        if ('All' === activeElementFilter) allButton.classList.add('btn-active');
-        allButton.textContent = T.allButton;
-        allButton.dataset.element = 'All';
-        elementsContainer.appendChild(allButton);
-        
+
         elementalTags.forEach(element => {
             const button = document.createElement('button');
             button.className = 'btn btn-sm element-filter-btn';
-            if (element === activeElementFilter) button.classList.add('btn-active');
-            // Plus besoin de logique complexe, on sait qu'on est dans la catégorie "elements".
-            // On traduit aussi la clé en minuscule, car c'est ce que notre JSON attend.
+            if (activeElementFilter === element) button.classList.add('btn-active');
             button.textContent = getKeywordDisplayName(element, 'elements', currentLang);
             button.dataset.element = element;
             elementsContainer.appendChild(button);
@@ -297,88 +287,90 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelectorAll('.element-filter-btn').forEach(button => {
             button.addEventListener('click', (event) => {
-                document.querySelectorAll('.element-filter-btn').forEach(btn => btn.classList.remove('btn-active'));
-                event.target.classList.add('btn-active');
-                activeElementFilter = event.target.dataset.element;
+                const element = event.target.dataset.element;
+                activeElementFilter = activeElementFilter === element ? '' : element;
+                populateElementsFilter();
                 applyFilters();
             });
         });
     };
 
-    // NOTE : populateTagsFilter est inchangé.
+
     const populateTagsFilter = () => {
         const T = translations[getLanguage()] || translations['en-US'];
-        const currentLang = getLanguage(); // <-- On récupère la langue
-        const elementalTags = ['cold', 'fire', 'light', 'dark'];
-        const allTags = [...new Set(allEssences.flatMap(m => m.tags || []))].sort(); // Utilise allEssences
+        const currentLang = getLanguage();
+        const elementalTags = ['Cold', 'Fire', 'Light', 'Dark'];
+        const allTags = [...new Set(allEssences.flatMap(m => m.tags || []))].sort();
         const tagsContainer = document.getElementById('tags-filters');
 
         tagsContainer.innerHTML = `<span class="font-bold">${T.tagsFilter}</span>`;
 
-        const otherTags = allTags.filter(tag => !elementalTags.includes(tag.toLowerCase()));
-        
-        const allButton = document.createElement('button');
-        allButton.className = 'btn btn-sm tag-filter-btn';
-        if ('All' === activeTagFilter) allButton.classList.add('btn-active');
-        allButton.textContent = T.allButton; 
-        allButton.dataset.tag = 'All';
-        tagsContainer.appendChild(allButton);
+        const otherTags = allTags.filter(tag => !elementalTags.includes(tag));
 
         otherTags.forEach(tag => {
             const button = document.createElement('button');
             button.className = 'btn btn-sm tag-filter-btn';
-            if (tag.toLowerCase() === activeTagFilter) button.classList.add('btn-active');
+            const tagValue = tag.toLowerCase();
+            if (activeTagFilter === tagValue) button.classList.add('btn-active');
             button.textContent = getKeywordDisplayName(tag, 'tags', currentLang);
-            button.dataset.tag = tag.toLowerCase();
+            button.dataset.tag = tagValue;
             tagsContainer.appendChild(button);
         });
-        
-        document.getElementById('tags-filters').addEventListener('click', (event) => {
-            if (event.target.classList.contains('tag-filter-btn')) {
-                document.querySelectorAll('.tag-filter-btn').forEach(btn => btn.classList.remove('btn-active'));
-                event.target.classList.add('btn-active');
-                activeTagFilter = event.target.dataset.tag;
+
+        document.querySelectorAll('.tag-filter-btn').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const tag = event.target.dataset.tag;
+                activeTagFilter = activeTagFilter === tag ? '' : tag;
+                populateTagsFilter();
                 applyFilters();
-            }
+            });
         });
     };
 
-    // NOTE : populateStatFilter est inchangé, mais on filtre sur les Essences.
+    // Crée les boutons pour les filtres de statistiques (AP/AD).
     const populateStatFilter = () => {
-        const T = translations[getLanguage()] || translations['en-US'];
-        const statTypes = ['All', 'AP', 'AD'];
-        const statContainer = document.getElementById('stat-filters');
+        const T = translations[getLanguage()] || translations['en-US']; // On récupère la langue actuelle
+        const statTypes = ['AP', 'AD']; // Les types de statistiques à filtrer
+        const statContainer = document.getElementById('stat-filters'); // Le conteneur où les boutons seront ajoutés.
         
-        statContainer.innerHTML = `<span class="font-bold">${T.statFilter}</span>`;
+        // On utilise la traduction dynamique au lieu du texte en dur
+        statContainer.innerHTML = `<span class="font-bold">${T.statFilter}</span>`; 
 
         statTypes.forEach(stat => {
             const button = document.createElement('button');
-            button.className = 'btn btn-sm stat-filter-btn rarity-filter-btn';
-            if (stat === activeStatFilter) button.classList.add('btn-active');
+            // On garde vos classes pour la cohérence du style
+            button.className = 'btn btn-sm stat-filter-btn rarity-filter-btn'; 
             
-
-            if (stat === 'AP') {
-                button.innerHTML = `<img src="sprites/1.png" class="inline-sprite" alt="AP Stat" style="width: 1.2em; height: 1.2em;" />`;
-            } else if (stat === 'AD') {
-                button.innerHTML = `<img src="sprites/2.png" class="inline-sprite" alt="AD Stat" style="width: 1.2em; height: 1.2em;" />`;
-            } else {
-                button.textContent = T.allButton;
+            // On applique la classe 'btn-active' si le filtre correspond
+            if (stat === activeStatFilter) {
+                button.classList.add('btn-active');
             }
             
-            button.dataset.stat = stat; 
+            // On utilise une image pour représenter AP/AD
+            if (stat === 'AP') {
+                // Remplace le texte "AP" par l'image du sprite 1
+                button.innerHTML = `<img src="sprites/1.png" class="inline-sprite" alt="AP Stat" style="width: 1.2em; height: 1.2em;" />`;
+            } else if (stat === 'AD') {
+                // Remplace le texte "AD" par l'image du sprite 2
+                button.innerHTML = `<img src="sprites/2.png" class="inline-sprite" alt="AD Stat" style="width: 1.2em; height: 1.2em;" />`;
+            }
+
+            button.dataset.stat = stat;
             statContainer.appendChild(button);
-
-            button.addEventListener('click', (event) => {
-                document.querySelectorAll('.stat-filter-btn').forEach(btn => btn.classList.remove('btn-active'));
-                
-                event.currentTarget.classList.add('btn-active'); 
-                
-                activeStatFilter = event.currentTarget.dataset.stat; 
-                applyFilters(); 
-            });
-
         });
-        
+
+        document.querySelectorAll('.stat-filter-btn').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const stat = event.currentTarget.dataset.stat;
+                
+                // Si on clique sur le bouton déjà actif, on le désactive. Sinon, on l'active.
+                activeStatFilter = activeStatFilter === stat ? '' : stat;
+                
+                // On rafraîchit les boutons pour mettre à jour l'état visuel
+                populateStatFilter(); 
+                applyFilters();
+            });
+        });
     };
 
     // NOTE : populateTravelerFilter est retiré.
@@ -389,44 +381,50 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const applyFilters = () => {
         // Utilise allEssences pour le filtrage
-        filteredEssences = allEssences.filter(essence => { 
+        filteredEssences = allEssences.filter(essence => {
             // Test 1: La recherche textuelle (nom)
-            const matchesSearch = essence.name.toLowerCase().includes(searchQuery) ||
-                      (essence.englishName && essence.englishName.toLowerCase().includes(searchQuery));
-            
+            const searchMatch = !searchQuery || 
+                (essence.name && essence.name.toLowerCase().includes(searchQuery)) ||
+                (essence.englishName && essence.englishName.toLowerCase().includes(searchQuery)) ||
+                (essence.description && essence.description.toLowerCase().includes(searchQuery));
+
             // Test 2: Le filtre de rareté
-            const matchesRarity = activeRarityFilter === 'All' || essence.rarity === activeRarityFilter;
+            const rarityMatch = !activeRarityFilter || essence.rarity === activeRarityFilter;
             
             // Test 3: Le filtre d'élément
-            const matchesElement = activeElementFilter === 'All' || (essence.tags && essence.tags.map(tag => tag.toLowerCase()).includes(activeElementFilter.toLowerCase()));
+            const elementMatch = !activeElementFilter || (essence.tags && essence.tags.includes(activeElementFilter));
             
             // Test 4: Le filtre de tag (en excluant les éléments déjà gérés)
-            const isElementalTag = ['cold', 'fire', 'light', 'dark'].includes(activeTagFilter.toLowerCase());
-            const matchesTag = activeTagFilter === 'All' || (!isElementalTag && essence.tags && essence.tags.map(tag => tag.toLowerCase()).includes(activeTagFilter.toLowerCase()));
+            const tagMatch = !activeTagFilter || (essence.tags && essence.tags.map(t => t.toLowerCase()).includes(activeTagFilter));
             
             // TEST 5: Le filtre de statistiques (AP/AD)
-            let matchesStat = true;
-            // On vérifie le rawDescVars pour les valeurs basicAP et basicAD
+            let statMatch = true;
             const hasDescVars = essence.rawDescVars && essence.rawDescVars.length > 0;
+            
             if (activeStatFilter === 'AP') {
-                matchesStat = hasDescVars && essence.rawDescVars.some(descVar => 
-                    descVar.data && (descVar.data.basicAP || 0) > 0
+                statMatch = hasDescVars && essence.rawDescVars.some(descVar => 
+                    // Condition 1: Vérifie les données AP
+                    (descVar.data && ((descVar.data.basicAP || 0) > 0 || (descVar.data.addedAP || 0) > 0)) ||
+                    // Condition 2: OU vérifie la présence des sprites AP
+                    (descVar.rendered && (descVar.rendered.includes('<sprite=1>') || descVar.rendered.includes('<sprite=4>')))
                 );
             } else if (activeStatFilter === 'AD') {
-                matchesStat = hasDescVars && essence.rawDescVars.some(descVar => 
-                    descVar.data && (descVar.data.basicAD || 0) > 0
+                statMatch = hasDescVars && essence.rawDescVars.some(descVar => 
+                    // Condition 1: Vérifie les données AD
+                    (descVar.data && ((descVar.data.basicAD || 0) > 0 || (descVar.data.addedAD || 0) > 0)) ||
+                    // Condition 2: OU vérifie la présence du sprite AD
+                    (descVar.rendered && descVar.rendered.includes('<sprite=2>'))
                 );
             }
-            // NOTE : Test 6 (traveler) est retiré.
 
-            // Une essence est gardée si elle passe TOUS les tests.
-            return matchesSearch && matchesRarity && matchesElement && matchesTag && matchesStat;
-
+            return searchMatch && rarityMatch && elementMatch && tagMatch && statMatch;
         });
 
-        // Utilise filteredEssences pour le rendu
         renderEssences(filteredEssences);
     };
+
+
+
 
     // --- LOGIQUE D'AFFICHAGE (RENDU) ---
     // Fonction renommée pour la clarté (renderEssences au lieu de renderMemories)
