@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let englishMemories = {}; // Contiendra les mémoires en anglais pour les ajouter.
     let allAchievements = {}; // Contiendra les données des succès (achievements.json).
     let filteredMemories = []; // Contiendra les mémoires affichées après application des filtres.
+    let translations = {}; // Contiendra les traductions pour l'interface utilisateur.
 
     // stockent l'état actuel de vos filtres et de votre barre de recherche
     let activeRarityFilter = 'All'; // Le filtre de rareté actuellement sélectionné.
@@ -20,145 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Nouvelle variable d'état pour le niveau
     let currentLevel = 0;
 
-    // Dictionnaire pour traduire les ID de voyageur en noms affichables
-    const travelerNames = {
-            'Hero_Mist': 'Mist',
-            'Hero_Vesper': 'Vesper',
-            'Hero_Aurena': 'Aurena',
-            'Hero_Nachia': 'Nakia',
-            'Hero_Yubar': 'Yubar',
-            'Hero_Lacerta': 'Lacerta',
-            'Hero_Husk': 'Husk',
-            'Hero_Bismuth': 'Bismuth',
-            // Ajoutez ici d'autres voyageurs si nécessaire
-        };
+    // Nouvelle variable pour stocker TOUTES les traductions de noms de héros
+    let allTravelerNames = {}; 
+    let allKeywords = {}; // Contiendra les mots-clés traduits (ui_keywords_localized.json).
 
-    // ==========================================================
-    // ▼▼▼ DICTIONNAIRE DE TRADUCTIONS COMPLET ▼▼▼
-    // ==========================================================
-    const translations = {
-        'fr-FR': {
-            pageTitle: "Base de Données des Mémoires",
-            searchPlaceholder: "Rechercher une mémoire...",
-            rarityFilter: "Rareté:",
-            elementsFilter: "Éléments:",
-            tagsFilter: "Tags:",
-            levelLabel: "Niveau :",
-            allButton: "Tout"
-        },
-        'en-US': {
-            pageTitle: "Memories Database",
-            searchPlaceholder: "Search for a memory...",
-            rarityFilter: "Rarity:",
-            elementsFilter: "Elements:",
-            tagsFilter: "Tags:",
-            levelLabel: "Level:",
-            allButton: "All"
-        },
-        'de-DE': {
-            pageTitle: "Erinnerungsdatenbank",
-            searchPlaceholder: "Erinnerung suchen...",
-            rarityFilter: "Seltenheit:",
-            elementsFilter: "Elemente:",
-            tagsFilter: "Tags:",
-            levelLabel: "Stufe:",
-            allButton: "Alle"
-        },
-        'es-MX': {
-            pageTitle: "Base de Datos de Recuerdos",
-            searchPlaceholder: "Buscar un recuerdo...",
-            rarityFilter: "Rareza:",
-            elementsFilter: "Elementos:",
-            tagsFilter: "Etiquetas:",
-            levelLabel: "Nivel:",
-            allButton: "Todos"
-        },
-        'it-IT': {
-            pageTitle: "Database delle Memorie",
-            searchPlaceholder: "Cerca una memoria...",
-            rarityFilter: "Rarità:",
-            elementsFilter: "Elementi:",
-            tagsFilter: "Tag:",
-            levelLabel: "Livello:",
-            allButton: "Tutti"
-        },
-        'ja-JP': {
-            pageTitle: "記憶のデータベース",
-            searchPlaceholder: "記憶を検索...",
-            rarityFilter: "レア度:",
-            elementsFilter: "属性:",
-            tagsFilter: "タグ:",
-            levelLabel: "レベル:",
-            allButton: "すべて"
-        },
-        'ko-KR': {
-            pageTitle: "기억 데이터베이스",
-            searchPlaceholder: "기억 검색...",
-            rarityFilter: "희귀도:",
-            elementsFilter: "속성:",
-            tagsFilter: "태그:",
-            levelLabel: "레벨:",
-            allButton: "전체"
-        },
-        'pl-PL': {
-            pageTitle: "Baza Danych Wspomnień",
-            searchPlaceholder: "Szukaj wspomnienia...",
-            rarityFilter: "Rzadkość:",
-            elementsFilter: "Żywioły:",
-            tagsFilter: "Tagi:",
-            levelLabel: "Poziom:",
-            allButton: "Wszystko"
-        },
-        'pt-BR': {
-            pageTitle: "Banco de Dados de Memórias",
-            searchPlaceholder: "Procurar uma memória...",
-            rarityFilter: "Raridade:",
-            elementsFilter: "Elementos:",
-            tagsFilter: "Tags:",
-            levelLabel: "Nível:",
-            allButton: "Todos"
-        },
-        'ru-RU': {
-            pageTitle: "База данных Воспоминаний",
-            searchPlaceholder: "Поиск воспоминания...",
-            rarityFilter: "Редкость:",
-            elementsFilter: "Элементы:",
-            tagsFilter: "Теги:",
-            levelLabel: "Уровень:",
-            allButton: "Все"
-        },
-        'tr-TR': {
-            pageTitle: "Anı Veritabanı",
-            searchPlaceholder: "Bir anı ara...",
-            rarityFilter: "Nadirlik:",
-            elementsFilter: "Elementler:",
-            tagsFilter: "Etiketler:",
-            levelLabel: "Seviye:",
-            allButton: "Tümü"
-        },
-        'zh-CN': {
-            pageTitle: "记忆数据库",
-            searchPlaceholder: "搜索记忆...",
-            rarityFilter: "稀有度:",
-            elementsFilter: "元素:",
-            tagsFilter: "标签:",
-            levelLabel: "等级:",
-            allButton: "全部"
-        },
-        'zh-TW': {
-            pageTitle: "記憶資料庫",
-            searchPlaceholder: "搜尋記憶...",
-            rarityFilter: "稀有度:",
-            elementsFilter: "元素:",
-            tagsFilter: "標籤:",
-            levelLabel: "等級:",
-            allButton: "全部"
-        }
-    };
-    // ==========================================================
-    // ▲▲▲ FIN DU DICTIONNAIRE ▲▲▲
-    // ==========================================================
-    
+    // Dictionnaire pour traduire les ID de voyageur en noms affichables
+    // On le vide car il sera rempli dynamiquement
+    const travelerNames = {};
+
+
     // --- GESTION DE LA LANGUE ---
 
     // Fonction pour sauvegarder le choix de la langue dans la mémoire du navigateur.
@@ -174,139 +45,177 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- INITIALISATION ---
     // La fonction `init` est le point de départ. Elle est `async` car elle attend le chargement des données.
     const init = async (lang) => {
-        
-        // Mettre à jour la valeur du sélecteur pour qu'elle corresponde à la langue chargée.
-        const langSelectorDesktop = document.getElementById('language-selector');
-        const langSelectorMobile = document.getElementById('language-selector-mobile');
-        if (langSelectorDesktop) {
-            langSelectorDesktop.value = lang;
-        }
-        if (langSelectorMobile) {
-            langSelectorMobile.value = lang;
-        }
+        try { // On met tout dans un bloc try/catch pour la propreté
 
-        // On choisit le bon dictionnaire de traductions en fonction de la langue détectée.
-        const T = translations[lang] || translations['en-US'];
+            // On charge le fichier de traductions de l'UI
+            const responseTranslations = await fetch('rawdata/translations.json'); // Mettez le bon chemin
+            if (!responseTranslations.ok) throw new Error("Le fichier translations.json est introuvable.");
+            translations = await responseTranslations.json();
 
-        // On met à jour le texte visible sur la page.
-        // document.querySelector('h1').textContent = T.pageTitle;
-        document.getElementById('search-input').placeholder = T.searchPlaceholder;
-        document.getElementById('level-label-text').textContent = T.levelLabel;
+            // On charge le fichier de traductions des mots-clés
+            const responseKeywords = await fetch('rawdata/ui_keywords_localized.json');
+            if (!responseKeywords.ok) throw new Error("Le fichier ui_keywords_localized.json est introuvable.");
+            allKeywords = await responseKeywords.json();
 
-
-        try {
-            // 1. On charge les données anglaises EN PREMIER (si ce n'est pas déjà fait)
-            if (Object.keys(englishMemories).length === 0) {
-                const englishResponse = await fetch('rawdata/en-US/memories.json');
-                if (!englishResponse.ok) throw new Error("Le fichier de langue anglais (en-US) est introuvable.");
-                englishMemories = await englishResponse.json();
+            // Mettre à jour la valeur du sélecteur pour qu'elle corresponde à la langue chargée.
+            const langSelectorDesktop = document.getElementById('language-selector');
+            const langSelectorMobile = document.getElementById('language-selector-mobile');
+            if (langSelectorDesktop) {
+                langSelectorDesktop.value = lang;
+            }
+            if (langSelectorMobile) {
+                langSelectorMobile.value = lang;
             }
 
-            // 2. On charge les données de la langue sélectionnée (logique de secours inchangée)
-            // `fetch` récupère les données du fichier JSON. `await` met en pause l'exécution jusqu'à ce que la requête soit terminée.
-            // On construit le chemin du fichier dynamiquement
-            const response = await fetch(`rawdata/${lang}/memories.json`);
-            let data; // On déclare une variable pour stocker les données finales.
+            // On choisit le bon dictionnaire de traductions en fonction de la langue détectée.
+            const T = translations[lang] || translations['en-US'];
+            
+            // Mettre en évidence le lien de navigation actif (ici, "memories" pour la page des mémoires)
+            highlightActiveNav('memories');
 
-            // Si la réponse est OK (le fichier existe).
-            if (response.ok) {
-                // On lit la réponse et on la stocke. C'est la SEULE lecture de cette réponse.
-                data = await response.json();
-            // Sinon (fichier non trouvé, erreur 404).
-            } else {
-                console.warn(`Fichier pour la langue '${lang}' non trouvé. On charge 'fr-FR' à la place.`);
-                // On charge le fichier de secours.
-                const fallbackResponse = await fetch('rawdata/fr-FR/memories.json');
-                // On vérifie que le fichier de secours existe bien.
-                if (!fallbackResponse.ok) throw new Error("Le fichier de langue par défaut 'fr-FR' est introuvable.");
-                 // On lit la réponse de secours. C'est la SEULE lecture de cette réponse.
-                data = await fallbackResponse.json();
-            }
+            // On met à jour le texte visible sur la page.
+            // document.querySelector('h1').textContent = T.pageTitle;
+            document.getElementById('search-input').placeholder = T.searchPlaceholder;
+            document.getElementById('level-label-text').textContent = T.levelLabel;
 
-            // 3. On fusionne les données anglaises avec les données de la langue sélectionnée.
-            allMemories = Object.keys(data).map(key => {
-                const translatedMemory = data[key];
-                const englishMemory = englishMemories[key] || {}; // Si la mémoire n'existe pas en anglais, on prend un objet vide.
-                
-                // On fusionne l'objet anglais avec l'objet traduit.
-                // CORRECTION CRITIQUE : Assurer que les noms et l'ID sont toujours définis.
-                const memory = {
-                    id: key, 
-                    name: translatedMemory.name || '', // Garantit que 'name' est une chaîne vide si absent
-                    englishName: englishMemory.name || '', // Garantit que 'englishName' est une chaîne vide si absent
-                    
-                    ...englishMemory, // Prépare les champs de l'anglais
-                    ...translatedMemory, // Écrase avec les traductions
-                };
-                
-                return memory;
-            });
+            // On sélectionne tous les liens de navigation par une classe ou un autre attribut
+            document.querySelector('.nav-home-link').textContent = T.navHome;
+            document.querySelector('.nav-memories-link').textContent = T.navMemories;
+            document.querySelector('.nav-essences-link').textContent = T.navEssences;
+            // TRADUCTION DU PIED DE PAGE
+            document.getElementById('footer-text').textContent = T.footerText;
 
-            // 4. Chargement et application des corrections manuelles (corrections.json) <-- CORRIGÉ
+
             try {
-                const correctionsResponse = await fetch('rawdata/corrections.json');
-                if (correctionsResponse.ok) {
-                    const correctionsData = await correctionsResponse.json();
+                // 1. On charge les données anglaises EN PREMIER (si ce n'est pas déjà fait)
+                if (Object.keys(englishMemories).length === 0) {
+                    const englishResponse = await fetch('rawdata/en-US/memories.json');
+                    if (!englishResponse.ok) throw new Error("Le fichier de langue anglais (en-US) est introuvable.");
+                    englishMemories = await englishResponse.json();
+                }
+
+                // 2. On charge les données de la langue sélectionnée (logique de secours inchangée)
+                // `fetch` récupère les données du fichier JSON. `await` met en pause l'exécution jusqu'à ce que la requête soit terminée.
+                // On construit le chemin du fichier dynamiquement
+                const response = await fetch(`rawdata/${lang}/memories.json`);
+                let data; // On déclare une variable pour stocker les données finales.
+
+                // Si la réponse est OK (le fichier existe).
+                if (response.ok) {
+                    // On lit la réponse et on la stocke. C'est la SEULE lecture de cette réponse.
+                    data = await response.json();
+                // Sinon (fichier non trouvé, erreur 404).
+                } else {
+                    console.warn(`Fichier pour la langue '${lang}' non trouvé. On charge 'fr-FR' à la place.`);
+                    // On charge le fichier de secours.
+                    const fallbackResponse = await fetch('rawdata/fr-FR/memories.json');
+                    // On vérifie que le fichier de secours existe bien.
+                    if (!fallbackResponse.ok) throw new Error("Le fichier de langue par défaut 'fr-FR' est introuvable.");
+                    // On lit la réponse de secours. C'est la SEULE lecture de cette réponse.
+                    data = await fallbackResponse.json();
+                }
+
+                // 3. On fusionne les données anglaises avec les données de la langue sélectionnée.
+                allMemories = Object.keys(data).map(key => {
+                    const translatedMemory = data[key];
+                    const englishMemory = englishMemories[key] || {}; // Si la mémoire n'existe pas en anglais, on prend un objet vide.
                     
-                    allMemories = allMemories.map(memory => {
-                        const correction = correctionsData[memory.id];
+                    // On fusionne l'objet anglais avec l'objet traduit.
+                    // CORRECTION CRITIQUE : Assurer que les noms et l'ID sont toujours définis.
+                    const memory = {
+                        id: key, 
+                        name: translatedMemory.name || '', // Garantit que 'name' est une chaîne vide si absent
+                        englishName: englishMemory.name || '', // Garantit que 'englishName' est une chaîne vide si absent
                         
-                        if (correction) {
-                            // On fusionne la mémoire existante avec la correction
-                            const correctedMemory = { ...memory, ...correction };
+                        ...englishMemory, // Prépare les champs de l'anglais
+                        ...translatedMemory, // Écrase avec les traductions
+                    };
+                    
+                    return memory;
+                });
+
+                // 4. Chargement et application des corrections manuelles (corrections.json) <-- CORRIGÉ
+                try {
+                    const correctionsResponse = await fetch('rawdata/corrections.json');
+                    if (correctionsResponse.ok) {
+                        const correctionsData = await correctionsResponse.json();
+                        
+                        allMemories = allMemories.map(memory => {
+                            const correction = correctionsData[memory.id];
                             
-                            // Fusionner les tags pour éviter d'écraser ceux d'origine (si la correction n'en a pas)
-                            const originalTags = memory.tags || [];
-                            const correctionTags = correction.tags || [];
-                            correctedMemory.tags = Array.from(new Set([...originalTags, ...correctionTags]));
-                            
-                            // Correction spécifique pour les informations clés
-                            if (memory.informations && correction.informations) {
-                                correctedMemory.informations = { ...memory.informations, ...correction.informations };
+                            if (correction) {
+                                // On fusionne la mémoire existante avec la correction
+                                const correctedMemory = { ...memory, ...correction };
+                                
+                                // Fusionner les tags pour éviter d'écraser ceux d'origine (si la correction n'en a pas)
+                                const originalTags = memory.tags || [];
+                                const correctionTags = correction.tags || [];
+                                correctedMemory.tags = Array.from(new Set([...originalTags, ...correctionTags]));
+                                
+                                // Correction spécifique pour les informations clés
+                                if (memory.informations && correction.informations) {
+                                    correctedMemory.informations = { ...memory.informations, ...correction.informations };
+                                }
+                                
+                                return correctedMemory;
                             }
-                            
-                            return correctedMemory;
-                        }
-                        return memory;
-                    });
+                            return memory;
+                        });
 
-                } else {
-                    console.warn("Fichier de corrections (corrections.json) non trouvé. Aucune correction appliquée.");
-                }
-            } catch (e) {
-                console.error("Erreur lors de l'application des corrections manuelles:", e);
-            }
-
-
-            // 5. Chargement des données d'Achievements pour la langue sélectionnée (achievements.json) <-- NOUVEAU
-            try {
-                const achievementResponse = await fetch(`rawdata/${lang}/achievements.json`);
-                if (achievementResponse.ok) {
-                    allAchievements = await achievementResponse.json();
-                } else {
-                    console.warn(`Fichier d'Achievements pour la langue '${lang}' non trouvé. On charge 'fr-FR' à la place.`);
-                    const fallbackAchievementResponse = await fetch('rawdata/fr-FR/achievements.json');
-                    if (fallbackAchievementResponse.ok) {
-                        allAchievements = await fallbackAchievementResponse.json();
                     } else {
-                        console.error("Le fichier d'Achievements par défaut 'fr-FR' est introuvable.");
-                        allAchievements = {};
+                        console.warn("Fichier de corrections (corrections.json) non trouvé. Aucune correction appliquée.");
                     }
+                } catch (e) {
+                    console.error("Erreur lors de l'application des corrections manuelles:", e);
                 }
-            } catch (e) {
-                console.error("Erreur lors du chargement des achievements:", e);
-                allAchievements = {};
+
+
+                // 5. Chargement des données d'Achievements pour la langue sélectionnée (achievements.json) <-- NOUVEAU
+                try {
+                    const achievementResponse = await fetch(`rawdata/${lang}/achievements.json`);
+                    if (achievementResponse.ok) {
+                        allAchievements = await achievementResponse.json();
+                    } else {
+                        console.warn(`Fichier d'Achievements pour la langue '${lang}' non trouvé. On charge 'fr-FR' à la place.`);
+                        const fallbackAchievementResponse = await fetch('rawdata/fr-FR/achievements.json');
+                        if (fallbackAchievementResponse.ok) {
+                            allAchievements = await fallbackAchievementResponse.json();
+                        } else {
+                            console.error("Le fichier d'Achievements par défaut 'fr-FR' est introuvable.");
+                            allAchievements = {};
+                        }
+                    }
+                } catch (e) {
+                    console.error("Erreur lors du chargement des achievements:", e);
+                    allAchievements = {};
+                }
+
+                // 6. Chargement des noms de voyageurs localisés
+                try {
+                    const travelersResponse = await fetch('rawdata/hero_names_localized.json');
+                    if (travelersResponse.ok) {
+                        allTravelerNames = await travelersResponse.json();
+                    } else {
+                        console.error("Fichier de traduction des noms de voyageurs (hero_names_localized.json) introuvable.");
+                        allTravelerNames = {};
+                    }
+                } catch (e) {
+                    console.error("Erreur lors du chargement des noms de voyageurs:", e);
+                    allTravelerNames = {};
+                }
+
+                // Une fois les données chargées, on lance les fonctions pour construire la page.
+                populateFilters(); // Crée les boutons de filtres (maintenant traduits).
+                applyFilters(); // Applique les filtres et affiche les mémoires.
+
+            } catch (error) {
+                // Si une erreur survient pendant le chargement, un message clair est affiché à l'utilisateur.
+                console.error('Erreur lors du chargement des mémoires:', error);
+                document.getElementById('memories-container').innerHTML = `<p class="text-center text-red-500">Oups, une erreur est survenue !<br>Vérifie que ton fichier 'memories.json' et tes images sont bien au bon endroit.<br>Message technique : ${error.message}</p>`;
             }
-
-            // Une fois les données chargées, on lance les fonctions pour construire la page.
-            populateFilters(); // Crée les boutons de filtres (maintenant traduits).
-            applyFilters(); // Applique les filtres et affiche les mémoires.
-
         } catch (error) {
-            // Si une erreur survient pendant le chargement, un message clair est affiché à l'utilisateur.
-            console.error('Erreur lors du chargement des mémoires:', error);
-            document.getElementById('memories-container').innerHTML = `<p class="text-center text-red-500">Oups, une erreur est survenue !<br>Vérifie que ton fichier 'memories.json' et tes images sont bien au bon endroit.<br>Message technique : ${error.message}</p>`;
-        }
+            console.error('Erreur lors de l\'initialisation:', error); 
+        }   
     };
 
     // --- GESTION DES ÉVÉNEMENTS ---
@@ -375,6 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Crée les boutons pour les filtres de rareté.
     const populateRarityFilter = () => {
         const T = translations[getLanguage()] || translations['en-US']; // On récupère la langue actuelle
+        const currentLang = getLanguage(); // <-- On récupère la langue actuelle pour la traduction des noms de voyageurs
         const rarities = ['All', 'Common', 'Rare', 'Epic', 'Legendary', 'Unique', 'Character', 'Identity'];
         const rarityContainer = document.getElementById('rarity-filters'); // Le conteneur où les boutons seront ajoutés.
         
@@ -386,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
             button.className = 'btn btn-sm rarity-filter-btn';
             if (rarity === activeRarityFilter) button.classList.add('btn-active');// Le bouton "All" est actif par défaut.
             // On utilise la traduction pour le bouton "Tout"
-            button.textContent = rarity === 'All' ? T.allButton : rarity;// "Si la valeur de rarity est 'All', utilise le texte 'Tout'. Sinon, utilise la valeur de rarity.
+            button.textContent = rarity === 'All' ? T.allButton : getKeywordDisplayName(rarity, 'rarities', currentLang);
             button.dataset.rarity = rarity;// Stocke la valeur du filtre dans l'attribut `data-`.
             rarityContainer.appendChild(button);
         });
@@ -406,7 +316,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const populateElementsFilter = () => {
         // 1. On récupère les traductions au début de la fonction
         const T = translations[getLanguage()] || translations['en-US'];
-        const elementalTags = ['cold', 'fire', 'light', 'dark'];
+        const currentLang = getLanguage(); // <-- On récupère la langue
+        const elementalTags = ['Cold', 'Fire', 'Light', 'Dark'];
         const elementsContainer = document.getElementById('elements-filters');
         
         // 2. On utilise la traduction pour le titre du filtre
@@ -423,7 +334,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const button = document.createElement('button');
             button.className = 'btn btn-sm element-filter-btn';
             if (element === activeElementFilter) button.classList.add('btn-active');
-            button.textContent = element.charAt(0).toUpperCase() + element.slice(1);
+            button.textContent = getKeywordDisplayName(element, 'elements', currentLang);
             button.dataset.element = element;
             elementsContainer.appendChild(button);
         });
@@ -442,6 +353,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const populateTagsFilter = () => {
         // 1. On récupère les traductions
         const T = translations[getLanguage()] || translations['en-US'];
+        const currentLang = getLanguage(); // <-- On récupère la langue
         const elementalTags = ['cold', 'fire', 'light', 'dark'];
         const allTags = [...new Set(allMemories.flatMap(m => m.tags || []))].sort();
         const tagsContainer = document.getElementById('tags-filters');
@@ -463,7 +375,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const button = document.createElement('button');
             button.className = 'btn btn-sm tag-filter-btn';
             if (tag.toLowerCase() === activeTagFilter) button.classList.add('btn-active');
-            button.textContent = tag;
+            button.textContent = getKeywordDisplayName(tag, 'tags', currentLang);
             button.dataset.tag = tag.toLowerCase();
             tagsContainer.appendChild(button);
         });
@@ -484,8 +396,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const statTypes = ['All', 'AP', 'AD']; // Les types de statistiques à filtrer
         const statContainer = document.getElementById('stat-filters'); // Le conteneur où les boutons seront ajoutés.
         
-        // Vous devez ajouter un élément pour le titre du filtre ici dans votre HTML. Pour l'instant, on laisse vide.
-        statContainer.innerHTML = `<span class="font-bold">Stats:</span>`; 
+        // On utilise la traduction dynamique au lieu du texte en dur
+        statContainer.innerHTML = `<span class="font-bold">${T.statFilter}</span>`; 
 
         statTypes.forEach(stat => {
             const button = document.createElement('button');
@@ -528,10 +440,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Crée les boutons pour les filtres de voyageurs.
     const populateTravelerFilter = () => {
         const T = translations[getLanguage()] || translations['en-US'];
+        const currentLang = getLanguage(); // Récupère la langue actuelle pour la traduction
         const travelers = [...new Set(allMemories.map(m => m.traveler).filter(t => t && t !== ''))].sort();
         const travelersContainer = document.getElementById('traveler-filters');
 
-        travelersContainer.innerHTML = `<span class="font-bold">Voyageurs:</span>`;
+        // On utilise la traduction dynamique au lieu du texte en dur
+        travelersContainer.innerHTML = `<span class="font-bold">${T.travelerFilter}</span>`;
 
         const allButton = document.createElement('button');
         allButton.className = 'btn btn-sm traveler-filter-btn rarity-filter-btn'; // On réutilise la classe de style
@@ -542,7 +456,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         travelers.forEach(travelerKey => {
             const button = document.createElement('button');
-            const travelerName = travelerNames[travelerKey] || travelerKey.replace('Hero_', '');
+            const travelerName = getTravelerDisplayName(travelerKey, currentLang);
 
             button.className = 'btn btn-sm traveler-filter-btn rarity-filter-btn';
             if (travelerKey === activeTravelerFilter) button.classList.add('btn-active');
@@ -682,25 +596,27 @@ document.addEventListener('DOMContentLoaded', () => {
                     // On prépare les petits bouts de HTML qui peuvent être optionnels.
                     const formattedDescription = processDescription(memory, currentLevel);
                     const rarityColorClass = getRarityColorClass(memory.rarity);
+                    // Traduction des tags
                     let tagsHtml = '';
                     if (memory.tags && memory.tags.length > 0) {
-                        tagsHtml = memory.tags.map(tag => `<div class="badge badge-sm text-xs text-gray-300">${tag}</div>`).join(''); // config tags
+                        tagsHtml = memory.tags.map(tag => {
+                            // On détermine si c'est un 'element' ou un 'tag' générique
+                            const category = ['cold', 'fire', 'light', 'dark'].includes(tag.toLowerCase()) ? 'elements' : 'tags';
+                            const translatedTag = getKeywordDisplayName(tag, category, currentLang);
+                            return `<div class="badge badge-sm text-xs text-gray-300">${translatedTag}</div>`;
+                        }).join('');
                     }
-                    const travelerMemoryLocationHtml = "" //suppression de memory.travelerMemoryLocation
+
+                    const travelerMemoryLocationHtml = ""
                         ? `<p class="text-sm text-gray-400 mt-2"><b>Lieu :</b> ${memory.travelerMemoryLocation}</p>`
                         : '';
                     const cooldownHtml = memory.cooldownTime
                         ? `<div class="absolute top-4 right-4 bg-gray-900 text-white rounded-full p-2 text-xs font-bold">${memory.cooldownTime}s</div>`
                         : '';
                     
-                    // NOUVEAU : Récupération de l'HTML de la condition de déblocage
                     const achievementHtml = getAchievementHtml(memory); 
-                    
-                    // NOUVEAU : Appel de la fonction pour obtenir les informations clés
                     const keyInformationsHtml = renderKeyInformations(memory);
-    
-                    // On assemble le HTML de la carte avec toutes les données.
-                    // config cartes
+
                     card.innerHTML = `
                         ${cooldownHtml}
                         <div class="flex flex-row p-2 items-center">
@@ -713,10 +629,12 @@ document.addEventListener('DOMContentLoaded', () => {
                                 ${(() => {
                                     let travelerText = '';
                                     if (['Character', 'Identity'].includes(memory.rarity) && memory.traveler) {
-                                        const travelerName = travelerNames[memory.traveler] || memory.traveler.replace('Hero_', '');
+                                        const travelerName = getTravelerDisplayName(memory.traveler, currentLang);
                                         travelerText = ` - ${travelerName}`;
                                     }
-                                    const rarityDisplay = `<span class="text-sm ${rarityColorClass} mt-0">${memory.rarity}${travelerText}</span>`;
+                                    // Traduction de la rareté 
+                                    const translatedRarity = getKeywordDisplayName(memory.rarity, 'rarities', currentLang);
+                                    const rarityDisplay = `<span class="text-sm ${rarityColorClass} mt-0">${translatedRarity}${travelerText}</span>`;
                                     return rarityDisplay;
                                 })()}
                                 
@@ -743,41 +661,40 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- FONCTIONS UTILITAIRES (HELPERS) ---
 
     function renderKeyInformations(memory) {
-        // S'assure que le champ 'informations' existe et est un objet.
-        if (!memory.informations || typeof memory.informations !== 'object') {
+        // S'assure que le champ 'informations' existe et est bien un tableau non vide.
+        if (!memory.informations || !Array.isArray(memory.informations) || memory.informations.length === 0) {
             return '';
         }
 
         let html = '<div class="key-infos mt-2 pt-2 border-t border-gray-700/50 flex flex-wrap gap-x-4 gap-y-1">';
 
-        // Parcourt les propriétés de l'objet 'informations'
-        for (const key in memory.informations) {
-            if (memory.informations.hasOwnProperty(key) && memory.hasOwnProperty(key)) {
-                const label = memory.informations[key]; // Ex: "Temps de recharge"
-                const value = memory[key];              // Ex: 8.5 (cooldownTime)
-
-                // On s'assure que la valeur existe et n'est pas vide ou nulle
-                if (value !== undefined && value !== null) {
-                    // On utilise une petite icône et des couleurs pour la lisibilité
-                    html += `
-                        <div class="flex items-center text-sm text-gray-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-yellow-400 inline-sprite" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-12a1 1 0 102 0V9a1 1 0 10-2 0V6zm2 4a1 1 0 10-2 0v4a1 1 0 102 0v-4z" clip-rule="evenodd" />
-                            </svg>
-                            <b>${label} :</b> <span class="ml-1 text-white font-semibold">${value}</span>
-                        </div>
-                    `;
-                }
+        // On parcourt simplement le tableau d'informations.
+        memory.informations.forEach(info => {
+            // On vérifie que l'objet a bien un libellé et une valeur.
+            if (info.label && info.value) {
+                html += `
+                    <div class="flex items-center text-sm text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-yellow-400 inline-sprite" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-12a1 1 0 102 0V9a1 1 0 10-2 0V6zm2 4a1 1 0 10-2 0v-4z" clip-rule="evenodd" />
+                        </svg>
+                        <b>${info.label} :</b> <span class="ml-1 text-white font-semibold">${info.value}</span>
+                    </div>
+                `;
             }
-        }
+        });
 
         html += '</div>';
-        return html;
+        
+        // On retourne le HTML uniquement si on y a ajouté du contenu.
+        return html.includes('<b>') ? html : '';
     }
 
 
     // Nouvelle fonction pour générer le HTML de la condition de déblocage (Achievement)
     function getAchievementHtml(memory) {
+        // 1. On récupère les traductions actuelles
+        const T = translations[getLanguage()] || translations['en-US'];
+        
         const achievementKey = memory.achievementKey;
 
         // 1. Vérifie si une clé d'achievement existe dans la mémoire
@@ -798,10 +715,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // 3. Construit le HTML sans le cadenas, en utilisant le style de texte demandé
+        // On utilise la clé de traduction au lieu du texte en dur
         const html = `
             <div class="achievement-info mt-2 pt-2 border-t border-gray-700/50">
                 <p class="text-xs italic text-gray-400">
-                    <b>Condition de déblocage :</b> 
+                    <b>${T.unlockCondition}</b> 
                     <span class="text-yellow-600 font-semibold">${achName}</span> 
                     (${achDesc})
                 </p>
@@ -974,6 +892,44 @@ document.addEventListener('DOMContentLoaded', () => {
             default: return 'bg-gray-800';
         }
     }
+
+    // Fonction utilitaire pour obtenir le nom de voyageur traduit
+    const getTravelerDisplayName = (travelerKey, lang) => {
+        // Ex: 'Hero_Mist' -> 'Mist'
+        const englishKey = travelerKey.replace('Hero_', '');
+        
+        // Récupère le dictionnaire pour la langue actuelle ou utilise l'anglais/vide en secours
+        const langDict = allTravelerNames[lang] || allTravelerNames['en-US'] || {};
+        
+        // Renvoie la traduction, ou le nom anglais si non trouvé, ou la clé brute en dernier recours
+        return langDict[englishKey] || englishKey;
+    }
+
+    const getKeywordDisplayName = (key, category, lang) => {
+        // Sélectionne le dictionnaire pour la langue actuelle, avec fallback sur l'anglais
+        const langDict = allKeywords[lang] || allKeywords['en-US'] || {};
+        
+        // Sélectionne la bonne catégorie (ex: "rarities", "elements", "tags")
+        const categoryDict = langDict[category] || {};
+        
+        // Retourne la traduction, ou la clé originale si non trouvée
+        return categoryDict[key] || key;
+    };
+
+
+    // Fonction pour mettre en évidence le lien de navigation actif
+    const highlightActiveNav = (activePage) => {
+        // On retire d'abord la classe active de tous les liens de la navigation
+        document.querySelectorAll('.nav-home-link, .nav-memories-link, .nav-essences-link').forEach(link => {
+            link.classList.remove('nav-active');
+        });
+
+        // Ensuite, on ajoute la classe uniquement au lien de la page actuelle
+        const activeLink = document.querySelector(`.nav-${activePage}-link`);
+        if (activeLink) {
+            activeLink.classList.add('nav-active');
+        }
+    };
 
     // --- DÉMARRAGE DU SCRIPT ---
     

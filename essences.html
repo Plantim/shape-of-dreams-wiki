@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- Forcer le mode clair (light mode) -->
+    <meta name="color-scheme" content="light only">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiches Essences</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -17,9 +19,9 @@
     
     <div class="navbar bg-base-100/20 p-2 sticky top-0 z-50 backdrop-blur-sm">
         <div class="flex-1">
-            <a href="index.html" class="btn btn-ghost text-base">Accueil</a>
-            <a href="memories.html" class="btn btn-ghost text-base">Mémoires</a>
-            <a href="essences.html" class="btn btn-ghost text-base">Essences</a>
+            <a href="index.html" class="btn btn-ghost text-base nav-home-link">Accueil</a>
+            <a href="memories.html" class="btn btn-ghost text-base nav-memories-link">Mémoires</a>
+            <a href="essences.html" class="btn btn-ghost text-base nav-essences-link">Essences</a>
         </div>
 
         <div class="flex-none hidden sm:flex">
@@ -94,7 +96,7 @@
     </div>
 
     <footer class="text-center p-4 mt-8 text-gray-500">
-        <p>Créé pour la communauté de Shape of Dreams</p>
+        <p id="footer-text"></p>
     </footer>
 
     <script src="essences.js"></script>

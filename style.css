@@ -23,6 +23,11 @@ body {
   }
 }
 
+/* Forcer le mode clair (light mode) */
+:root {
+  color-scheme: light;
+}
+
 /* ---------------------------------------------------
    Cartes - couleurs
    -------------------------------------------------- */
@@ -150,4 +155,20 @@ body {
 .filters-background {
     /* Noir très sombre avec une légère opacité pour le différencier subtilement du fond du site */
     background-color: #282A2C; 
+}
+
+/* ---------------------------------------------------
+   NavBar - page active
+   -------------------------------------------------- */
+
+/* Style pour le lien de navigation de la page active */
+.nav-active {
+    /* Fond très clair pour le mettre en évidence */
+    background-color: #f3f4f6bb !important; /* On utilise !important pour être sûr de surcharger le style de DaisyUI */
+    /* Texte sombre */
+    color: #1e232c !important; 
+    /* Bordure bleu pour l'identité visuelle */
+    border: 1px solid #5088f8; 
+    /* Éclat lumineux bleu pour le mettre en évidence */
+    box-shadow: none; 
 }

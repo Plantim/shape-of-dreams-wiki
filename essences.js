@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let englishEssences = {}; // Contiendra les essences en anglais.
     let allAchievements = {}; // Contiendra les données des succès (achievements.json).
     let filteredEssences = []; // Contiendra les essences affichées après application des filtres.
+    let translations = {}; // Contiendra les traductions pour l'interface utilisateur.
+    let allKeywords = {}; // Contiendra les traductions des mots-clés (rarités, éléments, tags).
 
     // stockent l'état actuel de vos filtres et de votre barre de recherche
     let activeRarityFilter = 'All'; // Le filtre de rareté actuellement sélectionné.
@@ -19,136 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // La variable de niveau est maintenue mais sera fixée à 0 car inutile pour les essences
     let qualityPercentage = 100; // Toujours 100% de base pour les essences
-    
-    // NOTE : Le dictionnaire travelerNames est retiré.
-
-
-    // ==========================================================
-    // ▼▼▼ DICTIONNAIRE DE TRADUCTIONS COMPLET ▼▼▼
-    // Nous avons ajusté les textes pour qu'ils soient plus appropriés aux Essences.
-    // ==========================================================
-    const translations = {
-        'fr-FR': {
-            pageTitle: "Base de Données des Essences",
-            searchPlaceholder: "Rechercher une essence...",
-            rarityFilter: "Rareté:",
-            elementsFilter: "Éléments:",
-            tagsFilter: "Tags:",
-            levelLabel: "Qualité % :", // MODIFIÉ : Label pour la barre de niveau/qualité
-            allButton: "Tout"
-        },
-        'en-US': {
-            pageTitle: "Essences Database",
-            searchPlaceholder: "Search for an essence...",
-            rarityFilter: "Rarity:",
-            elementsFilter: "Elements:",
-            tagsFilter: "Tags:",
-            levelLabel: "Quality %:",
-            allButton: "All"
-        },
-        'de-DE': {
-            pageTitle: "Essenzdatenbank",
-            searchPlaceholder: "Essenz suchen...",
-            rarityFilter: "Seltenheit:",
-            elementsFilter: "Elemente:",
-            tagsFilter: "Tags:",
-            levelLabel: "Qualität %:",
-            allButton: "Alle"
-        },
-        'es-MX': {
-            pageTitle: "Base de Datos de Esencias",
-            searchPlaceholder: "Buscar una esencia...",
-            rarityFilter: "Rareza:",
-            elementsFilter: "Elementos:",
-            tagsFilter: "Etiquetas:",
-            levelLabel: "Calidad %:",
-            allButton: "Todos"
-        },
-        'it-IT': {
-            pageTitle: "Database delle Essenze",
-            searchPlaceholder: "Cerca un'essenza...",
-            rarityFilter: "Rarità:",
-            elementsFilter: "Elementi:",
-            tagsFilter: "Tag:",
-            levelLabel: "Qualità %:",
-            allButton: "Tutti"
-        },
-        'ja-JP': {
-            pageTitle: "エッセンスのデータベース",
-            searchPlaceholder: "エッセンスを検索...",
-            rarityFilter: "レア度:",
-            elementsFilter: "属性:",
-            tagsFilter: "タグ:",
-            levelLabel: "品質 %:",
-            allButton: "すべて"
-        },
-        'ko-KR': {
-            pageTitle: "에센스 데이터베이스",
-            searchPlaceholder: "에센스 검색...",
-            rarityFilter: "희귀도:",
-            elementsFilter: "속성:",
-            tagsFilter: "태그:",
-            levelLabel: "품질 %:",
-            allButton: "전체"
-        },
-        'pl-PL': {
-            pageTitle: "Baza Danych Esencji",
-            searchPlaceholder: "Szukaj esencji...",
-            rarityFilter: "Rzadkość:",
-            elementsFilter: "Żywioły:",
-            tagsFilter: "Tagi:",
-            levelLabel: "Jakość %:",
-            allButton: "Wszystko"
-        },
-        'pt-BR': {
-            pageTitle: "Banco de Dados de Essências",
-            searchPlaceholder: "Procurar uma essência...",
-            rarityFilter: "Raridade:",
-            elementsFilter: "Elementos:",
-            tagsFilter: "Tags:",
-            levelLabel: "Qualidade %:",
-            allButton: "Todos"
-        },
-        'ru-RU': {
-            pageTitle: "База данных Эссенций",
-            searchPlaceholder: "Поиск эссенции...",
-            rarityFilter: "Редкость:",
-            elementsFilter: "Элементы:",
-            tagsFilter: "Теги:",
-            levelLabel: "Качество %:",
-            allButton: "Все"
-        },
-        'tr-TR': {
-            pageTitle: "Öz Veritabanı",
-            searchPlaceholder: "Bir öz ara...",
-            rarityFilter: "Nadirlik:",
-            elementsFilter: "Elementler:",
-            tagsFilter: "Etiketler:",
-            levelLabel: "Kalite %:",
-            allButton: "Tümü"
-        },
-        'zh-CN': {
-            pageTitle: "精华数据库",
-            searchPlaceholder: "搜索精华...",
-            rarityFilter: "稀有度:",
-            elementsFilter: "元素:",
-            tagsFilter: "标签:",
-            levelLabel: "品质 %:",
-            allButton: "全部"
-        },
-        'zh-TW': {
-            pageTitle: "精華資料庫",
-            searchPlaceholder: "搜尋精華...",
-            rarityFilter: "稀有度:",
-            elementsFilter: "元素:",
-            tagsFilter: "標籤:",
-            levelLabel: "品質 %:",
-            allButton: "全部"
-        }
-    };
-    // ==========================================================
-    // ▲▲▲ FIN DU DICTIONNAIRE ▲▲▲
-    // ==========================================================
     
     // --- GESTION DE LA LANGUE ---
     // (Fonctions inchangées)
@@ -164,117 +36,140 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- INITIALISATION ---
     
     const init = async (lang) => {
-        
-        const langSelectorDesktop = document.getElementById('language-selector');
-        const langSelectorMobile = document.getElementById('language-selector-mobile');
-        if (langSelectorDesktop) {
-            langSelectorDesktop.value = lang;
-        }
-        if (langSelectorMobile) {
-            langSelectorMobile.value = lang;
-        }
-
-        const T = translations[lang] || translations['en-US'];
-
-        // Mise à jour du placeholder de recherche
-        document.getElementById('search-input').placeholder = T.searchPlaceholder;
-        // Le label de niveau est masqué, mais on peut le mettre à jour
-        const levelLabelElement = document.getElementById('level-label-text');
-        if (levelLabelElement) levelLabelElement.textContent = T.levelLabel;
-
-
         try {
-            // 1. On charge les données anglaises (essences.json)
-            if (Object.keys(englishEssences).length === 0) {
-                const englishResponse = await fetch('rawdata/en-US/essences.json');
-                if (!englishResponse.ok) throw new Error("Le fichier de langue anglais (en-US/essences.json) est introuvable.");
-                englishEssences = await englishResponse.json();
+            // 1. On charge le fichier de traductions externe
+            const responseTranslations = await fetch('rawdata/translations.json'); // Assurez-vous que le chemin est correct
+            if (!responseTranslations.ok) throw new Error("Le fichier translations.json est introuvable.");
+            translations = await responseTranslations.json();
+
+            // On charge le fichier de traductions des mots-clés
+            const responseKeywords = await fetch('rawdata/ui_keywords_localized.json');
+            if (!responseKeywords.ok) throw new Error("Le fichier ui_keywords_localized.json est introuvable.");
+            allKeywords = await responseKeywords.json();
+
+            const langSelectorDesktop = document.getElementById('language-selector');
+            const langSelectorMobile = document.getElementById('language-selector-mobile');
+            if (langSelectorDesktop) {
+                langSelectorDesktop.value = lang;
+            }
+            if (langSelectorMobile) {
+                langSelectorMobile.value = lang;
             }
 
-            // 2. On charge les données de la langue sélectionnée (essences.json)
-            const response = await fetch(`rawdata/${lang}/essences.json`);
-            let data; 
+            const T = translations[lang] || translations['en-US'];
 
-            if (response.ok) {
-                data = await response.json();
-            } else {
-                console.warn(`Fichier essences.json pour la langue '${lang}' non trouvé. On charge 'fr-FR' à la place.`);
-                const fallbackResponse = await fetch('rawdata/fr-FR/essences.json');
-                if (!fallbackResponse.ok) throw new Error("Le fichier de langue par défaut 'fr-FR/essences.json' est introuvable.");
-                data = await fallbackResponse.json();
-            }
+            // Mettre en évidence le lien de navigation actif (ici, "essences" pour la page des essences)
+            highlightActiveNav('essences');
 
-            // 3. On fusionne les données anglaises avec les données de la langue sélectionnée.
-            allEssences = Object.keys(data).map(key => {
-                const translatedEssence = data[key];
-                const englishEssence = englishEssences[key] || {};
-                
-                const essence = {
-                    id: key, 
-                    name: translatedEssence.name || '',
-                    englishName: englishEssence.name || '',
-                    
-                    ...englishEssence, 
-                    ...translatedEssence,
-                };
-                
-                return essence;
-            });
-            // Renomme la variable pour la clarté (remplace allMemories)
-            let allMemories = allEssences; 
+            // Mise à jour du placeholder de recherche
+            document.getElementById('search-input').placeholder = T.searchPlaceholder;
+            // On utilise la nouvelle clé "levelPLabel" pour cette page
+            const levelLabelElement = document.getElementById('level-label-text');
+            if (levelLabelElement) levelLabelElement.textContent = T.levelPLabel; ;
             
-            // 4. Chargement des corrections est optionnel pour les Essences, mais on garde la structure si vous en ajoutez plus tard
-            try {
-                // NOTE: Vous aurez besoin de créer un fichier rawdata/corrections_essences.json si vous avez des corrections spécifiques aux essences
-                const correctionsResponse = await fetch('rawdata/corrections_essences.json'); 
-                if (correctionsResponse.ok) {
-                    const correctionsData = await correctionsResponse.json();
-                    
-                    allEssences = allEssences.map(essence => {
-                        const correction = correctionsData[essence.id];
-                        
-                        if (correction) {
-                            const correctedEssence = { ...essence, ...correction };
-                            const originalTags = essence.tags || [];
-                            const correctionTags = correction.tags || [];
-                            correctedEssence.tags = Array.from(new Set([...originalTags, ...correctionTags]));
-                            
-                            if (essence.informations && correction.informations) {
-                                correctedEssence.informations = { ...essence.informations, ...correction.informations };
-                            }
-                            
-                            return correctedEssence;
-                        }
-                        return essence;
-                    });
+            // TRADUCTION DE LA NAVIGATION
+            document.querySelector('.nav-home-link').textContent = T.navHome;
+            document.querySelector('.nav-memories-link').textContent = T.navMemories;
+            document.querySelector('.nav-essences-link').textContent = T.navEssences;
+            // TRADUCTION DU PIED DE PAGE
+            document.getElementById('footer-text').textContent = T.footerText;
 
-                } else {
-                    console.info("Fichier de corrections (corrections_essences.json) non trouvé. Aucune correction spécifique aux essences appliquée.");
+            try {
+                // 1. On charge les données anglaises (essences.json)
+                if (Object.keys(englishEssences).length === 0) {
+                    const englishResponse = await fetch('rawdata/en-US/essences.json');
+                    if (!englishResponse.ok) throw new Error("Le fichier de langue anglais (en-US/essences.json) est introuvable.");
+                    englishEssences = await englishResponse.json();
                 }
-            } catch (e) {
-                console.error("Erreur lors de l'application des corrections manuelles aux essences:", e);
-            }
 
+                // 2. On charge les données de la langue sélectionnée (essences.json)
+                const response = await fetch(`rawdata/${lang}/essences.json`);
+                let data; 
 
-            // 5. Chargement des Achievements
-            try {
-                const achievementResponse = await fetch(`rawdata/${lang}/achievements.json`);
-                if (achievementResponse.ok) {
-                    allAchievements = await achievementResponse.json();
+                if (response.ok) {
+                    data = await response.json();
                 } else {
-                    console.warn(`Fichier d'Achievements pour la langue '${lang}' non trouvé.`);
+                    console.warn(`Fichier essences.json pour la langue '${lang}' non trouvé. On charge 'fr-FR' à la place.`);
+                    const fallbackResponse = await fetch('rawdata/fr-FR/essences.json');
+                    if (!fallbackResponse.ok) throw new Error("Le fichier de langue par défaut 'fr-FR/essences.json' est introuvable.");
+                    data = await fallbackResponse.json();
+                }
+
+                // 3. On fusionne les données anglaises avec les données de la langue sélectionnée.
+                allEssences = Object.keys(data).map(key => {
+                    const translatedEssence = data[key];
+                    const englishEssence = englishEssences[key] || {};
+                    
+                    const essence = {
+                        id: key, 
+                        name: translatedEssence.name || '',
+                        englishName: englishEssence.name || '',
+                        
+                        ...englishEssence, 
+                        ...translatedEssence,
+                    };
+                    
+                    return essence;
+                });
+                // Renomme la variable pour la clarté (remplace allMemories)
+                let allMemories = allEssences; 
+                
+                // 4. Chargement des corrections est optionnel pour les Essences, mais on garde la structure si vous en ajoutez plus tard
+                try {
+                    // NOTE: Vous aurez besoin de créer un fichier rawdata/corrections_essences.json si vous avez des corrections spécifiques aux essences
+                    const correctionsResponse = await fetch('rawdata/corrections_essences.json'); 
+                    if (correctionsResponse.ok) {
+                        const correctionsData = await correctionsResponse.json();
+                        
+                        allEssences = allEssences.map(essence => {
+                            const correction = correctionsData[essence.id];
+                            
+                            if (correction) {
+                                const correctedEssence = { ...essence, ...correction };
+                                const originalTags = essence.tags || [];
+                                const correctionTags = correction.tags || [];
+                                correctedEssence.tags = Array.from(new Set([...originalTags, ...correctionTags]));
+                                
+                                if (essence.informations && correction.informations) {
+                                    correctedEssence.informations = { ...essence.informations, ...correction.informations };
+                                }
+                                
+                                return correctedEssence;
+                            }
+                            return essence;
+                        });
+
+                    } else {
+                        console.info("Fichier de corrections (corrections_essences.json) non trouvé. Aucune correction spécifique aux essences appliquée.");
+                    }
+                } catch (e) {
+                    console.error("Erreur lors de l'application des corrections manuelles aux essences:", e);
+                }
+
+
+                // 5. Chargement des Achievements
+                try {
+                    const achievementResponse = await fetch(`rawdata/${lang}/achievements.json`);
+                    if (achievementResponse.ok) {
+                        allAchievements = await achievementResponse.json();
+                    } else {
+                        console.warn(`Fichier d'Achievements pour la langue '${lang}' non trouvé.`);
+                        allAchievements = {};
+                    }
+                } catch (e) {
+                    console.error("Erreur lors du chargement des achievements:", e);
                     allAchievements = {};
                 }
-            } catch (e) {
-                console.error("Erreur lors du chargement des achievements:", e);
-                allAchievements = {};
+
+
+                // Une fois les données chargées, on lance les fonctions pour construire la page.
+                populateFilters(); 
+                applyFilters(); 
+
+            } catch (error) {
+                console.error('Erreur lors du chargement des essences:', error);
+                document.getElementById('memories-container').innerHTML = `<p class="text-center text-red-500">Oups, une erreur est survenue lors du chargement des essences !<br>Message technique : ${error.message}</p>`;
             }
-
-
-            // Une fois les données chargées, on lance les fonctions pour construire la page.
-            populateFilters(); 
-            applyFilters(); 
-
         } catch (error) {
             console.error('Erreur lors du chargement des essences:', error);
             document.getElementById('memories-container').innerHTML = `<p class="text-center text-red-500">Oups, une erreur est survenue lors du chargement des essences !<br>Message technique : ${error.message}</p>`;
@@ -348,6 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // NOTE : populateRarityFilter est inchangé.
     const populateRarityFilter = () => {
         const T = translations[getLanguage()] || translations['en-US'];
+        const currentLang = getLanguage(); // <-- On récupère la langue
         const rarities = ['All', 'Common', 'Rare', 'Epic', 'Legendary', 'Unique']; // Raretés Essences
         const rarityContainer = document.getElementById('rarity-filters');
         
@@ -357,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const button = document.createElement('button');
             button.className = 'btn btn-sm rarity-filter-btn';
             if (rarity === activeRarityFilter) button.classList.add('btn-active');
-            button.textContent = rarity === 'All' ? T.allButton : rarity;
+            button.textContent = rarity === 'All' ? T.allButton : getKeywordDisplayName(rarity, 'rarities', currentLang);
             button.dataset.rarity = rarity;
             rarityContainer.appendChild(button);
         });
@@ -375,7 +271,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // NOTE : populateElementsFilter utilise allEssences au lieu de allMemories.
     const populateElementsFilter = () => {
         const T = translations[getLanguage()] || translations['en-US'];
-        const elementalTags = ['cold', 'fire', 'light', 'dark', 'heal', 'shield', 'mobility', 'attack']; // Tags communs pour Essences
+        const currentLang = getLanguage(); // <-- On récupère la langue
+        const elementalTags = ['Cold', 'Fire', 'Light', 'Dark']; 
         const elementsContainer = document.getElementById('elements-filters');
         
         elementsContainer.innerHTML = `<span class="font-bold">${T.elementsFilter}</span>`;
@@ -391,7 +288,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const button = document.createElement('button');
             button.className = 'btn btn-sm element-filter-btn';
             if (element === activeElementFilter) button.classList.add('btn-active');
-            button.textContent = element.charAt(0).toUpperCase() + element.slice(1);
+            // Plus besoin de logique complexe, on sait qu'on est dans la catégorie "elements".
+            // On traduit aussi la clé en minuscule, car c'est ce que notre JSON attend.
+            button.textContent = getKeywordDisplayName(element, 'elements', currentLang);
             button.dataset.element = element;
             elementsContainer.appendChild(button);
         });
@@ -409,6 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // NOTE : populateTagsFilter est inchangé.
     const populateTagsFilter = () => {
         const T = translations[getLanguage()] || translations['en-US'];
+        const currentLang = getLanguage(); // <-- On récupère la langue
         const elementalTags = ['cold', 'fire', 'light', 'dark'];
         const allTags = [...new Set(allEssences.flatMap(m => m.tags || []))].sort(); // Utilise allEssences
         const tagsContainer = document.getElementById('tags-filters');
@@ -428,7 +328,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const button = document.createElement('button');
             button.className = 'btn btn-sm tag-filter-btn';
             if (tag.toLowerCase() === activeTagFilter) button.classList.add('btn-active');
-            button.textContent = tag;
+            button.textContent = getKeywordDisplayName(tag, 'tags', currentLang);
             button.dataset.tag = tag.toLowerCase();
             tagsContainer.appendChild(button);
         });
@@ -449,7 +349,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const statTypes = ['All', 'AP', 'AD'];
         const statContainer = document.getElementById('stat-filters');
         
-        statContainer.innerHTML = `<span class="font-bold">Stats:</span>`; 
+        statContainer.innerHTML = `<span class="font-bold">${T.statFilter}</span>`;
 
         statTypes.forEach(stat => {
             const button = document.createElement('button');
@@ -570,20 +470,23 @@ document.addEventListener('DOMContentLoaded', () => {
                     const formattedDescription = processDescription(essence, qualityPercentage);
                     const rarityColorClass = getRarityColorClass(essence.rarity);
 
+                    // MODIFICATION 1 : Traduction des tags
                     let tagsHtml = '';
                     if (essence.tags && essence.tags.length > 0) {
-                        tagsHtml = essence.tags.map(tag => `<div class="badge badge-sm text-xs text-gray-300">${tag}</div>`).join('');
+                        tagsHtml = essence.tags.map(tag => {
+                            const category = ['cold', 'fire', 'light', 'dark'].includes(tag.toLowerCase()) ? 'elements' : 'tags';
+                            const translatedTag = getKeywordDisplayName(tag, category, currentLang);
+                            return `<div class="badge badge-sm text-xs text-gray-300">${translatedTag}</div>`;
+                        }).join('');
                     }
-                    // Les essences n'ont pas de temps de recharge (cooldownTime)
+                    
                     const cooldownHtml = ''; 
-                    
-                    // Les essences n'ont pas d'informations clés ni de lieu.
-                    const keyInformationsHtml = ''; 
-                    
-                    // Récupération de l'HTML de la condition de déblocage
+                    const keyInformationsHtml = renderKeyInformations(essence);
                     const achievementHtml = getAchievementHtml(essence); 
                     
-                    
+                    // MODIFICATION 2 : Traduction de la rareté
+                    const translatedRarityText = getKeywordDisplayName(essence.rarity, 'rarities', currentLang);
+
                     card.innerHTML = `
                         ${cooldownHtml}
                         <div class="flex flex-row p-2 items-center">
@@ -593,7 +496,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <div class="flex flex-col items-start text-left pr-14">
                                 <h2 class="card-title text-xl font-semibold flex flex-col items-start">${cardTitleHtml}</h2>
                                 
-                                <span class="text-sm ${rarityColorClass} mt-0">${essence.rarity}</span>
+                                <span class="text-sm ${rarityColorClass} mt-0">${translatedRarityText}</span>
                                 
                                 <div class="flex flex-wrap gap-1 justify-start mt-1 ml-[-0.4rem]">
                                     ${tagsHtml}
@@ -615,10 +518,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- FONCTIONS UTILITAIRES (HELPERS) ---
 
-    // NOTE : renderKeyInformations est retiré (essences n'ont pas 'informations')
+    function renderKeyInformations(essence) {
+        // S'assure que le champ 'informations' existe et est bien un tableau non vide.
+        if (!essence.informations || !Array.isArray(essence.informations) || essence.informations.length === 0) {
+            return '';
+        }
+
+        let html = '<div class="key-infos mt-2 pt-2 border-t border-gray-700/50 flex flex-wrap gap-x-4 gap-y-1">';
+
+        // On parcourt simplement le tableau d'informations.
+        essence.informations.forEach(info => {
+            // On vérifie que l'objet a bien un libellé et une valeur.
+            if (info.label && info.value) {
+                html += `
+                    <div class="flex items-center text-sm text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-yellow-400 inline-sprite" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-12a1 1 0 102 0V9a1 1 0 10-2 0V6zm2 4a1 1 0 102 0v-4z" clip-rule="evenodd" />
+                        </svg>
+                        <b>${info.label} :</b> <span class="ml-1 text-white font-semibold">${info.value}</span>
+                    </div>
+                `;
+            }
+        });
+
+        html += '</div>';
+        
+        // On retourne le HTML uniquement si on y a ajouté du contenu.
+        return html.includes('<b>') ? html : '';
+    }
 
     // Nouvelle fonction pour générer le HTML de la condition de déblocage (Achievement)
     function getAchievementHtml(essence) { // essence au lieu de memory
+        // 1. On récupère les traductions actuelles
+        const T = translations[getLanguage()] || translations['en-US'];
+        
         const achievementKey = essence.achievementKey;
 
         if (!achievementKey) {
@@ -634,10 +567,11 @@ document.addEventListener('DOMContentLoaded', () => {
             return '';
         }
 
+        // On utilise la clé de traduction au lieu du texte en dur
         const html = `
             <div class="achievement-info mt-2 pt-2 border-t border-gray-700/50">
                 <p class="text-xs italic text-gray-500">
-                    <b>Condition de déblocage :</b> 
+                    <b>${T.unlockCondition}</b> 
                     <span class="text-yellow-600 font-semibold">${achName}</span> 
                     (${achDesc})
                 </p>
@@ -767,6 +701,33 @@ document.addEventListener('DOMContentLoaded', () => {
             default: return 'bg-gray-800';
         }
     }
+
+
+    const getKeywordDisplayName = (key, category, lang) => {
+        // Sélectionne le dictionnaire pour la langue actuelle, avec fallback sur l'anglais
+        const langDict = allKeywords[lang] || allKeywords['en-US'] || {};
+        
+        // Sélectionne la bonne catégorie (ex: "rarities", "elements", "tags")
+        const categoryDict = langDict[category] || {};
+        
+        // Retourne la traduction, ou la clé originale si non trouvée
+        return categoryDict[key] || key;
+    };
+
+
+    // Fonction pour mettre en évidence le lien de navigation actif
+    const highlightActiveNav = (activePage) => {
+        // On retire d'abord la classe active de tous les liens de la navigation
+        document.querySelectorAll('.nav-home-link, .nav-memories-link, .nav-essences-link').forEach(link => {
+            link.classList.remove('nav-active');
+        });
+
+        // Ensuite, on ajoute la classe uniquement au lien de la page actuelle
+        const activeLink = document.querySelector(`.nav-${activePage}-link`);
+        if (activeLink) {
+            activeLink.classList.add('nav-active');
+        }
+    };
 
     // --- DÉMARRAGE DU SCRIPT ---
     

@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiki Shape of Dreams</title>
+    <meta name="color-scheme" content="light only">
+    
+    <title>Accueil - Base de Données SoD</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="style.css" rel="stylesheet">
@@ -11,45 +15,69 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-900 text-white min-h-screen" data-theme="black">
 
-    <div class="navbar bg-base-100/20 p-4 sticky top-0 z-50">
+<body class="text-white min-h-screen">
+    
+    <div class="navbar bg-base-100/20 p-2 sticky top-0 z-50 backdrop-blur-sm">
         <div class="flex-1">
-            <a href="index.html" class="btn btn-ghost text-xl">Accueil</a>
-            <a href="memories.html" class="btn btn-ghost text-xl">Mémoires</a>
-            <a href="essences.html" class="btn btn-ghost text-xl">Essences</a>
+            <a href="index.html" class="btn btn-ghost text-base nav-home-link">Accueil</a>
+            <a href="memories.html" class="btn btn-ghost text-base nav-memories-link">Mémoires</a>
+            <a href="essences.html" class="btn btn-ghost text-base nav-essences-link">Essences</a>
+        </div>
+
+        <div class="flex-none hidden sm:flex">
+            <select id="language-selector" class="select select-bordered select-sm">
+                <option value="en-US">English</option>
+                <option value="fr-FR">Français</option>  
+                <option value="de-DE">Deutsch</option>
+                <option value="es-MX">Español (México)</option>
+                <option value="it-IT">Italiano</option>
+                <option value="ja-JP">日本語</option>
+                <option value="ko-KR">한국어</option>
+                <option value="pl-PL">Polski</option>
+                <option value="pt-BR">Português (Brasil)</option>
+                <option value="ru-RU">Русский</option>
+                <option value="tr-TR">Türkçe</option>
+                <option value="zh-CN">简体中文</option>
+                <option value="zh-TW">繁體中文</option>
+            </select>
         </div>
     </div>
 
-    <main class="container mx-auto px-4 py-12">
-        <div class="text-center">
-            <h1 class="text-5xl md:text-6xl font-bold mb-4">Wiki de Shape of Dreams</h1>
-            <p class="text-lg md:text-xl text-gray-300 mb-12">Votre guide complet pour explorer les Mémoires et les Essences du jeu.</p>
-        </div>
+    <div class="sm:hidden p-4 bg-base-100/20 flex justify-start">
+        <select id="language-selector-mobile" class="select select-bordered select-sm">
+            <option value="en-US">English</option>
+            <option value="fr-FR">Français</option>  
+            </select>
+    </div>
 
-        <div class="flex flex-col md:flex-row justify-center items-center gap-8">
-            
-            <a href="memories.html" class="card w-full md:w-96 bg-gray-800 shadow-xl image-full transform transition-transform duration-300 hover:scale-105">
-                <figure><img src="https://i.imgur.com/example-memory-bg.png" alt="Mémoires" class="opacity-30"/></figure>
-                <div class="card-body justify-center items-center">
-                    <h2 class="card-title text-4xl font-bold">Mémoires</h2>
-                    <p class="text-center mt-2">Explorez toutes les mémoires disponibles, leurs effets et leurs synergies.</p>
+    <div class="custom-container container mx-auto p-4 text-center">
+        
+        <h1 id="main-title" class="text-5xl sm:text-6xl font-bold my-8"></h1>
+        
+        <p id="intro-text" class="max-w-2xl mx-auto mb-10 text-lg text-gray-300"></p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    
+            <a href="memories.html" class="card shadow-none border border-[#5088f8] bg-gray-100/75 text-gray-800 hover:bg-gray-200/75 transition-all duration-300">
+                <div class="card-body">
+                    <h2 id="memories-card-title" class="card-title text-4xl justify-center"></h2>
+                    <p id="memories-card-desc"></p>
                 </div>
             </a>
 
-            <a href="essences.html" class="card w-full md:w-96 bg-gray-800 shadow-xl image-full transform transition-transform duration-300 hover:scale-105">
-                <figure><img src="https://i.imgur.com/example-essence-bg.png" alt="Essences" class="opacity-30"/></figure>
-                <div class="card-body justify-center items-center">
-                    <h2 class="card-title text-4xl font-bold">Essences</h2>
-                    <p class="text-center mt-2">Découvrez les essences pour améliorer et personnaliser vos mémoires.</p>
+            <a href="essences.html" class="card shadow-none border border-[#5088f8] bg-gray-100/75 text-gray-800 hover:bg-gray-200/75 transition-all duration-300">
+                <div class="card-body">
+                    <h2 id="essences-card-title" class="card-title text-4xl justify-center"></h2>
+                    <p id="essences-card-desc"></p>
                 </div>
             </a>
         </div>
-    </main>
 
-    <footer class="text-center p-4 mt-12 text-gray-500">
-        <p>Créé pour la communauté de Shape of Dreams</p>
+    <footer class="text-center p-4 mt-8 text-gray-500">
+        <p id="footer-text"></p>
     </footer>
 
+    <script src="index.js"></script>
 </body>
 </html>
