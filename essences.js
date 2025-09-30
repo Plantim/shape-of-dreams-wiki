@@ -374,15 +374,15 @@ const applyFilters = () => {
 };
 
 
-
-
-// --- LOGIQUE D'AFFICHAGE (RENDU) ---
-// Fonction renommée pour la clarté (renderEssences au lieu de renderMemories)
-// --- LOGIQUE D'AFFICHAGE (RENDU) ---
 // --- LOGIQUE D'AFFICHAGE (RENDU) ---
 const renderEssences = (essencesToRender) => {
     const container = document.getElementById('memories-container');
     container.innerHTML = '';
+
+    const cardContainer = document.createElement('div');
+    cardContainer.className = 'w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-6';
+    container.appendChild(cardContainer);
+
 
     const essencesByRarity = essencesToRender.reduce((acc, essence) => {
         const rarity = essence.rarity || 'Inconnue';
@@ -397,17 +397,6 @@ const renderEssences = (essencesToRender) => {
     rarityOrder.forEach(rarity => {
         const essencesInRarity = essencesByRarity[rarity];
         if (essencesInRarity && essencesInRarity.length > 0) {
-
-            // Création du titre de la section (ex: "Epic")
-            const sectionTitle = document.createElement('h2');
-            sectionTitle.className = 'text-2xl font-bold mt-6 mb-4 text-center w-full';
-            sectionTitle.textContent = getKeywordDisplayName(rarity, 'rarities', currentLang);
-            container.appendChild(sectionTitle);
-
-            // Création du conteneur pour les cartes de cette rareté
-            const sectionContainer = document.createElement('div');
-            sectionContainer.className = 'w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-6';
-            container.appendChild(sectionContainer);
 
             essencesInRarity.forEach(essence => {
                 const card = document.createElement('div');
@@ -459,7 +448,7 @@ const renderEssences = (essencesToRender) => {
                     </div>
                 `;
 
-                sectionContainer.appendChild(card);
+                cardContainer.appendChild(card);
             });
         }
     });

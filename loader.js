@@ -1,7 +1,7 @@
 (function() {
     // ==========================================================
-    // === LE SEUL ENDROIT À MODIFIER POUR TOUT LE SITE ===
-    const siteVersion = "1.0.5";
+    // === A MODIFIER EGALEMENT DANS LES FICHIERS HTML (le script python modifie partout) ===
+    const siteVersion = "1.0.6";
     // ==========================================================
 
 
@@ -19,9 +19,16 @@
     const cssUrl = `style.css?v=${siteVersion}`;
     const pageScriptUrl = `${pageScript}?v=${siteVersion}`;
 
-    // 4. On injecte les fichiers CSS et JS dans le HTML avec la bonne version
-    // Le document.write permet de s'assurer que les fichiers sont chargés et lus avant que la page ne s'affiche
-    document.write(`<link rel="stylesheet" href="${cssUrl}">`);
-    document.write(`<script defer src="${pageScriptUrl}"><\/script>`);
+    // Créer la balise <link> pour le CSS
+    const linkTag = document.createElement('link');
+    linkTag.rel = 'stylesheet';
+    linkTag.href = cssUrl;
+    document.head.appendChild(linkTag);
+
+    // Créer la balise <script> pour le JS de la page
+    const scriptTag = document.createElement('script');
+    scriptTag.defer = true;
+    scriptTag.src = pageScriptUrl;
+    document.head.appendChild(scriptTag);
 
 })();
