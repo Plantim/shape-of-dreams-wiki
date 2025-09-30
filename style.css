@@ -171,3 +171,18 @@ body {
     /* Éclat lumineux bleu pour le mettre en évidence */
     box-shadow: none; 
 }
+
+/* ---------------------------------------------------
+    rendre les éléments invisibles au départ et leur permettre d'apparaître en fondu
+   -------------------------------------------------- */
+
+/* Classe pour cacher les éléments avant leur traduction */
+.translate-on-load {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Classe pour rendre les éléments visibles une fois traduits */
+.translate-on-load.loaded {
+    opacity: 1;
+}

@@ -10,18 +10,32 @@
     <!-- Forcer le mode clair (light mode) -->
     <meta name="color-scheme" content="light only">
     <!-- Titre de la page affiché dans l'onglet du navigateur -->
-    <title>Fiches Mémoires</title>
+    <title>Mémoires - SoD</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/rawdata/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/rawdata/favicon-32x32.png">
     <!-- Importation de DaisyUI (composants Tailwind CSS) -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- Importation de Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Feuille de style personnalisée -->
-    <link href="style.css" rel="stylesheet">
     <!-- Préconnexion pour accélérer le chargement des polices Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Importation de la police Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .translate-on-load {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .translate-on-load.loaded {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
 </head>
 
 <!-- C'est ici que se trouve tout le contenu visible de la page. -->
@@ -30,12 +44,12 @@
     <!-- Barre de navigation en haut de la page, avec liens vers les autres pages et une barre de recherche -->
     <div class="navbar bg-base-100/20 p-2 sticky top-0 z-50 backdrop-blur-sm">
         <div class="flex-1">
-            <a href="index.html" class="btn btn-ghost text-base nav-home-link">Accueil</a>
-            <a href="memories.html" class="btn btn-ghost text-base nav-memories-link">Mémoires</a>
-            <a href="essences.html" class="btn btn-ghost text-base nav-essences-link">Essences</a>
+            <a href="index.html" class="btn btn-ghost text-base nav-home-link translate-on-load"></a>
+            <a href="memories.html" class="btn btn-ghost text-base nav-memories-link translate-on-load"></a>
+            <a href="essences.html" class="btn btn-ghost text-base nav-essences-link translate-on-load"></a>
         </div>
 
-        <div class="flex-none hidden sm:flex">
+        <div class="flex-none hidden sm:flex translate-on-load">
             <select id="language-selector" class="select select-bordered select-sm">
                 <option value="en-US">English</option>
                 <option value="fr-FR">Français</option>  
@@ -54,7 +68,7 @@
         </div>
     </div>
 
-    <div class="sm:hidden p-4 bg-base-100/20 flex justify-start">
+    <div class="sm:hidden p-4 bg-base-100/20 flex justify-start translate-on-load">
         <select id="language-selector-mobile" class="select select-bordered select-sm">
             <option value="en-US">English</option>
             <option value="fr-FR">Français</option>  
@@ -100,19 +114,19 @@
         <div class="flex-none gap-2">
             <div class="form-control">
                 <!-- Champ de recherche pour filtrer les mémoires. L'attribut id="search-input" est important car il permet au fichier JavaScript (memories.js) d'identifier et de manipuler cet élément. -->
-                <input id="search-input" type="search" placeholder="Rechercher une mémoire..." class="input bg-[#282A2C] text-white border-2 border-gray-700 w-auto sm:w-96 md:w-96 lg:w-96 h-10" />
+                <input id="search-input" type="search" placeholder="" class="translate-on-load input bg-[#282A2C] text-white border-2 border-gray-700 w-auto sm:w-96 md:w-96 lg:w-96 h-10" />
             </div>
         </div>
         <!-- Slider pour faire scale les mémoires par niveau -->
-        <div class="flex flex-col items-start gap-0 mb-4">
-            <label for="level-slider" class="text-sm font-bold text-white/50 p-2"><span id="level-label-text">Niveau :</span> <span id="level-value">0</span></label>
+        <div class="flex flex-col items-start gap-0 mb-4 translate-on-load">
+            <label for="level-slider" class="text-sm font-bold text-white/50 p-2"><span id="level-label-text" class="translate-on-load"></span> <span id="level-value">0</span></label>
             <input type="range" id="level-slider" min="0" max="100" value="0" class="range range-sm range-primary w-50 sm:w-96 md:w-96 lg:w-96" />
         </div>
         <!-- Conteneur où les mémoires seront affichées dynamiquement -->
         <div id="memories-container" class="flex flex-col items-center">
             <!-- Animation de chargement pendant la récupération des données -->
             <span class="loading loading-spinner text-secondary loading-lg"></span>
-            <p class="mt-4 text-center">Chargement des mémoires...</p>
+            <p id="loading-text" class="mt-4 text-center"></p>
         </div>
     </div>
 
@@ -121,7 +135,10 @@
         <p id="footer-text"></p>
     </footer>
 
-    <!-- Script JS pour gérer l'affichage et la logique des mémoires -->
-    <script src="memories.js"></script>
+    <!-- Version display in the bottom right corner -->
+    <div id="version-display" class="fixed bottom-2 right-3 text-xs text-gray-600 font-mono"></div>
+    
+    <!-- Appel du loader pour charger le Script JS et le CSS -->
+    <script src="loader.js" data-page-script="memories.js"></script>
 </body>
 </html>
