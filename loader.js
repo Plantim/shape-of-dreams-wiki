@@ -1,7 +1,7 @@
 (function() {
     // ==========================================================
     // === LE SEUL ENDROIT À MODIFIER POUR TOUT LE SITE ===
-    const siteVersion = "1.0.4";
+    const siteVersion = "1.0.5";
     // ==========================================================
 
 
