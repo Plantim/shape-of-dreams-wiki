@@ -23,11 +23,6 @@ body {
   }
 }
 
-/* Forcer le mode clair (light mode) */
-:root {
-  color-scheme: light;
-}
-
 /* ---------------------------------------------------
    Cartes - couleurs
    -------------------------------------------------- */
@@ -127,7 +122,8 @@ body {
 .rarity-filter-btn.btn-active,
 .element-filter-btn.btn-active,
 .tag-filter-btn.btn-active,
-.traveler-filter-btn.btn-active {
+.traveler-filter-btn.btn-active,
+.stat-filter-btn.btn-active {
     /* Fond très clair pour le mettre en évidence */
     background-color: #f3f4f6bb; 
     /* Texte sombre */
@@ -151,19 +147,6 @@ body {
     /* Ajout d'une transition pour un effet de survol plus doux */
     transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
-
-
-/* L'effet de survol (:hover) */
-.rarity-filter-btn:hover, 
-.element-filter-btn:hover, 
-.tag-filter-btn:hover, 
-.traveler-filter-btn:hover {
-    /* Le fond s'éclaircit légèrement au passage de la souris */
-    background-color: #4F4E4D;
-    /* La bordure doit aussi être un peu plus claire pour bien marquer le survol */
-    border-color: #7a7876;
-}
-
 
 .filters-background {
     background-color: #2B2A29; /* Identique au fond de la page */
