@@ -241,7 +241,7 @@
     "lore": null,
     "achievementKey": "ACH_ETERNAL_REST",
     "achievementName": "Descanso eterno",
-    "achievementDescription": "Derrota al Espadachín Espiritual un total de 80 veces usando ataques básicos en el golpe final."
+    "achievementDescription": "Dale el golpe final al Espadachín Espiritual un total de 50 veces usando ataques básicos."
   },
   "St_C_DarkBolt": {
     "name": "Flecha Oscura",
@@ -334,20 +334,20 @@
   },
   "St_C_FlashFreeze": {
     "name": "Congelación Rápida",
-    "cooldownTime": 6.5,
-    "maxCharges": 1,
+    "cooldownTime": 5.0,
+    "maxCharges": 2,
     "addedCharges": 1,
-    "description": "Emites frío hacia el frente, causando <sprite=1><color=#16D7FF>100%</color><sprite=5> de <color=yellow>daño de frío</color> a los enemigos. Si un enemigo ya está afectado por <color=yellow>frío</color>, el <color=yellow>daño</color> aumenta un 100% y lo deja <color=yellow>inmovilizado</color> durante 1.5 segundos.",
+    "description": "Emites frío hacia el frente, causando <sprite=1><color=#16D7FF>130%</color><sprite=5> de <color=yellow>daño de frío</color> a los enemigos. Si un enemigo ya está afectado por <color=yellow>frío</color>, el <color=yellow>daño</color> aumenta un 100% y lo deja <color=yellow>inmovilizado</color> durante 1.5 segundos.",
     "rawDesc": "Emites frío hacia el frente, causando {0} de <color=yellow>daño de frío</color> a los enemigos. Si un enemigo ya está afectado por <color=yellow>frío</color>, el <color=yellow>daño</color> aumenta un {1} y lo deja <color=yellow>inmovilizado</color> durante {2} segundos.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.3,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -725,7 +725,11 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Melee",
+      "Attack",
+      "Mobility"
+    ],
     "image": "St_C_MagicSword.png",
     "lore": null,
     "achievementKey": "",
@@ -861,7 +865,7 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Liberas energía con la palma de la mano, causando <sprite=1><color=#16D7FF>180%</color><sprite=5> de <color=yellow>daño</color> y empujando a todos los enemigos impactados. Si un enemigo empujado choca contra una pared, recibe <sprite=1><color=#16D7FF>374%</color><sprite=5> de <color=yellow>daño</color> adicional y queda aturdido durante 1.5 segundos.",
+    "description": "Liberas energía con la palma de la mano, causando <sprite=1><color=#16D7FF>180%</color><sprite=5> de <color=yellow>daño</color> y empujando a todos los enemigos impactados. Si un enemigo empujado choca contra una pared, recibe <sprite=1><color=#16D7FF>504%</color><sprite=5> de <color=yellow>daño</color> adicional y queda aturdido durante 1.5 segundos.",
     "rawDesc": "Liberas energía con la palma de la mano, causando {0} de <color=yellow>daño</color> y empujando a todos los enemigos impactados. Si un enemigo empujado choca contra una pared, recibe {1} de <color=yellow>daño</color> adicional y queda aturdido durante {2} segundos.",
     "rawDescVars": [
       {
@@ -878,7 +882,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>374%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*stunDmgRatio",
         "scalingType": "unknown",
@@ -2088,8 +2092,8 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "No puedes recibir bonos de <color=yellow>velocidad de ataque</color>, pero por cada 1% de <color=yellow>velocidad de ataque adicional</color>, tu <color=yellow>daño de ataque</color> aumenta en 0.5<sprite=5>.\nAl usar <color=yellow>arremetida</color> o <color=yellow>teletransporte</color>, tu siguiente <color=yellow>ataque básico</color> se convierte en un golpe crítico.",
-    "rawDesc": "No puedes recibir bonos de <color=yellow>velocidad de ataque</color>, pero por cada 1% de <color=yellow>velocidad de ataque adicional</color>, tu <color=yellow>daño de ataque</color> aumenta en {0}.\nAl usar <color=yellow>arremetida</color> o <color=yellow>teletransporte</color>, tu siguiente <color=yellow>ataque básico</color> se convierte en un golpe crítico.",
+    "description": "No puedes recibir bonificaciones de <color=yellow>velocidad de ataque</color>, pero por cada 1% de <color=yellow>velocidad de ataque adicional</color>, tu <color=yellow>daño de ataque</color> aumenta en 0.5<sprite=5>.\nAl usar <color=yellow>arremetida</color> o <color=yellow>teletransporte</color>, tu siguiente <color=yellow>ataque básico</color> será un golpe crítico.\n\nCada vez que derrotes a un <color=yellow>jefe</color>, recuperas <sprite=2><color=#FF8A2D>200%</color><sprite=5> de <color=yellow>vida</color>.",
+    "rawDesc": "No puedes recibir bonificaciones de <color=yellow>velocidad de ataque</color>, pero por cada 1% de <color=yellow>velocidad de ataque adicional</color>, tu <color=yellow>daño de ataque</color> aumenta en {0}.\nAl usar <color=yellow>arremetida</color> o <color=yellow>teletransporte</color>, tu siguiente <color=yellow>ataque básico</color> será un golpe crítico.\n\nCada vez que derrotes a un <color=yellow>jefe</color>, recuperas {1} de <color=yellow>vida</color>.",
     "rawDescVars": [
       {
         "rendered": "0.5<sprite=5>",
@@ -2103,6 +2107,19 @@
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
         }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "healAmountPerBossKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
       }
     ],
     "shortDescription": null,
@@ -2114,7 +2131,7 @@
       "Attack"
     ],
     "image": "St_D_TheKillingFlow.PNG",
-    "lore": "Un paso, una vida menos.\nNo hay emociones ni dolor, pero el cuerpo aún recuerda el movimiento.",
+    "lore": "Un paso, una vida menos.\nNo hay emociones ni dolor, pero el cuerpo aún recuerda cómo moverse.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -2376,7 +2393,9 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Dark"
+    ],
     "image": "St_E_CrimsonLance.png",
     "lore": null,
     "achievementKey": "ACH_THE_EIGHTH_TROPHY",
@@ -3338,8 +3357,8 @@
     "cooldownTime": 14.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Invoca una ventisca en el área objetivo 4<sprite=5> veces cada 0.7 segundos, causando <sprite=1><color=#16D7FF>180%</color><sprite=5> de <color=yellow>daño de frío</color> a los enemigos y otorgando a los aliados un <color=yellow>escudo</color> de <sprite=1><color=#16D7FF>60%</color><sprite=5> que desaparece en 3.5 segundos.",
-    "rawDesc": "Invoca una ventisca en el área objetivo {0} veces cada {1} segundos, causando {2} de <color=yellow>daño de frío</color> a los enemigos y otorgando a los aliados un <color=yellow>escudo</color> de {3} que desaparece en {4} segundos.",
+    "description": "Invoca una ventisca en el área objetivo 4<sprite=5> veces cada 0.7 segundos, infligiendo <sprite=1><color=#16D7FF>180%</color><sprite=5> de <color=yellow>daño por frío</color> a los enemigos y otorgando a los aliados un <color=yellow>escudo</color> de <sprite=1><color=#16D7FF>60%</color><sprite=5> que desaparece en 3.5 segundos.\nPuedes tener hasta 10 activas al mismo tiempo.",
+    "rawDesc": "Invoca una ventisca en el área objetivo {0} veces cada {1} segundos, infligiendo {2} de <color=yellow>daño por frío</color> a los enemigos y otorgando a los aliados un <color=yellow>escudo</color> de {3} que desaparece en {4} segundos.\nPuedes tener hasta {5} activas al mismo tiempo.",
     "rawDescVars": [
       {
         "rendered": "4<sprite=5>",
@@ -3405,9 +3424,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxConcurrentCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Causa daño de frío de área, escudo",
+    "shortDescription": "Daño de frío en área, escudo",
     "rarity": "Legendary",
     "type": "Normal",
     "traveler": "",
@@ -3417,7 +3449,7 @@
       "Shield"
     ],
     "image": "St_L_Blizzard.png",
-    "lore": "No podía... respirar.\nEl grito se congeló, y el frío que calaba hasta los huesos desgarró todos mis sentidos.\n\nEl aullido de ese lobo... no era el grito de un vencedor. ¡Era el lamento de quien lo ha perdido todo, el aullido desgarrador de un reino destruido!\nY nosotros... fuimos aplastados bajo esa inmensa desesperación. Como polvo, nada más. Saboreando esta impotencia absoluta.\nEsta ventisca no es solo frío.\nSu desesperación se mezcla con mi maldición, su tristeza se arremolina con mi furia...\n\nEs un infierno viviente...\n\n\n- Fragmento de memoria de un mercenario sepultado en la montaña nevada, justo antes de morir",
+    "lore": "No podía... respirar.\nEl grito se congeló, y el frío que calaba hasta los huesos desgarró todos mis sentidos.\n\nEl aullido de ese lobo... no era el grito de un vencedor. Era el lamento de quien lo ha perdido todo, el aullido desgarrador de un reino destruido.\nY nosotros... fuimos aplastados bajo esa inmensa desesperación. Como polvo, nada más. Saboreando esta impotencia absoluta.\nEsta ventisca no es solo frío.\nSu desesperación se mezcla con mi maldición, su tristeza se arremolina con mi furia...\n\nEs un infierno viviente...\n\n\n- Fragmento de memoria de un mercenario sepultado en la montaña nevada, justo antes de morir",
     "achievementKey": "ACH_FIGHTING_COLD_WITH_COLD",
     "achievementName": "Combatiendo el frío con frío",
     "achievementDescription": "Derrota al Rey de la Montaña Nevada mientras posees 4 memorias con daño de frío."
@@ -3578,7 +3610,8 @@
     "traveler": "",
     "travelerMemoryLocation": "",
     "tags": [
-      "Light"
+      "Light",
+      "HardCC"
     ],
     "image": "St_L_CoinExplosion.PNG",
     "lore": null,
@@ -4802,6 +4835,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "Q",
     "tags": [
+      "Dark",
       "Melee",
       "Attack",
       "Mobility"
@@ -5539,6 +5573,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "R",
     "tags": [
+      "Dark",
       "Melee",
       "Attack"
     ],
@@ -5836,7 +5871,7 @@
     "lore": "Esta es la prueba perfecta de mi teoría.\nLa desintegración y la fusión se desencadenan mutuamente según las leyes que establecí, creando una reacción en cadena.\nDependiendo de cómo estructure este poder, las posibilidades de uso son infinitas.\n\nSeguiré investigando.",
     "achievementKey": "ACH_OVERFLOWING_HEALS",
     "achievementName": "Recuperación desbordante",
-    "achievementDescription": "Recupera 60% o más de tu salud máxima en una sola conjuración de Teoría Peligrosa con Aurena, teniendo 40% o menos de salud."
+    "achievementDescription": "Recupera toda tu salud de un solo golpe usando Teoría Peligrosa con Aurena, estando con 40% o menos de vida."
   },
   "St_R_Chomp": {
     "name": "Mordisco",
@@ -6155,29 +6190,29 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Invocas una Espada de Escarcha y la blandes, causando <sprite=1><color=#16D7FF>200%</color><sprite=5> de <color=yellow>daño de frío</color> a los enemigos frontales, y los empuja. Si impacta a un solo objetivo, el <color=yellow>daño</color> aumenta un 200%.",
+    "description": "Invocas una Espada de Escarcha y la blandes, causando <sprite=1><color=#16D7FF>250%</color><sprite=5> de <color=yellow>daño de frío</color> a los enemigos frontales, y los empuja. Si impacta a un solo objetivo, el <color=yellow>daño</color> aumenta un 350%.",
     "rawDesc": "Invocas una Espada de Escarcha y la blandes, causando {0} de <color=yellow>daño de frío</color> a los enemigos frontales, y los empuja. Si impacta a un solo objetivo, el <color=yellow>daño</color> aumenta un {1}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.0,
+          "basicAP": 2.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "200%",
+        "rendered": "350%",
         "format": "P0",
         "raw": "singleTargetAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6637,7 +6672,7 @@
     "lore": "Ataque y defensa son uno solo.",
     "achievementKey": "ACH_GO_WITH_THE_FLOW",
     "achievementName": "Déjate llevar",
-    "achievementDescription": "Derrota a 70 enemigos consecutivamente sin recibir daño con Mist."
+    "achievementDescription": "Derrota a 60 enemigos consecutivamente sin recibir daño con Mist."
   },
   "St_R_PillarOfFlame": {
     "name": "Pilar de Fuego",
@@ -7435,7 +7470,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Mantén presionada</color> la tecla de conjuración para cargar energía. Al completar la carga, explotas la energía, causando <sprite=1><color=#16D7FF>150%</color><sprite=5> - <sprite=1><color=#16D7FF>600%</color><sprite=5> de <color=yellow>daño de luz</color> a los enemigos en proporción al tiempo de carga, empujándolos y reduciendo su <color=yellow>velocidad de movimiento</color>.\nAl cargar durante 1 segundo(s), el daño y el alcance alcanzan su máximo.",
+    "description": "<color=yellow>Mantén presionada</color> la tecla de conjuración para cargar energía. Al completar la carga, explotas la energía, causando <sprite=1><color=#16D7FF>150%</color><sprite=5> - <sprite=1><color=#16D7FF>780%</color><sprite=5> de <color=yellow>daño de luz</color> a los enemigos en proporción al tiempo de carga, empujándolos y reduciendo su <color=yellow>velocidad de movimiento</color>.\nAl cargar durante 1 segundo(s), el daño y el alcance alcanzan su máximo.",
     "rawDesc": "<color=yellow>Mantén presionada</color> la tecla de conjuración para cargar energía. Al completar la carga, explotas la energía, causando {0} - {1} de <color=yellow>daño de luz</color> a los enemigos en proporción al tiempo de carga, empujándolos y reduciendo su <color=yellow>velocidad de movimiento</color>.\nAl cargar durante {2} segundo(s), el daño y el alcance alcanzan su máximo.",
     "rawDescVars": [
       {
@@ -7452,13 +7487,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>600%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>780%</color><sprite=5>",
         "format": "#,##0",
         "raw": "maxDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 6.0,
+          "basicAP": 7.8,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25

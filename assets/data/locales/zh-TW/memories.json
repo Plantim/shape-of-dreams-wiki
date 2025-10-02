@@ -241,7 +241,7 @@
     "lore": null,
     "achievementKey": "ACH_ETERNAL_REST",
     "achievementName": "永恆安息",
-    "achievementDescription": "使用基本攻擊對靈魂劍士完成共80次最後一擊。"
+    "achievementDescription": "用基本攻擊對靈魂劍士完成共50次最後一擊。"
   },
   "St_C_DarkBolt": {
     "name": "黑暗之箭",
@@ -334,20 +334,20 @@
   },
   "St_C_FlashFreeze": {
     "name": "急速凍結",
-    "cooldownTime": 6.5,
-    "maxCharges": 1,
+    "cooldownTime": 5.0,
+    "maxCharges": 2,
     "addedCharges": 1,
-    "description": "向前方釋放寒氣，對敵人造成<sprite=1><color=#16D7FF>100%</color><sprite=5>的<color=yellow>冰寒傷害</color>。若敵人已經受到<color=yellow>冰寒</color>影響，則<color=yellow>傷害量</color>增加100%並使其<color=yellow>無法移動</color>1.5秒。",
+    "description": "向前方釋放寒氣，對敵人造成<sprite=1><color=#16D7FF>130%</color><sprite=5>的<color=yellow>冰寒傷害</color>。若敵人已經受到<color=yellow>冰寒</color>影響，則<color=yellow>傷害量</color>增加100%並使其<color=yellow>無法移動</color>1.5秒。",
     "rawDesc": "向前方釋放寒氣，對敵人造成{0}的<color=yellow>冰寒傷害</color>。若敵人已經受到<color=yellow>冰寒</color>影響，則<color=yellow>傷害量</color>增加{1}並使其<color=yellow>無法移動</color>{2}秒。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.3,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -725,7 +725,11 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Melee",
+      "Attack",
+      "Mobility"
+    ],
     "image": "St_C_MagicSword.png",
     "lore": null,
     "achievementKey": "",
@@ -861,7 +865,7 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "用手掌釋放能量，對敵人造成<sprite=1><color=#16D7FF>180%</color><sprite=5>的<color=yellow>傷害</color>，並將所有被命中的敵人推開。被推到牆上的敵人將額外受到<sprite=1><color=#16D7FF>374%</color><sprite=5>的<color=yellow>傷害</color>，並在1.5秒內被暈眩。",
+    "description": "用手掌釋放能量，對敵人造成<sprite=1><color=#16D7FF>180%</color><sprite=5>的<color=yellow>傷害</color>，並將所有被命中的敵人推開。被推到牆上的敵人將額外受到<sprite=1><color=#16D7FF>504%</color><sprite=5>的<color=yellow>傷害</color>，並在1.5秒內被暈眩。",
     "rawDesc": "用手掌釋放能量，對敵人造成{0}的<color=yellow>傷害</color>，並將所有被命中的敵人推開。被推到牆上的敵人將額外受到{1}的<color=yellow>傷害</color>，並在{2}秒內被暈眩。",
     "rawDescVars": [
       {
@@ -878,7 +882,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>374%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*stunDmgRatio",
         "scalingType": "unknown",
@@ -2088,8 +2092,8 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "無法獲得<color=yellow>攻擊速度</color>加成，但每1%<color=yellow>額外攻擊速度</color>會增加0.5<sprite=5>點<color=yellow>攻擊力</color>。\n<color=yellow>衝刺</color>或<color=yellow>瞬移</color>後，下一次<color=yellow>基本攻擊</color>必定產生致命一擊。",
-    "rawDesc": "無法獲得<color=yellow>攻擊速度</color>加成，但每1%<color=yellow>額外攻擊速度</color>會增加{0}點<color=yellow>攻擊力</color>。\n<color=yellow>衝刺</color>或<color=yellow>瞬移</color>後，下一次<color=yellow>基本攻擊</color>必定產生致命一擊。",
+    "description": "無法獲得<color=yellow>攻擊速度</color>加成，但每1%<color=yellow>額外攻擊速度</color>會提升<color=yellow>攻擊力</color>0.5<sprite=5>點。\n<color=yellow>衝刺</color>或<color=yellow>瞬移</color>後，下一次<color=yellow>基本攻擊</color>必定暴擊。\n\n擊殺任意<color=yellow>首領</color>時，會恢復<sprite=2><color=#FF8A2D>200%</color><sprite=5>點<color=yellow>體力</color>。",
+    "rawDesc": "無法獲得<color=yellow>攻擊速度</color>加成，但每1%<color=yellow>額外攻擊速度</color>會提升<color=yellow>攻擊力</color>{0}點。\n<color=yellow>衝刺</color>或<color=yellow>瞬移</color>後，下一次<color=yellow>基本攻擊</color>必定暴擊。\n\n擊殺任意<color=yellow>首領</color>時，會恢復{1}點<color=yellow>體力</color>。",
     "rawDescVars": [
       {
         "rendered": "0.5<sprite=5>",
@@ -2103,6 +2107,19 @@
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
         }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "healAmountPerBossKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
       }
     ],
     "shortDescription": null,
@@ -2114,7 +2131,7 @@
       "Attack"
     ],
     "image": "St_D_TheKillingFlow.PNG",
-    "lore": "一步一命。\n雖無情感，亦無痛苦，身體卻仍記得動作。",
+    "lore": "一步一命。\n雖無情感，亦無痛苦，身體卻還記得那殺戮的動作。",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -2376,7 +2393,9 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Dark"
+    ],
     "image": "St_E_CrimsonLance.png",
     "lore": null,
     "achievementKey": "ACH_THE_EIGHTH_TROPHY",
@@ -3338,8 +3357,8 @@
     "cooldownTime": 14.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在目標區域每0.7秒降下暴風雪，共4<sprite=5>次，對敵人造成<sprite=1><color=#16D7FF>180%</color><sprite=5>的<color=yellow>冰寒傷害</color>，並為友軍賦予<sprite=1><color=#16D7FF>60%</color><sprite=5>的<color=yellow>護盾</color>，護盾會在3.5秒內消失。",
-    "rawDesc": "在目標區域每{0}秒降下暴風雪，共{1}次，對敵人造成{2}的<color=yellow>冰寒傷害</color>，並為友軍賦予{3}的<color=yellow>護盾</color>，護盾會在{4}秒內消失。",
+    "description": "在目標區域每隔0.7秒降下暴風雪，共4<sprite=5>次，對敵人造成<sprite=1><color=#16D7FF>180%</color><sprite=5>的<color=yellow>冰寒傷害</color>，並為友軍提供<sprite=1><color=#16D7FF>60%</color><sprite=5>的<color=yellow>護盾</color>，護盾會在3.5秒內消失。\n最多可同時維持10個暴風雪。",
+    "rawDesc": "在目標區域每隔{0}秒降下暴風雪，共{1}次，對敵人造成{2}的<color=yellow>冰寒傷害</color>，並為友軍提供{3}的<color=yellow>護盾</color>，護盾會在{4}秒內消失。\n最多可同時維持{5}個暴風雪。",
     "rawDescVars": [
       {
         "rendered": "0.7",
@@ -3405,6 +3424,19 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxConcurrentCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "shortDescription": "範圍冰寒傷害、護盾",
@@ -3417,7 +3449,7 @@
       "Shield"
     ],
     "image": "St_L_Blizzard.png",
-    "lore": "呼吸…停滯了。\n尖叫聲凍結，刺骨的寒意撕裂了所有感官。\n\n那隻狼的咆哮…並非勝利者的吶喊，而是失去一切者的哀號，是破碎王國的淒厲哭嚎！\n而我們…也在那龐大的絕望下被壓垮，如塵埃般死去！反覆咀嚼著這無力感！\n這場暴風雪並非單純的寒冷。\n他的絕望混雜著我的詛咒，他的悲傷捲入了我的憤怒…\n\n這是活生生的地獄…\n\n\n——埋葬於雪山的某位傭兵臨終前的記憶片段",
+    "lore": "呼吸……停滯了。\n尖叫聲凍結，刺骨的寒意撕裂了所有感官。\n\n那隻狼的咆哮……不是勝利者的吶喊，而是失去一切者的哀號，是破碎王國的淒厲哭嚎！\n而我們……也在那龐大的絕望下被壓垮，如塵埃般死去！反覆咀嚼著這無力感！\n這場暴風雪並非單純的寒冷。\n他的絕望混雜著我的詛咒，他的悲傷捲入了我的憤怒……\n\n這就是活生生的地獄……\n\n\n——埋葬於雪山的某位傭兵臨終前的記憶片段",
     "achievementKey": "ACH_FIGHTING_COLD_WITH_COLD",
     "achievementName": "以冷制冷",
     "achievementDescription": "持有4個冰寒傷害記憶的情況下，擊殺雪山之王。"
@@ -3578,7 +3610,8 @@
     "traveler": "",
     "travelerMemoryLocation": "",
     "tags": [
-      "Light"
+      "Light",
+      "HardCC"
     ],
     "image": "St_L_CoinExplosion.PNG",
     "lore": null,
@@ -4802,6 +4835,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "Q",
     "tags": [
+      "Dark",
       "Melee",
       "Attack",
       "Mobility"
@@ -5539,6 +5573,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "R",
     "tags": [
+      "Dark",
       "Melee",
       "Attack"
     ],
@@ -5836,7 +5871,7 @@
     "lore": "這正是我理論的完美證明。\n分解與結合依照我設定的法則彼此引發連鎖反應。\n這股力量的設計方式，將帶來無窮無盡的應用可能。\n\n繼續研究下去吧。",
     "achievementKey": "ACH_OVERFLOWING_HEALS",
     "achievementName": "溢出的治癒",
-    "achievementDescription": "使用奧蕾娜在生命值低於40%以下時，透過一次危險理論恢復超過最大生命值的60%。"
+    "achievementDescription": "使用奧蕾娜在生命值低於40%時，靠危險理論一次把血量全補滿。"
   },
   "St_R_Chomp": {
     "name": "撕咬",
@@ -6155,29 +6190,29 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "召喚霜之大劍揮舞，對前方的敵人造成<sprite=1><color=#16D7FF>200%</color><sprite=5>的<color=yellow>冰寒傷害</color>並將其推開。若命中單一目標，<color=yellow>傷害量</color>將增加200%。",
+    "description": "召喚霜之大劍揮舞，對前方的敵人造成<sprite=1><color=#16D7FF>250%</color><sprite=5>的<color=yellow>冰寒傷害</color>並將其推開。若命中單一目標，<color=yellow>傷害量</color>將增加350%。",
     "rawDesc": "召喚霜之大劍揮舞，對前方的敵人造成{0}的<color=yellow>冰寒傷害</color>並將其推開。若命中單一目標，<color=yellow>傷害量</color>將增加{1}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.0,
+          "basicAP": 2.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "200%",
+        "rendered": "350%",
         "format": "P0",
         "raw": "singleTargetAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6637,7 +6672,7 @@
     "lore": "攻守一體。",
     "achievementKey": "ACH_GO_WITH_THE_FLOW",
     "achievementName": "順水推舟",
-    "achievementDescription": "以米絲特連續擊殺敵人70次而不受傷害。"
+    "achievementDescription": "以米絲特連續擊殺敵人60次而不受傷害。"
   },
   "St_R_PillarOfFlame": {
     "name": "火焰柱",
@@ -7435,7 +7470,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>長按</color>施放鍵時，充能靜電。充能完成後，引爆靜電，根據充能時間對敵人造成<sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>600%</color><sprite=5>的<color=yellow>光明傷害</color>，並將其推開且降低<color=yellow>移動速度</color>。\n充能1秒後，傷害量和範圍達到最大值。",
+    "description": "<color=yellow>長按</color>施放鍵時，充能靜電。充能完成後，引爆靜電，根據充能時間對敵人造成<sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>780%</color><sprite=5>的<color=yellow>光明傷害</color>，並將其推開且降低<color=yellow>移動速度</color>。\n充能1秒後，傷害量和範圍達到最大值。",
     "rawDesc": "<color=yellow>長按</color>施放鍵時，充能靜電。充能完成後，引爆靜電，根據充能時間對敵人造成{0}~{1}的<color=yellow>光明傷害</color>，並將其推開且降低<color=yellow>移動速度</color>。\n充能{2}秒後，傷害量和範圍達到最大值。",
     "rawDescVars": [
       {
@@ -7452,13 +7487,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>600%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>780%</color><sprite=5>",
         "format": "#,##0",
         "raw": "maxDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 6.0,
+          "basicAP": 7.8,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25

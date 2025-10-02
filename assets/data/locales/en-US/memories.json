@@ -241,7 +241,7 @@
     "lore": null,
     "achievementKey": "ACH_ETERNAL_REST",
     "achievementName": "Eternal Rest",
-    "achievementDescription": "Deliver a total of 80 finishing blows to Soul Swordsmen using basic attacks."
+    "achievementDescription": "Deliver a total of 50 finishing blows to Soul Swordsmen using basic attacks."
   },
   "St_C_DarkBolt": {
     "name": "Dark Bolt",
@@ -334,20 +334,20 @@
   },
   "St_C_FlashFreeze": {
     "name": "Flash Freeze",
-    "cooldownTime": 6.5,
-    "maxCharges": 1,
+    "cooldownTime": 5.0,
+    "maxCharges": 2,
     "addedCharges": 1,
-    "description": "Unleashes Cold energy forward, dealing <sprite=1><color=#16D7FF>100%</color><sprite=5> <color=yellow>Cold damage</color> to enemies. If an enemy is already affected by <color=yellow>Cold</color>, the <color=yellow>damage</color> is increased by 100% and they are <color=yellow>rooted</color> for 1.5 seconds.",
+    "description": "Unleashes Cold energy forward, dealing <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>Cold damage</color> to enemies. If an enemy is already affected by <color=yellow>Cold</color>, the <color=yellow>damage</color> is increased by 100% and they are <color=yellow>rooted</color> for 1.5 seconds.",
     "rawDesc": "Unleashes Cold energy forward, dealing {0} <color=yellow>Cold damage</color> to enemies. If an enemy is already affected by <color=yellow>Cold</color>, the <color=yellow>damage</color> is increased by {1} and they are <color=yellow>rooted</color> for {2} seconds.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.3,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -725,7 +725,11 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Melee",
+      "Attack",
+      "Mobility"
+    ],
     "image": "St_C_MagicSword.png",
     "lore": null,
     "achievementKey": "",
@@ -861,7 +865,7 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Releases energy from the palm, dealing <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>damage</color> and pushing back all enemies hit. If a pushed enemy hits a wall, they take an additional <sprite=1><color=#16D7FF>374%</color><sprite=5> <color=yellow>damage</color> and are stunned for 1.5 seconds.",
+    "description": "Releases energy from the palm, dealing <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>damage</color> and pushing back all enemies hit. If a pushed enemy hits a wall, they take an additional <sprite=1><color=#16D7FF>504%</color><sprite=5> <color=yellow>damage</color> and are stunned for 1.5 seconds.",
     "rawDesc": "Releases energy from the palm, dealing {0} <color=yellow>damage</color> and pushing back all enemies hit. If a pushed enemy hits a wall, they take an additional {1} <color=yellow>damage</color> and are stunned for {2} seconds.",
     "rawDescVars": [
       {
@@ -878,7 +882,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>374%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*stunDmgRatio",
         "scalingType": "unknown",
@@ -2088,8 +2092,8 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Instead of receiving <color=yellow>Attack Speed</color> bonuses, your <color=yellow>Attack Damage</color> increases by 0.5<sprite=5> for every 1% <color=yellow>Additional Attack Speed</color>.\nAfter <color=yellow>Dash</color> or <color=yellow>Teleport your next <color=yellow>basic attack</color> will be a critical hit.",
-    "rawDesc": "Instead of receiving <color=yellow>Attack Speed</color> bonuses, your <color=yellow>Attack Damage</color> increases by {0} for every 1% <color=yellow>Additional Attack Speed</color>.\nAfter <color=yellow>Dash</color> or <color=yellow>Teleport your next <color=yellow>basic attack</color> will be a critical hit.",
+    "description": "Instead of receiving <color=yellow>Attack Speed</color> bonuses, your <color=yellow>Attack Damage</color> increases by 0.5<sprite=5> for every 1% <color=yellow>Additional Attack Speed</color>.\nAfter <color=yellow>Dash</color> or <color=yellow>Teleport</color>, your next <color=yellow>Basic Attack</color> will be a critical hit.\n\nKilling any <color=yellow>Boss</color> <color=yellow>restores</color> <sprite=2><color=#FF8A2D>200%</color><sprite=5> <color=yellow>Health</color>.",
+    "rawDesc": "Instead of receiving <color=yellow>Attack Speed</color> bonuses, your <color=yellow>Attack Damage</color> increases by {0} for every 1% <color=yellow>Additional Attack Speed</color>.\nAfter <color=yellow>Dash</color> or <color=yellow>Teleport</color>, your next <color=yellow>Basic Attack</color> will be a critical hit.\n\nKilling any <color=yellow>Boss</color> <color=yellow>restores</color> {1} <color=yellow>Health</color>.",
     "rawDescVars": [
       {
         "rendered": "0.5<sprite=5>",
@@ -2103,6 +2107,19 @@
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
         }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "healAmountPerBossKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
       }
     ],
     "shortDescription": null,
@@ -2114,7 +2131,7 @@
       "Attack"
     ],
     "image": "St_D_TheKillingFlow.PNG",
-    "lore": "With every step, a life is taken. There is no emotion, no pain, only the body recalling every movement.",
+    "lore": "With every step, a life is taken.\nThere is no emotion, no pain, only the body recalling every movement.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -2376,7 +2393,9 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Dark"
+    ],
     "image": "St_E_CrimsonLance.png",
     "lore": null,
     "achievementKey": "ACH_THE_EIGHTH_TROPHY",
@@ -3338,8 +3357,8 @@
     "cooldownTime": 14.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Summons a Blizzard in the target area 4<sprite=5> times every 0.7 seconds, dealing <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>Cold damage</color> to enemies and granting allies a <sprite=1><color=#16D7FF>60%</color><sprite=5> <color=yellow>Barrier</color> that fades over 3.5 seconds.",
-    "rawDesc": "Summons a Blizzard in the target area {0} times every {1} seconds, dealing {2} <color=yellow>Cold damage</color> to enemies and granting allies a {3} <color=yellow>Barrier</color> that fades over {4} seconds.",
+    "description": "Summons a blizzard in the target area 4<sprite=5> times every 0.7 seconds, dealing <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>Cold Damage</color> to enemies and granting allies a <sprite=1><color=#16D7FF>60%</color><sprite=5> <color=yellow>Barrier</color> that fades over 3.5 seconds.\nCan maintain up to 10 simultaneously.",
+    "rawDesc": "Summons a blizzard in the target area {0} times every {1} seconds, dealing {2} <color=yellow>Cold Damage</color> to enemies and granting allies a {3} <color=yellow>Barrier</color> that fades over {4} seconds.\nCan maintain up to {5} simultaneously.",
     "rawDescVars": [
       {
         "rendered": "4<sprite=5>",
@@ -3405,9 +3424,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxConcurrentCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Area Cold damage, Barrier",
+    "shortDescription": "Area Cold Damage, Barrier",
     "rarity": "Legendary",
     "type": "Normal",
     "traveler": "",
@@ -3578,7 +3610,8 @@
     "traveler": "",
     "travelerMemoryLocation": "",
     "tags": [
-      "Light"
+      "Light",
+      "HardCC"
     ],
     "image": "St_L_CoinExplosion.PNG",
     "lore": null,
@@ -4802,6 +4835,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "Q",
     "tags": [
+      "Dark",
       "Melee",
       "Attack",
       "Mobility"
@@ -5539,6 +5573,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "R",
     "tags": [
+      "Dark",
       "Melee",
       "Attack"
     ],
@@ -5836,7 +5871,7 @@
     "lore": "This is perfect proof of my theory.\nDecomposition and combination trigger one another, creating a chain reaction according to the laws I have established.\nThere are countless ways to use this power, depending on how it is shaped.\n\nI must continue my research.",
     "achievementKey": "ACH_OVERFLOWING_HEALS",
     "achievementName": "Overflowing Healing",
-    "achievementDescription": "As Aurena, restore at least 60% of your Maximum Health in one cast of Dangerous Theory when your Health is below 40%."
+    "achievementDescription": "As Aurena, fully restore your Health in one use of Dangerous Theory when your Health is below 40%."
   },
   "St_R_Chomp": {
     "name": "Chomp",
@@ -6155,29 +6190,29 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Summon and swing a great frost sword, dealing <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>Cold damage</color> to enemies in front and knocking them back. If it hits a single target, <color=yellow>damage</color> is increased by 200%.",
+    "description": "Summon and swing a great frost sword, dealing <sprite=1><color=#16D7FF>250%</color><sprite=5> <color=yellow>Cold damage</color> to enemies in front and knocking them back. If it hits a single target, <color=yellow>damage</color> is increased by 350%.",
     "rawDesc": "Summon and swing a great frost sword, dealing {0} <color=yellow>Cold damage</color> to enemies in front and knocking them back. If it hits a single target, <color=yellow>damage</color> is increased by {1}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.0,
+          "basicAP": 2.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "200%",
+        "rendered": "350%",
         "format": "P0",
         "raw": "singleTargetAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6637,7 +6672,7 @@
     "lore": "Attack and defense are two sides of the same coin.",
     "achievementKey": "ACH_GO_WITH_THE_FLOW",
     "achievementName": "Go with the Flow",
-    "achievementDescription": "Defeat 70 enemies in a row without taking damage as Mist."
+    "achievementDescription": "Defeat 60 enemies in a row without taking damage as Mist."
   },
   "St_R_PillarOfFlame": {
     "name": "Pillar of Flame",
@@ -7435,7 +7470,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Hold</color> to charge up static. When fully charged, detonate the static to deal <sprite=1><color=#16D7FF>150%</color><sprite=5>-<sprite=1><color=#16D7FF>600%</color><sprite=5> <color=yellow>Light damage</color> to enemies, based on charge time, knocking them back and reducing their <color=yellow>Movement Speed</color>. Charging for 1 seconds maximizes the damage and area of effect.",
+    "description": "<color=yellow>Hold</color> to charge up static. When fully charged, detonate the static to deal <sprite=1><color=#16D7FF>150%</color><sprite=5>-<sprite=1><color=#16D7FF>780%</color><sprite=5> <color=yellow>Light damage</color> to enemies, based on charge time, knocking them back and reducing their <color=yellow>Movement Speed</color>. Charging for 1 seconds maximizes the damage and area of effect.",
     "rawDesc": "<color=yellow>Hold</color> to charge up static. When fully charged, detonate the static to deal {0}-{1} <color=yellow>Light damage</color> to enemies, based on charge time, knocking them back and reducing their <color=yellow>Movement Speed</color>. Charging for {2} seconds maximizes the damage and area of effect.",
     "rawDescVars": [
       {
@@ -7452,13 +7487,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>600%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>780%</color><sprite=5>",
         "format": "#,##0",
         "raw": "maxDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 6.0,
+          "basicAP": 7.8,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25

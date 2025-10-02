@@ -241,7 +241,7 @@
     "lore": null,
     "achievementKey": "ACH_ETERNAL_REST",
     "achievementName": "Repos éternel",
-    "achievementDescription": "Portez 80 fois au total des coups de grâce à l'Épéiste Fantôme avec l'attaque de base."
+    "achievementDescription": "Portez 50 fois au total des coups de grâce à l'Épéiste Fantôme avec l'attaque de base."
   },
   "St_C_DarkBolt": {
     "name": "Flèche de Ténèbres",
@@ -334,20 +334,20 @@
   },
   "St_C_FlashFreeze": {
     "name": "Gel Instantané",
-    "cooldownTime": 6.5,
-    "maxCharges": 1,
+    "cooldownTime": 5.0,
+    "maxCharges": 2,
     "addedCharges": 1,
-    "description": "Émet une aura de givre vers l'avant, infligeant des <color=yellow>dégâts de givre</color> de <sprite=1><color=#16D7FF>100%</color><sprite=5> aux ennemis. Si un ennemi est déjà affecté par le <color=yellow>givre</color>, augmente les <color=yellow>dégâts</color> de 100% et l'<color=yellow>immobilise</color> pendant 1.5 sec.",
+    "description": "Émet une aura de givre vers l'avant, infligeant des <color=yellow>dégâts de givre</color> de <sprite=1><color=#16D7FF>130%</color><sprite=5> aux ennemis. Si un ennemi est déjà affecté par le <color=yellow>givre</color>, augmente les <color=yellow>dégâts</color> de 100% et l'<color=yellow>immobilise</color> pendant 1.5 sec.",
     "rawDesc": "Émet une aura de givre vers l'avant, infligeant des <color=yellow>dégâts de givre</color> de {0} aux ennemis. Si un ennemi est déjà affecté par le <color=yellow>givre</color>, augmente les <color=yellow>dégâts</color> de {1} et l'<color=yellow>immobilise</color> pendant {2} sec.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.3,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -725,7 +725,11 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Melee",
+      "Attack",
+      "Mobility"
+    ],
     "image": "St_C_MagicSword.png",
     "lore": null,
     "achievementKey": "",
@@ -861,7 +865,7 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Libère de l'énergie par la paume, infligeant des <color=yellow>dégâts</color> de <sprite=1><color=#16D7FF>180%</color><sprite=5> et repousse tous les ennemis touchés. Si la cible est repoussée contre un mur, lui inflige des <color=yellow>dégâts</color> supplémentaires de <sprite=1><color=#16D7FF>374%</color><sprite=5> et l'étourdit pendant 1.5 sec.",
+    "description": "Libère de l'énergie par la paume, infligeant des <color=yellow>dégâts</color> de <sprite=1><color=#16D7FF>180%</color><sprite=5> et repousse tous les ennemis touchés. Si la cible est repoussée contre un mur, lui inflige des <color=yellow>dégâts</color> supplémentaires de <sprite=1><color=#16D7FF>504%</color><sprite=5> et l'étourdit pendant 1.5 sec.",
     "rawDesc": "Libère de l'énergie par la paume, infligeant des <color=yellow>dégâts</color> de {0} et repousse tous les ennemis touchés. Si la cible est repoussée contre un mur, lui inflige des <color=yellow>dégâts</color> supplémentaires de {1} et l'étourdit pendant {2} sec.",
     "rawDescVars": [
       {
@@ -878,7 +882,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>374%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*stunDmgRatio",
         "scalingType": "unknown",
@@ -2088,8 +2092,8 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Ne peut pas recevoir de bonus de <color=yellow>VIT d'ATQ</color>, mais en contrepartie, augmente l'<color=yellow>ATQ</color> de 0.5<sprite=5> pour chaque 1% de <color=yellow>VIT d'ATQ supplémentaire</color>.\nAprès un <color=yellow>assaut</color> ou une <color=yellow>téléportation</color>, la prochaine <color=yellow>attaque de base</color> est un coup CRIT.",
-    "rawDesc": "Ne peut pas recevoir de bonus de <color=yellow>VIT d'ATQ</color>, mais en contrepartie, augmente l'<color=yellow>ATQ</color> de {0} pour chaque 1% de <color=yellow>VIT d'ATQ supplémentaire</color>.\nAprès un <color=yellow>assaut</color> ou une <color=yellow>téléportation</color>, la prochaine <color=yellow>attaque de base</color> est un coup CRIT.",
+    "description": "Ne peut pas recevoir de bonus de <color=yellow>Vitesse d'attaque</color>, mais en contrepartie, augmente l'<color=yellow>Dégâts d'Attaque</color> de 0.5<sprite=5> pour chaque 1% de <color=yellow>Vitesse d'attaque</color> supplémentaire.\nAprès un <color=yellow>assaut</color> ou une <color=yellow>téléportation</color>, la prochaine <color=yellow>Attaque de base</color> est un coup critique.\n\nÉliminer n'importe quel <color=yellow>Boss</color> restaure <sprite=2><color=#FF8A2D>200%</color><sprite=5> <color=yellow>PV</color>.",
+    "rawDesc": "Ne peut pas recevoir de bonus de <color=yellow>Vitesse d'attaque</color>, mais en contrepartie, augmente l'<color=yellow>Dégâts d'Attaque</color> de {0} pour chaque 1% de <color=yellow>Vitesse d'attaque</color> supplémentaire.\nAprès un <color=yellow>assaut</color> ou une <color=yellow>téléportation</color>, la prochaine <color=yellow>Attaque de base</color> est un coup critique.\n\nÉliminer n'importe quel <color=yellow>Boss</color> restaure {1} <color=yellow>PV</color>.",
     "rawDescVars": [
       {
         "rendered": "0.5<sprite=5>",
@@ -2102,6 +2106,19 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "healAmountPerBossKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
         }
       }
     ],
@@ -2376,7 +2393,9 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Dark"
+    ],
     "image": "St_E_CrimsonLance.png",
     "lore": null,
     "achievementKey": "ACH_THE_EIGHTH_TROPHY",
@@ -3338,8 +3357,8 @@
     "cooldownTime": 14.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Toutes les 0.7 sec, fait souffler 4<sprite=5> fois un Blizzard sur la zone ciblée, infligeant aux ennemis des <color=yellow>dégâts de givre</color> de <sprite=1><color=#16D7FF>180%</color><sprite=5>, et confère aux alliés une <color=yellow>barrière</color> de <sprite=1><color=#16D7FF>60%</color><sprite=5> qui se dissipe sur une durée de 3.5 sec.",
-    "rawDesc": "Toutes les {0} sec, fait souffler {1} fois un Blizzard sur la zone ciblée, infligeant aux ennemis des <color=yellow>dégâts de givre</color> de {2}, et confère aux alliés une <color=yellow>barrière</color> de {3} qui se dissipe sur une durée de {4} sec.",
+    "description": "Toutes les 0.7 sec, fait souffler 4<sprite=5> fois un Blizzard sur la zone ciblée, infligeant aux ennemis des <color=yellow>Dégâts de Froid</color> de <sprite=1><color=#16D7FF>180%</color><sprite=5>, et confère aux alliés une <color=yellow>barrière</color> de <sprite=1><color=#16D7FF>60%</color><sprite=5> qui se dissipe sur une durée de 3.5 sec.\nVous pouvez maintenir un maximum de 10 Blizzards simultanément.",
+    "rawDesc": "Toutes les {0} sec, fait souffler {1} fois un Blizzard sur la zone ciblée, infligeant aux ennemis des <color=yellow>Dégâts de Froid</color> de {2}, et confère aux alliés une <color=yellow>barrière</color> de {3} qui se dissipe sur une durée de {4} sec.\nVous pouvez maintenir un maximum de {5} Blizzards simultanément.",
     "rawDescVars": [
       {
         "rendered": "0.7",
@@ -3405,9 +3424,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxConcurrentCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Dégâts de givre de zone, barrière",
+    "shortDescription": "Dégâts de Froid de zone, barrière",
     "rarity": "Legendary",
     "type": "Normal",
     "traveler": "",
@@ -3578,7 +3610,8 @@
     "traveler": "",
     "travelerMemoryLocation": "",
     "tags": [
-      "Light"
+      "Light",
+      "HardCC"
     ],
     "image": "St_L_CoinExplosion.PNG",
     "lore": null,
@@ -4802,6 +4835,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "Q",
     "tags": [
+      "Dark",
       "Melee",
       "Attack",
       "Mobility"
@@ -5539,6 +5573,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "R",
     "tags": [
+      "Dark",
       "Melee",
       "Attack"
     ],
@@ -5836,7 +5871,7 @@
     "lore": "Voici la preuve irréfutable de ma théorie.\nLe broyage et la recomposition s'alimentent mutuellement, formant une réaction en chaîne conforme aux lois que j'ai établies.\nLes applications potentielles de cette puissance sont infinies, selon l'usage que l'on en fait.\n\nPoursuivons les recherches.",
     "achievementKey": "ACH_OVERFLOWING_HEALS",
     "achievementName": "Soins débordants",
-    "achievementDescription": "En tant qu'Aurena avec des PV à 40% ou moins, soignez 60% ou plus des PV max en un seul déclenchement de Théorie Dangereuse."
+    "achievementDescription": "En tant qu'Aurena avec des PV à 40% ou moins, récupérez tous vos PV en un seul déclenchement de Théorie Dangereuse."
   },
   "St_R_Chomp": {
     "name": "Morsure",
@@ -6155,29 +6190,29 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Invoque une Grande Épée Glaciale pour attaquer les ennemis à l'avant, infligeant des <color=yellow>dégâts de givre</color> de <sprite=1><color=#16D7FF>200%</color><sprite=5>, et les repousse. Si un unique ennemi est touché, augmente les <color=yellow>dégâts</color> de 200%.",
+    "description": "Invoque une Grande Épée Glaciale pour attaquer les ennemis à l'avant, infligeant des <color=yellow>dégâts de givre</color> de <sprite=1><color=#16D7FF>250%</color><sprite=5>, et les repousse. Si un unique ennemi est touché, augmente les <color=yellow>dégâts</color> de 350%.",
     "rawDesc": "Invoque une Grande Épée Glaciale pour attaquer les ennemis à l'avant, infligeant des <color=yellow>dégâts de givre</color> de {0}, et les repousse. Si un unique ennemi est touché, augmente les <color=yellow>dégâts</color> de {1}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.0,
+          "basicAP": 2.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "200%",
+        "rendered": "350%",
         "format": "P0",
         "raw": "singleTargetAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6637,7 +6672,7 @@
     "lore": "L'attaque et la défense ne font qu'un.",
     "achievementKey": "ACH_GO_WITH_THE_FLOW",
     "achievementName": "Suivre le courant",
-    "achievementDescription": "En tant que Mist, éliminez un ennemi 70 fois à la suite sans subir de dégâts de leur part."
+    "achievementDescription": "En tant que Mist, éliminez un ennemi 60 fois à la suite sans subir de dégâts de leur part."
   },
   "St_R_PillarOfFlame": {
     "name": "Pilier de Flammes",
@@ -7435,7 +7470,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Charge l'électricité statique en <color=yellow>maintenant longuement</color> la touche du déclenchement. Une fois chargée, la fait exploser, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> proportionnels au temps de charge, allant de <sprite=1><color=#16D7FF>150%</color><sprite=5> à <sprite=1><color=#16D7FF>600%</color><sprite=5>. Repousse les cibles et réduit leur <color=yellow>VIT de DÉP</color>.\nLes dégâts et la zone de dégâts atteignent le maximum en chargeant pendant 1 sec.",
+    "description": "Charge l'électricité statique en <color=yellow>maintenant longuement</color> la touche du déclenchement. Une fois chargée, la fait exploser, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> proportionnels au temps de charge, allant de <sprite=1><color=#16D7FF>150%</color><sprite=5> à <sprite=1><color=#16D7FF>780%</color><sprite=5>. Repousse les cibles et réduit leur <color=yellow>VIT de DÉP</color>.\nLes dégâts et la zone de dégâts atteignent le maximum en chargeant pendant 1 sec.",
     "rawDesc": "Charge l'électricité statique en <color=yellow>maintenant longuement</color> la touche du déclenchement. Une fois chargée, la fait exploser, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> proportionnels au temps de charge, allant de {0} à {1}. Repousse les cibles et réduit leur <color=yellow>VIT de DÉP</color>.\nLes dégâts et la zone de dégâts atteignent le maximum en chargeant pendant {2} sec.",
     "rawDescVars": [
       {
@@ -7452,13 +7487,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>600%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>780%</color><sprite=5>",
         "format": "#,##0",
         "raw": "maxDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 6.0,
+          "basicAP": 7.8,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25

@@ -241,7 +241,7 @@
     "lore": null,
     "achievementKey": "ACH_ETERNAL_REST",
     "achievementName": "Riposo Eterno",
-    "achievementDescription": "Infliggi il colpo finale allo Spadaccino Spirituale con un attacco base per un totale di 80 volte."
+    "achievementDescription": "Infliggi il colpo finale allo Spadaccino Spirituale con un attacco base per un totale di 50 volte."
   },
   "St_C_DarkBolt": {
     "name": "Freccia Oscura",
@@ -334,20 +334,20 @@
   },
   "St_C_FlashFreeze": {
     "name": "Morsa del Gelo",
-    "cooldownTime": 6.5,
-    "maxCharges": 1,
+    "cooldownTime": 5.0,
+    "maxCharges": 2,
     "addedCharges": 1,
-    "description": "Emana freddo davanti a te, infliggendo <sprite=1><color=#16D7FF>100%</color><sprite=5> di <color=yellow>danno da gelo</color> ai nemici. Se un nemico è già sotto l'effetto di <color=yellow>congelamento</color>, il <color=yellow>danno</color> aumenta del 100% e lo rende <color=yellow>immobilizzato</color> per 1.5 s.",
+    "description": "Emana freddo davanti a te, infliggendo <sprite=1><color=#16D7FF>130%</color><sprite=5> di <color=yellow>danno da gelo</color> ai nemici. Se un nemico è già sotto l'effetto di <color=yellow>congelamento</color>, il <color=yellow>danno</color> aumenta del 100% e lo rende <color=yellow>immobilizzato</color> per 1.5 s.",
     "rawDesc": "Emana freddo davanti a te, infliggendo {0} di <color=yellow>danno da gelo</color> ai nemici. Se un nemico è già sotto l'effetto di <color=yellow>congelamento</color>, il <color=yellow>danno</color> aumenta del {1} e lo rende <color=yellow>immobilizzato</color> per {2} s.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.3,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -725,7 +725,11 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Melee",
+      "Attack",
+      "Mobility"
+    ],
     "image": "St_C_MagicSword.png",
     "lore": null,
     "achievementKey": "",
@@ -861,7 +865,7 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Rilascia energia dal palmo, infliggendo <sprite=1><color=#16D7FF>180%</color><sprite=5> di <color=yellow>danno</color> e respingendo tutti i nemici colpiti. Se un nemico respinto colpisce un muro, subisce <sprite=1><color=#16D7FF>374%</color><sprite=5> di <color=yellow>danno</color> aggiuntivo e rimane stordito per 1.5s.",
+    "description": "Rilascia energia dal palmo, infliggendo <sprite=1><color=#16D7FF>180%</color><sprite=5> di <color=yellow>danno</color> e respingendo tutti i nemici colpiti. Se un nemico respinto colpisce un muro, subisce <sprite=1><color=#16D7FF>504%</color><sprite=5> di <color=yellow>danno</color> aggiuntivo e rimane stordito per 1.5s.",
     "rawDesc": "Rilascia energia dal palmo, infliggendo {0} di <color=yellow>danno</color> e respingendo tutti i nemici colpiti. Se un nemico respinto colpisce un muro, subisce {1} di <color=yellow>danno</color> aggiuntivo e rimane stordito per {2}s.",
     "rawDescVars": [
       {
@@ -878,7 +882,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>374%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*stunDmgRatio",
         "scalingType": "unknown",
@@ -2088,8 +2092,8 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Non puoi ricevere bonus alla <color=yellow>velocità d'attacco</color>, ma per ogni 1% di <color=yellow>velocità d'attacco aggiuntiva</color>, la <color=yellow>potenza d'attacco</color> aumenta di 0.5<sprite=5>.\nDopo una <color=yellow>Carica</color> o un <color=yellow>Teletrasporto</color>, il tuo prossimo <color=yellow>attacco base</color> sarà un critico.",
-    "rawDesc": "Non puoi ricevere bonus alla <color=yellow>velocità d'attacco</color>, ma per ogni 1% di <color=yellow>velocità d'attacco aggiuntiva</color>, la <color=yellow>potenza d'attacco</color> aumenta di {0}.\nDopo una <color=yellow>Carica</color> o un <color=yellow>Teletrasporto</color>, il tuo prossimo <color=yellow>attacco base</color> sarà un critico.",
+    "description": "Non puoi ricevere bonus alla <color=yellow>Velocità d'attacco</color>, ma per ogni 1% di <color=yellow>Velocità d'attacco aggiuntiva</color>, il <color=yellow>Danno d'Attacco</color> aumenta di 0.5<sprite=5>.\nDopo una <color=yellow>Carica</color> o un <color=yellow>Teletrasporto</color>, il tuo prossimo <color=yellow>Attacco base</color> sarà un critico.\n\nUccidendo qualsiasi <color=yellow>Boss</color> <color=yellow>recuperi</color> <sprite=2><color=#FF8A2D>200%</color><sprite=5> <color=yellow>Salute</color>.",
+    "rawDesc": "Non puoi ricevere bonus alla <color=yellow>Velocità d'attacco</color>, ma per ogni 1% di <color=yellow>Velocità d'attacco aggiuntiva</color>, il <color=yellow>Danno d'Attacco</color> aumenta di {0}.\nDopo una <color=yellow>Carica</color> o un <color=yellow>Teletrasporto</color>, il tuo prossimo <color=yellow>Attacco base</color> sarà un critico.\n\nUccidendo qualsiasi <color=yellow>Boss</color> <color=yellow>recuperi</color> {1} <color=yellow>Salute</color>.",
     "rawDescVars": [
       {
         "rendered": "0.5<sprite=5>",
@@ -2102,6 +2106,19 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "healAmountPerBossKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
         }
       }
     ],
@@ -2376,7 +2393,9 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Dark"
+    ],
     "image": "St_E_CrimsonLance.png",
     "lore": null,
     "achievementKey": "ACH_THE_EIGHTH_TROPHY",
@@ -3338,8 +3357,8 @@
     "cooldownTime": 14.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Scatena una tormenta nell'area bersaglio 4<sprite=5> volte ogni 0.7 s, infliggendo <sprite=1><color=#16D7FF>180%</color><sprite=5> di <color=yellow>danno da gelo</color> ai nemici e concedendo agli alleati uno <color=yellow>scudo</color> di <sprite=1><color=#16D7FF>60%</color><sprite=5> che svanisce dopo 3.5 s.",
-    "rawDesc": "Scatena una tormenta nell'area bersaglio {0} volte ogni {1} s, infliggendo {2} di <color=yellow>danno da gelo</color> ai nemici e concedendo agli alleati uno <color=yellow>scudo</color> di {3} che svanisce dopo {4} s.",
+    "description": "Scatena una tormenta nell'area bersaglio 4<sprite=5> volte ogni 0.7 s, infliggendo <sprite=1><color=#16D7FF>180%</color><sprite=5> di <color=yellow>Danno da Freddo</color> ai nemici e concedendo agli alleati uno <color=yellow>scudo</color> di <sprite=1><color=#16D7FF>60%</color><sprite=5> che svanisce dopo 3.5 s.\nPuoi mantenere un massimo di 10 contemporaneamente.",
+    "rawDesc": "Scatena una tormenta nell'area bersaglio {0} volte ogni {1} s, infliggendo {2} di <color=yellow>Danno da Freddo</color> ai nemici e concedendo agli alleati uno <color=yellow>scudo</color> di {3} che svanisce dopo {4} s.\nPuoi mantenere un massimo di {5} contemporaneamente.",
     "rawDescVars": [
       {
         "rendered": "4<sprite=5>",
@@ -3405,9 +3424,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxConcurrentCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Danno da gelo ad area, scudo",
+    "shortDescription": "Danno da Freddo ad area, scudo",
     "rarity": "Legendary",
     "type": "Normal",
     "traveler": "",
@@ -3578,7 +3610,8 @@
     "traveler": "",
     "travelerMemoryLocation": "",
     "tags": [
-      "Light"
+      "Light",
+      "HardCC"
     ],
     "image": "St_L_CoinExplosion.PNG",
     "lore": null,
@@ -4802,6 +4835,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "Q",
     "tags": [
+      "Dark",
       "Melee",
       "Attack",
       "Mobility"
@@ -5539,6 +5573,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "R",
     "tags": [
+      "Dark",
       "Melee",
       "Attack"
     ],
@@ -5836,7 +5871,7 @@
     "lore": "Questa è la prova perfetta della mia teoria.\nScomposizione e combinazione si innescano a vicenda secondo le leggi che ho stabilito, dando origine a una reazione a catena.\nA seconda di come si progetta questa forza, le possibilità di applicazione sono infinite.\n\nContinuiamo la ricerca.",
     "achievementKey": "ACH_OVERFLOWING_HEALS",
     "achievementName": "Cura Traboccante",
-    "achievementDescription": "Con Aurena, recupera più del 60% dei tuoi PV massimi con un singolo lancio di Teoria Pericolosa mentre hai i PV al di sotto del 40%."
+    "achievementDescription": "Con Aurena, recupera completamente i tuoi PV con Teoria Pericolosa mentre hai i PV al di sotto del 40%."
   },
   "St_R_Chomp": {
     "name": "Morso",
@@ -6155,29 +6190,29 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Evoca e brandisce uno spadone di gelo, infliggendo <sprite=1><color=#16D7FF>200%</color><sprite=5> di <color=yellow>danno da gelo</color> ai nemici di fronte e respingendoli. Se colpisce un singolo bersaglio, il <color=yellow>danno</color> aumenta del 200%.",
+    "description": "Evoca e brandisce uno spadone di gelo, infliggendo <sprite=1><color=#16D7FF>250%</color><sprite=5> di <color=yellow>danno da gelo</color> ai nemici di fronte e respingendoli. Se colpisce un singolo bersaglio, il <color=yellow>danno</color> aumenta del 350%.",
     "rawDesc": "Evoca e brandisce uno spadone di gelo, infliggendo {0} di <color=yellow>danno da gelo</color> ai nemici di fronte e respingendoli. Se colpisce un singolo bersaglio, il <color=yellow>danno</color> aumenta del {1}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.0,
+          "basicAP": 2.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "200%",
+        "rendered": "350%",
         "format": "P0",
         "raw": "singleTargetAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6637,7 +6672,7 @@
     "lore": "Attacco e difesa sono un'unica cosa.",
     "achievementKey": "ACH_GO_WITH_THE_FLOW",
     "achievementName": "Segui il Flusso",
-    "achievementDescription": "Uccidi 70 nemici consecutivamente senza subire danni usando Mist."
+    "achievementDescription": "Uccidi 60 nemici consecutivamente senza subire danni usando Mist."
   },
   "St_R_PillarOfFlame": {
     "name": "Colonna di Fuoco",
@@ -7435,7 +7470,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Tieni premuto</color> il tasto di lancio per caricare energia statica. Una volta caricata, fai esplodere l'energia infliggendo <sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>600%</color><sprite=5> di <color=yellow>danno da luce</color> ai nemici in proporzione al tempo di carica, respingendoli e riducendo la loro <color=yellow>velocità di movimento</color>.\nAccumulando energia per 1 s, il danno e l'area d'effetto raggiungono il massimo.",
+    "description": "<color=yellow>Tieni premuto</color> il tasto di lancio per caricare energia statica. Una volta caricata, fai esplodere l'energia infliggendo <sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>780%</color><sprite=5> di <color=yellow>danno da luce</color> ai nemici in proporzione al tempo di carica, respingendoli e riducendo la loro <color=yellow>velocità di movimento</color>.\nAccumulando energia per 1 s, il danno e l'area d'effetto raggiungono il massimo.",
     "rawDesc": "<color=yellow>Tieni premuto</color> il tasto di lancio per caricare energia statica. Una volta caricata, fai esplodere l'energia infliggendo {0}~{1} di <color=yellow>danno da luce</color> ai nemici in proporzione al tempo di carica, respingendoli e riducendo la loro <color=yellow>velocità di movimento</color>.\nAccumulando energia per {2} s, il danno e l'area d'effetto raggiungono il massimo.",
     "rawDescVars": [
       {
@@ -7452,13 +7487,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>600%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>780%</color><sprite=5>",
         "format": "#,##0",
         "raw": "maxDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 6.0,
+          "basicAP": 7.8,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25

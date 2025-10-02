@@ -241,7 +241,7 @@
     "lore": null,
     "achievementKey": "ACH_ETERNAL_REST",
     "achievementName": "Ewige Ruhe",
-    "achievementDescription": "Führe insgesamt 80 finale Treffer mit dem Basisangriff gegen Seelenschwertkämpfer aus."
+    "achievementDescription": "Führe insgesamt 50 finale Treffer mit dem Basisangriff gegen Seelenschwertkämpfer aus."
   },
   "St_C_DarkBolt": {
     "name": "Dunkler Pfeil",
@@ -334,20 +334,20 @@
   },
   "St_C_FlashFreeze": {
     "name": "Blitzfrost",
-    "cooldownTime": 6.5,
-    "maxCharges": 1,
+    "cooldownTime": 5.0,
+    "maxCharges": 2,
     "addedCharges": 1,
-    "description": "Strahlt Kälte nach vorne aus und fügt Gegnern <sprite=1><color=#16D7FF>100%</color><sprite=5> <color=yellow>Kälteschaden</color> zu. Falls ein Gegner bereits von <color=yellow>Kälte</color> betroffen ist, erhöht sich der <color=yellow>Schaden</color> um 100% und der Gegner wird für 1.5 Sek. <color=yellow>bewegungsunfähig</color>.",
+    "description": "Strahlt Kälte nach vorne aus und fügt Gegnern <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>Kälteschaden</color> zu. Falls ein Gegner bereits von <color=yellow>Kälte</color> betroffen ist, erhöht sich der <color=yellow>Schaden</color> um 100% und der Gegner wird für 1.5 Sek. <color=yellow>bewegungsunfähig</color>.",
     "rawDesc": "Strahlt Kälte nach vorne aus und fügt Gegnern {0} <color=yellow>Kälteschaden</color> zu. Falls ein Gegner bereits von <color=yellow>Kälte</color> betroffen ist, erhöht sich der <color=yellow>Schaden</color> um {1} und der Gegner wird für {2} Sek. <color=yellow>bewegungsunfähig</color>.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.3,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -725,7 +725,11 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Melee",
+      "Attack",
+      "Mobility"
+    ],
     "image": "St_C_MagicSword.png",
     "lore": null,
     "achievementKey": "",
@@ -861,7 +865,7 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Entlädt Energie aus der Handfläche, verursacht <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>Schaden</color> und stößt alle getroffenen Gegner zurück. Wenn zurückgestoßene Gegner auf eine Wand treffen, erleiden sie zusätzlich <sprite=1><color=#16D7FF>374%</color><sprite=5> <color=yellow>Schaden</color> und werden für 1.5 Sek. betäubt.",
+    "description": "Entlädt Energie aus der Handfläche, verursacht <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>Schaden</color> und stößt alle getroffenen Gegner zurück. Wenn zurückgestoßene Gegner auf eine Wand treffen, erleiden sie zusätzlich <sprite=1><color=#16D7FF>504%</color><sprite=5> <color=yellow>Schaden</color> und werden für 1.5 Sek. betäubt.",
     "rawDesc": "Entlädt Energie aus der Handfläche, verursacht {0} <color=yellow>Schaden</color> und stößt alle getroffenen Gegner zurück. Wenn zurückgestoßene Gegner auf eine Wand treffen, erleiden sie zusätzlich {1} <color=yellow>Schaden</color> und werden für {2} Sek. betäubt.",
     "rawDescVars": [
       {
@@ -878,7 +882,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>374%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*stunDmgRatio",
         "scalingType": "unknown",
@@ -2088,8 +2092,8 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Anstatt von <color=yellow>Angriffstempo</color>-Boni zu profitieren, erhöht jedes 1% <color=yellow>zusätzl. Angriffstempo</color> deinen <color=yellow>AK</color> um 0.5<sprite=5>.\nNach einem <color=yellow>Ansturm</color> oder einer <color=yellow>Teleportation</color> wird dein nächster <color=yellow>Basisangriff</color> zu einem krit. Treffer.",
-    "rawDesc": "Anstatt von <color=yellow>Angriffstempo</color>-Boni zu profitieren, erhöht jedes 1% <color=yellow>zusätzl. Angriffstempo</color> deinen <color=yellow>AK</color> um {0}.\nNach einem <color=yellow>Ansturm</color> oder einer <color=yellow>Teleportation</color> wird dein nächster <color=yellow>Basisangriff</color> zu einem krit. Treffer.",
+    "description": "Anstatt von <color=yellow>Angriffstempo</color>-Boni zu profitieren, erhöht jedes 1% <color=yellow>zusätzl. Angriffstempo</color> deinen <color=yellow>Angriffsschaden</color> um 0.5<sprite=5>.\nNach einem <color=yellow>Ansturm</color> oder einer <color=yellow>Teleportation</color> wird dein nächster <color=yellow>Basisangriff</color> zu einem krit. Treffer.\n\nBeim Besiegen eines <color=yellow>Bosses</color> stellst du <sprite=2><color=#FF8A2D>200%</color><sprite=5> <color=yellow>Lebenspunkte</color> wieder her.",
+    "rawDesc": "Anstatt von <color=yellow>Angriffstempo</color>-Boni zu profitieren, erhöht jedes 1% <color=yellow>zusätzl. Angriffstempo</color> deinen <color=yellow>Angriffsschaden</color> um {0}.\nNach einem <color=yellow>Ansturm</color> oder einer <color=yellow>Teleportation</color> wird dein nächster <color=yellow>Basisangriff</color> zu einem krit. Treffer.\n\nBeim Besiegen eines <color=yellow>Bosses</color> stellst du {1} <color=yellow>Lebenspunkte</color> wieder her.",
     "rawDescVars": [
       {
         "rendered": "0.5<sprite=5>",
@@ -2102,6 +2106,19 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "healAmountPerBossKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
         }
       }
     ],
@@ -2376,7 +2393,9 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Dark"
+    ],
     "image": "St_E_CrimsonLance.png",
     "lore": null,
     "achievementKey": "ACH_THE_EIGHTH_TROPHY",
@@ -3338,8 +3357,8 @@
     "cooldownTime": 14.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Beschwört einen Schneesturm im Zielgebiet, der 4<sprite=5> Mal alle 0.7 Sek. zuschlägt und Gegnern <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>Kälteschaden</color> zufügt, während Verbündete einen <color=yellow>Schild</color> von <sprite=1><color=#16D7FF>60%</color><sprite=5> erhalten, der über 3.5 Sek. abklingt.",
-    "rawDesc": "Beschwört einen Schneesturm im Zielgebiet, der {0} Mal alle {1} Sek. zuschlägt und Gegnern {2} <color=yellow>Kälteschaden</color> zufügt, während Verbündete einen <color=yellow>Schild</color> von {3} erhalten, der über {4} Sek. abklingt.",
+    "description": "Beschwört einen Schneesturm im Zielgebiet, der 4<sprite=5> Mal alle 0.7 Sek. zuschlägt und Gegnern <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>Kälteschaden</color> zufügt, während Verbündete einen <color=yellow>Schild</color> von <sprite=1><color=#16D7FF>60%</color><sprite=5> erhalten, der über 3.5 Sek. abklingt.\nMaximal 10 können gleichzeitig aufrechterhalten werden.",
+    "rawDesc": "Beschwört einen Schneesturm im Zielgebiet, der {0} Mal alle {1} Sek. zuschlägt und Gegnern {2} <color=yellow>Kälteschaden</color> zufügt, während Verbündete einen <color=yellow>Schild</color> von {3} erhalten, der über {4} Sek. abklingt.\nMaximal {5} können gleichzeitig aufrechterhalten werden.",
     "rawDescVars": [
       {
         "rendered": "4<sprite=5>",
@@ -3400,6 +3419,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 3.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxConcurrentCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3578,7 +3610,8 @@
     "traveler": "",
     "travelerMemoryLocation": "",
     "tags": [
-      "Light"
+      "Light",
+      "HardCC"
     ],
     "image": "St_L_CoinExplosion.PNG",
     "lore": null,
@@ -4802,6 +4835,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "Q",
     "tags": [
+      "Dark",
       "Melee",
       "Attack",
       "Mobility"
@@ -5539,6 +5573,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "R",
     "tags": [
+      "Dark",
       "Melee",
       "Attack"
     ],
@@ -5836,7 +5871,7 @@
     "lore": "Dies ist der perfekte Beweis für meine Theorie.\nZersetzung und Verbindung lösen sich gegenseitig aus und erzeugen eine Kettenreaktion nach den von mir festgelegten Gesetzen.\nJe nachdem, wie man diese Kraft gestaltet, gibt es unendliche Anwendungsmöglichkeiten.\n\nLass uns weiterforschen.",
     "achievementKey": "ACH_OVERFLOWING_HEALS",
     "achievementName": "Überfließende Heilung",
-    "achievementDescription": "Regeneriere mit Aurena in einem einzigen Einsatz von Gefährliche Theorie mehr als 60% deiner max. LP, während deine LP unter 40% liegt."
+    "achievementDescription": "Regeneriere mit Aurena deine gesamten LP in einem einzigen Einsatz von Gefährliche Theorie, während deine LP unter 40% liegt."
   },
   "St_R_Chomp": {
     "name": "Zerfleischen",
@@ -6155,29 +6190,29 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Beschwört ein großes Frostschwert und schwingt es, um Gegnern vor dir <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>Kälteschaden</color> zuzufügen und sie zurückzustoßen. Bei Treffer eines einzelnen Ziels erhöht sich der <color=yellow>Schaden</color> um 200%.",
+    "description": "Beschwört ein großes Frostschwert und schwingt es, um Gegnern vor dir <sprite=1><color=#16D7FF>250%</color><sprite=5> <color=yellow>Kälteschaden</color> zuzufügen und sie zurückzustoßen. Bei Treffer eines einzelnen Ziels erhöht sich der <color=yellow>Schaden</color> um 350%.",
     "rawDesc": "Beschwört ein großes Frostschwert und schwingt es, um Gegnern vor dir {0} <color=yellow>Kälteschaden</color> zuzufügen und sie zurückzustoßen. Bei Treffer eines einzelnen Ziels erhöht sich der <color=yellow>Schaden</color> um {1}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.0,
+          "basicAP": 2.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "200%",
+        "rendered": "350%",
         "format": "P0",
         "raw": "singleTargetAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6637,7 +6672,7 @@
     "lore": "Angriff und Verteidigung",
     "achievementKey": "ACH_GO_WITH_THE_FLOW",
     "achievementName": "Reibungslos",
-    "achievementDescription": "Töte 70 Gegner in Folge mit Mist, ohne Schaden zu nehmen."
+    "achievementDescription": "Töte 60 Gegner in Folge mit Mist, ohne Schaden zu nehmen."
   },
   "St_R_PillarOfFlame": {
     "name": "Flammensäule",
@@ -7435,7 +7470,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Halte die Wirkungstaste gedrückt</color>, um eine Ladung aufzubauen. Wenn die Aufladung abgeschlossen ist, explodiert die Ladung und fügt Gegnern proportional zur Aufladezeit <sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>600%</color><sprite=5> <color=yellow>Lichtschaden</color> zu, stößt sie zurück und reduziert ihr <color=yellow>Bewegungstempo</color>.\nNach 1 Sek. Aufladung erreichen Schaden und Reichweite ihr Maximum.",
+    "description": "<color=yellow>Halte die Wirkungstaste gedrückt</color>, um eine Ladung aufzubauen. Wenn die Aufladung abgeschlossen ist, explodiert die Ladung und fügt Gegnern proportional zur Aufladezeit <sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>780%</color><sprite=5> <color=yellow>Lichtschaden</color> zu, stößt sie zurück und reduziert ihr <color=yellow>Bewegungstempo</color>.\nNach 1 Sek. Aufladung erreichen Schaden und Reichweite ihr Maximum.",
     "rawDesc": "<color=yellow>Halte die Wirkungstaste gedrückt</color>, um eine Ladung aufzubauen. Wenn die Aufladung abgeschlossen ist, explodiert die Ladung und fügt Gegnern proportional zur Aufladezeit {0}~{1} <color=yellow>Lichtschaden</color> zu, stößt sie zurück und reduziert ihr <color=yellow>Bewegungstempo</color>.\nNach {2} Sek. Aufladung erreichen Schaden und Reichweite ihr Maximum.",
     "rawDescVars": [
       {
@@ -7452,13 +7487,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>600%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>780%</color><sprite=5>",
         "format": "#,##0",
         "raw": "maxDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 6.0,
+          "basicAP": 7.8,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25

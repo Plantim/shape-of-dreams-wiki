@@ -241,7 +241,7 @@
     "lore": null,
     "achievementKey": "ACH_ETERNAL_REST",
     "achievementName": "永恒安息",
-    "achievementDescription": "使用普通攻击，对灵魂剑士累计进行80次致命一击。"
+    "achievementDescription": "用基础攻击对灵魂剑士完成50次终结一击。"
   },
   "St_C_DarkBolt": {
     "name": "暗影之箭",
@@ -334,20 +334,20 @@
   },
   "St_C_FlashFreeze": {
     "name": "急速冰冻",
-    "cooldownTime": 6.5,
-    "maxCharges": 1,
+    "cooldownTime": 5.0,
+    "maxCharges": 2,
     "addedCharges": 1,
-    "description": "朝前方释放寒气，对敌人造成<sprite=1><color=#16D7FF>100%</color><sprite=5>的<color=yellow>寒气伤害</color>。如果目标已受到<color=yellow>寒气</color>影响，则<color=yellow>伤害</color>提升100%，并使其在1.5秒内陷入<color=yellow>禁锢</color>状态。",
+    "description": "朝前方释放寒气，对敌人造成<sprite=1><color=#16D7FF>130%</color><sprite=5>的<color=yellow>寒气伤害</color>。如果目标已受到<color=yellow>寒气</color>影响，则<color=yellow>伤害</color>提升100%，并使其在1.5秒内陷入<color=yellow>禁锢</color>状态。",
     "rawDesc": "朝前方释放寒气，对敌人造成{0}的<color=yellow>寒气伤害</color>。如果目标已受到<color=yellow>寒气</color>影响，则<color=yellow>伤害</color>提升{1}，并使其在{2}秒内陷入<color=yellow>禁锢</color>状态。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.3,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -725,7 +725,11 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Melee",
+      "Attack",
+      "Mobility"
+    ],
     "image": "St_C_MagicSword.png",
     "lore": null,
     "achievementKey": "",
@@ -861,7 +865,7 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "用手掌释放能量，造成<sprite=1><color=#16D7FF>180%</color><sprite=5>的<color=yellow>伤害</color>，并击退所有命中的敌人。被击退的敌人如果碰到墙壁，则额外受到<sprite=1><color=#16D7FF>374%</color><sprite=5>的<color=yellow>伤害</color>，并眩晕1.5秒。",
+    "description": "用手掌释放能量，造成<sprite=1><color=#16D7FF>180%</color><sprite=5>的<color=yellow>伤害</color>，并击退所有命中的敌人。被击退的敌人如果碰到墙壁，则额外受到<sprite=1><color=#16D7FF>504%</color><sprite=5>的<color=yellow>伤害</color>，并眩晕1.5秒。",
     "rawDesc": "用手掌释放能量，造成{0}的<color=yellow>伤害</color>，并击退所有命中的敌人。被击退的敌人如果碰到墙壁，则额外受到{1}的<color=yellow>伤害</color>，并眩晕{2}秒。",
     "rawDescVars": [
       {
@@ -878,7 +882,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>374%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*stunDmgRatio",
         "scalingType": "unknown",
@@ -2088,8 +2092,8 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "无法获得<color=yellow>攻速</color>加成，但每1%<color=yellow>额外攻速</color>会使<color=yellow>攻击力</color>提升0.5<sprite=5>。\n使用<color=yellow>冲刺</color>或<color=yellow>瞬间移动</color>后，下一次<color=yellow>普通攻击</color>必定暴击。",
-    "rawDesc": "无法获得<color=yellow>攻速</color>加成，但每1%<color=yellow>额外攻速</color>会使<color=yellow>攻击力</color>提升{0}。\n使用<color=yellow>冲刺</color>或<color=yellow>瞬间移动</color>后，下一次<color=yellow>普通攻击</color>必定暴击。",
+    "description": "无法获得<color=yellow>攻速</color>加成，但每1%<color=yellow>额外攻速</color>会使<color=yellow>攻击力</color>提升0.5<sprite=5>。\n使用<color=yellow>冲刺</color>或<color=yellow>瞬间移动</color>后，下一次<color=yellow>普通攻击</color>必定暴击。\n\n击杀任意<color=yellow>首领</color>时，回复<sprite=2><color=#FF8A2D>200%</color><sprite=5>点<color=yellow>生命值</color>。",
+    "rawDesc": "无法获得<color=yellow>攻速</color>加成，但每1%<color=yellow>额外攻速</color>会使<color=yellow>攻击力</color>提升{0}。\n使用<color=yellow>冲刺</color>或<color=yellow>瞬间移动</color>后，下一次<color=yellow>普通攻击</color>必定暴击。\n\n击杀任意<color=yellow>首领</color>时，回复{1}点<color=yellow>生命值</color>。",
     "rawDescVars": [
       {
         "rendered": "0.5<sprite=5>",
@@ -2103,6 +2107,19 @@
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
         }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "healAmountPerBossKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
       }
     ],
     "shortDescription": null,
@@ -2114,7 +2131,7 @@
       "Attack"
     ],
     "image": "St_D_TheKillingFlow.PNG",
-    "lore": "纵然没有任何情感与痛楚，\n身体却依然习惯性地铭刻着那些动作。",
+    "lore": "一步一命。\n虽无情感与痛苦，身体却还记得那致命的动作。",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -2376,7 +2393,9 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Dark"
+    ],
     "image": "St_E_CrimsonLance.png",
     "lore": null,
     "achievementKey": "ACH_THE_EIGHTH_TROPHY",
@@ -3338,8 +3357,8 @@
     "cooldownTime": 14.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "每0.7秒，在目标区域降下4<sprite=5>次暴风雪，对敌人造成<sprite=1><color=#16D7FF>180%</color><sprite=5>的<color=yellow>寒气伤害</color>，并赋予己方<sprite=1><color=#16D7FF>60%</color><sprite=5>的<color=yellow>护盾</color>，该护盾持续3.5秒。",
-    "rawDesc": "每{0}秒，在目标区域降下{1}次暴风雪，对敌人造成{2}的<color=yellow>寒气伤害</color>，并赋予己方{3}的<color=yellow>护盾</color>，该护盾持续{4}秒。",
+    "description": "在目标区域每隔0.7秒降下4<sprite=5>次暴风雪，对敌人造成<sprite=1><color=#16D7FF>180%</color><sprite=5>的<color=yellow>寒气伤害</color>，并为队友提供<sprite=1><color=#16D7FF>60%</color><sprite=5>的<color=yellow>护盾</color>，护盾会在3.5秒内逐渐消失。\n最多可同时存在10个。",
+    "rawDesc": "在目标区域每隔{0}秒降下{1}次暴风雪，对敌人造成{2}的<color=yellow>寒气伤害</color>，并为队友提供{3}的<color=yellow>护盾</color>，护盾会在{4}秒内逐渐消失。\n最多可同时存在{5}个。",
     "rawDescVars": [
       {
         "rendered": "0.7",
@@ -3405,9 +3424,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxConcurrentCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "群体寒气伤害、护盾",
+    "shortDescription": "群体寒气伤害，护盾",
     "rarity": "Legendary",
     "type": "Normal",
     "traveler": "",
@@ -3417,7 +3449,7 @@
       "Shield"
     ],
     "image": "St_L_Blizzard.png",
-    "lore": "呼吸……停滞了。\n尖叫声在冰冷中冻结，刺骨的寒意撕裂了每一寸感官。\n\n那头狼的咆哮，并非胜者的欢呼，而是失去一切之人的哀鸣，是破碎王国最后的悲号！\n而我们……如同尘埃，在那巨大的绝望下被碾碎，只能一遍又一遍地咀嚼这无力感！\n这场暴风雪不只是单纯的寒冷。\n他的绝望与我的诅咒交织，他的悲伤与我的愤怒翻涌……\n\n这，就是活生生的地狱。……\n\n\n—一位埋葬于雪山的雇佣兵临终时的记忆残痕",
+    "lore": "呼吸……停滞了。\n尖叫被冻结，刺骨的寒意撕裂了所有感官。\n\n那头狼的咆哮……并不是胜者的呐喊，而是失去一切之人的哀嚎，是破碎王国的绝望哭号！\n而我们……就像尘埃一样，被那巨大的绝望碾碎，只能一遍遍咀嚼这无力感！\n这场暴风雪，绝不只是单纯的寒冷。\n他的绝望与我的诅咒交织，他的悲伤和我的愤怒翻涌……\n\n这就是活生生的地狱……\n\n\n——一位埋葬在雪山的雇佣兵临终前的记忆残影",
     "achievementKey": "ACH_FIGHTING_COLD_WITH_COLD",
     "achievementName": "以冷制冷",
     "achievementDescription": "携带4个寒气伤害记忆，击杀雪山之王。"
@@ -3578,7 +3610,8 @@
     "traveler": "",
     "travelerMemoryLocation": "",
     "tags": [
-      "Light"
+      "Light",
+      "HardCC"
     ],
     "image": "St_L_CoinExplosion.PNG",
     "lore": null,
@@ -4802,6 +4835,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "Q",
     "tags": [
+      "Dark",
       "Melee",
       "Attack",
       "Mobility"
@@ -5539,6 +5573,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "R",
     "tags": [
+      "Dark",
       "Melee",
       "Attack"
     ],
@@ -5836,7 +5871,7 @@
     "lore": "这正是我理论的完美印证。\n分解与融合按照我设定的法则彼此作用，引发连锁反应。\n只要设计得当，这股力量的应用将拥有无穷无尽的可能。\n\n继续研究下去吧。",
     "achievementKey": "ACH_OVERFLOWING_HEALS",
     "achievementName": "溢出的治疗量",
-    "achievementDescription": "奥蕾娜在体力低于40%时，使用一次危险理论即可回复自身超过体力上限的60%。"
+    "achievementDescription": "使用奥蕾娜，在体力低于40%时，通过危险理论一次性将体力全部回满。"
   },
   "St_R_Chomp": {
     "name": "撕咬",
@@ -6155,29 +6190,29 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "召唤冰霜巨剑，对前方的敌人造成<sprite=1><color=#16D7FF>200%</color><sprite=5>的<color=yellow>寒气伤害</color>，并将其击退。若命中单一目标，<color=yellow>伤害</color>提升200%。",
+    "description": "召唤冰霜巨剑，对前方的敌人造成<sprite=1><color=#16D7FF>250%</color><sprite=5>的<color=yellow>寒气伤害</color>，并将其击退。若命中单一目标，<color=yellow>伤害</color>提升350%。",
     "rawDesc": "召唤冰霜巨剑，对前方的敌人造成{0}的<color=yellow>寒气伤害</color>，并将其击退。若命中单一目标，<color=yellow>伤害</color>提升{1}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.0,
+          "basicAP": 2.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "200%",
+        "rendered": "350%",
         "format": "P0",
         "raw": "singleTargetAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6637,7 +6672,7 @@
     "lore": "攻守合一。",
     "achievementKey": "ACH_GO_WITH_THE_FLOW",
     "achievementName": "行云流水",
-    "achievementDescription": "使用米斯特，连续70次无伤击杀敌人。"
+    "achievementDescription": "使用米斯特，连续60次无伤击杀敌人。"
   },
   "St_R_PillarOfFlame": {
     "name": "烈焰之柱",
@@ -7435,7 +7470,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>长按</color>施放键为电荷充能。充能完成后，引爆电荷，根据充能时间对敌人造成<sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>600%</color><sprite=5>的<color=yellow>光明伤害</color>，击退敌人并降低其<color=yellow>移动速度</color>。\n充能1秒后，伤害和范围达到最大值。",
+    "description": "<color=yellow>长按</color>施放键为电荷充能。充能完成后，引爆电荷，根据充能时间对敌人造成<sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>780%</color><sprite=5>的<color=yellow>光明伤害</color>，击退敌人并降低其<color=yellow>移动速度</color>。\n充能1秒后，伤害和范围达到最大值。",
     "rawDesc": "<color=yellow>长按</color>施放键为电荷充能。充能完成后，引爆电荷，根据充能时间对敌人造成{0}~{1}的<color=yellow>光明伤害</color>，击退敌人并降低其<color=yellow>移动速度</color>。\n充能{2}秒后，伤害和范围达到最大值。",
     "rawDescVars": [
       {
@@ -7452,13 +7487,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>600%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>780%</color><sprite=5>",
         "format": "#,##0",
         "raw": "maxDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 6.0,
+          "basicAP": 7.8,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25

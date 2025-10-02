@@ -241,7 +241,7 @@
     "lore": null,
     "achievementKey": "ACH_ETERNAL_REST",
     "achievementName": "永遠の安息",
-    "achievementDescription": "魂の剣術士に基本攻撃で合計80回のとどめを刺す。"
+    "achievementDescription": "魂の剣術士に基本攻撃で合計50回のとどめを刺す。"
   },
   "St_C_DarkBolt": {
     "name": "闇の矢",
@@ -334,20 +334,20 @@
   },
   "St_C_FlashFreeze": {
     "name": "急速凍結",
-    "cooldownTime": 6.5,
-    "maxCharges": 1,
+    "cooldownTime": 5.0,
+    "maxCharges": 2,
     "addedCharges": 1,
-    "description": "前方に冷気を放出し、敵に<sprite=1><color=#16D7FF>100%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与えます。すでに<color=yellow>冷気</color>の影響を受けている敵の場合、<color=yellow>ダメージ量</color>が100%増加し、1.5秒間<color=yellow>スネア</color>状態にします。",
+    "description": "前方に冷気を放出し、敵に<sprite=1><color=#16D7FF>130%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与えます。すでに<color=yellow>冷気</color>の影響を受けている敵の場合、<color=yellow>ダメージ量</color>が100%増加し、1.5秒間<color=yellow>スネア</color>状態にします。",
     "rawDesc": "前方に冷気を放出し、敵に{0}の<color=yellow>冷気ダメージ</color>を与えます。すでに<color=yellow>冷気</color>の影響を受けている敵の場合、<color=yellow>ダメージ量</color>が{1}増加し、{2}秒間<color=yellow>スネア</color>状態にします。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.3,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -725,7 +725,11 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Melee",
+      "Attack",
+      "Mobility"
+    ],
     "image": "St_C_MagicSword.png",
     "lore": null,
     "achievementKey": "",
@@ -861,7 +865,7 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "手からエネルギーを放出し、<sprite=1><color=#16D7FF>180%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、命中したすべての敵を押し出します。押し出された敵が壁に触れた場合、追加で<sprite=1><color=#16D7FF>374%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、1.5秒間スタンさせます。",
+    "description": "手からエネルギーを放出し、<sprite=1><color=#16D7FF>180%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、命中したすべての敵を押し出します。押し出された敵が壁に触れた場合、追加で<sprite=1><color=#16D7FF>504%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、1.5秒間スタンさせます。",
     "rawDesc": "手からエネルギーを放出し、{0}の<color=yellow>ダメージ</color>を与え、命中したすべての敵を押し出します。押し出された敵が壁に触れた場合、追加で{1}の<color=yellow>ダメージ</color>を与え、{2}秒間スタンさせます。",
     "rawDescVars": [
       {
@@ -878,7 +882,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>374%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*stunDmgRatio",
         "scalingType": "unknown",
@@ -2088,8 +2092,8 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>攻撃速度</color>ボーナスを受けられない代わりに、<color=yellow>追加攻撃速度</color>1%ごとに<color=yellow>攻撃力</color>が0.5<sprite=5>増加します。\n<color=yellow>ダッシュ</color>、または<color=yellow>テレポート</color>時、次の<color=yellow>基本攻撃</color>がクリティカルになります。",
-    "rawDesc": "<color=yellow>攻撃速度</color>ボーナスを受けられない代わりに、<color=yellow>追加攻撃速度</color>1%ごとに<color=yellow>攻撃力</color>が{0}増加します。\n<color=yellow>ダッシュ</color>、または<color=yellow>テレポート</color>時、次の<color=yellow>基本攻撃</color>がクリティカルになります。",
+    "description": "<color=yellow>攻撃速度</color>ボーナスを受けられない代わりに、<color=yellow>追加攻撃速度</color>1%ごとに<color=yellow>攻撃力</color>が0.5<sprite=5>増加します。\n<color=yellow>ダッシュ</color>、または<color=yellow>テレポート</color>時、次の<color=yellow>基本攻撃</color>がクリティカルになります。\n\n任意の<color=yellow>ボス</color>を倒すと<sprite=2><color=#FF8A2D>200%</color><sprite=5>だけ<color=yellow>体力</color>を<color=yellow>回復</color>します。",
+    "rawDesc": "<color=yellow>攻撃速度</color>ボーナスを受けられない代わりに、<color=yellow>追加攻撃速度</color>1%ごとに<color=yellow>攻撃力</color>が{0}増加します。\n<color=yellow>ダッシュ</color>、または<color=yellow>テレポート</color>時、次の<color=yellow>基本攻撃</color>がクリティカルになります。\n\n任意の<color=yellow>ボス</color>を倒すと{1}だけ<color=yellow>体力</color>を<color=yellow>回復</color>します。",
     "rawDescVars": [
       {
         "rendered": "0.5<sprite=5>",
@@ -2102,6 +2106,19 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "healAmountPerBossKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
         }
       }
     ],
@@ -2376,7 +2393,9 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Dark"
+    ],
     "image": "St_E_CrimsonLance.png",
     "lore": null,
     "achievementKey": "ACH_THE_EIGHTH_TROPHY",
@@ -3338,8 +3357,8 @@
     "cooldownTime": 14.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "対象エリアに0.7秒ごとに4<sprite=5>回吹雪を起こし、敵に<sprite=1><color=#16D7FF>180%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与え、味方には3.5秒かけて消える<sprite=1><color=#16D7FF>60%</color><sprite=5>の<color=yellow>シールド</color>を付与します。",
-    "rawDesc": "対象エリアに{0}秒ごとに{1}回吹雪を起こし、敵に{2}の<color=yellow>冷気ダメージ</color>を与え、味方には{3}秒かけて消える{4}の<color=yellow>シールド</color>を付与します。",
+    "description": "対象エリアに0.7秒ごとに4<sprite=5>回吹雪を起こし、敵に<sprite=1><color=#16D7FF>180%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与え、味方には3.5秒かけて消える<sprite=1><color=#16D7FF>60%</color><sprite=5>の<color=yellow>シールド</color>を付与します。\n最大10個を同時に維持できます。",
+    "rawDesc": "対象エリアに{0}秒ごとに{1}回吹雪を起こし、敵に{2}の<color=yellow>冷気ダメージ</color>を与え、味方には{3}秒かけて消える{4}の<color=yellow>シールド</color>を付与します。\n最大{5}個を同時に維持できます。",
     "rawDescVars": [
       {
         "rendered": "0.7",
@@ -3404,6 +3423,19 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxConcurrentCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
         }
       }
     ],
@@ -3578,7 +3610,8 @@
     "traveler": "",
     "travelerMemoryLocation": "",
     "tags": [
-      "Light"
+      "Light",
+      "HardCC"
     ],
     "image": "St_L_CoinExplosion.PNG",
     "lore": null,
@@ -4802,6 +4835,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "Q",
     "tags": [
+      "Dark",
       "Melee",
       "Attack",
       "Mobility"
@@ -5539,6 +5573,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "R",
     "tags": [
+      "Dark",
       "Melee",
       "Attack"
     ],
@@ -5836,7 +5871,7 @@
     "lore": "これは私の理論を証明するものとして完璧だ。\n分解と結合が、私がセッティングした法則に従ってシナジーを起こし、連鎖反応している。\nこの力をどう具体化するかによって、無限に応用できる。\n\n研究を続けよう。",
     "achievementKey": "ACH_OVERFLOWING_HEALS",
     "achievementName": "溢れだす癒し",
-    "achievementDescription": "アウレナでHPが40%以下の状態で、一度の「危険な理論」発動で最大HPの60%以上を回復する。"
+    "achievementDescription": "アウレナでHPが40%以下の状態で、危険な理論でHPを一度に全回復する。"
   },
   "St_R_Chomp": {
     "name": "噛みつき",
@@ -6155,29 +6190,29 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "霜の大剣を召喚して振り回し、前方の敵に<sprite=1><color=#16D7FF>200%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与え、押し出します。単一の対象に命中した場合、<color=yellow>ダメージ量</color>が200%増加します。",
+    "description": "霜の大剣を召喚して振り回し、前方の敵に<sprite=1><color=#16D7FF>250%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与え、押し出します。単一の対象に命中した場合、<color=yellow>ダメージ量</color>が350%増加します。",
     "rawDesc": "霜の大剣を召喚して振り回し、前方の敵に{0}の<color=yellow>冷気ダメージ</color>を与え、押し出します。単一の対象に命中した場合、<color=yellow>ダメージ量</color>が{1}増加します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.0,
+          "basicAP": 2.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "200%",
+        "rendered": "350%",
         "format": "P0",
         "raw": "singleTargetAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6637,7 +6672,7 @@
     "lore": "攻守一体",
     "achievementKey": "ACH_GO_WITH_THE_FLOW",
     "achievementName": "水が流れるように",
-    "achievementDescription": "ミストで敵からダメージを受けずに連続で敵を70体撃破する。"
+    "achievementDescription": "ミストで敵からダメージを受けずに連続で敵を60体撃破する。"
   },
   "St_R_PillarOfFlame": {
     "name": "火柱",
@@ -7435,7 +7470,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "発動キーを<color=yellow>長押し</color>すると、電荷をチャージします。チャージが完了すると、電荷を爆発させてチャージ時間に比例して敵に<sprite=1><color=#16D7FF>150%</color><sprite=5>～<sprite=1><color=#16D7FF>600%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、吹き飛ばして<color=yellow>移動速度</color>を低下させます。\n1秒間チャージするとダメージ量と範囲が最大値に達します。",
+    "description": "発動キーを<color=yellow>長押し</color>すると、電荷をチャージします。チャージが完了すると、電荷を爆発させてチャージ時間に比例して敵に<sprite=1><color=#16D7FF>150%</color><sprite=5>～<sprite=1><color=#16D7FF>780%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、吹き飛ばして<color=yellow>移動速度</color>を低下させます。\n1秒間チャージするとダメージ量と範囲が最大値に達します。",
     "rawDesc": "発動キーを<color=yellow>長押し</color>すると、電荷をチャージします。チャージが完了すると、電荷を爆発させてチャージ時間に比例して敵に{0}～{1}の<color=yellow>光ダメージ</color>を与え、吹き飛ばして<color=yellow>移動速度</color>を低下させます。\n{2}秒間チャージするとダメージ量と範囲が最大値に達します。",
     "rawDescVars": [
       {
@@ -7452,13 +7487,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>600%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>780%</color><sprite=5>",
         "format": "#,##0",
         "raw": "maxDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 6.0,
+          "basicAP": 7.8,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25

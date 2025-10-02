@@ -241,7 +241,7 @@
     "lore": null,
     "achievementKey": "ACH_ETERNAL_REST",
     "achievementName": "Sonsuz Huzur",
-    "achievementDescription": "Ruh Kılıç Ustasına temel saldırıyla toplam 80 kez bitirici darbe indir."
+    "achievementDescription": "Ruh Kılıç Ustasına temel saldırıyla toplam 50 kez bitirici darbe indir."
   },
   "St_C_DarkBolt": {
     "name": "Karanlık Ok",
@@ -334,20 +334,20 @@
   },
   "St_C_FlashFreeze": {
     "name": "Ani Donma",
-    "cooldownTime": 6.5,
-    "maxCharges": 1,
+    "cooldownTime": 5.0,
+    "maxCharges": 2,
     "addedCharges": 1,
-    "description": "Öne doğru soğuk hava yayarsın ve düşmanlara <sprite=1><color=#16D7FF>%100</color><sprite=5> <color=yellow>Buz Hasarı</color> verirsin. Eğer düşman zaten <color=yellow>buz</color> etkisi altındaysa, <color=yellow>hasar</color> %100 artar ve düşman 1.5 saniye boyunca <color=yellow>Köklenme</color> durumuna gelir.",
+    "description": "Öne doğru soğuk hava yayarsın ve düşmanlara <sprite=1><color=#16D7FF>%130</color><sprite=5> <color=yellow>Buz Hasarı</color> verirsin. Eğer düşman zaten <color=yellow>buz</color> etkisi altındaysa, <color=yellow>hasar</color> %100 artar ve düşman 1.5 saniye boyunca <color=yellow>Köklenme</color> durumuna gelir.",
     "rawDesc": "Öne doğru soğuk hava yayarsın ve düşmanlara {0} <color=yellow>Buz Hasarı</color> verirsin. Eğer düşman zaten <color=yellow>buz</color> etkisi altındaysa, <color=yellow>hasar</color> {1} artar ve düşman {2} saniye boyunca <color=yellow>Köklenme</color> durumuna gelir.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>%100</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>%130</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.3,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -725,7 +725,11 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Melee",
+      "Attack",
+      "Mobility"
+    ],
     "image": "St_C_MagicSword.png",
     "lore": null,
     "achievementKey": "",
@@ -861,7 +865,7 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Avucundan enerji salarak <sprite=1><color=#16D7FF>%180</color><sprite=5> <color=yellow>Hasar</color> verirsin ve isabet eden tüm düşmanları geri itersin. İtilen düşmanlar duvara çarparsa, ek olarak <sprite=1><color=#16D7FF>%374</color><sprite=5> <color=yellow>Hasar</color> alır ve 1.5 saniye boyunca sersemletirsin.",
+    "description": "Avucundan enerji salarak <sprite=1><color=#16D7FF>%180</color><sprite=5> <color=yellow>Hasar</color> verirsin ve isabet eden tüm düşmanları geri itersin. İtilen düşmanlar duvara çarparsa, ek olarak <sprite=1><color=#16D7FF>%504</color><sprite=5> <color=yellow>Hasar</color> alır ve 1.5 saniye boyunca sersemletirsin.",
     "rawDesc": "Avucundan enerji salarak {0} <color=yellow>Hasar</color> verirsin ve isabet eden tüm düşmanları geri itersin. İtilen düşmanlar duvara çarparsa, ek olarak {1} <color=yellow>Hasar</color> alır ve {2} saniye boyunca sersemletirsin.",
     "rawDescVars": [
       {
@@ -878,7 +882,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>%374</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>%504</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*stunDmgRatio",
         "scalingType": "unknown",
@@ -2084,12 +2088,12 @@
     "achievementDescription": ""
   },
   "St_D_TheKillingFlow": {
-    "name": "Tek Adımda Tek Öldürüş",
+    "name": "일보일살",
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Saldırı Hızı</color> bonusu alamazsın, bunun yerine her %1 <color=yellow>Ek Saldırı Hızı</color> başına <color=yellow>Saldırı Gücü</color> 0.5<sprite=5> artar.\n<color=yellow>Hücum</color> veya <color=yellow>Işınlanma</color> sonrası bir sonraki <color=yellow>Normal Saldırın</color> kritik vuruş olur.",
-    "rawDesc": "<color=yellow>Saldırı Hızı</color> bonusu alamazsın, bunun yerine her %1 <color=yellow>Ek Saldırı Hızı</color> başına <color=yellow>Saldırı Gücü</color> {0} artar.\n<color=yellow>Hücum</color> veya <color=yellow>Işınlanma</color> sonrası bir sonraki <color=yellow>Normal Saldırın</color> kritik vuruş olur.",
+    "description": "<color=yellow>Saldırı Hızı</color> bonusu alamazsın, bunun yerine her %1 <color=yellow>Ek Saldırı Hızı</color> başına <color=yellow>Saldırı Gücü</color> 0.5<sprite=5> artar.\n<color=yellow>Hücum</color> veya <color=yellow>Işınlanma</color> sonrası bir sonraki <color=yellow>Normal Saldırın</color> kritik vuruş olur.\n\nHerhangi bir <color=yellow>Boss</color>u öldürdüğünde <sprite=2><color=#FF8A2D>%200</color><sprite=5> kadar <color=yellow>Can</color> <color=yellow>iyileştirirsin</color>.",
+    "rawDesc": "<color=yellow>Saldırı Hızı</color> bonusu alamazsın, bunun yerine her %1 <color=yellow>Ek Saldırı Hızı</color> başına <color=yellow>Saldırı Gücü</color> {0} artar.\n<color=yellow>Hücum</color> veya <color=yellow>Işınlanma</color> sonrası bir sonraki <color=yellow>Normal Saldırın</color> kritik vuruş olur.\n\nHerhangi bir <color=yellow>Boss</color>u öldürdüğünde {1} kadar <color=yellow>Can</color> <color=yellow>iyileştirirsin</color>.",
     "rawDescVars": [
       {
         "rendered": "0.5<sprite=5>",
@@ -2102,6 +2106,19 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>%200</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "healAmountPerBossKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
         }
       }
     ],
@@ -2376,7 +2393,9 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Dark"
+    ],
     "image": "St_E_CrimsonLance.png",
     "lore": null,
     "achievementKey": "ACH_THE_EIGHTH_TROPHY",
@@ -3338,8 +3357,8 @@
     "cooldownTime": 14.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Hedef bölgeye her 0.7 saniyede bir 4<sprite=5> kez Kar Fırtınası indirirsin ve düşmanlara <sprite=1><color=#16D7FF>%180</color><sprite=5> <color=yellow>Buz Hasarı</color> verirsin, müttefiklere 3.5 saniye içinde yok olan <sprite=1><color=#16D7FF>%60</color><sprite=5> değerinde <color=yellow>Kalkan</color> verirsin.",
-    "rawDesc": "Hedef bölgeye her {0} saniyede bir {1} kez Kar Fırtınası indirirsin ve düşmanlara {2} <color=yellow>Buz Hasarı</color> verirsin, müttefiklere {3} saniye içinde yok olan {4} değerinde <color=yellow>Kalkan</color> verirsin.",
+    "description": "Hedef bölgeye her 0.7 saniyede bir 4<sprite=5> kez kar fırtınası indirirsin ve düşmanlara <sprite=1><color=#16D7FF>%180</color><sprite=5> <color=yellow>Soğuk Hasarı</color> verirsin, müttefiklere 3.5 saniye içinde yok olan <sprite=1><color=#16D7FF>%60</color><sprite=5> değerinde <color=yellow>Kalkan</color> verirsin.\nAynı anda en fazla 10 adet tutabilirsin.",
+    "rawDesc": "Hedef bölgeye her {0} saniyede bir {1} kez kar fırtınası indirirsin ve düşmanlara {2} <color=yellow>Soğuk Hasarı</color> verirsin, müttefiklere {3} saniye içinde yok olan {4} değerinde <color=yellow>Kalkan</color> verirsin.\nAynı anda en fazla {5} adet tutabilirsin.",
     "rawDescVars": [
       {
         "rendered": "0.7",
@@ -3405,9 +3424,22 @@
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
         }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxConcurrentCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Alan Buz Hasarı, Kalkan",
+    "shortDescription": "Alan Soğuk Hasarı, Kalkan",
     "rarity": "Legendary",
     "type": "Normal",
     "traveler": "",
@@ -3578,7 +3610,8 @@
     "traveler": "",
     "travelerMemoryLocation": "",
     "tags": [
-      "Light"
+      "Light",
+      "HardCC"
     ],
     "image": "St_L_CoinExplosion.PNG",
     "lore": null,
@@ -4802,6 +4835,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "Q",
     "tags": [
+      "Dark",
       "Melee",
       "Attack",
       "Mobility"
@@ -5539,6 +5573,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "R",
     "tags": [
+      "Dark",
       "Melee",
       "Attack"
     ],
@@ -5836,7 +5871,7 @@
     "lore": "Bu, teorimin mükemmel bir kanıtı.\nParçalanma ve birleşme, benim koyduğum kurallara göre birbirini tetikleyerek zincirleme reaksiyon yaratıyor.\nBu gücü nasıl tasarladığına bağlı olarak sayısız kullanım alanı olacaktır.\n\nAraştırmaya devam edelim.",
     "achievementKey": "ACH_OVERFLOWING_HEALS",
     "achievementName": "Taşan Şifa",
-    "achievementDescription": "Aurena ile canın %40 veya altındayken tek bir Tehlikeli Teori kullanımıyla maksimum canının %60 veya daha fazlasını iyileştir."
+    "achievementDescription": "Aurena ile canın %40 veya altındayken Tehlikeli Teori ile canını tek seferde tamamen iyileştir."
   },
   "St_R_Chomp": {
     "name": "Isırma",
@@ -6155,29 +6190,29 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Büyük Don Kılıcını çağırıp savurarak önündeki düşmanlara <sprite=1><color=#16D7FF>%200</color><sprite=5> <color=yellow>Buz Hasarı</color> verirsin ve onları geri itersin. Tek bir hedefe isabet ederse <color=yellow>Hasar</color> %200 artar.",
+    "description": "Büyük Don Kılıcını çağırıp savurarak önündeki düşmanlara <sprite=1><color=#16D7FF>%250</color><sprite=5> <color=yellow>Buz Hasarı</color> verirsin ve onları geri itersin. Tek bir hedefe isabet ederse <color=yellow>Hasar</color> %350 artar.",
     "rawDesc": "Büyük Don Kılıcını çağırıp savurarak önündeki düşmanlara {0} <color=yellow>Buz Hasarı</color> verirsin ve onları geri itersin. Tek bir hedefe isabet ederse <color=yellow>Hasar</color> {1} artar.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>%200</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>%250</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.0,
+          "basicAP": 2.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "%200",
+        "rendered": "%350",
         "format": "P0",
         "raw": "singleTargetAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6637,7 +6672,7 @@
     "lore": "Saldırı ve savunma birdir.",
     "achievementKey": "ACH_GO_WITH_THE_FLOW",
     "achievementName": "Akışına Bırak",
-    "achievementDescription": "Mist ile hiç hasar almadan art arda 70 düşman öldür."
+    "achievementDescription": "Mist ile hiç hasar almadan art arda 60 düşman öldür."
   },
   "St_R_PillarOfFlame": {
     "name": "Alev Sütunu",
@@ -7435,7 +7470,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Kullanım tuşu <color=yellow>basılı tutulduğunda</color> yük şarj edilir. Şarj tamamlandığında patlayarak şarj süresine bağlı olarak düşmanlara <sprite=1><color=#16D7FF>%150</color><sprite=5>~<sprite=1><color=#16D7FF>%600</color><sprite=5> <color=yellow>Işık Hasarı</color> verir, onları geri savurur ve <color=yellow>Hareket Hızı</color>nı azaltır.\n1 saniye boyunca şarj edildiğinde, hasar ve etki alanı en yüksek seviyeye ulaşır.",
+    "description": "Kullanım tuşu <color=yellow>basılı tutulduğunda</color> yük şarj edilir. Şarj tamamlandığında patlayarak şarj süresine bağlı olarak düşmanlara <sprite=1><color=#16D7FF>%150</color><sprite=5>~<sprite=1><color=#16D7FF>%780</color><sprite=5> <color=yellow>Işık Hasarı</color> verir, onları geri savurur ve <color=yellow>Hareket Hızı</color>nı azaltır.\n1 saniye boyunca şarj edildiğinde, hasar ve etki alanı en yüksek seviyeye ulaşır.",
     "rawDesc": "Kullanım tuşu <color=yellow>basılı tutulduğunda</color> yük şarj edilir. Şarj tamamlandığında patlayarak şarj süresine bağlı olarak düşmanlara {0}~{1} <color=yellow>Işık Hasarı</color> verir, onları geri savurur ve <color=yellow>Hareket Hızı</color>nı azaltır.\n{2} saniye boyunca şarj edildiğinde, hasar ve etki alanı en yüksek seviyeye ulaşır.",
     "rawDescVars": [
       {
@@ -7452,13 +7487,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>%600</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>%780</color><sprite=5>",
         "format": "#,##0",
         "raw": "maxDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 6.0,
+          "basicAP": 7.8,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25

@@ -241,7 +241,7 @@
     "lore": null,
     "achievementKey": "ACH_ETERNAL_REST",
     "achievementName": "Descanso Eterno",
-    "achievementDescription": "Use Ataque Básico para disferir golpe final em Espadachim da Alma 80x."
+    "achievementDescription": "Use Ataque Básico para disferir golpe final em Espadachim da Alma 50x."
   },
   "St_C_DarkBolt": {
     "name": "Flecha Sombria",
@@ -334,20 +334,20 @@
   },
   "St_C_FlashFreeze": {
     "name": "Congelamento Acelerado",
-    "cooldownTime": 6.5,
-    "maxCharges": 1,
+    "cooldownTime": 5.0,
+    "maxCharges": 2,
     "addedCharges": 1,
-    "description": "Emite frio à frente, causando <sprite=1><color=#16D7FF>100%</color><sprite=5> de <color=yellow>Dano de Glaciação</color> nos inimigos. Se o inimigo já estiver afetado pela <color=yellow>Glaciação</color>, aumenta 100% de <color=yellow>Dano</color> e causa <color=yellow>Enraizamento</color> durante 1.5s.",
+    "description": "Emite frio à frente, causando <sprite=1><color=#16D7FF>130%</color><sprite=5> de <color=yellow>Dano de Glaciação</color> nos inimigos. Se o inimigo já estiver afetado pela <color=yellow>Glaciação</color>, aumenta 100% de <color=yellow>Dano</color> e causa <color=yellow>Enraizamento</color> durante 1.5s.",
     "rawDesc": "Emite frio à frente, causando {0} de <color=yellow>Dano de Glaciação</color> nos inimigos. Se o inimigo já estiver afetado pela <color=yellow>Glaciação</color>, aumenta {1} de <color=yellow>Dano</color> e causa <color=yellow>Enraizamento</color> durante {2}s.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.3,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -725,7 +725,11 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Melee",
+      "Attack",
+      "Mobility"
+    ],
     "image": "St_C_MagicSword.png",
     "lore": null,
     "achievementKey": "",
@@ -861,7 +865,7 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Libera energia com a palma da mão, causando <sprite=1><color=#16D7FF>180%</color><sprite=5> de <color=yellow>dano</color> e repelindo todos os inimigos acertados. Se um inimigo repelido colidir com um muro, causa <sprite=1><color=#16D7FF>374%</color><sprite=5> de <color=yellow>dano</color> adicional e o atordoa durante 1.5s.",
+    "description": "Libera energia com a palma da mão, causando <sprite=1><color=#16D7FF>180%</color><sprite=5> de <color=yellow>dano</color> e repelindo todos os inimigos acertados. Se um inimigo repelido colidir com um muro, causa <sprite=1><color=#16D7FF>504%</color><sprite=5> de <color=yellow>dano</color> adicional e o atordoa durante 1.5s.",
     "rawDesc": "Libera energia com a palma da mão, causando {0} de <color=yellow>dano</color> e repelindo todos os inimigos acertados. Se um inimigo repelido colidir com um muro, causa {1} de <color=yellow>dano</color> adicional e o atordoa durante {2}s.",
     "rawDescVars": [
       {
@@ -878,7 +882,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>374%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*stunDmgRatio",
         "scalingType": "unknown",
@@ -2088,8 +2092,8 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Não recebe bônus de <color=yellow>Velocidade de Ataque</color>, mas aumenta 0.5<sprite=5> do <color=yellow>ATQ</color> para cada 1% de <color=yellow>Velocidade de Ataque adicional</color>.\nSeu próximo <color=yellow>Ataque Básico</color> após <color=yellow>avançar</color> ou <color=yellow>teletransportar</color> se tornará um Golpe Crítico.",
-    "rawDesc": "Não recebe bônus de <color=yellow>Velocidade de Ataque</color>, mas aumenta {0} do <color=yellow>ATQ</color> para cada 1% de <color=yellow>Velocidade de Ataque adicional</color>.\nSeu próximo <color=yellow>Ataque Básico</color> após <color=yellow>avançar</color> ou <color=yellow>teletransportar</color> se tornará um Golpe Crítico.",
+    "description": "Não recebe bônus de <color=yellow>Velocidade de Ataque</color>, mas aumenta 0.5<sprite=5> do <color=yellow>Dano de Ataque</color> para cada 1% de <color=yellow>Velocidade de Ataque adicional</color>.\nSeu próximo <color=yellow>Ataque Básico</color> após <color=yellow>avançar</color> ou <color=yellow>teletransportar</color> se tornará um Golpe Crítico.\n\nAo derrotar qualquer <color=yellow>Chefe</color>, <color=yellow>recupera</color> <sprite=2><color=#FF8A2D>200%</color><sprite=5> de <color=yellow>Vida</color>.",
+    "rawDesc": "Não recebe bônus de <color=yellow>Velocidade de Ataque</color>, mas aumenta {0} do <color=yellow>Dano de Ataque</color> para cada 1% de <color=yellow>Velocidade de Ataque adicional</color>.\nSeu próximo <color=yellow>Ataque Básico</color> após <color=yellow>avançar</color> ou <color=yellow>teletransportar</color> se tornará um Golpe Crítico.\n\nAo derrotar qualquer <color=yellow>Chefe</color>, <color=yellow>recupera</color> {1} de <color=yellow>Vida</color>.",
     "rawDescVars": [
       {
         "rendered": "0.5<sprite=5>",
@@ -2102,6 +2106,19 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "healAmountPerBossKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
         }
       }
     ],
@@ -2376,7 +2393,9 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Dark"
+    ],
     "image": "St_E_CrimsonLance.png",
     "lore": null,
     "achievementKey": "ACH_THE_EIGHTH_TROPHY",
@@ -3338,8 +3357,8 @@
     "cooldownTime": 14.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Invoca nevasca na área alvo 4<sprite=5>x a cada 0.7s, causando <sprite=1><color=#16D7FF>180%</color><sprite=5> de <color=yellow>Dano de Glaciação</color> nos inimigos e aplicando <sprite=1><color=#16D7FF>60%</color><sprite=5> de <color=yellow>Barreira</color> aos aliados que desaparece ao longo de 3.5s.",
-    "rawDesc": "Invoca nevasca na área alvo {0}x a cada {1}s, causando {2} de <color=yellow>Dano de Glaciação</color> nos inimigos e aplicando {3} de <color=yellow>Barreira</color> aos aliados que desaparece ao longo de {4}s.",
+    "description": "Invoca nevasca na área alvo 4<sprite=5>x a cada 0.7s, causando <sprite=1><color=#16D7FF>180%</color><sprite=5> de <color=yellow>Dano de Frio</color> nos inimigos e aplicando <sprite=1><color=#16D7FF>60%</color><sprite=5> de <color=yellow>Barreira</color> aos aliados que desaparece ao longo de 3.5s.\nPode manter no máximo 10 simultaneamente.",
+    "rawDesc": "Invoca nevasca na área alvo {0}x a cada {1}s, causando {2} de <color=yellow>Dano de Frio</color> nos inimigos e aplicando {3} de <color=yellow>Barreira</color> aos aliados que desaparece ao longo de {4}s.\nPode manter no máximo {5} simultaneamente.",
     "rawDescVars": [
       {
         "rendered": "4<sprite=5>",
@@ -3405,9 +3424,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxConcurrentCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Dano de Glaciação em área, Barreira",
+    "shortDescription": "Dano de Frio em área, Barreira",
     "rarity": "Legendary",
     "type": "Normal",
     "traveler": "",
@@ -3578,7 +3610,8 @@
     "traveler": "",
     "travelerMemoryLocation": "",
     "tags": [
-      "Light"
+      "Light",
+      "HardCC"
     ],
     "image": "St_L_CoinExplosion.PNG",
     "lore": null,
@@ -4802,6 +4835,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "Q",
     "tags": [
+      "Dark",
       "Melee",
       "Attack",
       "Mobility"
@@ -5539,6 +5573,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "R",
     "tags": [
+      "Dark",
       "Melee",
       "Attack"
     ],
@@ -5836,7 +5871,7 @@
     "lore": "Esta é a prova perfeita da minha teoria.\nDesintegração e combinação estão causando reações em cadeia uma à outra de acordo com as leis que estabeleci.\nHá inúmeras aplicações possíveis dependendo de como esta força é projetada.\n\nVamos continuar pesquisando.",
     "achievementKey": "ACH_OVERFLOWING_HEALS",
     "achievementName": "Cura Transbordante",
-    "achievementDescription": "Recupere pelo menos 60% do seu HP Máx. em um único conjuro de Teoria Perigosa enquanto estiver com 40% ou menos de HP com Aurena."
+    "achievementDescription": "Recupere completamente seu HP em uma única Teoria Perigosa enquanto estiver com 40% ou menos de HP com Aurena."
   },
   "St_R_Chomp": {
     "name": "Mordida",
@@ -6155,29 +6190,29 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Invoca grande espada gélida e a gira, causando <sprite=1><color=#16D7FF>200%</color><sprite=5> de <color=yellow>Dano de Glaciação</color> nos inimigos à frente e os empurrando. Aumenta 200% do <color=yellow>Dano</color> se acertar um único alvo.",
+    "description": "Invoca grande espada gélida e a gira, causando <sprite=1><color=#16D7FF>250%</color><sprite=5> de <color=yellow>Dano de Glaciação</color> nos inimigos à frente e os empurrando. Aumenta 350% do <color=yellow>Dano</color> se acertar um único alvo.",
     "rawDesc": "Invoca grande espada gélida e a gira, causando {0} de <color=yellow>Dano de Glaciação</color> nos inimigos à frente e os empurrando. Aumenta {1} do <color=yellow>Dano</color> se acertar um único alvo.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.0,
+          "basicAP": 2.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "200%",
+        "rendered": "350%",
         "format": "P0",
         "raw": "singleTargetAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6637,7 +6672,7 @@
     "lore": "Ataque e defesa são um só.",
     "achievementKey": "ACH_GO_WITH_THE_FLOW",
     "achievementName": "Siga o Fluxo",
-    "achievementDescription": "Derrote inimigos 70x consecutivamente com Mist sem receber dano."
+    "achievementDescription": "Derrote inimigos 60x consecutivamente com Mist sem receber dano."
   },
   "St_R_PillarOfFlame": {
     "name": "Pilar de Fogo",
@@ -7435,7 +7470,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Pressione e segure</color> o botão de conjurar para recarregar a eletricidade. Quando totalmente recarregada, explode a carga, causando de <sprite=1><color=#16D7FF>150%</color><sprite=5> até <sprite=1><color=#16D7FF>600%</color><sprite=5> de <color=yellow>Dano de Luz</color> nos inimigos, proporcional ao tempo de recarga, empurrando-os e reduzindo <color=yellow>Velocidade de Movimento</color>.\nRecarregar durante 1s maximiza a área de alcanço e o Dano.",
+    "description": "<color=yellow>Pressione e segure</color> o botão de conjurar para recarregar a eletricidade. Quando totalmente recarregada, explode a carga, causando de <sprite=1><color=#16D7FF>150%</color><sprite=5> até <sprite=1><color=#16D7FF>780%</color><sprite=5> de <color=yellow>Dano de Luz</color> nos inimigos, proporcional ao tempo de recarga, empurrando-os e reduzindo <color=yellow>Velocidade de Movimento</color>.\nRecarregar durante 1s maximiza a área de alcanço e o Dano.",
     "rawDesc": "<color=yellow>Pressione e segure</color> o botão de conjurar para recarregar a eletricidade. Quando totalmente recarregada, explode a carga, causando de {0} até {1} de <color=yellow>Dano de Luz</color> nos inimigos, proporcional ao tempo de recarga, empurrando-os e reduzindo <color=yellow>Velocidade de Movimento</color>.\nRecarregar durante {2}s maximiza a área de alcanço e o Dano.",
     "rawDescVars": [
       {
@@ -7452,13 +7487,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>600%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>780%</color><sprite=5>",
         "format": "#,##0",
         "raw": "maxDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 6.0,
+          "basicAP": 7.8,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25

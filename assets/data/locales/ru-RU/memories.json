@@ -241,7 +241,7 @@
     "lore": null,
     "achievementKey": "ACH_ETERNAL_REST",
     "achievementName": "Вечный покой",
-    "achievementDescription": "Нанести завершающий удар Мечнику душ базовой атакой 80 р."
+    "achievementDescription": "Нанести завершающий удар Мечнику душ базовой атакой 50 р."
   },
   "St_C_DarkBolt": {
     "name": "Стрела тьмы",
@@ -334,20 +334,20 @@
   },
   "St_C_FlashFreeze": {
     "name": "Мгновенное обледенение",
-    "cooldownTime": 6.5,
-    "maxCharges": 1,
+    "cooldownTime": 5.0,
+    "maxCharges": 2,
     "addedCharges": 1,
-    "description": "Пускает холод перед собой, нанося <sprite=1><color=#16D7FF>100%</color><sprite=5> <color=yellow>урона от холода</color> врагам. Если враг уже находится под воздействием <color=yellow>холода</color>, увеличивает <color=yellow>урон</color> на 100% и <color=yellow>обездвиживает</color> врага на 1.5 с.",
+    "description": "Пускает холод перед собой, нанося <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>урона от холода</color> врагам. Если враг уже находится под воздействием <color=yellow>холода</color>, увеличивает <color=yellow>урон</color> на 100% и <color=yellow>обездвиживает</color> врага на 1.5 с.",
     "rawDesc": "Пускает холод перед собой, нанося {0} <color=yellow>урона от холода</color> врагам. Если враг уже находится под воздействием <color=yellow>холода</color>, увеличивает <color=yellow>урон</color> на {1} и <color=yellow>обездвиживает</color> врага на {2} с.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.3,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -725,7 +725,11 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Melee",
+      "Attack",
+      "Mobility"
+    ],
     "image": "St_C_MagicSword.png",
     "lore": null,
     "achievementKey": "",
@@ -861,7 +865,7 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Высвобождает энергию из ладони, нанося <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>урона</color> и отталкивая всех пораженных врагов. Дополнительно наносит отброшенному врагу, ударившемуся о стену, <sprite=1><color=#16D7FF>374%</color><sprite=5> <color=yellow>урона</color> и оглушает на 1.5 с.",
+    "description": "Высвобождает энергию из ладони, нанося <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>урона</color> и отталкивая всех пораженных врагов. Дополнительно наносит отброшенному врагу, ударившемуся о стену, <sprite=1><color=#16D7FF>504%</color><sprite=5> <color=yellow>урона</color> и оглушает на 1.5 с.",
     "rawDesc": "Высвобождает энергию из ладони, нанося {0} <color=yellow>урона</color> и отталкивая всех пораженных врагов. Дополнительно наносит отброшенному врагу, ударившемуся о стену, {1} <color=yellow>урона</color> и оглушает на {2} с.",
     "rawDescVars": [
       {
@@ -878,7 +882,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>374%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*stunDmgRatio",
         "scalingType": "unknown",
@@ -2084,12 +2088,12 @@
     "achievementDescription": ""
   },
   "St_D_TheKillingFlow": {
-    "name": "Один шаг, одно убийство",
+    "name": "일보일살",
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Вместо получения бонуса к <color=yellow>скорости атаки</color>, каждый 1% <color=yellow>доп. скорости атаки</color> увеличивает <color=yellow>силу атаки</color> на 0.5<sprite=5>.\nПосле <color=yellow>прорыва</color> или <color=yellow>телепортации</color> следующей <color=yellow>базовой атакой</color> наносит критический удар.",
-    "rawDesc": "Вместо получения бонуса к <color=yellow>скорости атаки</color>, каждый 1% <color=yellow>доп. скорости атаки</color> увеличивает <color=yellow>силу атаки</color> на {0}.\nПосле <color=yellow>прорыва</color> или <color=yellow>телепортации</color> следующей <color=yellow>базовой атакой</color> наносит критический удар.",
+    "description": "Вместо получения бонуса к <color=yellow>скорости атаки</color>, каждый 1% <color=yellow>доп. скорости атаки</color> увеличивает <color=yellow>силу атаки</color> на 0.5<sprite=5>.\nПосле <color=yellow>прорыва</color> или <color=yellow>телепортации</color> следующая <color=yellow>базовая атака</color> наносит критический удар.\n\nПри убийстве любого <color=yellow>босса</color> <color=yellow>восстанавливает</color> <sprite=2><color=#FF8A2D>200%</color><sprite=5> <color=yellow>здоровья</color>.",
+    "rawDesc": "Вместо получения бонуса к <color=yellow>скорости атаки</color>, каждый 1% <color=yellow>доп. скорости атаки</color> увеличивает <color=yellow>силу атаки</color> на {0}.\nПосле <color=yellow>прорыва</color> или <color=yellow>телепортации</color> следующая <color=yellow>базовая атака</color> наносит критический удар.\n\nПри убийстве любого <color=yellow>босса</color> <color=yellow>восстанавливает</color> {1} <color=yellow>здоровья</color>.",
     "rawDescVars": [
       {
         "rendered": "0.5<sprite=5>",
@@ -2102,6 +2106,19 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "healAmountPerBossKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
         }
       }
     ],
@@ -2376,7 +2393,9 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Dark"
+    ],
     "image": "St_E_CrimsonLance.png",
     "lore": null,
     "achievementKey": "ACH_THE_EIGHTH_TROPHY",
@@ -3338,8 +3357,8 @@
     "cooldownTime": 14.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Вызывает метель в указанной зоне 4<sprite=5> р. кажд. 0.7 с., нанося врагам <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>урона от холода</color> и применяя к союзникам <color=yellow>щит</color>, равный <sprite=1><color=#16D7FF>60%</color><sprite=5>, который исчезает через 3.5 с.",
-    "rawDesc": "Вызывает метель в указанной зоне {0} р. кажд. {1} с., нанося врагам {2} <color=yellow>урона от холода</color> и применяя к союзникам <color=yellow>щит</color>, равный {3}, который исчезает через {4} с.",
+    "description": "Вызывает метель в указанной зоне 4<sprite=5> р. кажд. 0.7 с., нанося врагам <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>урона от холода</color> и применяя к союзникам <color=yellow>щит</color>, равный <sprite=1><color=#16D7FF>60%</color><sprite=5>, который исчезает через 3.5 с.\nМожно поддерживать одновременно максимум 10 шт.",
+    "rawDesc": "Вызывает метель в указанной зоне {0} р. кажд. {1} с., нанося врагам {2} <color=yellow>урона от холода</color> и применяя к союзникам <color=yellow>щит</color>, равный {3}, который исчезает через {4} с.\nМожно поддерживать одновременно максимум {5} шт.",
     "rawDescVars": [
       {
         "rendered": "4<sprite=5>",
@@ -3400,6 +3419,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 3.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxConcurrentCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3578,7 +3610,8 @@
     "traveler": "",
     "travelerMemoryLocation": "",
     "tags": [
-      "Light"
+      "Light",
+      "HardCC"
     ],
     "image": "St_L_CoinExplosion.PNG",
     "lore": null,
@@ -4802,6 +4835,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "Q",
     "tags": [
+      "Dark",
       "Melee",
       "Attack",
       "Mobility"
@@ -5539,6 +5573,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "R",
     "tags": [
+      "Dark",
       "Melee",
       "Attack"
     ],
@@ -5836,7 +5871,7 @@
     "lore": "Это идеальное доказательство моей теории.\nРазбор и объединение запускают непрерывную цепную реакцию согласно установленным мной законам.\nВозможности применения этой силы безграничны. Все зависит от того, как все спроектировать.\n\nНадо продолжить исследование.",
     "achievementKey": "ACH_OVERFLOWING_HEALS",
     "achievementName": "Переполняющее исцеление",
-    "achievementDescription": "При ОЗ 40% и ниже у Аурены исцелить 60% от макс. ОЗ одним заклинанием Опасной теории за раз."
+    "achievementDescription": "При ОЗ 40% и ниже у Аурены полностью восстановить здоровье одним применением Опасной теории."
   },
   "St_R_Chomp": {
     "name": "Укус",
@@ -6155,29 +6190,29 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Призывает Великий инистый меч и наносит им удар, нанося <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>урона от холода</color> врагам впереди и отталкивая их. При попадании по одиночной цели увеличивает <color=yellow>урон</color> на 200%.",
+    "description": "Призывает Великий инистый меч и наносит им удар, нанося <sprite=1><color=#16D7FF>250%</color><sprite=5> <color=yellow>урона от холода</color> врагам впереди и отталкивая их. При попадании по одиночной цели увеличивает <color=yellow>урон</color> на 350%.",
     "rawDesc": "Призывает Великий инистый меч и наносит им удар, нанося {0} <color=yellow>урона от холода</color> врагам впереди и отталкивая их. При попадании по одиночной цели увеличивает <color=yellow>урон</color> на {1}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.0,
+          "basicAP": 2.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "200%",
+        "rendered": "350%",
         "format": "P0",
         "raw": "singleTargetAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6637,7 +6672,7 @@
     "lore": "Атака и защита едины.",
     "achievementKey": "ACH_GO_WITH_THE_FLOW",
     "achievementName": "По течению",
-    "achievementDescription": "Без получения урона победить врагов 70 р. подряд, играя за Мист."
+    "achievementDescription": "Без получения урона победить врагов 60 р. подряд, играя за Мист."
   },
   "St_R_PillarOfFlame": {
     "name": "Столп пламени",
@@ -7435,7 +7470,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "При <color=yellow>удерживании</color> кнопки заряжает статику. После полной зарядки взрывает заряженную статику, нанося от <sprite=1><color=#16D7FF>150%</color><sprite=5> до <sprite=1><color=#16D7FF>600%</color><sprite=5> <color=yellow>урона от света</color> врагам, отталкивая и снижая их <color=yellow>скорость передвижения</color>, в зависимости от времени зарядки.\nЗарядка в течение 1 с. увеличивает урон и область действия до максимума.",
+    "description": "При <color=yellow>удерживании</color> кнопки заряжает статику. После полной зарядки взрывает заряженную статику, нанося от <sprite=1><color=#16D7FF>150%</color><sprite=5> до <sprite=1><color=#16D7FF>780%</color><sprite=5> <color=yellow>урона от света</color> врагам, отталкивая и снижая их <color=yellow>скорость передвижения</color>, в зависимости от времени зарядки.\nЗарядка в течение 1 с. увеличивает урон и область действия до максимума.",
     "rawDesc": "При <color=yellow>удерживании</color> кнопки заряжает статику. После полной зарядки взрывает заряженную статику, нанося от {0} до {1} <color=yellow>урона от света</color> врагам, отталкивая и снижая их <color=yellow>скорость передвижения</color>, в зависимости от времени зарядки.\nЗарядка в течение {2} с. увеличивает урон и область действия до максимума.",
     "rawDescVars": [
       {
@@ -7452,13 +7487,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>600%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>780%</color><sprite=5>",
         "format": "#,##0",
         "raw": "maxDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 6.0,
+          "basicAP": 7.8,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25

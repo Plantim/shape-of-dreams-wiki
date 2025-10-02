@@ -241,7 +241,7 @@
     "lore": null,
     "achievementKey": "ACH_ETERNAL_REST",
     "achievementName": "Wieczny Odpoczynek",
-    "achievementDescription": "Zadaj łącznie 80 ostatecznych ciosów Miecznikowi Dusz za pomocą ataku podstawowego."
+    "achievementDescription": "Zadaj Miecznikowi Dusz ostateczny cios atakiem podstawowym 50 razy."
   },
   "St_C_DarkBolt": {
     "name": "Strzała Ciemności",
@@ -334,20 +334,20 @@
   },
   "St_C_FlashFreeze": {
     "name": "Szybkie Zamrażanie",
-    "cooldownTime": 6.5,
-    "maxCharges": 1,
+    "cooldownTime": 5.0,
+    "maxCharges": 2,
     "addedCharges": 1,
-    "description": "Wystrzeliwuje zimno z przodu, zadając przeciwnikom <sprite=1><color=#16D7FF>100%</color><sprite=5> <color=yellow>Obrażeń od Zimna</color>. Jeśli wróg jest już pod wpływem <color=yellow>Zimna</color>, <color=yellow>Liczba Obrażeń</color> zwiększa się o 100%, a przeciwnik zostaje <color=yellow>Unieruchomiony</color> na 1.5 sek.",
+    "description": "Wystrzeliwuje zimno z przodu, zadając przeciwnikom <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>Obrażeń od Zimna</color>. Jeśli wróg jest już pod wpływem <color=yellow>Zimna</color>, <color=yellow>Liczba Obrażeń</color> zwiększa się o 100%, a przeciwnik zostaje <color=yellow>Unieruchomiony</color> na 1.5 sek.",
     "rawDesc": "Wystrzeliwuje zimno z przodu, zadając przeciwnikom {0} <color=yellow>Obrażeń od Zimna</color>. Jeśli wróg jest już pod wpływem <color=yellow>Zimna</color>, <color=yellow>Liczba Obrażeń</color> zwiększa się o {1}, a przeciwnik zostaje <color=yellow>Unieruchomiony</color> na {2} sek.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.3,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -725,7 +725,11 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Melee",
+      "Attack",
+      "Mobility"
+    ],
     "image": "St_C_MagicSword.png",
     "lore": null,
     "achievementKey": "",
@@ -861,7 +865,7 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Uwalnia energię dłonią, zadając <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>Obrażeń</color> i odpychając wszystkich trafionych wrogów. Jeśli odepchnięci wrogowie dotkną ściany, otrzymują dodatkowych <sprite=1><color=#16D7FF>374%</color><sprite=5> <color=yellow>Obrażeń</color> i zostają ogłuszeni na 1.5 sek.",
+    "description": "Uwalnia energię dłonią, zadając <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>Obrażeń</color> i odpychając wszystkich trafionych wrogów. Jeśli odepchnięci wrogowie dotkną ściany, otrzymują dodatkowych <sprite=1><color=#16D7FF>504%</color><sprite=5> <color=yellow>Obrażeń</color> i zostają ogłuszeni na 1.5 sek.",
     "rawDesc": "Uwalnia energię dłonią, zadając {0} <color=yellow>Obrażeń</color> i odpychając wszystkich trafionych wrogów. Jeśli odepchnięci wrogowie dotkną ściany, otrzymują dodatkowych {1} <color=yellow>Obrażeń</color> i zostają ogłuszeni na {2} sek.",
     "rawDescVars": [
       {
@@ -878,7 +882,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>374%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*stunDmgRatio",
         "scalingType": "unknown",
@@ -2088,8 +2092,8 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Nie możesz otrzymywać bonusów do <color=yellow>Szybkości Ataku</color>, ale wzamian za każdy 1% <color=yellow>Dodatkowej Szybkości Ataku</color>, <color=yellow>Moc Ataku</color> zwiększa się o 0.5<sprite=5>.\nPo użyciu <color=yellow>Szarży</color> lub <color=yellow>Teleportacji</color>, twój następny <color=yellow>Atak Podstawowy</color> staje się Trafieniem Krytycznym.",
-    "rawDesc": "Nie możesz otrzymywać bonusów do <color=yellow>Szybkości Ataku</color>, ale wzamian za każdy 1% <color=yellow>Dodatkowej Szybkości Ataku</color>, <color=yellow>Moc Ataku</color> zwiększa się o {0}.\nPo użyciu <color=yellow>Szarży</color> lub <color=yellow>Teleportacji</color>, twój następny <color=yellow>Atak Podstawowy</color> staje się Trafieniem Krytycznym.",
+    "description": "Nie możesz otrzymywać bonusów do <color=yellow>Szybkości Ataku</color>, ale za każdy 1% <color=yellow>Dodatkowej Szybkości Ataku</color> zyskujesz 0.5<sprite=5> <color=yellow>Obrażeń Ataku</color>.\nPo użyciu <color=yellow>Szarży</color> lub <color=yellow>Teleportacji</color>, twój następny <color=yellow>Atak Podstawowy</color> gwarantuje Trafienie Krytyczne.\n\nZa pokonanie dowolnego <color=yellow>Bossa</color> odzyskujesz <sprite=2><color=#FF8A2D>200%</color><sprite=5> <color=yellow>Punktów Zdrowia</color>.",
+    "rawDesc": "Nie możesz otrzymywać bonusów do <color=yellow>Szybkości Ataku</color>, ale za każdy 1% <color=yellow>Dodatkowej Szybkości Ataku</color> zyskujesz {0} <color=yellow>Obrażeń Ataku</color>.\nPo użyciu <color=yellow>Szarży</color> lub <color=yellow>Teleportacji</color>, twój następny <color=yellow>Atak Podstawowy</color> gwarantuje Trafienie Krytyczne.\n\nZa pokonanie dowolnego <color=yellow>Bossa</color> odzyskujesz {1} <color=yellow>Punktów Zdrowia</color>.",
     "rawDescVars": [
       {
         "rendered": "0.5<sprite=5>",
@@ -2103,6 +2107,19 @@
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
         }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "healAmountPerBossKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
       }
     ],
     "shortDescription": null,
@@ -2114,7 +2131,7 @@
       "Attack"
     ],
     "image": "St_D_TheKillingFlow.PNG",
-    "lore": "Jeden krok, jedno życie.\nNie ma emocji, nie ma cierpienia, ale ciało wciąż pamięta ruchy.",
+    "lore": "Jeden krok, jedno życie.\nBrak emocji, brak bólu, ale ciało wciąż pamięta ruchy.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -2376,7 +2393,9 @@
     "type": "Normal",
     "traveler": "",
     "travelerMemoryLocation": "",
-    "tags": [],
+    "tags": [
+      "Dark"
+    ],
     "image": "St_E_CrimsonLance.png",
     "lore": null,
     "achievementKey": "ACH_THE_EIGHTH_TROPHY",
@@ -3334,12 +3353,12 @@
     "achievementDescription": ""
   },
   "St_L_Blizzard": {
-    "name": "Zamieć śnieżna",
+    "name": "Zamieć",
     "cooldownTime": 14.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Zsyłasz zamieć śnieżną na wybrany obszar, która co 0.7 sek. uderza 4<sprite=5> razy, zadając wrogom <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>Obrażeń od Zimna</color> i przyznając sojusznikom <color=yellow>Tarcze</color> x<sprite=1><color=#16D7FF>60%</color><sprite=5>, które znikają po 3.5 sek.",
-    "rawDesc": "Zsyłasz zamieć śnieżną na wybrany obszar, która co {0} sek. uderza {1} razy, zadając wrogom {2} <color=yellow>Obrażeń od Zimna</color> i przyznając sojusznikom <color=yellow>Tarcze</color> x{3}, które znikają po {4} sek.",
+    "description": "Przyzywasz zamieć na wybranym obszarze, która co 0.7 sekundy uderza 4<sprite=5> razy, zadając wrogom <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>Obrażeń od Zimna</color> i przyznając sojusznikom <color=yellow>Tarczę</color> o wartości <sprite=1><color=#16D7FF>60%</color><sprite=5>, która znika po 3.5 sekundach.\nMożesz mieć aktywne maksymalnie 10 zamieci jednocześnie.",
+    "rawDesc": "Przyzywasz zamieć na wybranym obszarze, która co {0} sekundy uderza {1} razy, zadając wrogom {2} <color=yellow>Obrażeń od Zimna</color> i przyznając sojusznikom <color=yellow>Tarczę</color> o wartości {3}, która znika po {4} sekundach.\nMożesz mieć aktywne maksymalnie {5} zamieci jednocześnie.",
     "rawDescVars": [
       {
         "rendered": "0.7",
@@ -3405,6 +3424,19 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxConcurrentCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "shortDescription": "Obszarowe Obrażenia od Zimna, Tarcza",
@@ -3417,7 +3449,7 @@
       "Shield"
     ],
     "image": "St_L_Blizzard.png",
-    "lore": "Zabrakło mi tchu...\nKrzyk zamarzł, a lodowaty chłód rozdzierał wszystkie zmysły aż do kości.\n\nWycie tego wilka... to nie był triumfalny ryk zwycięzcy. To był krzyk kogoś, kto stracił wszystko, żałosny lament zrujnowanego królestwa!\nA my... zostaliśmy zmiażdżeni pod ciężarem tej rozpaczy. Jak pył na wietrze! Przeżuwając tę okrutną bezsilność!\nTa zamieć śnieżna to nie tylko zimno.\nW jego rozpaczy miesza się moje przekleństwo, a w jego smutku szaleje mój gniew... \n\nTo żywe piekło...\n\n\n- Ślad wspomnień najemnika, który zginął wśród śnieżnych gór",
+    "lore": "Zabrakło mi tchu...\nKrzyk zamarzł, a lodowaty chłód rozdzierał wszystkie zmysły aż do kości.\n\nWycie tego wilka... to nie był triumfalny ryk zwycięzcy. To był krzyk kogoś, kto stracił wszystko, żałosny lament zrujnowanego królestwa!\nA my... zostaliśmy zmiażdżeni pod ciężarem tej rozpaczy. Jak pył na wietrze! Przeżuwając tę okrutną bezsilność!\nTa zamieć to nie tylko zimno.\nW jego rozpaczy miesza się moje przekleństwo, a w jego smutku szaleje mój gniew...\n\nTo żywe piekło…\n\n\n- Ślad wspomnień najemnika, który zginął wśród śnieżnych gór",
     "achievementKey": "ACH_FIGHTING_COLD_WITH_COLD",
     "achievementName": "Zimno zwalczaj zimnem",
     "achievementDescription": "Eliminuj Króla Śnieżnej Góry, mając przy sobie wspomnienia zadające obrażenia od zimna x4."
@@ -3578,7 +3610,8 @@
     "traveler": "",
     "travelerMemoryLocation": "",
     "tags": [
-      "Light"
+      "Light",
+      "HardCC"
     ],
     "image": "St_L_CoinExplosion.PNG",
     "lore": null,
@@ -4802,6 +4835,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "Q",
     "tags": [
+      "Dark",
       "Melee",
       "Attack",
       "Mobility"
@@ -5539,6 +5573,7 @@
     "traveler": "Hero_Husk",
     "travelerMemoryLocation": "R",
     "tags": [
+      "Dark",
       "Melee",
       "Attack"
     ],
@@ -5835,8 +5870,8 @@
     "image": "St_R_ChainReaction.png",
     "lore": "To doskonały dowód na moją teorię.\nRozbicie i połączenie wywołują się nawzajem zgodnie z zasadami, które ustaliłem, tworząc reakcję łańcuchową.\nW zależności od tego, jak zaprojektuję tę moc, możliwości jej wykorzystania są nieskończone.\n\nBędę kontynuować badania.",
     "achievementKey": "ACH_OVERFLOWING_HEALS",
-    "achievementName": "Nadmierne leczenie",
-    "achievementDescription": "Jako Aurena, będąc poniżej 40% zdrowia, odzyskaj co najmniej 60% swojego Maksymalnego Zdrowia za pomocą jednego użycia Niebezpiecznej Teorii."
+    "achievementName": "Przelewające się leczenie",
+    "achievementDescription": "Jako Aurena, mając 40% lub mniej zdrowia, wylecz się do pełna za jednym zamachem dzięki Niebezpiecznej Teorii."
   },
   "St_R_Chomp": {
     "name": "Gryzienie",
@@ -6155,29 +6190,29 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Przywołujesz Wielki Miecz Mrozu i wymachujesz nim, zadając <color=yellow>Obrażenia od Zimna</color> x<sprite=1><color=#16D7FF>200%</color><sprite=5> wrogom przed sobą i odpychając ich. Jeśli trafisz tylko pojedynczy cel, <color=yellow>Liczba Obrażeń</color> zwiększa się o 200%.",
+    "description": "Przywołujesz Wielki Miecz Mrozu i wymachujesz nim, zadając <color=yellow>Obrażenia od Zimna</color> x<sprite=1><color=#16D7FF>250%</color><sprite=5> wrogom przed sobą i odpychając ich. Jeśli trafisz tylko pojedynczy cel, <color=yellow>Liczba Obrażeń</color> zwiększa się o 350%.",
     "rawDesc": "Przywołujesz Wielki Miecz Mrozu i wymachujesz nim, zadając <color=yellow>Obrażenia od Zimna</color> x{0} wrogom przed sobą i odpychając ich. Jeśli trafisz tylko pojedynczy cel, <color=yellow>Liczba Obrażeń</color> zwiększa się o {1}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.0,
+          "basicAP": 2.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "200%",
+        "rendered": "350%",
         "format": "P0",
         "raw": "singleTargetAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6637,7 +6672,7 @@
     "lore": "Atak i obrona są jednością.",
     "achievementKey": "ACH_GO_WITH_THE_FLOW",
     "achievementName": "Płynąć z prądem",
-    "achievementDescription": "Jako Mist, eliminuj 70 wrogów z rzędu, nie otrzymując obrażeń."
+    "achievementDescription": "Jako Mist, eliminuj 60 wrogów z rzędu, nie otrzymując obrażeń."
   },
   "St_R_PillarOfFlame": {
     "name": "Słup Ognia",
@@ -7435,7 +7470,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Poprzez <color=yellow>Długie Przytrzymanie</color> klawisza użycia doładowujesz ładunek elektryczny. Po zakończeniu doładowania wywołujesz Eksplozję, która zadaje wrogom <color=yellow>Obrażenia od Światła</color> od <sprite=1><color=#16D7FF>150%</color><sprite=5> do <sprite=1><color=#16D7FF>600%</color><sprite=5>, proporcjonalnie do czasu doładowania, odpycha ich i zmniejsza <color=yellow>Szybkość Ruchu</color>.\nPo doładowaniu, przez 1 sek., liczba obrażeń i zasięg osiągają maksymalny poziom.",
+    "description": "Poprzez <color=yellow>Długie Przytrzymanie</color> klawisza użycia doładowujesz ładunek elektryczny. Po zakończeniu doładowania wywołujesz Eksplozję, która zadaje wrogom <color=yellow>Obrażenia od Światła</color> od <sprite=1><color=#16D7FF>150%</color><sprite=5> do <sprite=1><color=#16D7FF>780%</color><sprite=5>, proporcjonalnie do czasu doładowania, odpycha ich i zmniejsza <color=yellow>Szybkość Ruchu</color>.\nPo doładowaniu, przez 1 sek., liczba obrażeń i zasięg osiągają maksymalny poziom.",
     "rawDesc": "Poprzez <color=yellow>Długie Przytrzymanie</color> klawisza użycia doładowujesz ładunek elektryczny. Po zakończeniu doładowania wywołujesz Eksplozję, która zadaje wrogom <color=yellow>Obrażenia od Światła</color> od {0} do {1}, proporcjonalnie do czasu doładowania, odpycha ich i zmniejsza <color=yellow>Szybkość Ruchu</color>.\nPo doładowaniu, przez {2} sek., liczba obrażeń i zasięg osiągają maksymalny poziom.",
     "rawDescVars": [
       {
@@ -7452,13 +7487,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>600%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>780%</color><sprite=5>",
         "format": "#,##0",
         "raw": "maxDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 6.0,
+          "basicAP": 7.8,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
