@@ -528,7 +528,7 @@ const renderMemories = (memoriesToRender) => {
                 card.className = `card w-full shadow-xl rounded-xl relative ${cardBackgroundColorClass}`;
 
                 // On prépare les petits bouts de HTML qui peuvent être optionnels.
-                const formattedDescription = processDescription(memory, currentLevel);
+                const formattedDescription = processDescription(memory, currentLevel, 'memory');
                 const rarityColorClass = getRarityColorClass(memory.rarity);
                 // Traduction des tags
                 let tagsHtml = '';
@@ -593,126 +593,6 @@ const renderMemories = (memoriesToRender) => {
 };
 
 // --- FONCTIONS UTILITAIRES (HELPERS) ---
-
-// Traite la description en fonction du niveau et des variables dynamiques.
-function processDescription(memory, level) {
-    // Si la mémoire n'a pas de description dynamique, on utilise la description statique.
-    if (!memory.rawDesc) {
-        return formatText(memory.description);
-    }
-
-    // On commence avec la description brute (le "modèle" avec {0}, {1}, etc.).
-    let description = memory.rawDesc;
-
-    // Si des variables dynamiques existent, on itère sur chacune d'elles.
-    if (memory.rawDescVars) {
-        memory.rawDescVars.forEach((descVar, index) => {
-            // AJOUT : Affichage du nom de la mémoire pour le débogage.
-            // console.log("---");
-            // console.log("Nom de la mémoire:", memory.name);
-            
-            // On prend la valeur rendue par défaut du JSON.
-            let valueToRender = descVar.rendered;
-            
-            // Point de vérification 1
-            // console.log(`Vérification pour l'indice ${index}:`);
-            // console.log("Objet 'data':", descVar.data);
-
-            // Si la valeur contient un sprite de type 5, on effectue le calcul.
-            if (descVar.rendered.includes('<sprite=5>')) {
-                // MODIFICATION : On vérifie si l'objet 'data' existe ET si au moins une valeur de calcul est supérieure à 0.
-                const hasCalculableData = descVar.data && (
-                    (descVar.data.basicConstant || 0) > 0 ||
-                    (descVar.data.basicAP || 0) > 0 ||
-                    (descVar.data.basicAD || 0) > 0 ||
-                    (descVar.data.basicLvl || 0) > 0 ||
-                    (descVar.data.basicAddedMultiplierPerLevel || 0) > 0
-                );
-
-                // Point de vérification 2
-                // console.log("hasCalculableData:", hasCalculableData);
-
-                if (!hasCalculableData) {
-                    // Si les données sont manquantes ou non significatives.
-                    // MODIFICATION : On recherche spécifiquement une valeur avec un pourcentage.
-                    const numericValueMatch = valueToRender.match(/([\d.]+)%/);
-                    if (numericValueMatch) {
-                        const renderedValue = numericValueMatch[1]; // L'index 1 contient le nombre sans le %.
-                        valueToRender = valueToRender.replace(renderedValue, `${renderedValue}?`);
-                    } else {
-                        // Sinon, on ajoute simplement un "?" à la fin si aucune valeur n'est trouvée.
-                        valueToRender += "?";
-                    }
-                } else {
-                    // Si les données existent, on continue avec notre logique de calcul.
-                    // On récupère toutes les valeurs de calcul du JSON.
-                    const basicConstant = descVar.data.basicConstant || 0;
-                    const basicAP = descVar.data.basicAP || 0;
-                    const basicAD = descVar.data.basicAD || 0;
-                    const basicLvl = descVar.data.basicLvl || 0;
-                    const basicAddedMultiplierPerLevel = descVar.data.basicAddedMultiplierPerLevel || 0;
-                    
-                    // On applique la formule de calcul que nous avons définie.
-                    let finalValue = (basicConstant + basicAP + basicAD + basicLvl) *
-                                    (1 + basicAddedMultiplierPerLevel * level) + (basicLvl * level);
-                    
-                                    //Affichage des valeurs de calcul pour le débogage.
-                    // if (memory.name === "Piétinement Glacial") {
-                    //     console.log("---");
-                    //     console.log("Nom de la mémoire:", memory.name);
-                    //     console.log("Valeur avant arrondi:", finalValue);
-                    // }
-
-                    // MODIFICATION 1 : La valeur finale est maintenant un nombre non formaté.
-                    const calculatedValue = (Math.round((finalValue + Number.EPSILON) * 100) / 100);
-
-                    // On prépare la valeur à insérer en fonction du format.
-
-                    let valueToInsert;
-                    const isP0Format = descVar.format === "P0";
-
-                    // MODIFICATION : Nouvelle structure de la condition.
-                    if (descVar.rendered.includes('<color=')) {
-                        // Cas 1 : La valeur est dans une balise couleur. On la multiplie par 100.
-                        valueToInsert = `${parseFloat((calculatedValue * 100).toFixed(2))}%`;
-                    } else if (isP0Format) {
-                        // Cas 2 : La valeur n'est PAS dans une balise couleur, mais le format est "P0". On la multiplie par 100.
-                        valueToInsert = `${parseFloat((calculatedValue * 100).toFixed(2))}%`;
-                    } else if (descVar.rendered.includes('%')) {
-                        // Cas 3 : La valeur n'est pas dans une balise couleur, n'est pas "P0", mais a un '%'. On ne la multiplie pas.
-                        valueToInsert = `${parseFloat(calculatedValue.toFixed(2))}%`;
-                    } else {
-                        // Cas 4 : Autres formats (pas de %).
-                        valueToInsert = parseFloat(calculatedValue.toFixed(2));
-                    }
-                    
-                    // MODIFICATION : On retire le symbole de pourcentage de la chaîne avant le remplacement.
-                    const valueToReplace = valueToRender.includes('%') ? valueToRender.replace('%', '') : valueToRender;
-                    
-                    // On utilise la nouvelle variable `valueToInsert` pour le remplacement.
-                    if (valueToReplace.includes('<color=')) {
-                        // Si la valeur est dans une balise couleur, on cherche spécifiquement ce nombre.
-                        const numericValueMatch = valueToReplace.match(/<color=.*?>(.*?)<\/color>/);
-                        if (numericValueMatch && numericValueMatch[1]) {
-                            valueToRender = valueToReplace.replace(numericValueMatch[1], valueToInsert);
-                        }
-                    } else {
-                        // Sinon, on utilise la logique précédente pour les autres cas.
-                        valueToRender = valueToReplace.replace(/[\d.]*/, valueToInsert);
-                    }
-                }
-
-                // Point de vérification 3
-                // console.log("Valeur rendue finale:", valueToRender);
-            }
-            
-            // On remplace la balise {index} dans le modèle par la valeur que nous venons de déterminer.
-            description = description.replace(`{${index}}`, valueToRender);
-        });
-    }
-    // Enfin, on passe la description mise à jour à la fonction formatText pour gérer les couleurs et les sprites.
-    return formatText(description);
-}
 
 // --- DÉMARRAGE DU SCRIPT ---
 const main = () => {

@@ -129,7 +129,7 @@ const setupLevelSlider = () => {
         // Configuration de la plage de valeurs
         qualitySlider.min = 100;
         qualitySlider.max = 5000;
-        qualitySlider.step = 100; // Incrémentation par 100
+        qualitySlider.step = 50; // Incrémentation par 100
         
         qualitySlider.value = qualityPercentage;
         qualityValueSpan.textContent = qualityPercentage; 
@@ -399,7 +399,7 @@ const renderEssences = (essencesToRender) => {
                 
                 card.className = `card w-full shadow-xl rounded-xl relative ${cardBackgroundColorClass}`;
 
-                const formattedDescription = processDescription(essence, qualityPercentage);
+                const formattedDescription = processDescription(essence, qualityPercentage, 'essence');
                 const rarityColorClass = getRarityColorClass(essence.rarity);
 
                 let tagsHtml = '';
@@ -444,86 +444,6 @@ const renderEssences = (essencesToRender) => {
 };
 
 // --- FONCTIONS UTILITAIRES (HELPERS) ---
-
-// ProcessDescription avec calcul de Quality Percentage (level)
-function processDescription(essence, qualityPercentage) {
-    if (!essence.rawDesc) {
-        return formatText(essence.description);
-    }
-
-    let description = essence.rawDesc;
-    const qualityMultiplier = qualityPercentage;
-
-    if (essence.rawDescVars) {
-        essence.rawDescVars.forEach((descVar, index) => {
-            let valueToRender = descVar.rendered;
-            
-            if (descVar.rendered.includes('<sprite=5>')) {
-                
-                const hasCalculableData = descVar.data && (
-                    (descVar.data.basicConstant || 0) > 0 ||
-                    (descVar.data.basicAP || 0) > 0 ||
-                    (descVar.data.basicAD || 0) > 0 ||
-                    (descVar.data.basicLvl || 0) > 0 ||
-                    (descVar.data.basicAddedMultiplierPerLevel || 0) > 0
-                );
-
-                if (!hasCalculableData || descVar.scalingType === 'unknown') {
-                    const numericValueMatch = valueToRender.match(/[\d.,]+/);
-                    if(numericValueMatch) {
-                        valueToRender = valueToRender.replace(numericValueMatch[0], `${numericValueMatch[0]}?`);
-                    } else {
-                        valueToRender += "?";
-                    }
-
-                } else {
-                    const basicConstant = descVar.data.basicConstant || 0;
-                    const basicAP = descVar.data.basicAP || 0;
-                    const basicAD = descVar.data.basicAD || 0;
-                    const basicLvl = descVar.data.basicLvl || 0;
-                    const basicAddedMultiplierPerLevel = descVar.data.basicAddedMultiplierPerLevel || 0;
-                    
-                    let finalValue = (basicConstant + basicAP + basicAD + basicLvl) * (1 + qualityMultiplier * basicAddedMultiplierPerLevel) + 
-                                    (basicLvl * qualityMultiplier); 
-                    
-                    const calculatedValue = (Math.round((finalValue + Number.EPSILON) * 100) / 100);
-
-                    let valueToInsert;
-                    const isP0Format = descVar.format === "P0";
-                    // Détecter le format où la valeur est DÉJÀ un pourcentage ---
-                    const isAlreadyPercentage = descVar.format.includes("'%'");
-
-                    if (isAlreadyPercentage) {
-                        // Si le format est #,##0'%', on n'effectue PAS de multiplication par 100.
-                        valueToInsert = `${parseFloat(calculatedValue.toFixed(2))}%`;
-                    } else if (isP0Format || descVar.rendered.includes('%')) {
-                        // Pour les formats P0 ou les autres cas avec un '%', on traite la valeur comme un ratio.
-                        valueToInsert = `${parseFloat((calculatedValue * 100).toFixed(2))}%`;
-                    } else {
-                        // C'est un nombre brut, sans pourcentage.
-                        valueToInsert = parseFloat(calculatedValue.toFixed(2));
-                    }
-                    
-                    if (valueToRender.includes('<color=')) {
-                        const numericValueMatch = valueToRender.match(/<color=.*?>(.*?)<\/color>/);
-                        if (numericValueMatch && numericValueMatch[1]) {
-                            valueToRender = valueToRender.replace(numericValueMatch[1], valueToInsert);
-                        }
-                    } else {
-                        // Remplacer le nombre ET le % optionnel pour éviter les doublons ---
-                        const numericAndPercentMatch = valueToRender.match(/[\d.,]+%?/);
-                        if(numericAndPercentMatch) {
-                            valueToRender = valueToRender.replace(numericAndPercentMatch[0], valueToInsert);
-                        }
-                    }
-                }
-            }
-            
-            description = description.replace(`{${index}}`, valueToRender);
-        });
-    }
-    return formatText(description);
-}
 
 // --- DÉMARRAGE DU SCRIPT ---
 const main = () => {
