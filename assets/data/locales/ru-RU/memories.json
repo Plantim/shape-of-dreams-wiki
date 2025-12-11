@@ -4,7 +4,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Прыгает назад, оставляя ударные бомбы x3 на исходной позиции. Каждая ударная бомба наносит <sprite=1><color=#16D7FF>120%</color><sprite=5> <color=yellow>урона</color> и <color=yellow>оглушает</color> на 1 с.",
+    "description": "Прыгает назад, оставляя ударные бомбы x3 на исходной позиции. Каждая ударная бомба наносит <sprite=1><color=#16D7FF>168%</color><sprite=5> <color=yellow>урона</color> и <color=yellow>оглушает</color> на 1 с.",
     "rawDesc": "Прыгает назад, оставляя ударные бомбы x{0} на исходной позиции. Каждая ударная бомба наносит {1} <color=yellow>урона</color> и <color=yellow>оглушает</color> на {2} с.",
     "rawDescVars": [
       {
@@ -21,13 +21,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>168%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.2,
+          "basicAP": 1.68,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -176,73 +176,6 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "St_R_DancingBlades": {
-    "name": "Буря клинков",
-    "cooldownTime": 13.0,
-    "maxCharges": 1,
-    "addedCharges": 1,
-    "description": "Призывает <color=yellow>Бурю клинков</color> в указанной области на 4 с. <color=yellow>Буря клинков</color> быстро рассекает окружающее пространство, нанося врагам <sprite=1><color=#16D7FF>85%</color><sprite=5> или <sprite=2><color=#FF8A2D>85%</color><sprite=5> <color=yellow>урона</color> (наносит большее значение) кажд. 0.5 с., и преследует ближайшего врага.",
-    "rawDesc": "Призывает <color=yellow>Бурю клинков</color> в указанной области на {0} с. <color=yellow>Буря клинков</color> быстро рассекает окружающее пространство, нанося врагам {1} или {2} <color=yellow>урона</color> (наносит большее значение) кажд. {3} с., и преследует ближайшего врага.",
-    "rawDescVars": [
-      {
-        "rendered": "4",
-        "format": "#,##0.#",
-        "raw": "duration",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "apDamage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.85,
-          "basicAD": 0.0,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "adDamage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.0,
-          "basicAD": 0.85,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": "0.5",
-        "format": "#,##0.#",
-        "raw": "tickInterval",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      }
-    ],
-    "shortDescription": "Продолжительный урон по области",
-    "rarity": "Rare",
-    "type": "Normal",
-    "traveler": "",
-    "travelerMemoryLocation": "",
-    "tags": [],
-    "image": "St_R_DancingBlades.png",
-    "lore": null,
-    "achievementKey": "ACH_ETERNAL_REST",
-    "achievementName": "Вечный покой",
-    "achievementDescription": "Нанести завершающий удар Мечнику душ базовой атакой 50 р."
-  },
   "St_C_DarkBolt": {
     "name": "Стрела тьмы",
     "cooldownTime": 4.5,
@@ -334,11 +267,11 @@
   },
   "St_C_FlashFreeze": {
     "name": "Мгновенное обледенение",
-    "cooldownTime": 5.0,
+    "cooldownTime": 9.0,
     "maxCharges": 2,
-    "addedCharges": 1,
-    "description": "Пускает холод перед собой, нанося <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>урона от холода</color> врагам. Если враг уже находится под воздействием <color=yellow>холода</color>, увеличивает <color=yellow>урон</color> на 100% и <color=yellow>обездвиживает</color> врага на 1.5 с.",
-    "rawDesc": "Пускает холод перед собой, нанося {0} <color=yellow>урона от холода</color> врагам. Если враг уже находится под воздействием <color=yellow>холода</color>, увеличивает <color=yellow>урон</color> на {1} и <color=yellow>обездвиживает</color> врага на {2} с.",
+    "addedCharges": 999,
+    "description": "Пускает холод перед собой, нанося <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>урона от холода</color> врагам и даруя себе и союзникам <color=yellow>щит</color> на <sprite=1><color=#16D7FF>90%</color><sprite=5>, длящийся 3 с. Если враг уже находится под воздействием <color=yellow>холода</color>, увеличивает <color=yellow>урон</color> на 100% и <color=yellow>обездвиживает</color> врага на 1.5 с.\n\n<color=yellow>Заряды</color> восстанавливаются все сразу.",
+    "rawDesc": "Пускает холод перед собой, нанося {0} <color=yellow>урона от холода</color> врагам и даруя себе и союзникам <color=yellow>щит</color> на {1}, длящийся {2} с. Если враг уже находится под воздействием <color=yellow>холода</color>, увеличивает <color=yellow>урон</color> на {3} и <color=yellow>обездвиживает</color> врага на {4} с.\n\n<color=yellow>Заряды</color> восстанавливаются все сразу.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
@@ -351,6 +284,32 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.9,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
         }
       },
       {
@@ -388,7 +347,8 @@
     "tags": [
       "Cold",
       "Melee",
-      "HardCC"
+      "HardCC",
+      "Shield"
     ],
     "image": "St_C_FlashFreeze.PNG",
     "lore": null,
@@ -613,8 +573,8 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Взмахивает когтями перед собой, нанося врагам <sprite=1><color=#16D7FF>140%</color><sprite=5> <color=yellow>урона от холода</color> и <color=yellow>оглушая</color> их на 0.5 с. При повторном применении взмахивает когтями еще раз, нанося врагам <sprite=1><color=#16D7FF>264%</color><sprite=5> <color=yellow>урона от холода</color> и <color=yellow>оглушая</color> их на 1 с.",
-    "rawDesc": "Взмахивает когтями перед собой, нанося врагам {0} <color=yellow>урона от холода</color> и <color=yellow>оглушая</color> их на {1} с. При повторном применении взмахивает когтями еще раз, нанося врагам {2} <color=yellow>урона от холода</color> и <color=yellow>оглушая</color> их на {3} с.",
+    "description": "Взмахивает когтями перед собой, нанося врагам <sprite=1><color=#16D7FF>140%</color><sprite=5> <color=yellow>урона от холода</color> и <color=yellow>оглушая</color> их на 0.5 с. При повторном применении взмахивает когтями еще раз, нанося врагам <sprite=1><color=#16D7FF>264%</color><sprite=5> <color=yellow>урона от холода</color> и <color=yellow>оглушая</color> их на 1 с.\n\nКогда когти попадают по врагу, вы <color=yellow>восстанавливаете</color> 12% от нанесенного урона в виде <color=yellow>здоровья</color>.",
+    "rawDesc": "Взмахивает когтями перед собой, нанося врагам {0} <color=yellow>урона от холода</color> и <color=yellow>оглушая</color> их на {1} с. При повторном применении взмахивает когтями еще раз, нанося врагам {2} <color=yellow>урона от холода</color> и <color=yellow>оглушая</color> их на {3} с.\n\nКогда когти попадают по врагу, вы <color=yellow>восстанавливаете</color> {4} от нанесенного урона в виде <color=yellow>здоровья</color>.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
@@ -667,9 +627,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "12%",
+        "format": "P0",
+        "raw": "Ai_C_IceClaw::healRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.12,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Ближний урон от холода",
+    "shortDescription": "Ближний урон от холода, восстановление здоровья",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -677,7 +650,8 @@
     "tags": [
       "Cold",
       "Melee",
-      "HardCC"
+      "HardCC",
+      "Heal"
     ],
     "image": "St_C_IceClaw.PNG",
     "lore": null,
@@ -731,7 +705,7 @@
       "Mobility"
     ],
     "image": "St_C_MagicSword.png",
-    "lore": null,
+    "lore": "Тихим рассветом,\nкогда я поднимаюсь в задний сад поместья Хайгейт,\nтихо всплывает одно воспоминание.\n\nПрохладный воздух старого тренировочного зала, всё ещё касающийся моих щёк.\nДетство, когда я отбрасывала лишь крошечную тень.\nГолос матери, холодный как иней.\n\nБирюзовый меч.\nМеч нашего рода, воплощение силы и гордости семьи Вердесильвер.\nПрямой как несгибаемое дерево, непоколебимый и устремлённый вперёд —\nтаким был меч, который мать показала мне в тот день.\n\nНо мой меч не смог следовать её учению.\nКончик клинка дрожал, словно лист на ветру, а сила утекала, как вода.\n\nРазве это не ирония, мать?\nГордое древо, которое ты так стремилась защитить, в конце концов сломалось и пало,\nа этот ничтожный листок, что лишь развевался на ветру,\nвыжил.\n\nТеперь и гордость рода, и тяжесть древа — всё исчезло...\nНо я не жалею об этом.\n\nВсё, чего я желаю —\nэто держать меч как безымянный туман, утративший свою бирюзу,\nради счастья моей младшей сестры.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -787,7 +761,7 @@
   },
   "St_C_Pew": {
     "name": "Паф!",
-    "cooldownTime": 14.0,
+    "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
     "description": "При <color=yellow>удерживании</color> кнопки применения заряжает огненный снаряд. После полной зарядки выстреливает огненным снарядом, нанося <color=yellow>урон от огня</color> в размере от <sprite=1><color=#16D7FF>150%</color><sprite=5> до <sprite=1><color=#16D7FF>400%</color><sprite=5> всем пораженным врагам, в зависимости от времени прицеливания.\n\nПри выстреле не полностью зараженным снарядом <color=yellow>время перезарядки</color> снижается макс. на 80%. Прицеливание в течение 1.35 с. увеличивает ширину области поражения и урон до максимума.",
@@ -865,8 +839,8 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Высвобождает энергию из ладони, нанося <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>урона</color> и отталкивая всех пораженных врагов. Дополнительно наносит отброшенному врагу, ударившемуся о стену, <sprite=1><color=#16D7FF>504%</color><sprite=5> <color=yellow>урона</color> и оглушает на 1.5 с.",
-    "rawDesc": "Высвобождает энергию из ладони, нанося {0} <color=yellow>урона</color> и отталкивая всех пораженных врагов. Дополнительно наносит отброшенному врагу, ударившемуся о стену, {1} <color=yellow>урона</color> и оглушает на {2} с.",
+    "description": "Высвобождает энергию из ладони, нанося <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>урона</color> и отталкивая всех пораженных врагов, оглушая их на 1 с. Дополнительно наносит <sprite=1><color=#16D7FF>504%</color><sprite=5> <color=yellow>урона</color>, если цель неудержима или ударяется о стену.",
+    "rawDesc": "Высвобождает энергию из ладони, нанося {0} <color=yellow>урона</color> и отталкивая всех пораженных врагов, оглушая их на {1} с. Дополнительно наносит {2} <color=yellow>урона</color>, если цель неудержима или ударяется о стену.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
@@ -882,24 +856,24 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "dmgFactor*stunDmgRatio",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "1.5",
+        "rendered": "1",
         "format": "#,##0.#",
         "raw": "stunDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor*stunDmgRatio",
+        "scalingType": "unknown",
+        "data": {}
       }
     ],
     "shortDescription": "Ближний урон, отталкивание",
@@ -988,20 +962,20 @@
   },
   "St_C_SparklingWaterGun": {
     "name": "Искрящийся водяной пистолет",
-    "cooldownTime": 5.0,
+    "cooldownTime": 4.0,
     "maxCharges": 3,
     "addedCharges": 1,
-    "description": "Выстреливает из искрящегося водяного пистолета. При попадании в союзника <color=yellow>исцеляет</color> <sprite=1><color=#16D7FF>50%</color><sprite=5> <color=yellow>ОЗ</color> и снимает <color=yellow>накопления огня</color>. При попадании во врага наносит 1 <color=yellow>урона</color> и <color=yellow>оглушает</color> на 1.5 с. Снижает <color=yellow>время перезарядки</color> только во время <color=yellow>боя</color>.",
-    "rawDesc": "Выстреливает из искрящегося водяного пистолета. При попадании в союзника <color=yellow>исцеляет</color> {0} <color=yellow>ОЗ</color> и снимает <color=yellow>накопления огня</color>. При попадании во врага наносит {1} <color=yellow>урона</color> и <color=yellow>оглушает</color> на {2} с. Снижает <color=yellow>время перезарядки</color> только во время <color=yellow>боя</color>.",
+    "description": "Выстреливает из искрящегося водяного пистолета. При попадании в союзников <color=yellow>исцеляет</color> <sprite=1><color=#16D7FF>70%</color><sprite=5> <color=yellow>ОЗ</color> и снимает <color=yellow>накопления огня</color>. При попадании во врагов наносит 1 <color=yellow>урона</color> и <color=yellow>оглушает</color> на 1.5 с. Снижает <color=yellow>время перезарядки</color> только во время <color=yellow>боя</color>.\n\nЕсли цель — союзный <color=yellow>призыв</color>, исцеление увеличивается на 40%.",
+    "rawDesc": "Выстреливает из искрящегося водяного пистолета. При попадании в союзников <color=yellow>исцеляет</color> {0} <color=yellow>ОЗ</color> и снимает <color=yellow>накопления огня</color>. При попадании во врагов наносит {1} <color=yellow>урона</color> и <color=yellow>оглушает</color> на {2} с. Снижает <color=yellow>время перезарядки</color> только во время <color=yellow>боя</color>.\n\nЕсли цель — союзный <color=yellow>призыв</color>, исцеление увеличивается на {3}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>50%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>70%</color><sprite=5>",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.5,
+          "basicAP": 0.7,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -1027,6 +1001,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "summonAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1167,7 +1154,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Сосредотачивается</color> на 3.5 с., размахивая мечом и нанося <sprite=2><color=#FF8A2D>170%</color><sprite=5> <color=yellow>урона</color> ежесекундно врагам поблизости, активируя <color=yellow>эффект атаки</color>, равный 25%. Чем выше <color=yellow>скорость атаки</color>, тем быстрее вращение меча.",
+    "description": "<color=yellow>Сосредотачивается</color> на 3.5 с., размахивая мечом и нанося <sprite=2><color=#FF8A2D>240%</color><sprite=5> <color=yellow>урона</color> ежесекундно врагам поблизости, активируя <color=yellow>эффект атаки</color>, равный 35%. Чем выше <color=yellow>скорость атаки</color>, тем быстрее вращение меча.",
     "rawDesc": "<color=yellow>Сосредотачивается</color> на {0} с., размахивая мечом и нанося {1} <color=yellow>урона</color> ежесекундно врагам поблизости, активируя <color=yellow>эффект атаки</color>, равный {2}. Чем выше <color=yellow>скорость атаки</color>, тем быстрее вращение меча.",
     "rawDescVars": [
       {
@@ -1184,19 +1171,19 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>170%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>240%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*2",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "25%",
+        "rendered": "35%",
         "format": "P0",
         "raw": "attackEffect",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.25,
+          "basicConstant": 0.35,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2465,43 +2452,6 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "St_E_FlameJet": {
-    "name": "Извержение огня",
-    "cooldownTime": 11.5,
-    "maxCharges": 1,
-    "addedCharges": 1,
-    "description": "Извергает поток огня в течение 2.5 с. Враги, попавшие в этот поток, получают <sprite=1><color=#16D7FF>336%</color><sprite=5> <color=yellow>урона от огня</color> ежесекундно.",
-    "rawDesc": "Извергает поток огня в течение {0} с. Враги, попавшие в этот поток, получают {1} <color=yellow>урона от огня</color> ежесекундно.",
-    "rawDescVars": [
-      {
-        "rendered": "2.5",
-        "format": "#,##0.#",
-        "raw": "spawns*spawnInterval",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "damage/minHitInterval",
-        "scalingType": "unknown",
-        "data": {}
-      }
-    ],
-    "shortDescription": "Продолжительный урон от огня по области",
-    "rarity": "Epic",
-    "type": "Normal",
-    "traveler": "",
-    "travelerMemoryLocation": "",
-    "tags": [
-      "Fire"
-    ],
-    "image": "St_E_FlameJet.png",
-    "lore": "Дневник охотника\n2-й год правления Лоджита, день n месяца n, погода: ясно\nМесто охоты: Болота Игни\nДобыча за сегодня: мешок крапивы\n\nУ меня есть правила, которых я всегда придерживаюсь, отправляясь на охоту в Болота Игни.\n\n1. Если видишь следы когтей на корнях мангровых деревьев, будь начеку.\n\n2. Если на этих следах нет мха, не иди в том направлении.\n\n3. Если вдалеке виден дым или на обгоревших стволах деревьев остались тлеющие угли, сразу возвращайся домой.\n\nЯ дал себе эти зароки после того, как прошлым летом в прицел увидел, как какой-то болван дергал полусгнивший стебель лозы каримбери и столкнулся нос к носу с чудовищно огромным барасусом.\n\nКажется, я не видел столь большого пламени даже на демонстрации огненного оружия Королевской гвардии.",
-    "achievementKey": "ACH_PYROMANIA",
-    "achievementName": "Пироман",
-    "achievementDescription": "Победить горящих врагов 250 р."
-  },
   "St_E_FinalExplosion": {
     "name": "Последний Взрыв",
     "cooldownTime": 3.0,
@@ -2594,10 +2544,47 @@
       "HardCC"
     ],
     "image": "St_E_FinalExplosion.PNG",
-    "lore": null,
+    "lore": "Кольцо окружения рыцарей Ордена Солнечного Пламени сжималось, не оставляя ни единой щели.\nИх священное пламя не позволяло тьме укрыться даже в самых глубоких переулках.\nЗагнанный в тупик член Секты Люцидов наконец остановился.\n\nНо вместо страха на его лице появилась улыбка, полная странной эйфории.\nОн смотрел на окруживших его рыцарей сверху вниз, словно на жалких насекомых.\n\n\"Вы думаете... это конец? Вы верите, что можете судить меня этим надменным, ничтожным пламенем вашего лживого бога?\"\n\nОн закрыл глаза и сосредоточил все свои чувства.\nИ тогда, сквозь шум реальности, он услышал мягкий шёпот мира грёз,\nГрани миров, к которой он так стремился.\n\nПришло время оставить всё и уйти.\nОн снова открыл глаза, чтобы попрощаться с реальностью в последний раз.\n\n\"Прощайте! Слепые пламена... это ничтожное тело... и этот проклятый мир!\"\n\nЕго тело уже начало пульсировать нереальными красками.\nСамая горячая и отчаянная молитва, обращённая к богу.\n\n\"Примус! Этот презренный слуга... отдаёт вам всё, что у него есть... прямо сейчас!\"\n\nЕго последний крик превратил его существование в горстку пыли,\nи величественный последний взрыв поглотил всё вокруг.\n\n\n- След воспоминания из тела, найденного в разрушенной деревне",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
+  },
+  "St_E_FlameJet": {
+    "name": "Извержение огня",
+    "cooldownTime": 11.5,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Извергает поток огня в течение 2.5 с. Враги, попавшие в этот поток, получают <sprite=1><color=#16D7FF>336%</color><sprite=5> <color=yellow>урона от огня</color> ежесекундно.",
+    "rawDesc": "Извергает поток огня в течение {0} с. Враги, попавшие в этот поток, получают {1} <color=yellow>урона от огня</color> ежесекундно.",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "spawns*spawnInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage/minHitInterval",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "Продолжительный урон от огня по области",
+    "rarity": "Epic",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Fire"
+    ],
+    "image": "St_E_FlameJet.png",
+    "lore": "Дневник охотника\n2-й год правления Лоджита, день n месяца n, погода: ясно\nМесто охоты: Болота Игни\nДобыча за сегодня: мешок крапивы\n\nУ меня есть правила, которых я всегда придерживаюсь, отправляясь на охоту в Болота Игни.\n\n1. Если видишь следы когтей на корнях мангровых деревьев, будь начеку.\n\n2. Если на этих следах нет мха, не иди в том направлении.\n\n3. Если вдалеке виден дым или на обгоревших стволах деревьев остались тлеющие угли, сразу возвращайся домой.\n\nЯ дал себе эти зароки после того, как прошлым летом в прицел увидел, как какой-то болван дергал полусгнивший стебель лозы каримбери и столкнулся нос к носу с чудовищно огромным барасусом.\n\nКажется, я не видел столь большого пламени даже на демонстрации огненного оружия Королевской гвардии.",
+    "achievementKey": "ACH_PYROMANIA",
+    "achievementName": "Пироман",
+    "achievementDescription": "Победить горящих врагов 250 р."
   },
   "St_E_Harvest": {
     "name": "Кровавая жатва",
@@ -2683,6 +2670,89 @@
       "Attack"
     ],
     "image": "St_E_Harvest.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_E_JusticeGuillotine": {
+    "name": "Гильотина правосудия",
+    "cooldownTime": 100.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Обрушивает гигантский меч на указанного врага, нанося <sprite=2><color=#FF8A2D>800%</color><sprite=5> <color=yellow>урона</color> всем противникам вокруг. Урон увеличивается в зависимости от вашего <color=yellow>потерянного здоровья</color> (вплоть до 2 раз) и <color=yellow>потерянного здоровья</color> цели (вплоть до 2 раз), суммарно до 4 раз. Увеличение урона достигает максимума, когда здоровье опускается до 30% или ниже.",
+    "rawDesc": "Обрушивает гигантский меч на указанного врага, нанося {0} <color=yellow>урона</color> всем противникам вокруг. Урон увеличивается в зависимости от вашего <color=yellow>потерянного здоровья</color> (вплоть до {1} раз) и <color=yellow>потерянного здоровья</color> цели (вплоть до {2} раз), суммарно до {3} раз. Увеличение урона достигает максимума, когда здоровье опускается до {4} или ниже.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>800%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 8.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dmgAmplitude",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dmgAmplitude",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "dmgAmplitude * dmgAmplitude",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "maxAmpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Мощный удар. Урон увеличивается в зависимости от потерянного здоровья.",
+    "rarity": "Epic",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Melee",
+      "Mobility"
+    ],
+    "image": "St_E_JusticeGuillotine.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -2793,6 +2863,103 @@
     "achievementKey": "ACH_MASTER_OF_MYSTIC_ARTS",
     "achievementName": "Мастер мистических искусств",
     "achievementDescription": "Одновременно иметь активные Воспоминания x4 с перезарядкой 3 с. и меньше."
+  },
+  "St_E_Permafrost": {
+    "name": "Вечная мерзлота",
+    "cooldownTime": 100.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Призывает лютый холод, а затем высвобождает его в очень широкой области. Союзники в зоне действия получают <color=yellow>щит</color> прочностью <sprite=1><color=#16D7FF>300%</color><sprite=5> и 100 <color=yellow>брони</color> на 10 сек. Враги же замерзают, получают <sprite=1><color=#16D7FF>500%</color><sprite=5> <color=yellow>урона от холода</color> и оказываются <color=yellow>оглушены</color> на 15 сек.\n\nЕсли враг уже находится под действием <color=yellow>холода</color>, этот урон увеличивается на 100%.",
+    "rawDesc": "Призывает лютый холод, а затем высвобождает его в очень широкой области. Союзники в зоне действия получают <color=yellow>щит</color> прочностью {0} и {1} <color=yellow>брони</color> на {2} сек. Враги же замерзают, получают {3} <color=yellow>урона от холода</color> и оказываются <color=yellow>оглушены</color> на {4} сек.\n\nЕсли враг уже находится под действием <color=yellow>холода</color>, этот урон увеличивается на {5}.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 3.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "100",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 100.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>500%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 5.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "15",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "chilledAmpBonus-1",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "Массовый урон от холода, оглушение, защита союзников",
+    "rarity": "Epic",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Cold",
+      "HardCC",
+      "Shield"
+    ],
+    "image": "St_E_Permafrost.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
   },
   "St_E_Rewind": {
     "name": "Перемотка",
@@ -3837,8 +4004,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Превращается</color> в быстро движущийся <color=yellow>огненный шар</color> на 3 с. с <color=yellow>ЗЩТ</color> 50<sprite=5> и иммунитетом к <color=yellow>урону от огня</color>. При каждом столкновении с врагом наносит <sprite=1><color=#16D7FF>220%</color><sprite=5> <color=yellow>урона от огня</color> и <color=yellow>увеличивает</color> <color=yellow>длительность</color> превращения на 0.2<sprite=5> с. (макс. до 3<sprite=5> с.)",
-    "rawDesc": "<color=yellow>Превращается</color> в быстро движущийся <color=yellow>огненный шар</color> на {0} с. с <color=yellow>ЗЩТ</color> {1} и иммунитетом к <color=yellow>урону от огня</color>. При каждом столкновении с врагом наносит {2} <color=yellow>урона от огня</color> и <color=yellow>увеличивает</color> <color=yellow>длительность</color> превращения на {3} с. (макс. до {4} с.)",
+    "description": "На 3 сек. <color=yellow>превращается</color> в быстро движущийся <color=yellow>огненный шар</color>, получает 50<sprite=5> <color=yellow>брони</color> и иммунитет к <color=yellow>урону от огня</color>. При каждом столкновении с врагом шар наносит <sprite=1><color=#16D7FF>220%</color><sprite=5> <color=yellow>урона от огня</color>, а <color=yellow>длительность</color> превращения <color=yellow>увеличивается</color> на 0.2<sprite=5> сек. (макс. до 3<sprite=5> сек.).",
+    "rawDesc": "На {0} сек. <color=yellow>превращается</color> в быстро движущийся <color=yellow>огненный шар</color>, получает {1} <color=yellow>брони</color> и иммунитет к <color=yellow>урону от огня</color>. При каждом столкновении с врагом шар наносит {2} <color=yellow>урона от огня</color>, а <color=yellow>длительность</color> превращения <color=yellow>увеличивается</color> на {3} сек. (макс. до {4} сек.).",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -4273,30 +4440,30 @@
     "cooldownTime": 6.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Концентрирует солнечную энергию в молоте при <color=yellow>удерживании</color> кнопк. После ударяет молотом о землю, нанося врагам от <sprite=1><color=#16D7FF>100%</color><sprite=5> до <sprite=1><color=#16D7FF>350%</color><sprite=5> <color=yellow>урона от огня</color> и <color=yellow>оглушая</color> их (от 0.5 до 1.5 с.)\n\nВо время концентрации не может двигаться, но взамен получает эффект <color=yellow>неудержимости</color> и 60<sprite=5> <color=yellow>ЗЩТ</color>.",
+    "description": "Концентрирует солнечную энергию в молоте при <color=yellow>удерживании</color> кнопк. После ударяет молотом о землю, нанося врагам от <sprite=1><color=#16D7FF>150%</color><sprite=5> до <sprite=1><color=#16D7FF>450%</color><sprite=5> <color=yellow>урона от огня</color> и <color=yellow>оглушая</color> их (от 0.5 до 1.5 с.)\n\nВо время концентрации не может двигаться, но взамен получает эффект <color=yellow>неудержимости</color> и 60<sprite=5> <color=yellow>ЗЩТ</color>.",
     "rawDesc": "Концентрирует солнечную энергию в молоте при <color=yellow>удерживании</color> кнопк. После ударяет молотом о землю, нанося врагам от {0} до {1} <color=yellow>урона от огня</color> и <color=yellow>оглушая</color> их (от {2} до {3} с.)\n\nВо время концентрации не может двигаться, но взамен получает эффект <color=yellow>неудержимости</color> и {4} <color=yellow>ЗЩТ</color>.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
         "format": "#,##0",
         "raw": "damageMin",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>450%</color><sprite=5>",
         "format": "#,##0",
         "raw": "damageMax",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.5,
+          "basicAP": 4.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -4363,18 +4530,18 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Прорывается к цели и ударяет молотом, нанося врагам <sprite=2><color=#FF8A2D>110%</color><sprite=5> <color=yellow>урона от света</color> и активируя 50% <color=yellow>эффекта атаки</color>. Каждая <color=yellow>атака</color> по врагу <color=yellow>снижает</color> <color=yellow>время перезарядки</color> на 8%.",
+    "description": "Прорывается к цели и ударяет молотом, нанося врагам <sprite=2><color=#FF8A2D>125%</color><sprite=5> <color=yellow>урона от света</color> и активируя 50% <color=yellow>эффекта атаки</color>. Каждая <color=yellow>атака</color> по врагу <color=yellow>снижает</color> <color=yellow>время перезарядки</color> на 8%.",
     "rawDesc": "Прорывается к цели и ударяет молотом, нанося врагам {0} <color=yellow>урона от света</color> и активируя {1} <color=yellow>эффекта атаки</color>. Каждая <color=yellow>атака</color> по врагу <color=yellow>снижает</color> <color=yellow>время перезарядки</color> на {2}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>110%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>125%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.1,
+          "basicAD": 1.25,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5025,16 +5192,16 @@
     "cooldownTime": 4.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Жертвуя</color> 10% от макс. ОЗ, запускает тонкие золотистые осколки x3 вперед. Осколки пробивают цели, нанося <sprite=1><color=#16D7FF>95%</color><sprite=5> <color=yellow>урона</color> врагам и <color=yellow>исцеляя</color> союзников на <sprite=1><color=#16D7FF>18%</color><sprite=5>.",
+    "description": "<color=yellow>Жертвуя</color> 8% от макс. ОЗ, запускает тонкие золотистые осколки x3 вперед. Осколки пробивают цели, нанося <sprite=1><color=#16D7FF>95%</color><sprite=5> <color=yellow>урона</color> врагам и <color=yellow>исцеляя</color> союзников на <sprite=1><color=#16D7FF>18%</color><sprite=5>.",
     "rawDesc": "<color=yellow>Жертвуя</color> {0} от макс. ОЗ, запускает тонкие золотистые осколки x{1} вперед. Осколки пробивают цели, нанося {2} <color=yellow>урона</color> врагам и <color=yellow>исцеляя</color> союзников на {3}.",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "8%",
         "format": "P0",
         "raw": "sacrificeHpRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.08,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5285,7 +5452,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "При <color=yellow>удерживании</color> кнопки применения заряжает залп ментальных стрел. При отпускании клавиши выпускает от 1 до 4<sprite=5> ментальных стрел по врагам поблизости (в зависимости от времени зарядки). Каждая ментальная стрела наносит <color=yellow>урон от тьмы</color> в размере <sprite=2><color=#FF8A2D>150%</color><sprite=5> врагам в небольшой зоне.",
+    "description": "При <color=yellow>удерживании</color> кнопки применения заряжает залп ментальных стрел. При отпускании клавиши выпускает от 1 до 4<sprite=5> ментальных стрел по врагам поблизости (в зависимости от времени зарядки). Каждая ментальная стрела наносит <color=yellow>урон от тьмы</color> в размере <sprite=2><color=#FF8A2D>200%</color><sprite=5> врагам в небольшой зоне.",
     "rawDesc": "При <color=yellow>удерживании</color> кнопки применения заряжает залп ментальных стрел. При отпускании клавиши выпускает от {0} до {1} ментальных стрел по врагам поблизости (в зависимости от времени зарядки). Каждая ментальная стрела наносит <color=yellow>урон от тьмы</color> в размере {2} врагам в небольшой зоне.",
     "rawDescVars": [
       {
@@ -5309,14 +5476,14 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.5,
+          "basicAD": 2.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5342,7 +5509,7 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Создает кольцо огня вокруг себя на 3 с. Враги, соприкасающиеся с кольцом огня, получают <sprite=1><color=#16D7FF>250%</color><sprite=5> <color=yellow>урона от огня</color> ежесекундно.",
+    "description": "Создает кольцо огня вокруг себя на 3 с. Враги, соприкасающиеся с кольцом огня, получают <sprite=1><color=#16D7FF>350%</color><sprite=5> <color=yellow>урона от огня</color> ежесекундно.",
     "rawDesc": "Создает кольцо огня вокруг себя на {0} с. Враги, соприкасающиеся с кольцом огня, получают {1} <color=yellow>урона от огня</color> ежесекундно.",
     "rawDescVars": [
       {
@@ -5353,7 +5520,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*5",
         "scalingType": "unknown",
@@ -5399,7 +5566,7 @@
           "basicAP": 1.2,
           "basicAD": 0.0,
           "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
+          "basicAddedMultiplierPerLevel": 0.1
         }
       },
       {
@@ -5470,10 +5637,10 @@
         "raw": "speedAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 12.0,
+          "basicConstant": 13.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 3.0,
+          "basicLvl": 2.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5583,6 +5750,83 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "St_R_BaptismOfSun": {
+    "name": "Крещение солнца",
+    "cooldownTime": 7.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>Веспер</color> взывает к силе солнца, вызывая взрыв, который наносит окружающим врагам <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>урона от огня</color> и провоцирует их атаковать Веспера. В течение 6 сек. <color=yellow>скорость атаки</color> увеличивается на 15%<sprite=5>, а <color=yellow>атаки</color> наносят дополнительно <sprite=2><color=#FF8A2D>40%</color><sprite=5> <color=yellow>урона от огня</color>.",
+    "rawDesc": "<color=yellow>Веспер</color> взывает к силе солнца, вызывая взрыв, который наносит окружающим врагам {0} <color=yellow>урона от огня</color> и провоцирует их атаковать Веспера. В течение {1} сек. <color=yellow>скорость атаки</color> увеличивается на {2}, а <color=yellow>атаки</color> наносят дополнительно {3} <color=yellow>урона от огня</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "6",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 11.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 4.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>40%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "bonusDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.4,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "Провокация, огонь, атака",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Vesper",
+    "travelerMemoryLocation": "R",
+    "tags": [
+      "Fire",
+      "Melee",
+      "Attack"
+    ],
+    "image": "St_R_BaptismOfSun.png",
+    "lore": "Смотрите! Свет испепеляет скверну этого мира! \nВ священном горниле лишь воля господина Эль'пироса останется чистой, словно золото. \n\nВсе мы примем это крещение, так возрадуйтесь и возблагодарите!",
+    "achievementKey": "ACH_HOTTER_FIRE_WINS",
+    "achievementName": "Побеждает сильнейший огонь",
+    "achievementDescription": "Победите Пылающего гиганта, имея 3 или более огненных воспоминаний на Веспере."
+  },
   "St_R_BlackArbalest": {
     "name": "Черный арбалет",
     "cooldownTime": 11.0,
@@ -5626,7 +5870,8 @@
     "tags": [
       "Dark",
       "HardCC",
-      "Attack"
+      "Attack",
+      "Mobility"
     ],
     "image": "St_R_BlackArbalest.PNG",
     "lore": null,
@@ -5639,7 +5884,7 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Становится <color=yellow>неудержимым</color> и <color=yellow>прорывается</color> вперед до столкновения со стеной. Наносит <sprite=1><color=#16D7FF>135%</color><sprite=5> <color=yellow>урона</color> врагам, с которыми сталкивается, и тянет их за собой. При столкновении со стеной создает ударную волну, наносящую <sprite=1><color=#16D7FF>300%</color><sprite=5> <color=yellow>урона</color> врагам и <color=yellow>оглушающую</color> их на 1.5 с.\nПри применении получает <color=yellow>щит</color> в размере 10%<sprite=5> от <color=yellow>макс. ОЗ</color>, который исчезает через 1 с. после окончания прорыва.",
+    "description": "Становится <color=yellow>неудержимым</color> и <color=yellow>прорывается</color> вперед до столкновения со стеной. Наносит <sprite=1><color=#16D7FF>135%</color><sprite=5> <color=yellow>урона</color> врагам, с которыми сталкивается, и тянет их за собой. При столкновении со стеной создает ударную волну, наносящую <sprite=1><color=#16D7FF>420%</color><sprite=5> <color=yellow>урона</color> врагам и <color=yellow>оглушающую</color> их на 1.5 с.\nПри применении получает <color=yellow>щит</color> в размере 20%<sprite=5> от <color=yellow>макс. ОЗ</color>, который исчезает через 3 с. после окончания прорыва.",
     "rawDesc": "Становится <color=yellow>неудержимым</color> и <color=yellow>прорывается</color> вперед до столкновения со стеной. Наносит {0} <color=yellow>урона</color> врагам, с которыми сталкивается, и тянет их за собой. При столкновении со стеной создает ударную волну, наносящую {1} <color=yellow>урона</color> врагам и <color=yellow>оглушающую</color> их на {2} с.\nПри применении получает <color=yellow>щит</color> в размере {3} от <color=yellow>макс. ОЗ</color>, который исчезает через {4} с. после окончания прорыва.",
     "rawDescVars": [
       {
@@ -5656,13 +5901,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>420%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.0,
+          "basicAP": 4.2,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -5682,25 +5927,25 @@
         }
       },
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": "20%<sprite=5>",
         "format": "P0",
         "raw": "shieldMaxHpRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.08,
+          "basicConstant": 0.16,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.02,
+          "basicLvl": 0.04,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": "1",
+        "rendered": "3",
         "format": "#,##0.#",
         "raw": "shieldDisappearTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5730,7 +5975,7 @@
     "cooldownTime": 80.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Получает щит размером в <sprite=1><color=#16D7FF>150%</color><sprite=5> на 12 с. и увеличивает <color=yellow>силу умений</color> на 30%. В течение действия эффекта можно повторно использовать <color=yellow>Катаклизм</color> до 3 р., призывая метеориты в указанное место. Метеориты оглушают врагов и наносят <sprite=1><color=#16D7FF>250%</color><sprite=5> <color=yellow>урона от света</color>.",
+    "description": "Получает щит размером в <sprite=1><color=#16D7FF>150%</color><sprite=5> на 12 с. и увеличивает <color=yellow>силу умений</color> на 30%<sprite=5>. В течение действия эффекта можно повторно использовать <color=yellow>Катаклизм</color> до 3 р., призывая метеориты в указанное место. Метеориты оглушают врагов и наносят <sprite=1><color=#16D7FF>250%</color><sprite=5> <color=yellow>урона от света</color>.",
     "rawDesc": "Получает щит размером в {0} на {1} с. и увеличивает <color=yellow>силу умений</color> на {2}. В течение действия эффекта можно повторно использовать <color=yellow>Катаклизм</color> до {3} р., призывая метеориты в указанное место. Метеориты оглушают врагов и наносят {4} <color=yellow>урона от света</color>.",
     "rawDescVars": [
       {
@@ -5760,15 +6005,15 @@
         }
       },
       {
-        "rendered": "30%",
+        "rendered": "30%<sprite=5>",
         "format": "#,##0'%'",
         "raw": "bonusApPercent",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 30.0,
+          "basicConstant": 25.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 5.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5922,6 +6167,73 @@
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
+  },
+  "St_R_DancingBlades": {
+    "name": "Буря клинков",
+    "cooldownTime": 13.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Призывает <color=yellow>Бурю клинков</color> в указанной области на 4 с. <color=yellow>Буря клинков</color> быстро рассекает окружающее пространство, нанося врагам <sprite=1><color=#16D7FF>85%</color><sprite=5> или <sprite=2><color=#FF8A2D>85%</color><sprite=5> <color=yellow>урона</color> (наносит большее значение) кажд. 0.5 с., и преследует ближайшего врага.",
+    "rawDesc": "Призывает <color=yellow>Бурю клинков</color> в указанной области на {0} с. <color=yellow>Буря клинков</color> быстро рассекает окружающее пространство, нанося врагам {1} или {2} <color=yellow>урона</color> (наносит большее значение) кажд. {3} с., и преследует ближайшего врага.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "apDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.85,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "adDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.85,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "tickInterval",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Продолжительный урон по области",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [],
+    "image": "St_R_DancingBlades.png",
+    "lore": null,
+    "achievementKey": "ACH_ETERNAL_REST",
+    "achievementName": "Вечный покой",
+    "achievementDescription": "Нанести завершающий удар Мечнику душ базовой атакой 50 р."
   },
   "St_R_DangerousTheory": {
     "name": "Опасная теория",
@@ -6821,7 +7133,7 @@
   "St_R_QuickTrigger": {
     "name": "Быстрая рука",
     "cooldownTime": 14.0,
-    "maxCharges": 2,
+    "maxCharges": 3,
     "addedCharges": 1,
     "description": "Быстро выстреливает пробивающими пулями x3, каждая из которых наносит <sprite=2><color=#FF8A2D>120%</color><sprite=5> урона врагам (макс. 3).",
     "rawDesc": "Быстро выстреливает пробивающими пулями x{0}, каждая из которых наносит {1} урона врагам (макс. {2}).",
@@ -7466,13 +7778,26 @@
     "achievementDescription": ""
   },
   "St_R_StaticDischarge": {
-    "name": "Выброс электрозаряда",
+    "name": "Статический разряд",
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "При <color=yellow>удерживании</color> кнопки заряжает статику. После полной зарядки взрывает заряженную статику, нанося от <sprite=1><color=#16D7FF>150%</color><sprite=5> до <sprite=1><color=#16D7FF>780%</color><sprite=5> <color=yellow>урона от света</color> врагам, отталкивая и снижая их <color=yellow>скорость передвижения</color>, в зависимости от времени зарядки.\nЗарядка в течение 1 с. увеличивает урон и область действия до максимума.",
-    "rawDesc": "При <color=yellow>удерживании</color> кнопки заряжает статику. После полной зарядки взрывает заряженную статику, нанося от {0} до {1} <color=yellow>урона от света</color> врагам, отталкивая и снижая их <color=yellow>скорость передвижения</color>, в зависимости от времени зарядки.\nЗарядка в течение {2} с. увеличивает урон и область действия до максимума.",
+    "description": "При <color=yellow>удерживании</color> кнопки применения накапливает заряд и даёт 40<sprite=5> брони. По окончании зарядки происходит взрыв, который наносит врагам от <sprite=1><color=#16D7FF>150%</color><sprite=5> до <sprite=1><color=#16D7FF>780%</color><sprite=5> ед. <color=yellow>урона светом</color>, отталкивает их и снижает их <color=yellow>скорость передвижения</color> на 60% на 2 сек. Урон и сила отталкивания зависят от времени зарядки. Полученная броня исчезает через 1 сек. после взрыва.\n\nПри зарядке в течение 1 сек. урон и область действия достигают максимума.",
+    "rawDesc": "При <color=yellow>удерживании</color> кнопки применения накапливает заряд и даёт {0} брони. По окончании зарядки происходит взрыв, который наносит врагам от {1} до {2} ед. <color=yellow>урона светом</color>, отталкивает их и снижает их <color=yellow>скорость передвижения</color> на {3} на {4} сек. Урон и сила отталкивания зависят от времени зарядки. Полученная броня исчезает через {5} сек. после взрыва.\n\nПри зарядке в течение {6} сек. урон и область действия достигают максимума.",
     "rawDescVars": [
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 37.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 3.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
       {
         "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
         "format": "#,##0",
@@ -7500,6 +7825,45 @@
         }
       },
       {
+        "rendered": "60%",
+        "format": "#,##0'%'",
+        "raw": "slowAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 60.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "slowDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "armorLingerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
         "rendered": "1",
         "format": "0.##",
         "raw": "channel.chargeFullDuration",
@@ -7513,7 +7877,7 @@
         }
       }
     ],
-    "shortDescription": "Ближний урон от света по области",
+    "shortDescription": "Ближний урон светом по области",
     "rarity": "Rare",
     "type": "Normal",
     "traveler": "",

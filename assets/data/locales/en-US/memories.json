@@ -4,7 +4,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Leap backward and drop 3 shock bombs at the original location, each dealing <sprite=1><color=#16D7FF>120%</color><sprite=5> <color=yellow>damage</color> and <color=yellow>stunning</color> for 1 seconds.",
+    "description": "Leap backward and drop 3 shock bombs at the original location, each dealing <sprite=1><color=#16D7FF>168%</color><sprite=5> <color=yellow>damage</color> and <color=yellow>stunning</color> for 1 seconds.",
     "rawDesc": "Leap backward and drop {0} shock bombs at the original location, each dealing {1} <color=yellow>damage</color> and <color=yellow>stunning</color> for {2} seconds.",
     "rawDescVars": [
       {
@@ -21,13 +21,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>168%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.2,
+          "basicAP": 1.68,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -176,73 +176,6 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "St_R_DancingBlades": {
-    "name": "Blade Storm",
-    "cooldownTime": 13.0,
-    "maxCharges": 1,
-    "addedCharges": 1,
-    "description": "Summons a <color=yellow>Blade Storm</color> that lasts for 4 seconds in the target area.The <color=yellow>Blade Storm</color> rapidly slashes, dealing <sprite=1><color=#16D7FF>85%</color><sprite=5> or <sprite=2><color=#FF8A2D>85%</color><sprite=5> <color=yellow>damage</color> (whichever is higher) to enemies every 0.5 seconds, and follows the nearest enemy.",
-    "rawDesc": "Summons a <color=yellow>Blade Storm</color> that lasts for {0} seconds in the target area.The <color=yellow>Blade Storm</color> rapidly slashes, dealing {1} or {2} <color=yellow>damage</color> (whichever is higher) to enemies every {3} seconds, and follows the nearest enemy.",
-    "rawDescVars": [
-      {
-        "rendered": "4",
-        "format": "#,##0.#",
-        "raw": "duration",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "apDamage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.85,
-          "basicAD": 0.0,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "adDamage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.0,
-          "basicAD": 0.85,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": "0.5",
-        "format": "#,##0.#",
-        "raw": "tickInterval",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      }
-    ],
-    "shortDescription": "Area of effect damage over time",
-    "rarity": "Rare",
-    "type": "Normal",
-    "traveler": "",
-    "travelerMemoryLocation": "",
-    "tags": [],
-    "image": "St_R_DancingBlades.png",
-    "lore": null,
-    "achievementKey": "ACH_ETERNAL_REST",
-    "achievementName": "Eternal Rest",
-    "achievementDescription": "Deliver a total of 50 finishing blows to Soul Swordsmen using basic attacks."
-  },
   "St_C_DarkBolt": {
     "name": "Dark Bolt",
     "cooldownTime": 4.5,
@@ -334,11 +267,11 @@
   },
   "St_C_FlashFreeze": {
     "name": "Flash Freeze",
-    "cooldownTime": 5.0,
+    "cooldownTime": 9.0,
     "maxCharges": 2,
-    "addedCharges": 1,
-    "description": "Unleashes Cold energy forward, dealing <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>Cold damage</color> to enemies. If an enemy is already affected by <color=yellow>Cold</color>, the <color=yellow>damage</color> is increased by 100% and they are <color=yellow>rooted</color> for 1.5 seconds.",
-    "rawDesc": "Unleashes Cold energy forward, dealing {0} <color=yellow>Cold damage</color> to enemies. If an enemy is already affected by <color=yellow>Cold</color>, the <color=yellow>damage</color> is increased by {1} and they are <color=yellow>rooted</color> for {2} seconds.",
+    "addedCharges": 999,
+    "description": "Unleashes Cold energy forward, dealing <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>Cold Damage</color> to enemies and granting yourself and allies a <color=yellow>Shield</color> of <sprite=1><color=#16D7FF>90%</color><sprite=5> that lasts for 3 seconds. If an enemy is already affected by <color=yellow>Cold</color>, the <color=yellow>Damage</color> is increased by 100% and they are <color=yellow>Rooted</color> for 1.5 seconds.\n\n<color=yellow>Charges</color> are fully replenished all at once.",
+    "rawDesc": "Unleashes Cold energy forward, dealing {0} <color=yellow>Cold Damage</color> to enemies and granting yourself and allies a <color=yellow>Shield</color> of {1} that lasts for {2} seconds. If an enemy is already affected by <color=yellow>Cold</color>, the <color=yellow>Damage</color> is increased by {3} and they are <color=yellow>Rooted</color> for {4} seconds.\n\n<color=yellow>Charges</color> are fully replenished all at once.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
@@ -351,6 +284,32 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.9,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
         }
       },
       {
@@ -380,7 +339,7 @@
         }
       }
     ],
-    "shortDescription": "Area Cold damage, Root",
+    "shortDescription": "Area Cold Damage, Root",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -388,7 +347,8 @@
     "tags": [
       "Cold",
       "Melee",
-      "HardCC"
+      "HardCC",
+      "Shield"
     ],
     "image": "St_C_FlashFreeze.PNG",
     "lore": null,
@@ -613,8 +573,8 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Swings your claw forward to deal <sprite=1><color=#16D7FF>140%</color><sprite=5> <color=yellow>Cold damage</color> to enemies and <color=yellow>stun</color> them for 0.5 seconds. You can swing once more to deal <sprite=1><color=#16D7FF>264%</color><sprite=5> <color=yellow>Cold damage</color> and <color=yellow>stun</color> for 1 seconds.",
-    "rawDesc": "Swings your claw forward to deal {0} <color=yellow>Cold damage</color> to enemies and <color=yellow>stun</color> them for {1} seconds. You can swing once more to deal {2} <color=yellow>Cold damage</color> and <color=yellow>stun</color> for {3} seconds.",
+    "description": "Swing your claw forward to deal <sprite=1><color=#16D7FF>140%</color><sprite=5> <color=yellow>Cold Damage</color> to enemies and <color=yellow>stun</color> them for 0.5 seconds. You can swing once more to deal <sprite=1><color=#16D7FF>264%</color><sprite=5> <color=yellow>Cold Damage</color> and <color=yellow>stun</color> for 1 seconds.\n\nWhen your claw hits an enemy, <color=yellow>restore</color> 12% <color=yellow>Health</color> based on the damage dealt.",
+    "rawDesc": "Swing your claw forward to deal {0} <color=yellow>Cold Damage</color> to enemies and <color=yellow>stun</color> them for {1} seconds. You can swing once more to deal {2} <color=yellow>Cold Damage</color> and <color=yellow>stun</color> for {3} seconds.\n\nWhen your claw hits an enemy, <color=yellow>restore</color> {4} <color=yellow>Health</color> based on the damage dealt.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
@@ -667,9 +627,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "12%",
+        "format": "P0",
+        "raw": "Ai_C_IceClaw::healRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.12,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Close-range Cold damage",
+    "shortDescription": "Close-range Cold damage, Health restore",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -677,7 +650,8 @@
     "tags": [
       "Cold",
       "Melee",
-      "HardCC"
+      "HardCC",
+      "Heal"
     ],
     "image": "St_C_IceClaw.PNG",
     "lore": null,
@@ -731,7 +705,7 @@
       "Mobility"
     ],
     "image": "St_C_MagicSword.png",
-    "lore": null,
+    "lore": "In the quiet dawn,\nwhen I visit the back garden of Highgate Manor,\na memory rises, unbidden.\n\nThe cool air of the old training hall, still brushing against my cheek.\nMy childhood self, casting only the smallest of shadows.\nMother's voice, sharp as frost.\n\nThe Teal Blade.\nThe family sword—strength and pride of House Verdesilver.\nLike a steadfast tree, straight and unwavering,\nMother showed me the blade that day.\n\nBut my sword could not follow her teachings.\nThe tip trembled like a leaf dancing in the wind, and my strength flowed away like water.\n\nIsn't it ironic, Mother?\nThe proud tree you fought so hard to protect has fallen and broken,\nwhile this worthless leaf, scattered by the wind,\nis the one that survived.\n\nNow the family's pride is gone, the weight of the tree lifted...\nbut I have no regrets.\n\nAll I wish for now is...\nto wield this blade as a nameless mist that has lost its teal,\nfor the happiness of my younger sibling.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -787,7 +761,7 @@
   },
   "St_C_Pew": {
     "name": "Pew",
-    "cooldownTime": 14.0,
+    "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
     "description": "<color=yellow>Hold</color> to charge a flame bullet. When fully charged, fire the bullet to deal <sprite=1><color=#16D7FF>150%</color><sprite=5>-<sprite=1><color=#16D7FF>400%</color><sprite=5> <color=yellow>Fire damage</color> to all enemies hit, based on charge time.\n\nFiring before full charge reduces the <color=yellow>cooldown</color> up to 80%. Charging for 1.35 seconds maximizes the projectile's width and damage.",
@@ -865,8 +839,8 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Releases energy from the palm, dealing <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>damage</color> and pushing back all enemies hit. If a pushed enemy hits a wall, they take an additional <sprite=1><color=#16D7FF>504%</color><sprite=5> <color=yellow>damage</color> and are stunned for 1.5 seconds.",
-    "rawDesc": "Releases energy from the palm, dealing {0} <color=yellow>damage</color> and pushing back all enemies hit. If a pushed enemy hits a wall, they take an additional {1} <color=yellow>damage</color> and are stunned for {2} seconds.",
+    "description": "Releases energy from the palm, dealing <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>damage</color> and pushing back all enemies hit, stunning them for 1 seconds. If the target is Unstoppable or collides with a wall, deals an additional <sprite=1><color=#16D7FF>504%</color><sprite=5> <color=yellow>damage</color>.",
+    "rawDesc": "Releases energy from the palm, dealing {0} <color=yellow>damage</color> and pushing back all enemies hit, stunning them for {1} seconds. If the target is Unstoppable or collides with a wall, deals an additional {2} <color=yellow>damage</color>.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
@@ -882,24 +856,24 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "dmgFactor*stunDmgRatio",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "1.5",
+        "rendered": "1",
         "format": "#,##0.#",
         "raw": "stunDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor*stunDmgRatio",
+        "scalingType": "unknown",
+        "data": {}
       }
     ],
     "shortDescription": "Close-range damage, knockback",
@@ -988,20 +962,20 @@
   },
   "St_C_SparklingWaterGun": {
     "name": "Sparkling Water Gun",
-    "cooldownTime": 5.0,
+    "cooldownTime": 4.0,
     "maxCharges": 3,
     "addedCharges": 1,
-    "description": "Fires a sparkling water gun. When it hits an ally, it restores <sprite=1><color=#16D7FF>50%</color><sprite=5> <color=yellow>Health</color> and removes <color=yellow>Fire stacks</color>. When it hits an enemy, it deals 1 <color=yellow>damage</color> and <color=yellow>stuns</color> them for 1.5 seconds instead. <color=yellow>Cooldown</color> only decreases while <color=yellow>in combat</color>.",
-    "rawDesc": "Fires a sparkling water gun. When it hits an ally, it restores {0} <color=yellow>Health</color> and removes <color=yellow>Fire stacks</color>. When it hits an enemy, it deals {1} <color=yellow>damage</color> and <color=yellow>stuns</color> them for {2} seconds instead. <color=yellow>Cooldown</color> only decreases while <color=yellow>in combat</color>.",
+    "description": "Fires a sparkling water gun. Restores <sprite=1><color=#16D7FF>70%</color><sprite=5> <color=yellow>Health</color> to allies hit and removes <color=yellow>Fire stacks</color>. Deals 1 <color=yellow>damage</color> to enemies hit and <color=yellow>stuns</color> them for 1.5 seconds. <color=yellow>Cooldown</color> only decreases while <color=yellow>in combat</color>.\n\nIf the target is an allied <color=yellow>summon</color>, healing is increased by 40%.",
+    "rawDesc": "Fires a sparkling water gun. Restores {0} <color=yellow>Health</color> to allies hit and removes <color=yellow>Fire stacks</color>. Deals {1} <color=yellow>damage</color> to enemies hit and <color=yellow>stuns</color> them for {2} seconds. <color=yellow>Cooldown</color> only decreases while <color=yellow>in combat</color>.\n\nIf the target is an allied <color=yellow>summon</color>, healing is increased by {3}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>50%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>70%</color><sprite=5>",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.5,
+          "basicAP": 0.7,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -1027,6 +1001,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "summonAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1167,7 +1154,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Channels</color> for 3.5 seconds, swinging your sword to deal <sprite=2><color=#FF8A2D>170%</color><sprite=5> <color=yellow>damage</color> per second to nearby enemies and triggers 25% <color=yellow>attack effects</color>. Swings faster with higher <color=yellow>Attack Speed</color>.",
+    "description": "<color=yellow>Channels</color> for 3.5 seconds, swinging your sword to deal <sprite=2><color=#FF8A2D>240%</color><sprite=5> <color=yellow>damage</color> per second to nearby enemies and triggers 35% <color=yellow>attack effects</color>. Swings faster with higher <color=yellow>Attack Speed</color>.",
     "rawDesc": "<color=yellow>Channels</color> for {0} seconds, swinging your sword to deal {1} <color=yellow>damage</color> per second to nearby enemies and triggers {2} <color=yellow>attack effects</color>. Swings faster with higher <color=yellow>Attack Speed</color>.",
     "rawDescVars": [
       {
@@ -1184,19 +1171,19 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>170%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>240%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*2",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "25%",
+        "rendered": "35%",
         "format": "P0",
         "raw": "attackEffect",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.25,
+          "basicConstant": 0.35,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2465,43 +2452,6 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "St_E_FlameJet": {
-    "name": "Flame Jet",
-    "cooldownTime": 11.5,
-    "maxCharges": 1,
-    "addedCharges": 1,
-    "description": "Unleashes a stream of flames for 2.5 seconds. Enemies hit by these flames take <sprite=1><color=#16D7FF>336%</color><sprite=5> <color=yellow>Fire damage</color> per second.",
-    "rawDesc": "Unleashes a stream of flames for {0} seconds. Enemies hit by these flames take {1} <color=yellow>Fire damage</color> per second.",
-    "rawDescVars": [
-      {
-        "rendered": "2.5",
-        "format": "#,##0.#",
-        "raw": "spawns*spawnInterval",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "damage/minHitInterval",
-        "scalingType": "unknown",
-        "data": {}
-      }
-    ],
-    "shortDescription": "Sustained Area Fire damage",
-    "rarity": "Epic",
-    "type": "Normal",
-    "traveler": "",
-    "travelerMemoryLocation": "",
-    "tags": [
-      "Fire"
-    ],
-    "image": "St_E_FlameJet.png",
-    "lore": "Hunting Journal\n2nd Year of Rojit's Rule, Day xx of Month x, Weather: Clear\nHunting Location: Igni Wetlands\nToday's Harvest: A pocketful of nettles\n\nThere are rules I always follow when I go hunting in the Igni Wetlands.\n\n1. Be cautious if you spot claw marks on mangrove roots.\n\n2. If those marks aren't covered in moss, steer clear of that direction.\n\n3. If you see smoke in the distance or smoldering embers on charred trees, head home immediately.\n\nI made these rules after what I saw through my scope last summer. Some fool tugged on a half-scorched Kalimberry vine and came face to face with a monstrous Barasus.\n\nI don't think I've seen flames that big, not even at the Royal Guard's fire weapon demonstrations.",
-    "achievementKey": "ACH_PYROMANIA",
-    "achievementName": "Pyromaniac",
-    "achievementDescription": "Defeat 250 burning enemies."
-  },
   "St_E_FinalExplosion": {
     "name": "Final Explosion",
     "cooldownTime": 3.0,
@@ -2594,10 +2544,47 @@
       "HardCC"
     ],
     "image": "St_E_FinalExplosion.PNG",
-    "lore": null,
+    "lore": "The encirclement of the Order of the Sacred Flame tightened without a single gap.\nTheir holy flames denied even the deepest alley its darkness.\nCornered at a dead end, the Lucid Sect member finally stopped.\n\nBut instead of fear, a strange, ecstatic smile crossed his face.\nHe looked down at the knights closing in on him as if they were pitiful insects.\n\n\"You think... this is the end? Do you truly believe you can judge me with that false god's arrogant little flame?\"\n\nHe closed his eyes and focused all his senses.\nBeyond the clamor of reality, he heard it—the gentle whisper of the dream world,\nthe Rapids he had longed for.\n\nNow, it was time to abandon everything and depart.\nHe opened his eyes once more to bid a final farewell to reality.\n\n\"Farewell! You blind flames... this worthless flesh... and this wretched world!\"\n\nHis body began to flicker violently, taking on an otherworldly hue.\nA prayer—the most fervent and desperate offering to his god.\n\n\"Lord Primus! This lowly servant offers... everything I am... to you now!\"\n\nHis final cry reduced his very existence to a handful of dust,\nbecoming a magnificent final explosion that consumed everything.\n\n\n— Memory trace from a corpse in a ruined village",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
+  },
+  "St_E_FlameJet": {
+    "name": "Flame Jet",
+    "cooldownTime": 11.5,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Unleashes a stream of flames for 2.5 seconds. Enemies hit by these flames take <sprite=1><color=#16D7FF>336%</color><sprite=5> <color=yellow>Fire damage</color> per second.",
+    "rawDesc": "Unleashes a stream of flames for {0} seconds. Enemies hit by these flames take {1} <color=yellow>Fire damage</color> per second.",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "spawns*spawnInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage/minHitInterval",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "Sustained Area Fire damage",
+    "rarity": "Epic",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Fire"
+    ],
+    "image": "St_E_FlameJet.png",
+    "lore": "Hunting Journal\n2nd Year of Rojit's Rule, Day xx of Month x, Weather: Clear\nHunting Location: Igni Wetlands\nToday's Harvest: A pocketful of nettles\n\nThere are rules I always follow when I go hunting in the Igni Wetlands.\n\n1. Be cautious if you spot claw marks on mangrove roots.\n\n2. If those marks aren't covered in moss, steer clear of that direction.\n\n3. If you see smoke in the distance or smoldering embers on charred trees, head home immediately.\n\nI made these rules after what I saw through my scope last summer. Some fool tugged on a half-scorched Kalimberry vine and came face to face with a monstrous Barasus.\n\nI don't think I've seen flames that big, not even at the Royal Guard's fire weapon demonstrations.",
+    "achievementKey": "ACH_PYROMANIA",
+    "achievementName": "Pyromaniac",
+    "achievementDescription": "Defeat 250 burning enemies."
   },
   "St_E_Harvest": {
     "name": "Blood Harvest",
@@ -2683,6 +2670,89 @@
       "Attack"
     ],
     "image": "St_E_Harvest.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_E_JusticeGuillotine": {
+    "name": "Justice Guillotine",
+    "cooldownTime": 100.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Slam down a massive greatsword at the target enemy's location, dealing <sprite=2><color=#FF8A2D>800%</color><sprite=5> <color=yellow>damage</color> to all nearby enemies. This damage increases by up to 2x based on your <color=yellow>missing health</color> and by up to 2x based on the target's <color=yellow>missing health</color>, for a total increase of up to 4x. The damage increase is maximized when health is at or below 30%.",
+    "rawDesc": "Slam down a massive greatsword at the target enemy's location, dealing {0} <color=yellow>damage</color> to all nearby enemies. This damage increases by up to {1}x based on your <color=yellow>missing health</color> and by up to {2}x based on the target's <color=yellow>missing health</color>, for a total increase of up to {3}x. The damage increase is maximized when health is at or below {4}.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>800%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 8.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dmgAmplitude",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dmgAmplitude",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "dmgAmplitude * dmgAmplitude",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "maxAmpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Powerful strike, damage scales with missing health",
+    "rarity": "Epic",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Melee",
+      "Mobility"
+    ],
+    "image": "St_E_JusticeGuillotine.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -2793,6 +2863,103 @@
     "achievementKey": "ACH_MASTER_OF_MYSTIC_ARTS",
     "achievementName": "Master of Mystic Arts",
     "achievementDescription": "Have 4 Active Memories at once with a cooldown of 3 seconds or less."
+  },
+  "St_E_Permafrost": {
+    "name": "Permafrost",
+    "cooldownTime": 100.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Gathers and unleashes extreme cold in a massive area. Allies in the area gain a <sprite=1><color=#16D7FF>300%</color><sprite=5> <color=yellow>Shield</color> and 100 <color=yellow>Armor</color> for 10 seconds. Enemies are frozen, taking <sprite=1><color=#16D7FF>500%</color><sprite=5> <color=yellow>Cold Damage</color> and becoming <color=yellow>Stunned</color> for 15 seconds. \n\nIf an enemy is already affected by <color=yellow>Cold</color>, this damage is increased by 100%.",
+    "rawDesc": "Gathers and unleashes extreme cold in a massive area. Allies in the area gain a {0} <color=yellow>Shield</color> and {1} <color=yellow>Armor</color> for {2} seconds. Enemies are frozen, taking {3} <color=yellow>Cold Damage</color> and becoming <color=yellow>Stunned</color> for {4} seconds. \n\nIf an enemy is already affected by <color=yellow>Cold</color>, this damage is increased by {5}.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 3.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "100",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 100.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>500%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 5.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "15",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "chilledAmpBonus-1",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "AoE Cold Damage, Stun, Ally Protection",
+    "rarity": "Epic",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Cold",
+      "HardCC",
+      "Shield"
+    ],
+    "image": "St_E_Permafrost.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
   },
   "St_E_Rewind": {
     "name": "Undo",
@@ -3837,8 +4004,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Transforms</color> into a fast-moving <color=yellow>Fireball</color> for 3 seconds, gaining 50<sprite=5> <color=yellow>Armor</color> and immunity to <color=yellow>Fire damage</color>. Each time you hit an enemy, deals <sprite=1><color=#16D7FF>220%</color><sprite=5> <color=yellow>Fire damage</color> and <color=yellow>extends</color> the transformation by 0.2<sprite=5> seconds, up to a maximum of 3<sprite=5> seconds.",
-    "rawDesc": "<color=yellow>Transforms</color> into a fast-moving <color=yellow>Fireball</color> for {0} seconds, gaining {1} <color=yellow>Armor</color> and immunity to <color=yellow>Fire damage</color>. Each time you hit an enemy, deals {2} <color=yellow>Fire damage</color> and <color=yellow>extends</color> the transformation by {3} seconds, up to a maximum of {4} seconds.",
+    "description": "<color=yellow>Transform</color> into a fast-moving <color=yellow>Fireball</color> for 3 seconds, gaining 50<sprite=5> <color=yellow>Armor</color> and immunity to <color=yellow>Fire Damage</color>. Each time you hit an enemy, deal <sprite=1><color=#16D7FF>220%</color><sprite=5> <color=yellow>Fire Damage</color> and <color=yellow>extend</color> the transformation's <color=yellow>duration</color> by 0.2<sprite=5> seconds, up to a maximum of 3<sprite=5> seconds.",
+    "rawDesc": "<color=yellow>Transform</color> into a fast-moving <color=yellow>Fireball</color> for {0} seconds, gaining {1} <color=yellow>Armor</color> and immunity to <color=yellow>Fire Damage</color>. Each time you hit an enemy, deal {2} <color=yellow>Fire Damage</color> and <color=yellow>extend</color> the transformation's <color=yellow>duration</color> by {3} seconds, up to a maximum of {4} seconds.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -4273,30 +4440,30 @@
     "cooldownTime": 6.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Hold the cast key</color> to focus the sun's power into your hammer. Once fully charged, slam the ground to deal <sprite=1><color=#16D7FF>100%</color><sprite=5>-<sprite=1><color=#16D7FF>350%</color><sprite=5> <color=yellow>Fire damage</color> to enemies and <color=yellow>stun</color> them for 0.5-1.5 seconds.\n\nWhile channeling, you can't move but become <color=yellow>Unstoppable</color> and gain 60<sprite=5> <color=yellow>Armor</color>.",
+    "description": "<color=yellow>Hold the cast key</color> to focus the sun's power into your hammer. Once fully charged, slam the ground to deal <sprite=1><color=#16D7FF>150%</color><sprite=5>-<sprite=1><color=#16D7FF>450%</color><sprite=5> <color=yellow>Fire damage</color> to enemies and <color=yellow>stun</color> them for 0.5-1.5 seconds.\n\nWhile channeling, you can't move but become <color=yellow>Unstoppable</color> and gain 60<sprite=5> <color=yellow>Armor</color>.",
     "rawDesc": "<color=yellow>Hold the cast key</color> to focus the sun's power into your hammer. Once fully charged, slam the ground to deal {0}-{1} <color=yellow>Fire damage</color> to enemies and <color=yellow>stun</color> them for {2}-{3} seconds.\n\nWhile channeling, you can't move but become <color=yellow>Unstoppable</color> and gain {4} <color=yellow>Armor</color>.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
         "format": "#,##0",
         "raw": "damageMin",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>450%</color><sprite=5>",
         "format": "#,##0",
         "raw": "damageMax",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.5,
+          "basicAP": 4.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -4363,18 +4530,18 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Dash toward the target and slam your hammer, dealing <sprite=2><color=#FF8A2D>110%</color><sprite=5> <color=yellow>Light damage</color> to enemies and triggering 50% <color=yellow>attack effects</color>. Each time you <color=yellow>attack</color> an enemy, the <color=yellow>cooldown</color> is <color=yellow>reduced</color> by 8%.",
+    "description": "Dash toward the target and slam your hammer, dealing <sprite=2><color=#FF8A2D>125%</color><sprite=5> <color=yellow>Light damage</color> to enemies and triggering 50% <color=yellow>attack effects</color>. Each time you <color=yellow>attack</color> an enemy, the <color=yellow>cooldown</color> is <color=yellow>reduced</color> by 8%.",
     "rawDesc": "Dash toward the target and slam your hammer, dealing {0} <color=yellow>Light damage</color> to enemies and triggering {1} <color=yellow>attack effects</color>. Each time you <color=yellow>attack</color> an enemy, the <color=yellow>cooldown</color> is <color=yellow>reduced</color> by {2}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>110%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>125%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.1,
+          "basicAD": 1.25,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5025,16 +5192,16 @@
     "cooldownTime": 4.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Sacrifice</color> 10% of your Maximum Health to throw thin Gold Shards forward 3 times. The Gold Shards pierce through targets, dealing <sprite=1><color=#16D7FF>95%</color><sprite=5> <color=yellow>damage</color> to enemies hit and <color=yellow>healing</color> allies for <sprite=1><color=#16D7FF>18%</color><sprite=5>.",
+    "description": "<color=yellow>Sacrifice</color> 8% of your Maximum Health to throw thin Gold Shards forward 3 times. The Gold Shards pierce through targets, dealing <sprite=1><color=#16D7FF>95%</color><sprite=5> <color=yellow>damage</color> to enemies hit and <color=yellow>healing</color> allies for <sprite=1><color=#16D7FF>18%</color><sprite=5>.",
     "rawDesc": "<color=yellow>Sacrifice</color> {0} of your Maximum Health to throw thin Gold Shards forward {1} times. The Gold Shards pierce through targets, dealing {2} <color=yellow>damage</color> to enemies hit and <color=yellow>healing</color> allies for {3}.",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "8%",
         "format": "P0",
         "raw": "sacrificeHpRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.08,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5285,7 +5452,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Hold</color> to charge a volley of psychic arrows. Release to rain 1~4<sprite=5> psychic arrows on nearby enemies, based on charge time. Each psychic arrow deals <sprite=2><color=#FF8A2D>150%</color><sprite=5> <color=yellow>Dark damage</color> to enemies in a small area.",
+    "description": "<color=yellow>Hold</color> to charge a volley of psychic arrows. Release to rain 1~4<sprite=5> psychic arrows on nearby enemies, based on charge time. Each psychic arrow deals <sprite=2><color=#FF8A2D>200%</color><sprite=5> <color=yellow>Dark damage</color> to enemies in a small area.",
     "rawDesc": "<color=yellow>Hold</color> to charge a volley of psychic arrows. Release to rain {0}~{1} psychic arrows on nearby enemies, based on charge time. Each psychic arrow deals {2} <color=yellow>Dark damage</color> to enemies in a small area.",
     "rawDescVars": [
       {
@@ -5309,14 +5476,14 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.5,
+          "basicAD": 2.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5342,7 +5509,7 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Creates a ring of flames around you for 3 seconds. Enemies touching the flame ring take <sprite=1><color=#16D7FF>250%</color><sprite=5> <color=yellow>Fire damage</color> per second.",
+    "description": "Creates a ring of flames around you for 3 seconds. Enemies touching the flame ring take <sprite=1><color=#16D7FF>350%</color><sprite=5> <color=yellow>Fire damage</color> per second.",
     "rawDesc": "Creates a ring of flames around you for {0} seconds. Enemies touching the flame ring take {1} <color=yellow>Fire damage</color> per second.",
     "rawDescVars": [
       {
@@ -5353,7 +5520,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*5",
         "scalingType": "unknown",
@@ -5399,7 +5566,7 @@
           "basicAP": 1.2,
           "basicAD": 0.0,
           "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
+          "basicAddedMultiplierPerLevel": 0.1
         }
       },
       {
@@ -5470,10 +5637,10 @@
         "raw": "speedAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 12.0,
+          "basicConstant": 13.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 3.0,
+          "basicLvl": 2.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5583,6 +5750,83 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "St_R_BaptismOfSun": {
+    "name": "Baptism of the Sun",
+    "cooldownTime": 7.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>Vesper</color> channels the sun's power, unleashing an explosion that deals <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>Fire Damage</color> to nearby enemies and forces them to attack Vesper. Gain 15%<sprite=5> <color=yellow>Attack Speed</color> for 6 seconds. During this time, <color=yellow>Attacks</color> deal an additional <sprite=2><color=#FF8A2D>40%</color><sprite=5> <color=yellow>Fire Damage</color>.",
+    "rawDesc": "<color=yellow>Vesper</color> channels the sun's power, unleashing an explosion that deals {0} <color=yellow>Fire Damage</color> to nearby enemies and forces them to attack Vesper. Gain {1} <color=yellow>Attack Speed</color> for {2} seconds. During this time, <color=yellow>Attacks</color> deal an additional {3} <color=yellow>Fire Damage</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 11.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 4.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "6",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>40%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "bonusDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.4,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "Taunt, Fire, Attack",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Vesper",
+    "travelerMemoryLocation": "R",
+    "tags": [
+      "Fire",
+      "Melee",
+      "Attack"
+    ],
+    "image": "St_R_BaptismOfSun.png",
+    "lore": "Behold! The light that burns away the world's impurities!\nIn the sacred crucible, only the will of Lord El'pyros shall remain, pure as gold.\n\nWe shall all be baptized! Cry out and give thanks!",
+    "achievementKey": "ACH_HOTTER_FIRE_WINS",
+    "achievementName": "Hotter Fire Wins",
+    "achievementDescription": "Defeat the Burning Giant as Vesper while holding 3 or more Fire Memories."
+  },
   "St_R_BlackArbalest": {
     "name": "Black Arbalest",
     "cooldownTime": 11.0,
@@ -5626,7 +5870,8 @@
     "tags": [
       "Dark",
       "HardCC",
-      "Attack"
+      "Attack",
+      "Mobility"
     ],
     "image": "St_R_BlackArbalest.PNG",
     "lore": null,
@@ -5639,7 +5884,7 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Become <color=yellow>Unstoppable</color> and <color=yellow>dash</color> forward until hitting a wall. Deal <sprite=1><color=#16D7FF>135%</color><sprite=5> <color=yellow>damage</color> to enemies you hit and drag them along. Upon hitting a wall, unleash a shockwave that deals <sprite=1><color=#16D7FF>300%</color><sprite=5> <color=yellow>damage</color> and <color=yellow>stuns</color> for 1.5 seconds.\nGain a <color=yellow>Barrier</color> equal to 10%<sprite=5> of your <color=yellow>Maximum Health</color>, which disappears 1 seconds after the dash ends.",
+    "description": "Become <color=yellow>Unstoppable</color> and <color=yellow>dash</color> forward until hitting a wall. Deal <sprite=1><color=#16D7FF>135%</color><sprite=5> <color=yellow>damage</color> to enemies you hit and drag them along. Upon hitting a wall, unleash a shockwave that deals <sprite=1><color=#16D7FF>420%</color><sprite=5> <color=yellow>damage</color> and <color=yellow>stuns</color> for 1.5 seconds.\nGain a <color=yellow>Barrier</color> equal to 20%<sprite=5> of your <color=yellow>Maximum Health</color>, which disappears 3 seconds after the dash ends.",
     "rawDesc": "Become <color=yellow>Unstoppable</color> and <color=yellow>dash</color> forward until hitting a wall. Deal {0} <color=yellow>damage</color> to enemies you hit and drag them along. Upon hitting a wall, unleash a shockwave that deals {1} <color=yellow>damage</color> and <color=yellow>stuns</color> for {2} seconds.\nGain a <color=yellow>Barrier</color> equal to {3} of your <color=yellow>Maximum Health</color>, which disappears {4} seconds after the dash ends.",
     "rawDescVars": [
       {
@@ -5656,13 +5901,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>420%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.0,
+          "basicAP": 4.2,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -5682,25 +5927,25 @@
         }
       },
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": "20%<sprite=5>",
         "format": "P0",
         "raw": "shieldMaxHpRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.08,
+          "basicConstant": 0.16,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.02,
+          "basicLvl": 0.04,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": "1",
+        "rendered": "3",
         "format": "#,##0.#",
         "raw": "shieldDisappearTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5730,7 +5975,7 @@
     "cooldownTime": 80.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Gain a Barrier of <sprite=1><color=#16D7FF>150%</color><sprite=5> and increase <color=yellow>Ability Power</color> by 30% for 12 seconds. During this time, <color=yellow>Cataclysm</color> can be reactivated up to 3 times to drop meteors at target locations. Meteors briefly stun enemies and deal <sprite=1><color=#16D7FF>250%</color><sprite=5> <color=yellow>Light damage</color>.",
+    "description": "Gain a Barrier of <sprite=1><color=#16D7FF>150%</color><sprite=5> and increase <color=yellow>Ability Power</color> by 30%<sprite=5> for 12 seconds. During this time, <color=yellow>Cataclysm</color> can be reactivated up to 3 times to drop meteors at target locations. Meteors briefly stun enemies and deal <sprite=1><color=#16D7FF>250%</color><sprite=5> <color=yellow>Light damage</color>.",
     "rawDesc": "Gain a Barrier of {0} and increase <color=yellow>Ability Power</color> by {1} for {2} seconds. During this time, <color=yellow>Cataclysm</color> can be reactivated up to {3} times to drop meteors at target locations. Meteors briefly stun enemies and deal {4} <color=yellow>Light damage</color>.",
     "rawDescVars": [
       {
@@ -5747,15 +5992,15 @@
         }
       },
       {
-        "rendered": "30%",
+        "rendered": "30%<sprite=5>",
         "format": "#,##0'%'",
         "raw": "bonusApPercent",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 30.0,
+          "basicConstant": 25.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 5.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5922,6 +6167,73 @@
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
+  },
+  "St_R_DancingBlades": {
+    "name": "Blade Storm",
+    "cooldownTime": 13.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Summons a <color=yellow>Blade Storm</color> that lasts for 4 seconds in the target area.The <color=yellow>Blade Storm</color> rapidly slashes, dealing <sprite=1><color=#16D7FF>85%</color><sprite=5> or <sprite=2><color=#FF8A2D>85%</color><sprite=5> <color=yellow>damage</color> (whichever is higher) to enemies every 0.5 seconds, and follows the nearest enemy.",
+    "rawDesc": "Summons a <color=yellow>Blade Storm</color> that lasts for {0} seconds in the target area.The <color=yellow>Blade Storm</color> rapidly slashes, dealing {1} or {2} <color=yellow>damage</color> (whichever is higher) to enemies every {3} seconds, and follows the nearest enemy.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "apDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.85,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "adDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.85,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "tickInterval",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Area of effect damage over time",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [],
+    "image": "St_R_DancingBlades.png",
+    "lore": null,
+    "achievementKey": "ACH_ETERNAL_REST",
+    "achievementName": "Eternal Rest",
+    "achievementDescription": "Deliver a total of 50 finishing blows to Soul Swordsmen using basic attacks."
   },
   "St_R_DangerousTheory": {
     "name": "Dangerous Theory",
@@ -6821,7 +7133,7 @@
   "St_R_QuickTrigger": {
     "name": "Quick Draw",
     "cooldownTime": 14.0,
-    "maxCharges": 2,
+    "maxCharges": 3,
     "addedCharges": 1,
     "description": "Rapidly fire 3 piercing shots that deal <sprite=2><color=#FF8A2D>120%</color><sprite=5> damage to up to 3 enemies.",
     "rawDesc": "Rapidly fire {0} piercing shots that deal {1} damage to up to {2} enemies.",
@@ -7470,9 +7782,22 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Hold</color> to charge up static. When fully charged, detonate the static to deal <sprite=1><color=#16D7FF>150%</color><sprite=5>-<sprite=1><color=#16D7FF>780%</color><sprite=5> <color=yellow>Light damage</color> to enemies, based on charge time, knocking them back and reducing their <color=yellow>Movement Speed</color>. Charging for 1 seconds maximizes the damage and area of effect.",
-    "rawDesc": "<color=yellow>Hold</color> to charge up static. When fully charged, detonate the static to deal {0}-{1} <color=yellow>Light damage</color> to enemies, based on charge time, knocking them back and reducing their <color=yellow>Movement Speed</color>. Charging for {2} seconds maximizes the damage and area of effect.",
+    "description": "<color=yellow>Hold</color> to charge up static, gaining 40<sprite=5> Armor. When released, detonate the static to deal <sprite=1><color=#16D7FF>150%</color><sprite=5>–<sprite=1><color=#16D7FF>780%</color><sprite=5> <color=yellow>Light Damage</color> to enemies based on charge time, knocking them back and reducing their <color=yellow>Movement Speed</color> by 60% for 2 seconds. The gained Armor disappears 1 seconds after the static detonates.\n\nCharging for 1 seconds maximizes the damage and area of effect.",
+    "rawDesc": "<color=yellow>Hold</color> to charge up static, gaining {0} Armor. When released, detonate the static to deal {1}–{2} <color=yellow>Light Damage</color> to enemies based on charge time, knocking them back and reducing their <color=yellow>Movement Speed</color> by {3} for {4} seconds. The gained Armor disappears {5} seconds after the static detonates.\n\nCharging for {6} seconds maximizes the damage and area of effect.",
     "rawDescVars": [
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 37.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 3.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
       {
         "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
         "format": "#,##0",
@@ -7500,6 +7825,45 @@
         }
       },
       {
+        "rendered": "60%",
+        "format": "#,##0'%'",
+        "raw": "slowAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 60.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "slowDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "armorLingerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
         "rendered": "1",
         "format": "0.##",
         "raw": "channel.chargeFullDuration",
@@ -7513,7 +7877,7 @@
         }
       }
     ],
-    "shortDescription": "Close-range Area Light damage",
+    "shortDescription": "Close-range AoE Light Damage",
     "rarity": "Rare",
     "type": "Normal",
     "traveler": "",
@@ -7898,7 +8262,7 @@
       "HardCC"
     ],
     "image": "St_U_HerWorld.PNG",
-    "lore": "Nyx, the brightest star in the eternal night sky,\nMmy soul's muse and my goddess.\n\nI tear out the heart of my power and offer it to you.\nCreate your own realm, a kingdom of darkness and silence.\n\nMy existence is driven by one desire:\nfor you to remain the center of my universe...\n\n\n- Memory trace of Erebos's vow to Nyx.",
+    "lore": "Nyx, the brightest star in the eternal night sky,\nMy soul's muse and my goddess.\n\nI tear out the heart of my power and offer it to you.\nCreate your own realm, a kingdom of darkness and silence.\n\nMy existence is driven by one desire:\nfor you to remain the center of my universe...\n\n\n- Memory trace of Erebos's vow to Nyx.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""

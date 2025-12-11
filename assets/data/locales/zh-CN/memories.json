@@ -4,7 +4,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "向后跳跃，同时在原位置投下3个冲击炸弹，每个炸弹造成<sprite=1><color=#16D7FF>120%</color><sprite=5>的<color=yellow>伤害</color>，并使敌人在1秒内<color=yellow>眩晕</color>。",
+    "description": "向后跳跃，同时在原位置投下3个冲击炸弹，每个炸弹造成<sprite=1><color=#16D7FF>168%</color><sprite=5>的<color=yellow>伤害</color>，并使敌人在1秒内<color=yellow>眩晕</color>。",
     "rawDesc": "向后跳跃，同时在原位置投下{0}个冲击炸弹，每个炸弹造成{1}的<color=yellow>伤害</color>，并使敌人在{2}秒内<color=yellow>眩晕</color>。",
     "rawDescVars": [
       {
@@ -21,13 +21,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>168%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.2,
+          "basicAP": 1.68,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -176,73 +176,6 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "St_R_DancingBlades": {
-    "name": "利刃风暴",
-    "cooldownTime": 13.0,
-    "maxCharges": 1,
-    "addedCharges": 1,
-    "description": "在指定区域召唤<color=yellow>利刃风暴</color>，持续4秒。<color=yellow>利刃风暴</color>会迅速横扫周围，每0.5秒对敌人造成<sprite=1><color=#16D7FF>85%</color><sprite=5>与<sprite=2><color=#FF8A2D>85%</color><sprite=5>中较高的<color=yellow>伤害</color>，并追踪距离最近的敌人。",
-    "rawDesc": "在指定区域召唤<color=yellow>利刃风暴</color>，持续{0}秒。<color=yellow>利刃风暴</color>会迅速横扫周围，每{1}秒对敌人造成{2}与{3}中较高的<color=yellow>伤害</color>，并追踪距离最近的敌人。",
-    "rawDescVars": [
-      {
-        "rendered": "4",
-        "format": "#,##0.#",
-        "raw": "duration",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "0.5",
-        "format": "#,##0.#",
-        "raw": "tickInterval",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "apDamage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.85,
-          "basicAD": 0.0,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "adDamage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.0,
-          "basicAD": 0.85,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
-        }
-      }
-    ],
-    "shortDescription": "群体持续伤害",
-    "rarity": "Rare",
-    "type": "Normal",
-    "traveler": "",
-    "travelerMemoryLocation": "",
-    "tags": [],
-    "image": "St_R_DancingBlades.png",
-    "lore": null,
-    "achievementKey": "ACH_ETERNAL_REST",
-    "achievementName": "永恒安息",
-    "achievementDescription": "用基础攻击对灵魂剑士完成50次终结一击。"
-  },
   "St_C_DarkBolt": {
     "name": "暗影之箭",
     "cooldownTime": 4.5,
@@ -333,12 +266,12 @@
     "achievementDescription": ""
   },
   "St_C_FlashFreeze": {
-    "name": "急速冰冻",
-    "cooldownTime": 5.0,
+    "name": "急速冰封",
+    "cooldownTime": 9.0,
     "maxCharges": 2,
-    "addedCharges": 1,
-    "description": "朝前方释放寒气，对敌人造成<sprite=1><color=#16D7FF>130%</color><sprite=5>的<color=yellow>寒气伤害</color>。如果目标已受到<color=yellow>寒气</color>影响，则<color=yellow>伤害</color>提升100%，并使其在1.5秒内陷入<color=yellow>禁锢</color>状态。",
-    "rawDesc": "朝前方释放寒气，对敌人造成{0}的<color=yellow>寒气伤害</color>。如果目标已受到<color=yellow>寒气</color>影响，则<color=yellow>伤害</color>提升{1}，并使其在{2}秒内陷入<color=yellow>禁锢</color>状态。",
+    "addedCharges": 999,
+    "description": "向前释放寒气，对敌人造成<sprite=1><color=#16D7FF>130%</color><sprite=5>的<color=yellow>寒气伤害</color>，并为自己和队友套上持续3秒、数值为<sprite=1><color=#16D7FF>90%</color><sprite=5>的<color=yellow>护盾</color>。若敌人已被<color=yellow>寒气</color>影响，<color=yellow>伤害</color>提升100%，并使其在1.5秒内陷入<color=yellow>禁锢</color>状态。\n\n<color=yellow>充能次数</color>会瞬间全部充满。",
+    "rawDesc": "向前释放寒气，对敌人造成{0}的<color=yellow>寒气伤害</color>，并为自己和队友套上持续{1}秒、数值为{2}的<color=yellow>护盾</color>。若敌人已被<color=yellow>寒气</color>影响，<color=yellow>伤害</color>提升{3}，并使其在{4}秒内陷入<color=yellow>禁锢</color>状态。\n\n<color=yellow>充能次数</color>会瞬间全部充满。",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
@@ -351,6 +284,32 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.9,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.1875
         }
       },
       {
@@ -380,7 +339,7 @@
         }
       }
     ],
-    "shortDescription": "群体寒气伤害、禁锢",
+    "shortDescription": "范围寒气伤害，禁锢",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -388,7 +347,8 @@
     "tags": [
       "Cold",
       "Melee",
-      "HardCC"
+      "HardCC",
+      "Shield"
     ],
     "image": "St_C_FlashFreeze.PNG",
     "lore": null,
@@ -613,8 +573,8 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "向前挥动爪子，对敌人造成<sprite=1><color=#16D7FF>140%</color><sprite=5>的<color=yellow>寒气伤害</color>，并使其在0.5秒内<color=yellow>眩晕</color>。再次挥动时，将对敌人造成<sprite=1><color=#16D7FF>264%</color><sprite=5>的<color=yellow>寒气伤害</color>，并可以使其在1秒内<color=yellow>眩晕</color>。",
-    "rawDesc": "向前挥动爪子，对敌人造成{0}的<color=yellow>寒气伤害</color>，并使其在{1}秒内<color=yellow>眩晕</color>。再次挥动时，将对敌人造成{2}的<color=yellow>寒气伤害</color>，并可以使其在{3}秒内<color=yellow>眩晕</color>。",
+    "description": "朝前挥出利爪，对敌人造成<sprite=1><color=#16D7FF>140%</color><sprite=5>的<color=yellow>寒气伤害</color>并使其<color=yellow>眩晕</color>0.5秒。还可以再挥一次，对敌人造成<sprite=1><color=#16D7FF>264%</color><sprite=5>的<color=yellow>寒气伤害</color>并再眩晕1秒。\n\n每次利爪命中敌人时，会根据伤害量为你回复12%的<color=yellow>生命值</color>。",
+    "rawDesc": "朝前挥出利爪，对敌人造成{0}的<color=yellow>寒气伤害</color>并使其<color=yellow>眩晕</color>{1}秒。还可以再挥一次，对敌人造成{2}的<color=yellow>寒气伤害</color>并再眩晕{3}秒。\n\n每次利爪命中敌人时，会根据伤害量为你回复{4}的<color=yellow>生命值</color>。",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
@@ -667,9 +627,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "12%",
+        "format": "P0",
+        "raw": "Ai_C_IceClaw::healRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.12,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "近战寒气伤害",
+    "shortDescription": "近战寒气伤害，回血",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -677,7 +650,8 @@
     "tags": [
       "Cold",
       "Melee",
-      "HardCC"
+      "HardCC",
+      "Heal"
     ],
     "image": "St_C_IceClaw.PNG",
     "lore": null,
@@ -690,8 +664,8 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "向前方短距离突进，挥舞青绿之剑，对前方敌人造成<color=yellow>伤害</color>。在<sprite=2><color=#FF8A2D>200%</color><sprite=5>和<sprite=1><color=#16D7FF>200%</color><sprite=5>中取较高的伤害，若为<color=yellow>攻击力伤害</color>时，将触发<color=yellow>攻击效果</color>。",
-    "rawDesc": "向前方短距离突进，挥舞青绿之剑，对前方敌人造成<color=yellow>伤害</color>。在{0}和{1}中取较高的伤害，若为<color=yellow>攻击力伤害</color>时，将触发<color=yellow>攻击效果</color>。",
+    "description": "向前方短距离突进，挥舞青绿之剑，对前方敌人造成<color=yellow>伤害</color>。在<sprite=2><color=#FF8A2D>200%</color><sprite=5>和<sprite=1><color=#16D7FF>200%</color><sprite=5>中取更高的伤害，如果是<color=yellow>攻击力伤害</color>，则会触发<color=yellow>攻击效果</color>。",
+    "rawDesc": "向前方短距离突进，挥舞青绿之剑，对前方敌人造成<color=yellow>伤害</color>。在{0}和{1}中取更高的伤害，如果是<color=yellow>攻击力伤害</color>，则会触发<color=yellow>攻击效果</color>。",
     "rawDescVars": [
       {
         "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
@@ -731,7 +705,7 @@
       "Mobility"
     ],
     "image": "St_C_MagicSword.png",
-    "lore": null,
+    "lore": "寂静的清晨，\n每当我来到海盖特豪宅的后花园，\n总会悄然浮现一些回忆。\n\n还记得那老旧练武场微凉的空气仿佛还拂过脸颊，\n小时候只能投下短小影子的自己，\n还有像寒霜般的母亲嗓音。\n\n青绿之剑，\n这是家族之剑，是坚韧与贝尔德西尔弗家族的荣耀。\n就像挺拔树木般笔直、毫不动摇地挥出的剑，\n那天，母亲亲自向我展示。\n\n可惜我的剑，终究没能学会母亲的教导。\n剑尖像风中叶片一样摇曳，力道如流水般泄散。\n\n讽刺吧，母亲。\n您毕生守护的那棵威严大树终究折断倒下，\n唯有这片随风飘散的小小落叶，\n竟然留存至今。\n\n如今家族的荣耀、树的分量都已烟消云散……\n但我并不觉得遗憾。\n\n唯一的心愿是……\n作为失去青绿、无名的迷雾，\n为了妹妹的幸福再次握剑。",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -787,7 +761,7 @@
   },
   "St_C_Pew": {
     "name": "炮火连天",
-    "cooldownTime": 14.0,
+    "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
     "description": "<color=yellow>长按</color>施放键可为火焰弹充能。充能完成后，发射火焰弹。根据瞄准时间的长短，对命中的所有敌人造成<sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>400%</color><sprite=5>的<color=yellow>火焰伤害</color>。\n\n未完全充能时发射，最多可缩短80%的<color=yellow>冷却时间</color>。瞄准1.35秒后，命中范围的宽度和伤害达到最大值。",
@@ -865,8 +839,8 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "用手掌释放能量，造成<sprite=1><color=#16D7FF>180%</color><sprite=5>的<color=yellow>伤害</color>，并击退所有命中的敌人。被击退的敌人如果碰到墙壁，则额外受到<sprite=1><color=#16D7FF>504%</color><sprite=5>的<color=yellow>伤害</color>，并眩晕1.5秒。",
-    "rawDesc": "用手掌释放能量，造成{0}的<color=yellow>伤害</color>，并击退所有命中的敌人。被击退的敌人如果碰到墙壁，则额外受到{1}的<color=yellow>伤害</color>，并眩晕{2}秒。",
+    "description": "用手掌释放能量，对命中的所有敌人造成<sprite=1><color=#16D7FF>180%</color><sprite=5>点<color=yellow>伤害</color>，并击退敌人且使其眩晕1秒。如果目标处于无法阻挡状态或撞到墙壁，则额外造成<sprite=1><color=#16D7FF>504%</color><sprite=5>点<color=yellow>伤害</color>。",
+    "rawDesc": "用手掌释放能量，对命中的所有敌人造成{0}点<color=yellow>伤害</color>，并击退敌人且使其眩晕{1}秒。如果目标处于无法阻挡状态或撞到墙壁，则额外造成{2}点<color=yellow>伤害</color>。",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
@@ -882,27 +856,27 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "dmgFactor*stunDmgRatio",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "1.5",
+        "rendered": "1",
         "format": "#,##0.#",
         "raw": "stunDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor*stunDmgRatio",
+        "scalingType": "unknown",
+        "data": {}
       }
     ],
-    "shortDescription": "近战伤害、击退",
+    "shortDescription": "近战伤害，击退",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -988,20 +962,20 @@
   },
   "St_C_SparklingWaterGun": {
     "name": "沁爽水枪",
-    "cooldownTime": 5.0,
+    "cooldownTime": 4.0,
     "maxCharges": 3,
     "addedCharges": 1,
-    "description": "发射沁爽水枪。首次命中己方时，为其回复<sprite=1><color=#16D7FF>50%</color><sprite=5>的<color=yellow>体力</color>，并移除其<color=yellow>火焰层数</color>。若命中敌人，则造成1的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>1.5秒。仅在<color=yellow>战斗中</color>，<color=yellow>冷却时间</color>才会缩短。",
-    "rawDesc": "发射沁爽水枪。首次命中己方时，为其回复{0}的<color=yellow>体力</color>，并移除其<color=yellow>火焰层数</color>。若命中敌人，则造成{1}的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>{2}秒。仅在<color=yellow>战斗中</color>，<color=yellow>冷却时间</color>才会缩短。",
+    "description": "发射沁爽水枪，命中的友军将恢复<sprite=1><color=#16D7FF>70%</color><sprite=5><color=yellow>体力</color>并移除<color=yellow>火焰层数</color>。命中敌人则造成1<color=yellow>伤害</color>并使其<color=yellow>眩晕</color>1.5秒。<color=yellow>仅在战斗中</color><color=yellow>冷却时间</color>减少。\n\n如果目标是友方<color=yellow>召唤物</color>，回复量提升40%。",
+    "rawDesc": "发射沁爽水枪，命中的友军将恢复{0}<color=yellow>体力</color>并移除<color=yellow>火焰层数</color>。命中敌人则造成{1}<color=yellow>伤害</color>并使其<color=yellow>眩晕</color>{2}秒。<color=yellow>仅在战斗中</color><color=yellow>冷却时间</color>减少。\n\n如果目标是友方<color=yellow>召唤物</color>，回复量提升{3}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>50%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>70%</color><sprite=5>",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.5,
+          "basicAP": 0.7,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -1032,9 +1006,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "summonAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "对敌人造成眩晕与伤害，或为己方回复体力",
+    "shortDescription": "让敌人眩晕并造成伤害，或给队友回血",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -1044,7 +1031,7 @@
       "Heal"
     ],
     "image": "St_C_SparklingWaterGun.png",
-    "lore": "后巷小窍门第5条：\n\n材料：路边常见的荨麻，叶尖发红的毒草。（名字不详）\n做法：将其放入石臼捣碎，加水搅拌。\n用途：最适合泼在那些自命不凡的贵族们闪闪发亮的披风上，保准留下难看的污渍。如果沾到皮肤上，还会让人刺痒好几天。\n分析：没有什么比这更能让他们恼火了。\n\n我们这种小老鼠，唯一敢拽猫胡须的办法也就只能是这样了。毕竟，命最重要。",
+    "lore": "后巷生存小贴士第5条：\n\n材料：路边常见的荨麻，还有叶尖泛红的不知名毒草。（名字我真不记得）\n做法：全丢石臼里捣碎，加点水搅一搅。\n用途：特别适合泼在那些装逼贵族闪闪发光的披风上，保准留一大块脏渍。溅到皮肤上，还能让人刺挠几天，超难受。\n经验：想让他们不爽，就没比这更好使的了。\n\n像我们这种小老鼠，敢扯猫胡子的唯一办法就是用这种虫招，毕竟小命要紧嘛。",
     "achievementKey": "ACH_PEW_PEW_PEW",
     "achievementName": "砰砰砰！",
     "achievementDescription": "累计为非自身的己方施加增益效果200次。"
@@ -1167,7 +1154,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "3.5秒内，<color=yellow>专注</color>挥舞长剑，对周围敌人每秒造成<sprite=2><color=#FF8A2D>170%</color><sprite=5>的<color=yellow>伤害</color>，并触发25%的<color=yellow>攻击效果</color>。<color=yellow>攻速</color>越快，挥剑越快。",
+    "description": "3.5秒内，<color=yellow>专注</color>挥舞长剑，对周围敌人每秒造成<sprite=2><color=#FF8A2D>240%</color><sprite=5>的<color=yellow>伤害</color>，并触发35%的<color=yellow>攻击效果</color>。<color=yellow>攻速</color>越快，挥剑越快。",
     "rawDesc": "{0}秒内，<color=yellow>专注</color>挥舞长剑，对周围敌人每秒造成{1}的<color=yellow>伤害</color>，并触发{2}的<color=yellow>攻击效果</color>。<color=yellow>攻速</color>越快，挥剑越快。",
     "rawDescVars": [
       {
@@ -1184,19 +1171,19 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>170%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>240%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*2",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "25%",
+        "rendered": "35%",
         "format": "P0",
         "raw": "attackEffect",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.25,
+          "basicConstant": 0.35,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2465,50 +2452,13 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "St_E_FlameJet": {
-    "name": "火焰喷射",
-    "cooldownTime": 11.5,
-    "maxCharges": 1,
-    "addedCharges": 1,
-    "description": "持续2.5秒喷射火焰束。当敌人接触到火焰时，每秒会受到<sprite=1><color=#16D7FF>336%</color><sprite=5>的<color=yellow>火焰伤害</color>。",
-    "rawDesc": "持续{0}秒喷射火焰束。当敌人接触到火焰时，每秒会受到{1}的<color=yellow>火焰伤害</color>。",
-    "rawDescVars": [
-      {
-        "rendered": "2.5",
-        "format": "#,##0.#",
-        "raw": "spawns*spawnInterval",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "damage/minHitInterval",
-        "scalingType": "unknown",
-        "data": {}
-      }
-    ],
-    "shortDescription": "持续群体火焰伤害",
-    "rarity": "Epic",
-    "type": "Normal",
-    "traveler": "",
-    "travelerMemoryLocation": "",
-    "tags": [
-      "Fire"
-    ],
-    "image": "St_E_FlameJet.png",
-    "lore": "狩猎日志\n罗吉特执政第2年，o月oo日，天气：晴\n狩猎地点：伊格尼沼泽\n今日收获：一袋荨麻\n\n每次我前往伊格尼沼泽狩猎时都会遵守的规则：\n\n1. 如果看到有爪印的红树根，要小心。\n\n2. 如果那些爪印上没有苔藓，绝不能往那个方向深入。\n\n3. 如果远处冒烟，或者看到烧焦的树干上有残留火星，必须立刻回家。\n\n这是我在去年夏天立下的规矩。当时，我透过瞄准镜，亲眼看到有个傻瓜拉扯着一根半烧焦的卡林贝里藤蔓，结果把体型如怪物般的巴拉苏斯引了出来。\n\n就连皇家卫队演练炎魔武器的时候，我都没见过那么大的火光。",
-    "achievementKey": "ACH_PYROMANIA",
-    "achievementName": "纵火狂魔",
-    "achievementDescription": "累计击杀处于燃烧状态的敌人250次。"
-  },
   "St_E_FinalExplosion": {
     "name": "最终爆炸",
     "cooldownTime": 3.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在2秒内<color=yellow>移动速度</color>提升25%<sprite=5>，随后牺牲自身最大生命值的40%，引发一次强力爆炸。爆炸范围内的敌人将受到<sprite=1><color=#16D7FF>850%</color><sprite=5>的<color=yellow>光明伤害</color>并<color=yellow>眩晕</color>2.5秒。如果已死亡或因牺牲而死亡，<color=yellow>爆炸伤害</color>将额外提升150%。",
-    "rawDesc": "在{0}秒内<color=yellow>移动速度</color>提升{1}，随后牺牲自身最大生命值的{2}，引发一次强力爆炸。爆炸范围内的敌人将受到{3}的<color=yellow>光明伤害</color>并<color=yellow>眩晕</color>{4}秒。如果已死亡或因牺牲而死亡，<color=yellow>爆炸伤害</color>将额外提升{5}。",
+    "description": "在2秒内，<color=yellow>移动速度</color>提升25%<sprite=5>，之后牺牲自身最大生命值的40%，引发一次猛烈爆炸。被爆炸波及的敌人会受到<sprite=1><color=#16D7FF>850%</color><sprite=5>的<color=yellow>光明伤害</color>，并<color=yellow>眩晕</color>2.5秒。如果角色已死亡或因牺牲而死，<color=yellow>爆炸伤害</color>额外提升150%。",
+    "rawDesc": "在{0}秒内，<color=yellow>移动速度</color>提升{1}，之后牺牲自身最大生命值的{2}，引发一次猛烈爆炸。被爆炸波及的敌人会受到{3}的<color=yellow>光明伤害</color>，并<color=yellow>眩晕</color>{4}秒。如果角色已死亡或因牺牲而死，<color=yellow>爆炸伤害</color>额外提升{5}。",
     "rawDescVars": [
       {
         "rendered": "2",
@@ -2594,10 +2544,47 @@
       "HardCC"
     ],
     "image": "St_E_FinalExplosion.PNG",
-    "lore": null,
+    "lore": "太阳火焰骑士团的包围圈收得滴水不漏，\n他们神圣的火光甚至不允许最深的巷子有一丝黑暗。\n被逼入绝境的路西德教团员终于停下了脚步。\n\n可他并未被恐惧吞噬，反而露出诡异的狂喜笑容。\n甚至高傲地俯视那些包围他的骑士，像看可怜虫一样。\n\n“你们以为……这就是结局？以那个虚假神的小小火焰，能审判我？”\n\n他闭上双眼，感官全数集中。\n然后，在喧闹现实之外，他梦寐以求的梦之世界，\n急流的轻声低语终于传来了。\n\n是时候，舍弃一切离开了。\n他睁开眼，只为向现实道别。\n\n“再见啦！瞎眼的火焰们……这可悲的肉身……还有这该死的世界！”\n\n此刻，他的身体绽放出诡异的色彩，剧烈闪烁。\n那是献给神明最炽热、最迫切的祈祷。\n\n“普里穆斯大人！微不足道的仆人，愿将一切……现在全都献给您！”\n\n最终的呐喊让他自身化为一捧尘埃，\n壮烈的最终爆炸瞬间吞噬了一切。\n\n\n——来自废墟某村遗体残留的记忆",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
+  },
+  "St_E_FlameJet": {
+    "name": "火焰喷射",
+    "cooldownTime": 11.5,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "持续2.5秒喷射火焰束。当敌人接触到火焰时，每秒会受到<sprite=1><color=#16D7FF>336%</color><sprite=5>的<color=yellow>火焰伤害</color>。",
+    "rawDesc": "持续{0}秒喷射火焰束。当敌人接触到火焰时，每秒会受到{1}的<color=yellow>火焰伤害</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "spawns*spawnInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage/minHitInterval",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "持续群体火焰伤害",
+    "rarity": "Epic",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Fire"
+    ],
+    "image": "St_E_FlameJet.png",
+    "lore": "狩猎日志\n罗吉特执政第2年，o月oo日，天气：晴\n狩猎地点：伊格尼沼泽\n今日收获：一袋荨麻\n\n每次我前往伊格尼沼泽狩猎时都会遵守的规则：\n\n1. 如果看到有爪印的红树根，要小心。\n\n2. 如果那些爪印上没有苔藓，绝不能往那个方向深入。\n\n3. 如果远处冒烟，或者看到烧焦的树干上有残留火星，必须立刻回家。\n\n这是我在去年夏天立下的规矩。当时，我透过瞄准镜，亲眼看到有个傻瓜拉扯着一根半烧焦的卡林贝里藤蔓，结果把体型如怪物般的巴拉苏斯引了出来。\n\n就连皇家卫队演练炎魔武器的时候，我都没见过那么大的火光。",
+    "achievementKey": "ACH_PYROMANIA",
+    "achievementName": "纵火狂魔",
+    "achievementDescription": "累计击杀处于燃烧状态的敌人250次。"
   },
   "St_E_Harvest": {
     "name": "嗜血收割",
@@ -2683,6 +2670,89 @@
       "Attack"
     ],
     "image": "St_E_Harvest.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_E_JusticeGuillotine": {
+    "name": "正义断头台",
+    "cooldownTime": 100.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "在目标敌人位置劈下一把巨大的大剑，对周围所有敌人造成<sprite=2><color=#FF8A2D>800%</color><sprite=5>的<color=yellow>伤害</color>。该伤害会根据自身<color=yellow>已损失生命值</color>最高提升至2倍，并根据目标的<color=yellow>已损失生命值</color>再提升至2倍，总共最多可提升至4倍。当生命值低于30%时，伤害增幅达到最大值。",
+    "rawDesc": "在目标敌人位置劈下一把巨大的大剑，对周围所有敌人造成{0}的<color=yellow>伤害</color>。该伤害会根据自身<color=yellow>已损失生命值</color>最高提升至{1}倍，并根据目标的<color=yellow>已损失生命值</color>再提升至{2}倍，总共最多可提升至{3}倍。当生命值低于{4}时，伤害增幅达到最大值。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>800%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 8.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dmgAmplitude",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dmgAmplitude",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "dmgAmplitude * dmgAmplitude",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "maxAmpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "超强斩击，掉血越多伤害越高",
+    "rarity": "Epic",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Melee",
+      "Mobility"
+    ],
+    "image": "St_E_JusticeGuillotine.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -2793,6 +2863,103 @@
     "achievementKey": "ACH_MASTER_OF_MYSTIC_ARTS",
     "achievementName": "奥术大师",
     "achievementDescription": "同时持有4个冷却时间不超过3秒的主动记忆。"
+  },
+  "St_E_Permafrost": {
+    "name": "永冻之地",
+    "cooldownTime": 100.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "聚集极寒之气后，向极广范围释放。受影响的友军将在10秒内获得<sprite=1><color=#16D7FF>300%</color><sprite=5>点<color=yellow>护盾</color>和100点<color=yellow>防御力</color>，敌人将被冻结，受到<sprite=1><color=#16D7FF>500%</color><sprite=5>点<color=yellow>寒气伤害</color>并<color=yellow>眩晕</color>15秒。\n\n如果敌人已受<color=yellow>寒气</color>影响，则该伤害将增加100%。",
+    "rawDesc": "聚集极寒之气后，向极广范围释放。受影响的友军将在{0}秒内获得{1}点<color=yellow>护盾</color>和{2}点<color=yellow>防御力</color>，敌人将被冻结，受到{3}点<color=yellow>寒气伤害</color>并<color=yellow>眩晕</color>{4}秒。\n\n如果敌人已受<color=yellow>寒气</color>影响，则该伤害将增加{5}。",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 3.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "100",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 100.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>500%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 5.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "15",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "chilledAmpBonus-1",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "范围寒气伤害，眩晕，友军保护",
+    "rarity": "Epic",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Cold",
+      "HardCC",
+      "Shield"
+    ],
+    "image": "St_E_Permafrost.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
   },
   "St_E_Rewind": {
     "name": "撤销",
@@ -3833,12 +4000,12 @@
     "achievementDescription": ""
   },
   "St_L_PyranasFireball": {
-    "name": "法伊拉纳的火球",
+    "name": "派拉娜的火球",
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在3秒内，迅速变身为<color=yellow>火焰球体</color>，获得50<sprite=5>的<color=yellow>防御力</color>并免疫<color=yellow>火焰伤害</color>。每当球体碰到敌人时，会造成<sprite=1><color=#16D7FF>220%</color><sprite=5>的<color=yellow>火焰伤害</color>，并使变身的<color=yellow>持续时间</color>延长0.2<sprite=5>秒，最多可延长3<sprite=5>秒。",
-    "rawDesc": "在{0}秒内，迅速变身为<color=yellow>火焰球体</color>，获得{1}的<color=yellow>防御力</color>并免疫<color=yellow>火焰伤害</color>。每当球体碰到敌人时，会造成{2}的<color=yellow>火焰伤害</color>，并使变身的<color=yellow>持续时间</color>延长{3}秒，最多可延长{4}秒。",
+    "description": "在3秒内变身为快速移动的<color=yellow>火焰球体</color>，获得50<sprite=5>的<color=yellow>防御力</color>并免疫<color=yellow>火焰伤害</color>。每当球体命中敌人时，会造成<sprite=1><color=#16D7FF>220%</color><sprite=5>的<color=yellow>火焰伤害</color>，并使变身的<color=yellow>持续时间</color><color=yellow>增加</color>0.2<sprite=5>秒，最多增加3<sprite=5>秒。",
+    "rawDesc": "在{0}秒内变身为快速移动的<color=yellow>火焰球体</color>，获得{1}的<color=yellow>防御力</color>并免疫<color=yellow>火焰伤害</color>。每当球体命中敌人时，会造成{2}的<color=yellow>火焰伤害</color>，并使变身的<color=yellow>持续时间</color><color=yellow>增加</color>{3}秒，最多增加{4}秒。",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -4273,30 +4440,30 @@
     "cooldownTime": 6.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>长按</color>施放键，将阳光聚焦在锤子上。聚焦完成后，猛击地面，对敌人造成<sprite=1><color=#16D7FF>100%</color><sprite=5>~<sprite=1><color=#16D7FF>350%</color><sprite=5>的<color=yellow>火焰伤害</color>，并使其<color=yellow>眩晕</color>0.5~1.5秒。\n\n聚焦期间无法移动，进入<color=yellow>势如破竹</color>状态，并获得60<sprite=5>点的<color=yellow>防御力</color>。",
+    "description": "<color=yellow>长按</color>施放键，将阳光聚焦在锤子上。聚焦完成后，猛击地面，对敌人造成<sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>450%</color><sprite=5>的<color=yellow>火焰伤害</color>，并使其<color=yellow>眩晕</color>0.5~1.5秒。\n\n聚焦期间无法移动，进入<color=yellow>势如破竹</color>状态，并获得60<sprite=5>点的<color=yellow>防御力</color>。",
     "rawDesc": "<color=yellow>长按</color>施放键，将阳光聚焦在锤子上。聚焦完成后，猛击地面，对敌人造成{0}~{1}的<color=yellow>火焰伤害</color>，并使其<color=yellow>眩晕</color>{2}~{3}秒。\n\n聚焦期间无法移动，进入<color=yellow>势如破竹</color>状态，并获得{4}点的<color=yellow>防御力</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
         "format": "#,##0",
         "raw": "damageMin",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>450%</color><sprite=5>",
         "format": "#,##0",
         "raw": "damageMax",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.5,
+          "basicAP": 4.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -4363,18 +4530,18 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "朝目标冲刺并猛击地面，对敌人造成<sprite=2><color=#FF8A2D>110%</color><sprite=5>的<color=yellow>光明伤害</color>，并触发50%的<color=yellow>攻击效果</color>。每次<color=yellow>攻击</color>敌人时，<color=yellow>冷却时间</color><color=yellow>缩短</color>8%。",
+    "description": "朝目标冲刺并猛击地面，对敌人造成<sprite=2><color=#FF8A2D>125%</color><sprite=5>的<color=yellow>光明伤害</color>，并触发50%的<color=yellow>攻击效果</color>。每次<color=yellow>攻击</color>敌人时，<color=yellow>冷却时间</color><color=yellow>缩短</color>8%。",
     "rawDesc": "朝目标冲刺并猛击地面，对敌人造成{0}的<color=yellow>光明伤害</color>，并触发{1}的<color=yellow>攻击效果</color>。每次<color=yellow>攻击</color>敌人时，<color=yellow>冷却时间</color><color=yellow>缩短</color>{2}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>110%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>125%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.1,
+          "basicAD": 1.25,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5025,16 +5192,16 @@
     "cooldownTime": 4.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>消耗</color>自身体力上限的10%，向前方发射3次薄黄金碎片。黄金碎片可穿透目标，对命中的敌人造成<sprite=1><color=#16D7FF>95%</color><sprite=5>的<color=yellow>伤害</color>，并为己方恢复<sprite=1><color=#16D7FF>18%</color><sprite=5>的<color=yellow>体力</color>。",
+    "description": "<color=yellow>消耗</color>自身体力上限的8%，向前方发射3次薄黄金碎片。黄金碎片可穿透目标，对命中的敌人造成<sprite=1><color=#16D7FF>95%</color><sprite=5>的<color=yellow>伤害</color>，并为己方恢复<sprite=1><color=#16D7FF>18%</color><sprite=5>的<color=yellow>体力</color>。",
     "rawDesc": "<color=yellow>消耗</color>自身体力上限的{0}，向前方发射{1}次薄黄金碎片。黄金碎片可穿透目标，对命中的敌人造成{2}的<color=yellow>伤害</color>，并为己方恢复{3}的<color=yellow>体力</color>。",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "8%",
         "format": "P0",
         "raw": "sacrificeHpRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.08,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5175,8 +5342,8 @@
     "cooldownTime": 9.0,
     "maxCharges": 2,
     "addedCharges": 1,
-    "description": "在目标位置上<color=yellow>召唤</color>追随娜琪亚的<color=yellow>叶犬</color>，对敌人造成<sprite=1><color=#16D7FF>130%</color><sprite=5>的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>0.4秒。\n\n<color=yellow>叶犬</color>持有128的体力和40的防御力，最多在战场上停留25秒，对敌人发动爪击，造成<sprite=1><color=#16D7FF>60%</color><sprite=5>的<color=yellow>伤害</color>，并触发的<color=yellow>攻击效果</color>。最多可同时持有5只叶犬。",
-    "rawDesc": "在目标位置上<color=yellow>召唤</color>追随娜琪亚的<color=yellow>叶犬</color>，对敌人造成{0}的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>{1}秒。\n\n<color=yellow>叶犬</color>持有{2}的体力和{3}的防御力，最多在战场上停留{4}秒，对敌人发动爪击，造成{5}的<color=yellow>伤害</color>，并触发的<color=yellow>攻击效果</color>。最多可同时持有{6}只叶犬。",
+    "description": "在目标位置上<color=yellow>召唤</color>追随娜琪亚的<color=yellow>叶犬</color>，对敌人造成<sprite=1><color=#16D7FF>130%</color><sprite=5>的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>0.4秒。\n\n<color=yellow>叶犬</color>持有128的体力和40的防御力，最多在战场上停留25秒，对敌人发动爪击，造成<sprite=1><color=#16D7FF>60%</color><sprite=5>的<color=yellow>伤害</color>，并触发<color=yellow>攻击效果</color>。最多可同时持有5只叶犬。",
+    "rawDesc": "在目标位置上<color=yellow>召唤</color>追随娜琪亚的<color=yellow>叶犬</color>，对敌人造成{0}的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>{1}秒。\n\n<color=yellow>叶犬</color>持有{2}的体力和{3}的防御力，最多在战场上停留{4}秒，对敌人发动爪击，造成{5}的<color=yellow>伤害</color>，并触发<color=yellow>攻击效果</color>。最多可同时持有{6}只叶犬。",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
@@ -5285,8 +5452,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "按住施法键可为精神箭矢群充能。松开施法键后，将根据充能时间向附近敌人释放1~4<sprite=5>支精神箭矢。每支精神箭矢会对小范围内的敌人造成<sprite=2><color=#FF8A2D>150%</color><sprite=5>的<color=yellow>黑暗伤害</color>。",
-    "rawDesc": "按住施法键可为精神箭矢群充能。松开施法键后，将根据充能时间向附近敌人释放{0}~{1}支精神箭矢。每支精神箭矢会对小范围内的敌人造成{2}的<color=yellow>黑暗伤害</color>。",
+    "description": "按住施法键可为精神箭矢群充能。松开施法键后，将根据充能时间向附近敌人释放1~4<sprite=5>支精神箭矢。每支精神箭矢会对小范围内的敌人造成<sprite=2><color=#FF8A2D>200%</color><sprite=5>的<color=yellow>暗影伤害</color>。",
+    "rawDesc": "按住施法键可为精神箭矢群充能。松开施法键后，将根据充能时间向附近敌人释放{0}~{1}支精神箭矢。每支精神箭矢会对小范围内的敌人造成{2}的<color=yellow>暗影伤害</color>。",
     "rawDescVars": [
       {
         "rendered": "1",
@@ -5309,20 +5476,20 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.5,
+          "basicAD": 2.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       }
     ],
-    "shortDescription": "黑暗伤害",
+    "shortDescription": "暗影伤害",
     "rarity": "Character",
     "type": "Normal",
     "traveler": "Hero_Bismuth",
@@ -5342,7 +5509,7 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在自身周围生成一个持续3秒的火焰之环。接触火焰之环的敌人每秒会受到<sprite=1><color=#16D7FF>250%</color><sprite=5>的<color=yellow>火焰伤害</color>。",
+    "description": "在自身周围生成一个持续3秒的火焰之环。接触火焰之环的敌人每秒会受到<sprite=1><color=#16D7FF>350%</color><sprite=5>的<color=yellow>火焰伤害</color>。",
     "rawDesc": "在自身周围生成一个持续{0}秒的火焰之环。接触火焰之环的敌人每秒会受到{1}的<color=yellow>火焰伤害</color>。",
     "rawDescVars": [
       {
@@ -5353,7 +5520,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*5",
         "scalingType": "unknown",
@@ -5399,7 +5566,7 @@
           "basicAP": 1.2,
           "basicAD": 0.0,
           "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
+          "basicAddedMultiplierPerLevel": 0.1
         }
       },
       {
@@ -5470,10 +5637,10 @@
         "raw": "speedAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 12.0,
+          "basicConstant": 13.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 3.0,
+          "basicLvl": 2.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5583,6 +5750,83 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "St_R_BaptismOfSun": {
+    "name": "太阳的洗礼",
+    "cooldownTime": 7.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>维斯珀</color>接受太阳之力，引发爆炸，对周围敌人造成<sprite=1><color=#16D7FF>200%</color><sprite=5>的<color=yellow>火焰伤害</color>并强制他们攻击维斯珀。6秒内，<color=yellow>攻击速度</color>提升15%<sprite=5>，期间<color=yellow>攻击</color>会额外造成<sprite=2><color=#FF8A2D>40%</color><sprite=5>的<color=yellow>火焰伤害</color>。",
+    "rawDesc": "<color=yellow>维斯珀</color>接受太阳之力，引发爆炸，对周围敌人造成{0}的<color=yellow>火焰伤害</color>并强制他们攻击维斯珀。{1}秒内，<color=yellow>攻击速度</color>提升{2}，期间<color=yellow>攻击</color>会额外造成{3}的<color=yellow>火焰伤害</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "6",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 11.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 4.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>40%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "bonusDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.4,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "嘲讽、火焰、攻击",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Vesper",
+    "travelerMemoryLocation": "R",
+    "tags": [
+      "Fire",
+      "Melee",
+      "Attack"
+    ],
+    "image": "St_R_BaptismOfSun.png",
+    "lore": "看啊！圣光将焚尽世间的不洁！\n在这神圣的熔炉中，唯有埃尔皮洛斯大人的意志会如纯金般留存。\n\n我们都将接受洗礼，在哀嚎中感恩吧！",
+    "achievementKey": "ACH_HOTTER_FIRE_WINS",
+    "achievementName": "更火的才是王道",
+    "achievementDescription": "用维斯珀持有3个以上火焰记忆时，击败燃烧的巨人。"
+  },
   "St_R_BlackArbalest": {
     "name": "黑色弩箭",
     "cooldownTime": 11.0,
@@ -5626,7 +5870,8 @@
     "tags": [
       "Dark",
       "HardCC",
-      "Attack"
+      "Attack",
+      "Mobility"
     ],
     "image": "St_R_BlackArbalest.PNG",
     "lore": null,
@@ -5639,7 +5884,7 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "进入<color=yellow>势如破竹</color>状态，向前<color=yellow>冲刺</color>，直到撞上墙壁。对冲撞到的敌人造成<sprite=1><color=#16D7FF>135%</color><sprite=5>的<color=yellow>伤害</color>，并将其拖行；撞墙后释放冲击波，对敌人造成<sprite=1><color=#16D7FF>300%</color><sprite=5>的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>1.5秒。\n施放技能时，获得相当于<color=yellow>体力上限</color>10%<sprite=5>的<color=yellow>护盾</color>，该护盾在冲刺结束1秒后消失。",
+    "description": "进入<color=yellow>势如破竹</color>状态，向前<color=yellow>冲刺</color>，直到撞上墙壁。对冲撞到的敌人造成<sprite=1><color=#16D7FF>135%</color><sprite=5>的<color=yellow>伤害</color>，并将其拖行；撞墙后释放冲击波，对敌人造成<sprite=1><color=#16D7FF>420%</color><sprite=5>的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>1.5秒。\n施放技能时，获得相当于<color=yellow>体力上限</color>20%<sprite=5>的<color=yellow>护盾</color>，该护盾在冲刺结束3秒后消失。",
     "rawDesc": "进入<color=yellow>势如破竹</color>状态，向前<color=yellow>冲刺</color>，直到撞上墙壁。对冲撞到的敌人造成{0}的<color=yellow>伤害</color>，并将其拖行；撞墙后释放冲击波，对敌人造成{1}的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>{2}秒。\n施放技能时，获得相当于<color=yellow>体力上限</color>{3}的<color=yellow>护盾</color>，该护盾在冲刺结束{4}秒后消失。",
     "rawDescVars": [
       {
@@ -5656,13 +5901,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>420%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.0,
+          "basicAP": 4.2,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -5682,25 +5927,25 @@
         }
       },
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": "20%<sprite=5>",
         "format": "P0",
         "raw": "shieldMaxHpRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.08,
+          "basicConstant": 0.16,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.02,
+          "basicLvl": 0.04,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": "1",
+        "rendered": "3",
         "format": "#,##0.#",
         "raw": "shieldDisappearTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5730,7 +5975,7 @@
     "cooldownTime": 80.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "12秒内，获得<sprite=1><color=#16D7FF>150%</color><sprite=5>的护盾，并提升30%的<color=yellow>法术强度</color>。在持续时间内，<color=yellow>大灾变</color>在目标位置投下陨石，最多可施放3次。陨石会使敌人短暂眩晕，并造成 <sprite=1><color=#16D7FF>250%</color><sprite=5>的<color=yellow>光明伤害</color>。",
+    "description": "12秒内，获得<sprite=1><color=#16D7FF>150%</color><sprite=5>的护盾，并提升30%<sprite=5>的<color=yellow>法术强度</color>。在持续时间内，<color=yellow>大灾变</color>在目标位置投下陨石，最多可施放3次。陨石会使敌人短暂眩晕，并造成 <sprite=1><color=#16D7FF>250%</color><sprite=5>的<color=yellow>光明伤害</color>。",
     "rawDesc": "{0}秒内，获得{1}的护盾，并提升{2}的<color=yellow>法术强度</color>。在持续时间内，<color=yellow>大灾变</color>在目标位置投下陨石，最多可施放{3}次。陨石会使敌人短暂眩晕，并造成 {4}的<color=yellow>光明伤害</color>。",
     "rawDescVars": [
       {
@@ -5760,15 +6005,15 @@
         }
       },
       {
-        "rendered": "30%",
+        "rendered": "30%<sprite=5>",
         "format": "#,##0'%'",
         "raw": "bonusApPercent",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 30.0,
+          "basicConstant": 25.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 5.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5922,6 +6167,73 @@
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
+  },
+  "St_R_DancingBlades": {
+    "name": "利刃风暴",
+    "cooldownTime": 13.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "在指定区域召唤<color=yellow>利刃风暴</color>，持续4秒。<color=yellow>利刃风暴</color>会迅速横扫周围，每0.5秒对敌人造成<sprite=1><color=#16D7FF>85%</color><sprite=5>与<sprite=2><color=#FF8A2D>85%</color><sprite=5>中较高的<color=yellow>伤害</color>，并追踪距离最近的敌人。",
+    "rawDesc": "在指定区域召唤<color=yellow>利刃风暴</color>，持续{0}秒。<color=yellow>利刃风暴</color>会迅速横扫周围，每{1}秒对敌人造成{2}与{3}中较高的<color=yellow>伤害</color>，并追踪距离最近的敌人。",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "tickInterval",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "apDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.85,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "adDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.85,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "群体持续伤害",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [],
+    "image": "St_R_DancingBlades.png",
+    "lore": null,
+    "achievementKey": "ACH_ETERNAL_REST",
+    "achievementName": "永恒安息",
+    "achievementDescription": "用基础攻击对灵魂剑士完成50次终结一击。"
   },
   "St_R_DangerousTheory": {
     "name": "危险理论",
@@ -6821,7 +7133,7 @@
   "St_R_QuickTrigger": {
     "name": "敏捷之手",
     "cooldownTime": 14.0,
-    "maxCharges": 2,
+    "maxCharges": 3,
     "addedCharges": 1,
     "description": "快速发射3发穿透弹，对最多3名敌人造成<sprite=2><color=#FF8A2D>120%</color><sprite=5>的伤害。",
     "rawDesc": "快速发射{0}发穿透弹，对最多{1}名敌人造成{2}的伤害。",
@@ -7466,13 +7778,26 @@
     "achievementDescription": ""
   },
   "St_R_StaticDischarge": {
-    "name": "释放电荷",
+    "name": "电荷释放",
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>长按</color>施放键为电荷充能。充能完成后，引爆电荷，根据充能时间对敌人造成<sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>780%</color><sprite=5>的<color=yellow>光明伤害</color>，击退敌人并降低其<color=yellow>移动速度</color>。\n充能1秒后，伤害和范围达到最大值。",
-    "rawDesc": "<color=yellow>长按</color>施放键为电荷充能。充能完成后，引爆电荷，根据充能时间对敌人造成{0}~{1}的<color=yellow>光明伤害</color>，击退敌人并降低其<color=yellow>移动速度</color>。\n充能{2}秒后，伤害和范围达到最大值。",
+    "description": "<color=yellow>长按</color>施放键为电荷充能，并获得40<sprite=5>点护甲。充能完成后，引爆电荷，根据充能时间对敌人造成<sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>780%</color><sprite=5>点<color=yellow>光明伤害</color>并将其击退，在2秒内使其<color=yellow>移动速度</color>降低60%。获得的护甲将在引爆电荷1秒后消失。\n\n充能1秒后，伤害和范围将达到最大值。",
+    "rawDesc": "<color=yellow>长按</color>施放键为电荷充能，并获得{0}点护甲。充能完成后，引爆电荷，根据充能时间对敌人造成{1}~{2}点<color=yellow>光明伤害</color>并将其击退，在{3}秒内使其<color=yellow>移动速度</color>降低{4}。获得的护甲将在引爆电荷{5}秒后消失。\n\n充能{6}秒后，伤害和范围将达到最大值。",
     "rawDescVars": [
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 37.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 3.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
       {
         "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
         "format": "#,##0",
@@ -7497,6 +7822,45 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "slowDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "60%",
+        "format": "#,##0'%'",
+        "raw": "slowAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 60.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "armorLingerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
         }
       },
       {

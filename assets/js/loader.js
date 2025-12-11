@@ -1,7 +1,7 @@
 // assets/js/loader.js (CORRIGÉ)
 
 (function() {
-    const siteVersion = "1.1.0";
+    const siteVersion = "1.2.0";
     window.siteVersion = siteVersion;
 
     const loaderScriptTag = document.currentScript;

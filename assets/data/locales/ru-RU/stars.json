@@ -239,15 +239,15 @@
       70,
       70,
       80,
-      0
+      80
     ],
     "requiredLevel": 55,
     "isRequiredLevelTotalMastery": true,
-    "description": "Увеличивает весь наносимый урон на 12%<sprite=5> против врагов, подверженных <color=yellow>всем 4 элементам</color>.",
+    "description": "Увеличивает весь наносимый урон на 18%<sprite=5> против врагов, подверженных <color=yellow>всем 4 элементам</color>.",
     "rawDesc": "Увеличивает весь наносимый урон на {0} против врагов, подверженных <color=yellow>всем 4 элементам</color>.",
     "rawDescVars": [
       {
-        "rendered": "12%<sprite=5>",
+        "rendered": "18%<sprite=5>",
         "format": "P0",
         "raw": "ampOnAllElemental",
         "scalingType": "star",
@@ -256,10 +256,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.12,
-            0.14,
-            0.16,
-            0.18
+            0.18,
+            0.2,
+            0.22,
+            0.24
           ],
           "strengthScaling": "Multiply"
         }
@@ -395,7 +395,7 @@
     ],
     "requiredLevel": 50,
     "isRequiredLevelTotalMastery": true,
-    "description": "Снижает <color=yellow>скорость атаки</color> на 20%. Увеличивает <color=yellow>силу атаки</color> на 5<sprite=5>.",
+    "description": "Снижает <color=yellow>скорость атаки</color> на 20%. Увеличивает <color=yellow>силу атаки</color> на 8<sprite=5>.",
     "rawDesc": "Снижает <color=yellow>скорость атаки</color> на {0}. Увеличивает <color=yellow>силу атаки</color> на {1}.",
     "rawDescVars": [
       {
@@ -412,7 +412,7 @@
         }
       },
       {
-        "rendered": "5<sprite=5>",
+        "rendered": "8<sprite=5>",
         "format": "#,##0",
         "raw": "adBonus",
         "scalingType": "star",
@@ -421,10 +421,10 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            5.0,
-            7.0,
-            9.0,
-            12.0
+            8.0,
+            10.0,
+            12.0,
+            15.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -573,11 +573,11 @@
     ],
     "requiredLevel": 35,
     "isRequiredLevelTotalMastery": true,
-    "description": "Увеличивает <color=yellow>силу умений</color> на 10<sprite=5> при завершении первых 2 миров.",
+    "description": "Увеличивает <color=yellow>силу умений</color> на 14<sprite=5> при завершении первых 3 миров.",
     "rawDesc": "Увеличивает <color=yellow>силу умений</color> на {0} при завершении первых {1} миров.",
     "rawDescVars": [
       {
-        "rendered": "10<sprite=5>",
+        "rendered": "14<sprite=5>",
         "format": "#,##0",
         "raw": "bonusStatAmount",
         "scalingType": "star",
@@ -586,21 +586,21 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            10.0,
-            12.0,
             14.0,
-            16.0
+            16.0,
+            18.0,
+            20.0
           ],
           "strengthScaling": "Multiply"
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
         "raw": "buffedZoneCount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -624,11 +624,11 @@
     ],
     "requiredLevel": 45,
     "isRequiredLevelTotalMastery": true,
-    "description": "Увеличивает <color=yellow>силу атаки</color> на 10<sprite=5> при завершении первых 2 миров.",
+    "description": "Увеличивает <color=yellow>силу атаки</color> на 14<sprite=5> при завершении первых 3 миров.",
     "rawDesc": "Увеличивает <color=yellow>силу атаки</color> на {0} при завершении первых {1} миров.",
     "rawDescVars": [
       {
-        "rendered": "10<sprite=5>",
+        "rendered": "14<sprite=5>",
         "format": "#,##0",
         "raw": "bonusStatAmount",
         "scalingType": "star",
@@ -637,21 +637,21 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            10.0,
-            12.0,
             14.0,
-            16.0
+            16.0,
+            18.0,
+            20.0
           ],
           "strengthScaling": "Multiply"
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
         "raw": "buffedZoneCount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -700,6 +700,44 @@
       }
     ],
     "image": "Se_Star_D_UltimateChargeSpeed.png"
+  },
+  "Se_Star_I_DismantleReroll": {
+    "name": "Сделка с судьбой",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      100,
+      90,
+      100
+    ],
+    "requiredLevel": 60,
+    "isRequiredLevelTotalMastery": true,
+    "description": "При первой <color=yellow>разборке</color> каждой эссенции или воспоминания они заменяются на случайный предмет той же редкости, а не разбираются. Срабатывает до 1<sprite=5> раз в каждом мире.",
+    "rawDesc": "При первой <color=yellow>разборке</color> каждой эссенции или воспоминания они заменяются на случайный предмет той же редкости, а не разбираются. Срабатывает до {0} раз в каждом мире.",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxUses",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": true,
+          "clampMin": 1.0,
+          "clampMax": 100.0,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_DismantleReroll.png"
   },
   "Se_Star_I_AdditionalChaosChance": {
     "name": "Изначальный хаос",
@@ -870,6 +908,80 @@
     ],
     "image": "Se_Star_I_FirstGemUpgrade.png"
   },
+  "Se_Star_I_GemOnMiniBossKill": {
+    "name": "Странная добыча",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      110,
+      90,
+      100,
+      110
+    ],
+    "requiredLevel": 70,
+    "isRequiredLevelTotalMastery": true,
+    "description": "При убийстве <color=yellow>мини-босса</color> вы с шансом 40%<sprite=5> получаете случайную эссенцию.",
+    "rawDesc": "При убийстве <color=yellow>мини-босса</color> вы с шансом {0} получаете случайную эссенцию.",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "chance",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.4,
+            0.6,
+            0.8,
+            1.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_GemOnMiniBossKill.png"
+  },
+  "Se_Star_I_GoldPerCrit": {
+    "name": "Карманник",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      90,
+      80,
+      90
+    ],
+    "requiredLevel": 55,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Первое попадание <color=yellow>критической атакой</color> по каждому врагу приносит 0.7<sprite=5> золота.",
+    "rawDesc": "Первое попадание <color=yellow>критической атакой</color> по каждому врагу приносит {0} золота.",
+    "rawDescVars": [
+      {
+        "rendered": "0.7<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "goldAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.7,
+            1.0,
+            1.3
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_GoldPerCrit.png"
+  },
   "Se_Star_I_KillGoldBonus": {
     "name": "Накопление богатства",
     "lore": null,
@@ -907,6 +1019,44 @@
       }
     ],
     "image": "Se_Star_I_KillGoldBonus.png"
+  },
+  "Se_Star_I_MawDiscountAndProtection": {
+    "name": "Чистая пасть",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      80,
+      60,
+      80,
+      100
+    ],
+    "requiredLevel": 65,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Цена <color=yellow>Пасти погибели</color> снижается на 20%<sprite=5>. Теперь пасть не уничтожает поглощенные предметы, а сбрасывает их уровень или качество.",
+    "rawDesc": "Цена <color=yellow>Пасти погибели</color> снижается на {0}. Теперь пасть не уничтожает поглощенные предметы, а сбрасывает их уровень или качество.",
+    "rawDescVars": [
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "discountRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.2,
+            0.3,
+            0.4,
+            0.5
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_MawDiscountAndProtection.png"
   },
   "Se_Star_I_MoreShopItems": {
     "name": "Чудовищное обаяние",
@@ -1153,6 +1303,44 @@
     ],
     "image": "Se_Star_L_Armor.png"
   },
+  "Se_Star_L_ArmorOnTravel": {
+    "name": "Заплатанная броня",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      85,
+      65,
+      75,
+      85
+    ],
+    "requiredLevel": 60,
+    "isRequiredLevelTotalMastery": true,
+    "description": "При каждом входе в новый мир вы получаете 2.5<sprite=5> <color=yellow>брони</color>.",
+    "rawDesc": "При каждом входе в новый мир вы получаете {0} <color=yellow>брони</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "2.5<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "armorAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            2.5,
+            3.0,
+            3.5,
+            4.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_ArmorOnTravel.png"
+  },
   "Se_Star_L_DamageReductionFromChilled": {
     "name": "Родство с холодом",
     "lore": null,
@@ -1167,11 +1355,11 @@
     ],
     "requiredLevel": 40,
     "isRequiredLevelTotalMastery": true,
-    "description": "Снижает <color=yellow>получаемый урон</color> от врагов, находящихся под эффектом <color=yellow>мороза</color>, на 12%<sprite=5>.",
+    "description": "Снижает <color=yellow>получаемый урон</color> от врагов, находящихся под эффектом <color=yellow>мороза</color>, на 25%<sprite=5>.",
     "rawDesc": "Снижает <color=yellow>получаемый урон</color> от врагов, находящихся под эффектом <color=yellow>мороза</color>, на {0}.",
     "rawDescVars": [
       {
-        "rendered": "12%<sprite=5>",
+        "rendered": "25%<sprite=5>",
         "format": "P0",
         "raw": "reductionAmount",
         "scalingType": "star",
@@ -1180,10 +1368,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.12,
-            0.15,
-            0.18,
-            0.21
+            0.25,
+            0.3,
+            0.35,
+            0.4
           ],
           "strengthScaling": "Multiply"
         }
@@ -1294,11 +1482,11 @@
     ],
     "requiredLevel": 35,
     "isRequiredLevelTotalMastery": true,
-    "description": "Снижает длительность <color=yellow>эффекта элемента</color>, примененного к себе, на 25%<sprite=5>. Для <color=yellow>ожога</color> вместо продолжительности снижает получаемый урон.",
+    "description": "Снижает длительность <color=yellow>эффекта элемента</color>, примененного к себе, на 40%<sprite=5>. Для <color=yellow>ожога</color> вместо продолжительности снижает получаемый урон.",
     "rawDesc": "Снижает длительность <color=yellow>эффекта элемента</color>, примененного к себе, на {0}. Для <color=yellow>ожога</color> вместо продолжительности снижает получаемый урон.",
     "rawDescVars": [
       {
-        "rendered": "25%<sprite=5>",
+        "rendered": "40%<sprite=5>",
         "format": "P0",
         "raw": "durationReduction",
         "scalingType": "star",
@@ -1307,10 +1495,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.25,
-            0.3,
-            0.35,
-            0.4
+            0.4,
+            0.45,
+            0.5,
+            0.55
           ],
           "strengthScaling": "Multiply"
         }
@@ -1393,6 +1581,95 @@
       }
     ],
     "image": "Se_Star_L_GuidanceShrineDiscount.png"
+  },
+  "Se_Star_L_HealOnAttack": {
+    "name": "Порочная живучесть",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      80,
+      70,
+      80,
+      90
+    ],
+    "requiredLevel": 45,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Попадания <color=yellow>базовой атакой</color> восстанавливают 0.40%<sprite=5> от максимального здоровья. Критические удары увеличивают исцеление на 150%.",
+    "rawDesc": "Попадания <color=yellow>базовой атакой</color> восстанавливают {0} от максимального здоровья. Критические удары увеличивают исцеление на {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "0.40%<sprite=5>",
+        "format": "P2",
+        "raw": "healRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.004,
+            0.005,
+            0.006,
+            0.007
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "150%",
+        "format": "P0",
+        "raw": "critAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_L_HealOnAttack.png"
+  },
+  "Se_Star_L_HealOnKill": {
+    "name": "Боевая первая помощь",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      70,
+      50,
+      65,
+      80
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": true,
+    "description": "За каждое <color=yellow>убийство</color> врага вы восстанавливаете 1.00%<sprite=5> от максимального запаса здоровья.",
+    "rawDesc": "За каждое <color=yellow>убийство</color> врага вы восстанавливаете {0} от максимального запаса здоровья.",
+    "rawDescVars": [
+      {
+        "rendered": "1.00%<sprite=5>",
+        "format": "P2",
+        "raw": "healRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.01,
+            0.015,
+            0.02,
+            0.025
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_HealOnKill.png"
   },
   "Se_Star_L_MaxHealth": {
     "name": "Усиление выносливости",
@@ -1484,11 +1761,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": true,
-    "description": "Увеличивает количество исцеляемых ОЗ от <color=yellow>зелья ОЗ</color> на 40%<sprite=5>.",
+    "description": "Увеличивает количество исцеляемых ОЗ от <color=yellow>зелья ОЗ</color> на 55%<sprite=5>.",
     "rawDesc": "Увеличивает количество исцеляемых ОЗ от <color=yellow>зелья ОЗ</color> на {0}.",
     "rawDescVars": [
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": "55%<sprite=5>",
         "format": "P0",
         "raw": "ampAmount",
         "scalingType": "star",
@@ -1497,16 +1774,54 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.4,
-            0.5,
-            0.6,
-            0.7
+            0.55,
+            0.65,
+            0.75,
+            0.85
           ],
           "strengthScaling": "Multiply"
         }
       }
     ],
     "image": "Se_Star_L_PotionHealAmount.png"
+  },
+  "Se_Star_L_PotionOnBuyOrSell": {
+    "name": "Скромный подарок",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      80,
+      90
+    ],
+    "requiredLevel": 70,
+    "isRequiredLevelTotalMastery": true,
+    "description": "При покупке или продаже предмета в магазине вы получаете <color=yellow>зелье здоровья</color>. Срабатывает до 1<sprite=5> раз у каждого торговца.",
+    "rawDesc": "При покупке или продаже предмета в магазине вы получаете <color=yellow>зелье здоровья</color>. Срабатывает до {0} раз у каждого торговца.",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxUses",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": true,
+          "clampMin": 1.0,
+          "clampMax": 100.0,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_PotionOnBuyOrSell.png"
   },
   "Se_Star_L_ReceivedHealingAndShieldBonus": {
     "name": "Регенерация кожи",
@@ -1814,16 +2129,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Цепная реакция</color> больше не исцеляет ОЗ, но время перезарядки снижается на 10% каждый раз, когда враг погибает от магического круга.",
+    "description": "<color=yellow>Цепная реакция</color> больше не исцеляет ОЗ, но время перезарядки снижается на 15% каждый раз, когда враг погибает от магического круга.",
     "rawDesc": "<color=yellow>Цепная реакция</color> больше не исцеляет ОЗ, но время перезарядки снижается на {0} каждый раз, когда враг погибает от магического круга.",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "15%",
         "format": "P0",
         "raw": "cooldownReductionRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.15,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1887,16 +2202,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Время перезарядки <color=yellow>Опасной теории</color> увеличивается на 2 с., и её можно использовать только при усиленном применении. При этом усиливает базовую атаку 2 р.",
+    "description": "Время перезарядки <color=yellow>Опасной теории</color> увеличивается на 1 с., и её можно использовать только при усиленном применении. При этом усиливает базовую атаку 2 р.",
     "rawDesc": "Время перезарядки <color=yellow>Опасной теории</color> увеличивается на {0} с., и её можно использовать только при усиленном применении. При этом усиливает базовую атаку {1} р.",
     "rawDescVars": [
       {
-        "rendered": "2",
+        "rendered": "1",
         "format": "#,##0.#",
         "raw": "cooldownPenalty",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2301,11 +2616,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "При входе в мир <color=yellow>открывает</color> случайную локацию x2<sprite=5>.",
+    "description": "При входе в мир <color=yellow>открывает</color> случайную локацию x3<sprite=5>.",
     "rawDesc": "При входе в мир <color=yellow>открывает</color> случайную локацию x{0}.",
     "rawDescVars": [
       {
-        "rendered": "2<sprite=5>",
+        "rendered": "3<sprite=5>",
         "format": "#,##0",
         "raw": "locationCount",
         "scalingType": "star",
@@ -2314,9 +2629,9 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            2.0,
             3.0,
-            4.0
+            4.0,
+            5.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -2375,16 +2690,16 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "При ОЗ 30% и ниже увеличивает <color=yellow>ЗЩТ</color> на 15<sprite=5>.",
+    "description": "При ОЗ 40% и ниже увеличивает <color=yellow>ЗЩТ</color> на 30<sprite=5>.",
     "rawDesc": "При ОЗ {0} и ниже увеличивает <color=yellow>ЗЩТ</color> на {1}.",
     "rawDescVars": [
       {
-        "rendered": "30%",
+        "rendered": "40%",
         "format": "P0",
         "raw": "healthRatioThreshold",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.3,
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2392,7 +2707,7 @@
         }
       },
       {
-        "rendered": "15<sprite=5>",
+        "rendered": "30<sprite=5>",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "star",
@@ -2401,9 +2716,9 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            15.0,
-            20.0,
-            25.0
+            30.0,
+            35.0,
+            40.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -2512,7 +2827,7 @@
     "image": "Se_Star_Aurena_L_HealAmpWithPenalty.png"
   },
   "Se_Star_Aurena_L_ShareHeal": {
-    "name": "Циркулирующая жизнь",
+    "name": "Круговорот жизни",
     "lore": null,
     "category": "Life",
     "heroType": "Hero_Aurena",
@@ -2524,8 +2839,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Исцеляет</color> союзника поблизости с наименьшим количеством ОЗ на 20%<sprite=5> от полученного исцеления.",
-    "rawDesc": "<color=yellow>Исцеляет</color> союзника поблизости с наименьшим количеством ОЗ на {0} от полученного исцеления.",
+    "description": "При получении исцеления вы <color=yellow>исцеляете</color> другого союзника поблизости с наименьшим запасом здоровья на 20%<sprite=5> от полученного исцеления.",
+    "rawDesc": "При получении исцеления вы <color=yellow>исцеляете</color> другого союзника поблизости с наименьшим запасом здоровья на {0} от полученного исцеления.",
     "rawDescVars": [
       {
         "rendered": "20%<sprite=5>",
@@ -2837,7 +3152,7 @@
   },
   "Se_Star_Bismuth_D_SkillHasteAndAutoCast": {
     "name": "Написанная книгой история",
-    "lore": null,
+    "lore": "Иногда история становится настолько захватывающей, что сама переворачивает страницу. Девочке остается лишь наблюдать за чудесными историями, которые пишет книга.",
     "category": "Destruction",
     "heroType": "Hero_Bismuth",
     "maxLevel": 4,
@@ -2849,11 +3164,11 @@
     ],
     "requiredLevel": 30,
     "isRequiredLevelTotalMastery": false,
-    "description": "Увеличивает <color=yellow>ускорение Воспоминания</color> на 15<sprite=5>. Большинство Воспоминаний <color=yellow>применяются автоматически</color> во время боя.",
+    "description": "Увеличивает <color=yellow>ускорение Воспоминания</color> на 8<sprite=5>. Большинство Воспоминаний <color=yellow>применяются автоматически</color> во время боя.",
     "rawDesc": "Увеличивает <color=yellow>ускорение Воспоминания</color> на {0}. Большинство Воспоминаний <color=yellow>применяются автоматически</color> во время боя.",
     "rawDescVars": [
       {
-        "rendered": "15<sprite=5>",
+        "rendered": "8<sprite=5>",
         "format": "#,##0",
         "raw": "bonusAmount",
         "scalingType": "star",
@@ -2862,10 +3177,10 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            15.0,
-            20.0,
-            25.0,
-            30.0
+            8.0,
+            12.0,
+            16.0,
+            20.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -2927,16 +3242,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Увеличивает макс. количество стрел <color=yellow>Искаженного разума</color> на 4, но при этом нельзя двигаться при зарядке.",
+    "description": "Увеличивает макс. количество стрел <color=yellow>Искаженного разума</color> на 7, но при этом нельзя двигаться при зарядке.",
     "rawDesc": "Увеличивает макс. количество стрел <color=yellow>Искаженного разума</color> на {0}, но при этом нельзя двигаться при зарядке.",
     "rawDescVars": [
       {
-        "rendered": "4",
+        "rendered": "7",
         "format": "#,##0",
         "raw": "increased",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 4.0,
+          "basicConstant": 7.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3196,7 +3511,7 @@
   },
   "Se_Star_Bismuth_F_VH_FullCharge": {
     "name": "Больше не боюсь",
-    "lore": null,
+    "lore": "Теперь не страшно, сколько бы злодеев ни появилось. В руках девочки всегда будет достаточно храбрости, чтобы победить их!",
     "category": "Flexible",
     "heroType": "Hero_Bismuth",
     "maxLevel": 1,
@@ -3221,9 +3536,23 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "При использовании <color=yellow>Искажающего рывка</color> сбрасывает время перезарядки <color=yellow>Храброго сердца</color>.",
-    "rawDesc": "При использовании <color=yellow>Искажающего рывка</color> сбрасывает время перезарядки <color=yellow>Храброго сердца</color>.",
-    "rawDescVars": [],
+    "description": "При использовании <color=yellow>Искажающего рывка</color> сбрасывается время восстановления <color=yellow>Храброго сердца</color>, но оно поражает не более 2 врагов.",
+    "rawDesc": "При использовании <color=yellow>Искажающего рывка</color> сбрасывается время восстановления <color=yellow>Храброго сердца</color>, но оно поражает не более {0} врагов.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "targetLimitCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Bismuth_F_VH_ResetOnDodge.png"
   },
   "Se_Star_Bismuth_F_VH_Shield": {
@@ -3384,7 +3713,7 @@
   },
   "Se_Star_Bismuth_I_RevealWorld": {
     "name": "Око души",
-    "lore": null,
+    "lore": "Когда девочка смотрела на мир сквозь книгу, в пустых местах появлялись пряничные домики, где ждали новые приключения.",
     "category": "Imagination",
     "heroType": "Hero_Bismuth",
     "maxLevel": 3,
@@ -3395,8 +3724,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "При входе в мир <color=yellow>открывает</color> случайную локацию x2<sprite=5>.",
-    "rawDesc": "При входе в мир <color=yellow>открывает</color> случайную локацию x{0}.",
+    "description": "При входе в мир <color=yellow>открывает</color> 2<sprite=5> случайных локаций.",
+    "rawDesc": "При входе в мир <color=yellow>открывает</color> {0} случайных локаций.",
     "rawDescVars": [
       {
         "rendered": "2<sprite=5>",
@@ -3618,7 +3947,7 @@
   },
   "Se_Star_Bismuth_L_ContinuousSpeed": {
     "name": "Легкая поступь",
-    "lore": null,
+    "lore": "Беспокоитесь о маленьких босых ножках девочки? Не стоит. Она идет не по грубой земле, а весело путешествует по мягким облакам!",
     "category": "Life",
     "heroType": "Hero_Bismuth",
     "maxLevel": 4,
@@ -3817,7 +4146,7 @@
   },
   "Se_Star_Husk_D_DamageAmpOnLowHpTarget": {
     "name": "Безжалостность",
-    "lore": null,
+    "lore": "Для него, лишенного эмоций, милосердие к врагу — верх неэффективности.",
     "category": "Destruction",
     "heroType": "Hero_Husk",
     "maxLevel": 4,
@@ -4162,16 +4491,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Стойка уничтожения</color> не выстреливает энергией клинка, но атакует на 50% чаще.",
+    "description": "<color=yellow>Стойка уничтожения</color> не выстреливает энергией клинка, но атакует на 100% чаще.",
     "rawDesc": "<color=yellow>Стойка уничтожения</color> не выстреливает энергией клинка, но атакует на {0} чаще.",
     "rawDescVars": [
       {
-        "rendered": "50%",
+        "rendered": "100%",
         "format": "P0",
         "raw": "speedAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4183,7 +4512,7 @@
   },
   "Se_Star_Husk_F_LA_DodgeResetOnRed": {
     "name": "Поток энергии",
-    "lore": null,
+    "lore": "Отдаться потоку и сделать шаг. Безупречно и безразлично.",
     "category": "Flexible",
     "heroType": "Hero_Husk",
     "maxLevel": 1,
@@ -4320,7 +4649,7 @@
   },
   "Se_Star_Husk_I_ShopIntimidation": {
     "name": "Жуткая одноглазая кукла",
-    "lore": null,
+    "lore": "Он считает запугивание самым эффективным и простым методом. Правда, на особо храбрых Джонасов это не действует.",
     "category": "Imagination",
     "heroType": "Hero_Husk",
     "maxLevel": 3,
@@ -4490,7 +4819,7 @@
   },
   "Se_Star_Husk_L_DodgeCooldownOnKillWithEmptyCharges": {
     "name": "Самозабвение",
-    "lore": null,
+    "lore": "Тело куклы, освобожденное от оков эмоций, эффективные и безупречные движения посреди моря крови.",
     "category": "Life",
     "heroType": "Hero_Husk",
     "maxLevel": 2,
@@ -4746,16 +5075,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Ручная пушка</color> всегда отбрасывает врагов и снижает их <color=yellow>скорость передвижения</color> на 50% в течение 2 с.",
+    "description": "<color=yellow>Ручная пушка</color> всегда отбрасывает врагов и снижает их <color=yellow>скорость передвижения</color> на 75% в течение 4 с.",
     "rawDesc": "<color=yellow>Ручная пушка</color> всегда отбрасывает врагов и снижает их <color=yellow>скорость передвижения</color> на {0} в течение {1} с.",
     "rawDescVars": [
       {
-        "rendered": "50%",
+        "rendered": "75%",
         "format": "#,##0'%'",
         "raw": "slowAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 50.0,
+          "basicConstant": 75.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4763,12 +5092,12 @@
         }
       },
       {
-        "rendered": "2",
+        "rendered": "4",
         "format": "#,##0.#",
         "raw": "slowDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4789,16 +5118,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Увеличивает урон <color=yellow>Ручной пушки</color> по врагам поблизости на 80%.",
+    "description": "Увеличивает урон <color=yellow>Ручной пушки</color> по врагам поблизости на 150%.",
     "rawDesc": "Увеличивает урон <color=yellow>Ручной пушки</color> по врагам поблизости на {0}.",
     "rawDescVars": [
       {
-        "rendered": "80%",
+        "rendered": "150%",
         "format": "P0",
         "raw": "nearDamageAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.8,
+          "basicConstant": 1.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5040,8 +5369,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Снижает количество зарядов <color=yellow>Быстрой руки</color> до 1, но выстреливает 6 снарядами одновременно.",
-    "rawDesc": "Снижает количество зарядов <color=yellow>Быстрой руки</color> до 1, но выстреливает 6 снарядами одновременно.",
+    "description": "Снижает количество зарядов <color=yellow>Быстрой руки</color> на 1, но выстреливает 6 снарядами.",
+    "rawDesc": "Снижает количество зарядов <color=yellow>Быстрой руки</color> на 1, но выстреливает 6 снарядами.",
     "rawDescVars": [],
     "image": "Se_Star_Lacerta_F_QT_RapidFire.png"
   },
@@ -5085,7 +5414,7 @@
   },
   "Se_Star_Lacerta_I_BossBounty": {
     "name": "Охотник на диких монстров",
-    "lore": null,
+    "lore": "<i>\"Killing Monsters\"</i>",
     "category": "Imagination",
     "heroType": "Hero_Lacerta",
     "maxLevel": 3,
@@ -5096,11 +5425,11 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "При каждой победе над <color=yellow>боссом</color> доп. дает золото x30<sprite=5>.",
+    "description": "При каждой победе над <color=yellow>боссом</color> доп. дает золото x45<sprite=5>.",
     "rawDesc": "При каждой победе над <color=yellow>боссом</color> доп. дает золото x{0}.",
     "rawDescVars": [
       {
-        "rendered": "30<sprite=5>",
+        "rendered": "45<sprite=5>",
         "format": "#,##0",
         "raw": "bonusGold",
         "scalingType": "star",
@@ -5109,9 +5438,9 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            30.0,
             45.0,
-            60.0
+            60.0,
+            75.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -5231,7 +5560,7 @@
   },
   "Se_Star_Lacerta_L_SpeedAfterDodge": {
     "name": "Гибкая ящерица",
-    "lore": null,
+    "lore": "Удивительно гибкое тело ящеролюдей позволяет им находить эффективные углы атаки в любой ситуации.",
     "category": "Life",
     "heroType": "Hero_Lacerta",
     "maxLevel": 3,
@@ -5280,7 +5609,7 @@
   },
   "Se_Star_Mist_I_CamillasGift": {
     "name": "Дар Камиллы",
-    "lore": null,
+    "lore": "Благосклонность её покровительницы Камиллы не была односторонней. Несомненно, для Туман она тоже осталась дорогой связью.",
     "category": "Imagination",
     "heroType": "Hero_Mist",
     "maxLevel": 3,
@@ -5537,7 +5866,7 @@
   },
   "Se_Star_Mist_D_HunterDamage": {
     "name": "Наконец-то достойный противник",
-    "lore": null,
+    "lore": "Она не проиграла ни одного поединка — ни тайного, ни официального.",
     "category": "Destruction",
     "heroType": "Hero_Mist",
     "maxLevel": 3,
@@ -5846,7 +6175,7 @@
   },
   "Se_Star_Mist_F_PR_PerfectParry": {
     "name": "Лучшая защита — нападение",
-    "lore": null,
+    "lore": "Она никогда не торопится. Самый важный момент наступает именно тогда, когда враг атакует.",
     "category": "Flexible",
     "heroType": "Hero_Mist",
     "maxLevel": 1,
@@ -5898,16 +6227,42 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "При успешном <color=yellow>Парировании</color> получает щит, равный 100% от отраженного урона, а следующая атака становится критической.",
-    "rawDesc": "При успешном <color=yellow>Парировании</color> получает щит, равный {0} от отраженного урона, а следующая атака становится критической.",
+    "description": "При успешном <color=yellow>Парировании</color> следующая атака становится критической, а также накладывается щит в размере 250% от отраженного урона, который исчезает в течение 4 с. Время действия щита увеличивается на 0.5 с. за каждый уровень улучшения <color=yellow>Парирования</color>.",
+    "rawDesc": "При успешном <color=yellow>Парировании</color> следующая атака становится критической, а также накладывается щит в размере {0} от отраженного урона, который исчезает в течение {1} с. Время действия щита увеличивается на {2} с. за каждый уровень улучшения <color=yellow>Парирования</color>.",
     "rawDescVars": [
       {
-        "rendered": "100%",
+        "rendered": "250%",
         "format": "P0",
         "raw": "shieldRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "shieldDecayDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "shieldDecayDurationBonusPerLevel",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5928,16 +6283,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Снижает длительность <color=yellow>Несокрушимой воли</color> на 50%, но увеличивает урон от первого взрыва на 200%.",
+    "description": "Снижает длительность <color=yellow>Несокрушимой воли</color> на 30%, но увеличивает урон от первого взрыва на 200%.",
     "rawDesc": "Снижает длительность <color=yellow>Несокрушимой воли</color> на {0}, но увеличивает урон от первого взрыва на {1}.",
     "rawDescVars": [
       {
-        "rendered": "50%",
+        "rendered": "30%",
         "format": "P0",
         "raw": "durationReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 0.3,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6002,11 +6357,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "При поглаживании <color=yellow>кота</color> дает золото x400<sprite=5> и Пыль снов x400<sprite=5>.",
+    "description": "При поглаживании <color=yellow>кота</color> дает золото x800<sprite=5> и Пыль снов x800<sprite=5>.",
     "rawDesc": "При поглаживании <color=yellow>кота</color> дает золото x{0} и Пыль снов x{1}.",
     "rawDescVars": [
       {
-        "rendered": "400<sprite=5>",
+        "rendered": "800<sprite=5>",
         "format": "#,##0",
         "raw": "goldAmount",
         "scalingType": "star",
@@ -6015,14 +6370,14 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            400.0,
-            800.0
+            800.0,
+            1200.0
           ],
           "strengthScaling": "Multiply"
         }
       },
       {
-        "rendered": "400<sprite=5>",
+        "rendered": "800<sprite=5>",
         "format": "#,##0",
         "raw": "dreamDustAmount",
         "scalingType": "star",
@@ -6031,8 +6386,8 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            400.0,
-            800.0
+            800.0,
+            1200.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -6054,11 +6409,11 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "Приключение начинается с <color=yellow>золотом </color> x90<sprite=5>, но стоимость товаров у торговцев увеличиваются на 10%.",
+    "description": "Приключение начинается с <color=yellow>золотом </color> x150<sprite=5>, но стоимость товаров у торговцев увеличиваются на 10%.",
     "rawDesc": "Приключение начинается с <color=yellow>золотом </color> x{0}, но стоимость товаров у торговцев увеличиваются на {1}.",
     "rawDescVars": [
       {
-        "rendered": "90<sprite=5>",
+        "rendered": "150<sprite=5>",
         "format": "#,##0",
         "raw": "addedGoldAmount",
         "scalingType": "star",
@@ -6067,10 +6422,10 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            90.0,
-            120.0,
             150.0,
-            180.0
+            180.0,
+            210.0,
+            240.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -6573,16 +6928,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Снижает время перезарядки <color=yellow>Шепота природы</color> на 70%, но также снижает увеличение скорости атаки на 70%.",
+    "description": "Снижает время перезарядки <color=yellow>Шепота природы</color> на 80%, но также снижает увеличение скорости атаки на 50%.",
     "rawDesc": "Снижает время перезарядки <color=yellow>Шепота природы</color> на {0}, но также снижает увеличение скорости атаки на {1}.",
     "rawDescVars": [
       {
-        "rendered": "70%",
+        "rendered": "80%",
         "format": "P0",
         "raw": "cooldownReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.7,
+          "basicConstant": 0.8,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6590,12 +6945,12 @@
         }
       },
       {
-        "rendered": "70%",
+        "rendered": "50%",
         "format": "P0",
         "raw": "hasteReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.7,
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6646,23 +7001,9 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Увеличивает время перезарядки <color=yellow>Шепота природы</color> на 1.5 с., но при этом фамильяры мгновенно телепортируются в указанное место.",
-    "rawDesc": "Увеличивает время перезарядки <color=yellow>Шепота природы</color> на {0} с., но при этом фамильяры мгновенно телепортируются в указанное место.",
-    "rawDescVars": [
-      {
-        "rendered": "1.5",
-        "format": "#,##0.#",
-        "raw": "cooldownPenalty",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 1.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      }
-    ],
+    "description": "<color=yellow>Шепот природы</color> мгновенно телепортирует фамильяров в указанное место.",
+    "rawDesc": "<color=yellow>Шепот природы</color> мгновенно телепортирует фамильяров в указанное место.",
+    "rawDescVars": [],
     "image": "Se_Star_Nachia_F_NW_Teleport.png"
   },
   "Se_Star_Nachia_F_SB_DurationBonus": {
@@ -6757,7 +7098,7 @@
   },
   "Se_Star_Nachia_F_SC_AtkEffect": {
     "name": "Острый коготь",
-    "lore": null,
+    "lore": "Для собак регулярный уход за когтями — это необходимость.",
     "category": "Flexible",
     "heroType": "Hero_Nachia",
     "maxLevel": 1,
@@ -6910,8 +7251,8 @@
     ],
     "requiredLevel": 30,
     "isRequiredLevelTotalMastery": false,
-    "description": "В <color=yellow>Лесу волнения</color> увеличивает скорость передвижения на 8%<sprite=5>, а также дает Пыль снов x1<sprite=5> за каждую победу над врагом.",
-    "rawDesc": "В <color=yellow>Лесу волнения</color> увеличивает скорость передвижения на {0}, а также дает Пыль снов x{1} за каждую победу над врагом.",
+    "description": "В <color=yellow>Лесу волнения</color> <color=yellow>скорость передвижения</color> увеличивается на 8%<sprite=5>, и вы получаете 0.5<sprite=5> <color=yellow>Пыли снов</color> за каждого убитого врага.",
+    "rawDesc": "В <color=yellow>Лесу волнения</color> <color=yellow>скорость передвижения</color> увеличивается на {0}, и вы получаете {1} <color=yellow>Пыли снов</color> за каждого убитого врага.",
     "rawDescVars": [
       {
         "rendered": "8%<sprite=5>",
@@ -6931,20 +7272,18 @@
         }
       },
       {
-        "rendered": "1<sprite=5>",
-        "format": "#,##0",
+        "rendered": "0.5<sprite=5>",
+        "format": "#,##0.##",
         "raw": "dreamDustAmount",
         "scalingType": "star",
         "data": {
           "levels": 3,
-          "isClamped": true,
-          "clampMin": 1.0,
-          "clampMax": 100.0,
-          "isInteger": true,
+          "isClamped": false,
+          "isInteger": false,
           "values": [
-            1.0,
-            2.0,
-            3.0
+            0.5,
+            0.75,
+            1.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -7269,7 +7608,7 @@
   },
   "Se_Star_Nachia_L_WaltzArmor": {
     "name": "Танец защиты",
-    "lore": null,
+    "lore": "Там, где она находится, собираются птицы, звери и чистые духи, создавая маленький оазис мира.",
     "category": "Life",
     "heroType": "Hero_Nachia",
     "maxLevel": 4,
@@ -7560,7 +7899,7 @@
     "image": "Se_Star_Vesper_D_BossHunterAmpWithPenalty.png"
   },
   "Se_Star_Vesper_D_ConvertAPToAD": {
-    "name": "Полный святости молот",
+    "name": "Священный молот",
     "lore": null,
     "category": "Destruction",
     "heroType": "Hero_Vesper",
@@ -7573,11 +7912,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "Преобразует 20%<sprite=5> от силы умений в <color=yellow>силу атаки</color>.",
-    "rawDesc": "Преобразует {0} от силы умений в <color=yellow>силу атаки</color>.",
+    "description": "Увеличивает <color=yellow>Урон от атаки</color> на 25%<sprite=5> от <color=yellow>Силы Способностей</color>.",
+    "rawDesc": "Увеличивает <color=yellow>Урон от атаки</color> на {0} от <color=yellow>Силы Способностей</color>.",
     "rawDescVars": [
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": "25%<sprite=5>",
         "format": "P0",
         "raw": "ratio",
         "scalingType": "star",
@@ -7586,16 +7925,119 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.2,
+            0.25,
             0.3,
-            0.4,
-            0.5
+            0.35,
+            0.4
           ],
           "strengthScaling": "Multiply"
         }
       }
     ],
     "image": "Se_Star_Vesper_D_ConvertAPToAD.png"
+  },
+  "Se_Star_Vesper_F_BS_AddedDurationPerAtk": {
+    "name": "Бесконечная ковка",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Базовые атаки во время действия <color=yellow>Крещения солнца</color> увеличивают <color=yellow>длительность</color> на 0.2 с.",
+    "rawDesc": "Базовые атаки во время действия <color=yellow>Крещения солнца</color> увеличивают <color=yellow>длительность</color> на {0} с.",
+    "rawDescVars": [
+      {
+        "rendered": "0.2",
+        "format": "#,##0.#",
+        "raw": "addedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_AddedDurationPerAtk.png"
+  },
+  "Se_Star_Vesper_F_BS_ADWithArmor": {
+    "name": "Нет боли — нет результата",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Крещение солнца</color> увеличивает <color=yellow>урон от атаки</color> вместо скорости атаки на ту же величину и дает 10 <color=yellow>брони</color> за каждого врага, пораженного первым взрывом. При попадании по боссу дает 40 брони.",
+    "rawDesc": "<color=yellow>Крещение солнца</color> увеличивает <color=yellow>урон от атаки</color> вместо скорости атаки на ту же величину и дает {0} <color=yellow>брони</color> за каждого врага, пораженного первым взрывом. При попадании по боссу дает {1} брони.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "armorPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40",
+        "format": "#,##0",
+        "raw": "armorPerHitBoss",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 40.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_ADWithArmor.png"
+  },
+  "Se_Star_Vesper_F_BS_MovSpd": {
+    "name": "Приятный жар",
+    "lore": "Когда течет пот, рельеф мышц проявляется еще прекраснее.",
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Крещение солнца</color> дает <color=yellow>скорость передвижения</color> в размере 50% от прироста скорости атаки.",
+    "rawDesc": "<color=yellow>Крещение солнца</color> дает <color=yellow>скорость передвижения</color> в размере {0} от прироста скорости атаки.",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "movSpdRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_MovSpd.png"
   },
   "Se_Star_Vesper_F_CS_ColdDamage": {
     "name": "Холодный гнев",
@@ -7608,16 +8050,29 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Преобразует урон от <color=yellow>Жестокого солнца</color> в урон от холода, а длительность оглушения увеличивает на 1 с.",
-    "rawDesc": "Преобразует урон от <color=yellow>Жестокого солнца</color> в урон от холода, а длительность оглушения увеличивает на {0} с.",
+    "description": "Урон от <color=yellow>Жестокого солнца</color> преобразуется в <color=yellow>урон от холода</color>, длительность оглушения увеличивается на 2 с., а получаемая <color=yellow>ЗЩТ</color> увеличивается на 50%.",
+    "rawDesc": "Урон от <color=yellow>Жестокого солнца</color> преобразуется в <color=yellow>урон от холода</color>, длительность оглушения увеличивается на {0} с., а получаемая <color=yellow>ЗЩТ</color> увеличивается на {1}.",
     "rawDescVars": [
       {
-        "rendered": "1",
+        "rendered": "2",
         "format": "#,##0",
         "raw": "addedStunDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "gainedArmorAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -7638,16 +8093,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Сохраняет эффекты неудержимости и ЗЩТ <color=yellow>Жестокого солнца</color> еще на 1.5 с. после завершения применения.",
+    "description": "Сохраняет эффекты неудержимости и ЗЩТ <color=yellow>Жестокого солнца</color> еще на 2.5 с. после завершения применения.",
     "rawDesc": "Сохраняет эффекты неудержимости и ЗЩТ <color=yellow>Жестокого солнца</color> еще на {0} с. после завершения применения.",
     "rawDescVars": [
       {
-        "rendered": "1.5",
+        "rendered": "2.5",
         "format": "#,##0.#",
         "raw": "buffLingerDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 2.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -7658,8 +8113,8 @@
     "image": "Se_Star_Vesper_F_CS_LingeringBenefits.png"
   },
   "Se_Star_Vesper_F_CS_UnlockMoveWithPenalty": {
-    "name": "Вспышка гордости",
-    "lore": null,
+    "name": "Прайд Флэр",
+    "lore": "Он верит, что стоит чуть ближе к богам, чем остальные. Но чтобы списать это на простое высокомерие, он слишком силён.",
     "category": "Flexible",
     "heroType": "Hero_Vesper",
     "maxLevel": 1,
@@ -7668,9 +8123,23 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Позволяет двигаться во время применения <color=yellow>Жестокого солнца</color>, но лишает эффектов неудержимости и ЗЩТ.",
-    "rawDesc": "Позволяет двигаться во время применения <color=yellow>Жестокого солнца</color>, но лишает эффектов неудержимости и ЗЩТ.",
-    "rawDescVars": [],
+    "description": "Увеличивает урон <color=yellow>Жестокого солнца</color> на 25% и позволяет двигаться во время его применения, но при этом не даёт бонус к <color=yellow>ЗЩТ</color>.",
+    "rawDesc": "Увеличивает урон <color=yellow>Жестокого солнца</color> на {0} и позволяет двигаться во время его применения, но при этом не даёт бонус к <color=yellow>ЗЩТ</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "damageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Vesper_F_CS_UnlockMoveWithPenalty.png"
   },
   "Se_Star_Vesper_F_DP_FarTargetBonus": {
@@ -7903,7 +8372,7 @@
   },
   "Se_Star_Vesper_F_SE_PointCast": {
     "name": "Немного альтруизма",
-    "lore": null,
+    "lore": "Веспер неожиданно добр к детям. Возможно, это отголосок его несчастливого детства?",
     "category": "Flexible",
     "heroType": "Hero_Vesper",
     "maxLevel": 1,
@@ -7912,14 +8381,41 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Призывает <color=yellow>Святилище Эля</color> в указанное место вместо позиции Веспера.",
-    "rawDesc": "Призывает <color=yellow>Святилище Эля</color> в указанное место вместо позиции Веспера.",
-    "rawDescVars": [],
+    "description": "Призывает <color=yellow>Святилище Эля</color> в указанное место вместо позиции Веспера. Время восстановления сокращается на 10% за каждого союзника и на 3% за каждого врага, пораженного первым взрывом.",
+    "rawDesc": "Призывает <color=yellow>Святилище Эля</color> в указанное место вместо позиции Веспера. Время восстановления сокращается на {0} за каждого союзника и на {1} за каждого врага, пораженного первым взрывом.",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "reductionRatioOnAlly",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3%",
+        "format": "P0",
+        "raw": "reductionRatioOnEnemy",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Vesper_F_SE_PointCast.png"
   },
   "Se_Star_Vesper_I_ShopDiscount": {
     "name": "Подавляющее присутствие",
-    "lore": null,
+    "lore": "У каждого есть план. До тех пор, пока они не встретятся с ним лицом к лицу.",
     "category": "Imagination",
     "heroType": "Hero_Vesper",
     "maxLevel": 4,
@@ -7931,8 +8427,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Снижает <color=yellow>стоимость</color> товаров у торговца на 10%<sprite=5>.",
-    "rawDesc": "Снижает <color=yellow>стоимость</color> товаров у торговца на {0}.",
+    "description": "Снижает <color=yellow>стоимость в золоте</color> товаров у торговца на 10%<sprite=5>.",
+    "rawDesc": "Снижает <color=yellow>стоимость в золоте</color> товаров у торговца на {0}.",
     "rawDescVars": [
       {
         "rendered": "10%<sprite=5>",
@@ -7968,11 +8464,11 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "Дает <color=yellow>золото</color> x50<sprite=5> в начале приключения.",
+    "description": "Дает <color=yellow>золото</color> x100<sprite=5> в начале приключения.",
     "rawDesc": "Дает <color=yellow>золото</color> x{0} в начале приключения.",
     "rawDescVars": [
       {
-        "rendered": "50<sprite=5>",
+        "rendered": "100<sprite=5>",
         "format": "#,##0",
         "raw": "addedGoldAmount",
         "scalingType": "star",
@@ -7981,9 +8477,9 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            50.0,
             100.0,
-            150.0
+            150.0,
+            200.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -8092,11 +8588,11 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Увеличивает щит от <color=yellow>Сокрушительного удара</color> на 30%<sprite=5> и длительность щита на 25%<sprite=5>.",
+    "description": "Увеличивает щит от <color=yellow>Сокрушительного удара</color> на 45%<sprite=5> и длительность щита на 75%<sprite=5>.",
     "rawDesc": "Увеличивает щит от <color=yellow>Сокрушительного удара</color> на {0} и длительность щита на {1}.",
     "rawDescVars": [
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": "45%<sprite=5>",
         "format": "P0",
         "raw": "shieldAmp",
         "scalingType": "star",
@@ -8105,16 +8601,16 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.3,
-            0.4,
-            0.5,
-            0.6
+            0.45,
+            0.55,
+            0.65,
+            0.75
           ],
           "strengthScaling": "Multiply"
         }
       },
       {
-        "rendered": "25%<sprite=5>",
+        "rendered": "75%<sprite=5>",
         "format": "P0",
         "raw": "shieldDurationAmp",
         "scalingType": "star",
@@ -8123,10 +8619,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.25,
-            0.5,
             0.75,
-            1.0
+            1.0,
+            1.25,
+            1.5
           ],
           "strengthScaling": "Multiply"
         }
@@ -8435,7 +8931,7 @@
   },
   "Se_Star_Yubar_D_ADAPWithPenalty": {
     "name": "Стеклянная пушка",
-    "lore": null,
+    "lore": "Его тело сейчас — всего лишь хрупкий сосуд. Впрочем, все, кто так думал, уже обратились в горстку пыли.",
     "category": "Destruction",
     "heroType": "Hero_Yubar",
     "maxLevel": 3,
@@ -8446,8 +8942,8 @@
     ],
     "requiredLevel": 30,
     "isRequiredLevelTotalMastery": false,
-    "description": "Снижает <color=yellow>макс. ОЗ</color> на 15%, но получает 5<sprite=5> <color=yellow>силы атаки</color> и 7<sprite=5> <color=yellow>силы умений</color>.",
-    "rawDesc": "Снижает <color=yellow>макс. ОЗ</color> на {0}, но получает {1} <color=yellow>силы атаки</color> и {2} <color=yellow>силы умений</color>.",
+    "description": "Снижает <color=yellow>макс. ОЗ</color> на 15%, но получает 5<sprite=5> <color=yellow>урона от атаки</color> и 7<sprite=5> <color=yellow>силы способностей</color>.",
+    "rawDesc": "Снижает <color=yellow>макс. ОЗ</color> на {0}, но получает {1} <color=yellow>урона от атаки</color> и {2} <color=yellow>силы способностей</color>.",
     "rawDescVars": [
       {
         "rendered": "15%",
@@ -8712,8 +9208,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Катаклизм</color> увеличивает силу атаки Юбара вместо силы умений.",
-    "rawDesc": "<color=yellow>Катаклизм</color> увеличивает силу атаки Юбара вместо силы умений.",
+    "description": "<color=yellow>Катаклизм</color> увеличивает силу атаки и скорость атаки Юбара вместо силы умений.",
+    "rawDesc": "<color=yellow>Катаклизм</color> увеличивает силу атаки и скорость атаки Юбара вместо силы умений.",
     "rawDescVars": [],
     "image": "Se_Star_Yubar_F_CC_IncreaseAD.png"
   },
@@ -8882,7 +9378,7 @@
   },
   "Se_Star_Yubar_F_SN_AutoExplosion": {
     "name": "Звёздное пастбище",
-    "lore": null,
+    "lore": "Даже если он не обращает на них внимания, звезды растут и крепнут, питаясь космической пылью.",
     "category": "Flexible",
     "heroType": "Hero_Yubar",
     "maxLevel": 1,
@@ -8953,7 +9449,7 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Снижает время перезарядки <color=yellow>Умиротворения</color> на 2 с., но вместо неуязвимости дает щит размером 40% от макс. ОЗ на время действия неуязвимости.",
+    "description": "Снижает время перезарядки <color=yellow>Умиротворения</color> на 2 с., но вместо неуязвимости дает щит размером 100% от макс. ОЗ на время действия неуязвимости.",
     "rawDesc": "Снижает время перезарядки <color=yellow>Умиротворения</color> на {0} с., но вместо неуязвимости дает щит размером {1} от макс. ОЗ на время действия неуязвимости.",
     "rawDescVars": [
       {
@@ -8970,12 +9466,12 @@
         }
       },
       {
-        "rendered": "40%",
+        "rendered": "100%",
         "format": "P0",
         "raw": "shieldRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.4,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9115,7 +9611,7 @@
   },
   "Se_Star_Yubar_I_StarCookie": {
     "name": "Звездная выпечка",
-    "lore": null,
+    "lore": "Он сжег астрономическое количество звезд, чтобы испечь идеальное звездное печенье.",
     "category": "Imagination",
     "heroType": "Hero_Yubar",
     "maxLevel": 3,
@@ -9126,8 +9622,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "При победе над врагом с шансом 0.5%<sprite=5> появляется <color=yellow>Звездное печенье</color>. <color=yellow>Звездное печенье</color> немного исцеляет ОЗ Юбара и дает небольшое количество золота и Пыли снов.",
-    "rawDesc": "При победе над врагом с шансом {0} появляется <color=yellow>Звездное печенье</color>. <color=yellow>Звездное печенье</color> немного исцеляет ОЗ Юбара и дает небольшое количество золота и Пыли снов.",
+    "description": "При победе над врагом с шансом 0.5%<sprite=5> появляется <color=yellow>Звездное печенье</color>. <color=yellow>Звездное печенье</color> немного исцеляет ОЗ Юбара и дает небольшое количество золота и Пыли мечты.",
+    "rawDesc": "При победе над врагом с шансом {0} появляется <color=yellow>Звездное печенье</color>. <color=yellow>Звездное печенье</color> немного исцеляет ОЗ Юбара и дает небольшое количество золота и Пыли мечты.",
     "rawDescVars": [
       {
         "rendered": "0.5%<sprite=5>",

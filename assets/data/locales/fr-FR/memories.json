@@ -4,7 +4,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Bondit en arrière, laissant tomber 3 bombe(s) de choc à l'emplacement initial qui infligent chacune des <color=yellow>dégâts</color> de <sprite=1><color=#16D7FF>120%</color><sprite=5> et <color=yellow>étourdit</color> pendant 1 sec.",
+    "description": "Bondit en arrière, laissant tomber 3 bombe(s) de choc à l'emplacement initial qui infligent chacune des <color=yellow>dégâts</color> de <sprite=1><color=#16D7FF>168%</color><sprite=5> et <color=yellow>étourdit</color> pendant 1 sec.",
     "rawDesc": "Bondit en arrière, laissant tomber {0} bombe(s) de choc à l'emplacement initial qui infligent chacune des <color=yellow>dégâts</color> de {1} et <color=yellow>étourdit</color> pendant {2} sec.",
     "rawDescVars": [
       {
@@ -21,13 +21,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>168%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.2,
+          "basicAP": 1.68,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -176,73 +176,6 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "St_R_DancingBlades": {
-    "name": "Tempête de Lames",
-    "cooldownTime": 13.0,
-    "maxCharges": 1,
-    "addedCharges": 1,
-    "description": "Invoque une <color=yellow>Tempête de Lames</color> qui dure 4 sec dans la zone ciblée. La <color=yellow>Tempête de Lames</color> entaille rapidement autour d'elle, infligeant aux ennemis les <color=yellow>dégâts</color> les plus élevés entre <sprite=1><color=#16D7FF>85%</color><sprite=5> et <sprite=2><color=#FF8A2D>85%</color><sprite=5>, et ce toutes les 0.5 sec, tout en poursuivant l'ennemi le plus proche.",
-    "rawDesc": "Invoque une <color=yellow>Tempête de Lames</color> qui dure {0} sec dans la zone ciblée. La <color=yellow>Tempête de Lames</color> entaille rapidement autour d'elle, infligeant aux ennemis les <color=yellow>dégâts</color> les plus élevés entre {1} et {2}, et ce toutes les {3} sec, tout en poursuivant l'ennemi le plus proche.",
-    "rawDescVars": [
-      {
-        "rendered": "4",
-        "format": "#,##0.#",
-        "raw": "duration",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "apDamage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.85,
-          "basicAD": 0.0,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "adDamage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.0,
-          "basicAD": 0.85,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": "0.5",
-        "format": "#,##0.#",
-        "raw": "tickInterval",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      }
-    ],
-    "shortDescription": "Dégâts de zone continus",
-    "rarity": "Rare",
-    "type": "Normal",
-    "traveler": "",
-    "travelerMemoryLocation": "",
-    "tags": [],
-    "image": "St_R_DancingBlades.png",
-    "lore": null,
-    "achievementKey": "ACH_ETERNAL_REST",
-    "achievementName": "Repos éternel",
-    "achievementDescription": "Portez 50 fois au total des coups de grâce à l'Épéiste Fantôme avec l'attaque de base."
-  },
   "St_C_DarkBolt": {
     "name": "Flèche de Ténèbres",
     "cooldownTime": 4.5,
@@ -334,11 +267,11 @@
   },
   "St_C_FlashFreeze": {
     "name": "Gel Instantané",
-    "cooldownTime": 5.0,
+    "cooldownTime": 9.0,
     "maxCharges": 2,
-    "addedCharges": 1,
-    "description": "Émet une aura de givre vers l'avant, infligeant des <color=yellow>dégâts de givre</color> de <sprite=1><color=#16D7FF>130%</color><sprite=5> aux ennemis. Si un ennemi est déjà affecté par le <color=yellow>givre</color>, augmente les <color=yellow>dégâts</color> de 100% et l'<color=yellow>immobilise</color> pendant 1.5 sec.",
-    "rawDesc": "Émet une aura de givre vers l'avant, infligeant des <color=yellow>dégâts de givre</color> de {0} aux ennemis. Si un ennemi est déjà affecté par le <color=yellow>givre</color>, augmente les <color=yellow>dégâts</color> de {1} et l'<color=yellow>immobilise</color> pendant {2} sec.",
+    "addedCharges": 999,
+    "description": "Émet une aura de givre vers l'avant, infligeant <sprite=1><color=#16D7FF>130%</color><sprite=5> de <color=yellow>Dégâts de Froid</color> aux ennemis et accordant un <color=yellow>Bouclier</color> de <sprite=1><color=#16D7FF>90%</color><sprite=5> à vous-même et vos alliés pendant 3 sec. Si un ennemi est déjà affecté par le <color=yellow>Froid</color>, augmente les <color=yellow>Dégâts</color> de 100% et l'<color=yellow>Immobilise</color> pendant 1.5 sec.\n\n<color=yellow>Charges</color> se rechargent toutes en même temps.",
+    "rawDesc": "Émet une aura de givre vers l'avant, infligeant {0} de <color=yellow>Dégâts de Froid</color> aux ennemis et accordant un <color=yellow>Bouclier</color> de {1} à vous-même et vos alliés pendant {2} sec. Si un ennemi est déjà affecté par le <color=yellow>Froid</color>, augmente les <color=yellow>Dégâts</color> de {3} et l'<color=yellow>Immobilise</color> pendant {4} sec.\n\n<color=yellow>Charges</color> se rechargent toutes en même temps.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
@@ -351,6 +284,32 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.9,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
         }
       },
       {
@@ -380,7 +339,7 @@
         }
       }
     ],
-    "shortDescription": "Dégâts de givre de zone, immobilisation",
+    "shortDescription": "Dégâts de Froid de zone, Immobilisation",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -388,7 +347,8 @@
     "tags": [
       "Cold",
       "Melee",
-      "HardCC"
+      "HardCC",
+      "Shield"
     ],
     "image": "St_C_FlashFreeze.PNG",
     "lore": null,
@@ -613,8 +573,8 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Assène un coup de griffes vers l'avant, infligeant aux ennemis des <color=yellow>dégâts de givre</color> de <sprite=1><color=#16D7FF>140%</color><sprite=5>, et les <color=yellow>étourdit</color> pendant 0.5 sec. Lors du redéclenchement, peut asséner un nouveau coup, infligeant aux ennemis des <color=yellow>dégâts de givre</color> de <sprite=1><color=#16D7FF>264%</color><sprite=5>, et les <color=yellow>étourdit</color> pendant 1 sec.",
-    "rawDesc": "Assène un coup de griffes vers l'avant, infligeant aux ennemis des <color=yellow>dégâts de givre</color> de {0}, et les <color=yellow>étourdit</color> pendant {1} sec. Lors du redéclenchement, peut asséner un nouveau coup, infligeant aux ennemis des <color=yellow>dégâts de givre</color> de {2}, et les <color=yellow>étourdit</color> pendant {3} sec.",
+    "description": "Assène un coup de griffes vers l'avant, infligeant aux ennemis <sprite=1><color=#16D7FF>140%</color><sprite=5> de <color=yellow>dégâts de froid</color> et les <color=yellow>étourdissant</color> pendant 0.5 sec. Peut être réactivé pour asséner un second coup, infligeant <sprite=1><color=#16D7FF>264%</color><sprite=5> de <color=yellow>dégâts de froid</color> et <color=yellow>étourdissant</color> les ennemis pendant 1 sec.\n\nLorsque les griffes touchent un ennemi, vous <color=yellow>récupérez</color> 12% de <color=yellow>PV</color> en fonction des dégâts infligés.",
+    "rawDesc": "Assène un coup de griffes vers l'avant, infligeant aux ennemis {0} de <color=yellow>dégâts de froid</color> et les <color=yellow>étourdissant</color> pendant {1} sec. Peut être réactivé pour asséner un second coup, infligeant {2} de <color=yellow>dégâts de froid</color> et <color=yellow>étourdissant</color> les ennemis pendant {3} sec.\n\nLorsque les griffes touchent un ennemi, vous <color=yellow>récupérez</color> {4} de <color=yellow>PV</color> en fonction des dégâts infligés.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
@@ -667,9 +627,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "12%",
+        "format": "P0",
+        "raw": "Ai_C_IceClaw::healRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.12,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Dégâts de givre de proximité",
+    "shortDescription": "Dégâts de froid de proximité, récupération de PV",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -677,7 +650,8 @@
     "tags": [
       "Cold",
       "Melee",
-      "HardCC"
+      "HardCC",
+      "Heal"
     ],
     "image": "St_C_IceClaw.PNG",
     "lore": null,
@@ -731,7 +705,7 @@
       "Mobility"
     ],
     "image": "St_C_MagicSword.png",
-    "lore": null,
+    "lore": "À l'aube silencieuse,\nquand je me rends dans le jardin arrière du manoir Highgate,\nun souvenir remonte doucement à la surface.\n\nL'air frais de l'ancien terrain d'entraînement qui caresse encore ma joue.\nMon enfance, quand je ne projetais qu'une petite ombre.\nLa voix glaciale de ma mère.\n\nL'Épée Turquoise.\nL'épée de la famille, symbole de force et de fierté des Verdesilver.\nCe jour-là, ma mère m'a montré cette lame\nqui s'élance droit devant, inébranlable comme un arbre robuste.\n\nMais mon épée n'a jamais suivi les enseignements de ma mère.\nLa pointe tremblait comme une feuille dansant dans le vent, et ma force s'écoulait comme de l'eau.\n\nN'est-ce pas ironique, mère ?\nCet arbre majestueux que vous cherchiez tant à protéger s'est finalement brisé et effondré,\net seule cette feuille insignifiante emportée par le vent\na survécu jusqu'ici.\n\nMaintenant, la fierté de la famille et le poids de l'arbre ont tous disparu...\nmais je ne le regrette pas.\n\nTout ce que je souhaite...\nc'est de tenir cette épée en tant que brume sans nom ayant perdu sa couleur turquoise,\npour le bonheur de ma petite sœur.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -787,7 +761,7 @@
   },
   "St_C_Pew": {
     "name": "Bang !",
-    "cooldownTime": 14.0,
+    "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
     "description": "Charge une balle de feu en <color=yellow>maintenant longuement</color> la touche du déclenchement. Une fois chargée, tire la balle de feu, infligeant à tous les ennemis touchés des <color=yellow>dégâts de feu</color> proportionnels au temps de visée, allant de <sprite=1><color=#16D7FF>150%</color><sprite=5> à <sprite=1><color=#16D7FF>400%</color><sprite=5>.\n\nEn tirant avant que la charge ne soit complète, réduit le <color=yellow>temps de recharge</color> jusqu'à un maximum de 80%. La largeur de la zone d'impact et les dégâts atteignent leur maximum en visant pendant 1.35 sec.",
@@ -865,8 +839,8 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Libère de l'énergie par la paume, infligeant des <color=yellow>dégâts</color> de <sprite=1><color=#16D7FF>180%</color><sprite=5> et repousse tous les ennemis touchés. Si la cible est repoussée contre un mur, lui inflige des <color=yellow>dégâts</color> supplémentaires de <sprite=1><color=#16D7FF>504%</color><sprite=5> et l'étourdit pendant 1.5 sec.",
-    "rawDesc": "Libère de l'énergie par la paume, infligeant des <color=yellow>dégâts</color> de {0} et repousse tous les ennemis touchés. Si la cible est repoussée contre un mur, lui inflige des <color=yellow>dégâts</color> supplémentaires de {1} et l'étourdit pendant {2} sec.",
+    "description": "Libère de l'énergie par la paume, infligeant <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>dégâts</color> et repousse tous les ennemis touchés en les étourdissant pendant 1 sec. Inflige <sprite=1><color=#16D7FF>504%</color><sprite=5> <color=yellow>dégâts</color> supplémentaires si la cible est Imparable ou percute un mur.",
+    "rawDesc": "Libère de l'énergie par la paume, infligeant {0} <color=yellow>dégâts</color> et repousse tous les ennemis touchés en les étourdissant pendant {1} sec. Inflige {2} <color=yellow>dégâts</color> supplémentaires si la cible est Imparable ou percute un mur.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
@@ -882,24 +856,24 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "dmgFactor*stunDmgRatio",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "1.5",
+        "rendered": "1",
         "format": "#,##0.#",
         "raw": "stunDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor*stunDmgRatio",
+        "scalingType": "unknown",
+        "data": {}
       }
     ],
     "shortDescription": "Dégâts de proximité, repoussement",
@@ -988,20 +962,20 @@
   },
   "St_C_SparklingWaterGun": {
     "name": "Pistolet à Eau Rafraîchissant",
-    "cooldownTime": 5.0,
+    "cooldownTime": 4.0,
     "maxCharges": 3,
     "addedCharges": 1,
-    "description": "Tire avec un Pistolet à Eau Rafraîchissant. <color=yellow>Soigne</color> les <color=yellow>PV</color> du 1er allié touché de <sprite=1><color=#16D7FF>50%</color><sprite=5> et supprime ses <color=yellow>cumuls de feu</color>. En touchant un ennemi, inflige 1 <color=yellow>dégât</color> et l'<color=yellow>étourdit</color> pendant 1.5 sec. Le <color=yellow>temps de recharge</color> se réduit uniquement <color=yellow>en combat</color>.",
-    "rawDesc": "Tire avec un Pistolet à Eau Rafraîchissant. <color=yellow>Soigne</color> les <color=yellow>PV</color> du 1er allié touché de {0} et supprime ses <color=yellow>cumuls de feu</color>. En touchant un ennemi, inflige {1} <color=yellow>dégât</color> et l'<color=yellow>étourdit</color> pendant {2} sec. Le <color=yellow>temps de recharge</color> se réduit uniquement <color=yellow>en combat</color>.",
+    "description": "Tire avec un Pistolet à Eau Rafraîchissant. <color=yellow>Soigne</color> les <color=yellow>PV</color> des alliés touchés de <sprite=1><color=#16D7FF>70%</color><sprite=5> et supprime leurs <color=yellow>cumuls de feu</color>. Inflige 1 <color=yellow>dégâts</color> aux ennemis touchés et les <color=yellow>étourdit</color> pendant 1.5 sec. Le <color=yellow>temps de recharge</color> se réduit uniquement <color=yellow>en combat</color>.\n\nSi la cible est une <color=yellow>invocation</color> alliée, les soins sont augmentés de 40%.",
+    "rawDesc": "Tire avec un Pistolet à Eau Rafraîchissant. <color=yellow>Soigne</color> les <color=yellow>PV</color> des alliés touchés de {0} et supprime leurs <color=yellow>cumuls de feu</color>. Inflige {1} <color=yellow>dégâts</color> aux ennemis touchés et les <color=yellow>étourdit</color> pendant {2} sec. Le <color=yellow>temps de recharge</color> se réduit uniquement <color=yellow>en combat</color>.\n\nSi la cible est une <color=yellow>invocation</color> alliée, les soins sont augmentés de {3}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>50%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>70%</color><sprite=5>",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.5,
+          "basicAP": 0.7,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -1027,6 +1001,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "summonAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1167,7 +1154,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Tournoie avec une épée en <color=yellow>se concentrant</color> pendant 3.5 sec, infligeant aux ennemis proches des <color=yellow>dégâts</color> de <sprite=2><color=#FF8A2D>170%</color><sprite=5> toutes les sec, et active l'<color=yellow>Effet d'Attaque</color> de 25%. Plus la <color=yellow>VIT d'ATQ</color> est élevée, plus l'épée tournoie rapidement.",
+    "description": "Tournoie avec une épée en <color=yellow>se concentrant</color> pendant 3.5 sec, infligeant aux ennemis proches des <color=yellow>dégâts</color> de <sprite=2><color=#FF8A2D>240%</color><sprite=5> toutes les sec, et active l'<color=yellow>Effet d'Attaque</color> de 35%. Plus la <color=yellow>VIT d'ATQ</color> est élevée, plus l'épée tournoie rapidement.",
     "rawDesc": "Tournoie avec une épée en <color=yellow>se concentrant</color> pendant {0} sec, infligeant aux ennemis proches des <color=yellow>dégâts</color> de {1} toutes les sec, et active l'<color=yellow>Effet d'Attaque</color> de {2}. Plus la <color=yellow>VIT d'ATQ</color> est élevée, plus l'épée tournoie rapidement.",
     "rawDescVars": [
       {
@@ -1184,19 +1171,19 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>170%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>240%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*2",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "25%",
+        "rendered": "35%",
         "format": "P0",
         "raw": "attackEffect",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.25,
+          "basicConstant": 0.35,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2465,43 +2452,6 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "St_E_FlameJet": {
-    "name": "Jet de Flammes",
-    "cooldownTime": 11.5,
-    "maxCharges": 1,
-    "addedCharges": 1,
-    "description": "Crache un jet de flammes pendant 2.5 sec. Les ennemis touchés par ce jet subissent des <color=yellow>dégâts de feu</color> de <sprite=1><color=#16D7FF>336%</color><sprite=5> toutes les sec.",
-    "rawDesc": "Crache un jet de flammes pendant {0} sec. Les ennemis touchés par ce jet subissent des <color=yellow>dégâts de feu</color> de {1} toutes les sec.",
-    "rawDescVars": [
-      {
-        "rendered": "2.5",
-        "format": "#,##0.#",
-        "raw": "spawns*spawnInterval",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "damage/minHitInterval",
-        "scalingType": "unknown",
-        "data": {}
-      }
-    ],
-    "shortDescription": "Dégâts de feu de zone continus",
-    "rarity": "Epic",
-    "type": "Normal",
-    "traveler": "",
-    "travelerMemoryLocation": "",
-    "tags": [
-      "Fire"
-    ],
-    "image": "St_E_FlameJet.png",
-    "lore": "Journal de chasse\nLe oo/oo, en l'an 2 du règne de Logit, temps ensoleillé\nLieu de chasse : Marais d'Igni\nRécolte du jour : Un sachet d'orties\n\nJ'ai établi des règles que je respecte toujours lorsque je pars chasser dans les marais d'Igni.\n\n1. Faire attention si les racines des palétuviers portent des traces de griffes.\n\n2. Éviter d'explorer dans cette direction si ces traces ne sont pas recouvertes de mousse.\n\n3. Rentrer immédiatement s'il y a de la fumée au loin ou des braises sur des troncs d'arbres calcinés.\n\nL'été dernier, je me suis fait cette promesse après avoir vu, à travers ma lunette de visée, un imbécile tenter d'arracher une liane de Kalimberry à moitié brûlée... et se retrouver face à face avec un énorme Barasus.\n\nJe crois n'avoir jamais vu de flammes aussi hautes, pas même lors des démonstrations d'armes à feu de la Garde Royale.",
-    "achievementKey": "ACH_PYROMANIA",
-    "achievementName": "Pyromane",
-    "achievementDescription": "Éliminez 250 fois un ennemi enflammé."
-  },
   "St_E_FinalExplosion": {
     "name": "Explosion Finale",
     "cooldownTime": 3.0,
@@ -2594,10 +2544,47 @@
       "HardCC"
     ],
     "image": "St_E_FinalExplosion.PNG",
-    "lore": null,
+    "lore": "L'étau de l'Ordre de la Flamme Sacrée se resserrait sans la moindre faille.\nLeur flamme sacrée ne laissait aucune place à l'obscurité, même dans les ruelles les plus profondes.\nAcculé dans une impasse, le membre de la Secte Lucide finit par s'arrêter.\n\nMais au lieu de la peur, un sourire étrange empli d'extase se dessina sur son visage.\nIl regardait plutôt les chevaliers qui l'encerclaient comme on regarde de pitoyables insectes.\n\n« Vous pensez... que c'est la fin ? Vous croyez pouvoir me juger avec cette petite flamme arrogante de votre faux dieu ? »\n\nIl ferma les yeux et concentra tous ses sens.\nAlors, au-delà du vacarme bruyant de la réalité, il entendit le doux murmure de ce monde de rêves tant désiré,\nles Entre-Rêves.\n\nIl était temps de tout abandonner et de partir.\nIl rouvrit les yeux pour faire ses derniers adieux à la réalité.\n\n« Adieu ! Flammes aveugles... chair insignifiante... et monde insupportable ! »\n\nSon corps commença déjà à clignoter violemment, prenant des teintes irréelles.\nUne prière, la plus ardente et désespérée, offerte à son dieu.\n\n« Seigneur Primus ! Votre humble serviteur vous offre... tout ce qu'il possède... maintenant ! »\n\nSon dernier cri réduisit sa propre existence en une poignée de poussière,\npuis devint une explosion finale majestueuse qui engloutit tout.\n\n\n- Trace de mémoire d'un cadavre trouvé dans un village en ruines",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
+  },
+  "St_E_FlameJet": {
+    "name": "Jet de Flammes",
+    "cooldownTime": 11.5,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Crache un jet de flammes pendant 2.5 sec. Les ennemis touchés par ce jet subissent des <color=yellow>dégâts de feu</color> de <sprite=1><color=#16D7FF>336%</color><sprite=5> toutes les sec.",
+    "rawDesc": "Crache un jet de flammes pendant {0} sec. Les ennemis touchés par ce jet subissent des <color=yellow>dégâts de feu</color> de {1} toutes les sec.",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "spawns*spawnInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage/minHitInterval",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "Dégâts de feu de zone continus",
+    "rarity": "Epic",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Fire"
+    ],
+    "image": "St_E_FlameJet.png",
+    "lore": "Journal de chasse\nLe oo/oo, en l'an 2 du règne de Logit, temps ensoleillé\nLieu de chasse : Marais d'Igni\nRécolte du jour : Un sachet d'orties\n\nJ'ai établi des règles que je respecte toujours lorsque je pars chasser dans les marais d'Igni.\n\n1. Faire attention si les racines des palétuviers portent des traces de griffes.\n\n2. Éviter d'explorer dans cette direction si ces traces ne sont pas recouvertes de mousse.\n\n3. Rentrer immédiatement s'il y a de la fumée au loin ou des braises sur des troncs d'arbres calcinés.\n\nL'été dernier, je me suis fait cette promesse après avoir vu, à travers ma lunette de visée, un imbécile tenter d'arracher une liane de Kalimberry à moitié brûlée... et se retrouver face à face avec un énorme Barasus.\n\nJe crois n'avoir jamais vu de flammes aussi hautes, pas même lors des démonstrations d'armes à feu de la Garde Royale.",
+    "achievementKey": "ACH_PYROMANIA",
+    "achievementName": "Pyromane",
+    "achievementDescription": "Éliminez 250 fois un ennemi enflammé."
   },
   "St_E_Harvest": {
     "name": "Moisson Sanglante",
@@ -2683,6 +2670,89 @@
       "Attack"
     ],
     "image": "St_E_Harvest.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_E_JusticeGuillotine": {
+    "name": "Guillotine de la justice",
+    "cooldownTime": 100.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Fait s'abattre une épée colossale sur la position de l'ennemi ciblé, infligeant <sprite=2><color=#FF8A2D>800%</color><sprite=5> <color=yellow>dégâts</color> à tous les ennemis proches. Ces dégâts sont augmentés jusqu'à 2 fois en fonction de vos <color=yellow>PV perdus</color>, et jusqu'à 2 fois en fonction des <color=yellow>PV perdus</color> de la cible, pour un total maximum de 4 fois. L'augmentation des dégâts est maximale lorsque les PV sont inférieurs ou égaux à 30%.",
+    "rawDesc": "Fait s'abattre une épée colossale sur la position de l'ennemi ciblé, infligeant {0} <color=yellow>dégâts</color> à tous les ennemis proches. Ces dégâts sont augmentés jusqu'à {1} fois en fonction de vos <color=yellow>PV perdus</color>, et jusqu'à {2} fois en fonction des <color=yellow>PV perdus</color> de la cible, pour un total maximum de {3} fois. L'augmentation des dégâts est maximale lorsque les PV sont inférieurs ou égaux à {4}.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>800%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 8.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dmgAmplitude",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dmgAmplitude",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "dmgAmplitude * dmgAmplitude",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "maxAmpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Frappe puissante, dégâts augmentés selon les PV perdus",
+    "rarity": "Epic",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Melee",
+      "Mobility"
+    ],
+    "image": "St_E_JusticeGuillotine.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -2793,6 +2863,103 @@
     "achievementKey": "ACH_MASTER_OF_MYSTIC_ARTS",
     "achievementName": "Maître des arts mystiques",
     "achievementDescription": "Possédez en même temps 4 Mémoire(s) active(s) au temps de recharge inférieur ou égal à 3 sec."
+  },
+  "St_E_Permafrost": {
+    "name": "Pergélisol",
+    "cooldownTime": 100.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Canalise un froid extrême avant de le déchaîner dans une très large zone. Les alliés touchés obtiennent un <color=yellow>Bouclier</color> de <sprite=1><color=#16D7FF>300%</color><sprite=5> et 100 d'<color=yellow>Armure</color> pendant 10 secondes. Les ennemis sont gelés, subissent <sprite=1><color=#16D7FF>500%</color><sprite=5> de <color=yellow>Dégâts de Froid</color> et sont <color=yellow>Étourdis</color> pendant 15 secondes.\n\nSi un ennemi est déjà affecté par le <color=yellow>Froid</color>, ces dégâts sont augmentés de 100%.",
+    "rawDesc": "Canalise un froid extrême avant de le déchaîner dans une très large zone. Les alliés touchés obtiennent un <color=yellow>Bouclier</color> de {0} et {1} d'<color=yellow>Armure</color> pendant {2} secondes. Les ennemis sont gelés, subissent {3} de <color=yellow>Dégâts de Froid</color> et sont <color=yellow>Étourdis</color> pendant {4} secondes.\n\nSi un ennemi est déjà affecté par le <color=yellow>Froid</color>, ces dégâts sont augmentés de {5}.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 3.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "100",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 100.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>500%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 5.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "15",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "chilledAmpBonus-1",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "Dégâts de Froid de zone, Étourdissement, Protection des alliés",
+    "rarity": "Epic",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Cold",
+      "HardCC",
+      "Shield"
+    ],
+    "image": "St_E_Permafrost.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
   },
   "St_E_Rewind": {
     "name": "Rembobinage",
@@ -3837,8 +4004,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Se <color=yellow>transforme</color> en <color=yellow>boule de feu</color> qui bouge rapidement pendant 3 sec, obtenant 50<sprite=5> en <color=yellow>DÉF</color> et l'immunité aux <color=yellow>dégâts de feu</color>. Chaque fois que la boule touche un ennemi, inflige des <color=yellow>dégâts de feu</color> de <sprite=1><color=#16D7FF>220%</color><sprite=5> et <color=yellow>augmente</color> la <color=yellow>durée</color> de la transformation de 0.2<sprite=5> sec, jusqu'à un maximum de 3<sprite=5> sec.",
-    "rawDesc": "Se <color=yellow>transforme</color> en <color=yellow>boule de feu</color> qui bouge rapidement pendant {0} sec, obtenant {1} en <color=yellow>DÉF</color> et l'immunité aux <color=yellow>dégâts de feu</color>. Chaque fois que la boule touche un ennemi, inflige des <color=yellow>dégâts de feu</color> de {2} et <color=yellow>augmente</color> la <color=yellow>durée</color> de la transformation de {3} sec, jusqu'à un maximum de {4} sec.",
+    "description": "Vous vous <color=yellow>transformez</color> en une <color=yellow>boule de feu</color> rapide pendant 3 secondes, ce qui vous confère 50<sprite=5> d'<color=yellow>Armure</color> et une immunité aux <color=yellow>dégâts de feu</color>. Chaque fois que la boule touche un ennemi, elle inflige <sprite=1><color=#16D7FF>220%</color><sprite=5> <color=yellow>dégâts de feu</color> et la <color=yellow>durée</color> de la transformation est <color=yellow>prolongée</color> de 0.2<sprite=5> secondes, jusqu'à une augmentation maximale de 3<sprite=5> secondes.",
+    "rawDesc": "Vous vous <color=yellow>transformez</color> en une <color=yellow>boule de feu</color> rapide pendant {0} secondes, ce qui vous confère {1} d'<color=yellow>Armure</color> et une immunité aux <color=yellow>dégâts de feu</color>. Chaque fois que la boule touche un ennemi, elle inflige {2} <color=yellow>dégâts de feu</color> et la <color=yellow>durée</color> de la transformation est <color=yellow>prolongée</color> de {3} secondes, jusqu'à une augmentation maximale de {4} secondes.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -4273,30 +4440,30 @@
     "cooldownTime": 6.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Concentre la puissance du soleil dans le marteau en <color=yellow>maintenant longuement</color> la touche du déclenchement. Une fois la concentration terminée, frappe le sol, infligeant aux ennemis des <color=yellow>dégâts de feu</color> allant de <sprite=1><color=#16D7FF>100%</color><sprite=5> à <sprite=1><color=#16D7FF>350%</color><sprite=5>, et les <color=yellow>étourdit</color> pendant une durée de 0.5 à 1.5 sec.\n\nNe peut pas bouger pendant la concentration, mais devient <color=yellow>inarrêtable</color> et obtient 60<sprite=5> en <color=yellow>DÉF</color>.",
+    "description": "Concentre la puissance du soleil dans le marteau en <color=yellow>maintenant longuement</color> la touche du déclenchement. Une fois la concentration terminée, frappe le sol, infligeant aux ennemis des <color=yellow>dégâts de feu</color> allant de <sprite=1><color=#16D7FF>150%</color><sprite=5> à <sprite=1><color=#16D7FF>450%</color><sprite=5>, et les <color=yellow>étourdit</color> pendant une durée de 0.5 à 1.5 sec.\n\nNe peut pas bouger pendant la concentration, mais devient <color=yellow>inarrêtable</color> et obtient 60<sprite=5> en <color=yellow>DÉF</color>.",
     "rawDesc": "Concentre la puissance du soleil dans le marteau en <color=yellow>maintenant longuement</color> la touche du déclenchement. Une fois la concentration terminée, frappe le sol, infligeant aux ennemis des <color=yellow>dégâts de feu</color> allant de {0} à {1}, et les <color=yellow>étourdit</color> pendant une durée de {2} à {3} sec.\n\nNe peut pas bouger pendant la concentration, mais devient <color=yellow>inarrêtable</color> et obtient {4} en <color=yellow>DÉF</color>.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
         "format": "#,##0",
         "raw": "damageMin",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>450%</color><sprite=5>",
         "format": "#,##0",
         "raw": "damageMax",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.5,
+          "basicAP": 4.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -4363,18 +4530,18 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Fonce vers la cible et abat le marteau, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> de <sprite=2><color=#FF8A2D>110%</color><sprite=5>, et active l'<color=yellow>Effet d'Attaque</color> de 50%. <color=yellow>Réduit</color> le <color=yellow>temps de recharge</color> de 8% à chaque <color=yellow>attaque</color> contre un ennemi.",
+    "description": "Fonce vers la cible et abat le marteau, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> de <sprite=2><color=#FF8A2D>125%</color><sprite=5>, et active l'<color=yellow>Effet d'Attaque</color> de 50%. <color=yellow>Réduit</color> le <color=yellow>temps de recharge</color> de 8% à chaque <color=yellow>attaque</color> contre un ennemi.",
     "rawDesc": "Fonce vers la cible et abat le marteau, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> de {0}, et active l'<color=yellow>Effet d'Attaque</color> de {1}. <color=yellow>Réduit</color> le <color=yellow>temps de recharge</color> de {2} à chaque <color=yellow>attaque</color> contre un ennemi.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>110%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>125%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.1,
+          "basicAD": 1.25,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5025,16 +5192,16 @@
     "cooldownTime": 4.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Sacrifie</color> 10% de vos PV max pour lancer 3 morceau(x) d'or fin(s) vers l'avant. Le morceau transperce la cible, infligeant des <color=yellow>dégâts</color> de <sprite=1><color=#16D7FF>95%</color><sprite=5> aux ennemis touchés, et <color=yellow>soigne</color> les PV des alliés de <sprite=1><color=#16D7FF>18%</color><sprite=5>.",
+    "description": "<color=yellow>Sacrifie</color> 8% de vos PV max pour lancer 3 morceau(x) d'or fin(s) vers l'avant. Le morceau transperce la cible, infligeant des <color=yellow>dégâts</color> de <sprite=1><color=#16D7FF>95%</color><sprite=5> aux ennemis touchés, et <color=yellow>soigne</color> les PV des alliés de <sprite=1><color=#16D7FF>18%</color><sprite=5>.",
     "rawDesc": "<color=yellow>Sacrifie</color> {0} de vos PV max pour lancer {1} morceau(x) d'or fin(s) vers l'avant. Le morceau transperce la cible, infligeant des <color=yellow>dégâts</color> de {2} aux ennemis touchés, et <color=yellow>soigne</color> les PV des alliés de {3}.",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "8%",
         "format": "P0",
         "raw": "sacrificeHpRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.08,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5285,7 +5452,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Charge des flèches psychiques en <color=yellow>maintenant longuement</color> la touche du déclenchement. En lâchant la touche, tire sur des ennemis proches 1 à 4<sprite=5> flèches psychiques, proportionnellement au temps de charge. Chaque flèche psychique inflige des <color=yellow>dégâts de ténèbres</color> de <sprite=2><color=#FF8A2D>150%</color><sprite=5> aux ennemis dans une étroite zone.",
+    "description": "Charge des flèches psychiques en <color=yellow>maintenant longuement</color> la touche du déclenchement. En lâchant la touche, tire sur des ennemis proches 1 à 4<sprite=5> flèches psychiques, proportionnellement au temps de charge. Chaque flèche psychique inflige des <color=yellow>dégâts de ténèbres</color> de <sprite=2><color=#FF8A2D>200%</color><sprite=5> aux ennemis dans une étroite zone.",
     "rawDesc": "Charge des flèches psychiques en <color=yellow>maintenant longuement</color> la touche du déclenchement. En lâchant la touche, tire sur des ennemis proches {0} à {1} flèches psychiques, proportionnellement au temps de charge. Chaque flèche psychique inflige des <color=yellow>dégâts de ténèbres</color> de {2} aux ennemis dans une étroite zone.",
     "rawDescVars": [
       {
@@ -5309,14 +5476,14 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.5,
+          "basicAD": 2.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5342,7 +5509,7 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Crée un anneau de feu autour de vous pendant 3 sec. À son contact, les ennemis subissent <color=yellow>dégâts de feu</color> de <sprite=1><color=#16D7FF>250%</color><sprite=5> toutes les sec.",
+    "description": "Crée un anneau de feu autour de vous pendant 3 sec. À son contact, les ennemis subissent <color=yellow>dégâts de feu</color> de <sprite=1><color=#16D7FF>350%</color><sprite=5> toutes les sec.",
     "rawDesc": "Crée un anneau de feu autour de vous pendant {0} sec. À son contact, les ennemis subissent <color=yellow>dégâts de feu</color> de {1} toutes les sec.",
     "rawDescVars": [
       {
@@ -5353,7 +5520,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*5",
         "scalingType": "unknown",
@@ -5399,7 +5566,7 @@
           "basicAP": 1.2,
           "basicAD": 0.0,
           "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
+          "basicAddedMultiplierPerLevel": 0.1
         }
       },
       {
@@ -5470,10 +5637,10 @@
         "raw": "speedAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 12.0,
+          "basicConstant": 13.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 3.0,
+          "basicLvl": 2.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5583,6 +5750,83 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "St_R_BaptismOfSun": {
+    "name": "Baptême du Soleil",
+    "cooldownTime": 7.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>Vesper</color> absorbe la puissance du soleil et déclenche une explosion, infligeant <sprite=1><color=#16D7FF>200%</color><sprite=5> de <color=yellow>dégâts de feu</color> aux ennemis proches et les forçant à l'attaquer. Pendant 6 s, la <color=yellow>vitesse d'attaque</color> augmente de 15%<sprite=5> et les <color=yellow>attaques</color> infligent <sprite=2><color=#FF8A2D>40%</color><sprite=5> de <color=yellow>dégâts de feu</color> supplémentaires.",
+    "rawDesc": "<color=yellow>Vesper</color> absorbe la puissance du soleil et déclenche une explosion, infligeant {0} de <color=yellow>dégâts de feu</color> aux ennemis proches et les forçant à l'attaquer. Pendant {1} s, la <color=yellow>vitesse d'attaque</color> augmente de {2} et les <color=yellow>attaques</color> infligent {3} de <color=yellow>dégâts de feu</color> supplémentaires.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "6",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 11.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 4.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>40%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "bonusDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.4,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "Provocation, Feu, Attaque",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Vesper",
+    "travelerMemoryLocation": "R",
+    "tags": [
+      "Fire",
+      "Melee",
+      "Attack"
+    ],
+    "image": "St_R_BaptismOfSun.png",
+    "lore": "Voyez ! La lumière consume les impuretés de ce monde ! \nDans la fournaise sacrée, seule la volonté du seigneur El'pyros subsistera, pure comme l'or. \n\nNous recevrons tous le baptême, alors hurlez votre gratitude !",
+    "achievementKey": "ACH_HOTTER_FIRE_WINS",
+    "achievementName": "La Flamme la Plus Ardente l'Emporte",
+    "achievementDescription": "Éliminez le géant ardent avec Vesper en possédant au moins 3 souvenirs de feu."
+  },
   "St_R_BlackArbalest": {
     "name": "Arbalète Noire",
     "cooldownTime": 11.0,
@@ -5626,7 +5870,8 @@
     "tags": [
       "Dark",
       "HardCC",
-      "Attack"
+      "Attack",
+      "Mobility"
     ],
     "image": "St_R_BlackArbalest.PNG",
     "lore": null,
@@ -5639,7 +5884,7 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Devient <color=yellow>inarrêtable</color> et <color=yellow>fonce</color> vers l'avant jusqu'à heurter un mur. Inflige aux ennemis heurtés des <color=yellow>dégâts</color> de <sprite=1><color=#16D7FF>135%</color><sprite=5> et les traîne avec vous. En heurtant un mur, émet une onde de choc qui inflige aux ennemis des <color=yellow>dégâts</color> de <sprite=1><color=#16D7FF>300%</color><sprite=5> et les <color=yellow>étourdit</color> pendant 1.5 sec.\nLors du déclenchement de cette Mémoire, obtient une <color=yellow>barrière</color> à hauteur de 10%<sprite=5> des <color=yellow>PV max</color>, qui se dissipe 1 sec après la fin de l'assaut.",
+    "description": "Devient <color=yellow>inarrêtable</color> et <color=yellow>fonce</color> vers l'avant jusqu'à heurter un mur. Inflige aux ennemis heurtés des <color=yellow>dégâts</color> de <sprite=1><color=#16D7FF>135%</color><sprite=5> et les traîne avec vous. En heurtant un mur, émet une onde de choc qui inflige aux ennemis des <color=yellow>dégâts</color> de <sprite=1><color=#16D7FF>420%</color><sprite=5> et les <color=yellow>étourdit</color> pendant 1.5 sec.\nLors du déclenchement de cette Mémoire, obtient une <color=yellow>barrière</color> à hauteur de 20%<sprite=5> des <color=yellow>PV max</color>, qui se dissipe 3 sec après la fin de l'assaut.",
     "rawDesc": "Devient <color=yellow>inarrêtable</color> et <color=yellow>fonce</color> vers l'avant jusqu'à heurter un mur. Inflige aux ennemis heurtés des <color=yellow>dégâts</color> de {0} et les traîne avec vous. En heurtant un mur, émet une onde de choc qui inflige aux ennemis des <color=yellow>dégâts</color> de {1} et les <color=yellow>étourdit</color> pendant {2} sec.\nLors du déclenchement de cette Mémoire, obtient une <color=yellow>barrière</color> à hauteur de {3} des <color=yellow>PV max</color>, qui se dissipe {4} sec après la fin de l'assaut.",
     "rawDescVars": [
       {
@@ -5656,13 +5901,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>420%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.0,
+          "basicAP": 4.2,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -5682,25 +5927,25 @@
         }
       },
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": "20%<sprite=5>",
         "format": "P0",
         "raw": "shieldMaxHpRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.08,
+          "basicConstant": 0.16,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.02,
+          "basicLvl": 0.04,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": "1",
+        "rendered": "3",
         "format": "#,##0.#",
         "raw": "shieldDisappearTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5730,7 +5975,7 @@
     "cooldownTime": 80.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Pendant 12 sec, obtient une barrière de <sprite=1><color=#16D7FF>150%</color><sprite=5> et augmente le <color=yellow>SORT</color> de 30%. Pendant la durée de l'effet, fait tomber la météorite sur l'emplacement ciblé en réutilisant le <color=yellow>Cataclysme</color> jusqu'à 3 fois. La météorite étourdit brièvement les ennemis et inflige des <color=yellow>dégâts de lumière</color> de <sprite=1><color=#16D7FF>250%</color><sprite=5>.",
+    "description": "Pendant 12 sec, obtient une barrière de <sprite=1><color=#16D7FF>150%</color><sprite=5> et augmente le <color=yellow>SORT</color> de 30%<sprite=5>. Pendant la durée de l'effet, fait tomber la météorite sur l'emplacement ciblé en réutilisant le <color=yellow>Cataclysme</color> jusqu'à 3 fois. La météorite étourdit brièvement les ennemis et inflige des <color=yellow>dégâts de lumière</color> de <sprite=1><color=#16D7FF>250%</color><sprite=5>.",
     "rawDesc": "Pendant {0} sec, obtient une barrière de {1} et augmente le <color=yellow>SORT</color> de {2}. Pendant la durée de l'effet, fait tomber la météorite sur l'emplacement ciblé en réutilisant le <color=yellow>Cataclysme</color> jusqu'à {3} fois. La météorite étourdit brièvement les ennemis et inflige des <color=yellow>dégâts de lumière</color> de {4}.",
     "rawDescVars": [
       {
@@ -5760,15 +6005,15 @@
         }
       },
       {
-        "rendered": "30%",
+        "rendered": "30%<sprite=5>",
         "format": "#,##0'%'",
         "raw": "bonusApPercent",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 30.0,
+          "basicConstant": 25.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 5.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5922,6 +6167,73 @@
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
+  },
+  "St_R_DancingBlades": {
+    "name": "Tempête de Lames",
+    "cooldownTime": 13.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Invoque une <color=yellow>Tempête de Lames</color> qui dure 4 sec dans la zone ciblée. La <color=yellow>Tempête de Lames</color> entaille rapidement autour d'elle, infligeant aux ennemis les <color=yellow>dégâts</color> les plus élevés entre <sprite=1><color=#16D7FF>85%</color><sprite=5> et <sprite=2><color=#FF8A2D>85%</color><sprite=5>, et ce toutes les 0.5 sec, tout en poursuivant l'ennemi le plus proche.",
+    "rawDesc": "Invoque une <color=yellow>Tempête de Lames</color> qui dure {0} sec dans la zone ciblée. La <color=yellow>Tempête de Lames</color> entaille rapidement autour d'elle, infligeant aux ennemis les <color=yellow>dégâts</color> les plus élevés entre {1} et {2}, et ce toutes les {3} sec, tout en poursuivant l'ennemi le plus proche.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "apDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.85,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "adDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.85,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "tickInterval",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Dégâts de zone continus",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [],
+    "image": "St_R_DancingBlades.png",
+    "lore": null,
+    "achievementKey": "ACH_ETERNAL_REST",
+    "achievementName": "Repos éternel",
+    "achievementDescription": "Portez 50 fois au total des coups de grâce à l'Épéiste Fantôme avec l'attaque de base."
   },
   "St_R_DangerousTheory": {
     "name": "Théorie Dangereuse",
@@ -6821,7 +7133,7 @@
   "St_R_QuickTrigger": {
     "name": "Main Rapide",
     "cooldownTime": 14.0,
-    "maxCharges": 2,
+    "maxCharges": 3,
     "addedCharges": 1,
     "description": "Tire rapidement 3 balle(s) perçante(s) qui infligent des dégâts de <sprite=2><color=#FF8A2D>120%</color><sprite=5> à un maximum de 3 ennemis.",
     "rawDesc": "Tire rapidement {0} balle(s) perçante(s) qui infligent des dégâts de {1} à un maximum de {2} ennemis.",
@@ -7470,9 +7782,22 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Charge l'électricité statique en <color=yellow>maintenant longuement</color> la touche du déclenchement. Une fois chargée, la fait exploser, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> proportionnels au temps de charge, allant de <sprite=1><color=#16D7FF>150%</color><sprite=5> à <sprite=1><color=#16D7FF>780%</color><sprite=5>. Repousse les cibles et réduit leur <color=yellow>VIT de DÉP</color>.\nLes dégâts et la zone de dégâts atteignent le maximum en chargeant pendant 1 sec.",
-    "rawDesc": "Charge l'électricité statique en <color=yellow>maintenant longuement</color> la touche du déclenchement. Une fois chargée, la fait exploser, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> proportionnels au temps de charge, allant de {0} à {1}. Repousse les cibles et réduit leur <color=yellow>VIT de DÉP</color>.\nLes dégâts et la zone de dégâts atteignent le maximum en chargeant pendant {2} sec.",
+    "description": "Maintenez la touche pour charger de l'électricité et gagner 40<sprite=5> d'armure. Relâchez pour déclencher une explosion qui inflige de <sprite=1><color=#16D7FF>150%</color><sprite=5> à <sprite=1><color=#16D7FF>780%</color><sprite=5> <color=yellow>dégâts de lumière</color> (selon le temps de charge), repousse les ennemis et réduit leur <color=yellow>vitesse de déplacement</color> de 60% pendant 2 s. L'armure disparaît 1 s après l'explosion.\n\nLes dégâts et la portée sont maximisés après 1 s de charge.",
+    "rawDesc": "Maintenez la touche pour charger de l'électricité et gagner {0} d'armure. Relâchez pour déclencher une explosion qui inflige de {1} à {2} <color=yellow>dégâts de lumière</color> (selon le temps de charge), repousse les ennemis et réduit leur <color=yellow>vitesse de déplacement</color> de {3} pendant {4} s. L'armure disparaît {5} s après l'explosion.\n\nLes dégâts et la portée sont maximisés après {6} s de charge.",
     "rawDescVars": [
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 37.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 3.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
       {
         "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
         "format": "#,##0",
@@ -7500,6 +7825,45 @@
         }
       },
       {
+        "rendered": "60%",
+        "format": "#,##0'%'",
+        "raw": "slowAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 60.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "slowDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "armorLingerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
         "rendered": "1",
         "format": "0.##",
         "raw": "channel.chargeFullDuration",
@@ -7513,7 +7877,7 @@
         }
       }
     ],
-    "shortDescription": "Dégâts de lumière de zone de proximité",
+    "shortDescription": "Dégâts de lumière de zone à proximité",
     "rarity": "Rare",
     "type": "Normal",
     "traveler": "",

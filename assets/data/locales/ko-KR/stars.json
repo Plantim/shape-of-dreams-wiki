@@ -239,15 +239,15 @@
       70,
       70,
       80,
-      0
+      80
     ],
     "requiredLevel": 55,
     "isRequiredLevelTotalMastery": true,
-    "description": "<color=yellow>4가지 원소</color>가 모두 적용된 적에게 내가 주는 모든 피해가 12%<sprite=5> 증가합니다.",
+    "description": "<color=yellow>4가지 원소</color>가 모두 적용된 적에게 내가 주는 모든 피해가 18%<sprite=5> 증가합니다.",
     "rawDesc": "<color=yellow>4가지 원소</color>가 모두 적용된 적에게 내가 주는 모든 피해가 {0} 증가합니다.",
     "rawDescVars": [
       {
-        "rendered": "12%<sprite=5>",
+        "rendered": "18%<sprite=5>",
         "format": "P0",
         "raw": "ampOnAllElemental",
         "scalingType": "star",
@@ -256,10 +256,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.12,
-            0.14,
-            0.16,
-            0.18
+            0.18,
+            0.2,
+            0.22,
+            0.24
           ],
           "strengthScaling": "Multiply"
         }
@@ -395,7 +395,7 @@
     ],
     "requiredLevel": 50,
     "isRequiredLevelTotalMastery": true,
-    "description": "<color=yellow>공격 속도</color>가 20% 감소합니다. <color=yellow>공격력</color>이 5<sprite=5> 증가합니다.",
+    "description": "<color=yellow>공격 속도</color>가 20% 감소합니다. <color=yellow>공격력</color>이 8<sprite=5> 증가합니다.",
     "rawDesc": "<color=yellow>공격 속도</color>가 {0} 감소합니다. <color=yellow>공격력</color>이 {1} 증가합니다.",
     "rawDescVars": [
       {
@@ -412,7 +412,7 @@
         }
       },
       {
-        "rendered": "5<sprite=5>",
+        "rendered": "8<sprite=5>",
         "format": "#,##0",
         "raw": "adBonus",
         "scalingType": "star",
@@ -421,10 +421,10 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            5.0,
-            7.0,
-            9.0,
-            12.0
+            8.0,
+            10.0,
+            12.0,
+            15.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -573,16 +573,16 @@
     ],
     "requiredLevel": 35,
     "isRequiredLevelTotalMastery": true,
-    "description": "첫 2개 세계를 완료할 동안 <color=yellow>주문력</color>이 10<sprite=5> 증가합니다.",
+    "description": "첫 3개 세계를 완료할 동안 <color=yellow>주문력</color>이 14<sprite=5> 증가합니다.",
     "rawDesc": "첫 {0}개 세계를 완료할 동안 <color=yellow>주문력</color>이 {1} 증가합니다.",
     "rawDescVars": [
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
         "raw": "buffedZoneCount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -590,7 +590,7 @@
         }
       },
       {
-        "rendered": "10<sprite=5>",
+        "rendered": "14<sprite=5>",
         "format": "#,##0",
         "raw": "bonusStatAmount",
         "scalingType": "star",
@@ -599,10 +599,10 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            10.0,
-            12.0,
             14.0,
-            16.0
+            16.0,
+            18.0,
+            20.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -624,16 +624,16 @@
     ],
     "requiredLevel": 45,
     "isRequiredLevelTotalMastery": true,
-    "description": "첫 2개 세계를 완료할 동안 <color=yellow>공격력</color>이 10<sprite=5> 증가합니다.",
+    "description": "첫 3개 세계를 완료할 동안 <color=yellow>공격력</color>이 14<sprite=5> 증가합니다.",
     "rawDesc": "첫 {0}개 세계를 완료할 동안 <color=yellow>공격력</color>이 {1} 증가합니다.",
     "rawDescVars": [
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
         "raw": "buffedZoneCount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -641,7 +641,7 @@
         }
       },
       {
-        "rendered": "10<sprite=5>",
+        "rendered": "14<sprite=5>",
         "format": "#,##0",
         "raw": "bonusStatAmount",
         "scalingType": "star",
@@ -650,10 +650,10 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            10.0,
-            12.0,
             14.0,
-            16.0
+            16.0,
+            18.0,
+            20.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -700,6 +700,44 @@
       }
     ],
     "image": "Se_Star_D_UltimateChargeSpeed.png"
+  },
+  "Se_Star_I_DismantleReroll": {
+    "name": "운명 거래하기",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      100,
+      90,
+      100
+    ],
+    "requiredLevel": 60,
+    "isRequiredLevelTotalMastery": true,
+    "description": "각 정수나 기억을 처음 <color=yellow>분해</color>하면 분해되는 대신 같은 희귀도의 무작위 물품으로 교체됩니다. 각 세계마다 최대 1<sprite=5>번 발동합니다.",
+    "rawDesc": "각 정수나 기억을 처음 <color=yellow>분해</color>하면 분해되는 대신 같은 희귀도의 무작위 물품으로 교체됩니다. 각 세계마다 최대 {0}번 발동합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxUses",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": true,
+          "clampMin": 1.0,
+          "clampMax": 100.0,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_DismantleReroll.png"
   },
   "Se_Star_I_AdditionalChaosChance": {
     "name": "태초의 혼돈",
@@ -870,6 +908,80 @@
     ],
     "image": "Se_Star_I_FirstGemUpgrade.png"
   },
+  "Se_Star_I_GemOnMiniBossKill": {
+    "name": "기묘한 전리품",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      110,
+      90,
+      100,
+      110
+    ],
+    "requiredLevel": 70,
+    "isRequiredLevelTotalMastery": true,
+    "description": "<color=yellow>소형 보스</color>를 처치하면 40%<sprite=5>의 확률로 무작위 정수를 획득합니다.",
+    "rawDesc": "<color=yellow>소형 보스</color>를 처치하면 {0}의 확률로 무작위 정수를 획득합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "chance",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.4,
+            0.6,
+            0.8,
+            1.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_GemOnMiniBossKill.png"
+  },
+  "Se_Star_I_GoldPerCrit": {
+    "name": "소매치기",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      90,
+      80,
+      90
+    ],
+    "requiredLevel": 55,
+    "isRequiredLevelTotalMastery": true,
+    "description": "<color=yellow>치명타 공격</color>이 개별 적에게 처음 적중할 때마다 0.7<sprite=5> 골드를 획득합니다.",
+    "rawDesc": "<color=yellow>치명타 공격</color>이 개별 적에게 처음 적중할 때마다 {0} 골드를 획득합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "0.7<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "goldAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.7,
+            1.0,
+            1.3
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_GoldPerCrit.png"
+  },
   "Se_Star_I_KillGoldBonus": {
     "name": "부의 축적",
     "lore": null,
@@ -907,6 +1019,44 @@
       }
     ],
     "image": "Se_Star_I_KillGoldBonus.png"
+  },
+  "Se_Star_I_MawDiscountAndProtection": {
+    "name": "깨끗하게 양치된 아귀",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      80,
+      60,
+      80,
+      100
+    ],
+    "requiredLevel": 65,
+    "isRequiredLevelTotalMastery": true,
+    "description": "<color=yellow>파멸의 아귀</color>의 가격이 20%<sprite=5> 감소합니다. 아귀가 물품을 집어삼켜 파괴하는 대신 레벨이나 품질을 초기화합니다.",
+    "rawDesc": "<color=yellow>파멸의 아귀</color>의 가격이 {0} 감소합니다. 아귀가 물품을 집어삼켜 파괴하는 대신 레벨이나 품질을 초기화합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "discountRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.2,
+            0.3,
+            0.4,
+            0.5
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_MawDiscountAndProtection.png"
   },
   "Se_Star_I_MoreShopItems": {
     "name": "괴물 같은 매력",
@@ -1153,6 +1303,44 @@
     ],
     "image": "Se_Star_L_Armor.png"
   },
+  "Se_Star_L_ArmorOnTravel": {
+    "name": "누더기 갑옷",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      85,
+      65,
+      75,
+      85
+    ],
+    "requiredLevel": 60,
+    "isRequiredLevelTotalMastery": true,
+    "description": "매 세계에 진입할 때마다 2.5<sprite=5>의 <color=yellow>방어력</color>을 얻습니다.",
+    "rawDesc": "매 세계에 진입할 때마다 {0}의 <color=yellow>방어력</color>을 얻습니다.",
+    "rawDescVars": [
+      {
+        "rendered": "2.5<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "armorAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            2.5,
+            3.0,
+            3.5,
+            4.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_ArmorOnTravel.png"
+  },
   "Se_Star_L_DamageReductionFromChilled": {
     "name": "냉기 친화",
     "lore": null,
@@ -1167,11 +1355,11 @@
     ],
     "requiredLevel": 40,
     "isRequiredLevelTotalMastery": true,
-    "description": "<color=yellow>한기</color>를 느끼는 적들에게 <color=yellow>받는 피해</color>가 12%<sprite=5> 감소합니다.",
+    "description": "<color=yellow>한기</color>를 느끼는 적들에게 <color=yellow>받는 피해</color>가 25%<sprite=5> 감소합니다.",
     "rawDesc": "<color=yellow>한기</color>를 느끼는 적들에게 <color=yellow>받는 피해</color>가 {0} 감소합니다.",
     "rawDescVars": [
       {
-        "rendered": "12%<sprite=5>",
+        "rendered": "25%<sprite=5>",
         "format": "P0",
         "raw": "reductionAmount",
         "scalingType": "star",
@@ -1180,10 +1368,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.12,
-            0.15,
-            0.18,
-            0.21
+            0.25,
+            0.3,
+            0.35,
+            0.4
           ],
           "strengthScaling": "Multiply"
         }
@@ -1294,11 +1482,11 @@
     ],
     "requiredLevel": 35,
     "isRequiredLevelTotalMastery": true,
-    "description": "자신에게 적용된 <color=yellow>원소 효과</color>의 지속 시간이 25%<sprite=5> 감소합니다. <color=yellow>화상</color>의 경우 지속 시간 대신 피해량이 감소합니다.",
+    "description": "자신에게 적용된 <color=yellow>원소 효과</color>의 지속 시간이 40%<sprite=5> 감소합니다. <color=yellow>화상</color>의 경우 지속 시간 대신 피해량이 감소합니다.",
     "rawDesc": "자신에게 적용된 <color=yellow>원소 효과</color>의 지속 시간이 {0} 감소합니다. <color=yellow>화상</color>의 경우 지속 시간 대신 피해량이 감소합니다.",
     "rawDescVars": [
       {
-        "rendered": "25%<sprite=5>",
+        "rendered": "40%<sprite=5>",
         "format": "P0",
         "raw": "durationReduction",
         "scalingType": "star",
@@ -1307,10 +1495,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.25,
-            0.3,
-            0.35,
-            0.4
+            0.4,
+            0.45,
+            0.5,
+            0.55
           ],
           "strengthScaling": "Multiply"
         }
@@ -1393,6 +1581,95 @@
       }
     ],
     "image": "Se_Star_L_GuidanceShrineDiscount.png"
+  },
+  "Se_Star_L_HealOnAttack": {
+    "name": "사악한 활력",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      80,
+      70,
+      80,
+      90
+    ],
+    "requiredLevel": 45,
+    "isRequiredLevelTotalMastery": true,
+    "description": "<color=yellow>기본 공격</color>이 적중할 때마다 최대 체력의 0.40%<sprite=5>만큼을 회복합니다. 치명타 공격인 경우 회복량이 150% 증가합니다.",
+    "rawDesc": "<color=yellow>기본 공격</color>이 적중할 때마다 최대 체력의 {0}만큼을 회복합니다. 치명타 공격인 경우 회복량이 {1} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "0.40%<sprite=5>",
+        "format": "P2",
+        "raw": "healRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.004,
+            0.005,
+            0.006,
+            0.007
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "150%",
+        "format": "P0",
+        "raw": "critAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_L_HealOnAttack.png"
+  },
+  "Se_Star_L_HealOnKill": {
+    "name": "전투 응급처치",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      70,
+      50,
+      65,
+      80
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": true,
+    "description": "적을 <color=yellow>처치</color>할 때마다 최대 체력의 1.00%<sprite=5>만큼을 회복합니다.",
+    "rawDesc": "적을 <color=yellow>처치</color>할 때마다 최대 체력의 {0}만큼을 회복합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "1.00%<sprite=5>",
+        "format": "P2",
+        "raw": "healRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.01,
+            0.015,
+            0.02,
+            0.025
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_HealOnKill.png"
   },
   "Se_Star_L_MaxHealth": {
     "name": "지속성 강화",
@@ -1484,11 +1761,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": true,
-    "description": "<color=yellow>체력 포션</color>의 회복량이 40%<sprite=5> 증가합니다.",
+    "description": "<color=yellow>체력 포션</color>의 회복량이 55%<sprite=5> 증가합니다.",
     "rawDesc": "<color=yellow>체력 포션</color>의 회복량이 {0} 증가합니다.",
     "rawDescVars": [
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": "55%<sprite=5>",
         "format": "P0",
         "raw": "ampAmount",
         "scalingType": "star",
@@ -1497,16 +1774,54 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.4,
-            0.5,
-            0.6,
-            0.7
+            0.55,
+            0.65,
+            0.75,
+            0.85
           ],
           "strengthScaling": "Multiply"
         }
       }
     ],
     "image": "Se_Star_L_PotionHealAmount.png"
+  },
+  "Se_Star_L_PotionOnBuyOrSell": {
+    "name": "소박한 사은품",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      80,
+      90
+    ],
+    "requiredLevel": 70,
+    "isRequiredLevelTotalMastery": true,
+    "description": "상점에서 물품을 구매하거나 판매하면 <color=yellow>체력 포션</color>을 얻습니다. 각 상인마다 최대 1<sprite=5>번 발동합니다.",
+    "rawDesc": "상점에서 물품을 구매하거나 판매하면 <color=yellow>체력 포션</color>을 얻습니다. 각 상인마다 최대 {0}번 발동합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxUses",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": true,
+          "clampMin": 1.0,
+          "clampMax": 100.0,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_PotionOnBuyOrSell.png"
   },
   "Se_Star_L_ReceivedHealingAndShieldBonus": {
     "name": "재생성 피부",
@@ -1814,16 +2129,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>연쇄 작용</color>이 더 이상 체력을 회복시키지 않지만 마법진에 의해 적이 사망할 때마다 재사용 대기시간이 10% 감소합니다.",
+    "description": "<color=yellow>연쇄 작용</color>이 더 이상 체력을 회복시키지 않지만 마법진에 의해 적이 사망할 때마다 재사용 대기시간이 15% 감소합니다.",
     "rawDesc": "<color=yellow>연쇄 작용</color>이 더 이상 체력을 회복시키지 않지만 마법진에 의해 적이 사망할 때마다 재사용 대기시간이 {0} 감소합니다.",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "15%",
         "format": "P0",
         "raw": "cooldownReductionRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.15,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1844,8 +2159,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>위험한 이론</color>의 강화된 시전의 체력 기준치가 40%로 낮아지지만 치유량이 40% 증가합니다.",
-    "rawDesc": "<color=yellow>위험한 이론</color>의 강화된 시전의 체력 기준치가 {0}로 낮아지지만 치유량이 {1} 증가합니다.",
+    "description": "<color=yellow>위험한 이론</color>의 강화된 시전의 체력 기준치가 40%로 낮아지지만 회복량이 40% 증가합니다.",
+    "rawDesc": "<color=yellow>위험한 이론</color>의 강화된 시전의 체력 기준치가 {0}로 낮아지지만 회복량이 {1} 증가합니다.",
     "rawDescVars": [
       {
         "rendered": "40%",
@@ -1887,16 +2202,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>위험한 이론</color>의 재사용 대기시간이 2초 증가하고 강화된 시전이 아니면 시전할 수 없게 되지만, 일반 공격을 2회 강화합니다.",
-    "rawDesc": "<color=yellow>위험한 이론</color>의 재사용 대기시간이 {0}초 증가하고 강화된 시전이 아니면 시전할 수 없게 되지만, 일반 공격을 {1}회 강화합니다.",
+    "description": "<color=yellow>위험한 이론</color>의 재사용 대기시간이 1초 증가하고 강화된 시전이 아니면 시전할 수 없게 되지만, 기본 공격을 2회 강화합니다.",
+    "rawDesc": "<color=yellow>위험한 이론</color>의 재사용 대기시간이 {0}초 증가하고 강화된 시전이 아니면 시전할 수 없게 되지만, 기본 공격을 {1}회 강화합니다.",
     "rawDescVars": [
       {
-        "rendered": "2",
+        "rendered": "1",
         "format": "#,##0.#",
         "raw": "cooldownPenalty",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2301,11 +2616,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "세계에 진입할 때 무작위 장소 2<sprite=5>개를 <color=yellow>밝힙니다</color>.",
+    "description": "세계에 진입할 때 무작위 장소 3<sprite=5>개를 <color=yellow>밝힙니다</color>.",
     "rawDesc": "세계에 진입할 때 무작위 장소 {0}개를 <color=yellow>밝힙니다</color>.",
     "rawDescVars": [
       {
-        "rendered": "2<sprite=5>",
+        "rendered": "3<sprite=5>",
         "format": "#,##0",
         "raw": "locationCount",
         "scalingType": "star",
@@ -2314,9 +2629,9 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            2.0,
             3.0,
-            4.0
+            4.0,
+            5.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -2375,16 +2690,16 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "체력이 30% 이하일 경우 <color=yellow>방어력</color>이 15<sprite=5> 증가합니다.",
+    "description": "체력이 40% 이하일 경우 <color=yellow>방어력</color>이 30<sprite=5> 증가합니다.",
     "rawDesc": "체력이 {0} 이하일 경우 <color=yellow>방어력</color>이 {1} 증가합니다.",
     "rawDescVars": [
       {
-        "rendered": "30%",
+        "rendered": "40%",
         "format": "P0",
         "raw": "healthRatioThreshold",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.3,
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2392,7 +2707,7 @@
         }
       },
       {
-        "rendered": "15<sprite=5>",
+        "rendered": "30<sprite=5>",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "star",
@@ -2401,9 +2716,9 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            15.0,
-            20.0,
-            25.0
+            30.0,
+            35.0,
+            40.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -2424,8 +2739,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "체력이 50% 이하일 경우 주거나 받는 <color=yellow>치유량</color>이 15%<sprite=5> 증가합니다.",
-    "rawDesc": "체력이 {0} 이하일 경우 주거나 받는 <color=yellow>치유량</color>이 {1} 증가합니다.",
+    "description": "체력이 50% 이하일 경우 주거나 받는 <color=yellow>회복량</color>이 15%<sprite=5> 증가합니다.",
+    "rawDesc": "체력이 {0} 이하일 경우 주거나 받는 <color=yellow>회복량</color>이 {1} 증가합니다.",
     "rawDescVars": [
       {
         "rendered": "50%",
@@ -2474,8 +2789,8 @@
     ],
     "requiredLevel": 30,
     "isRequiredLevelTotalMastery": false,
-    "description": "적에게 받는 피해가 20% 증가하지만 주거나 받는 치유량이 15%<sprite=5> 증가합니다.",
-    "rawDesc": "적에게 받는 피해가 {0} 증가하지만 주거나 받는 치유량이 {1} 증가합니다.",
+    "description": "적에게 받는 피해가 20% 증가하지만 주거나 받는 회복량이 15%<sprite=5> 증가합니다.",
+    "rawDesc": "적에게 받는 피해가 {0} 증가하지만 주거나 받는 회복량이 {1} 증가합니다.",
     "rawDescVars": [
       {
         "rendered": "20%",
@@ -2524,8 +2839,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "체력을 회복받으면 치유량의 20%<sprite=5>만큼 주변에서 가장 체력이 낮은 아군의 체력을 <color=yellow>회복</color>합니다.",
-    "rawDesc": "체력을 회복받으면 치유량의 {0}만큼 주변에서 가장 체력이 낮은 아군의 체력을 <color=yellow>회복</color>합니다.",
+    "description": "체력을 회복받으면 회복량의 20%<sprite=5>만큼 주변에서 가장 체력이 낮은 자신이 아닌 아군의 체력을 <color=yellow>회복</color>합니다.",
+    "rawDesc": "체력을 회복받으면 회복량의 {0}만큼 주변에서 가장 체력이 낮은 자신이 아닌 아군의 체력을 <color=yellow>회복</color>합니다.",
     "rawDescVars": [
       {
         "rendered": "20%<sprite=5>",
@@ -2750,8 +3065,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "최대 체력이 15% 감소하는 대신, 일반 공격 시 25%<sprite=5>의 확률로 <color=yellow>공격 효과</color>를 발동하는 화살을 추가로 발사합니다.",
-    "rawDesc": "최대 체력이 {0} 감소하는 대신, 일반 공격 시 {1}의 확률로 <color=yellow>공격 효과</color>를 발동하는 화살을 추가로 발사합니다.",
+    "description": "최대 체력이 15% 감소하는 대신, 기본 공격 시 25%<sprite=5>의 확률로 <color=yellow>공격 효과</color>를 발동하는 화살을 추가로 발사합니다.",
+    "rawDesc": "최대 체력이 {0} 감소하는 대신, 기본 공격 시 {1}의 확률로 <color=yellow>공격 효과</color>를 발동하는 화살을 추가로 발사합니다.",
     "rawDescVars": [
       {
         "rendered": "15%",
@@ -2799,8 +3114,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "일반 공격 시 <color=yellow>조율</color> 중첩을 1 얻습니다. 조율 중첩은 최대 8개까지 보유할 수 있으며, 중첩 하나당 공격력과 주문력이 0.5<sprite=5> 증가합니다. 적에게 피해를 입으면 중첩이 모두 사라집니다.",
-    "rawDesc": "일반 공격 시 <color=yellow>조율</color> 중첩을 1 얻습니다. 조율 중첩은 최대 {0}개까지 보유할 수 있으며, 중첩 하나당 공격력과 주문력이 {1} 증가합니다. 적에게 피해를 입으면 중첩이 모두 사라집니다.",
+    "description": "기본 공격 시 <color=yellow>조율</color> 중첩을 1 얻습니다. 조율 중첩은 최대 8개까지 보유할 수 있으며, 중첩 하나당 공격력과 주문력이 0.5<sprite=5> 증가합니다. 적에게 피해를 입으면 중첩이 모두 사라집니다.",
+    "rawDesc": "기본 공격 시 <color=yellow>조율</color> 중첩을 1 얻습니다. 조율 중첩은 최대 {0}개까지 보유할 수 있으며, 중첩 하나당 공격력과 주문력이 {1} 증가합니다. 적에게 피해를 입으면 중첩이 모두 사라집니다.",
     "rawDescVars": [
       {
         "rendered": "8",
@@ -2837,7 +3152,7 @@
   },
   "Se_Star_Bismuth_D_SkillHasteAndAutoCast": {
     "name": "책이 직접 쓰는 이야기",
-    "lore": null,
+    "lore": "가끔, 이야기는 너무나도 흥미진진해져서 저절로 다음 장으로 넘어가곤 합니다. 소녀는 그저, 책이 쓰는 멋진 이야기들을 가만히 지켜보기만 하면 된답니다.",
     "category": "Destruction",
     "heroType": "Hero_Bismuth",
     "maxLevel": 4,
@@ -2849,11 +3164,11 @@
     ],
     "requiredLevel": 30,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>기억 가속</color>이 15<sprite=5> 증가하고 전투 중에 대부분의 기억이 <color=yellow>자동으로 시전</color>됩니다.",
+    "description": "<color=yellow>기억 가속</color>이 8<sprite=5> 증가하고 전투 중에 대부분의 기억이 <color=yellow>자동으로 시전</color>됩니다.",
     "rawDesc": "<color=yellow>기억 가속</color>이 {0} 증가하고 전투 중에 대부분의 기억이 <color=yellow>자동으로 시전</color>됩니다.",
     "rawDescVars": [
       {
-        "rendered": "15<sprite=5>",
+        "rendered": "8<sprite=5>",
         "format": "#,##0",
         "raw": "bonusAmount",
         "scalingType": "star",
@@ -2862,10 +3177,10 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            15.0,
-            20.0,
-            25.0,
-            30.0
+            8.0,
+            12.0,
+            16.0,
+            20.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -2927,16 +3242,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>왜곡된 정신</color>의 최대 화살 갯수가 4 증가하지만 충전 중에 움직일 수 없습니다.",
+    "description": "<color=yellow>왜곡된 정신</color>의 최대 화살 갯수가 7 증가하지만 충전 중에 움직일 수 없습니다.",
     "rawDesc": "<color=yellow>왜곡된 정신</color>의 최대 화살 갯수가 {0} 증가하지만 충전 중에 움직일 수 없습니다.",
     "rawDescVars": [
       {
-        "rendered": "4",
+        "rendered": "7",
         "format": "#,##0",
         "raw": "increased",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 4.0,
+          "basicConstant": 7.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3196,7 +3511,7 @@
   },
   "Se_Star_Bismuth_F_VH_FullCharge": {
     "name": "이제 두렵지 않아",
-    "lore": null,
+    "lore": "이제, 나쁜 악당들이 아무리 많이 나타나도 괜찮아요. 소녀의 손에는, 언제나 그들을 물리칠 용기가 가득할 테니까요!",
     "category": "Flexible",
     "heroType": "Hero_Bismuth",
     "maxLevel": 1,
@@ -3221,9 +3536,23 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>왜곡하는 질주</color>를 사용하면 <color=yellow>용감한 마음</color>의 재사용 대기시간이 초기화됩니다.",
-    "rawDesc": "<color=yellow>왜곡하는 질주</color>를 사용하면 <color=yellow>용감한 마음</color>의 재사용 대기시간이 초기화됩니다.",
-    "rawDescVars": [],
+    "description": "<color=yellow>왜곡하는 질주</color>를 사용하면 <color=yellow>용감한 마음</color>의 재사용 대기시간이 초기화되지만 최대 2명의 적에게만 적중합니다.",
+    "rawDesc": "<color=yellow>왜곡하는 질주</color>를 사용하면 <color=yellow>용감한 마음</color>의 재사용 대기시간이 초기화되지만 최대 {0}명의 적에게만 적중합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "targetLimitCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Bismuth_F_VH_ResetOnDodge.png"
   },
   "Se_Star_Bismuth_F_VH_Shield": {
@@ -3384,7 +3713,7 @@
   },
   "Se_Star_Bismuth_I_RevealWorld": {
     "name": "마음의 눈",
-    "lore": null,
+    "lore": "소녀가 책을 통해 세상을 바라보면, 아무것도 없던 빈 곳에 다음 모험이 기다리는 과자 집이 나타나곤 했답니다.",
     "category": "Imagination",
     "heroType": "Hero_Bismuth",
     "maxLevel": 3,
@@ -3618,7 +3947,7 @@
   },
   "Se_Star_Bismuth_L_ContinuousSpeed": {
     "name": "가벼운 발걸음",
-    "lore": null,
+    "lore": "소녀의 작은 맨발이 걱정되나요? 괜찮아요. 소녀는 거친 땅 위를 걷는 게 아니라 폭신한 구름 위를 사뿐사뿐, 신나게 여행하는 중인걸요!",
     "category": "Life",
     "heroType": "Hero_Bismuth",
     "maxLevel": 4,
@@ -3817,7 +4146,7 @@
   },
   "Se_Star_Husk_D_DamageAmpOnLowHpTarget": {
     "name": "무자비",
-    "lore": null,
+    "lore": "감정 없는 그에게 있어, 적에게 베푸는 자비란 비효율의 극치일 뿐입니다.",
     "category": "Destruction",
     "heroType": "Hero_Husk",
     "maxLevel": 4,
@@ -3880,8 +4209,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "받는 치유량이 30% 감소하지만 <color=yellow>치명타</color>가 적중하면 대상에게 피해량의 15%<sprite=5>만큼의 추가 피해를 2초에 걸쳐 입힙니다.",
-    "rawDesc": "받는 치유량이 {0} 감소하지만 <color=yellow>치명타</color>가 적중하면 대상에게 피해량의 {1}만큼의 추가 피해를 {2}초에 걸쳐 입힙니다.",
+    "description": "받는 회복량이 30% 감소하지만 <color=yellow>치명타</color>가 적중하면 대상에게 피해량의 15%<sprite=5>만큼의 추가 피해를 2초에 걸쳐 입힙니다.",
+    "rawDesc": "받는 회복량이 {0} 감소하지만 <color=yellow>치명타</color>가 적중하면 대상에게 피해량의 {1}만큼의 추가 피해를 {2}초에 걸쳐 입힙니다.",
     "rawDescVars": [
       {
         "rendered": "30%",
@@ -3937,8 +4266,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "최대 체력이 15% 감소하지만 <color=yellow>공격 속도</color>가 8%<sprite=5> 증가하고 일반 공격이 <color=yellow>어둠 피해</color>가 됩니다.",
-    "rawDesc": "최대 체력이 {0} 감소하지만 <color=yellow>공격 속도</color>가 {1} 증가하고 일반 공격이 <color=yellow>어둠 피해</color>가 됩니다.",
+    "description": "최대 체력이 15% 감소하지만 <color=yellow>공격 속도</color>가 8%<sprite=5> 증가하고 기본 공격이 <color=yellow>어둠 피해</color>가 됩니다.",
+    "rawDesc": "최대 체력이 {0} 감소하지만 <color=yellow>공격 속도</color>가 {1} 증가하고 기본 공격이 <color=yellow>어둠 피해</color>가 됩니다.",
     "rawDescVars": [
       {
         "rendered": "15%",
@@ -4076,8 +4405,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>멸살 태세</color> 도중에 일반 공격이나 검기에 적이 적중할 때마다 지속 시간이 0.2초 증가합니다.",
-    "rawDesc": "<color=yellow>멸살 태세</color> 도중에 일반 공격이나 검기에 적이 적중할 때마다 지속 시간이 {0}초 증가합니다.",
+    "description": "<color=yellow>멸살 태세</color> 도중에 기본 공격이나 검기에 적이 적중할 때마다 지속 시간이 0.2초 증가합니다.",
+    "rawDesc": "<color=yellow>멸살 태세</color> 도중에 기본 공격이나 검기에 적이 적중할 때마다 지속 시간이 {0}초 증가합니다.",
     "rawDescVars": [
       {
         "rendered": "0.2",
@@ -4162,16 +4491,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>멸살 태세</color>가 검기를 발사하지 않는 대신 50% 더 자주 공격합니다.",
+    "description": "<color=yellow>멸살 태세</color>가 검기를 발사하지 않는 대신 100% 더 자주 공격합니다.",
     "rawDesc": "<color=yellow>멸살 태세</color>가 검기를 발사하지 않는 대신 {0} 더 자주 공격합니다.",
     "rawDescVars": [
       {
-        "rendered": "50%",
+        "rendered": "100%",
         "format": "P0",
         "raw": "speedAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4183,7 +4512,7 @@
   },
   "Se_Star_Husk_F_LA_DodgeResetOnRed": {
     "name": "기의 흐름",
-    "lore": null,
+    "lore": "흐름에 몸을 맡기고 발을 내딛습니다. 완벽하고, 무심하게.",
     "category": "Flexible",
     "heroType": "Hero_Husk",
     "maxLevel": 1,
@@ -4320,7 +4649,7 @@
   },
   "Se_Star_Husk_I_ShopIntimidation": {
     "name": "섬뜩한 외눈박이 인형",
-    "lore": null,
+    "lore": "그는 협박은 가장 효율적이고 간편한 수단이라고 생각합니다. 물론 비교적 용감한 조너스에게는 통하지 않습니다.",
     "category": "Imagination",
     "heroType": "Hero_Husk",
     "maxLevel": 3,
@@ -4464,8 +4793,8 @@
     ],
     "requiredLevel": 30,
     "isRequiredLevelTotalMastery": false,
-    "description": "적을 처치하거나 보스에게 일반 공격 시 <color=yellow>순보</color>의 재사용 대기시간이 10%<sprite=5> 감소합니다.",
-    "rawDesc": "적을 처치하거나 보스에게 일반 공격 시 <color=yellow>순보</color>의 재사용 대기시간이 {0} 감소합니다.",
+    "description": "적을 처치하거나 보스에게 기본 공격 시 <color=yellow>순보</color>의 재사용 대기시간이 10%<sprite=5> 감소합니다.",
+    "rawDesc": "적을 처치하거나 보스에게 기본 공격 시 <color=yellow>순보</color>의 재사용 대기시간이 {0} 감소합니다.",
     "rawDescVars": [
       {
         "rendered": "10%<sprite=5>",
@@ -4490,7 +4819,7 @@
   },
   "Se_Star_Husk_L_DodgeCooldownOnKillWithEmptyCharges": {
     "name": "무아지경",
-    "lore": null,
+    "lore": "감정의 족쇄가 풀린 인형의 육체, 효율적이고 완벽한 움직임, 그리고 피바다의 한 가운데.",
     "category": "Life",
     "heroType": "Hero_Husk",
     "maxLevel": 2,
@@ -4746,16 +5075,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>핸드 캐논</color>이 무조건 적을 밀쳐내며 적들의 <color=yellow>이동 속도</color>를 2초 동안 50% 감소시킵니다.",
+    "description": "<color=yellow>핸드 캐논</color>이 무조건 적을 밀쳐내며 적들의 <color=yellow>이동 속도</color>를 4초 동안 75% 감소시킵니다.",
     "rawDesc": "<color=yellow>핸드 캐논</color>이 무조건 적을 밀쳐내며 적들의 <color=yellow>이동 속도</color>를 {0}초 동안 {1} 감소시킵니다.",
     "rawDescVars": [
       {
-        "rendered": "2",
+        "rendered": "4",
         "format": "#,##0.#",
         "raw": "slowDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4763,12 +5092,12 @@
         }
       },
       {
-        "rendered": "50%",
+        "rendered": "75%",
         "format": "#,##0'%'",
         "raw": "slowAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 50.0,
+          "basicConstant": 75.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4789,16 +5118,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>핸드 캐논</color>이 가까운 적에게 주는 피해가 80% 증가합니다.",
+    "description": "<color=yellow>핸드 캐논</color>이 가까운 적에게 주는 피해가 150% 증가합니다.",
     "rawDesc": "<color=yellow>핸드 캐논</color>이 가까운 적에게 주는 피해가 {0} 증가합니다.",
     "rawDescVars": [
       {
-        "rendered": "80%",
+        "rendered": "150%",
         "format": "P0",
         "raw": "nearDamageAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.8,
+          "basicConstant": 1.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5040,8 +5369,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>빠른 손</color>의 충전량이 1으로 감소하지만 6발을 동시에 발사합니다.",
-    "rawDesc": "<color=yellow>빠른 손</color>의 충전량이 1으로 감소하지만 6발을 동시에 발사합니다.",
+    "description": "<color=yellow>빠른 손</color>의 충전량이 1 감소하지만 6발을 발사합니다.",
+    "rawDesc": "<color=yellow>빠른 손</color>의 충전량이 1 감소하지만 6발을 발사합니다.",
     "rawDescVars": [],
     "image": "Se_Star_Lacerta_F_QT_RapidFire.png"
   },
@@ -5085,7 +5414,7 @@
   },
   "Se_Star_Lacerta_I_BossBounty": {
     "name": "야생 괴물 사냥꾼",
-    "lore": null,
+    "lore": "<i>\"Killing Monsters\"</i>",
     "category": "Imagination",
     "heroType": "Hero_Lacerta",
     "maxLevel": 3,
@@ -5096,11 +5425,11 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>보스</color>를 처치할 때마다 추가로 30<sprite=5> 골드를 획득합니다.",
+    "description": "<color=yellow>보스</color>를 처치할 때마다 추가로 45<sprite=5> 골드를 획득합니다.",
     "rawDesc": "<color=yellow>보스</color>를 처치할 때마다 추가로 {0} 골드를 획득합니다.",
     "rawDescVars": [
       {
-        "rendered": "30<sprite=5>",
+        "rendered": "45<sprite=5>",
         "format": "#,##0",
         "raw": "bonusGold",
         "scalingType": "star",
@@ -5109,9 +5438,9 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            30.0,
             45.0,
-            60.0
+            60.0,
+            75.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -5231,7 +5560,7 @@
   },
   "Se_Star_Lacerta_L_SpeedAfterDodge": {
     "name": "유연한 도마뱀",
-    "lore": null,
+    "lore": "리자드맨의 놀랍도록 유연한 신체는 어떤 상황에서도 유효한 사격각을 만들어내는데 큰 도움이 됩니다.",
     "category": "Life",
     "heroType": "Hero_Lacerta",
     "maxLevel": 3,
@@ -5280,7 +5609,7 @@
   },
   "Se_Star_Mist_I_CamillasGift": {
     "name": "카밀라의 선물",
-    "lore": null,
+    "lore": "그녀의 후견인인 카밀라의 호의는 일방적이지 않았습니다. 분명, 미스트에게도 그녀는 소중한 인연으로 남아있습니다.",
     "category": "Imagination",
     "heroType": "Hero_Mist",
     "maxLevel": 3,
@@ -5537,7 +5866,7 @@
   },
   "Se_Star_Mist_D_HunterDamage": {
     "name": "드디어 괜찮은 상대를 만났군",
-    "lore": null,
+    "lore": "그녀는 비밀 결투와 공식 결투에서 단 한번도 패배한 적이 없습니다.",
     "category": "Destruction",
     "heroType": "Hero_Mist",
     "maxLevel": 3,
@@ -5846,7 +6175,7 @@
   },
   "Se_Star_Mist_F_PR_PerfectParry": {
     "name": "최선의 공격은 방어",
-    "lore": null,
+    "lore": "그녀는 서두르지 않습니다. 가장 중요한 기회는 적이 공격하는 순간에 오는 법이니까요.",
     "category": "Flexible",
     "heroType": "Hero_Mist",
     "maxLevel": 1,
@@ -5898,16 +6227,42 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>튕겨내기</color>에 성공하면 튕겨낸 피해의 100%에 해당하는 보호막을 얻고 다음 공격이 치명타가 됩니다.",
-    "rawDesc": "<color=yellow>튕겨내기</color>에 성공하면 튕겨낸 피해의 {0}에 해당하는 보호막을 얻고 다음 공격이 치명타가 됩니다.",
+    "description": "<color=yellow>튕겨내기</color>에 성공하면 다음 공격이 치명타가 되며, 튕겨낸 피해의 250%만큼 4초에 걸쳐 사라지는 보호막을 얻습니다. 보호막의 지속 시간은 튕겨내기를 강화할 때마다 0.5초씩 증가합니다.",
+    "rawDesc": "<color=yellow>튕겨내기</color>에 성공하면 다음 공격이 치명타가 되며, 튕겨낸 피해의 {0}만큼 {1}초에 걸쳐 사라지는 보호막을 얻습니다. 보호막의 지속 시간은 튕겨내기를 강화할 때마다 {2}초씩 증가합니다.",
     "rawDescVars": [
       {
-        "rendered": "100%",
+        "rendered": "250%",
         "format": "P0",
         "raw": "shieldRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "shieldDecayDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "shieldDecayDurationBonusPerLevel",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5928,16 +6283,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>부서지지 않는 의지</color>의 지속 시간이 50% 감소하지만 첫 폭발의 피해량이 200% 증가합니다.",
+    "description": "<color=yellow>부서지지 않는 의지</color>의 지속 시간이 30% 감소하지만 첫 폭발의 피해량이 200% 증가합니다.",
     "rawDesc": "<color=yellow>부서지지 않는 의지</color>의 지속 시간이 {0} 감소하지만 첫 폭발의 피해량이 {1} 증가합니다.",
     "rawDescVars": [
       {
-        "rendered": "50%",
+        "rendered": "30%",
         "format": "P0",
         "raw": "durationReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 0.3,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6002,11 +6357,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>고양이</color>를 쓰다듬으면 400<sprite=5>의 골드와 400<sprite=5>의 꿈가루를 획득합니다.",
+    "description": "<color=yellow>고양이</color>를 쓰다듬으면 800<sprite=5>의 골드와 800<sprite=5>의 꿈가루를 획득합니다.",
     "rawDesc": "<color=yellow>고양이</color>를 쓰다듬으면 {0}의 골드와 {1}의 꿈가루를 획득합니다.",
     "rawDescVars": [
       {
-        "rendered": "400<sprite=5>",
+        "rendered": "800<sprite=5>",
         "format": "#,##0",
         "raw": "goldAmount",
         "scalingType": "star",
@@ -6015,14 +6370,14 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            400.0,
-            800.0
+            800.0,
+            1200.0
           ],
           "strengthScaling": "Multiply"
         }
       },
       {
-        "rendered": "400<sprite=5>",
+        "rendered": "800<sprite=5>",
         "format": "#,##0",
         "raw": "dreamDustAmount",
         "scalingType": "star",
@@ -6031,8 +6386,8 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            400.0,
-            800.0
+            800.0,
+            1200.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -6054,11 +6409,11 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "모험을 시작할 때 90<sprite=5>의 <color=yellow>골드</color>를 획득하지만, 상인이 판매하는 물품의 골드 가격이 10% 증가합니다.",
+    "description": "모험을 시작할 때 150<sprite=5>의 <color=yellow>골드</color>를 획득하지만, 상인이 판매하는 물품의 골드 가격이 10% 증가합니다.",
     "rawDesc": "모험을 시작할 때 {0}의 <color=yellow>골드</color>를 획득하지만, 상인이 판매하는 물품의 골드 가격이 {1} 증가합니다.",
     "rawDescVars": [
       {
-        "rendered": "90<sprite=5>",
+        "rendered": "150<sprite=5>",
         "format": "#,##0",
         "raw": "addedGoldAmount",
         "scalingType": "star",
@@ -6067,10 +6422,10 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            90.0,
-            120.0,
             150.0,
-            180.0
+            180.0,
+            210.0,
+            240.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -6530,8 +6885,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>달빛의 서약</color>을 시전할 수 없게 되는 대신 펜리르의 방어력이 60 증가하고 일반 공격 피해량이 30% 증가합니다.",
-    "rawDesc": "<color=yellow>달빛의 서약</color>을 시전할 수 없게 되는 대신 펜리르의 방어력이 {0} 증가하고 일반 공격 피해량이 {1} 증가합니다.",
+    "description": "<color=yellow>달빛의 서약</color>을 시전할 수 없게 되는 대신 펜리르의 방어력이 60 증가하고 기본 공격 피해량이 30% 증가합니다.",
+    "rawDesc": "<color=yellow>달빛의 서약</color>을 시전할 수 없게 되는 대신 펜리르의 방어력이 {0} 증가하고 기본 공격 피해량이 {1} 증가합니다.",
     "rawDescVars": [
       {
         "rendered": "60",
@@ -6573,16 +6928,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>자연의 속삭임</color>의 재사용 대기시간이 70% 감소하는 대신 공격 속도 증가량도 70% 감소합니다.",
+    "description": "<color=yellow>자연의 속삭임</color>의 재사용 대기시간이 80% 감소하는 대신 공격 속도 증가량도 50% 감소합니다.",
     "rawDesc": "<color=yellow>자연의 속삭임</color>의 재사용 대기시간이 {0} 감소하는 대신 공격 속도 증가량도 {1} 감소합니다.",
     "rawDescVars": [
       {
-        "rendered": "70%",
+        "rendered": "80%",
         "format": "P0",
         "raw": "cooldownReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.7,
+          "basicConstant": 0.8,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6590,12 +6945,12 @@
         }
       },
       {
-        "rendered": "70%",
+        "rendered": "50%",
         "format": "P0",
         "raw": "hasteReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.7,
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6646,23 +7001,9 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>자연의 속삭임</color>의 재사용 대기시간이 1.5초 증가하는 대신 소환수들을 즉시 대상 위치로 순간 이동시킵니다.",
-    "rawDesc": "<color=yellow>자연의 속삭임</color>의 재사용 대기시간이 {0}초 증가하는 대신 소환수들을 즉시 대상 위치로 순간 이동시킵니다.",
-    "rawDescVars": [
-      {
-        "rendered": "1.5",
-        "format": "#,##0.#",
-        "raw": "cooldownPenalty",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 1.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      }
-    ],
+    "description": "<color=yellow>자연의 속삭임</color>이 소환수들을 즉시 대상 위치로 순간 이동시킵니다.",
+    "rawDesc": "<color=yellow>자연의 속삭임</color>이 소환수들을 즉시 대상 위치로 순간 이동시킵니다.",
+    "rawDescVars": [],
     "image": "Se_Star_Nachia_F_NW_Teleport.png"
   },
   "Se_Star_Nachia_F_SB_DurationBonus": {
@@ -6757,7 +7098,7 @@
   },
   "Se_Star_Nachia_F_SC_AtkEffect": {
     "name": "예리한 발톱",
-    "lore": null,
+    "lore": "강아지에게 있어 주기적인 발톱 관리는 필수입니다.",
     "category": "Flexible",
     "heroType": "Hero_Nachia",
     "maxLevel": 1,
@@ -6910,7 +7251,7 @@
     ],
     "requiredLevel": 30,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>격동의 숲</color>에서 이동 속도가 8%<sprite=5> 증가하고 적을 처치할 때마다 1<sprite=5>의 꿈가루를 얻습니다.",
+    "description": "<color=yellow>격동의 숲</color>에서 이동 속도가 8%<sprite=5> 증가하고 적을 처치할 때마다 0.5<sprite=5>의 꿈가루를 얻습니다.",
     "rawDesc": "<color=yellow>격동의 숲</color>에서 이동 속도가 {0} 증가하고 적을 처치할 때마다 {1}의 꿈가루를 얻습니다.",
     "rawDescVars": [
       {
@@ -6931,20 +7272,18 @@
         }
       },
       {
-        "rendered": "1<sprite=5>",
-        "format": "#,##0",
+        "rendered": "0.5<sprite=5>",
+        "format": "#,##0.##",
         "raw": "dreamDustAmount",
         "scalingType": "star",
         "data": {
           "levels": 3,
-          "isClamped": true,
-          "clampMin": 1.0,
-          "clampMax": 100.0,
-          "isInteger": true,
+          "isClamped": false,
+          "isInteger": false,
           "values": [
-            1.0,
-            2.0,
-            3.0
+            0.5,
+            0.75,
+            1.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -7037,8 +7376,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>소환수</color>가 일반 공격으로 적을 처치하면 25% 확률로 2<sprite=5> 골드를 추가로 얻습니다.",
-    "rawDesc": "<color=yellow>소환수</color>가 일반 공격으로 적을 처치하면 {0} 확률로 {1} 골드를 추가로 얻습니다.",
+    "description": "<color=yellow>소환수</color>가 기본 공격으로 적을 처치하면 25% 확률로 2<sprite=5> 골드를 추가로 얻습니다.",
+    "rawDesc": "<color=yellow>소환수</color>가 기본 공격으로 적을 처치하면 {0} 확률로 {1} 골드를 추가로 얻습니다.",
     "rawDescVars": [
       {
         "rendered": "25%",
@@ -7135,8 +7474,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "자신에게 주는 <color=yellow>치유량</color>과 <color=yellow>보호막량</color>이 5%<sprite=5>, 자신이 아닌 아군에게 주는 치유량과 보호막량이 15%<sprite=5> 증가합니다.",
-    "rawDesc": "자신에게 주는 <color=yellow>치유량</color>과 <color=yellow>보호막량</color>이 {0}, 자신이 아닌 아군에게 주는 치유량과 보호막량이 {1} 증가합니다.",
+    "description": "자신에게 주는 <color=yellow>회복량</color>과 <color=yellow>보호막량</color>이 5%<sprite=5>, 자신이 아닌 아군에게 주는 회복량과 보호막량이 15%<sprite=5> 증가합니다.",
+    "rawDesc": "자신에게 주는 <color=yellow>회복량</color>과 <color=yellow>보호막량</color>이 {0}, 자신이 아닌 아군에게 주는 회복량과 보호막량이 {1} 증가합니다.",
     "rawDescVars": [
       {
         "rendered": "5%<sprite=5>",
@@ -7269,7 +7608,7 @@
   },
   "Se_Star_Nachia_L_WaltzArmor": {
     "name": "보호의 춤",
-    "lore": null,
+    "lore": "그녀가 있는 곳에는 새와 동물, 순수한 정령들이 모여들어 작은 평화의 영역을 만듭니다.",
     "category": "Life",
     "heroType": "Hero_Nachia",
     "maxLevel": 4,
@@ -7573,11 +7912,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "주문력의 20%<sprite=5>가 <color=yellow>공격력</color>으로 전환됩니다.",
-    "rawDesc": "주문력의 {0}가 <color=yellow>공격력</color>으로 전환됩니다.",
+    "description": "<color=yellow>주문력</color>의 25%<sprite=5>만큼 <color=yellow>공격력</color>을 얻습니다.",
+    "rawDesc": "<color=yellow>주문력</color>의 {0}만큼 <color=yellow>공격력</color>을 얻습니다.",
     "rawDescVars": [
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": "25%<sprite=5>",
         "format": "P0",
         "raw": "ratio",
         "scalingType": "star",
@@ -7586,16 +7925,119 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.2,
+            0.25,
             0.3,
-            0.4,
-            0.5
+            0.35,
+            0.4
           ],
           "strengthScaling": "Multiply"
         }
       }
     ],
     "image": "Se_Star_Vesper_D_ConvertAPToAD.png"
+  },
+  "Se_Star_Vesper_F_BS_AddedDurationPerAtk": {
+    "name": "끝 없는 망치질",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>태양의 세례</color>에 영향을 받는 도중 기본 공격 시 <color=yellow>지속 시간</color>이 0.2초 증가합니다.",
+    "rawDesc": "<color=yellow>태양의 세례</color>에 영향을 받는 도중 기본 공격 시 <color=yellow>지속 시간</color>이 {0}초 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "0.2",
+        "format": "#,##0.#",
+        "raw": "addedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_AddedDurationPerAtk.png"
+  },
+  "Se_Star_Vesper_F_BS_ADWithArmor": {
+    "name": "고통 없이는 얻는 것도 없다",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>태양의 세례</color>가 공격 속도를 증가시키는 대신 <color=yellow>공격력</color>을 같은 비율만큼 증가시키며, 첫 폭발에 적중한 적 하나당 10의 <color=yellow>방어력</color>을 부여합니다. 보스에게 적중하는 경우 40의 방어력을 부여합니다.",
+    "rawDesc": "<color=yellow>태양의 세례</color>가 공격 속도를 증가시키는 대신 <color=yellow>공격력</color>을 같은 비율만큼 증가시키며, 첫 폭발에 적중한 적 하나당 {0}의 <color=yellow>방어력</color>을 부여합니다. 보스에게 적중하는 경우 {1}의 방어력을 부여합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "armorPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40",
+        "format": "#,##0",
+        "raw": "armorPerHitBoss",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 40.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_ADWithArmor.png"
+  },
+  "Se_Star_Vesper_F_BS_MovSpd": {
+    "name": "기분 좋은 열기",
+    "lore": "땀이 흐르면 근육의 윤곽이 더 아름답게 드러납니다.",
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>태양의 세례</color>가 공격 속도 증가량의 50%만큼 <color=yellow>이동 속도</color>를 부여합니다.",
+    "rawDesc": "<color=yellow>태양의 세례</color>가 공격 속도 증가량의 {0}만큼 <color=yellow>이동 속도</color>를 부여합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "movSpdRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_MovSpd.png"
   },
   "Se_Star_Vesper_F_CS_ColdDamage": {
     "name": "차가운 분노",
@@ -7608,16 +8050,29 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>잔혹한 태양</color>의 피해가 냉기 피해로 전환되고 기절 시간이 1초 증가합니다.",
-    "rawDesc": "<color=yellow>잔혹한 태양</color>의 피해가 냉기 피해로 전환되고 기절 시간이 {0}초 증가합니다.",
+    "description": "<color=yellow>잔혹한 태양</color>의 피해가 냉기 피해로 전환되고 기절 시간이 2초 증가하며 부여하는 방어력이 50% 증가합니다.",
+    "rawDesc": "<color=yellow>잔혹한 태양</color>의 피해가 냉기 피해로 전환되고 기절 시간이 {0}초 증가하며 부여하는 방어력이 {1} 증가합니다.",
     "rawDescVars": [
       {
-        "rendered": "1",
+        "rendered": "2",
         "format": "#,##0",
         "raw": "addedStunDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "gainedArmorAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -7638,16 +8093,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>잔혹한 태양</color>의 저지 불가와 방어력 효과가 시전이 끝난 후에도 1.5초간 유지됩니다.",
+    "description": "<color=yellow>잔혹한 태양</color>의 저지 불가와 방어력 효과가 시전이 끝난 후에도 2.5초간 유지됩니다.",
     "rawDesc": "<color=yellow>잔혹한 태양</color>의 저지 불가와 방어력 효과가 시전이 끝난 후에도 {0}초간 유지됩니다.",
     "rawDescVars": [
       {
-        "rendered": "1.5",
+        "rendered": "2.5",
         "format": "#,##0.#",
         "raw": "buffLingerDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 2.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -7659,7 +8114,7 @@
   },
   "Se_Star_Vesper_F_CS_UnlockMoveWithPenalty": {
     "name": "프라이드 플레어",
-    "lore": null,
+    "lore": "그는 자신만은 조금 더 신에게 가까이 있다고 믿고 있습니다. 그러나 단순히 오만으로 치부하기엔, 그는 너무 강력합니다.",
     "category": "Flexible",
     "heroType": "Hero_Vesper",
     "maxLevel": 1,
@@ -7668,9 +8123,23 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>잔혹한 태양</color>을 시전하는 중 이동할 수 있게 되지만 저지 불가와 방어력 효과를 부여하지 않습니다.",
-    "rawDesc": "<color=yellow>잔혹한 태양</color>을 시전하는 중 이동할 수 있게 되지만 저지 불가와 방어력 효과를 부여하지 않습니다.",
-    "rawDescVars": [],
+    "description": "<color=yellow>잔혹한 태양</color>의 피해량이 25% 증가하고 시전하는 중 이동할 수 있게 되지만 방어력 효과를 부여하지 않습니다.",
+    "rawDesc": "<color=yellow>잔혹한 태양</color>의 피해량이 {0} 증가하고 시전하는 중 이동할 수 있게 되지만 방어력 효과를 부여하지 않습니다.",
+    "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "damageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Vesper_F_CS_UnlockMoveWithPenalty.png"
   },
   "Se_Star_Vesper_F_DP_FarTargetBonus": {
@@ -7903,7 +8372,7 @@
   },
   "Se_Star_Vesper_F_SE_PointCast": {
     "name": "아주 약간의 이타심",
-    "lore": null,
+    "lore": "베스퍼는 의외로 아이들에게 살가운 면이 있습니다. 그의 불우한 어린 시절에 대한 반향일까요?",
     "category": "Flexible",
     "heroType": "Hero_Vesper",
     "maxLevel": 1,
@@ -7912,14 +8381,41 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>엘의 성역</color>을 베스퍼의 위치 대신 지정하는 위치에 소환합니다.",
-    "rawDesc": "<color=yellow>엘의 성역</color>을 베스퍼의 위치 대신 지정하는 위치에 소환합니다.",
-    "rawDescVars": [],
+    "description": "<color=yellow>엘의 성역</color>을 베스퍼의 위치 대신 지정하는 위치에 소환합니다. 첫 폭발에 적중한 아군 하나당 재사용 대기시간이 10%, 적 하나당 3% 감소합니다.",
+    "rawDesc": "<color=yellow>엘의 성역</color>을 베스퍼의 위치 대신 지정하는 위치에 소환합니다. 첫 폭발에 적중한 아군 하나당 재사용 대기시간이 {0}, 적 하나당 {1} 감소합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "reductionRatioOnAlly",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3%",
+        "format": "P0",
+        "raw": "reductionRatioOnEnemy",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Vesper_F_SE_PointCast.png"
   },
   "Se_Star_Vesper_I_ShopDiscount": {
     "name": "압도적인 존재감",
-    "lore": null,
+    "lore": "누구나 그럴싸한 계획은 있습니다. 그를 직접 마주하기 전까지는 말이죠.",
     "category": "Imagination",
     "heroType": "Hero_Vesper",
     "maxLevel": 4,
@@ -7968,11 +8464,11 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "모험을 시작할 때 50<sprite=5>의 <color=yellow>골드</color>를 획득합니다.",
+    "description": "모험을 시작할 때 100<sprite=5>의 <color=yellow>골드</color>를 획득합니다.",
     "rawDesc": "모험을 시작할 때 {0}의 <color=yellow>골드</color>를 획득합니다.",
     "rawDescVars": [
       {
-        "rendered": "50<sprite=5>",
+        "rendered": "100<sprite=5>",
         "format": "#,##0",
         "raw": "addedGoldAmount",
         "scalingType": "star",
@@ -7981,9 +8477,9 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            50.0,
             100.0,
-            150.0
+            150.0,
+            200.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -8092,11 +8588,11 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>중갑 타격</color>의 보호막량이 30%<sprite=5> 증가하고 보호막 유지 시간이 25%<sprite=5> 증가합니다.",
+    "description": "<color=yellow>중갑 타격</color>의 보호막량이 45%<sprite=5> 증가하고 보호막 유지 시간이 75%<sprite=5> 증가합니다.",
     "rawDesc": "<color=yellow>중갑 타격</color>의 보호막량이 {0} 증가하고 보호막 유지 시간이 {1} 증가합니다.",
     "rawDescVars": [
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": "45%<sprite=5>",
         "format": "P0",
         "raw": "shieldAmp",
         "scalingType": "star",
@@ -8105,16 +8601,16 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.3,
-            0.4,
-            0.5,
-            0.6
+            0.45,
+            0.55,
+            0.65,
+            0.75
           ],
           "strengthScaling": "Multiply"
         }
       },
       {
-        "rendered": "25%<sprite=5>",
+        "rendered": "75%<sprite=5>",
         "format": "P0",
         "raw": "shieldDurationAmp",
         "scalingType": "star",
@@ -8123,10 +8619,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.25,
-            0.5,
             0.75,
-            1.0
+            1.0,
+            1.25,
+            1.5
           ],
           "strengthScaling": "Multiply"
         }
@@ -8435,7 +8931,7 @@
   },
   "Se_Star_Yubar_D_ADAPWithPenalty": {
     "name": "유리 대포",
-    "lore": null,
+    "lore": "그의 육신은 현재, 부서지기 쉬운 그릇일 뿐입니다. 물론, 그렇게 생각한 상대는 모두 한 줌의 먼지가 되었지요.",
     "category": "Destruction",
     "heroType": "Hero_Yubar",
     "maxLevel": 3,
@@ -8712,8 +9208,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>대격변</color>이 유바르의 주문력 대신 공격력을 증가시킵니다.",
-    "rawDesc": "<color=yellow>대격변</color>이 유바르의 주문력 대신 공격력을 증가시킵니다.",
+    "description": "<color=yellow>대격변</color>이 유바르의 주문력 대신 공격력과 공격 속도를 증가시킵니다.",
+    "rawDesc": "<color=yellow>대격변</color>이 유바르의 주문력 대신 공격력과 공격 속도를 증가시킵니다.",
     "rawDescVars": [],
     "image": "Se_Star_Yubar_F_CC_IncreaseAD.png"
   },
@@ -8882,7 +9378,7 @@
   },
   "Se_Star_Yubar_F_SN_AutoExplosion": {
     "name": "별 방목하기",
-    "lore": null,
+    "lore": "그가 신경쓰지 않더라도 별은 우주의 먼지를 먹고 무럭무럭 자랍니다.",
     "category": "Flexible",
     "heroType": "Hero_Yubar",
     "maxLevel": 1,
@@ -8953,7 +9449,7 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>평정</color>의 재사용 대기시간이 2초 감소하지만 무적이 되는 대신 무적 시간 동안 지속되는 최대 체력의 40%만큼의 보호막을 얻습니다.",
+    "description": "<color=yellow>평정</color>의 재사용 대기시간이 2초 감소하지만 무적이 되는 대신 무적 시간 동안 지속되는 최대 체력의 100%만큼의 보호막을 얻습니다.",
     "rawDesc": "<color=yellow>평정</color>의 재사용 대기시간이 {0}초 감소하지만 무적이 되는 대신 무적 시간 동안 지속되는 최대 체력의 {1}만큼의 보호막을 얻습니다.",
     "rawDescVars": [
       {
@@ -8970,12 +9466,12 @@
         }
       },
       {
-        "rendered": "40%",
+        "rendered": "100%",
         "format": "P0",
         "raw": "shieldRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.4,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9115,7 +9611,7 @@
   },
   "Se_Star_Yubar_I_StarCookie": {
     "name": "과자 굽기",
-    "lore": null,
+    "lore": "그는 완벽한 별과자를 만들기 위해 천문학적인 수의 별을 홀랑 태워버렸습니다.",
     "category": "Imagination",
     "heroType": "Hero_Yubar",
     "maxLevel": 3,

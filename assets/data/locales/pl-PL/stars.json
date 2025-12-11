@@ -239,15 +239,15 @@
       70,
       70,
       80,
-      0
+      80
     ],
     "requiredLevel": 55,
     "isRequiredLevelTotalMastery": true,
-    "description": "Wszystkie obrażenia, jakie zadajesz wrogom dotkniętym <color=yellow>4 Żywiołami</color>, zwiększają się o 12%<sprite=5>.",
+    "description": "Wszystkie obrażenia, jakie zadajesz wrogom dotkniętym <color=yellow>4 Żywiołami</color>, zwiększają się o 18%<sprite=5>.",
     "rawDesc": "Wszystkie obrażenia, jakie zadajesz wrogom dotkniętym <color=yellow>4 Żywiołami</color>, zwiększają się o {0}.",
     "rawDescVars": [
       {
-        "rendered": "12%<sprite=5>",
+        "rendered": "18%<sprite=5>",
         "format": "P0",
         "raw": "ampOnAllElemental",
         "scalingType": "star",
@@ -256,10 +256,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.12,
-            0.14,
-            0.16,
-            0.18
+            0.18,
+            0.2,
+            0.22,
+            0.24
           ],
           "strengthScaling": "Multiply"
         }
@@ -395,7 +395,7 @@
     ],
     "requiredLevel": 50,
     "isRequiredLevelTotalMastery": true,
-    "description": "<color=yellow>Szybkość Ataku</color> zmniejsza się o 20%. <color=yellow>Moc Ataku</color> zwiększa się o 5<sprite=5>.",
+    "description": "<color=yellow>Szybkość Ataku</color> zmniejsza się o 20%. <color=yellow>Moc Ataku</color> zwiększa się o 8<sprite=5>.",
     "rawDesc": "<color=yellow>Szybkość Ataku</color> zmniejsza się o {0}. <color=yellow>Moc Ataku</color> zwiększa się o {1}.",
     "rawDescVars": [
       {
@@ -412,7 +412,7 @@
         }
       },
       {
-        "rendered": "5<sprite=5>",
+        "rendered": "8<sprite=5>",
         "format": "#,##0",
         "raw": "adBonus",
         "scalingType": "star",
@@ -421,10 +421,10 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            5.0,
-            7.0,
-            9.0,
-            12.0
+            8.0,
+            10.0,
+            12.0,
+            15.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -573,11 +573,11 @@
     ],
     "requiredLevel": 35,
     "isRequiredLevelTotalMastery": true,
-    "description": "<color=yellow>Moc Umiejętności</color> zwiększa się o 10<sprite=5> podczas ukończenia pierwszych 2 światów.",
+    "description": "<color=yellow>Moc Umiejętności</color> zwiększa się o 14<sprite=5> podczas ukończenia pierwszych 3 światów.",
     "rawDesc": "<color=yellow>Moc Umiejętności</color> zwiększa się o {0} podczas ukończenia pierwszych {1} światów.",
     "rawDescVars": [
       {
-        "rendered": "10<sprite=5>",
+        "rendered": "14<sprite=5>",
         "format": "#,##0",
         "raw": "bonusStatAmount",
         "scalingType": "star",
@@ -586,21 +586,21 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            10.0,
-            12.0,
             14.0,
-            16.0
+            16.0,
+            18.0,
+            20.0
           ],
           "strengthScaling": "Multiply"
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
         "raw": "buffedZoneCount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -624,11 +624,11 @@
     ],
     "requiredLevel": 45,
     "isRequiredLevelTotalMastery": true,
-    "description": "<color=yellow>Moc Ataku</color> zwiększa się o 10<sprite=5> podczas ukończenia pierwszych 2 światów.",
+    "description": "<color=yellow>Moc Ataku</color> zwiększa się o 14<sprite=5> podczas ukończenia pierwszych 3 światów.",
     "rawDesc": "<color=yellow>Moc Ataku</color> zwiększa się o {0} podczas ukończenia pierwszych {1} światów.",
     "rawDescVars": [
       {
-        "rendered": "10<sprite=5>",
+        "rendered": "14<sprite=5>",
         "format": "#,##0",
         "raw": "bonusStatAmount",
         "scalingType": "star",
@@ -637,21 +637,21 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            10.0,
-            12.0,
             14.0,
-            16.0
+            16.0,
+            18.0,
+            20.0
           ],
           "strengthScaling": "Multiply"
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
         "raw": "buffedZoneCount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -700,6 +700,44 @@
       }
     ],
     "image": "Se_Star_D_UltimateChargeSpeed.png"
+  },
+  "Se_Star_I_DismantleReroll": {
+    "name": "Targ z losem",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      100,
+      90,
+      100
+    ],
+    "requiredLevel": 60,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Przy pierwszym <color=yellow>Rozłożeniu</color> każdej Esencji lub Pamięci, zamiast zostać rozłożona, jest ona wymieniana na losowy przedmiot o tej samej rzadkości. Aktywuje się do 1<sprite=5> razy w każdym świecie.",
+    "rawDesc": "Przy pierwszym <color=yellow>Rozłożeniu</color> każdej Esencji lub Pamięci, zamiast zostać rozłożona, jest ona wymieniana na losowy przedmiot o tej samej rzadkości. Aktywuje się do {0} razy w każdym świecie.",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxUses",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": true,
+          "clampMin": 1.0,
+          "clampMax": 100.0,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_DismantleReroll.png"
   },
   "Se_Star_I_AdditionalChaosChance": {
     "name": "Pierwotny Chaos",
@@ -870,6 +908,80 @@
     ],
     "image": "Se_Star_I_FirstGemUpgrade.png"
   },
+  "Se_Star_I_GemOnMiniBossKill": {
+    "name": "Dziwaczny Łup",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      110,
+      90,
+      100,
+      110
+    ],
+    "requiredLevel": 70,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Po pokonaniu <color=yellow>mini-bossa</color> masz 40%<sprite=5> szansy na zdobycie losowej esencji.",
+    "rawDesc": "Po pokonaniu <color=yellow>mini-bossa</color> masz {0} szansy na zdobycie losowej esencji.",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "chance",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.4,
+            0.6,
+            0.8,
+            1.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_GemOnMiniBossKill.png"
+  },
+  "Se_Star_I_GoldPerCrit": {
+    "name": "Kieszonkowiec",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      90,
+      80,
+      90
+    ],
+    "requiredLevel": 55,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Przy pierwszym trafieniu każdego wroga <color=yellow>atakiem krytycznym</color> zdobywasz 0.7<sprite=5> złota.",
+    "rawDesc": "Przy pierwszym trafieniu każdego wroga <color=yellow>atakiem krytycznym</color> zdobywasz {0} złota.",
+    "rawDescVars": [
+      {
+        "rendered": "0.7<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "goldAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.7,
+            1.0,
+            1.3
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_GoldPerCrit.png"
+  },
   "Se_Star_I_KillGoldBonus": {
     "name": "Nagromadzenie Bogactwa",
     "lore": null,
@@ -907,6 +1019,44 @@
       }
     ],
     "image": "Se_Star_I_KillGoldBonus.png"
+  },
+  "Se_Star_I_MawDiscountAndProtection": {
+    "name": "Wyszczotkowana Paszcza",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      80,
+      60,
+      80,
+      100
+    ],
+    "requiredLevel": 65,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Cena <color=yellow>Paszczy Zagłady</color> jest niższa o 20%<sprite=5>. Paszcza nie niszczy już pożartych przedmiotów, a zamiast tego resetuje ich poziom lub jakość.",
+    "rawDesc": "Cena <color=yellow>Paszczy Zagłady</color> jest niższa o {0}. Paszcza nie niszczy już pożartych przedmiotów, a zamiast tego resetuje ich poziom lub jakość.",
+    "rawDescVars": [
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "discountRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.2,
+            0.3,
+            0.4,
+            0.5
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_MawDiscountAndProtection.png"
   },
   "Se_Star_I_MoreShopItems": {
     "name": "Potworny Urok",
@@ -1153,6 +1303,44 @@
     ],
     "image": "Se_Star_L_Armor.png"
   },
+  "Se_Star_L_ArmorOnTravel": {
+    "name": "Poszarpana Zbroja",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      85,
+      65,
+      75,
+      85
+    ],
+    "requiredLevel": 60,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Za każdym razem, gdy wchodzisz do nowego świata, zyskujesz 2.5<sprite=5> <color=yellow>Pancerza</color>.",
+    "rawDesc": "Za każdym razem, gdy wchodzisz do nowego świata, zyskujesz {0} <color=yellow>Pancerza</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "2.5<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "armorAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            2.5,
+            3.0,
+            3.5,
+            4.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_ArmorOnTravel.png"
+  },
   "Se_Star_L_DamageReductionFromChilled": {
     "name": "Powinowactwo Zimna",
     "lore": null,
@@ -1167,11 +1355,11 @@
     ],
     "requiredLevel": 40,
     "isRequiredLevelTotalMastery": true,
-    "description": "<color=yellow>Obrażenia Otrzymywane</color> od wrogów, którzy czują <color=yellow>Chłód</color>, zostają zmniejszone o 12%<sprite=5>.",
+    "description": "<color=yellow>Obrażenia Otrzymywane</color> od wrogów, którzy czują <color=yellow>Chłód</color>, zostają zmniejszone o 25%<sprite=5>.",
     "rawDesc": "<color=yellow>Obrażenia Otrzymywane</color> od wrogów, którzy czują <color=yellow>Chłód</color>, zostają zmniejszone o {0}.",
     "rawDescVars": [
       {
-        "rendered": "12%<sprite=5>",
+        "rendered": "25%<sprite=5>",
         "format": "P0",
         "raw": "reductionAmount",
         "scalingType": "star",
@@ -1180,10 +1368,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.12,
-            0.15,
-            0.18,
-            0.21
+            0.25,
+            0.3,
+            0.35,
+            0.4
           ],
           "strengthScaling": "Multiply"
         }
@@ -1294,11 +1482,11 @@
     ],
     "requiredLevel": 35,
     "isRequiredLevelTotalMastery": true,
-    "description": "Czas trwania <color=yellow>Efektu Żywiołów</color> zastosowanych do tobie zostaje zmniejszony o 25%<sprite=5>. W przypadku <color=yellow>Poparzenia</color>, zamiast czasu trawania, zmniejszona zostaje liczba obrażeń.",
+    "description": "Czas trwania <color=yellow>Efektu Żywiołów</color> zastosowanych do tobie zostaje zmniejszony o 40%<sprite=5>. W przypadku <color=yellow>Poparzenia</color>, zamiast czasu trawania, zmniejszona zostaje liczba obrażeń.",
     "rawDesc": "Czas trwania <color=yellow>Efektu Żywiołów</color> zastosowanych do tobie zostaje zmniejszony o {0}. W przypadku <color=yellow>Poparzenia</color>, zamiast czasu trawania, zmniejszona zostaje liczba obrażeń.",
     "rawDescVars": [
       {
-        "rendered": "25%<sprite=5>",
+        "rendered": "40%<sprite=5>",
         "format": "P0",
         "raw": "durationReduction",
         "scalingType": "star",
@@ -1307,10 +1495,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.25,
-            0.3,
-            0.35,
-            0.4
+            0.4,
+            0.45,
+            0.5,
+            0.55
           ],
           "strengthScaling": "Multiply"
         }
@@ -1393,6 +1581,95 @@
       }
     ],
     "image": "Se_Star_L_GuidanceShrineDiscount.png"
+  },
+  "Se_Star_L_HealOnAttack": {
+    "name": "Złowieszcza Witalność",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      80,
+      70,
+      80,
+      90
+    ],
+    "requiredLevel": 45,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Każde trafienie <color=yellow>atakiem podstawowym</color> przywraca 0.40%<sprite=5> maksymalnego zdrowia. W przypadku trafienia krytycznego, leczenie jest zwiększone o 150%.",
+    "rawDesc": "Każde trafienie <color=yellow>atakiem podstawowym</color> przywraca {0} maksymalnego zdrowia. W przypadku trafienia krytycznego, leczenie jest zwiększone o {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "0.40%<sprite=5>",
+        "format": "P2",
+        "raw": "healRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.004,
+            0.005,
+            0.006,
+            0.007
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "150%",
+        "format": "P0",
+        "raw": "critAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_L_HealOnAttack.png"
+  },
+  "Se_Star_L_HealOnKill": {
+    "name": "Bojowa Pierwsza Pomoc",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      70,
+      50,
+      65,
+      80
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Za każdym razem, gdy <color=yellow>zabijesz</color> wroga, odzyskujesz 1.00%<sprite=5> maksymalnego zdrowia.",
+    "rawDesc": "Za każdym razem, gdy <color=yellow>zabijesz</color> wroga, odzyskujesz {0} maksymalnego zdrowia.",
+    "rawDescVars": [
+      {
+        "rendered": "1.00%<sprite=5>",
+        "format": "P2",
+        "raw": "healRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.01,
+            0.015,
+            0.02,
+            0.025
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_HealOnKill.png"
   },
   "Se_Star_L_MaxHealth": {
     "name": "Wzmocnienie Wytrzymałości",
@@ -1484,11 +1761,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": true,
-    "description": "Ilość odzyskanego zdrowia dzięki <color=yellow>Miksturze Zdrowia</color> zwiększa się o 40%<sprite=5>.",
+    "description": "Ilość odzyskanego zdrowia dzięki <color=yellow>Miksturze Zdrowia</color> zwiększa się o 55%<sprite=5>.",
     "rawDesc": "Ilość odzyskanego zdrowia dzięki <color=yellow>Miksturze Zdrowia</color> zwiększa się o {0}.",
     "rawDescVars": [
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": "55%<sprite=5>",
         "format": "P0",
         "raw": "ampAmount",
         "scalingType": "star",
@@ -1497,16 +1774,54 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.4,
-            0.5,
-            0.6,
-            0.7
+            0.55,
+            0.65,
+            0.75,
+            0.85
           ],
           "strengthScaling": "Multiply"
         }
       }
     ],
     "image": "Se_Star_L_PotionHealAmount.png"
+  },
+  "Se_Star_L_PotionOnBuyOrSell": {
+    "name": "Skromny Upominek",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      80,
+      90
+    ],
+    "requiredLevel": 70,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Kupno lub sprzedaż przedmiotu w sklepie zapewnia <color=yellow>Miksturę Zdrowia</color>. Aktywuje się do 1<sprite=5> razy na każdego handlarza.",
+    "rawDesc": "Kupno lub sprzedaż przedmiotu w sklepie zapewnia <color=yellow>Miksturę Zdrowia</color>. Aktywuje się do {0} razy na każdego handlarza.",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxUses",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": true,
+          "clampMin": 1.0,
+          "clampMax": 100.0,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_PotionOnBuyOrSell.png"
   },
   "Se_Star_L_ReceivedHealingAndShieldBonus": {
     "name": "Regenerująca się Skóra",
@@ -1814,16 +2129,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Reakcja Łańcuchowa</color> już nie odzyskuje zdrowia, ale za każdym razem, gdy wróg zginie w Magicznym Kręgu, czas odnawiania zmniejsza się o 10%.",
+    "description": "<color=yellow>Reakcja Łańcuchowa</color> już nie odzyskuje zdrowia, ale za każdym razem, gdy wróg zginie w Magicznym Kręgu, czas odnawiania zmniejsza się o 15%.",
     "rawDesc": "<color=yellow>Reakcja Łańcuchowa</color> już nie odzyskuje zdrowia, ale za każdym razem, gdy wróg zginie w Magicznym Kręgu, czas odnawiania zmniejsza się o {0}.",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "15%",
         "format": "P0",
         "raw": "cooldownReductionRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.15,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1887,16 +2202,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Czas Odnawiania <color=yellow>Niebezpiecznej Teorii</color> zwiększa się o 2 sek., i nie można jej już użyć, chyba że będzie to wzmocnione użycie. Wzamian wzmocnione zostają Ataki Podstawowe x2.",
+    "description": "Czas Odnawiania <color=yellow>Niebezpiecznej Teorii</color> zwiększa się o 1 sek., i nie można jej już użyć, chyba że będzie to wzmocnione użycie. Wzamian wzmocnione zostają Ataki Podstawowe x2.",
     "rawDesc": "Czas Odnawiania <color=yellow>Niebezpiecznej Teorii</color> zwiększa się o {0} sek., i nie można jej już użyć, chyba że będzie to wzmocnione użycie. Wzamian wzmocnione zostają Ataki Podstawowe x{1}.",
     "rawDescVars": [
       {
-        "rendered": "2",
+        "rendered": "1",
         "format": "#,##0.#",
         "raw": "cooldownPenalty",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2301,11 +2616,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "Po wejściu do świata, <color=yellow>Ujawniasz</color> losowe miejsca x2<sprite=5>.",
+    "description": "Po wejściu do świata, <color=yellow>Ujawniasz</color> losowe miejsca x3<sprite=5>.",
     "rawDesc": "Po wejściu do świata, <color=yellow>Ujawniasz</color> losowe miejsca x{0}.",
     "rawDescVars": [
       {
-        "rendered": "2<sprite=5>",
+        "rendered": "3<sprite=5>",
         "format": "#,##0",
         "raw": "locationCount",
         "scalingType": "star",
@@ -2314,9 +2629,9 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            2.0,
             3.0,
-            4.0
+            4.0,
+            5.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -2375,16 +2690,16 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "Gdy poziom twojego zdrowia spadnie poniżej 30%, działanie <color=yellow>Zbroi</color> zwiększa się o 15<sprite=5>.",
+    "description": "Gdy poziom twojego zdrowia spadnie poniżej 40%, działanie <color=yellow>Zbroi</color> zwiększa się o 30<sprite=5>.",
     "rawDesc": "Gdy poziom twojego zdrowia spadnie poniżej {0}, działanie <color=yellow>Zbroi</color> zwiększa się o {1}.",
     "rawDescVars": [
       {
-        "rendered": "30%",
+        "rendered": "40%",
         "format": "P0",
         "raw": "healthRatioThreshold",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.3,
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2392,7 +2707,7 @@
         }
       },
       {
-        "rendered": "15<sprite=5>",
+        "rendered": "30<sprite=5>",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "star",
@@ -2401,9 +2716,9 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            15.0,
-            20.0,
-            25.0
+            30.0,
+            35.0,
+            40.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -2524,8 +2839,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Gdy odzyskujesz zdrowie, <color=yellow>Odzyskujesz</color> też zdrowie sojusznika, który ma najmniej zdrowia w twoim otoczeniu, 20%<sprite=5> proporcjonalnie do stopnia leczenia.",
-    "rawDesc": "Gdy odzyskujesz zdrowie, <color=yellow>Odzyskujesz</color> też zdrowie sojusznika, który ma najmniej zdrowia w twoim otoczeniu, {0} proporcjonalnie do stopnia leczenia.",
+    "description": "Gdy odzyskujesz zdrowie, <color=yellow>przywracasz</color> zdrowie pobliskiemu sojusznikowi (innemu niż ty) z najniższym poziomem zdrowia w wysokości 20%<sprite=5> odzyskanej ilości.",
+    "rawDesc": "Gdy odzyskujesz zdrowie, <color=yellow>przywracasz</color> zdrowie pobliskiemu sojusznikowi (innemu niż ty) z najniższym poziomem zdrowia w wysokości {0} odzyskanej ilości.",
     "rawDescVars": [
       {
         "rendered": "20%<sprite=5>",
@@ -2836,8 +3151,8 @@
     "image": "Se_Star_Bismuth_D_Conquerer.png"
   },
   "Se_Star_Bismuth_D_SkillHasteAndAutoCast": {
-    "name": "Opowieść pisana bezpośrednio przez Księgę",
-    "lore": null,
+    "name": "Historia pisana przez Księgę",
+    "lore": "Czasem opowieść staje się tak porywająca, że rozdziały przewracają się same. Dziewczynka musi tylko patrzeć, jak książka snuje kolejne fantastyczne historie.",
     "category": "Destruction",
     "heroType": "Hero_Bismuth",
     "maxLevel": 4,
@@ -2849,11 +3164,11 @@
     ],
     "requiredLevel": 30,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Przyspieszenie Wspomnienia</color> zwiększa się o 15<sprite=5>, a podczas bitwy następuje <color=yellow>Automatyczne Użycie</color> większości wspomnień.",
-    "rawDesc": "<color=yellow>Przyspieszenie Wspomnienia</color> zwiększa się o {0}, a podczas bitwy następuje <color=yellow>Automatyczne Użycie</color> większości wspomnień.",
+    "description": "<color=yellow>Przyspieszenie pamięci</color> zwiększa się o 8<sprite=5>, a podczas walki większość pamięci jest <color=yellow>wykonywana automatycznie</color>.",
+    "rawDesc": "<color=yellow>Przyspieszenie pamięci</color> zwiększa się o {0}, a podczas walki większość pamięci jest <color=yellow>wykonywana automatycznie</color>.",
     "rawDescVars": [
       {
-        "rendered": "15<sprite=5>",
+        "rendered": "8<sprite=5>",
         "format": "#,##0",
         "raw": "bonusAmount",
         "scalingType": "star",
@@ -2862,10 +3177,10 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            15.0,
-            20.0,
-            25.0,
-            30.0
+            8.0,
+            12.0,
+            16.0,
+            20.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -2927,16 +3242,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Maksymalna liczba strzał <color=yellow>Zniekształconego Umysłu</color> zwiększa się o 4, ale nie możesz się poruszać podczas doładowania.",
+    "description": "Maksymalna liczba strzał <color=yellow>Zniekształconego Umysłu</color> zwiększa się o 7, ale nie możesz się poruszać podczas doładowania.",
     "rawDesc": "Maksymalna liczba strzał <color=yellow>Zniekształconego Umysłu</color> zwiększa się o {0}, ale nie możesz się poruszać podczas doładowania.",
     "rawDescVars": [
       {
-        "rendered": "4",
+        "rendered": "7",
         "format": "#,##0",
         "raw": "increased",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 4.0,
+          "basicConstant": 7.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3196,7 +3511,7 @@
   },
   "Se_Star_Bismuth_F_VH_FullCharge": {
     "name": "Już się nie boję",
-    "lore": null,
+    "lore": "Może pojawić się nawet cała armia czarnych charakterów, ale to już nie problem — dziewczynka trzyma w dłoni nieskończoną odwagę, która zawsze pozwala jej zwyciężyć!",
     "category": "Flexible",
     "heroType": "Hero_Bismuth",
     "maxLevel": 1,
@@ -3205,8 +3520,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Liczba wszystkich doładowań <color=yellow>Walecznego Serca</color> następuje teraz jednocześnie.",
-    "rawDesc": "Liczba wszystkich doładowań <color=yellow>Walecznego Serca</color> następuje teraz jednocześnie.",
+    "description": "Wszystkie ładunki <color=yellow>Walecznego Serca</color> odnawiają się teraz równocześnie.",
+    "rawDesc": "Wszystkie ładunki <color=yellow>Walecznego Serca</color> odnawiają się teraz równocześnie.",
     "rawDescVars": [],
     "image": "Se_Star_Bismuth_F_VH_FullCharge.png"
   },
@@ -3221,9 +3536,23 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Użycie <color=yellow>Zniekształconego Pędu</color> resetuje czas odnawiania <color=yellow>Walecznego Serca</color>.",
-    "rawDesc": "Użycie <color=yellow>Zniekształconego Pędu</color> resetuje czas odnawiania <color=yellow>Walecznego Serca</color>.",
-    "rawDescVars": [],
+    "description": "Użycie <color=yellow>Zniekształconego Pędu</color> resetuje czas odnowienia <color=yellow>Walecznego Serca</color>, ale trafia ono maksymalnie 2 wrogów.",
+    "rawDesc": "Użycie <color=yellow>Zniekształconego Pędu</color> resetuje czas odnowienia <color=yellow>Walecznego Serca</color>, ale trafia ono maksymalnie {0} wrogów.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "targetLimitCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Bismuth_F_VH_ResetOnDodge.png"
   },
   "Se_Star_Bismuth_F_VH_Shield": {
@@ -3383,8 +3712,8 @@
     "image": "Se_Star_Bismuth_I_KnowledgeBook.png"
   },
   "Se_Star_Bismuth_I_RevealWorld": {
-    "name": "Oko Umysłu",
-    "lore": null,
+    "name": "Oko serca",
+    "lore": "Kiedy dziewczynka patrzy na świat przez pryzmat książki, w pustych zakątkach nagle pojawiają się cukierkowe domki kryjące następną przygodę.",
     "category": "Imagination",
     "heroType": "Hero_Bismuth",
     "maxLevel": 3,
@@ -3395,8 +3724,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "Po wejściu do świata, <color=yellow>Ujawniasz</color> losowe miejsca x2<sprite=5>.",
-    "rawDesc": "Po wejściu do świata, <color=yellow>Ujawniasz</color> losowe miejsca x{0}.",
+    "description": "Gdy wchodzisz do świata, <color=yellow>odkrywasz</color> losowe miejsca: 2<sprite=5> sztuk.",
+    "rawDesc": "Gdy wchodzisz do świata, <color=yellow>odkrywasz</color> losowe miejsca: {0} sztuk.",
     "rawDescVars": [
       {
         "rendered": "2<sprite=5>",
@@ -3617,8 +3946,8 @@
     "image": "Se_Star_Bismuth_I_TreasureWithHealthPenalty.png"
   },
   "Se_Star_Bismuth_L_ContinuousSpeed": {
-    "name": "Lekkie kroki",
-    "lore": null,
+    "name": "Lekkie stópki",
+    "lore": "Martwisz się o małe bose stópki dziewczynki? Niepotrzebnie! Ona nie kroczy po twardej ziemi, tylko przeskakuje wesoło po puchatych chmurkach!",
     "category": "Life",
     "heroType": "Hero_Bismuth",
     "maxLevel": 4,
@@ -3630,8 +3959,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "Podczas ruchu, <color=yellow>Szybkość Ruchu</color> stopniowo zwiększa się przez 5 sek., aż do maksymalnie 10%<sprite=5>. Gdy przestaniesz się poruszać, wzrost szybkości zanika.",
-    "rawDesc": "Podczas ruchu, <color=yellow>Szybkość Ruchu</color> stopniowo zwiększa się przez {0} sek., aż do maksymalnie {1}. Gdy przestaniesz się poruszać, wzrost szybkości zanika.",
+    "description": "Podczas ruchu przez 5 sekundy, <color=yellow>Szybkość ruchu</color> zwiększa się aż do maksymalnego wzrostu o 10%<sprite=5>. Gdy się zatrzymasz, bonus znika.",
+    "rawDesc": "Podczas ruchu przez {0} sekundy, <color=yellow>Szybkość ruchu</color> zwiększa się aż do maksymalnego wzrostu o {1}. Gdy się zatrzymasz, bonus znika.",
     "rawDescVars": [
       {
         "rendered": "5",
@@ -3816,8 +4145,8 @@
     "image": "Se_Star_Husk_D_CritAmp.png"
   },
   "Se_Star_Husk_D_DamageAmpOnLowHpTarget": {
-    "name": "Bez litości",
-    "lore": null,
+    "name": "Bez Litości",
+    "lore": "Dla niego litość wobec wroga to tylko strata czasu – zero emocji, czysta efektywność.",
     "category": "Destruction",
     "heroType": "Hero_Husk",
     "maxLevel": 4,
@@ -3829,22 +4158,9 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Liczba wszystkich obrażeń zadawanych wrogom z 35% lub mniej zdrowia zwiększa się o 15%<sprite=5>.",
-    "rawDesc": "Liczba wszystkich obrażeń zadawanych wrogom z {0} lub mniej zdrowia zwiększa się o {1}.",
+    "description": "Zadajesz 15%<sprite=5> więcej obrażeń wszystkim wrogom mającym 35% lub mniej zdrowia.",
+    "rawDesc": "Zadajesz {0} więcej obrażeń wszystkim wrogom mającym {1} lub mniej zdrowia.",
     "rawDescVars": [
-      {
-        "rendered": "35%",
-        "format": "P0",
-        "raw": "healthThreshold",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.35,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
       {
         "rendered": "15%<sprite=5>",
         "format": "P0",
@@ -3861,6 +4177,19 @@
             0.24
           ],
           "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "35%",
+        "format": "P0",
+        "raw": "healthThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.35,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
         }
       }
     ],
@@ -4162,16 +4491,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Gotowość Bojowa</color> nie wystrzeliwuje Energii Miecza, ale atakuje o 50% częściej.",
+    "description": "<color=yellow>Gotowość Bojowa</color> nie wystrzeliwuje Energii Miecza, ale atakuje o 100% częściej.",
     "rawDesc": "<color=yellow>Gotowość Bojowa</color> nie wystrzeliwuje Energii Miecza, ale atakuje o {0} częściej.",
     "rawDescVars": [
       {
-        "rendered": "50%",
+        "rendered": "100%",
         "format": "P0",
         "raw": "speedAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4183,7 +4512,7 @@
   },
   "Se_Star_Husk_F_LA_DodgeResetOnRed": {
     "name": "Przepływ Energii",
-    "lore": null,
+    "lore": "Oddaj się prądowi i postaw kolejny krok. Perfekcja, bez emocji.",
     "category": "Flexible",
     "heroType": "Hero_Husk",
     "maxLevel": 1,
@@ -4192,8 +4521,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Czas Odnawiania <color=yellow>Rozcięcia</color> zwiększa się o 1 sek., ale użycie Formy Czerwonej resetuje czas odnawiania Błyskawicznego Kroku.",
-    "rawDesc": "Czas Odnawiania <color=yellow>Rozcięcia</color> zwiększa się o {0} sek., ale użycie Formy Czerwonej resetuje czas odnawiania Błyskawicznego Kroku.",
+    "description": "Czas odnowienia <color=yellow>Rozcięcia</color> wydłuża się o 1 sek., ale użycie Formy Czerwonej resetuje czas odnowienia Błyskawicznego Kroku.",
+    "rawDesc": "Czas odnowienia <color=yellow>Rozcięcia</color> wydłuża się o {0} sek., ale użycie Formy Czerwonej resetuje czas odnowienia Błyskawicznego Kroku.",
     "rawDescVars": [
       {
         "rendered": "1",
@@ -4319,8 +4648,8 @@
     "image": "Se_Star_Husk_I_BossKillPlatinumCoin.png"
   },
   "Se_Star_Husk_I_ShopIntimidation": {
-    "name": "Przerażająca Jednooka Lalka",
-    "lore": null,
+    "name": "Upiorna Jednooka Lalka",
+    "lore": "Dla niego zastraszanie to najszybsza i najbardziej efektywna droga. No, chyba że trafisz na odważnego Jonasa — jemu groźby nie robią większego wrażenia.",
     "category": "Imagination",
     "heroType": "Hero_Husk",
     "maxLevel": 3,
@@ -4331,8 +4660,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Zastraszasz</color> handlarza, aby obniżyć ceny przedmiotów. Jeśli zastraszenie powiedzie się z szansą 50%, cena przedmiotów zostanie zmniejszona o 50%<sprite=5>, ale w przypadku niepowodzenia zastraszania, zwiększa się o 50%.",
-    "rawDesc": "<color=yellow>Zastraszasz</color> handlarza, aby obniżyć ceny przedmiotów. Jeśli zastraszenie powiedzie się z szansą {0}, cena przedmiotów zostanie zmniejszona o {1}, ale w przypadku niepowodzenia zastraszania, zwiększa się o {2}.",
+    "description": "<color=yellow>Zastraszasz</color> handlarza, żeby obniżyć ceny. Jeśli zastraszenie powiedzie się z szansą 50%, cena spada o 50%<sprite=5>, ale gdy się nie uda, wzrasta o 50%.",
+    "rawDesc": "<color=yellow>Zastraszasz</color> handlarza, żeby obniżyć ceny. Jeśli zastraszenie powiedzie się z szansą {0}, cena spada o {1}, ale gdy się nie uda, wzrasta o {2}.",
     "rawDescVars": [
       {
         "rendered": "50%",
@@ -4490,7 +4819,7 @@
   },
   "Se_Star_Husk_L_DodgeCooldownOnKillWithEmptyCharges": {
     "name": "Trans",
-    "lore": null,
+    "lore": "Ciało lalki uwolnione z kajdan emocji – precyzyjne i perfekcyjne ruchy pośród morza krwi.",
     "category": "Life",
     "heroType": "Hero_Husk",
     "maxLevel": 2,
@@ -4746,16 +5075,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Rusznica</color> zawsze odpycha wrogów i zmniejsza ich <color=yellow>Szybkość Ruchu</color> o 50% na 2sek..",
+    "description": "<color=yellow>Rusznica</color> zawsze odpycha wrogów i zmniejsza ich <color=yellow>Szybkość Ruchu</color> o 75% na 4sek..",
     "rawDesc": "<color=yellow>Rusznica</color> zawsze odpycha wrogów i zmniejsza ich <color=yellow>Szybkość Ruchu</color> o {0} na {1}sek..",
     "rawDescVars": [
       {
-        "rendered": "50%",
+        "rendered": "75%",
         "format": "#,##0'%'",
         "raw": "slowAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 50.0,
+          "basicConstant": 75.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4763,12 +5092,12 @@
         }
       },
       {
-        "rendered": "2",
+        "rendered": "4",
         "format": "#,##0.#",
         "raw": "slowDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4789,16 +5118,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Obrażenia zadawane <color=yellow>Rusznicą</color> pobliskim wrogom zwiększają się o 80%.",
+    "description": "Obrażenia zadawane <color=yellow>Rusznicą</color> pobliskim wrogom zwiększają się o 150%.",
     "rawDesc": "Obrażenia zadawane <color=yellow>Rusznicą</color> pobliskim wrogom zwiększają się o {0}.",
     "rawDescVars": [
       {
-        "rendered": "80%",
+        "rendered": "150%",
         "format": "P0",
         "raw": "nearDamageAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.8,
+          "basicConstant": 1.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5040,8 +5369,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Liczba doładowań <color=yellow>Szybkiego Dobycia</color> zmniejsza się do 1, ale oddaje się 6 strzałów jednocześnie.",
-    "rawDesc": "Liczba doładowań <color=yellow>Szybkiego Dobycia</color> zmniejsza się do 1, ale oddaje się 6 strzałów jednocześnie.",
+    "description": "Liczba doładowań <color=yellow>Szybkiego Dobycia</color> zmniejsza się o 1, ale wystrzeliwuje 6 pocisków.",
+    "rawDesc": "Liczba doładowań <color=yellow>Szybkiego Dobycia</color> zmniejsza się o 1, ale wystrzeliwuje 6 pocisków.",
     "rawDescVars": [],
     "image": "Se_Star_Lacerta_F_QT_RapidFire.png"
   },
@@ -5085,7 +5414,7 @@
   },
   "Se_Star_Lacerta_I_BossBounty": {
     "name": "Łowca Dzikich Bestii",
-    "lore": null,
+    "lore": "<i>\"Killing Monsters\"</i>",
     "category": "Imagination",
     "heroType": "Hero_Lacerta",
     "maxLevel": 3,
@@ -5096,11 +5425,11 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Za każdym razem, gdy eliminujesz <color=yellow>Bossa</color>, otrzymujesz dodatkowo 30<sprite=5> kawałków złota.",
-    "rawDesc": "Za każdym razem, gdy eliminujesz <color=yellow>Bossa</color>, otrzymujesz dodatkowo {0} kawałków złota.",
+    "description": "Za każdym razem, gdy pokonasz <color=yellow>Bossa</color>, zgarniesz dodatkowo 45<sprite=5> sztuk złota.",
+    "rawDesc": "Za każdym razem, gdy pokonasz <color=yellow>Bossa</color>, zgarniesz dodatkowo {0} sztuk złota.",
     "rawDescVars": [
       {
-        "rendered": "30<sprite=5>",
+        "rendered": "45<sprite=5>",
         "format": "#,##0",
         "raw": "bonusGold",
         "scalingType": "star",
@@ -5109,9 +5438,9 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            30.0,
             45.0,
-            60.0
+            60.0,
+            75.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -5231,7 +5560,7 @@
   },
   "Se_Star_Lacerta_L_SpeedAfterDodge": {
     "name": "Elastyczna jaszczurka",
-    "lore": null,
+    "lore": "Elastyczność ciała jaszczurczego wojownika sprawdza się nawet w najgorszych opałach – zawsze znajdzie sposób na dobry kąt do ataku.",
     "category": "Life",
     "heroType": "Hero_Lacerta",
     "maxLevel": 3,
@@ -5242,8 +5571,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Po użyciu <color=yellow>Sztuki Uniku</color>, przez 1.5 sek. Szybkość Ruchu zwiększa się o 20%<sprite=5>.",
-    "rawDesc": "Po użyciu <color=yellow>Sztuki Uniku</color>, przez {0} sek. Szybkość Ruchu zwiększa się o {1}.",
+    "description": "Po użyciu <color=yellow>Techniki Uniku</color>, przez 1.5 sekundy twoja Szybkość Ruchu wzrasta o 20%<sprite=5>.",
+    "rawDesc": "Po użyciu <color=yellow>Techniki Uniku</color>, przez {0} sekundy twoja Szybkość Ruchu wzrasta o {1}.",
     "rawDescVars": [
       {
         "rendered": "1.5",
@@ -5279,8 +5608,8 @@
     "image": "Se_Star_Lacerta_L_SpeedAfterDodge.png"
   },
   "Se_Star_Mist_I_CamillasGift": {
-    "name": "Dar Kamilli",
-    "lore": null,
+    "name": "Dar Camilli",
+    "lore": "Życzliwość Camilli, jej mentorki, nigdy nie była jednostronna. Dla Mist, pozostaje osobą wartej zapamiętania.",
     "category": "Imagination",
     "heroType": "Hero_Mist",
     "maxLevel": 3,
@@ -5291,8 +5620,8 @@
     ],
     "requiredLevel": 30,
     "isRequiredLevelTotalMastery": false,
-    "description": "Rozpoczynasz przygodę z <color=yellow>Darem Kamilli</color>. Cena sprzedaży Daru Kamilli wynosi 100<sprite=5> i wzrasta o 200<sprite=5> z każdym przejściem do kolejnego świata. Jednak jeśli otrzymasz od wroga obrażenia i twoje zdrowie spadnie poniżej 50%, przedmiot zostaje zniszczony.",
-    "rawDesc": "Rozpoczynasz przygodę z <color=yellow>Darem Kamilli</color>. Cena sprzedaży Daru Kamilli wynosi {0} i wzrasta o {1} z każdym przejściem do kolejnego świata. Jednak jeśli otrzymasz od wroga obrażenia i twoje zdrowie spadnie poniżej {2}, przedmiot zostaje zniszczony.",
+    "description": "Rozpoczynasz przygodę z <color=yellow>Darem Camilli</color>. Jego cena sprzedaży wynosi 100<sprite=5> i rośnie o 200<sprite=5> za każdą kolejną podróż do następnego świata. Uważaj – jeśli twoje zdrowie spadnie poniżej 50% w wyniku obrażeń od przeciwnika, Dar Camilli zostaje zniszczony.",
+    "rawDesc": "Rozpoczynasz przygodę z <color=yellow>Darem Camilli</color>. Jego cena sprzedaży wynosi {0} i rośnie o {1} za każdą kolejną podróż do następnego świata. Uważaj – jeśli twoje zdrowie spadnie poniżej {2} w wyniku obrażeń od przeciwnika, Dar Camilli zostaje zniszczony.",
     "rawDescVars": [
       {
         "rendered": "100<sprite=5>",
@@ -5536,8 +5865,8 @@
     "image": "Se_Star_Mist_D_BossDamageOnHighHp.png"
   },
   "Se_Star_Mist_D_HunterDamage": {
-    "name": "Wreszcie spotykam godnego przeciwnika",
-    "lore": null,
+    "name": "Wreszcie trafił się godny przeciwnik",
+    "lore": "W sekretnych i oficjalnych pojedynkach jeszcze nigdy nie zaznała smaku porażki.",
     "category": "Destruction",
     "heroType": "Hero_Mist",
     "maxLevel": 3,
@@ -5548,8 +5877,8 @@
     ],
     "requiredLevel": 30,
     "isRequiredLevelTotalMastery": false,
-    "description": "Wszystkie obrażenia zadawane <color=yellow>Tropicielowi</color> zwiększają się o 20%<sprite=5>.",
-    "rawDesc": "Wszystkie obrażenia zadawane <color=yellow>Tropicielowi</color> zwiększają się o {0}.",
+    "description": "Wszystkie obrażenia zadawane <color=yellow>Łowcy</color> zwiększają się o 20%<sprite=5>.",
+    "rawDesc": "Wszystkie obrażenia zadawane <color=yellow>Łowcy</color> zwiększają się o {0}.",
     "rawDescVars": [
       {
         "rendered": "20%<sprite=5>",
@@ -5845,8 +6174,8 @@
     "image": "Se_Star_Mist_F_PR_AllDirections.png"
   },
   "Se_Star_Mist_F_PR_PerfectParry": {
-    "name": "Najlepszym atakiem jest obrona",
-    "lore": null,
+    "name": "Najlepsza obrona to atak",
+    "lore": "Nigdy się nie spieszy. Wie, że najlepsza okazja pojawia się dokładnie wtedy, gdy wróg rusza do ataku.",
     "category": "Flexible",
     "heroType": "Hero_Mist",
     "maxLevel": 1,
@@ -5855,8 +6184,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Czas odnawiania <color=yellow>Odbijania się</color> zmniejsza się o 4 sek., ale czas na skuteczne odbijanie ataku zmniejsza się o 40%.",
-    "rawDesc": "Czas odnawiania <color=yellow>Odbijania się</color> zmniejsza się o {0} sek., ale czas na skuteczne odbijanie ataku zmniejsza się o {1}.",
+    "description": "Czas Odnowienia <color=yellow>Odbicia</color> skraca się o 4 sekundy, ale okno skutecznego parowania ataku jest krótsze o 40%.",
+    "rawDesc": "Czas Odnowienia <color=yellow>Odbicia</color> skraca się o {0} sekundy, ale okno skutecznego parowania ataku jest krótsze o {1}.",
     "rawDescVars": [
       {
         "rendered": "4",
@@ -5898,16 +6227,42 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Po udanym <color=yellow>Odbijaniu się</color> otrzymujesz Tarczę równą 100% odbitych obrażeń, a twój następny atak będzie Trafieniem Krytycznym.",
-    "rawDesc": "Po udanym <color=yellow>Odbijaniu się</color> otrzymujesz Tarczę równą {0} odbitych obrażeń, a twój następny atak będzie Trafieniem Krytycznym.",
+    "description": "Po udanym <color=yellow>Odbijaniu</color> następny atak staje się trafieniem krytycznym i otrzymujesz tarczę równą 250% odbitych obrażeń, która zanika w ciągu 4 sek. Czas trwania tarczy zwiększa się o 0.5 sek. za każdym razem, gdy ulepszysz Odbijanie.",
+    "rawDesc": "Po udanym <color=yellow>Odbijaniu</color> następny atak staje się trafieniem krytycznym i otrzymujesz tarczę równą {0} odbitych obrażeń, która zanika w ciągu {1} sek. Czas trwania tarczy zwiększa się o {2} sek. za każdym razem, gdy ulepszysz Odbijanie.",
     "rawDescVars": [
       {
-        "rendered": "100%",
+        "rendered": "250%",
         "format": "P0",
         "raw": "shieldRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "shieldDecayDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "shieldDecayDurationBonusPerLevel",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5928,16 +6283,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Czas trwania <color=yellow>Niezniszczalnej Woli</color> zostaje zmniejszony o 50%, ale liczba obrażeń zadawanych pierwszą eksplozją zostaje zwiększona o 200%.",
+    "description": "Czas trwania <color=yellow>Niezniszczalnej Woli</color> zostaje zmniejszony o 30%, ale liczba obrażeń zadawanych pierwszą eksplozją zostaje zwiększona o 200%.",
     "rawDesc": "Czas trwania <color=yellow>Niezniszczalnej Woli</color> zostaje zmniejszony o {0}, ale liczba obrażeń zadawanych pierwszą eksplozją zostaje zwiększona o {1}.",
     "rawDescVars": [
       {
-        "rendered": "50%",
+        "rendered": "30%",
         "format": "P0",
         "raw": "durationReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 0.3,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6002,11 +6357,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "Głaszcząc <color=yellow>Kota</color>, otrzymujesz 400<sprite=5> Kawałków Złota oraz 400<sprite=5> Kawałków Pyłu Snu.",
+    "description": "Głaszcząc <color=yellow>Kota</color>, otrzymujesz 800<sprite=5> Kawałków Złota oraz 800<sprite=5> Kawałków Pyłu Snu.",
     "rawDesc": "Głaszcząc <color=yellow>Kota</color>, otrzymujesz {0} Kawałków Złota oraz {1} Kawałków Pyłu Snu.",
     "rawDescVars": [
       {
-        "rendered": "400<sprite=5>",
+        "rendered": "800<sprite=5>",
         "format": "#,##0",
         "raw": "goldAmount",
         "scalingType": "star",
@@ -6015,14 +6370,14 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            400.0,
-            800.0
+            800.0,
+            1200.0
           ],
           "strengthScaling": "Multiply"
         }
       },
       {
-        "rendered": "400<sprite=5>",
+        "rendered": "800<sprite=5>",
         "format": "#,##0",
         "raw": "dreamDustAmount",
         "scalingType": "star",
@@ -6031,8 +6386,8 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            400.0,
-            800.0
+            800.0,
+            1200.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -6054,11 +6409,11 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "Na początku przygody otrzymujesz 90<sprite=5><color=yellow>Złota</color>, ale ceny przedmiotów sprzedawanych przez handlarza zwiększają się o 10%.",
+    "description": "Na początku przygody otrzymujesz 150<sprite=5><color=yellow>Złota</color>, ale ceny przedmiotów sprzedawanych przez handlarza zwiększają się o 10%.",
     "rawDesc": "Na początku przygody otrzymujesz {0}<color=yellow>Złota</color>, ale ceny przedmiotów sprzedawanych przez handlarza zwiększają się o {1}.",
     "rawDescVars": [
       {
-        "rendered": "90<sprite=5>",
+        "rendered": "150<sprite=5>",
         "format": "#,##0",
         "raw": "addedGoldAmount",
         "scalingType": "star",
@@ -6067,10 +6422,10 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            90.0,
-            120.0,
             150.0,
-            180.0
+            180.0,
+            210.0,
+            240.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -6573,16 +6928,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Czas Odnawiania <color=yellow>Szeptów Natury</color> zmniejsza się o 70%, ale wzamian wzrost Szybkości Ataku zmniejsza się o 70%.",
+    "description": "Czas Odnawiania <color=yellow>Szeptów Natury</color> zmniejsza się o 80%, ale wzamian wzrost Szybkości Ataku zmniejsza się o 50%.",
     "rawDesc": "Czas Odnawiania <color=yellow>Szeptów Natury</color> zmniejsza się o {0}, ale wzamian wzrost Szybkości Ataku zmniejsza się o {1}.",
     "rawDescVars": [
       {
-        "rendered": "70%",
+        "rendered": "80%",
         "format": "P0",
         "raw": "cooldownReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.7,
+          "basicConstant": 0.8,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6590,12 +6945,12 @@
         }
       },
       {
-        "rendered": "70%",
+        "rendered": "50%",
         "format": "P0",
         "raw": "hasteReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.7,
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6646,23 +7001,9 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Czas odnawiania <color=yellow>Szeptów Natury</color> zostaje zwiększony o 1.5 sek., ale wzamian twoje przywołańce natychmiast są teleportowane do miejsca docelowego.",
-    "rawDesc": "Czas odnawiania <color=yellow>Szeptów Natury</color> zostaje zwiększony o {0} sek., ale wzamian twoje przywołańce natychmiast są teleportowane do miejsca docelowego.",
-    "rawDescVars": [
-      {
-        "rendered": "1.5",
-        "format": "#,##0.#",
-        "raw": "cooldownPenalty",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 1.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      }
-    ],
+    "description": "<color=yellow>Szepty Natury</color> natychmiast teleportują przywołańce do miejsca docelowego.",
+    "rawDesc": "<color=yellow>Szepty Natury</color> natychmiast teleportują przywołańce do miejsca docelowego.",
+    "rawDescVars": [],
     "image": "Se_Star_Nachia_F_NW_Teleport.png"
   },
   "Se_Star_Nachia_F_SB_DurationBonus": {
@@ -6756,8 +7097,8 @@
     "image": "Se_Star_Nachia_F_SB_StrongerBuffNoSelf.png"
   },
   "Se_Star_Nachia_F_SC_AtkEffect": {
-    "name": "Ostre pazury",
-    "lore": null,
+    "name": "Ostre Pazury",
+    "lore": "Każdy pies musi regularnie ostrzyć pazury – taki ich los.",
     "category": "Flexible",
     "heroType": "Hero_Nachia",
     "maxLevel": 1,
@@ -6766,8 +7107,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Atak Podstawowy Leśnych Psów <color=yellow>Zewu Lasu</color> aktywuje efekt ataku o wartości 30%.",
-    "rawDesc": "Atak Podstawowy Leśnych Psów <color=yellow>Zewu Lasu</color> aktywuje efekt ataku o wartości {0}.",
+    "description": "Podstawowe ataki Leśnych Psów z <color=yellow>Zewu Lasu</color> aktywują efekt ataku na poziomie 30%.",
+    "rawDesc": "Podstawowe ataki Leśnych Psów z <color=yellow>Zewu Lasu</color> aktywują efekt ataku na poziomie {0}.",
     "rawDescVars": [
       {
         "rendered": "30%",
@@ -6910,8 +7251,8 @@
     ],
     "requiredLevel": 30,
     "isRequiredLevelTotalMastery": false,
-    "description": "W <color=yellow>Burzliwym Lesie</color> Szybkość Ruchu zwiększa się o 8%<sprite=5>, a za każdym razem, gdy eliminujesz wroga, otrzymujesz Kawałki Pyłu Snu x1<sprite=5>.",
-    "rawDesc": "W <color=yellow>Burzliwym Lesie</color> Szybkość Ruchu zwiększa się o {0}, a za każdym razem, gdy eliminujesz wroga, otrzymujesz Kawałki Pyłu Snu x{1}.",
+    "description": "W <color=yellow>Burzliwym Lesie</color> <color=yellow>szybkość ruchu</color> wzrasta o 8%<sprite=5>, a za każdego pokonanego wroga otrzymujesz 0.5<sprite=5> <color=yellow>Pyłu Marzeń</color>.",
+    "rawDesc": "W <color=yellow>Burzliwym Lesie</color> <color=yellow>szybkość ruchu</color> wzrasta o {0}, a za każdego pokonanego wroga otrzymujesz {1} <color=yellow>Pyłu Marzeń</color>.",
     "rawDescVars": [
       {
         "rendered": "8%<sprite=5>",
@@ -6931,20 +7272,18 @@
         }
       },
       {
-        "rendered": "1<sprite=5>",
-        "format": "#,##0",
+        "rendered": "0.5<sprite=5>",
+        "format": "#,##0.##",
         "raw": "dreamDustAmount",
         "scalingType": "star",
         "data": {
           "levels": 3,
-          "isClamped": true,
-          "clampMin": 1.0,
-          "clampMax": 100.0,
-          "isInteger": true,
+          "isClamped": false,
+          "isInteger": false,
           "values": [
-            1.0,
-            2.0,
-            3.0
+            0.5,
+            0.75,
+            1.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -7269,7 +7608,7 @@
   },
   "Se_Star_Nachia_L_WaltzArmor": {
     "name": "Taniec Ochrony",
-    "lore": null,
+    "lore": "Tam, gdzie ona się pojawia, zbierają się ptaki, zwierzęta i czyste duchy. Tworzy się mała oaza spokoju.",
     "category": "Life",
     "heroType": "Hero_Nachia",
     "maxLevel": 4,
@@ -7281,8 +7620,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "Czas odnawiania <color=yellow>Onirycznego Walca</color> zostaje zwiększony o 2.2<sprite=5> sek., ale obszar-zasięg efektu zwiększa się o 25%, a Zbroja celu zwiększa się o 50.",
-    "rawDesc": "Czas odnawiania <color=yellow>Onirycznego Walca</color> zostaje zwiększony o {0} sek., ale obszar-zasięg efektu zwiększa się o {1}, a Zbroja celu zwiększa się o {2}.",
+    "description": "Czas odnowienia <color=yellow>Onirycznego Walca</color> wydłuża się o 2.2<sprite=5> sek., ale zasięg efektu zwiększa się o 25%, a obrona celu wzrasta o 50.",
+    "rawDesc": "Czas odnowienia <color=yellow>Onirycznego Walca</color> wydłuża się o {0} sek., ale zasięg efektu zwiększa się o {1}, a obrona celu wzrasta o {2}.",
     "rawDescVars": [
       {
         "rendered": "2.2<sprite=5>",
@@ -7573,11 +7912,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "20%<sprite=5> Mocy Umiejętności zostaje przełączonych na <color=yellow>Moc Ataku</color>.",
-    "rawDesc": "{0} Mocy Umiejętności zostaje przełączonych na <color=yellow>Moc Ataku</color>.",
+    "description": "Zyskujesz <color=yellow>obrażenia ataku</color> równe 25%<sprite=5> twojej <color=yellow>mocy umiejętności</color>.",
+    "rawDesc": "Zyskujesz <color=yellow>obrażenia ataku</color> równe {0} twojej <color=yellow>mocy umiejętności</color>.",
     "rawDescVars": [
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": "25%<sprite=5>",
         "format": "P0",
         "raw": "ratio",
         "scalingType": "star",
@@ -7586,16 +7925,119 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.2,
+            0.25,
             0.3,
-            0.4,
-            0.5
+            0.35,
+            0.4
           ],
           "strengthScaling": "Multiply"
         }
       }
     ],
     "image": "Se_Star_Vesper_D_ConvertAPToAD.png"
+  },
+  "Se_Star_Vesper_F_BS_AddedDurationPerAtk": {
+    "name": "Niekończące się młotkowanie",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Podczas działania <color=yellow>Chrztu Słońca</color>, każdy atak podstawowy wydłuża <color=yellow>Czas trwania</color> o 0.2 sek.",
+    "rawDesc": "Podczas działania <color=yellow>Chrztu Słońca</color>, każdy atak podstawowy wydłuża <color=yellow>Czas trwania</color> o {0} sek.",
+    "rawDescVars": [
+      {
+        "rendered": "0.2",
+        "format": "#,##0.#",
+        "raw": "addedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_AddedDurationPerAtk.png"
+  },
+  "Se_Star_Vesper_F_BS_ADWithArmor": {
+    "name": "Bez bólu nie ma zysku",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Chrzest Słońca</color> zamiast zwiększać szybkość ataku, zwiększa <color=yellow>Obrażenia Ataku</color> o ten sam procent, a za każdego trafionego wroga przy pierwszej eksplozji daje 10 <color=yellow>Pancerza</color>. Jeśli trafisz bossa, dostajesz 40 pancerza.",
+    "rawDesc": "<color=yellow>Chrzest Słońca</color> zamiast zwiększać szybkość ataku, zwiększa <color=yellow>Obrażenia Ataku</color> o ten sam procent, a za każdego trafionego wroga przy pierwszej eksplozji daje {0} <color=yellow>Pancerza</color>. Jeśli trafisz bossa, dostajesz {1} pancerza.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "armorPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40",
+        "format": "#,##0",
+        "raw": "armorPerHitBoss",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 40.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_ADWithArmor.png"
+  },
+  "Se_Star_Vesper_F_BS_MovSpd": {
+    "name": "Przyjemne ciepełko",
+    "lore": "Gdy pot leje się strumieniami, mięśnie prezentują się jeszcze lepiej.",
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Chrzest Słońca</color> daje <color=yellow>Szybkość ruchu</color> równą 50% wartości bonusu do szybkości ataku.",
+    "rawDesc": "<color=yellow>Chrzest Słońca</color> daje <color=yellow>Szybkość ruchu</color> równą {0} wartości bonusu do szybkości ataku.",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "movSpdRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_MovSpd.png"
   },
   "Se_Star_Vesper_F_CS_ColdDamage": {
     "name": "Zimny gniew",
@@ -7608,16 +8050,29 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Obrażenia <color=yellow>Okrutnego Słońca</color> zostają przełączone na Obrażenia od Zimna, a czas ogłuszenia zwiększa się o 1 sek.",
-    "rawDesc": "Obrażenia <color=yellow>Okrutnego Słońca</color> zostają przełączone na Obrażenia od Zimna, a czas ogłuszenia zwiększa się o {0} sek.",
+    "description": "Obrażenia <color=yellow>Okrutnego Słońca</color> zostają zmienione na <color=yellow>obrażenia od zimna</color>, czas ogłuszenia wydłuża się o 2 sek., a zapewniany pancerz wzrasta o 50%.",
+    "rawDesc": "Obrażenia <color=yellow>Okrutnego Słońca</color> zostają zmienione na <color=yellow>obrażenia od zimna</color>, czas ogłuszenia wydłuża się o {0} sek., a zapewniany pancerz wzrasta o {1}.",
     "rawDescVars": [
       {
-        "rendered": "1",
+        "rendered": "2",
         "format": "#,##0",
         "raw": "addedStunDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "gainedArmorAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -7638,16 +8093,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Efekt bycia niewstrzymanym oraz efekt Zbroi <color=yellow>Okrutnego Słońca</color> utrzymują się przez 1.5 sek. po zakończeniu użycia.",
+    "description": "Efekt bycia niewstrzymanym oraz efekt Zbroi <color=yellow>Okrutnego Słońca</color> utrzymują się przez 2.5 sek. po zakończeniu użycia.",
     "rawDesc": "Efekt bycia niewstrzymanym oraz efekt Zbroi <color=yellow>Okrutnego Słońca</color> utrzymują się przez {0} sek. po zakończeniu użycia.",
     "rawDescVars": [
       {
-        "rendered": "1.5",
+        "rendered": "2.5",
         "format": "#,##0.#",
         "raw": "buffLingerDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 2.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -7659,7 +8114,7 @@
   },
   "Se_Star_Vesper_F_CS_UnlockMoveWithPenalty": {
     "name": "Płomień Dumy",
-    "lore": null,
+    "lore": "Wierzy, że jest bliżej bogów niż inni. Ale nazwanie tego tylko pychą to za mało – on jest po prostu zbyt potężny.",
     "category": "Flexible",
     "heroType": "Hero_Vesper",
     "maxLevel": 1,
@@ -7668,9 +8123,23 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Podczas użycia <color=yellow>Okrutnego Słońca</color> możesz się poruszać, ale nie masz zapewnionego efektu bycia niepowstrzymanym, ani efektu Zbroi.",
-    "rawDesc": "Podczas użycia <color=yellow>Okrutnego Słońca</color> możesz się poruszać, ale nie masz zapewnionego efektu bycia niepowstrzymanym, ani efektu Zbroi.",
-    "rawDescVars": [],
+    "description": "Obrażenia <color=yellow>Okrutnego Słońca</color> wzrastają o 25%. Możesz się poruszać podczas rzucania, ale nie otrzymujesz pancerza.",
+    "rawDesc": "Obrażenia <color=yellow>Okrutnego Słońca</color> wzrastają o {0}. Możesz się poruszać podczas rzucania, ale nie otrzymujesz pancerza.",
+    "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "damageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Vesper_F_CS_UnlockMoveWithPenalty.png"
   },
   "Se_Star_Vesper_F_DP_FarTargetBonus": {
@@ -7902,8 +8371,8 @@
     "image": "Se_Star_Vesper_F_SE_Invulnerability.png"
   },
   "Se_Star_Vesper_F_SE_PointCast": {
-    "name": "Odrobina Altruizmu",
-    "lore": null,
+    "name": "Odrobina altruizmu",
+    "lore": "Vesper, choć nie widać tego na pierwszy rzut oka, ma miękkie serce do dzieciaków. Może to przez wspomnienie własnego trudnego dzieciństwa?",
     "category": "Flexible",
     "heroType": "Hero_Vesper",
     "maxLevel": 1,
@@ -7912,14 +8381,41 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Przywołaj <color=yellow>Świątynię Ela</color> w wybranym miejscu, zamiast w miejscu, gdzie stoi Vesper.",
-    "rawDesc": "Przywołaj <color=yellow>Świątynię Ela</color> w wybranym miejscu, zamiast w miejscu, gdzie stoi Vesper.",
-    "rawDescVars": [],
+    "description": "Przywołujesz <color=yellow>Świątynię Ela</color> w wybranym miejscu zamiast na pozycji Vespera. Za każdego sojusznika trafionego początkową eksplozją czas odnowienia skraca się o 10%, a za każdego wroga o 3%.",
+    "rawDesc": "Przywołujesz <color=yellow>Świątynię Ela</color> w wybranym miejscu zamiast na pozycji Vespera. Za każdego sojusznika trafionego początkową eksplozją czas odnowienia skraca się o {0}, a za każdego wroga o {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "reductionRatioOnAlly",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3%",
+        "format": "P0",
+        "raw": "reductionRatioOnEnemy",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Vesper_F_SE_PointCast.png"
   },
   "Se_Star_Vesper_I_ShopDiscount": {
     "name": "Przytłaczająca Prezencja",
-    "lore": null,
+    "lore": "Każdy ma jakiś genialny plan... dopóki nie stanie przed nim twarzą w twarz.",
     "category": "Imagination",
     "heroType": "Hero_Vesper",
     "maxLevel": 4,
@@ -7931,8 +8427,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Cena</color> przedmiotów sprzedawanych przez handlarza zmniejsza się o 10%<sprite=5>.",
-    "rawDesc": "<color=yellow>Cena</color> przedmiotów sprzedawanych przez handlarza zmniejsza się o {0}.",
+    "description": "<color=yellow>Złota cena</color> towarów sprzedawanych przez handlarza spada o 10%<sprite=5>.",
+    "rawDesc": "<color=yellow>Złota cena</color> towarów sprzedawanych przez handlarza spada o {0}.",
     "rawDescVars": [
       {
         "rendered": "10%<sprite=5>",
@@ -7968,11 +8464,11 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "Na początku przygody otrzymujesz 50<sprite=5> Kawałków <color=yellow>Złota</color>.",
+    "description": "Na początku przygody otrzymujesz 100<sprite=5> Kawałków <color=yellow>Złota</color>.",
     "rawDesc": "Na początku przygody otrzymujesz {0} Kawałków <color=yellow>Złota</color>.",
     "rawDescVars": [
       {
-        "rendered": "50<sprite=5>",
+        "rendered": "100<sprite=5>",
         "format": "#,##0",
         "raw": "addedGoldAmount",
         "scalingType": "star",
@@ -7981,9 +8477,9 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            50.0,
             100.0,
-            150.0
+            150.0,
+            200.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -8092,11 +8588,11 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Ilość Tarcz <color=yellow>Pancernego Uderzenia</color> zostaje zwiększona o 30%<sprite=5>, a czas trwania Tarcz zwiększa się o 25%<sprite=5>.",
+    "description": "Ilość Tarcz <color=yellow>Pancernego Uderzenia</color> zostaje zwiększona o 45%<sprite=5>, a czas trwania Tarcz zwiększa się o 75%<sprite=5>.",
     "rawDesc": "Ilość Tarcz <color=yellow>Pancernego Uderzenia</color> zostaje zwiększona o {0}, a czas trwania Tarcz zwiększa się o {1}.",
     "rawDescVars": [
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": "45%<sprite=5>",
         "format": "P0",
         "raw": "shieldAmp",
         "scalingType": "star",
@@ -8105,16 +8601,16 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.3,
-            0.4,
-            0.5,
-            0.6
+            0.45,
+            0.55,
+            0.65,
+            0.75
           ],
           "strengthScaling": "Multiply"
         }
       },
       {
-        "rendered": "25%<sprite=5>",
+        "rendered": "75%<sprite=5>",
         "format": "P0",
         "raw": "shieldDurationAmp",
         "scalingType": "star",
@@ -8123,10 +8619,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.25,
-            0.5,
             0.75,
-            1.0
+            1.0,
+            1.25,
+            1.5
           ],
           "strengthScaling": "Multiply"
         }
@@ -8435,7 +8931,7 @@
   },
   "Se_Star_Yubar_D_ADAPWithPenalty": {
     "name": "Szklana Armata",
-    "lore": null,
+    "lore": "Jego ciało to teraz tylko krucha powłoka. Każdy, kto go zlekceważył, stał się jedynie garścią pyłu.",
     "category": "Destruction",
     "heroType": "Hero_Yubar",
     "maxLevel": 3,
@@ -8446,8 +8942,8 @@
     ],
     "requiredLevel": 30,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Maksymalne Zdrowie</color> zmniejsza się o 15% , ale wzamian zyskujesz 5<sprite=5><color=yellow>Mocy Ataku</color> oraz 7<sprite=5> <color=yellow>Mocy Umiejętności</color>.",
-    "rawDesc": "<color=yellow>Maksymalne Zdrowie</color> zmniejsza się o {0} , ale wzamian zyskujesz {1}<color=yellow>Mocy Ataku</color> oraz {2} <color=yellow>Mocy Umiejętności</color>.",
+    "description": "<color=yellow>Maksymalne zdrowie</color> zostaje zmniejszone o 15%, ale w zamian otrzymujesz 5<sprite=5> <color=yellow>Obrażeń Ataku</color> oraz 7<sprite=5> <color=yellow>Mocy Umiejętności</color>.",
+    "rawDesc": "<color=yellow>Maksymalne zdrowie</color> zostaje zmniejszone o {0}, ale w zamian otrzymujesz {1} <color=yellow>Obrażeń Ataku</color> oraz {2} <color=yellow>Mocy Umiejętności</color>.",
     "rawDescVars": [
       {
         "rendered": "15%",
@@ -8712,8 +9208,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Kataklizm</color>, zamiast zwiększać Moc Umiejętności Yubara, zwiększa jego Moc Ataku.",
-    "rawDesc": "<color=yellow>Kataklizm</color>, zamiast zwiększać Moc Umiejętności Yubara, zwiększa jego Moc Ataku.",
+    "description": "<color=yellow>Kataklizm</color>, zamiast zwiększać Moc Umiejętności Yubara, zwiększa jego Moc Ataku i Szybkość ataku.",
+    "rawDesc": "<color=yellow>Kataklizm</color>, zamiast zwiększać Moc Umiejętności Yubara, zwiększa jego Moc Ataku i Szybkość ataku.",
     "rawDescVars": [],
     "image": "Se_Star_Yubar_F_CC_IncreaseAD.png"
   },
@@ -8882,7 +9378,7 @@
   },
   "Se_Star_Yubar_F_SN_AutoExplosion": {
     "name": "Wypasanie Gwiazd",
-    "lore": null,
+    "lore": "Nawet jeśli przestanie na nie zwracać uwagę, gwiazdy karmią się międzygwiezdnym pyłem i rosną w najlepsze.",
     "category": "Flexible",
     "heroType": "Hero_Yubar",
     "maxLevel": 1,
@@ -8891,8 +9387,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Nie możesz ponownie użyć eksplozji <color=yellow>Supernowej</color>, ale gdy koncentracja umysłu zostanie usunięta, a ta całkowicie się doładuje, eksploduje automatycznie.",
-    "rawDesc": "Nie możesz ponownie użyć eksplozji <color=yellow>Supernowej</color>, ale gdy koncentracja umysłu zostanie usunięta, a ta całkowicie się doładuje, eksploduje automatycznie.",
+    "description": "Nie możesz już ręcznie wywołać eksplozji <color=yellow>Supernowej</color>, ale znika potrzeba koncentracji – gdy całkowicie się naładuje, eksploduje sama.",
+    "rawDesc": "Nie możesz już ręcznie wywołać eksplozji <color=yellow>Supernowej</color>, ale znika potrzeba koncentracji – gdy całkowicie się naładuje, eksploduje sama.",
     "rawDescVars": [],
     "image": "Se_Star_Yubar_F_SN_AutoExplosion.png"
   },
@@ -8953,7 +9449,7 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Czas odnawiania <color=yellow>Spokoju</color> zostaje zmniejszony o 2 sek., ale zamiast stania się niezniszczalnym, otrzymujesz Tarczę równą 40% Maksymalnego Zdrowia na czas trwania dawnej niezniszczalności.",
+    "description": "Czas odnawiania <color=yellow>Spokoju</color> zostaje zmniejszony o 2 sek., ale zamiast stania się niezniszczalnym, otrzymujesz Tarczę równą 100% Maksymalnego Zdrowia na czas trwania dawnej niezniszczalności.",
     "rawDesc": "Czas odnawiania <color=yellow>Spokoju</color> zostaje zmniejszony o {0} sek., ale zamiast stania się niezniszczalnym, otrzymujesz Tarczę równą {1} Maksymalnego Zdrowia na czas trwania dawnej niezniszczalności.",
     "rawDescVars": [
       {
@@ -8970,12 +9466,12 @@
         }
       },
       {
-        "rendered": "40%",
+        "rendered": "100%",
         "format": "P0",
         "raw": "shieldRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.4,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9115,7 +9611,7 @@
   },
   "Se_Star_Yubar_I_StarCookie": {
     "name": "Pieczenie ciasteczek",
-    "lore": null,
+    "lore": "Spalił niezliczoną ilość gwiazd, żeby stworzyć perfekcyjne ciasteczko.",
     "category": "Imagination",
     "heroType": "Hero_Yubar",
     "maxLevel": 3,
@@ -9126,8 +9622,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "Po eliminacji wroga istnieje 0.5%<sprite=5> szansy na pojawienie się <color=yellow>Gwiezdnego Ciasteczka</color>. <color=yellow>Gwiezdne Ciasteczko</color> lekko odzyskuje zdrowie Yubara oraz zapewnia niewielką ilość złota i Pyłu Snu.",
-    "rawDesc": "Po eliminacji wroga istnieje {0} szansy na pojawienie się <color=yellow>Gwiezdnego Ciasteczka</color>. <color=yellow>Gwiezdne Ciasteczko</color> lekko odzyskuje zdrowie Yubara oraz zapewnia niewielką ilość złota i Pyłu Snu.",
+    "description": "Po zabiciu wroga jest 0.5%<sprite=5> szansy na pojawienie się <color=yellow>Gwiezdnego Ciasteczka</color>. <color=yellow>Gwiezdne Ciasteczko</color> delikatnie leczy Yubara, a także daje trochę złota i Pyłu Marzeń.",
+    "rawDesc": "Po zabiciu wroga jest {0} szansy na pojawienie się <color=yellow>Gwiezdnego Ciasteczka</color>. <color=yellow>Gwiezdne Ciasteczko</color> delikatnie leczy Yubara, a także daje trochę złota i Pyłu Marzeń.",
     "rawDescVars": [
       {
         "rendered": "0.5%<sprite=5>",

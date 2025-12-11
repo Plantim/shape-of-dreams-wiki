@@ -4,7 +4,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Springt zurück und lässt 3 Schockbomben am ursprünglichen Standort fallen, die jeweils <sprite=1><color=#16D7FF>120%</color><sprite=5> <color=yellow>Schaden</color> verursachen und 1 Sek. lang <color=yellow>betäuben</color>.",
+    "description": "Springt zurück und lässt 3 Schockbomben am ursprünglichen Standort fallen, die jeweils <sprite=1><color=#16D7FF>168%</color><sprite=5> <color=yellow>Schaden</color> verursachen und 1 Sek. lang <color=yellow>betäuben</color>.",
     "rawDesc": "Springt zurück und lässt {0} Schockbomben am ursprünglichen Standort fallen, die jeweils {1} <color=yellow>Schaden</color> verursachen und {2} Sek. lang <color=yellow>betäuben</color>.",
     "rawDescVars": [
       {
@@ -21,13 +21,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>168%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.2,
+          "basicAP": 1.68,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -176,73 +176,6 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "St_R_DancingBlades": {
-    "name": "Klingensturm",
-    "cooldownTime": 13.0,
-    "maxCharges": 1,
-    "addedCharges": 1,
-    "description": "Beschwört einen <color=yellow>Klingensturm</color> in dem Gebiet, der 4 Sek. anhält. Der <color=yellow>Klingensturm</color> schneidet schnell um sich und verursacht alle 0.5 Sek. <sprite=1><color=#16D7FF>85%</color><sprite=5> oder <sprite=2><color=#FF8A2D>85%</color><sprite=5> <color=yellow>Schaden</color> an Gegnern (der höhere Wert wird verwendet) und verfolgt den nächsten Gegner.",
-    "rawDesc": "Beschwört einen <color=yellow>Klingensturm</color> in dem Gebiet, der {0} Sek. anhält. Der <color=yellow>Klingensturm</color> schneidet schnell um sich und verursacht alle {1} Sek. {2} oder {3} <color=yellow>Schaden</color> an Gegnern (der höhere Wert wird verwendet) und verfolgt den nächsten Gegner.",
-    "rawDescVars": [
-      {
-        "rendered": "4",
-        "format": "#,##0.#",
-        "raw": "duration",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "0.5",
-        "format": "#,##0.#",
-        "raw": "tickInterval",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "apDamage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.85,
-          "basicAD": 0.0,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "adDamage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.0,
-          "basicAD": 0.85,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
-        }
-      }
-    ],
-    "shortDescription": "Flächen-DoT",
-    "rarity": "Rare",
-    "type": "Normal",
-    "traveler": "",
-    "travelerMemoryLocation": "",
-    "tags": [],
-    "image": "St_R_DancingBlades.png",
-    "lore": null,
-    "achievementKey": "ACH_ETERNAL_REST",
-    "achievementName": "Ewige Ruhe",
-    "achievementDescription": "Führe insgesamt 50 finale Treffer mit dem Basisangriff gegen Seelenschwertkämpfer aus."
-  },
   "St_C_DarkBolt": {
     "name": "Dunkler Pfeil",
     "cooldownTime": 4.5,
@@ -334,11 +267,11 @@
   },
   "St_C_FlashFreeze": {
     "name": "Blitzfrost",
-    "cooldownTime": 5.0,
+    "cooldownTime": 9.0,
     "maxCharges": 2,
-    "addedCharges": 1,
-    "description": "Strahlt Kälte nach vorne aus und fügt Gegnern <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>Kälteschaden</color> zu. Falls ein Gegner bereits von <color=yellow>Kälte</color> betroffen ist, erhöht sich der <color=yellow>Schaden</color> um 100% und der Gegner wird für 1.5 Sek. <color=yellow>bewegungsunfähig</color>.",
-    "rawDesc": "Strahlt Kälte nach vorne aus und fügt Gegnern {0} <color=yellow>Kälteschaden</color> zu. Falls ein Gegner bereits von <color=yellow>Kälte</color> betroffen ist, erhöht sich der <color=yellow>Schaden</color> um {1} und der Gegner wird für {2} Sek. <color=yellow>bewegungsunfähig</color>.",
+    "addedCharges": 999,
+    "description": "Strahlt Kälte nach vorne aus und fügt Gegnern <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>Kälteschaden</color> zu, während du und Verbündete für 3 Sek. ein <color=yellow>Schild</color> in Höhe von <sprite=1><color=#16D7FF>90%</color><sprite=5> erhalten. Falls ein Gegner bereits von <color=yellow>Kälte</color> betroffen ist, erhöht sich der <color=yellow>Schaden</color> um 100% und der Gegner wird für 1.5 Sek. <color=yellow>bewegungsunfähig</color>.\n\n<color=yellow>Ladungen</color> werden alle auf einmal aufgeladen.",
+    "rawDesc": "Strahlt Kälte nach vorne aus und fügt Gegnern {0} <color=yellow>Kälteschaden</color> zu, während du und Verbündete für {1} Sek. ein <color=yellow>Schild</color> in Höhe von {2} erhalten. Falls ein Gegner bereits von <color=yellow>Kälte</color> betroffen ist, erhöht sich der <color=yellow>Schaden</color> um {3} und der Gegner wird für {4} Sek. <color=yellow>bewegungsunfähig</color>.\n\n<color=yellow>Ladungen</color> werden alle auf einmal aufgeladen.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
@@ -351,6 +284,32 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.9,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.1875
         }
       },
       {
@@ -388,7 +347,8 @@
     "tags": [
       "Cold",
       "Melee",
-      "HardCC"
+      "HardCC",
+      "Shield"
     ],
     "image": "St_C_FlashFreeze.PNG",
     "lore": null,
@@ -613,8 +573,8 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Schwingt eine Klaue nach vorne und fügt Gegnern <sprite=1><color=#16D7FF>140%</color><sprite=5> <color=yellow>Kälteschaden</color> zu und <color=yellow>betäubt</color> sie für 0.5 Sek. Kann ein zweites Mal geschwungen werden, um <sprite=1><color=#16D7FF>264%</color><sprite=5> <color=yellow>Kälteschaden</color> zu verursachen und Gegner für 1 Sek. zu <color=yellow>betäuben</color>.",
-    "rawDesc": "Schwingt eine Klaue nach vorne und fügt Gegnern {0} <color=yellow>Kälteschaden</color> zu und <color=yellow>betäubt</color> sie für {1} Sek. Kann ein zweites Mal geschwungen werden, um {2} <color=yellow>Kälteschaden</color> zu verursachen und Gegner für {3} Sek. zu <color=yellow>betäuben</color>.",
+    "description": "Schwingt eine Klaue nach vorne und fügt Gegnern <sprite=1><color=#16D7FF>140%</color><sprite=5> <color=yellow>Kälteschaden</color> zu und <color=yellow>betäubt</color> sie für 0.5 Sek. Kann ein zweites Mal geschwungen werden, um <sprite=1><color=#16D7FF>264%</color><sprite=5> <color=yellow>Kälteschaden</color> zu verursachen und Gegner für 1 Sek. zu <color=yellow>betäuben</color>.\n\nWenn die Klaue einen Gegner trifft, <color=yellow>heilst</color> du 12% deiner <color=yellow>Lebenspunkte</color>, basierend auf dem verursachten Schaden.",
+    "rawDesc": "Schwingt eine Klaue nach vorne und fügt Gegnern {0} <color=yellow>Kälteschaden</color> zu und <color=yellow>betäubt</color> sie für {1} Sek. Kann ein zweites Mal geschwungen werden, um {2} <color=yellow>Kälteschaden</color> zu verursachen und Gegner für {3} Sek. zu <color=yellow>betäuben</color>.\n\nWenn die Klaue einen Gegner trifft, <color=yellow>heilst</color> du {4} deiner <color=yellow>Lebenspunkte</color>, basierend auf dem verursachten Schaden.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
@@ -667,9 +627,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "12%",
+        "format": "P0",
+        "raw": "Ai_C_IceClaw::healRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.12,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Nahbereich-Kälteschaden",
+    "shortDescription": "Nahbereich-Kälteschaden, Heilung",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -677,7 +650,8 @@
     "tags": [
       "Cold",
       "Melee",
-      "HardCC"
+      "HardCC",
+      "Heal"
     ],
     "image": "St_C_IceClaw.PNG",
     "lore": null,
@@ -690,8 +664,8 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Stürmt kurz nach vorne und schwingt die Türkisklinge, um Gegnern vor dir <color=yellow>Schaden</color> zuzufügen. Verursacht den höheren Wert zwischen <sprite=2><color=#FF8A2D>200%</color><sprite=5> und <sprite=1><color=#16D7FF>200%</color><sprite=5>. Wenn <color=yellow>AK-Schaden</color> höher ist, werden <color=yellow>Angriffseffekte</color> ausgelöst.",
-    "rawDesc": "Stürmt kurz nach vorne und schwingt die Türkisklinge, um Gegnern vor dir <color=yellow>Schaden</color> zuzufügen. Verursacht den höheren Wert zwischen {0} und {1}. Wenn <color=yellow>AK-Schaden</color> höher ist, werden <color=yellow>Angriffseffekte</color> ausgelöst.",
+    "description": "Stürmt kurz nach vorne und schwingt die Türkisklinge, um Gegnern vor dir <color=yellow>Schaden</color> zuzufügen. Verursacht den höheren Wert zwischen <sprite=2><color=#FF8A2D>200%</color><sprite=5> und <sprite=1><color=#16D7FF>200%</color><sprite=5>. Wenn <color=yellow>Angriffsschaden</color> höher ist, werden <color=yellow>Angriffseffekte</color> ausgelöst.",
+    "rawDesc": "Stürmt kurz nach vorne und schwingt die Türkisklinge, um Gegnern vor dir <color=yellow>Schaden</color> zuzufügen. Verursacht den höheren Wert zwischen {0} und {1}. Wenn <color=yellow>Angriffsschaden</color> höher ist, werden <color=yellow>Angriffseffekte</color> ausgelöst.",
     "rawDescVars": [
       {
         "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
@@ -731,7 +705,7 @@
       "Mobility"
     ],
     "image": "St_C_MagicSword.png",
-    "lore": null,
+    "lore": "In der stillen Morgendämmerung,\nwenn ich den Hintergarten des Highgate-Anwesens betrete,\nsteigt eine Erinnerung leise in mir auf.\n\nDie kühle Luft des alten Übungsplatzes, die noch immer meine Wangen zu streifen scheint.\nMeine Kindheit, als ich kaum mehr als einen winzigen Schatten warf.\nMutters Stimme, scharf wie Raureif.\n\nDie Türkisklinge.\nDas Schwert der Familie, Symbol der Stärke und des Stolzes der Verdesilbers.\nEin Schwert, das wie ein standhafter Baum geradeaus stößt, unerschütterlich und ohne zu wanken –\nso zeigte es mir Mutter an jenem Tag.\n\nDoch mein Schwert folgte Mutters Lehren nicht.\nDie Spitze zitterte wie ein Blatt im Wind, die Kraft floss davon wie Wasser.\n\nIst das nicht ironisch, Mutter?\nDer stolze Baum, den du so verzweifelt schützen wolltest, ist schließlich gebrochen und gefallen,\nund nur dieses unbedeutende Blatt, das im Wind tanzte,\nhat überlebt.\n\nDer Stolz der Familie ist verschwunden, das Gewicht des Baumes auch...\naber ich vermisse es nicht.\n\nAlles, was ich mir wünsche, ist...\nals namenloser Nebel, der sein Türkis verloren hat,\ndas Schwert für das Glück meiner Schwester zu führen.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -787,7 +761,7 @@
   },
   "St_C_Pew": {
     "name": "Peng",
-    "cooldownTime": 14.0,
+    "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
     "description": "<color=yellow>Halte die Taste gedrückt</color>, um einen Feuergeschoss aufzuladen. Nach vollständiger Aufladung wird ein Feuergeschoss abgefeuert, der allen getroffenen Gegnern <color=yellow>Feuerschaden</color> von <sprite=1><color=#16D7FF>150%</color><sprite=5> bis <sprite=1><color=#16D7FF>400%</color><sprite=5> zufügt, proportional zur Zielzeit.\n\nBei vorzeitiger Abgabe reduziert sich die <color=yellow>Abklingzeit</color> um bis zu 80%. Nach 1.35 Sek. Zielen erreichen Trefferbreite und Schaden ihr Maximum.",
@@ -865,8 +839,8 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Entlädt Energie aus der Handfläche, verursacht <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>Schaden</color> und stößt alle getroffenen Gegner zurück. Wenn zurückgestoßene Gegner auf eine Wand treffen, erleiden sie zusätzlich <sprite=1><color=#16D7FF>504%</color><sprite=5> <color=yellow>Schaden</color> und werden für 1.5 Sek. betäubt.",
-    "rawDesc": "Entlädt Energie aus der Handfläche, verursacht {0} <color=yellow>Schaden</color> und stößt alle getroffenen Gegner zurück. Wenn zurückgestoßene Gegner auf eine Wand treffen, erleiden sie zusätzlich {1} <color=yellow>Schaden</color> und werden für {2} Sek. betäubt.",
+    "description": "Entlädt Energie aus der Handfläche, verursacht <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>Schaden</color>, stößt alle getroffenen Gegner zurück und betäubt sie für 1 Sek. Wenn das Ziel unaufhaltsam ist oder gegen eine Wand prallt, erleidet es zusätzlich <sprite=1><color=#16D7FF>504%</color><sprite=5> <color=yellow>Schaden</color>.",
+    "rawDesc": "Entlädt Energie aus der Handfläche, verursacht {0} <color=yellow>Schaden</color>, stößt alle getroffenen Gegner zurück und betäubt sie für {1} Sek. Wenn das Ziel unaufhaltsam ist oder gegen eine Wand prallt, erleidet es zusätzlich {2} <color=yellow>Schaden</color>.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
@@ -882,24 +856,24 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "dmgFactor*stunDmgRatio",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "1.5",
+        "rendered": "1",
         "format": "#,##0.#",
         "raw": "stunDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor*stunDmgRatio",
+        "scalingType": "unknown",
+        "data": {}
       }
     ],
     "shortDescription": "Nahbereich-Schaden, Wegstoßen",
@@ -988,20 +962,20 @@
   },
   "St_C_SparklingWaterGun": {
     "name": "Prickelnde Wasserpistole",
-    "cooldownTime": 5.0,
+    "cooldownTime": 4.0,
     "maxCharges": 3,
     "addedCharges": 1,
-    "description": "Feuert eine prickelnde Wasserpistole ab. <color=yellow>Regeneriert</color> einen Verbündeten, den sie zuerst trifft, um <sprite=1><color=#16D7FF>50%</color><sprite=5> <color=yellow>LP</color> und entfernt <color=yellow>Feuer-Stapel</color>. Wenn sie einen Gegner trifft, verursacht sie stattdessen 1 <color=yellow>Schaden</color> und <color=yellow>betäubt</color> ihn für 1.5 Sek. Die <color=yellow>Abklingzeit</color> reduziert sich nur <color=yellow>im Kampf</color>.",
-    "rawDesc": "Feuert eine prickelnde Wasserpistole ab. <color=yellow>Regeneriert</color> einen Verbündeten, den sie zuerst trifft, um {0} <color=yellow>LP</color> und entfernt <color=yellow>Feuer-Stapel</color>. Wenn sie einen Gegner trifft, verursacht sie stattdessen {1} <color=yellow>Schaden</color> und <color=yellow>betäubt</color> ihn für {2} Sek. Die <color=yellow>Abklingzeit</color> reduziert sich nur <color=yellow>im Kampf</color>.",
+    "description": "Feuert eine prickelnde Wasserpistole ab. <color=yellow>Regeneriert</color> getroffene Verbündete um <sprite=1><color=#16D7FF>70%</color><sprite=5> <color=yellow>LP</color> und entfernt <color=yellow>Feuer-Stapel</color>. Fügt Gegnern 1 <color=yellow>Schaden</color> zu und <color=yellow>betäubt</color> sie für 1.5 Sek. Die <color=yellow>Abklingzeit</color> reduziert sich nur <color=yellow>im Kampf</color>.\n\nIst das Ziel eine verbündete <color=yellow>Beschwörung</color>, erhöht sich die Heilung um 40%.",
+    "rawDesc": "Feuert eine prickelnde Wasserpistole ab. <color=yellow>Regeneriert</color> getroffene Verbündete um {0} <color=yellow>LP</color> und entfernt <color=yellow>Feuer-Stapel</color>. Fügt Gegnern {1} <color=yellow>Schaden</color> zu und <color=yellow>betäubt</color> sie für {2} Sek. Die <color=yellow>Abklingzeit</color> reduziert sich nur <color=yellow>im Kampf</color>.\n\nIst das Ziel eine verbündete <color=yellow>Beschwörung</color>, erhöht sich die Heilung um {3}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>50%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>70%</color><sprite=5>",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.5,
+          "basicAP": 0.7,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -1027,6 +1001,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "summonAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1167,7 +1154,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Konzentriert sich</color> für 3.5 Sek., schwinge dein Schwert und füge Gegnern in der Nähe <sprite=2><color=#FF8A2D>170%</color><sprite=5> <color=yellow>Schaden</color> pro Sek. zu und löse 25% <color=yellow>Angriffseffekte</color> aus. Je höher dein <color=yellow>Angriffstempo</color>, desto schneller schwingst du das Schwert.",
+    "description": "<color=yellow>Konzentriert sich</color> für 3.5 Sek., schwinge dein Schwert und füge Gegnern in der Nähe <sprite=2><color=#FF8A2D>240%</color><sprite=5> <color=yellow>Schaden</color> pro Sek. zu und löse 35% <color=yellow>Angriffseffekte</color> aus. Je höher dein <color=yellow>Angriffstempo</color>, desto schneller schwingst du das Schwert.",
     "rawDesc": "<color=yellow>Konzentriert sich</color> für {0} Sek., schwinge dein Schwert und füge Gegnern in der Nähe {1} <color=yellow>Schaden</color> pro Sek. zu und löse {2} <color=yellow>Angriffseffekte</color> aus. Je höher dein <color=yellow>Angriffstempo</color>, desto schneller schwingst du das Schwert.",
     "rawDescVars": [
       {
@@ -1184,19 +1171,19 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>170%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>240%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*2",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "25%",
+        "rendered": "35%",
         "format": "P0",
         "raw": "attackEffect",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.25,
+          "basicConstant": 0.35,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2465,43 +2452,6 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "St_E_FlameJet": {
-    "name": "Feuerstoß",
-    "cooldownTime": 11.5,
-    "maxCharges": 1,
-    "addedCharges": 1,
-    "description": "Speit 2.5 Sek. lang einen Feuerstrahl. Gegner, die von diesem Feuerstrahl getroffen werden, erleiden <sprite=1><color=#16D7FF>336%</color><sprite=5> <color=yellow>Feuerschaden</color> pro Sekunde.",
-    "rawDesc": "Speit {0} Sek. lang einen Feuerstrahl. Gegner, die von diesem Feuerstrahl getroffen werden, erleiden {1} <color=yellow>Feuerschaden</color> pro Sekunde.",
-    "rawDescVars": [
-      {
-        "rendered": "2.5",
-        "format": "#,##0.#",
-        "raw": "spawns*spawnInterval",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "damage/minHitInterval",
-        "scalingType": "unknown",
-        "data": {}
-      }
-    ],
-    "shortDescription": "Flächen-Feuerschaden auf einem Gebiet",
-    "rarity": "Epic",
-    "type": "Normal",
-    "traveler": "",
-    "travelerMemoryLocation": "",
-    "tags": [
-      "Fire"
-    ],
-    "image": "St_E_FlameJet.png",
-    "lore": "Jagdtagebuch\nJahr 2 der Lozit-Herrschaft, Tag oo im o. Monat, Wetter: Klar\nJagdort: Igni-Sümpfe\nHeutige Ausbeute: Ein Beutel Brennnessel\n\nEs gibt Regeln, an die ich mich immer halte, wenn ich in den Igni-Sümpfen jage.\n\n1. Sei vorsichtig, wenn du Kratzspuren an Mangrovenwurzeln siehst.\n\n2. Wenn diese Spuren kein Moos aufweisen, gehe nicht in diese Richtung.\n\n3. Wenn du in der Ferne Rauch siehst oder verkohlte Baumstämme noch glühen, kehre sofort nach Hause zurück.\n\nDas habe ich mir geschworen, nachdem ich letzten Sommer durch mein Zielfernrohr beobachtet habe, wie ein Dummkopf versuchte, eine halb zerfressene Kalimbeere-Ranke herauszuziehen und dabei auf einen monströsen Barrasus stieß.\n\nSelbst bei der Vorführung der Feuerwaffen der Königlichen Garde habe ich noch nie so große Flammen gesehen.",
-    "achievementKey": "ACH_PYROMANIA",
-    "achievementName": "Pyromane",
-    "achievementDescription": "Töte 250x brennende Gegner."
-  },
   "St_E_FinalExplosion": {
     "name": "Letzte Explosion",
     "cooldownTime": 3.0,
@@ -2594,10 +2544,47 @@
       "HardCC"
     ],
     "image": "St_E_FinalExplosion.PNG",
-    "lore": null,
+    "lore": "Der Belagerungsring der Sonnenflammritter zog sich lückenlos zusammen.\nIhre heiligen Flammen ließen selbst in den tiefsten Gassen keine Dunkelheit zu.\nIn die Enge getrieben, blieb der Anhänger der Luziden Sekte schließlich stehen.\n\nDoch statt Furcht zeigte sich ein seltsam verzücktes Lächeln auf seinem Gesicht.\nEr blickte auf die Ritter herab, die ihn umzingelten, als wären sie erbärmliche Insekten.\n\n\"Glaubt ihr... das ist das Ende? Glaubt ihr wirklich, ihr könnt mich mit den arroganten, winzigen Flammen eures falschen Gottes richten?\"\n\nEr schloss die Augen und konzentrierte sich mit allen Sinnen.\nJenseits des lärmenden Getöses der Realität hörte er die sanften Flüstertöne der Traumwelt,\ndes Grenzstroms, nach dem er sich so gesehnt hatte.\n\nEs war Zeit, alles zurückzulassen und zu gehen.\nEr öffnete die Augen wieder, um der Realität ein letztes Lebewohl zu sagen.\n\n\"Lebt wohl! Ihr blinden Flammen... dieser nichtige Körper... und diese unerträgliche Welt!\"\n\nSein Körper begann bereits in unwirklichen Farben zu pulsieren und heftig zu flackern.\nEin Gebet an seinen Gott, das heißeste und verzweifeltste.\n\n\"Primus! Euer demütiger Diener... opfert Euch jetzt alles, was er ist!\"\n\nSein letzter Schrei verwandelte seine Existenz in eine Handvoll Staub\nund wurde zu einer majestätischen letzten Explosion, die alles verschlang.\n\n\n- Erinnerungsspur einer Leiche in einem zerstörten Dorf",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
+  },
+  "St_E_FlameJet": {
+    "name": "Feuerstoß",
+    "cooldownTime": 11.5,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Speit 2.5 Sek. lang einen Feuerstrahl. Gegner, die von diesem Feuerstrahl getroffen werden, erleiden <sprite=1><color=#16D7FF>336%</color><sprite=5> <color=yellow>Feuerschaden</color> pro Sekunde.",
+    "rawDesc": "Speit {0} Sek. lang einen Feuerstrahl. Gegner, die von diesem Feuerstrahl getroffen werden, erleiden {1} <color=yellow>Feuerschaden</color> pro Sekunde.",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "spawns*spawnInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage/minHitInterval",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "Flächen-Feuerschaden auf einem Gebiet",
+    "rarity": "Epic",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Fire"
+    ],
+    "image": "St_E_FlameJet.png",
+    "lore": "Jagdtagebuch\nJahr 2 der Lozit-Herrschaft, Tag oo im o. Monat, Wetter: Klar\nJagdort: Igni-Sümpfe\nHeutige Ausbeute: Ein Beutel Brennnessel\n\nEs gibt Regeln, an die ich mich immer halte, wenn ich in den Igni-Sümpfen jage.\n\n1. Sei vorsichtig, wenn du Kratzspuren an Mangrovenwurzeln siehst.\n\n2. Wenn diese Spuren kein Moos aufweisen, gehe nicht in diese Richtung.\n\n3. Wenn du in der Ferne Rauch siehst oder verkohlte Baumstämme noch glühen, kehre sofort nach Hause zurück.\n\nDas habe ich mir geschworen, nachdem ich letzten Sommer durch mein Zielfernrohr beobachtet habe, wie ein Dummkopf versuchte, eine halb zerfressene Kalimbeere-Ranke herauszuziehen und dabei auf einen monströsen Barrasus stieß.\n\nSelbst bei der Vorführung der Feuerwaffen der Königlichen Garde habe ich noch nie so große Flammen gesehen.",
+    "achievementKey": "ACH_PYROMANIA",
+    "achievementName": "Pyromane",
+    "achievementDescription": "Töte 250x brennende Gegner."
   },
   "St_E_Harvest": {
     "name": "Bluternte",
@@ -2683,6 +2670,89 @@
       "Attack"
     ],
     "image": "St_E_Harvest.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_E_JusticeGuillotine": {
+    "name": "Guillotine der Gerechtigkeit",
+    "cooldownTime": 100.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Lässt ein gewaltiges Großschwert auf die Position des Zielgegners herabfallen und verursacht <sprite=2><color=#FF8A2D>800%</color><sprite=5> <color=yellow>Schaden</color> an allen Gegnern in der Nähe. Dieser Schaden erhöht sich proportional zu deinen <color=yellow>verlorenen LP</color> um bis zu das 2-fache und proportional zu den <color=yellow>verlorenen LP</color> des Ziels um bis zu das 2-fache, insgesamt also um bis zu das 4-fache. Die Schadenserhöhung ist maximal, wenn die LP bei 30% oder darunter liegen.",
+    "rawDesc": "Lässt ein gewaltiges Großschwert auf die Position des Zielgegners herabfallen und verursacht {0} <color=yellow>Schaden</color> an allen Gegnern in der Nähe. Dieser Schaden erhöht sich proportional zu deinen <color=yellow>verlorenen LP</color> um bis zu das {1}-fache und proportional zu den <color=yellow>verlorenen LP</color> des Ziels um bis zu das {2}-fache, insgesamt also um bis zu das {3}-fache. Die Schadenserhöhung ist maximal, wenn die LP bei {4} oder darunter liegen.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>800%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 8.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dmgAmplitude",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dmgAmplitude",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "dmgAmplitude * dmgAmplitude",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "maxAmpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Mächtiger Schlag, Schaden steigt mit verlorenen LP",
+    "rarity": "Epic",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Melee",
+      "Mobility"
+    ],
+    "image": "St_E_JusticeGuillotine.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -2793,6 +2863,103 @@
     "achievementKey": "ACH_MASTER_OF_MYSTIC_ARTS",
     "achievementName": "Meister der mystischen Künste",
     "achievementDescription": "Besitze gleichzeitig 4 aktive Erinnerungen mit einer Abklingzeit von 3 Sek. oder weniger."
+  },
+  "St_E_Permafrost": {
+    "name": "Permafrost",
+    "cooldownTime": 100.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Sammelt extreme Kälte und setzt sie in einem sehr großen Bereich frei. Betroffene Verbündete erhalten 10 Sek. lang einen <color=yellow>Schild</color> von <sprite=1><color=#16D7FF>300%</color><sprite=5> und 100 <color=yellow>Rüstung</color>, während Gegner einfrieren, <sprite=1><color=#16D7FF>500%</color><sprite=5> <color=yellow>Kälteschaden</color> erleiden und 15 Sek. lang <color=yellow>betäubt</color> werden. \n\nWenn ein Gegner bereits von <color=yellow>Kälte</color> betroffen ist, wird dieser Schaden um 100% erhöht.",
+    "rawDesc": "Sammelt extreme Kälte und setzt sie in einem sehr großen Bereich frei. Betroffene Verbündete erhalten {0} Sek. lang einen <color=yellow>Schild</color> von {1} und {2} <color=yellow>Rüstung</color>, während Gegner einfrieren, {3} <color=yellow>Kälteschaden</color> erleiden und {4} Sek. lang <color=yellow>betäubt</color> werden. \n\nWenn ein Gegner bereits von <color=yellow>Kälte</color> betroffen ist, wird dieser Schaden um {5} erhöht.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 3.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "100",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 100.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>500%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 5.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "15",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "chilledAmpBonus-1",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "Flächen-Kälteschaden, Betäubung, Verbündetenschutz",
+    "rarity": "Epic",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Cold",
+      "HardCC",
+      "Shield"
+    ],
+    "image": "St_E_Permafrost.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
   },
   "St_E_Rewind": {
     "name": "Zurücksetzen",
@@ -3833,12 +4000,12 @@
     "achievementDescription": ""
   },
   "St_L_PyranasFireball": {
-    "name": "Pyranas Feuerkugeln",
+    "name": "Pyranas Feuerball",
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Verwandelt</color> dich für 3 Sek. in eine schnell bewegende <color=yellow>Feuerkugel</color> und erhält 50<sprite=5> <color=yellow>VK</color> sowie Immunität gegen <color=yellow>Feuerschaden</color>. Bei jeder Berührung mit einem Gegner verursacht die Kugel <sprite=1><color=#16D7FF>220%</color><sprite=5> <color=yellow>Feuerschaden</color> und die <color=yellow>Dauer</color> der Verwandlung <color=yellow>erhöht sich</color> um 0.2<sprite=5> Sek., bis zu einem Maximum von 3<sprite=5> Sek.",
-    "rawDesc": "<color=yellow>Verwandelt</color> dich für {0} Sek. in eine schnell bewegende <color=yellow>Feuerkugel</color> und erhält {1} <color=yellow>VK</color> sowie Immunität gegen <color=yellow>Feuerschaden</color>. Bei jeder Berührung mit einem Gegner verursacht die Kugel {2} <color=yellow>Feuerschaden</color> und die <color=yellow>Dauer</color> der Verwandlung <color=yellow>erhöht sich</color> um {3} Sek., bis zu einem Maximum von {4} Sek.",
+    "description": "<color=yellow>Verwandelt</color> dich für 3 Sek. in eine schnell bewegende <color=yellow>Feuerkugel</color>, gewährt 50<sprite=5> <color=yellow>Rüstung</color> und Immunität gegen <color=yellow>Feuerschaden</color>. Jedes Mal, wenn die Kugel einen Gegner berührt, verursacht sie <sprite=1><color=#16D7FF>220%</color><sprite=5> <color=yellow>Feuerschaden</color> und die <color=yellow>Dauer</color> der Verwandlung <color=yellow>erhöht sich</color> um 0.2<sprite=5> Sek., bis zu einem Maximum von 3<sprite=5> Sek.",
+    "rawDesc": "<color=yellow>Verwandelt</color> dich für {0} Sek. in eine schnell bewegende <color=yellow>Feuerkugel</color>, gewährt {1} <color=yellow>Rüstung</color> und Immunität gegen <color=yellow>Feuerschaden</color>. Jedes Mal, wenn die Kugel einen Gegner berührt, verursacht sie {2} <color=yellow>Feuerschaden</color> und die <color=yellow>Dauer</color> der Verwandlung <color=yellow>erhöht sich</color> um {3} Sek., bis zu einem Maximum von {4} Sek.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -4273,30 +4440,30 @@
     "cooldownTime": 6.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Halte die Wirkungstaste gedrückt</color>, um die Sonne im Hammer zu konzentrieren. Sobald die Konzentration abgeschlossen ist, schlage auf den Boden, um Gegnern <sprite=1><color=#16D7FF>100%</color><sprite=5>-<sprite=1><color=#16D7FF>350%</color><sprite=5> <color=yellow>Feuerschaden</color> zuzufügen und sie für 0.5-1.5 Sek. zu <color=yellow>betäuben</color>.\n\nWährend der Konzentration kannst du dich nicht bewegen, wirst aber <color=yellow>unaufhaltsam</color> und erhältst 60<sprite=5> <color=yellow>VK</color>.",
+    "description": "<color=yellow>Halte die Wirkungstaste gedrückt</color>, um die Sonne im Hammer zu konzentrieren. Sobald die Konzentration abgeschlossen ist, schlage auf den Boden, um Gegnern <sprite=1><color=#16D7FF>150%</color><sprite=5>-<sprite=1><color=#16D7FF>450%</color><sprite=5> <color=yellow>Feuerschaden</color> zuzufügen und sie für 0.5-1.5 Sek. zu <color=yellow>betäuben</color>.\n\nWährend der Konzentration kannst du dich nicht bewegen, wirst aber <color=yellow>unaufhaltsam</color> und erhältst 60<sprite=5> <color=yellow>VK</color>.",
     "rawDesc": "<color=yellow>Halte die Wirkungstaste gedrückt</color>, um die Sonne im Hammer zu konzentrieren. Sobald die Konzentration abgeschlossen ist, schlage auf den Boden, um Gegnern {0}-{1} <color=yellow>Feuerschaden</color> zuzufügen und sie für {2}-{3} Sek. zu <color=yellow>betäuben</color>.\n\nWährend der Konzentration kannst du dich nicht bewegen, wirst aber <color=yellow>unaufhaltsam</color> und erhältst {4} <color=yellow>VK</color>.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
         "format": "#,##0",
         "raw": "damageMin",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>450%</color><sprite=5>",
         "format": "#,##0",
         "raw": "damageMax",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.5,
+          "basicAP": 4.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -4363,18 +4530,18 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Stürme auf ein Ziel zu und schlage mit dem Hammer nieder, um Gegnern <sprite=2><color=#FF8A2D>110%</color><sprite=5> <color=yellow>Lichtschaden</color> zuzufügen und 50% <color=yellow>Angriffseffekt</color> auszulösen. Jeder <color=yellow>Angriff</color> auf einen Gegner <color=yellow>reduziert</color> die <color=yellow>Abklingzeit</color> um 8%.",
+    "description": "Stürme auf ein Ziel zu und schlage mit dem Hammer nieder, um Gegnern <sprite=2><color=#FF8A2D>125%</color><sprite=5> <color=yellow>Lichtschaden</color> zuzufügen und 50% <color=yellow>Angriffseffekt</color> auszulösen. Jeder <color=yellow>Angriff</color> auf einen Gegner <color=yellow>reduziert</color> die <color=yellow>Abklingzeit</color> um 8%.",
     "rawDesc": "Stürme auf ein Ziel zu und schlage mit dem Hammer nieder, um Gegnern {0} <color=yellow>Lichtschaden</color> zuzufügen und {1} <color=yellow>Angriffseffekt</color> auszulösen. Jeder <color=yellow>Angriff</color> auf einen Gegner <color=yellow>reduziert</color> die <color=yellow>Abklingzeit</color> um {2}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>110%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>125%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.1,
+          "basicAD": 1.25,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5025,16 +5192,16 @@
     "cooldownTime": 4.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Opfere</color> 10% deiner max. LP, um 3 dünne Goldfragmente nach vorne zu schleudern. Die Goldfragmente durchdringen Ziele, verursachen <sprite=1><color=#16D7FF>95%</color><sprite=5> <color=yellow>Schaden</color> an getroffenen Gegnern und <color=yellow>regenerieren</color> verbündete Einheiten um <sprite=1><color=#16D7FF>18%</color><sprite=5>.",
+    "description": "<color=yellow>Opfere</color> 8% deiner max. LP, um 3 dünne Goldfragmente nach vorne zu schleudern. Die Goldfragmente durchdringen Ziele, verursachen <sprite=1><color=#16D7FF>95%</color><sprite=5> <color=yellow>Schaden</color> an getroffenen Gegnern und <color=yellow>regenerieren</color> verbündete Einheiten um <sprite=1><color=#16D7FF>18%</color><sprite=5>.",
     "rawDesc": "<color=yellow>Opfere</color> {0} deiner max. LP, um {1} dünne Goldfragmente nach vorne zu schleudern. Die Goldfragmente durchdringen Ziele, verursachen {2} <color=yellow>Schaden</color> an getroffenen Gegnern und <color=yellow>regenerieren</color> verbündete Einheiten um {3}.",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "8%",
         "format": "P0",
         "raw": "sacrificeHpRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.08,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5285,7 +5452,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Halte die Taste gedrückt</color>, um einen Schwarm von Geistespfeilen aufzuladen. Beim Loslassen werden 1-4<sprite=5> Geistespfeile auf nahegelegene Gegner geschleudert, abhängig von der Aufladedauer. Jeder Geistespfeil verursacht <sprite=2><color=#FF8A2D>150%</color><sprite=5> <color=yellow>Dunkelheitsschaden</color> in einem kleinen Bereich.",
+    "description": "<color=yellow>Halte die Taste gedrückt</color>, um einen Schwarm von Geistespfeilen aufzuladen. Beim Loslassen werden 1-4<sprite=5> Geistespfeile auf nahegelegene Gegner geschleudert, abhängig von der Aufladedauer. Jeder Geistespfeil verursacht <sprite=2><color=#FF8A2D>200%</color><sprite=5> <color=yellow>Dunkelheitsschaden</color> in einem kleinen Bereich.",
     "rawDesc": "<color=yellow>Halte die Taste gedrückt</color>, um einen Schwarm von Geistespfeilen aufzuladen. Beim Loslassen werden {0}-{1} Geistespfeile auf nahegelegene Gegner geschleudert, abhängig von der Aufladedauer. Jeder Geistespfeil verursacht {2} <color=yellow>Dunkelheitsschaden</color> in einem kleinen Bereich.",
     "rawDescVars": [
       {
@@ -5309,14 +5476,14 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.5,
+          "basicAD": 2.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5342,7 +5509,7 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Erschafft für 3 Sek. einen Feuerring um dich herum. Gegner, die den Feuerring berühren, erleiden <sprite=1><color=#16D7FF>250%</color><sprite=5> <color=yellow>Feuerschaden</color> pro Sek.",
+    "description": "Erschafft für 3 Sek. einen Feuerring um dich herum. Gegner, die den Feuerring berühren, erleiden <sprite=1><color=#16D7FF>350%</color><sprite=5> <color=yellow>Feuerschaden</color> pro Sek.",
     "rawDesc": "Erschafft für {0} Sek. einen Feuerring um dich herum. Gegner, die den Feuerring berühren, erleiden {1} <color=yellow>Feuerschaden</color> pro Sek.",
     "rawDescVars": [
       {
@@ -5353,7 +5520,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*5",
         "scalingType": "unknown",
@@ -5399,7 +5566,7 @@
           "basicAP": 1.2,
           "basicAD": 0.0,
           "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
+          "basicAddedMultiplierPerLevel": 0.1
         }
       },
       {
@@ -5483,10 +5650,10 @@
         "raw": "speedAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 12.0,
+          "basicConstant": 13.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 3.0,
+          "basicLvl": 2.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       }
@@ -5583,6 +5750,83 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "St_R_BaptismOfSun": {
+    "name": "Taufe der Sonne",
+    "cooldownTime": 7.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>Vesper</color> empfängt die Kraft der Sonne und löst eine Explosion aus, die umliegenden Gegnern <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>Feuerschaden</color> zufügt und sie dazu bringt, Vesper anzugreifen. Für 6 Sek. erhöht sich die <color=yellow>Angriffsgeschwindigkeit</color> um 15%<sprite=5>, und während dieser Zeit verursachen <color=yellow>Angriffe</color> zusätzlich <sprite=2><color=#FF8A2D>40%</color><sprite=5> <color=yellow>Feuerschaden</color>.",
+    "rawDesc": "<color=yellow>Vesper</color> empfängt die Kraft der Sonne und löst eine Explosion aus, die umliegenden Gegnern {0} <color=yellow>Feuerschaden</color> zufügt und sie dazu bringt, Vesper anzugreifen. Für {1} Sek. erhöht sich die <color=yellow>Angriffsgeschwindigkeit</color> um {2}, und während dieser Zeit verursachen <color=yellow>Angriffe</color> zusätzlich {3} <color=yellow>Feuerschaden</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "6",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 11.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 4.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>40%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "bonusDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.4,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "Provokation, Feuer, Angriff",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Vesper",
+    "travelerMemoryLocation": "R",
+    "tags": [
+      "Fire",
+      "Melee",
+      "Attack"
+    ],
+    "image": "St_R_BaptismOfSun.png",
+    "lore": "Seht! Das Licht verbrennt die Unreinheiten dieser Welt! \nIm heiligen Schmelzofen wird nur der Wille von El'pyros wie reines Gold bestehen bleiben. \n\nWir alle werden getauft werden, also heult und seid dankbar!",
+    "achievementKey": "ACH_HOTTER_FIRE_WINS",
+    "achievementName": "Heißeres Feuer gewinnt",
+    "achievementDescription": "Besiege den brennenden Riesen als Vesper mit mindestens 3 Feuererinnerungen."
+  },
   "St_R_BlackArbalest": {
     "name": "Dunkle Arbaleste",
     "cooldownTime": 11.0,
@@ -5626,7 +5870,8 @@
     "tags": [
       "Dark",
       "HardCC",
-      "Attack"
+      "Attack",
+      "Mobility"
     ],
     "image": "St_R_BlackArbalest.PNG",
     "lore": null,
@@ -5639,7 +5884,7 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Wird <color=yellow>Unaufhaltsam</color> und <color=yellow>stürmt</color> nach vorne, bis eine Wand erreicht wird. Verursacht <sprite=1><color=#16D7FF>135%</color><sprite=5> <color=yellow>Schaden</color> an getroffenen Gegnern und zieht sie mit. Bei Wandkollision wird eine Schockwelle freigesetzt, die <sprite=1><color=#16D7FF>300%</color><sprite=5> <color=yellow>Schaden</color> verursacht und Gegner für 1.5 Sek. <color=yellow>betäubt</color>.\nBeim Wirken erhält man einen <color=yellow>Schild</color> in Höhe von 10%<sprite=5> der <color=yellow>max. LP</color>, der 1 Sek. nach Ende des Ansturms verschwindet.",
+    "description": "Wird <color=yellow>Unaufhaltsam</color> und <color=yellow>stürmt</color> nach vorne, bis eine Wand erreicht wird. Verursacht <sprite=1><color=#16D7FF>135%</color><sprite=5> <color=yellow>Schaden</color> an getroffenen Gegnern und zieht sie mit. Bei Wandkollision wird eine Schockwelle freigesetzt, die <sprite=1><color=#16D7FF>420%</color><sprite=5> <color=yellow>Schaden</color> verursacht und Gegner für 1.5 Sek. <color=yellow>betäubt</color>.\nBeim Wirken erhält man einen <color=yellow>Schild</color> in Höhe von 20%<sprite=5> der <color=yellow>max. LP</color>, der 3 Sek. nach Ende des Ansturms verschwindet.",
     "rawDesc": "Wird <color=yellow>Unaufhaltsam</color> und <color=yellow>stürmt</color> nach vorne, bis eine Wand erreicht wird. Verursacht {0} <color=yellow>Schaden</color> an getroffenen Gegnern und zieht sie mit. Bei Wandkollision wird eine Schockwelle freigesetzt, die {1} <color=yellow>Schaden</color> verursacht und Gegner für {2} Sek. <color=yellow>betäubt</color>.\nBeim Wirken erhält man einen <color=yellow>Schild</color> in Höhe von {3} der <color=yellow>max. LP</color>, der {4} Sek. nach Ende des Ansturms verschwindet.",
     "rawDescVars": [
       {
@@ -5656,13 +5901,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>420%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.0,
+          "basicAP": 4.2,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -5682,25 +5927,25 @@
         }
       },
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": "20%<sprite=5>",
         "format": "P0",
         "raw": "shieldMaxHpRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.08,
+          "basicConstant": 0.16,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.02,
+          "basicLvl": 0.04,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": "1",
+        "rendered": "3",
         "format": "#,##0.#",
         "raw": "shieldDisappearTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5730,7 +5975,7 @@
     "cooldownTime": 80.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Erhält einen Schild von <sprite=1><color=#16D7FF>150%</color><sprite=5> für 12 Sek. und erhöht die <color=yellow>Zauberkraft</color> um 30%. Während der Dauer kann <color=yellow>Kataklysmus</color> bis zu 3 Mal erneut aktiviert werden, um Meteoriten auf den Zielort fallen zu lassen. Meteoriten betäuben Gegner kurz und verursachen <sprite=1><color=#16D7FF>250%</color><sprite=5> <color=yellow>Lichtschaden</color>.",
+    "description": "Erhält einen Schild von <sprite=1><color=#16D7FF>150%</color><sprite=5> für 12 Sek. und erhöht die <color=yellow>Zauberkraft</color> um 30%<sprite=5>. Während der Dauer kann <color=yellow>Kataklysmus</color> bis zu 3 Mal erneut aktiviert werden, um Meteoriten auf den Zielort fallen zu lassen. Meteoriten betäuben Gegner kurz und verursachen <sprite=1><color=#16D7FF>250%</color><sprite=5> <color=yellow>Lichtschaden</color>.",
     "rawDesc": "Erhält einen Schild von {0} für {1} Sek. und erhöht die <color=yellow>Zauberkraft</color> um {2}. Während der Dauer kann <color=yellow>Kataklysmus</color> bis zu {3} Mal erneut aktiviert werden, um Meteoriten auf den Zielort fallen zu lassen. Meteoriten betäuben Gegner kurz und verursachen {4} <color=yellow>Lichtschaden</color>.",
     "rawDescVars": [
       {
@@ -5760,15 +6005,15 @@
         }
       },
       {
-        "rendered": "30%",
+        "rendered": "30%<sprite=5>",
         "format": "#,##0'%'",
         "raw": "bonusApPercent",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 30.0,
+          "basicConstant": 25.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 5.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5922,6 +6167,73 @@
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
+  },
+  "St_R_DancingBlades": {
+    "name": "Klingensturm",
+    "cooldownTime": 13.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Beschwört einen <color=yellow>Klingensturm</color> in dem Gebiet, der 4 Sek. anhält. Der <color=yellow>Klingensturm</color> schneidet schnell um sich und verursacht alle 0.5 Sek. <sprite=1><color=#16D7FF>85%</color><sprite=5> oder <sprite=2><color=#FF8A2D>85%</color><sprite=5> <color=yellow>Schaden</color> an Gegnern (der höhere Wert wird verwendet) und verfolgt den nächsten Gegner.",
+    "rawDesc": "Beschwört einen <color=yellow>Klingensturm</color> in dem Gebiet, der {0} Sek. anhält. Der <color=yellow>Klingensturm</color> schneidet schnell um sich und verursacht alle {1} Sek. {2} oder {3} <color=yellow>Schaden</color> an Gegnern (der höhere Wert wird verwendet) und verfolgt den nächsten Gegner.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "tickInterval",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "apDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.85,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "adDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.85,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "Flächen-DoT",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [],
+    "image": "St_R_DancingBlades.png",
+    "lore": null,
+    "achievementKey": "ACH_ETERNAL_REST",
+    "achievementName": "Ewige Ruhe",
+    "achievementDescription": "Führe insgesamt 50 finale Treffer mit dem Basisangriff gegen Seelenschwertkämpfer aus."
   },
   "St_R_DangerousTheory": {
     "name": "Gefährliche Theorie",
@@ -6821,7 +7133,7 @@
   "St_R_QuickTrigger": {
     "name": "Schnelle Hand",
     "cooldownTime": 14.0,
-    "maxCharges": 2,
+    "maxCharges": 3,
     "addedCharges": 1,
     "description": "Feuert schnell 3 durchdringende Schüsse ab, die bis zu 3 Gegnern jeweils <sprite=2><color=#FF8A2D>120%</color><sprite=5> Schaden zufügen.",
     "rawDesc": "Feuert schnell {0} durchdringende Schüsse ab, die bis zu {1} Gegnern jeweils {2} Schaden zufügen.",
@@ -7470,9 +7782,22 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Halte die Wirkungstaste gedrückt</color>, um eine Ladung aufzubauen. Wenn die Aufladung abgeschlossen ist, explodiert die Ladung und fügt Gegnern proportional zur Aufladezeit <sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>780%</color><sprite=5> <color=yellow>Lichtschaden</color> zu, stößt sie zurück und reduziert ihr <color=yellow>Bewegungstempo</color>.\nNach 1 Sek. Aufladung erreichen Schaden und Reichweite ihr Maximum.",
-    "rawDesc": "<color=yellow>Halte die Wirkungstaste gedrückt</color>, um eine Ladung aufzubauen. Wenn die Aufladung abgeschlossen ist, explodiert die Ladung und fügt Gegnern proportional zur Aufladezeit {0}~{1} <color=yellow>Lichtschaden</color> zu, stößt sie zurück und reduziert ihr <color=yellow>Bewegungstempo</color>.\nNach {2} Sek. Aufladung erreichen Schaden und Reichweite ihr Maximum.",
+    "description": "<color=yellow>Halte die Wirkungstaste gedrückt</color>, um eine Ladung aufzubauen und 40<sprite=5> Rüstung zu erhalten. Wenn die Aufladung abgeschlossen ist, explodiert die Ladung und fügt Gegnern proportional zur Aufladezeit <sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>780%</color><sprite=5> <color=yellow>Lichtschaden</color> zu, stößt sie zurück und reduziert ihr <color=yellow>Bewegungstempo</color> für 2 Sek. um 60%. Die erhaltene Rüstung verschwindet 1 Sek. nach der Explosion der Ladung.\n\nNach 1 Sek. Aufladung erreichen Schaden und Reichweite ihr Maximum.",
+    "rawDesc": "<color=yellow>Halte die Wirkungstaste gedrückt</color>, um eine Ladung aufzubauen und {0} Rüstung zu erhalten. Wenn die Aufladung abgeschlossen ist, explodiert die Ladung und fügt Gegnern proportional zur Aufladezeit {1}~{2} <color=yellow>Lichtschaden</color> zu, stößt sie zurück und reduziert ihr <color=yellow>Bewegungstempo</color> für {3} Sek. um {4}. Die erhaltene Rüstung verschwindet {5} Sek. nach der Explosion der Ladung.\n\nNach {6} Sek. Aufladung erreichen Schaden und Reichweite ihr Maximum.",
     "rawDescVars": [
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 37.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 3.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
       {
         "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
         "format": "#,##0",
@@ -7497,6 +7822,45 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "slowDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "60%",
+        "format": "#,##0'%'",
+        "raw": "slowAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 60.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "armorLingerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
         }
       },
       {

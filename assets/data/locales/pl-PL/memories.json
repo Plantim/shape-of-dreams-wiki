@@ -4,7 +4,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Wykonujesz skok do tyłu, upuszczając na poprzedniej pozycji bomby wstrząsowe x3, z których każda zadaje <sprite=1><color=#16D7FF>120%</color><sprite=5> <color=yellow>Obrażeń</color> i <color=yellow>Ogłusza</color> na 1 sek.",
+    "description": "Wykonujesz skok do tyłu, upuszczając na poprzedniej pozycji bomby wstrząsowe x3, z których każda zadaje <sprite=1><color=#16D7FF>168%</color><sprite=5> <color=yellow>Obrażeń</color> i <color=yellow>Ogłusza</color> na 1 sek.",
     "rawDesc": "Wykonujesz skok do tyłu, upuszczając na poprzedniej pozycji bomby wstrząsowe x{0}, z których każda zadaje {1} <color=yellow>Obrażeń</color> i <color=yellow>Ogłusza</color> na {2} sek.",
     "rawDescVars": [
       {
@@ -21,13 +21,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>168%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.2,
+          "basicAP": 1.68,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -176,73 +176,6 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "St_R_DancingBlades": {
-    "name": "Burza Ostrzy",
-    "cooldownTime": 13.0,
-    "maxCharges": 1,
-    "addedCharges": 1,
-    "description": "Przywołuje <color=yellow>Burzę Ostrzy</color> na danym obszarze, utrzymującą się przez 4sek. <color=yellow>Burza Ostrzy</color> szybko tnie otoczenie, zadając co 0.5sek. wrogom <color=yellow>Obrażenia</color> równe wyższej wartości spośród <sprite=1><color=#16D7FF>85%</color><sprite=5>lub <sprite=2><color=#FF8A2D>85%</color><sprite=5>, a także śledzi najbliższego wroga.",
-    "rawDesc": "Przywołuje <color=yellow>Burzę Ostrzy</color> na danym obszarze, utrzymującą się przez {0}sek. <color=yellow>Burza Ostrzy</color> szybko tnie otoczenie, zadając co {1}sek. wrogom <color=yellow>Obrażenia</color> równe wyższej wartości spośród {2}lub {3}, a także śledzi najbliższego wroga.",
-    "rawDescVars": [
-      {
-        "rendered": "4",
-        "format": "#,##0.#",
-        "raw": "duration",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "0.5",
-        "format": "#,##0.#",
-        "raw": "tickInterval",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "apDamage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.85,
-          "basicAD": 0.0,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "adDamage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.0,
-          "basicAD": 0.85,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
-        }
-      }
-    ],
-    "shortDescription": "Trwałe Obrażenia Obszarowe",
-    "rarity": "Rare",
-    "type": "Normal",
-    "traveler": "",
-    "travelerMemoryLocation": "",
-    "tags": [],
-    "image": "St_R_DancingBlades.png",
-    "lore": null,
-    "achievementKey": "ACH_ETERNAL_REST",
-    "achievementName": "Wieczny Odpoczynek",
-    "achievementDescription": "Zadaj Miecznikowi Dusz ostateczny cios atakiem podstawowym 50 razy."
-  },
   "St_C_DarkBolt": {
     "name": "Strzała Ciemności",
     "cooldownTime": 4.5,
@@ -334,11 +267,11 @@
   },
   "St_C_FlashFreeze": {
     "name": "Szybkie Zamrażanie",
-    "cooldownTime": 5.0,
+    "cooldownTime": 9.0,
     "maxCharges": 2,
-    "addedCharges": 1,
-    "description": "Wystrzeliwuje zimno z przodu, zadając przeciwnikom <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>Obrażeń od Zimna</color>. Jeśli wróg jest już pod wpływem <color=yellow>Zimna</color>, <color=yellow>Liczba Obrażeń</color> zwiększa się o 100%, a przeciwnik zostaje <color=yellow>Unieruchomiony</color> na 1.5 sek.",
-    "rawDesc": "Wystrzeliwuje zimno z przodu, zadając przeciwnikom {0} <color=yellow>Obrażeń od Zimna</color>. Jeśli wróg jest już pod wpływem <color=yellow>Zimna</color>, <color=yellow>Liczba Obrażeń</color> zwiększa się o {1}, a przeciwnik zostaje <color=yellow>Unieruchomiony</color> na {2} sek.",
+    "addedCharges": 999,
+    "description": "Wypuszczasz falę mrozu przed siebie, zadając wrogom <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>Obrażeń od Zimna</color>, a sobie i sojusznikom przyznajesz <color=yellow>Tarczę</color> o wartości <sprite=1><color=#16D7FF>90%</color><sprite=5>, która utrzymuje się przez 3 sekundy. Jeśli przeciwnik już jest pod wpływem <color=yellow>Zimna</color>, otrzymuje więcej <color=yellow>Obrażeń</color> o 100%, a do tego zostaje <color=yellow>Unieruchomiony</color> na 1.5 sekundy.\n\n<color=yellow>Ładunki</color> tej pamięci odnawiają się natychmiast do pełna.",
+    "rawDesc": "Wypuszczasz falę mrozu przed siebie, zadając wrogom {0} <color=yellow>Obrażeń od Zimna</color>, a sobie i sojusznikom przyznajesz <color=yellow>Tarczę</color> o wartości {1}, która utrzymuje się przez {2} sekundy. Jeśli przeciwnik już jest pod wpływem <color=yellow>Zimna</color>, otrzymuje więcej <color=yellow>Obrażeń</color> o {3}, a do tego zostaje <color=yellow>Unieruchomiony</color> na {4} sekundy.\n\n<color=yellow>Ładunki</color> tej pamięci odnawiają się natychmiast do pełna.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
@@ -351,6 +284,32 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.9,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
         }
       },
       {
@@ -380,7 +339,7 @@
         }
       }
     ],
-    "shortDescription": "Obszarowe Obrażenia od Zimna, unieruchomienie",
+    "shortDescription": "Obszarowe obrażenia od Zimna, unieruchomienie",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -388,7 +347,8 @@
     "tags": [
       "Cold",
       "Melee",
-      "HardCC"
+      "HardCC",
+      "Shield"
     ],
     "image": "St_C_FlashFreeze.PNG",
     "lore": null,
@@ -613,8 +573,8 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Wymachujesz pazurami z przodu, zadając wrogom <sprite=1><color=#16D7FF>140%</color><sprite=5> <color=yellow>Obrażeń od Zimna</color> i <color=yellow>Ogłuszając</color> ich na 0.5 sek. Możesz zamachnąć się ponownie, zadając <sprite=1><color=#16D7FF>264%</color><sprite=5> <color=yellow>Obrażeń od Zimna</color> i <color=yellow>Ogłuszając</color> ich na 1 sek.",
-    "rawDesc": "Wymachujesz pazurami z przodu, zadając wrogom {0} <color=yellow>Obrażeń od Zimna</color> i <color=yellow>Ogłuszając</color> ich na {1} sek. Możesz zamachnąć się ponownie, zadając {2} <color=yellow>Obrażeń od Zimna</color> i <color=yellow>Ogłuszając</color> ich na {3} sek.",
+    "description": "Zamachujesz się pazurami przed sobą, zadając przeciwnikom <sprite=1><color=#16D7FF>140%</color><sprite=5> <color=yellow>Obrażeń od Zimna</color> i <color=yellow>ogłuszając</color> ich na 0.5 sekundy. Możesz machnąć ponownie, żeby zadać <sprite=1><color=#16D7FF>264%</color><sprite=5> <color=yellow>Obrażeń od Zimna</color> i ogłuszyć na kolejne 1 sekundy.\n\nJeśli trafisz wroga, odzyskujesz <color=yellow>Zdrowie</color> równe 12% zadanych obrażeń.",
+    "rawDesc": "Zamachujesz się pazurami przed sobą, zadając przeciwnikom {0} <color=yellow>Obrażeń od Zimna</color> i <color=yellow>ogłuszając</color> ich na {1} sekundy. Możesz machnąć ponownie, żeby zadać {2} <color=yellow>Obrażeń od Zimna</color> i ogłuszyć na kolejne {3} sekundy.\n\nJeśli trafisz wroga, odzyskujesz <color=yellow>Zdrowie</color> równe {4} zadanych obrażeń.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
@@ -667,9 +627,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "12%",
+        "format": "P0",
+        "raw": "Ai_C_IceClaw::healRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.12,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Obrażenia od Zimna z bliska",
+    "shortDescription": "Obrażenia od Zimna z bliska, leczenie",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -677,7 +650,8 @@
     "tags": [
       "Cold",
       "Melee",
-      "HardCC"
+      "HardCC",
+      "Heal"
     ],
     "image": "St_C_IceClaw.PNG",
     "lore": null,
@@ -690,8 +664,8 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Krótko szarżujesz do przodu, wymachując Szmaragdowym Mieczem i zadając <color=yellow>Obrażenia</color> wrogom z przodu. Zadawane są większe obrażenia spośród <sprite=2><color=#FF8A2D>200%</color><sprite=5> i <sprite=1><color=#16D7FF>200%</color><sprite=5>, a jeśli są to <color=yellow>Obrażenia od Mocy Ataku</color>, aktywowany jest <color=yellow>Efekt Ataku</color>.",
-    "rawDesc": "Krótko szarżujesz do przodu, wymachując Szmaragdowym Mieczem i zadając <color=yellow>Obrażenia</color> wrogom z przodu. Zadawane są większe obrażenia spośród {0} i {1}, a jeśli są to <color=yellow>Obrażenia od Mocy Ataku</color>, aktywowany jest <color=yellow>Efekt Ataku</color>.",
+    "description": "Krótki szarż w przód i wymach Szmaragdowym Mieczem, który rani wszystkich wrogów na linii. Zadaje większe obrażenia spośród <sprite=2><color=#FF8A2D>200%</color><sprite=5> i <sprite=1><color=#16D7FF>200%</color><sprite=5>, a jeśli to są <color=yellow>Obrażenia Ataku</color>, aktywuje <color=yellow>Efekt Ataku</color>.",
+    "rawDesc": "Krótki szarż w przód i wymach Szmaragdowym Mieczem, który rani wszystkich wrogów na linii. Zadaje większe obrażenia spośród {0} i {1}, a jeśli to są <color=yellow>Obrażenia Ataku</color>, aktywuje <color=yellow>Efekt Ataku</color>.",
     "rawDescVars": [
       {
         "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
@@ -720,7 +694,7 @@
         }
       }
     ],
-    "shortDescription": "Obrażenia z przodu",
+    "shortDescription": "Obrażenia przed sobą",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -731,7 +705,7 @@
       "Mobility"
     ],
     "image": "St_C_MagicSword.png",
-    "lore": null,
+    "lore": "Cisza poranka.\nZa każdym razem, gdy wchodziłem do tylnego ogrodu posiadłości Highgate,\nwracała do mnie ta sama wspomnienie.\n\nChłodne powietrze starej areny, wciąż jakby szczypiące w policzki.\nDzieciństwo, gdy moje cienie jeszcze były malutkie.\nGłos matki ostry jak szron.\n\nSzmaragdowy Miecz.\nBroń rodu i symbol dumy rodu Verdesilver.\nMatka pokazała mi wtedy, jak dzierżyć miecz – sztywno, jak silne drzewo, bez cienia wahania.\n\nAle mój miecz... nigdy nie był jak tamten. Ostrze drżało jak liść na wietrze, a siła rozpływała się jak woda.\n\nCzy to nie ironia, mamo?\nTo to ogromne drzewo, które tak chciałaś chronić, w końcu runęło.\nA ten nędzny listek, który tylko wiatr nosił – właśnie on przetrwał wszystko.\n\nJuż nie ciąży mi duma rodu ani ciężar drzewa...\nI nie żałuję.\n\nTeraz... pragnę tylko jednego:\nJako bezimienna mgła, co utraciła szmaragd,\nchwycić miecz, by chronić szczęście mojej siostry.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -787,7 +761,7 @@
   },
   "St_C_Pew": {
     "name": "Bum",
-    "cooldownTime": 14.0,
+    "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
     "description": "<color=yellow>Długie Przytrzymanie</color> klawisza użycia ładuje Ognisty Nabój. Po doładowaniu, wystrzeliwany jest Ognisty Nabój, zadający <sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>400%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color> wszystkim trafionym wrogom, proporcjonalnie do czasu celowania.\n\nWystrzeliwanie z mniejszym doładowaniem zmniejsza <color=yellow>Czas Odnawiania</color> nawet o 80%, a celowanie przez 1.35 sek. zmaksymalizuje głebokość zasięgu trafienia i liczbę obrażeń.",
@@ -865,8 +839,8 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Uwalnia energię dłonią, zadając <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>Obrażeń</color> i odpychając wszystkich trafionych wrogów. Jeśli odepchnięci wrogowie dotkną ściany, otrzymują dodatkowych <sprite=1><color=#16D7FF>504%</color><sprite=5> <color=yellow>Obrażeń</color> i zostają ogłuszeni na 1.5 sek.",
-    "rawDesc": "Uwalnia energię dłonią, zadając {0} <color=yellow>Obrażeń</color> i odpychając wszystkich trafionych wrogów. Jeśli odepchnięci wrogowie dotkną ściany, otrzymują dodatkowych {1} <color=yellow>Obrażeń</color> i zostają ogłuszeni na {2} sek.",
+    "description": "Wypuszczasz energię z dłoni, zadając <sprite=1><color=#16D7FF>180%</color><sprite=5> <color=yellow>Obrażeń</color> i odpychając wszystkich trafionych wrogów, jednocześnie ogłuszając ich na 1 sekundy. Jeśli cel jest niepowstrzymany lub uderzy w ścianę, zadajesz mu dodatkowo <sprite=1><color=#16D7FF>504%</color><sprite=5> <color=yellow>Obrażeń</color>.",
+    "rawDesc": "Wypuszczasz energię z dłoni, zadając {0} <color=yellow>Obrażeń</color> i odpychając wszystkich trafionych wrogów, jednocześnie ogłuszając ich na {1} sekundy. Jeśli cel jest niepowstrzymany lub uderzy w ścianę, zadajesz mu dodatkowo {2} <color=yellow>Obrażeń</color>.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
@@ -882,27 +856,27 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "dmgFactor*stunDmgRatio",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "1.5",
+        "rendered": "1",
         "format": "#,##0.#",
         "raw": "stunDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor*stunDmgRatio",
+        "scalingType": "unknown",
+        "data": {}
       }
     ],
-    "shortDescription": "Obrażenia z bliska, odpychanie",
+    "shortDescription": "Obrażenia wręcz, odrzut",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -987,21 +961,21 @@
     "achievementDescription": ""
   },
   "St_C_SparklingWaterGun": {
-    "name": "Pistolet na Orzeźwiającą Wodę",
-    "cooldownTime": 5.0,
+    "name": "Szczypiący Pistolet na Wodę",
+    "cooldownTime": 4.0,
     "maxCharges": 3,
     "addedCharges": 1,
-    "description": "Wystrzeliwujesz z Pistoletu na Orzeźwiającą Wodę. <color=yellow>Odzyskujesz</color> <sprite=1><color=#16D7FF>50%</color><sprite=5> <color=yellow>Zdrowia</color> pierwszego trafionemu sojusznika i usuwasz <color=yellow>Ładunki Ognia</color>. Jeśli trafisz wroga, wzamian zadajesz mu 1 <color=yellow>Obrażenie</color> i <color=yellow>Ogłuszasz</color> go na 1.5 sek. <color=yellow>Czas Odnawiania</color> jest zmniejszany tylko <color=yellow>W Bitwie</color>.",
-    "rawDesc": "Wystrzeliwujesz z Pistoletu na Orzeźwiającą Wodę. <color=yellow>Odzyskujesz</color> {0} <color=yellow>Zdrowia</color> pierwszego trafionemu sojusznika i usuwasz <color=yellow>Ładunki Ognia</color>. Jeśli trafisz wroga, wzamian zadajesz mu {1} <color=yellow>Obrażenie</color> i <color=yellow>Ogłuszasz</color> go na {2} sek. <color=yellow>Czas Odnawiania</color> jest zmniejszany tylko <color=yellow>W Bitwie</color>.",
+    "description": "Wystrzeliwujesz szczypiącym pistoletem na wodę. Trafieni sojusznicy odzyskują <sprite=1><color=#16D7FF>70%</color><sprite=5> <color=yellow>Zdrowia</color> i pozbywają się <color=yellow>Nałożenia Ognia</color>. Przeciwnicy otrzymują 1 <color=yellow>Obrażeń</color> i są <color=yellow>Ogłuszeni</color> na 1.5 sekundy. <color=yellow>Czas Odnowienia</color> skraca się tylko <color=yellow>w trakcie walki</color>.\n\nJeśli celem jest sojuszniczy <color=yellow>Przywołaniec</color>, leczenie rośnie o 40%.",
+    "rawDesc": "Wystrzeliwujesz szczypiącym pistoletem na wodę. Trafieni sojusznicy odzyskują {0} <color=yellow>Zdrowia</color> i pozbywają się <color=yellow>Nałożenia Ognia</color>. Przeciwnicy otrzymują {1} <color=yellow>Obrażeń</color> i są <color=yellow>Ogłuszeni</color> na {2} sekundy. <color=yellow>Czas Odnowienia</color> skraca się tylko <color=yellow>w trakcie walki</color>.\n\nJeśli celem jest sojuszniczy <color=yellow>Przywołaniec</color>, leczenie rośnie o {3}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>50%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>70%</color><sprite=5>",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.5,
+          "basicAP": 0.7,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -1032,9 +1006,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "summonAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Ogłuszenie i Obrażenia wrogów lub Odzyskanie Zdrowia dla sojuszników",
+    "shortDescription": "Ogłuszenie i obrażenia dla wrogów, lub leczenie sojuszników",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -1044,7 +1031,7 @@
       "Heal"
     ],
     "image": "St_C_SparklingWaterGun.png",
-    "lore": "Porada z zaułka nr 5.\n\nSkładniki: pokrzywa z pobocza drogi, trująca roślina z czerwonymi końcówkami liści (nie znam nazwy).\nPrzepis: wrzuć do moździerza, rozgnieć i wymieszaj z wodą.\nZastosowanie: idealne do pryskania na błyszczące peleryny zarozumiałych arystokratów, zostawia plamy. Dodatkowo, jeśli dotknie skóry, przez kilka dni nieprzyjemnie piecze.\nAnaliza: nic nie działa lepiej na ich irytację.\n\nTo jedyny sposób, w jaki takie szczury jak my mogą pociągać kota za wąsy. Bo życie jest cenne.",
+    "lore": "Tip z zaułka numer 5.\n\nSkładniki: pokrzywa z przydrożnego rowu, jakiś trujący chwast z czerwonymi końcówkami liści (nazwy nie znam).\nPrzepis: wrzuć do moździerza, rozgnieć wszystko razem i wymieszaj z wodą.\nZastosowanie: idealny do spryskania błyszczących peleryn tych bufonowatych arystokratów – zostawia im plamki. Jak się dostanie na skórę, to przez kilka dni będzie nieznośnie szczypać, taki gratis.\nAnaliza: Ten patent naprawdę działa na nerwy grubych ryb.\n\nTo nasz jedyny sposób, żeby takie szczury jak my mogły pociągnąć kota za wąsy. Bo życie mamy tylko jedno.",
     "achievementKey": "ACH_PEW_PEW_PEW",
     "achievementName": "Piu Piu Piu!",
     "achievementDescription": "Zastosuj korzystny efekt na sojuszniku (nie na sobie) łącznie 200 razy."
@@ -1167,7 +1154,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Przez 3.5 sek. <color=yellow>Koncentrujesz Umysł</color>, wymachując mieczem i zadając pobliskim wrogom <sprite=2><color=#FF8A2D>170%</color><sprite=5> <color=yellow>Obrażeń</color> na sek. oraz aktywując <color=yellow>Efekt Ataku</color> o wartości 25%. Im wyższa <color=yellow>Szybkość Ataku</color>, tym szybciej wymachujesz mieczem.",
+    "description": "Przez 3.5 sek. <color=yellow>Koncentrujesz Umysł</color>, wymachując mieczem i zadając pobliskim wrogom <sprite=2><color=#FF8A2D>240%</color><sprite=5> <color=yellow>Obrażeń</color> na sek. oraz aktywując <color=yellow>Efekt Ataku</color> o wartości 35%. Im wyższa <color=yellow>Szybkość Ataku</color>, tym szybciej wymachujesz mieczem.",
     "rawDesc": "Przez {0} sek. <color=yellow>Koncentrujesz Umysł</color>, wymachując mieczem i zadając pobliskim wrogom {1} <color=yellow>Obrażeń</color> na sek. oraz aktywując <color=yellow>Efekt Ataku</color> o wartości {2}. Im wyższa <color=yellow>Szybkość Ataku</color>, tym szybciej wymachujesz mieczem.",
     "rawDescVars": [
       {
@@ -1184,19 +1171,19 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>170%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>240%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*2",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "25%",
+        "rendered": "35%",
         "format": "P0",
         "raw": "attackEffect",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.25,
+          "basicConstant": 0.35,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2465,50 +2452,13 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "St_E_FlameJet": {
-    "name": "Strumień Ognia",
-    "cooldownTime": 11.5,
-    "maxCharges": 1,
-    "addedCharges": 1,
-    "description": "Przez 2.5 sek. wypuszczasz Strumień Ognia. Wrogowie dotknięci Strumieniem Ognia otrzymują <sprite=1><color=#16D7FF>336%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color> na sek.",
-    "rawDesc": "Przez {0} sek. wypuszczasz Strumień Ognia. Wrogowie dotknięci Strumieniem Ognia otrzymują {1} <color=yellow>Obrażeń od Ognia</color> na sek.",
-    "rawDescVars": [
-      {
-        "rendered": "2.5",
-        "format": "#,##0.#",
-        "raw": "spawns*spawnInterval",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "damage/minHitInterval",
-        "scalingType": "unknown",
-        "data": {}
-      }
-    ],
-    "shortDescription": "Utrzymujące się Obszarowe Obrażenia od Ognia",
-    "rarity": "Epic",
-    "type": "Normal",
-    "traveler": "",
-    "travelerMemoryLocation": "",
-    "tags": [
-      "Fire"
-    ],
-    "image": "St_E_FlameJet.png",
-    "lore": "Dziennik Łowiecki\n2. rok panowania Rojita, x miesiąc xx dzień, pogoda: słonecznie\nMiejsce polowania: Bagna Igni\nDzisiejszy połów: woreczek pokrzyw\n\nMam kilka zasad, których zawsze przestrzegam, gdy poluję na bagnach Igni.\n\n1. Uważaj, jeśli zobaczysz korzeń mangrowca ze śladami pazurów.\n\n2. Jeśli na tych śladach nie ma mchu, nie idź w tamtym kierunku.\n\n3. Jeśli z daleka widać dym lub na zwęglonym pniu zostały żarzące się iskry, natychmiast wracaj do domu.\n\nTo postanowienie powziąłem po tym, jak zeszłego lata przez lunetę widziałem, jak jakiś głupiec próbował wyrwać nadpalony krzak kalimberii i natknął się na bestię wielkości potwora – Barasusa.\n\nNawet podczas pokazów broni ogniowej Gwardii Królewskiej nie widziałem tak wielkich płomieni.",
-    "achievementKey": "ACH_PYROMANIA",
-    "achievementName": "Piroman",
-    "achievementDescription": "Eliminuj podpalonych wrogów 250 razy."
-  },
   "St_E_FinalExplosion": {
-    "name": "Ostateczna Eksplozja",
+    "name": "Ostatnia Eksplozja",
     "cooldownTime": 3.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Przez 2 sek. <color=yellow>Szybkość Ruchu</color> zwiększa się o 25%<sprite=5>, po czym poświęcasz 40% swojego Maksymalnego Zdrowia, wywołując potężną eksplozję. Wrogowie w zasięgu eksplozji otrzymują <sprite=1><color=#16D7FF>850%</color><sprite=5> <color=yellow>Obrażeń od Światła</color> i zostają <color=yellow>Ogłuszeni</color> na 2.5 sek. Jeśli już nie żyjesz lub umrzesz w wyniku poświęcenia, <color=yellow>Liczba Obrażeń od Eksplozji</color> zwiększa się o 150%.",
-    "rawDesc": "Przez {0} sek. <color=yellow>Szybkość Ruchu</color> zwiększa się o {1}, po czym poświęcasz {2} swojego Maksymalnego Zdrowia, wywołując potężną eksplozję. Wrogowie w zasięgu eksplozji otrzymują {3} <color=yellow>Obrażeń od Światła</color> i zostają <color=yellow>Ogłuszeni</color> na {4} sek. Jeśli już nie żyjesz lub umrzesz w wyniku poświęcenia, <color=yellow>Liczba Obrażeń od Eksplozji</color> zwiększa się o {5}.",
+    "description": "Przez 2 sek. twoja <color=yellow>Szybkość ruchu</color> rośnie o 25%<sprite=5>, po czym poświęcasz 40% swojego maksymalnego HP, wywołując potężny wybuch. Wrogowie złapani w eksplozję otrzymują <sprite=1><color=#16D7FF>850%</color><sprite=5> <color=yellow>Obrażeń od Światła</color> i są <color=yellow>Ogłuszeni</color> na 2.5 sek. Jeśli już nie żyjesz lub giniesz przez poświęcenie, <color=yellow>Obrażenia od Eksplozji</color> wzrastają o 150%.",
+    "rawDesc": "Przez {0} sek. twoja <color=yellow>Szybkość ruchu</color> rośnie o {1}, po czym poświęcasz {2} swojego maksymalnego HP, wywołując potężny wybuch. Wrogowie złapani w eksplozję otrzymują {3} <color=yellow>Obrażeń od Światła</color> i są <color=yellow>Ogłuszeni</color> na {4} sek. Jeśli już nie żyjesz lub giniesz przez poświęcenie, <color=yellow>Obrażenia od Eksplozji</color> wzrastają o {5}.",
     "rawDescVars": [
       {
         "rendered": "2",
@@ -2583,7 +2533,7 @@
         }
       }
     ],
-    "shortDescription": "Samodestrukcja, Potężne Obrażenia od Światła",
+    "shortDescription": "Samodestrukcja, mocarne Obrażenia od Światła",
     "rarity": "Epic",
     "type": "Normal",
     "traveler": "",
@@ -2594,10 +2544,47 @@
       "HardCC"
     ],
     "image": "St_E_FinalExplosion.PNG",
-    "lore": null,
+    "lore": "Oblężenie przez Zakon Słonecznego Płomienia zaciskało się z każdej strony.\nIch święty ogień nawet w najciemniejszych zaułkach nie pozostawiał miejsca dla cienia.\nAdept Sekty Jasności, osaczony, zatrzymał się w martwym punkcie.\n\nZamiast strachu, na jego twarzy pojawił się dziwny, triumfujący uśmiech.\nPatrzył na napierających rycerzy jak na żałosne robactwo.\n\n„Naprawdę myślicie, że to koniec? Że wasz fałszywy bóg tym marnym płomyczkiem skazuje mnie na zgubę?”\n\nZamknął oczy i skupił całą swą uwagę.\nZa hałasem rzeczywistości wyraźnie słyszał wyczekiwany szept świata snów –\nbłogi szmer Bystrza.\n\nNadszedł czas porzucić wszystko i odejść.\nOtworzył oczy, by po raz ostatni pożegnać się z tym światem.\n\n„Żegnajcie, ślepe płomienie... żegnaj, marny ciele... żegnaj, przeklęty świecie!”\n\nCiało rozbłysło nierealnymi kolorami, zaczęło pulsować coraz gwałtowniej.\nNajgorętsza, najżarliwsza modlitwa dla Primmusa.\n\n„Primusie! Składam ci w ofierze wszystko, czym jestem!”\n\nI kiedy wykrzyknął swe ostatnie słowa, rozpadł się w pył,\na wszystko pochłonęła dostojna, ostateczna eksplozja.\n\n\n- Ślad pamięci odnaleziony przy ciele na ruinach pewnej wioski",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
+  },
+  "St_E_FlameJet": {
+    "name": "Strumień Ognia",
+    "cooldownTime": 11.5,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Przez 2.5 sek. wypuszczasz Strumień Ognia. Wrogowie dotknięci Strumieniem Ognia otrzymują <sprite=1><color=#16D7FF>336%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color> na sek.",
+    "rawDesc": "Przez {0} sek. wypuszczasz Strumień Ognia. Wrogowie dotknięci Strumieniem Ognia otrzymują {1} <color=yellow>Obrażeń od Ognia</color> na sek.",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "spawns*spawnInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage/minHitInterval",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "Utrzymujące się Obszarowe Obrażenia od Ognia",
+    "rarity": "Epic",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Fire"
+    ],
+    "image": "St_E_FlameJet.png",
+    "lore": "Dziennik Łowiecki\n2. rok panowania Rojita, x miesiąc xx dzień, pogoda: słonecznie\nMiejsce polowania: Bagna Igni\nDzisiejszy połów: woreczek pokrzyw\n\nMam kilka zasad, których zawsze przestrzegam, gdy poluję na bagnach Igni.\n\n1. Uważaj, jeśli zobaczysz korzeń mangrowca ze śladami pazurów.\n\n2. Jeśli na tych śladach nie ma mchu, nie idź w tamtym kierunku.\n\n3. Jeśli z daleka widać dym lub na zwęglonym pniu zostały żarzące się iskry, natychmiast wracaj do domu.\n\nTo postanowienie powziąłem po tym, jak zeszłego lata przez lunetę widziałem, jak jakiś głupiec próbował wyrwać nadpalony krzak kalimberii i natknął się na bestię wielkości potwora – Barasusa.\n\nNawet podczas pokazów broni ogniowej Gwardii Królewskiej nie widziałem tak wielkich płomieni.",
+    "achievementKey": "ACH_PYROMANIA",
+    "achievementName": "Piroman",
+    "achievementDescription": "Eliminuj podpalonych wrogów 250 razy."
   },
   "St_E_Harvest": {
     "name": "Krwawe Żniwa",
@@ -2683,6 +2670,89 @@
       "Attack"
     ],
     "image": "St_E_Harvest.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_E_JusticeGuillotine": {
+    "name": "Gilotyna Sprawiedliwości",
+    "cooldownTime": 100.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Potężny miecz spada na wybranego wroga, zadając wszystkim przeciwnikom w okolicy <sprite=2><color=#FF8A2D>800%</color><sprite=5> <color=yellow>obrażeń</color>. Obrażenia te wzrastają nawet 2-krotnie w zależności od twojego <color=yellow>brakującego zdrowia</color> i kolejne 2-krotnie w zależności od <color=yellow>brakującego zdrowia</color> celu, łącznie aż do 4-krotności. Wzrost obrażeń osiąga maksimum, gdy zdrowie spadnie do 30% lub poniżej.",
+    "rawDesc": "Potężny miecz spada na wybranego wroga, zadając wszystkim przeciwnikom w okolicy {0} <color=yellow>obrażeń</color>. Obrażenia te wzrastają nawet {1}-krotnie w zależności od twojego <color=yellow>brakującego zdrowia</color> i kolejne {2}-krotnie w zależności od <color=yellow>brakującego zdrowia</color> celu, łącznie aż do {3}-krotności. Wzrost obrażeń osiąga maksimum, gdy zdrowie spadnie do {4} lub poniżej.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>800%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 8.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dmgAmplitude",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dmgAmplitude",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "dmgAmplitude * dmgAmplitude",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "maxAmpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Potężny cios, obrażenia skalowane z brakującym zdrowiem",
+    "rarity": "Epic",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Melee",
+      "Mobility"
+    ],
+    "image": "St_E_JusticeGuillotine.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -2793,6 +2863,103 @@
     "achievementKey": "ACH_MASTER_OF_MYSTIC_ARTS",
     "achievementName": "Mistrz Okultyzmu",
     "achievementDescription": "Posiadaj jednocześnie aktywne wspomnienia z czasem odnawiania 3 sek. lub krótszym x4"
+  },
+  "St_E_Permafrost": {
+    "name": "Wieczna Zmarzlina",
+    "cooldownTime": 100.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Skupia ekstremalne zimno, a następnie uwalnia je na bardzo dużym obszarze. Sojusznicy w zasięgu otrzymują <color=yellow>tarczę</color> o wartości <sprite=1><color=#16D7FF>300%</color><sprite=5> i 100 <color=yellow>pancerza</color> na 10 sek., a wrogowie zostają zamrożeni, otrzymując <sprite=1><color=#16D7FF>500%</color><sprite=5> <color=yellow>obrażeń od Zimna</color> i <color=yellow>ogłuszenie</color> na 15 sek. \n\nJeśli wróg jest już pod wpływem <color=yellow>Zimna</color>, obrażenia te są zwiększone o 100%.",
+    "rawDesc": "Skupia ekstremalne zimno, a następnie uwalnia je na bardzo dużym obszarze. Sojusznicy w zasięgu otrzymują <color=yellow>tarczę</color> o wartości {0} i {1} <color=yellow>pancerza</color> na {2} sek., a wrogowie zostają zamrożeni, otrzymując {3} <color=yellow>obrażeń od Zimna</color> i <color=yellow>ogłuszenie</color> na {4} sek. \n\nJeśli wróg jest już pod wpływem <color=yellow>Zimna</color>, obrażenia te są zwiększone o {5}.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 3.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "100",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 100.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>500%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 5.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "15",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "chilledAmpBonus-1",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "Obszarowe obrażenia od zimna, ogłuszenie, ochrona sojuszników",
+    "rarity": "Epic",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Cold",
+      "HardCC",
+      "Shield"
+    ],
+    "image": "St_E_Permafrost.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
   },
   "St_E_Rewind": {
     "name": "Cofnięcie",
@@ -3837,8 +4004,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Na 3 sek. <color=yellow>Przemieniasz</color> się w szybko poruszającą się <color=yellow>Ognistą Kulę</color>, zyskując <color=yellow>Zbroję</color> x50<sprite=5> i stając się odpornym na <color=yellow>Obrażenia od Ognia</color>. Za każdym razem, gdy kula dotknie wroga, zadaje <sprite=1><color=#16D7FF>220%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color>, a <color=yellow>Czas Trwania</color> przemiany <color=yellow>Zwiększa</color> się o 0.2<sprite=5> sek., maksymalnie do 3<sprite=5> sek.",
-    "rawDesc": "Na {0} sek. <color=yellow>Przemieniasz</color> się w szybko poruszającą się <color=yellow>Ognistą Kulę</color>, zyskując <color=yellow>Zbroję</color> x{1} i stając się odpornym na <color=yellow>Obrażenia od Ognia</color>. Za każdym razem, gdy kula dotknie wroga, zadaje {2} <color=yellow>Obrażeń od Ognia</color>, a <color=yellow>Czas Trwania</color> przemiany <color=yellow>Zwiększa</color> się o {3} sek., maksymalnie do {4} sek.",
+    "description": "Na 3 sek. <color=yellow>przemieniasz</color> się w szybko poruszającą się <color=yellow>Ognistą Kulę</color>, zyskując 50<sprite=5> <color=yellow>Pancerza</color> i stając się odpornym na <color=yellow>Obrażenia od Ognia</color>. Za każdym razem, gdy kula dotknie wroga, zadaje <sprite=1><color=#16D7FF>220%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color>, a <color=yellow>Czas Trwania</color> przemiany <color=yellow>zwiększa</color> się o 0.2<sprite=5> sek., maksymalnie o 3<sprite=5> sek.",
+    "rawDesc": "Na {0} sek. <color=yellow>przemieniasz</color> się w szybko poruszającą się <color=yellow>Ognistą Kulę</color>, zyskując {1} <color=yellow>Pancerza</color> i stając się odpornym na <color=yellow>Obrażenia od Ognia</color>. Za każdym razem, gdy kula dotknie wroga, zadaje {2} <color=yellow>Obrażeń od Ognia</color>, a <color=yellow>Czas Trwania</color> przemiany <color=yellow>zwiększa</color> się o {3} sek., maksymalnie o {4} sek.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -4273,30 +4440,30 @@
     "cooldownTime": 6.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Poprzez <color=yellow>Długie Przytrzymanie</color> klawisza użycia, koncentrujesz Energię Słońca na Młocie. Po zakończeniu koncentracji, uderzasz w ziemię, zadając wrogom od <sprite=1><color=#16D7FF>100%</color><sprite=5> do <sprite=1><color=#16D7FF>350%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color> i <color=yellow>Ogłuszając</color> ich na 0.5~1.5 sek.\n\nPodczas koncentracji nie możesz się poruszać, ale stajesz się <color=yellow>Niepowstrzymany</color> i zyskujesz <color=yellow>Zbroję</color> x60<sprite=5>.",
+    "description": "Poprzez <color=yellow>Długie Przytrzymanie</color> klawisza użycia, koncentrujesz Energię Słońca na Młocie. Po zakończeniu koncentracji, uderzasz w ziemię, zadając wrogom od <sprite=1><color=#16D7FF>150%</color><sprite=5> do <sprite=1><color=#16D7FF>450%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color> i <color=yellow>Ogłuszając</color> ich na 0.5~1.5 sek.\n\nPodczas koncentracji nie możesz się poruszać, ale stajesz się <color=yellow>Niepowstrzymany</color> i zyskujesz <color=yellow>Zbroję</color> x60<sprite=5>.",
     "rawDesc": "Poprzez <color=yellow>Długie Przytrzymanie</color> klawisza użycia, koncentrujesz Energię Słońca na Młocie. Po zakończeniu koncentracji, uderzasz w ziemię, zadając wrogom od {0} do {1} <color=yellow>Obrażeń od Ognia</color> i <color=yellow>Ogłuszając</color> ich na {2}~{3} sek.\n\nPodczas koncentracji nie możesz się poruszać, ale stajesz się <color=yellow>Niepowstrzymany</color> i zyskujesz <color=yellow>Zbroję</color> x{4}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
         "format": "#,##0",
         "raw": "damageMin",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>450%</color><sprite=5>",
         "format": "#,##0",
         "raw": "damageMax",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.5,
+          "basicAP": 4.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -4363,18 +4530,18 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Szarżujesz na cel i uderzasz młotem, zadając <sprite=2><color=#FF8A2D>110%</color><sprite=5> <color=yellow>Obrażeń od Światła</color> oraz aktywując <color=yellow>Efekt Ataku</color> o wartości 50%. Za każdym razem, gdy przypuszczasz <color=yellow>Atak</color> na wroga, <color=yellow>Czas Odnawiania</color> zostaje <color=yellow>Zmniejszony</color> o 8%.",
+    "description": "Szarżujesz na cel i uderzasz młotem, zadając <sprite=2><color=#FF8A2D>125%</color><sprite=5> <color=yellow>Obrażeń od Światła</color> oraz aktywując <color=yellow>Efekt Ataku</color> o wartości 50%. Za każdym razem, gdy przypuszczasz <color=yellow>Atak</color> na wroga, <color=yellow>Czas Odnawiania</color> zostaje <color=yellow>Zmniejszony</color> o 8%.",
     "rawDesc": "Szarżujesz na cel i uderzasz młotem, zadając {0} <color=yellow>Obrażeń od Światła</color> oraz aktywując <color=yellow>Efekt Ataku</color> o wartości {1}. Za każdym razem, gdy przypuszczasz <color=yellow>Atak</color> na wroga, <color=yellow>Czas Odnawiania</color> zostaje <color=yellow>Zmniejszony</color> o {2}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>110%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>125%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.1,
+          "basicAD": 1.25,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5025,16 +5192,16 @@
     "cooldownTime": 4.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Poświęcasz</color> 10% swojego Maksymalnego Zdrowia, by 3 razy wystrzelić cienkie złote kawałki do przodu. Odłamki przebijają cele, zadając trafionym wrogom <sprite=1><color=#16D7FF>95%</color><sprite=5> <color=yellow>Obrażeń</color> i zapewniając <color=yellow>Odzyskanie Zdrowia</color> sojusznikom o wartości <sprite=1><color=#16D7FF>18%</color><sprite=5>.",
+    "description": "<color=yellow>Poświęcasz</color> 8% swojego Maksymalnego Zdrowia, by 3 razy wystrzelić cienkie złote kawałki do przodu. Odłamki przebijają cele, zadając trafionym wrogom <sprite=1><color=#16D7FF>95%</color><sprite=5> <color=yellow>Obrażeń</color> i zapewniając <color=yellow>Odzyskanie Zdrowia</color> sojusznikom o wartości <sprite=1><color=#16D7FF>18%</color><sprite=5>.",
     "rawDesc": "<color=yellow>Poświęcasz</color> {0} swojego Maksymalnego Zdrowia, by {1} razy wystrzelić cienkie złote kawałki do przodu. Odłamki przebijają cele, zadając trafionym wrogom {2} <color=yellow>Obrażeń</color> i zapewniając <color=yellow>Odzyskanie Zdrowia</color> sojusznikom o wartości {3}.",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "8%",
         "format": "P0",
         "raw": "sacrificeHpRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.08,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5285,7 +5452,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Poprzez <color=yellow>Długie Przytrzymanie</color> klawisza użycia ładujesz salwę Strzał Mentalnych. Po puszczeniu klawisza, wystrzeliwujesz od 1 do 4<sprite=5> Strzał Mentalnych w pobliskich wrogów, proporcjonalnie do czasu ładowania. Każda strzała zadaje <sprite=2><color=#FF8A2D>150%</color><sprite=5> <color=yellow>Obrażeń od Ciemności</color> na wąskim obszarze.",
+    "description": "Poprzez <color=yellow>Długie Przytrzymanie</color> klawisza użycia ładujesz salwę Strzał Mentalnych. Po puszczeniu klawisza, wystrzeliwujesz od 1 do 4<sprite=5> Strzał Mentalnych w pobliskich wrogów, proporcjonalnie do czasu ładowania. Każda strzała zadaje <sprite=2><color=#FF8A2D>200%</color><sprite=5> <color=yellow>Obrażeń od Ciemności</color> na wąskim obszarze.",
     "rawDesc": "Poprzez <color=yellow>Długie Przytrzymanie</color> klawisza użycia ładujesz salwę Strzał Mentalnych. Po puszczeniu klawisza, wystrzeliwujesz od {0} do {1} Strzał Mentalnych w pobliskich wrogów, proporcjonalnie do czasu ładowania. Każda strzała zadaje {2} <color=yellow>Obrażeń od Ciemności</color> na wąskim obszarze.",
     "rawDescVars": [
       {
@@ -5309,14 +5476,14 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.5,
+          "basicAD": 2.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5342,7 +5509,7 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Tworzysz Pierścień Ognia wokół siebie na 3 sek. Wrogowie, którzy zetkną się z Pierścieniem, otrzymują <sprite=1><color=#16D7FF>250%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color> na sek.",
+    "description": "Tworzysz Pierścień Ognia wokół siebie na 3 sek. Wrogowie, którzy zetkną się z Pierścieniem, otrzymują <sprite=1><color=#16D7FF>350%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color> na sek.",
     "rawDesc": "Tworzysz Pierścień Ognia wokół siebie na {0} sek. Wrogowie, którzy zetkną się z Pierścieniem, otrzymują {1} <color=yellow>Obrażeń od Ognia</color> na sek.",
     "rawDescVars": [
       {
@@ -5353,7 +5520,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*5",
         "scalingType": "unknown",
@@ -5399,7 +5566,7 @@
           "basicAP": 1.2,
           "basicAD": 0.0,
           "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
+          "basicAddedMultiplierPerLevel": 0.1
         }
       },
       {
@@ -5470,10 +5637,10 @@
         "raw": "speedAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 12.0,
+          "basicConstant": 13.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 3.0,
+          "basicLvl": 2.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5583,6 +5750,83 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "St_R_BaptismOfSun": {
+    "name": "Chrzest Słońca",
+    "cooldownTime": 7.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>Vesper</color> przyjmuje moc słońca, wywołując eksplozję, która zadaje pobliskim wrogom <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color> i zmusza ich do atakowania Vespera. Przez 6 sek. <color=yellow>Szybkość ataku</color> wzrasta o 15%<sprite=5>, a w tym czasie <color=yellow>Ataki</color> zadają dodatkowe <sprite=2><color=#FF8A2D>40%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color>.",
+    "rawDesc": "<color=yellow>Vesper</color> przyjmuje moc słońca, wywołując eksplozję, która zadaje pobliskim wrogom {0} <color=yellow>Obrażeń od Ognia</color> i zmusza ich do atakowania Vespera. Przez {1} sek. <color=yellow>Szybkość ataku</color> wzrasta o {2}, a w tym czasie <color=yellow>Ataki</color> zadają dodatkowe {3} <color=yellow>Obrażeń od Ognia</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "6",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 11.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 4.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>40%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "bonusDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.4,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "Prowokacja, Ogień, Atak",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Vesper",
+    "travelerMemoryLocation": "R",
+    "tags": [
+      "Fire",
+      "Melee",
+      "Attack"
+    ],
+    "image": "St_R_BaptismOfSun.png",
+    "lore": "Patrzcie! Światło wypala nieczystości tego świata! \nW świętym tyglu jedynie wola El'pyrosa pozostanie niczym czyste złoto. \n\nWszyscy zostaniemy ochrzczeni, więc krzyczcie z wdzięczności!",
+    "achievementKey": "ACH_HOTTER_FIRE_WINS",
+    "achievementName": "Lepszy Ogień Wygrywa",
+    "achievementDescription": "Pokonaj Płonącego Olbrzyma jako Vesper, mając co najmniej 3 ognistych pamięci."
+  },
   "St_R_BlackArbalest": {
     "name": "Czarna Kusza",
     "cooldownTime": 11.0,
@@ -5626,7 +5870,8 @@
     "tags": [
       "Dark",
       "HardCC",
-      "Attack"
+      "Attack",
+      "Mobility"
     ],
     "image": "St_R_BlackArbalest.PNG",
     "lore": null,
@@ -5639,7 +5884,7 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Stajesz się <color=yellow>Niepowstrzymany</color> i dokonujesz <color=yellow>Szarży</color> do przodu, aż zderzysz się ze ścianą. Zadajesz <sprite=1><color=#16D7FF>135%</color><sprite=5> <color=yellow>Obrażeń</color> wrogom, z którymi się zderzasz, są oni ciągnięci za tobą, a po uderzeniu w ścianę uwalniasz Falę Uderzeniową, zadając <sprite=1><color=#16D7FF>300%</color><sprite=5> <color=yellow>Obrażeń</color> i <color=yellow>Ogłuszając</color> ich na 1.5 sek.\nPodczas użycia zyskujesz <color=yellow>Tarczę</color> równą 10%<sprite=5> twojego <color=yellow>Maksymalnego Zdrowia</color>, a która to Tarcza znika po 1 sek. od zakończenia Szarży.",
+    "description": "Stajesz się <color=yellow>Niepowstrzymany</color> i dokonujesz <color=yellow>Szarży</color> do przodu, aż zderzysz się ze ścianą. Zadajesz <sprite=1><color=#16D7FF>135%</color><sprite=5> <color=yellow>Obrażeń</color> wrogom, z którymi się zderzasz, są oni ciągnięci za tobą, a po uderzeniu w ścianę uwalniasz Falę Uderzeniową, zadając <sprite=1><color=#16D7FF>420%</color><sprite=5> <color=yellow>Obrażeń</color> i <color=yellow>Ogłuszając</color> ich na 1.5 sek.\nPodczas użycia zyskujesz <color=yellow>Tarczę</color> równą 20%<sprite=5> twojego <color=yellow>Maksymalnego Zdrowia</color>, a która to Tarcza znika po 3 sek. od zakończenia Szarży.",
     "rawDesc": "Stajesz się <color=yellow>Niepowstrzymany</color> i dokonujesz <color=yellow>Szarży</color> do przodu, aż zderzysz się ze ścianą. Zadajesz {0} <color=yellow>Obrażeń</color> wrogom, z którymi się zderzasz, są oni ciągnięci za tobą, a po uderzeniu w ścianę uwalniasz Falę Uderzeniową, zadając {1} <color=yellow>Obrażeń</color> i <color=yellow>Ogłuszając</color> ich na {2} sek.\nPodczas użycia zyskujesz <color=yellow>Tarczę</color> równą {3} twojego <color=yellow>Maksymalnego Zdrowia</color>, a która to Tarcza znika po {4} sek. od zakończenia Szarży.",
     "rawDescVars": [
       {
@@ -5656,13 +5901,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>420%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.0,
+          "basicAP": 4.2,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -5682,25 +5927,25 @@
         }
       },
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": "20%<sprite=5>",
         "format": "P0",
         "raw": "shieldMaxHpRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.08,
+          "basicConstant": 0.16,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.02,
+          "basicLvl": 0.04,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": "1",
+        "rendered": "3",
         "format": "#,##0.#",
         "raw": "shieldDisappearTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5730,7 +5975,7 @@
     "cooldownTime": 80.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Na 12 sek. zyskujesz Tarczę o wartości <sprite=1><color=#16D7FF>150%</color><sprite=5>, a <color=yellow>Moc Umiejętności</color> zwiększa się o 30%. W czasie jej trwania możesz do 3 razy ponownie użyć <color=yellow>Kataklizmu</color>, by zrzucić Meteoryt na wybranej pozycji. Meteoryt na krótko ogłusza wrogów i zadaje <sprite=1><color=#16D7FF>250%</color><sprite=5> <color=yellow>Obrażeń od Światła</color>.",
+    "description": "Na 12 sek. zyskujesz Tarczę o wartości <sprite=1><color=#16D7FF>150%</color><sprite=5>, a <color=yellow>Moc Umiejętności</color> zwiększa się o 30%<sprite=5>. W czasie jej trwania możesz do 3 razy ponownie użyć <color=yellow>Kataklizmu</color>, by zrzucić Meteoryt na wybranej pozycji. Meteoryt na krótko ogłusza wrogów i zadaje <sprite=1><color=#16D7FF>250%</color><sprite=5> <color=yellow>Obrażeń od Światła</color>.",
     "rawDesc": "Na {0} sek. zyskujesz Tarczę o wartości {1}, a <color=yellow>Moc Umiejętności</color> zwiększa się o {2}. W czasie jej trwania możesz do {3} razy ponownie użyć <color=yellow>Kataklizmu</color>, by zrzucić Meteoryt na wybranej pozycji. Meteoryt na krótko ogłusza wrogów i zadaje {4} <color=yellow>Obrażeń od Światła</color>.",
     "rawDescVars": [
       {
@@ -5760,15 +6005,15 @@
         }
       },
       {
-        "rendered": "30%",
+        "rendered": "30%<sprite=5>",
         "format": "#,##0'%'",
         "raw": "bonusApPercent",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 30.0,
+          "basicConstant": 25.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 5.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5922,6 +6167,73 @@
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
+  },
+  "St_R_DancingBlades": {
+    "name": "Burza Ostrzy",
+    "cooldownTime": 13.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Przywołuje <color=yellow>Burzę Ostrzy</color> na danym obszarze, utrzymującą się przez 4sek. <color=yellow>Burza Ostrzy</color> szybko tnie otoczenie, zadając co 0.5sek. wrogom <color=yellow>Obrażenia</color> równe wyższej wartości spośród <sprite=1><color=#16D7FF>85%</color><sprite=5>lub <sprite=2><color=#FF8A2D>85%</color><sprite=5>, a także śledzi najbliższego wroga.",
+    "rawDesc": "Przywołuje <color=yellow>Burzę Ostrzy</color> na danym obszarze, utrzymującą się przez {0}sek. <color=yellow>Burza Ostrzy</color> szybko tnie otoczenie, zadając co {1}sek. wrogom <color=yellow>Obrażenia</color> równe wyższej wartości spośród {2}lub {3}, a także śledzi najbliższego wroga.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "tickInterval",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "apDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.85,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "adDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.85,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "Trwałe Obrażenia Obszarowe",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [],
+    "image": "St_R_DancingBlades.png",
+    "lore": null,
+    "achievementKey": "ACH_ETERNAL_REST",
+    "achievementName": "Wieczny Odpoczynek",
+    "achievementDescription": "Zadaj Miecznikowi Dusz ostateczny cios atakiem podstawowym 50 razy."
   },
   "St_R_DangerousTheory": {
     "name": "Niebezpieczna Teoria",
@@ -6821,7 +7133,7 @@
   "St_R_QuickTrigger": {
     "name": "Szybkie Dobycie",
     "cooldownTime": 14.0,
-    "maxCharges": 2,
+    "maxCharges": 3,
     "addedCharges": 1,
     "description": "Szybko wystrzeliwujesz Pocisk Przebijający x3, zadając <sprite=2><color=#FF8A2D>120%</color><sprite=5> Obrażeń maksymalnie 3 wrogom.",
     "rawDesc": "Szybko wystrzeliwujesz Pocisk Przebijający x{0}, zadając {1} Obrażeń maksymalnie {2} wrogom.",
@@ -7470,9 +7782,22 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Poprzez <color=yellow>Długie Przytrzymanie</color> klawisza użycia doładowujesz ładunek elektryczny. Po zakończeniu doładowania wywołujesz Eksplozję, która zadaje wrogom <color=yellow>Obrażenia od Światła</color> od <sprite=1><color=#16D7FF>150%</color><sprite=5> do <sprite=1><color=#16D7FF>780%</color><sprite=5>, proporcjonalnie do czasu doładowania, odpycha ich i zmniejsza <color=yellow>Szybkość Ruchu</color>.\nPo doładowaniu, przez 1 sek., liczba obrażeń i zasięg osiągają maksymalny poziom.",
-    "rawDesc": "Poprzez <color=yellow>Długie Przytrzymanie</color> klawisza użycia doładowujesz ładunek elektryczny. Po zakończeniu doładowania wywołujesz Eksplozję, która zadaje wrogom <color=yellow>Obrażenia od Światła</color> od {0} do {1}, proporcjonalnie do czasu doładowania, odpycha ich i zmniejsza <color=yellow>Szybkość Ruchu</color>.\nPo doładowaniu, przez {2} sek., liczba obrażeń i zasięg osiągają maksymalny poziom.",
+    "description": "Poprzez <color=yellow>długie przytrzymanie</color> klawisza umiejętności ładujesz ładunek i zyskujesz 40<sprite=5> pancerza. Po zwolnieniu klawisza wywołujesz eksplozję, która zadaje wrogom od <sprite=1><color=#16D7FF>150%</color><sprite=5> do <sprite=1><color=#16D7FF>780%</color><sprite=5> <color=yellow>obrażeń od Światła</color> proporcjonalnie do czasu ładowania, odpycha ich i zmniejsza ich <color=yellow>szybkość ruchu</color> o 60% na 2 sek. Zdobyty pancerz znika 1 sek. po eksplozji.\n\nPo naładowaniu przez 1 sek. obrażenia i zasięg osiągają maksymalną wartość.",
+    "rawDesc": "Poprzez <color=yellow>długie przytrzymanie</color> klawisza umiejętności ładujesz ładunek i zyskujesz {0} pancerza. Po zwolnieniu klawisza wywołujesz eksplozję, która zadaje wrogom od {1} do {2} <color=yellow>obrażeń od Światła</color> proporcjonalnie do czasu ładowania, odpycha ich i zmniejsza ich <color=yellow>szybkość ruchu</color> o {3} na {4} sek. Zdobyty pancerz znika {5} sek. po eksplozji.\n\nPo naładowaniu przez {6} sek. obrażenia i zasięg osiągają maksymalną wartość.",
     "rawDescVars": [
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 37.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 3.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
       {
         "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
         "format": "#,##0",
@@ -7500,6 +7825,45 @@
         }
       },
       {
+        "rendered": "60%",
+        "format": "#,##0'%'",
+        "raw": "slowAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 60.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "slowDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "armorLingerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
         "rendered": "1",
         "format": "0.##",
         "raw": "channel.chargeFullDuration",
@@ -7513,7 +7877,7 @@
         }
       }
     ],
-    "shortDescription": "Obszarowe Obrażenia od Światła z bliska",
+    "shortDescription": "Obszarowe obrażenia od Światła z bliska",
     "rarity": "Rare",
     "type": "Normal",
     "traveler": "",

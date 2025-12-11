@@ -644,8 +644,8 @@
   },
   "Gem_C_Void": {
     "name": "Essence of the Void",
-    "description": "After casting this Memory, your next <color=yellow>attack</color> within 4 seconds will explode, dealing <sprite=2><color=#FF8A2D>150%</color><sprite=5> <color=yellow>Dark damage</color> to the target and nearby enemies.",
-    "rawDesc": "After casting this Memory, your next <color=yellow>attack</color> within {0} seconds will explode, dealing {1} <color=yellow>Dark damage</color> to the target and nearby enemies.",
+    "description": "After casting this Memory, your next <color=yellow>attack</color> within 4 seconds explodes, dealing <sprite=2><color=#FF8A2D>150%</color><sprite=5> <color=yellow>Dark Damage</color> to the target and nearby enemies.",
+    "rawDesc": "After casting this Memory, your next <color=yellow>attack</color> within {0} seconds explodes, dealing {1} <color=yellow>Dark Damage</color> to the target and nearby enemies.",
     "rawDescVars": [
       {
         "rendered": "4",
@@ -679,7 +679,7 @@
       "Dark"
     ],
     "image": "Gem_C_Void.PNG",
-    "lore": null,
+    "lore": "At the tip of the hollow puppet's blade,\na faint dark energy gathers.\n\nIt is not preparation for the next strike.\nIt is merely a manifestation of emptiness,\nrevealing the nothingness within.\n\nParadoxically,\nthe puppet's sword cuts through enemies\nwith sharper, more explosive force.\n\nLike a fleeting struggle\ntoward a void that can never be filled.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -821,7 +821,7 @@
       "Heal"
     ],
     "image": "Gem_E_Blossom.PNG",
-    "lore": null,
+    "lore": "Early dawn, and the rain is falling.\nIt reminds me of that day, when we bloomed flowers together.\n\nI wanted to create a pure white flower, like the quiet dawn.\nA child like a lantern, holding all the forest's order and tranquility.\n\nBut you, crouched beside me watching, suddenly grumbled.\nThen you carelessly scattered deep purple like a storm, and playfully painted over it with lightning-yellow.\n\nI scolded you, and you only laughed.\nI truly believed my perfect plan had been ruined by your chaos.\n\nBut the next morning, when we looked at that flower together...\nOver the pure white serenity, your riotous colors flowed like a living river.\n\nOnly then did I understand.\nYes, the forest's true beauty requires both my order and your chaos, intertwined.\nOnly then does it become complete.\n\n...\nThe rain... seeps into my mask.\nToday, more than ever, I wish I could see\nyour mischievous eyes again.",
     "achievementKey": "ACH_SUPPORT_MAIN",
     "achievementName": "Support Specialist",
     "achievementDescription": "Have 4 healing Active Memories at once."
@@ -906,7 +906,7 @@
       "Attack"
     ],
     "image": "Gem_E_Crimson.PNG",
-    "lore": null,
+    "lore": "I opened my eyes. The trance had ended.\nEvery joint in my body creaks and groans, yet I feel no pain.\n\nFragments of memory drift across my hazy consciousness.\nThe Puppeteer. The client. And the failed contract...\nThese faint pieces come together at... my master's familiar estate.\n\nRed. Everything is red.\nWhat's this at my feet? Ah, it was a person.\n\nCrimson.\n\nDid I create this? This sea of red?\nIndeed, a mountain of corpses in an ocean of blood...\n\nBut why?\nWhy does my heart remain still, without a single ripple?",
     "achievementKey": "ACH_IN_CARNAGE_I_BLOOM",
     "achievementName": "In Carnage I Bloom",
     "achievementDescription": "Empower Memories that deal Dark damage 20 times in a single adventure."
@@ -944,6 +944,59 @@
     "achievementKey": "ACH_DESPERATE_HERO",
     "achievementName": "Desperate Hero",
     "achievementDescription": "Defeat 30 enemies in a row while your Health is below 40%."
+  },
+  "Gem_E_Domination": {
+    "name": "Essence of Domination",
+    "description": "Increases <color=yellow>Critical Strike Chance</color> by 20%. Each time you land a critical strike on an enemy, your <color=yellow>Critical Strike Damage</color> increases by 0.3%, stacking up to 20%<sprite=5>. ",
+    "rawDesc": "Increases <color=yellow>Critical Strike Chance</color> by {0}. Each time you land a critical strike on an enemy, your <color=yellow>Critical Strike Damage</color> increases by {1}, stacking up to {2}. ",
+    "rawDescVars": [
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "critChanceBonusAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0.3%",
+        "format": "#,##0.0%",
+        "raw": "critAmpBonusValue",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.003,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "critAmpMaxValue",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Domination.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
   },
   "Gem_E_Fangs": {
     "name": "Essence of Fangs",
@@ -1286,7 +1339,7 @@
     "rarity": "Epic",
     "tags": [],
     "image": "Gem_E_Metal.png",
-    "lore": null,
+    "lore": "At the girl's feet, paint shimmered in all colors of the rainbow.\n\nThe same lovely shade as the roses Mrs. Maria next door used to grow,\nthis paint, it smells like metal—just like me!\n\nUrged on by the girl, the book hurriedly wrote the next story using that paint as ink.\n\nStrangely enough, this ink dried unusually fast,\nso the book had to turn to the next page without a moment's rest.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -1343,6 +1396,62 @@
     "achievementKey": "ACH_HEAVIER_THAN_ATLAS",
     "achievementName": "Heavier than Atlas",
     "achievementDescription": "Reach 3,000 Maximum Health."
+  },
+  "Gem_E_Obsidian": {
+    "name": "Essence of Obsidian",
+    "description": "<color=yellow>Casting</color> this Memory <color=yellow>empowers</color> your next attack within 5 seconds. The <color=yellow>empowered attack</color> deals <sprite=2><color=#FF8A2D>250%</color><sprite=5> <color=yellow>Dark Damage</color> to the target and reduces this Memory's <color=yellow>cooldown</color> by 1<sprite=5> seconds.",
+    "rawDesc": "<color=yellow>Casting</color> this Memory <color=yellow>empowers</color> your next attack within {0} seconds. The <color=yellow>empowered attack</color> deals {1} <color=yellow>Dark Damage</color> to the target and reduces this Memory's <color=yellow>cooldown</color> by {2} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.25,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reducedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_E_Obsidian.png",
+    "lore": null,
+    "achievementKey": "ACH_MINE_AND_CRAFT",
+    "achievementName": "Mine and Craft",
+    "achievementDescription": "Destroy 3 Pitch-Black Ore."
   },
   "Gem_E_Omega": {
     "name": "Essence of Finality",
@@ -1578,8 +1687,8 @@
   },
   "Gem_E_Predation": {
     "name": "Essence of Predation",
-    "description": "This Memory deals 60%<sprite=5> increased damage to <color=yellow>Bosses</color> and <color=yellow>Hunters</color>. Defeating a <color=yellow>Hunter</color> drops 1 <color=yellow>Orb of Power</color>, while defeating a <color=yellow>Boss</color> drops 3. When you collect an <color=yellow>Orb of Power</color>, either <color=yellow>Attack Damage</color> or <color=yellow>Ability Power</color> permanently increases by 1 at random.",
-    "rawDesc": "This Memory deals {0} increased damage to <color=yellow>Bosses</color> and <color=yellow>Hunters</color>. Defeating a <color=yellow>Hunter</color> drops {1} <color=yellow>Orb of Power</color>, while defeating a <color=yellow>Boss</color> drops {2}. When you collect an <color=yellow>Orb of Power</color>, either <color=yellow>Attack Damage</color> or <color=yellow>Ability Power</color> permanently increases by 1 at random.",
+    "description": "This Memory deals 60%<sprite=5> increased damage to <color=yellow>Bosses</color> and <color=yellow>Hunters</color>. Defeating a <color=yellow>Hunter</color> drops 1 <color=yellow>Orbs of Power</color>, while defeating a <color=yellow>Boss</color> drops 3. When you collect an <color=yellow>Orb of Power</color>, either <color=yellow>Attack Damage</color> or <color=yellow>Ability Power</color> permanently increases by 1 at random.",
+    "rawDesc": "This Memory deals {0} increased damage to <color=yellow>Bosses</color> and <color=yellow>Hunters</color>. Defeating a <color=yellow>Hunter</color> drops {1} <color=yellow>Orbs of Power</color>, while defeating a <color=yellow>Boss</color> drops {2}. When you collect an <color=yellow>Orb of Power</color>, either <color=yellow>Attack Damage</color> or <color=yellow>Ability Power</color> permanently increases by 1 at random.",
     "rawDescVars": [
       {
         "rendered": "60%<sprite=5>",
@@ -1618,7 +1727,7 @@
     "rarity": "Epic",
     "tags": [],
     "image": "Gem_E_Predation.png",
-    "lore": null,
+    "lore": "Hungry... always.\nMy nest is a mountain of bones.\nFlesh... prey... not enough.\n\nBut... something new. Came.\nSmell of flesh. Smell of fear.\n\nCrush bones. Tear flesh. Swallow screams.\nThis is my work. This is... Lord Primus's pleasure.\n\nYou too... become bones.\nPart of my nest.\nLord Primus's... beautiful landscape.\n\nKik, kikikik.",
     "achievementKey": "ACH_WHOS_THE_PREY_NOW",
     "achievementName": "Who's the Prey Now",
     "achievementDescription": "Defeat 70 Hunters."
@@ -1675,6 +1784,61 @@
     "achievementKey": "ACH_TEKKAI",
     "achievementName": "Iron Body",
     "achievementDescription": "Gain a Barrier equal to or greater than 300% of your Maximum Health."
+  },
+  "Gem_E_Reflex": {
+    "name": "Essence of Reflex",
+    "description": "When you take any <color=yellow>damage</color>, unleash cold toward the nearest enemy, dealing <sprite=1><color=#16D7FF>120%</color><sprite=5> <color=yellow>Cold Damage</color> and knocking them back, then increase your <color=yellow>Armor</color> by 40<sprite=5> for 1.5 seconds.",
+    "rawDesc": "When you take any <color=yellow>damage</color>, unleash cold toward the nearest enemy, dealing {0} <color=yellow>Cold Damage</color> and knocking them back, then increase your <color=yellow>Armor</color> by {1} for {2} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.6,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorFlatAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 32.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.075,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "armorDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Cold"
+    ],
+    "image": "Gem_E_Reflex.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
   },
   "Gem_E_Thunder": {
     "name": "Essence of Thunder",
@@ -1768,6 +1932,48 @@
       "Dark"
     ],
     "image": "Gem_E_Twilight.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Umbra": {
+    "name": "Essence of Umbra",
+    "description": "This memory's damage is increased by 42%<sprite=5> of your <color=yellow>Critical Strike Chance</color>. If the <color=yellow>Damage</color> is <color=yellow>Dark Damage</color>, <color=yellow>Restore</color> 6%<sprite=5> of the damage dealt as <color=yellow>Health</color>.",
+    "rawDesc": "This memory's damage is increased by {0} of your <color=yellow>Critical Strike Chance</color>. If the <color=yellow>Damage</color> is <color=yellow>Dark Damage</color>, <color=yellow>Restore</color> {1} of the damage dealt as <color=yellow>Health</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "42%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmpCritConversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0005
+        }
+      },
+      {
+        "rendered": "6%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.038,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Umbra.PNG",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -2398,6 +2604,43 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Abyss": {
+    "name": "Essence of the Abyss",
+    "description": "Converts all <color=yellow>Damage</color> dealt by this memory to <color=yellow>Dark Damage</color>. If the target hit by this memory has 3 or more stacks of <color=yellow>Darkness</color>, triggers <color=yellow>Attack Effects</color> with a 43%<sprite=5> chance.",
+    "rawDesc": "Converts all <color=yellow>Damage</color> dealt by this memory to <color=yellow>Dark Damage</color>. If the target hit by this memory has {0} or more stacks of <color=yellow>Darkness</color>, triggers <color=yellow>Attack Effects</color> with a {1} chance.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "enableAtkEffectStackCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "43%<sprite=5>",
+        "format": "P0",
+        "raw": "atkEffectChance",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_R_Abyss.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Accuracy": {
     "name": "Essence of Accuracy",
     "description": "When this Memory deals <color=yellow>damage</color> to a distant enemy, it fires an <color=yellow>additional projectile</color> that deals 50%<sprite=5> <color=yellow>damage</color>. The <color=yellow>damage</color> dealt by the <color=yellow>projectile</color> shares the elemental type with the original damage.",
@@ -2460,7 +2703,7 @@
     "rarity": "Rare",
     "tags": [],
     "image": "Gem_R_Adventure.PNG",
-    "lore": null,
+    "lore": "To the girl, adventure is the thrilling act of filling blank pages.\nWith each step she takes, a new sentence is written, a new character appears.\n\nToday, too, the girl shared her bright smile with a sad-looking mother bear.\nThe bear then shattered into pieces,\nbecoming a swarm of shimmering blue butterflies that thanked the girl.\n\nEvery day, the girl spends such rewarding moments.",
     "achievementKey": "ACH_NOVICE_TREASURE_HUNTER",
     "achievementName": "Novice Treasure Hunter",
     "achievementDescription": "Open a treasure chest for the first time."
@@ -2672,16 +2915,16 @@
   },
   "Gem_R_Composure": {
     "name": "Essence of Composure",
-    "description": "Casting this Memory increases your <color=yellow>Critical Strike Chance</color> by 20%<sprite=5> for 5 seconds. This effect ends early if you take damage from enemies.",
+    "description": "Casting this Memory increases your <color=yellow>Critical Strike Chance</color> by 30%<sprite=5> for 5 seconds. This effect ends early if you take damage from enemies.",
     "rawDesc": "Casting this Memory increases your <color=yellow>Critical Strike Chance</color> by {0} for {1} seconds. This effect ends early if you take damage from enemies.",
     "rawDescVars": [
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": "30%<sprite=5>",
         "format": "P0",
         "raw": "critBonus",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.15,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -3087,62 +3330,6 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "Gem_E_Obsidian": {
-    "name": "Essence of Obsidian",
-    "description": "<color=yellow>Casting</color> this Memory <color=yellow>empowers</color> your next attack within 5 seconds. The <color=yellow>empowered attack</color> deals <sprite=2><color=#FF8A2D>250%</color><sprite=5> <color=yellow>Dark Damage</color> to the target and reduces this Memory's <color=yellow>cooldown</color> by 1<sprite=5> seconds.",
-    "rawDesc": "<color=yellow>Casting</color> this Memory <color=yellow>empowers</color> your next attack within {0} seconds. The <color=yellow>empowered attack</color> deals {1} <color=yellow>Dark Damage</color> to the target and reduces this Memory's <color=yellow>cooldown</color> by {2} seconds.",
-    "rawDescVars": [
-      {
-        "rendered": "5",
-        "format": "#,##0.#",
-        "raw": "duration",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 5.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "damage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.0,
-          "basicAD": 1.25,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.01
-        }
-      },
-      {
-        "rendered": "1<sprite=5>",
-        "format": "#,##0.#",
-        "raw": "reducedCooldown",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0.0,
-          "basicAD": 0.0,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.01
-        }
-      }
-    ],
-    "rarity": "Epic",
-    "tags": [
-      "Dark",
-      "Attack"
-    ],
-    "image": "Gem_E_Obsidian.png",
-    "lore": null,
-    "achievementKey": "ACH_MINE_AND_CRAFT",
-    "achievementName": "Mine and Craft",
-    "achievementDescription": "Destroy 3 Pitch-Black Ore."
-  },
   "Gem_R_Panic": {
     "name": "Essence of Panic",
     "description": "Taking any <color=yellow>damage</color> grants this Memory 30<sprite=5> <color=yellow>Memory Haste</color> and your <color=yellow>Movement Speed</color> increases by 20%<sprite=5> for 3 seconds.",
@@ -3200,8 +3387,8 @@
   },
   "Gem_R_Rejuvenation": {
     "name": "Essence of Rejuvenation",
-    "description": "Every 15 seconds, this Memory's <color=yellow>cast</color> becomes <color=yellow>empowered</color>. Within 1.5 seconds after casting the <color=yellow>empowered cast</color>, <color=yellow>restore</color> your <color=yellow>Health</color> for 14%<sprite=5> of the <color=yellow>damage</color> dealt.",
-    "rawDesc": "Every {0} seconds, this Memory's <color=yellow>cast</color> becomes <color=yellow>empowered</color>. Within {1} seconds after casting the <color=yellow>empowered cast</color>, <color=yellow>restore</color> your <color=yellow>Health</color> for {2} of the <color=yellow>damage</color> dealt.",
+    "description": "Every 15 seconds, this Memory's <color=yellow>cast</color> becomes <color=yellow>empowered</color>. For 1.5 seconds after casting the <color=yellow>empowered cast</color>, <color=yellow>restore</color> 14%<sprite=5> of the <color=yellow>damage</color> dealt as your <color=yellow>Health</color>.",
+    "rawDesc": "Every {0} seconds, this Memory's <color=yellow>cast</color> becomes <color=yellow>empowered</color>. For {1} seconds after casting the <color=yellow>empowered cast</color>, <color=yellow>restore</color> {2} of the <color=yellow>damage</color> dealt as your <color=yellow>Health</color>.",
     "rawDescVars": [
       {
         "rendered": "15",
@@ -3248,7 +3435,7 @@
       "Heal"
     ],
     "image": "Gem_R_Rejuvenation.PNG",
-    "lore": null,
+    "lore": "Somewhere in a secret place within the Rapids,\na location also known as the Land Between,\nthe air was filled with the clinking of backpacks.\n\n\"Senior! Just by approaching that statue, my creaky joints smooth out and my pack feels lighter! Even my worn shell seems to regain its luster! Why do I feel so rejuvenated?\"\n\nThe one called senior slowly blinked their multiple eyes\nand let out a sigh—\na clear sign of exasperation at the question.\n\n\"Because He shares a bit of His yesterday\nfor our today.\"\n\n\"His... yesterday? Then every time we gain strength, does our Guide... does He molt like us? Or does His shell crack?\"\n\nThe senior slammed their sturdy claw on the table with a sharp 'THWACK!'\n\n\"Ugh, tsk! Does this Jonas have a starfish for brains?! Instead of worrying about nonsense, tighten your pack straps! The power He gave you isn't for polishing your carapace!\"\n\n\n- From the Regular Jonas Gathering",
     "achievementKey": "ACH_LOYAL_CUSTOMER",
     "achievementName": "Loyal Customer",
     "achievementDescription": "Activate the Shrine of Guidance 15 times in a single adventure."
@@ -3519,6 +3706,62 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Stillness": {
+    "name": "Essence of Stillness",
+    "description": "Every 5 seconds, this memory's <color=yellow>Cast</color> becomes <color=yellow>Enhanced</color>. Upon <color=yellow>Enhanced Cast</color>, emit light that deals <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>Light Damage</color> to enemies and <color=yellow>Stuns</color> them for 2 seconds. Higher quality increases the emission radius.",
+    "rawDesc": "Every {0} seconds, this memory's <color=yellow>Cast</color> becomes <color=yellow>Enhanced</color>. Upon <color=yellow>Enhanced Cast</color>, emit light that deals {1} <color=yellow>Light Damage</color> to enemies and <color=yellow>Stuns</color> them for {2} seconds. Higher quality increases the emission radius.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light",
+      "HardCC"
+    ],
+    "image": "Gem_R_Stillness.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Wealth": {
     "name": "Essence of Wealth",
     "description": "When an enemy damaged by this Memory is killed within 2 seconds, they drop 1.7<sprite=5> Gold. Gold is shared among all Travelers.",
@@ -3561,8 +3804,8 @@
   },
   "Gem_R_Wound": {
     "name": "Essence of the Wound",
-    "description": "When this Memory deals damage to an enemy, it applies a <color=yellow>Mark</color>. Each <color=yellow>attack</color> on a <color=yellow>Marked</color> target deals <sprite=1><color=#16D7FF>44%</color><sprite=5> <color=yellow>damage</color>. After 3 attacks, the <color=yellow>Mark</color> explodes, dealing <sprite=1><color=#16D7FF>275%</color><sprite=5> <color=yellow>damage</color> to all nearby enemies.",
-    "rawDesc": "When this Memory deals damage to an enemy, it applies a <color=yellow>Mark</color>. Each <color=yellow>attack</color> on a <color=yellow>Marked</color> target deals {0} <color=yellow>damage</color>. After {1} attacks, the <color=yellow>Mark</color> explodes, dealing {2} <color=yellow>damage</color> to all nearby enemies.",
+    "description": "When this Memory deals damage to an enemy, it applies a <color=yellow>Mark</color>. Each <color=yellow>attack</color> on the <color=yellow>Mark</color> deals <sprite=1><color=#16D7FF>44%</color><sprite=5> <color=yellow>damage</color>, and after 3 attacks, the <color=yellow>Mark</color> explodes, dealing <sprite=1><color=#16D7FF>275%</color><sprite=5> <color=yellow>damage</color> to all nearby enemies.",
+    "rawDesc": "When this Memory deals damage to an enemy, it applies a <color=yellow>Mark</color>. Each <color=yellow>attack</color> on the <color=yellow>Mark</color> deals {0} <color=yellow>damage</color>, and after {1} attacks, the <color=yellow>Mark</color> explodes, dealing {2} <color=yellow>damage</color> to all nearby enemies.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>44%</color><sprite=5>",
@@ -3609,7 +3852,7 @@
       "Attack"
     ],
     "image": "Gem_R_Wound.PNG",
-    "lore": null,
+    "lore": "The wound... won't heal.\nBeyond the throbbing pain, it devours me\nlike a living curse.\n\nThe eerie violet eyes filling this cavern,\nand the floor's patterns glowing as if writhing...\nLike an endless scream, they seem to burrow\ninto my flesh trapped behind these bars.\n\nAnd among countless eyes, one shines brightest.\nHe inflicted this wound upon me, then did nothing.\nHe merely observes and records my wound,\nmy suffering, with detached interest.\n\nYet that indifferent gaze terrifies me\nmore than any wound ever could...",
     "achievementKey": "ACH_THROUGH_TIME_AND_SPACE",
     "achievementName": "Transcendent Speed",
     "achievementDescription": "Reach 6 Attack Speed per second."
@@ -3721,6 +3964,56 @@
     ],
     "image": "Gem_U_GlacialCore.PNG",
     "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_LastStarlight": {
+    "name": "Last Starlight",
+    "description": "Every 15 seconds, this Memory's <color=yellow>Cast</color> is <color=yellow>Empowered</color>. On an <color=yellow>Empowered Cast</color>, create a black hole at the cast location that deals <sprite=1><color=#16D7FF>160%</color><sprite=5> <color=yellow>Light Damage</color> per second for 5 seconds. \nIf this is not a location-targeted Memory, the black hole is created on the nearest enemy in the direction you are facing.",
+    "rawDesc": "Every {0} seconds, this Memory's <color=yellow>Cast</color> is <color=yellow>Empowered</color>. On an <color=yellow>Empowered Cast</color>, create a black hole at the cast location that deals {1} <color=yellow>Light Damage</color> per second for {2} seconds. \nIf this is not a location-targeted Memory, the black hole is created on the nearest enemy in the direction you are facing.",
+    "rawDescVars": [
+      {
+        "rendered": "15",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "tickDamage/tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Dark",
+      "HardCC"
+    ],
+    "image": "Gem_U_LastStarlight.PNG",
+    "lore": "My eternal companion, Nyx... \nI devote my very last to you. \nAll I ask is that you remain the most radiant goddess of the night...\n\n...Please, just be happy.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""

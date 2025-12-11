@@ -4,7 +4,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "後方へ跳び、元いたの位置に3個の爆弾を落とします。各<sprite=1><color=#16D7FF>120%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、1秒間<color=yellow>スタン</color>させます。",
+    "description": "後方へ跳び、元いたの位置に3個の爆弾を落とします。各<sprite=1><color=#16D7FF>168%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、1秒間<color=yellow>スタン</color>させます。",
     "rawDesc": "後方へ跳び、元いたの位置に{0}個の爆弾を落とします。各{1}の<color=yellow>ダメージ</color>を与え、{2}秒間<color=yellow>スタン</color>させます。",
     "rawDescVars": [
       {
@@ -21,13 +21,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>168%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.2,
+          "basicAP": 1.68,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -176,73 +176,6 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "St_R_DancingBlades": {
-    "name": "ブレードストーム",
-    "cooldownTime": 13.0,
-    "maxCharges": 1,
-    "addedCharges": 1,
-    "description": "このエリアに4秒間持続する<color=yellow>ブレードストーム</color>を召喚します。<color=yellow>ブレードストーム</color>は周囲を素早く切り裂き、0.5秒ごとに敵に<sprite=1><color=#16D7FF>85%</color><sprite=5>と<sprite=2><color=#FF8A2D>85%</color><sprite=5>のうち大きい方の<color=yellow>ダメージ</color>を与え、最も近い敵を追跡します。",
-    "rawDesc": "このエリアに{0}秒間持続する<color=yellow>ブレードストーム</color>を召喚します。<color=yellow>ブレードストーム</color>は周囲を素早く切り裂き、{1}秒ごとに敵に{2}と{3}のうち大きい方の<color=yellow>ダメージ</color>を与え、最も近い敵を追跡します。",
-    "rawDescVars": [
-      {
-        "rendered": "4",
-        "format": "#,##0.#",
-        "raw": "duration",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "0.5",
-        "format": "#,##0.#",
-        "raw": "tickInterval",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "apDamage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.85,
-          "basicAD": 0.0,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "adDamage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.0,
-          "basicAD": 0.85,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
-        }
-      }
-    ],
-    "shortDescription": "範囲持続ダメージ",
-    "rarity": "Rare",
-    "type": "Normal",
-    "traveler": "",
-    "travelerMemoryLocation": "",
-    "tags": [],
-    "image": "St_R_DancingBlades.png",
-    "lore": null,
-    "achievementKey": "ACH_ETERNAL_REST",
-    "achievementName": "永遠の安息",
-    "achievementDescription": "魂の剣術士に基本攻撃で合計50回のとどめを刺す。"
-  },
   "St_C_DarkBolt": {
     "name": "闇の矢",
     "cooldownTime": 4.5,
@@ -334,11 +267,11 @@
   },
   "St_C_FlashFreeze": {
     "name": "急速凍結",
-    "cooldownTime": 5.0,
+    "cooldownTime": 9.0,
     "maxCharges": 2,
-    "addedCharges": 1,
-    "description": "前方に冷気を放出し、敵に<sprite=1><color=#16D7FF>130%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与えます。すでに<color=yellow>冷気</color>の影響を受けている敵の場合、<color=yellow>ダメージ量</color>が100%増加し、1.5秒間<color=yellow>スネア</color>状態にします。",
-    "rawDesc": "前方に冷気を放出し、敵に{0}の<color=yellow>冷気ダメージ</color>を与えます。すでに<color=yellow>冷気</color>の影響を受けている敵の場合、<color=yellow>ダメージ量</color>が{1}増加し、{2}秒間<color=yellow>スネア</color>状態にします。",
+    "addedCharges": 999,
+    "description": "前方に冷気を放出し、敵に<sprite=1><color=#16D7FF>130%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与え、自分と味方に3秒間持続する<sprite=1><color=#16D7FF>90%</color><sprite=5>の<color=yellow>シールド</color>を付与します。すでに<color=yellow>冷気</color>の影響を受けている敵の場合、<color=yellow>ダメージ量</color>が100%増加し、1.5秒間<color=yellow>スネア</color>状態にします。\n\n<color=yellow>チャージ回数</color>が一度に全て充填されます。",
+    "rawDesc": "前方に冷気を放出し、敵に{0}の<color=yellow>冷気ダメージ</color>を与え、自分と味方に{1}秒間持続する{2}の<color=yellow>シールド</color>を付与します。すでに<color=yellow>冷気</color>の影響を受けている敵の場合、<color=yellow>ダメージ量</color>が{3}増加し、{4}秒間<color=yellow>スネア</color>状態にします。\n\n<color=yellow>チャージ回数</color>が一度に全て充填されます。",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
@@ -351,6 +284,32 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.9,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.1875
         }
       },
       {
@@ -388,7 +347,8 @@
     "tags": [
       "Cold",
       "Melee",
-      "HardCC"
+      "HardCC",
+      "Shield"
     ],
     "image": "St_C_FlashFreeze.PNG",
     "lore": null,
@@ -613,8 +573,8 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "前方に爪を振り回し、敵に<sprite=1><color=#16D7FF>140%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与え、0.5秒間<color=yellow>スタン</color>させます。もう一度振り回すことで、敵に<sprite=1><color=#16D7FF>264%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与え、1秒間<color=yellow>スタン</color>させることができます。",
-    "rawDesc": "前方に爪を振り回し、敵に{0}の<color=yellow>冷気ダメージ</color>を与え、{1}秒間<color=yellow>スタン</color>させます。もう一度振り回すことで、敵に{2}の<color=yellow>冷気ダメージ</color>を与え、{3}秒間<color=yellow>スタン</color>させることができます。",
+    "description": "前方に爪を振り回し、敵に<sprite=1><color=#16D7FF>140%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与え、0.5秒間<color=yellow>スタン</color>させます。もう一度振り回すことで、敵に<sprite=1><color=#16D7FF>264%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与え、1秒間<color=yellow>スタン</color>させることができます。\n\n爪が敵に命中すると、ダメージ量の12%分<color=yellow>体力</color>を<color=yellow>回復</color>します。",
+    "rawDesc": "前方に爪を振り回し、敵に{0}の<color=yellow>冷気ダメージ</color>を与え、{1}秒間<color=yellow>スタン</color>させます。もう一度振り回すことで、敵に{2}の<color=yellow>冷気ダメージ</color>を与え、{3}秒間<color=yellow>スタン</color>させることができます。\n\n爪が敵に命中すると、ダメージ量の{4}分<color=yellow>体力</color>を<color=yellow>回復</color>します。",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
@@ -667,9 +627,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "12%",
+        "format": "P0",
+        "raw": "Ai_C_IceClaw::healRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.12,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "近接冷気ダメージ",
+    "shortDescription": "近接冷気ダメージ、体力回復",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -677,7 +650,8 @@
     "tags": [
       "Cold",
       "Melee",
-      "HardCC"
+      "HardCC",
+      "Heal"
     ],
     "image": "St_C_IceClaw.PNG",
     "lore": null,
@@ -731,7 +705,7 @@
       "Mobility"
     ],
     "image": "St_C_MagicSword.png",
-    "lore": null,
+    "lore": "静かな夜明け、\nハイゲート邸の裏庭に立つと、\n静かに蘇る記憶がある。\n\n今も頬を撫でるような、古い訓練場の冷たい空気。\nまだ小さな影しか作れなかった幼い頃。\n霜のように冷たい母の声。\n\n翠緑剣。\n家門の剣であり、強靭さとヴェルデシルバー家の誇り。\n堅固な樹木のように一直線に、揺るぎなく真っ直ぐ伸びる剣を、\nあの日の母は私に見せてくださった。\n\nしかし私の剣は、母の教えに従うことができなかった。\n剣先は風に舞う木の葉のように揺れ、力は水のように流れ落ちた。\n\n皮肉ではありませんか、母上。\nあなたがあれほど守ろうとした誇り高き大樹は結局折れて倒れ、\nただ風に舞っていたこの取るに足らない木の葉だけが、\nこうして生き残ったのですから。\n\n今や家門の誇りも、樹木の重みもすべて消え去りましたが…\n惜しくはありません。\n\nただ願うことは…\n翠緑を失った、名もなき霧として、\n妹の幸せのために剣を握ること、それだけです。",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -787,7 +761,7 @@
   },
   "St_C_Pew": {
     "name": "発砲",
-    "cooldownTime": 14.0,
+    "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
     "description": "発動キーを<color=yellow>長押し</color>すると、火炎の弾丸をチャージします。チャージが完了すると火炎の弾丸を発射し、命中した敵すべてにチャージ時間に比例して<sprite=1><color=#16D7FF>150%</color><sprite=5>～<sprite=1><color=#16D7FF>400%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与えます。\n\nチャージが不完全な状態で発射すると最大80%まで<color=yellow>クールダウン</color>が減少し、1.35秒間チャージすると命中範囲とダメージ量が最大値に達します。",
@@ -865,8 +839,8 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "手からエネルギーを放出し、<sprite=1><color=#16D7FF>180%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、命中したすべての敵を押し出します。押し出された敵が壁に触れた場合、追加で<sprite=1><color=#16D7FF>504%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、1.5秒間スタンさせます。",
-    "rawDesc": "手からエネルギーを放出し、{0}の<color=yellow>ダメージ</color>を与え、命中したすべての敵を押し出します。押し出された敵が壁に触れた場合、追加で{1}の<color=yellow>ダメージ</color>を与え、{2}秒間スタンさせます。",
+    "description": "手からエネルギーを放出し、<sprite=1><color=#16D7FF>180%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、命中したすべての敵を押し出して1秒間スタンさせます。対象がアンストッパブル状態であるか、壁に衝突した場合、追加で<sprite=1><color=#16D7FF>504%</color><sprite=5>の<color=yellow>ダメージ</color>を与えます。",
+    "rawDesc": "手からエネルギーを放出し、{0}の<color=yellow>ダメージ</color>を与え、命中したすべての敵を押し出して{1}秒間スタンさせます。対象がアンストッパブル状態であるか、壁に衝突した場合、追加で{2}の<color=yellow>ダメージ</color>を与えます。",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
@@ -882,24 +856,24 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "dmgFactor*stunDmgRatio",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "1.5",
+        "rendered": "1",
         "format": "#,##0.#",
         "raw": "stunDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor*stunDmgRatio",
+        "scalingType": "unknown",
+        "data": {}
       }
     ],
     "shortDescription": "近接ダメージ、ノックバック",
@@ -988,20 +962,20 @@
   },
   "St_C_SparklingWaterGun": {
     "name": "ピリッとする水鉄砲",
-    "cooldownTime": 5.0,
+    "cooldownTime": 4.0,
     "maxCharges": 3,
     "addedCharges": 1,
-    "description": "ピリッとする水鉄砲を発射します。最初に命中した味方の<color=yellow>HP</color>を<sprite=1><color=#16D7FF>50%</color><sprite=5><color=yellow>回復</color>させ、<color=yellow>火炎スタック</color>を解除します。敵に命中した場合は、回復の代わりに1の<color=yellow>ダメージ</color>を与え、1.5秒間<color=yellow>スタン</color>させます。<color=yellow>戦闘中</color>のみ<color=yellow>クールダウン</color>が減少します。",
-    "rawDesc": "ピリッとする水鉄砲を発射します。最初に命中した味方の<color=yellow>HP</color>を{0}<color=yellow>回復</color>させ、<color=yellow>火炎スタック</color>を解除します。敵に命中した場合は、回復の代わりに{1}の<color=yellow>ダメージ</color>を与え、{2}秒間<color=yellow>スタン</color>させます。<color=yellow>戦闘中</color>のみ<color=yellow>クールダウン</color>が減少します。",
+    "description": "ピリッとする水鉄砲を発射します。命中した味方の<color=yellow>HP</color>を<sprite=1><color=#16D7FF>70%</color><sprite=5><color=yellow>回復</color>させ、<color=yellow>火炎スタック</color>を解除します。敵には1の<color=yellow>ダメージ</color>を与え、1.5秒間<color=yellow>スタン</color>させます。<color=yellow>戦闘中</color>のみ<color=yellow>クールダウン</color>が減少します。\n\n対象が味方<color=yellow>召喚獣</color>の場合、回復量が40%増加します。",
+    "rawDesc": "ピリッとする水鉄砲を発射します。命中した味方の<color=yellow>HP</color>を{0}<color=yellow>回復</color>させ、<color=yellow>火炎スタック</color>を解除します。敵には{1}の<color=yellow>ダメージ</color>を与え、{2}秒間<color=yellow>スタン</color>させます。<color=yellow>戦闘中</color>のみ<color=yellow>クールダウン</color>が減少します。\n\n対象が味方<color=yellow>召喚獣</color>の場合、回復量が{3}増加します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>50%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>70%</color><sprite=5>",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.5,
+          "basicAP": 0.7,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -1027,6 +1001,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "summonAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1167,7 +1154,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "3.5秒間<color=yellow>チャネリング</color>して剣を振り回し周囲の敵に毎秒<sprite=2><color=#FF8A2D>170%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、25%の<color=yellow>攻撃効果</color>を発動させます。<color=yellow>攻撃速度</color>が高いほど、剣を振る速度が上がります。",
+    "description": "3.5秒間<color=yellow>チャネリング</color>して剣を振り回し周囲の敵に毎秒<sprite=2><color=#FF8A2D>240%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、35%の<color=yellow>攻撃効果</color>を発動させます。<color=yellow>攻撃速度</color>が高いほど、剣を振る速度が上がります。",
     "rawDesc": "{0}秒間<color=yellow>チャネリング</color>して剣を振り回し周囲の敵に毎秒{1}の<color=yellow>ダメージ</color>を与え、{2}の<color=yellow>攻撃効果</color>を発動させます。<color=yellow>攻撃速度</color>が高いほど、剣を振る速度が上がります。",
     "rawDescVars": [
       {
@@ -1184,19 +1171,19 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>170%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>240%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*2",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "25%",
+        "rendered": "35%",
         "format": "P0",
         "raw": "attackEffect",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.25,
+          "basicConstant": 0.35,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2465,43 +2452,6 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "St_E_FlameJet": {
-    "name": "火炎放射",
-    "cooldownTime": 11.5,
-    "maxCharges": 1,
-    "addedCharges": 1,
-    "description": "2.5秒間、火炎を放射します。この火炎放射に触れた敵は、毎秒<sprite=1><color=#16D7FF>336%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を受けます。",
-    "rawDesc": "{0}秒間、火炎を放射します。この火炎放射に触れた敵は、毎秒{1}の<color=yellow>火炎ダメージ</color>を受けます。",
-    "rawDescVars": [
-      {
-        "rendered": "2.5",
-        "format": "#,##0.#",
-        "raw": "spawns*spawnInterval",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "damage/minHitInterval",
-        "scalingType": "unknown",
-        "data": {}
-      }
-    ],
-    "shortDescription": "持続的な範囲火炎ダメージ",
-    "rarity": "Epic",
-    "type": "Normal",
-    "traveler": "",
-    "travelerMemoryLocation": "",
-    "tags": [
-      "Fire"
-    ],
-    "image": "St_E_FlameJet.png",
-    "lore": "狩猟日誌\nロジット執権2年目、〇月〇〇日、天気：晴れ\n狩猟場所：イグニ湿地\n今日の収穫：イラクサ1袋\n\n私がイグニ湿地に狩りに出かける時、いつも守る規則がある。\n\n1. 爪痕のついたマングローブの根が見えたら注意する。\n\n2. その痕跡に苔が生えていない場合、その方角は探索しない。\n\n3. 遠くに煙が見えたり、焼け焦げた木の幹に火の粉が残っていたら、必ず家へ帰る。\n\n去年の夏、どこかの馬鹿が半分ほど枯れたカリンベリーのつるを引っこ抜こうと引っ張ったところ、化け物のような大きさのバラスースに遭遇したのを、スコープ越しで見たのだ。以降この規則を自分に課した。\n\nロイヤルガードの火魔兵器の実演でも、あれほど大きな炎を見たことがなかったような気がする。",
-    "achievementKey": "ACH_PYROMANIA",
-    "achievementName": "放火魔",
-    "achievementDescription": "燃えている敵を250体撃破する。"
-  },
   "St_E_FinalExplosion": {
     "name": "最後の爆発",
     "cooldownTime": 3.0,
@@ -2594,10 +2544,47 @@
       "HardCC"
     ],
     "image": "St_E_FinalExplosion.PNG",
-    "lore": null,
+    "lore": "太陽の炎騎士団の包囲網は、一寸の隙もなく締め付けられていた。\n彼らの神聖な炎は、最も深い路地さえも闇を許さなかった。\n袋小路に追い詰められたルシッド教団員は、ついに歩みを止めた。\n\nしかし彼は恐怖の代わりに、奇妙な歓喜に満ちた微笑みを浮かべた。\nむしろ彼は自分を締め付ける騎士たちを、まるで哀れな虫けらを見るように見下ろした。\n\n「これが…終わりだと思うか? お前たちのその偽りの神の傲慢で小さな炎で、私を裁けると信じているのか?」\n\n彼は目を閉じ、すべての感覚を集中させた。\nすると騒がしい現実の喧騒の向こうから、あれほど渇望していた夢の世界、\n急流の優しい囁きが聞こえてきた。\n\n今、すべてを捨てて旅立つ時だった。\n彼は現実に最後の別れを告げるため、再び目を開いた。\n\n「さらばだ! 盲目の炎よ…この取るに足らぬ肉体よ…そしてうんざりする世界よ!」\n\n彼の体はいつの間にか非現実的な色彩を帯び、激しく明滅し始めた。\n神に捧げる、最も熱く切実な祈り。\n\n「プリムス様! この卑しき僕が、私のすべてを…今あなたに捧げます!」\n\n彼の最後の叫びは、自らの存在を一握りの塵に変え、\n荘厳な最後の爆発となってすべてを飲み込んだ。\n\n\n- 廃墟となったある村にあった死体の記憶の痕跡",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
+  },
+  "St_E_FlameJet": {
+    "name": "火炎放射",
+    "cooldownTime": 11.5,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "2.5秒間、火炎を放射します。この火炎放射に触れた敵は、毎秒<sprite=1><color=#16D7FF>336%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を受けます。",
+    "rawDesc": "{0}秒間、火炎を放射します。この火炎放射に触れた敵は、毎秒{1}の<color=yellow>火炎ダメージ</color>を受けます。",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "spawns*spawnInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage/minHitInterval",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "持続的な範囲火炎ダメージ",
+    "rarity": "Epic",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Fire"
+    ],
+    "image": "St_E_FlameJet.png",
+    "lore": "狩猟日誌\nロジット執権2年目、〇月〇〇日、天気：晴れ\n狩猟場所：イグニ湿地\n今日の収穫：イラクサ1袋\n\n私がイグニ湿地に狩りに出かける時、いつも守る規則がある。\n\n1. 爪痕のついたマングローブの根が見えたら注意する。\n\n2. その痕跡に苔が生えていない場合、その方角は探索しない。\n\n3. 遠くに煙が見えたり、焼け焦げた木の幹に火の粉が残っていたら、必ず家へ帰る。\n\n去年の夏、どこかの馬鹿が半分ほど枯れたカリンベリーのつるを引っこ抜こうと引っ張ったところ、化け物のような大きさのバラスースに遭遇したのを、スコープ越しで見たのだ。以降この規則を自分に課した。\n\nロイヤルガードの火魔兵器の実演でも、あれほど大きな炎を見たことがなかったような気がする。",
+    "achievementKey": "ACH_PYROMANIA",
+    "achievementName": "放火魔",
+    "achievementDescription": "燃えている敵を250体撃破する。"
   },
   "St_E_Harvest": {
     "name": "血狩り",
@@ -2683,6 +2670,89 @@
       "Attack"
     ],
     "image": "St_E_Harvest.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_E_JusticeGuillotine": {
+    "name": "正義のギロチン",
+    "cooldownTime": 100.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "対象の敵の位置に巨大な大剣を叩きつけ、周囲のすべての敵に<sprite=2><color=#FF8A2D>800%</color><sprite=5>の<color=yellow>ダメージ</color>を与える。このダメージは自分の<color=yellow>失った体力</color>に比例して最大2倍、そして対象の<color=yellow>失った体力</color>に比例して最大2倍増加し、合計4倍まで増加する。体力が30%以下の時、ダメージ増加量が最大になる。",
+    "rawDesc": "対象の敵の位置に巨大な大剣を叩きつけ、周囲のすべての敵に{0}の<color=yellow>ダメージ</color>を与える。このダメージは自分の<color=yellow>失った体力</color>に比例して最大{1}倍、そして対象の<color=yellow>失った体力</color>に比例して最大{2}倍増加し、合計{3}倍まで増加する。体力が{4}以下の時、ダメージ増加量が最大になる。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>800%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 8.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dmgAmplitude",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dmgAmplitude",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "dmgAmplitude * dmgAmplitude",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "maxAmpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "強力な一撃、失った体力に比例してダメージ増加",
+    "rarity": "Epic",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Melee",
+      "Mobility"
+    ],
+    "image": "St_E_JusticeGuillotine.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -2793,6 +2863,103 @@
     "achievementKey": "ACH_MASTER_OF_MYSTIC_ARTS",
     "achievementName": "神秘術の対価",
     "achievementDescription": "クールダウンが3秒以下のアクティブ記憶を同時に4個所持する。"
+  },
+  "St_E_Permafrost": {
+    "name": "永久凍土",
+    "cooldownTime": 100.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "極寒の冷気を集めた後、非常に広い範囲に放出します。範囲内の味方には10秒間、<sprite=1><color=#16D7FF>300%</color><sprite=5>の<color=yellow>シールド</color>と100の<color=yellow>防御力</color>が付与され、敵は凍りついて<sprite=1><color=#16D7FF>500%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を受け、15秒間<color=yellow>スタン</color>します。\n\nすでに<color=yellow>冷気</color>の影響を受けている敵の場合、このダメージが100%増加します。",
+    "rawDesc": "極寒の冷気を集めた後、非常に広い範囲に放出します。範囲内の味方には{0}秒間、{1}の<color=yellow>シールド</color>と{2}の<color=yellow>防御力</color>が付与され、敵は凍りついて{3}の<color=yellow>冷気ダメージ</color>を受け、{4}秒間<color=yellow>スタン</color>します。\n\nすでに<color=yellow>冷気</color>の影響を受けている敵の場合、このダメージが{5}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 3.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "100",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 100.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>500%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 5.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "15",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "chilledAmpBonus-1",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "範囲冷気ダメージ、スタン、味方保護",
+    "rarity": "Epic",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Cold",
+      "HardCC",
+      "Shield"
+    ],
+    "image": "St_E_Permafrost.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
   },
   "St_E_Rewind": {
     "name": "巻き戻し",
@@ -3837,8 +4004,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "3秒間、素早く動く<color=yellow>火炎球</color>に<color=yellow>変身</color>し、50<sprite=5>の<color=yellow>防御力</color>を獲得し、<color=yellow>火炎ダメージ</color>に対して免疫がつきます。火炎球が敵に触れるたびに、<sprite=1><color=#16D7FF>220%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与え変身の<color=yellow>持続時間</color>が0.2<sprite=5>秒<color=yellow>増加</color>します。最大3<sprite=5>秒まで増加します。",
-    "rawDesc": "{0}秒間、素早く動く<color=yellow>火炎球</color>に<color=yellow>変身</color>し、{1}の<color=yellow>防御力</color>を獲得し、<color=yellow>火炎ダメージ</color>に対して免疫がつきます。火炎球が敵に触れるたびに、{2}の<color=yellow>火炎ダメージ</color>を与え変身の<color=yellow>持続時間</color>が{3}秒<color=yellow>増加</color>します。最大{4}秒まで増加します。",
+    "description": "3秒間、素早く動く<color=yellow>火炎球</color>に<color=yellow>変身</color>し、50<sprite=5>の<color=yellow>防御力</color>を獲得して<color=yellow>火炎ダメージ</color>への免疫を得る。球が敵に触れるたびに<sprite=1><color=#16D7FF>220%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与え、変身の<color=yellow>持続時間</color>が0.2<sprite=5>秒<color=yellow>増加</color>し、最大で3<sprite=5>秒まで増加する。",
+    "rawDesc": "{0}秒間、素早く動く<color=yellow>火炎球</color>に<color=yellow>変身</color>し、{1}の<color=yellow>防御力</color>を獲得して<color=yellow>火炎ダメージ</color>への免疫を得る。球が敵に触れるたびに{2}の<color=yellow>火炎ダメージ</color>を与え、変身の<color=yellow>持続時間</color>が{3}秒<color=yellow>増加</color>し、最大で{4}秒まで増加する。",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -4273,30 +4440,30 @@
     "cooldownTime": 6.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "発動キーを<color=yellow>長押し</color>すると、ハンマーに太陽をチャネリングします。チャネリングが完了すると、地面に叩きつけ敵に<sprite=1><color=#16D7FF>100%</color><sprite=5>～<sprite=1><color=#16D7FF>350%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与え、0.5～1.5秒間<color=yellow>スタン</color>させます。\n\nチャネリング中は移動できませんが、<color=yellow>アンストッパブル</color>状態になり、<color=yellow>防御力</color>を60<sprite=5>得ます。",
+    "description": "発動キーを<color=yellow>長押し</color>すると、ハンマーに太陽をチャネリングします。チャネリングが完了すると、地面に叩きつけ敵に<sprite=1><color=#16D7FF>150%</color><sprite=5>～<sprite=1><color=#16D7FF>450%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与え、0.5～1.5秒間<color=yellow>スタン</color>させます。\n\nチャネリング中は移動できませんが、<color=yellow>アンストッパブル</color>状態になり、<color=yellow>防御力</color>を60<sprite=5>得ます。",
     "rawDesc": "発動キーを<color=yellow>長押し</color>すると、ハンマーに太陽をチャネリングします。チャネリングが完了すると、地面に叩きつけ敵に{0}～{1}の<color=yellow>火炎ダメージ</color>を与え、{2}～{3}秒間<color=yellow>スタン</color>させます。\n\nチャネリング中は移動できませんが、<color=yellow>アンストッパブル</color>状態になり、<color=yellow>防御力</color>を{4}得ます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
         "format": "#,##0",
         "raw": "damageMin",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>450%</color><sprite=5>",
         "format": "#,##0",
         "raw": "damageMax",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.5,
+          "basicAP": 4.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -4363,18 +4530,18 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "対象にダッシュし、ハンマーを振り下ろして敵に<sprite=2><color=#FF8A2D>110%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動します。敵を<color=yellow>攻撃</color>するたびに、<color=yellow>クールダウン</color>が8%<color=yellow>減少</color>します。",
+    "description": "対象にダッシュし、ハンマーを振り下ろして敵に<sprite=2><color=#FF8A2D>125%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動します。敵を<color=yellow>攻撃</color>するたびに、<color=yellow>クールダウン</color>が8%<color=yellow>減少</color>します。",
     "rawDesc": "対象にダッシュし、ハンマーを振り下ろして敵に{0}の<color=yellow>光ダメージ</color>を与え、{1}の<color=yellow>攻撃効果</color>を発動します。敵を<color=yellow>攻撃</color>するたびに、<color=yellow>クールダウン</color>が{2}<color=yellow>減少</color>します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>110%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>125%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.1,
+          "basicAD": 1.25,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5025,16 +5192,16 @@
     "cooldownTime": 4.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "自身の最大HP10%を<color=yellow>犠牲</color>にして、薄い金の欠片を前方に3回放ちます。金の欠片は対象を貫通し、命中した敵に<sprite=1><color=#16D7FF>95%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、味方のHPを<sprite=1><color=#16D7FF>18%</color><sprite=5><color=yellow>回復</color>させます。",
+    "description": "自身の最大HP8%を<color=yellow>犠牲</color>にして、薄い金の欠片を前方に3回放ちます。金の欠片は対象を貫通し、命中した敵に<sprite=1><color=#16D7FF>95%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、味方のHPを<sprite=1><color=#16D7FF>18%</color><sprite=5><color=yellow>回復</color>させます。",
     "rawDesc": "自身の最大HP{0}を<color=yellow>犠牲</color>にして、薄い金の欠片を前方に{1}回放ちます。金の欠片は対象を貫通し、命中した敵に{2}の<color=yellow>ダメージ</color>を与え、味方のHPを{3}<color=yellow>回復</color>させます。",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "8%",
         "format": "P0",
         "raw": "sacrificeHpRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.08,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5285,7 +5452,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "発動キーを<color=yellow>長押し</color>すると、精神の矢をチャージします。発動キーを離すと、近くの敵にチャージ時間に応じて1～4<sprite=5>個の精神の矢を落とします。各精神の矢は狭い範囲の敵に<sprite=2><color=#FF8A2D>150%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与えます。",
+    "description": "発動キーを<color=yellow>長押し</color>すると、精神の矢をチャージします。発動キーを離すと、近くの敵にチャージ時間に応じて1～4<sprite=5>個の精神の矢を落とします。各精神の矢は狭い範囲の敵に<sprite=2><color=#FF8A2D>200%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与えます。",
     "rawDesc": "発動キーを<color=yellow>長押し</color>すると、精神の矢をチャージします。発動キーを離すと、近くの敵にチャージ時間に応じて{0}～{1}個の精神の矢を落とします。各精神の矢は狭い範囲の敵に{2}の<color=yellow>闇ダメージ</color>を与えます。",
     "rawDescVars": [
       {
@@ -5309,14 +5476,14 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.5,
+          "basicAD": 2.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5342,7 +5509,7 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "3秒間、自身の周囲を炎の輪で包みます。炎の輪に触れた敵は毎秒<sprite=1><color=#16D7FF>250%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を受けます。",
+    "description": "3秒間、自身の周囲を炎の輪で包みます。炎の輪に触れた敵は毎秒<sprite=1><color=#16D7FF>350%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を受けます。",
     "rawDesc": "{0}秒間、自身の周囲を炎の輪で包みます。炎の輪に触れた敵は毎秒{1}の<color=yellow>火炎ダメージ</color>を受けます。",
     "rawDescVars": [
       {
@@ -5353,7 +5520,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*5",
         "scalingType": "unknown",
@@ -5399,7 +5566,7 @@
           "basicAP": 1.2,
           "basicAD": 0.0,
           "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
+          "basicAddedMultiplierPerLevel": 0.1
         }
       },
       {
@@ -5483,10 +5650,10 @@
         "raw": "speedAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 12.0,
+          "basicConstant": 13.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 3.0,
+          "basicLvl": 2.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       }
@@ -5583,6 +5750,83 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "St_R_BaptismOfSun": {
+    "name": "太陽の洗礼",
+    "cooldownTime": 7.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>ヴェスパー</color>が太陽の力を受け入れ爆発を起こし、周囲の敵に<sprite=1><color=#16D7FF>200%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与え、ヴェスパーを攻撃させます。6秒間、<color=yellow>攻撃速度</color>が15%<sprite=5>増加し、この間、<color=yellow>攻撃</color>時に<sprite=2><color=#FF8A2D>40%</color><sprite=5>の追加<color=yellow>火炎ダメージ</color>を与えます。",
+    "rawDesc": "<color=yellow>ヴェスパー</color>が太陽の力を受け入れ爆発を起こし、周囲の敵に{0}の<color=yellow>火炎ダメージ</color>を与え、ヴェスパーを攻撃させます。{1}秒間、<color=yellow>攻撃速度</color>が{2}増加し、この間、<color=yellow>攻撃</color>時に{3}の追加<color=yellow>火炎ダメージ</color>を与えます。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "6",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 11.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 4.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>40%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "bonusDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.4,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "挑発、火炎、攻撃",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Vesper",
+    "travelerMemoryLocation": "R",
+    "tags": [
+      "Fire",
+      "Melee",
+      "Attack"
+    ],
+    "image": "St_R_BaptismOfSun.png",
+    "lore": "見よ！光が世の不純物を焼き払う！\n聖なる溶鉱炉にて、エルピロス様の御心のみが純金のように残るであろう。\n\n我ら皆、洗礼を受けるであろう。故に、泣き叫び、感謝せよ！",
+    "achievementKey": "ACH_HOTTER_FIRE_WINS",
+    "achievementName": "より熱い炎の勝利",
+    "achievementDescription": "ヴェスパーで火炎記憶を3個以上保有した状態で燃える巨人を倒せ。"
+  },
   "St_R_BlackArbalest": {
     "name": "黒のアーバレスト",
     "cooldownTime": 11.0,
@@ -5626,7 +5870,8 @@
     "tags": [
       "Dark",
       "HardCC",
-      "Attack"
+      "Attack",
+      "Mobility"
     ],
     "image": "St_R_BlackArbalest.PNG",
     "lore": null,
@@ -5639,7 +5884,7 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>アンストッパブル</color>状態になり、壁に衝突するまで前方に<color=yellow>ダッシュ</color>します。衝突する敵に<sprite=1><color=#16D7FF>135%</color><sprite=5>の<color=yellow>ダメージ</color>を与えて引きずり、壁に衝突すると衝撃波を放出して敵に<sprite=1><color=#16D7FF>300%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、1.5秒間<color=yellow>スタン</color>させます。\n発動時に<color=yellow>最大HP</color>10%<sprite=5>分の<color=yellow>シールド</color>を獲得し、このシールドはダッシュを終えると1秒後に無くなります。",
+    "description": "<color=yellow>アンストッパブル</color>状態になり、壁に衝突するまで前方に<color=yellow>ダッシュ</color>します。衝突する敵に<sprite=1><color=#16D7FF>135%</color><sprite=5>の<color=yellow>ダメージ</color>を与えて引きずり、壁に衝突すると衝撃波を放出して敵に<sprite=1><color=#16D7FF>420%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、1.5秒間<color=yellow>スタン</color>させます。\n発動時に<color=yellow>最大HP</color>20%<sprite=5>分の<color=yellow>シールド</color>を獲得し、このシールドはダッシュを終えると3秒後に無くなります。",
     "rawDesc": "<color=yellow>アンストッパブル</color>状態になり、壁に衝突するまで前方に<color=yellow>ダッシュ</color>します。衝突する敵に{0}の<color=yellow>ダメージ</color>を与えて引きずり、壁に衝突すると衝撃波を放出して敵に{1}の<color=yellow>ダメージ</color>を与え、{2}秒間<color=yellow>スタン</color>させます。\n発動時に<color=yellow>最大HP</color>{3}分の<color=yellow>シールド</color>を獲得し、このシールドはダッシュを終えると{4}秒後に無くなります。",
     "rawDescVars": [
       {
@@ -5656,13 +5901,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>420%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.0,
+          "basicAP": 4.2,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -5682,25 +5927,25 @@
         }
       },
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": "20%<sprite=5>",
         "format": "P0",
         "raw": "shieldMaxHpRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.08,
+          "basicConstant": 0.16,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.02,
+          "basicLvl": 0.04,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": "1",
+        "rendered": "3",
         "format": "#,##0.#",
         "raw": "shieldDisappearTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5730,7 +5975,7 @@
     "cooldownTime": 80.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "12秒間、<sprite=1><color=#16D7FF>150%</color><sprite=5>のシールドを獲得し、<color=yellow>魔法力</color>が30%増加します。持続時間中に<color=yellow>カタクリスム</color>を3回まで再度発動して、対象位置に隕石を落とすことができます。隕石は敵を一時的にスタンさせ、<sprite=1><color=#16D7FF>250%</color><sprite=5>の<color=yellow>光ダメージ</color>を与えます。",
+    "description": "12秒間、<sprite=1><color=#16D7FF>150%</color><sprite=5>のシールドを獲得し、<color=yellow>魔法力</color>が30%<sprite=5>増加します。持続時間中に<color=yellow>カタクリスム</color>を3回まで再度発動して、対象位置に隕石を落とすことができます。隕石は敵を一時的にスタンさせ、<sprite=1><color=#16D7FF>250%</color><sprite=5>の<color=yellow>光ダメージ</color>を与えます。",
     "rawDesc": "{0}秒間、{1}のシールドを獲得し、<color=yellow>魔法力</color>が{2}増加します。持続時間中に<color=yellow>カタクリスム</color>を{3}回まで再度発動して、対象位置に隕石を落とすことができます。隕石は敵を一時的にスタンさせ、{4}の<color=yellow>光ダメージ</color>を与えます。",
     "rawDescVars": [
       {
@@ -5760,15 +6005,15 @@
         }
       },
       {
-        "rendered": "30%",
+        "rendered": "30%<sprite=5>",
         "format": "#,##0'%'",
         "raw": "bonusApPercent",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 30.0,
+          "basicConstant": 25.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 5.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5922,6 +6167,73 @@
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
+  },
+  "St_R_DancingBlades": {
+    "name": "ブレードストーム",
+    "cooldownTime": 13.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "このエリアに4秒間持続する<color=yellow>ブレードストーム</color>を召喚します。<color=yellow>ブレードストーム</color>は周囲を素早く切り裂き、0.5秒ごとに敵に<sprite=1><color=#16D7FF>85%</color><sprite=5>と<sprite=2><color=#FF8A2D>85%</color><sprite=5>のうち大きい方の<color=yellow>ダメージ</color>を与え、最も近い敵を追跡します。",
+    "rawDesc": "このエリアに{0}秒間持続する<color=yellow>ブレードストーム</color>を召喚します。<color=yellow>ブレードストーム</color>は周囲を素早く切り裂き、{1}秒ごとに敵に{2}と{3}のうち大きい方の<color=yellow>ダメージ</color>を与え、最も近い敵を追跡します。",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "tickInterval",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "apDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.85,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "adDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.85,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "範囲持続ダメージ",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [],
+    "image": "St_R_DancingBlades.png",
+    "lore": null,
+    "achievementKey": "ACH_ETERNAL_REST",
+    "achievementName": "永遠の安息",
+    "achievementDescription": "魂の剣術士に基本攻撃で合計50回のとどめを刺す。"
   },
   "St_R_DangerousTheory": {
     "name": "危険な理論",
@@ -6821,7 +7133,7 @@
   "St_R_QuickTrigger": {
     "name": "クイックハンド",
     "cooldownTime": 14.0,
-    "maxCharges": 2,
+    "maxCharges": 3,
     "addedCharges": 1,
     "description": "最大3体の敵に<sprite=2><color=#FF8A2D>120%</color><sprite=5>のダメージを与える貫通弾を素早く3発発射します。",
     "rawDesc": "最大{0}体の敵に{1}のダメージを与える貫通弾を素早く{2}発発射します。",
@@ -7470,9 +7782,22 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "発動キーを<color=yellow>長押し</color>すると、電荷をチャージします。チャージが完了すると、電荷を爆発させてチャージ時間に比例して敵に<sprite=1><color=#16D7FF>150%</color><sprite=5>～<sprite=1><color=#16D7FF>780%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、吹き飛ばして<color=yellow>移動速度</color>を低下させます。\n1秒間チャージするとダメージ量と範囲が最大値に達します。",
-    "rawDesc": "発動キーを<color=yellow>長押し</color>すると、電荷をチャージします。チャージが完了すると、電荷を爆発させてチャージ時間に比例して敵に{0}～{1}の<color=yellow>光ダメージ</color>を与え、吹き飛ばして<color=yellow>移動速度</color>を低下させます。\n{2}秒間チャージするとダメージ量と範囲が最大値に達します。",
+    "description": "発動キーを<color=yellow>長押し</color>すると電荷をチャージし、40<sprite=5>の防御力を獲得します。チャージを解放すると電荷が爆発し、チャージ時間に比例して敵に<sprite=1><color=#16D7FF>150%</color><sprite=5>～<sprite=1><color=#16D7FF>780%</color><sprite=5>の<color=yellow>光ダメージ</color>を与えて吹き飛ばし、2秒間<color=yellow>移動速度</color>を60%低下させます。獲得した防御力は、電荷を爆発させた後、1秒後に消滅します。\n\n1秒間チャージすると、ダメージ量と範囲が最大になります。",
+    "rawDesc": "発動キーを<color=yellow>長押し</color>すると電荷をチャージし、{0}の防御力を獲得します。チャージを解放すると電荷が爆発し、チャージ時間に比例して敵に{1}～{2}の<color=yellow>光ダメージ</color>を与えて吹き飛ばし、{3}秒間<color=yellow>移動速度</color>を{4}低下させます。獲得した防御力は、電荷を爆発させた後、{5}秒後に消滅します。\n\n{6}秒間チャージすると、ダメージ量と範囲が最大になります。",
     "rawDescVars": [
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 37.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 3.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
       {
         "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
         "format": "#,##0",
@@ -7497,6 +7822,45 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "slowDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "60%",
+        "format": "#,##0'%'",
+        "raw": "slowAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 60.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "armorLingerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
         }
       },
       {

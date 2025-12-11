@@ -679,7 +679,7 @@
       "Dark"
     ],
     "image": "Gem_C_Void.PNG",
-    "lore": null,
+    "lore": "An der Spitze des Schwertes der leeren Puppe\nsammelt sich eine schwache dunkle Aura.\n\nEs ist keine Vorbereitung für den nächsten Schlag.\nEs ist nur eine Manifestation der Leere,\ndie sein inneres Nichts offenbart.\n\nParadoxerweise\nschneidet das Schwert der Puppe noch schärfer und explosiver durch die Feinde.\n\nWie ein vergebliches Zappeln\nnach einer Leere, die niemals gefüllt werden kann.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -786,8 +786,8 @@
   },
   "Gem_E_Blossom": {
     "name": "Essenz der Blüte",
-    "description": "Aller <color=yellow>Schaden</color>, den diese Erinnerung Gegnern zufügt, wird um 70% reduziert. Jedesmal wenn diese Erinnerung <color=yellow>Schaden</color> verursacht, <color=yellow>regeneriert</color> sie einen zufälligen Verbündeten in der Nähe um 22%<sprite=5> des <color=yellow>Schadens</color> als <color=yellow>LP</color> wieder.",
-    "rawDesc": "Aller <color=yellow>Schaden</color>, den diese Erinnerung Gegnern zufügt, wird um {0} reduziert. Jedesmal wenn diese Erinnerung <color=yellow>Schaden</color> verursacht, <color=yellow>regeneriert</color> sie einen zufälligen Verbündeten in der Nähe um {1} des <color=yellow>Schadens</color> als <color=yellow>LP</color> wieder.",
+    "description": "Aller <color=yellow>Schaden</color>, den diese Erinnerung Gegnern zufügt, wird um 70% reduziert. Jedesmal wenn diese Erinnerung <color=yellow>Schaden</color> verursacht, <color=yellow>regeneriert</color> sie einen zufälligen Verbündeten in der Nähe um 22%<sprite=5> des <color=yellow>Schadens</color> als LP.",
+    "rawDesc": "Aller <color=yellow>Schaden</color>, den diese Erinnerung Gegnern zufügt, wird um {0} reduziert. Jedesmal wenn diese Erinnerung <color=yellow>Schaden</color> verursacht, <color=yellow>regeneriert</color> sie einen zufälligen Verbündeten in der Nähe um {1} des <color=yellow>Schadens</color> als LP.",
     "rawDescVars": [
       {
         "rendered": "70%",
@@ -821,7 +821,7 @@
       "Heal"
     ],
     "image": "Gem_E_Blossom.PNG",
-    "lore": null,
+    "lore": "In der frühen Morgendämmerung fällt Regen.\nIch erinnere mich an jenen Tag, als wir zusammen Blumen zum Blühen brachten.\n\nIch wollte eine schneeweiße Blume erschaffen, die der stillen Morgendämmerung glich.\nEin Kind wie eine Laterne, das alle Ordnung und Ruhe des Waldes in sich trug.\n\nDoch du, die du neben mir hocktest und zuschautes, begannst plötzlich zu murren.\nDann verstreutes du eigenmächtig ein tiefes Purpur wie ein Sturm und maltest schelmisch ein gelbes Leuchten wie Blitze darüber.\n\nIch tadelte dich, und du lachtest nur.\nIch dachte wirklich, mein perfekter Plan wäre durch deine Unordnung ruiniert worden.\n\nDoch am nächsten Morgen, als wir die Blume gemeinsam betrachteten…\nÜber der schneeweißen Stille flossen deine lärmenden Farben wie ein lebendiger Fluss.\n\nDa erst verstand ich.\nJa, die wahre Schönheit des Waldes entsteht nur, wenn meine Ordnung und dein Chaos zusammenkommen.\nNur so wird sie vollkommen.\n\n…\nDas Regenwasser… sickert in meine Maske.\nHeute möchte ich wirklich,\ndeine schelmischen Augen wiedersehen.",
     "achievementKey": "ACH_SUPPORT_MAIN",
     "achievementName": "Support-Meister",
     "achievementDescription": "Besitze gleichzeitig 4 aktive Erinnerungen mit Heileffekten."
@@ -906,7 +906,7 @@
       "Attack"
     ],
     "image": "Gem_E_Crimson.PNG",
-    "lore": null,
+    "lore": "Als ich die Augen öffnete, war die Trance vorüber.\nJedes Gelenk meines Körpers knarrt, doch ich spüre keinen Schmerz.\n\nÜber meinem trüben Bewusstsein treiben nur Erinnerungsfetzen.\nDer Puppenspieler. Der Auftraggeber. Und der gescheiterte Auftrag…\nDie verschwommenen Fragmente fügen sich zusammen zu einem Ort… dem vertrauten Anwesen meines Herrn.\n\nRot. Die ganze Welt ist rot.\nWas ist das, über das ich stolpere? Ah, es war ein Mensch.\n\nKarmesinrot.\n\nHabe ich dieses rote Meer erschaffen?\nWahrlich, ein Meer aus Leichen und Blut…\n\nDoch warum nur.\nRegt sich in meinem Herzen nicht die geringste Regung?",
     "achievementKey": "ACH_IN_CARNAGE_I_BLOOM",
     "achievementName": "In der Gemetzel erblühe ich",
     "achievementDescription": "Verstärkere in einem einzigen Abenteuer 20x Erinnerungen, die Dunkelheitsschaden verursachen."
@@ -944,6 +944,59 @@
     "achievementKey": "ACH_DESPERATE_HERO",
     "achievementName": "Verzweifelter Held",
     "achievementDescription": "Töte 30 Gegner in Folge, während deine LP 40% oder weniger beträgt."
+  },
+  "Gem_E_Domination": {
+    "name": "Essenz der Herrschaft",
+    "description": "<color=yellow>Kritische Trefferchance</color> wird um 20% erhöht. Bei jedem kritischen Treffer gegen einen Gegner erhöht sich dein <color=yellow>kritischer Schaden</color> um 0.3%, bis zu maximal 20%<sprite=5>. ",
+    "rawDesc": "<color=yellow>Kritische Trefferchance</color> wird um {0} erhöht. Bei jedem kritischen Treffer gegen einen Gegner erhöht sich dein <color=yellow>kritischer Schaden</color> um {1}, bis zu maximal {2}. ",
+    "rawDescVars": [
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "critChanceBonusAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0.3%",
+        "format": "#,##0.0%",
+        "raw": "critAmpBonusValue",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.003,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "critAmpMaxValue",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Domination.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
   },
   "Gem_E_Fangs": {
     "name": "Essenz der Reißzähne",
@@ -1286,7 +1339,7 @@
     "rarity": "Epic",
     "tags": [],
     "image": "Gem_E_Metal.png",
-    "lore": null,
+    "lore": "Zu Füßen des Mädchens hatte sich in bunten Farben schimmernde Farbe angesammelt.\n\nEin hübscher Farbton wie die Rosen, die Frau Maria von nebenan züchtete,\ndiese Farbe riecht ähnlich wie ich – nach Metall!\n\nAuf das Drängen des Mädchens hin beeilte sich das Buch, diese Farbe als Tinte zu verwenden und die nächste Geschichte niederzuschreiben.\n\nSeltsamerweise trocknete diese Tinte ungewöhnlich schnell,\nsodass das Buch ohne Pause die nächste Seite umblättern musste.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -1343,6 +1396,49 @@
     "achievementKey": "ACH_HEAVIER_THAN_ATLAS",
     "achievementName": "Schwerer als der Taishan-Berg",
     "achievementDescription": "Erreiche 3,000 max. LP."
+  },
+  "Gem_E_Obsidian": {
+    "name": "Essenz des Obsidians",
+    "description": "Wenn du diese Erinnerung <color=yellow>wirkst</color>, wird dein nächster Angriff verstärkt und verursacht <sprite=2><color=#FF8A2D>250%</color><sprite=5> <color=yellow>Dunkelheitsschaden</color> am Ziel und verringert die <color=yellow>Abklingzeit</color> dieser Erinnerung um 1<sprite=5> Sek.",
+    "rawDesc": "Wenn du diese Erinnerung <color=yellow>wirkst</color>, wird dein nächster Angriff verstärkt und verursacht {0} <color=yellow>Dunkelheitsschaden</color> am Ziel und verringert die <color=yellow>Abklingzeit</color> dieser Erinnerung um {1} Sek.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.25,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reducedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_E_Obsidian.png",
+    "lore": null,
+    "achievementKey": "ACH_MINE_AND_CRAFT",
+    "achievementName": "Bergbau und Handwerk",
+    "achievementDescription": "Zerstöre 3 Pechschwarzes Erz."
   },
   "Gem_E_Omega": {
     "name": "Essenz des Finales",
@@ -1578,8 +1674,8 @@
   },
   "Gem_E_Predation": {
     "name": "Essenz der Prädation",
-    "description": "Diese Erinnerung verursacht 60%<sprite=5> mehr <color=yellow>Schaden</color> gegen <color=yellow>Bosse</color> und <color=yellow>Jäger</color>. Beim Töten eines <color=yellow>Jägers</color> fallen 1 <color=yellow>Macht-Orbs</color>, beim Töten eines <color=yellow>Bosses</color> fallen 3. Beim Aufsammeln eines <color=yellow>Macht-Orbs</color> erhöht sich entweder <color=yellow>AK</color> oder <color=yellow>Zauberkraft</color> zufällig um 1 permanent.",
-    "rawDesc": "Diese Erinnerung verursacht {0} mehr <color=yellow>Schaden</color> gegen <color=yellow>Bosse</color> und <color=yellow>Jäger</color>. Beim Töten eines <color=yellow>Jägers</color> fallen {1} <color=yellow>Macht-Orbs</color>, beim Töten eines <color=yellow>Bosses</color> fallen {2}. Beim Aufsammeln eines <color=yellow>Macht-Orbs</color> erhöht sich entweder <color=yellow>AK</color> oder <color=yellow>Zauberkraft</color> zufällig um 1 permanent.",
+    "description": "Diese Erinnerung verursacht 60%<sprite=5> mehr <color=yellow>Schaden</color> gegen <color=yellow>Bosse</color> und <color=yellow>Jäger</color>. Beim Töten eines <color=yellow>Jägers</color> fallen 1 <color=yellow>Macht-Orbs</color>, beim Töten eines <color=yellow>Bosses</color> fallen 3. Beim Aufsammeln eines <color=yellow>Macht-Orbs</color> erhöht sich entweder <color=yellow>Angriffsschaden</color> oder <color=yellow>Fähigkeitsstärke</color> zufällig um 1 permanent.",
+    "rawDesc": "Diese Erinnerung verursacht {0} mehr <color=yellow>Schaden</color> gegen <color=yellow>Bosse</color> und <color=yellow>Jäger</color>. Beim Töten eines <color=yellow>Jägers</color> fallen {1} <color=yellow>Macht-Orbs</color>, beim Töten eines <color=yellow>Bosses</color> fallen {2}. Beim Aufsammeln eines <color=yellow>Macht-Orbs</color> erhöht sich entweder <color=yellow>Angriffsschaden</color> oder <color=yellow>Fähigkeitsstärke</color> zufällig um 1 permanent.",
     "rawDescVars": [
       {
         "rendered": "60%<sprite=5>",
@@ -1618,7 +1714,7 @@
     "rarity": "Epic",
     "tags": [],
     "image": "Gem_E_Predation.png",
-    "lore": null,
+    "lore": "Hunger... immer.\nMein Nest ist ein Berg aus Knochen.\nFleisch... Beute... nicht genug.\n\nAber... etwas Neues. Gekommen.\nFleischgeruch. Angstgeruch.\n\nKnochen zerbrechen. Fleisch zerreißen. Schreie verschlingen.\nDas ist meine Arbeit. Das ist Primus' ... Freude.\n\nDu auch... wirst Knochen.\nTeil meines Nests.\nPrimus' ... schöne Landschaft.\n\nKicher, kicherkicher.",
     "achievementKey": "ACH_WHOS_THE_PREY_NOW",
     "achievementName": "Wer ist jetzt die Beute?",
     "achievementDescription": "Töte den Jäger 70x."
@@ -1675,6 +1771,61 @@
     "achievementKey": "ACH_TEKKAI",
     "achievementName": "Eisenbarren",
     "achievementDescription": "Erhalte einen Schild, der 300% deiner max. LP entspricht."
+  },
+  "Gem_E_Reflex": {
+    "name": "Essenz des Reflexes",
+    "description": "Wenn du irgendeinen <color=yellow>Schaden</color> erleidest, schießt du einen Kältestoß auf den nächstgelegenen Gegner in der Nähe, der <sprite=1><color=#16D7FF>120%</color><sprite=5> <color=yellow>Kälteschaden</color> verursacht und ihn zurückstößt, und erhöhst deine <color=yellow>Verteidigung</color> für 1.5 Sekunden um 40<sprite=5>.",
+    "rawDesc": "Wenn du irgendeinen <color=yellow>Schaden</color> erleidest, schießt du einen Kältestoß auf den nächstgelegenen Gegner in der Nähe, der {0} <color=yellow>Kälteschaden</color> verursacht und ihn zurückstößt, und erhöhst deine <color=yellow>Verteidigung</color> für {1} Sekunden um {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.6,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "armorDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorFlatAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 32.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.075,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Cold"
+    ],
+    "image": "Gem_E_Reflex.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
   },
   "Gem_E_Thunder": {
     "name": "Essenz des Donners",
@@ -1768,6 +1919,48 @@
       "Dark"
     ],
     "image": "Gem_E_Twilight.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Umbra": {
+    "name": "Essenz der Schatten",
+    "description": "Der Schaden dieser Erinnerung wird um 42%<sprite=5> der <color=yellow>kritischen Trefferchance</color> erhöht. Falls dieser <color=yellow>Schaden</color> <color=yellow>Dunkelheitsschaden</color> ist, <color=yellow>heile</color> 6%<sprite=5> des Schadens als <color=yellow>LP</color>.",
+    "rawDesc": "Der Schaden dieser Erinnerung wird um {0} der <color=yellow>kritischen Trefferchance</color> erhöht. Falls dieser <color=yellow>Schaden</color> <color=yellow>Dunkelheitsschaden</color> ist, <color=yellow>heile</color> {1} des Schadens als <color=yellow>LP</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "42%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmpCritConversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0005
+        }
+      },
+      {
+        "rendered": "6%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.038,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Umbra.PNG",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -2398,6 +2591,43 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Abyss": {
+    "name": "Essenz des Abgrunds",
+    "description": "Sämtlicher <color=yellow>Schaden</color> dieser Erinnerung wird in <color=yellow>Dunkelheitsschaden</color> umgewandelt. Wenn das getroffene Ziel 3 oder mehr <color=yellow>Dunkelheitsstapel</color> hat, wird mit einer Wahrscheinlichkeit von 43%<sprite=5> ein <color=yellow>Angriffseffekt</color> ausgelöst.",
+    "rawDesc": "Sämtlicher <color=yellow>Schaden</color> dieser Erinnerung wird in <color=yellow>Dunkelheitsschaden</color> umgewandelt. Wenn das getroffene Ziel {0} oder mehr <color=yellow>Dunkelheitsstapel</color> hat, wird mit einer Wahrscheinlichkeit von {1} ein <color=yellow>Angriffseffekt</color> ausgelöst.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "enableAtkEffectStackCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "43%<sprite=5>",
+        "format": "P0",
+        "raw": "atkEffectChance",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_R_Abyss.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Accuracy": {
     "name": "Essenz der Präzision",
     "description": "Wenn diese Erinnerung einem entfernten Gegner <color=yellow>Schaden</color> zufügt, wird ein <color=yellow>zusätzl. Projektil</color> abgefeuert, das 50%<sprite=5> <color=yellow>Schaden</color> verursacht. Dieser <color=yellow>Projektil</color>-<color=yellow>Schaden</color> teilt den Elementartyp mit dem ursprünglichen Schaden.",
@@ -2460,7 +2690,7 @@
     "rarity": "Rare",
     "tags": [],
     "image": "Gem_R_Adventure.PNG",
-    "lore": null,
+    "lore": "Für das Mädchen ist Abenteuer die aufregende Aufgabe, leere Seiten zu füllen.\nMit jedem Schritt wird ein neuer Satz geschrieben, eine neue Figur tritt auf.\n\nAuch heute teilte das Mädchen ihr strahlendes Lächeln mit der traurig aussehenden Bärenmutter.\nDa zerbrach die Bärin in tausend Stücke\nund verwandelte sich in einen Schwarm leuchtender blauer Schmetterlinge, die dem Mädchen dankten.\n\nJeden Tag verbringt das Mädchen so einen erfüllten Tag.",
     "achievementKey": "ACH_NOVICE_TREASURE_HUNTER",
     "achievementName": "Schatzjäger-Lehrling",
     "achievementDescription": "Öffne zum ersten Mal eine Schatztruhe."
@@ -2672,7 +2902,7 @@
   },
   "Gem_R_Composure": {
     "name": "Essenz der Gelassenheit",
-    "description": "Beim <color=yellow>Wirken</color> dieser Erinnerung erhöht sich deine <color=yellow>krit. Trefferchance</color> für 5 Sek. um 20%<sprite=5>. Dieser Effekt endet vorzeitig, wenn du Schaden von Gegnern erleidest.",
+    "description": "Beim <color=yellow>Wirken</color> dieser Erinnerung erhöht sich deine <color=yellow>krit. Trefferchance</color> für 5 Sek. um 30%<sprite=5>. Dieser Effekt endet vorzeitig, wenn du Schaden von Gegnern erleidest.",
     "rawDesc": "Beim <color=yellow>Wirken</color> dieser Erinnerung erhöht sich deine <color=yellow>krit. Trefferchance</color> für {0} Sek. um {1}. Dieser Effekt endet vorzeitig, wenn du Schaden von Gegnern erleidest.",
     "rawDescVars": [
       {
@@ -2689,12 +2919,12 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": "30%<sprite=5>",
         "format": "P0",
         "raw": "critBonus",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.15,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -3087,49 +3317,6 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "Gem_E_Obsidian": {
-    "name": "Essenz des Obsidians",
-    "description": "Wenn du diese Erinnerung <color=yellow>wirkst</color>, wird dein nächster Angriff verstärkt und verursacht <sprite=2><color=#FF8A2D>250%</color><sprite=5> <color=yellow>Dunkelheitsschaden</color> am Ziel und verringert die <color=yellow>Abklingzeit</color> dieser Erinnerung um 1<sprite=5> Sek.",
-    "rawDesc": "Wenn du diese Erinnerung <color=yellow>wirkst</color>, wird dein nächster Angriff verstärkt und verursacht {0} <color=yellow>Dunkelheitsschaden</color> am Ziel und verringert die <color=yellow>Abklingzeit</color> dieser Erinnerung um {1} Sek.",
-    "rawDescVars": [
-      {
-        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "damage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.0,
-          "basicAD": 1.25,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.01
-        }
-      },
-      {
-        "rendered": "1<sprite=5>",
-        "format": "#,##0.#",
-        "raw": "reducedCooldown",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0.0,
-          "basicAD": 0.0,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.01
-        }
-      }
-    ],
-    "rarity": "Epic",
-    "tags": [
-      "Dark",
-      "Attack"
-    ],
-    "image": "Gem_E_Obsidian.png",
-    "lore": null,
-    "achievementKey": "ACH_MINE_AND_CRAFT",
-    "achievementName": "Bergbau und Handwerk",
-    "achievementDescription": "Zerstöre 3 Pechschwarzes Erz."
-  },
   "Gem_R_Panic": {
     "name": "Essenz der Panik",
     "description": "Wenn du <color=yellow>Schaden</color> erleidest, erhält diese Erinnerung für 3 Sek. 30<sprite=5> <color=yellow>Erinnerungstempo</color> und deine <color=yellow>Bewegungstempo</color> erhöht sich um 20%<sprite=5>.",
@@ -3235,7 +3422,7 @@
       "Heal"
     ],
     "image": "Gem_R_Rejuvenation.PNG",
-    "lore": null,
+    "lore": "Irgendwo an einem geheimen Ort im Grenzstrom,\nauch bekannt als das Land der Zwischenräume, war die Luft erfüllt vom Klappern der Rucksäcke.\n\n\"Meister! Sobald ich mich dieser Statue nähere, werden meine knarrenden Gelenke geschmeidig und mein Gepäck fühlt sich leichter an! Ich glaube sogar, mein abgenutzter Panzer glänzt wieder! Warum fühle ich mich so verjüngt?\"\n\nDie als Meister angesprochene Gestalt blinzelte langsam mit mehreren Augen und seufzte.\nEin deutliches Zeichen dafür, dass sie die Frage für töricht hielt.\n\n\"Weil Er ein wenig von Seinem Gestern mit uns teilt, damit wir unser Heute haben können.\"\n\n\"Sein... Gestern? Heißt das, jedes Mal wenn wir Kraft erhalten, verliert der Führer... Häutet Er sich auch wie wir? Oder bekommt Seine Schale Risse?\"\n\nDie als Meister angesprochene Gestalt schlug mit ihrer harten Schere auf den Tisch. *Klatsch!*\n\n\"Ach, pah! Hat dieser Jonas einen Seestern im Kopf?! Statt dir solche unnötigen Sorgen zu machen, solltest du lieber deine Rucksackgurte festziehen! Die Kraft, die Er uns gibt, ist nicht dazu da, deinen Rückenpanzer zu polieren!\"\n\n\n- Aus dem regelmäßigen Jonas-Treffen",
     "achievementKey": "ACH_LOYAL_CUSTOMER",
     "achievementName": "Stammkunde",
     "achievementDescription": "Aktiviere den Schrein der Führung 15x in einem einzigen Abenteuer."
@@ -3506,6 +3693,62 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Stillness": {
+    "name": "Essenz der Stille",
+    "description": "Alle 5 Sekunden wird das <color=yellow>Wirken</color> dieser Erinnerung <color=yellow>verstärkt</color>. Beim <color=yellow>verstärkten Wirken</color> wird Licht ausgestrahlt, das Gegnern <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>Lichtschaden</color> zufügt und sie 2 Sekunden lang <color=yellow>betäubt</color>. Mit steigender Qualität vergrößert sich der Ausstrahlungsbereich.",
+    "rawDesc": "Alle {0} Sekunden wird das <color=yellow>Wirken</color> dieser Erinnerung <color=yellow>verstärkt</color>. Beim <color=yellow>verstärkten Wirken</color> wird Licht ausgestrahlt, das Gegnern {1} <color=yellow>Lichtschaden</color> zufügt und sie {2} Sekunden lang <color=yellow>betäubt</color>. Mit steigender Qualität vergrößert sich der Ausstrahlungsbereich.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light",
+      "HardCC"
+    ],
+    "image": "Gem_R_Stillness.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Wealth": {
     "name": "Essenz des Reichtums",
     "description": "Wenn ein Gegner, der durch diese Erinnerung Schaden erleidet, innerhalb von 2 Sek. getötet wird, lässt er 1.7<sprite=5> Gold fallen. Gold wird mit allen Reisenden geteilt.",
@@ -3596,7 +3839,7 @@
       "Attack"
     ],
     "image": "Gem_R_Wound.PNG",
-    "lore": null,
+    "lore": "Die Wunde... heilt nicht.\nJenseits des pochenden Schmerzes verschlingt sie mich wie ein lebendiger Fluch.\n\nDie unheimlichen violetten Augen, die diese Höhle füllen,\nund die Muster auf dem Boden, die wie lebend pulsieren...\nWie ein endloser Schrei scheinen sie in meinen Körper einzudringen, gefangen hinter Gittern.\n\nUnd unter den zahllosen Augen das eine, das am hellsten leuchtet.\nEr hat mir diese Wunde zugefügt und dann... nichts getan.\nEr beobachtet nur, fasziniert, meine Wunde, meinen Schmerz, und zeichnet auf.\n\nAber dieser gleichgültige Blick\nerschreckt mich mehr als jede Wunde...",
     "achievementKey": "ACH_THROUGH_TIME_AND_SPACE",
     "achievementName": "Transzendente Geschwindigkeit",
     "achievementDescription": "Erreiche ein Angriffstempo von 6 pro Sek."
@@ -3708,6 +3951,56 @@
     ],
     "image": "Gem_U_GlacialCore.PNG",
     "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_LastStarlight": {
+    "name": "Letztes Sternenlicht",
+    "description": "Alle 15 Sek. wird das <color=yellow>Wirken</color> dieser Erinnerung <color=yellow>verstärkt</color>. Bei einem <color=yellow>verstärkten Wirken</color> wird am Wirkungsort ein Schwarzes Loch erschaffen, das 5 Sek. lang <sprite=1><color=#16D7FF>160%</color><sprite=5> <color=yellow>Lichtschaden</color> pro Sekunde verursacht. \nHandelt es sich nicht um eine auf einen Ort zielende Erinnerung, wird das Schwarze Loch an der Position des nächsten Gegners in Blickrichtung erschaffen.",
+    "rawDesc": "Alle {0} Sek. wird das <color=yellow>Wirken</color> dieser Erinnerung <color=yellow>verstärkt</color>. Bei einem <color=yellow>verstärkten Wirken</color> wird am Wirkungsort ein Schwarzes Loch erschaffen, das {1} Sek. lang {2} <color=yellow>Lichtschaden</color> pro Sekunde verursacht. \nHandelt es sich nicht um eine auf einen Ort zielende Erinnerung, wird das Schwarze Loch an der Position des nächsten Gegners in Blickrichtung erschaffen.",
+    "rawDescVars": [
+      {
+        "rendered": "15",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "tickDamage/tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Dark",
+      "HardCC"
+    ],
+    "image": "Gem_U_LastStarlight.PNG",
+    "lore": "Oh Nyx, meine ewige Gefährtin ... \nSelbst mein Ende ... weihe ich dir. \nMögest du nur als die strahlendste Göttin der Nacht verweilen ...\n\n... Bitte, sei einfach glücklich.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""

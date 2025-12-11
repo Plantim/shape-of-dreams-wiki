@@ -679,7 +679,7 @@
       "Dark"
     ],
     "image": "Gem_C_Void.PNG",
-    "lore": null,
+    "lore": "空っぽの人形の剣先に、\nかすかな暗黒の気配が集まる。\n\nそれは次の一撃のための準備ではない。\n何もない彼の内面が見せる、\n虚無の現れに過ぎない。\n\n逆説的にも、\n人形の剣はより鋭く爆発的に敵を切り裂く。\n\n満たされることのない虚無に向けた、\nはかない足掻きのように。",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -821,7 +821,7 @@
       "Heal"
     ],
     "image": "Gem_E_Blossom.PNG",
-    "lore": null,
+    "lore": "早朝、雨が降っているね。\nあの時を思い出す、君と一緒に花を咲かせた、あの日を。\n\n私は静かな夜明けに似た、純白の花を咲かせようとした。\n森のすべての秩序と平穏を宿した、灯火のような子を。\n\nところが隣にしゃがんで見ていた君が、突然ぶつぶつ言い出した。\nそして君は勝手に嵐のように濃い紫色をまき散らし、いたずらっぽく稲妻のような黄色を塗り重ねたんだ。\n\n私は君を叱り、君はただ笑うだけだった。\n私の完璧な計画が君のその無秩序で台無しになったと、私は本気で思っていたよ。\n\nでも翌朝、私たちが一緒に目にしたその花は…\n純白の静けさの上に、君のあの騒がしい色たちがまるで生きた川のように流れていた。\n\nその時やっと気づいたんだ。\nそう、森の真の美しさは、私の秩序と君の混沌が共に調和してこそなんだと。\nそうして初めて、完全になるのだと。\n\n…\n雨粒が…私の仮面に染み込んでくる。\n今日はことさら、君のいたずらっぽい瞳を、\nもう一度見たいな。",
     "achievementKey": "ACH_SUPPORT_MAIN",
     "achievementName": "サポートマスター",
     "achievementDescription": "回復効果を持つアクティブ記憶を同時に4個所持する。"
@@ -906,7 +906,7 @@
       "Attack"
     ],
     "image": "Gem_E_Crimson.PNG",
-    "lore": null,
+    "lore": "目を開けると、無我の境地の果てだった。\n体の節々がきしむが、痛覚はない。\n\nぼんやりとした意識の上に、記憶の欠片だけが漂っている。\n人形師。依頼主。そして失敗した依頼…\nかすかな欠片が組み合わさる場所は…見慣れた主人の屋敷。\n\n赤い。世界が一面赤い。\n足元に引っかかるものは何だ。ああ、人だったのか。\n\n深紅。\n\n私が作り出したのか、この赤い海は。\nなるほど、屍山血海か…\n\nだが、なぜだろう。\n私の心の中には、何の波紋すら立たないのは",
     "achievementKey": "ACH_IN_CARNAGE_I_BLOOM",
     "achievementName": "殺戮の中でこそ私は咲き誇る",
     "achievementDescription": "一回の冒険で闇ダメージを与える記憶を20回強化する。"
@@ -944,6 +944,59 @@
     "achievementKey": "ACH_DESPERATE_HERO",
     "achievementName": "切迫した英雄",
     "achievementDescription": "HPが40%以下の状態で連続して敵を30体撃破する。"
+  },
+  "Gem_E_Domination": {
+    "name": "支配のエッセンス",
+    "description": "<color=yellow>クリティカル率</color>が20%増加します。敵にクリティカルヒットするたびに自分の<color=yellow>クリティカルダメージ</color>が0.3%増加し、最大20%<sprite=5>まで増加します。",
+    "rawDesc": "<color=yellow>クリティカル率</color>が{0}増加します。敵にクリティカルヒットするたびに自分の<color=yellow>クリティカルダメージ</color>が{1}増加し、最大{2}まで増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "critChanceBonusAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0.3%",
+        "format": "#,##0.0%",
+        "raw": "critAmpBonusValue",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.003,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "critAmpMaxValue",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Domination.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
   },
   "Gem_E_Fangs": {
     "name": "牙のエッセンス",
@@ -1286,7 +1339,7 @@
     "rarity": "Epic",
     "tags": [],
     "image": "Gem_E_Metal.png",
-    "lore": null,
+    "lore": "少女の足元には色とりどりに輝く絵の具が溜まっていました。\n\n隣のマリアおばさんが育てていたバラのような綺麗な色、\nこの絵の具、私と似た金属の匂いがする!\n\n本は少女に急かされ、その絵の具をインク代わりに次の物語を急いで書き綴りました。\n\n不思議なことに、このインクは異様に早く乾いてしまい、\n本は休む間もなく次のページをめくらなければなりませんでした。",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -1343,6 +1396,62 @@
     "achievementKey": "ACH_HEAVIER_THAN_ATLAS",
     "achievementName": "アトラスより強靭な体",
     "achievementDescription": "最大HP3,000に達する。"
+  },
+  "Gem_E_Obsidian": {
+    "name": "黒曜石のエッセンス",
+    "description": "この記憶を<color=yellow>発動</color>すると5秒以内に次の攻撃を<color=yellow>強化</color>します。<color=yellow>強化された攻撃</color>は対象に<sprite=2><color=#FF8A2D>250%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与え、この記憶の<color=yellow>クールダウン</color>を1<sprite=5>秒減少させます。",
+    "rawDesc": "この記憶を<color=yellow>発動</color>すると{0}秒以内に次の攻撃を<color=yellow>強化</color>します。<color=yellow>強化された攻撃</color>は対象に{1}の<color=yellow>闇ダメージ</color>を与え、この記憶の<color=yellow>クールダウン</color>を{2}秒減少させます。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.25,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "reducedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_E_Obsidian.png",
+    "lore": null,
+    "achievementKey": "ACH_MINE_AND_CRAFT",
+    "achievementName": "マイン・アンド・クラフト",
+    "achievementDescription": "漆黒の原石を3個破壊する。"
   },
   "Gem_E_Omega": {
     "name": "終焉のエッセンス",
@@ -1618,7 +1727,7 @@
     "rarity": "Epic",
     "tags": [],
     "image": "Gem_E_Predation.png",
-    "lore": null,
+    "lore": "腹が減った…いつも。\n俺の巣は骨の山。\n肉は…餌は…足りない。\n\nだが…新しいもの。来た。\n肉の匂い。恐怖の匂い。\n\n骨を砕く。肉を裂く。悲鳴を飲み込む。\nこれが俺の仕事。これがプリムス様の…喜び。\n\nお前も…骨になる。\n俺の巣の一部。\nプリムス様の…美しい景色。\n\nキキ、キキキ。",
     "achievementKey": "ACH_WHOS_THE_PREY_NOW",
     "achievementName": "次はお前が獲物だ",
     "achievementDescription": "ハンターを70体撃破する。"
@@ -1675,6 +1784,61 @@
     "achievementKey": "ACH_TEKKAI",
     "achievementName": "鉄塊",
     "achievementDescription": "最大HPの300%以上のシールドを獲得する。"
+  },
+  "Gem_E_Reflex": {
+    "name": "反射のエッセンス",
+    "description": "ダメージを受けると、最も近い敵に向かって冷気を放出し、<sprite=1><color=#16D7FF>120%</color><sprite=5>の冷気ダメージを与えて後ろに押し出し、1.5秒間防御力が40<sprite=5>増加します。",
+    "rawDesc": "ダメージを受けると、最も近い敵に向かって冷気を放出し、{0}の冷気ダメージを与えて後ろに押し出し、{1}秒間防御力が{2}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.6,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "armorDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorFlatAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 32.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.075,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Cold"
+    ],
+    "image": "Gem_E_Reflex.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
   },
   "Gem_E_Thunder": {
     "name": "雷のエッセンス",
@@ -1768,6 +1932,48 @@
       "Dark"
     ],
     "image": "Gem_E_Twilight.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_E_Umbra": {
+    "name": "影のエッセンス",
+    "description": "この記憶のダメージが<color=yellow>クリティカル率</color>の42%<sprite=5>分増加します。該当<color=yellow>ダメージ</color>が<color=yellow>闇ダメージ</color>の場合、ダメージ量の6%<sprite=5>分<color=yellow>体力</color>を<color=yellow>回復</color>します。",
+    "rawDesc": "この記憶のダメージが<color=yellow>クリティカル率</color>の{0}分増加します。該当<color=yellow>ダメージ</color>が<color=yellow>闇ダメージ</color>の場合、ダメージ量の{1}分<color=yellow>体力</color>を<color=yellow>回復</color>します。",
+    "rawDescVars": [
+      {
+        "rendered": "42%<sprite=5>",
+        "format": "P0",
+        "raw": "dmgAmpCritConversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0005
+        }
+      },
+      {
+        "rendered": "6%<sprite=5>",
+        "format": "P0",
+        "raw": "conversionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.038,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_E_Umbra.PNG",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -2398,6 +2604,43 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Abyss": {
+    "name": "深淵のエッセンス",
+    "description": "この記憶が与えるすべての<color=yellow>ダメージ</color>が<color=yellow>闇ダメージ</color>に転換されます。この記憶が<color=yellow>命中</color>した対象の<color=yellow>闇スタック</color>が3以上の場合、43%<sprite=5>の確率で<color=yellow>攻撃効果</color>を発動します。",
+    "rawDesc": "この記憶が与えるすべての<color=yellow>ダメージ</color>が<color=yellow>闇ダメージ</color>に転換されます。この記憶が<color=yellow>命中</color>した対象の<color=yellow>闇スタック</color>が{0}以上の場合、{1}の確率で<color=yellow>攻撃効果</color>を発動します。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "enableAtkEffectStackCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "43%<sprite=5>",
+        "format": "P0",
+        "raw": "atkEffectChance",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "Gem_R_Abyss.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Accuracy": {
     "name": "正確のエッセンス",
     "description": "この記憶が遠くにいる敵に<color=yellow>ダメージ</color>を与えた時、対象に50%<sprite=5>の<color=yellow>ダメージ</color>を与える<color=yellow>追加投射体</color>を発射します。この<color=yellow>投射体</color>が与える<color=yellow>ダメージ</color>は元のダメージ元素と同じ元素になります。",
@@ -2460,7 +2703,7 @@
     "rarity": "Rare",
     "tags": [],
     "image": "Gem_R_Adventure.PNG",
-    "lore": null,
+    "lore": "少女にとって冒険とは、真っ白なページを埋めていくワクワクする営みです。\n一歩踏み出すたびに新しい文章が綴られ、新しい登場人物が現れるのです。\n\n少女は今日も悲しそうな母熊に、自分の明るい笑顔を分けてあげました。\nすると熊は細かく砕け散り、\n輝く青い蝶の群れとなって少女に感謝を伝えました。\n\n毎日、少女はこうして充実した一日を過ごしています。",
     "achievementKey": "ACH_NOVICE_TREASURE_HUNTER",
     "achievementName": "狩人見習い",
     "achievementDescription": "宝箱を初めて開ける。"
@@ -2672,7 +2915,7 @@
   },
   "Gem_R_Composure": {
     "name": "冷静のエッセンス",
-    "description": "この記憶を<color=yellow>発動</color>すると、5秒間<color=yellow>クリティカル率</color>が20%<sprite=5>増加します。敵からダメージを受けると、この効果は終了します。",
+    "description": "この記憶を<color=yellow>発動</color>すると、5秒間<color=yellow>クリティカル率</color>が30%<sprite=5>増加します。敵からダメージを受けると、この効果は終了します。",
     "rawDesc": "この記憶を<color=yellow>発動</color>すると、{0}秒間<color=yellow>クリティカル率</color>が{1}増加します。敵からダメージを受けると、この効果は終了します。",
     "rawDescVars": [
       {
@@ -2689,12 +2932,12 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": "30%<sprite=5>",
         "format": "P0",
         "raw": "critBonus",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.15,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -3087,62 +3330,6 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "Gem_E_Obsidian": {
-    "name": "黒曜石のエッセンス",
-    "description": "この記憶を<color=yellow>発動</color>すると5秒以内に次の攻撃を<color=yellow>強化</color>します。<color=yellow>強化された攻撃</color>は対象に<sprite=2><color=#FF8A2D>250%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与え、この記憶の<color=yellow>クールダウン</color>を1<sprite=5>秒減少させます。",
-    "rawDesc": "この記憶を<color=yellow>発動</color>すると{0}秒以内に次の攻撃を<color=yellow>強化</color>します。<color=yellow>強化された攻撃</color>は対象に{1}の<color=yellow>闇ダメージ</color>を与え、この記憶の<color=yellow>クールダウン</color>を{2}秒減少させます。",
-    "rawDescVars": [
-      {
-        "rendered": "5",
-        "format": "#,##0.#",
-        "raw": "duration",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 5.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "damage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.0,
-          "basicAD": 1.25,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.01
-        }
-      },
-      {
-        "rendered": "1<sprite=5>",
-        "format": "#,##0.#",
-        "raw": "reducedCooldown",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0.0,
-          "basicAD": 0.0,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.01
-        }
-      }
-    ],
-    "rarity": "Epic",
-    "tags": [
-      "Dark",
-      "Attack"
-    ],
-    "image": "Gem_E_Obsidian.png",
-    "lore": null,
-    "achievementKey": "ACH_MINE_AND_CRAFT",
-    "achievementName": "マイン・アンド・クラフト",
-    "achievementDescription": "漆黒の原石を3個破壊する。"
-  },
   "Gem_R_Panic": {
     "name": "パニックのエッセンス",
     "description": "何らかの<color=yellow>ダメージ</color>を受けると、3秒間この記憶が30<sprite=5>の<color=yellow>記憶加速</color>を獲得し、この間<color=yellow>移動速度</color>が20%<sprite=5>増加します。",
@@ -3248,7 +3435,7 @@
       "Heal"
     ],
     "image": "Gem_R_Rejuvenation.PNG",
-    "lore": null,
+    "lore": "急流の秘密の場所のどこか、\n隙間の地とも呼ばれるその場所は、カチャカチャと鳴るリュックの音で満ちていた。\n\n「先輩!あの石像に近づくだけで、きしんでいた関節が滑らかになって、荷物の重さが軽くなります!すり減っていた僕の殻にツヤが出てきたような気もしますし!どうしてこんなに若返った気分になるんですか?」\n\n先輩と呼ばれた人物は、いくつもの目をゆっくりと瞬かせ、ため息をついた。\n奴の質問が情けないという明白なサインだった。\n\n「あの方が、我々の今日のために自分の昨日を少し分け与えてくださったからだ」\n\n「自分の...昨日を?じゃあ僕たちが力を得るたびに、導き手様は...あの方も僕たちみたいに脱皮でもされるんですか?それとも殻にヒビでも入るんでしょうか?」\n\n先輩と呼ばれた人物は、硬いハサミでテーブルを「バン!」と叩いた。\n\n「ええい、ちっ!今回のジョナスは頭の中がヒトデか!そんな無駄な心配する暇があったらリュックの紐でも締め直せ!あの方が下さった力は、お前の背中の殻を磨くためにあるんじゃないんだぞ!」\n\n\n- 定期ジョナス集会にて",
     "achievementKey": "ACH_LOYAL_CUSTOMER",
     "achievementName": "常連客",
     "achievementDescription": "一度の冒険で導きの聖堂を15回起動する。"
@@ -3519,6 +3706,62 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Stillness": {
+    "name": "静止のエッセンス",
+    "description": "5秒ごとにこの記憶の<color=yellow>詠唱</color>が<color=yellow>強化</color>されます。<color=yellow>強化された詠唱</color>時に光を放ち、敵に<sprite=1><color=#16D7FF>200%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、2秒間<color=yellow>スタン</color>させます。品質が上がるほど放射範囲が広がります。",
+    "rawDesc": "{0}秒ごとにこの記憶の<color=yellow>詠唱</color>が<color=yellow>強化</color>されます。<color=yellow>強化された詠唱</color>時に光を放ち、敵に{1}の<color=yellow>光ダメージ</color>を与え、{2}秒間<color=yellow>スタン</color>させます。品質が上がるほど放射範囲が広がります。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Light",
+      "HardCC"
+    ],
+    "image": "Gem_R_Stillness.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Wealth": {
     "name": "富のエッセンス",
     "description": "この記憶によりダメージを与えた敵を2秒以内に撃破すると1.7<sprite=5>ゴールドをドロップします。ゴールドはすべての旅人で共有されます。",
@@ -3609,7 +3852,7 @@
       "Attack"
     ],
     "image": "Gem_R_Wound.PNG",
-    "lore": null,
+    "lore": "傷が...癒えない。\nズキズキとした痛みを超えて、まるで生きた呪いのように私を蝕む。\n\nこの洞窟を満たす不気味な紫色の瞳と、\nうごめくように光を放つ床の紋様まで...\n終わらない悲鳴のように、鉄格子の中に閉じ込められた私の肉体に食い込んでくるようだ。\n\nそして数多の瞳の中で最も輝く一つの目。\n彼は私に傷を負わせただけで、何もしなかった。\n私の傷を、苦痛を興味深く観察し記録するだけ。\n\nしかしその無関心な瞳が、どんな傷よりも\n私を恐怖させる...",
     "achievementKey": "ACH_THROUGH_TIME_AND_SPACE",
     "achievementName": "超越的なスピード",
     "achievementDescription": "毎秒6の攻撃速度に達する。"
@@ -3721,6 +3964,56 @@
     ],
     "image": "Gem_U_GlacialCore.PNG",
     "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_LastStarlight": {
+    "name": "最後の星明かり",
+    "description": "15秒ごとにこの記憶の<color=yellow>発動</color>が<color=yellow>強化</color>される。<color=yellow>強化された発動</color>時、発動位置にブラックホールを生成し、5秒間、1秒あたり<sprite=1><color=#16D7FF>160%</color><sprite=5>の<color=yellow>光ダメージ</color>を与える。\nただし、位置指定の記憶でない場合、ブラックホールは自分の向いている方向の最も近い敵の位置に生成される。",
+    "rawDesc": "{0}秒ごとにこの記憶の<color=yellow>発動</color>が<color=yellow>強化</color>される。<color=yellow>強化された発動</color>時、発動位置にブラックホールを生成し、{1}秒間、1秒あたり{2}の<color=yellow>光ダメージ</color>を与える。\nただし、位置指定の記憶でない場合、ブラックホールは自分の向いている方向の最も近い敵の位置に生成される。",
+    "rawDescVars": [
+      {
+        "rendered": "15",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "tickDamage/tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Unique",
+    "tags": [
+      "Dark",
+      "HardCC"
+    ],
+    "image": "Gem_U_LastStarlight.PNG",
+    "lore": "我が永遠の伴侶、ニュクスよ…\nこの命尽きるまで…そなたに捧げよう。\nそなたはただ、最も輝く夜の女神としてあり続けてくれ…\n\n…どうか、幸せであれ。",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""

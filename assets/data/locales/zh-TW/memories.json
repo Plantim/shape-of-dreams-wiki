@@ -4,7 +4,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "向後跳躍，並在原位置投下3個震撼炸彈，每個炸彈造成<sprite=1><color=#16D7FF>120%</color><sprite=5>的<color=yellow>傷害</color>，並在1秒內<color=yellow>暈眩</color>敵人。",
+    "description": "向後跳躍，並在原位置投下3個震撼炸彈，每個炸彈造成<sprite=1><color=#16D7FF>168%</color><sprite=5>的<color=yellow>傷害</color>，並在1秒內<color=yellow>暈眩</color>敵人。",
     "rawDesc": "向後跳躍，並在原位置投下{0}個震撼炸彈，每個炸彈造成{1}的<color=yellow>傷害</color>，並在{2}秒內<color=yellow>暈眩</color>敵人。",
     "rawDescVars": [
       {
@@ -21,13 +21,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>168%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.2,
+          "basicAP": 1.68,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -176,80 +176,13 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "St_R_DancingBlades": {
-    "name": "刀刃風暴",
-    "cooldownTime": 13.0,
-    "maxCharges": 1,
-    "addedCharges": 1,
-    "description": "在指定區域召喚持續4秒的<color=yellow>刀刃風暴</color>。<color=yellow>刀刃風暴</color>會迅速斬擊周圍，每0.5秒對敵人造成<sprite=1><color=#16D7FF>85%</color><sprite=5>與<sprite=2><color=#FF8A2D>85%</color><sprite=5>中較高的<color=yellow>傷害</color>，並追蹤最近的敵人。",
-    "rawDesc": "在指定區域召喚持續{0}秒的<color=yellow>刀刃風暴</color>。<color=yellow>刀刃風暴</color>會迅速斬擊周圍，每{1}秒對敵人造成{2}與{3}中較高的<color=yellow>傷害</color>，並追蹤最近的敵人。",
-    "rawDescVars": [
-      {
-        "rendered": "4",
-        "format": "#,##0.#",
-        "raw": "duration",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "0.5",
-        "format": "#,##0.#",
-        "raw": "tickInterval",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "apDamage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.85,
-          "basicAD": 0.0,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "adDamage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.0,
-          "basicAD": 0.85,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
-        }
-      }
-    ],
-    "shortDescription": "範圍持續傷害",
-    "rarity": "Rare",
-    "type": "Normal",
-    "traveler": "",
-    "travelerMemoryLocation": "",
-    "tags": [],
-    "image": "St_R_DancingBlades.png",
-    "lore": null,
-    "achievementKey": "ACH_ETERNAL_REST",
-    "achievementName": "永恆安息",
-    "achievementDescription": "用基本攻擊對靈魂劍士完成共50次最後一擊。"
-  },
   "St_C_DarkBolt": {
     "name": "黑暗之箭",
     "cooldownTime": 4.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "發射黑暗之箭對敵人造成<sprite=2><color=#FF8A2D>175%</color><sprite=5>的<color=yellow>黑暗傷害</color>，並觸發<color=yellow>攻擊效果</color>。可穿透最多2名敵人。",
-    "rawDesc": "發射黑暗之箭對敵人造成{0}的<color=yellow>黑暗傷害</color>，並觸發<color=yellow>攻擊效果</color>。可穿透最多{1}名敵人。",
+    "description": "發射黑暗之箭對敵人造成<sprite=2><color=#FF8A2D>175%</color><sprite=5>的<color=yellow>暗影傷害</color>，並觸發<color=yellow>攻擊效果</color>。可穿透最多2名敵人。",
+    "rawDesc": "發射黑暗之箭對敵人造成{0}的<color=yellow>暗影傷害</color>，並觸發<color=yellow>攻擊效果</color>。可穿透最多{1}名敵人。",
     "rawDescVars": [
       {
         "rendered": "<sprite=2><color=#FF8A2D>175%</color><sprite=5>",
@@ -278,7 +211,7 @@
         }
       }
     ],
-    "shortDescription": "發射造成黑暗傷害的箭矢",
+    "shortDescription": "發射造成暗影傷害的箭矢",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -298,8 +231,8 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "向前方的敵人刺去，造成<sprite=2><color=#FF8A2D>210%</color><sprite=5>的<color=yellow>黑暗傷害</color>，觸發<color=yellow>攻擊效果</color>，並將其拉向中央。",
-    "rawDesc": "向前方的敵人刺去，造成{0}的<color=yellow>黑暗傷害</color>，觸發<color=yellow>攻擊效果</color>，並將其拉向中央。",
+    "description": "向前方的敵人刺去，造成<sprite=2><color=#FF8A2D>210%</color><sprite=5>的<color=yellow>暗影傷害</color>，觸發<color=yellow>攻擊效果</color>，並將其拉向中央。",
+    "rawDesc": "向前方的敵人刺去，造成{0}的<color=yellow>暗影傷害</color>，觸發<color=yellow>攻擊效果</color>，並將其拉向中央。",
     "rawDescVars": [
       {
         "rendered": "<sprite=2><color=#FF8A2D>210%</color><sprite=5>",
@@ -315,7 +248,7 @@
         }
       }
     ],
-    "shortDescription": "近戰黑暗傷害",
+    "shortDescription": "近戰暗影傷害",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -334,11 +267,11 @@
   },
   "St_C_FlashFreeze": {
     "name": "急速凍結",
-    "cooldownTime": 5.0,
+    "cooldownTime": 9.0,
     "maxCharges": 2,
-    "addedCharges": 1,
-    "description": "向前方釋放寒氣，對敵人造成<sprite=1><color=#16D7FF>130%</color><sprite=5>的<color=yellow>冰寒傷害</color>。若敵人已經受到<color=yellow>冰寒</color>影響，則<color=yellow>傷害量</color>增加100%並使其<color=yellow>無法移動</color>1.5秒。",
-    "rawDesc": "向前方釋放寒氣，對敵人造成{0}的<color=yellow>冰寒傷害</color>。若敵人已經受到<color=yellow>冰寒</color>影響，則<color=yellow>傷害量</color>增加{1}並使其<color=yellow>無法移動</color>{2}秒。",
+    "addedCharges": 999,
+    "description": "向前釋放寒氣，對敵人造成<sprite=1><color=#16D7FF>130%</color><sprite=5>的<color=yellow>冰寒傷害</color>，同時為自己與隊友套上持續3秒、吸收<sprite=1><color=#16D7FF>90%</color><sprite=5>傷害的<color=yellow>護盾</color>。若目標已受<color=yellow>冰寒</color>影響，<color=yellow>傷害量</color>提升100%，並陷入<color=yellow>無法移動</color>狀態1.5秒。\n\n<color=yellow>充能次數</color>會一次性全部充滿。",
+    "rawDesc": "向前釋放寒氣，對敵人造成{0}的<color=yellow>冰寒傷害</color>，同時為自己與隊友套上持續{1}秒、吸收{2}傷害的<color=yellow>護盾</color>。若目標已受<color=yellow>冰寒</color>影響，<color=yellow>傷害量</color>提升{3}，並陷入<color=yellow>無法移動</color>狀態{4}秒。\n\n<color=yellow>充能次數</color>會一次性全部充滿。",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
@@ -351,6 +284,32 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.9,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.1875
         }
       },
       {
@@ -388,7 +347,8 @@
     "tags": [
       "Cold",
       "Melee",
-      "HardCC"
+      "HardCC",
+      "Shield"
     ],
     "image": "St_C_FlashFreeze.PNG",
     "lore": null,
@@ -613,8 +573,8 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "向前揮動冰爪，對敵人造成<sprite=1><color=#16D7FF>140%</color><sprite=5>的<color=yellow>冰寒傷害</color>，並使其在0.5秒內<color=yellow>暈眩</color>。再次揮動可對敵人造成<sprite=1><color=#16D7FF>264%</color><sprite=5>的<color=yellow>冰寒傷害</color>，並在1秒內<color=yellow>暈眩</color>。",
-    "rawDesc": "向前揮動冰爪，對敵人造成{0}的<color=yellow>冰寒傷害</color>，並使其在{1}秒內<color=yellow>暈眩</color>。再次揮動可對敵人造成{2}的<color=yellow>冰寒傷害</color>，並在{3}秒內<color=yellow>暈眩</color>。",
+    "description": "向前揮動爪子，對敵人造成<sprite=1><color=#16D7FF>140%</color><sprite=5>的<color=yellow>冰寒傷害</color>並<color=yellow>暈眩</color>0.5秒。可以再揮一次爪子，對敵人造成<sprite=1><color=#16D7FF>264%</color><sprite=5>的<color=yellow>冰寒傷害</color>並再次<color=yellow>暈眩</color>1秒。\n\n爪擊命中敵人時，根據造成的傷害量回復12%的<color=yellow>體力</color>。",
+    "rawDesc": "向前揮動爪子，對敵人造成{0}的<color=yellow>冰寒傷害</color>並<color=yellow>暈眩</color>{1}秒。可以再揮一次爪子，對敵人造成{2}的<color=yellow>冰寒傷害</color>並再次<color=yellow>暈眩</color>{3}秒。\n\n爪擊命中敵人時，根據造成的傷害量回復{4}的<color=yellow>體力</color>。",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
@@ -667,9 +627,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "12%",
+        "format": "P0",
+        "raw": "Ai_C_IceClaw::healRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.12,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "近戰冰寒傷害",
+    "shortDescription": "近戰冰寒傷害，回血",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -677,7 +650,8 @@
     "tags": [
       "Cold",
       "Melee",
-      "HardCC"
+      "HardCC",
+      "Heal"
     ],
     "image": "St_C_IceClaw.PNG",
     "lore": null,
@@ -690,8 +664,8 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "向前方短距離衝刺，揮舞青綠之劍，對前方敵人造成<color=yellow>傷害</color>。在<sprite=2><color=#FF8A2D>200%</color><sprite=5>與<sprite=1><color=#16D7FF>200%</color><sprite=5>之間，會造成較高的傷害，若為<color=yellow>攻擊力傷害</color>時，會觸發<color=yellow>攻擊效果</color>。",
-    "rawDesc": "向前方短距離衝刺，揮舞青綠之劍，對前方敵人造成<color=yellow>傷害</color>。在{0}與{1}之間，會造成較高的傷害，若為<color=yellow>攻擊力傷害</color>時，會觸發<color=yellow>攻擊效果</color>。",
+    "description": "向前短距離衝刺，揮動青綠之劍，對前方敵人造成<color=yellow>傷害</color>。在 <sprite=2><color=#FF8A2D>200%</color><sprite=5> 和 <sprite=1><color=#16D7FF>200%</color><sprite=5> 之間，會自動採用較高的傷害值，若為<color=yellow>攻擊力傷害</color>時會觸發<color=yellow>攻擊效果</color>。",
+    "rawDesc": "向前短距離衝刺，揮動青綠之劍，對前方敵人造成<color=yellow>傷害</color>。在 {0} 和 {1} 之間，會自動採用較高的傷害值，若為<color=yellow>攻擊力傷害</color>時會觸發<color=yellow>攻擊效果</color>。",
     "rawDescVars": [
       {
         "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
@@ -731,7 +705,7 @@
       "Mobility"
     ],
     "image": "St_C_MagicSword.png",
-    "lore": null,
+    "lore": "清晨寧靜，\n每當來到海門宅邸的後花園，\n總會悄悄浮現一段回憶。\n\n那老舊練武場的涼意，還能感覺到掠過臉龐。\n那時還只是個只能拉出小小影子的孩子。\n還有母親如霜的嗓音。\n\n青綠之劍。\n這是家族之劍，也是堅強與貝爾德西爾弗家族的驕傲。\n如同堅韌樹木般筆直、不帶絲毫動搖的劍法，\n那天母親曾親自示範給我看。\n\n可惜我的劍，最終還是沒能學到母親的訣竅。\n劍鋒像隨風搖擺的樹葉般顫抖，力量也像流水一樣四散。\n\n這很諷刺吧，母親。\n您那引以為傲、拼命守護的大樹最後終究折倒，\n反而是這隻隨風而飄的無名小葉，\n像現在這樣苟活下來。\n\n如今家族的榮光，樹的份量都已經成為過眼雲煙...\n我也一點都不遺憾。\n\n唯一所求的……\n只願身為失去青綠、無名如霧的存在，\n揮劍，只為了讓妹妹能幸福。",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -787,7 +761,7 @@
   },
   "St_C_Pew": {
     "name": "砰砰",
-    "cooldownTime": 14.0,
+    "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
     "description": "<color=yellow>長按</color>施放鍵時，會充能火焰彈。充能完成後，射出火焰彈，對所有命中的敵人根據瞄準時間造成<sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>400%</color><sprite=5>的<color=yellow>火焰傷害</color>。\n\n若未充滿能量就發射，<color=yellow>冷卻時間</color>最多可減少至80%，並且持續瞄準1.35秒後，命中範圍的寬度和傷害量將達到最大值。",
@@ -865,8 +839,8 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "用手掌釋放能量，對敵人造成<sprite=1><color=#16D7FF>180%</color><sprite=5>的<color=yellow>傷害</color>，並將所有被命中的敵人推開。被推到牆上的敵人將額外受到<sprite=1><color=#16D7FF>504%</color><sprite=5>的<color=yellow>傷害</color>，並在1.5秒內被暈眩。",
-    "rawDesc": "用手掌釋放能量，對敵人造成{0}的<color=yellow>傷害</color>，並將所有被命中的敵人推開。被推到牆上的敵人將額外受到{1}的<color=yellow>傷害</color>，並在{2}秒內被暈眩。",
+    "description": "用手掌釋放能量，對敵人造成<sprite=1><color=#16D7FF>180%</color><sprite=5>的<color=yellow>傷害</color>，並將所有被命中的敵人擊退並暈眩1秒。若目標處於無法阻擋狀態或撞到牆時，將額外造成<sprite=1><color=#16D7FF>504%</color><sprite=5>的<color=yellow>傷害</color>。",
+    "rawDesc": "用手掌釋放能量，對敵人造成{0}的<color=yellow>傷害</color>，並將所有被命中的敵人擊退並暈眩{1}秒。若目標處於無法阻擋狀態或撞到牆時，將額外造成{2}的<color=yellow>傷害</color>。",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
@@ -882,27 +856,27 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "dmgFactor*stunDmgRatio",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "1.5",
+        "rendered": "1",
         "format": "#,##0.#",
         "raw": "stunDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor*stunDmgRatio",
+        "scalingType": "unknown",
+        "data": {}
       }
     ],
-    "shortDescription": "近戰傷害、推開",
+    "shortDescription": "近戰傷害、擊退",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -988,20 +962,20 @@
   },
   "St_C_SparklingWaterGun": {
     "name": "沁涼水槍",
-    "cooldownTime": 5.0,
+    "cooldownTime": 4.0,
     "maxCharges": 3,
     "addedCharges": 1,
-    "description": "發射沁涼水槍。首次命中的友軍將<color=yellow>恢復</color><sprite=1><color=#16D7FF>50%</color><sprite=5>點<color=yellow>生命值</color>並移除<color=yellow>火焰疊加</color>。若擊中敵人，則改為造成1點<color=yellow>傷害</color>並使其<color=yellow>暈眩</color>1.5秒。僅在<color=yellow>戰鬥中</color>時<color=yellow>冷卻時間</color>會減少。",
-    "rawDesc": "發射沁涼水槍。首次命中的友軍將<color=yellow>恢復</color>{0}點<color=yellow>生命值</color>並移除<color=yellow>火焰疊加</color>。若擊中敵人，則改為造成{1}點<color=yellow>傷害</color>並使其<color=yellow>暈眩</color>{2}秒。僅在<color=yellow>戰鬥中</color>時<color=yellow>冷卻時間</color>會減少。",
+    "description": "發射沁涼水槍。命中的友軍會<color=yellow>恢復</color><sprite=1><color=#16D7FF>70%</color><sprite=5><color=yellow>生命值</color>並移除<color=yellow>火焰疊加</color>，命中的敵人則造成1點<color=yellow>傷害</color>並<color=yellow>暈眩</color>1.5秒。<color=yellow>僅在戰鬥中</color>時，會減少<color=yellow>冷卻時間</color>。\n\n若目標為友軍<color=yellow>召喚物</color>，回復量額外提升40%。",
+    "rawDesc": "發射沁涼水槍。命中的友軍會<color=yellow>恢復</color>{0}<color=yellow>生命值</color>並移除<color=yellow>火焰疊加</color>，命中的敵人則造成{1}點<color=yellow>傷害</color>並<color=yellow>暈眩</color>{2}秒。<color=yellow>僅在戰鬥中</color>時，會減少<color=yellow>冷卻時間</color>。\n\n若目標為友軍<color=yellow>召喚物</color>，回復量額外提升{3}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>50%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>70%</color><sprite=5>",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.5,
+          "basicAP": 0.7,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -1032,9 +1006,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "summonAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "敵人暈眩與傷害，或恢復友軍",
+    "shortDescription": "暈眩敵人並造成傷害，或回復隊友",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -1044,7 +1031,7 @@
       "Heal"
     ],
     "image": "St_C_SparklingWaterGun.png",
-    "lore": "後巷小撇步第5條：\n\n材料：路邊隨處可見的蕁麻，葉尖帶紅的毒草。（名字我也不知道）\n製法：放進石臼裡搗碎，加水混合。\n用途：最適合灑在那些自以為是的貴族閃亮斗篷上留下污漬。碰到皮膚還會癢上好幾天，算是額外贈品。\n分析：沒有什麼比這更能惹他們不爽了。\n\n像我們這種老鼠，只能這樣扯扯貓的鬍鬚。生命可是很寶貴的。",
+    "lore": "後巷生存秘訣 第五條：\n\n材料：路邊隨處可見的蕁麻，還有葉尖泛紅的不知名毒草（名字我也不知道）。\n製法：丟進石臼裡搗碎，再加點水攪拌。\n用途：最適合灑在那些自以為了不起的貴族閃閃發亮的斗篷上，肯定會留下大花斑。碰到皮膚還會癢個幾天，算是額外贈送的小麻煩。\n分析：沒什麼方法比這招更能讓他們不爽了。\n\n像我們這種小老鼠要扯貓鬍鬚，只能靠這點小巧思。畢竟命很值錢嘛。",
     "achievementKey": "ACH_PEW_PEW_PEW",
     "achievementName": "砰砰砰！",
     "achievementDescription": "對非自身的友軍施加有益效果共計200次。"
@@ -1167,7 +1154,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>吟唱</color>持續3.5秒，揮舞劍刃對周圍敵人造成每秒<sprite=2><color=#FF8A2D>170%</color><sprite=5>的<color=yellow>傷害</color>，並觸發25%的<color=yellow>攻擊效果</color>。<color=yellow>攻擊速度</color>越高，揮舞劍刃的速度越快。",
+    "description": "<color=yellow>吟唱</color>持續3.5秒，揮舞劍刃對周圍敵人造成每秒<sprite=2><color=#FF8A2D>240%</color><sprite=5>的<color=yellow>傷害</color>，並觸發35%的<color=yellow>攻擊效果</color>。<color=yellow>攻擊速度</color>越高，揮舞劍刃的速度越快。",
     "rawDesc": "<color=yellow>吟唱</color>持續{0}秒，揮舞劍刃對周圍敵人造成每秒{1}的<color=yellow>傷害</color>，並觸發{2}的<color=yellow>攻擊效果</color>。<color=yellow>攻擊速度</color>越高，揮舞劍刃的速度越快。",
     "rawDescVars": [
       {
@@ -1184,19 +1171,19 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>170%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>240%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*2",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "25%",
+        "rendered": "35%",
         "format": "P0",
         "raw": "attackEffect",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.25,
+          "basicConstant": 0.35,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2358,8 +2345,8 @@
     "cooldownTime": 16.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "投擲巨大的長槍，對命中的敵人造成<sprite=2><color=#FF8A2D>450%</color><sprite=5>的<color=yellow>黑暗傷害</color>。\n\n若命中<color=yellow>英雄首領</color>，傷害會依目標<color=yellow>最大生命值</color>增加15%，且長槍會插在目標身上，並且此記憶會被<color=yellow>破壞</color>。若擊殺被插槍的英雄首領，將獲得該首領的<color=yellow>專屬記憶</color>或<color=yellow>精華</color>。",
-    "rawDesc": "投擲巨大的長槍，對命中的敵人造成{0}的<color=yellow>黑暗傷害</color>。\n\n若命中<color=yellow>英雄首領</color>，傷害會依目標<color=yellow>最大生命值</color>增加{1}，且長槍會插在目標身上，並且此記憶會被<color=yellow>破壞</color>。若擊殺被插槍的英雄首領，將獲得該首領的<color=yellow>專屬記憶</color>或<color=yellow>精華</color>。",
+    "description": "投擲巨大的長槍，對命中的敵人造成<sprite=2><color=#FF8A2D>450%</color><sprite=5>的<color=yellow>暗影傷害</color>。\n\n若命中<color=yellow>英雄首領</color>，傷害會依目標<color=yellow>最大生命值</color>增加15%，且長槍會插在目標身上，並且此記憶會被<color=yellow>破壞</color>。若擊殺被插槍的英雄首領，將獲得該首領的<color=yellow>專屬記憶</color>或<color=yellow>精粹</color>。",
+    "rawDesc": "投擲巨大的長槍，對命中的敵人造成{0}的<color=yellow>暗影傷害</color>。\n\n若命中<color=yellow>英雄首領</color>，傷害會依目標<color=yellow>最大生命值</color>增加{1}，且長槍會插在目標身上，並且此記憶會被<color=yellow>破壞</color>。若擊殺被插槍的英雄首領，將獲得該首領的<color=yellow>專屬記憶</color>或<color=yellow>精粹</color>。",
     "rawDescVars": [
       {
         "rendered": "<sprite=2><color=#FF8A2D>450%</color><sprite=5>",
@@ -2400,7 +2387,7 @@
     "lore": null,
     "achievementKey": "ACH_THE_EIGHTH_TROPHY",
     "achievementName": "第八件戰利品",
-    "achievementDescription": "請從英雄首領處獲得專屬記憶或精華共8次。"
+    "achievementDescription": "請從英雄首領處獲得專屬記憶或精粹共8次。"
   },
   "St_E_DoomsdayMeteor": {
     "name": "末日隕石",
@@ -2465,50 +2452,13 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "St_E_FlameJet": {
-    "name": "火焰噴射",
-    "cooldownTime": 11.5,
-    "maxCharges": 1,
-    "addedCharges": 1,
-    "description": "2.5秒持續噴射火焰，接觸火焰的敵人每秒受到<sprite=1><color=#16D7FF>336%</color><sprite=5>的<color=yellow>火焰傷害</color>。",
-    "rawDesc": "{0}秒持續噴射火焰，接觸火焰的敵人每秒受到{1}的<color=yellow>火焰傷害</color>。",
-    "rawDescVars": [
-      {
-        "rendered": "2.5",
-        "format": "#,##0.#",
-        "raw": "spawns*spawnInterval",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "damage/minHitInterval",
-        "scalingType": "unknown",
-        "data": {}
-      }
-    ],
-    "shortDescription": "持續的範圍火焰傷害",
-    "rarity": "Epic",
-    "type": "Normal",
-    "traveler": "",
-    "travelerMemoryLocation": "",
-    "tags": [
-      "Fire"
-    ],
-    "image": "St_E_FlameJet.png",
-    "lore": "狩獵日誌\n羅吉特統治第2年，o月oo日，天氣：晴\n狩獵地點：伊格尼濕地\n今日收穫：一袋蕁麻\n\n每當我前往伊格尼濕地狩獵時，我總是遵守幾條規則。\n\n1. 若看到有爪印的紅樹根，需多加注意。\n\n2. 若那些爪印上沒有苔藓，則不朝那方向探索。\n\n3. 若遠處看到煙霧或燒焦的樹幹上還留有餘燼，則必須立即返回家中。\n\n自從去年夏天看到一個傻瓜試圖拔出仍在燃燒的卡林貝里藤蔓，結果遇到了巨大的巴拉蘇斯後，我就對自己有了這樣的規定。\n\n即使在皇家守衛的火魔武器展示中，我也從未見過那麼大的火焰。",
-    "achievementKey": "ACH_PYROMANIA",
-    "achievementName": "縱火狂",
-    "achievementDescription": "擊殺250次著火的敵人。"
-  },
   "St_E_FinalExplosion": {
     "name": "最終爆炸",
     "cooldownTime": 3.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在2秒內<color=yellow>移動速度</color>提升25%<sprite=5>，之後犧牲自身最大生命值的40%，引發強力爆炸。爆炸範圍內的敵人將受到<sprite=1><color=#16D7FF>850%</color><sprite=5>的<color=yellow>光明傷害</color>並<color=yellow>昏迷</color>2.5秒。若已死亡或因犧牲而死亡，<color=yellow>爆炸傷害</color>將提升150%。",
-    "rawDesc": "在{0}秒內<color=yellow>移動速度</color>提升{1}，之後犧牲自身最大生命值的{2}，引發強力爆炸。爆炸範圍內的敵人將受到{3}的<color=yellow>光明傷害</color>並<color=yellow>昏迷</color>{4}秒。若已死亡或因犧牲而死亡，<color=yellow>爆炸傷害</color>將提升{5}。",
+    "description": "在 2 秒內<color=yellow>移動速度</color>提高 25%<sprite=5>，接著犧牲自身最大生命值的 40%，引發強力爆炸。爆炸波及的敵人會受到 <sprite=1><color=#16D7FF>850%</color><sprite=5> 的<color=yellow>光明傷害</color>，並<color=yellow>暈眩</color> 2.5 秒。若已死亡或因犧牲而陣亡，<color=yellow>爆炸傷害</color>會額外提升 150%。",
+    "rawDesc": "在 {0} 秒內<color=yellow>移動速度</color>提高 {1}，接著犧牲自身最大生命值的 {2}，引發強力爆炸。爆炸波及的敵人會受到 {3} 的<color=yellow>光明傷害</color>，並<color=yellow>暈眩</color> {4} 秒。若已死亡或因犧牲而陣亡，<color=yellow>爆炸傷害</color>會額外提升 {5}。",
     "rawDescVars": [
       {
         "rendered": "2",
@@ -2594,10 +2544,47 @@
       "HardCC"
     ],
     "image": "St_E_FinalExplosion.PNG",
-    "lore": null,
+    "lore": "太陽烈焰騎士團的包圍網愈收愈緊，\n那神聖的火焰連最幽深的巷弄都不曾讓黑暗駐足。\n被逼到死路的清醒教派成員，終於停下腳步。\n\n但他臉上卻沒有半點恐懼，反倒露出扭曲的興奮笑容。\n他居高臨下看著那些困住自己的騎士，仿佛看著可憐的蟲。\n\n「你們以為……這就結束了？\n真的相信你們那個自大的假神，用那微不足道的火苗，就能審判我嗎？」\n\n他閉上雙眼，放空一切感官。\n喧囂的現實消失後，夢中世界的召喚，\n激流的柔和耳語終於傳來。\n\n是時候捨棄一切離開了。\n他睜開雙眼，對現實做最後的告別。\n\n「再見了！瞎了眼的烈焰們……這可悲的肉身……還有讓人作嘔的世界！」\n\n他的身軀開始閃爍，出現異樣的光彩。\n一場獻給神明的最炙熱、最絕望的禱告。\n\n「普里穆斯大人！卑微的僕人，將所有一切……現在全都獻給你！」\n\n他最後的吶喊，也同時讓自己化作塵埃，\n成為吞噬一切的壯烈最終爆炸。\n\n\n——一具倒在廢墟村落中的屍骸留下的記憶片段",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
+  },
+  "St_E_FlameJet": {
+    "name": "火焰噴射",
+    "cooldownTime": 11.5,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "2.5秒持續噴射火焰，接觸火焰的敵人每秒受到<sprite=1><color=#16D7FF>336%</color><sprite=5>的<color=yellow>火焰傷害</color>。",
+    "rawDesc": "{0}秒持續噴射火焰，接觸火焰的敵人每秒受到{1}的<color=yellow>火焰傷害</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "spawns*spawnInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage/minHitInterval",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "持續的範圍火焰傷害",
+    "rarity": "Epic",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Fire"
+    ],
+    "image": "St_E_FlameJet.png",
+    "lore": "狩獵日誌\n羅吉特統治第2年，o月oo日，天氣：晴\n狩獵地點：伊格尼濕地\n今日收穫：一袋蕁麻\n\n每當我前往伊格尼濕地狩獵時，我總是遵守幾條規則。\n\n1. 若看到有爪印的紅樹根，需多加注意。\n\n2. 若那些爪印上沒有苔藓，則不朝那方向探索。\n\n3. 若遠處看到煙霧或燒焦的樹幹上還留有餘燼，則必須立即返回家中。\n\n自從去年夏天看到一個傻瓜試圖拔出仍在燃燒的卡林貝里藤蔓，結果遇到了巨大的巴拉蘇斯後，我就對自己有了這樣的規定。\n\n即使在皇家守衛的火魔武器展示中，我也從未見過那麼大的火焰。",
+    "achievementKey": "ACH_PYROMANIA",
+    "achievementName": "縱火狂",
+    "achievementDescription": "擊殺250次著火的敵人。"
   },
   "St_E_Harvest": {
     "name": "血之收割",
@@ -2683,6 +2670,89 @@
       "Attack"
     ],
     "image": "St_E_Harvest.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_E_JusticeGuillotine": {
+    "name": "正義斷頭台",
+    "cooldownTime": 100.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "在目標敵人的位置揮下巨型大劍，對周圍所有敵人造成<sprite=2><color=#FF8A2D>800%</color><sprite=5>的<color=yellow>傷害</color>。此傷害量會根據我方<color=yellow>已損失生命值</color>的比例，最多增加2倍，並根據目標的<color=yellow>已損失生命值</color>的比例，最多再增加2倍，總計最多可增加至4倍。生命值低於30%時，傷害增幅達到最大。",
+    "rawDesc": "在目標敵人的位置揮下巨型大劍，對周圍所有敵人造成{0}的<color=yellow>傷害</color>。此傷害量會根據我方<color=yellow>已損失生命值</color>的比例，最多增加{1}倍，並根據目標的<color=yellow>已損失生命值</color>的比例，最多再增加{2}倍，總計最多可增加至{3}倍。生命值低於{4}時，傷害增幅達到最大。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>800%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 8.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dmgAmplitude",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dmgAmplitude",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "dmgAmplitude * dmgAmplitude",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "maxAmpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "強力一擊，已損失生命值越多傷害越高",
+    "rarity": "Epic",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Melee",
+      "Mobility"
+    ],
+    "image": "St_E_JusticeGuillotine.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -2793,6 +2863,103 @@
     "achievementKey": "ACH_MASTER_OF_MYSTIC_ARTS",
     "achievementName": "神秘藝術大師",
     "achievementDescription": "同時擁有4個冷卻時間3秒以下的主動記憶。"
+  },
+  "St_E_Permafrost": {
+    "name": "永凍領域",
+    "cooldownTime": 100.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "凝聚極致寒氣後，在極大範圍內釋放。受影響的我方會獲得 <sprite=1><color=#16D7FF>300%</color><sprite=5> <color=yellow>護盾</color>與 100 <color=yellow>防禦力</color>，持續 10 秒；敵人則會被凍結，受到 <sprite=1><color=#16D7FF>500%</color><sprite=5> <color=yellow>冰寒傷害</color>並<color=yellow>暈眩</color> 15 秒。\n\n若敵人已受到<color=yellow>冰寒</color>效果影響，此傷害量將增加 100%。",
+    "rawDesc": "凝聚極致寒氣後，在極大範圍內釋放。受影響的我方會獲得 {0} <color=yellow>護盾</color>與 {1} <color=yellow>防禦力</color>，持續 {2} 秒；敵人則會被凍結，受到 {3} <color=yellow>冰寒傷害</color>並<color=yellow>暈眩</color> {4} 秒。\n\n若敵人已受到<color=yellow>冰寒</color>效果影響，此傷害量將增加 {5}。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 3.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "100",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 100.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>500%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 5.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "15",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "chilledAmpBonus-1",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "範圍冰寒傷害、暈眩、保護我方",
+    "rarity": "Epic",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Cold",
+      "HardCC",
+      "Shield"
+    ],
+    "image": "St_E_Permafrost.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
   },
   "St_E_Rewind": {
     "name": "取消",
@@ -2909,8 +3076,8 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在1.3<sprite=5>秒內進行吟唱，向最先命中的敵人發射7<sprite=5>次<color=yellow>暗影彈</color>，每發造成<sprite=2><color=#FF8A2D>60%</color><sprite=5>的<color=yellow>黑暗傷害</color>。\n吟唱時間會隨<color=yellow>攻擊速度</color>提升而減少，發射次數會隨<color=yellow>致命率</color>提升而增加。",
-    "rawDesc": "在{0}秒內進行吟唱，向最先命中的敵人發射{1}次<color=yellow>暗影彈</color>，每發造成{2}的<color=yellow>黑暗傷害</color>。\n吟唱時間會隨<color=yellow>攻擊速度</color>提升而減少，發射次數會隨<color=yellow>致命率</color>提升而增加。",
+    "description": "在1.3<sprite=5>秒內進行吟唱，向最先命中的敵人發射7<sprite=5>次<color=yellow>暗影彈</color>，每發造成<sprite=2><color=#FF8A2D>60%</color><sprite=5>的<color=yellow>暗影傷害</color>。\n吟唱時間會隨<color=yellow>攻擊速度</color>提升而減少，發射次數會隨<color=yellow>致命率</color>提升而增加。",
+    "rawDesc": "在{0}秒內進行吟唱，向最先命中的敵人發射{1}次<color=yellow>暗影彈</color>，每發造成{2}的<color=yellow>暗影傷害</color>。\n吟唱時間會隨<color=yellow>攻擊速度</color>提升而減少，發射次數會隨<color=yellow>致命率</color>提升而增加。",
     "rawDescVars": [
       {
         "rendered": "1.3<sprite=5>",
@@ -2971,8 +3138,8 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "0.5秒後，以黑暗之刃橫斬前方，對敵人造成<sprite=2><color=#FF8A2D>65%</color><sprite=5>的<color=yellow>黑暗傷害</color>。若擊中外側刀刃，則改為造成<sprite=2><color=#FF8A2D>250%</color><sprite=5>的<color=yellow>黑暗傷害</color>並觸發50%的<color=yellow>攻擊效果</color>，且每命中一名敵人會恢復等同於<color=yellow>已損失生命</color>的8%。\n\n每有一名敵人被外側刀刃命中，<color=yellow>冷卻時間</color>減少20%。",
-    "rawDesc": "{0}秒後，以黑暗之刃橫斬前方，對敵人造成{1}的<color=yellow>黑暗傷害</color>。若擊中外側刀刃，則改為造成{2}的<color=yellow>黑暗傷害</color>並觸發{3}的<color=yellow>攻擊效果</color>，且每命中一名敵人會恢復等同於<color=yellow>已損失生命</color>的{4}。\n\n每有一名敵人被外側刀刃命中，<color=yellow>冷卻時間</color>減少{5}。",
+    "description": "0.5秒後，以黑暗之刃橫斬前方，對敵人造成<sprite=2><color=#FF8A2D>65%</color><sprite=5>的<color=yellow>暗影傷害</color>。若擊中外側刀刃，則改為造成<sprite=2><color=#FF8A2D>250%</color><sprite=5>的<color=yellow>暗影傷害</color>並觸發50%的<color=yellow>攻擊效果</color>，且每命中一名敵人會恢復等同於<color=yellow>已損失生命</color>的8%。\n\n每有一名敵人被外側刀刃命中，<color=yellow>冷卻時間</color>減少20%。",
+    "rawDesc": "{0}秒後，以黑暗之刃橫斬前方，對敵人造成{1}的<color=yellow>暗影傷害</color>。若擊中外側刀刃，則改為造成{2}的<color=yellow>暗影傷害</color>並觸發{3}的<color=yellow>攻擊效果</color>，且每命中一名敵人會恢復等同於<color=yellow>已損失生命</color>的{4}。\n\n每有一名敵人被外側刀刃命中，<color=yellow>冷卻時間</color>減少{5}。",
     "rawDescVars": [
       {
         "rendered": "0.5",
@@ -3053,7 +3220,7 @@
         }
       }
     ],
-    "shortDescription": "黑暗傷害、外側刀刃命中時效果強化",
+    "shortDescription": "暗影傷害、外側刀刃命中時效果強化",
     "rarity": "Epic",
     "type": "Normal",
     "traveler": "",
@@ -3073,8 +3240,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>長按</color>施放鍵以在手中聚集黑暗能量。當充能完成後，向前衝刺，命中第一個敵人及其周圍的所有敵人。敵人將根據充能時間受到<sprite=2><color=#FF8A2D>100%</color><sprite=5>~<sprite=2><color=#FF8A2D>500%</color><sprite=5>的<color=yellow>黑暗傷害</color>，並在1秒內暈眩。\n若充能1.2秒，衝刺距離和傷害量將達到最大值。",
-    "rawDesc": "<color=yellow>長按</color>施放鍵以在手中聚集黑暗能量。當充能完成後，向前衝刺，命中第一個敵人及其周圍的所有敵人。敵人將根據充能時間受到{0}~{1}的<color=yellow>黑暗傷害</color>，並在{2}秒內暈眩。\n若充能{3}秒，衝刺距離和傷害量將達到最大值。",
+    "description": "<color=yellow>長按</color>施放鍵以在手中聚集黑暗能量。當充能完成後，向前衝刺，命中第一個敵人及其周圍的所有敵人。敵人將根據充能時間受到<sprite=2><color=#FF8A2D>100%</color><sprite=5>~<sprite=2><color=#FF8A2D>500%</color><sprite=5>的<color=yellow>暗影傷害</color>，並在1秒內暈眩。\n若充能1.2秒，衝刺距離和傷害量將達到最大值。",
+    "rawDesc": "<color=yellow>長按</color>施放鍵以在手中聚集黑暗能量。當充能完成後，向前衝刺，命中第一個敵人及其周圍的所有敵人。敵人將根據充能時間受到{0}~{1}的<color=yellow>暗影傷害</color>，並在{2}秒內暈眩。\n若充能{3}秒，衝刺距離和傷害量將達到最大值。",
     "rawDescVars": [
       {
         "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
@@ -3152,8 +3319,8 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在7秒內賦予武器黑暗之力，<color=yellow>致命率</color>增加20%<sprite=5>，並在<color=yellow>攻擊</color>時造成額外<sprite=2><color=#FF8A2D>52%</color><sprite=5>的<color=yellow>黑暗傷害</color>。<color=yellow>近戰旅行者</color>的額外傷害量增加25%。",
-    "rawDesc": "在{0}秒內賦予武器黑暗之力，<color=yellow>致命率</color>增加{1}，並在<color=yellow>攻擊</color>時造成額外{2}的<color=yellow>黑暗傷害</color>。<color=yellow>近戰旅行者</color>的額外傷害量增加{3}。",
+    "description": "在7秒內賦予武器黑暗之力，<color=yellow>致命率</color>增加20%<sprite=5>，並在<color=yellow>攻擊</color>時造成額外<sprite=2><color=#FF8A2D>52%</color><sprite=5>的<color=yellow>暗影傷害</color>。<color=yellow>近戰旅行者</color>的額外傷害量增加25%。",
+    "rawDesc": "在{0}秒內賦予武器黑暗之力，<color=yellow>致命率</color>增加{1}，並在<color=yellow>攻擊</color>時造成額外{2}的<color=yellow>暗影傷害</color>。<color=yellow>近戰旅行者</color>的額外傷害量增加{3}。",
     "rawDescVars": [
       {
         "rendered": "7",
@@ -3228,8 +3395,8 @@
     "cooldownTime": 6.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "短暫消失後在目標位置現身，斬擊敵人造成<sprite=2><color=#FF8A2D>200%</color><sprite=5>的<color=yellow>黑暗傷害</color>，並使其<color=yellow>暈眩</color> 1秒，同時觸發<color=yellow>攻擊效果</color>。對生命值低於50%的敵人，傷害量提升50%。",
-    "rawDesc": "短暫消失後在目標位置現身，斬擊敵人造成{0}的<color=yellow>黑暗傷害</color>，並使其<color=yellow>暈眩</color> {1}秒，同時觸發<color=yellow>攻擊效果</color>。對生命值低於{2}的敵人，傷害量提升{3}。",
+    "description": "短暫消失後在目標位置現身，斬擊敵人造成<sprite=2><color=#FF8A2D>200%</color><sprite=5>的<color=yellow>暗影傷害</color>，並使其<color=yellow>暈眩</color> 1秒，同時觸發<color=yellow>攻擊效果</color>。對生命值低於50%的敵人，傷害量提升50%。",
+    "rawDesc": "短暫消失後在目標位置現身，斬擊敵人造成{0}的<color=yellow>暗影傷害</color>，並使其<color=yellow>暈眩</color> {1}秒，同時觸發<color=yellow>攻擊效果</color>。對生命值低於{2}的敵人，傷害量提升{3}。",
     "rawDescVars": [
       {
         "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
@@ -3284,7 +3451,7 @@
         }
       }
     ],
-    "shortDescription": "範圍黑暗傷害、攻擊、衝刺",
+    "shortDescription": "範圍暗影傷害、攻擊、衝刺",
     "rarity": "Epic",
     "type": "Normal",
     "traveler": "",
@@ -3687,8 +3854,8 @@
     "cooldownTime": 16.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "污染目標及其周圍的心靈，造成<sprite=1><color=#16D7FF>200%</color><sprite=5>的<color=yellow>黑暗傷害</color>，並在死亡前每0.5秒造成<sprite=1><color=#16D7FF>60%</color><sprite=5>的<color=yellow>黑暗傷害</color>。",
-    "rawDesc": "污染目標及其周圍的心靈，造成{0}的<color=yellow>黑暗傷害</color>，並在死亡前每{1}秒造成{2}的<color=yellow>黑暗傷害</color>。",
+    "description": "污染目標及其周圍的心靈，造成<sprite=1><color=#16D7FF>200%</color><sprite=5>的<color=yellow>暗影傷害</color>，並在死亡前每0.5秒造成<sprite=1><color=#16D7FF>60%</color><sprite=5>的<color=yellow>暗影傷害</color>。",
+    "rawDesc": "污染目標及其周圍的心靈，造成{0}的<color=yellow>暗影傷害</color>，並在死亡前每{1}秒造成{2}的<color=yellow>暗影傷害</color>。",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
@@ -3730,7 +3897,7 @@
         }
       }
     ],
-    "shortDescription": "持續黑暗傷害直至死亡",
+    "shortDescription": "持續暗影傷害直至死亡",
     "rarity": "Legendary",
     "type": "Normal",
     "traveler": "",
@@ -3833,12 +4000,12 @@
     "achievementDescription": ""
   },
   "St_L_PyranasFireball": {
-    "name": "派拉納的火焰球",
+    "name": "派拉納的火球",
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在3秒內，迅速變身為<color=yellow>火焰球體</color>，獲得50<sprite=5>的<color=yellow>防禦力</color>並免疫<color=yellow>火焰傷害</color>。每當球體碰觸敵人時，造成<sprite=1><color=#16D7FF>220%</color><sprite=5>的<color=yellow>火焰傷害</color>，並使變身的<color=yellow>持續時間</color>增加0.2<sprite=5>秒，最多可增加3<sprite=5>秒。",
-    "rawDesc": "在{0}秒內，迅速變身為<color=yellow>火焰球體</color>，獲得{1}的<color=yellow>防禦力</color>並免疫<color=yellow>火焰傷害</color>。每當球體碰觸敵人時，造成{2}的<color=yellow>火焰傷害</color>，並使變身的<color=yellow>持續時間</color>增加{3}秒，最多可增加{4}秒。",
+    "description": "在3秒內變身為快速移動的<color=yellow>火球</color>，獲得50<sprite=5>點<color=yellow>防禦力</color>並免疫<color=yellow>火焰傷害</color>。每當火球碰觸敵人時，會造成<sprite=1><color=#16D7FF>220%</color><sprite=5>點<color=yellow>火焰傷害</color>，且變身的<color=yellow>持續時間</color>會<color=yellow>增加</color>0.2<sprite=5>秒，最多可增加3<sprite=5>秒。",
+    "rawDesc": "在{0}秒內變身為快速移動的<color=yellow>火球</color>，獲得{1}點<color=yellow>防禦力</color>並免疫<color=yellow>火焰傷害</color>。每當火球碰觸敵人時，會造成{2}點<color=yellow>火焰傷害</color>，且變身的<color=yellow>持續時間</color>會<color=yellow>增加</color>{3}秒，最多可增加{4}秒。",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -3906,7 +4073,7 @@
         }
       }
     ],
-    "shortDescription": "變身為火焰球",
+    "shortDescription": "變身為火球",
     "rarity": "Legendary",
     "type": "Normal",
     "traveler": "",
@@ -4273,30 +4440,30 @@
     "cooldownTime": 6.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>長按</color>施放鍵時，吟唱並將太陽能量於錘子上。吟唱完畢後，將錘子猛擊地面，對敵人造成<sprite=1><color=#16D7FF>100%</color><sprite=5>~<sprite=1><color=#16D7FF>350%</color><sprite=5>的<color=yellow>火焰傷害</color>，並使其在0.5~1.5秒內<color=yellow>暈眩</color>。\n\n吟唱期間無法移動，但可變為<color=yellow>無法阻擋</color>狀態並獲得60<sprite=5>的<color=yellow>防禦力</color>。",
+    "description": "<color=yellow>長按</color>施放鍵時，吟唱並將太陽能量於錘子上。吟唱完畢後，將錘子猛擊地面，對敵人造成<sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>450%</color><sprite=5>的<color=yellow>火焰傷害</color>，並使其在0.5~1.5秒內<color=yellow>暈眩</color>。\n\n吟唱期間無法移動，但可變為<color=yellow>無法阻擋</color>狀態並獲得60<sprite=5>的<color=yellow>防禦力</color>。",
     "rawDesc": "<color=yellow>長按</color>施放鍵時，吟唱並將太陽能量於錘子上。吟唱完畢後，將錘子猛擊地面，對敵人造成{0}~{1}的<color=yellow>火焰傷害</color>，並使其在{2}~{3}秒內<color=yellow>暈眩</color>。\n\n吟唱期間無法移動，但可變為<color=yellow>無法阻擋</color>狀態並獲得{4}的<color=yellow>防禦力</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
         "format": "#,##0",
         "raw": "damageMin",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>450%</color><sprite=5>",
         "format": "#,##0",
         "raw": "damageMax",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.5,
+          "basicAP": 4.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -4363,18 +4530,18 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "向目標衝刺並揮下戰錘，對敵人造成<sprite=2><color=#FF8A2D>110%</color><sprite=5>的<color=yellow>光明傷害</color>，並觸發50%的<color=yellow>攻擊效果</color>。每次<color=yellow>攻擊</color>敵人時，<color=yellow>冷卻時間</color>將<color=yellow>減少</color>8%。",
+    "description": "向目標衝刺並揮下戰錘，對敵人造成<sprite=2><color=#FF8A2D>125%</color><sprite=5>的<color=yellow>光明傷害</color>，並觸發50%的<color=yellow>攻擊效果</color>。每次<color=yellow>攻擊</color>敵人時，<color=yellow>冷卻時間</color>將<color=yellow>減少</color>8%。",
     "rawDesc": "向目標衝刺並揮下戰錘，對敵人造成{0}的<color=yellow>光明傷害</color>，並觸發{1}的<color=yellow>攻擊效果</color>。每次<color=yellow>攻擊</color>敵人時，<color=yellow>冷卻時間</color>將<color=yellow>減少</color>{2}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>110%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>125%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.1,
+          "basicAD": 1.25,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -4786,8 +4953,8 @@
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "基本攻擊時，裂傷的形態會在<color=#f28a8a>赤形</color>與<color=#8ab2f2>青形</color>之間<color=yellow>切換</color>。施放時根據目前形態發動不同效果。\n\n<color=#f28a8a>赤形：</color>向前短距離衝刺，斬擊狹窄區域內的敵人，造成<sprite=2><color=#FF8A2D>155%</color><sprite=5>的<color=yellow>黑暗傷害</color>並觸發<color=yellow>攻擊效果</color>。首次命中敵人時，<color=yellow>冷卻時間</color>減少35%秒。\n\n<color=#8ab2f2>青形：</color>跳躍至空中，暫時進入<color=yellow>無敵</color>狀態，然後揮舞刀刃對周圍所有敵人造成<sprite=2><color=#FF8A2D>200%</color><sprite=5>的<color=yellow>黑暗傷害</color>並觸發<color=yellow>攻擊效果</color>。",
-    "rawDesc": "基本攻擊時，裂傷的形態會在<color=#f28a8a>赤形</color>與<color=#8ab2f2>青形</color>之間<color=yellow>切換</color>。施放時根據目前形態發動不同效果。\n\n<color=#f28a8a>赤形：</color>向前短距離衝刺，斬擊狹窄區域內的敵人，造成{0}的<color=yellow>黑暗傷害</color>並觸發<color=yellow>攻擊效果</color>。首次命中敵人時，<color=yellow>冷卻時間</color>減少{1}秒。\n\n<color=#8ab2f2>青形：</color>跳躍至空中，暫時進入<color=yellow>無敵</color>狀態，然後揮舞刀刃對周圍所有敵人造成{2}的<color=yellow>黑暗傷害</color>並觸發<color=yellow>攻擊效果</color>。",
+    "description": "基本攻擊時，裂傷的形態會在<color=#f28a8a>赤形</color>與<color=#8ab2f2>青形</color>之間<color=yellow>切換</color>。施放時根據目前形態發動不同效果。\n\n<color=#f28a8a>赤形：</color>向前短距離衝刺，斬擊狹窄區域內的敵人，造成<sprite=2><color=#FF8A2D>155%</color><sprite=5>的<color=yellow>暗影傷害</color>並觸發<color=yellow>攻擊效果</color>。首次命中敵人時，<color=yellow>冷卻時間</color>減少35%秒。\n\n<color=#8ab2f2>青形：</color>跳躍至空中，暫時進入<color=yellow>無敵</color>狀態，然後揮舞刀刃對周圍所有敵人造成<sprite=2><color=#FF8A2D>200%</color><sprite=5>的<color=yellow>暗影傷害</color>並觸發<color=yellow>攻擊效果</color>。",
+    "rawDesc": "基本攻擊時，裂傷的形態會在<color=#f28a8a>赤形</color>與<color=#8ab2f2>青形</color>之間<color=yellow>切換</color>。施放時根據目前形態發動不同效果。\n\n<color=#f28a8a>赤形：</color>向前短距離衝刺，斬擊狹窄區域內的敵人，造成{0}的<color=yellow>暗影傷害</color>並觸發<color=yellow>攻擊效果</color>。首次命中敵人時，<color=yellow>冷卻時間</color>減少{1}秒。\n\n<color=#8ab2f2>青形：</color>跳躍至空中，暫時進入<color=yellow>無敵</color>狀態，然後揮舞刀刃對周圍所有敵人造成{2}的<color=yellow>暗影傷害</color>並觸發<color=yellow>攻擊效果</color>。",
     "rawDescVars": [
       {
         "rendered": "<sprite=2><color=#FF8A2D>155%</color><sprite=5>",
@@ -5025,16 +5192,16 @@
     "cooldownTime": 4.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "犧牲自身最大生命值的10%，向前方發射3次薄金塊。金塊會貫穿目標，對命中的敵人造成<sprite=1><color=#16D7FF>95%</color><sprite=5><color=yellow>傷害</color>，並為友軍恢復<sprite=1><color=#16D7FF>18%</color><sprite=5>生命值。",
+    "description": "犧牲自身最大生命值的8%，向前方發射3次薄金塊。金塊會貫穿目標，對命中的敵人造成<sprite=1><color=#16D7FF>95%</color><sprite=5><color=yellow>傷害</color>，並為友軍恢復<sprite=1><color=#16D7FF>18%</color><sprite=5>生命值。",
     "rawDesc": "犧牲自身最大生命值的{0}，向前方發射{1}次薄金塊。金塊會貫穿目標，對命中的敵人造成{2}<color=yellow>傷害</color>，並為友軍恢復{3}生命值。",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "8%",
         "format": "P0",
         "raw": "sacrificeHpRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.08,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5285,8 +5452,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "按住施放鍵可蓄力心靈之箭。鬆開施放鍵時，會根據蓄力時間向附近敵人降下1~4<sprite=5>支心靈之箭。每支心靈之箭會對小範圍內的敵人造成<sprite=2><color=#FF8A2D>150%</color><sprite=5>的<color=yellow>黑暗傷害</color>。",
-    "rawDesc": "按住施放鍵可蓄力心靈之箭。鬆開施放鍵時，會根據蓄力時間向附近敵人降下{0}~{1}支心靈之箭。每支心靈之箭會對小範圍內的敵人造成{2}的<color=yellow>黑暗傷害</color>。",
+    "description": "按住施放鍵可蓄力心靈之箭。鬆開施放鍵時，會根據蓄力時間向附近敵人降下1~4<sprite=5>支心靈之箭。每支心靈之箭會對小範圍內的敵人造成<sprite=2><color=#FF8A2D>200%</color><sprite=5>的<color=yellow>暗影傷害</color>。",
+    "rawDesc": "按住施放鍵可蓄力心靈之箭。鬆開施放鍵時，會根據蓄力時間向附近敵人降下{0}~{1}支心靈之箭。每支心靈之箭會對小範圍內的敵人造成{2}的<color=yellow>暗影傷害</color>。",
     "rawDescVars": [
       {
         "rendered": "1",
@@ -5309,20 +5476,20 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.5,
+          "basicAD": 2.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       }
     ],
-    "shortDescription": "黑暗傷害",
+    "shortDescription": "暗影傷害",
     "rarity": "Character",
     "type": "Normal",
     "traveler": "Hero_Bismuth",
@@ -5335,14 +5502,14 @@
     "lore": "然而，小女孩所見的世界，有時卻可怕地扭曲。\n\n當她腦海裡那本舊書開始幻想惡作劇的故事時，天空中就會下起扭曲思緒的碎片，如同黑色的雨。\n\n被那場雨淋到的人，便會被困在最黑暗的心靈房間裡。",
     "achievementKey": "ACH_DOUBLE_VISION",
     "achievementName": "雙重視野",
-    "achievementDescription": "使用比斯穆特對敵人造成總計250000的黑暗傷害。"
+    "achievementDescription": "使用比斯穆特對敵人造成總計250000的暗影傷害。"
   },
   "St_QR_InfernalTales": {
     "name": "地獄火之說",
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在3秒內創造一個圍繞自身的火焰之環。接觸火焰環的敵人每秒會受到<sprite=1><color=#16D7FF>250%</color><sprite=5>的<color=yellow>火焰傷害</color>。",
+    "description": "在3秒內創造一個圍繞自身的火焰之環。接觸火焰環的敵人每秒會受到<sprite=1><color=#16D7FF>350%</color><sprite=5>的<color=yellow>火焰傷害</color>。",
     "rawDesc": "在{0}秒內創造一個圍繞自身的火焰之環。接觸火焰環的敵人每秒會受到{1}的<color=yellow>火焰傷害</color>。",
     "rawDescVars": [
       {
@@ -5353,7 +5520,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*5",
         "scalingType": "unknown",
@@ -5399,7 +5566,7 @@
           "basicAP": 1.2,
           "basicAD": 0.0,
           "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
+          "basicAddedMultiplierPerLevel": 0.1
         }
       },
       {
@@ -5483,10 +5650,10 @@
         "raw": "speedAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 12.0,
+          "basicConstant": 13.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 3.0,
+          "basicLvl": 2.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       }
@@ -5511,8 +5678,8 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在10秒內，刀劍纏繞著毀滅的<color=yellow>劍氣</color>。此期間無法<color=yellow>施放</color><color=yellow>記憶</color>，但<color=yellow>攻擊力</color>提升30%<sprite=5>，<color=yellow>攻擊距離</color>增加，每次<color=yellow>基本攻擊</color>時會發射<color=yellow>劍氣</color>，對敵人造成<sprite=1><color=#16D7FF>400%</color><sprite=5>的<color=yellow>黑暗傷害</color>。此狀態下每秒可進行1.5<sprite=5>次<color=yellow>基本攻擊</color>，不受其他攻擊速度效果影響。",
-    "rawDesc": "在{0}秒內，刀劍纏繞著毀滅的<color=yellow>劍氣</color>。此期間無法<color=yellow>施放</color><color=yellow>記憶</color>，但<color=yellow>攻擊力</color>提升{1}，<color=yellow>攻擊距離</color>增加，每次<color=yellow>基本攻擊</color>時會發射<color=yellow>劍氣</color>，對敵人造成{2}的<color=yellow>黑暗傷害</color>。此狀態下每秒可進行{3}次<color=yellow>基本攻擊</color>，不受其他攻擊速度效果影響。",
+    "description": "在10秒內，刀劍纏繞著毀滅的<color=yellow>劍氣</color>。此期間無法<color=yellow>施放</color><color=yellow>記憶</color>，但<color=yellow>攻擊力</color>提升30%<sprite=5>，<color=yellow>攻擊距離</color>增加，每次<color=yellow>基本攻擊</color>時會發射<color=yellow>劍氣</color>，對敵人造成<sprite=1><color=#16D7FF>400%</color><sprite=5>的<color=yellow>暗影傷害</color>。此狀態下每秒可進行1.5<sprite=5>次<color=yellow>基本攻擊</color>，不受其他攻擊速度效果影響。",
+    "rawDesc": "在{0}秒內，刀劍纏繞著毀滅的<color=yellow>劍氣</color>。此期間無法<color=yellow>施放</color><color=yellow>記憶</color>，但<color=yellow>攻擊力</color>提升{1}，<color=yellow>攻擊距離</color>增加，每次<color=yellow>基本攻擊</color>時會發射<color=yellow>劍氣</color>，對敵人造成{2}的<color=yellow>暗影傷害</color>。此狀態下每秒可進行{3}次<color=yellow>基本攻擊</color>，不受其他攻擊速度效果影響。",
     "rawDescVars": [
       {
         "rendered": "10",
@@ -5583,13 +5750,90 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "St_R_BaptismOfSun": {
+    "name": "太陽洗禮",
+    "cooldownTime": 7.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>維斯珀</color>接受太陽之力，引發爆炸，對周圍敵人造成<sprite=1><color=#16D7FF>200%</color><sprite=5>的<color=yellow>火焰傷害</color>並強制他們攻擊維斯珀。6秒內<color=yellow>攻擊速度</color>提升15%<sprite=5>，期間<color=yellow>攻擊</color>時會額外造成<sprite=2><color=#FF8A2D>40%</color><sprite=5>的<color=yellow>火焰傷害</color>。",
+    "rawDesc": "<color=yellow>維斯珀</color>接受太陽之力，引發爆炸，對周圍敵人造成{0}的<color=yellow>火焰傷害</color>並強制他們攻擊維斯珀。{1}秒內<color=yellow>攻擊速度</color>提升{2}，期間<color=yellow>攻擊</color>時會額外造成{3}的<color=yellow>火焰傷害</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "6",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 11.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 4.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>40%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "bonusDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.4,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "嘲諷、火焰、攻擊",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Vesper",
+    "travelerMemoryLocation": "R",
+    "tags": [
+      "Fire",
+      "Melee",
+      "Attack"
+    ],
+    "image": "St_R_BaptismOfSun.png",
+    "lore": "看啊！聖光將焚盡世間的污穢！\n在神聖的熔爐中，唯有埃爾皮洛斯大人的意志會如純金般留下。\n\n我們都將接受洗禮，就哀嚎著感謝吧！",
+    "achievementKey": "ACH_HOTTER_FIRE_WINS",
+    "achievementName": "更燒的火贏了",
+    "achievementDescription": "用維斯珀持有3個以上火焰記憶時，擊敗燃燒的巨人。"
+  },
   "St_R_BlackArbalest": {
     "name": "黑暗弩炮",
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "發射<color=yellow>穿透</color>敵人的弩炮，對敵人造成<sprite=2><color=#FF8A2D>250%</color><sprite=5>的<color=yellow>黑暗傷害</color>，並將其推開同時觸發<color=yellow>攻擊效果</color>。每<color=yellow>穿透</color>一個敵人，對下一個敵人造成的<color=yellow>傷害量</color>增加35%。",
-    "rawDesc": "發射<color=yellow>穿透</color>敵人的弩炮，對敵人造成{0}的<color=yellow>黑暗傷害</color>，並將其推開同時觸發<color=yellow>攻擊效果</color>。每<color=yellow>穿透</color>一個敵人，對下一個敵人造成的<color=yellow>傷害量</color>增加{1}。",
+    "description": "發射<color=yellow>穿透</color>敵人的弩炮，對敵人造成<sprite=2><color=#FF8A2D>250%</color><sprite=5>的<color=yellow>暗影傷害</color>，並將其推開同時觸發<color=yellow>攻擊效果</color>。每<color=yellow>穿透</color>一個敵人，對下一個敵人造成的<color=yellow>傷害量</color>增加35%。",
+    "rawDesc": "發射<color=yellow>穿透</color>敵人的弩炮，對敵人造成{0}的<color=yellow>暗影傷害</color>，並將其推開同時觸發<color=yellow>攻擊效果</color>。每<color=yellow>穿透</color>一個敵人，對下一個敵人造成的<color=yellow>傷害量</color>增加{1}。",
     "rawDescVars": [
       {
         "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
@@ -5618,7 +5862,7 @@
         }
       }
     ],
-    "shortDescription": "穿透的黑暗傷害",
+    "shortDescription": "穿透的暗影傷害",
     "rarity": "Rare",
     "type": "Normal",
     "traveler": "",
@@ -5626,7 +5870,8 @@
     "tags": [
       "Dark",
       "HardCC",
-      "Attack"
+      "Attack",
+      "Mobility"
     ],
     "image": "St_R_BlackArbalest.PNG",
     "lore": null,
@@ -5639,7 +5884,7 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "進入<color=yellow>無法阻擋</color>狀態，向前<color=yellow>衝刺</color>直到撞上牆壁。衝刺途中對碰撞到的敵人造成<sprite=1><color=#16D7FF>135%</color><sprite=5>的<color=yellow>傷害</color>並將其拖行，撞牆時釋放衝擊波，對敵人造成<sprite=1><color=#16D7FF>300%</color><sprite=5>的<color=yellow>傷害</color>並<color=yellow>暈眩</color>1.5秒。\n施放時獲得相當於<color=yellow>最大生命值</color>10%<sprite=5>的<color=yellow>護盾</color>，該護盾會在衝刺結束後1秒消失。",
+    "description": "進入<color=yellow>無法阻擋</color>狀態，向前<color=yellow>衝刺</color>直到撞上牆壁。衝刺途中對碰撞到的敵人造成<sprite=1><color=#16D7FF>135%</color><sprite=5>的<color=yellow>傷害</color>並將其拖行，撞牆時釋放衝擊波，對敵人造成<sprite=1><color=#16D7FF>420%</color><sprite=5>的<color=yellow>傷害</color>並<color=yellow>暈眩</color>1.5秒。\n施放時獲得相當於<color=yellow>最大生命值</color>20%<sprite=5>的<color=yellow>護盾</color>，該護盾會在衝刺結束後3秒消失。",
     "rawDesc": "進入<color=yellow>無法阻擋</color>狀態，向前<color=yellow>衝刺</color>直到撞上牆壁。衝刺途中對碰撞到的敵人造成{0}的<color=yellow>傷害</color>並將其拖行，撞牆時釋放衝擊波，對敵人造成{1}的<color=yellow>傷害</color>並<color=yellow>暈眩</color>{2}秒。\n施放時獲得相當於<color=yellow>最大生命值</color>{3}的<color=yellow>護盾</color>，該護盾會在衝刺結束後{4}秒消失。",
     "rawDescVars": [
       {
@@ -5656,13 +5901,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>420%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.0,
+          "basicAP": 4.2,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -5682,25 +5927,25 @@
         }
       },
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": "20%<sprite=5>",
         "format": "P0",
         "raw": "shieldMaxHpRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.08,
+          "basicConstant": 0.16,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.02,
+          "basicLvl": 0.04,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": "1",
+        "rendered": "3",
         "format": "#,##0.#",
         "raw": "shieldDisappearTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5730,7 +5975,7 @@
     "cooldownTime": 80.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在12秒內獲得<sprite=1><color=#16D7FF>150%</color><sprite=5>的護盾並增加30%的<color=yellow>技能威力</color>。在持續時間內可以最多3次重新使用<color=yellow>大災難</color>，在目標位置召喚隕石。隕石會使敵人短暫暈眩並造成<sprite=1><color=#16D7FF>250%</color><sprite=5>的<color=yellow>光明傷害</color>。",
+    "description": "在12秒內獲得<sprite=1><color=#16D7FF>150%</color><sprite=5>的護盾並增加30%<sprite=5>的<color=yellow>技能威力</color>。在持續時間內可以最多3次重新使用<color=yellow>大災難</color>，在目標位置召喚隕石。隕石會使敵人短暫暈眩並造成<sprite=1><color=#16D7FF>250%</color><sprite=5>的<color=yellow>光明傷害</color>。",
     "rawDesc": "在{0}秒內獲得{1}的護盾並增加{2}的<color=yellow>技能威力</color>。在持續時間內可以最多{3}次重新使用<color=yellow>大災難</color>，在目標位置召喚隕石。隕石會使敵人短暫暈眩並造成{4}的<color=yellow>光明傷害</color>。",
     "rawDescVars": [
       {
@@ -5760,15 +6005,15 @@
         }
       },
       {
-        "rendered": "30%",
+        "rendered": "30%<sprite=5>",
         "format": "#,##0'%'",
         "raw": "bonusApPercent",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 30.0,
+          "basicConstant": 25.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 5.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5922,6 +6167,73 @@
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
+  },
+  "St_R_DancingBlades": {
+    "name": "刀刃風暴",
+    "cooldownTime": 13.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "在指定區域召喚持續4秒的<color=yellow>刀刃風暴</color>。<color=yellow>刀刃風暴</color>會迅速斬擊周圍，每0.5秒對敵人造成<sprite=1><color=#16D7FF>85%</color><sprite=5>與<sprite=2><color=#FF8A2D>85%</color><sprite=5>中較高的<color=yellow>傷害</color>，並追蹤最近的敵人。",
+    "rawDesc": "在指定區域召喚持續{0}秒的<color=yellow>刀刃風暴</color>。<color=yellow>刀刃風暴</color>會迅速斬擊周圍，每{1}秒對敵人造成{2}與{3}中較高的<color=yellow>傷害</color>，並追蹤最近的敵人。",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "tickInterval",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "apDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.85,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "adDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.85,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "範圍持續傷害",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [],
+    "image": "St_R_DancingBlades.png",
+    "lore": null,
+    "achievementKey": "ACH_ETERNAL_REST",
+    "achievementName": "永恆安息",
+    "achievementDescription": "用基本攻擊對靈魂劍士完成共50次最後一擊。"
   },
   "St_R_DangerousTheory": {
     "name": "危險理論",
@@ -6821,7 +7133,7 @@
   "St_R_QuickTrigger": {
     "name": "快手",
     "cooldownTime": 14.0,
-    "maxCharges": 2,
+    "maxCharges": 3,
     "addedCharges": 1,
     "description": "快速發射3發穿透彈，可對最多3名敵人造成<sprite=2><color=#FF8A2D>120%</color><sprite=5>的傷害。",
     "rawDesc": "快速發射{0}發穿透彈，可對最多{1}名敵人造成{2}的傷害。",
@@ -7059,8 +7371,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "向前方發射5枚黑暗彈，每顆彈造成<sprite=2><color=#FF8A2D>100%</color><sprite=5>的<color=yellow>黑暗傷害</color>並觸發50%的<color=yellow>攻擊效果</color>。",
-    "rawDesc": "向前方發射{0}枚黑暗彈，每顆彈造成{1}的<color=yellow>黑暗傷害</color>並觸發{2}的<color=yellow>攻擊效果</color>。",
+    "description": "向前方發射5枚黑暗彈，每顆彈造成<sprite=2><color=#FF8A2D>100%</color><sprite=5>的<color=yellow>暗影傷害</color>並觸發50%的<color=yellow>攻擊效果</color>。",
+    "rawDesc": "向前方發射{0}枚黑暗彈，每顆彈造成{1}的<color=yellow>暗影傷害</color>並觸發{2}的<color=yellow>攻擊效果</color>。",
     "rawDescVars": [
       {
         "rendered": "5",
@@ -7102,7 +7414,7 @@
         }
       }
     ],
-    "shortDescription": "向前方散射黑暗傷害",
+    "shortDescription": "向前方散射暗影傷害",
     "rarity": "Rare",
     "type": "Normal",
     "traveler": "",
@@ -7240,8 +7552,8 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "吟唱0.7秒，期間<color=yellow>移動速度</color>提升30%<sprite=5>。吟唱結束後，向周圍隨機敵人發射5枚追蹤導彈，各造成<sprite=2><color=#FF8A2D>50%</color><sprite=5>點<color=yellow>黑暗傷害</color>，並在3秒內<color=yellow>攻擊速度</color>提升20%<sprite=5>。",
-    "rawDesc": "吟唱{0}秒，期間<color=yellow>移動速度</color>提升{1}。吟唱結束後，向周圍隨機敵人發射{2}枚追蹤導彈，各造成{3}點<color=yellow>黑暗傷害</color>，並在{4}秒內<color=yellow>攻擊速度</color>提升{5}。",
+    "description": "吟唱0.7秒，期間<color=yellow>移動速度</color>提升30%<sprite=5>。吟唱結束後，向周圍隨機敵人發射5枚追蹤導彈，各造成<sprite=2><color=#FF8A2D>50%</color><sprite=5>點<color=yellow>暗影傷害</color>，並在3秒內<color=yellow>攻擊速度</color>提升20%<sprite=5>。",
+    "rawDesc": "吟唱{0}秒，期間<color=yellow>移動速度</color>提升{1}。吟唱結束後，向周圍隨機敵人發射{2}枚追蹤導彈，各造成{3}點<color=yellow>暗影傷害</color>，並在{4}秒內<color=yellow>攻擊速度</color>提升{5}。",
     "rawDescVars": [
       {
         "rendered": "0.7",
@@ -7322,7 +7634,7 @@
         }
       }
     ],
-    "shortDescription": "黑暗傷害、攻擊速度增加",
+    "shortDescription": "暗影傷害、攻擊速度增加",
     "rarity": "Rare",
     "type": "Normal",
     "traveler": "",
@@ -7342,8 +7654,8 @@
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "快速移動後向周圍敵人發射3個黑暗碎片。每個碎片造成<sprite=2><color=#FF8A2D>65%</color><sprite=5>的<color=yellow>黑暗傷害</color>並觸發50%的<color=yellow>攻擊效果</color>。",
-    "rawDesc": "快速移動後向周圍敵人發射{0}個黑暗碎片。每個碎片造成{1}的<color=yellow>黑暗傷害</color>並觸發{2}的<color=yellow>攻擊效果</color>。",
+    "description": "快速移動後向周圍敵人發射3個黑暗碎片。每個碎片造成<sprite=2><color=#FF8A2D>65%</color><sprite=5>的<color=yellow>暗影傷害</color>並觸發50%的<color=yellow>攻擊效果</color>。",
+    "rawDesc": "快速移動後向周圍敵人發射{0}個黑暗碎片。每個碎片造成{1}的<color=yellow>暗影傷害</color>並觸發{2}的<color=yellow>攻擊效果</color>。",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -7470,9 +7782,22 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>長按</color>施放鍵時，充能靜電。充能完成後，引爆靜電，根據充能時間對敵人造成<sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>780%</color><sprite=5>的<color=yellow>光明傷害</color>，並將其推開且降低<color=yellow>移動速度</color>。\n充能1秒後，傷害量和範圍達到最大值。",
-    "rawDesc": "<color=yellow>長按</color>施放鍵時，充能靜電。充能完成後，引爆靜電，根據充能時間對敵人造成{0}~{1}的<color=yellow>光明傷害</color>，並將其推開且降低<color=yellow>移動速度</color>。\n充能{2}秒後，傷害量和範圍達到最大值。",
+    "description": "<color=yellow>長按</color>施放鍵可為靜電充能，並獲得40<sprite=5>點防禦力。放開按鍵時，會引爆靜電，根據充能時間對敵人造成<sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>780%</color><sprite=5>點<color=yellow>光明傷害</color>、將其推開，並在2秒內降低60%的<color=yellow>移動速度</color>。獲得的防禦力會在引爆靜電1秒後消失。\n\n充能1秒可使傷害量與範圍達到最大值。",
+    "rawDesc": "<color=yellow>長按</color>施放鍵可為靜電充能，並獲得{0}點防禦力。放開按鍵時，會引爆靜電，根據充能時間對敵人造成{1}~{2}點<color=yellow>光明傷害</color>、將其推開，並在{3}秒內降低{4}的<color=yellow>移動速度</color>。獲得的防禦力會在引爆靜電{5}秒後消失。\n\n充能{6}秒可使傷害量與範圍達到最大值。",
     "rawDescVars": [
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 37.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 3.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
       {
         "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
         "format": "#,##0",
@@ -7497,6 +7822,45 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "slowDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "60%",
+        "format": "#,##0'%'",
+        "raw": "slowAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 60.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "armorLingerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
         }
       },
       {
@@ -7908,8 +8272,8 @@
     "cooldownTime": 15.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在6秒內接受強烈的憤怒。在此期間無法<color=yellow>施放</color>其他記憶，但持續揮舞爪子對敵人造成<sprite=2><color=#FF8A2D>100%</color><sprite=5>的<color=yellow>黑暗傷害</color>，並<color=yellow>恢復</color>自身<sprite=2><color=#FF8A2D>13%</color><sprite=5>的生命值。當自身生命值降至40%以下時，恢復量增加150%。對首個命中的目標發動<color=yellow>攻擊效果</color>。<color=yellow>攻擊速度</color>越高，揮舞速度越快。",
-    "rawDesc": "在{0}秒內接受強烈的憤怒。在此期間無法<color=yellow>施放</color>其他記憶，但持續揮舞爪子對敵人造成{1}的<color=yellow>黑暗傷害</color>，並<color=yellow>恢復</color>自身{2}的生命值。當自身生命值降至{3}以下時，恢復量增加{4}。對首個命中的目標發動<color=yellow>攻擊效果</color>。<color=yellow>攻擊速度</color>越高，揮舞速度越快。",
+    "description": "在6秒內接受強烈的憤怒。在此期間無法<color=yellow>施放</color>其他記憶，但持續揮舞爪子對敵人造成<sprite=2><color=#FF8A2D>100%</color><sprite=5>的<color=yellow>暗影傷害</color>，並<color=yellow>恢復</color>自身<sprite=2><color=#FF8A2D>13%</color><sprite=5>的生命值。當自身生命值降至40%以下時，恢復量增加150%。對首個命中的目標發動<color=yellow>攻擊效果</color>。<color=yellow>攻擊速度</color>越高，揮舞速度越快。",
+    "rawDesc": "在{0}秒內接受強烈的憤怒。在此期間無法<color=yellow>施放</color>其他記憶，但持續揮舞爪子對敵人造成{1}的<color=yellow>暗影傷害</color>，並<color=yellow>恢復</color>自身{2}的生命值。當自身生命值降至{3}以下時，恢復量增加{4}。對首個命中的目標發動<color=yellow>攻擊效果</color>。<color=yellow>攻擊速度</color>越高，揮舞速度越快。",
     "rawDescVars": [
       {
         "rendered": "6",
@@ -8000,8 +8364,8 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "短暫進入<color=yellow>無敵</color>狀態並吟唱後，向前方發出強大的吼聲，對所有敵人造成<sprite=2><color=#FF8A2D>1,300%</color><sprite=5>的<color=yellow>黑暗傷害</color>，並使其在3秒內<color=yellow>暈眩</color>。\n\n目前每增加1級<color=yellow>追蹤等級</color>，此<color=yellow>傷害量</color>增加25%。",
-    "rawDesc": "短暫進入<color=yellow>無敵</color>狀態並吟唱後，向前方發出強大的吼聲，對所有敵人造成{0}的<color=yellow>黑暗傷害</color>，並使其在{1}秒內<color=yellow>暈眩</color>。\n\n目前每增加1級<color=yellow>追蹤等級</color>，此<color=yellow>傷害量</color>增加{2}。",
+    "description": "短暫進入<color=yellow>無敵</color>狀態並吟唱後，向前方發出強大的吼聲，對所有敵人造成<sprite=2><color=#FF8A2D>1,300%</color><sprite=5>的<color=yellow>暗影傷害</color>，並使其在3秒內<color=yellow>暈眩</color>。\n\n目前每增加1級<color=yellow>追蹤等級</color>，此<color=yellow>傷害量</color>增加25%。",
+    "rawDesc": "短暫進入<color=yellow>無敵</color>狀態並吟唱後，向前方發出強大的吼聲，對所有敵人造成{0}的<color=yellow>暗影傷害</color>，並使其在{1}秒內<color=yellow>暈眩</color>。\n\n目前每增加1級<color=yellow>追蹤等級</color>，此<color=yellow>傷害量</color>增加{2}。",
     "rawDescVars": [
       {
         "rendered": "<sprite=2><color=#FF8A2D>1,300%</color><sprite=5>",
@@ -8043,7 +8407,7 @@
         }
       }
     ],
-    "shortDescription": "終極技、強大的範圍黑暗傷害",
+    "shortDescription": "終極技、強大的範圍暗影傷害",
     "rarity": "Unique",
     "type": "Ultimate",
     "traveler": "",

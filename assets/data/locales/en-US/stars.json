@@ -239,15 +239,15 @@
       70,
       70,
       80,
-      0
+      80
     ],
     "requiredLevel": 55,
     "isRequiredLevelTotalMastery": true,
-    "description": "All damage you deal to enemies affected by <color=yellow>all 4 elements</color> is increased by 12%<sprite=5>.",
+    "description": "All damage you deal to enemies affected by <color=yellow>all 4 elements</color> is increased by 18%<sprite=5>.",
     "rawDesc": "All damage you deal to enemies affected by <color=yellow>all 4 elements</color> is increased by {0}.",
     "rawDescVars": [
       {
-        "rendered": "12%<sprite=5>",
+        "rendered": "18%<sprite=5>",
         "format": "P0",
         "raw": "ampOnAllElemental",
         "scalingType": "star",
@@ -256,10 +256,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.12,
-            0.14,
-            0.16,
-            0.18
+            0.18,
+            0.2,
+            0.22,
+            0.24
           ],
           "strengthScaling": "Multiply"
         }
@@ -395,7 +395,7 @@
     ],
     "requiredLevel": 50,
     "isRequiredLevelTotalMastery": true,
-    "description": "Reduces <color=yellow>Attack Speed</color> by 20%. Increases <color=yellow>Attack Damage</color> by 5<sprite=5>.",
+    "description": "Reduces <color=yellow>Attack Speed</color> by 20%. Increases <color=yellow>Attack Damage</color> by 8<sprite=5>.",
     "rawDesc": "Reduces <color=yellow>Attack Speed</color> by {0}. Increases <color=yellow>Attack Damage</color> by {1}.",
     "rawDescVars": [
       {
@@ -412,7 +412,7 @@
         }
       },
       {
-        "rendered": "5<sprite=5>",
+        "rendered": "8<sprite=5>",
         "format": "#,##0",
         "raw": "adBonus",
         "scalingType": "star",
@@ -421,10 +421,10 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            5.0,
-            7.0,
-            9.0,
-            12.0
+            8.0,
+            10.0,
+            12.0,
+            15.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -573,11 +573,11 @@
     ],
     "requiredLevel": 35,
     "isRequiredLevelTotalMastery": true,
-    "description": "Increases <color=yellow>Ability Power</color> by 10<sprite=5> while completing the first 2 worlds.",
+    "description": "Increases <color=yellow>Ability Power</color> by 14<sprite=5> while completing the first 3 worlds.",
     "rawDesc": "Increases <color=yellow>Ability Power</color> by {0} while completing the first {1} worlds.",
     "rawDescVars": [
       {
-        "rendered": "10<sprite=5>",
+        "rendered": "14<sprite=5>",
         "format": "#,##0",
         "raw": "bonusStatAmount",
         "scalingType": "star",
@@ -586,21 +586,21 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            10.0,
-            12.0,
             14.0,
-            16.0
+            16.0,
+            18.0,
+            20.0
           ],
           "strengthScaling": "Multiply"
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
         "raw": "buffedZoneCount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -624,11 +624,11 @@
     ],
     "requiredLevel": 45,
     "isRequiredLevelTotalMastery": true,
-    "description": "Increases <color=yellow>Attack Damage</color> by 10<sprite=5> until you complete the first 2 world.",
+    "description": "Increases <color=yellow>Attack Damage</color> by 14<sprite=5> until you complete the first 3 world.",
     "rawDesc": "Increases <color=yellow>Attack Damage</color> by {0} until you complete the first {1} world.",
     "rawDescVars": [
       {
-        "rendered": "10<sprite=5>",
+        "rendered": "14<sprite=5>",
         "format": "#,##0",
         "raw": "bonusStatAmount",
         "scalingType": "star",
@@ -637,21 +637,21 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            10.0,
-            12.0,
             14.0,
-            16.0
+            16.0,
+            18.0,
+            20.0
           ],
           "strengthScaling": "Multiply"
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
         "raw": "buffedZoneCount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -700,6 +700,44 @@
       }
     ],
     "image": "Se_Star_D_UltimateChargeSpeed.png"
+  },
+  "Se_Star_I_DismantleReroll": {
+    "name": "Trading Fates",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      100,
+      90,
+      100
+    ],
+    "requiredLevel": 60,
+    "isRequiredLevelTotalMastery": true,
+    "description": "The first time you <color=yellow>Dismantle</color> an Essence or Memory, it is replaced with a random item of the same rarity instead of being dismantled. Can trigger up to 1<sprite=5> times per world.",
+    "rawDesc": "The first time you <color=yellow>Dismantle</color> an Essence or Memory, it is replaced with a random item of the same rarity instead of being dismantled. Can trigger up to {0} times per world.",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxUses",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": true,
+          "clampMin": 1.0,
+          "clampMax": 100.0,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_DismantleReroll.png"
   },
   "Se_Star_I_AdditionalChaosChance": {
     "name": "Primordial Chaos",
@@ -870,6 +908,80 @@
     ],
     "image": "Se_Star_I_FirstGemUpgrade.png"
   },
+  "Se_Star_I_GemOnMiniBossKill": {
+    "name": "Bizarre Spoils",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      110,
+      90,
+      100,
+      110
+    ],
+    "requiredLevel": 70,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Defeating a <color=yellow>Mini Boss</color> has a 40%<sprite=5> chance to grant a random Essence.",
+    "rawDesc": "Defeating a <color=yellow>Mini Boss</color> has a {0} chance to grant a random Essence.",
+    "rawDescVars": [
+      {
+        "rendered": "40%<sprite=5>",
+        "format": "P0",
+        "raw": "chance",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.4,
+            0.6,
+            0.8,
+            1.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_GemOnMiniBossKill.png"
+  },
+  "Se_Star_I_GoldPerCrit": {
+    "name": "Pickpocket",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      90,
+      80,
+      90
+    ],
+    "requiredLevel": 55,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Gain 0.7<sprite=5> Gold the first time a <color=yellow>Critical Attack</color> hits each enemy.",
+    "rawDesc": "Gain {0} Gold the first time a <color=yellow>Critical Attack</color> hits each enemy.",
+    "rawDescVars": [
+      {
+        "rendered": "0.7<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "goldAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.7,
+            1.0,
+            1.3
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_GoldPerCrit.png"
+  },
   "Se_Star_I_KillGoldBonus": {
     "name": "Wealth Accumulation",
     "lore": null,
@@ -907,6 +1019,44 @@
       }
     ],
     "image": "Se_Star_I_KillGoldBonus.png"
+  },
+  "Se_Star_I_MawDiscountAndProtection": {
+    "name": "Sparkling Clean Maw",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      80,
+      60,
+      80,
+      100
+    ],
+    "requiredLevel": 65,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Reduces the cost of the <color=yellow>Maw of Doom</color> by 20%<sprite=5>. The Maw no longer destroys items it consumes, instead resetting their level or quality.",
+    "rawDesc": "Reduces the cost of the <color=yellow>Maw of Doom</color> by {0}. The Maw no longer destroys items it consumes, instead resetting their level or quality.",
+    "rawDescVars": [
+      {
+        "rendered": "20%<sprite=5>",
+        "format": "P0",
+        "raw": "discountRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.2,
+            0.3,
+            0.4,
+            0.5
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_MawDiscountAndProtection.png"
   },
   "Se_Star_I_MoreShopItems": {
     "name": "Monstrous Charm",
@@ -1153,6 +1303,44 @@
     ],
     "image": "Se_Star_L_Armor.png"
   },
+  "Se_Star_L_ArmorOnTravel": {
+    "name": "Ragged Armor",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      85,
+      65,
+      75,
+      85
+    ],
+    "requiredLevel": 60,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Gain 2.5<sprite=5> <color=yellow>Armor</color> every time you enter a new world.",
+    "rawDesc": "Gain {0} <color=yellow>Armor</color> every time you enter a new world.",
+    "rawDescVars": [
+      {
+        "rendered": "2.5<sprite=5>",
+        "format": "#,##0.#",
+        "raw": "armorAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            2.5,
+            3.0,
+            3.5,
+            4.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_ArmorOnTravel.png"
+  },
   "Se_Star_L_DamageReductionFromChilled": {
     "name": "Cold Affinity",
     "lore": null,
@@ -1167,11 +1355,11 @@
     ],
     "requiredLevel": 40,
     "isRequiredLevelTotalMastery": true,
-    "description": "<color=yellow>Damage taken</color> from enemies afflicted with <color=yellow>Chill</color> is reduced by 12%<sprite=5>.",
+    "description": "<color=yellow>Damage taken</color> from enemies afflicted with <color=yellow>Chill</color> is reduced by 25%<sprite=5>.",
     "rawDesc": "<color=yellow>Damage taken</color> from enemies afflicted with <color=yellow>Chill</color> is reduced by {0}.",
     "rawDescVars": [
       {
-        "rendered": "12%<sprite=5>",
+        "rendered": "25%<sprite=5>",
         "format": "P0",
         "raw": "reductionAmount",
         "scalingType": "star",
@@ -1180,10 +1368,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.12,
-            0.15,
-            0.18,
-            0.21
+            0.25,
+            0.3,
+            0.35,
+            0.4
           ],
           "strengthScaling": "Multiply"
         }
@@ -1294,11 +1482,11 @@
     ],
     "requiredLevel": 35,
     "isRequiredLevelTotalMastery": true,
-    "description": "Reduces the duration of <color=yellow>elemental effects</color> on you by 25%<sprite=5>. For <color=yellow>Burn</color>, damage is reduced instead.",
+    "description": "Reduces the duration of <color=yellow>elemental effects</color> on you by 40%<sprite=5>. For <color=yellow>Burn</color>, damage is reduced instead.",
     "rawDesc": "Reduces the duration of <color=yellow>elemental effects</color> on you by {0}. For <color=yellow>Burn</color>, damage is reduced instead.",
     "rawDescVars": [
       {
-        "rendered": "25%<sprite=5>",
+        "rendered": "40%<sprite=5>",
         "format": "P0",
         "raw": "durationReduction",
         "scalingType": "star",
@@ -1307,10 +1495,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.25,
-            0.3,
-            0.35,
-            0.4
+            0.4,
+            0.45,
+            0.5,
+            0.55
           ],
           "strengthScaling": "Multiply"
         }
@@ -1393,6 +1581,95 @@
       }
     ],
     "image": "Se_Star_L_GuidanceShrineDiscount.png"
+  },
+  "Se_Star_L_HealOnAttack": {
+    "name": "Wicked Vitality",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      80,
+      70,
+      80,
+      90
+    ],
+    "requiredLevel": 45,
+    "isRequiredLevelTotalMastery": true,
+    "description": "<color=yellow>Basic Attacks</color> restore 0.40%<sprite=5> of your Max Health on hit. This healing is increased by 150% on a Critical Strike.",
+    "rawDesc": "<color=yellow>Basic Attacks</color> restore {0} of your Max Health on hit. This healing is increased by {1} on a Critical Strike.",
+    "rawDescVars": [
+      {
+        "rendered": "0.40%<sprite=5>",
+        "format": "P2",
+        "raw": "healRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.004,
+            0.005,
+            0.006,
+            0.007
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "150%",
+        "format": "P0",
+        "raw": "critAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_L_HealOnAttack.png"
+  },
+  "Se_Star_L_HealOnKill": {
+    "name": "Combat First Aid",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      70,
+      50,
+      65,
+      80
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Restore 1.00%<sprite=5> of your Max Health whenever you <color=yellow>kill</color> an enemy.",
+    "rawDesc": "Restore {0} of your Max Health whenever you <color=yellow>kill</color> an enemy.",
+    "rawDescVars": [
+      {
+        "rendered": "1.00%<sprite=5>",
+        "format": "P2",
+        "raw": "healRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.01,
+            0.015,
+            0.02,
+            0.025
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_HealOnKill.png"
   },
   "Se_Star_L_MaxHealth": {
     "name": "Empowered Persistence",
@@ -1484,11 +1761,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": true,
-    "description": "Increases the healing amount of <color=yellow>Health Potions</color> by 40%<sprite=5>.",
+    "description": "Increases the healing amount of <color=yellow>Health Potions</color> by 55%<sprite=5>.",
     "rawDesc": "Increases the healing amount of <color=yellow>Health Potions</color> by {0}.",
     "rawDescVars": [
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": "55%<sprite=5>",
         "format": "P0",
         "raw": "ampAmount",
         "scalingType": "star",
@@ -1497,16 +1774,54 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.4,
-            0.5,
-            0.6,
-            0.7
+            0.55,
+            0.65,
+            0.75,
+            0.85
           ],
           "strengthScaling": "Multiply"
         }
       }
     ],
     "image": "Se_Star_L_PotionHealAmount.png"
+  },
+  "Se_Star_L_PotionOnBuyOrSell": {
+    "name": "Humble Freebie",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      80,
+      90
+    ],
+    "requiredLevel": 70,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Gain a <color=yellow>Health Potion</color> when you buy or sell an item at the shop. This can trigger up to 1<sprite=5> times per merchant.",
+    "rawDesc": "Gain a <color=yellow>Health Potion</color> when you buy or sell an item at the shop. This can trigger up to {0} times per merchant.",
+    "rawDescVars": [
+      {
+        "rendered": "1<sprite=5>",
+        "format": "#,##0",
+        "raw": "maxUses",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": true,
+          "clampMin": 1.0,
+          "clampMax": 100.0,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_PotionOnBuyOrSell.png"
   },
   "Se_Star_L_ReceivedHealingAndShieldBonus": {
     "name": "Regenerative Skin",
@@ -1814,16 +2129,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Chain Reaction</color> no longer heals, but its cooldown is reduced by 10% each time an enemy dies from the sigil.",
+    "description": "<color=yellow>Chain Reaction</color> no longer heals, but its cooldown is reduced by 15% each time an enemy dies from the sigil.",
     "rawDesc": "<color=yellow>Chain Reaction</color> no longer heals, but its cooldown is reduced by {0} each time an enemy dies from the sigil.",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "15%",
         "format": "P0",
         "raw": "cooldownReductionRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.15,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1887,16 +2202,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Dangerous Theory</color>'s cooldown increases by 2 seconds and it can only be used as an empowered cast, but it empowers 2 basic attacks.",
+    "description": "<color=yellow>Dangerous Theory</color>'s cooldown increases by 1 seconds and it can only be used as an empowered cast, but it empowers 2 basic attacks.",
     "rawDesc": "<color=yellow>Dangerous Theory</color>'s cooldown increases by {0} seconds and it can only be used as an empowered cast, but it empowers {1} basic attacks.",
     "rawDescVars": [
       {
-        "rendered": "2",
+        "rendered": "1",
         "format": "#,##0.#",
         "raw": "cooldownPenalty",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2301,11 +2616,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "When entering a world, <color=yellow>reveal</color> 2<sprite=5> random locations.",
+    "description": "When entering a world, <color=yellow>reveal</color> 3<sprite=5> random locations.",
     "rawDesc": "When entering a world, <color=yellow>reveal</color> {0} random locations.",
     "rawDescVars": [
       {
-        "rendered": "2<sprite=5>",
+        "rendered": "3<sprite=5>",
         "format": "#,##0",
         "raw": "locationCount",
         "scalingType": "star",
@@ -2314,9 +2629,9 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            2.0,
             3.0,
-            4.0
+            4.0,
+            5.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -2375,11 +2690,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "Increases <color=yellow>Armor</color> by 15<sprite=5> when your Health is below 30%.",
+    "description": "Increases <color=yellow>Armor</color> by 30<sprite=5> when your Health is below 40%.",
     "rawDesc": "Increases <color=yellow>Armor</color> by {0} when your Health is below {1}.",
     "rawDescVars": [
       {
-        "rendered": "15<sprite=5>",
+        "rendered": "30<sprite=5>",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "star",
@@ -2388,20 +2703,20 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            15.0,
-            20.0,
-            25.0
+            30.0,
+            35.0,
+            40.0
           ],
           "strengthScaling": "Multiply"
         }
       },
       {
-        "rendered": "30%",
+        "rendered": "40%",
         "format": "P0",
         "raw": "healthRatioThreshold",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.3,
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2524,8 +2839,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "When you recover Health, <color=yellow>heal</color> the nearby ally with the lowest Health for 20%<sprite=5> of the amount healed.",
-    "rawDesc": "When you recover Health, <color=yellow>heal</color> the nearby ally with the lowest Health for {0} of the amount healed.",
+    "description": "When you recover Health, <color=yellow>heal</color> a nearby ally other than yourself with the lowest Health for 20%<sprite=5> of the amount healed.",
+    "rawDesc": "When you recover Health, <color=yellow>heal</color> a nearby ally other than yourself with the lowest Health for {0} of the amount healed.",
     "rawDescVars": [
       {
         "rendered": "20%<sprite=5>",
@@ -2549,7 +2864,7 @@
   },
   "Se_Star_Aurena_L_SpeedOnDamage": {
     "name": "Eel-like Agility",
-    "lore": "Her graceful and elegant movements, uncharacteristic of a scholar, are one of the physical traits of the Anguillian.",
+    "lore": "Her graceful and elegant movements, uncharacteristic of a scholar, are one of the physical traits of Anguillians.",
     "category": "Life",
     "heroType": "Hero_Aurena",
     "maxLevel": 4,
@@ -2837,7 +3152,7 @@
   },
   "Se_Star_Bismuth_D_SkillHasteAndAutoCast": {
     "name": "Self-Writing Story",
-    "lore": null,
+    "lore": "Sometimes, the story gets so exciting that it turns to the next page all by itself. The girl simply needs to sit back and watch the wonderful tales the book writes unfold.",
     "category": "Destruction",
     "heroType": "Hero_Bismuth",
     "maxLevel": 4,
@@ -2849,11 +3164,11 @@
     ],
     "requiredLevel": 30,
     "isRequiredLevelTotalMastery": false,
-    "description": "Increases <color=yellow>Memory Haste</color> by 15<sprite=5> and most Memories will be <color=yellow>automatically cast</color> during combat.",
+    "description": "Increases <color=yellow>Memory Haste</color> by 8<sprite=5> and most Memories will be <color=yellow>automatically cast</color> during combat.",
     "rawDesc": "Increases <color=yellow>Memory Haste</color> by {0} and most Memories will be <color=yellow>automatically cast</color> during combat.",
     "rawDescVars": [
       {
-        "rendered": "15<sprite=5>",
+        "rendered": "8<sprite=5>",
         "format": "#,##0",
         "raw": "bonusAmount",
         "scalingType": "star",
@@ -2862,10 +3177,10 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            15.0,
-            20.0,
-            25.0,
-            30.0
+            8.0,
+            12.0,
+            16.0,
+            20.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -2927,16 +3242,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Increases the maximum number of arrows for <color=yellow>Distorted Mind</color> by 4, but you cannot move while charging.",
+    "description": "Increases the maximum number of arrows for <color=yellow>Distorted Mind</color> by 7, but you cannot move while charging.",
     "rawDesc": "Increases the maximum number of arrows for <color=yellow>Distorted Mind</color> by {0}, but you cannot move while charging.",
     "rawDescVars": [
       {
-        "rendered": "4",
+        "rendered": "7",
         "format": "#,##0",
         "raw": "increased",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 4.0,
+          "basicConstant": 7.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3196,7 +3511,7 @@
   },
   "Se_Star_Bismuth_F_VH_FullCharge": {
     "name": "No Longer Afraid",
-    "lore": null,
+    "lore": "Now, no matter how many villains appear, it's okay. The girl's hands will always be filled with the courage to defeat them!",
     "category": "Flexible",
     "heroType": "Hero_Bismuth",
     "maxLevel": 1,
@@ -3205,8 +3520,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Valiant Heart</color>'s charges now fully restores all charges at once.",
-    "rawDesc": "<color=yellow>Valiant Heart</color>'s charges now fully restores all charges at once.",
+    "description": "<color=yellow>Valiant Heart</color>'s charges now fully restore all at once.",
+    "rawDesc": "<color=yellow>Valiant Heart</color>'s charges now fully restore all at once.",
     "rawDescVars": [],
     "image": "Se_Star_Bismuth_F_VH_FullCharge.png"
   },
@@ -3221,9 +3536,23 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Using <color=yellow>Distorting Sprint</color> resets the cooldown of <color=yellow>Valiant Heart</color>.",
-    "rawDesc": "Using <color=yellow>Distorting Sprint</color> resets the cooldown of <color=yellow>Valiant Heart</color>.",
-    "rawDescVars": [],
+    "description": "Using <color=yellow>Distorting Sprint</color> resets the cooldown of <color=yellow>Valiant Heart</color>, but it only hits up to 2 enemies.",
+    "rawDesc": "Using <color=yellow>Distorting Sprint</color> resets the cooldown of <color=yellow>Valiant Heart</color>, but it only hits up to {0} enemies.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "targetLimitCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Bismuth_F_VH_ResetOnDodge.png"
   },
   "Se_Star_Bismuth_F_VH_Shield": {
@@ -3384,7 +3713,7 @@
   },
   "Se_Star_Bismuth_I_RevealWorld": {
     "name": "Mind's Eye",
-    "lore": null,
+    "lore": "When the girl looked at the world through her book, gingerbread houses waiting with the next adventure would appear in places that had been empty before.",
     "category": "Imagination",
     "heroType": "Hero_Bismuth",
     "maxLevel": 3,
@@ -3618,7 +3947,7 @@
   },
   "Se_Star_Bismuth_L_ContinuousSpeed": {
     "name": "Light Footsteps",
-    "lore": null,
+    "lore": "Worried about the girl's tiny bare feet? Don't be. She's not walking on rough ground—she's skipping merrily across fluffy clouds on her journey!",
     "category": "Life",
     "heroType": "Hero_Bismuth",
     "maxLevel": 4,
@@ -3817,7 +4146,7 @@
   },
   "Se_Star_Husk_D_DamageAmpOnLowHpTarget": {
     "name": "Merciless",
-    "lore": null,
+    "lore": "To one devoid of emotion, showing mercy to enemies is nothing but the height of inefficiency.",
     "category": "Destruction",
     "heroType": "Hero_Husk",
     "maxLevel": 4,
@@ -4162,16 +4491,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Annihilation Stance</color> no longer fires sword energy but attacks 50% more frequently.",
+    "description": "<color=yellow>Annihilation Stance</color> no longer fires sword energy but attacks 100% more frequently.",
     "rawDesc": "<color=yellow>Annihilation Stance</color> no longer fires sword energy but attacks {0} more frequently.",
     "rawDescVars": [
       {
-        "rendered": "50%",
+        "rendered": "100%",
         "format": "P0",
         "raw": "speedAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4183,7 +4512,7 @@
   },
   "Se_Star_Husk_F_LA_DodgeResetOnRed": {
     "name": "Flow of Energy",
-    "lore": null,
+    "lore": "He surrenders to the flow and takes his steps—flawless and detached.",
     "category": "Flexible",
     "heroType": "Hero_Husk",
     "maxLevel": 1,
@@ -4320,7 +4649,7 @@
   },
   "Se_Star_Husk_I_ShopIntimidation": {
     "name": "Creepy One-Eyed Doll",
-    "lore": null,
+    "lore": "He believes intimidation is the most efficient and convenient method. Of course, it doesn't work on the braver Jonas.",
     "category": "Imagination",
     "heroType": "Hero_Husk",
     "maxLevel": 3,
@@ -4490,7 +4819,7 @@
   },
   "Se_Star_Husk_L_DodgeCooldownOnKillWithEmptyCharges": {
     "name": "Transcendence",
-    "lore": null,
+    "lore": "A puppet's body freed from emotional chains, efficient and perfect movements, and the center of a sea of blood.",
     "category": "Life",
     "heroType": "Hero_Husk",
     "maxLevel": 2,
@@ -4746,16 +5075,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Hand Cannon</color> always knocks enemies back and reduces their <color=yellow>Movement Speed</color> by 50% for 2 seconds.",
+    "description": "<color=yellow>Hand Cannon</color> always knocks enemies back and reduces their <color=yellow>Movement Speed</color> by 75% for 4 seconds.",
     "rawDesc": "<color=yellow>Hand Cannon</color> always knocks enemies back and reduces their <color=yellow>Movement Speed</color> by {0} for {1} seconds.",
     "rawDescVars": [
       {
-        "rendered": "50%",
+        "rendered": "75%",
         "format": "#,##0'%'",
         "raw": "slowAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 50.0,
+          "basicConstant": 75.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4763,12 +5092,12 @@
         }
       },
       {
-        "rendered": "2",
+        "rendered": "4",
         "format": "#,##0.#",
         "raw": "slowDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4789,16 +5118,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Increases the damage dealt by <color=yellow>Hand Cannon</color> to nearby enemies by 80%.",
+    "description": "Increases the damage dealt by <color=yellow>Hand Cannon</color> to nearby enemies by 150%.",
     "rawDesc": "Increases the damage dealt by <color=yellow>Hand Cannon</color> to nearby enemies by {0}.",
     "rawDescVars": [
       {
-        "rendered": "80%",
+        "rendered": "150%",
         "format": "P0",
         "raw": "nearDamageAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.8,
+          "basicConstant": 1.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5040,8 +5369,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Quick Draw</color>'s charge count is reduced to 1, but fires 6 shots at once.",
-    "rawDesc": "<color=yellow>Quick Draw</color>'s charge count is reduced to 1, but fires 6 shots at once.",
+    "description": "<color=yellow>Quick Draw</color>'s charge count is reduced by 1, but it fires 6 shots.",
+    "rawDesc": "<color=yellow>Quick Draw</color>'s charge count is reduced by 1, but it fires 6 shots.",
     "rawDescVars": [],
     "image": "Se_Star_Lacerta_F_QT_RapidFire.png"
   },
@@ -5085,7 +5414,7 @@
   },
   "Se_Star_Lacerta_I_BossBounty": {
     "name": "Wild Monster Hunter",
-    "lore": null,
+    "lore": "<i>\"Killing Monsters\"</i>",
     "category": "Imagination",
     "heroType": "Hero_Lacerta",
     "maxLevel": 3,
@@ -5096,11 +5425,11 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Gain an additional 30<sprite=5> Gold each time you defeat a <color=yellow>Boss</color>.",
+    "description": "Gain an additional 45<sprite=5> Gold each time you defeat a <color=yellow>Boss</color>.",
     "rawDesc": "Gain an additional {0} Gold each time you defeat a <color=yellow>Boss</color>.",
     "rawDescVars": [
       {
-        "rendered": "30<sprite=5>",
+        "rendered": "45<sprite=5>",
         "format": "#,##0",
         "raw": "bonusGold",
         "scalingType": "star",
@@ -5109,9 +5438,9 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            30.0,
             45.0,
-            60.0
+            60.0,
+            75.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -5231,7 +5560,7 @@
   },
   "Se_Star_Lacerta_L_SpeedAfterDodge": {
     "name": "Flexible Lizard",
-    "lore": null,
+    "lore": "The Lizardman's remarkably flexible body is a tremendous asset in maintaining effective firing angles in any situation.",
     "category": "Life",
     "heroType": "Hero_Lacerta",
     "maxLevel": 3,
@@ -5280,7 +5609,7 @@
   },
   "Se_Star_Mist_I_CamillasGift": {
     "name": "Camilla's Gift",
-    "lore": null,
+    "lore": "The kindness of her patron, Camilla, was never one-sided. Surely, she remains a cherished bond for Mist as well.",
     "category": "Imagination",
     "heroType": "Hero_Mist",
     "maxLevel": 3,
@@ -5537,7 +5866,7 @@
   },
   "Se_Star_Mist_D_HunterDamage": {
     "name": "Finally, A Worthy Opponent",
-    "lore": null,
+    "lore": "She has never lost a single duel, whether secret or official.",
     "category": "Destruction",
     "heroType": "Hero_Mist",
     "maxLevel": 3,
@@ -5846,7 +6175,7 @@
   },
   "Se_Star_Mist_F_PR_PerfectParry": {
     "name": "The Best Offense is Defense",
-    "lore": null,
+    "lore": "She never rushes. The most crucial opportunity comes the moment her opponent strikes.",
     "category": "Flexible",
     "heroType": "Hero_Mist",
     "maxLevel": 1,
@@ -5898,16 +6227,42 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "After successfully <color=yellow>parrying</color>, you gain a Barrier equal to 100% of the damage parried, and your next attack is a critical strike.",
-    "rawDesc": "After successfully <color=yellow>parrying</color>, you gain a Barrier equal to {0} of the damage parried, and your next attack is a critical strike.",
+    "description": "After successfully <color=yellow>Parrying</color>, your next attack becomes a critical strike, and you gain a shield equal to 250% of the parried damage that decays over 4 seconds. The shield's duration increases by 0.5 seconds each time you enhance Parry.",
+    "rawDesc": "After successfully <color=yellow>Parrying</color>, your next attack becomes a critical strike, and you gain a shield equal to {0} of the parried damage that decays over {1} seconds. The shield's duration increases by {2} seconds each time you enhance Parry.",
     "rawDescVars": [
       {
-        "rendered": "100%",
+        "rendered": "250%",
         "format": "P0",
         "raw": "shieldRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "shieldDecayDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "shieldDecayDurationBonusPerLevel",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5928,16 +6283,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Unbreakable Determination</color>'s duration is reduced by 50%, but the intial explosion's damage is increased by 200%.",
+    "description": "<color=yellow>Unbreakable Determination</color>'s duration is reduced by 30%, but the intial explosion's damage is increased by 200%.",
     "rawDesc": "<color=yellow>Unbreakable Determination</color>'s duration is reduced by {0}, but the intial explosion's damage is increased by {1}.",
     "rawDescVars": [
       {
-        "rendered": "50%",
+        "rendered": "30%",
         "format": "P0",
         "raw": "durationReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 0.3,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6002,11 +6357,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "Gain 400<sprite=5> Gold and 400<sprite=5> Dream Dust when petting a <color=yellow>Cat</color>.",
+    "description": "Gain 800<sprite=5> Gold and 800<sprite=5> Dream Dust when petting a <color=yellow>Cat</color>.",
     "rawDesc": "Gain {0} Gold and {1} Dream Dust when petting a <color=yellow>Cat</color>.",
     "rawDescVars": [
       {
-        "rendered": "400<sprite=5>",
+        "rendered": "800<sprite=5>",
         "format": "#,##0",
         "raw": "goldAmount",
         "scalingType": "star",
@@ -6015,14 +6370,14 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            400.0,
-            800.0
+            800.0,
+            1200.0
           ],
           "strengthScaling": "Multiply"
         }
       },
       {
-        "rendered": "400<sprite=5>",
+        "rendered": "800<sprite=5>",
         "format": "#,##0",
         "raw": "dreamDustAmount",
         "scalingType": "star",
@@ -6031,8 +6386,8 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            400.0,
-            800.0
+            800.0,
+            1200.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -6054,11 +6409,11 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "You begin your adventure with 90<sprite=5> <color=yellow>Gold</color>, but the Gold price of Merchant items is increased by 10%.",
+    "description": "You begin your adventure with 150<sprite=5> <color=yellow>Gold</color>, but the Gold price of Merchant items is increased by 10%.",
     "rawDesc": "You begin your adventure with {0} <color=yellow>Gold</color>, but the Gold price of Merchant items is increased by {1}.",
     "rawDescVars": [
       {
-        "rendered": "90<sprite=5>",
+        "rendered": "150<sprite=5>",
         "format": "#,##0",
         "raw": "addedGoldAmount",
         "scalingType": "star",
@@ -6067,10 +6422,10 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            90.0,
-            120.0,
             150.0,
-            180.0
+            180.0,
+            210.0,
+            240.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -6573,16 +6928,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Nature's Whisper</color>'s cooldown is reduced by 70%, but the Attack Speed bonus is also reduced by 70%.",
+    "description": "<color=yellow>Nature's Whisper</color>'s cooldown is reduced by 80%, but the Attack Speed bonus is also reduced by 50%.",
     "rawDesc": "<color=yellow>Nature's Whisper</color>'s cooldown is reduced by {0}, but the Attack Speed bonus is also reduced by {1}.",
     "rawDescVars": [
       {
-        "rendered": "70%",
+        "rendered": "80%",
         "format": "P0",
         "raw": "cooldownReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.7,
+          "basicConstant": 0.8,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6590,12 +6945,12 @@
         }
       },
       {
-        "rendered": "70%",
+        "rendered": "50%",
         "format": "P0",
         "raw": "hasteReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.7,
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6646,23 +7001,9 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Increases the cooldown of <color=yellow>Nature's Whisper</color> by 1.5 seconds, but instantly teleports summons to the target location.",
-    "rawDesc": "Increases the cooldown of <color=yellow>Nature's Whisper</color> by {0} seconds, but instantly teleports summons to the target location.",
-    "rawDescVars": [
-      {
-        "rendered": "1.5",
-        "format": "#,##0.#",
-        "raw": "cooldownPenalty",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 1.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      }
-    ],
+    "description": "<color=yellow>Nature's Whisper</color> instantly teleports summons to the target location.",
+    "rawDesc": "<color=yellow>Nature's Whisper</color> instantly teleports summons to the target location.",
+    "rawDescVars": [],
     "image": "Se_Star_Nachia_F_NW_Teleport.png"
   },
   "Se_Star_Nachia_F_SB_DurationBonus": {
@@ -6757,7 +7098,7 @@
   },
   "Se_Star_Nachia_F_SC_AtkEffect": {
     "name": "Sharp Claws",
-    "lore": null,
+    "lore": "Regular nail trimming is essential for any good dog.",
     "category": "Flexible",
     "heroType": "Hero_Nachia",
     "maxLevel": 1,
@@ -6910,7 +7251,7 @@
     ],
     "requiredLevel": 30,
     "isRequiredLevelTotalMastery": false,
-    "description": "Increases Movement Speed by 8%<sprite=5> in the <color=yellow>Forest of Turbulence</color> and grants 1<sprite=5> Dream Dust for each enemy killed.",
+    "description": "Increases Movement Speed by 8%<sprite=5> in the <color=yellow>Forest of Turbulence</color> and grants 0.5<sprite=5> Dream Dust for each enemy killed.",
     "rawDesc": "Increases Movement Speed by {0} in the <color=yellow>Forest of Turbulence</color> and grants {1} Dream Dust for each enemy killed.",
     "rawDescVars": [
       {
@@ -6931,20 +7272,18 @@
         }
       },
       {
-        "rendered": "1<sprite=5>",
-        "format": "#,##0",
+        "rendered": "0.5<sprite=5>",
+        "format": "#,##0.##",
         "raw": "dreamDustAmount",
         "scalingType": "star",
         "data": {
           "levels": 3,
-          "isClamped": true,
-          "clampMin": 1.0,
-          "clampMax": 100.0,
-          "isInteger": true,
+          "isClamped": false,
+          "isInteger": false,
           "values": [
-            1.0,
-            2.0,
-            3.0
+            0.5,
+            0.75,
+            1.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -7269,7 +7608,7 @@
   },
   "Se_Star_Nachia_L_WaltzArmor": {
     "name": "Protective Dance",
-    "lore": null,
+    "lore": "Wherever she goes, birds, beasts, and pure spirits gather around her, creating a small sanctuary of peace.",
     "category": "Life",
     "heroType": "Hero_Nachia",
     "maxLevel": 4,
@@ -7573,11 +7912,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "20%<sprite=5> of your Ability Power is converted to <color=yellow>Attack Damage</color>.",
-    "rawDesc": "{0} of your Ability Power is converted to <color=yellow>Attack Damage</color>.",
+    "description": "Gain <color=yellow>Attack Damage</color> equal to 25%<sprite=5> of your <color=yellow>Ability Power</color>.",
+    "rawDesc": "Gain <color=yellow>Attack Damage</color> equal to {0} of your <color=yellow>Ability Power</color>.",
     "rawDescVars": [
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": "25%<sprite=5>",
         "format": "P0",
         "raw": "ratio",
         "scalingType": "star",
@@ -7586,16 +7925,119 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.2,
+            0.25,
             0.3,
-            0.4,
-            0.5
+            0.35,
+            0.4
           ],
           "strengthScaling": "Multiply"
         }
       }
     ],
     "image": "Se_Star_Vesper_D_ConvertAPToAD.png"
+  },
+  "Se_Star_Vesper_F_BS_AddedDurationPerAtk": {
+    "name": "Endless Hammering",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Each basic attack during <color=yellow>Baptism of the Sun</color> extends its <color=yellow>duration</color> by 0.2 seconds.",
+    "rawDesc": "Each basic attack during <color=yellow>Baptism of the Sun</color> extends its <color=yellow>duration</color> by {0} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "0.2",
+        "format": "#,##0.#",
+        "raw": "addedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_AddedDurationPerAtk.png"
+  },
+  "Se_Star_Vesper_F_BS_ADWithArmor": {
+    "name": "No Pain, No Gain",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Baptism of the Sun</color> grants <color=yellow>Attack Damage</color> instead of Attack Speed by the same amount, and grants 10 <color=yellow>Armor</color> for each enemy hit by the initial explosion. Hitting a boss grants 40 Armor instead.",
+    "rawDesc": "<color=yellow>Baptism of the Sun</color> grants <color=yellow>Attack Damage</color> instead of Attack Speed by the same amount, and grants {0} <color=yellow>Armor</color> for each enemy hit by the initial explosion. Hitting a boss grants {1} Armor instead.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "armorPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40",
+        "format": "#,##0",
+        "raw": "armorPerHitBoss",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 40.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_ADWithArmor.png"
+  },
+  "Se_Star_Vesper_F_BS_MovSpd": {
+    "name": "Invigorating Heat",
+    "lore": "Sweat makes the muscles shine even brighter.",
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Baptism of the Sun</color> grants <color=yellow>Movement Speed</color> equal to 50% of the Attack Speed bonus.",
+    "rawDesc": "<color=yellow>Baptism of the Sun</color> grants <color=yellow>Movement Speed</color> equal to {0} of the Attack Speed bonus.",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "movSpdRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_MovSpd.png"
   },
   "Se_Star_Vesper_F_CS_ColdDamage": {
     "name": "Cold Fury",
@@ -7608,16 +8050,29 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Cruel Sun</color>'s damage is converted to Cold damage, and the stun duration increases by 1 seconds.",
-    "rawDesc": "<color=yellow>Cruel Sun</color>'s damage is converted to Cold damage, and the stun duration increases by {0} seconds.",
+    "description": "<color=yellow>Cruel Sun</color>'s damage is converted to Cold damage, the stun duration is increased by 2 seconds, and the Armor it grants is increased by 50%.",
+    "rawDesc": "<color=yellow>Cruel Sun</color>'s damage is converted to Cold damage, the stun duration is increased by {0} seconds, and the Armor it grants is increased by {1}.",
     "rawDescVars": [
       {
-        "rendered": "1",
+        "rendered": "2",
         "format": "#,##0",
         "raw": "addedStunDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "gainedArmorAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -7638,16 +8093,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "The Unstoppable status and Armor bonus from <color=yellow>Cruel Sun</color> persist for 1.5 seconds after channeling ends.",
+    "description": "The Unstoppable status and Armor bonus from <color=yellow>Cruel Sun</color> persist for 2.5 seconds after channeling ends.",
     "rawDesc": "The Unstoppable status and Armor bonus from <color=yellow>Cruel Sun</color> persist for {0} seconds after channeling ends.",
     "rawDescVars": [
       {
-        "rendered": "1.5",
+        "rendered": "2.5",
         "format": "#,##0.#",
         "raw": "buffLingerDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 2.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -7659,7 +8114,7 @@
   },
   "Se_Star_Vesper_F_CS_UnlockMoveWithPenalty": {
     "name": "Pride Flare",
-    "lore": null,
+    "lore": "He believes himself closer to the divine than most. But to dismiss it as mere arrogance—he is far too powerful for that.",
     "category": "Flexible",
     "heroType": "Hero_Vesper",
     "maxLevel": 1,
@@ -7668,9 +8123,23 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "You can move while channeling <color=yellow>Cruel Sun</color>, but you no longer gain Unstoppable status or an Armor bonus.",
-    "rawDesc": "You can move while channeling <color=yellow>Cruel Sun</color>, but you no longer gain Unstoppable status or an Armor bonus.",
-    "rawDescVars": [],
+    "description": "Increases <color=yellow>Cruel Sun</color>'s damage by 25% and allows you to move while channeling, but you no longer gain an Armor bonus.",
+    "rawDesc": "Increases <color=yellow>Cruel Sun</color>'s damage by {0} and allows you to move while channeling, but you no longer gain an Armor bonus.",
+    "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "damageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Vesper_F_CS_UnlockMoveWithPenalty.png"
   },
   "Se_Star_Vesper_F_DP_FarTargetBonus": {
@@ -7903,7 +8372,7 @@
   },
   "Se_Star_Vesper_F_SE_PointCast": {
     "name": "A Touch of Altruism",
-    "lore": null,
+    "lore": "Vesper has a surprisingly soft spot for children. Perhaps an echo of his own troubled childhood?",
     "category": "Flexible",
     "heroType": "Hero_Vesper",
     "maxLevel": 1,
@@ -7912,14 +8381,41 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Summons <color=yellow>El's Sanctuary</color> at a selected location instead of at Vesper's position.",
-    "rawDesc": "Summons <color=yellow>El's Sanctuary</color> at a selected location instead of at Vesper's position.",
-    "rawDescVars": [],
+    "description": "Summons <color=yellow>El's Sanctuary</color> at a target location instead of Vesper's position. The cooldown is reduced by 10% for each ally and 3% for each enemy hit by the initial blast.",
+    "rawDesc": "Summons <color=yellow>El's Sanctuary</color> at a target location instead of Vesper's position. The cooldown is reduced by {0} for each ally and {1} for each enemy hit by the initial blast.",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "reductionRatioOnAlly",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3%",
+        "format": "P0",
+        "raw": "reductionRatioOnEnemy",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.03,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Vesper_F_SE_PointCast.png"
   },
   "Se_Star_Vesper_I_ShopDiscount": {
     "name": "Overwhelming Presence",
-    "lore": null,
+    "lore": "Everyone has a plan. That is, until they meet him face to face.",
     "category": "Imagination",
     "heroType": "Hero_Vesper",
     "maxLevel": 4,
@@ -7968,11 +8464,11 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "Gain 50<sprite=5> <color=yellow>Gold</color> at the start of your adventure.",
+    "description": "Gain 100<sprite=5> <color=yellow>Gold</color> at the start of your adventure.",
     "rawDesc": "Gain {0} <color=yellow>Gold</color> at the start of your adventure.",
     "rawDescVars": [
       {
-        "rendered": "50<sprite=5>",
+        "rendered": "100<sprite=5>",
         "format": "#,##0",
         "raw": "addedGoldAmount",
         "scalingType": "star",
@@ -7981,9 +8477,9 @@
           "isClamped": false,
           "isInteger": true,
           "values": [
-            50.0,
             100.0,
-            150.0
+            150.0,
+            200.0
           ],
           "strengthScaling": "Multiply"
         }
@@ -8092,11 +8588,11 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Increases the Barrier amount of <color=yellow>Heavy Strike</color> by 30%<sprite=5> and extends its duration by 25%<sprite=5>.",
+    "description": "Increases the Barrier amount of <color=yellow>Heavy Strike</color> by 45%<sprite=5> and extends its duration by 75%<sprite=5>.",
     "rawDesc": "Increases the Barrier amount of <color=yellow>Heavy Strike</color> by {0} and extends its duration by {1}.",
     "rawDescVars": [
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": "45%<sprite=5>",
         "format": "P0",
         "raw": "shieldAmp",
         "scalingType": "star",
@@ -8105,16 +8601,16 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.3,
-            0.4,
-            0.5,
-            0.6
+            0.45,
+            0.55,
+            0.65,
+            0.75
           ],
           "strengthScaling": "Multiply"
         }
       },
       {
-        "rendered": "25%<sprite=5>",
+        "rendered": "75%<sprite=5>",
         "format": "P0",
         "raw": "shieldDurationAmp",
         "scalingType": "star",
@@ -8123,10 +8619,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.25,
-            0.5,
             0.75,
-            1.0
+            1.0,
+            1.25,
+            1.5
           ],
           "strengthScaling": "Multiply"
         }
@@ -8435,7 +8931,7 @@
   },
   "Se_Star_Yubar_D_ADAPWithPenalty": {
     "name": "Glass Cannon",
-    "lore": null,
+    "lore": "His body is now nothing more than a fragile vessel. Of course, everyone who thought so has been reduced to a handful of dust.",
     "category": "Destruction",
     "heroType": "Hero_Yubar",
     "maxLevel": 3,
@@ -8712,8 +9208,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Cataclysm</color> increases Yubar's Attack Damage instead of Ability Power.",
-    "rawDesc": "<color=yellow>Cataclysm</color> increases Yubar's Attack Damage instead of Ability Power.",
+    "description": "<color=yellow>Cataclysm</color> increases Yubar's Attack Damage and Attack Speed instead of Ability Power.",
+    "rawDesc": "<color=yellow>Cataclysm</color> increases Yubar's Attack Damage and Attack Speed instead of Ability Power.",
     "rawDescVars": [],
     "image": "Se_Star_Yubar_F_CC_IncreaseAD.png"
   },
@@ -8882,7 +9378,7 @@
   },
   "Se_Star_Yubar_F_SN_AutoExplosion": {
     "name": "Star Herding",
-    "lore": null,
+    "lore": "Even without his attention, the stars grow fat on cosmic dust.",
     "category": "Flexible",
     "heroType": "Hero_Yubar",
     "maxLevel": 1,
@@ -8953,7 +9449,7 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Tranquility</color>'s cooldown is reduced by 2 seconds, but instead of becoming Invulnerable, you gain a Barrier equal to 40% of your Maximum Health that lasts for the duration of the Invulnerability.",
+    "description": "<color=yellow>Tranquility</color>'s cooldown is reduced by 2 seconds, but instead of becoming Invulnerable, you gain a Barrier equal to 100% of your Maximum Health that lasts for the duration of the Invulnerability.",
     "rawDesc": "<color=yellow>Tranquility</color>'s cooldown is reduced by {0} seconds, but instead of becoming Invulnerable, you gain a Barrier equal to {1} of your Maximum Health that lasts for the duration of the Invulnerability.",
     "rawDescVars": [
       {
@@ -8970,12 +9466,12 @@
         }
       },
       {
-        "rendered": "40%",
+        "rendered": "100%",
         "format": "P0",
         "raw": "shieldRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.4,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9115,7 +9611,7 @@
   },
   "Se_Star_Yubar_I_StarCookie": {
     "name": "Cookie Baker",
-    "lore": null,
+    "lore": "He burned through an astronomical number of stars in pursuit of the perfect star cookie.",
     "category": "Imagination",
     "heroType": "Hero_Yubar",
     "maxLevel": 3,

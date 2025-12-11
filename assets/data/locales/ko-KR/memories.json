@@ -4,7 +4,7 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "뒤로 도약하며 기존 위치에 3개의 충격 폭탄을 떨어트려 각각 <sprite=1><color=#16D7FF>120%</color><sprite=5>의 <color=yellow>피해</color>를 입히고 1초 동안 <color=yellow>기절</color>시킵니다.",
+    "description": "뒤로 도약하며 기존 위치에 3개의 충격 폭탄을 떨어트려 각각 <sprite=1><color=#16D7FF>168%</color><sprite=5>의 <color=yellow>피해</color>를 입히고 1초 동안 <color=yellow>기절</color>시킵니다.",
     "rawDesc": "뒤로 도약하며 기존 위치에 {0}개의 충격 폭탄을 떨어트려 각각 {1}의 <color=yellow>피해</color>를 입히고 {2}초 동안 <color=yellow>기절</color>시킵니다.",
     "rawDescVars": [
       {
@@ -21,13 +21,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>168%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.2,
+          "basicAP": 1.68,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -176,73 +176,6 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "St_R_DancingBlades": {
-    "name": "칼날 폭풍",
-    "cooldownTime": 13.0,
-    "maxCharges": 1,
-    "addedCharges": 1,
-    "description": "해당 지역에 4초 동안 유지되는 <color=yellow>칼날 폭풍</color>을 소환합니다. <color=yellow>칼날 폭풍</color>은 주변을 빠르게 베어 0.5초마다 적들에게 <sprite=1><color=#16D7FF>85%</color><sprite=5>와 <sprite=2><color=#FF8A2D>85%</color><sprite=5> 중 더 큰 <color=yellow>피해</color>를 주며, 가장 가까운 적을 추적합니다.",
-    "rawDesc": "해당 지역에 {0}초 동안 유지되는 <color=yellow>칼날 폭풍</color>을 소환합니다. <color=yellow>칼날 폭풍</color>은 주변을 빠르게 베어 {1}초마다 적들에게 {2}와 {3} 중 더 큰 <color=yellow>피해</color>를 주며, 가장 가까운 적을 추적합니다.",
-    "rawDescVars": [
-      {
-        "rendered": "4",
-        "format": "#,##0.#",
-        "raw": "duration",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "0.5",
-        "format": "#,##0.#",
-        "raw": "tickInterval",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "apDamage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.85,
-          "basicAD": 0.0,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "adDamage",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.0,
-          "basicAP": 0.0,
-          "basicAD": 0.85,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
-        }
-      }
-    ],
-    "shortDescription": "광역 지속 피해",
-    "rarity": "Rare",
-    "type": "Normal",
-    "traveler": "",
-    "travelerMemoryLocation": "",
-    "tags": [],
-    "image": "St_R_DancingBlades.png",
-    "lore": null,
-    "achievementKey": "ACH_ETERNAL_REST",
-    "achievementName": "영원한 안식",
-    "achievementDescription": "영혼 검사에게 기본 공격을 이용해 총 50회 마무리 일격을 날리십시오."
-  },
   "St_C_DarkBolt": {
     "name": "어둠 화살",
     "cooldownTime": 4.5,
@@ -334,11 +267,11 @@
   },
   "St_C_FlashFreeze": {
     "name": "급속 빙결",
-    "cooldownTime": 5.0,
+    "cooldownTime": 9.0,
     "maxCharges": 2,
-    "addedCharges": 1,
-    "description": "전방에 냉기를 발산하여 적들에게 <sprite=1><color=#16D7FF>130%</color><sprite=5>의 <color=yellow>냉기 피해</color>를 줍니다. 만약 이미 <color=yellow>냉기</color>에 영향을 받고 있는 적일 경우 <color=yellow>피해량</color>이 100% 증가하고 1.5초 동안 <color=yellow>이동 불가</color> 상태로 만듭니다.",
-    "rawDesc": "전방에 냉기를 발산하여 적들에게 {0}의 <color=yellow>냉기 피해</color>를 줍니다. 만약 이미 <color=yellow>냉기</color>에 영향을 받고 있는 적일 경우 <color=yellow>피해량</color>이 {1} 증가하고 {2}초 동안 <color=yellow>이동 불가</color> 상태로 만듭니다.",
+    "addedCharges": 999,
+    "description": "전방에 냉기를 발산하여 적들에게 <sprite=1><color=#16D7FF>130%</color><sprite=5>의 <color=yellow>냉기 피해</color>를 주고, 자신과 아군에게는 3초 동안 지속되는 <sprite=1><color=#16D7FF>90%</color><sprite=5>의 <color=yellow>보호막</color>을 부여합니다. 만약 이미 <color=yellow>냉기</color>에 영향을 받고 있는 적일 경우 <color=yellow>피해량</color>이 100% 증가하고 1.5초 동안 <color=yellow>이동 불가</color> 상태로 만듭니다.\n\n<color=yellow>충전 횟수</color>가 한 번에 모두 충전됩니다.",
+    "rawDesc": "전방에 냉기를 발산하여 적들에게 {0}의 <color=yellow>냉기 피해</color>를 주고, 자신과 아군에게는 {1}초 동안 지속되는 {2}의 <color=yellow>보호막</color>을 부여합니다. 만약 이미 <color=yellow>냉기</color>에 영향을 받고 있는 적일 경우 <color=yellow>피해량</color>이 {3} 증가하고 {4}초 동안 <color=yellow>이동 불가</color> 상태로 만듭니다.\n\n<color=yellow>충전 횟수</color>가 한 번에 모두 충전됩니다.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
@@ -351,6 +284,32 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.9,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.1875
         }
       },
       {
@@ -388,7 +347,8 @@
     "tags": [
       "Cold",
       "Melee",
-      "HardCC"
+      "HardCC",
+      "Shield"
     ],
     "image": "St_C_FlashFreeze.PNG",
     "lore": null,
@@ -613,8 +573,8 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "전방에 발톱을 휘둘러 적들에게 <sprite=1><color=#16D7FF>140%</color><sprite=5>의 <color=yellow>냉기 피해</color>를 주고 0.5초 동안 <color=yellow>기절</color>시킵니다. 한번 더 휘둘러 적들에게 <sprite=1><color=#16D7FF>264%</color><sprite=5>의 <color=yellow>냉기 피해</color>를 주고 1초 동안 <color=yellow>기절</color>시킬 수 있습니다.",
-    "rawDesc": "전방에 발톱을 휘둘러 적들에게 {0}의 <color=yellow>냉기 피해</color>를 주고 {1}초 동안 <color=yellow>기절</color>시킵니다. 한번 더 휘둘러 적들에게 {2}의 <color=yellow>냉기 피해</color>를 주고 {3}초 동안 <color=yellow>기절</color>시킬 수 있습니다.",
+    "description": "전방에 발톱을 휘둘러 적들에게 <sprite=1><color=#16D7FF>140%</color><sprite=5>의 <color=yellow>냉기 피해</color>를 주고 0.5초 동안 <color=yellow>기절</color>시킵니다. 한번 더 휘둘러 적들에게 <sprite=1><color=#16D7FF>264%</color><sprite=5>의 <color=yellow>냉기 피해</color>를 주고 1초 동안 <color=yellow>기절</color>시킬 수 있습니다.\n\n발톱이 적에게 적중하면 피해량의 12%만큼 <color=yellow>체력</color>을 <color=yellow>회복</color>합니다.",
+    "rawDesc": "전방에 발톱을 휘둘러 적들에게 {0}의 <color=yellow>냉기 피해</color>를 주고 {1}초 동안 <color=yellow>기절</color>시킵니다. 한번 더 휘둘러 적들에게 {2}의 <color=yellow>냉기 피해</color>를 주고 {3}초 동안 <color=yellow>기절</color>시킬 수 있습니다.\n\n발톱이 적에게 적중하면 피해량의 {4}만큼 <color=yellow>체력</color>을 <color=yellow>회복</color>합니다.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
@@ -667,9 +627,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "12%",
+        "format": "P0",
+        "raw": "Ai_C_IceClaw::healRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.12,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "근접 냉기 피해",
+    "shortDescription": "근접 냉기 피해, 체력 회복",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -677,7 +650,8 @@
     "tags": [
       "Cold",
       "Melee",
-      "HardCC"
+      "HardCC",
+      "Heal"
     ],
     "image": "St_C_IceClaw.PNG",
     "lore": null,
@@ -731,7 +705,7 @@
       "Mobility"
     ],
     "image": "St_C_MagicSword.png",
-    "lore": null,
+    "lore": "고요한 새벽,\n하이게이트 저택의 뒷 정원에 올때면,\n조용히 떠오르는 기억이 있다.\n\n아직도 뺨에 스치는 듯한 오래된 연무장의 서늘한 공기.\n아직 자그마한 그림자 밖에 만들지 못하던 어린 시절.\n서릿발 같은 어머니의 목소리.\n\n청록의 검.\n가문의 검이자, 강인함과 베르데실버 가문의 긍지.\n굳건한 나무처럼 일직선으로, 흔들림 없이 곧게 뻗어나가는 검을,\n그 날의 어머니는 제게 보여주셨지요.\n\n하지만 나의 검은, 어머니의 가르침을 따르지 못했다.\n검 끝은 바람에 춤추는 나뭇잎처럼 흔들렸고, 힘은 물처럼 흘러내렸다.\n\n아이러니하지 않나요, 어머니.\n당신이 그토록 지키고자 했던 긍지 높은 거목은 결국 부러져 쓰러졌고,\n그저 바람에 흩날리던 이 보잘것없는 나뭇잎만이,\n이렇게 살아남았으니 말입니다.\n\n이제 가문의 긍지도, 나무의 무게도 모두 사라졌지만...\n아쉽지는 않습니다.\n\n그저 바라는 것은…\n청록을 잃어버린, 이름 없는 안개로써,\n동생의 행복을 위해 검을 쥐는 것 뿐입니다.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -787,7 +761,7 @@
   },
   "St_C_Pew": {
     "name": "빵야",
-    "cooldownTime": 14.0,
+    "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
     "description": "시전 키를 <color=yellow>길게 누르고 있으면</color> 화염 탄환을 충전합니다. 충전이 끝나면 화염 탄환을 발사해 적중하는 모든 적들에게 조준 시간에 비례하여 <sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>400%</color><sprite=5>의 <color=yellow>화염 피해</color>를 줍니다.\n\n덜 충전한 채로 발사하면 최대 80%까지 <color=yellow>재사용 대기시간</color>이 감소하며, 1.35초 동안 조준하면 피격 범위의 두께와 피해량이 최대치에 도달합니다.",
@@ -865,8 +839,8 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "손바닥으로 에너지를 방출해 <sprite=1><color=#16D7FF>180%</color><sprite=5>의 <color=yellow>피해</color>를 주고 적중한 모든 적을 밀어냅니다. 밀려난 적이 벽에 닿을 경우 추가로 <sprite=1><color=#16D7FF>504%</color><sprite=5>의 <color=yellow>피해</color>를 주고 1.5초 동안 기절시킵니다.",
-    "rawDesc": "손바닥으로 에너지를 방출해 {0}의 <color=yellow>피해</color>를 주고 적중한 모든 적을 밀어냅니다. 밀려난 적이 벽에 닿을 경우 추가로 {1}의 <color=yellow>피해</color>를 주고 {2}초 동안 기절시킵니다.",
+    "description": "손바닥으로 에너지를 방출해 <sprite=1><color=#16D7FF>180%</color><sprite=5>의 <color=yellow>피해</color>를 주고 적중한 모든 적을 밀어내며 1초 동안 기절시킵니다. 대상이 저지 불가 상태이거나 벽에 충돌하는 경우 추가로 <sprite=1><color=#16D7FF>504%</color><sprite=5>의 <color=yellow>피해</color>를 줍니다.",
+    "rawDesc": "손바닥으로 에너지를 방출해 {0}의 <color=yellow>피해</color>를 주고 적중한 모든 적을 밀어내며 {1}초 동안 기절시킵니다. 대상이 저지 불가 상태이거나 벽에 충돌하는 경우 추가로 {2}의 <color=yellow>피해</color>를 줍니다.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
@@ -882,24 +856,24 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "dmgFactor*stunDmgRatio",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "1.5",
+        "rendered": "1",
         "format": "#,##0.#",
         "raw": "stunDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 1.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor*stunDmgRatio",
+        "scalingType": "unknown",
+        "data": {}
       }
     ],
     "shortDescription": "근접 피해, 밀쳐내기",
@@ -922,8 +896,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "대상 지역의 모든 적들에게 <sprite=1><color=#16D7FF>280%</color><sprite=5>의 <color=yellow>피해</color>를 주고 적중한 적 하나당 무작위 아군의 체력을 <sprite=1><color=#16D7FF>45%</color><sprite=5> <color=yellow>회복</color>합니다. 대상이 보스일 경우 치유량이 3배가 됩니다.",
-    "rawDesc": "대상 지역의 모든 적들에게 {0}의 <color=yellow>피해</color>를 주고 적중한 적 하나당 무작위 아군의 체력을 {1} <color=yellow>회복</color>합니다. 대상이 보스일 경우 치유량이 3배가 됩니다.",
+    "description": "대상 지역의 모든 적들에게 <sprite=1><color=#16D7FF>280%</color><sprite=5>의 <color=yellow>피해</color>를 주고 적중한 적 하나당 무작위 아군의 체력을 <sprite=1><color=#16D7FF>45%</color><sprite=5> <color=yellow>회복</color>합니다. 대상이 보스일 경우 회복량이 3배가 됩니다.",
+    "rawDesc": "대상 지역의 모든 적들에게 {0}의 <color=yellow>피해</color>를 주고 적중한 적 하나당 무작위 아군의 체력을 {1} <color=yellow>회복</color>합니다. 대상이 보스일 경우 회복량이 3배가 됩니다.",
     "rawDescVars": [
       {
         "rendered": "<sprite=1><color=#16D7FF>280%</color><sprite=5>",
@@ -988,20 +962,20 @@
   },
   "St_C_SparklingWaterGun": {
     "name": "톡 쏘는 물총",
-    "cooldownTime": 5.0,
+    "cooldownTime": 4.0,
     "maxCharges": 3,
     "addedCharges": 1,
-    "description": "톡 쏘는 물총을 발사합니다. 처음 적중한 아군의 <color=yellow>체력</color>을 <sprite=1><color=#16D7FF>50%</color><sprite=5> <color=yellow>회복</color>시키고 <color=yellow>화염 중첩</color>을 제거합니다. 적에게 적중하면 대신 1의 <color=yellow>피해</color>를 주고 1.5초 동안 <color=yellow>기절</color>시킵니다. <color=yellow>전투 중</color>에만 <color=yellow>재사용 대기시간</color>이 감소합니다.",
-    "rawDesc": "톡 쏘는 물총을 발사합니다. 처음 적중한 아군의 <color=yellow>체력</color>을 {0} <color=yellow>회복</color>시키고 <color=yellow>화염 중첩</color>을 제거합니다. 적에게 적중하면 대신 {1}의 <color=yellow>피해</color>를 주고 {2}초 동안 <color=yellow>기절</color>시킵니다. <color=yellow>전투 중</color>에만 <color=yellow>재사용 대기시간</color>이 감소합니다.",
+    "description": "톡 쏘는 물총을 발사합니다. 적중한 아군들의 <color=yellow>체력</color>을 <sprite=1><color=#16D7FF>70%</color><sprite=5> <color=yellow>회복</color>시키고 <color=yellow>화염 중첩</color>을 제거합니다. 적들에게는 1의 <color=yellow>피해</color>를 주고 1.5초 동안 <color=yellow>기절</color>시킵니다. <color=yellow>전투 중</color>에만 <color=yellow>재사용 대기시간</color>이 감소합니다.\n\n대상이 아군 <color=yellow>소환수</color>라면 회복량이 40% 증가합니다.",
+    "rawDesc": "톡 쏘는 물총을 발사합니다. 적중한 아군들의 <color=yellow>체력</color>을 {0} <color=yellow>회복</color>시키고 <color=yellow>화염 중첩</color>을 제거합니다. 적들에게는 {1}의 <color=yellow>피해</color>를 주고 {2}초 동안 <color=yellow>기절</color>시킵니다. <color=yellow>전투 중</color>에만 <color=yellow>재사용 대기시간</color>이 감소합니다.\n\n대상이 아군 <color=yellow>소환수</color>라면 회복량이 {3} 증가합니다.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>50%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>70%</color><sprite=5>",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.5,
+          "basicAP": 0.7,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -1027,6 +1001,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "summonAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1167,7 +1154,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "3.5초 동안 <color=yellow>정신 집중</color>해 검을 휘둘러 주위 적들에게 초당 <sprite=2><color=#FF8A2D>170%</color><sprite=5>의 <color=yellow>피해</color>를 주고 25%의 <color=yellow>공격 효과</color>를 발동합니다. <color=yellow>공격 속도</color>가 높을수록 검을 더 빠르게 휘두릅니다.",
+    "description": "3.5초 동안 <color=yellow>정신 집중</color>해 검을 휘둘러 주위 적들에게 초당 <sprite=2><color=#FF8A2D>240%</color><sprite=5>의 <color=yellow>피해</color>를 주고 35%의 <color=yellow>공격 효과</color>를 발동합니다. <color=yellow>공격 속도</color>가 높을수록 검을 더 빠르게 휘두릅니다.",
     "rawDesc": "{0}초 동안 <color=yellow>정신 집중</color>해 검을 휘둘러 주위 적들에게 초당 {1}의 <color=yellow>피해</color>를 주고 {2}의 <color=yellow>공격 효과</color>를 발동합니다. <color=yellow>공격 속도</color>가 높을수록 검을 더 빠르게 휘두릅니다.",
     "rawDescVars": [
       {
@@ -1184,19 +1171,19 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>170%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>240%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*2",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "25%",
+        "rendered": "35%",
         "format": "P0",
         "raw": "attackEffect",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.25,
+          "basicConstant": 0.35,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1402,8 +1389,8 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>일반 공격</color>이 원거리 공격으로 변경되고, <color=yellow>아무 기억</color>이나 <color=yellow>회피 기술</color>을 시전하면 <color=yellow>황금 깃털</color> 중첩을 2 얻어 최대 6개까지 유지할 수 있습니다. <color=yellow>황금 깃털</color> 중첩이 있을 때 <color=yellow>공격 속도</color>가 20% 증가합니다.\n\n깃털 중첩이 있을 때 적을 <color=yellow>공격</color>하면 중첩을 하나 소모하여 <sprite=1><color=#16D7FF>90%</color><sprite=5>의 <color=yellow>피해</color>를 주고 아우레나의 체력을 <sprite=1><color=#16D7FF>14%</color><sprite=5> <color=yellow>회복</color>합니다. 깃털 중첩이 있을 때 아군의 체력을 <color=yellow>회복</color>시키면 중첩을 하나 소모하여 추가로 대상의 체력을 <sprite=1><color=#16D7FF>22%</color><sprite=5>만큼 <color=yellow>회복</color>시킵니다.",
-    "rawDesc": "<color=yellow>일반 공격</color>이 원거리 공격으로 변경되고, <color=yellow>아무 기억</color>이나 <color=yellow>회피 기술</color>을 시전하면 <color=yellow>황금 깃털</color> 중첩을 {0} 얻어 최대 {1}개까지 유지할 수 있습니다. <color=yellow>황금 깃털</color> 중첩이 있을 때 <color=yellow>공격 속도</color>가 {2} 증가합니다.\n\n깃털 중첩이 있을 때 적을 <color=yellow>공격</color>하면 중첩을 하나 소모하여 {3}의 <color=yellow>피해</color>를 주고 아우레나의 체력을 {4} <color=yellow>회복</color>합니다. 깃털 중첩이 있을 때 아군의 체력을 <color=yellow>회복</color>시키면 중첩을 하나 소모하여 추가로 대상의 체력을 {5}만큼 <color=yellow>회복</color>시킵니다.",
+    "description": "<color=yellow>기본 공격</color>이 원거리 공격으로 변경되고, <color=yellow>아무 기억</color>이나 <color=yellow>회피 기술</color>을 시전하면 <color=yellow>황금 깃털</color> 중첩을 2 얻어 최대 6개까지 유지할 수 있습니다. <color=yellow>황금 깃털</color> 중첩이 있을 때 <color=yellow>공격 속도</color>가 20% 증가합니다.\n\n깃털 중첩이 있을 때 적을 <color=yellow>공격</color>하면 중첩을 하나 소모하여 <sprite=1><color=#16D7FF>90%</color><sprite=5>의 <color=yellow>피해</color>를 주고 아우레나의 체력을 <sprite=1><color=#16D7FF>14%</color><sprite=5> <color=yellow>회복</color>합니다. 깃털 중첩이 있을 때 아군의 체력을 <color=yellow>회복</color>시키면 중첩을 하나 소모하여 추가로 대상의 체력을 <sprite=1><color=#16D7FF>22%</color><sprite=5>만큼 <color=yellow>회복</color>시킵니다.",
+    "rawDesc": "<color=yellow>기본 공격</color>이 원거리 공격으로 변경되고, <color=yellow>아무 기억</color>이나 <color=yellow>회피 기술</color>을 시전하면 <color=yellow>황금 깃털</color> 중첩을 {0} 얻어 최대 {1}개까지 유지할 수 있습니다. <color=yellow>황금 깃털</color> 중첩이 있을 때 <color=yellow>공격 속도</color>가 {2} 증가합니다.\n\n깃털 중첩이 있을 때 적을 <color=yellow>공격</color>하면 중첩을 하나 소모하여 {3}의 <color=yellow>피해</color>를 주고 아우레나의 체력을 {4} <color=yellow>회복</color>합니다. 깃털 중첩이 있을 때 아군의 체력을 <color=yellow>회복</color>시키면 중첩을 하나 소모하여 추가로 대상의 체력을 {5}만큼 <color=yellow>회복</color>시킵니다.",
     "rawDescVars": [
       {
         "rendered": "2",
@@ -1484,7 +1471,7 @@
         }
       }
     ],
-    "shortDescription": "원거리 일반 공격, 적 피해, 아군 회복",
+    "shortDescription": "원거리 기본 공격, 적 피해, 아군 회복",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Aurena",
@@ -1923,7 +1910,7 @@
     "lore": "어리석고 불경한 자들아, 똑똑히 보아라. 이 몸이 주는 것은 고통이 아니다. \n너희의 영혼만큼이라도 구원코자 하는 엘피로스님의 사랑과 자비일지니!",
     "achievementKey": "ACH_MASTER_OF_HAMMER",
     "achievementName": "망치의 신",
-    "achievementDescription": "베스퍼로 5초 안에 9번 일반 공격하십시오."
+    "achievementDescription": "베스퍼로 5초 안에 9번 기본 공격하십시오."
   },
   "St_D_PrismaticEyes": {
     "name": "프리즘의 시야",
@@ -2092,8 +2079,8 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>공격 속도</color> 보너스를 받을 수 없는 대신, <color=yellow>추가 공격 속도</color> 1%마다 <color=yellow>공격력</color>이 0.5<sprite=5> 증가합니다.\n<color=yellow>돌진</color>, 혹은 <color=yellow>순간 이동</color> 시 다음 <color=yellow>일반 공격</color>이 치명타가 됩니다.\n\n아무 <color=yellow>보스</color>를 처치하면 <sprite=2><color=#FF8A2D>200%</color><sprite=5>만큼 <color=yellow>체력</color>을 <color=yellow>회복</color>합니다.",
-    "rawDesc": "<color=yellow>공격 속도</color> 보너스를 받을 수 없는 대신, <color=yellow>추가 공격 속도</color> 1%마다 <color=yellow>공격력</color>이 {0} 증가합니다.\n<color=yellow>돌진</color>, 혹은 <color=yellow>순간 이동</color> 시 다음 <color=yellow>일반 공격</color>이 치명타가 됩니다.\n\n아무 <color=yellow>보스</color>를 처치하면 {1}만큼 <color=yellow>체력</color>을 <color=yellow>회복</color>합니다.",
+    "description": "<color=yellow>공격 속도</color> 보너스를 받을 수 없는 대신, <color=yellow>추가 공격 속도</color> 1%마다 <color=yellow>공격력</color>이 0.5<sprite=5> 증가합니다.\n<color=yellow>돌진</color>, 혹은 <color=yellow>순간 이동</color> 시 다음 <color=yellow>기본 공격</color>이 치명타가 됩니다.\n\n아무 <color=yellow>보스</color>를 처치하면 <sprite=2><color=#FF8A2D>200%</color><sprite=5>만큼 <color=yellow>체력</color>을 <color=yellow>회복</color>합니다.",
+    "rawDesc": "<color=yellow>공격 속도</color> 보너스를 받을 수 없는 대신, <color=yellow>추가 공격 속도</color> 1%마다 <color=yellow>공격력</color>이 {0} 증가합니다.\n<color=yellow>돌진</color>, 혹은 <color=yellow>순간 이동</color> 시 다음 <color=yellow>기본 공격</color>이 치명타가 됩니다.\n\n아무 <color=yellow>보스</color>를 처치하면 {1}만큼 <color=yellow>체력</color>을 <color=yellow>회복</color>합니다.",
     "rawDescVars": [
       {
         "rendered": "0.5<sprite=5>",
@@ -2465,43 +2452,6 @@
     "achievementName": "",
     "achievementDescription": ""
   },
-  "St_E_FlameJet": {
-    "name": "화염 분출",
-    "cooldownTime": 11.5,
-    "maxCharges": 1,
-    "addedCharges": 1,
-    "description": "2.5초 동안 화염 줄기를 내뿜습니다. 이 화염 줄기에 닿을 때마다 적들은 초당 <sprite=1><color=#16D7FF>336%</color><sprite=5>의 <color=yellow>화염 피해</color>를 입습니다.",
-    "rawDesc": "{0}초 동안 화염 줄기를 내뿜습니다. 이 화염 줄기에 닿을 때마다 적들은 초당 {1}의 <color=yellow>화염 피해</color>를 입습니다.",
-    "rawDescVars": [
-      {
-        "rendered": "2.5",
-        "format": "#,##0.#",
-        "raw": "spawns*spawnInterval",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
-        "format": "#,##0",
-        "raw": "damage/minHitInterval",
-        "scalingType": "unknown",
-        "data": {}
-      }
-    ],
-    "shortDescription": "지속적인 광역 화염 피해",
-    "rarity": "Epic",
-    "type": "Normal",
-    "traveler": "",
-    "travelerMemoryLocation": "",
-    "tags": [
-      "Fire"
-    ],
-    "image": "St_E_FlameJet.png",
-    "lore": "사냥 일지\n로짓 집권 2년, o월 oo일, 날씨: 맑음\n사냥 장소: 이그니 습지\n오늘의 수확: 쐐기풀 한주머니\n\n내가 이그니 습지로 사냥을 나설 때 항상 지키는 규칙이 있다.\n\n1. 발톱 자국이 난 망그로브 뿌리가 보이면 주의한다.\n\n2. 만약 그 자국에 이끼가 끼어있지 않다면 그 방향으로는 탐방하지 않는다.\n\n3. 멀리 연기가 보이거나 타버린 나무 줄기에 불씨가 남아있다면 무조건 집으로 돌아온다.\n\n지난 여름 어떤 멍청이가 반쯤 그슬린 칼림베리 덩쿨을 뽑으려 이리저리 당기다 괴물같은 덩치의 바라수스와 마주친 것을 조준경 너머로 본 이후로 스스로 새긴 다짐이다.\n\n로얄 가드의 화마 병기 시연에서도 그 정도로 큰 불꽃은 본 적이 없던 것 같다.",
-    "achievementKey": "ACH_PYROMANIA",
-    "achievementName": "방화광",
-    "achievementDescription": "불에 붙은 적을 250번 처치하십시오."
-  },
   "St_E_FinalExplosion": {
     "name": "최후의 폭발",
     "cooldownTime": 3.0,
@@ -2594,10 +2544,47 @@
       "HardCC"
     ],
     "image": "St_E_FinalExplosion.PNG",
-    "lore": null,
+    "lore": "태양 불꽃 기사단의 포위망은, 한 치의 틈도 없이 조여들고 있었다. \n그들의 신성한 불꽃은 가장 깊은 골목 조차 어둠을 허락하지 않고 있었다. \n막다른 길에 몰린 루시드 교단원은, 결국 걸음을 멈췄다. \n\n그러나 그는 두려움 대신 기묘한 희열에 찬 미소를 지었다. \n오히려 그는 자신을 옥죄는 기사들을, 마치 가련한 벌레를 보듯 내려다보았다.\n\n\"이게... 끝이라고 생각하나? 너희의 그 거짓 된 신의 오만하고 작은 불꽃으로, 나를 심판할 수 있다고 믿는가?\"\n\n그는 눈을 감고 모든 감각을 집중했다.\n그러자 시끄러운 현실의 소음 너머로 그토록 갈망하던 꿈의 세계, \n여울의 부드러운 속삭임이 들려왔다.\n\n이제, 모든 것을 버리고 떠날 시간이었다.\n그는 현실에 마지막 작별을 고하기 위해, 다시 눈을 떴다.\n\n\"잘 있어라! 눈먼 불꽃들이여… 이 하찮은 육신이여… 그리고 지긋지긋한 세상이여!\"\n\n그의 몸은 어느새 비현실적인 색채를 띠며 격렬하게 점멸하기 시작했다. \n신에게 바치는, 가장 뜨겁고도 절박한 기도.\n\n\"프리무스 님! 이 비천한 종이, 저의 모든 것을... 지금 당신께 바칩니다!\"\n\n그의 마지막 외침은, 스스로의 존재를 한 줌의 먼지로 만들고는, \n장엄한 최후의 폭발이 되어 모든 것을 집어삼켰다.\n\n\n- 폐허가 된 어느 마을에 있던 시신의 기억 흔적",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
+  },
+  "St_E_FlameJet": {
+    "name": "화염 분출",
+    "cooldownTime": 11.5,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "2.5초 동안 화염 줄기를 내뿜습니다. 이 화염 줄기에 닿을 때마다 적들은 초당 <sprite=1><color=#16D7FF>336%</color><sprite=5>의 <color=yellow>화염 피해</color>를 입습니다.",
+    "rawDesc": "{0}초 동안 화염 줄기를 내뿜습니다. 이 화염 줄기에 닿을 때마다 적들은 초당 {1}의 <color=yellow>화염 피해</color>를 입습니다.",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "spawns*spawnInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "damage/minHitInterval",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "지속적인 광역 화염 피해",
+    "rarity": "Epic",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Fire"
+    ],
+    "image": "St_E_FlameJet.png",
+    "lore": "사냥 일지\n로짓 집권 2년, o월 oo일, 날씨: 맑음\n사냥 장소: 이그니 습지\n오늘의 수확: 쐐기풀 한주머니\n\n내가 이그니 습지로 사냥을 나설 때 항상 지키는 규칙이 있다.\n\n1. 발톱 자국이 난 망그로브 뿌리가 보이면 주의한다.\n\n2. 만약 그 자국에 이끼가 끼어있지 않다면 그 방향으로는 탐방하지 않는다.\n\n3. 멀리 연기가 보이거나 타버린 나무 줄기에 불씨가 남아있다면 무조건 집으로 돌아온다.\n\n지난 여름 어떤 멍청이가 반쯤 그슬린 칼림베리 덩쿨을 뽑으려 이리저리 당기다 괴물같은 덩치의 바라수스와 마주친 것을 조준경 너머로 본 이후로 스스로 새긴 다짐이다.\n\n로얄 가드의 화마 병기 시연에서도 그 정도로 큰 불꽃은 본 적이 없던 것 같다.",
+    "achievementKey": "ACH_PYROMANIA",
+    "achievementName": "방화광",
+    "achievementDescription": "불에 붙은 적을 250번 처치하십시오."
   },
   "St_E_Harvest": {
     "name": "피의 수확",
@@ -2683,6 +2670,89 @@
       "Attack"
     ],
     "image": "St_E_Harvest.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_E_JusticeGuillotine": {
+    "name": "정의의 단두대",
+    "cooldownTime": 100.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "대상 적의 위치에 거대한 대검을 내려찍어 주변 모든 적에게 <sprite=2><color=#FF8A2D>800%</color><sprite=5>의 <color=yellow>피해</color>를 줍니다. 이 피해량은 내 <color=yellow>잃은 체력</color>에 비례하여 최대 2배, 그리고 대상의 <color=yellow>잃은 체력</color>에 비례하여 최대 2배 증가하여 총 4배까지 증가할 수 있습니다. 체력이 30% 이하일 때 피해 증가량이 최대가 됩니다.",
+    "rawDesc": "대상 적의 위치에 거대한 대검을 내려찍어 주변 모든 적에게 {0}의 <color=yellow>피해</color>를 줍니다. 이 피해량은 내 <color=yellow>잃은 체력</color>에 비례하여 최대 {1}배, 그리고 대상의 <color=yellow>잃은 체력</color>에 비례하여 최대 {2}배 증가하여 총 {3}배까지 증가할 수 있습니다. 체력이 {4} 이하일 때 피해 증가량이 최대가 됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>800%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 8.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dmgAmplitude",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dmgAmplitude",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "dmgAmplitude * dmgAmplitude",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "maxAmpThreshold",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "강력한 일격, 잃은 체력 비례 피해량 증가",
+    "rarity": "Epic",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Melee",
+      "Mobility"
+    ],
+    "image": "St_E_JusticeGuillotine.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -2793,6 +2863,103 @@
     "achievementKey": "ACH_MASTER_OF_MYSTIC_ARTS",
     "achievementName": "신비술의 대가",
     "achievementDescription": "재사용 대기시간이 3초 이하인 액티브 기억을 동시에 4개 보유하십시오."
+  },
+  "St_E_Permafrost": {
+    "name": "영구동토",
+    "cooldownTime": 100.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "극한의 냉기를 끌어모은 후 매우 넓은 범위에 방출합니다. 영향을 받은 아군들은 10초 동안 <sprite=1><color=#16D7FF>300%</color><sprite=5>의 <color=yellow>보호막</color>과 100의 <color=yellow>방어력</color>을 얻으며, 적들은 얼어붙어 <sprite=1><color=#16D7FF>500%</color><sprite=5>의 <color=yellow>냉기 피해</color>를 입고 15초 동안 <color=yellow>기절</color>합니다. \n\n만약 이미 <color=yellow>냉기</color>에 영향을 받고 있는 적일 경우 이 피해량이 100% 증가합니다.",
+    "rawDesc": "극한의 냉기를 끌어모은 후 매우 넓은 범위에 방출합니다. 영향을 받은 아군들은 {0}초 동안 {1}의 <color=yellow>보호막</color>과 {2}의 <color=yellow>방어력</color>을 얻으며, 적들은 얼어붙어 {3}의 <color=yellow>냉기 피해</color>를 입고 {4}초 동안 <color=yellow>기절</color>합니다. \n\n만약 이미 <color=yellow>냉기</color>에 영향을 받고 있는 적일 경우 이 피해량이 {5} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 3.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "100",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 100.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>500%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 5.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "15",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "chilledAmpBonus-1",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "광역 냉기 피해, 기절, 아군 보호",
+    "rarity": "Epic",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Cold",
+      "HardCC",
+      "Shield"
+    ],
+    "image": "St_E_Permafrost.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
   },
   "St_E_Rewind": {
     "name": "되돌리기",
@@ -4273,30 +4440,30 @@
     "cooldownTime": 6.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "시전 키를 <color=yellow>길게 누르고 있으면</color> 망치에 태양을 집중합니다. 집중이 끝나면 바닥을 내려찍어 적들에게 <sprite=1><color=#16D7FF>100%</color><sprite=5>~<sprite=1><color=#16D7FF>350%</color><sprite=5>의 <color=yellow>화염 피해</color>를 주고 0.5~1.5초 동안 <color=yellow>기절</color>시킵니다.\n\n집중하는 동안 움직일 수 없지만 <color=yellow>저지 불가</color> 상태가 되고 <color=yellow>방어력</color>을 60<sprite=5> 얻습니다.",
+    "description": "시전 키를 <color=yellow>길게 누르고 있으면</color> 망치에 태양을 집중합니다. 집중이 끝나면 바닥을 내려찍어 적들에게 <sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>450%</color><sprite=5>의 <color=yellow>화염 피해</color>를 주고 0.5~1.5초 동안 <color=yellow>기절</color>시킵니다.\n\n집중하는 동안 움직일 수 없지만 <color=yellow>저지 불가</color> 상태가 되고 <color=yellow>방어력</color>을 60<sprite=5> 얻습니다.",
     "rawDesc": "시전 키를 <color=yellow>길게 누르고 있으면</color> 망치에 태양을 집중합니다. 집중이 끝나면 바닥을 내려찍어 적들에게 {0}~{1}의 <color=yellow>화염 피해</color>를 주고 {2}~{3}초 동안 <color=yellow>기절</color>시킵니다.\n\n집중하는 동안 움직일 수 없지만 <color=yellow>저지 불가</color> 상태가 되고 <color=yellow>방어력</color>을 {4} 얻습니다.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
         "format": "#,##0",
         "raw": "damageMin",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.0,
+          "basicAP": 1.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>450%</color><sprite=5>",
         "format": "#,##0",
         "raw": "damageMax",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.5,
+          "basicAP": 4.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -4363,18 +4530,18 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "대상에게 돌진하고 망치를 내려찍어 적들에게 <sprite=2><color=#FF8A2D>110%</color><sprite=5>의 <color=yellow>빛 피해</color>를 주며 50%의 <color=yellow>공격 효과</color>를 발동합니다. 적을 <color=yellow>공격</color>할 때마다 <color=yellow>재사용 대기시간</color>이 8% <color=yellow>감소</color>합니다.",
+    "description": "대상에게 돌진하고 망치를 내려찍어 적들에게 <sprite=2><color=#FF8A2D>125%</color><sprite=5>의 <color=yellow>빛 피해</color>를 주며 50%의 <color=yellow>공격 효과</color>를 발동합니다. 적을 <color=yellow>공격</color>할 때마다 <color=yellow>재사용 대기시간</color>이 8% <color=yellow>감소</color>합니다.",
     "rawDesc": "대상에게 돌진하고 망치를 내려찍어 적들에게 {0}의 <color=yellow>빛 피해</color>를 주며 {1}의 <color=yellow>공격 효과</color>를 발동합니다. 적을 <color=yellow>공격</color>할 때마다 <color=yellow>재사용 대기시간</color>이 {2} <color=yellow>감소</color>합니다.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>110%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>125%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.1,
+          "basicAD": 1.25,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5025,16 +5192,16 @@
     "cooldownTime": 4.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "내 최대 체력의 10%만큼을 <color=yellow>희생</color>해 얇은 금 조각들을 전방으로 3번 날립니다. 금 조각은 대상을 관통하며, 적중한 적들에게 <sprite=1><color=#16D7FF>95%</color><sprite=5>의 <color=yellow>피해</color>를 주고 아군들의 체력을 <sprite=1><color=#16D7FF>18%</color><sprite=5> <color=yellow>회복</color>시킵니다.",
+    "description": "내 최대 체력의 8%만큼을 <color=yellow>희생</color>해 얇은 금 조각들을 전방으로 3번 날립니다. 금 조각은 대상을 관통하며, 적중한 적들에게 <sprite=1><color=#16D7FF>95%</color><sprite=5>의 <color=yellow>피해</color>를 주고 아군들의 체력을 <sprite=1><color=#16D7FF>18%</color><sprite=5> <color=yellow>회복</color>시킵니다.",
     "rawDesc": "내 최대 체력의 {0}만큼을 <color=yellow>희생</color>해 얇은 금 조각들을 전방으로 {1}번 날립니다. 금 조각은 대상을 관통하며, 적중한 적들에게 {2}의 <color=yellow>피해</color>를 주고 아군들의 체력을 {3} <color=yellow>회복</color>시킵니다.",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "8%",
         "format": "P0",
         "raw": "sacrificeHpRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.08,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5285,7 +5452,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "시전 키를 <color=yellow>길게 누르고 있으면</color> 정신 화살 무리를 충전합니다. 시전 키를 떼면 근처 적들에게 충전 시간에 비례하여 1~4<sprite=5>개의 정신 화살을 떨어트립니다. 각 정신 화살은 좁은 지역의 적들에게 <sprite=2><color=#FF8A2D>150%</color><sprite=5>의 <color=yellow>어둠 피해</color>를 줍니다.",
+    "description": "시전 키를 <color=yellow>길게 누르고 있으면</color> 정신 화살 무리를 충전합니다. 시전 키를 떼면 근처 적들에게 충전 시간에 비례하여 1~4<sprite=5>개의 정신 화살을 떨어트립니다. 각 정신 화살은 좁은 지역의 적들에게 <sprite=2><color=#FF8A2D>200%</color><sprite=5>의 <color=yellow>어둠 피해</color>를 줍니다.",
     "rawDesc": "시전 키를 <color=yellow>길게 누르고 있으면</color> 정신 화살 무리를 충전합니다. 시전 키를 떼면 근처 적들에게 충전 시간에 비례하여 {0}~{1}개의 정신 화살을 떨어트립니다. 각 정신 화살은 좁은 지역의 적들에게 {2}의 <color=yellow>어둠 피해</color>를 줍니다.",
     "rawDescVars": [
       {
@@ -5309,14 +5476,14 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.5,
+          "basicAD": 2.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5342,7 +5509,7 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "3초 동안 내 주변을 감싸는 화염의 고리를 생성합니다. 화염 고리에 접촉하는 적들은 초당 <sprite=1><color=#16D7FF>250%</color><sprite=5>의 <color=yellow>화염 피해</color>를 입습니다.",
+    "description": "3초 동안 내 주변을 감싸는 화염의 고리를 생성합니다. 화염 고리에 접촉하는 적들은 초당 <sprite=1><color=#16D7FF>350%</color><sprite=5>의 <color=yellow>화염 피해</color>를 입습니다.",
     "rawDesc": "{0}초 동안 내 주변을 감싸는 화염의 고리를 생성합니다. 화염 고리에 접촉하는 적들은 초당 {1}의 <color=yellow>화염 피해</color>를 입습니다.",
     "rawDescVars": [
       {
@@ -5353,7 +5520,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor*5",
         "scalingType": "unknown",
@@ -5399,7 +5566,7 @@
           "basicAP": 1.2,
           "basicAD": 0.0,
           "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.25
+          "basicAddedMultiplierPerLevel": 0.1
         }
       },
       {
@@ -5483,10 +5650,10 @@
         "raw": "speedAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 12.0,
+          "basicConstant": 13.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 3.0,
+          "basicLvl": 2.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       }
@@ -5583,6 +5750,83 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "St_R_BaptismOfSun": {
+    "name": "태양의 세례",
+    "cooldownTime": 7.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>베스퍼</color>가 태양의 힘을 받아들이며 폭발을 일으켜 주변 적들에게 <sprite=1><color=#16D7FF>200%</color><sprite=5>의 <color=yellow>화염 피해</color>를 주고 베스퍼를 공격하게 만듭니다. 6초 동안 <color=yellow>공격 속도</color>가 15%<sprite=5> 증가하며, 이 동안 <color=yellow>공격</color> 시 <sprite=2><color=#FF8A2D>40%</color><sprite=5>의 추가 <color=yellow>화염 피해</color>를 줍니다.",
+    "rawDesc": "<color=yellow>베스퍼</color>가 태양의 힘을 받아들이며 폭발을 일으켜 주변 적들에게 {0}의 <color=yellow>화염 피해</color>를 주고 베스퍼를 공격하게 만듭니다. {1}초 동안 <color=yellow>공격 속도</color>가 {2} 증가하며, 이 동안 <color=yellow>공격</color> 시 {3}의 추가 <color=yellow>화염 피해</color>를 줍니다.",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "6",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "15%<sprite=5>",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 11.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 4.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>40%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "bonusDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.4,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "도발, 화염, 공격",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Vesper",
+    "travelerMemoryLocation": "R",
+    "tags": [
+      "Fire",
+      "Melee",
+      "Attack"
+    ],
+    "image": "St_R_BaptismOfSun.png",
+    "lore": "보라! 빛이 세상의 불순물을 태우노라! \n성스러운 용광로 속에서 오직 엘피로스님의 뜻만이 순금처럼 남으리라. \n\n우리 모두 세례를 받게될지니, 울부짖으며 감사하라!",
+    "achievementKey": "ACH_HOTTER_FIRE_WINS",
+    "achievementName": "더 뜨거운 화염의 승리",
+    "achievementDescription": "베스퍼로 화염 기억을 3개 이상 보유한 채로 불타는 거인을 처치하십시오."
+  },
   "St_R_BlackArbalest": {
     "name": "검은 쇠뇌",
     "cooldownTime": 11.0,
@@ -5626,7 +5870,8 @@
     "tags": [
       "Dark",
       "HardCC",
-      "Attack"
+      "Attack",
+      "Mobility"
     ],
     "image": "St_R_BlackArbalest.PNG",
     "lore": null,
@@ -5639,7 +5884,7 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>저지 불가</color> 상태가 되어 벽에 충돌할 때까지 전방으로 <color=yellow>돌진</color>합니다. 충돌하는 적들에게 <sprite=1><color=#16D7FF>135%</color><sprite=5>의 <color=yellow>피해</color>를 주고 끌고 다니다, 벽에 충돌하면 충격파를 방출해 적들에게 <sprite=1><color=#16D7FF>300%</color><sprite=5>의 <color=yellow>피해</color>를 주고 1.5초 동안 <color=yellow>기절</color>시킵니다.\n시전 시 <color=yellow>최대 체력</color>의 10%<sprite=5>만큼 <color=yellow>보호막</color>을 얻으며, 이 보호막은 돌진이 끝나면 1초 후 사라집니다.",
+    "description": "<color=yellow>저지 불가</color> 상태가 되어 벽에 충돌할 때까지 전방으로 <color=yellow>돌진</color>합니다. 충돌하는 적들에게 <sprite=1><color=#16D7FF>135%</color><sprite=5>의 <color=yellow>피해</color>를 주고 끌고 다니다, 벽에 충돌하면 충격파를 방출해 적들에게 <sprite=1><color=#16D7FF>420%</color><sprite=5>의 <color=yellow>피해</color>를 주고 1.5초 동안 <color=yellow>기절</color>시킵니다.\n시전 시 <color=yellow>최대 체력</color>의 20%<sprite=5>만큼 <color=yellow>보호막</color>을 얻으며, 이 보호막은 돌진이 끝나면 3초 후 사라집니다.",
     "rawDesc": "<color=yellow>저지 불가</color> 상태가 되어 벽에 충돌할 때까지 전방으로 <color=yellow>돌진</color>합니다. 충돌하는 적들에게 {0}의 <color=yellow>피해</color>를 주고 끌고 다니다, 벽에 충돌하면 충격파를 방출해 적들에게 {1}의 <color=yellow>피해</color>를 주고 {2}초 동안 <color=yellow>기절</color>시킵니다.\n시전 시 <color=yellow>최대 체력</color>의 {3}만큼 <color=yellow>보호막</color>을 얻으며, 이 보호막은 돌진이 끝나면 {4}초 후 사라집니다.",
     "rawDescVars": [
       {
@@ -5656,13 +5901,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "rendered": "<sprite=1><color=#16D7FF>420%</color><sprite=5>",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.0,
+          "basicAP": 4.2,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -5682,25 +5927,25 @@
         }
       },
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": "20%<sprite=5>",
         "format": "P0",
         "raw": "shieldMaxHpRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.08,
+          "basicConstant": 0.16,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.02,
+          "basicLvl": 0.04,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": "1",
+        "rendered": "3",
         "format": "#,##0.#",
         "raw": "shieldDisappearTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5730,7 +5975,7 @@
     "cooldownTime": 80.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "12초 동안 <sprite=1><color=#16D7FF>150%</color><sprite=5>의 보호막을 얻고 <color=yellow>주문력</color>이 30% 증가합니다. 지속 시간 내에 <color=yellow>대격변</color>을 3번까지 재사용해 대상 위치에 운석을 떨어트릴 수 있습니다. 운석은 적들을 잠시 기절시키고 <sprite=1><color=#16D7FF>250%</color><sprite=5>의 <color=yellow>빛 피해</color>를 줍니다.",
+    "description": "12초 동안 <sprite=1><color=#16D7FF>150%</color><sprite=5>의 보호막을 얻고 <color=yellow>주문력</color>이 30%<sprite=5> 증가합니다. 지속 시간 내에 <color=yellow>대격변</color>을 3번까지 재사용해 대상 위치에 운석을 떨어트릴 수 있습니다. 운석은 적들을 잠시 기절시키고 <sprite=1><color=#16D7FF>250%</color><sprite=5>의 <color=yellow>빛 피해</color>를 줍니다.",
     "rawDesc": "{0}초 동안 {1}의 보호막을 얻고 <color=yellow>주문력</color>이 {2} 증가합니다. 지속 시간 내에 <color=yellow>대격변</color>을 {3}번까지 재사용해 대상 위치에 운석을 떨어트릴 수 있습니다. 운석은 적들을 잠시 기절시키고 {4}의 <color=yellow>빛 피해</color>를 줍니다.",
     "rawDescVars": [
       {
@@ -5760,15 +6005,15 @@
         }
       },
       {
-        "rendered": "30%",
+        "rendered": "30%<sprite=5>",
         "format": "#,##0'%'",
         "raw": "bonusApPercent",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 30.0,
+          "basicConstant": 25.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 5.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5820,8 +6065,8 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "대상 위치에 6초 동안 유지되는 <color=yellow>분해의 마법진</color>을 새깁니다. 마법진 내부의 적들은 초당 <sprite=1><color=#16D7FF>150%</color><sprite=5>의 <color=yellow>피해</color>를 입고, 내부의 아군들은 내부에 위치한 적 하나당 초당 <sprite=1><color=#16D7FF>44%</color><sprite=5>의 체력을 <color=yellow>회복</color>합니다. <color=yellow>보스</color>에게 적중하면 <color=yellow>피해량</color>과 <color=yellow>치유량</color>이 200% 증가합니다.",
-    "rawDesc": "대상 위치에 {0}초 동안 유지되는 <color=yellow>분해의 마법진</color>을 새깁니다. 마법진 내부의 적들은 초당 {1}의 <color=yellow>피해</color>를 입고, 내부의 아군들은 내부에 위치한 적 하나당 초당 {2}의 체력을 <color=yellow>회복</color>합니다. <color=yellow>보스</color>에게 적중하면 <color=yellow>피해량</color>과 <color=yellow>치유량</color>이 {3} 증가합니다.",
+    "description": "대상 위치에 6초 동안 유지되는 <color=yellow>분해의 마법진</color>을 새깁니다. 마법진 내부의 적들은 초당 <sprite=1><color=#16D7FF>150%</color><sprite=5>의 <color=yellow>피해</color>를 입고, 내부의 아군들은 내부에 위치한 적 하나당 초당 <sprite=1><color=#16D7FF>44%</color><sprite=5>의 체력을 <color=yellow>회복</color>합니다. <color=yellow>보스</color>에게 적중하면 <color=yellow>피해량</color>과 <color=yellow>회복량</color>이 200% 증가합니다.",
+    "rawDesc": "대상 위치에 {0}초 동안 유지되는 <color=yellow>분해의 마법진</color>을 새깁니다. 마법진 내부의 적들은 초당 {1}의 <color=yellow>피해</color>를 입고, 내부의 아군들은 내부에 위치한 적 하나당 초당 {2}의 체력을 <color=yellow>회복</color>합니다. <color=yellow>보스</color>에게 적중하면 <color=yellow>피해량</color>과 <color=yellow>회복량</color>이 {3} 증가합니다.",
     "rawDescVars": [
       {
         "rendered": "6",
@@ -5923,13 +6168,80 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "St_R_DancingBlades": {
+    "name": "칼날 폭풍",
+    "cooldownTime": 13.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "해당 지역에 4초 동안 유지되는 <color=yellow>칼날 폭풍</color>을 소환합니다. <color=yellow>칼날 폭풍</color>은 주변을 빠르게 베어 0.5초마다 적들에게 <sprite=1><color=#16D7FF>85%</color><sprite=5>와 <sprite=2><color=#FF8A2D>85%</color><sprite=5> 중 더 큰 <color=yellow>피해</color>를 주며, 가장 가까운 적을 추적합니다.",
+    "rawDesc": "해당 지역에 {0}초 동안 유지되는 <color=yellow>칼날 폭풍</color>을 소환합니다. <color=yellow>칼날 폭풍</color>은 주변을 빠르게 베어 {1}초마다 적들에게 {2}와 {3} 중 더 큰 <color=yellow>피해</color>를 주며, 가장 가까운 적을 추적합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "tickInterval",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "apDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.85,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
+        "format": "#,##0",
+        "raw": "adDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.85,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "광역 지속 피해",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [],
+    "image": "St_R_DancingBlades.png",
+    "lore": null,
+    "achievementKey": "ACH_ETERNAL_REST",
+    "achievementName": "영원한 안식",
+    "achievementDescription": "영혼 검사에게 기본 공격을 이용해 총 50회 마무리 일격을 날리십시오."
+  },
   "St_R_DangerousTheory": {
     "name": "위험한 이론",
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "앞으로 도약하며 내 다음 <color=yellow>일반 공격</color>을 강화합니다. 내 다음 <color=yellow>일반 공격</color>이 <color=yellow>치명타</color>가 되고 대상에게 <sprite=2><color=#FF8A2D>125%</color><sprite=5>의 <color=yellow>추가 피해</color>를 주며 밀쳐냅니다.\n\n만약 <color=yellow>위험한 이론</color>을 시전할 때 내 <color=yellow>현재 체력</color>이 60% 이하일 경우 <color=yellow>추가 피해량</color>이 100% 증가하고 <color=yellow>재사용 대기시간</color>이 25% 감소하며 적중한 적 하나당 내 체력을 <sprite=1><color=#16D7FF>67%</color><sprite=5> <color=yellow>회복</color>시킵니다. <color=yellow>보스</color>를 대상으로 하면 <color=yellow>추가 피해량</color>과 <color=yellow>회복량</color>이 100% 증가합니다.",
-    "rawDesc": "앞으로 도약하며 내 다음 <color=yellow>일반 공격</color>을 강화합니다. 내 다음 <color=yellow>일반 공격</color>이 <color=yellow>치명타</color>가 되고 대상에게 {0}의 <color=yellow>추가 피해</color>를 주며 밀쳐냅니다.\n\n만약 <color=yellow>위험한 이론</color>을 시전할 때 내 <color=yellow>현재 체력</color>이 {1} 이하일 경우 <color=yellow>추가 피해량</color>이 {2} 증가하고 <color=yellow>재사용 대기시간</color>이 {3} 감소하며 적중한 적 하나당 내 체력을 {4} <color=yellow>회복</color>시킵니다. <color=yellow>보스</color>를 대상으로 하면 <color=yellow>추가 피해량</color>과 <color=yellow>회복량</color>이 {5} 증가합니다.",
+    "description": "앞으로 도약하며 내 다음 <color=yellow>기본 공격</color>을 강화합니다. 내 다음 <color=yellow>기본 공격</color>이 <color=yellow>치명타</color>가 되고 대상에게 <sprite=2><color=#FF8A2D>125%</color><sprite=5>의 <color=yellow>추가 피해</color>를 주며 밀쳐냅니다.\n\n만약 <color=yellow>위험한 이론</color>을 시전할 때 내 <color=yellow>현재 체력</color>이 60% 이하일 경우 <color=yellow>추가 피해량</color>이 100% 증가하고 <color=yellow>재사용 대기시간</color>이 25% 감소하며 적중한 적 하나당 내 체력을 <sprite=1><color=#16D7FF>67%</color><sprite=5> <color=yellow>회복</color>시킵니다. <color=yellow>보스</color>를 대상으로 하면 <color=yellow>추가 피해량</color>과 <color=yellow>회복량</color>이 100% 증가합니다.",
+    "rawDesc": "앞으로 도약하며 내 다음 <color=yellow>기본 공격</color>을 강화합니다. 내 다음 <color=yellow>기본 공격</color>이 <color=yellow>치명타</color>가 되고 대상에게 {0}의 <color=yellow>추가 피해</color>를 주며 밀쳐냅니다.\n\n만약 <color=yellow>위험한 이론</color>을 시전할 때 내 <color=yellow>현재 체력</color>이 {1} 이하일 경우 <color=yellow>추가 피해량</color>이 {2} 증가하고 <color=yellow>재사용 대기시간</color>이 {3} 감소하며 적중한 적 하나당 내 체력을 {4} <color=yellow>회복</color>시킵니다. <color=yellow>보스</color>를 대상으로 하면 <color=yellow>추가 피해량</color>과 <color=yellow>회복량</color>이 {5} 증가합니다.",
     "rawDescVars": [
       {
         "rendered": "<sprite=2><color=#FF8A2D>125%</color><sprite=5>",
@@ -6821,7 +7133,7 @@
   "St_R_QuickTrigger": {
     "name": "빠른 손",
     "cooldownTime": 14.0,
-    "maxCharges": 2,
+    "maxCharges": 3,
     "addedCharges": 1,
     "description": "최대 3명의 적에게 <sprite=2><color=#FF8A2D>120%</color><sprite=5>의 피해를 주는 관통탄을 빠르게 3발 발사합니다.",
     "rawDesc": "최대 {0}명의 적에게 {1}의 피해를 주는 관통탄을 빠르게 {2}발 발사합니다.",
@@ -7470,9 +7782,22 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "시전 키를 <color=yellow>길게 누르고 있으면</color> 전하를 충전합니다. 충전이 끝나면 전하를 폭발시켜 충전 시간에 비례하여 적들에게 <sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>780%</color><sprite=5>의 <color=yellow>빛 피해</color>를 주고 밀쳐내며 <color=yellow>이동 속도</color>를 감소시킵니다.\n1초 동안 충전하면 피해량과 범위가 최대치에 도달합니다.",
-    "rawDesc": "시전 키를 <color=yellow>길게 누르고 있으면</color> 전하를 충전합니다. 충전이 끝나면 전하를 폭발시켜 충전 시간에 비례하여 적들에게 {0}~{1}의 <color=yellow>빛 피해</color>를 주고 밀쳐내며 <color=yellow>이동 속도</color>를 감소시킵니다.\n{2}초 동안 충전하면 피해량과 범위가 최대치에 도달합니다.",
+    "description": "시전 키를 <color=yellow>길게 누르고 있으면</color> 전하를 충전하며 40<sprite=5>의 방어력을 얻습니다. 충전이 끝나면 전하를 폭발시켜 충전 시간에 비례하여 적들에게 <sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>780%</color><sprite=5>의 <color=yellow>빛 피해</color>를 주고 밀쳐내며 2초 동안 <color=yellow>이동 속도</color>를 60% 감소시킵니다. 획득한 방어력은 전하를 폭발시킨 후 1초 후에 사라집니다.\n\n1초 동안 충전하면 피해량과 범위가 최대치에 도달합니다.",
+    "rawDesc": "시전 키를 <color=yellow>길게 누르고 있으면</color> 전하를 충전하며 {0}의 방어력을 얻습니다. 충전이 끝나면 전하를 폭발시켜 충전 시간에 비례하여 적들에게 {1}~{2}의 <color=yellow>빛 피해</color>를 주고 밀쳐내며 {3}초 동안 <color=yellow>이동 속도</color>를 {4} 감소시킵니다. 획득한 방어력은 전하를 폭발시킨 후 {5}초 후에 사라집니다.\n\n{6}초 동안 충전하면 피해량과 범위가 최대치에 도달합니다.",
     "rawDescVars": [
+      {
+        "rendered": "40<sprite=5>",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 37.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 3.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
       {
         "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
         "format": "#,##0",
@@ -7497,6 +7822,45 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "slowDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "60%",
+        "format": "#,##0'%'",
+        "raw": "slowAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 60.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "armorLingerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
         }
       },
       {
