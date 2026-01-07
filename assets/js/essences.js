@@ -15,6 +15,7 @@ let activeTagFilter = '';
 // NOTE : Le filtre de voyageur (activeTravelerFilter) est retiré.
 
 let searchQuery = ''; // Le texte actuellement tapé dans la barre de recherche.
+searchQuery = location.hash.replace("#", "").replaceAll("%20", " ").toLowerCase();
 let activeStatFilter = 'All'; // Le filtre AP/AD actuellement sélectionné.
 
 // La variable de niveau est maintenue mais sera fixée à 0 car inutile pour les essences
@@ -85,12 +86,15 @@ const init = async (lang) => {
         highlightActiveNav('essences');
         [document.getElementById('language-selector'), document.getElementById('language-selector-mobile')]
             .forEach(selector => { if (selector) selector.value = lang; });
-        document.getElementById('search-input').placeholder = T.searchPlaceholder;
+        document.getElementById('search-input').placeholder = T.searchPlaceholderEssence || "Search for an essence...";
+        document.getElementById('search-input').value = searchQuery;
         const levelLabelElement = document.getElementById('level-label-text');
         if (levelLabelElement) levelLabelElement.textContent = T.levelPLabel;
         document.querySelector('.nav-home-link').textContent = T.navHome;
         document.querySelector('.nav-memories-link').textContent = T.navMemories;
         document.querySelector('.nav-essences-link').textContent = T.navEssences;
+        document.querySelector('.nav-rest-link').textContent = T.navRest;
+        document.querySelector('.nav-deja-vu-link').textContent = T.navDejaVu;
         document.getElementById('footer-text').textContent = T.footerText;
         // On rend tous les éléments traduits visibles avec une transition douce
         document.querySelectorAll('.translate-on-load').forEach(el => {
@@ -98,6 +102,7 @@ const init = async (lang) => {
         });
         filteredEssences = [...allEssences];
         populateFilters();
+        applyFilters();
         renderEssences(filteredEssences);
 
     } catch (error) {
@@ -460,3 +465,7 @@ if (document.readyState === 'loading') {
 } else {
     main();
 }
+
+window.addEventListener('hashchange', function() {
+  location.reload();
+});
