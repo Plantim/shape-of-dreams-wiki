@@ -40,33 +40,33 @@ body {
 .card-bg-Common {
     /* Gris très léger */
     background-color: rgba(74, 85, 104, 0.4);
-    border: 3px solid #4a5568; 
+    border: 3px solid #4a5568;
 }
 .card-bg-Rare {
     /* Bleu très léger */
     background-color: rgba(33, 63, 100, 0.4);
-    border: 3px solid #213f64; 
+    border: 3px solid #213f64;
 }
 .card-bg-Epic {
     /* Violet très léger */
     background-color: rgba(74, 63, 95, 0.4);
-    border: 3px solid #4a3f5f; 
+    border: 3px solid #4a3f5f;
 }
 .card-bg-Legendary {
     /* Rouge brique très léger */
     background-color: rgba(119, 55, 55, 0.4);
-    border: 3px solid #773737; 
+    border: 3px solid #773737;
 }
 .card-bg-Unique {
     /* Jaune terreux très léger */
     background-color: rgba(105, 94, 31, 0.4);
     /* NOTE: J'ai laissé la bordure en #ffc850 (jaune vif) pour la démarcation, car le fond est très sombre. */
-    border: 3px solid #b4a321cb; 
+    border: 3px solid #b4a321cb;
 }
 .card-bg-Character {
     /* Bleu-vert très léger */
     background-color: rgba(30, 83, 90, 0.4);
-    border: 3px solid #1E535A; 
+    border: 3px solid #1E535A;
 }
 .card-bg-Identity {
     /* Orange très léger (subtil) */
@@ -100,17 +100,17 @@ body {
 /* Styles pour le nom anglais entre parenthèses */
 .english-name-wrapper {
     /* Forcer l'élément à suivre le texte en ligne */
-    display: inline;  
+    display: inline;
     /* Ajouter la marge à gauche qui ne sera appliquée que si l'élément est sur la même ligne */
-     
+
     /* Met la police un peu plus petite */
-    font-size: 0.70em; 
+    font-size: 0.70em;
     /* Couleur du texte */
-    color: #aab3bf;    
+    color: #aab3bf;
     /* Force le nom anglais à rester sur la même ligne, mais il peut s'enrouler si le nom principal est trop long */
     /* white-space: nowrap;  */
     /* Met la police en normal (non-gras) */
-    font-weight: 400;  
+    font-weight: 400;
 }
 
 
@@ -125,23 +125,23 @@ body {
 .traveler-filter-btn.btn-active,
 .stat-filter-btn.btn-active {
     /* Fond très clair pour le mettre en évidence */
-    background-color: #f3f4f6bb; 
+    background-color: #f3f4f6bb;
     /* Texte sombre */
-    color: #1e232c; 
+    color: #1e232c;
     /* Bordure bleu pour l'identité visuelle */
-    border: 1px solid #5088f8; 
+    border: 1px solid #5088f8;
     /* Éclat lumineux bleu pour le mettre en évidence */
-    box-shadow: none; 
+    box-shadow: none;
 }
 
 /* Style pour les boutons de filtre inactifs */
 .rarity-filter-btn, .element-filter-btn, .tag-filter-btn, .traveler-filter-btn {
     /* Rend les boutons semi-transparents pour s'accorder au fond */
-    background-color: #3C3B3A; 
+    background-color: #3C3B3A;
     /* Bordure très légère */
-    border: 1px solid #5C5B5A; 
+    border: 1px solid #5C5B5A;
     /* Réduit le padding du bouton pour le rendre plus compact (optionnel) */
-    padding: 0.25rem 0.5rem; 
+    padding: 0.25rem 0.5rem;
     /* Réduit la taille du texte si vous ne l'avez pas déjà fait dans memories.js */
     font-size: 0.875rem;
     /* Ajout d'une transition pour un effet de survol plus doux */
@@ -150,9 +150,9 @@ body {
 
 .filters-background {
     background-color: #2B2A29; /* Identique au fond de la page */
-    
-    /* Inutile si la couleur est la même pour le fond du site 
-    On peut aussi ajouter un peu d'espace et des coins arrondis pour un effet "carte" 
+
+    /* Inutile si la couleur est la même pour le fond du site
+    On peut aussi ajouter un peu d'espace et des coins arrondis pour un effet "carte"
     padding: 24px;
     border-radius: 12px;*/
 }
@@ -166,11 +166,11 @@ body {
     /* Fond très clair pour le mettre en évidence */
     background-color: #f3f4f6bb !important; /* On utilise !important pour être sûr de surcharger le style de DaisyUI */
     /* Texte sombre */
-    color: #1e232c !important; 
+    color: #1e232c !important;
     /* Bordure bleu pour l'identité visuelle */
-    border: 1px solid #5088f8; 
+    border: 1px solid #5088f8;
     /* Éclat lumineux bleu pour le mettre en évidence */
-    box-shadow: none; 
+    box-shadow: none;
 }
 
 /* ---------------------------------------------------
@@ -194,4 +194,146 @@ body {
 .tooltip-sprite .tooltip {
     display: inline-block;
     vertical-align: middle;
+}
+
+
+
+
+/* Deja Vu */
+@media (min-width: 12px) {
+    [data-container="fluid"] .container {
+        max-width: 1600px;
+    }
+    #deja-vu-amount {
+        cursor: help;
+        transition: color .2s linear;
+    }
+
+    #deja-vu-amount:hover {
+        color: #773737;
+    }
+
+    .deja-vu-items {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .deja-vu-items > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 16px 16px;
+        border-radius: 0.75rem;
+        position: relative;
+    }
+
+    #deja-vu-memories-items img {
+        border-radius: 50%;
+    }
+
+    .deja-vu-items .item_progress {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 14px;
+        gap: 8px;
+        height: 20px;
+    }
+
+    .deja-vu-items .item_progress-control {
+        pointer-events: none;
+        position: absolute;
+        opacity: 0;
+        transition: opacity .2s linear;
+        bottom: 4px;
+        left: 4px;
+        width: 16px;
+        height: 16px;
+        font-size: 16px;
+        line-height: 1;
+        color: white;
+        background: grey;
+        text-align: center;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .deja-vu-items .item_progress-plus {
+        left: auto;
+        right: 4px;
+    }
+
+    .deja-vu-items > div:hover .item_progress-control {
+        pointer-events: auto;
+        opacity: 1;
+    }
+
+    .deja-vu-items .item_progress div:not(.item_progress-control) {
+        width: 11px;
+        height: 11px;
+        border: 2px solid #4a5568;
+        transform: rotate(45deg);
+        position: relative;
+        top: 4px;
+        top: 0;
+    }
+
+    .deja-vu-items div[data-level="0"] img {
+        opacity: .25;
+    }
+
+    .deja-vu-items div[data-complete="true"] .item_progress-plus,
+    .deja-vu-items div[data-level="0"] .item_progress-minus {
+        display: none;
+    }
+
+    .deja-vu-items div[data-level="1"] .item_progress div:nth-child(1),
+    .deja-vu-items div[data-level="2"] .item_progress div:nth-child(1),
+    .deja-vu-items div[data-level="2"] .item_progress div:nth-child(2),
+    .deja-vu-items div[data-level="3"] .item_progress div:nth-child(1),
+    .deja-vu-items div[data-level="3"] .item_progress div:nth-child(2),
+    .deja-vu-items div[data-level="3"] .item_progress div:nth-child(3),
+    .deja-vu-items div[data-level="4"] .item_progress div:nth-child(1),
+    .deja-vu-items div[data-level="4"] .item_progress div:nth-child(2),
+    .deja-vu-items div[data-level="4"] .item_progress div:nth-child(3),
+    .deja-vu-items div[data-level="4"] .item_progress div:nth-child(4),
+    .deja-vu-items div[data-level="5"] .item_progress div:nth-child(1),
+    .deja-vu-items div[data-level="5"] .item_progress div:nth-child(2),
+    .deja-vu-items div[data-level="5"] .item_progress div:nth-child(3),
+    .deja-vu-items div[data-level="5"] .item_progress div:nth-child(4),
+    .deja-vu-items div[data-level="5"] .item_progress div:nth-child(5),
+    .deja-vu-items div[data-level="6"] .item_progress div:nth-child(1),
+    .deja-vu-items div[data-level="6"] .item_progress div:nth-child(2),
+    .deja-vu-items div[data-level="6"] .item_progress div:nth-child(3),
+    .deja-vu-items div[data-level="6"] .item_progress div:nth-child(4),
+    .deja-vu-items div[data-level="6"] .item_progress div:nth-child(5),
+    .deja-vu-items div[data-level="6"] .item_progress div:nth-child(6) {
+        border: 2px solid #4d96c0;
+        background: #4d96c0;
+    }
+
+    .deja-vu-items div[data-complete="true"] {
+        opacity: .2;
+    }
+
+    .deja-vu-items div[data-complete="true"] .item_progress div:not(.item_progress-control) {
+        border: 2px solid #b4a321cb!important;
+        background: #b4a321cb!important;
+    }
+
+
+    @media (min-width: 768px) {
+        .deja-vu-items {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    @media (min-width: 1440px) {
+        .deja-vu-items {
+            grid-template-columns: repeat(8, 1fr);
+        }
+    }
 }

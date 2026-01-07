@@ -15,6 +15,7 @@ let activeTagFilter = '';
 let activeTravelerFilter = '';
 
 let searchQuery = ''; // Le texte actuellement tapé dans la barre de recherche.
+searchQuery = location.hash.replace("#", "").replaceAll("%20", " ").toLowerCase();
 let activeStatFilter = ''; // filtre AD/AP Initialisé comme une chaîne vide
 
 // Nouvelle variable d'état pour le niveau
@@ -103,10 +104,13 @@ const init = async (lang) => {
         [document.getElementById('language-selector'), document.getElementById('language-selector-mobile')]
             .forEach(selector => { if (selector) selector.value = lang; });
         document.getElementById('search-input').placeholder = T.searchPlaceholder;
+        document.getElementById('search-input').value = searchQuery;
         document.getElementById('level-label-text').textContent = T.levelLabel;
         document.querySelector('.nav-home-link').textContent = T.navHome;
         document.querySelector('.nav-memories-link').textContent = T.navMemories;
         document.querySelector('.nav-essences-link').textContent = T.navEssences;
+        document.querySelector('.nav-rest-link').textContent = T.navRest;
+        document.querySelector('.nav-deja-vu-link').textContent = T.navDejaVu;
         document.getElementById('footer-text').textContent = T.footerText;
         // On rend tous les éléments traduits visibles avec une transition douce
         document.querySelectorAll('.translate-on-load').forEach(el => {
@@ -115,6 +119,7 @@ const init = async (lang) => {
 
         filteredMemories = [...allMemories];
         populateFilters();
+        applyFilters();
         renderMemories(filteredMemories);
 
     } catch (error) {
@@ -540,12 +545,22 @@ const renderMemories = (memoriesToRender) => {
                         return `<div class="badge badge-sm text-xs text-gray-300">${translatedTag}</div>`;
                     }).join('');
                 }
+                // Memory level up provide cooldown reduction, it's roughly 5%
+                // Passives and Ultimates (charging memories with long cooldown) behave different and excluded from this logic
+                // Dodge for travelers also excluded as they don't receive level up's
+                let leveledCooldown = Math.round(memory.cooldownTime * Math.pow(.95, currentLevel) * 10) / 10;
+                let cooldownTimeHtml = `${memory.cooldownTime}s`;
+                let notDodgeMemory = memory.travelerMemoryLocation !== 'Movement';
+                // not 0 && with some lvl && not ultimate && not dodge
+                if (leveledCooldown && currentLevel && (memory.cooldownTime < 40) && notDodgeMemory) {
+                    cooldownTimeHtml = leveledCooldown + `s<span class="tooltip tooltip-left" data-tip="Aproximate reduction, default value is ${memory.cooldownTime}s"><img src="assets/game/sprites/5.png" class="inline-sprite" alt="Sprite 5"></span>`;
+                }
 
                 const travelerMemoryLocationHtml = ""
                     ? `<p class="text-sm text-gray-400 mt-2"><b>Lieu :</b> ${memory.travelerMemoryLocation}</p>`
                     : '';
                 const cooldownHtml = memory.cooldownTime
-                    ? `<div class="absolute top-4 right-4 bg-gray-900 text-white rounded-full p-2 text-xs font-bold">${memory.cooldownTime}s</div>`
+                    ? `<div class="absolute top-4 right-4 bg-gray-900 text-white rounded-full p-2 text-xs font-bold">${cooldownTimeHtml}</div>`
                     : '';
                 
                 const achievementHtml = getAchievementHtml(memory, translations, allAchievements);
@@ -609,3 +624,7 @@ if (document.readyState === 'loading') {
 } else {
     main();
 }
+
+window.addEventListener('hashchange', function() {
+  location.reload();
+});

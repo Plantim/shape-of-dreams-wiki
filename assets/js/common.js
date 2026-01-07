@@ -91,7 +91,7 @@ const getTravelerDisplayName = (travelerKey, lang, allTravelerNames) => {
 
 // Fonction pour mettre en évidence le lien de navigation actif
 const highlightActiveNav = (activePage) => {
-    document.querySelectorAll('.nav-home-link, .nav-memories-link, .nav-essences-link').forEach(link => {
+    document.querySelectorAll('.navbar a').forEach(link => {
         link.classList.remove('nav-active');
     });
     const activeLink = document.querySelector(`.nav-${activePage}-link`);

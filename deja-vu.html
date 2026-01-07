@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!-- theme dark : précision importante pour mobile -->
+<html lang="en" data-theme="dark">
+
+<!-- Cette partie, invisible pour l'utilisateur, contient des informations cruciales sur la page : -->
+<head>
+    <!-- Définition de l'encodage des caractères pour supporter les accents et caractères spéciaux -->
+    <meta charset="UTF-8">
+    <!-- Responsive design pour s'adapter à tous les écrans -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Forcer le mode sombre (important surtout sur mobile) -->
+    <meta name="color-scheme" content="dark only">
+    <!-- Icone pour les appareils Apple -->
+    <link rel="apple-touch-icon" href="assets/ui/apple-touch-icon.png">
+    <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <title data-info="pageTitleDejaVu">Deja Vu - SoD</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/ui/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/ui/favicon-32x32.png">
+    <!-- Importation de DaisyUI (composants Tailwind CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Importation de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Préconnexion pour accélérer le chargement des polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importation de la police Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        .translate-on-load {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .translate-on-load.loaded {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<!-- C'est ici que se trouve tout le contenu visible de la page. -->
+<body class="text-white min-h-screen" data-container="fluid">
+
+    <!-- Barre de navigation en haut de la page, avec liens vers les autres pages et une barre de recherche -->
+    <div class="container mx-auto navbar bg-[#2B2A29]/80 p-2 sticky top-0 z-50 backdrop-blur-sm">
+        <div class="flex-1 flex-wrap">
+            <a href="index.html" data-info="navHome" class="btn btn-ghost text-base nav-home-link translate-on-load"></a>
+            <a href="memories.html" data-info="navMemories" class="btn btn-ghost text-base nav-memories-link translate-on-load"></a>
+            <a href="essences.html" data-info="navEssences" class="btn btn-ghost text-base nav-essences-link translate-on-load"></a>
+            <a href="deja-vu.html" data-info="navDejaVu" class="btn btn-ghost text-base nav-deja-vu-link translate-on-load"></a>
+            <a href="rest.html" data-info="navRest" class="btn btn-ghost text-base nav-rest-link translate-on-load"></a>
+        </div>
+
+        <div class="flex-none hidden sm:flex translate-on-load">
+            <select id="language-selector" class="select select-bordered select-sm bg-[#3C3B3A] border-[#5C5B5A] text-gray-200 focus:border-blue-500 focus:ring-0">
+                <option value="en-US">English</option>
+                <option value="fr-FR">Français</option>  
+                <option value="de-DE">Deutsch</option>
+                <option value="es-MX">Español (México)</option>
+                <option value="it-IT">Italiano</option>
+                <option value="ja-JP">日本語</option>
+                <option value="ko-KR">한국어</option>
+                <option value="pl-PL">Polski</option>
+                <option value="pt-BR">Português (Brasil)</option>
+                <option value="ru-RU">Русский</option>
+                <option value="tr-TR">Türkçe</option>
+                <option value="zh-CN">简体中文</option>
+                <option value="zh-TW">繁體中文</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="sm:hidden p-4 bg-[#2B2A29]/80 flex justify-start translate-on-load">
+        <select id="language-selector-mobile" class="select select-bordered select-sm bg-[#3C3B3A] border-[#5C5B5A] text-gray-200 focus:border-blue-500 focus:ring-0">
+            <option value="en-US">English</option>
+            <option value="fr-FR">Français</option>  
+            <option value="de-DE">Deutsch</option>
+            <option value="es-MX">Español (México)</option>
+            <option value="it-IT">Italiano</option>
+            <option value="ja-JP">日本語</option>
+            <option value="ko-KR">한국어</option>
+            <option value="pl-PL">Polski</option>
+            <option value="pt-BR">Português (Brasil)</option>
+            <option value="ru-RU">Русский</option>
+            <option value="tr-TR">Türkçe</option>
+            <option value="zh-CN">简体中文</option>
+            <option value="zh-TW">繁體中文</option>
+        </select>
+    </div>
+
+    <div class="container mx-auto p-4">
+        <h1 class="text-5xl sm:text-6xl font-bold my-8 text-center">
+            <span data-info="dejaVuTitle">Deja Vu Tracker</span> <span title="Click on this item to reset!" id="deja-vu-amount" class="text-3xl">(0,00%)</span>
+        </h1>
+
+        <div id="deja-vu-container" class="">
+            <h3 data-info="memoriesCardTitle" class="text-3xl sm:text-4xl font-bold my-6"></h3>
+            <div id="deja-vu-memories-items" class="deja-vu-items">
+                <div data-item="St_C_BackStep"></div>
+                <div data-item="St_R_ShadowWalk"></div>
+                <div data-item="St_C_Whirlwind"></div>
+                <div data-item="St_C_SwiftSlash"></div>
+                <div data-item="St_C_Starfall"></div>
+                <div data-item="St_C_SparklingWaterGun"></div>
+                <div data-item="St_C_Purgatory"></div>
+                <div data-item="St_C_Pew"></div>
+                <div data-item="St_C_MassProtection"></div>
+                <div data-item="St_C_MagicSword"></div>
+                <div data-item="St_C_PressurePoint"></div>
+                <div data-item="St_C_IceBlock"></div>
+                <div data-item="St_C_Hemorrhage"></div>
+                <div data-item="St_C_GlacialStomp"></div>
+                <div data-item="St_C_FlashFreeze"></div>
+                <div data-item="St_C_DarkSpear"></div>
+                <div data-item="St_C_DarkBolt"></div>
+                <div data-item="St_C_CorrosiveTrails"></div>
+                <div data-item="St_C_IceClaw"></div>
+                <div data-item="St_C_BeamOfLight"></div>
+
+                <div data-item="St_R_GreatFrostSword"></div>
+                <div data-item="St_R_GlacialHammer"></div>
+                <div data-item="St_R_Frostbite"></div>
+                <div data-item="St_R_Chomp"></div>
+                <div data-item="St_R_DancingBlades"></div>
+                <div data-item="St_R_Ignite"></div>
+                <div data-item="St_R_FlamingWhip"></div>
+                <div data-item="St_R_Immolation"></div>
+                <div data-item="St_R_StaticDischarge"></div>
+                <div data-item="St_R_LightningDance"></div>
+                <div data-item="St_R_OrbOfLight"></div>
+                <div data-item="St_R_PillarOfFlame"></div>
+                <div data-item="St_R_RepulsiveShield"></div>
+                <div data-item="St_R_Scattershot"></div>
+                <div data-item="St_R_ShadowOverdrive"></div>
+                <div data-item="St_R_Smite"></div>
+                <div data-item="St_R_BoneCrusher"></div>
+                <div data-item="St_R_Inspire"></div>
+                <div data-item="St_R_BlackArbalest"></div>
+
+                <div data-item="St_E_StygianRush"></div>
+                <div data-item="St_E_MysticDagger"></div>
+                <div data-item="St_E_MassCleanse"></div>
+                <div data-item="St_E_WinterDive"></div>
+                <div data-item="St_E_Permafrost"></div>
+                <div data-item="St_E_Rewind"></div>
+                <div data-item="St_E_SearingCharge"></div>
+                <div data-item="St_E_ShadowVolley"></div>
+                <div data-item="St_E_SliceThroat"></div>
+                <div data-item="St_E_FlameJet"></div>
+                <div data-item="St_E_UmbralEdge"></div>
+                <div data-item="St_E_VileStrike"></div>
+                <div data-item="St_E_FinalExplosion"></div>
+                <div data-item="St_E_DoomsdayMeteor"></div>
+                <div data-item="St_E_CrimsonLance"></div>
+                <div data-item="St_E_ClutchesOfMalice"></div>
+                <div data-item="St_E_ChainLightning"></div>
+                <div data-item="St_E_Blink"></div>
+                <div data-item="St_E_AntiGravity"></div>
+                <div data-item="St_E_JusticeGuillotine"></div>
+                <div data-item="St_E_Harvest"></div>
+
+                <div data-item="St_L_Blizzard"></div>
+                <div data-item="St_L_SpectreBullet"></div>
+                <div data-item="St_L_PyranasFireball"></div>
+                <div data-item="St_L_Multishot"></div>
+                <div data-item="St_L_MentalCorruption"></div>
+                <div data-item="St_L_LightExplosion"></div>
+                <div data-item="St_L_CoinExplosion"></div>
+                <div data-item="St_L_ButchersStrike"></div>
+
+                <div data-item="St_U_BeamOfBalance"></div>
+                <div data-item="St_U_Burrow"></div>
+                <div data-item="St_U_HerWorld"></div>
+                <div data-item="St_U_Hysteria"></div>
+                <div data-item="St_U_ShoutOfOblivion"></div>
+                <div data-item="St_U_WorldCracker"></div>
+            </div>
+            <h3 data-info="essencesCardTitle" class="text-3xl sm:text-4xl font-bold my-6"></h3>
+            <div id="deja-vu-essences-items" class="deja-vu-items">
+                <div data-item="Gem_C_Charcoal"></div>
+                <div data-item="Gem_C_Wind"></div>
+                <div data-item="Gem_C_Void"></div>
+                <div data-item="Gem_C_Talc"></div>
+                <div data-item="Gem_C_Sulfur"></div>
+                <div data-item="Gem_C_Shatter"></div>
+                <div data-item="Gem_C_Responsibility"></div>
+                <div data-item="Gem_C_Sharp"></div>
+                <div data-item="Gem_C_Quicksilver"></div>
+                <div data-item="Gem_C_Love"></div>
+                <div data-item="Gem_C_Lethality"></div>
+                <div data-item="Gem_C_Guidance"></div>
+                <div data-item="Gem_C_Efficiency"></div>
+                <div data-item="Gem_C_Confidence"></div>
+                <div data-item="Gem_C_Regeneration"></div>
+
+                <div data-item="Gem_R_Dusk"></div>
+                <div data-item="Gem_R_Glaciate"></div>
+                <div data-item="Gem_R_Frost"></div>
+                <div data-item="Gem_R_Flow"></div>
+                <div data-item="Gem_R_Contempt"></div>
+                <div data-item="Gem_R_Adventure"></div>
+                <div data-item="Gem_R_Celestial"></div>
+                <div data-item="Gem_R_Blood"></div>
+                <div data-item="Gem_R_Bleak"></div>
+                <div data-item="Gem_R_Blade"></div>
+                <div data-item="Gem_R_Insatiable"></div>
+                <div data-item="Gem_R_Composure"></div>
+                <div data-item="Gem_R_Momentum"></div>
+                <div data-item="Gem_R_Shock"></div>
+                <div data-item="Gem_R_Panic"></div>
+                <div data-item="Gem_R_Rejuvenation"></div>
+                <div data-item="Gem_R_Ricochet"></div>
+                <div data-item="Gem_R_Rigidity"></div>
+                <div data-item="Gem_R_Scorched"></div>
+                <div data-item="Gem_R_Accuracy"></div>
+                <div data-item="Gem_R_Snow"></div>
+                <div data-item="Gem_R_Spiral"></div>
+                <div data-item="Gem_R_Stillness"></div>
+                <div data-item="Gem_R_Wealth"></div>
+                <div data-item="Gem_R_Wound"></div>
+                <div data-item="Gem_C_Vengeance"></div>
+                <div data-item="Gem_R_NightSky"></div>
+                <div data-item="Gem_R_Abyss"></div>
+
+                <div data-item="Gem_E_Umbra"></div>
+                <div data-item="Gem_E_Omega"></div>
+                <div data-item="Gem_E_Inversion"></div>
+                <div data-item="Gem_E_Metal"></div>
+                <div data-item="Gem_E_Might"></div>
+                <div data-item="Gem_E_Obsidian"></div>
+                <div data-item="Gem_E_Flexibility"></div>
+                <div data-item="Gem_E_Opportunity"></div>
+                <div data-item="Gem_E_Overload"></div>
+                <div data-item="Gem_E_Pain"></div>
+                <div data-item="Gem_E_Predation"></div>
+                <div data-item="Gem_E_Protection"></div>
+                <div data-item="Gem_E_Insight"></div>
+                <div data-item="Gem_E_Reflex"></div>
+                <div data-item="Gem_E_Twilight"></div>
+                <div data-item="Gem_E_Fever"></div>
+                <div data-item="Gem_E_Virtuousness"></div>
+                <div data-item="Gem_E_Fangs"></div>
+                <div data-item="Gem_E_Domination"></div>
+                <div data-item="Gem_E_Direness"></div>
+                <div data-item="Gem_E_Crimson"></div>
+                <div data-item="Gem_E_Clemency"></div>
+                <div data-item="Gem_E_Blossom"></div>
+                <div data-item="Gem_E_Aftershock"></div>
+                <div data-item="Gem_E_Thunder"></div>
+                <div data-item="Gem_E_Insensitivity"></div>
+
+                <div data-item="Gem_L_Embertail"></div>
+                <div data-item="Gem_L_ChaosApple"></div>
+                <div data-item="Gem_L_SuppressedArcanum"></div>
+                <div data-item="Gem_L_SolarEye"></div>
+                <div data-item="Gem_L_PureWhite"></div>
+                <div data-item="Gem_L_Perfect"></div>
+                <div data-item="Gem_L_Paranoia"></div>
+                <div data-item="Gem_L_HeartOfGold"></div>
+                <div data-item="Gem_L_DivineFaith"></div>
+
+                <div data-item="Gem_U_LastStarlight"></div>
+                <div data-item="Gem_U_EternalFlame"></div>
+                <div data-item="Gem_U_GlacialCore"></div>
+                <div data-item="Gem_U_SoulPrison"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="text-center p-4 mt-8 text-gray-500">
+        <p data-info="footerText"></p>
+    </footer>
+
+    <!-- Version display in the bottom right corner -->
+    <div id="version-display" class="fixed bottom-2 right-3 text-xs text-gray-600 font-mono"></div>
+    
+    <!-- Appel du loader pour charger le Script JS et le CSS -->
+    <script src="assets/js/loader.js?v=1.2.0" data-page-script="deja-vu.js"></script>
+</body>
+</html>

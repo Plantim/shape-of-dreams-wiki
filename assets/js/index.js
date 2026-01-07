@@ -19,6 +19,8 @@ const translatePage = (lang) => {
     document.querySelector('.nav-home-link').textContent = T.navHome;
     document.querySelector('.nav-memories-link').textContent = T.navMemories;
     document.querySelector('.nav-essences-link').textContent = T.navEssences;
+    document.querySelector('.nav-rest-link').textContent = T.navRest;
+    document.querySelector('.nav-deja-vu-link').textContent = T.navDejaVu;
     // TRADUCTION DU PIED DE PAGE
     document.getElementById('footer-text').textContent = T.footerText;
     // On rend tous les éléments traduits visibles avec une transition douce
