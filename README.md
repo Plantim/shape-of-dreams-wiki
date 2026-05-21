@@ -58,9 +58,9 @@ The project is organized with a clean and scalable structure to facilitate maint
 |   `-- ui/                        # Site-specific UI elements (favicons...)
 |
 |-- scripts/
-|   `-- update_wiki_version.py     # Python utility script to bump HTML file versions
-|   `-- update_wiki_data.py        # Python utility script to update wiki data
-|   `-- update_game_version.py     # Python utility script to bump the game version number
+|   `-- change_website_version.py  # Python utility script to bump HTML file versions
+|   `-- import_game_data.py        # Python utility script to import wiki data
+|   `-- change_game_version.py     # Python utility script to bump the game version number
 |
 `-- README.md                 # This file
 ```
