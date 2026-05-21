@@ -1,11 +1,11 @@
 ﻿{
   "St_C_BackStep": {
-    "name": "バックステップ",
+    "name": "後退",
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "後方へ跳び、元いたの位置に3個の爆弾を落とします。各<sprite=1><color=#16D7FF>168%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、1秒間<color=yellow>スタン</color>させます。",
-    "rawDesc": "後方へ跳び、元いたの位置に{0}個の爆弾を落とします。各{1}の<color=yellow>ダメージ</color>を与え、{2}秒間<color=yellow>スタン</color>させます。",
+    "description": "後方へ跳び、元いた位置に3個の衝撃爆弾を落とし、それぞれ <sprite=1><color=#fff><gradient=sv_ap>168%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、1秒間<color=yellow>スタン</color>させます。跳躍終了後、3秒間<color=yellow>移動速度</color>が 20%<sprite=5> 増加します。",
+    "rawDesc": "後方へ跳び、元いた位置に{0}個の衝撃爆弾を落とし、それぞれ{1}の<color=yellow>ダメージ</color>を与え、{2}秒間<color=yellow>スタン</color>させます。跳躍終了後、{3}秒間<color=yellow>移動速度</color>が{4}増加します。",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -21,7 +21,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>168%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>168%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -45,9 +45,35 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "speedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 20%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 5.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
       }
     ],
-    "shortDescription": "バックステップして爆弾を投下",
+    "shortDescription": "後退しながら爆弾を投下",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -67,25 +93,25 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "チャネリングして、1.7<sprite=5>秒にわたって敵に光線を発射します。毎秒<sprite=1><color=#16D7FF>507%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、近くにいる最もHP割合が低い味方のHPを毎秒<sprite=1><color=#16D7FF>73%</color><sprite=5>ずつ<color=yellow>回復</color>します。",
+    "description": "チャネリングして、 1.7<sprite=5> 秒にわたって敵に光線を発射します。毎秒 <sprite=1><color=#fff><gradient=sv_ap>507%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与え、近くにいる最もHP割合が低い味方のHPを毎秒 <sprite=1><color=#fff><gradient=sv_ap>73%</gradient></color><sprite=5> ずつ<color=yellow>回復</color>します。",
     "rawDesc": "チャネリングして、{0}秒にわたって敵に光線を発射します。毎秒{1}の<color=yellow>光ダメージ</color>を与え、近くにいる最もHP割合が低い味方のHPを毎秒{2}ずつ<color=yellow>回復</color>します。",
     "rawDescVars": [
       {
-        "rendered": "1.7<sprite=5>",
+        "rendered": " 1.7<sprite=5> ",
         "format": "#,##0.#",
         "raw": "(ticks-1)*tickInterval",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>507%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>507%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "tickDamage/tickInterval",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>73%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>73%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "tickHeal/tickInterval",
         "scalingType": "unknown",
@@ -112,7 +138,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "4秒間、敵を3秒間<color=yellow>中毒</color>状態にする毒ガスを移動経路に残し、この間<color=yellow>移動速度</color>が15%<sprite=5>増加します。<color=yellow>中毒</color>状態の敵は、毎秒<sprite=1><color=#16D7FF>100%</color><sprite=5>の<color=yellow>ダメージ</color>を受けます。",
+    "description": "4秒間、敵を3秒間<color=yellow>中毒</color>状態にする毒ガスを移動経路に残し、この間<color=yellow>移動速度</color>が 15%<sprite=5> 増加します。<color=yellow>中毒</color>状態の敵は、毎秒 <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を受けます。",
     "rawDesc": "{0}秒間、敵を{1}秒間<color=yellow>中毒</color>状態にする毒ガスを移動経路に残し、この間<color=yellow>移動速度</color>が{2}増加します。<color=yellow>中毒</color>状態の敵は、毎秒{3}の<color=yellow>ダメージ</color>を受けます。",
     "rawDescVars": [
       {
@@ -142,7 +168,7 @@
         }
       },
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -155,7 +181,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "perTickDamage/Se_C_CorrosiveTrails_Poisoned::tickInterval",
         "scalingType": "unknown",
@@ -181,18 +207,18 @@
     "cooldownTime": 4.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "闇の矢を発射して敵に<sprite=2><color=#FF8A2D>175%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動します。最大2体の敵を貫通します。",
+    "description": "闇の矢を発射して敵に <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動します。最大2体の敵を貫通します。",
     "rawDesc": "闇の矢を発射して敵に{0}の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動します。最大{1}体の敵を貫通します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>175%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.75,
+          "basicAD": 2.45,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -231,20 +257,33 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "前方の敵を突き刺し<sprite=2><color=#FF8A2D>210%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動させ、中央に集めます。",
-    "rawDesc": "前方の敵を突き刺し{0}の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動させ、中央に集めます。",
+    "description": "前方の敵を突き刺し <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動させ、中央に集めます。シールドに対してはダメージが100%増加します。",
+    "rawDesc": "前方の敵を突き刺し{0}の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動させ、中央に集めます。シールドに対してはダメージが{1}増加します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>210%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 2.1,
+          "basicAD": 2.3,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "damageToShieldAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
         }
       }
     ],
@@ -270,11 +309,11 @@
     "cooldownTime": 9.0,
     "maxCharges": 2,
     "addedCharges": 999,
-    "description": "前方に冷気を放出し、敵に<sprite=1><color=#16D7FF>130%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与え、自分と味方に3秒間持続する<sprite=1><color=#16D7FF>90%</color><sprite=5>の<color=yellow>シールド</color>を付与します。すでに<color=yellow>冷気</color>の影響を受けている敵の場合、<color=yellow>ダメージ量</color>が100%増加し、1.5秒間<color=yellow>スネア</color>状態にします。\n\n<color=yellow>チャージ回数</color>が一度に全て充填されます。",
+    "description": "前方に冷気を放出し、敵に <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> の<color=yellow>冷気ダメージ</color>を与え、自分と味方に3秒間持続する <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> の<color=yellow>シールド</color>を付与します。すでに<color=yellow>冷気</color>の影響を受けている敵の場合、<color=yellow>ダメージ量</color>が100%増加し、1.5秒間<color=yellow>スネア</color>状態にします。\n\n<color=yellow>チャージ回数</color>が一度に全て充填されます。",
     "rawDesc": "前方に冷気を放出し、敵に{0}の<color=yellow>冷気ダメージ</color>を与え、自分と味方に{1}秒間持続する{2}の<color=yellow>シールド</color>を付与します。すでに<color=yellow>冷気</color>の影響を受けている敵の場合、<color=yellow>ダメージ量</color>が{3}増加し、{4}秒間<color=yellow>スネア</color>状態にします。\n\n<color=yellow>チャージ回数</color>が一度に全て充填されます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -300,7 +339,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -361,7 +400,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "周囲の地面に衝撃を与え敵を1.5秒間スタンさせ、<sprite=1><color=#16D7FF>230%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与えます。命中した敵1体につき、3秒間持続する<sprite=1><color=#16D7FF>60%</color><sprite=5>のシールドを生成します。",
+    "description": "周囲の地面に衝撃を与え敵を1.5秒間スタンさせ、 <sprite=1><color=#fff><gradient=sv_ap>210%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5> の<color=yellow>冷気ダメージ</color>を与えます。命中した敵1体につき、3秒間持続する <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>2%</gradient></color><sprite=5> のシールドを生成します。",
     "rawDesc": "周囲の地面に衝撃を与え敵を{0}秒間スタンさせ、{1}の<color=yellow>冷気ダメージ</color>を与えます。命中した敵1体につき、{2}秒間持続する{3}のシールドを生成します。",
     "rawDescVars": [
       {
@@ -378,13 +417,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>230%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>210%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.3,
+          "basicAP": 2.1,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -404,13 +443,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>2%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "perHitShield",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.6,
+          "basicAP": 0.4,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
@@ -439,18 +478,18 @@
     "cooldownTime": 4.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "次の攻撃が1.2<sprite=5>秒にわたって<sprite=1><color=#16D7FF>460%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、対象の<color=yellow>移動速度</color>を70%低下させます。",
+    "description": "次の攻撃が 1.2<sprite=5> 秒にわたって <sprite=1><color=#fff><gradient=sv_ap>460%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、対象の<color=yellow>移動速度</color>を70%低下させます。",
     "rawDesc": "次の攻撃が{0}秒にわたって{1}の<color=yellow>ダメージ</color>を与え、対象の<color=yellow>移動速度</color>を{2}低下させます。",
     "rawDescVars": [
       {
-        "rendered": "1.2<sprite=5>",
+        "rendered": " 1.2<sprite=5> ",
         "format": "#,##0.#",
         "raw": "ticks*ticksInterval",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>460%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>460%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "totalDamage",
         "scalingType": "basic",
@@ -495,7 +534,7 @@
     "cooldownTime": 6.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "味方に3秒間持続する<sprite=1><color=#16D7FF>130%</color><sprite=5>のシールドを付与します。シールドが破壊されると、周囲の敵に<sprite=1><color=#16D7FF>160%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与え、命中した敵1体につき味方のHPを<sprite=1><color=#16D7FF>60%</color><sprite=5><color=yellow>回復</color>します。",
+    "description": "味方に3秒間持続する <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> のシールドを付与します。シールドが破壊されると、周囲の敵に <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> の<color=yellow>冷気ダメージ</color>を与え、命中した敵1体につき味方のHPを <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> <color=yellow>回復</color>します。",
     "rawDesc": "味方に{0}秒間持続する{1}のシールドを付与します。シールドが破壊されると、周囲の敵に{2}の<color=yellow>冷気ダメージ</color>を与え、命中した敵1体につき味方のHPを{3}<color=yellow>回復</color>します。",
     "rawDescVars": [
       {
@@ -512,7 +551,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "shieldFactor",
         "scalingType": "basic",
@@ -525,7 +564,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -538,7 +577,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "perHealFactor",
         "scalingType": "basic",
@@ -573,17 +612,17 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "前方に爪を振り回し、敵に<sprite=1><color=#16D7FF>140%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与え、0.5秒間<color=yellow>スタン</color>させます。もう一度振り回すことで、敵に<sprite=1><color=#16D7FF>264%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与え、1秒間<color=yellow>スタン</color>させることができます。\n\n爪が敵に命中すると、ダメージ量の12%分<color=yellow>体力</color>を<color=yellow>回復</color>します。",
+    "description": "前方に爪を振り回し、敵に <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5> の<color=yellow>冷気ダメージ</color>を与え、0.5秒間<color=yellow>スタン</color>させます。もう一度振り回すことで、敵に <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>10%</gradient></color><sprite=5> の<color=yellow>冷気ダメージ</color>を与え、1秒間<color=yellow>スタン</color>させることができます。\n\n爪が敵に命中すると、ダメージ量の12%分<color=yellow>体力</color>を<color=yellow>回復</color>します。",
     "rawDesc": "前方に爪を振り回し、敵に{0}の<color=yellow>冷気ダメージ</color>を与え、{1}秒間<color=yellow>スタン</color>させます。もう一度振り回すことで、敵に{2}の<color=yellow>冷気ダメージ</color>を与え、{3}秒間<color=yellow>スタン</color>させることができます。\n\n爪が敵に命中すると、ダメージ量の{4}分<color=yellow>体力</color>を<color=yellow>回復</color>します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_C_IceClaw::dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.4,
+          "basicAP": 1.3,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -603,13 +642,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>264%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>10%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_C_IceClaw_Second::dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.64,
+          "basicAP": 2.4,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -664,11 +703,11 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "前方に短くダッシュしながら翠緑剣を振り回し、前方の敵に<color=yellow>ダメージ</color>を与えます。<sprite=2><color=#FF8A2D>200%</color><sprite=5>と<sprite=1><color=#16D7FF>200%</color><sprite=5>のうち、より大きい方のダメージを与え、<color=yellow>攻撃力ダメージ</color>の場合は<color=yellow>攻撃効果</color>を発動させます。",
+    "description": "前方に短くダッシュしながら翠緑剣を振り回し、前方の敵に<color=yellow>ダメージ</color>を与えます。 <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> と <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> のうち、より大きい方のダメージを与え、<color=yellow>攻撃力ダメージ</color>の場合は<color=yellow>攻撃効果</color>を発動させます。",
     "rawDesc": "前方に短くダッシュしながら翠緑剣を振り回し、前方の敵に<color=yellow>ダメージ</color>を与えます。{0}と{1}のうち、より大きい方のダメージを与え、<color=yellow>攻撃力ダメージ</color>の場合は<color=yellow>攻撃効果</color>を発動させます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "adDamage",
         "scalingType": "basic",
@@ -681,7 +720,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "apDamage",
         "scalingType": "basic",
@@ -715,7 +754,7 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "周囲の味方に1.5秒かけて消える<sprite=1><color=#16D7FF>250%</color><sprite=5>の<color=yellow>シールド</color>を付与します。",
+    "description": "周囲の味方に1.5秒かけて消える <sprite=1><color=#fff><gradient=sv_ap>250%</gradient></color><sprite=5> の<color=yellow>シールド</color>を付与します。",
     "rawDesc": "周囲の味方に{0}秒かけて消える{1}の<color=yellow>シールド</color>を付与します。",
     "rawDescVars": [
       {
@@ -732,7 +771,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>250%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -764,11 +803,11 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "発動キーを<color=yellow>長押し</color>すると、火炎の弾丸をチャージします。チャージが完了すると火炎の弾丸を発射し、命中した敵すべてにチャージ時間に比例して<sprite=1><color=#16D7FF>150%</color><sprite=5>～<sprite=1><color=#16D7FF>400%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与えます。\n\nチャージが不完全な状態で発射すると最大80%まで<color=yellow>クールダウン</color>が減少し、1.35秒間チャージすると命中範囲とダメージ量が最大値に達します。",
+    "description": "発動キーを<color=yellow>長押し</color>すると、火炎の弾丸をチャージします。チャージが完了すると火炎の弾丸を発射し、命中した敵すべてにチャージ時間に比例して <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ～ <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を与えます。\n\nチャージが不完全な状態で発射すると最大80%まで<color=yellow>クールダウン</color>が減少し、1.35秒間チャージすると命中範囲とダメージ量が最大値に達します。",
     "rawDesc": "発動キーを<color=yellow>長押し</color>すると、火炎の弾丸をチャージします。チャージが完了すると火炎の弾丸を発射し、命中した敵すべてにチャージ時間に比例して{0}～{1}の<color=yellow>火炎ダメージ</color>を与えます。\n\nチャージが不完全な状態で発射すると最大{2}まで<color=yellow>クールダウン</color>が減少し、{3}秒間チャージすると命中範囲とダメージ量が最大値に達します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageMin",
         "scalingType": "basic",
@@ -781,7 +820,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageMax",
         "scalingType": "basic",
@@ -839,11 +878,11 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "手からエネルギーを放出し、<sprite=1><color=#16D7FF>180%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、命中したすべての敵を押し出して1秒間スタンさせます。対象がアンストッパブル状態であるか、壁に衝突した場合、追加で<sprite=1><color=#16D7FF>504%</color><sprite=5>の<color=yellow>ダメージ</color>を与えます。",
+    "description": "手からエネルギーを放出し、 <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、命中したすべての敵を押し出して1秒間スタンさせます。対象がアンストッパブル状態であるか、壁に衝突した場合、追加で <sprite=1><color=#fff><gradient=sv_ap>504%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与えます。",
     "rawDesc": "手からエネルギーを放出し、{0}の<color=yellow>ダメージ</color>を与え、命中したすべての敵を押し出して{1}秒間スタンさせます。対象がアンストッパブル状態であるか、壁に衝突した場合、追加で{2}の<color=yellow>ダメージ</color>を与えます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -869,7 +908,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>504%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor*stunDmgRatio",
         "scalingType": "unknown",
@@ -896,11 +935,11 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "発動範囲のすべての敵に<sprite=1><color=#16D7FF>280%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、命中した敵1体につきランダムな味方のHPを<sprite=1><color=#16D7FF>45%</color><sprite=5><color=yellow>回復</color>します。対象がボスの場合、回復量が3倍になります。",
+    "description": "発動範囲のすべての敵に <sprite=1><color=#fff><gradient=sv_ap>280%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、命中した敵1体につきランダムな味方のHPを <sprite=1><color=#fff><gradient=sv_ap>45%</gradient></color><sprite=5> <color=yellow>回復</color>します。対象がボスの場合、回復量が3倍になります。",
     "rawDesc": "発動範囲のすべての敵に{0}の<color=yellow>ダメージ</color>を与え、命中した敵1体につきランダムな味方のHPを{1}<color=yellow>回復</color>します。対象がボスの場合、回復量が3倍になります。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>280%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>280%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -913,7 +952,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>45%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>45%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -965,11 +1004,11 @@
     "cooldownTime": 4.0,
     "maxCharges": 3,
     "addedCharges": 1,
-    "description": "ピリッとする水鉄砲を発射します。命中した味方の<color=yellow>HP</color>を<sprite=1><color=#16D7FF>70%</color><sprite=5><color=yellow>回復</color>させ、<color=yellow>火炎スタック</color>を解除します。敵には1の<color=yellow>ダメージ</color>を与え、1.5秒間<color=yellow>スタン</color>させます。<color=yellow>戦闘中</color>のみ<color=yellow>クールダウン</color>が減少します。\n\n対象が味方<color=yellow>召喚獣</color>の場合、回復量が40%増加します。",
+    "description": "ピリッとする水鉄砲を発射します。命中した味方の<color=yellow>HP</color>を <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> <color=yellow>回復</color>させ、<color=yellow>火炎スタック</color>を解除します。敵には1の<color=yellow>ダメージ</color>を与え、1.5秒間<color=yellow>スタン</color>させます。<color=yellow>戦闘中</color>のみ<color=yellow>クールダウン</color>が減少します。\n\n対象が味方<color=yellow>召喚獣</color>の場合、回復量が40%増加します。",
     "rawDesc": "ピリッとする水鉄砲を発射します。命中した味方の<color=yellow>HP</color>を{0}<color=yellow>回復</color>させ、<color=yellow>火炎スタック</color>を解除します。敵には{1}の<color=yellow>ダメージ</color>を与え、{2}秒間<color=yellow>スタン</color>させます。<color=yellow>戦闘中</color>のみ<color=yellow>クールダウン</color>が減少します。\n\n対象が味方<color=yellow>召喚獣</color>の場合、回復量が{3}増加します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>70%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -1041,11 +1080,11 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "ランダムに近くの敵に4<sprite=5>個の流星を落とします。各流星は<sprite=1><color=#16D7FF>70%</color><sprite=5>の<color=yellow>光ダメージ</color>を与えます。",
+    "description": "ランダムに近くの敵に 4<sprite=5> 個の流星を落とします。各流星は <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。",
     "rawDesc": "ランダムに近くの敵に{0}個の流星を落とします。各流星は{1}の<color=yellow>光ダメージ</color>を与えます。",
     "rawDescVars": [
       {
-        "rendered": "4<sprite=5>",
+        "rendered": " 4<sprite=5> ",
         "format": "#,##0",
         "raw": "baseCount",
         "scalingType": "basic",
@@ -1058,7 +1097,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>70%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgPerStar",
         "scalingType": "basic",
@@ -1090,11 +1129,11 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "前方に素早くダッシュしながら敵を斬り、<sprite=2><color=#FF8A2D>220%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動させます。敵に命中すると<color=yellow>クールダウン</color>が40%減少します。",
+    "description": "前方に素早くダッシュしながら敵を斬り、 <sprite=2><color=#fff><gradient=sv_ad>220%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動させます。敵に命中すると<color=yellow>クールダウン</color>が40%減少します。",
     "rawDesc": "前方に素早くダッシュしながら敵を斬り、{0}の<color=yellow>ダメージ</color>を与え、{1}の<color=yellow>攻撃効果</color>を発動させます。敵に命中すると<color=yellow>クールダウン</color>が{2}減少します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>220%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>220%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -1154,7 +1193,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "3.5秒間<color=yellow>チャネリング</color>して剣を振り回し周囲の敵に毎秒<sprite=2><color=#FF8A2D>240%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、35%の<color=yellow>攻撃効果</color>を発動させます。<color=yellow>攻撃速度</color>が高いほど、剣を振る速度が上がります。",
+    "description": "3.5秒間<color=yellow>チャネリング</color>して剣を振り回し周囲の敵に毎秒 <sprite=2><color=#fff><gradient=sv_ad>240%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、35%の<color=yellow>攻撃効果</color>を発動させます。<color=yellow>攻撃速度</color>が高いほど、剣を振る速度が上がります。",
     "rawDesc": "{0}秒間<color=yellow>チャネリング</color>して剣を振り回し周囲の敵に毎秒{1}の<color=yellow>ダメージ</color>を与え、{2}の<color=yellow>攻撃効果</color>を発動させます。<color=yellow>攻撃速度</color>が高いほど、剣を振る速度が上がります。",
     "rawDescVars": [
       {
@@ -1171,7 +1210,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>240%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>240%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor*2",
         "scalingType": "unknown",
@@ -1211,11 +1250,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "各敵への最初の<color=yellow>攻撃</color>3回に<sprite=1><color=#16D7FF>40%</color><sprite=5>の追加ダメージが発生し、ミストに1.5秒かけて消失する<sprite=1><color=#16D7FF>47%</color><sprite=5>の<color=yellow>シールド</color>を付与します。敵ごとに6<sprite=5>秒経過すると再び発動できます。",
+    "description": "各敵への最初の<color=yellow>攻撃</color>3回に <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> の追加ダメージが発生し、ミストに1.5秒かけて消失する <sprite=1><color=#fff><gradient=sv_ap>47%</gradient></color><sprite=5> の<color=yellow>シールド</color>を付与します。敵ごとに 6<sprite=5> 秒経過すると再び発動できます。",
     "rawDesc": "各敵への最初の<color=yellow>攻撃</color>3回に{0}の追加ダメージが発生し、ミストに{1}秒かけて消失する{2}の<color=yellow>シールド</color>を付与します。敵ごとに{3}秒経過すると再び発動できます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>40%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1241,7 +1280,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>47%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>47%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -1254,7 +1293,7 @@
         }
       },
       {
-        "rendered": "6<sprite=5>",
+        "rendered": " 6<sprite=5> ",
         "format": "#,##0.#",
         "raw": "rechargeTime",
         "scalingType": "unknown",
@@ -1281,11 +1320,11 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "5<sprite=5>秒ごとに周囲のランダムな敵に<color=yellow>マーク</color>を付与します。<color=yellow>マーク</color>を持つ敵を<color=yellow>攻撃</color>するたびに1.5秒間25%の移動速度を獲得し、<sprite=2><color=#FF8A2D>35%</color><sprite=5>の追加ダメージを与えます。\n<color=yellow>マーク</color>は連続して攻撃するたびにダメージ量が50%増加し、6回目の攻撃で爆発して<sprite=2><color=#FF8A2D>200%</color><sprite=5>のダメージを与えます。",
+    "description": " 5<sprite=5> 秒ごとに周囲のランダムな敵に<color=yellow>マーク</color>を付与します。<color=yellow>マーク</color>を持つ敵を<color=yellow>攻撃</color>するたびに1.5秒間25%の移動速度を獲得し、 <sprite=2><color=#fff><gradient=sv_ad>35%</gradient></color><sprite=5> の追加ダメージを与えます。\n<color=yellow>マーク</color>は連続して攻撃するたびにダメージ量が50%増加し、6回目の攻撃で爆発して <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> のダメージを与えます。",
     "rawDesc": "{0}秒ごとに周囲のランダムな敵に<color=yellow>マーク</color>を付与します。<color=yellow>マーク</color>を持つ敵を<color=yellow>攻撃</color>するたびに{1}秒間{2}の移動速度を獲得し、{3}の追加ダメージを与えます。\n<color=yellow>マーク</color>は連続して攻撃するたびにダメージ量が{4}増加し、{5}回目の攻撃で爆発して{6}のダメージを与えます。",
     "rawDescVars": [
       {
-        "rendered": "5<sprite=5>",
+        "rendered": " 5<sprite=5> ",
         "format": "#,##0.#",
         "raw": "cooldownTime",
         "scalingType": "unknown",
@@ -1318,7 +1357,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>35%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>35%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1357,7 +1396,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "explosionDmg",
         "scalingType": "basic",
@@ -1389,7 +1428,7 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>基本攻撃</color>が遠距離攻撃に変更されます。<color=yellow>何らかの記憶</color>や<color=yellow>回避能力</color>を発動すると<color=yellow>黄金の羽根</color>を2獲得し、最大6個まで維持できます。<color=yellow>黄金の羽根</color>のスタックがある場合<color=yellow>攻撃速度</color>が20%増加します。\n\n羽根のスタックがある時に敵を<color=yellow>攻撃</color>すると、スタックを1つ消費して<sprite=1><color=#16D7FF>90%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、アウレナのHPを<sprite=1><color=#16D7FF>14%</color><sprite=5><color=yellow>回復</color>します。羽根のスタックがある時に味方のHPを<color=yellow>回復</color>させると、スタックを1つ消費して対象のHPを追加で<sprite=1><color=#16D7FF>22%</color><sprite=5><color=yellow>回復</color>させます。",
+    "description": "<color=yellow>基本攻撃</color>が遠距離攻撃に変更されます。<color=yellow>何らかの記憶</color>や<color=yellow>回避能力</color>を発動すると<color=yellow>黄金の羽根</color>を2獲得し、最大6個まで維持できます。<color=yellow>黄金の羽根</color>のスタックがある場合<color=yellow>攻撃速度</color>が20%増加します。\n\n羽根のスタックがある時に敵を<color=yellow>攻撃</color>すると、スタックを1つ消費して <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、アウレナのHPを <sprite=1><color=#fff><gradient=sv_ap>14%</gradient></color><sprite=5> <color=yellow>回復</color>します。羽根のスタックがある時に味方のHPを<color=yellow>回復</color>させると、スタックを1つ消費して対象のHPを追加で <sprite=1><color=#fff><gradient=sv_ap>22%</gradient></color><sprite=5> <color=yellow>回復</color>させます。",
     "rawDesc": "<color=yellow>基本攻撃</color>が遠距離攻撃に変更されます。<color=yellow>何らかの記憶</color>や<color=yellow>回避能力</color>を発動すると<color=yellow>黄金の羽根</color>を{0}獲得し、最大{1}個まで維持できます。<color=yellow>黄金の羽根</color>のスタックがある場合<color=yellow>攻撃速度</color>が{2}増加します。\n\n羽根のスタックがある時に敵を<color=yellow>攻撃</color>すると、スタックを1つ消費して{3}の<color=yellow>ダメージ</color>を与え、アウレナのHPを{4}<color=yellow>回復</color>します。羽根のスタックがある時に味方のHPを<color=yellow>回復</color>させると、スタックを1つ消費して対象のHPを追加で{5}<color=yellow>回復</color>させます。",
     "rawDescVars": [
       {
@@ -1432,7 +1471,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageAmount",
         "scalingType": "basic",
@@ -1445,7 +1484,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>14%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>14%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "selfHealOnDamageAmount",
         "scalingType": "basic",
@@ -1458,7 +1497,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>22%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>22%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -1491,11 +1530,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>基本攻撃</color>時、ナキアのすべての<color=yellow>召喚獣</color>が<color=yellow>最大HP</color>3%<sprite=5>分<color=yellow>回復</color>し、<color=yellow>召喚持続時間</color>が0.3<sprite=5>秒増加します。ナキアが受ける<color=yellow>攻撃速度</color>、<color=yellow>移動速度</color>、<color=yellow>防御力</color>ボーナスの50%<sprite=5>が彼女の<color=yellow>召喚獣</color>たちにも<color=yellow>反映</color>されます。",
+    "description": "<color=yellow>基本攻撃</color>時、ナキアのすべての<color=yellow>召喚獣</color>が<color=yellow>最大HP</color> 3%<sprite=5> 分<color=yellow>回復</color>し、<color=yellow>召喚持続時間</color>が 0.3<sprite=5> 秒増加します。ナキアが受ける<color=yellow>攻撃速度</color>、<color=yellow>移動速度</color>、<color=yellow>防御力</color>ボーナスの 50%<sprite=5> が彼女の<color=yellow>召喚獣</color>たちにも<color=yellow>反映</color>されます。",
     "rawDesc": "<color=yellow>基本攻撃</color>時、ナキアのすべての<color=yellow>召喚獣</color>が<color=yellow>最大HP</color>{0}分<color=yellow>回復</color>し、<color=yellow>召喚持続時間</color>が{1}秒増加します。ナキアが受ける<color=yellow>攻撃速度</color>、<color=yellow>移動速度</color>、<color=yellow>防御力</color>ボーナスの{2}が彼女の<color=yellow>召喚獣</color>たちにも<color=yellow>反映</color>されます。",
     "rawDescVars": [
       {
-        "rendered": "3%<sprite=5>",
+        "rendered": " 3%<sprite=5> ",
         "format": "P0",
         "raw": "summonHealRatio",
         "scalingType": "basic",
@@ -1508,7 +1547,7 @@
         }
       },
       {
-        "rendered": "0.3<sprite=5>",
+        "rendered": " 0.3<sprite=5> ",
         "format": "#,##0.#",
         "raw": "summonAddedDuration",
         "scalingType": "basic",
@@ -1521,7 +1560,7 @@
         }
       },
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "shareRatio",
         "scalingType": "basic",
@@ -1551,7 +1590,7 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>記憶</color>を発動するか<color=yellow>変光星</color>を使用すると、3秒間10<sprite=5>の<color=yellow>攻撃力</color>を獲得します。この間、自身の<color=yellow>基本攻撃</color>が強化され、最大2体に50%の効果で跳ね返ります。",
+    "description": "<color=yellow>記憶</color>を発動するか<color=yellow>変光星</color>を使用すると、3秒間 10<sprite=5> の<color=yellow>攻撃力</color>を獲得します。この間、自身の<color=yellow>基本攻撃</color>が強化され、最大2体に50%の効果で跳ね返ります。",
     "rawDesc": "<color=yellow>記憶</color>を発動するか<color=yellow>変光星</color>を使用すると、{0}秒間{1}の<color=yellow>攻撃力</color>を獲得します。この間、自身の<color=yellow>基本攻撃</color>が強化され、最大{2}体に{3}の効果で跳ね返ります。",
     "rawDescVars": [
       {
@@ -1568,7 +1607,7 @@
         }
       },
       {
-        "rendered": "10<sprite=5>",
+        "rendered": " 10<sprite=5> ",
         "format": "#,##0",
         "raw": "damageBonus",
         "scalingType": "basic",
@@ -1626,11 +1665,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "攻撃時、<sprite=2><color=#FF8A2D>68%</color><sprite=5>の<color=yellow>追加ダメージ</color>を与え、命中した敵1体につき自身のHPを<sprite=2><color=#FF8A2D>16%</color><sprite=5><color=yellow>回復</color>します。<color=yellow>ボス</color>を対象とした場合、<color=yellow>追加ダメージ量</color>と<color=yellow>回復量</color>が100%増加します。",
+    "description": "攻撃時、 <sprite=2><color=#fff><gradient=sv_ad>68%</gradient></color><sprite=5> の<color=yellow>追加ダメージ</color>を与え、命中した敵1体につき自身のHPを <sprite=2><color=#fff><gradient=sv_ad>16%</gradient></color><sprite=5> <color=yellow>回復</color>します。<color=yellow>ボス</color>を対象とした場合、<color=yellow>追加ダメージ量</color>と<color=yellow>回復量</color>が100%増加します。",
     "rawDesc": "攻撃時、{0}の<color=yellow>追加ダメージ</color>を与え、命中した敵1体につき自身のHPを{1}<color=yellow>回復</color>します。<color=yellow>ボス</color>を対象とした場合、<color=yellow>追加ダメージ量</color>と<color=yellow>回復量</color>が{2}増加します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>68%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>68%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageAmount",
         "scalingType": "basic",
@@ -1643,7 +1682,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>16%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>16%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -1689,11 +1728,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "攻撃力が5<sprite=5>、クリティカル率が20%<sprite=5>増加します。<color=yellow>記憶</color>または<color=yellow>速攻回避</color>を使用した後、次の<color=yellow>基本攻撃</color>が2回発射されます。",
-    "rawDesc": "攻撃力が{0}、クリティカル率が{1}増加します。<color=yellow>記憶</color>または<color=yellow>速攻回避</color>を使用した後、次の<color=yellow>基本攻撃</color>が2回発射されます。",
+    "description": "<color=yellow>攻撃力</color>が 5<sprite=5> 、<color=yellow>クリティカル率</color>が 20%<sprite=5> 増加します。<color=yellow>記憶</color>または<color=yellow>速攻回避</color>を使用した後、次の<color=yellow>基本攻撃</color>が2回発射されます。",
+    "rawDesc": "<color=yellow>攻撃力</color>が{0}、<color=yellow>クリティカル率</color>が{1}増加します。<color=yellow>記憶</color>または<color=yellow>速攻回避</color>を使用した後、次の<color=yellow>基本攻撃</color>が2回発射されます。",
     "rawDescVars": [
       {
-        "rendered": "5<sprite=5>",
+        "rendered": " 5<sprite=5> ",
         "format": "#,##0",
         "raw": "attackDamageBonus",
         "scalingType": "basic",
@@ -1706,7 +1745,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "P0",
         "raw": "critChanceBonus",
         "scalingType": "basic",
@@ -1738,29 +1777,55 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>記憶</color>を発動するか<color=yellow>変光星</color>を使用すると<color=yellow>エキゾチック物質</color>スタックを1獲得します。次の<color=yellow>基本攻撃</color>時にすべてのスタックを消費して爆発を起こし、敵にスタック1につき<sprite=1><color=#16D7FF>125%</color><sprite=5>の<color=yellow>光ダメージ</color>を与えます。最大4スタックまで保持できます。",
-    "rawDesc": "<color=yellow>記憶</color>を発動するか<color=yellow>変光星</color>を使用すると<color=yellow>エキゾチック物質</color>スタックを1獲得します。次の<color=yellow>基本攻撃</color>時にすべてのスタックを消費して爆発を起こし、敵にスタック1につき{0}の<color=yellow>光ダメージ</color>を与えます。最大{1}スタックまで保持できます。",
+    "description": "<color=yellow>記憶</color>を<color=yellow>発動</color>するか<color=yellow>変光星</color>を使用すると<color=yellow>エキゾチック物質</color>スタックを1獲得し、最大3スタックまで保持でき、<color=yellow>究極記憶</color>を<color=yellow>発動</color>するとスタックが最大までチャージされます。次の<color=yellow>基本攻撃</color>時にすべてのスタックを消費して爆発を起こし、敵にスタック1につき <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。\n\nこの爆発の大きさは<color=yellow>エキゾチック物質</color>を強化するたびに5%増加し、最大50%まで増加します。",
+    "rawDesc": "<color=yellow>記憶</color>を<color=yellow>発動</color>するか<color=yellow>変光星</color>を使用すると<color=yellow>エキゾチック物質</color>スタックを1獲得し、最大{0}スタックまで保持でき、<color=yellow>究極記憶</color>を<color=yellow>発動</color>するとスタックが最大までチャージされます。次の<color=yellow>基本攻撃</color>時にすべてのスタックを消費して爆発を起こし、敵にスタック1につき{1}の<color=yellow>光ダメージ</color>を与えます。\n\nこの爆発の大きさは<color=yellow>エキゾチック物質</color>を強化するたびに{2}増加し、最大{3}まで増加します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>125%</color><sprite=5>",
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damagePerStack",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.25,
+          "basicAP": 1.1,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "4",
-        "format": "#,##0",
-        "raw": "maxStack",
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "scaleAmpPerUpgrade",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 4.0,
+          "basicConstant": 0.05,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "scaleAmpMax",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1788,11 +1853,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "ナキアが自身または味方の<color=yellow>HP</color>を<color=yellow>回復</color>させたり、<color=yellow>シールド</color>または<color=yellow>バフ</color>を付与すると、対象に<color=yellow>団結</color>を与えます。<color=yellow>団結</color>を受けた対象は次の<color=yellow>基本攻撃</color>が強化され、敵に<sprite=1><color=#16D7FF>140%</color><sprite=5>の<color=yellow>光ダメージ</color>を与える<color=yellow>爆発</color>を引き起こします。",
+    "description": "ナキアが自身または味方の<color=yellow>HP</color>を<color=yellow>回復</color>させたり、<color=yellow>シールド</color>または<color=yellow>バフ</color>を付与すると、対象に<color=yellow>団結</color>を与えます。<color=yellow>団結</color>を受けた対象は次の<color=yellow>基本攻撃</color>が強化され、敵に <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与える<color=yellow>爆発</color>を引き起こします。",
     "rawDesc": "ナキアが自身または味方の<color=yellow>HP</color>を<color=yellow>回復</color>させたり、<color=yellow>シールド</color>または<color=yellow>バフ</color>を付与すると、対象に<color=yellow>団結</color>を与えます。<color=yellow>団結</color>を受けた対象は次の<color=yellow>基本攻撃</color>が強化され、敵に{0}の<color=yellow>光ダメージ</color>を与える<color=yellow>爆発</color>を引き起こします。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -1822,11 +1887,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>攻撃力</color>が12<sprite=5>増加します。4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>クリティカル</color>となり、<sprite=1><color=#16D7FF>70%</color><sprite=5>の追加<color=yellow>光ダメージ</color>を与えます。\n敵を<color=yellow>攻撃</color>するたびに、<color=yellow>攻撃速度</color>が4秒間4%<sprite=5>増加し、最大24%<sprite=5>まで増加します。<color=yellow>攻撃速度</color>が最大まで増加した状態で<color=yellow>攻撃</color>すると、<color=yellow>失ったHP</color>の1%<sprite=5>を<color=yellow>回復</color>します。",
+    "description": "<color=yellow>攻撃力</color>が 12<sprite=5> 増加します。4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>クリティカル</color>となり、 <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> の追加<color=yellow>光ダメージ</color>を与えます。\n敵を<color=yellow>攻撃</color>するたびに、<color=yellow>攻撃速度</color>が4秒間 4%<sprite=5> 増加し、最大 24%<sprite=5> まで増加します。<color=yellow>攻撃速度</color>が最大まで増加した状態で<color=yellow>攻撃</color>すると、<color=yellow>失ったHP</color>の 1%<sprite=5> を<color=yellow>回復</color>します。",
     "rawDesc": "<color=yellow>攻撃力</color>が{0}増加します。4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>クリティカル</color>となり、{1}の追加<color=yellow>光ダメージ</color>を与えます。\n敵を<color=yellow>攻撃</color>するたびに、<color=yellow>攻撃速度</color>が{2}秒間{3}増加し、最大{4}まで増加します。<color=yellow>攻撃速度</color>が最大まで増加した状態で<color=yellow>攻撃</color>すると、<color=yellow>失ったHP</color>の{5}を<color=yellow>回復</color>します。",
     "rawDescVars": [
       {
-        "rendered": "12<sprite=5>",
+        "rendered": " 12<sprite=5> ",
         "format": "#,##0",
         "raw": "adBonus",
         "scalingType": "basic",
@@ -1839,7 +1904,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>70%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -1865,7 +1930,7 @@
         }
       },
       {
-        "rendered": "4%<sprite=5>",
+        "rendered": " 4%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hastePerStack",
         "scalingType": "basic",
@@ -1878,14 +1943,14 @@
         }
       },
       {
-        "rendered": "24%<sprite=5>",
+        "rendered": " 24%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hastePerStack*maxStack",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "1%<sprite=5>",
+        "rendered": " 1%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "lostHpHealRatio",
         "scalingType": "basic",
@@ -1917,11 +1982,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>攻撃速度</color>が20%<sprite=5>増加します。自分自身で<color=yellow>基本攻撃</color>ができなくなりますが、ビスマスに最も近い敵に<color=yellow>本</color>が自動で<color=yellow>基本攻撃</color>し、<sprite=1><color=#16D7FF>70%</color><sprite=5>の<color=yellow>追加ダメージ</color>を与えます。",
+    "description": "<color=yellow>攻撃速度</color>が 20%<sprite=5> 増加します。自分自身で<color=yellow>基本攻撃</color>ができなくなりますが、ビスマスに最も近い敵に<color=yellow>本</color>が自動で<color=yellow>基本攻撃</color>し、 <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> の<color=yellow>追加ダメージ</color>を与えます。",
     "rawDesc": "<color=yellow>攻撃速度</color>が{0}増加します。自分自身で<color=yellow>基本攻撃</color>ができなくなりますが、ビスマスに最も近い敵に<color=yellow>本</color>が自動で<color=yellow>基本攻撃</color>し、{1}の<color=yellow>追加ダメージ</color>を与えます。",
     "rawDescVars": [
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -1934,7 +1999,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>70%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "addedDamage",
         "scalingType": "basic",
@@ -1966,11 +2031,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>最大HP</color>が80<sprite=5>増加します。4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>クリティカル</color>となり、敵を吹き飛ばして1秒間スタンさせます。<color=yellow>決意</color>が敵に命中すると、<color=yellow>ヴェスパー</color>は<color=yellow>最大HP</color>の3%<sprite=5>を<color=yellow>回復</color>します。",
+    "description": "<color=yellow>最大HP</color>が 80<sprite=5> 増加します。4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>クリティカル</color>となり、敵を吹き飛ばして1秒間スタンさせます。<color=yellow>決意</color>が敵に命中すると、<color=yellow>ヴェスパー</color>は<color=yellow>最大HP</color>の 3%<sprite=5> を<color=yellow>回復</color>します。",
     "rawDesc": "<color=yellow>最大HP</color>が{0}増加します。4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>クリティカル</color>となり、敵を吹き飛ばして{1}秒間スタンさせます。<color=yellow>決意</color>が敵に命中すると、<color=yellow>ヴェスパー</color>は<color=yellow>最大HP</color>の{2}を<color=yellow>回復</color>します。",
     "rawDescVars": [
       {
-        "rendered": "80<sprite=5>",
+        "rendered": " 80<sprite=5> ",
         "format": "#,##0",
         "raw": "healthBonus",
         "scalingType": "basic",
@@ -1996,7 +2061,7 @@
         }
       },
       {
-        "rendered": "3%<sprite=5>",
+        "rendered": " 3%<sprite=5> ",
         "format": "P0",
         "raw": "maxHpRatio",
         "scalingType": "basic",
@@ -2029,11 +2094,24 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>クリティカル</color>になり、爆発して敵に<sprite=1><color=#16D7FF>145%</color><sprite=5>の範囲<color=yellow>火炎ダメージ</color>を与えます。<color=yellow>既に燃えている敵</color>には爆発ダメージが100%増加します。",
-    "rawDesc": "4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>クリティカル</color>になり、爆発して敵に{0}の範囲<color=yellow>火炎ダメージ</color>を与えます。<color=yellow>既に燃えている敵</color>には爆発ダメージが{1}増加します。",
+    "description": "<color=yellow>攻撃速度</color>が 15%<sprite=5> 増加します。4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>クリティカル</color>になり、爆発して敵に <sprite=1><color=#fff><gradient=sv_ap>145%</gradient></color><sprite=5> の範囲<color=yellow>火炎ダメージ</color>を与えます。<color=yellow>既に燃えている敵</color>には爆発ダメージが100%増加します。",
+    "rawDesc": "<color=yellow>攻撃速度</color>が{0}増加します。4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>クリティカル</color>になり、爆発して敵に{1}の範囲<color=yellow>火炎ダメージ</color>を与えます。<color=yellow>既に燃えている敵</color>には爆発ダメージが{2}増加します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>145%</color><sprite=5>",
+        "rendered": " 15%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "atkSpdPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 5.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>145%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "explosionDamage",
         "scalingType": "basic",
@@ -2069,7 +2147,7 @@
       "Attack"
     ],
     "image": "St_D_SalamanderPowder.PNG",
-    "lore": "赤い湿地のイモリを乾燥させ、しっかりすり潰すと、小さな火花も大爆発になるほどの強力な火薬を作ることができます。",
+    "lore": "赤い湿地のサラマンダーを乾燥させ、しっかりすり潰すと、小さな火花も大爆発になるほどの強力な火薬を作ることができます。",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -2079,11 +2157,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>攻撃速度</color>ボーナスを受けられない代わりに、<color=yellow>追加攻撃速度</color>1%ごとに<color=yellow>攻撃力</color>が0.5<sprite=5>増加します。\n<color=yellow>ダッシュ</color>、または<color=yellow>テレポート</color>時、次の<color=yellow>基本攻撃</color>がクリティカルになります。\n\n任意の<color=yellow>ボス</color>を倒すと<sprite=2><color=#FF8A2D>200%</color><sprite=5>だけ<color=yellow>体力</color>を<color=yellow>回復</color>します。",
+    "description": "<color=yellow>攻撃速度</color>ボーナスを受けられない代わりに、<color=yellow>追加攻撃速度</color>1%ごとに<color=yellow>攻撃力</color>が 0.5<sprite=5> 増加します。\n<color=yellow>ダッシュ</color>、または<color=yellow>テレポート</color>時、次の<color=yellow>基本攻撃</color>がクリティカルになります。\n\n任意の<color=yellow>ボス</color>を倒すと <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> だけ<color=yellow>体力</color>を<color=yellow>回復</color>します。",
     "rawDesc": "<color=yellow>攻撃速度</color>ボーナスを受けられない代わりに、<color=yellow>追加攻撃速度</color>1%ごとに<color=yellow>攻撃力</color>が{0}増加します。\n<color=yellow>ダッシュ</color>、または<color=yellow>テレポート</color>時、次の<color=yellow>基本攻撃</color>がクリティカルになります。\n\n任意の<color=yellow>ボス</color>を倒すと{1}だけ<color=yellow>体力</color>を<color=yellow>回復</color>します。",
     "rawDescVars": [
       {
-        "rendered": "0.5<sprite=5>",
+        "rendered": " 0.5<sprite=5> ",
         "format": "#,##0.0",
         "raw": "atkSpdPercentageToAdRatio",
         "scalingType": "basic",
@@ -2096,7 +2174,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmountPerBossKill",
         "scalingType": "basic",
@@ -2128,7 +2206,7 @@
     "cooldownTime": 14.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "発動範囲の重力を反転させ、範囲内のすべての敵を1.6秒間浮かせます。その後、叩きつけて<sprite=1><color=#16D7FF>400%</color><sprite=5>の<color=yellow>ダメージ</color>を与えます。",
+    "description": "発動範囲の重力を反転させ、範囲内のすべての敵を1.6秒間浮かせます。その後、叩きつけて <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与えます。",
     "rawDesc": "発動範囲の重力を反転させ、範囲内のすべての敵を{0}秒間浮かせます。その後、叩きつけて{1}の<color=yellow>ダメージ</color>を与えます。",
     "rawDescVars": [
       {
@@ -2139,7 +2217,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -2171,11 +2249,11 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "短い距離を<color=yellow>テレポート</color>し、周囲の敵に<sprite=1><color=#16D7FF>244%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与えます。命中した敵1体につき、<color=yellow>クールダウン</color>が13%減少します。",
+    "description": "短い距離を<color=yellow>テレポート</color>し、周囲の敵に <sprite=1><color=#fff><gradient=sv_ap>244%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を与えます。命中した敵1体につき、<color=yellow>クールダウン</color>が13%減少します。",
     "rawDesc": "短い距離を<color=yellow>テレポート</color>し、周囲の敵に{0}の<color=yellow>火炎ダメージ</color>を与えます。命中した敵1体につき、<color=yellow>クールダウン</color>が{1}減少します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>244%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>244%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageAmount",
         "scalingType": "basic",
@@ -2211,7 +2289,7 @@
       "Mobility"
     ],
     "image": "St_E_Blink.PNG",
-    "lore": "狩猟日誌\nロジット執権〇年、〇月〇〇日、天気：曇り\n狩猟場所：ヒッシングの森\n今日の収穫：少量の野イチゴ\n\n\n炎に包まれるものを見ると、今でもあの日が鮮明に思い出される。\n突然炎に包まれて消えた妻の姿。\n\n一瞬だった。目が痛むほど明るく青い炎を上げて灰になって消えた。\n\n弾薬と火薬袋をすべて確認したが、無くなったものは何もなかった。\n何かがおかしかった。煙もなくあんな勢いで燃えていたのに、熱さを感じなかった。\n\nそして今日、スコープ越しで弓使いたちを観察していたところ、とても興味深いことを発見した。\n\nルシッドの連中が青い炎を操るということを。\n\n…\n\nまずはより多くの情報が必要だ。\n\n妻を取り戻すためには慎重でなければならない。今は沸き立つ復讐心を飲み込むときだ。",
+    "lore": "狩猟日誌\nロジット執権〇年、〇月〇〇日、天気：曇り\n狩猟場所：ヒッシングの森\n今日の収穫：少量の野イチゴ\n\n\n炎に包まれるものを見ると、今でもあの日が鮮明に思い出される。\n突然炎に包まれて消えた妻の姿。\n\n一瞬だった。目が痛むほど明るく青い炎を上げて灰になって消えた。\n\n弾薬と火薬袋をすべて確認したが、無くなったものは何もなかった。\n何かがおかしかった。煙もなくあんな勢いで燃えていたのに、熱さを感じなかったからな。\n\nそして今日、スコープ越しで弓使いたちを観察していたところ、とても興味深いことを発見した。\n\n青い炎を操る奴らがいるということを。\n\n...\n\nまずはより多くの情報が必要だ。\n\n妻を取り戻すためには慎重でなければならない。今は沸き立つ復讐心を飲み込むときだ。",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -2221,11 +2299,11 @@
     "cooldownTime": 16.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "跳ね返る雷電を発動し、最初の対象に<sprite=1><color=#16D7FF>400%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、最大5回跳ね返り<sprite=1><color=#16D7FF>185%</color><sprite=5>の<color=yellow>光ダメージ</color>を与えます。",
+    "description": "跳ね返る雷電を発動し、最初の対象に <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与え、最大5回跳ね返り <sprite=1><color=#fff><gradient=sv_ap>185%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。",
     "rawDesc": "跳ね返る雷電を発動し、最初の対象に{0}の<color=yellow>光ダメージ</color>を与え、最大{1}回跳ね返り{2}の<color=yellow>光ダメージ</color>を与えます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "firstDamage",
         "scalingType": "basic",
@@ -2251,7 +2329,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>185%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>185%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "chainDamage",
         "scalingType": "basic",
@@ -2283,11 +2361,11 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "対象位置に血の触手を召喚し、最大4<sprite=5>体の敵を引き寄せます。触手は敵に付着し、<sprite=1><color=#16D7FF>80%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、引き寄せられた敵に追加で<sprite=1><color=#16D7FF>200%</color><sprite=5>の<color=yellow>ダメージ</color>を与えます。\nこの記憶は強化時、引き寄せる<color=yellow>敵の数</color>と<color=yellow>範囲</color>が増加します。",
+    "description": "対象位置に血の触手を召喚し、最大 4<sprite=5> 体の敵を引き寄せます。触手は敵に付着し、 <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、引き寄せられた敵に追加で <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与えます。\nこの記憶は強化時、引き寄せる<color=yellow>敵の数</color>と<color=yellow>範囲</color>が増加します。",
     "rawDesc": "対象位置に血の触手を召喚し、最大{0}体の敵を引き寄せます。触手は敵に付着し、{1}の<color=yellow>ダメージ</color>を与え、引き寄せられた敵に追加で{2}の<color=yellow>ダメージ</color>を与えます。\nこの記憶は強化時、引き寄せる<color=yellow>敵の数</color>と<color=yellow>範囲</color>が増加します。",
     "rawDescVars": [
       {
-        "rendered": "4<sprite=5>",
+        "rendered": " 4<sprite=5> ",
         "format": "#,##0",
         "raw": "maxTargetCount",
         "scalingType": "basic",
@@ -2300,7 +2378,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>80%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "firstDmgFactor",
         "scalingType": "basic",
@@ -2313,7 +2391,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "secondDmgFactor",
         "scalingType": "basic",
@@ -2345,11 +2423,11 @@
     "cooldownTime": 16.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "巨大な槍を投げ、命中した敵に<sprite=2><color=#FF8A2D>450%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与えます。\n\n<color=yellow>ヒロイックボス</color>に命中すると、ダメージ量が対象の<color=yellow>最大HP</color>の15%分増加し、槍が対象に刺さり、この記憶が<color=yellow>破壊</color>されます。槍が刺さっているヒロイックボスを<color=yellow>撃破</color>すると、そのボスの<color=yellow>ユニーク記憶</color>または<color=yellow>エッセンス</color>を獲得します。",
+    "description": "巨大な槍を投げ、命中した敵に <sprite=2><color=#fff><gradient=sv_ad>450%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与えます。\n\n<color=yellow>ヒロイックボス</color>に命中すると、ダメージ量が対象の<color=yellow>最大HP</color>の15%分増加し、槍が対象に刺さり、この記憶が<color=yellow>破壊</color>されます。槍が刺さっているヒロイックボスを<color=yellow>撃破</color>すると、そのボスの<color=yellow>ユニーク記憶</color>または<color=yellow>エッセンス</color>を獲得します。",
     "rawDesc": "巨大な槍を投げ、命中した敵に{0}の<color=yellow>闇ダメージ</color>を与えます。\n\n<color=yellow>ヒロイックボス</color>に命中すると、ダメージ量が対象の<color=yellow>最大HP</color>の{1}分増加し、槍が対象に刺さり、この記憶が<color=yellow>破壊</color>されます。槍が刺さっているヒロイックボスを<color=yellow>撃破</color>すると、そのボスの<color=yellow>ユニーク記憶</color>または<color=yellow>エッセンス</color>を獲得します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>450%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>450%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -2394,11 +2472,11 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "3秒間その場でチャネリングします。チャネリングに成功すると<color=yellow>巨大な火の玉</color>が落下し、発動範囲に強烈な一打を、そして周囲に小さな火の玉をばらまきます。巨大な火の玉は対象に<sprite=1><color=#16D7FF>1,600%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与え、3秒間<color=yellow>スタン</color>させ、小さな火の玉は<sprite=1><color=#16D7FF>150%</color>の<color=yellow>火炎ダメージ</color>を与えます。\n<color=yellow>敵味方を問わずダメージを与えます。</color>",
+    "description": "3秒間その場でチャネリングします。チャネリングに成功すると<color=yellow>巨大な火の玉</color>が落下し、発動範囲に強烈な一打を、そして周囲に小さな火の玉をばらまきます。巨大な火の玉は対象に <sprite=1><color=#fff><gradient=sv_ap>1,600%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を与え、3秒間<color=yellow>スタン</color>させ、小さな火の玉は<sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color>の<color=yellow>火炎ダメージ</color>を与えます。\n<color=yellow>敵味方を問わずダメージを与えます。</color>",
     "rawDesc": "3秒間その場でチャネリングします。チャネリングに成功すると<color=yellow>巨大な火の玉</color>が落下し、発動範囲に強烈な一打を、そして周囲に小さな火の玉をばらまきます。巨大な火の玉は対象に{0}の<color=yellow>火炎ダメージ</color>を与え、{1}秒間<color=yellow>スタン</color>させ、小さな火の玉は{2}の<color=yellow>火炎ダメージ</color>を与えます。\n<color=yellow>敵味方を問わずダメージを与えます。</color>",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>1,600%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>1,600%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -2424,7 +2502,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>150%</color>",
+        "rendered": "<sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color>",
         "format": "#,##0",
         "raw": "subDamage",
         "scalingType": "basic",
@@ -2457,8 +2535,8 @@
     "cooldownTime": 3.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "2秒間<color=yellow>移動速度</color>が25%<sprite=5>上昇した後、自分の最大体力の40%を犠牲にして強力な爆発を起こします。爆発に巻き込まれた敵は<sprite=1><color=#16D7FF>850%</color><sprite=5>の<color=yellow>光ダメージ</color>を受け、2.5秒間<color=yellow>気絶</color>します。既に死亡している状態か、犠牲により死亡した場合、<color=yellow>爆発ダメージ量</color>が150%増加します。",
-    "rawDesc": "{0}秒間<color=yellow>移動速度</color>が{1}上昇した後、自分の最大体力の{2}を犠牲にして強力な爆発を起こします。爆発に巻き込まれた敵は{3}の<color=yellow>光ダメージ</color>を受け、{4}秒間<color=yellow>気絶</color>します。既に死亡している状態か、犠牲により死亡した場合、<color=yellow>爆発ダメージ量</color>が{5}増加します。",
+    "description": "2秒間力を蓄積し、<color=yellow>移動速度</color>が 25%<sprite=5> 、<color=yellow>防御力</color>が 75<sprite=5> 増加します。その後、最大体力の40%を犠牲にして強力な爆発を起こします。爆発に巻き込まれた敵は <sprite=1><color=#fff><gradient=sv_ap>850%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>100%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を受け、2.5秒間<color=yellow>気絶</color>します。既に死亡している状態か、犠牲により死亡した場合、<color=yellow>爆発ダメージ量</color>が150%増加します。",
+    "rawDesc": "{0}秒間力を蓄積し、<color=yellow>移動速度</color>が{1}、<color=yellow>防御力</color>が{2}増加します。その後、最大体力の{3}を犠牲にして強力な爆発を起こします。爆発に巻き込まれた敵は{4}の<color=yellow>光ダメージ</color>を受け、{5}秒間<color=yellow>気絶</color>します。既に死亡している状態か、犠牲により死亡した場合、<color=yellow>爆発ダメージ量</color>が{6}増加します。",
     "rawDescVars": [
       {
         "rendered": "2",
@@ -2474,7 +2552,7 @@
         }
       },
       {
-        "rendered": "25%<sprite=5>",
+        "rendered": " 25%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -2487,6 +2565,19 @@
         }
       },
       {
+        "rendered": " 75<sprite=5> ",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 60.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 15.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
         "rendered": "40%",
         "format": "P0",
         "raw": "selfDamageRatioCalculated",
@@ -2494,7 +2585,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>850%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>850%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -2554,7 +2645,7 @@
     "cooldownTime": 11.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "2.5秒間、火炎を放射します。この火炎放射に触れた敵は、毎秒<sprite=1><color=#16D7FF>336%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を受けます。",
+    "description": "2.5秒間、火炎を放射します。この火炎放射に触れた敵は、毎秒 <sprite=1><color=#fff><gradient=sv_ap>336%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を受けます。",
     "rawDesc": "{0}秒間、火炎を放射します。この火炎放射に触れた敵は、毎秒{1}の<color=yellow>火炎ダメージ</color>を受けます。",
     "rawDescVars": [
       {
@@ -2565,7 +2656,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>336%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage/minHitInterval",
         "scalingType": "unknown",
@@ -2591,11 +2682,11 @@
     "cooldownTime": 12.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "敵を<color=yellow>攻撃</color>すると、対象に無限にスタックできる<color=yellow>マーク</color>を刻みます。発動時に自身が刻んだ<color=yellow>マーク</color>をすべて爆発させ、<sprite=2><color=#FF8A2D>100%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、1.5秒間<color=yellow>移動速度</color>を60%減少させます。\n\n<color=yellow>マーク</color>の爆発ダメージ量は追加スタック1つにつき25%増加し、この爆発で敵が死亡すると<sprite=2><color=#FF8A2D>20%</color><sprite=5>の<color=yellow>HP</color>を<color=yellow>回復</color>します。",
+    "description": "敵を<color=yellow>攻撃</color>すると、対象に無限にスタックできる<color=yellow>マーク</color>を刻みます。発動時に自身が刻んだ<color=yellow>マーク</color>をすべて爆発させ、 <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、1.5秒間<color=yellow>移動速度</color>を60%減少させます。\n\n<color=yellow>マーク</color>の爆発ダメージ量は追加スタック1つにつき25%増加し、この爆発で敵が死亡すると <sprite=2><color=#fff><gradient=sv_ad>20%</gradient></color><sprite=5> の<color=yellow>HP</color>を<color=yellow>回復</color>します。",
     "rawDesc": "敵を<color=yellow>攻撃</color>すると、対象に無限にスタックできる<color=yellow>マーク</color>を刻みます。発動時に自身が刻んだ<color=yellow>マーク</color>をすべて爆発させ、{0}の<color=yellow>ダメージ</color>を与え、{1}秒間<color=yellow>移動速度</color>を{2}減少させます。\n\n<color=yellow>マーク</color>の爆発ダメージ量は追加スタック1つにつき{3}増加し、この爆発で敵が死亡すると{4}の<color=yellow>HP</color>を<color=yellow>回復</color>します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "baseDamage",
         "scalingType": "basic",
@@ -2647,7 +2738,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>20%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>20%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healOnKill",
         "scalingType": "basic",
@@ -2680,11 +2771,11 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "対象の敵の位置に巨大な大剣を叩きつけ、周囲のすべての敵に<sprite=2><color=#FF8A2D>800%</color><sprite=5>の<color=yellow>ダメージ</color>を与える。このダメージは自分の<color=yellow>失った体力</color>に比例して最大2倍、そして対象の<color=yellow>失った体力</color>に比例して最大2倍増加し、合計4倍まで増加する。体力が30%以下の時、ダメージ増加量が最大になる。",
+    "description": "対象の敵の位置に巨大な大剣を叩きつけ、周囲のすべての敵に <sprite=2><color=#fff><gradient=sv_ad>800%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与える。このダメージは自分の<color=yellow>失った体力</color>に比例して最大2倍、そして対象の<color=yellow>失った体力</color>に比例して最大2倍増加し、合計4倍まで増加する。体力が30%以下の時、ダメージ増加量が最大になる。",
     "rawDesc": "対象の敵の位置に巨大な大剣を叩きつけ、周囲のすべての敵に{0}の<color=yellow>ダメージ</color>を与える。このダメージは自分の<color=yellow>失った体力</color>に比例して最大{1}倍、そして対象の<color=yellow>失った体力</color>に比例して最大{2}倍増加し、合計{3}倍まで増加する。体力が{4}以下の時、ダメージ増加量が最大になる。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>800%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>800%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -2758,16 +2849,117 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "St_E_LizardlyBlessing": {
+    "name": "トカゲの祝福",
+    "cooldownTime": 8.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "6秒間トカゲの祝福を受け、<color=yellow>移動速度</color>が25%、<color=yellow>攻撃速度</color>が 25%<sprite=5> 、敵から受けるダメージが 10%<sprite=5> 増加します。この間、個々の敵に初めて<color=yellow>ダメージ</color>を与えると電撃を発生させ <sprite=1><color=#fff><gradient=sv_ap>125%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与え、敵を<color=yellow>倒す</color>たびに 2<sprite=5> <color=yellow>ゴールド</color>を獲得します。",
+    "rawDesc": "{0}秒間トカゲの祝福を受け、<color=yellow>移動速度</color>が{1}、<color=yellow>攻撃速度</color>が{2}、敵から受けるダメージが{3}増加します。この間、個々の敵に初めて<color=yellow>ダメージ</color>を与えると電撃を発生させ{4}の<color=yellow>光ダメージ</color>を与え、敵を<color=yellow>倒す</color>たびに{5}<color=yellow>ゴールド</color>を獲得します。",
+    "rawDescVars": [
+      {
+        "rendered": "6",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "25%",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 25.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " 25%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 5.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " 10%<sprite=5> ",
+        "format": "P0",
+        "raw": "takenDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.07,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.03,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>125%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "firstDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.25,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " 2<sprite=5> ",
+        "format": "#.#",
+        "raw": "goldPerKillAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.5,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": "光ダメージ、討伐時にゴールド獲得",
+    "rarity": "Epic",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Light"
+    ],
+    "image": "St_E_LizardlyBlessing.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "St_E_MassCleanse": {
     "name": "大規模浄化",
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "対象位置を浄化し、敵に<sprite=1><color=#16D7FF>300%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、味方には1.5秒間<color=yellow>アンストッパブル</color>を適用し、ほとんどの<color=yellow>デバフ</color>を<color=yellow>解除</color>します。味方から解除した<color=yellow>元素効果</color>1つにつき、<color=yellow>HP</color>を<sprite=1><color=#16D7FF>80%</color><sprite=5><color=yellow>回復</color>させます。",
+    "description": "対象位置を浄化し、敵に <sprite=1><color=#fff><gradient=sv_ap>300%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与え、味方には1.5秒間<color=yellow>アンストッパブル</color>を適用し、ほとんどの<color=yellow>デバフ</color>を<color=yellow>解除</color>します。味方から解除した<color=yellow>元素効果</color>1つにつき、<color=yellow>HP</color>を <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5> <color=yellow>回復</color>させます。",
     "rawDesc": "対象位置を浄化し、敵に{0}の<color=yellow>光ダメージ</color>を与え、味方には{1}秒間<color=yellow>アンストッパブル</color>を適用し、ほとんどの<color=yellow>デバフ</color>を<color=yellow>解除</color>します。味方から解除した<color=yellow>元素効果</color>1つにつき、<color=yellow>HP</color>を{2}<color=yellow>回復</color>させます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>300%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -2793,7 +2985,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>80%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healPerElemental",
         "scalingType": "basic",
@@ -2819,18 +3011,18 @@
     "lore": "悪夢の狂気がどんどん広がっている。\n森の均衡はすでに深刻なほど崩れてしまった。\n…病んだ枝は森全体が腐り果てる前に切り落とさなきゃ。\n私がこれからすることは…それは何よりも大切な森の秩序のための、薄情で確固たる浄化に過ぎないの。\n\n私の中にまだあるほんのわずかな同情は…今この瞬間だけは、考えちゃいけない。\nこれが…森の番人である私の役割であり、使命だから。\n\n…\n\n大好きな私の弟、どうか君の目の前でも、\n私が責任を果たせますように…",
     "achievementKey": "ACH_TRUE_SUPPORT",
     "achievementName": "真のサポーター",
-    "achievementDescription": "HPが30%以下の味方の旅人のHPを1秒以内に全回復する。"
+    "achievementDescription": "HPが30%以下の旅人のHPを1秒以内に全回復する。"
   },
   "St_E_MysticDagger": {
     "name": "神秘の短剣",
     "cooldownTime": 6.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "最初に命中した対象に<sprite=1><color=#16D7FF>350%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動する<color=yellow>神秘の短剣</color>を投げます。<color=yellow>短剣</color>が敵に命中すると、すべての記憶の<color=yellow>クールダウン</color>が1<sprite=5>秒減少します。",
+    "description": "最初に命中した対象に <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動する<color=yellow>神秘の短剣</color>を投げます。<color=yellow>短剣</color>が敵に命中すると、すべての記憶の<color=yellow>クールダウン</color>が 1<sprite=5> 秒減少します。",
     "rawDesc": "最初に命中した対象に{0}の<color=yellow>ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動する<color=yellow>神秘の短剣</color>を投げます。<color=yellow>短剣</color>が敵に命中すると、すべての記憶の<color=yellow>クールダウン</color>が{1}秒減少します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -2843,7 +3035,7 @@
         }
       },
       {
-        "rendered": "1<sprite=5>",
+        "rendered": " 1<sprite=5> ",
         "format": "#,##0.#",
         "raw": "reducedAmount",
         "scalingType": "unknown",
@@ -2869,7 +3061,7 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "極寒の冷気を集めた後、非常に広い範囲に放出します。範囲内の味方には10秒間、<sprite=1><color=#16D7FF>300%</color><sprite=5>の<color=yellow>シールド</color>と100の<color=yellow>防御力</color>が付与され、敵は凍りついて<sprite=1><color=#16D7FF>500%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を受け、15秒間<color=yellow>スタン</color>します。\n\nすでに<color=yellow>冷気</color>の影響を受けている敵の場合、このダメージが100%増加します。",
+    "description": "極寒の冷気を集めた後、非常に広い範囲に放出します。範囲内の味方には10秒間、 <sprite=1><color=#fff><gradient=sv_ap>300%</gradient></color><sprite=5> の<color=yellow>シールド</color>と100の<color=yellow>防御力</color>が付与され、敵は凍りついて <sprite=1><color=#fff><gradient=sv_ap>500%</gradient></color><sprite=5> の<color=yellow>冷気ダメージ</color>を受け、15秒間<color=yellow>スタン</color>します。\n\nすでに<color=yellow>冷気</color>の影響を受けている敵の場合、このダメージが100%増加します。",
     "rawDesc": "極寒の冷気を集めた後、非常に広い範囲に放出します。範囲内の味方には{0}秒間、{1}の<color=yellow>シールド</color>と{2}の<color=yellow>防御力</color>が付与され、敵は凍りついて{3}の<color=yellow>冷気ダメージ</color>を受け、{4}秒間<color=yellow>スタン</color>します。\n\nすでに<color=yellow>冷気</color>の影響を受けている敵の場合、このダメージが{5}増加します。",
     "rawDescVars": [
       {
@@ -2886,7 +3078,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>300%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -2912,7 +3104,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>500%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>500%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -2966,11 +3158,11 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "最後に使用した<color=yellow>記憶</color>の<color=yellow>クールダウン</color>を5.5<sprite=5>秒減少させます。その後、8秒以内に発動する次の<color=yellow>記憶</color>が強化され、敵に初めて命中した時、<sprite=1><color=#16D7FF>160%</color><sprite=5>の<color=yellow>ダメージ</color>を追加で与えます。",
+    "description": "最後に使用した<color=yellow>記憶</color>の<color=yellow>クールダウン</color>を 5.5<sprite=5> 秒減少させます。その後、8秒以内に発動する次の<color=yellow>記憶</color>が強化され、敵に初めて命中した時、 <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を追加で与えます。",
     "rawDesc": "最後に使用した<color=yellow>記憶</color>の<color=yellow>クールダウン</color>を{0}秒減少させます。その後、{1}秒以内に発動する次の<color=yellow>記憶</color>が強化され、敵に初めて命中した時、{2}の<color=yellow>ダメージ</color>を追加で与えます。",
     "rawDescVars": [
       {
-        "rendered": "5.5<sprite=5>",
+        "rendered": " 5.5<sprite=5> ",
         "format": "#,##0.#",
         "raw": "reduceAmount",
         "scalingType": "basic",
@@ -2996,7 +3188,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3026,11 +3218,11 @@
     "cooldownTime": 9.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "炎の剣で敵を素早く斬りつけながら通過し、<sprite=1><color=#16D7FF>60%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与え、さらに<sprite=1><color=#16D7FF>240%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与えます。<color=yellow>移動速度</color>に比例してダメージ量と射程距離が増加します。このダメージで敵を撃破すると、<color=yellow>クールダウン</color>がリセットされます。",
+    "description": "炎の剣で敵を素早く斬りつけながら通過し、 <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を与え、さらに <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を与えます。<color=yellow>移動速度</color>に比例してダメージ量と射程距離が増加します。このダメージで敵を撃破すると、<color=yellow>クールダウン</color>がリセットされます。",
     "rawDesc": "炎の剣で敵を素早く斬りつけながら通過し、{0}の<color=yellow>火炎ダメージ</color>を与え、さらに{1}の<color=yellow>火炎ダメージ</color>を与えます。<color=yellow>移動速度</color>に比例してダメージ量と射程距離が増加します。このダメージで敵を撃破すると、<color=yellow>クールダウン</color>がリセットされます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "firstHitDmgAmount",
         "scalingType": "basic",
@@ -3043,7 +3235,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>240%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "secondHitDmgAmount",
         "scalingType": "basic",
@@ -3076,11 +3268,11 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "1.3<sprite=5>秒間チャネリングして、最初に命中した敵に<sprite=2><color=#FF8A2D>60%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与える<color=yellow>影弾の洗礼</color>を7<sprite=5>回発射します。\n<color=yellow>攻撃速度</color>に比例してチャネリング時間が減少し、<color=yellow>クリティカル率</color>に比例して発射回数が増加します。",
+    "description": " 1.3<sprite=5> 秒間チャネリングして、最初に命中した敵に <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与える<color=yellow>影弾の洗礼</color>を 7<sprite=5> 回発射します。\n<color=yellow>攻撃速度</color>に比例してチャネリング時間が減少し、<color=yellow>クリティカル率</color>に比例して発射回数が増加します。",
     "rawDesc": "{0}秒間チャネリングして、最初に命中した敵に{1}の<color=yellow>闇ダメージ</color>を与える<color=yellow>影弾の洗礼</color>を{2}回発射します。\n<color=yellow>攻撃速度</color>に比例してチャネリング時間が減少し、<color=yellow>クリティカル率</color>に比例して発射回数が増加します。",
     "rawDescVars": [
       {
-        "rendered": "1.3<sprite=5>",
+        "rendered": " 1.3<sprite=5> ",
         "format": "#,##0.#",
         "raw": "baseDuration",
         "scalingType": "basic",
@@ -3093,7 +3285,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>60%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3106,7 +3298,7 @@
         }
       },
       {
-        "rendered": "7<sprite=5>",
+        "rendered": " 7<sprite=5> ",
         "format": "#,##0",
         "raw": "baseShootCount",
         "scalingType": "basic",
@@ -3138,7 +3330,7 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "0.5秒後に闇の刃で前方を切り裂き、敵に<sprite=2><color=#FF8A2D>65%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与えます。外側の刃に命中した敵には、代わりに<sprite=2><color=#FF8A2D>250%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動させ、命中した敵1体につき<color=yellow>失ったHP</color>の8%を回復します。\n\n外側の刃に命中した敵1体につき<color=yellow>クールダウン</color>が20%減少します。",
+    "description": "0.5秒後に闇の刃で前方を切り裂き、敵に <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与えます。外側の刃に命中した敵には、代わりに <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動させ、命中した敵1体につき<color=yellow>失ったHP</color>の8%を回復します。\n\n外側の刃に命中した敵1体につき<color=yellow>クールダウン</color>が20%減少します。",
     "rawDesc": "{0}秒後に闇の刃で前方を切り裂き、敵に{1}の<color=yellow>闇ダメージ</color>を与えます。外側の刃に命中した敵には、代わりに{2}の<color=yellow>闇ダメージ</color>を与え、{3}の<color=yellow>攻撃効果</color>を発動させ、命中した敵1体につき<color=yellow>失ったHP</color>の{4}を回復します。\n\n外側の刃に命中した敵1体につき<color=yellow>クールダウン</color>が{5}減少します。",
     "rawDescVars": [
       {
@@ -3155,7 +3347,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>65%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3168,7 +3360,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "outerDamage",
         "scalingType": "basic",
@@ -3240,11 +3432,11 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "発動キーを<color=yellow>長押し</color>すると、手に闇のエネルギーをチャージします。チャージが完了すると前方に突進し、最初に当たった敵とその周囲の敵すべてに強打を与えます。敵はチャージ時間に応じて<sprite=2><color=#FF8A2D>100%</color><sprite=5>～<sprite=2><color=#FF8A2D>500%</color><sprite=5>の<color=yellow>闇ダメージ</color>を受け、1秒間スタンします。\n1.2秒間チャージすると、ダッシュ距離とダメージ量が最大値に達します。",
-    "rawDesc": "発動キーを<color=yellow>長押し</color>すると、手に闇のエネルギーをチャージします。チャージが完了すると前方に突進し、最初に当たった敵とその周囲の敵すべてに強打を与えます。敵はチャージ時間に応じて{0}～{1}の<color=yellow>闇ダメージ</color>を受け、{2}秒間スタンします。\n{3}秒間チャージすると、ダッシュ距離とダメージ量が最大値に達します。",
+    "description": "発動キーを<color=yellow>長押し</color>すると、手に闇のエネルギーをチャージします。チャージが完了すると前方に突進し、最初に当たった敵とその周囲の敵すべてに強打を与えます。敵はチャージ時間に応じて <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ～ <sprite=2><color=#fff><gradient=sv_ad>600%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を受け、1秒間スタンします。敵に命中するたびに3秒間持続する <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> の<color=yellow>シールド</color>を獲得し、対象が<color=yellow>ボス</color>の場合はシールド量が200%増加します。\n1.2秒間チャージすると、ダッシュ距離とダメージ量が最大値に達します。",
+    "rawDesc": "発動キーを<color=yellow>長押し</color>すると、手に闇のエネルギーをチャージします。チャージが完了すると前方に突進し、最初に当たった敵とその周囲の敵すべてに強打を与えます。敵はチャージ時間に応じて{0}～{1}の<color=yellow>闇ダメージ</color>を受け、{2}秒間スタンします。敵に命中するたびに{3}秒間持続する{4}の<color=yellow>シールド</color>を獲得し、対象が<color=yellow>ボス</color>の場合はシールド量が{5}増加します。\n{6}秒間チャージすると、ダッシュ距離とダメージ量が最大値に達します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "minDamage",
         "scalingType": "basic",
@@ -3257,14 +3449,14 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>500%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>600%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "maxDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 5.0,
+          "basicAD": 6.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -3276,6 +3468,45 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "shieldAmountPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.6,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "200%",
+        "format": "P0",
+        "raw": "shieldBossAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3319,7 +3550,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "7秒の間、武器に闇の力を宿します。<color=yellow>クリティカル率</color>が20%<sprite=5>増加し、<color=yellow>攻撃</color>時に<sprite=2><color=#FF8A2D>52%</color><sprite=5>の追加<color=yellow>闇ダメージ</color>を与えます。<color=yellow>近接型の旅人</color>はこの追加ダメージ量が25%増加します。",
+    "description": "7秒の間、武器に闇の力を宿します。<color=yellow>クリティカル率</color>が 20%<sprite=5> 増加し、<color=yellow>攻撃</color>時に <sprite=2><color=#fff><gradient=sv_ad>52%</gradient></color><sprite=5> の追加<color=yellow>闇ダメージ</color>を与えます。<color=yellow>近接型の旅人</color>はこの追加ダメージ量が25%増加します。",
     "rawDesc": "{0}秒の間、武器に闇の力を宿します。<color=yellow>クリティカル率</color>が{1}増加し、<color=yellow>攻撃</color>時に{2}の追加<color=yellow>闇ダメージ</color>を与えます。<color=yellow>近接型の旅人</color>はこの追加ダメージ量が{3}増加します。",
     "rawDescVars": [
       {
@@ -3336,7 +3567,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "P0",
         "raw": "critChance",
         "scalingType": "basic",
@@ -3349,7 +3580,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>52%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>52%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "hitDamage",
         "scalingType": "basic",
@@ -3395,11 +3626,11 @@
     "cooldownTime": 6.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "一瞬消えた後、対象位置に現れて敵を切りつけます。<sprite=2><color=#FF8A2D>200%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与え、1秒間<color=yellow>スタン</color>させ、<color=yellow>攻撃効果</color>を発動します。HPが50%以下の敵に対しては、ダメージ量が50%増加します。",
+    "description": "一瞬消えた後、対象位置に現れて敵を切りつけます。 <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、1秒間<color=yellow>スタン</color>させ、<color=yellow>攻撃効果</color>を発動します。HPが50%以下の敵に対しては、ダメージ量が50%増加します。",
     "rawDesc": "一瞬消えた後、対象位置に現れて敵を切りつけます。{0}の<color=yellow>闇ダメージ</color>を与え、{1}秒間<color=yellow>スタン</color>させ、<color=yellow>攻撃効果</color>を発動します。HPが{2}以下の敵に対しては、ダメージ量が{3}増加します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -3473,11 +3704,11 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "冬の力を纏い、指定位置へ大きく跳び着地します。その位置にいるすべての敵に<sprite=1><color=#16D7FF>340%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与え、1.5秒間<color=yellow>スタン</color>させます。",
+    "description": "冬の力を纏い、指定位置へ大きく跳び着地します。その位置にいるすべての敵に <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> の<color=yellow>冷気ダメージ</color>を与え、1.5秒間<color=yellow>スタン</color>させます。",
     "rawDesc": "冬の力を纏い、指定位置へ大きく跳び着地します。その位置にいるすべての敵に{0}の<color=yellow>冷気ダメージ</color>を与え、{1}秒間<color=yellow>スタン</color>させます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>340%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -3524,7 +3755,7 @@
     "cooldownTime": 14.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "対象エリアに0.7秒ごとに4<sprite=5>回吹雪を起こし、敵に<sprite=1><color=#16D7FF>180%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与え、味方には3.5秒かけて消える<sprite=1><color=#16D7FF>60%</color><sprite=5>の<color=yellow>シールド</color>を付与します。\n最大10個を同時に維持できます。",
+    "description": "対象エリアに0.7秒ごとに 4<sprite=5> 回吹雪を起こし、敵に <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> の<color=yellow>冷気ダメージ</color>を与え、味方には3.5秒かけて消える <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> の<color=yellow>シールド</color>を付与します。\n最大10個を同時に維持できます。",
     "rawDesc": "対象エリアに{0}秒ごとに{1}回吹雪を起こし、敵に{2}の<color=yellow>冷気ダメージ</color>を与え、味方には{3}秒かけて消える{4}の<color=yellow>シールド</color>を付与します。\n最大{5}個を同時に維持できます。",
     "rawDescVars": [
       {
@@ -3541,7 +3772,7 @@
         }
       },
       {
-        "rendered": "4<sprite=5>",
+        "rendered": " 4<sprite=5> ",
         "format": "#,##0",
         "raw": "waveCount",
         "scalingType": "basic",
@@ -3554,7 +3785,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -3580,7 +3811,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -3626,11 +3857,11 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "前方に刃を振り下ろし、敵に<sprite=2><color=#FF8A2D>200%</color><sprite=5>のダメージを与え、2秒間<color=yellow>移動速度</color>を30%<color=yellow>減少</color>させます。\n\n刃が命中した敵が3秒以内に死亡すると<color=yellow>肉</color>がドロップします。<color=yellow>肉</color>を獲得すると<sprite=1><color=#16D7FF>25%</color><sprite=5>分の<color=yellow>HP</color>を<color=yellow>回復</color>し、屠殺者の一撃の<color=yellow>ダメージ量</color>が永久に1%増加します。",
+    "description": "前方に刃を振り下ろし、敵に <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> のダメージを与え、2秒間<color=yellow>移動速度</color>を30%<color=yellow>減少</color>させます。\n\n刃が命中した敵が3秒以内に死亡すると<color=yellow>肉</color>がドロップします。<color=yellow>肉</color>を獲得すると <sprite=1><color=#fff><gradient=sv_ap>25%</gradient></color><sprite=5> 分の<color=yellow>HP</color>を<color=yellow>回復</color>し、屠殺者の一撃の<color=yellow>ダメージ量</color>が永久に1%増加します。",
     "rawDesc": "前方に刃を振り下ろし、敵に{0}のダメージを与え、{1}秒間<color=yellow>移動速度</color>を{2}<color=yellow>減少</color>させます。\n\n刃が命中した敵が{3}秒以内に死亡すると<color=yellow>肉</color>がドロップします。<color=yellow>肉</color>を獲得すると{4}分の<color=yellow>HP</color>を<color=yellow>回復</color>し、屠殺者の一撃の<color=yellow>ダメージ量</color>が永久に{5}増加します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -3682,7 +3913,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>25%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>25%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -3728,7 +3959,7 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "現在所持している<color=yellow>ゴールド</color>の1%を消費して<color=yellow>コイン</color>を投げます。<color=yellow>コイン</color>は最初に命中した敵の位置で<color=yellow>爆発</color>し、敵に<sprite=1><color=#16D7FF>150%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、1秒間<color=yellow>スタン</color>させます。\n\n爆発後、50%の確率で<color=yellow>爆発ダメージ量</color>が永続的に2倍に増加しますが、50%の確率でこの増加量がすべて消失します。",
+    "description": "現在所持している<color=yellow>ゴールド</color>の1%を消費して<color=yellow>コイン</color>を投げます。<color=yellow>コイン</color>は最初に命中した敵の位置で<color=yellow>爆発</color>し、敵に <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与え、1秒間<color=yellow>スタン</color>させます。\n\n爆発後、50%の確率で<color=yellow>爆発ダメージ量</color>が永続的に2倍に増加しますが、50%の確率でこの増加量がすべて消失します。",
     "rawDesc": "現在所持している<color=yellow>ゴールド</color>の{0}を消費して<color=yellow>コイン</color>を投げます。<color=yellow>コイン</color>は最初に命中した敵の位置で<color=yellow>爆発</color>し、敵に{1}の<color=yellow>光ダメージ</color>を与え、{2}秒間<color=yellow>スタン</color>させます。\n\n爆発後、50%の確率で<color=yellow>爆発ダメージ量</color>が永続的に2倍に増加しますが、50%の確率でこの増加量がすべて消失します。",
     "rawDescVars": [
       {
@@ -3745,7 +3976,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -3791,7 +4022,7 @@
     "cooldownTime": 13.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "対象の味方や敵を指定し、1.5秒後に対象の位置で<color=yellow>ルミナスバースト</color>を起こします。ルミナスバーストは周囲の敵に<sprite=1><color=#16D7FF>400%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、1秒間<color=yellow>スタン</color>させます。バーストで敵を<color=yellow>撃破</color>すると、バーストが<color=yellow>繰り返し</color>発生します。",
+    "description": "対象の味方や敵を指定し、1.5秒後に対象の位置で<color=yellow>ルミナスバースト</color>を起こします。ルミナスバーストは周囲の敵に <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与え、1秒間<color=yellow>スタン</color>させます。バーストで敵を<color=yellow>撃破</color>すると、バーストが<color=yellow>繰り返し</color>発生します。",
     "rawDesc": "対象の味方や敵を指定し、{0}秒後に対象の位置で<color=yellow>ルミナスバースト</color>を起こします。ルミナスバーストは周囲の敵に{1}の<color=yellow>光ダメージ</color>を与え、{2}秒間<color=yellow>スタン</color>させます。バーストで敵を<color=yellow>撃破</color>すると、バーストが<color=yellow>繰り返し</color>発生します。",
     "rawDescVars": [
       {
@@ -3808,7 +4039,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -3854,11 +4085,11 @@
     "cooldownTime": 16.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "対象とその周囲の精神を汚染し、<sprite=1><color=#16D7FF>200%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与え、死亡するまで0.5秒ごとに<sprite=1><color=#16D7FF>60%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与えます。",
+    "description": "対象とその周囲の精神を汚染し、 <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、死亡するまで0.5秒ごとに <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与えます。",
     "rawDesc": "対象とその周囲の精神を汚染し、{0}の<color=yellow>闇ダメージ</color>を与え、死亡するまで{1}秒ごとに{2}の<color=yellow>闇ダメージ</color>を与えます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "initDamageAmount",
         "scalingType": "basic",
@@ -3884,7 +4115,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "tickDamageAmount",
         "scalingType": "basic",
@@ -3916,7 +4147,7 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "6秒間、攻撃速度が15%<sprite=5>増加、移動速度が10%増加し、この間<color=yellow>攻撃</color>時に3本の矢が放たれます。各矢は<sprite=1><color=#16D7FF>35%</color><sprite=5>のダメージを与え、最初の矢は<color=yellow>攻撃効果</color>を発動させます。",
+    "description": "6秒間、攻撃速度が 15%<sprite=5> 増加、移動速度が10%増加し、この間<color=yellow>攻撃</color>時に3本の矢が放たれます。各矢は <sprite=1><color=#fff><gradient=sv_ap>35%</gradient></color><sprite=5> のダメージを与え、最初の矢は<color=yellow>攻撃効果</color>を発動させます。",
     "rawDesc": "{0}秒間、攻撃速度が{1}増加、移動速度が{2}増加し、この間<color=yellow>攻撃</color>時に{3}本の矢が放たれます。各矢は{4}のダメージを与え、最初の矢は<color=yellow>攻撃効果</color>を発動させます。",
     "rawDescVars": [
       {
@@ -3933,7 +4164,7 @@
         }
       },
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -3972,7 +4203,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>35%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>35%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "arrowDamage",
         "scalingType": "basic",
@@ -4004,7 +4235,7 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "3秒間、素早く動く<color=yellow>火炎球</color>に<color=yellow>変身</color>し、50<sprite=5>の<color=yellow>防御力</color>を獲得して<color=yellow>火炎ダメージ</color>への免疫を得る。球が敵に触れるたびに<sprite=1><color=#16D7FF>220%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与え、変身の<color=yellow>持続時間</color>が0.2<sprite=5>秒<color=yellow>増加</color>し、最大で3<sprite=5>秒まで増加する。",
+    "description": "3秒間、素早く動く<color=yellow>火炎球</color>に<color=yellow>変身</color>し、 50<sprite=5> の<color=yellow>防御力</color>を獲得して<color=yellow>火炎ダメージ</color>への免疫を得る。球が敵に触れるたびに <sprite=1><color=#fff><gradient=sv_ap>220%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を与え、変身の<color=yellow>持続時間</color>が 0.2<sprite=5> 秒<color=yellow>増加</color>し、最大で 3<sprite=5> 秒まで増加する。",
     "rawDesc": "{0}秒間、素早く動く<color=yellow>火炎球</color>に<color=yellow>変身</color>し、{1}の<color=yellow>防御力</color>を獲得して<color=yellow>火炎ダメージ</color>への免疫を得る。球が敵に触れるたびに{2}の<color=yellow>火炎ダメージ</color>を与え、変身の<color=yellow>持続時間</color>が{3}秒<color=yellow>増加</color>し、最大で{4}秒まで増加する。",
     "rawDescVars": [
       {
@@ -4021,7 +4252,7 @@
         }
       },
       {
-        "rendered": "50<sprite=5>",
+        "rendered": " 50<sprite=5> ",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "basic",
@@ -4034,7 +4265,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>220%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>220%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -4047,7 +4278,7 @@
         }
       },
       {
-        "rendered": "0.2<sprite=5>",
+        "rendered": " 0.2<sprite=5> ",
         "format": "#,##0.#",
         "raw": "durationIncreasePerHit",
         "scalingType": "basic",
@@ -4060,7 +4291,7 @@
         }
       },
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0.#",
         "raw": "maxDurationIncrease",
         "scalingType": "basic",
@@ -4094,11 +4325,11 @@
     "cooldownTime": 6.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "対象の敵に霊弾を発射し、<sprite=2><color=#FF8A2D>300%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動させます。このダメージで敵を<color=yellow>撃破</color>すると、5<sprite=5>の<color=yellow>ドリームダスト</color>を獲得します。",
+    "description": "対象の敵に霊弾を発射し、 <sprite=2><color=#fff><gradient=sv_ad>300%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動させます。このダメージで敵を<color=yellow>撃破</color>すると、 5<sprite=5> の<color=yellow>ドリームダスト</color>を獲得します。",
     "rawDesc": "対象の敵に霊弾を発射し、{0}の<color=yellow>ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動させます。このダメージで敵を<color=yellow>撃破</color>すると、{1}の<color=yellow>ドリームダスト</color>を獲得します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>300%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>300%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -4111,7 +4342,7 @@
         }
       },
       {
-        "rendered": "5<sprite=5>",
+        "rendered": " 5<sprite=5> ",
         "format": "#,##0",
         "raw": "dreamDustAmount",
         "scalingType": "basic",
@@ -4440,30 +4671,30 @@
     "cooldownTime": 6.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "発動キーを<color=yellow>長押し</color>すると、ハンマーに太陽をチャネリングします。チャネリングが完了すると、地面に叩きつけ敵に<sprite=1><color=#16D7FF>150%</color><sprite=5>～<sprite=1><color=#16D7FF>450%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与え、0.5～1.5秒間<color=yellow>スタン</color>させます。\n\nチャネリング中は移動できませんが、<color=yellow>アンストッパブル</color>状態になり、<color=yellow>防御力</color>を60<sprite=5>得ます。",
+    "description": "発動キーを<color=yellow>長押し</color>すると、ハンマーに太陽をチャネリングします。チャネリングが完了すると、地面に叩きつけ敵に <sprite=1><color=#fff><gradient=sv_ap>125%</gradient></color><sprite=5> ～ <sprite=1><color=#fff><gradient=sv_ap>380%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>17%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を与え、0.5～1.5秒間<color=yellow>スタン</color>させます。\n\nチャネリング中は移動できませんが、<color=yellow>アンストッパブル</color>状態になり、<color=yellow>防御力</color>を 60<sprite=5> 得ます。",
     "rawDesc": "発動キーを<color=yellow>長押し</color>すると、ハンマーに太陽をチャネリングします。チャネリングが完了すると、地面に叩きつけ敵に{0}～{1}の<color=yellow>火炎ダメージ</color>を与え、{2}～{3}秒間<color=yellow>スタン</color>させます。\n\nチャネリング中は移動できませんが、<color=yellow>アンストッパブル</color>状態になり、<color=yellow>防御力</color>を{4}得ます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>125%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageMin",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.5,
+          "basicAP": 1.25,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>450%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>380%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>17%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageMax",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 4.5,
+          "basicAP": 3.8,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -4496,7 +4727,7 @@
         }
       },
       {
-        "rendered": "60<sprite=5>",
+        "rendered": " 60<sprite=5> ",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "basic",
@@ -4530,11 +4761,11 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "対象にダッシュし、ハンマーを振り下ろして敵に<sprite=2><color=#FF8A2D>125%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動します。敵を<color=yellow>攻撃</color>するたびに、<color=yellow>クールダウン</color>が8%<color=yellow>減少</color>します。",
+    "description": "対象にダッシュし、ハンマーを振り下ろして敵に <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動します。敵を<color=yellow>攻撃</color>するたびに、<color=yellow>クールダウン</color>が8%<color=yellow>減少</color>します。",
     "rawDesc": "対象にダッシュし、ハンマーを振り下ろして敵に{0}の<color=yellow>光ダメージ</color>を与え、{1}の<color=yellow>攻撃効果</color>を発動します。敵を<color=yellow>攻撃</color>するたびに、<color=yellow>クールダウン</color>が{2}<color=yellow>減少</color>します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>125%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -4594,11 +4825,11 @@
     "cooldownTime": 9.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "前方に飛んでいき戻ってくる<color=yellow>エーテル</color>を放ち、敵に<sprite=1><color=#16D7FF>160%</color><sprite=5>の<color=yellow>光ダメージ</color>を与えます。再度発動すると、<color=yellow>エーテル</color>が<color=yellow>爆発</color>し、敵に<sprite=1><color=#16D7FF>180%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、3秒間<color=yellow>バインド</color>します。",
+    "description": "前方に飛んでいき戻ってくる<color=yellow>エーテル</color>を放ち、敵に <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。再度発動すると、<color=yellow>エーテル</color>が<color=yellow>爆発</color>し、敵に <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与え、3秒間<color=yellow>バインド</color>します。",
     "rawDesc": "前方に飛んでいき戻ってくる<color=yellow>エーテル</color>を放ち、敵に{0}の<color=yellow>光ダメージ</color>を与えます。再度発動すると、<color=yellow>エーテル</color>が<color=yellow>爆発</color>し、敵に{1}の<color=yellow>光ダメージ</color>を与え、{2}秒間<color=yellow>バインド</color>します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_Q_EtherealInfluence_Projectile_Forward::damage",
         "scalingType": "basic",
@@ -4611,7 +4842,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "explodeDamage",
         "scalingType": "basic",
@@ -4657,11 +4888,11 @@
     "cooldownTime": 12.0,
     "maxCharges": 3,
     "addedCharges": 999,
-    "description": "対象にダッシュして<sprite=2><color=#FF8A2D>140%</color><sprite=5>の<color=yellow>ダメージ</color>を与えます。即<color=yellow>基本攻撃</color>を行い、<color=yellow>ミスト</color>の<color=yellow>移動速度</color>が一時的に上昇します。この<color=yellow>ダメージ</color>で対象を撃破すると、15<sprite=5>のHPを回復し、<color=yellow>クールダウン</color>が15%減少します。\n\n<color=yellow>チャージ回数</color>が一度にすべてチャージされます。",
+    "description": "対象にダッシュして <sprite=2><color=#fff><gradient=sv_ad>140%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与えます。即<color=yellow>基本攻撃</color>を行い、<color=yellow>ミスト</color>の<color=yellow>移動速度</color>が一時的に上昇します。この<color=yellow>ダメージ</color>で対象を撃破すると、 15<sprite=5> のHPを回復し、<color=yellow>クールダウン</color>が15%減少します。\n\n<color=yellow>チャージ回数</color>が一度にすべてチャージされます。",
     "rawDesc": "対象にダッシュして{0}の<color=yellow>ダメージ</color>を与えます。即<color=yellow>基本攻撃</color>を行い、<color=yellow>ミスト</color>の<color=yellow>移動速度</color>が一時的に上昇します。この<color=yellow>ダメージ</color>で対象を撃破すると、{1}のHPを回復し、<color=yellow>クールダウン</color>が{2}減少します。\n\n<color=yellow>チャージ回数</color>が一度にすべてチャージされます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>140%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>140%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -4674,7 +4905,7 @@
         }
       },
       {
-        "rendered": "15<sprite=5>",
+        "rendered": " 15<sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -4722,11 +4953,11 @@
     "cooldownTime": 0.25,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "前方で黄金の爆発を起こし、敵に<sprite=1><color=#16D7FF>110%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、味方のHPを<sprite=1><color=#16D7FF>28%</color><sprite=5><color=yellow>回復</color>させます。単一の対象に命中すると、この爆発の<color=yellow>ダメージ量</color>と<color=yellow>回復量</color>が100%増加します。\n\n発動時3.5秒間<color=yellow>腐食</color>スタックを獲得し、自身の最大HPの5%を<color=yellow>犠牲</color>にします。<color=yellow>腐食</color>スタック1つにつき爆発の<color=yellow>ダメージ量</color>と<color=yellow>回復量</color>が100%増加します。ただし、<color=yellow>犠牲</color>にするHP量も自身の最大HPの7%ずつ増加します。",
+    "description": "前方で黄金の爆発を起こし、敵に <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与え、味方のHPを <sprite=1><color=#fff><gradient=sv_ap>28%</gradient></color><sprite=5> <color=yellow>回復</color>させます。単一の対象に命中すると、この爆発の<color=yellow>ダメージ量</color>と<color=yellow>回復量</color>が100%増加します。\n\n発動時3.5秒間<color=yellow>腐食</color>スタックを獲得し、自身の最大HPの5%を<color=yellow>犠牲</color>にします。<color=yellow>腐食</color>スタック1つにつき爆発の<color=yellow>ダメージ量</color>と<color=yellow>回復量</color>が100%増加します。ただし、<color=yellow>犠牲</color>にするHP量も自身の最大HPの7%ずつ増加します。",
     "rawDesc": "前方で黄金の爆発を起こし、敵に{0}の<color=yellow>光ダメージ</color>を与え、味方のHPを{1}<color=yellow>回復</color>させます。単一の対象に命中すると、この爆発の<color=yellow>ダメージ量</color>と<color=yellow>回復量</color>が{2}増加します。\n\n発動時{3}秒間<color=yellow>腐食</color>スタックを獲得し、自身の最大HPの{4}を<color=yellow>犠牲</color>にします。<color=yellow>腐食</color>スタック1つにつき爆発の<color=yellow>ダメージ量</color>と<color=yellow>回復量</color>が{5}増加します。ただし、<color=yellow>犠牲</color>にするHP量も自身の最大HPの{6}ずつ増加します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>110%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageAmount",
         "scalingType": "basic",
@@ -4739,7 +4970,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>28%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>28%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -4838,11 +5069,11 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "後方に吹き飛ばされながら火炎弾を発射します。前方の敵に<sprite=1><color=#16D7FF>80%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与えます。近くにいる敵は、代わりに<sprite=1><color=#16D7FF>180%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を受け、後方に押し出されます。",
+    "description": "後方に吹き飛ばされながら火炎弾を発射します。前方の敵に <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を与えます。近くにいる敵は、代わりに <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を受け、後方に押し出されます。",
     "rawDesc": "後方に吹き飛ばされながら火炎弾を発射します。前方の敵に{0}の<color=yellow>火炎ダメージ</color>を与えます。近くにいる敵は、代わりに{1}の<color=yellow>火炎ダメージ</color>を受け、後方に押し出されます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>80%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "factor",
         "scalingType": "basic",
@@ -4855,7 +5086,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "closeFactor",
         "scalingType": "basic",
@@ -4889,7 +5120,7 @@
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "次の4回の基本攻撃のスピードが60%<sprite=5>上昇し、<sprite=1><color=#16D7FF>100%</color><sprite=5>の追加<color=yellow>火炎ダメージ</color>を与え、しばらくの間<color=yellow>ラセルタ</color>の<color=yellow>移動速度</color>が増加します。",
+    "description": "次の4回の基本攻撃のスピードが 60%<sprite=5> 上昇し、 <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> の追加<color=yellow>火炎ダメージ</color>を与え、しばらくの間<color=yellow>ラセルタ</color>の<color=yellow>移動速度</color>が増加します。",
     "rawDesc": "次の{0}回の基本攻撃のスピードが{1}上昇し、{2}の追加<color=yellow>火炎ダメージ</color>を与え、しばらくの間<color=yellow>ラセルタ</color>の<color=yellow>移動速度</color>が増加します。",
     "rawDescVars": [
       {
@@ -4906,7 +5137,7 @@
         }
       },
       {
-        "rendered": "60%<sprite=5>",
+        "rendered": " 60%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -4919,7 +5150,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -4953,11 +5184,11 @@
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "基本攻撃時に裂傷の形態が<color=#f28a8a>赤型</color>と<color=#8ab2f2>青型</color>に交互に<color=yellow>切り替わり</color>ます。発動時の形態によって異なる効果を発動します。\n\n<color=#f28a8a>赤型：</color>短距離をダッシュしながら狭い範囲の敵を切り裂き、<sprite=2><color=#FF8A2D>155%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動します。敵に初めて命中すると<color=yellow>クールダウン</color>が35%秒減少します。\n\n<color=#8ab2f2>青型：</color>空中に飛び上がり一時的に<color=yellow>無敵</color>状態になった後、刃を振り回して周囲のすべての敵に<sprite=2><color=#FF8A2D>200%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動します。",
-    "rawDesc": "基本攻撃時に裂傷の形態が<color=#f28a8a>赤型</color>と<color=#8ab2f2>青型</color>に交互に<color=yellow>切り替わり</color>ます。発動時の形態によって異なる効果を発動します。\n\n<color=#f28a8a>赤型：</color>短距離をダッシュしながら狭い範囲の敵を切り裂き、{0}の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動します。敵に初めて命中すると<color=yellow>クールダウン</color>が{1}秒減少します。\n\n<color=#8ab2f2>青型：</color>空中に飛び上がり一時的に<color=yellow>無敵</color>状態になった後、刃を振り回して周囲のすべての敵に{2}の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動します。",
+    "description": "基本攻撃時に裂傷の形態が<color=#f28a8a>赤型</color>と<color=#8ab2f2>青型</color>に交互に<color=yellow>切り替わり</color>ます。発動時の形態によって異なる効果を発動します。\n\n<color=#f28a8a>赤型：</color>短距離をダッシュしながら狭い範囲の敵を切り裂き、 <sprite=2><color=#fff><gradient=sv_ad>155%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動します。敵に初めて命中すると<color=yellow>クールダウン</color>が35%減少します。\n\n<color=#8ab2f2>青型：</color>空中に飛び上がり一時的に<color=yellow>無敵</color>状態になった後、刃を振り回して周囲のすべての敵に <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動します。命中した敵1体につき<color=yellow>クールダウン</color>が15%減少し、最大60%減少します。",
+    "rawDesc": "基本攻撃時に裂傷の形態が<color=#f28a8a>赤型</color>と<color=#8ab2f2>青型</color>に交互に<color=yellow>切り替わり</color>ます。発動時の形態によって異なる効果を発動します。\n\n<color=#f28a8a>赤型：</color>短距離をダッシュしながら狭い範囲の敵を切り裂き、{0}の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動します。敵に初めて命中すると<color=yellow>クールダウン</color>が{1}減少します。\n\n<color=#8ab2f2>青型：</color>空中に飛び上がり一時的に<color=yellow>無敵</color>状態になった後、刃を振り回して周囲のすべての敵に{2}の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動します。命中した敵1体につき<color=yellow>クールダウン</color>が{3}減少し、最大{4}減少します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>155%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>155%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -4983,16 +5214,42 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "slashDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 2.0,
+          "basicAD": 2.3,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "15%",
+        "format": "P0",
+        "raw": "cooldownReductionPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "60%",
+        "format": "P0",
+        "raw": "cooldownReductionMax",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
         }
       }
     ],
@@ -5018,11 +5275,24 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "前方にダッシュした後、最も近い敵に向かってサーベルを突き刺します。サーベルが命中したすべての敵に<color=yellow>攻撃効果</color>を発動し、<sprite=2><color=#FF8A2D>200%</color><sprite=5>のダメージを与えます。<color=yellow>アストリッドの傑作</color>が発動するたびに<color=yellow>クールダウン</color>が0.5秒減少します。",
-    "rawDesc": "前方にダッシュした後、最も近い敵に向かってサーベルを突き刺します。サーベルが命中したすべての敵に<color=yellow>攻撃効果</color>を発動し、{0}のダメージを与えます。<color=yellow>アストリッドの傑作</color>が発動するたびに<color=yellow>クールダウン</color>が{1}秒減少します。",
+    "description": "前方に回避した後、最も近い敵に向かってサーベルを突き刺します。サーベルが敵に命中すると、<color=yellow>クイックフット</color>の<color=yellow>クールダウン</color>が60%減少し、命中したすべての敵に<color=yellow>攻撃効果</color>を発動して <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> のダメージを与えます。<color=yellow>アストリッドの傑作</color>が発動するたびに<color=yellow>クールダウン</color>が0.5秒減少します。 ",
+    "rawDesc": "前方に回避した後、最も近い敵に向かってサーベルを突き刺します。サーベルが敵に命中すると、<color=yellow>クイックフット</color>の<color=yellow>クールダウン</color>が{0}減少し、命中したすべての敵に<color=yellow>攻撃効果</color>を発動して{1}のダメージを与えます。<color=yellow>アストリッドの傑作</color>が発動するたびに<color=yellow>クールダウン</color>が{2}秒減少します。 ",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "rendered": "60%",
+        "format": "P0",
+        "raw": "dodgeCooldownReductionRatioOnHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -5069,11 +5339,11 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>フェンリル</color>が対象位置に跳躍し、敵を切り裂いて<sprite=1><color=#16D7FF>200%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、0.5秒間スタンさせます。命中した敵1体につき<color=yellow>フェンリル</color>が最大HPの8%<sprite=5>を<color=yellow>回復</color>します。<color=yellow>フェンリル</color>が攻撃するたびに<color=yellow>クールダウン</color>が1秒減少します。\n\n<color=yellow>持続効果：</color>ナキアに従う<color=yellow>人狼フェンリル</color>を<color=yellow>召喚</color>します。<color=yellow>フェンリル</color>はHP321と防御力40<sprite=5>防御力を持ち、敵を引っ掻いて<sprite=1><color=#16D7FF>130%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動させます。",
+    "description": "<color=yellow>フェンリル</color>が対象位置に跳躍し、敵を切り裂いて <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、0.5秒間スタンさせます。命中した敵1体につき<color=yellow>フェンリル</color>が最大HPの 8%<sprite=5> を<color=yellow>回復</color>します。<color=yellow>フェンリル</color>が攻撃するたびに<color=yellow>クールダウン</color>が1秒減少します。\n\n<color=yellow>持続効果：</color>ナキアに従う<color=yellow>人狼フェンリル</color>を<color=yellow>召喚</color>します。<color=yellow>フェンリル</color>はHP321と防御力 40<sprite=5> 防御力を持ち、敵を引っ掻いて <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動させます。",
     "rawDesc": "<color=yellow>フェンリル</color>が対象位置に跳躍し、敵を切り裂いて{0}の<color=yellow>ダメージ</color>を与え、{1}秒間スタンさせます。命中した敵1体につき<color=yellow>フェンリル</color>が最大HPの{2}を<color=yellow>回復</color>します。<color=yellow>フェンリル</color>が攻撃するたびに<color=yellow>クールダウン</color>が{3}秒減少します。\n\n<color=yellow>持続効果：</color>ナキアに従う<color=yellow>人狼フェンリル</color>を<color=yellow>召喚</color>します。<color=yellow>フェンリル</color>はHP{4}と防御力{5}防御力を持ち、敵を引っ掻いて{6}の<color=yellow>ダメージ</color>を与え、{7}の<color=yellow>攻撃効果</color>を発動させます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_Q_MoonlightPact_Land::dmgFactor",
         "scalingType": "basic",
@@ -5099,7 +5369,7 @@
         }
       },
       {
-        "rendered": "8%<sprite=5>",
+        "rendered": " 8%<sprite=5> ",
         "format": "P0",
         "raw": "healPerHitRatio",
         "scalingType": "basic",
@@ -5132,7 +5402,7 @@
         "data": {}
       },
       {
-        "rendered": "40<sprite=5>",
+        "rendered": " 40<sprite=5> ",
         "format": "#,##0",
         "raw": "armor",
         "scalingType": "basic",
@@ -5145,7 +5415,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_Q_MoonlightPact_Fenrir_Atk::dmgFactor",
         "scalingType": "basic",
@@ -5192,7 +5462,7 @@
     "cooldownTime": 4.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "自身の最大HP8%を<color=yellow>犠牲</color>にして、薄い金の欠片を前方に3回放ちます。金の欠片は対象を貫通し、命中した敵に<sprite=1><color=#16D7FF>95%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、味方のHPを<sprite=1><color=#16D7FF>18%</color><sprite=5><color=yellow>回復</color>させます。",
+    "description": "自身の最大HP8%を<color=yellow>犠牲</color>にして、薄い金の欠片を前方に3回放ちます。金の欠片は対象を貫通し、命中した敵に <sprite=1><color=#fff><gradient=sv_ap>95%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、味方のHPを <sprite=1><color=#fff><gradient=sv_ap>18%</gradient></color><sprite=5> <color=yellow>回復</color>させます。",
     "rawDesc": "自身の最大HP{0}を<color=yellow>犠牲</color>にして、薄い金の欠片を前方に{1}回放ちます。金の欠片は対象を貫通し、命中した敵に{2}の<color=yellow>ダメージ</color>を与え、味方のHPを{3}<color=yellow>回復</color>させます。",
     "rawDescVars": [
       {
@@ -5222,7 +5492,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>95%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>95%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageAmount",
         "scalingType": "basic",
@@ -5235,7 +5505,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>18%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>18%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -5267,8 +5537,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "対象位置に、徐々に大きくなり敵を減速させる星を生成し、最大3秒間チャネリングします。この間、攻撃や記憶は使用できません。<color=yellow>超新星</color>を再度発動すると、星を爆発させ、敵に<sprite=1><color=#16D7FF>200%</color><sprite=5>の<color=yellow>光ダメージ</color>を与えます。この爆発はチャージ時間に比例して威力が増加し、1.3秒経過すると、ダメージ量が225%まで増加します。",
-    "rawDesc": "対象位置に、徐々に大きくなり敵を減速させる星を生成し、最大{0}秒間チャネリングします。この間、攻撃や記憶は使用できません。<color=yellow>超新星</color>を再度発動すると、星を爆発させ、敵に{1}の<color=yellow>光ダメージ</color>を与えます。この爆発はチャージ時間に比例して威力が増加し、{2}秒経過すると、ダメージ量が{3}まで増加します。",
+    "description": "対象位置に、徐々に大きくなり敵を減速させる星を生成し、最大3秒間チャネリングします。この間、攻撃や記憶は使用できません。<color=yellow>超新星</color>を再度発動すると、星を爆発させ、敵に <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。この爆発はチャージ時間に比例して威力が増加し、1.3秒経過すると、ダメージ量が225%まで増加します。\nチャージ速度はユバールの記憶加速に比例して増加します。",
+    "rawDesc": "対象位置に、徐々に大きくなり敵を減速させる星を生成し、最大{0}秒間チャネリングします。この間、攻撃や記憶は使用できません。<color=yellow>超新星</color>を再度発動すると、星を爆発させ、敵に{1}の<color=yellow>光ダメージ</color>を与えます。この爆発はチャージ時間に比例して威力が増加し、{2}秒経過すると、ダメージ量が{3}まで増加します。\nチャージ速度はユバールの記憶加速に比例して増加します。",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -5284,7 +5554,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -5342,11 +5612,11 @@
     "cooldownTime": 9.0,
     "maxCharges": 2,
     "addedCharges": 1,
-    "description": "ナキアに従う<color=yellow>リーフハウンド</color>を対象位置に<color=yellow>召喚</color>し、敵に<sprite=1><color=#16D7FF>130%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、0.4秒間<color=yellow>スタン</color>させます。\n\n<color=yellow>リーフハウンド</color>はHP128と防御力40を持ち、最大25秒間戦場に留まり、敵を引っ掻いて<sprite=1><color=#16D7FF>60%</color><sprite=5>の<color=yellow>ダメージ</color>を与えます。最大5匹まで維持できます。",
+    "description": "ナキアに従う<color=yellow>リーフハウンド</color>を対象位置に<color=yellow>召喚</color>し、敵に <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、0.4秒間<color=yellow>スタン</color>させます。\n\n<color=yellow>リーフハウンド</color>はHP128と防御力40を持ち、最大25秒間戦場に留まり、敵を引っ掻いて <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与えます。最大5匹まで維持できます。",
     "rawDesc": "ナキアに従う<color=yellow>リーフハウンド</color>を対象位置に<color=yellow>召喚</color>し、敵に{0}の<color=yellow>ダメージ</color>を与え、{1}秒間<color=yellow>スタン</color>させます。\n\n<color=yellow>リーフハウンド</color>はHP{2}と防御力{3}を持ち、最大{4}秒間戦場に留まり、敵を引っ掻いて{5}の<color=yellow>ダメージ</color>を与えます。最大{6}匹まで維持できます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_Q_SylvanCall::dmgFactor",
         "scalingType": "basic",
@@ -5405,7 +5675,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_Q_SylvanCall_LeafHound_Atk::dmgFactor",
         "scalingType": "basic",
@@ -5452,7 +5722,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "発動キーを<color=yellow>長押し</color>すると、精神の矢をチャージします。発動キーを離すと、近くの敵にチャージ時間に応じて1～4<sprite=5>個の精神の矢を落とします。各精神の矢は狭い範囲の敵に<sprite=2><color=#FF8A2D>200%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与えます。",
+    "description": "発動キーを<color=yellow>長押し</color>すると、精神の矢をチャージします。発動キーを離すと、近くの敵にチャージ時間に応じて1～ 4<sprite=5> 個の精神の矢を落とします。各精神の矢は狭い範囲の敵に <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与えます。",
     "rawDesc": "発動キーを<color=yellow>長押し</color>すると、精神の矢をチャージします。発動キーを離すと、近くの敵にチャージ時間に応じて{0}～{1}個の精神の矢を落とします。各精神の矢は狭い範囲の敵に{2}の<color=yellow>闇ダメージ</color>を与えます。",
     "rawDescVars": [
       {
@@ -5469,14 +5739,14 @@
         }
       },
       {
-        "rendered": "4<sprite=5>",
+        "rendered": " 4<sprite=5> ",
         "format": "#,##0",
         "raw": "clampedCount",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -5509,7 +5779,7 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "3秒間、自身の周囲を炎の輪で包みます。炎の輪に触れた敵は毎秒<sprite=1><color=#16D7FF>350%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を受けます。",
+    "description": "3秒間、自身の周囲を炎の輪で包みます。炎の輪に触れた敵は毎秒 <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を受けます。",
     "rawDesc": "{0}秒間、自身の周囲を炎の輪で包みます。炎の輪に触れた敵は毎秒{1}の<color=yellow>火炎ダメージ</color>を受けます。",
     "rawDescVars": [
       {
@@ -5520,7 +5790,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor*5",
         "scalingType": "unknown",
@@ -5546,24 +5816,24 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "近くの敵に3<sprite=5>個のソウルミサイルを発射します。各ミサイルは爆発し、敵に<sprite=1><color=#16D7FF>120%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、1秒間<color=yellow>移動速度</color>を60%低下させます。",
+    "description": "近くの敵に 3<sprite=5> 個のソウルミサイルを発射します。各ミサイルは爆発し、敵に <sprite=1><color=#fff><gradient=sv_ap>108%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与え、1秒間<color=yellow>移動速度</color>を60%低下させます。",
     "rawDesc": "近くの敵に{0}個のソウルミサイルを発射します。各ミサイルは爆発し、敵に{1}の<color=yellow>光ダメージ</color>を与え、{2}秒間<color=yellow>移動速度</color>を{3}低下させます。",
     "rawDescVars": [
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0",
         "raw": "clampedCount",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>108%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.2,
+          "basicAP": 1.08,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1
@@ -5615,18 +5885,18 @@
     "cooldownTime": 4.5,
     "maxCharges": 2,
     "addedCharges": 1,
-    "description": "最も近い敵に魔剣を振るい、<sprite=2><color=#FF8A2D>300%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、ややノックバックさせます。剣が敵に命中すると、ビスマスの<color=yellow>移動速度</color>が1秒間15%<sprite=5>増加します。",
+    "description": "最も近い敵に魔剣を振るい、 <sprite=2><color=#fff><gradient=sv_ad>240%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、ややノックバックさせます。剣が敵に命中すると、ビスマスの<color=yellow>移動速度</color>が1秒間 15%<sprite=5> 増加します。",
     "rawDesc": "最も近い敵に魔剣を振るい、{0}の<color=yellow>ダメージ</color>を与え、ややノックバックさせます。剣が敵に命中すると、ビスマスの<color=yellow>移動速度</color>が{1}秒間{2}増加します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>300%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>240%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 3.0,
+          "basicAD": 2.4,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5645,7 +5915,7 @@
         }
       },
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -5674,12 +5944,12 @@
     "achievementDescription": "ビスマスで純白の夢に進入する。"
   },
   "St_R_AnnihilationStance": {
-    "name": "殲滅態勢",
+    "name": "滅殺態勢",
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "10秒間、剣に破壊の<color=yellow>剣気</color>を纏います。この間は<color=yellow>記憶</color>を<color=yellow>発動</color>できませんが、<color=yellow>攻撃力</color>が30%<sprite=5>増加、さらに<color=yellow>攻撃範囲</color>が増加し、<color=yellow>基本攻撃</color>時に<color=yellow>剣気</color>を放ち敵に<sprite=1><color=#16D7FF>400%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与えます。この間は毎秒1.5<sprite=5>回<color=yellow>基本攻撃</color>ができ、他の攻撃速度効果の影響を受けません。",
-    "rawDesc": "{0}秒間、剣に破壊の<color=yellow>剣気</color>を纏います。この間は<color=yellow>記憶</color>を<color=yellow>発動</color>できませんが、<color=yellow>攻撃力</color>が{1}増加、さらに<color=yellow>攻撃範囲</color>が増加し、<color=yellow>基本攻撃</color>時に<color=yellow>剣気</color>を放ち敵に{2}の<color=yellow>闇ダメージ</color>を与えます。この間は毎秒{3}回<color=yellow>基本攻撃</color>ができ、他の攻撃速度効果の影響を受けません。",
+    "description": "10秒間、剣に破壊の<color=yellow>剣気</color>を纏います。この間は<color=yellow>記憶</color>を<color=yellow>発動</color>できませんが、<color=yellow>攻撃力</color>が 35%<sprite=5> 増加、さらに<color=yellow>攻撃範囲</color>が増加し、<color=yellow>基本攻撃</color>のたびに<color=yellow>剣気</color>を放ち敵に <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与えます。この間は毎秒 1.5<sprite=5> 回<color=yellow>基本攻撃</color>ができ、他の攻撃速度効果の影響を受けません。\n\n持続時間中、<color=yellow>回避スキル</color>の<color=yellow>記憶加速</color>が 30<sprite=5> 、<color=yellow>最大チャージ数</color>が2増加します。",
+    "rawDesc": "{0}秒間、剣に破壊の<color=yellow>剣気</color>を纏います。この間は<color=yellow>記憶</color>を<color=yellow>発動</color>できませんが、<color=yellow>攻撃力</color>が{1}増加、さらに<color=yellow>攻撃範囲</color>が増加し、<color=yellow>基本攻撃</color>のたびに<color=yellow>剣気</color>を放ち敵に{2}の<color=yellow>闇ダメージ</color>を与えます。この間は毎秒{3}回<color=yellow>基本攻撃</color>ができ、他の攻撃速度効果の影響を受けません。\n\n持続時間中、<color=yellow>回避スキル</color>の<color=yellow>記憶加速</color>が{4}、<color=yellow>最大チャージ数</color>が{5}増加します。",
     "rawDescVars": [
       {
         "rendered": "10",
@@ -5695,12 +5965,12 @@
         }
       },
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": " 35%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "adPercentage",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 25.0,
+          "basicConstant": 30.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 5.0,
@@ -5708,20 +5978,20 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 4.0,
+          "basicAP": 3.4,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "1.5<sprite=5>",
+        "rendered": " 1.5<sprite=5> ",
         "format": "0.#",
         "raw": "atkSpd",
         "scalingType": "basic",
@@ -5731,6 +6001,32 @@
           "basicAD": 0.0,
           "basicLvl": 0.1,
           "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " 30<sprite=5> ",
+        "format": "#,##0",
+        "raw": "dodgeSkillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 24.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 6.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dodgeSkillAddedCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
         }
       }
     ],
@@ -5745,7 +6041,7 @@
       "Attack"
     ],
     "image": "St_R_AnnihilationStance.PNG",
-    "lore": "目撃者は、排除する。",
+    "lore": "目撃者は、残さない。",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -5755,11 +6051,11 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>ヴェスパー</color>が太陽の力を受け入れ爆発を起こし、周囲の敵に<sprite=1><color=#16D7FF>200%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与え、ヴェスパーを攻撃させます。6秒間、<color=yellow>攻撃速度</color>が15%<sprite=5>増加し、この間、<color=yellow>攻撃</color>時に<sprite=2><color=#FF8A2D>40%</color><sprite=5>の追加<color=yellow>火炎ダメージ</color>を与えます。",
+    "description": "<color=yellow>ヴェスパー</color>が太陽の力を受け入れ爆発を起こし、周囲の敵に <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を与え、ヴェスパーを攻撃させます。6秒間、<color=yellow>攻撃速度</color>が 15%<sprite=5> 増加し、この間、<color=yellow>攻撃</color>時に <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> の追加<color=yellow>火炎ダメージ</color>を与えます。",
     "rawDesc": "<color=yellow>ヴェスパー</color>が太陽の力を受け入れ爆発を起こし、周囲の敵に{0}の<color=yellow>火炎ダメージ</color>を与え、ヴェスパーを攻撃させます。{1}秒間、<color=yellow>攻撃速度</color>が{2}増加し、この間、<color=yellow>攻撃</color>時に{3}の追加<color=yellow>火炎ダメージ</color>を与えます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -5785,7 +6081,7 @@
         }
       },
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -5798,7 +6094,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>40%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "bonusDamage",
         "scalingType": "basic",
@@ -5832,11 +6128,11 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "敵を<color=yellow>貫通</color>するアーバレストを発射し、敵に<sprite=2><color=#FF8A2D>250%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与え、吹き飛ばしながら<color=yellow>攻撃効果</color>を発動します。敵を<color=yellow>貫通</color>するたびに、次の敵に与える<color=yellow>ダメージ量</color>が35%増加します。",
+    "description": "敵を<color=yellow>貫通</color>するアーバレストを発射し、敵に <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、吹き飛ばしながら<color=yellow>攻撃効果</color>を発動します。敵を<color=yellow>貫通</color>するたびに、次の敵に与える<color=yellow>ダメージ量</color>が35%増加します。",
     "rawDesc": "敵を<color=yellow>貫通</color>するアーバレストを発射し、敵に{0}の<color=yellow>闇ダメージ</color>を与え、吹き飛ばしながら<color=yellow>攻撃効果</color>を発動します。敵を<color=yellow>貫通</color>するたびに、次の敵に与える<color=yellow>ダメージ量</color>が{1}増加します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "hitDamage",
         "scalingType": "basic",
@@ -5884,11 +6180,11 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>アンストッパブル</color>状態になり、壁に衝突するまで前方に<color=yellow>ダッシュ</color>します。衝突する敵に<sprite=1><color=#16D7FF>135%</color><sprite=5>の<color=yellow>ダメージ</color>を与えて引きずり、壁に衝突すると衝撃波を放出して敵に<sprite=1><color=#16D7FF>420%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、1.5秒間<color=yellow>スタン</color>させます。\n発動時に<color=yellow>最大HP</color>20%<sprite=5>分の<color=yellow>シールド</color>を獲得し、このシールドはダッシュを終えると3秒後に無くなります。",
+    "description": "<color=yellow>アンストッパブル</color>状態になり、壁に衝突するまで前方に<color=yellow>ダッシュ</color>します。衝突する敵に <sprite=1><color=#fff><gradient=sv_ap>135%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与えて引きずり、壁に衝突すると衝撃波を放出して敵に <sprite=1><color=#fff><gradient=sv_ap>420%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>22%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、1.5秒間<color=yellow>スタン</color>させます。\n発動時に<color=yellow>最大HP</color> 20%<sprite=5> 分の<color=yellow>シールド</color>を獲得し、このシールドはダッシュを終えると3秒後に無くなります。",
     "rawDesc": "<color=yellow>アンストッパブル</color>状態になり、壁に衝突するまで前方に<color=yellow>ダッシュ</color>します。衝突する敵に{0}の<color=yellow>ダメージ</color>を与えて引きずり、壁に衝突すると衝撃波を放出して敵に{1}の<color=yellow>ダメージ</color>を与え、{2}秒間<color=yellow>スタン</color>させます。\n発動時に<color=yellow>最大HP</color>{3}分の<color=yellow>シールド</color>を獲得し、このシールドはダッシュを終えると{4}秒後に無くなります。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>135%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>135%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "midChargeHitDamage",
         "scalingType": "basic",
@@ -5901,7 +6197,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>420%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>420%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>22%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -5927,7 +6223,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "P0",
         "raw": "shieldMaxHpRatio",
         "scalingType": "basic",
@@ -5975,7 +6271,7 @@
     "cooldownTime": 80.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "12秒間、<sprite=1><color=#16D7FF>150%</color><sprite=5>のシールドを獲得し、<color=yellow>魔法力</color>が30%<sprite=5>増加します。持続時間中に<color=yellow>カタクリスム</color>を3回まで再度発動して、対象位置に隕石を落とすことができます。隕石は敵を一時的にスタンさせ、<sprite=1><color=#16D7FF>250%</color><sprite=5>の<color=yellow>光ダメージ</color>を与えます。",
+    "description": "12秒間、 <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> のシールドを獲得し、<color=yellow>魔法力</color>が 30%<sprite=5> 増加します。持続時間中に<color=yellow>カタクリスム</color>を3回まで再度発動して、対象位置に隕石を落とすことができます。隕石は敵を一時的にスタンさせ、 <sprite=1><color=#fff><gradient=sv_ap>250%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。",
     "rawDesc": "{0}秒間、{1}のシールドを獲得し、<color=yellow>魔法力</color>が{2}増加します。持続時間中に<color=yellow>カタクリスム</color>を{3}回まで再度発動して、対象位置に隕石を落とすことができます。隕石は敵を一時的にスタンさせ、{4}の<color=yellow>光ダメージ</color>を与えます。",
     "rawDescVars": [
       {
@@ -5992,7 +6288,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -6005,7 +6301,7 @@
         }
       },
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": " 30%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "bonusApPercent",
         "scalingType": "basic",
@@ -6031,7 +6327,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>250%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_R_Cataclysm_Meteor::dmgFactor",
         "scalingType": "basic",
@@ -6065,7 +6361,7 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "対象位置に6秒間持続する<color=yellow>分解の魔法陣</color>を刻みます。魔法陣上にいる敵は毎秒<sprite=1><color=#16D7FF>150%</color><sprite=5>の<color=yellow>ダメージ</color>を受け、魔法陣上の味方は魔法陣上にいる敵1体につき毎秒<sprite=1><color=#16D7FF>44%</color><sprite=5>のHPを<color=yellow>回復</color>します。<color=yellow>ボス</color>に命中すると<color=yellow>ダメージ量</color>と<color=yellow>回復量</color>が200%増加します。",
+    "description": "対象位置に6秒間持続する<color=yellow>分解の魔法陣</color>を刻みます。魔法陣上にいる敵は毎秒 <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を受け、魔法陣上の味方は魔法陣上にいる敵1体につき毎秒 <sprite=1><color=#fff><gradient=sv_ap>44%</gradient></color><sprite=5> のHPを<color=yellow>回復</color>します。<color=yellow>ボス</color>に命中すると<color=yellow>ダメージ量</color>と<color=yellow>回復量</color>が200%増加します。",
     "rawDesc": "対象位置に{0}秒間持続する<color=yellow>分解の魔法陣</color>を刻みます。魔法陣上にいる敵は毎秒{1}の<color=yellow>ダメージ</color>を受け、魔法陣上の味方は魔法陣上にいる敵1体につき毎秒{2}のHPを<color=yellow>回復</color>します。<color=yellow>ボス</color>に命中すると<color=yellow>ダメージ量</color>と<color=yellow>回復量</color>が{3}増加します。",
     "rawDescVars": [
       {
@@ -6076,14 +6372,14 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor/tickInterval",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>44%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>44%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healPerEnemy/tickInterval",
         "scalingType": "unknown",
@@ -6123,11 +6419,11 @@
     "cooldownTime": 6.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "対象の敵に噛みついて<sprite=1><color=#16D7FF>370%</color><sprite=5>のダメージを与え、<sprite=1><color=#16D7FF>75%</color><sprite=5>のHPを回復します。",
+    "description": "対象の敵に噛みついて <sprite=1><color=#fff><gradient=sv_ap>370%</gradient></color><sprite=5> のダメージを与え、 <sprite=1><color=#fff><gradient=sv_ap>75%</gradient></color><sprite=5> のHPを回復します。",
     "rawDesc": "対象の敵に噛みついて{0}のダメージを与え、{1}のHPを回復します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>370%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>370%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -6140,7 +6436,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>75%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>75%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -6173,7 +6469,7 @@
     "cooldownTime": 13.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "このエリアに4秒間持続する<color=yellow>ブレードストーム</color>を召喚します。<color=yellow>ブレードストーム</color>は周囲を素早く切り裂き、0.5秒ごとに敵に<sprite=1><color=#16D7FF>85%</color><sprite=5>と<sprite=2><color=#FF8A2D>85%</color><sprite=5>のうち大きい方の<color=yellow>ダメージ</color>を与え、最も近い敵を追跡します。",
+    "description": "このエリアに4秒間持続する<color=yellow>ブレードストーム</color>を召喚します。<color=yellow>ブレードストーム</color>は周囲を素早く切り裂き、0.5秒ごとに敵に <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5> と <sprite=2><color=#fff><gradient=sv_ad>85%</gradient></color><sprite=5> のうち大きい方の<color=yellow>ダメージ</color>を与え、最も近い敵を追跡します。",
     "rawDesc": "このエリアに{0}秒間持続する<color=yellow>ブレードストーム</color>を召喚します。<color=yellow>ブレードストーム</color>は周囲を素早く切り裂き、{1}秒ごとに敵に{2}と{3}のうち大きい方の<color=yellow>ダメージ</color>を与え、最も近い敵を追跡します。",
     "rawDescVars": [
       {
@@ -6197,7 +6493,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "apDamage",
         "scalingType": "basic",
@@ -6210,7 +6506,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>85%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "adDamage",
         "scalingType": "basic",
@@ -6240,11 +6536,11 @@
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "前方へ飛び、次の<color=yellow>基本攻撃</color>が強化されます。次の<color=yellow>基本攻撃</color>が<color=yellow>クリティカル</color>となり、対象に<sprite=2><color=#FF8A2D>125%</color><sprite=5>の<color=yellow>追加ダメージ</color>を与えてノックバックさせます。\n\n<color=yellow>危険な理論</color>使用時に<color=yellow>現在HP</color>が60%以下の場合、<color=yellow>追加ダメージ量</color>が100%増加し、<color=yellow>クールダウン</color>が25%減少し、命中した敵1体につき<sprite=1><color=#16D7FF>67%</color><sprite=5>のHPを<color=yellow>回復</color>します。対象が<color=yellow>ボス</color>の場合、<color=yellow>追加ダメージ量</color>と<color=yellow>回復量</color>が100%増加します。",
+    "description": "前方へ飛び、次の<color=yellow>基本攻撃</color>が強化されます。次の<color=yellow>基本攻撃</color>が<color=yellow>クリティカル</color>となり、対象に <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5> の<color=yellow>追加ダメージ</color>を与えてノックバックさせます。\n\n<color=yellow>危険な理論</color>使用時に<color=yellow>現在HP</color>が60%以下の場合、<color=yellow>追加ダメージ量</color>が100%増加し、<color=yellow>クールダウン</color>が25%減少し、命中した敵1体につき <sprite=1><color=#fff><gradient=sv_ap>67%</gradient></color><sprite=5> のHPを<color=yellow>回復</color>します。対象が<color=yellow>ボス</color>の場合、<color=yellow>追加ダメージ量</color>と<color=yellow>回復量</color>が100%増加します。",
     "rawDesc": "前方へ飛び、次の<color=yellow>基本攻撃</color>が強化されます。次の<color=yellow>基本攻撃</color>が<color=yellow>クリティカル</color>となり、対象に{0}の<color=yellow>追加ダメージ</color>を与えてノックバックさせます。\n\n<color=yellow>危険な理論</color>使用時に<color=yellow>現在HP</color>が{1}以下の場合、<color=yellow>追加ダメージ量</color>が{2}増加し、<color=yellow>クールダウン</color>が{3}減少し、命中した敵1体につき{4}のHPを<color=yellow>回復</color>します。対象が<color=yellow>ボス</color>の場合、<color=yellow>追加ダメージ量</color>と<color=yellow>回復量</color>が{5}増加します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>125%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageAmount",
         "scalingType": "basic",
@@ -6296,7 +6592,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>67%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>67%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -6344,11 +6640,11 @@
     "cooldownTime": 4.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "火炎の鞭を振るって前方の敵に<sprite=1><color=#16D7FF>200%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与え、<color=yellow>移動速度</color>を一時的に低下させます。\n<color=yellow>炎の鞭</color>以外の記憶を<color=yellow>発動</color>すると、<color=yellow>クールダウン</color>がリセットされます。",
+    "description": "火炎の鞭を振るって前方の敵に <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を与え、<color=yellow>移動速度</color>を一時的に低下させます。\n<color=yellow>炎の鞭</color>以外の記憶を<color=yellow>発動</color>すると、<color=yellow>クールダウン</color>がリセットされます。",
     "rawDesc": "火炎の鞭を振るって前方の敵に{0}の<color=yellow>火炎ダメージ</color>を与え、<color=yellow>移動速度</color>を一時的に低下させます。\n<color=yellow>炎の鞭</color>以外の記憶を<color=yellow>発動</color>すると、<color=yellow>クールダウン</color>がリセットされます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -6380,11 +6676,11 @@
     "cooldownTime": 6.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "次の2回の<color=yellow>攻撃</color>が速くなり、強化されます。1回目の攻撃は<sprite=1><color=#16D7FF>50%</color><sprite=5>の追加<color=yellow>冷気ダメージ</color>を与え、自身に2秒間持続する<sprite=1><color=#16D7FF>110%</color><sprite=5>の<color=yellow>シールド</color>を付与します。2回目の攻撃は<sprite=1><color=#16D7FF>180%</color><sprite=5>の追加<color=yellow>冷気ダメージ</color>を与えます。",
+    "description": "次の2回の<color=yellow>攻撃</color>が速くなり、強化されます。1回目の攻撃は <sprite=1><color=#fff><gradient=sv_ap>50%</gradient></color><sprite=5> の追加<color=yellow>冷気ダメージ</color>を与え、自身に2秒間持続する <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5> の<color=yellow>シールド</color>を付与します。2回目の攻撃は <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> の追加<color=yellow>冷気ダメージ</color>を与えます。",
     "rawDesc": "次の2回の<color=yellow>攻撃</color>が速くなり、強化されます。1回目の攻撃は{0}の追加<color=yellow>冷気ダメージ</color>を与え、自身に{1}秒間持続する{2}の<color=yellow>シールド</color>を付与します。2回目の攻撃は{3}の追加<color=yellow>冷気ダメージ</color>を与えます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>50%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>50%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "firstDmg",
         "scalingType": "basic",
@@ -6410,7 +6706,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>110%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "firstShieldAmount",
         "scalingType": "basic",
@@ -6423,7 +6719,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "secondDmg",
         "scalingType": "basic",
@@ -6457,24 +6753,24 @@
     "cooldownTime": 9.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "前方に氷のハンマーを振り下ろして敵に<sprite=1><color=#16D7FF>220%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与え、自身の位置に引き寄せます。ハンマーの中心に命中した敵には、代わりに<sprite=1><color=#16D7FF>385%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与えます。",
+    "description": "前方に氷のハンマーを振り下ろして敵に <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5> の<color=yellow>冷気ダメージ</color>を与え、自身の位置に引き寄せます。ハンマーの中心に命中した敵には、代わりに <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>14%</gradient></color><sprite=5> の<color=yellow>冷気ダメージ</color>を与えます。",
     "rawDesc": "前方に氷のハンマーを振り下ろして敵に{0}の<color=yellow>冷気ダメージ</color>を与え、自身の位置に引き寄せます。ハンマーの中心に命中した敵には、代わりに{1}の<color=yellow>冷気ダメージ</color>を与えます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>220%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.2,
+          "basicAP": 2.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>385%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>14%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "(1+centerDamageAmp)*dmgFactor",
         "scalingType": "unknown",
@@ -6499,20 +6795,20 @@
   },
   "St_R_GreatFrostSword": {
     "name": "霜の大剣",
-    "cooldownTime": 11.0,
+    "cooldownTime": 9.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "霜の大剣を召喚して振り回し、前方の敵に<sprite=1><color=#16D7FF>250%</color><sprite=5>の<color=yellow>冷気ダメージ</color>を与え、押し出します。単一の対象に命中した場合、<color=yellow>ダメージ量</color>が350%増加します。",
+    "description": "霜の大剣を召喚して振り回し、前方の敵に <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>12%</gradient></color><sprite=5> の<color=yellow>冷気ダメージ</color>を与え、押し出します。単一の対象に命中した場合、<color=yellow>ダメージ量</color>が350%増加します。",
     "rawDesc": "霜の大剣を召喚して振り回し、前方の敵に{0}の<color=yellow>冷気ダメージ</color>を与え、押し出します。単一の対象に命中した場合、<color=yellow>ダメージ量</color>が{1}増加します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>12%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.5,
+          "basicAP": 2.4,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -6553,11 +6849,11 @@
     "cooldownTime": 10.0,
     "maxCharges": 3,
     "addedCharges": 99,
-    "description": "対象に<sprite=1><color=#16D7FF>115%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与えます。すでに燃えている対象の場合、ダメージ量が50%増加し、<color=yellow>範囲ダメージ</color>を与えます。一度にすべてチャージされます。",
+    "description": "対象に <sprite=1><color=#fff><gradient=sv_ap>115%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を与えます。すでに燃えている対象の場合、ダメージ量が50%増加し、<color=yellow>範囲ダメージ</color>を与えます。一度にすべてチャージされます。",
     "rawDesc": "対象に{0}の<color=yellow>火炎ダメージ</color>を与えます。すでに燃えている対象の場合、ダメージ量が{1}増加し、<color=yellow>範囲ダメージ</color>を与えます。一度にすべてチャージされます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>115%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>115%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -6602,7 +6898,7 @@
     "cooldownTime": 9.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "3.5秒かけて自身の現在HPの12%を犠牲にして体を燃やします。燃焼中は<color=yellow>移動速度</color>が20%<sprite=5>増加し、周囲の敵に毎秒<sprite=1><color=#16D7FF>165%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与えます。",
+    "description": "3.5秒かけて自身の現在HPの12%を犠牲にして体を燃やします。燃焼中は<color=yellow>移動速度</color>が 20%<sprite=5> 増加し、周囲の敵に毎秒 <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>9%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を与えます。",
     "rawDesc": "{0}秒かけて自身の現在HPの{1}を犠牲にして体を燃やします。燃焼中は<color=yellow>移動速度</color>が{2}増加し、周囲の敵に毎秒{3}の<color=yellow>火炎ダメージ</color>を与えます。",
     "rawDescVars": [
       {
@@ -6632,7 +6928,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -6645,7 +6941,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>165%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>9%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor*3",
         "scalingType": "unknown",
@@ -6673,7 +6969,7 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "周囲のすべての味方を4秒間<color=yellow>激励</color>します。<color=yellow>激励</color>の効果を受けた味方は<color=yellow>攻撃速度</color>が10%<sprite=5>増加し、<color=yellow>攻撃</color>時に<sprite=1><color=#16D7FF>13%</color><sprite=5>の<color=yellow>追加ダメージ</color>を与えます。自身は200%の効果を受けます。",
+    "description": "周囲のすべての味方を4秒間<color=yellow>激励</color>します。<color=yellow>激励</color>の効果を受けた味方は<color=yellow>攻撃速度</color>が 10%<sprite=5> 増加し、<color=yellow>攻撃</color>時に <sprite=1><color=#fff><gradient=sv_ap>13%</gradient></color><sprite=5> の<color=yellow>追加ダメージ</color>を与えます。自身は200%の効果を受けます。",
     "rawDesc": "周囲のすべての味方を{0}秒間<color=yellow>激励</color>します。<color=yellow>激励</color>の効果を受けた味方は<color=yellow>攻撃速度</color>が{1}増加し、<color=yellow>攻撃</color>時に{2}の<color=yellow>追加ダメージ</color>を与えます。自身は{3}の効果を受けます。",
     "rawDescVars": [
       {
@@ -6690,7 +6986,7 @@
         }
       },
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": " 10%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "haste",
         "scalingType": "basic",
@@ -6703,7 +6999,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>13%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>13%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -6746,11 +7042,11 @@
     "cooldownTime": 13.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "一時的に<color=yellow>無敵</color>状態の<color=yellow>雷</color>に変身し、対象とその周囲の敵に跳ね返りながら<sprite=1><color=#16D7FF>120%</color><sprite=5>の<color=yellow>光ダメージ</color>を与えます。最大4回跳ね返ることができます。\n\n<color=yellow>攻撃</color>すると、この記憶の<color=yellow>クールダウン</color>が5%減少します。",
+    "description": "一時的に<color=yellow>無敵</color>状態の<color=yellow>雷</color>に変身し、対象とその周囲の敵に跳ね返りながら <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。最大4回跳ね返ることができます。\n\n<color=yellow>攻撃</color>すると、この記憶の<color=yellow>クールダウン</color>が5%減少します。",
     "rawDesc": "一時的に<color=yellow>無敵</color>状態の<color=yellow>雷</color>に変身し、対象とその周囲の敵に跳ね返りながら{0}の<color=yellow>光ダメージ</color>を与えます。最大{1}回跳ね返ることができます。\n\n<color=yellow>攻撃</color>すると、この記憶の<color=yellow>クールダウン</color>が{2}減少します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -6811,7 +7107,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "ナキアのすべての召喚獣に対して、対象位置へ移動するか対象の敵を攻撃するよう命令します。3秒間、ナキアと自身の召喚獣の<color=yellow>攻撃速度</color>が18%<sprite=5>増加します。",
+    "description": "ナキアのすべての召喚獣に対して、対象位置へ移動するか対象の敵を攻撃するよう命令します。3秒間、ナキアと自身の召喚獣の<color=yellow>攻撃速度</color>が 18%<sprite=5> 増加します。",
     "rawDesc": "ナキアのすべての召喚獣に対して、対象位置へ移動するか対象の敵を攻撃するよう命令します。{0}秒間、ナキアと自身の召喚獣の<color=yellow>攻撃速度</color>が{1}増加します。",
     "rawDescVars": [
       {
@@ -6828,7 +7124,7 @@
         }
       },
       {
-        "rendered": "18%<sprite=5>",
+        "rendered": " 18%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -6858,11 +7154,11 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "前方に<color=yellow>光のオーブ</color>を発射し、敵に<sprite=1><color=#16D7FF>200%</color><sprite=5>の<color=yellow>光ダメージ</color>を与えます。<color=yellow>光のオーブ</color>が敵に命中した場合、<color=yellow>生命の炎</color>が戻り、その炎に触れた味方のHPを、命中した敵1体につき<sprite=1><color=#16D7FF>25%</color><sprite=5><color=yellow>回復</color>させます。<color=yellow>ボス</color>に命中した場合、<color=yellow>回復量</color>が<sprite=1><color=#16D7FF>75%</color><sprite=5>増加します。",
+    "description": "前方に<color=yellow>光のオーブ</color>を発射し、敵に <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。<color=yellow>光のオーブ</color>が敵に命中した場合、<color=yellow>生命の炎</color>が戻り、その炎に触れた味方のHPを、命中した敵1体につき <sprite=1><color=#fff><gradient=sv_ap>25%</gradient></color><sprite=5> <color=yellow>回復</color>させます。<color=yellow>ボス</color>に命中した場合、<color=yellow>回復量</color>が <sprite=1><color=#fff><gradient=sv_ap>75%</gradient></color><sprite=5> 増加します。",
     "rawDesc": "前方に<color=yellow>光のオーブ</color>を発射し、敵に{0}の<color=yellow>光ダメージ</color>を与えます。<color=yellow>光のオーブ</color>が敵に命中した場合、<color=yellow>生命の炎</color>が戻り、その炎に触れた味方のHPを、命中した敵1体につき{1}<color=yellow>回復</color>させます。<color=yellow>ボス</color>に命中した場合、<color=yellow>回復量</color>が{2}増加します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -6875,7 +7171,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>25%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>25%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmountPerEnemy",
         "scalingType": "basic",
@@ -6888,7 +7184,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>75%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>75%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmountPerEnemy*3",
         "scalingType": "unknown",
@@ -6915,7 +7211,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "0.6秒以内に前方から受ける最初のダメージを跳ね返し、最大5<sprite=5>体の敵に<color=yellow>ダメージ</color>を与えます。命中した敵は<sprite=1><color=#16D7FF>360%</color><sprite=5>の<color=yellow>ダメージ</color>を受けて<color=yellow>スタン</color>状態になり、<color=yellow>アストリッドの傑作</color>の効果がリセットされます。ダメージを跳ね返すと一時的にすべてのダメージに対して<color=yellow>免疫</color>がつき、<color=yellow>パリィ</color>の<color=yellow>クールダウン</color>が50%減少します。 ",
+    "description": "0.6秒以内に前方から受ける最初のダメージを跳ね返し、最大 5<sprite=5> 体の敵に<color=yellow>ダメージ</color>を与えます。命中した敵は <sprite=1><color=#fff><gradient=sv_ap>360%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を受けて<color=yellow>スタン</color>状態になり、<color=yellow>アストリッドの傑作</color>の効果がリセットされます。ダメージを跳ね返すと一時的にすべてのダメージに対して<color=yellow>免疫</color>がつき、<color=yellow>パリィ</color>の<color=yellow>クールダウン</color>が50%減少します。 ",
     "rawDesc": "{0}秒以内に前方から受ける最初のダメージを跳ね返し、最大{1}体の敵に<color=yellow>ダメージ</color>を与えます。命中した敵は{2}の<color=yellow>ダメージ</color>を受けて<color=yellow>スタン</color>状態になり、<color=yellow>アストリッドの傑作</color>の効果がリセットされます。ダメージを跳ね返すと一時的にすべてのダメージに対して<color=yellow>免疫</color>がつき、<color=yellow>パリィ</color>の<color=yellow>クールダウン</color>が{3}減少します。 ",
     "rawDescVars": [
       {
@@ -6932,7 +7228,7 @@
         }
       },
       {
-        "rendered": "5<sprite=5>",
+        "rendered": " 5<sprite=5> ",
         "format": "#,##0",
         "raw": "maxEnemiesHit",
         "scalingType": "basic",
@@ -6945,7 +7241,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>360%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>360%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -6986,16 +7282,66 @@
     "achievementName": "水が流れるように",
     "achievementDescription": "ミストで敵からダメージを受けずに連続で敵を60体撃破する。"
   },
+  "St_R_PhaseShift": {
+    "name": "位相変化",
+    "cooldownTime": 9.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "味方または敵を対象に、自身と位置を交換します。対象が敵の場合、 <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与えて少しの間<color=yellow>気絶</color>させます。<color=yellow>アンストッパブル</color>状態の対象とは位置が入れ替わりません。少ししてから<color=yellow>衝撃波</color>が発生し、周囲の敵を引き寄せて <sprite=1><color=#fff><gradient=sv_ap>135%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与えます。",
+    "rawDesc": "味方または敵を対象に、自身と位置を交換します。対象が敵の場合、{0}の<color=yellow>ダメージ</color>を与えて少しの間<color=yellow>気絶</color>させます。<color=yellow>アンストッパブル</color>状態の対象とは位置が入れ替わりません。少ししてから<color=yellow>衝撃波</color>が発生し、周囲の敵を引き寄せて{1}の<color=yellow>ダメージ</color>を与えます。",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>135%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "secondDmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.35,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "位置交換、広範囲衝撃波",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "HardCC",
+      "Mobility"
+    ],
+    "image": "St_R_PhaseShift.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "St_R_PillarOfFlame": {
     "name": "火柱",
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "発動範囲に火柱を召喚し、範囲内のすべての敵に即<sprite=1><color=#16D7FF>250%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与え、その後2.4秒にわたって<sprite=1><color=#16D7FF>275%</color><sprite=5>の<color=yellow>火炎ダメージ</color>を与えます。",
+    "description": "発動範囲に火柱を召喚し、範囲内のすべての敵に即 <sprite=1><color=#fff><gradient=sv_ap>250%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を与え、その後2.4秒にわたって <sprite=1><color=#fff><gradient=sv_ap>275%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を与えます。",
     "rawDesc": "発動範囲に火柱を召喚し、範囲内のすべての敵に即{0}の<color=yellow>火炎ダメージ</color>を与え、その後{1}秒にわたって{2}の<color=yellow>火炎ダメージ</color>を与えます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>250%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "initDamage",
         "scalingType": "basic",
@@ -7015,7 +7361,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>275%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>275%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "totalDamage",
         "scalingType": "basic",
@@ -7047,11 +7393,11 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "発動キーを<color=yellow>長押し</color>すると、照準を合わせる姿勢をとります。照準を定めてキーを離すと徹甲弾を発射し、命中した敵すべてに照準時間に比例して<sprite=1><color=#16D7FF>150%</color><sprite=5>～<sprite=1><color=#16D7FF>800%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、0.5～2.5秒間<color=yellow>スタン</color>させます。\n1秒間照準を合わせると射程距離、スタン時間、ダメージ量が最大値に達します。",
-    "rawDesc": "発動キーを<color=yellow>長押し</color>すると、照準を合わせる姿勢をとります。照準を定めてキーを離すと徹甲弾を発射し、命中した敵すべてに照準時間に比例して{0}～{1}の<color=yellow>ダメージ</color>を与え、{2}～{3}秒間<color=yellow>スタン</color>させます。\n{4}秒間照準を合わせると射程距離、スタン時間、ダメージ量が最大値に達します。",
+    "description": "発動キーを<color=yellow>長押し</color>すると、照準を合わせる姿勢をとります。照準を定めてキーを離すと徹甲弾を発射し、命中した敵すべてに照準時間に比例して <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ～ <sprite=1><color=#fff><gradient=sv_ap>800%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、0.5～2.5秒間<color=yellow>スタン</color>させます。このダメージは対象の<color=yellow>防御力</color>を<color=yellow>無視</color>します。\n1秒間照準を合わせると射程距離、スタン時間、ダメージ量が最大値に達します。",
+    "rawDesc": "発動キーを<color=yellow>長押し</color>すると、照準を合わせる姿勢をとります。照準を定めてキーを離すと徹甲弾を発射し、命中した敵すべてに照準時間に比例して{0}～{1}の<color=yellow>ダメージ</color>を与え、{2}～{3}秒間<color=yellow>スタン</color>させます。このダメージは対象の<color=yellow>防御力</color>を<color=yellow>無視</color>します。\n{4}秒間照準を合わせると射程距離、スタン時間、ダメージ量が最大値に達します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageMin",
         "scalingType": "basic",
@@ -7064,7 +7410,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>800%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>800%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageMax",
         "scalingType": "basic",
@@ -7135,7 +7481,7 @@
     "cooldownTime": 14.0,
     "maxCharges": 3,
     "addedCharges": 1,
-    "description": "最大3体の敵に<sprite=2><color=#FF8A2D>120%</color><sprite=5>のダメージを与える貫通弾を素早く3発発射します。",
+    "description": "最大3体の敵に <sprite=2><color=#fff><gradient=sv_ad>120%</gradient></color><sprite=5> のダメージを与える貫通弾を素早く3発発射します。",
     "rawDesc": "最大{0}体の敵に{1}のダメージを与える貫通弾を素早く{2}発発射します。",
     "rawDescVars": [
       {
@@ -7152,7 +7498,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>120%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>120%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmg",
         "scalingType": "basic",
@@ -7195,11 +7541,11 @@
     "cooldownTime": 9.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "1.9<sprite=5>秒の間、前方の敵から受けるダメージを防ぎます。ダメージを防ぐたびに、前方にいるの最大4体の敵に<sprite=1><color=#16D7FF>240%</color><sprite=5>の<color=yellow>ダメージ</color>を与えます。",
+    "description": " 1.9<sprite=5> 秒の間、前方の敵から受けるダメージを防ぎます。ダメージを防ぐたびに、前方にいるの最大4体の敵に <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与えます。",
     "rawDesc": "{0}秒の間、前方の敵から受けるダメージを防ぎます。ダメージを防ぐたびに、前方にいるの最大{1}体の敵に{2}の<color=yellow>ダメージ</color>を与えます。",
     "rawDescVars": [
       {
-        "rendered": "1.9<sprite=5>",
+        "rendered": " 1.9<sprite=5> ",
         "format": "#,##0.#",
         "raw": "duration",
         "scalingType": "basic",
@@ -7225,7 +7571,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>240%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -7255,7 +7601,7 @@
     "cooldownTime": 120.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>ヴェスパー</color>の周囲の地面に10秒間<color=yellow>祝福</color>をもたらし、周囲の敵に<sprite=1><color=#16D7FF>500%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、味方に4秒間持続する<sprite=1><color=#16D7FF>200%</color><sprite=5>の<color=yellow>シールド</color>を付与します。祝福された地面の上にいる味方は<color=yellow>防御力</color>が18<sprite=5>増加し、<color=yellow>攻撃速度</color>が20%<sprite=5>増加します。\n\n<color=yellow>ヴェスパー</color>自身は200%の効果を受け、効果を受けている間<color=yellow>アンストッパブル</color>状態になります。",
+    "description": "<color=yellow>ヴェスパー</color>の周囲の地面に10秒間<color=yellow>祝福</color>をもたらし、周囲の敵に <sprite=1><color=#fff><gradient=sv_ap>500%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与え、味方に4秒間持続する <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> の<color=yellow>シールド</color>を付与します。祝福された地面の上にいる味方は<color=yellow>防御力</color>が 18<sprite=5> 増加し、<color=yellow>攻撃速度</color>が 20%<sprite=5> 増加します。\n\n<color=yellow>ヴェスパー</color>自身は200%の効果を受け、効果を受けている間<color=yellow>アンストッパブル</color>状態になります。",
     "rawDesc": "<color=yellow>ヴェスパー</color>の周囲の地面に{0}秒間<color=yellow>祝福</color>をもたらし、周囲の敵に{1}の<color=yellow>光ダメージ</color>を与え、味方に{2}秒間持続する{3}の<color=yellow>シールド</color>を付与します。祝福された地面の上にいる味方は<color=yellow>防御力</color>が{4}増加し、<color=yellow>攻撃速度</color>が{5}増加します。\n\n<color=yellow>ヴェスパー</color>自身は{6}の効果を受け、効果を受けている間<color=yellow>アンストッパブル</color>状態になります。",
     "rawDescVars": [
       {
@@ -7272,7 +7618,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>500%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>500%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "startDamage",
         "scalingType": "basic",
@@ -7298,7 +7644,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "startShield",
         "scalingType": "basic",
@@ -7311,7 +7657,7 @@
         }
       },
       {
-        "rendered": "18<sprite=5>",
+        "rendered": " 18<sprite=5> ",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "basic",
@@ -7324,7 +7670,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -7371,7 +7717,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "前方に広がる闇の弾丸を5発発射します。各弾丸は<sprite=2><color=#FF8A2D>100%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動します。",
+    "description": "前方に広がる闇の弾丸を5発発射します。各弾丸は <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動します。",
     "rawDesc": "前方に広がる闇の弾丸を{0}発発射します。各弾丸は{1}の<color=yellow>闇ダメージ</color>を与え、{2}の<color=yellow>攻撃効果</color>を発動します。",
     "rawDescVars": [
       {
@@ -7388,7 +7734,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -7435,7 +7781,7 @@
     "cooldownTime": 80.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "ナキアと対象の味方に12秒間<color=yellow>蛇の祝福</color>を付与します。この祝福は対象に55<sprite=5>の<color=yellow>防御力</color>を与え、<color=yellow>攻撃速度</color>を25%<sprite=5>増加させます。<color=yellow>祝福</color>を受けた対象が<color=yellow>基本攻撃</color>するたびに<color=yellow>最大HP</color>の2.5%<sprite=5>分を<color=yellow>回復</color>し、攻撃対象に追加で<sprite=1><color=#16D7FF>100%</color><sprite=5>の<color=yellow>ダメージ</color>を与え、0.5秒間<color=yellow>スタン</color>させます。\n\n祝福の対象が<color=yellow>召喚獣</color>の場合、対象の最大HP25%分を<color=yellow>回復</color>させます。",
+    "description": "ナキアと対象の味方に12秒間<color=yellow>蛇の祝福</color>を付与します。この祝福は対象に 55<sprite=5> の<color=yellow>防御力</color>を与え、<color=yellow>攻撃速度</color>を 25%<sprite=5> 増加させます。<color=yellow>祝福</color>を受けた対象が<color=yellow>基本攻撃</color>するたびに<color=yellow>最大HP</color>の 2.5%<sprite=5> 分を<color=yellow>回復</color>し、攻撃対象に追加で <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、0.5秒間<color=yellow>スタン</color>させます。\n\n祝福の対象が<color=yellow>召喚獣</color>の場合、対象の最大HP25%分を<color=yellow>回復</color>させます。",
     "rawDesc": "ナキアと対象の味方に{0}秒間<color=yellow>蛇の祝福</color>を付与します。この祝福は対象に{1}の<color=yellow>防御力</color>を与え、<color=yellow>攻撃速度</color>を{2}増加させます。<color=yellow>祝福</color>を受けた対象が<color=yellow>基本攻撃</color>するたびに<color=yellow>最大HP</color>の{3}分を<color=yellow>回復</color>し、攻撃対象に追加で{4}の<color=yellow>ダメージ</color>を与え、{5}秒間<color=yellow>スタン</color>させます。\n\n祝福の対象が<color=yellow>召喚獣</color>の場合、対象の最大HP{6}分を<color=yellow>回復</color>させます。",
     "rawDescVars": [
       {
@@ -7452,7 +7798,7 @@
         }
       },
       {
-        "rendered": "55<sprite=5>",
+        "rendered": " 55<sprite=5> ",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "basic",
@@ -7465,7 +7811,7 @@
         }
       },
       {
-        "rendered": "25%<sprite=5>",
+        "rendered": " 25%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -7478,7 +7824,7 @@
         }
       },
       {
-        "rendered": "2.5%<sprite=5>",
+        "rendered": " 2.5%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "healMaxHpRatio",
         "scalingType": "basic",
@@ -7491,7 +7837,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -7552,7 +7898,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "0.7秒間チャネリングします。この間<color=yellow>移動速度</color>が30%<sprite=5>増加します。チャネリングが終わると、周囲のランダムな敵に<sprite=2><color=#FF8A2D>50%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与える誘導ミサイルを5発射し、3秒間<color=yellow>攻撃速度</color>が20%<sprite=5>増加します。",
+    "description": "0.7秒間チャネリングします。この間<color=yellow>移動速度</color>が 30%<sprite=5> 増加します。チャネリングが終わると、周囲のランダムな敵に <sprite=2><color=#fff><gradient=sv_ad>50%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与える誘導ミサイルを5発射し、3秒間<color=yellow>攻撃速度</color>が 20%<sprite=5> 増加します。",
     "rawDesc": "{0}秒間チャネリングします。この間<color=yellow>移動速度</color>が{1}増加します。チャネリングが終わると、周囲のランダムな敵に{2}の<color=yellow>闇ダメージ</color>を与える誘導ミサイルを{3}発射し、{4}秒間<color=yellow>攻撃速度</color>が{5}増加します。",
     "rawDescVars": [
       {
@@ -7569,7 +7915,7 @@
         }
       },
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": " 30%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -7582,7 +7928,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>50%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>50%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -7621,7 +7967,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -7654,7 +8000,7 @@
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "素早く移動した後、周囲の敵に闇の破片を3個発射します。各破片は<sprite=2><color=#FF8A2D>65%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動させます。",
+    "description": "素早く移動した後、周囲の敵に闇の破片を3個発射します。各破片は <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動させます。",
     "rawDesc": "素早く移動した後、周囲の敵に闇の破片を{0}個発射します。各破片は{1}の<color=yellow>闇ダメージ</color>を与え、{2}の<color=yellow>攻撃効果</color>を発動させます。",
     "rawDescVars": [
       {
@@ -7671,7 +8017,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>65%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -7718,11 +8064,11 @@
     "cooldownTime": 13.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "まもなくこのエリアに雷を落とし、敵に<sprite=1><color=#16D7FF>400%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、1秒間<color=yellow>スタン</color>させます。50%の確率で敵に<color=yellow>火炎</color>を付与します。",
+    "description": "まもなくこのエリアに雷を落とし、敵に <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与え、1秒間<color=yellow>スタン</color>させます。50%の確率で敵に<color=yellow>火炎</color>を付与します。",
     "rawDesc": "まもなくこのエリアに雷を落とし、敵に{0}の<color=yellow>光ダメージ</color>を与え、{1}秒間<color=yellow>スタン</color>させます。{2}の確率で敵に<color=yellow>火炎</color>を付与します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -7782,11 +8128,11 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "発動キーを<color=yellow>長押し</color>すると電荷をチャージし、40<sprite=5>の防御力を獲得します。チャージを解放すると電荷が爆発し、チャージ時間に比例して敵に<sprite=1><color=#16D7FF>150%</color><sprite=5>～<sprite=1><color=#16D7FF>780%</color><sprite=5>の<color=yellow>光ダメージ</color>を与えて吹き飛ばし、2秒間<color=yellow>移動速度</color>を60%低下させます。獲得した防御力は、電荷を爆発させた後、1秒後に消滅します。\n\n1秒間チャージすると、ダメージ量と範囲が最大になります。",
-    "rawDesc": "発動キーを<color=yellow>長押し</color>すると電荷をチャージし、{0}の防御力を獲得します。チャージを解放すると電荷が爆発し、チャージ時間に比例して敵に{1}～{2}の<color=yellow>光ダメージ</color>を与えて吹き飛ばし、{3}秒間<color=yellow>移動速度</color>を{4}低下させます。獲得した防御力は、電荷を爆発させた後、{5}秒後に消滅します。\n\n{6}秒間チャージすると、ダメージ量と範囲が最大になります。",
+    "description": "発動キーを<color=yellow>長押し</color>すると雷をチャージし、 40<sprite=5> の防御力を獲得します。チャージを解放すると雷が爆発し、チャージ時間に比例して敵に <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ～ <sprite=1><color=#fff><gradient=sv_ap>780%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えて吹き飛ばし、2秒間<color=yellow>移動速度</color>を60%低下させます。獲得した防御力は、雷を爆発させた後、1秒後に消滅します。\n\n1秒間チャージすると、ダメージ量と範囲が最大になります。",
+    "rawDesc": "発動キーを<color=yellow>長押し</color>すると雷をチャージし、{0}の防御力を獲得します。チャージを解放すると雷が爆発し、チャージ時間に比例して敵に{1}～{2}の<color=yellow>光ダメージ</color>を与えて吹き飛ばし、{3}秒間<color=yellow>移動速度</color>を{4}低下させます。獲得した防御力は、雷を爆発させた後、{5}秒後に消滅します。\n\n{6}秒間チャージすると、ダメージ量と範囲が最大になります。",
     "rawDescVars": [
       {
-        "rendered": "40<sprite=5>",
+        "rendered": " 40<sprite=5> ",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "basic",
@@ -7799,7 +8145,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "minDamage",
         "scalingType": "basic",
@@ -7812,7 +8158,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>780%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>780%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "maxDamage",
         "scalingType": "basic",
@@ -7898,7 +8244,7 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>ユバール</color>が1秒間<color=yellow>チャネリング</color>して平静を取り戻します。この間<color=yellow>無敵</color>状態となり、<color=yellow>移動速度</color>が40%増加し、他のすべての記憶の<color=yellow>クールダウン</color>が3.5<sprite=5>秒減少します。",
+    "description": "<color=yellow>ユバール</color>が1秒間<color=yellow>チャネリング</color>して平静を取り戻します。この間<color=yellow>無敵</color>状態となり、<color=yellow>移動速度</color>が40%増加し、他のすべての記憶の<color=yellow>クールダウン</color>が 3.5<sprite=5> 秒減少します。",
     "rawDesc": "<color=yellow>ユバール</color>が{0}秒間<color=yellow>チャネリング</color>して平静を取り戻します。この間<color=yellow>無敵</color>状態となり、<color=yellow>移動速度</color>が{1}増加し、他のすべての記憶の<color=yellow>クールダウン</color>が{2}秒減少します。",
     "rawDescVars": [
       {
@@ -7928,7 +8274,7 @@
         }
       },
       {
-        "rendered": "3.5<sprite=5>",
+        "rendered": " 3.5<sprite=5> ",
         "format": "#,##0.#",
         "raw": "totalReducedSeconds",
         "scalingType": "basic",
@@ -7961,11 +8307,11 @@
     "cooldownTime": 70.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>クイックフット</color>と<color=yellow>アストリッドの傑作</color>のクールダウンをリセットし、周囲の敵に<sprite=1><color=#16D7FF>400%</color><sprite=5>のダメージを与え、12秒間<color=yellow>覚醒状態</color>になります。\n\n<color=yellow>覚醒状態</color>の間、<color=yellow>攻撃速度</color>が25%<sprite=5>増加し、<color=yellow>攻撃</color>するたびに対象とその周囲の敵に<sprite=1><color=#16D7FF>90%</color><sprite=5>の<color=yellow>ダメージ</color>を与える電撃爆発を引き起こします。<color=yellow>覚醒状態</color>中に<color=yellow>アストリッドの傑作</color>が発動すると、失ったHP4%分のHPを回復します。",
+    "description": "<color=yellow>クイックフット</color>と<color=yellow>アストリッドの傑作</color>のクールダウンをリセットし、周囲の敵に <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> のダメージを与え、12秒間<color=yellow>覚醒状態</color>になります。\n\n<color=yellow>覚醒状態</color>の間、<color=yellow>攻撃速度</color>が 25%<sprite=5> 増加し、<color=yellow>攻撃</color>するたびに対象とその周囲の敵に <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与える電撃爆発を引き起こします。<color=yellow>覚醒状態</color>中に<color=yellow>アストリッドの傑作</color>が発動すると、失ったHP4%分のHPを回復します。",
     "rawDesc": "<color=yellow>クイックフット</color>と<color=yellow>アストリッドの傑作</color>のクールダウンをリセットし、周囲の敵に{0}のダメージを与え、{1}秒間<color=yellow>覚醒状態</color>になります。\n\n<color=yellow>覚醒状態</color>の間、<color=yellow>攻撃速度</color>が{2}増加し、<color=yellow>攻撃</color>するたびに対象とその周囲の敵に{3}の<color=yellow>ダメージ</color>を与える電撃爆発を引き起こします。<color=yellow>覚醒状態</color>中に<color=yellow>アストリッドの傑作</color>が発動すると、失ったHP{4}分のHPを回復します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -7991,7 +8337,7 @@
         }
       },
       {
-        "rendered": "25%<sprite=5>",
+        "rendered": " 25%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -8004,7 +8350,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -8049,7 +8395,7 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "8秒間昇天し、<color=yellow>無敵</color>状態になります。この間、ゆっくりと動く<color=yellow>均衡の光線</color>を操作して、敵に毎秒<sprite=1><color=#16D7FF>350%</color><sprite=5>の<color=yellow>ダメージ</color>を与えるか、味方のHPを毎秒<sprite=1><color=#16D7FF>150%</color><sprite=5><color=yellow>回復</color>させることができます。",
+    "description": "8秒間昇天し、<color=yellow>無敵</color>状態になります。この間、ゆっくりと動く<color=yellow>均衡の光線</color>を操作して、敵に毎秒 <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与えるか、味方のHPを毎秒 <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> <color=yellow>回復</color>させることができます。",
     "rawDesc": "{0}秒間昇天し、<color=yellow>無敵</color>状態になります。この間、ゆっくりと動く<color=yellow>均衡の光線</color>を操作して、敵に毎秒{1}の<color=yellow>ダメージ</color>を与えるか、味方のHPを毎秒{2}<color=yellow>回復</color>させることができます。",
     "rawDescVars": [
       {
@@ -8066,7 +8412,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "enemyDamagePerSecond",
         "scalingType": "basic",
@@ -8079,7 +8425,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "allyHealPerSecond",
         "scalingType": "basic",
@@ -8111,7 +8457,7 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "地面に潜り込み、2.5秒間<color=yellow>無敵</color>状態になり、<color=yellow>移動速度</color>が30%<sprite=5>増加します。地上に出る時、周囲の敵を打ち上げて1秒間<color=yellow>スタン</color>させ、<sprite=1><color=#16D7FF>550%</color><sprite=5>の<color=yellow>ダメージ</color>を与えます。\n再度発動すると効果を早く終了できます。",
+    "description": "地面に潜り込み、2.5秒間<color=yellow>無敵</color>状態になり、<color=yellow>移動速度</color>が 30%<sprite=5> 増加します。地上に出る時、周囲の敵を打ち上げて1秒間<color=yellow>スタン</color>させ、 <sprite=1><color=#fff><gradient=sv_ap>550%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与えます。\n再度発動すると効果を早く終了できます。",
     "rawDesc": "地面に潜り込み、{0}秒間<color=yellow>無敵</color>状態になり、<color=yellow>移動速度</color>が{1}増加します。地上に出る時、周囲の敵を打ち上げて{2}秒間<color=yellow>スタン</color>させ、{3}の<color=yellow>ダメージ</color>を与えます。\n再度発動すると効果を早く終了できます。",
     "rawDescVars": [
       {
@@ -8128,7 +8474,7 @@
         }
       },
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": " 30%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -8154,7 +8500,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>550%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>550%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -8188,7 +8534,7 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "7秒間<color=yellow>ブラックホール</color>に変身します。すべての敵をブラックホールに引き寄せ、ブラックホールと接触している敵に毎秒<sprite=1><color=#16D7FF>500%</color><sprite=5>の<color=yellow>光ダメージ</color>を与えます。最後にブラックホールが爆発し、周囲のすべての敵に<sprite=1><color=#16D7FF>1,200%</color><sprite=5>の<color=yellow>光ダメージ</color>を与え、2.5秒間<color=yellow>スタン</color>させます。\n\nブラックホールに変身している間は120<sprite=5>の<color=yellow>防御力</color>を獲得し、死亡しません。",
+    "description": "7秒間<color=yellow>ブラックホール</color>に変身します。すべての敵をブラックホールに引き寄せ、ブラックホールと接触している敵に毎秒 <sprite=1><color=#fff><gradient=sv_ap>500%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。最後にブラックホールが爆発し、周囲のすべての敵に <sprite=1><color=#fff><gradient=sv_ap>1,200%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与え、2.5秒間<color=yellow>スタン</color>させます。\n\nブラックホールに変身している間は 120<sprite=5> の<color=yellow>防御力</color>を獲得し、死亡しません。",
     "rawDesc": "{0}秒間<color=yellow>ブラックホール</color>に変身します。すべての敵をブラックホールに引き寄せ、ブラックホールと接触している敵に毎秒{1}の<color=yellow>光ダメージ</color>を与えます。最後にブラックホールが爆発し、周囲のすべての敵に{2}の<color=yellow>光ダメージ</color>を与え、{3}秒間<color=yellow>スタン</color>させます。\n\nブラックホールに変身している間は{4}の<color=yellow>防御力</color>を獲得し、死亡しません。",
     "rawDescVars": [
       {
@@ -8205,14 +8551,14 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>500%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>500%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "perTickDamage*4",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>1,200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>1,200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -8238,7 +8584,7 @@
         }
       },
       {
-        "rendered": "120<sprite=5>",
+        "rendered": " 120<sprite=5> ",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "basic",
@@ -8272,7 +8618,7 @@
     "cooldownTime": 15.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "6秒間、激しい怒りを受け入れます。この間、他の記憶を<color=yellow>発動</color>できなくなりますが、爪を連続で振り回して敵に<sprite=2><color=#FF8A2D>100%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与え、自身のHPを<sprite=2><color=#FF8A2D>13%</color><sprite=5><color=yellow>回復</color>します。自身のHPが40%以下の場合、回復量が150%増加します。最初に命中した対象に<color=yellow>攻撃効果</color>が発動します。<color=yellow>攻撃速度</color>が高いほど、より素早く爪を振り回します。",
+    "description": "6秒間、激しい怒りを受け入れます。この間、他の記憶を<color=yellow>発動</color>できなくなりますが、爪を連続で振り回して敵に <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、自身のHPを <sprite=2><color=#fff><gradient=sv_ad>13%</gradient></color><sprite=5> <color=yellow>回復</color>します。自身のHPが40%以下の場合、回復量が150%増加します。最初に命中した対象に<color=yellow>攻撃効果</color>が発動します。<color=yellow>攻撃速度</color>が高いほど、より素早く爪を振り回します。",
     "rawDesc": "{0}秒間、激しい怒りを受け入れます。この間、他の記憶を<color=yellow>発動</color>できなくなりますが、爪を連続で振り回して敵に{1}の<color=yellow>闇ダメージ</color>を与え、自身のHPを{2}<color=yellow>回復</color>します。自身のHPが{3}以下の場合、回復量が{4}増加します。最初に命中した対象に<color=yellow>攻撃効果</color>が発動します。<color=yellow>攻撃速度</color>が高いほど、より素早く爪を振り回します。",
     "rawDescVars": [
       {
@@ -8289,7 +8635,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -8302,7 +8648,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>13%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>13%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -8364,11 +8710,11 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "一時的に<color=yellow>無敵</color>状態となり、チャネリング後、前方に強力な咆哮を放ち、すべての敵に<sprite=2><color=#FF8A2D>1,300%</color><sprite=5>の<color=yellow>闇ダメージ</color>を与え、3秒間<color=yellow>スタン</color>させます。\n\n現在の<color=yellow>ハンターレベル</color>1につき、この<color=yellow>ダメージ量</color>が25%増加します。",
+    "description": "一時的に<color=yellow>無敵</color>状態となり、チャネリング後、前方に強力な咆哮を放ち、すべての敵に <sprite=2><color=#fff><gradient=sv_ad>1,300%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、3秒間<color=yellow>スタン</color>させます。\n\n現在の<color=yellow>ハンターレベル</color>1につき、この<color=yellow>ダメージ量</color>が25%増加します。",
     "rawDesc": "一時的に<color=yellow>無敵</color>状態となり、チャネリング後、前方に強力な咆哮を放ち、すべての敵に{0}の<color=yellow>闇ダメージ</color>を与え、{1}秒間<color=yellow>スタン</color>させます。\n\n現在の<color=yellow>ハンターレベル</color>1につき、この<color=yellow>ダメージ量</color>が{2}増加します。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>1,300%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>1,300%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -8427,11 +8773,11 @@
     "cooldownTime": 13.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "チャネリングして強力な光線を放ち、触れたすべての敵に毎秒<sprite=1><color=#16D7FF>575%</color><sprite=5>の<color=yellow>光ダメージ</color>を与えます。この間は移動できませんが、キャンセルするまで無制限に放ち続けられます。",
+    "description": "チャネリングして強力な光線を放ち、触れたすべての敵に毎秒 <sprite=1><color=#fff><gradient=sv_ap>575%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。この間は移動できませんが、キャンセルするまで無制限に放ち続けられます。",
     "rawDesc": "チャネリングして強力な光線を放ち、触れたすべての敵に毎秒{0}の<color=yellow>光ダメージ</color>を与えます。この間は移動できませんが、キャンセルするまで無制限に放ち続けられます。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>575%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>575%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damagePerTick/damageInterval",
         "scalingType": "unknown",

@@ -44,19 +44,23 @@ The project is organized with a clean and scalable structure to facilitate maint
 .
 |-- index.html, essences.html, memories.html  # The site's pages
 |
-|-- assets/                   # Contains all static assets
-|   |-- css/                  # Stylesheets
-|   |-- js/                   # JavaScript logic for each page
-|   |-- data/                 # All JSON game data
-|   |   |-- locales/          # Language-specific data (memories, achievements...)
+|-- assets/                        # Contains all static assets
+|   |-- css/                       # Stylesheets
+|   |-- js/                        # JavaScript logic for each page
+|   |-- data/                      # All JSON game data
+|   |   |-- locales/               # Language-specific data (memories, achievements...)
+|   |   |   |-- gradients.json         # JSON file containing color gradient definitions
 |   |   `-- ...
-|   |-- game/                 # Assets extracted from the game
+|   |-- game/                      # Assets extracted from the game
 |   |   |-- images/
 |   |   `-- sprites/
-|   `-- ui/                   # Site-specific UI elements (favicons...)
+|   |   `-- ModResources/
+|   `-- ui/                        # Site-specific UI elements (favicons...)
 |
 |-- scripts/
-|   `-- update_version.py     # Python utility script to bump file versions
+|   `-- update_wiki_version.py     # Python utility script to bump HTML file versions
+|   `-- update_wiki_data.py        # Python utility script to update wiki data
+|   `-- update_game_version.py     # Python utility script to bump the game version number
 |
 `-- README.md                 # This file
 ```
@@ -75,3 +79,4 @@ For any questions, suggestions, or bug reports, please feel free to contact me o
 
 * **Game Developers:** All game data, images, and sprites are the property of **Lizard Smoothie**, the developers of **Shape of Dreams**. This is an unofficial, fan-made project created for the community, by [Plantim](https://github.com/Plantim).
 * **Community:** Thank you to the player community for their invaluable feedback and suggestions.
+* **Licence:** All rights reserved - Copyright © 2026

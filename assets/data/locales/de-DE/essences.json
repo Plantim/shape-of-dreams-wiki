@@ -14,11 +14,11 @@
   },
   "Gem_C_Charcoal": {
     "name": "Holzkohle-Essenz",
-    "description": "Wenn diese Erinnerung einen Gegner <color=yellow>trifft</color>, schießt sie ein Holzkohlenfragment ab und verursacht <sprite=1><color=#16D7FF>60%</color><sprite=5> <color=yellow>Schaden</color>. Falls das Ziel bereits <color=yellow>brennt</color>, verursacht sie stattdessen <sprite=1><color=#16D7FF>100%</color><sprite=5> <color=yellow>Feuerschaden</color>.",
+    "description": "Wenn diese Erinnerung einen Gegner <color=yellow>trifft</color>, schießt sie ein Holzkohlenfragment ab und verursacht  <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5>  <color=yellow>Schaden</color>. Falls das Ziel bereits <color=yellow>brennt</color>, verursacht sie stattdessen  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5>  <color=yellow>Feuerschaden</color>.",
     "rawDesc": "Wenn diese Erinnerung einen Gegner <color=yellow>trifft</color>, schießt sie ein Holzkohlenfragment ab und verursacht {0} <color=yellow>Schaden</color>. Falls das Ziel bereits <color=yellow>brennt</color>, verursacht sie stattdessen {1} <color=yellow>Feuerschaden</color>.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "normalDamage",
         "scalingType": "basic",
@@ -31,7 +31,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "fireDamage",
         "scalingType": "basic",
@@ -56,11 +56,11 @@
   },
   "Gem_C_Confidence": {
     "name": "Essenz der Selbstvertrauen",
-    "description": "Der Schaden, den diese Erinnerung nahen Gegnern zufügt, wird um 40%<sprite=5> erhöht.",
+    "description": "Der Schaden, den diese Erinnerung nahen Gegnern zufügt, wird um  40%<sprite=5>  erhöht.",
     "rawDesc": "Der Schaden, den diese Erinnerung nahen Gegnern zufügt, wird um {0} erhöht.",
     "rawDescVars": [
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -85,11 +85,11 @@
   },
   "Gem_C_Efficiency": {
     "name": "Essenz der Effizienz",
-    "description": "Diese Erinnerung erhält 36<sprite=5> <color=yellow>Erinnerungstempo</color> und reduziert die <color=yellow>Abklingzeit</color> um 26%<sprite=5>.",
+    "description": "Diese Erinnerung erhält  36<sprite=5>  <color=yellow>Erinnerungstempo</color> und reduziert die <color=yellow>Abklingzeit</color> um  26%<sprite=5> .",
     "rawDesc": "Diese Erinnerung erhält {0} <color=yellow>Erinnerungstempo</color> und reduziert die <color=yellow>Abklingzeit</color> um {1}.",
     "rawDescVars": [
       {
-        "rendered": "36<sprite=5>",
+        "rendered": " 36<sprite=5> ",
         "format": "#,##0",
         "raw": "skillHaste",
         "scalingType": "basic",
@@ -102,7 +102,7 @@
         }
       },
       {
-        "rendered": "26%<sprite=5>",
+        "rendered": " 26%<sprite=5> ",
         "format": "P0",
         "raw": "reducedRatio",
         "scalingType": "unknown",
@@ -119,11 +119,11 @@
   },
   "Gem_C_Guidance": {
     "name": "Essenz der Führung",
-    "description": "Die <color=yellow>Heilung</color> dieser Erinnerung wird um 40%<sprite=5> erhöht. 30% der überschüssigen Heilung dieser Erinnerung wird in einen <color=yellow>Schild</color> umgewandelt, der 2 Sek. anhält.",
-    "rawDesc": "Die <color=yellow>Heilung</color> dieser Erinnerung wird um {0} erhöht. {1} der überschüssigen Heilung dieser Erinnerung wird in einen <color=yellow>Schild</color> umgewandelt, der {2} Sek. anhält.",
+    "description": "Die <color=yellow>Heilung</color> dieser Erinnerung wird um  40%<sprite=5>  erhöht. 30% der überschüssigen Heilung dieser Erinnerung wird in einen <color=yellow>Schild</color> umgewandelt, der auf mich angewendet wird und 2 Sek. anhält.",
+    "rawDesc": "Die <color=yellow>Heilung</color> dieser Erinnerung wird um {0} erhöht. {1} der überschüssigen Heilung dieser Erinnerung wird in einen <color=yellow>Schild</color> umgewandelt, der auf mich angewendet wird und {2} Sek. anhält.",
     "rawDescVars": [
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "healAmp",
         "scalingType": "basic",
@@ -175,7 +175,7 @@
   },
   "Gem_C_Lethality": {
     "name": "Essenz der Tödlichkeit",
-    "description": "Der Schaden, den diese Erinnerung Gegnern mit mehr als 70% LP zufügt, wird um 60%<sprite=5> erhöht.",
+    "description": "Der Schaden, den diese Erinnerung Gegnern mit mehr als 70% LP zufügt, wird um  60%<sprite=5>  erhöht.",
     "rawDesc": "Der Schaden, den diese Erinnerung Gegnern mit mehr als {0} LP zufügt, wird um {1} erhöht.",
     "rawDescVars": [
       {
@@ -192,7 +192,7 @@
         }
       },
       {
-        "rendered": "60%<sprite=5>",
+        "rendered": " 60%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -215,11 +215,11 @@
   },
   "Gem_C_Love": {
     "name": "Essenz der Liebe",
-    "description": "Diese Erinnerung erhöht die <color=yellow>Bewegungstempo</color> und <color=yellow>Angriffstempo</color> eines Verbündeten um 16%<sprite=5> für 2 Sek., wenn er die <color=yellow>LP</color> <color=yellow>regeneriert</color> oder mit einem <color=yellow>Schild</color> versehen wird. Bei Anwendung auf sich selbst ist der Effekt um 50% reduziert.",
+    "description": "Diese Erinnerung erhöht die <color=yellow>Bewegungstempo</color> und <color=yellow>Angriffstempo</color> eines Verbündeten um  16%<sprite=5>  für 2 Sek., wenn er die <color=yellow>LP</color> <color=yellow>regeneriert</color> oder mit einem <color=yellow>Schild</color> versehen wird. Bei Anwendung auf sich selbst ist der Effekt um 50% reduziert.",
     "rawDesc": "Diese Erinnerung erhöht die <color=yellow>Bewegungstempo</color> und <color=yellow>Angriffstempo</color> eines Verbündeten um {0} für {1} Sek., wenn er die <color=yellow>LP</color> <color=yellow>regeneriert</color> oder mit einem <color=yellow>Schild</color> versehen wird. Bei Anwendung auf sich selbst ist der Effekt um {2} reduziert.",
     "rawDescVars": [
       {
-        "rendered": "16%<sprite=5>",
+        "rendered": " 16%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "bonusAmount",
         "scalingType": "basic",
@@ -273,11 +273,11 @@
   },
   "Gem_C_Quicksilver": {
     "name": "Essenz des Quecksilbers",
-    "description": "Wenn du diese Erinnerung <color=yellow>wirkst</color> oder mit dieser Erinnerung <color=yellow>Feuerschaden</color> verursachst, erhöht sich deine <color=yellow>Bewegungstempo</color> um 30%<sprite=5> und kehrt über 2.5 Sek. zum Ursprungswert zurück.",
+    "description": "Wenn du diese Erinnerung <color=yellow>wirkst</color> oder mit dieser Erinnerung <color=yellow>Feuerschaden</color> verursachst, erhöht sich deine <color=yellow>Bewegungstempo</color> um  30%<sprite=5>  und kehrt über 2.5 Sek. zum Ursprungswert zurück.",
     "rawDesc": "Wenn du diese Erinnerung <color=yellow>wirkst</color> oder mit dieser Erinnerung <color=yellow>Feuerschaden</color> verursachst, erhöht sich deine <color=yellow>Bewegungstempo</color> um {0} und kehrt über {1} Sek. zum Ursprungswert zurück.",
     "rawDescVars": [
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": " 30%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -316,18 +316,18 @@
   },
   "Gem_C_Regeneration": {
     "name": "Essenz der Regeneration",
-    "description": "Wird diese Erinnerung <color=yellow>im Kampf</color> <color=yellow>gewirkt</color>, <color=yellow>regeneriert</color> sie über 7 Sek. 41<sprite=5> LP.",
+    "description": "Wird diese Erinnerung <color=yellow>im Kampf</color> <color=yellow>gewirkt</color>, <color=yellow>regeneriert</color> sie über 5 Sek.  51<sprite=5>  LP.",
     "rawDesc": "Wird diese Erinnerung <color=yellow>im Kampf</color> <color=yellow>gewirkt</color>, <color=yellow>regeneriert</color> sie über {0} Sek. {1} LP.",
     "rawDescVars": [
       {
-        "rendered": "7",
+        "rendered": "5",
         "format": "#,##0.#",
         "raw": "totalTicks*tickInterval",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "41<sprite=5>",
+        "rendered": " 51<sprite=5> ",
         "format": "#,##0",
         "raw": "healPerTick * totalTicks",
         "scalingType": "unknown",
@@ -346,16 +346,16 @@
   },
   "Gem_C_Responsibility": {
     "name": "Essenz der Verantwortung",
-    "description": "Alle 10 Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. 1.2 Sek. nach einem <color=yellow>verstärkten Wirkung</color> wird allen getroffenen Gegnern <sprite=2><color=#FF8A2D>400%</color><sprite=5> <color=yellow>Schaden</color> zugefügt.",
+    "description": "Alle 8 Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. 1.2 Sek. nach einem <color=yellow>verstärkten Wirkung</color> wird allen getroffenen Gegnern  <sprite=2><color=#fff><gradient=sv_ad>400%</gradient></color><sprite=5>  <color=yellow>Schaden</color> zugefügt.",
     "rawDesc": "Alle {0} Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. {1} Sek. nach einem <color=yellow>verstärkten Wirkung</color> wird allen getroffenen Gegnern {2} <color=yellow>Schaden</color> zugefügt.",
     "rawDescVars": [
       {
-        "rendered": "10",
+        "rendered": "8",
         "format": "#,##0.#",
         "raw": "cooldownTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 8.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -376,7 +376,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>400%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "totalDamage",
         "scalingType": "basic",
@@ -399,7 +399,7 @@
   },
   "Gem_C_Sharp": {
     "name": "Essenz der Schärfe",
-    "description": "Wenn diese Erinnerung <color=yellow>gewirkt</color> wird, werden 5 Pfeile abgefeuert, die einem zufälligen Gegner <sprite=1><color=#16D7FF>90%</color><sprite=5> <color=yellow>Schaden</color> zufügen.",
+    "description": "Wenn diese Erinnerung <color=yellow>gewirkt</color> wird, werden 5 Pfeile abgefeuert, die einem zufälligen Gegner  <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5>  <color=yellow>Schaden</color> zufügen.",
     "rawDesc": "Wenn diese Erinnerung <color=yellow>gewirkt</color> wird, werden {0} Pfeile abgefeuert, die einem zufälligen Gegner {1} <color=yellow>Schaden</color> zufügen.",
     "rawDescVars": [
       {
@@ -416,7 +416,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "arrowDamage",
         "scalingType": "basic",
@@ -439,16 +439,16 @@
   },
   "Gem_C_Shatter": {
     "name": "Essenz des Zersplitterns",
-    "description": "Alle 10 Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. Der erste Schaden an einzelnen Gegnern durch <color=yellow>verstärkte Wirkung</color> wird um 40%<sprite=5> erhöht. Bei <color=yellow>Lichtschaden</color> stattdessen um 72%<sprite=5> erhöht.",
+    "description": "Alle 8 Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. Der erste Schaden an einzelnen Gegnern durch <color=yellow>verstärkte Wirkung</color> wird um  40%<sprite=5>  erhöht. Bei <color=yellow>Lichtschaden</color> stattdessen um  72%<sprite=5>  erhöht.",
     "rawDesc": "Alle {0} Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. Der erste Schaden an einzelnen Gegnern durch <color=yellow>verstärkte Wirkung</color> wird um {1} erhöht. Bei <color=yellow>Lichtschaden</color> stattdessen um {2} erhöht.",
     "rawDescVars": [
       {
-        "rendered": "10",
+        "rendered": "8",
         "format": "#,##0.#",
         "raw": "cooldownTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 8.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -456,7 +456,7 @@
         }
       },
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -469,7 +469,7 @@
         }
       },
       {
-        "rendered": "72%<sprite=5>",
+        "rendered": " 72%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmpLight",
         "scalingType": "basic",
@@ -494,11 +494,11 @@
   },
   "Gem_C_Sulfur": {
     "name": "Essenz des Schwefels",
-    "description": "Der gesamte von dieser Erinnerung verursachte <color=yellow>Schaden</color> wird um 15%<sprite=5> erhöht und in <color=yellow>Feuerschaden</color> umgewandelt. Mein Feuerschaden über Zeit wird um 50%<sprite=5> erhöht.",
+    "description": "Der gesamte von dieser Erinnerung verursachte <color=yellow>Schaden</color> wird um  15%<sprite=5>  erhöht und in <color=yellow>Feuerschaden</color> umgewandelt. Mein Feuerschaden über Zeit wird um  50%<sprite=5>  erhöht.",
     "rawDesc": "Der gesamte von dieser Erinnerung verursachte <color=yellow>Schaden</color> wird um {0} erhöht und in <color=yellow>Feuerschaden</color> umgewandelt. Mein Feuerschaden über Zeit wird um {1} erhöht.",
     "rawDescVars": [
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "P0",
         "raw": "ampAmount",
         "scalingType": "basic",
@@ -511,7 +511,7 @@
         }
       },
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "fireAmpBonus",
         "scalingType": "basic",
@@ -536,16 +536,16 @@
   },
   "Gem_C_Talc": {
     "name": "Essenz des Talks",
-    "description": "Alle 10 Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. Der Schaden an Gegnern durch <color=yellow>verstärkte Wirkung</color> wird um <sprite=1><color=#16D7FF>400%</color><sprite=5> erhöht.",
+    "description": "Alle 8 Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. Der Schaden an Gegnern durch <color=yellow>verstärkte Wirkung</color> wird um  <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5>  erhöht.",
     "rawDesc": "Alle {0} Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. Der Schaden an Gegnern durch <color=yellow>verstärkte Wirkung</color> wird um {1} erhöht.",
     "rawDescVars": [
       {
-        "rendered": "10",
+        "rendered": "8",
         "format": "#,##0.#",
         "raw": "cooldownTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 8.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -553,7 +553,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "addedDamage",
         "scalingType": "basic",
@@ -576,7 +576,7 @@
   },
   "Gem_C_Vengeance": {
     "name": "Essenz der Rache",
-    "description": "Wenn du Schaden erleidest, feuerst du 2 Klingen ab, die umliegenden Gegnern <sprite=1><color=#16D7FF>102%</color><sprite=5> <color=yellow>Schaden</color> zufügen. Für 5 Sek. nach Erleiden von Schaden erhöht sich der <color=yellow>Schaden</color> und die <color=yellow>Heilung</color> dieser Erinnerung um 34%<sprite=5>.",
+    "description": "Wenn du Schaden erleidest, feuerst du 2 Klingen ab, die umliegenden Gegnern  <sprite=1><color=#fff><gradient=sv_ap>93%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>4%</gradient></color><sprite=5>  <color=yellow>Schaden</color> zufügen. Für 5 Sek. nach Erleiden von Schaden erhöht sich der <color=yellow>Schaden</color> und die <color=yellow>Heilung</color> dieser Erinnerung um  34%<sprite=5> .",
     "rawDesc": "Wenn du Schaden erleidest, feuerst du {0} Klingen ab, die umliegenden Gegnern {1} <color=yellow>Schaden</color> zufügen. Für {2} Sek. nach Erleiden von Schaden erhöht sich der <color=yellow>Schaden</color> und die <color=yellow>Heilung</color> dieser Erinnerung um {3}.",
     "rawDescVars": [
       {
@@ -593,13 +593,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>102%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>93%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>4%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.6,
+          "basicAP": 0.55,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.007
@@ -619,7 +619,7 @@
         }
       },
       {
-        "rendered": "34%<sprite=5>",
+        "rendered": " 34%<sprite=5> ",
         "format": "P0",
         "raw": "ampAmount",
         "scalingType": "basic",
@@ -644,7 +644,7 @@
   },
   "Gem_C_Void": {
     "name": "Essenz der Leere",
-    "description": "Nachdem diese Erinnerung gewirkt wurde, explodiert der nächste <color=yellow>Angriff</color> innerhalb von 4 Sek. und fügt dem Ziel und umliegenden Gegnern <sprite=2><color=#FF8A2D>150%</color><sprite=5> <color=yellow>Dunkelheitsschaden</color> zu.",
+    "description": "Nachdem diese Erinnerung gewirkt wurde, explodiert der nächste <color=yellow>Angriff</color> innerhalb von 4 Sek. und fügt dem Ziel und umliegenden Gegnern  <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5>  <color=yellow>Dunkelheitsschaden</color> zu.",
     "rawDesc": "Nachdem diese Erinnerung gewirkt wurde, explodiert der nächste <color=yellow>Angriff</color> innerhalb von {0} Sek. und fügt dem Ziel und umliegenden Gegnern {1} <color=yellow>Dunkelheitsschaden</color> zu.",
     "rawDescVars": [
       {
@@ -661,7 +661,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -686,7 +686,7 @@
   },
   "Gem_C_Wind": {
     "name": "Essenz des Windes",
-    "description": "Wenn diese Erinnerung gewirkt wird, erhöht sich die <color=yellow>Angriffstempo</color> für 5 Sek. um 33%<sprite=5>.",
+    "description": "Wenn diese Erinnerung gewirkt wird, erhöht sich die <color=yellow>Angriffstempo</color> für 5 Sek. um  33%<sprite=5> .",
     "rawDesc": "Wenn diese Erinnerung gewirkt wird, erhöht sich die <color=yellow>Angriffstempo</color> für {0} Sek. um {1}.",
     "rawDescVars": [
       {
@@ -703,7 +703,7 @@
         }
       },
       {
-        "rendered": "33%<sprite=5>",
+        "rendered": " 33%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -726,11 +726,11 @@
   },
   "Gem_E_Aftershock": {
     "name": "Essenz des Nachbebens",
-    "description": "Wenn du diese Erinnerung <color=yellow>wirkst</color>, wird nach kurzer Zeit eine <color=yellow>Schockwelle</color> ausgelöst, die Gegnern in deiner Nähe <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>Kälteschaden</color> zufügt und sie für 0.5 Sek. <color=yellow>betäubt</color>.\nFür jeden Gegner, der von dieser <color=yellow>Schockwelle</color> getroffen wird, erhältst du 4<sprite=5> <color=yellow>VK</color>, bis zu einem Maximum von 22<sprite=5> <color=yellow>VK</color>. Bei Treffern auf einen <color=yellow>Boss</color> erhältst du die max. <color=yellow>VK</color>. Diese VK hält an, bis du diese Erinnerung erneut <color=yellow>wirkst</color>.",
+    "description": "Wenn du diese Erinnerung <color=yellow>wirkst</color>, wird nach kurzer Zeit eine <color=yellow>Schockwelle</color> ausgelöst, die Gegnern in deiner Nähe  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>20%</gradient></color><sprite=5>  <color=yellow>Kälteschaden</color> zufügt und sie für 0.5 Sek. <color=yellow>betäubt</color>.\nFür jeden Gegner, der von dieser <color=yellow>Schockwelle</color> getroffen wird, erhältst du  4<sprite=5>  <color=yellow>VK</color>, bis zu einem Maximum von  22<sprite=5>  <color=yellow>VK</color>. Bei Treffern auf einen <color=yellow>Boss</color> erhältst du die max. <color=yellow>VK</color>. Diese VK hält an, bis du diese Erinnerung erneut <color=yellow>wirkst</color>.",
     "rawDesc": "Wenn du diese Erinnerung <color=yellow>wirkst</color>, wird nach kurzer Zeit eine <color=yellow>Schockwelle</color> ausgelöst, die Gegnern in deiner Nähe {0} <color=yellow>Kälteschaden</color> zufügt und sie für {1} Sek. <color=yellow>betäubt</color>.\nFür jeden Gegner, der von dieser <color=yellow>Schockwelle</color> getroffen wird, erhältst du {2} <color=yellow>VK</color>, bis zu einem Maximum von {3} <color=yellow>VK</color>. Bei Treffern auf einen <color=yellow>Boss</color> erhältst du die max. <color=yellow>VK</color>. Diese VK hält an, bis du diese Erinnerung erneut <color=yellow>wirkst</color>.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>20%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -756,7 +756,7 @@
         }
       },
       {
-        "rendered": "4<sprite=5>",
+        "rendered": " 4<sprite=5> ",
         "format": "#,##0",
         "raw": "armorPerHit",
         "scalingType": "basic",
@@ -769,7 +769,7 @@
         }
       },
       {
-        "rendered": "22<sprite=5>",
+        "rendered": " 22<sprite=5> ",
         "format": "#,##0",
         "raw": "armorPerHit*maxHitCount",
         "scalingType": "unknown",
@@ -784,9 +784,62 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_E_Apathy": {
+    "name": "Essenz der Apathie",
+    "description": "Jeglicher vom Reisenden verursachte Schaden wird um 25% verringert. Wenn diese Erinnerung einem Gegner <color=yellow>Kälteschaden</color> zufügt, wird deine <color=yellow>Verteidigung</color> 5 Sek. lang um  22<sprite=5>  erhöht.",
+    "rawDesc": "Jeglicher vom Reisenden verursachte Schaden wird um {0} verringert. Wenn diese Erinnerung einem Gegner <color=yellow>Kälteschaden</color> zufügt, wird deine <color=yellow>Verteidigung</color> {1} Sek. lang um {2} erhöht.",
+    "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "reducedDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 22<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedArmorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Apathy.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_E_Blossom": {
     "name": "Essenz der Blüte",
-    "description": "Aller <color=yellow>Schaden</color>, den diese Erinnerung Gegnern zufügt, wird um 70% reduziert. Jedesmal wenn diese Erinnerung <color=yellow>Schaden</color> verursacht, <color=yellow>regeneriert</color> sie einen zufälligen Verbündeten in der Nähe um 22%<sprite=5> des <color=yellow>Schadens</color> als LP.",
+    "description": "Aller <color=yellow>Schaden</color>, den diese Erinnerung Gegnern zufügt, wird um 70% reduziert. Jedesmal wenn diese Erinnerung <color=yellow>Schaden</color> verursacht, <color=yellow>regeneriert</color> sie einen zufälligen Verbündeten in der Nähe um  22%<sprite=5>  des <color=yellow>Schadens</color> als LP.",
     "rawDesc": "Aller <color=yellow>Schaden</color>, den diese Erinnerung Gegnern zufügt, wird um {0} reduziert. Jedesmal wenn diese Erinnerung <color=yellow>Schaden</color> verursacht, <color=yellow>regeneriert</color> sie einen zufälligen Verbündeten in der Nähe um {1} des <color=yellow>Schadens</color> als LP.",
     "rawDescVars": [
       {
@@ -803,7 +856,7 @@
         }
       },
       {
-        "rendered": "22%<sprite=5>",
+        "rendered": " 22%<sprite=5> ",
         "format": "P0",
         "raw": "conversionRatio",
         "scalingType": "basic",
@@ -828,11 +881,11 @@
   },
   "Gem_E_Clemency": {
     "name": "Essenz der Gnade",
-    "description": "<color=yellow>Regeneriert</color> 4%<sprite=5> des durch diese Erinnerung verursachten <color=yellow>Schadens</color> als <color=yellow>LP</color> für <color=yellow>dich selbst</color>.",
+    "description": "<color=yellow>Regeneriert</color>  4%<sprite=5>  des durch diese Erinnerung verursachten <color=yellow>Schadens</color> als <color=yellow>LP</color> für <color=yellow>dich selbst</color>.",
     "rawDesc": "<color=yellow>Regeneriert</color> {0} des durch diese Erinnerung verursachten <color=yellow>Schadens</color> als <color=yellow>LP</color> für <color=yellow>dich selbst</color>.",
     "rawDescVars": [
       {
-        "rendered": "4%<sprite=5>",
+        "rendered": " 4%<sprite=5> ",
         "format": "P0",
         "raw": "conversionRatio",
         "scalingType": "basic",
@@ -857,11 +910,11 @@
   },
   "Gem_E_Crimson": {
     "name": "Essenz des Karmesinrots",
-    "description": "Jeder 4. <color=yellow>Basisangriff</color> wird <color=yellow>verstärkt</color> und verursacht eine <color=yellow>dunkelrote Explosion</color>, die Gegnern <sprite=2><color=#FF8A2D>100%</color><sprite=5> <color=yellow>Dunkelheitsschaden</color> zufügt. Der Explosionsradius erhöht sich proportional zur <color=yellow>krit. Trefferchance</color>.\nFür jeden von der Explosion getroffenen Gegner <color=yellow>regenerierst</color> du <sprite=2><color=#FF8A2D>22%</color><sprite=5> LP. Bei <color=yellow>Bossen</color> erhöht sich diese Regeneration um 100%.",
+    "description": "Jeder 4. <color=yellow>Basisangriff</color> wird <color=yellow>verstärkt</color> und verursacht eine <color=yellow>dunkelrote Explosion</color>, die Gegnern  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5>  <color=yellow>Dunkelheitsschaden</color> zufügt. Der Explosionsradius erhöht sich proportional zur <color=yellow>krit. Trefferchance</color>.\nFür jeden von der Explosion getroffenen Gegner <color=yellow>regenerierst</color> du  <sprite=2><color=#fff><gradient=sv_ad>22%</gradient></color><sprite=5>  LP. Bei <color=yellow>Bossen</color> erhöht sich diese Regeneration um 100%.",
     "rawDesc": "Jeder 4. <color=yellow>Basisangriff</color> wird <color=yellow>verstärkt</color> und verursacht eine <color=yellow>dunkelrote Explosion</color>, die Gegnern {0} <color=yellow>Dunkelheitsschaden</color> zufügt. Der Explosionsradius erhöht sich proportional zur <color=yellow>krit. Trefferchance</color>.\nFür jeden von der Explosion getroffenen Gegner <color=yellow>regenerierst</color> du {1} LP. Bei <color=yellow>Bossen</color> erhöht sich diese Regeneration um {2}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -874,7 +927,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>22%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>22%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healPerHit",
         "scalingType": "basic",
@@ -913,16 +966,16 @@
   },
   "Gem_E_Direness": {
     "name": "Essenz der Verzweiflung",
-    "description": "Je niedriger meine <color=yellow>LP</color> ist, desto kürzer wird die <color=yellow>Abklingzeit</color> dieser Erinnerung. Bei 30% <color=yellow>LP</color> wird sie maximal um 55%<sprite=5> verkürzt.",
+    "description": "Je niedriger meine <color=yellow>LP</color> ist, desto kürzer wird die <color=yellow>Abklingzeit</color> dieser Erinnerung. Bei 50% <color=yellow>LP</color> wird sie maximal um  55%<sprite=5>  verkürzt.",
     "rawDesc": "Je niedriger meine <color=yellow>LP</color> ist, desto kürzer wird die <color=yellow>Abklingzeit</color> dieser Erinnerung. Bei {0} <color=yellow>LP</color> wird sie maximal um {1} verkürzt.",
     "rawDescVars": [
       {
-        "rendered": "30%",
+        "rendered": "50%",
         "format": "P0",
         "raw": "maxAbilityHasteHpThreshold",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.3,
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -930,7 +983,7 @@
         }
       },
       {
-        "rendered": "55%<sprite=5>",
+        "rendered": " 55%<sprite=5> ",
         "format": "P0",
         "raw": "maxReducedRatio",
         "scalingType": "unknown",
@@ -947,7 +1000,7 @@
   },
   "Gem_E_Domination": {
     "name": "Essenz der Herrschaft",
-    "description": "<color=yellow>Kritische Trefferchance</color> wird um 20% erhöht. Bei jedem kritischen Treffer gegen einen Gegner erhöht sich dein <color=yellow>kritischer Schaden</color> um 0.3%, bis zu maximal 20%<sprite=5>. ",
+    "description": "<color=yellow>Kritische Trefferchance</color> wird um 20% erhöht. Bei jedem kritischen Treffer gegen einen Gegner erhöht sich dein <color=yellow>kritischer Schaden</color> um 0.3%, bis zu maximal  20%<sprite=5> . ",
     "rawDesc": "<color=yellow>Kritische Trefferchance</color> wird um {0} erhöht. Bei jedem kritischen Treffer gegen einen Gegner erhöht sich dein <color=yellow>kritischer Schaden</color> um {1}, bis zu maximal {2}. ",
     "rawDescVars": [
       {
@@ -977,7 +1030,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "P0",
         "raw": "critAmpMaxValue",
         "scalingType": "basic",
@@ -1000,11 +1053,11 @@
   },
   "Gem_E_Fangs": {
     "name": "Essenz der Reißzähne",
-    "description": "Jeder 4. <color=yellow>Basisangriff</color> trifft als <color=yellow>krit. Treffer</color>. Wenn ein <color=yellow>krit. Treffer</color> aktiviert wird, verringert sich die <color=yellow>Abklingzeit</color> dieser Erinnerung um 0.7<sprite=5> Sek. und schießt 2 <color=yellow>Reißzähne</color> auf nahe Gegner, die jeweils <sprite=2><color=#FF8A2D>60%</color><sprite=5> <color=yellow>Schaden</color> verursachen.",
+    "description": "Jeder 4. <color=yellow>Basisangriff</color> trifft als <color=yellow>krit. Treffer</color>. Wenn ein <color=yellow>krit. Treffer</color> aktiviert wird, verringert sich die <color=yellow>Abklingzeit</color> dieser Erinnerung um  0.7<sprite=5>  Sek. und schießt 2 <color=yellow>Reißzähne</color> auf nahe Gegner, die jeweils  <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5>  <color=yellow>Schaden</color> verursachen.",
     "rawDesc": "Jeder 4. <color=yellow>Basisangriff</color> trifft als <color=yellow>krit. Treffer</color>. Wenn ein <color=yellow>krit. Treffer</color> aktiviert wird, verringert sich die <color=yellow>Abklingzeit</color> dieser Erinnerung um {0} Sek. und schießt 2 <color=yellow>Reißzähne</color> auf nahe Gegner, die jeweils {1} <color=yellow>Schaden</color> verursachen.",
     "rawDescVars": [
       {
-        "rendered": "0.7<sprite=5>",
+        "rendered": " 0.7<sprite=5> ",
         "format": "#,##0.#",
         "raw": "cooldownReductionOnCrit",
         "scalingType": "basic",
@@ -1017,7 +1070,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>60%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1040,7 +1093,7 @@
   },
   "Gem_E_Fever": {
     "name": "Essenz des Fiebers",
-    "description": "Wenn diese Erinnerung <color=yellow>Feuerschaden</color> verursacht, infiziert sie das Ziel mit <color=yellow>Fieber</color>. Nach 2 Sek. explodiert ein Ziel mit <color=yellow>Fieber</color> und fügt sich selbst und umstehenden Gegnern <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>Feuerschaden</color> zu. Pro <color=yellow>Feuer-Stapel</color> auf dem Ziel erhöht sich der Explosionsradius um 30% und der Explosionsschaden um 10%.",
+    "description": "Wenn diese Erinnerung <color=yellow>Feuerschaden</color> verursacht, infiziert sie das Ziel mit <color=yellow>Fieber</color>. Nach 2 Sek. explodiert ein Ziel mit <color=yellow>Fieber</color> und fügt sich selbst und umstehenden Gegnern  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5>  <color=yellow>Feuerschaden</color> zu. Pro <color=yellow>Feuer-Stapel</color> auf dem Ziel erhöht sich der Explosionsradius um 30% und der Explosionsschaden um 10%.",
     "rawDesc": "Wenn diese Erinnerung <color=yellow>Feuerschaden</color> verursacht, infiziert sie das Ziel mit <color=yellow>Fieber</color>. Nach {0} Sek. explodiert ein Ziel mit <color=yellow>Fieber</color> und fügt sich selbst und umstehenden Gegnern {1} <color=yellow>Feuerschaden</color> zu. Pro <color=yellow>Feuer-Stapel</color> auf dem Ziel erhöht sich der Explosionsradius um {2} und der Explosionsschaden um {3}.",
     "rawDescVars": [
       {
@@ -1057,7 +1110,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -1108,11 +1161,11 @@
   },
   "Gem_E_Flexibility": {
     "name": "Essenz der Geschmeidigkeit",
-    "description": "Während diese Erinnerung sich in <color=yellow>Abklingzeit</color> befindet, wird erlittener Schaden in Höhe von 37%<sprite=5> über 4 Sek. <color=yellow>aufgeteilt</color>. Der <color=yellow>aufgeteilte</color> Schaden wird um 20% reduziert.",
+    "description": "Während diese Erinnerung sich in <color=yellow>Abklingzeit</color> befindet, wird erlittener Schaden in Höhe von  37%<sprite=5>  über 4 Sek. <color=yellow>aufgeteilt</color>. Der <color=yellow>aufgeteilte</color> Schaden wird um 20% reduziert.",
     "rawDesc": "Während diese Erinnerung sich in <color=yellow>Abklingzeit</color> befindet, wird erlittener Schaden in Höhe von {0} über {1} Sek. <color=yellow>aufgeteilt</color>. Der <color=yellow>aufgeteilte</color> Schaden wird um {2} reduziert.",
     "rawDescVars": [
       {
-        "rendered": "37%<sprite=5>",
+        "rendered": " 37%<sprite=5> ",
         "format": "P0",
         "raw": "divMultiplier",
         "scalingType": "unknown",
@@ -1143,16 +1196,16 @@
   },
   "Gem_E_Insensitivity": {
     "name": "Essenz der Gefühllosigkeit",
-    "description": "Nach dem <color=yellow>Wirken</color> dieser Erinnerung lässt du für 3 Sek. bei jeder Bewegung von 2m eine <color=yellow>Bombe</color> fallen. Die Bombe explodiert nach kurzer Zeit und fügt Gegnern <sprite=1><color=#16D7FF>140%</color><sprite=5> <color=yellow>Feuerschaden</color> zu.",
+    "description": "Nach dem <color=yellow>Wirken</color> dieser Erinnerung lässt du für 4 Sek. bei jeder Bewegung von 2m eine <color=yellow>Bombe</color> fallen. Die Bombe explodiert nach kurzer Zeit und fügt Gegnern  <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5>  <color=yellow>Feuerschaden</color> zu.",
     "rawDesc": "Nach dem <color=yellow>Wirken</color> dieser Erinnerung lässt du für {0} Sek. bei jeder Bewegung von {1}m eine <color=yellow>Bombe</color> fallen. Die Bombe explodiert nach kurzer Zeit und fügt Gegnern {2} <color=yellow>Feuerschaden</color> zu.",
     "rawDescVars": [
       {
-        "rendered": "3",
+        "rendered": "4",
         "format": "#,##0.#",
         "raw": "duration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 3.0,
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1173,7 +1226,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -1198,11 +1251,11 @@
   },
   "Gem_E_Insight": {
     "name": "Essenz der Einsicht",
-    "description": "Wenn diese Erinnerung einem Gegner <color=yellow>Schaden</color> zufügt, fügt sie bis zu 3<sprite=5> zusätzlichen Gegnern <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>Lichtschaden</color> zu und erhöht das <color=yellow>Erinnerungstempo</color> für 5 Sek. um 20<sprite=5>. Kann nur einmal alle 3 Sek. aktiviert werden.",
+    "description": "Wenn diese Erinnerung einem Gegner <color=yellow>Schaden</color> zufügt, fügt sie bis zu  3<sprite=5>  zusätzlichen Gegnern  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  <color=yellow>Lichtschaden</color> zu und erhöht das <color=yellow>Erinnerungstempo</color> für 5 Sek. um  20<sprite=5> . Kann nur einmal alle 3 Sek. aktiviert werden.",
     "rawDesc": "Wenn diese Erinnerung einem Gegner <color=yellow>Schaden</color> zufügt, fügt sie bis zu {0} zusätzlichen Gegnern {1} <color=yellow>Lichtschaden</color> zu und erhöht das <color=yellow>Erinnerungstempo</color> für {2} Sek. um {3}. Kann nur einmal alle {4} Sek. aktiviert werden.",
     "rawDescVars": [
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0",
         "raw": "maxHitCount",
         "scalingType": "basic",
@@ -1215,7 +1268,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1241,7 +1294,7 @@
         }
       },
       {
-        "rendered": "20<sprite=5>",
+        "rendered": " 20<sprite=5> ",
         "format": "#,##0",
         "raw": "gainedAbilityHaste",
         "scalingType": "basic",
@@ -1279,11 +1332,11 @@
   },
   "Gem_E_Inversion": {
     "name": "Essenz der Umkehrung",
-    "description": "Die <color=yellow>Abklingzeit</color> dieser Erinnerung erhöht sich um 15%<sprite=5>, aber der <color=yellow>Schaden</color>, den du Gegnern zufügst, erhöht sich ebenfalls um 20%<sprite=5>. Der <color=yellow>Elementarschaden</color> dieser Erinnerung wird <color=yellow>umgekehrt</color>. (Feuer/Kälte, Licht/Dunkelheit)",
+    "description": "Die <color=yellow>Abklingzeit</color> dieser Erinnerung erhöht sich um  15%<sprite=5> , aber der <color=yellow>Schaden</color>, den du Gegnern zufügst, erhöht sich ebenfalls um  20%<sprite=5> . Der <color=yellow>Elementarschaden</color> dieser Erinnerung wird <color=yellow>umgekehrt</color>. (Feuer/Kälte, Licht/Dunkelheit)",
     "rawDesc": "Die <color=yellow>Abklingzeit</color> dieser Erinnerung erhöht sich um {0}, aber der <color=yellow>Schaden</color>, den du Gegnern zufügst, erhöht sich ebenfalls um {1}. Der <color=yellow>Elementarschaden</color> dieser Erinnerung wird <color=yellow>umgekehrt</color>. (Feuer/Kälte, Licht/Dunkelheit)",
     "rawDescVars": [
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "P0",
         "raw": "cooldownAmp",
         "scalingType": "basic",
@@ -1296,7 +1349,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -1319,11 +1372,11 @@
   },
   "Gem_E_Metal": {
     "name": "Essenz des Metalls",
-    "description": "Wenn du einen Gegner <color=yellow>tötest</color>, wird die <color=yellow>Abklingzeit</color> dieser Erinnerung um 1<sprite=5> Sek. <color=yellow>reduziert</color>.",
+    "description": "Wenn du einen Gegner <color=yellow>tötest</color>, wird die <color=yellow>Abklingzeit</color> dieser Erinnerung um  1<sprite=5>  Sek. <color=yellow>reduziert</color>.",
     "rawDesc": "Wenn du einen Gegner <color=yellow>tötest</color>, wird die <color=yellow>Abklingzeit</color> dieser Erinnerung um {0} Sek. <color=yellow>reduziert</color>.",
     "rawDescVars": [
       {
-        "rendered": "1<sprite=5>",
+        "rendered": " 1<sprite=5> ",
         "format": "#,##0.#",
         "raw": "cooldownReduction",
         "scalingType": "basic",
@@ -1346,16 +1399,16 @@
   },
   "Gem_E_Might": {
     "name": "Essenz des Riesen",
-    "description": "Erhöht max. LP um 260<sprite=5>. Der Schaden dieser Erinnerung erhöht sich um 1% für je 50 <color=yellow>max. LP</color>.",
+    "description": "Erhöht max. LP um  270<sprite=5> . Der Schaden dieser Erinnerung erhöht sich um 1% für je 70 <color=yellow>max. LP</color>.",
     "rawDesc": "Erhöht max. LP um {0}. Der Schaden dieser Erinnerung erhöht sich um {1} für je {2} <color=yellow>max. LP</color>.",
     "rawDescVars": [
       {
-        "rendered": "260<sprite=5>",
+        "rendered": " 270<sprite=5> ",
         "format": "#,##0",
         "raw": "healthBonus",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 130.0,
+          "basicConstant": 135.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -1376,12 +1429,12 @@
         }
       },
       {
-        "rendered": "50",
+        "rendered": "70",
         "format": "#,##0",
         "raw": "unitHealthAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 50.0,
+          "basicConstant": 70.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1399,11 +1452,11 @@
   },
   "Gem_E_Obsidian": {
     "name": "Essenz des Obsidians",
-    "description": "Wenn du diese Erinnerung <color=yellow>wirkst</color>, wird dein nächster Angriff verstärkt und verursacht <sprite=2><color=#FF8A2D>250%</color><sprite=5> <color=yellow>Dunkelheitsschaden</color> am Ziel und verringert die <color=yellow>Abklingzeit</color> dieser Erinnerung um 1<sprite=5> Sek.",
+    "description": "Wenn du diese Erinnerung <color=yellow>wirkst</color>, wird dein nächster Angriff verstärkt und verursacht  <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5>  <color=yellow>Dunkelheitsschaden</color> am Ziel und verringert die <color=yellow>Abklingzeit</color> dieser Erinnerung um  1<sprite=5>  Sek.",
     "rawDesc": "Wenn du diese Erinnerung <color=yellow>wirkst</color>, wird dein nächster Angriff verstärkt und verursacht {0} <color=yellow>Dunkelheitsschaden</color> am Ziel und verringert die <color=yellow>Abklingzeit</color> dieser Erinnerung um {1} Sek.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1416,7 +1469,7 @@
         }
       },
       {
-        "rendered": "1<sprite=5>",
+        "rendered": " 1<sprite=5> ",
         "format": "#,##0.#",
         "raw": "reducedCooldown",
         "scalingType": "basic",
@@ -1442,7 +1495,7 @@
   },
   "Gem_E_Omega": {
     "name": "Essenz des Finales",
-    "description": "Während diese Erinnerung nicht <color=yellow>abklingt</color>, erhält sie jede Sek. einen <color=yellow>Finale</color>-Stapel bis zu 20 Stapeln. Wenn Stapel vorhanden sind, wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>, wodurch der <color=yellow>Schaden</color> pro Stapel um 5%<sprite=5> erhöht wird.",
+    "description": "Während diese Erinnerung nicht <color=yellow>abklingt</color>, erhält sie jede Sek. einen <color=yellow>Finale</color>-Stapel bis zu 20 Stapeln. Wenn Stapel vorhanden sind, wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>, wodurch der <color=yellow>Schaden</color> pro Stapel um  5%<sprite=5>  erhöht wird.",
     "rawDesc": "Während diese Erinnerung nicht <color=yellow>abklingt</color>, erhält sie jede Sek. einen <color=yellow>Finale</color>-Stapel bis zu {0} Stapeln. Wenn Stapel vorhanden sind, wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>, wodurch der <color=yellow>Schaden</color> pro Stapel um {1} erhöht wird.",
     "rawDescVars": [
       {
@@ -1459,7 +1512,7 @@
         }
       },
       {
-        "rendered": "5%<sprite=5>",
+        "rendered": " 5%<sprite=5> ",
         "format": "P0",
         "raw": "chargeRate",
         "scalingType": "unknown",
@@ -1476,11 +1529,11 @@
   },
   "Gem_E_Opportunity": {
     "name": "Essenz der Gelegenheit",
-    "description": "Wenn du diese Erinnerung <color=yellow>wirkst</color>, wird die <color=yellow>Abklingzeit</color> deiner <color=yellow>Ausweichfähigkeit</color> um 3<sprite=5> Sek. reduziert. Kann nur einmal alle 8 Sek. ausgelöst werden.",
+    "description": "Wenn du diese Erinnerung <color=yellow>wirkst</color>, wird die <color=yellow>Abklingzeit</color> deiner <color=yellow>Ausweichfähigkeit</color> um  3<sprite=5>  Sek. reduziert. Kann nur einmal alle 8 Sek. ausgelöst werden.",
     "rawDesc": "Wenn du diese Erinnerung <color=yellow>wirkst</color>, wird die <color=yellow>Abklingzeit</color> deiner <color=yellow>Ausweichfähigkeit</color> um {0} Sek. reduziert. Kann nur einmal alle {1} Sek. ausgelöst werden.",
     "rawDescVars": [
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0.#",
         "raw": "reductionAmount",
         "scalingType": "basic",
@@ -1518,11 +1571,11 @@
   },
   "Gem_E_OurStory_Completed": {
     "name": "Unsere Geschichte (vollendet!)",
-    "description": "Erhöht <color=yellow>AK</color> und <color=yellow>Zauberkraft</color> um 0 und alle vorteilhaften Effekte von <color=yellow>Verzerrter Sprint</color> um 0.",
+    "description": "Erhöht <color=yellow>AK</color> und <color=yellow>Zauberkraft</color> um  und alle vorteilhaften Effekte von <color=yellow>Verzerrter Sprint</color> um .",
     "rawDesc": "Erhöht <color=yellow>AK</color> und <color=yellow>Zauberkraft</color> um {0} und alle vorteilhaften Effekte von <color=yellow>Verzerrter Sprint</color> um {1}.",
     "rawDescVars": [
       {
-        "rendered": "0",
+        "rendered": "",
         "format": "#,##0'%'",
         "raw": "Gem_E_OurStory_Completed::statPercentage",
         "scalingType": "basic",
@@ -1535,7 +1588,7 @@
         }
       },
       {
-        "rendered": "0",
+        "rendered": "",
         "format": "#,##0",
         "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
         "scalingType": "unknown",
@@ -1605,7 +1658,7 @@
   },
   "Gem_E_Overload": {
     "name": "Essenz der Überlastung",
-    "description": "Wenn du diese Erinnerung <color=yellow>wirkst</color>, <color=yellow>opferst</color> du 20% deiner aktuellen LP, um die <color=yellow>Wirkung</color> zu <color=yellow>verstärken</color>. Der von der <color=yellow>verstärkten Wirkung</color> verursachte <color=yellow>Schaden</color> und die <color=yellow>Heilung</color> werden um 45%<sprite=5> erhöht.",
+    "description": "Wenn du diese Erinnerung <color=yellow>wirkst</color>, <color=yellow>opferst</color> du 20% deiner aktuellen LP, um die <color=yellow>Wirkung</color> zu <color=yellow>verstärken</color>. Der von der <color=yellow>verstärkten Wirkung</color> verursachte <color=yellow>Schaden</color> und die <color=yellow>Heilung</color> werden um  45%<sprite=5>  erhöht.",
     "rawDesc": "Wenn du diese Erinnerung <color=yellow>wirkst</color>, <color=yellow>opferst</color> du {0} deiner aktuellen LP, um die <color=yellow>Wirkung</color> zu <color=yellow>verstärken</color>. Der von der <color=yellow>verstärkten Wirkung</color> verursachte <color=yellow>Schaden</color> und die <color=yellow>Heilung</color> werden um {1} erhöht.",
     "rawDescVars": [
       {
@@ -1622,7 +1675,7 @@
         }
       },
       {
-        "rendered": "45%<sprite=5>",
+        "rendered": " 45%<sprite=5> ",
         "format": "P0",
         "raw": "amp",
         "scalingType": "basic",
@@ -1647,11 +1700,11 @@
   },
   "Gem_E_Pain": {
     "name": "Essenz des Schmerzes",
-    "description": "Jeglicher <color=yellow>Schaden</color>, den diese Erinnerung verursacht, fügt Gegnern im Umkreis zusätzlich 40%<sprite=5> <color=yellow>Flächenschaden</color> zu. Dieser <color=yellow>Flächenschaden</color> teilt die Elementeigenschaft des ursprünglichen Schadens.",
+    "description": "Jeglicher <color=yellow>Schaden</color>, den diese Erinnerung verursacht, fügt Gegnern im Umkreis zusätzlich  40%<sprite=5>  <color=yellow>Flächenschaden</color> zu. Dieser <color=yellow>Flächenschaden</color> teilt die Elementeigenschaft des ursprünglichen Schadens.",
     "rawDesc": "Jeglicher <color=yellow>Schaden</color>, den diese Erinnerung verursacht, fügt Gegnern im Umkreis zusätzlich {0} <color=yellow>Flächenschaden</color> zu. Dieser <color=yellow>Flächenschaden</color> teilt die Elementeigenschaft des ursprünglichen Schadens.",
     "rawDescVars": [
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "damageRatio",
         "scalingType": "basic",
@@ -1674,16 +1727,16 @@
   },
   "Gem_E_Predation": {
     "name": "Essenz der Prädation",
-    "description": "Diese Erinnerung verursacht 60%<sprite=5> mehr <color=yellow>Schaden</color> gegen <color=yellow>Bosse</color> und <color=yellow>Jäger</color>. Beim Töten eines <color=yellow>Jägers</color> fallen 1 <color=yellow>Macht-Orbs</color>, beim Töten eines <color=yellow>Bosses</color> fallen 3. Beim Aufsammeln eines <color=yellow>Macht-Orbs</color> erhöht sich entweder <color=yellow>Angriffsschaden</color> oder <color=yellow>Fähigkeitsstärke</color> zufällig um 1 permanent.",
-    "rawDesc": "Diese Erinnerung verursacht {0} mehr <color=yellow>Schaden</color> gegen <color=yellow>Bosse</color> und <color=yellow>Jäger</color>. Beim Töten eines <color=yellow>Jägers</color> fallen {1} <color=yellow>Macht-Orbs</color>, beim Töten eines <color=yellow>Bosses</color> fallen {2}. Beim Aufsammeln eines <color=yellow>Macht-Orbs</color> erhöht sich entweder <color=yellow>Angriffsschaden</color> oder <color=yellow>Fähigkeitsstärke</color> zufällig um 1 permanent.",
+    "description": "Diese Erinnerung verursacht  40%<sprite=5>  mehr <color=yellow>Schaden</color> gegen <color=yellow>Bosse</color> und <color=yellow>Jäger</color>. Beim Töten eines <color=yellow>Jägers</color> fällt 1 <color=yellow>Macht-Orb</color>, beim Töten eines <color=yellow>Bosses</color> fallen 3. Beim Aufsammeln eines <color=yellow>Macht-Orbs</color> erhältst du 1 <color=yellow>Angriffsschaden</color>, 1 <color=yellow>Fähigkeitsstärke</color> oder 5 <color=yellow>Max. Leben</color>.",
+    "rawDesc": "Diese Erinnerung verursacht {0} mehr <color=yellow>Schaden</color> gegen <color=yellow>Bosse</color> und <color=yellow>Jäger</color>. Beim Töten eines <color=yellow>Jägers</color> fällt 1 <color=yellow>Macht-Orb</color>, beim Töten eines <color=yellow>Bosses</color> fallen {1}. Beim Aufsammeln eines <color=yellow>Macht-Orbs</color> erhältst du 1 <color=yellow>Angriffsschaden</color>, 1 <color=yellow>Fähigkeitsstärke</color> oder {2} <color=yellow>Max. Leben</color>.",
     "rawDescVars": [
       {
-        "rendered": "60%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "amp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.3,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -1691,24 +1744,30 @@
         }
       },
       {
-        "rendered": "1",
+        "rendered": "3",
         "format": "#,##0",
-        "raw": "addedAp",
+        "raw": "bossMultiplier",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "addedHealth",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
-      },
-      {
-        "rendered": "3",
-        "format": "#,##0",
-        "raw": "addedAp*bossMultiplier",
-        "scalingType": "unknown",
-        "data": {}
       }
     ],
     "rarity": "Epic",
@@ -1721,7 +1780,7 @@
   },
   "Gem_E_Protection": {
     "name": "Essenz des Schutzes",
-    "description": "Beim <color=yellow>Wirken</color> dieser Erinnerung erhältst du für 3 Sek. 40<sprite=5> <color=yellow>VK</color>, wodurch erlittener Schaden reduziert wird und du <color=yellow>Unaufhaltsam</color> wirst. Kann nur einmal alle 5 Sek. ausgelöst werden.",
+    "description": "Beim <color=yellow>Wirken</color> dieser Erinnerung erhältst du für 3 Sek.  40<sprite=5>  <color=yellow>VK</color>, wodurch erlittener Schaden reduziert wird und du <color=yellow>Unaufhaltsam</color> wirst. Kann nur einmal alle 5 Sek. ausgelöst werden.",
     "rawDesc": "Beim <color=yellow>Wirken</color> dieser Erinnerung erhältst du für {0} Sek. {1} <color=yellow>VK</color>, wodurch erlittener Schaden reduziert wird und du <color=yellow>Unaufhaltsam</color> wirst. Kann nur einmal alle {2} Sek. ausgelöst werden.",
     "rawDescVars": [
       {
@@ -1738,7 +1797,7 @@
         }
       },
       {
-        "rendered": "40<sprite=5>",
+        "rendered": " 40<sprite=5> ",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "basic",
@@ -1774,17 +1833,17 @@
   },
   "Gem_E_Reflex": {
     "name": "Essenz des Reflexes",
-    "description": "Wenn du irgendeinen <color=yellow>Schaden</color> erleidest, schießt du einen Kältestoß auf den nächstgelegenen Gegner in der Nähe, der <sprite=1><color=#16D7FF>120%</color><sprite=5> <color=yellow>Kälteschaden</color> verursacht und ihn zurückstößt, und erhöhst deine <color=yellow>Verteidigung</color> für 1.5 Sekunden um 40<sprite=5>.",
+    "description": "Wenn du irgendeinen <color=yellow>Schaden</color> erleidest, schießt du einen Kältestoß auf den nächstgelegenen Gegner in der Nähe, der  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>4%</gradient></color><sprite=5>  <color=yellow>Kälteschaden</color> verursacht und ihn zurückstößt, und erhöhst deine <color=yellow>Verteidigung</color> für 1.5 Sekunden um  40<sprite=5> .",
     "rawDesc": "Wenn du irgendeinen <color=yellow>Schaden</color> erleidest, schießt du einen Kältestoß auf den nächstgelegenen Gegner in der Nähe, der {0} <color=yellow>Kälteschaden</color> verursacht und ihn zurückstößt, und erhöhst deine <color=yellow>Verteidigung</color> für {1} Sekunden um {2}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>4%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.6,
+          "basicAP": 0.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.01
@@ -1804,7 +1863,7 @@
         }
       },
       {
-        "rendered": "40<sprite=5>",
+        "rendered": " 40<sprite=5> ",
         "format": "#,##0",
         "raw": "armorFlatAmount",
         "scalingType": "basic",
@@ -1829,11 +1888,11 @@
   },
   "Gem_E_Thunder": {
     "name": "Essenz des Donners",
-    "description": "Wenn du eine <color=yellow>andere Erinnerung</color> <color=yellow>wirkst</color> oder eine <color=yellow>Ausweichfähigkeit</color> verwendest, erhältst du 1 <color=yellow>Donner</color>-Stapel bis zu einem Maximum von 7<sprite=5> Stapeln. Wenn du diese Erinnerung <color=yellow>wirkst</color>, verbrauchst du alle <color=yellow>Donner</color>-Stapel, um pro Stapel einen Blitz auf nahe Gegner herabregnen zu lassen. Jeder Blitz verursacht <sprite=1><color=#16D7FF>117%</color><sprite=5> <color=yellow>Lichtschaden</color>.",
+    "description": "Wenn du eine <color=yellow>andere Erinnerung</color> <color=yellow>wirkst</color> oder eine <color=yellow>Ausweichfähigkeit</color> verwendest, erhältst du 1 <color=yellow>Donner</color>-Stapel bis zu einem Maximum von  7<sprite=5>  Stapeln. Wenn du diese Erinnerung <color=yellow>wirkst</color>, verbrauchst du alle <color=yellow>Donner</color>-Stapel, um pro Stapel einen Blitz auf nahe Gegner herabregnen zu lassen. Jeder Blitz verursacht  <sprite=1><color=#fff><gradient=sv_ap>117%</gradient></color><sprite=5>  <color=yellow>Lichtschaden</color>.",
     "rawDesc": "Wenn du eine <color=yellow>andere Erinnerung</color> <color=yellow>wirkst</color> oder eine <color=yellow>Ausweichfähigkeit</color> verwendest, erhältst du 1 <color=yellow>Donner</color>-Stapel bis zu einem Maximum von {0} Stapeln. Wenn du diese Erinnerung <color=yellow>wirkst</color>, verbrauchst du alle <color=yellow>Donner</color>-Stapel, um pro Stapel einen Blitz auf nahe Gegner herabregnen zu lassen. Jeder Blitz verursacht {1} <color=yellow>Lichtschaden</color>.",
     "rawDescVars": [
       {
-        "rendered": "7<sprite=5>",
+        "rendered": " 7<sprite=5> ",
         "format": "#,##0",
         "raw": "maxCharge",
         "scalingType": "basic",
@@ -1846,7 +1905,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>117%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>117%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1871,7 +1930,7 @@
   },
   "Gem_E_Twilight": {
     "name": "Essenz der Dämmerung",
-    "description": "Dein <color=yellow>Basisangriff</color> wird zu <color=yellow>Dunkelheitsschaden</color>. Wenn diese Erinnerung einem Gegner Schaden zufügt und das Ziel 3 oder mehr <color=yellow>Dunkelheitsstapel</color> hat, werden alle Stapel verbraucht und verursachen pro Stapel <sprite=1><color=#16D7FF>54%</color><sprite=5> <color=yellow>Schaden</color> sowie <color=yellow>regeneriert</color> deine LP um 6<sprite=5> pro Stapel.",
+    "description": "Dein <color=yellow>Basisangriff</color> wird zu <color=yellow>Dunkelheitsschaden</color>. Wenn diese Erinnerung einem Gegner Schaden zufügt und das Ziel 3 oder mehr <color=yellow>Dunkelheitsstapel</color> hat, werden alle Stapel verbraucht und verursachen pro Stapel  <sprite=1><color=#fff><gradient=sv_ap>54%</gradient></color><sprite=5>  <color=yellow>Schaden</color> sowie <color=yellow>regeneriert</color> deine LP um  6<sprite=5>  pro Stapel.",
     "rawDesc": "Dein <color=yellow>Basisangriff</color> wird zu <color=yellow>Dunkelheitsschaden</color>. Wenn diese Erinnerung einem Gegner Schaden zufügt und das Ziel {0} oder mehr <color=yellow>Dunkelheitsstapel</color> hat, werden alle Stapel verbraucht und verursachen pro Stapel {1} <color=yellow>Schaden</color> sowie <color=yellow>regeneriert</color> deine LP um {2} pro Stapel.",
     "rawDescVars": [
       {
@@ -1888,7 +1947,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>54%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>54%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgPerStack",
         "scalingType": "basic",
@@ -1901,7 +1960,7 @@
         }
       },
       {
-        "rendered": "6<sprite=5>",
+        "rendered": " 6<sprite=5> ",
         "format": "#,##0",
         "raw": "healPerStack",
         "scalingType": "basic",
@@ -1926,11 +1985,11 @@
   },
   "Gem_E_Umbra": {
     "name": "Essenz der Schatten",
-    "description": "Der Schaden dieser Erinnerung wird um 42%<sprite=5> der <color=yellow>kritischen Trefferchance</color> erhöht. Falls dieser <color=yellow>Schaden</color> <color=yellow>Dunkelheitsschaden</color> ist, <color=yellow>heile</color> 6%<sprite=5> des Schadens als <color=yellow>LP</color>.",
+    "description": "Der Schaden dieser Erinnerung wird um  42%<sprite=5>  der <color=yellow>kritischen Trefferchance</color> erhöht. Falls dieser <color=yellow>Schaden</color> <color=yellow>Dunkelheitsschaden</color> ist, <color=yellow>heile</color>  6%<sprite=5>  des Schadens als <color=yellow>LP</color>.",
     "rawDesc": "Der Schaden dieser Erinnerung wird um {0} der <color=yellow>kritischen Trefferchance</color> erhöht. Falls dieser <color=yellow>Schaden</color> <color=yellow>Dunkelheitsschaden</color> ist, <color=yellow>heile</color> {1} des Schadens als <color=yellow>LP</color>.",
     "rawDescVars": [
       {
-        "rendered": "42%<sprite=5>",
+        "rendered": " 42%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmpCritConversionRatio",
         "scalingType": "basic",
@@ -1943,7 +2002,7 @@
         }
       },
       {
-        "rendered": "6%<sprite=5>",
+        "rendered": " 6%<sprite=5> ",
         "format": "P0",
         "raw": "conversionRatio",
         "scalingType": "basic",
@@ -1968,11 +2027,11 @@
   },
   "Gem_E_Virtuousness": {
     "name": "Essenz der Tugendhaftigkeit",
-    "description": "Die Anzahl der Aufladungen dieser Erinnerung wird um 1<sprite=5> erhöht. Pro 150% Qualitätsstufen erhöht sich die Anzahl der Aufladungen um 1.",
+    "description": "Die Anzahl der Aufladungen dieser Erinnerung wird um  1<sprite=5>  erhöht. Pro 150% Qualitätsstufen erhöht sich die Anzahl der Aufladungen um 1.",
     "rawDesc": "Die Anzahl der Aufladungen dieser Erinnerung wird um {0} erhöht. Pro {1} Qualitätsstufen erhöht sich die Anzahl der Aufladungen um 1.",
     "rawDescVars": [
       {
-        "rendered": "1<sprite=5>",
+        "rendered": " 1<sprite=5> ",
         "format": "#,##0",
         "raw": "addedChargeInt",
         "scalingType": "unknown",
@@ -2002,18 +2061,18 @@
   },
   "Gem_L_CamillasGift": {
     "name": "Camillas Geschenk",
-    "description": "Kann im Laden <color=yellow>verkauft</color> werden, um 0 Gold zu erhalten. Bei jedem Weltenwechsel <color=yellow>steigt</color> der <color=yellow>Preis</color> um 0. Zerbricht, wenn deine LP durch Schaden der Gegner unter 50% fällt.",
+    "description": "Kann im Laden <color=yellow>verkauft</color> werden, um  Gold zu erhalten. Bei jedem Weltenwechsel <color=yellow>steigt</color> der <color=yellow>Preis</color> um . Zerbricht, wenn deine LP durch Schaden der Gegner unter 50% fällt.",
     "rawDesc": "Kann im Laden <color=yellow>verkauft</color> werden, um {0} Gold zu erhalten. Bei jedem Weltenwechsel <color=yellow>steigt</color> der <color=yellow>Preis</color> um {1}. Zerbricht, wenn deine LP durch Schaden der Gegner unter {2} fällt.",
     "rawDescVars": [
       {
-        "rendered": "0",
+        "rendered": "",
         "format": "#,##0",
         "raw": "currentSellGold",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "0",
+        "rendered": "",
         "format": "#,##0",
         "raw": "sellGoldIncreasePerWorld",
         "scalingType": "basic",
@@ -2049,11 +2108,11 @@
   },
   "Gem_L_ChaosApple": {
     "name": "Chaosapfel",
-    "description": "Jedes Mal, wenn du durch einen <color=yellow>Riss</color> <color=yellow>bewegst</color>, wird diese Erinnerung zu einer zufälligen anderen Erinnerung <color=yellow>transformiert</color>. Die <color=yellow>Abklingzeit</color> der <color=yellow>transformierten</color> Erinnerung wird entfernt, aber sie kann in jedem Raum nur 4<sprite=5> Mal <color=yellow>gewirkt</color> werden.",
+    "description": "Jedes Mal, wenn du durch einen <color=yellow>Riss</color> <color=yellow>bewegst</color>, wird diese Erinnerung zu einer zufälligen anderen Erinnerung <color=yellow>transformiert</color>. Die <color=yellow>Abklingzeit</color> der <color=yellow>transformierten</color> Erinnerung wird entfernt, aber sie kann in jedem Raum nur  4<sprite=5>  Mal <color=yellow>gewirkt</color> werden.",
     "rawDesc": "Jedes Mal, wenn du durch einen <color=yellow>Riss</color> <color=yellow>bewegst</color>, wird diese Erinnerung zu einer zufälligen anderen Erinnerung <color=yellow>transformiert</color>. Die <color=yellow>Abklingzeit</color> der <color=yellow>transformierten</color> Erinnerung wird entfernt, aber sie kann in jedem Raum nur {0} Mal <color=yellow>gewirkt</color> werden.",
     "rawDescVars": [
       {
-        "rendered": "4<sprite=5>",
+        "rendered": " 4<sprite=5> ",
         "format": "#,##0",
         "raw": "castPerRoomCount",
         "scalingType": "basic",
@@ -2076,11 +2135,11 @@
   },
   "Gem_L_DivineFaith": {
     "name": "Göttlicher Glaube",
-    "description": "Bei jedem <color=yellow>Töten</color> eines Gegners mit dieser Erinnerung erhältst du einen Stapel <color=yellow>Glaube</color>, bis zu 75<sprite=5> Stapel. Pro Stapel <color=yellow>Glaube</color> erhöht sich der <color=yellow>Schaden</color>, den diese Erinnerung Gegnern zufügt, und die <color=yellow>Regeneration</color>, die sie Verbündeten gewährt, um 0.5%, sowie deine max. LP um 4.",
+    "description": "Bei jedem <color=yellow>Töten</color> eines Gegners mit dieser Erinnerung erhältst du einen Stapel <color=yellow>Glaube</color>, bis zu  75<sprite=5>  Stapel. Pro Stapel <color=yellow>Glaube</color> erhöht sich der <color=yellow>Schaden</color>, den diese Erinnerung Gegnern zufügt, und die <color=yellow>Regeneration</color>, die sie Verbündeten gewährt, um 0.4%, sowie deine max. LP um 4.",
     "rawDesc": "Bei jedem <color=yellow>Töten</color> eines Gegners mit dieser Erinnerung erhältst du einen Stapel <color=yellow>Glaube</color>, bis zu {0} Stapel. Pro Stapel <color=yellow>Glaube</color> erhöht sich der <color=yellow>Schaden</color>, den diese Erinnerung Gegnern zufügt, und die <color=yellow>Regeneration</color>, die sie Verbündeten gewährt, um {1}, sowie deine max. LP um {2}.",
     "rawDescVars": [
       {
-        "rendered": "75<sprite=5>",
+        "rendered": " 75<sprite=5> ",
         "format": "#,##0",
         "raw": "maxStacks",
         "scalingType": "basic",
@@ -2093,12 +2152,12 @@
         }
       },
       {
-        "rendered": "0.5%",
+        "rendered": "0.4%",
         "format": "0.#%",
         "raw": "dmgAmpPerStack",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.005,
+          "basicConstant": 0.004,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2129,11 +2188,11 @@
   },
   "Gem_L_Embertail": {
     "name": "Feuerschweif",
-    "description": "Meine <color=yellow>Angriffe</color> springen über und verursachen bei einem nahen Gegner <sprite=1><color=#16D7FF>100%</color><sprite=5> <color=yellow>Feuerschaden</color>. Für jeden nahen feuerumhüllten Gegner erhöhen sich der <color=yellow>Schaden</color> und die <color=yellow>Heilung</color> dieser Erinnerung um 8%<sprite=5> und die <color=yellow>Abklingzeit</color> verringert sich um 8%<sprite=5>. Mein Feuerschaden über Zeit erhöht sich um 100%.",
+    "description": "Meine <color=yellow>Angriffe</color> springen über und verursachen bei einem nahen Gegner  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5>  <color=yellow>Feuerschaden</color>. Für jeden nahen feuerumhüllten Gegner erhöhen sich der <color=yellow>Schaden</color> und die <color=yellow>Heilung</color> dieser Erinnerung um  8%<sprite=5>  und die <color=yellow>Abklingzeit</color> verringert sich um  8%<sprite=5> . Mein Feuerschaden über Zeit erhöht sich um 100%.",
     "rawDesc": "Meine <color=yellow>Angriffe</color> springen über und verursachen bei einem nahen Gegner {0} <color=yellow>Feuerschaden</color>. Für jeden nahen feuerumhüllten Gegner erhöhen sich der <color=yellow>Schaden</color> und die <color=yellow>Heilung</color> dieser Erinnerung um {1} und die <color=yellow>Abklingzeit</color> verringert sich um {2}. Mein Feuerschaden über Zeit erhöht sich um {3}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -2146,7 +2205,7 @@
         }
       },
       {
-        "rendered": "8%<sprite=5>",
+        "rendered": " 8%<sprite=5> ",
         "format": "P0",
         "raw": "ampPerBurning",
         "scalingType": "basic",
@@ -2159,7 +2218,7 @@
         }
       },
       {
-        "rendered": "8%<sprite=5>",
+        "rendered": " 8%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "skillHastePerBurning",
         "scalingType": "basic",
@@ -2192,7 +2251,7 @@
   },
   "Gem_L_HeartOfGold": {
     "name": "Herz aus Gold",
-    "description": "Beim <color=yellow>Wirken</color> dieser Erinnerung werden 3% deines Goldes verbraucht, um den Zauber zu <color=yellow>verstärken</color>. <color=yellow>Verstärkte Wirkung</color> erhöht den <color=yellow>Schaden</color> und die <color=yellow>Heilung</color> um 12%<sprite=5> pro 100 Gold, proportional zu deinem Goldvorrat.\n",
+    "description": "Beim <color=yellow>Wirken</color> dieser Erinnerung werden 3% deines Goldes verbraucht, um den Zauber zu <color=yellow>verstärken</color>. <color=yellow>Verstärkte Wirkung</color> erhöht den <color=yellow>Schaden</color> und die <color=yellow>Heilung</color> um  12%<sprite=5>  pro 100 Gold, proportional zu deinem Goldvorrat.\n",
     "rawDesc": "Beim <color=yellow>Wirken</color> dieser Erinnerung werden {0} deines Goldes verbraucht, um den Zauber zu <color=yellow>verstärken</color>. <color=yellow>Verstärkte Wirkung</color> erhöht den <color=yellow>Schaden</color> und die <color=yellow>Heilung</color> um {1} pro 100 Gold, proportional zu deinem Goldvorrat.\n",
     "rawDescVars": [
       {
@@ -2209,7 +2268,7 @@
         }
       },
       {
-        "rendered": "12%<sprite=5>",
+        "rendered": " 12%<sprite=5> ",
         "format": "P0",
         "raw": "ampPerHundredGold",
         "scalingType": "basic",
@@ -2247,7 +2306,7 @@
   },
   "Gem_L_Paranoia": {
     "name": "Essenz der Paranoia",
-    "description": "Wenn du <color=yellow>Schaden</color> erleidest, erhält diese Erinnerung für 6 Sek. 150<sprite=5> <color=yellow>Erinnerungstempo</color>, wodurch die <color=yellow>Abklingzeit</color> um 60%<sprite=5> reduziert wird, aber sie wird auf nahe Gegner <color=yellow>automatisch gewirkt</color>.",
+    "description": "Wenn du <color=yellow>Schaden</color> erleidest, erhält diese Erinnerung für 6 Sek.  150<sprite=5>  <color=yellow>Erinnerungstempo</color>, wodurch die <color=yellow>Abklingzeit</color> um  60%<sprite=5>  reduziert wird, aber sie wird auf nahe Gegner <color=yellow>automatisch gewirkt</color>.",
     "rawDesc": "Wenn du <color=yellow>Schaden</color> erleidest, erhält diese Erinnerung für {0} Sek. {1} <color=yellow>Erinnerungstempo</color>, wodurch die <color=yellow>Abklingzeit</color> um {2} reduziert wird, aber sie wird auf nahe Gegner <color=yellow>automatisch gewirkt</color>.",
     "rawDescVars": [
       {
@@ -2264,7 +2323,7 @@
         }
       },
       {
-        "rendered": "150<sprite=5>",
+        "rendered": " 150<sprite=5> ",
         "format": "#,##0",
         "raw": "skillHaste",
         "scalingType": "basic",
@@ -2277,7 +2336,7 @@
         }
       },
       {
-        "rendered": "60%<sprite=5>",
+        "rendered": " 60%<sprite=5> ",
         "format": "P0",
         "raw": "reducedRatio",
         "scalingType": "unknown",
@@ -2294,16 +2353,16 @@
   },
   "Gem_L_Perfect": {
     "name": "Perfektion",
-    "description": "Erhöht AK um 7<sprite=5>, Zauberkraft um 7<sprite=5>, max. LP um 35<sprite=5>, Angriffstempo um 10%<sprite=5>, krit. Trefferchance um 6%<sprite=5> und Erinnerungstempo um 10<sprite=5>.",
+    "description": "Erhöht AK um  6<sprite=5> , Zauberkraft um  6<sprite=5> , max. LP um  31<sprite=5> , Angriffstempo um  9%<sprite=5> , krit. Trefferchance um  5%<sprite=5>  und Erinnerungstempo um  9<sprite=5> .",
     "rawDesc": "Erhöht AK um {0}, Zauberkraft um {1}, max. LP um {2}, Angriffstempo um {3}, krit. Trefferchance um {4} und Erinnerungstempo um {5}.",
     "rawDescVars": [
       {
-        "rendered": "7<sprite=5>",
+        "rendered": " 6<sprite=5> ",
         "format": "#,##0",
         "raw": "adAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 3.5,
+          "basicConstant": 3.15,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2311,12 +2370,12 @@
         }
       },
       {
-        "rendered": "7<sprite=5>",
+        "rendered": " 6<sprite=5> ",
         "format": "#,##0",
         "raw": "apAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 3.5,
+          "basicConstant": 3.15,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2324,12 +2383,12 @@
         }
       },
       {
-        "rendered": "35<sprite=5>",
+        "rendered": " 31<sprite=5> ",
         "format": "#,##0",
         "raw": "healthAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 17.5,
+          "basicConstant": 15.75,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2337,12 +2396,12 @@
         }
       },
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": " 9%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "attackSpeedAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 5.0,
+          "basicConstant": 4.5,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2350,12 +2409,12 @@
         }
       },
       {
-        "rendered": "6%<sprite=5>",
+        "rendered": " 5%<sprite=5> ",
         "format": "P0",
         "raw": "criticalChanceAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.03,
+          "basicConstant": 0.027,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2363,12 +2422,12 @@
         }
       },
       {
-        "rendered": "10<sprite=5>",
+        "rendered": " 9<sprite=5> ",
         "format": "#,##0",
         "raw": "skillHasteAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 5.0,
+          "basicConstant": 4.5,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2386,7 +2445,7 @@
   },
   "Gem_L_PureWhite": {
     "name": "Reinweiß",
-    "description": "Alle 10 Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. Die <color=yellow>verstärkte Wirkung</color> feuert 3 <color=yellow>Projektile</color> ab, die 20%<sprite=5> des <color=yellow>Schadens</color> als <color=yellow>Lichtschaden</color> verursachen, den sie einem einzelnen Gegnern bei der ersten Anwendung zufügt. Die Anzahl der Schüsse erhöht sich um die Anzahl der <color=yellow>Licht-Stapel</color> auf jedem Ziel.",
+    "description": "Alle 10 Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. Die <color=yellow>verstärkte Wirkung</color> feuert 3 <color=yellow>Projektile</color> ab, die  20%<sprite=5>  des <color=yellow>Schadens</color> als <color=yellow>Lichtschaden</color> verursachen, den sie einem einzelnen Gegnern bei der ersten Anwendung zufügt. Die Anzahl der Schüsse erhöht sich um die Anzahl der <color=yellow>Licht-Stapel</color> auf jedem Ziel.",
     "rawDesc": "Alle {0} Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. Die <color=yellow>verstärkte Wirkung</color> feuert {1} <color=yellow>Projektile</color> ab, die {2} des <color=yellow>Schadens</color> als <color=yellow>Lichtschaden</color> verursachen, den sie einem einzelnen Gegnern bei der ersten Anwendung zufügt. Die Anzahl der Schüsse erhöht sich um die Anzahl der <color=yellow>Licht-Stapel</color> auf jedem Ziel.",
     "rawDescVars": [
       {
@@ -2416,7 +2475,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "P0",
         "raw": "damageMultiplier",
         "scalingType": "basic",
@@ -2441,7 +2500,7 @@
   },
   "Gem_L_SolarEye": {
     "name": "Auge der Sonne",
-    "description": "Alle 20 Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color> und lässt <color=yellow>Sonnenlicht</color> auf alle bereits <color=yellow>brennenden</color> Gegner in der Nähe herabregnen. <color=yellow>Sonnenlicht</color> verursacht insgesamt <sprite=1><color=#16D7FF>360%</color><sprite=5> <color=yellow>Feuerschaden</color> über 1.5 Sek. und erhöht die <color=yellow>Brand</color>-Stapel um 9<sprite=5>.\nMein Feuerschaden über Zeit wird um 100% erhöht.",
+    "description": "Alle 20 Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color> und lässt <color=yellow>Sonnenlicht</color> auf alle bereits <color=yellow>brennenden</color> Gegner in der Nähe herabregnen. <color=yellow>Sonnenlicht</color> verursacht insgesamt  <sprite=1><color=#fff><gradient=sv_ap>360%</gradient></color><sprite=5>  <color=yellow>Feuerschaden</color> über 1.5 Sek. und erhöht die <color=yellow>Brand</color>-Stapel um  9<sprite=5> .\nMein Feuerschaden über Zeit wird um 100% erhöht.",
     "rawDesc": "Alle {0} Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color> und lässt <color=yellow>Sonnenlicht</color> auf alle bereits <color=yellow>brennenden</color> Gegner in der Nähe herabregnen. <color=yellow>Sonnenlicht</color> verursacht insgesamt {1} <color=yellow>Feuerschaden</color> über {2} Sek. und erhöht die <color=yellow>Brand</color>-Stapel um {3}.\nMein Feuerschaden über Zeit wird um {4} erhöht.",
     "rawDescVars": [
       {
@@ -2458,7 +2517,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>360%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>360%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor * tickCount",
         "scalingType": "unknown",
@@ -2472,7 +2531,7 @@
         "data": {}
       },
       {
-        "rendered": "9<sprite=5>",
+        "rendered": " 9<sprite=5> ",
         "format": "#,##0",
         "raw": "calTotalStack",
         "scalingType": "unknown",
@@ -2498,7 +2557,7 @@
   },
   "Gem_L_SuppressedArcanum": {
     "name": "Unterdrücktes Arcanum",
-    "description": "Beim <color=yellow>Wirken</color> dieser Erinnerung opferst du 5% deiner aktuellen LP und verursachst eine <color=yellow>Goldene Explosion</color>. Gegner in der <color=yellow>Explosion</color> erleiden <sprite=1><color=#16D7FF>240%</color><sprite=5> <color=yellow>Lichtschaden</color>, während Verbündete einen <color=yellow>Schild</color> von <sprite=1><color=#16D7FF>61%</color><sprite=5> erhalten, der 2.5 Sek. anhält. Wenn deine LP unter 60% liegt, erhöht sich die <color=yellow>Schildstärke</color> dieser Erinnerung um 50%.",
+    "description": "Beim <color=yellow>Wirken</color> dieser Erinnerung opferst du 5% deiner aktuellen LP und verursachst eine <color=yellow>Goldene Explosion</color>. Gegner in der <color=yellow>Explosion</color> erleiden  <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><sprite=5>  <color=yellow>Lichtschaden</color>, während Verbündete einen <color=yellow>Schild</color> von  <sprite=1><color=#fff><gradient=sv_ap>61%</gradient></color><sprite=5>  erhalten, der 2.5 Sek. anhält. Wenn deine LP unter 60% liegt, erhöht sich die <color=yellow>Schildstärke</color> dieser Erinnerung um 50%.",
     "rawDesc": "Beim <color=yellow>Wirken</color> dieser Erinnerung opferst du {0} deiner aktuellen LP und verursachst eine <color=yellow>Goldene Explosion</color>. Gegner in der <color=yellow>Explosion</color> erleiden {1} <color=yellow>Lichtschaden</color>, während Verbündete einen <color=yellow>Schild</color> von {2} erhalten, der {3} Sek. anhält. Wenn deine LP unter {4} liegt, erhöht sich die <color=yellow>Schildstärke</color> dieser Erinnerung um {5}.",
     "rawDescVars": [
       {
@@ -2515,7 +2574,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>240%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -2528,7 +2587,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>61%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>61%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -2593,7 +2652,7 @@
   },
   "Gem_R_Abyss": {
     "name": "Essenz des Abgrunds",
-    "description": "Sämtlicher <color=yellow>Schaden</color> dieser Erinnerung wird in <color=yellow>Dunkelheitsschaden</color> umgewandelt. Wenn das getroffene Ziel 3 oder mehr <color=yellow>Dunkelheitsstapel</color> hat, wird mit einer Wahrscheinlichkeit von 43%<sprite=5> ein <color=yellow>Angriffseffekt</color> ausgelöst.",
+    "description": "Sämtlicher <color=yellow>Schaden</color> dieser Erinnerung wird in <color=yellow>Dunkelheitsschaden</color> umgewandelt. Wenn das getroffene Ziel 3 oder mehr <color=yellow>Dunkelheitsstapel</color> hat, wird mit einer Wahrscheinlichkeit von  43%<sprite=5>  ein <color=yellow>Angriffseffekt</color> ausgelöst.",
     "rawDesc": "Sämtlicher <color=yellow>Schaden</color> dieser Erinnerung wird in <color=yellow>Dunkelheitsschaden</color> umgewandelt. Wenn das getroffene Ziel {0} oder mehr <color=yellow>Dunkelheitsstapel</color> hat, wird mit einer Wahrscheinlichkeit von {1} ein <color=yellow>Angriffseffekt</color> ausgelöst.",
     "rawDescVars": [
       {
@@ -2610,7 +2669,7 @@
         }
       },
       {
-        "rendered": "43%<sprite=5>",
+        "rendered": " 43%<sprite=5> ",
         "format": "P0",
         "raw": "atkEffectChance",
         "scalingType": "unknown",
@@ -2630,11 +2689,11 @@
   },
   "Gem_R_Accuracy": {
     "name": "Essenz der Präzision",
-    "description": "Wenn diese Erinnerung einem entfernten Gegner <color=yellow>Schaden</color> zufügt, wird ein <color=yellow>zusätzl. Projektil</color> abgefeuert, das 50%<sprite=5> <color=yellow>Schaden</color> verursacht. Dieser <color=yellow>Projektil</color>-<color=yellow>Schaden</color> teilt den Elementartyp mit dem ursprünglichen Schaden.",
+    "description": "Wenn diese Erinnerung einem entfernten Gegner <color=yellow>Schaden</color> zufügt, wird ein <color=yellow>zusätzl. Projektil</color> abgefeuert, das  50%<sprite=5>  <color=yellow>Schaden</color> verursacht. Dieser <color=yellow>Projektil</color>-<color=yellow>Schaden</color> teilt den Elementartyp mit dem ursprünglichen Schaden.",
     "rawDesc": "Wenn diese Erinnerung einem entfernten Gegner <color=yellow>Schaden</color> zufügt, wird ein <color=yellow>zusätzl. Projektil</color> abgefeuert, das {0} <color=yellow>Schaden</color> verursacht. Dieser <color=yellow>Projektil</color>-<color=yellow>Schaden</color> teilt den Elementartyp mit dem ursprünglichen Schaden.",
     "rawDescVars": [
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "damageRatio",
         "scalingType": "basic",
@@ -2657,7 +2716,7 @@
   },
   "Gem_R_Adventure": {
     "name": "Essenz des Abenteuers",
-    "description": "Beim <color=yellow>Betreten</color> eines <color=yellow>neuen Ortes</color> <color=yellow>erhöht sich</color> die <color=yellow>Qualität</color> einer anderen <color=yellow>Essenz</color> dieser Erinnerung um +10% und du erhältst 19<sprite=5> Gold.",
+    "description": "Beim <color=yellow>Betreten</color> eines <color=yellow>neuen Ortes</color> <color=yellow>erhöht sich</color> die <color=yellow>Qualität</color> einer anderen <color=yellow>Essenz</color> dieser Erinnerung um +10% und du erhältst  19<sprite=5>  Gold.",
     "rawDesc": "Beim <color=yellow>Betreten</color> eines <color=yellow>neuen Ortes</color> <color=yellow>erhöht sich</color> die <color=yellow>Qualität</color> einer anderen <color=yellow>Essenz</color> dieser Erinnerung um +{0} und du erhältst {1} Gold.",
     "rawDescVars": [
       {
@@ -2674,7 +2733,7 @@
         }
       },
       {
-        "rendered": "19<sprite=5>",
+        "rendered": " 19<sprite=5> ",
         "format": "#,##0",
         "raw": "goldAmount",
         "scalingType": "basic",
@@ -2697,24 +2756,24 @@
   },
   "Gem_R_Blade": {
     "name": "Essenz der Klinge",
-    "description": "Jedes Mal, wenn diese Erinnerung einen Gegner <color=yellow>trifft</color>, beschwört sie Klingen, die <sprite=2><color=#FF8A2D>58%</color><sprite=5> Schaden zufügen und 3<sprite=5> Mal zuschlagen. Kann nur einmal alle 2 Sek. pro Gegner ausgelöst werden.",
+    "description": "Jedes Mal, wenn diese Erinnerung einen Gegner <color=yellow>trifft</color>, beschwört sie Klingen, die  <sprite=2><color=#fff><gradient=sv_ad>69%</gradient></color><sprite=5>  Schaden zufügen und  3<sprite=5>  Mal zuschlagen. Kann nur einmal alle 2 Sek. pro Gegner ausgelöst werden.",
     "rawDesc": "Jedes Mal, wenn diese Erinnerung einen Gegner <color=yellow>trifft</color>, beschwört sie Klingen, die {0} Schaden zufügen und {1} Mal zuschlagen. Kann nur einmal alle {2} Sek. pro Gegner ausgelöst werden.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>58%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>69%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 0.55,
+          "basicAD": 0.66,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.0005
         }
       },
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0",
         "raw": "baseCount",
         "scalingType": "basic",
@@ -2750,11 +2809,11 @@
   },
   "Gem_R_Bleak": {
     "name": "Essenz der Trostlosigkeit",
-    "description": "Erhöht den Schaden, den diese Erinnerung Gegnern zufügt, die von <color=yellow>Kälte</color> beeinflusst sind oder unter den Effekten <color=yellow>Verlangsamt</color>, <color=yellow>Bewegungsunfähig</color> oder <color=yellow>Betäubt</color> leiden, um 50%<sprite=5>.",
+    "description": "Erhöht den Schaden, den diese Erinnerung Gegnern zufügt, die von <color=yellow>Kälte</color> beeinflusst sind oder unter den Effekten <color=yellow>Verlangsamt</color>, <color=yellow>Bewegungsunfähig</color> oder <color=yellow>Betäubt</color> leiden, um  50%<sprite=5> .",
     "rawDesc": "Erhöht den Schaden, den diese Erinnerung Gegnern zufügt, die von <color=yellow>Kälte</color> beeinflusst sind oder unter den Effekten <color=yellow>Verlangsamt</color>, <color=yellow>Bewegungsunfähig</color> oder <color=yellow>Betäubt</color> leiden, um {0}.",
     "rawDescVars": [
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -2847,16 +2906,16 @@
   },
   "Gem_R_Celestial": {
     "name": "Essenz der Himmelskörper",
-    "description": "Alle 10 Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. Wenn eine <color=yellow>verstärkte Wirkung</color> ein Ziel zum ersten Mal trifft, lässt sie 4 Sternschnuppen fallen, die <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>Lichtschaden</color> verursachen.",
+    "description": "Alle 8 Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. Wenn eine <color=yellow>verstärkte Wirkung</color> ein Ziel zum ersten Mal trifft, lässt sie 4 Sternschnuppen fallen, die  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5>  <color=yellow>Lichtschaden</color> verursachen.",
     "rawDesc": "Alle {0} Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. Wenn eine <color=yellow>verstärkte Wirkung</color> ein Ziel zum ersten Mal trifft, lässt sie {1} Sternschnuppen fallen, die {2} <color=yellow>Lichtschaden</color> verursachen.",
     "rawDescVars": [
       {
-        "rendered": "10",
+        "rendered": "8",
         "format": "#,##0.#",
         "raw": "cooldownTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 8.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2877,7 +2936,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "starDamage",
         "scalingType": "basic",
@@ -2902,7 +2961,7 @@
   },
   "Gem_R_Composure": {
     "name": "Essenz der Gelassenheit",
-    "description": "Beim <color=yellow>Wirken</color> dieser Erinnerung erhöht sich deine <color=yellow>krit. Trefferchance</color> für 5 Sek. um 30%<sprite=5>. Dieser Effekt endet vorzeitig, wenn du Schaden von Gegnern erleidest.",
+    "description": "Beim <color=yellow>Wirken</color> dieser Erinnerung erhöht sich deine <color=yellow>krit. Trefferchance</color> für 5 Sek. um  30%<sprite=5> . Dieser Effekt endet vorzeitig, wenn du Schaden von Gegnern erleidest.",
     "rawDesc": "Beim <color=yellow>Wirken</color> dieser Erinnerung erhöht sich deine <color=yellow>krit. Trefferchance</color> für {0} Sek. um {1}. Dieser Effekt endet vorzeitig, wenn du Schaden von Gegnern erleidest.",
     "rawDescVars": [
       {
@@ -2919,7 +2978,7 @@
         }
       },
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": " 30%<sprite=5> ",
         "format": "P0",
         "raw": "critBonus",
         "scalingType": "basic",
@@ -2942,11 +3001,11 @@
   },
   "Gem_R_Contempt": {
     "name": "Essenz der Verachtung",
-    "description": "Der <color=yellow>Schaden</color> dieser Erinnerung gegen Gegner steigt, je niedriger deren LP ist, bis zu einem Maximum von 50%<sprite=5> <color=yellow>Erhöhung</color>, wenn die LP bei 20% liegt.",
+    "description": "Der <color=yellow>Schaden</color> dieser Erinnerung gegen Gegner steigt, je niedriger deren LP ist, bis zu einem Maximum von  50%<sprite=5>  <color=yellow>Erhöhung</color>, wenn die LP bei 20% liegt.",
     "rawDesc": "Der <color=yellow>Schaden</color> dieser Erinnerung gegen Gegner steigt, je niedriger deren LP ist, bis zu einem Maximum von {0} <color=yellow>Erhöhung</color>, wenn die LP bei {1} liegt.",
     "rawDescVars": [
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "amp",
         "scalingType": "basic",
@@ -2982,7 +3041,7 @@
   },
   "Gem_R_Dusk": {
     "name": "Essenz der Abenddämmerung",
-    "description": "Wenn diese Erinnerung gewirkt wird, werden für 5 Sek. bei jedem <color=yellow>Angriff</color> auf einen Gegner 2 <color=yellow>Abenddämmerungs-Fragmente</color> abgefeuert, die <sprite=2><color=#FF8A2D>30%</color><sprite=5> <color=yellow>Dunkelheitsschaden</color> verursachen.",
+    "description": "Wenn diese Erinnerung gewirkt wird, werden für 5 Sek. bei jedem <color=yellow>Angriff</color> auf einen Gegner 2 <color=yellow>Abenddämmerungs-Fragmente</color> abgefeuert, die  <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5>  <color=yellow>Dunkelheitsschaden</color> verursachen.",
     "rawDesc": "Wenn diese Erinnerung gewirkt wird, werden für {0} Sek. bei jedem <color=yellow>Angriff</color> auf einen Gegner {1} <color=yellow>Abenddämmerungs-Fragmente</color> abgefeuert, die {2} <color=yellow>Dunkelheitsschaden</color> verursachen.",
     "rawDescVars": [
       {
@@ -3012,7 +3071,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>30%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3036,13 +3095,73 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Epiphany": {
+    "name": "Essenz der Erleuchtung",
+    "description": "Beim <color=yellow>Wirken</color> dieser Erinnerung wird deine <color=yellow>Fähigkeitsstärke</color> 5 Sek. lang um  22<sprite=5>  erhöht. Handelt es sich bei dieser Erinnerung um eine <color=yellow>ultimative Fähigkeit</color>, werden  21%<sprite=5>  der <color=yellow>Abklingzeit</color> sofort zurückerstattet. Kann nur einmal alle 10 Sek. ausgelöst werden.",
+    "rawDesc": "Beim <color=yellow>Wirken</color> dieser Erinnerung wird deine <color=yellow>Fähigkeitsstärke</color> {0} Sek. lang um {1} erhöht. Handelt es sich bei dieser Erinnerung um eine <color=yellow>ultimative Fähigkeit</color>, werden {2} der <color=yellow>Abklingzeit</color> sofort zurückerstattet. Kann nur einmal alle {3} Sek. ausgelöst werden.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 22<sprite=5> ",
+        "format": "#,##0",
+        "raw": "apEmpowerAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": " 21%<sprite=5> ",
+        "format": "P0",
+        "raw": "refundCooldownRatio",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Epiphany.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Flow": {
     "name": "Essenz des Flusses",
-    "description": "Wenn du mit einer beliebigen Erinnerung <color=yellow>Lichtschaden</color> verursachst, wird die <color=yellow>Abklingzeit</color> dieser Erinnerung um 6%<sprite=5> reduziert. Bei ultimativen Fähigkeiten beträgt die Wirkung nur 40%. Die <color=yellow>Abklingzeitreduzierung</color>, die diese Erinnerung erhält, wird auch auf ausgerüstete <color=yellow>Essenzen</color> angewendet.",
+    "description": "Wenn du mit einer beliebigen Erinnerung <color=yellow>Lichtschaden</color> verursachst, wird die <color=yellow>Abklingzeit</color> dieser Erinnerung um  6%<sprite=5>  reduziert. Bei ultimativen Fähigkeiten beträgt die Wirkung nur 40%. Die <color=yellow>Abklingzeitreduzierung</color>, die diese Erinnerung erhält, wird auch auf ausgerüstete <color=yellow>Essenzen</color> angewendet.",
     "rawDesc": "Wenn du mit einer beliebigen Erinnerung <color=yellow>Lichtschaden</color> verursachst, wird die <color=yellow>Abklingzeit</color> dieser Erinnerung um {0} reduziert. Bei ultimativen Fähigkeiten beträgt die Wirkung nur {1}. Die <color=yellow>Abklingzeitreduzierung</color>, die diese Erinnerung erhält, wird auch auf ausgerüstete <color=yellow>Essenzen</color> angewendet.",
     "rawDescVars": [
       {
-        "rendered": "6%<sprite=5>",
+        "rendered": " 6%<sprite=5> ",
         "format": "P0",
         "raw": "reduceRatio",
         "scalingType": "basic",
@@ -3080,11 +3199,11 @@
   },
   "Gem_R_Frost": {
     "name": "Essenz des Frosts",
-    "description": "Wenn diese Erinnerung <color=yellow>Kälteschaden</color> verursacht, fügt sie zusätzlich <color=yellow>Kälteschaden</color> in Höhe von 10%<sprite=5> meiner <color=yellow>max. LP</color> zu und <color=yellow>betäubt</color> kurzzeitig. Dies kann nur einmal alle 5 Sek. pro Gegner ausgelöst werden. Bei jeder Auslösung erhöht sich meine <color=yellow>max. LP</color> permanent um 1.",
+    "description": "Wenn diese Erinnerung <color=yellow>Kälteschaden</color> verursacht, fügt sie zusätzlich <color=yellow>Kälteschaden</color> in Höhe von  10%<sprite=5>  meiner <color=yellow>max. LP</color> zu und <color=yellow>betäubt</color> kurzzeitig. Dies kann nur einmal alle 5 Sek. pro Gegner ausgelöst werden. Bei jeder Auslösung erhöht sich meine <color=yellow>max. LP</color> permanent um 1.",
     "rawDesc": "Wenn diese Erinnerung <color=yellow>Kälteschaden</color> verursacht, fügt sie zusätzlich <color=yellow>Kälteschaden</color> in Höhe von {0} meiner <color=yellow>max. LP</color> zu und <color=yellow>betäubt</color> kurzzeitig. Dies kann nur einmal alle {1} Sek. pro Gegner ausgelöst werden. Bei jeder Auslösung erhöht sich meine <color=yellow>max. LP</color> permanent um {2}.",
     "rawDescVars": [
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": " 10%<sprite=5> ",
         "format": "P0",
         "raw": "damageRatio",
         "scalingType": "basic",
@@ -3136,11 +3255,11 @@
   },
   "Gem_R_Glaciate": {
     "name": "Essenz des Eisausbruchs",
-    "description": "Beim <color=yellow>Wirken</color> dieser Erinnerung wird Kälte freigesetzt, die Gegnern <sprite=1><color=#16D7FF>160%</color><sprite=5> <color=yellow>Kälteschaden</color> zufügt. Mit höherer Qualität vergrößert sich der Wirkungsbereich.",
+    "description": "Beim <color=yellow>Wirken</color> dieser Erinnerung wird Kälte freigesetzt, die Gegnern  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5>  <color=yellow>Kälteschaden</color> zufügt. Mit höherer Qualität vergrößert sich der Wirkungsbereich.",
     "rawDesc": "Beim <color=yellow>Wirken</color> dieser Erinnerung wird Kälte freigesetzt, die Gegnern {0} <color=yellow>Kälteschaden</color> zufügt. Mit höherer Qualität vergrößert sich der Wirkungsbereich.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3165,7 +3284,7 @@
   },
   "Gem_R_Insatiable": {
     "name": "Essenz der Unersättlichkeit",
-    "description": "Nachdem diese Erinnerung gewirkt wurde, erhöht sich die <color=yellow>AK</color> für 5 Sek. um 15%<sprite=5> und bei jedem <color=yellow>Angriff</color> wird 6<sprite=5> LP <color=yellow>regeneriert</color>.",
+    "description": "Nachdem diese Erinnerung gewirkt wurde, erhöht sich die <color=yellow>AK</color> für 5 Sek. um  15%<sprite=5>  und bei jedem <color=yellow>Angriff</color> wird  6<sprite=5>  LP <color=yellow>regeneriert</color>.",
     "rawDesc": "Nachdem diese Erinnerung gewirkt wurde, erhöht sich die <color=yellow>AK</color> für {0} Sek. um {1} und bei jedem <color=yellow>Angriff</color> wird {2} LP <color=yellow>regeneriert</color>.",
     "rawDescVars": [
       {
@@ -3182,7 +3301,7 @@
         }
       },
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "bonusAttackDamagePercentage",
         "scalingType": "basic",
@@ -3195,7 +3314,7 @@
         }
       },
       {
-        "rendered": "6<sprite=5>",
+        "rendered": " 6<sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -3221,11 +3340,11 @@
   },
   "Gem_R_Momentum": {
     "name": "Essenz des Schwungs",
-    "description": "Jedes Mal, wenn du einen Gegner <color=yellow>angreifst</color>, wird die <color=yellow>Abklingzeit</color> dieser Erinnerung um 0.4<sprite=5> Sek. <color=yellow>reduziert</color>.",
+    "description": "Jedes Mal, wenn du einen Gegner <color=yellow>angreifst</color>, wird die <color=yellow>Abklingzeit</color> dieser Erinnerung um  0.4<sprite=5>  Sek. <color=yellow>reduziert</color>.",
     "rawDesc": "Jedes Mal, wenn du einen Gegner <color=yellow>angreifst</color>, wird die <color=yellow>Abklingzeit</color> dieser Erinnerung um {0} Sek. <color=yellow>reduziert</color>.",
     "rawDescVars": [
       {
-        "rendered": "0.4<sprite=5>",
+        "rendered": " 0.4<sprite=5> ",
         "format": "#,##0.#",
         "raw": "reductionAmount",
         "scalingType": "basic",
@@ -3248,9 +3367,36 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Mortality": {
+    "name": "Essenz der Sterblichkeit",
+    "description": "Wenn diese Erinnerung einen Gegner <color=yellow>trifft</color>, besteht eine Chance von  1.2%<sprite=5> , Nicht-Boss-Gegner <color=yellow>hinzurichten</color>.",
+    "rawDesc": "Wenn diese Erinnerung einen Gegner <color=yellow>trifft</color>, besteht eine Chance von {0}, Nicht-Boss-Gegner <color=yellow>hinzurichten</color>.",
+    "rawDescVars": [
+      {
+        "rendered": " 1.2%<sprite=5> ",
+        "format": "#,##0.#%",
+        "raw": "killChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.006,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Mortality.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_NightSky": {
     "name": "Essenz des Nachthimmels",
-    "description": "Jedes Mal, wenn diese Erinnerung einen Gegner <color=yellow>trifft</color>, erhöht sich deine <color=yellow>Angriffstempo</color> für 3 Sek. um 10%<sprite=5> bis max. 20%<sprite=5>. Bei <color=yellow>Dunkelheitsschaden</color> kann sie bis zu 40%<sprite=5> erhöht werden. Jedes Mal, wenn du einen Gegner <color=yellow>angreifst</color>, wird die Dauer dieses Effekts zurückgesetzt.",
+    "description": "Jedes Mal, wenn diese Erinnerung einen Gegner <color=yellow>trifft</color>, erhöht sich deine <color=yellow>Angriffstempo</color> für 3 Sek. um  10%<sprite=5>  bis max.  20%<sprite=5> . Bei <color=yellow>Dunkelheitsschaden</color> kann sie bis zu  40%<sprite=5>  erhöht werden. Jedes Mal, wenn du einen Gegner <color=yellow>angreifst</color>, wird die Dauer dieses Effekts zurückgesetzt.",
     "rawDesc": "Jedes Mal, wenn diese Erinnerung einen Gegner <color=yellow>trifft</color>, erhöht sich deine <color=yellow>Angriffstempo</color> für {0} Sek. um {1} bis max. {2}. Bei <color=yellow>Dunkelheitsschaden</color> kann sie bis zu {3} erhöht werden. Jedes Mal, wenn du einen Gegner <color=yellow>angreifst</color>, wird die Dauer dieses Effekts zurückgesetzt.",
     "rawDescVars": [
       {
@@ -3267,7 +3413,7 @@
         }
       },
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": " 10%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "perHitAtkSpd",
         "scalingType": "basic",
@@ -3280,7 +3426,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "maxAtkSpdNormal",
         "scalingType": "basic",
@@ -3293,7 +3439,7 @@
         }
       },
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "maxAtkSpdDark",
         "scalingType": "basic",
@@ -3319,7 +3465,7 @@
   },
   "Gem_R_Panic": {
     "name": "Essenz der Panik",
-    "description": "Wenn du <color=yellow>Schaden</color> erleidest, erhält diese Erinnerung für 3 Sek. 30<sprite=5> <color=yellow>Erinnerungstempo</color> und deine <color=yellow>Bewegungstempo</color> erhöht sich um 20%<sprite=5>.",
+    "description": "Wenn du <color=yellow>Schaden</color> erleidest, erhält diese Erinnerung für 3 Sek.  30<sprite=5>  <color=yellow>Erinnerungstempo</color> und deine <color=yellow>Bewegungstempo</color> erhöht sich um  20%<sprite=5> .",
     "rawDesc": "Wenn du <color=yellow>Schaden</color> erleidest, erhält diese Erinnerung für {0} Sek. {1} <color=yellow>Erinnerungstempo</color> und deine <color=yellow>Bewegungstempo</color> erhöht sich um {2}.",
     "rawDescVars": [
       {
@@ -3336,7 +3482,7 @@
         }
       },
       {
-        "rendered": "30<sprite=5>",
+        "rendered": " 30<sprite=5> ",
         "format": "#,##0",
         "raw": "memoryHaste",
         "scalingType": "basic",
@@ -3349,7 +3495,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -3374,7 +3520,7 @@
   },
   "Gem_R_Rejuvenation": {
     "name": "Essenz der Verjüngung",
-    "description": "Alle 15 Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. <color=yellow>Verstärkte Wirkung</color> <color=yellow>regeneriert</color> <color=yellow>deine</color> <color=yellow>LP</color> um 14%<sprite=5> des <color=yellow>Schadens</color>, der innerhalb von 1.5 Sek. nach dem Wirken verursacht wird.",
+    "description": "Alle 15 Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. <color=yellow>Verstärkte Wirkung</color> <color=yellow>regeneriert</color> <color=yellow>deine</color> <color=yellow>LP</color> um  14%<sprite=5>  des <color=yellow>Schadens</color>, der innerhalb von 1.5 Sek. nach dem Wirken verursacht wird.",
     "rawDesc": "Alle {0} Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. <color=yellow>Verstärkte Wirkung</color> <color=yellow>regeneriert</color> <color=yellow>deine</color> <color=yellow>LP</color> um {1} des <color=yellow>Schadens</color>, der innerhalb von {2} Sek. nach dem Wirken verursacht wird.",
     "rawDescVars": [
       {
@@ -3391,7 +3537,7 @@
         }
       },
       {
-        "rendered": "14%<sprite=5>",
+        "rendered": " 14%<sprite=5> ",
         "format": "P0",
         "raw": "conversionRatio",
         "scalingType": "basic",
@@ -3429,18 +3575,18 @@
   },
   "Gem_R_Ricochet": {
     "name": "Essenz des Abprallens",
-    "description": "Der <color=yellow>Schaden</color> oder die <color=yellow>Heilung</color> dieser Erinnerung springt mit einer Wahrscheinlichkeit von 50%<sprite=5> auf ein anderes Ziel in der Nähe über und verursacht 90%<sprite=5> <color=yellow>Schaden</color> oder <color=yellow>Heilung</color>. Bei <color=yellow>Schaden</color> teilt der abgeprallte Effekt den Elementartyp des ursprünglichen Schadens.",
+    "description": "Der <color=yellow>Schaden</color> oder die <color=yellow>Heilung</color> dieser Erinnerung springt mit einer Wahrscheinlichkeit von  50%<sprite=5>  auf ein anderes Ziel in der Nähe über und verursacht  90%<sprite=5>  <color=yellow>Schaden</color> oder <color=yellow>Heilung</color>. Bei <color=yellow>Schaden</color> teilt der abgeprallte Effekt den Elementartyp des ursprünglichen Schadens.",
     "rawDesc": "Der <color=yellow>Schaden</color> oder die <color=yellow>Heilung</color> dieser Erinnerung springt mit einer Wahrscheinlichkeit von {0} auf ein anderes Ziel in der Nähe über und verursacht {1} <color=yellow>Schaden</color> oder <color=yellow>Heilung</color>. Bei <color=yellow>Schaden</color> teilt der abgeprallte Effekt den Elementartyp des ursprünglichen Schadens.",
     "rawDescVars": [
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "ricochetChance",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "90%<sprite=5>",
+        "rendered": " 90%<sprite=5> ",
         "format": "P0",
         "raw": "ricochetRatio",
         "scalingType": "basic",
@@ -3463,11 +3609,11 @@
   },
   "Gem_R_Rigidity": {
     "name": "Essenz der Starre",
-    "description": "Wenn diese Erinnerung einen Gegner <color=yellow>trifft</color>, erhältst du ein <color=yellow>Schutzschild</color> von 9<sprite=5>, das 2 Sek. lang anhält. Bei <color=yellow>Kälteschaden</color> wird dieser Effekt um 80% erhöht.",
+    "description": "Wenn diese Erinnerung einen Gegner <color=yellow>trifft</color>, erhältst du ein <color=yellow>Schutzschild</color> von  9<sprite=5> , das 2 Sek. lang anhält. Bei <color=yellow>Kälteschaden</color> wird dieser Effekt um 80% erhöht.",
     "rawDesc": "Wenn diese Erinnerung einen Gegner <color=yellow>trifft</color>, erhältst du ein <color=yellow>Schutzschild</color> von {0}, das {1} Sek. lang anhält. Bei <color=yellow>Kälteschaden</color> wird dieser Effekt um {2} erhöht.",
     "rawDescVars": [
       {
-        "rendered": "9<sprite=5>",
+        "rendered": " 9<sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -3512,11 +3658,11 @@
   },
   "Gem_R_Scorched": {
     "name": "Essenz der Versengung",
-    "description": "Wenn diese Erinnerung <color=yellow>gewirkt</color> wird, lässt sie 3<sprite=5> <color=yellow>Feuerkugeln</color> auf nahe Gegner fallen, die <sprite=1><color=#16D7FF>47%</color><sprite=5> <color=yellow>Feuerschaden</color> verursachen.",
+    "description": "Wenn diese Erinnerung <color=yellow>gewirkt</color> wird, lässt sie  3<sprite=5>  <color=yellow>Feuerkugeln</color> auf nahe Gegner fallen, die  <sprite=1><color=#fff><gradient=sv_ap>47%</gradient></color><sprite=5>  <color=yellow>Feuerschaden</color> verursachen.",
     "rawDesc": "Wenn diese Erinnerung <color=yellow>gewirkt</color> wird, lässt sie {0} <color=yellow>Feuerkugeln</color> auf nahe Gegner fallen, die {1} <color=yellow>Feuerschaden</color> verursachen.",
     "rawDescVars": [
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0",
         "raw": "maxCount",
         "scalingType": "basic",
@@ -3529,7 +3675,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>47%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>47%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -3554,7 +3700,7 @@
   },
   "Gem_R_Shock": {
     "name": "Essenz des Schocks",
-    "description": "Jeder 4. <color=yellow>Basisangriff</color> wird <color=yellow>verstärkt</color> und feuert einen <color=yellow>Blitzschlag</color> ab, der zwischen Gegnern springt und bis zu 2 Mal <sprite=1><color=#16D7FF>40%</color><sprite=5> <color=yellow>Lichtschaden</color> verursacht. Pro 20% <color=yellow>krit. Trefferchance</color> erhöht sich die max. Anzahl der Treffer um 1.",
+    "description": "Jeder 4. <color=yellow>Basisangriff</color> wird <color=yellow>verstärkt</color> und feuert einen <color=yellow>Blitzschlag</color> ab, der zwischen Gegnern springt und bis zu 2 Mal  <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5>  <color=yellow>Lichtschaden</color> verursacht. Pro 20% <color=yellow>krit. Trefferchance</color> erhöht sich die max. Anzahl der Treffer um 1.",
     "rawDesc": "Jeder 4. <color=yellow>Basisangriff</color> wird <color=yellow>verstärkt</color> und feuert einen <color=yellow>Blitzschlag</color> ab, der zwischen Gegnern springt und bis zu {0} Mal {1} <color=yellow>Lichtschaden</color> verursacht. Pro {2} <color=yellow>krit. Trefferchance</color> erhöht sich die max. Anzahl der Treffer um 1.",
     "rawDescVars": [
       {
@@ -3571,7 +3717,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>40%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "chainDamage",
         "scalingType": "basic",
@@ -3610,11 +3756,11 @@
   },
   "Gem_R_Snow": {
     "name": "Essenz des Schnees",
-    "description": "Erhalte einen Schild von 40<sprite=5>, der sich auflädt, wenn du 5 Sek. lang keinen Schaden erleidest. Während du einen Schild hast, wirfst du regelmäßig Schneebälle auf zufällige Gegner in der Nähe und verursachst <sprite=1><color=#16D7FF>80%</color><sprite=5> <color=yellow>Kälteschaden</color>. Je stärker dein Schild, desto schneller werden die Schneebälle abgefeuert.",
+    "description": "Erhalte einen Schild von  40<sprite=5> , der sich auflädt, wenn du 5 Sek. lang keinen Schaden erleidest. Während du einen Schild hast, wirfst du regelmäßig Schneebälle auf zufällige Gegner in der Nähe und verursachst  <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5>  <color=yellow>Kälteschaden</color>. Je stärker dein Schild, desto schneller werden die Schneebälle abgefeuert.",
     "rawDesc": "Erhalte einen Schild von {0}, der sich auflädt, wenn du {1} Sek. lang keinen Schaden erleidest. Während du einen Schild hast, wirfst du regelmäßig Schneebälle auf zufällige Gegner in der Nähe und verursachst {2} <color=yellow>Kälteschaden</color>. Je stärker dein Schild, desto schneller werden die Schneebälle abgefeuert.",
     "rawDescVars": [
       {
-        "rendered": "40<sprite=5>",
+        "rendered": " 40<sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -3640,7 +3786,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>80%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3666,11 +3812,11 @@
   },
   "Gem_R_Spiral": {
     "name": "Essenz des Wirbels",
-    "description": "Feuert periodisch Feuerkugeln auf zufällige Gegner in der Nähe, die <sprite=1><color=#16D7FF>90%</color><sprite=5> <color=yellow>Feuerschaden</color> verursachen. Je höher die Qualität, desto höher die Feuerrate.",
+    "description": "Feuert periodisch Feuerkugeln auf zufällige Gegner in der Nähe, die  <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5>  <color=yellow>Feuerschaden</color> verursachen. Je höher die Qualität, desto höher die Feuerrate.",
     "rawDesc": "Feuert periodisch Feuerkugeln auf zufällige Gegner in der Nähe, die {0} <color=yellow>Feuerschaden</color> verursachen. Je höher die Qualität, desto höher die Feuerrate.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3695,7 +3841,7 @@
   },
   "Gem_R_Stillness": {
     "name": "Essenz der Stille",
-    "description": "Alle 5 Sekunden wird das <color=yellow>Wirken</color> dieser Erinnerung <color=yellow>verstärkt</color>. Beim <color=yellow>verstärkten Wirken</color> wird Licht ausgestrahlt, das Gegnern <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>Lichtschaden</color> zufügt und sie 2 Sekunden lang <color=yellow>betäubt</color>. Mit steigender Qualität vergrößert sich der Ausstrahlungsbereich.",
+    "description": "Alle 5 Sekunden wird das <color=yellow>Wirken</color> dieser Erinnerung <color=yellow>verstärkt</color>. Beim <color=yellow>verstärkten Wirken</color> wird Licht ausgestrahlt, das Gegnern  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  <color=yellow>Lichtschaden</color> zufügt und sie 2 Sekunden lang <color=yellow>betäubt</color>. Mit steigender Qualität vergrößert sich der Ausstrahlungsbereich.",
     "rawDesc": "Alle {0} Sekunden wird das <color=yellow>Wirken</color> dieser Erinnerung <color=yellow>verstärkt</color>. Beim <color=yellow>verstärkten Wirken</color> wird Licht ausgestrahlt, das Gegnern {1} <color=yellow>Lichtschaden</color> zufügt und sie {2} Sekunden lang <color=yellow>betäubt</color>. Mit steigender Qualität vergrößert sich der Ausstrahlungsbereich.",
     "rawDescVars": [
       {
@@ -3712,7 +3858,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3751,7 +3897,7 @@
   },
   "Gem_R_Wealth": {
     "name": "Essenz des Reichtums",
-    "description": "Wenn ein Gegner, der durch diese Erinnerung Schaden erleidet, innerhalb von 2 Sek. getötet wird, lässt er 1.7<sprite=5> Gold fallen. Gold wird mit allen Reisenden geteilt.",
+    "description": "Wenn ein Gegner, der durch diese Erinnerung Schaden erleidet, innerhalb von 2 Sek. getötet wird, lässt er  1.7<sprite=5>  Gold fallen. Gold wird mit allen Reisenden geteilt.",
     "rawDesc": "Wenn ein Gegner, der durch diese Erinnerung Schaden erleidet, innerhalb von {0} Sek. getötet wird, lässt er {1} Gold fallen. Gold wird mit allen Reisenden geteilt.",
     "rawDescVars": [
       {
@@ -3768,7 +3914,7 @@
         }
       },
       {
-        "rendered": "1.7<sprite=5>",
+        "rendered": " 1.7<sprite=5> ",
         "format": "###,0.#",
         "raw": "killGold",
         "scalingType": "basic",
@@ -3791,11 +3937,11 @@
   },
   "Gem_R_Wound": {
     "name": "Essenz der Wunde",
-    "description": "Wenn diese Erinnerung einem Gegner Schaden zufügt, wird ein <color=yellow>Zeichen</color> angebracht. Bei jedem <color=yellow>Angriff</color> auf das <color=yellow>Zeichen</color> wird <sprite=1><color=#16D7FF>44%</color><sprite=5> <color=yellow>Schaden</color> verursacht. Nach 3 Angriffen explodiert das <color=yellow>Zeichen</color> und fügt allen Gegnern in der Nähe <sprite=1><color=#16D7FF>275%</color><sprite=5> <color=yellow>Schaden</color> zu.",
+    "description": "Wenn diese Erinnerung einem Gegner Schaden zufügt, wird ein <color=yellow>Zeichen</color> angebracht. Bei jedem <color=yellow>Angriff</color> auf das <color=yellow>Zeichen</color> wird  <sprite=1><color=#fff><gradient=sv_ap>44%</gradient></color><sprite=5>  <color=yellow>Schaden</color> verursacht. Nach 3 Angriffen explodiert das <color=yellow>Zeichen</color> und fügt allen Gegnern in der Nähe  <sprite=1><color=#fff><gradient=sv_ap>275%</gradient></color><sprite=5>  <color=yellow>Schaden</color> zu.",
     "rawDesc": "Wenn diese Erinnerung einem Gegner Schaden zufügt, wird ein <color=yellow>Zeichen</color> angebracht. Bei jedem <color=yellow>Angriff</color> auf das <color=yellow>Zeichen</color> wird {0} <color=yellow>Schaden</color> verursacht. Nach {1} Angriffen explodiert das <color=yellow>Zeichen</color> und fügt allen Gegnern in der Nähe {2} <color=yellow>Schaden</color> zu.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>44%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>44%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "hitDamage",
         "scalingType": "basic",
@@ -3821,7 +3967,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>275%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>275%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "explodeDamage",
         "scalingType": "basic",
@@ -3846,7 +3992,7 @@
   },
   "Gem_U_EternalFlame": {
     "name": "Ewige Flamme",
-    "description": "Wenn du einem Gegner mit dieser Erinnerung <color=yellow>Feuerschaden</color> zufügst, wird der Fluch <color=yellow>Ewige Flamme</color> für 5 Sek. auf das Ziel angewendet. Jedes Mal, wenn ein Ziel mit dem Fluch <color=yellow>Ewige Flamme</color> <color=yellow>Schaden</color> von dir erleidet, erhöht sich sein <color=yellow>Brand</color>-Stapel um 1.\nJeder Schaden, den diese Erinnerung einem Gegner zufügt, wird pro <color=yellow>Brand</color>-Stapel des Ziels um 2.0%<sprite=5> erhöht.",
+    "description": "Wenn du einem Gegner mit dieser Erinnerung <color=yellow>Feuerschaden</color> zufügst, wird der Fluch <color=yellow>Ewige Flamme</color> für 5 Sek. auf das Ziel angewendet. Jedes Mal, wenn ein Ziel mit dem Fluch <color=yellow>Ewige Flamme</color> <color=yellow>Schaden</color> von dir erleidet, erhöht sich sein <color=yellow>Brand</color>-Stapel um 1.\nJeder Schaden, den diese Erinnerung einem Gegner zufügt, wird pro <color=yellow>Brand</color>-Stapel des Ziels um  2.0%<sprite=5>  erhöht.",
     "rawDesc": "Wenn du einem Gegner mit dieser Erinnerung <color=yellow>Feuerschaden</color> zufügst, wird der Fluch <color=yellow>Ewige Flamme</color> für {0} Sek. auf das Ziel angewendet. Jedes Mal, wenn ein Ziel mit dem Fluch <color=yellow>Ewige Flamme</color> <color=yellow>Schaden</color> von dir erleidet, erhöht sich sein <color=yellow>Brand</color>-Stapel um 1.\nJeder Schaden, den diese Erinnerung einem Gegner zufügt, wird pro <color=yellow>Brand</color>-Stapel des Ziels um {1} erhöht.",
     "rawDescVars": [
       {
@@ -3863,7 +4009,7 @@
         }
       },
       {
-        "rendered": "2.0%<sprite=5>",
+        "rendered": " 2.0%<sprite=5> ",
         "format": "#,##0.0%",
         "raw": "ampPerFireStack",
         "scalingType": "basic",
@@ -3888,7 +4034,7 @@
   },
   "Gem_U_GlacialCore": {
     "name": "Gletscherkern",
-    "description": "Einmal alle 5 Sek., wenn du mit dieser Erinnerung <color=yellow>Schaden</color> verursachst, <color=yellow>regenerierst</color> du <color=yellow>LP</color> in Höhe von 3.6%<sprite=5> deiner max. LP. Bei <color=yellow>Kälteschaden</color> erhöht sich dieser Effekt um 100%.\nVon jeder <color=yellow>LP-Regeneration</color>, die du erhältst, werden 272%<sprite=5> als <color=yellow>Eisfragment</color> auf nahe Gegner abgefeuert, die <color=yellow>Kälteschaden</color> verursachen.",
+    "description": "Einmal alle 5 Sek., wenn du mit dieser Erinnerung <color=yellow>Schaden</color> verursachst, <color=yellow>regenerierst</color> du <color=yellow>LP</color> in Höhe von  3.6%<sprite=5>  deiner max. LP. Bei <color=yellow>Kälteschaden</color> erhöht sich dieser Effekt um 100%.\nVon jeder <color=yellow>LP-Regeneration</color>, die du erhältst, werden  272%<sprite=5>  als <color=yellow>Eisfragment</color> auf nahe Gegner abgefeuert, die <color=yellow>Kälteschaden</color> verursachen.",
     "rawDesc": "Einmal alle {0} Sek., wenn du mit dieser Erinnerung <color=yellow>Schaden</color> verursachst, <color=yellow>regenerierst</color> du <color=yellow>LP</color> in Höhe von {1} deiner max. LP. Bei <color=yellow>Kälteschaden</color> erhöht sich dieser Effekt um {2}.\nVon jeder <color=yellow>LP-Regeneration</color>, die du erhältst, werden {3} als <color=yellow>Eisfragment</color> auf nahe Gegner abgefeuert, die <color=yellow>Kälteschaden</color> verursachen.",
     "rawDescVars": [
       {
@@ -3905,7 +4051,7 @@
         }
       },
       {
-        "rendered": "3.6%<sprite=5>",
+        "rendered": " 3.6%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "healMaxHealthRatio",
         "scalingType": "basic",
@@ -3931,7 +4077,7 @@
         }
       },
       {
-        "rendered": "272%<sprite=5>",
+        "rendered": " 272%<sprite=5> ",
         "format": "P0",
         "raw": "healToDamageRatio",
         "scalingType": "basic",
@@ -3957,7 +4103,7 @@
   },
   "Gem_U_LastStarlight": {
     "name": "Letztes Sternenlicht",
-    "description": "Alle 15 Sek. wird das <color=yellow>Wirken</color> dieser Erinnerung <color=yellow>verstärkt</color>. Bei einem <color=yellow>verstärkten Wirken</color> wird am Wirkungsort ein Schwarzes Loch erschaffen, das 5 Sek. lang <sprite=1><color=#16D7FF>160%</color><sprite=5> <color=yellow>Lichtschaden</color> pro Sekunde verursacht. \nHandelt es sich nicht um eine auf einen Ort zielende Erinnerung, wird das Schwarze Loch an der Position des nächsten Gegners in Blickrichtung erschaffen.",
+    "description": "Alle 15 Sek. wird das <color=yellow>Wirken</color> dieser Erinnerung <color=yellow>verstärkt</color>. Bei einem <color=yellow>verstärkten Wirken</color> wird am Wirkungsort ein Schwarzes Loch erschaffen, das 5 Sek. lang  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5>  <color=yellow>Lichtschaden</color> pro Sekunde verursacht. \nHandelt es sich nicht um eine auf einen Ort zielende Erinnerung, wird das Schwarze Loch an der Position des nächsten Gegners in Blickrichtung erschaffen.",
     "rawDesc": "Alle {0} Sek. wird das <color=yellow>Wirken</color> dieser Erinnerung <color=yellow>verstärkt</color>. Bei einem <color=yellow>verstärkten Wirken</color> wird am Wirkungsort ein Schwarzes Loch erschaffen, das {1} Sek. lang {2} <color=yellow>Lichtschaden</color> pro Sekunde verursacht. \nHandelt es sich nicht um eine auf einen Ort zielende Erinnerung, wird das Schwarze Loch an der Position des nächsten Gegners in Blickrichtung erschaffen.",
     "rawDescVars": [
       {
@@ -3987,7 +4133,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "tickDamage/tickInterval",
         "scalingType": "unknown",

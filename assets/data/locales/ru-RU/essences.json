@@ -14,11 +14,11 @@
   },
   "Gem_C_Charcoal": {
     "name": "Эссенция угля",
-    "description": "Когда это Воспоминание <color=yellow>попадает</color> по врагу, выстреливает осколком угля, наносящим <sprite=1><color=#16D7FF>60%</color><sprite=5> <color=yellow>урона</color>. Если цель уже <color=yellow>горит</color>, вместо этого наносит <sprite=1><color=#16D7FF>100%</color><sprite=5> <color=yellow>урона от огня</color>.",
+    "description": "Когда это Воспоминание <color=yellow>попадает</color> по врагу, выстреливает осколком угля, наносящим  <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5>  <color=yellow>урона</color>. Если цель уже <color=yellow>горит</color>, вместо этого наносит  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5>  <color=yellow>урона от огня</color>.",
     "rawDesc": "Когда это Воспоминание <color=yellow>попадает</color> по врагу, выстреливает осколком угля, наносящим {0} <color=yellow>урона</color>. Если цель уже <color=yellow>горит</color>, вместо этого наносит {1} <color=yellow>урона от огня</color>.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "normalDamage",
         "scalingType": "basic",
@@ -31,7 +31,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "fireDamage",
         "scalingType": "basic",
@@ -56,11 +56,11 @@
   },
   "Gem_C_Confidence": {
     "name": "Эссенция уверенности",
-    "description": "Увеличивает наносимый этим Воспоминанием урон на 40%<sprite=5>.",
-    "rawDesc": "Увеличивает наносимый этим Воспоминанием урон на {0}.",
+    "description": "Увеличивает наносимый этим Воспоминанием урон по ближайшим врагам на  40%<sprite=5> .",
+    "rawDesc": "Увеличивает наносимый этим Воспоминанием урон по ближайшим врагам на {0}.",
     "rawDescVars": [
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -85,11 +85,11 @@
   },
   "Gem_C_Efficiency": {
     "name": "Эссенция эффективности",
-    "description": "Это Воспоминание получает 36<sprite=5> <color=yellow>ускорения воспоминания</color>, снижение <color=yellow>времени перезарядки</color> на 26%<sprite=5>.",
+    "description": "Это Воспоминание получает  36<sprite=5>  <color=yellow>ускорения воспоминания</color>, снижение <color=yellow>времени перезарядки</color> на  26%<sprite=5> .",
     "rawDesc": "Это Воспоминание получает {0} <color=yellow>ускорения воспоминания</color>, снижение <color=yellow>времени перезарядки</color> на {1}.",
     "rawDescVars": [
       {
-        "rendered": "36<sprite=5>",
+        "rendered": " 36<sprite=5> ",
         "format": "#,##0",
         "raw": "skillHaste",
         "scalingType": "basic",
@@ -102,7 +102,7 @@
         }
       },
       {
-        "rendered": "26%<sprite=5>",
+        "rendered": " 26%<sprite=5> ",
         "format": "P0",
         "raw": "reducedRatio",
         "scalingType": "unknown",
@@ -119,11 +119,11 @@
   },
   "Gem_C_Guidance": {
     "name": "Эссенция проводника",
-    "description": "Увеличивает <color=yellow>исцеление</color> этого Воспоминания на 40%<sprite=5>. Преобразует 30% избыточного исцеления от этого Воспоминания в <color=yellow>щит</color> на 2 с.",
-    "rawDesc": "Увеличивает <color=yellow>исцеление</color> этого Воспоминания на {0}. Преобразует {1} избыточного исцеления от этого Воспоминания в <color=yellow>щит</color> на {2} с.",
+    "description": "Увеличивает <color=yellow>исцеление</color> этого Воспоминания на  40%<sprite=5> . Преобразует 30% избыточного исцеления от этого Воспоминания в <color=yellow>щит</color> на 2 с., который накладывается на вас.",
+    "rawDesc": "Увеличивает <color=yellow>исцеление</color> этого Воспоминания на {0}. Преобразует {1} избыточного исцеления от этого Воспоминания в <color=yellow>щит</color> на {2} с., который накладывается на вас.",
     "rawDescVars": [
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "healAmp",
         "scalingType": "basic",
@@ -175,7 +175,7 @@
   },
   "Gem_C_Lethality": {
     "name": "Эссенция критического удара",
-    "description": "Увеличивает урон, наносимый этим Воспоминанием врагам с ОЗ 70% и больше, на 60%<sprite=5>.",
+    "description": "Увеличивает урон, наносимый этим Воспоминанием врагам с ОЗ 70% и больше, на  60%<sprite=5> .",
     "rawDesc": "Увеличивает урон, наносимый этим Воспоминанием врагам с ОЗ {0} и больше, на {1}.",
     "rawDescVars": [
       {
@@ -192,7 +192,7 @@
         }
       },
       {
-        "rendered": "60%<sprite=5>",
+        "rendered": " 60%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -215,11 +215,11 @@
   },
   "Gem_C_Love": {
     "name": "Эссенция любви",
-    "description": "При <color=yellow>исцелении</color> <color=yellow>ОЗ</color> или наложении <color=yellow>щита</color> союзнику этим Воспоминанием увеличивает <color=yellow>скорость передвижения</color> и <color=yellow>скорость атаки</color> этого союзника на 16%<sprite=5> в течение 2 с. Эффект снижается на 50% при применении на себя.",
+    "description": "При <color=yellow>исцелении</color> <color=yellow>ОЗ</color> или наложении <color=yellow>щита</color> союзнику этим Воспоминанием увеличивает <color=yellow>скорость передвижения</color> и <color=yellow>скорость атаки</color> этого союзника на  16%<sprite=5>  в течение 2 с. Эффект снижается на 50% при применении на себя.",
     "rawDesc": "При <color=yellow>исцелении</color> <color=yellow>ОЗ</color> или наложении <color=yellow>щита</color> союзнику этим Воспоминанием увеличивает <color=yellow>скорость передвижения</color> и <color=yellow>скорость атаки</color> этого союзника на {0} в течение {1} с. Эффект снижается на {2} при применении на себя.",
     "rawDescVars": [
       {
-        "rendered": "16%<sprite=5>",
+        "rendered": " 16%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "bonusAmount",
         "scalingType": "basic",
@@ -273,11 +273,11 @@
   },
   "Gem_C_Quicksilver": {
     "name": "Эссенция ртути",
-    "description": "При <color=yellow>применении</color> этого Воспоминания или нанесении <color=yellow>урона от огня</color> этим Воспоминанием увеличивает <color=yellow>скорость передвижения</color> на 30%<sprite=5>; в течение 2.5 с. постепенно возвращается к исходному значению.",
+    "description": "При <color=yellow>применении</color> этого Воспоминания или нанесении <color=yellow>урона от огня</color> этим Воспоминанием увеличивает <color=yellow>скорость передвижения</color> на  30%<sprite=5> ; в течение 2.5 с. постепенно возвращается к исходному значению.",
     "rawDesc": "При <color=yellow>применении</color> этого Воспоминания или нанесении <color=yellow>урона от огня</color> этим Воспоминанием увеличивает <color=yellow>скорость передвижения</color> на {0}; в течение {1} с. постепенно возвращается к исходному значению.",
     "rawDescVars": [
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": " 30%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -316,18 +316,18 @@
   },
   "Gem_C_Regeneration": {
     "name": "Эссенция регенерации",
-    "description": "При <color=yellow>применении</color> этого Воспоминания <color=yellow>в бою</color> <color=yellow>исцеляет</color> ОЗ персонажа на 41<sprite=5> в течение 7 с.",
+    "description": "При <color=yellow>применении</color> этого Воспоминания <color=yellow>в бою</color> <color=yellow>исцеляет</color> ОЗ персонажа на  51<sprite=5>  в течение 5 с.",
     "rawDesc": "При <color=yellow>применении</color> этого Воспоминания <color=yellow>в бою</color> <color=yellow>исцеляет</color> ОЗ персонажа на {0} в течение {1} с.",
     "rawDescVars": [
       {
-        "rendered": "41<sprite=5>",
+        "rendered": " 51<sprite=5> ",
         "format": "#,##0",
         "raw": "healPerTick * totalTicks",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "7",
+        "rendered": "5",
         "format": "#,##0.#",
         "raw": "totalTicks*tickInterval",
         "scalingType": "unknown",
@@ -346,16 +346,16 @@
   },
   "Gem_C_Responsibility": {
     "name": "Эссенция ответственности",
-    "description": "<color=yellow>Усиливает</color> <color=yellow>применение</color> этого Воспоминания кажд. 10 с. Через 1.2 с. после <color=yellow>усиленного применения</color> наносит всем пораженным врагам <sprite=2><color=#FF8A2D>400%</color><sprite=5> <color=yellow>урона</color>, разделенного между ними.",
+    "description": "<color=yellow>Усиливает</color> <color=yellow>применение</color> этого Воспоминания кажд. 8 с. Через 1.2 с. после <color=yellow>усиленного применения</color> наносит всем пораженным врагам  <sprite=2><color=#fff><gradient=sv_ad>400%</gradient></color><sprite=5>  <color=yellow>урона</color>, разделенного между ними.",
     "rawDesc": "<color=yellow>Усиливает</color> <color=yellow>применение</color> этого Воспоминания кажд. {0} с. Через {1} с. после <color=yellow>усиленного применения</color> наносит всем пораженным врагам {2} <color=yellow>урона</color>, разделенного между ними.",
     "rawDescVars": [
       {
-        "rendered": "10",
+        "rendered": "8",
         "format": "#,##0.#",
         "raw": "cooldownTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 8.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -376,7 +376,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>400%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "totalDamage",
         "scalingType": "basic",
@@ -399,7 +399,7 @@
   },
   "Gem_C_Sharp": {
     "name": "Эссенция остроты",
-    "description": "При <color=yellow>применении</color> этого Воспоминания выстреливает стрелами x5, каждая из которых наносит <sprite=1><color=#16D7FF>90%</color><sprite=5> <color=yellow>урона</color> случайному врагу.",
+    "description": "При <color=yellow>применении</color> этого Воспоминания выстреливает стрелами x5, каждая из которых наносит  <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5>  <color=yellow>урона</color> случайному врагу.",
     "rawDesc": "При <color=yellow>применении</color> этого Воспоминания выстреливает стрелами x{0}, каждая из которых наносит {1} <color=yellow>урона</color> случайному врагу.",
     "rawDescVars": [
       {
@@ -416,7 +416,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "arrowDamage",
         "scalingType": "basic",
@@ -439,16 +439,16 @@
   },
   "Gem_C_Shatter": {
     "name": "Эссенция повреждения",
-    "description": "<color=yellow>Усиливает</color> <color=yellow>применение</color> этого Воспоминания кажд. 10 с. Увеличивает урон, наносимый <color=yellow>усиленным применением</color>, на 40%<sprite=5>. В случае <color=yellow>урона от света</color> вместо этого увеличивает урон света на 72%<sprite=5>.",
+    "description": "<color=yellow>Усиливает</color> <color=yellow>применение</color> этого Воспоминания кажд. 8 с. Увеличивает урон, наносимый <color=yellow>усиленным применением</color>, на  40%<sprite=5> . В случае <color=yellow>урона от света</color> вместо этого увеличивает урон света на  72%<sprite=5> .",
     "rawDesc": "<color=yellow>Усиливает</color> <color=yellow>применение</color> этого Воспоминания кажд. {0} с. Увеличивает урон, наносимый <color=yellow>усиленным применением</color>, на {1}. В случае <color=yellow>урона от света</color> вместо этого увеличивает урон света на {2}.",
     "rawDescVars": [
       {
-        "rendered": "10",
+        "rendered": "8",
         "format": "#,##0.#",
         "raw": "cooldownTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 8.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -456,7 +456,7 @@
         }
       },
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -469,7 +469,7 @@
         }
       },
       {
-        "rendered": "72%<sprite=5>",
+        "rendered": " 72%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmpLight",
         "scalingType": "basic",
@@ -494,11 +494,11 @@
   },
   "Gem_C_Sulfur": {
     "name": "Эссенция серы",
-    "description": "Увеличивает весь <color=yellow>урон</color> от этого Воспоминания на 15%<sprite=5> и преобразует в <color=yellow>урон от огня</color>. Увеличивает продолжительный урон от огня персонажа на 50%<sprite=5>.",
+    "description": "Увеличивает весь <color=yellow>урон</color> от этого Воспоминания на  15%<sprite=5>  и преобразует в <color=yellow>урон от огня</color>. Увеличивает продолжительный урон от огня персонажа на  50%<sprite=5> .",
     "rawDesc": "Увеличивает весь <color=yellow>урон</color> от этого Воспоминания на {0} и преобразует в <color=yellow>урон от огня</color>. Увеличивает продолжительный урон от огня персонажа на {1}.",
     "rawDescVars": [
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "P0",
         "raw": "ampAmount",
         "scalingType": "basic",
@@ -511,7 +511,7 @@
         }
       },
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "fireAmpBonus",
         "scalingType": "basic",
@@ -536,16 +536,16 @@
   },
   "Gem_C_Talc": {
     "name": "Эссенция мела",
-    "description": "<color=yellow>Усиливает</color> <color=yellow>применение</color> этого Воспоминания кажд. 10 с. <color=yellow>Усиленное применение</color> увеличивает урон, наносимый отдельному врагу в первый раз, на <sprite=1><color=#16D7FF>400%</color><sprite=5>.",
+    "description": "<color=yellow>Усиливает</color> <color=yellow>применение</color> этого Воспоминания кажд. 8 с. <color=yellow>Усиленное применение</color> увеличивает урон, наносимый отдельному врагу в первый раз, на  <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> .",
     "rawDesc": "<color=yellow>Усиливает</color> <color=yellow>применение</color> этого Воспоминания кажд. {0} с. <color=yellow>Усиленное применение</color> увеличивает урон, наносимый отдельному врагу в первый раз, на {1}.",
     "rawDescVars": [
       {
-        "rendered": "10",
+        "rendered": "8",
         "format": "#,##0.#",
         "raw": "cooldownTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 8.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -553,7 +553,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "addedDamage",
         "scalingType": "basic",
@@ -576,7 +576,7 @@
   },
   "Gem_C_Vengeance": {
     "name": "Эссенция возмездия",
-    "description": "При нанесении любого урона выстреливает лезвиями x2, наносящими <sprite=1><color=#16D7FF>102%</color><sprite=5> <color=yellow>урона</color> врагу поблизости . После получения урона увеличивает <color=yellow>урон</color> и <color=yellow>исцеление</color> этого Воспоминания на 34%<sprite=5> на 5 с.",
+    "description": "При нанесении любого урона выстреливает лезвиями x2, наносящими  <sprite=1><color=#fff><gradient=sv_ap>93%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Дополнительное<sprite=3></color><color=#fff><gradient=sv_ahp>4%</gradient></color><sprite=5>  <color=yellow>урона</color> врагу поблизости . После получения урона увеличивает <color=yellow>урон</color> и <color=yellow>исцеление</color> этого Воспоминания на  34%<sprite=5>  на 5 с.",
     "rawDesc": "При нанесении любого урона выстреливает лезвиями x{0}, наносящими {1} <color=yellow>урона</color> врагу поблизости . После получения урона увеличивает <color=yellow>урон</color> и <color=yellow>исцеление</color> этого Воспоминания на {2} на {3} с.",
     "rawDescVars": [
       {
@@ -593,20 +593,20 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>102%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>93%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Дополнительное<sprite=3></color><color=#fff><gradient=sv_ahp>4%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.6,
+          "basicAP": 0.55,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.007
         }
       },
       {
-        "rendered": "34%<sprite=5>",
+        "rendered": " 34%<sprite=5> ",
         "format": "P0",
         "raw": "ampAmount",
         "scalingType": "basic",
@@ -644,7 +644,7 @@
   },
   "Gem_C_Void": {
     "name": "Эссенция пустоты",
-    "description": "После применения этого Воспоминания в течение 4 с. при следующей <color=yellow>атаке</color> производит взрыв, нанося <sprite=2><color=#FF8A2D>150%</color><sprite=5> <color=yellow>урона от тьмы</color> цели и врагам поблизости от нее.",
+    "description": "После применения этого Воспоминания в течение 4 с. при следующей <color=yellow>атаке</color> производит взрыв, нанося  <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5>  <color=yellow>урона от тьмы</color> цели и врагам поблизости от нее.",
     "rawDesc": "После применения этого Воспоминания в течение {0} с. при следующей <color=yellow>атаке</color> производит взрыв, нанося {1} <color=yellow>урона от тьмы</color> цели и врагам поблизости от нее.",
     "rawDescVars": [
       {
@@ -661,7 +661,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -686,11 +686,11 @@
   },
   "Gem_C_Wind": {
     "name": "Эссенция ветра",
-    "description": "При применении этого Воспоминания увеличивает <color=yellow>скорость атаки</color> на 33%<sprite=5> на 5 с.",
+    "description": "При применении этого Воспоминания увеличивает <color=yellow>скорость атаки</color> на  33%<sprite=5>  на 5 с.",
     "rawDesc": "При применении этого Воспоминания увеличивает <color=yellow>скорость атаки</color> на {0} на {1} с.",
     "rawDescVars": [
       {
-        "rendered": "33%<sprite=5>",
+        "rendered": " 33%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -726,11 +726,11 @@
   },
   "Gem_E_Aftershock": {
     "name": "Эссенция сотрясения",
-    "description": "При <color=yellow>применении</color> этого Воспоминания через некоторое время выстреливает <color=yellow>ударной волной</color>, наносящей <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>урона от холода</color> врагам поблизости и <color=yellow>оглушающей</color> их на 0.5 с.\nЗа каждого врага, пораженного этой <color=yellow>ударной волной</color>, дает 4<sprite=5> <color=yellow>ЗЩТ</color> (макс. до 22<sprite=5>). При попадании по <color=yellow>боссу</color> дает макс. <color=yellow>ЗЩТ</color>. Это значение ЗЩТ сохраняется до следующего <color=yellow>применения</color> этого Воспоминания.",
+    "description": "При <color=yellow>применении</color> этого Воспоминания через некоторое время выстреливает <color=yellow>ударной волной</color>, наносящей  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Дополнительное<sprite=3></color><color=#fff><gradient=sv_ahp>20%</gradient></color><sprite=5>  <color=yellow>урона от холода</color> врагам поблизости и <color=yellow>оглушающей</color> их на 0.5 с.\nЗа каждого врага, пораженного этой <color=yellow>ударной волной</color>, дает  4<sprite=5>  <color=yellow>ЗЩТ</color> (макс. до  22<sprite=5> ). При попадании по <color=yellow>боссу</color> дает макс. <color=yellow>ЗЩТ</color>. Это значение ЗЩТ сохраняется до следующего <color=yellow>применения</color> этого Воспоминания.",
     "rawDesc": "При <color=yellow>применении</color> этого Воспоминания через некоторое время выстреливает <color=yellow>ударной волной</color>, наносящей {0} <color=yellow>урона от холода</color> врагам поблизости и <color=yellow>оглушающей</color> их на {1} с.\nЗа каждого врага, пораженного этой <color=yellow>ударной волной</color>, дает {2} <color=yellow>ЗЩТ</color> (макс. до {3}). При попадании по <color=yellow>боссу</color> дает макс. <color=yellow>ЗЩТ</color>. Это значение ЗЩТ сохраняется до следующего <color=yellow>применения</color> этого Воспоминания.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Дополнительное<sprite=3></color><color=#fff><gradient=sv_ahp>20%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -756,7 +756,7 @@
         }
       },
       {
-        "rendered": "4<sprite=5>",
+        "rendered": " 4<sprite=5> ",
         "format": "#,##0",
         "raw": "armorPerHit",
         "scalingType": "basic",
@@ -769,7 +769,7 @@
         }
       },
       {
-        "rendered": "22<sprite=5>",
+        "rendered": " 22<sprite=5> ",
         "format": "#,##0",
         "raw": "armorPerHit*maxHitCount",
         "scalingType": "unknown",
@@ -784,9 +784,62 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_E_Apathy": {
+    "name": "Эссенция апатии",
+    "description": "Весь урон, наносимый Путешественником, уменьшается на 25%. Когда это воспоминание наносит врагу <color=yellow>урон от холода</color>, ваша <color=yellow>защита</color> увеличивается на  22<sprite=5>  на 5 сек.",
+    "rawDesc": "Весь урон, наносимый Путешественником, уменьшается на {0}. Когда это воспоминание наносит врагу <color=yellow>урон от холода</color>, ваша <color=yellow>защита</color> увеличивается на {1} на {2} сек.",
+    "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "reducedDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 22<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedArmorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Apathy.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_E_Blossom": {
     "name": "Эссенция цветения",
-    "description": "Снижает весь <color=yellow>урон</color>, наносимый этим Воспоминанием, на 70%. При каждом нанесении <color=yellow>урона</color> этим Воспоминанием <color=yellow>исцеляет</color> <color=yellow>ОЗ</color> случайного союзника поблизости на 22%<sprite=5> от нанесенного <color=yellow>урона</color>.",
+    "description": "Снижает весь <color=yellow>урон</color>, наносимый этим Воспоминанием, на 70%. При каждом нанесении <color=yellow>урона</color> этим Воспоминанием <color=yellow>исцеляет</color> <color=yellow>ОЗ</color> случайного союзника поблизости на  22%<sprite=5>  от нанесенного <color=yellow>урона</color>.",
     "rawDesc": "Снижает весь <color=yellow>урон</color>, наносимый этим Воспоминанием, на {0}. При каждом нанесении <color=yellow>урона</color> этим Воспоминанием <color=yellow>исцеляет</color> <color=yellow>ОЗ</color> случайного союзника поблизости на {1} от нанесенного <color=yellow>урона</color>.",
     "rawDescVars": [
       {
@@ -803,7 +856,7 @@
         }
       },
       {
-        "rendered": "22%<sprite=5>",
+        "rendered": " 22%<sprite=5> ",
         "format": "P0",
         "raw": "conversionRatio",
         "scalingType": "basic",
@@ -828,11 +881,11 @@
   },
   "Gem_E_Clemency": {
     "name": "Эссенция милосердия",
-    "description": "<color=yellow>Исцеляет</color> <color=yellow>персонажа</color> на 4%<sprite=5> <color=yellow>ОЗ</color> за каждую <color=yellow>единицу урона</color>, нанесенного этим Воспоминанием.",
+    "description": "<color=yellow>Исцеляет</color> <color=yellow>персонажа</color> на  4%<sprite=5>  <color=yellow>ОЗ</color> за каждую <color=yellow>единицу урона</color>, нанесенного этим Воспоминанием.",
     "rawDesc": "<color=yellow>Исцеляет</color> <color=yellow>персонажа</color> на {0} <color=yellow>ОЗ</color> за каждую <color=yellow>единицу урона</color>, нанесенного этим Воспоминанием.",
     "rawDescVars": [
       {
-        "rendered": "4%<sprite=5>",
+        "rendered": " 4%<sprite=5> ",
         "format": "P0",
         "raw": "conversionRatio",
         "scalingType": "basic",
@@ -857,11 +910,11 @@
   },
   "Gem_E_Crimson": {
     "name": "Эссенция алого цвета",
-    "description": "<color=yellow>Усиливает</color> каждую 4-ю <color=yellow>базовую атаку</color>, вызывая <color=yellow>кроваво-красный взрыв</color>, наносящий <sprite=2><color=#FF8A2D>100%</color><sprite=5> <color=yellow>урона от тьмы</color> по врагам. Увеличивает область взрыва пропорционально <color=yellow>шансу критического удара</color>.\nЗа каждого врага, попавшего во взрыв, <color=yellow>исцеляет</color> <sprite=2><color=#FF8A2D>22%</color><sprite=5> ОЗ. Если цель является <color=yellow>боссом</color>, увеличивает исцеление на 100%.",
+    "description": "<color=yellow>Усиливает</color> каждую 4-ю <color=yellow>базовую атаку</color>, вызывая <color=yellow>кроваво-красный взрыв</color>, наносящий  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5>  <color=yellow>урона от тьмы</color> по врагам. Увеличивает область взрыва пропорционально <color=yellow>шансу критического удара</color>.\nЗа каждого врага, попавшего во взрыв, <color=yellow>исцеляет</color>  <sprite=2><color=#fff><gradient=sv_ad>22%</gradient></color><sprite=5>  ОЗ. Если цель является <color=yellow>боссом</color>, увеличивает исцеление на 100%.",
     "rawDesc": "<color=yellow>Усиливает</color> каждую 4-ю <color=yellow>базовую атаку</color>, вызывая <color=yellow>кроваво-красный взрыв</color>, наносящий {0} <color=yellow>урона от тьмы</color> по врагам. Увеличивает область взрыва пропорционально <color=yellow>шансу критического удара</color>.\nЗа каждого врага, попавшего во взрыв, <color=yellow>исцеляет</color> {1} ОЗ. Если цель является <color=yellow>боссом</color>, увеличивает исцеление на {2}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -874,7 +927,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>22%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>22%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healPerHit",
         "scalingType": "basic",
@@ -913,16 +966,16 @@
   },
   "Gem_E_Direness": {
     "name": "Эссенция отчаяния",
-    "description": "Чем ниже <color=yellow>ОЗ</color> персонажа, тем короче <color=yellow>время перезарядки</color> этого Воспоминания. При <color=yellow>ОЗ</color> персонажа, равным 30%, сокращает время перезарядки максимум до 55%<sprite=5>.",
+    "description": "Чем ниже <color=yellow>ОЗ</color> персонажа, тем короче <color=yellow>время перезарядки</color> этого Воспоминания. При <color=yellow>ОЗ</color> персонажа, равным 50%, сокращает время перезарядки максимум до  55%<sprite=5> .",
     "rawDesc": "Чем ниже <color=yellow>ОЗ</color> персонажа, тем короче <color=yellow>время перезарядки</color> этого Воспоминания. При <color=yellow>ОЗ</color> персонажа, равным {0}, сокращает время перезарядки максимум до {1}.",
     "rawDescVars": [
       {
-        "rendered": "30%",
+        "rendered": "50%",
         "format": "P0",
         "raw": "maxAbilityHasteHpThreshold",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.3,
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -930,7 +983,7 @@
         }
       },
       {
-        "rendered": "55%<sprite=5>",
+        "rendered": " 55%<sprite=5> ",
         "format": "P0",
         "raw": "maxReducedRatio",
         "scalingType": "unknown",
@@ -947,7 +1000,7 @@
   },
   "Gem_E_Domination": {
     "name": "Эссенция Господства",
-    "description": "<color=yellow>Шанс крит. удара</color> увеличивается на 20%. Каждый раз, когда вы наносите критический удар врагу, ваш <color=yellow>Крит. урон</color> увеличивается на 0.3%, максимум до 20%<sprite=5>. ",
+    "description": "<color=yellow>Шанс крит. удара</color> увеличивается на 20%. Каждый раз, когда вы наносите критический удар врагу, ваш <color=yellow>Крит. урон</color> увеличивается на 0.3%, максимум до  20%<sprite=5> . ",
     "rawDesc": "<color=yellow>Шанс крит. удара</color> увеличивается на {0}. Каждый раз, когда вы наносите критический удар врагу, ваш <color=yellow>Крит. урон</color> увеличивается на {1}, максимум до {2}. ",
     "rawDescVars": [
       {
@@ -977,7 +1030,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "P0",
         "raw": "critAmpMaxValue",
         "scalingType": "basic",
@@ -1000,11 +1053,11 @@
   },
   "Gem_E_Fangs": {
     "name": "Эссенция клыка",
-    "description": "Каждая 4-я <color=yellow>базовая атака</color> наносит <color=yellow>критический удар</color>. При срабатывании <color=yellow>критического удара</color> снижает <color=yellow>время перезарядки</color> этого Воспоминания на 0.7<sprite=5> с., выстреливает в ближайших врагов 2 <color=yellow>клыками</color>, каждый из которых наносит <sprite=2><color=#FF8A2D>60%</color><sprite=5> <color=yellow>урона</color>.",
+    "description": "Каждая 4-я <color=yellow>базовая атака</color> наносит <color=yellow>критический удар</color>. При срабатывании <color=yellow>критического удара</color> снижает <color=yellow>время перезарядки</color> этого Воспоминания на  0.7<sprite=5>  с., выстреливает в ближайших врагов 2 <color=yellow>клыками</color>, каждый из которых наносит  <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5>  <color=yellow>урона</color>.",
     "rawDesc": "Каждая 4-я <color=yellow>базовая атака</color> наносит <color=yellow>критический удар</color>. При срабатывании <color=yellow>критического удара</color> снижает <color=yellow>время перезарядки</color> этого Воспоминания на {0} с., выстреливает в ближайших врагов 2 <color=yellow>клыками</color>, каждый из которых наносит {1} <color=yellow>урона</color>.",
     "rawDescVars": [
       {
-        "rendered": "0.7<sprite=5>",
+        "rendered": " 0.7<sprite=5> ",
         "format": "#,##0.#",
         "raw": "cooldownReductionOnCrit",
         "scalingType": "basic",
@@ -1017,7 +1070,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>60%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1040,7 +1093,7 @@
   },
   "Gem_E_Fever": {
     "name": "Эссенция лихорадки",
-    "description": "При нанесении <color=yellow>урона от огня</color> врагу этим Воспоминанием заражает цель <color=yellow>лихорадкой</color>. Взрывает зараженного <color=yellow>лихорадкой</color> врага через 2 с., нанося <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>урона от огня</color> себе и врагу поблизости. За каждое <color=yellow>накопление огня</color> на цели увеличивает радиус взрыва а 30%, а урон от взрыва — на 10%.",
+    "description": "При нанесении <color=yellow>урона от огня</color> врагу этим Воспоминанием заражает цель <color=yellow>лихорадкой</color>. Взрывает зараженного <color=yellow>лихорадкой</color> врага через 2 с., нанося  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5>  <color=yellow>урона от огня</color> себе и врагу поблизости. За каждое <color=yellow>накопление огня</color> на цели увеличивает радиус взрыва а 30%, а урон от взрыва — на 10%.",
     "rawDesc": "При нанесении <color=yellow>урона от огня</color> врагу этим Воспоминанием заражает цель <color=yellow>лихорадкой</color>. Взрывает зараженного <color=yellow>лихорадкой</color> врага через {0} с., нанося {1} <color=yellow>урона от огня</color> себе и врагу поблизости. За каждое <color=yellow>накопление огня</color> на цели увеличивает радиус взрыва а {2}, а урон от взрыва — на {3}.",
     "rawDescVars": [
       {
@@ -1057,7 +1110,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -1108,11 +1161,11 @@
   },
   "Gem_E_Flexibility": {
     "name": "Эссенция гибкости",
-    "description": "Во время <color=yellow>перезарядки</color> этого Воспоминания <color=yellow>распределяет</color> получаемый урон в размере 37%<sprite=5> на 4 с. Снижает <color=yellow>распределенный</color> таким образом урон на 20%.",
+    "description": "Во время <color=yellow>перезарядки</color> этого Воспоминания <color=yellow>распределяет</color> получаемый урон в размере  37%<sprite=5>  на 4 с. Снижает <color=yellow>распределенный</color> таким образом урон на 20%.",
     "rawDesc": "Во время <color=yellow>перезарядки</color> этого Воспоминания <color=yellow>распределяет</color> получаемый урон в размере {0} на {1} с. Снижает <color=yellow>распределенный</color> таким образом урон на {2}.",
     "rawDescVars": [
       {
-        "rendered": "37%<sprite=5>",
+        "rendered": " 37%<sprite=5> ",
         "format": "P0",
         "raw": "divMultiplier",
         "scalingType": "unknown",
@@ -1143,16 +1196,16 @@
   },
   "Gem_E_Insensitivity": {
     "name": "Эссенция бесчувственности",
-    "description": "После <color=yellow>применения</color> этого Воспоминания в течение 3 с. персонаж оставляет <color=yellow>бомбу</color> кажд. 2 м. Бомба взрывается через некоторое время, нанося <sprite=1><color=#16D7FF>140%</color><sprite=5> <color=yellow>урона от огня</color> врагам.",
+    "description": "После <color=yellow>применения</color> этого Воспоминания в течение 4 с. персонаж оставляет <color=yellow>бомбу</color> кажд. 2 м. Бомба взрывается через некоторое время, нанося  <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5>  <color=yellow>урона от огня</color> врагам.",
     "rawDesc": "После <color=yellow>применения</color> этого Воспоминания в течение {0} с. персонаж оставляет <color=yellow>бомбу</color> кажд. {1} м. Бомба взрывается через некоторое время, нанося {2} <color=yellow>урона от огня</color> врагам.",
     "rawDescVars": [
       {
-        "rendered": "3",
+        "rendered": "4",
         "format": "#,##0.#",
         "raw": "duration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 3.0,
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1173,7 +1226,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -1198,11 +1251,11 @@
   },
   "Gem_E_Insight": {
     "name": "Эссенция прозрения",
-    "description": "При нанесении любого <color=yellow>урона</color> врагу этим Воспоминанием дополнительно наносит <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>урона от света</color> врагам (макс. 3<sprite=5>) и увеличивает <color=yellow>ускорение Воспоминания</color> на 20<sprite=5> в течение 5 с. Срабатывает только раз в 3 с.",
+    "description": "При нанесении любого <color=yellow>урона</color> врагу этим Воспоминанием дополнительно наносит  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  <color=yellow>урона от света</color> врагам (макс.  3<sprite=5> ) и увеличивает <color=yellow>ускорение Воспоминания</color> на  20<sprite=5>  в течение 5 с. Срабатывает только раз в 3 с.",
     "rawDesc": "При нанесении любого <color=yellow>урона</color> врагу этим Воспоминанием дополнительно наносит {0} <color=yellow>урона от света</color> врагам (макс. {1}) и увеличивает <color=yellow>ускорение Воспоминания</color> на {2} в течение {3} с. Срабатывает только раз в {4} с.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1215,7 +1268,7 @@
         }
       },
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0",
         "raw": "maxHitCount",
         "scalingType": "basic",
@@ -1228,7 +1281,7 @@
         }
       },
       {
-        "rendered": "20<sprite=5>",
+        "rendered": " 20<sprite=5> ",
         "format": "#,##0",
         "raw": "gainedAbilityHaste",
         "scalingType": "basic",
@@ -1279,11 +1332,11 @@
   },
   "Gem_E_Inversion": {
     "name": "Эссенция инверсии",
-    "description": "Увеличивает <color=yellow>время перезарядки</color> этого Воспоминания на 15%<sprite=5>, но также увеличивает <color=yellow>урон</color>, наносимый врагам, на 20%<sprite=5>. <color=yellow>Урон от элементов</color>, наносимый этим Воспоминанием, <color=yellow>инвертируется</color>. (Огонь/холод, свет/тьма)",
+    "description": "Увеличивает <color=yellow>время перезарядки</color> этого Воспоминания на  15%<sprite=5> , но также увеличивает <color=yellow>урон</color>, наносимый врагам, на  20%<sprite=5> . <color=yellow>Урон от элементов</color>, наносимый этим Воспоминанием, <color=yellow>инвертируется</color>. (Огонь/холод, свет/тьма)",
     "rawDesc": "Увеличивает <color=yellow>время перезарядки</color> этого Воспоминания на {0}, но также увеличивает <color=yellow>урон</color>, наносимый врагам, на {1}. <color=yellow>Урон от элементов</color>, наносимый этим Воспоминанием, <color=yellow>инвертируется</color>. (Огонь/холод, свет/тьма)",
     "rawDescVars": [
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "P0",
         "raw": "cooldownAmp",
         "scalingType": "basic",
@@ -1296,7 +1349,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -1319,11 +1372,11 @@
   },
   "Gem_E_Metal": {
     "name": "Эссенция металла",
-    "description": "При <color=yellow>победе</color> над врагом <color=yellow>снижает</color> <color=yellow>Время восстановления</color> этого Воспоминания на 1<sprite=5> с.",
+    "description": "При <color=yellow>победе</color> над врагом <color=yellow>снижает</color> <color=yellow>Время восстановления</color> этого Воспоминания на  1<sprite=5>  с.",
     "rawDesc": "При <color=yellow>победе</color> над врагом <color=yellow>снижает</color> <color=yellow>Время восстановления</color> этого Воспоминания на {0} с.",
     "rawDescVars": [
       {
-        "rendered": "1<sprite=5>",
+        "rendered": " 1<sprite=5> ",
         "format": "#,##0.#",
         "raw": "cooldownReduction",
         "scalingType": "basic",
@@ -1346,16 +1399,16 @@
   },
   "Gem_E_Might": {
     "name": "Эссенция великана",
-    "description": "Увеличивает макс. ОЗ на 260<sprite=5>. Увеличивает урон от этого Воспоминания на 1% за кажд. 50 от <color=yellow>макс. ОЗ</color>.",
+    "description": "Увеличивает макс. ОЗ на  270<sprite=5> . Увеличивает урон от этого Воспоминания на 1% за кажд. 70 от <color=yellow>макс. ОЗ</color>.",
     "rawDesc": "Увеличивает макс. ОЗ на {0}. Увеличивает урон от этого Воспоминания на {1} за кажд. {2} от <color=yellow>макс. ОЗ</color>.",
     "rawDescVars": [
       {
-        "rendered": "260<sprite=5>",
+        "rendered": " 270<sprite=5> ",
         "format": "#,##0",
         "raw": "healthBonus",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 130.0,
+          "basicConstant": 135.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -1376,12 +1429,12 @@
         }
       },
       {
-        "rendered": "50",
+        "rendered": "70",
         "format": "#,##0",
         "raw": "unitHealthAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 50.0,
+          "basicConstant": 70.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1399,11 +1452,11 @@
   },
   "Gem_E_Obsidian": {
     "name": "Эссенция обсидиана",
-    "description": "При <color=yellow>применении</color> этого Воспоминания усиливает следующую атаку персонажа, нанося цели <sprite=2><color=#FF8A2D>250%</color><sprite=5> <color=yellow>урона от тьмы</color> и снижения <color=yellow>время перезарядки</color> этого Воспоминания на 1<sprite=5> с.",
+    "description": "При <color=yellow>применении</color> этого Воспоминания усиливает следующую атаку персонажа, нанося цели  <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5>  <color=yellow>урона от тьмы</color> и снижения <color=yellow>время перезарядки</color> этого Воспоминания на  1<sprite=5>  с.",
     "rawDesc": "При <color=yellow>применении</color> этого Воспоминания усиливает следующую атаку персонажа, нанося цели {0} <color=yellow>урона от тьмы</color> и снижения <color=yellow>время перезарядки</color> этого Воспоминания на {1} с.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1416,7 +1469,7 @@
         }
       },
       {
-        "rendered": "1<sprite=5>",
+        "rendered": " 1<sprite=5> ",
         "format": "#,##0.#",
         "raw": "reducedCooldown",
         "scalingType": "basic",
@@ -1442,7 +1495,7 @@
   },
   "Gem_E_Omega": {
     "name": "Эссенция финала",
-    "description": "Когда это Воспоминание не находится на <color=yellow>перезарядке</color>, ежесекундно получает накопление <color=yellow>Финала</color> (макс. 20). При наличии накоплений <color=yellow>усиливает</color> <color=yellow>применение</color> этого Воспоминания, увеличивая <color=yellow>урон</color> на 5%<sprite=5> за каждое накопление.",
+    "description": "Когда это Воспоминание не находится на <color=yellow>перезарядке</color>, ежесекундно получает накопление <color=yellow>Финала</color> (макс. 20). При наличии накоплений <color=yellow>усиливает</color> <color=yellow>применение</color> этого Воспоминания, увеличивая <color=yellow>урон</color> на  5%<sprite=5>  за каждое накопление.",
     "rawDesc": "Когда это Воспоминание не находится на <color=yellow>перезарядке</color>, ежесекундно получает накопление <color=yellow>Финала</color> (макс. {0}). При наличии накоплений <color=yellow>усиливает</color> <color=yellow>применение</color> этого Воспоминания, увеличивая <color=yellow>урон</color> на {1} за каждое накопление.",
     "rawDescVars": [
       {
@@ -1459,7 +1512,7 @@
         }
       },
       {
-        "rendered": "5%<sprite=5>",
+        "rendered": " 5%<sprite=5> ",
         "format": "P0",
         "raw": "chargeRate",
         "scalingType": "unknown",
@@ -1476,11 +1529,11 @@
   },
   "Gem_E_Opportunity": {
     "name": "Эссенция возможности",
-    "description": "При <color=yellow>применении</color> этого Воспоминания снижает <color=yellow>время перезарядки</color> <color=yellow>уклонения</color> на 3<sprite=5> с. Может активироваться только раз в 8 с.",
+    "description": "При <color=yellow>применении</color> этого Воспоминания снижает <color=yellow>время перезарядки</color> <color=yellow>уклонения</color> на  3<sprite=5>  с. Может активироваться только раз в 8 с.",
     "rawDesc": "При <color=yellow>применении</color> этого Воспоминания снижает <color=yellow>время перезарядки</color> <color=yellow>уклонения</color> на {0} с. Может активироваться только раз в {1} с.",
     "rawDescVars": [
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0.#",
         "raw": "reductionAmount",
         "scalingType": "basic",
@@ -1518,11 +1571,11 @@
   },
   "Gem_E_OurStory_Completed": {
     "name": "Наша история (завершена!)",
-    "description": "Увеличивает <color=yellow>силу атаки</color> и <color=yellow>силу умений</color> на 0, положительные эффекты <color=yellow>Искажающего рывка</color> — на 0.",
+    "description": "Увеличивает <color=yellow>силу атаки</color> и <color=yellow>силу умений</color> на , положительные эффекты <color=yellow>Искажающего рывка</color> — на .",
     "rawDesc": "Увеличивает <color=yellow>силу атаки</color> и <color=yellow>силу умений</color> на {0}, положительные эффекты <color=yellow>Искажающего рывка</color> — на {1}.",
     "rawDescVars": [
       {
-        "rendered": "0",
+        "rendered": "",
         "format": "#,##0'%'",
         "raw": "Gem_E_OurStory_Completed::statPercentage",
         "scalingType": "basic",
@@ -1535,7 +1588,7 @@
         }
       },
       {
-        "rendered": "0",
+        "rendered": "",
         "format": "#,##0",
         "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
         "scalingType": "unknown",
@@ -1605,7 +1658,7 @@
   },
   "Gem_E_Overload": {
     "name": "Эссенция перегрузки",
-    "description": "При <color=yellow>применении</color> этого Воспоминание <color=yellow>жертвует</color> 20% от текущих ОЗ, чтобы <color=yellow>усилить</color> <color=yellow>применение</color>. Увеличивает <color=yellow>урон</color> и <color=yellow>исцеление</color> от <color=yellow>усиленного применения</color> на 45%<sprite=5>.",
+    "description": "При <color=yellow>применении</color> этого Воспоминание <color=yellow>жертвует</color> 20% от текущих ОЗ, чтобы <color=yellow>усилить</color> <color=yellow>применение</color>. Увеличивает <color=yellow>урон</color> и <color=yellow>исцеление</color> от <color=yellow>усиленного применения</color> на  45%<sprite=5> .",
     "rawDesc": "При <color=yellow>применении</color> этого Воспоминание <color=yellow>жертвует</color> {0} от текущих ОЗ, чтобы <color=yellow>усилить</color> <color=yellow>применение</color>. Увеличивает <color=yellow>урон</color> и <color=yellow>исцеление</color> от <color=yellow>усиленного применения</color> на {1}.",
     "rawDescVars": [
       {
@@ -1622,7 +1675,7 @@
         }
       },
       {
-        "rendered": "45%<sprite=5>",
+        "rendered": " 45%<sprite=5> ",
         "format": "P0",
         "raw": "amp",
         "scalingType": "basic",
@@ -1647,11 +1700,11 @@
   },
   "Gem_E_Pain": {
     "name": "Эссенция мучения",
-    "description": "Весь <color=yellow>урон</color> от этого Воспоминания наносит 40%<sprite=5> <color=yellow>урона по области</color> вокруг цели. Этот <color=yellow>урон по области</color> имеет тот же тип элемента, что и исходный урон.",
+    "description": "Весь <color=yellow>урон</color> от этого Воспоминания наносит  40%<sprite=5>  <color=yellow>урона по области</color> вокруг цели. Этот <color=yellow>урон по области</color> имеет тот же тип элемента, что и исходный урон.",
     "rawDesc": "Весь <color=yellow>урон</color> от этого Воспоминания наносит {0} <color=yellow>урона по области</color> вокруг цели. Этот <color=yellow>урон по области</color> имеет тот же тип элемента, что и исходный урон.",
     "rawDescVars": [
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "damageRatio",
         "scalingType": "basic",
@@ -1674,16 +1727,16 @@
   },
   "Gem_E_Predation": {
     "name": "Эссенция хищника",
-    "description": "Увеличивает <color=yellow>урон</color>, наносимый этим Воспоминанием <color=yellow>боссам</color> и <color=yellow>Охотникам</color>, на 60%<sprite=5>. При победе над <color=yellow>Охотником</color> выпадает 1 <color=yellow>Сфер силы</color>, а при убийстве <color=yellow>босса</color> — 3. При получении <color=yellow>Сферы силы</color> случайным образом навсегда увеличивает <color=yellow>Урон от атаки</color> или <color=yellow>Силу способностей</color> на 1.",
-    "rawDesc": "Увеличивает <color=yellow>урон</color>, наносимый этим Воспоминанием <color=yellow>боссам</color> и <color=yellow>Охотникам</color>, на {0}. При победе над <color=yellow>Охотником</color> выпадает {1} <color=yellow>Сфер силы</color>, а при убийстве <color=yellow>босса</color> — {2}. При получении <color=yellow>Сферы силы</color> случайным образом навсегда увеличивает <color=yellow>Урон от атаки</color> или <color=yellow>Силу способностей</color> на 1.",
+    "description": "Увеличивает <color=yellow>урон</color>, наносимый этим Воспоминанием <color=yellow>боссам</color> и <color=yellow>Охотникам</color>, на  40%<sprite=5> . При победе над <color=yellow>Охотником</color> выпадает 1 <color=yellow>Сфера силы</color>, а при убийстве <color=yellow>босса</color> — 3. При получении <color=yellow>Сферы силы</color> вы получаете 1 ед. <color=yellow>Урона от атаки</color>, 1 ед. <color=yellow>Силы способностей</color> или 5 ед. <color=yellow>Макс. здоровья</color>.",
+    "rawDesc": "Увеличивает <color=yellow>урон</color>, наносимый этим Воспоминанием <color=yellow>боссам</color> и <color=yellow>Охотникам</color>, на {0}. При победе над <color=yellow>Охотником</color> выпадает 1 <color=yellow>Сфера силы</color>, а при убийстве <color=yellow>босса</color> — {1}. При получении <color=yellow>Сферы силы</color> вы получаете 1 ед. <color=yellow>Урона от атаки</color>, 1 ед. <color=yellow>Силы способностей</color> или {2} ед. <color=yellow>Макс. здоровья</color>.",
     "rawDescVars": [
       {
-        "rendered": "60%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "amp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.3,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -1691,24 +1744,30 @@
         }
       },
       {
-        "rendered": "1",
+        "rendered": "3",
         "format": "#,##0",
-        "raw": "addedAp",
+        "raw": "bossMultiplier",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "addedHealth",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
-      },
-      {
-        "rendered": "3",
-        "format": "#,##0",
-        "raw": "addedAp*bossMultiplier",
-        "scalingType": "unknown",
-        "data": {}
       }
     ],
     "rarity": "Epic",
@@ -1721,11 +1780,11 @@
   },
   "Gem_E_Protection": {
     "name": "Эссенция защиты",
-    "description": "При <color=yellow>применении</color> этого Воспоминания дает 40<sprite=5> <color=yellow>ЗЩТ</color> на 3 с., снижая получаемый урон, и переходит в состояние <color=yellow>неудержимости</color>. Срабатывает раз в 5 с.",
+    "description": "При <color=yellow>применении</color> этого Воспоминания дает  40<sprite=5>  <color=yellow>ЗЩТ</color> на 3 с., снижая получаемый урон, и переходит в состояние <color=yellow>неудержимости</color>. Срабатывает раз в 5 с.",
     "rawDesc": "При <color=yellow>применении</color> этого Воспоминания дает {0} <color=yellow>ЗЩТ</color> на {1} с., снижая получаемый урон, и переходит в состояние <color=yellow>неудержимости</color>. Срабатывает раз в {2} с.",
     "rawDescVars": [
       {
-        "rendered": "40<sprite=5>",
+        "rendered": " 40<sprite=5> ",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "basic",
@@ -1774,24 +1833,24 @@
   },
   "Gem_E_Reflex": {
     "name": "Эссенция Рефлекса",
-    "description": "При получении любого <color=yellow>урона</color> выпускает поток холода в ближайшего врага поблизости, нанося <sprite=1><color=#16D7FF>120%</color><sprite=5> <color=yellow>урона от холода</color> и отбрасывая его назад, а также увеличивая <color=yellow>защиту</color> на 40<sprite=5> на 1.5 сек.",
+    "description": "При получении любого <color=yellow>урона</color> выпускает поток холода в ближайшего врага поблизости, нанося  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Дополнительное<sprite=3></color><color=#fff><gradient=sv_ahp>4%</gradient></color><sprite=5>  <color=yellow>урона от холода</color> и отбрасывая его назад, а также увеличивая <color=yellow>защиту</color> на  40<sprite=5>  на 1.5 сек.",
     "rawDesc": "При получении любого <color=yellow>урона</color> выпускает поток холода в ближайшего врага поблизости, нанося {0} <color=yellow>урона от холода</color> и отбрасывая его назад, а также увеличивая <color=yellow>защиту</color> на {1} на {2} сек.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Дополнительное<sprite=3></color><color=#fff><gradient=sv_ahp>4%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.6,
+          "basicAP": 0.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.01
         }
       },
       {
-        "rendered": "40<sprite=5>",
+        "rendered": " 40<sprite=5> ",
         "format": "#,##0",
         "raw": "armorFlatAmount",
         "scalingType": "basic",
@@ -1829,11 +1888,11 @@
   },
   "Gem_E_Thunder": {
     "name": "Эссенция грома",
-    "description": "При <color=yellow>применении</color> <color=yellow>другого Воспоминания</color> или использовании <color=yellow>уклонения</color> дает 1 накопление <color=yellow>Грома</color> (макс. 7<sprite=5> р.) При <color=yellow>применении</color> этого Воспоминания расходует все накопления <color=yellow>Грома</color>, призывая молнии в количестве накоплений, каждая из которых наносит <sprite=1><color=#16D7FF>117%</color><sprite=5> <color=yellow>урона от света</color> врагам поблизости.",
+    "description": "При <color=yellow>применении</color> <color=yellow>другого Воспоминания</color> или использовании <color=yellow>уклонения</color> дает 1 накопление <color=yellow>Грома</color> (макс.  7<sprite=5>  р.) При <color=yellow>применении</color> этого Воспоминания расходует все накопления <color=yellow>Грома</color>, призывая молнии в количестве накоплений, каждая из которых наносит  <sprite=1><color=#fff><gradient=sv_ap>117%</gradient></color><sprite=5>  <color=yellow>урона от света</color> врагам поблизости.",
     "rawDesc": "При <color=yellow>применении</color> <color=yellow>другого Воспоминания</color> или использовании <color=yellow>уклонения</color> дает 1 накопление <color=yellow>Грома</color> (макс. {0} р.) При <color=yellow>применении</color> этого Воспоминания расходует все накопления <color=yellow>Грома</color>, призывая молнии в количестве накоплений, каждая из которых наносит {1} <color=yellow>урона от света</color> врагам поблизости.",
     "rawDescVars": [
       {
-        "rendered": "7<sprite=5>",
+        "rendered": " 7<sprite=5> ",
         "format": "#,##0",
         "raw": "maxCharge",
         "scalingType": "basic",
@@ -1846,7 +1905,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>117%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>117%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1871,7 +1930,7 @@
   },
   "Gem_E_Twilight": {
     "name": "Эссенция рассвета",
-    "description": "Преобразует <color=yellow>базовые атаки</color> персонажа в <color=yellow>урон от тьмы</color>. При нанесении урона врагу этим Воспоминанием с <color=yellow>накоплениями тьмы</color> (от 3) поглощает все накопления, нанося <sprite=1><color=#16D7FF>54%</color><sprite=5> <color=yellow>урона</color> и <color=yellow>исцеляя</color> 6<sprite=5> ОЗ за каждое накопление.",
+    "description": "Преобразует <color=yellow>базовые атаки</color> персонажа в <color=yellow>урон от тьмы</color>. При нанесении урона врагу этим Воспоминанием с <color=yellow>накоплениями тьмы</color> (от 3) поглощает все накопления, нанося  <sprite=1><color=#fff><gradient=sv_ap>54%</gradient></color><sprite=5>  <color=yellow>урона</color> и <color=yellow>исцеляя</color>  6<sprite=5>  ОЗ за каждое накопление.",
     "rawDesc": "Преобразует <color=yellow>базовые атаки</color> персонажа в <color=yellow>урон от тьмы</color>. При нанесении урона врагу этим Воспоминанием с <color=yellow>накоплениями тьмы</color> (от {0}) поглощает все накопления, нанося {1} <color=yellow>урона</color> и <color=yellow>исцеляя</color> {2} ОЗ за каждое накопление.",
     "rawDescVars": [
       {
@@ -1888,7 +1947,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>54%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>54%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgPerStack",
         "scalingType": "basic",
@@ -1901,7 +1960,7 @@
         }
       },
       {
-        "rendered": "6<sprite=5>",
+        "rendered": " 6<sprite=5> ",
         "format": "#,##0",
         "raw": "healPerStack",
         "scalingType": "basic",
@@ -1926,11 +1985,11 @@
   },
   "Gem_E_Umbra": {
     "name": "Эссенция Тени",
-    "description": "Урон этого воспоминания увеличивается на 42%<sprite=5> от <color=yellow>Шанса критического удара</color>. Если этот <color=yellow>Урон</color> является <color=yellow>Уроном Тьмы</color>, <color=yellow>восстанавливает</color> 6%<sprite=5> от урона в виде <color=yellow>Здоровья</color>.",
+    "description": "Урон этого воспоминания увеличивается на  42%<sprite=5>  от <color=yellow>Шанса критического удара</color>. Если этот <color=yellow>Урон</color> является <color=yellow>Уроном Тьмы</color>, <color=yellow>восстанавливает</color>  6%<sprite=5>  от урона в виде <color=yellow>Здоровья</color>.",
     "rawDesc": "Урон этого воспоминания увеличивается на {0} от <color=yellow>Шанса критического удара</color>. Если этот <color=yellow>Урон</color> является <color=yellow>Уроном Тьмы</color>, <color=yellow>восстанавливает</color> {1} от урона в виде <color=yellow>Здоровья</color>.",
     "rawDescVars": [
       {
-        "rendered": "42%<sprite=5>",
+        "rendered": " 42%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmpCritConversionRatio",
         "scalingType": "basic",
@@ -1943,7 +2002,7 @@
         }
       },
       {
-        "rendered": "6%<sprite=5>",
+        "rendered": " 6%<sprite=5> ",
         "format": "P0",
         "raw": "conversionRatio",
         "scalingType": "basic",
@@ -1968,11 +2027,11 @@
   },
   "Gem_E_Virtuousness": {
     "name": "Эссенция добродетели",
-    "description": "Увеличивает количество зарядов этого Воспоминания на 1<sprite=5>. Увеличивает количество зарядов на 1 за кажд. 150% ед. качества.",
+    "description": "Увеличивает количество зарядов этого Воспоминания на  1<sprite=5> . Увеличивает количество зарядов на 1 за кажд. 150% ед. качества.",
     "rawDesc": "Увеличивает количество зарядов этого Воспоминания на {0}. Увеличивает количество зарядов на 1 за кажд. {1} ед. качества.",
     "rawDescVars": [
       {
-        "rendered": "1<sprite=5>",
+        "rendered": " 1<sprite=5> ",
         "format": "#,##0",
         "raw": "addedChargeInt",
         "scalingType": "unknown",
@@ -2002,18 +2061,18 @@
   },
   "Gem_L_CamillasGift": {
     "name": "Дар Камиллы",
-    "description": "Можно <color=yellow>продать</color> в магазине за золото x0. <color=yellow>Стоимость</color> <color=yellow>увеличивается</color> на 0 при каждом переходе в следующий мир. Разбивается, если ОЗ падают ниже 50% из-за урона от врагов.",
+    "description": "Можно <color=yellow>продать</color> в магазине за золото x. <color=yellow>Стоимость</color> <color=yellow>увеличивается</color> на  при каждом переходе в следующий мир. Разбивается, если ОЗ падают ниже 50% из-за урона от врагов.",
     "rawDesc": "Можно <color=yellow>продать</color> в магазине за золото x{0}. <color=yellow>Стоимость</color> <color=yellow>увеличивается</color> на {1} при каждом переходе в следующий мир. Разбивается, если ОЗ падают ниже {2} из-за урона от врагов.",
     "rawDescVars": [
       {
-        "rendered": "0",
+        "rendered": "",
         "format": "#,##0",
         "raw": "currentSellGold",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "0",
+        "rendered": "",
         "format": "#,##0",
         "raw": "sellGoldIncreasePerWorld",
         "scalingType": "basic",
@@ -2049,11 +2108,11 @@
   },
   "Gem_L_ChaosApple": {
     "name": "Яблоко хаоса",
-    "description": "При каждом <color=yellow>перемещении</color> через <color=yellow>разлом</color> это Воспоминание <color=yellow>трансформируется</color> в другое случайное Воспоминание. <color=yellow>Трансформированное</color> Воспоминание не имеет <color=yellow>времени перезарядки</color>, но может быть <color=yellow>применено</color> только 4<sprite=5> р. в каждой локации.",
+    "description": "При каждом <color=yellow>перемещении</color> через <color=yellow>разлом</color> это Воспоминание <color=yellow>трансформируется</color> в другое случайное Воспоминание. <color=yellow>Трансформированное</color> Воспоминание не имеет <color=yellow>времени перезарядки</color>, но может быть <color=yellow>применено</color> только  4<sprite=5>  р. в каждой локации.",
     "rawDesc": "При каждом <color=yellow>перемещении</color> через <color=yellow>разлом</color> это Воспоминание <color=yellow>трансформируется</color> в другое случайное Воспоминание. <color=yellow>Трансформированное</color> Воспоминание не имеет <color=yellow>времени перезарядки</color>, но может быть <color=yellow>применено</color> только {0} р. в каждой локации.",
     "rawDescVars": [
       {
-        "rendered": "4<sprite=5>",
+        "rendered": " 4<sprite=5> ",
         "format": "#,##0",
         "raw": "castPerRoomCount",
         "scalingType": "basic",
@@ -2076,11 +2135,11 @@
   },
   "Gem_L_DivineFaith": {
     "name": "Божественная вера",
-    "description": "При каждой <color=yellow>победе</color> над врагом этим Воспоминанием дает накопление <color=yellow>веры</color> (макс. до 75<sprite=5>). За каждое накопление <color=yellow>веры</color> увеличивает <color=yellow>урон</color>, наносимый этим Воспоминанием врагам, и <color=yellow>исцеление</color> союзников на 0.5%, а макс. ОЗ — на 4.",
+    "description": "При каждой <color=yellow>победе</color> над врагом этим Воспоминанием дает накопление <color=yellow>веры</color> (макс. до  75<sprite=5> ). За каждое накопление <color=yellow>веры</color> увеличивает <color=yellow>урон</color>, наносимый этим Воспоминанием врагам, и <color=yellow>исцеление</color> союзников на 0.4%, а макс. ОЗ — на 4.",
     "rawDesc": "При каждой <color=yellow>победе</color> над врагом этим Воспоминанием дает накопление <color=yellow>веры</color> (макс. до {0}). За каждое накопление <color=yellow>веры</color> увеличивает <color=yellow>урон</color>, наносимый этим Воспоминанием врагам, и <color=yellow>исцеление</color> союзников на {1}, а макс. ОЗ — на {2}.",
     "rawDescVars": [
       {
-        "rendered": "75<sprite=5>",
+        "rendered": " 75<sprite=5> ",
         "format": "#,##0",
         "raw": "maxStacks",
         "scalingType": "basic",
@@ -2093,12 +2152,12 @@
         }
       },
       {
-        "rendered": "0.5%",
+        "rendered": "0.4%",
         "format": "0.#%",
         "raw": "dmgAmpPerStack",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.005,
+          "basicConstant": 0.004,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2129,11 +2188,11 @@
   },
   "Gem_L_Embertail": {
     "name": "Огненный хвост",
-    "description": "<color=yellow>Атаки</color> персонажа рикошетят и наносят <color=yellow>урон от огня</color> в размере <sprite=1><color=#16D7FF>100%</color><sprite=5> одному ближайшему врагу. За каждого охваченного пламенем врага поблизости увеличивает <color=yellow>урон</color> и <color=yellow>исцеление</color> этого Воспоминания на 8%<sprite=5>, снижает <color=yellow>время перезарядки</color> на 8%<sprite=5>. Увеличивает продолжительный урон от огня на 100%.",
+    "description": "<color=yellow>Атаки</color> персонажа рикошетят и наносят <color=yellow>урон от огня</color> в размере  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5>  одному ближайшему врагу. За каждого охваченного пламенем врага поблизости увеличивает <color=yellow>урон</color> и <color=yellow>исцеление</color> этого Воспоминания на  8%<sprite=5> , снижает <color=yellow>время перезарядки</color> на  8%<sprite=5> . Увеличивает продолжительный урон от огня на 100%.",
     "rawDesc": "<color=yellow>Атаки</color> персонажа рикошетят и наносят <color=yellow>урон от огня</color> в размере {0} одному ближайшему врагу. За каждого охваченного пламенем врага поблизости увеличивает <color=yellow>урон</color> и <color=yellow>исцеление</color> этого Воспоминания на {1}, снижает <color=yellow>время перезарядки</color> на {2}. Увеличивает продолжительный урон от огня на {3}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -2146,7 +2205,7 @@
         }
       },
       {
-        "rendered": "8%<sprite=5>",
+        "rendered": " 8%<sprite=5> ",
         "format": "P0",
         "raw": "ampPerBurning",
         "scalingType": "basic",
@@ -2159,7 +2218,7 @@
         }
       },
       {
-        "rendered": "8%<sprite=5>",
+        "rendered": " 8%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "skillHastePerBurning",
         "scalingType": "basic",
@@ -2192,7 +2251,7 @@
   },
   "Gem_L_HeartOfGold": {
     "name": "Золотое сердце",
-    "description": "При <color=yellow>применении</color> этого Воспоминания тратит 3% золота в наличии для <color=yellow>усиления</color> применения. <color=yellow>Усиленное применение</color> увеличивает <color=yellow>урон</color> и <color=yellow>исцеление</color> на 12%<sprite=5> за каждые 100 золота.\n",
+    "description": "При <color=yellow>применении</color> этого Воспоминания тратит 3% золота в наличии для <color=yellow>усиления</color> применения. <color=yellow>Усиленное применение</color> увеличивает <color=yellow>урон</color> и <color=yellow>исцеление</color> на  12%<sprite=5>  за каждые 100 золота.\n",
     "rawDesc": "При <color=yellow>применении</color> этого Воспоминания тратит {0} золота в наличии для <color=yellow>усиления</color> применения. <color=yellow>Усиленное применение</color> увеличивает <color=yellow>урон</color> и <color=yellow>исцеление</color> на {1} за каждые 100 золота.\n",
     "rawDescVars": [
       {
@@ -2209,7 +2268,7 @@
         }
       },
       {
-        "rendered": "12%<sprite=5>",
+        "rendered": " 12%<sprite=5> ",
         "format": "P0",
         "raw": "ampPerHundredGold",
         "scalingType": "basic",
@@ -2247,11 +2306,11 @@
   },
   "Gem_L_Paranoia": {
     "name": "Эссенция паранойи",
-    "description": "При получении любого <color=yellow>урона</color> дает 150<sprite=5> <color=yellow>ускорения Воспоминания</color> на 6 с. этому Воспоминанию, снижая <color=yellow>время перезарядки</color> на 60%<sprite=5>, но <color=yellow>автоматически применяется</color> на ближайших врагов.",
+    "description": "При получении любого <color=yellow>урона</color> дает  150<sprite=5>  <color=yellow>ускорения Воспоминания</color> на 6 с. этому Воспоминанию, снижая <color=yellow>время перезарядки</color> на  60%<sprite=5> , но <color=yellow>автоматически применяется</color> на ближайших врагов.",
     "rawDesc": "При получении любого <color=yellow>урона</color> дает {0} <color=yellow>ускорения Воспоминания</color> на {1} с. этому Воспоминанию, снижая <color=yellow>время перезарядки</color> на {2}, но <color=yellow>автоматически применяется</color> на ближайших врагов.",
     "rawDescVars": [
       {
-        "rendered": "150<sprite=5>",
+        "rendered": " 150<sprite=5> ",
         "format": "#,##0",
         "raw": "skillHaste",
         "scalingType": "basic",
@@ -2277,7 +2336,7 @@
         }
       },
       {
-        "rendered": "60%<sprite=5>",
+        "rendered": " 60%<sprite=5> ",
         "format": "P0",
         "raw": "reducedRatio",
         "scalingType": "unknown",
@@ -2294,16 +2353,16 @@
   },
   "Gem_L_Perfect": {
     "name": "Совершенство",
-    "description": "Увеличивает силу атаки на 7<sprite=5>, силу умений — на 7<sprite=5>, макс. ОЗ — на 35<sprite=5>, скорость атаки — на 10%<sprite=5>, шанс критического удара — на 6%<sprite=5>, ускорение Воспоминания — на 10<sprite=5>.",
+    "description": "Увеличивает силу атаки на  6<sprite=5> , силу умений — на  6<sprite=5> , макс. ОЗ — на  31<sprite=5> , скорость атаки — на  9%<sprite=5> , шанс критического удара — на  5%<sprite=5> , ускорение Воспоминания — на  9<sprite=5> .",
     "rawDesc": "Увеличивает силу атаки на {0}, силу умений — на {1}, макс. ОЗ — на {2}, скорость атаки — на {3}, шанс критического удара — на {4}, ускорение Воспоминания — на {5}.",
     "rawDescVars": [
       {
-        "rendered": "7<sprite=5>",
+        "rendered": " 6<sprite=5> ",
         "format": "#,##0",
         "raw": "adAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 3.5,
+          "basicConstant": 3.15,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2311,12 +2370,12 @@
         }
       },
       {
-        "rendered": "7<sprite=5>",
+        "rendered": " 6<sprite=5> ",
         "format": "#,##0",
         "raw": "apAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 3.5,
+          "basicConstant": 3.15,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2324,12 +2383,12 @@
         }
       },
       {
-        "rendered": "35<sprite=5>",
+        "rendered": " 31<sprite=5> ",
         "format": "#,##0",
         "raw": "healthAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 17.5,
+          "basicConstant": 15.75,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2337,12 +2396,12 @@
         }
       },
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": " 9%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "attackSpeedAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 5.0,
+          "basicConstant": 4.5,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2350,12 +2409,12 @@
         }
       },
       {
-        "rendered": "6%<sprite=5>",
+        "rendered": " 5%<sprite=5> ",
         "format": "P0",
         "raw": "criticalChanceAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.03,
+          "basicConstant": 0.027,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2363,12 +2422,12 @@
         }
       },
       {
-        "rendered": "10<sprite=5>",
+        "rendered": " 9<sprite=5> ",
         "format": "#,##0",
         "raw": "skillHasteAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 5.0,
+          "basicConstant": 4.5,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2386,7 +2445,7 @@
   },
   "Gem_L_PureWhite": {
     "name": "Белоснежность",
-    "description": "<color=yellow>Усиливает</color> <color=yellow>применение</color> этого Воспоминания кажд. 10 с. <color=yellow>Усиленное применение</color> выстреливает <color=yellow>снарядами</color> x3, наносящими 20%<sprite=5> от первоначального <color=yellow>урона</color> отдельной цели в виде <color=yellow>урона от света</color>. Увеличивает количество выстрелов на количество <color=yellow>накоплений света</color> на каждой цели.",
+    "description": "<color=yellow>Усиливает</color> <color=yellow>применение</color> этого Воспоминания кажд. 10 с. <color=yellow>Усиленное применение</color> выстреливает <color=yellow>снарядами</color> x3, наносящими  20%<sprite=5>  от первоначального <color=yellow>урона</color> отдельной цели в виде <color=yellow>урона от света</color>. Увеличивает количество выстрелов на количество <color=yellow>накоплений света</color> на каждой цели.",
     "rawDesc": "<color=yellow>Усиливает</color> <color=yellow>применение</color> этого Воспоминания кажд. {0} с. <color=yellow>Усиленное применение</color> выстреливает <color=yellow>снарядами</color> x{1}, наносящими {2} от первоначального <color=yellow>урона</color> отдельной цели в виде <color=yellow>урона от света</color>. Увеличивает количество выстрелов на количество <color=yellow>накоплений света</color> на каждой цели.",
     "rawDescVars": [
       {
@@ -2416,7 +2475,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "P0",
         "raw": "damageMultiplier",
         "scalingType": "basic",
@@ -2441,7 +2500,7 @@
   },
   "Gem_L_SolarEye": {
     "name": "Око солнца",
-    "description": "Кажд. 20 с. <color=yellow>усиливает</color> <color=yellow>применение</color> этого Воспоминания, обрушивая <color=yellow>солнечный свет</color> на всех врагов поблизости, уже <color=yellow>охваченных огнем</color>. <color=yellow>Солнечный свет</color> наносит <sprite=1><color=#16D7FF>360%</color><sprite=5> <color=yellow>урона от огня</color> в течение 1.5 с. и увеличивает накопление <color=yellow>огня</color> на 9<sprite=5>.\nУвеличивает продолжительный урон от огня на 100%.",
+    "description": "Кажд. 20 с. <color=yellow>усиливает</color> <color=yellow>применение</color> этого Воспоминания, обрушивая <color=yellow>солнечный свет</color> на всех врагов поблизости, уже <color=yellow>охваченных огнем</color>. <color=yellow>Солнечный свет</color> наносит  <sprite=1><color=#fff><gradient=sv_ap>360%</gradient></color><sprite=5>  <color=yellow>урона от огня</color> в течение 1.5 с. и увеличивает накопление <color=yellow>огня</color> на  9<sprite=5> .\nУвеличивает продолжительный урон от огня на 100%.",
     "rawDesc": "Кажд. {0} с. <color=yellow>усиливает</color> <color=yellow>применение</color> этого Воспоминания, обрушивая <color=yellow>солнечный свет</color> на всех врагов поблизости, уже <color=yellow>охваченных огнем</color>. <color=yellow>Солнечный свет</color> наносит {1} <color=yellow>урона от огня</color> в течение {2} с. и увеличивает накопление <color=yellow>огня</color> на {3}.\nУвеличивает продолжительный урон от огня на {4}.",
     "rawDescVars": [
       {
@@ -2458,7 +2517,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>360%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>360%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor * tickCount",
         "scalingType": "unknown",
@@ -2472,7 +2531,7 @@
         "data": {}
       },
       {
-        "rendered": "9<sprite=5>",
+        "rendered": " 9<sprite=5> ",
         "format": "#,##0",
         "raw": "calTotalStack",
         "scalingType": "unknown",
@@ -2498,7 +2557,7 @@
   },
   "Gem_L_SuppressedArcanum": {
     "name": "Подавленный Арканум",
-    "description": "При <color=yellow>применении</color> этого Воспоминания жертвует 5% текущих ОЗ, вызывая <color=yellow>золотой взрыв</color>. Враги в зоне <color=yellow>взрыва</color> получают <sprite=1><color=#16D7FF>240%</color><sprite=5> <color=yellow>урона от света</color>, а союзники получают <sprite=1><color=#16D7FF>61%</color><sprite=5> <color=yellow>ЗЩТ</color> на 2.5 с. Если ОЗ персонажа ниже 60%, увеличивает <color=yellow>щит</color> на 50%.",
+    "description": "При <color=yellow>применении</color> этого Воспоминания жертвует 5% текущих ОЗ, вызывая <color=yellow>золотой взрыв</color>. Враги в зоне <color=yellow>взрыва</color> получают  <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><sprite=5>  <color=yellow>урона от света</color>, а союзники получают  <sprite=1><color=#fff><gradient=sv_ap>61%</gradient></color><sprite=5>  <color=yellow>ЗЩТ</color> на 2.5 с. Если ОЗ персонажа ниже 60%, увеличивает <color=yellow>щит</color> на 50%.",
     "rawDesc": "При <color=yellow>применении</color> этого Воспоминания жертвует {0} текущих ОЗ, вызывая <color=yellow>золотой взрыв</color>. Враги в зоне <color=yellow>взрыва</color> получают {1} <color=yellow>урона от света</color>, а союзники получают {2} <color=yellow>ЗЩТ</color> на {3} с. Если ОЗ персонажа ниже {4}, увеличивает <color=yellow>щит</color> на {5}.",
     "rawDescVars": [
       {
@@ -2515,7 +2574,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>240%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -2528,7 +2587,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>61%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>61%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -2593,7 +2652,7 @@
   },
   "Gem_R_Abyss": {
     "name": "Эссенция Бездны",
-    "description": "Весь <color=yellow>урон</color>, наносимый этим воспоминанием, преобразуется в <color=yellow>урон Тьмы</color>. Если у цели, <color=yellow>пораженной</color> этим воспоминанием, <color=yellow>стаков Тьмы</color> 3 или больше, с вероятностью 43%<sprite=5> срабатывает <color=yellow>эффект атаки</color>.",
+    "description": "Весь <color=yellow>урон</color>, наносимый этим воспоминанием, преобразуется в <color=yellow>урон Тьмы</color>. Если у цели, <color=yellow>пораженной</color> этим воспоминанием, <color=yellow>стаков Тьмы</color> 3 или больше, с вероятностью  43%<sprite=5>  срабатывает <color=yellow>эффект атаки</color>.",
     "rawDesc": "Весь <color=yellow>урон</color>, наносимый этим воспоминанием, преобразуется в <color=yellow>урон Тьмы</color>. Если у цели, <color=yellow>пораженной</color> этим воспоминанием, <color=yellow>стаков Тьмы</color> {0} или больше, с вероятностью {1} срабатывает <color=yellow>эффект атаки</color>.",
     "rawDescVars": [
       {
@@ -2610,7 +2669,7 @@
         }
       },
       {
-        "rendered": "43%<sprite=5>",
+        "rendered": " 43%<sprite=5> ",
         "format": "P0",
         "raw": "atkEffectChance",
         "scalingType": "unknown",
@@ -2630,11 +2689,11 @@
   },
   "Gem_R_Accuracy": {
     "name": "Эссенция точности",
-    "description": "При нанесении этим Воспоминанием <color=yellow>урона</color> дальней цели, выстреливает <color=yellow>дополнительным проектилем</color>, наносящим 50%<sprite=5> <color=yellow>урона</color>. Этот <color=yellow>проектиль</color> наносит тот же тип элемента <color=yellow>урона</color>, что и исходный урон.",
+    "description": "При нанесении этим Воспоминанием <color=yellow>урона</color> дальней цели, выстреливает <color=yellow>дополнительным проектилем</color>, наносящим  50%<sprite=5>  <color=yellow>урона</color>. Этот <color=yellow>проектиль</color> наносит тот же тип элемента <color=yellow>урона</color>, что и исходный урон.",
     "rawDesc": "При нанесении этим Воспоминанием <color=yellow>урона</color> дальней цели, выстреливает <color=yellow>дополнительным проектилем</color>, наносящим {0} <color=yellow>урона</color>. Этот <color=yellow>проектиль</color> наносит тот же тип элемента <color=yellow>урона</color>, что и исходный урон.",
     "rawDescVars": [
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "damageRatio",
         "scalingType": "basic",
@@ -2657,7 +2716,7 @@
   },
   "Gem_R_Adventure": {
     "name": "Эссенция приключений",
-    "description": "При <color=yellow>перемещении</color> в <color=yellow>новую локацию</color> <color=yellow>увеличивает</color> <color=yellow>качество</color> одной случайной <color=yellow>Эссенции</color>, установленной на это Воспоминание, на +10% и дает 19<sprite=5> золота.",
+    "description": "При <color=yellow>перемещении</color> в <color=yellow>новую локацию</color> <color=yellow>увеличивает</color> <color=yellow>качество</color> одной случайной <color=yellow>Эссенции</color>, установленной на это Воспоминание, на +10% и дает  19<sprite=5>  золота.",
     "rawDesc": "При <color=yellow>перемещении</color> в <color=yellow>новую локацию</color> <color=yellow>увеличивает</color> <color=yellow>качество</color> одной случайной <color=yellow>Эссенции</color>, установленной на это Воспоминание, на +{0} и дает {1} золота.",
     "rawDescVars": [
       {
@@ -2674,7 +2733,7 @@
         }
       },
       {
-        "rendered": "19<sprite=5>",
+        "rendered": " 19<sprite=5> ",
         "format": "#,##0",
         "raw": "goldAmount",
         "scalingType": "basic",
@@ -2697,24 +2756,24 @@
   },
   "Gem_R_Blade": {
     "name": "Эссенция клинка",
-    "description": "При каждом <color=yellow>попадании</color> этим Воспоминанием по врагу призывает клинки, которые наносят <sprite=2><color=#FF8A2D>58%</color><sprite=5> урона цели 3<sprite=5> р. Срабатывает только раз в 2 с. на каждого врага.",
+    "description": "При каждом <color=yellow>попадании</color> этим Воспоминанием по врагу призывает клинки, которые наносят  <sprite=2><color=#fff><gradient=sv_ad>69%</gradient></color><sprite=5>  урона цели  3<sprite=5>  р. Срабатывает только раз в 2 с. на каждого врага.",
     "rawDesc": "При каждом <color=yellow>попадании</color> этим Воспоминанием по врагу призывает клинки, которые наносят {0} урона цели {1} р. Срабатывает только раз в {2} с. на каждого врага.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>58%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>69%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 0.55,
+          "basicAD": 0.66,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.0005
         }
       },
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0",
         "raw": "baseCount",
         "scalingType": "basic",
@@ -2750,11 +2809,11 @@
   },
   "Gem_R_Bleak": {
     "name": "Эссенция безысходности",
-    "description": "Увеличивает урон от этого Воспоминания по врагам под воздействием <color=yellow>холода</color> или в состоянии <color=yellow>замедления</color>, <color=yellow>сковывания</color> или <color=yellow>оглушения</color> на 50%<sprite=5>.",
+    "description": "Увеличивает урон от этого Воспоминания по врагам под воздействием <color=yellow>холода</color> или в состоянии <color=yellow>замедления</color>, <color=yellow>сковывания</color> или <color=yellow>оглушения</color> на  50%<sprite=5> .",
     "rawDesc": "Увеличивает урон от этого Воспоминания по врагам под воздействием <color=yellow>холода</color> или в состоянии <color=yellow>замедления</color>, <color=yellow>сковывания</color> или <color=yellow>оглушения</color> на {0}.",
     "rawDescVars": [
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -2847,16 +2906,16 @@
   },
   "Gem_R_Celestial": {
     "name": "Эссенция небес",
-    "description": "<color=yellow>Усиливает</color> <color=yellow>применение</color> этого Воспоминания кажд. 10 с. При первом попадании <color=yellow>усиленным применением</color> по отдельному врагу призывает падающие звезды x4, наносящие <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>урона от света</color>.",
+    "description": "<color=yellow>Усиливает</color> <color=yellow>применение</color> этого Воспоминания кажд. 8 с. При первом попадании <color=yellow>усиленным применением</color> по отдельному врагу призывает падающие звезды x4, наносящие  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5>  <color=yellow>урона от света</color>.",
     "rawDesc": "<color=yellow>Усиливает</color> <color=yellow>применение</color> этого Воспоминания кажд. {0} с. При первом попадании <color=yellow>усиленным применением</color> по отдельному врагу призывает падающие звезды x{1}, наносящие {2} <color=yellow>урона от света</color>.",
     "rawDescVars": [
       {
-        "rendered": "10",
+        "rendered": "8",
         "format": "#,##0.#",
         "raw": "cooldownTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 8.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2877,7 +2936,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "starDamage",
         "scalingType": "basic",
@@ -2902,11 +2961,11 @@
   },
   "Gem_R_Composure": {
     "name": "Эссенция хладнокровия",
-    "description": "При <color=yellow>применении</color> этого Воспоминания увеличивает <color=yellow>шанс критического удара</color> на 30%<sprite=5> на 5 с. Эффект прекращается досрочно при получении урона от врага.",
+    "description": "При <color=yellow>применении</color> этого Воспоминания увеличивает <color=yellow>шанс критического удара</color> на  30%<sprite=5>  на 5 с. Эффект прекращается досрочно при получении урона от врага.",
     "rawDesc": "При <color=yellow>применении</color> этого Воспоминания увеличивает <color=yellow>шанс критического удара</color> на {0} на {1} с. Эффект прекращается досрочно при получении урона от врага.",
     "rawDescVars": [
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": " 30%<sprite=5> ",
         "format": "P0",
         "raw": "critBonus",
         "scalingType": "basic",
@@ -2942,7 +3001,7 @@
   },
   "Gem_R_Contempt": {
     "name": "Эссенция презрения",
-    "description": "Чем ниже ОЗ врагов, тем больше <color=yellow>урона</color> наносит им это Воспоминание. Если ОЗ врагов равны 20%, урон <color=yellow>увеличивается</color> макс. до 50%<sprite=5>.",
+    "description": "Чем ниже ОЗ врагов, тем больше <color=yellow>урона</color> наносит им это Воспоминание. Если ОЗ врагов равны 20%, урон <color=yellow>увеличивается</color> макс. до  50%<sprite=5> .",
     "rawDesc": "Чем ниже ОЗ врагов, тем больше <color=yellow>урона</color> наносит им это Воспоминание. Если ОЗ врагов равны {0}, урон <color=yellow>увеличивается</color> макс. до {1}.",
     "rawDescVars": [
       {
@@ -2959,7 +3018,7 @@
         }
       },
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "amp",
         "scalingType": "basic",
@@ -2982,7 +3041,7 @@
   },
   "Gem_R_Dusk": {
     "name": "Эссенция заката",
-    "description": "При применении этого Воспоминания, в течение 5 с. каждая <color=yellow>атака</color> по врагу выстреливает <color=yellow>осколками заката</color> x2, наносящими <sprite=2><color=#FF8A2D>30%</color><sprite=5> <color=yellow>урона от тьмы</color>.",
+    "description": "При применении этого Воспоминания, в течение 5 с. каждая <color=yellow>атака</color> по врагу выстреливает <color=yellow>осколками заката</color> x2, наносящими  <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5>  <color=yellow>урона от тьмы</color>.",
     "rawDesc": "При применении этого Воспоминания, в течение {0} с. каждая <color=yellow>атака</color> по врагу выстреливает <color=yellow>осколками заката</color> x{1}, наносящими {2} <color=yellow>урона от тьмы</color>.",
     "rawDescVars": [
       {
@@ -3012,7 +3071,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>30%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3036,13 +3095,73 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Epiphany": {
+    "name": "Эссенция Прозрения",
+    "description": "При <color=yellow>применении</color> этого воспоминания <color=yellow>сила способностей</color> увеличивается на  22<sprite=5>  на 5 сек. Если это воспоминание — <color=yellow>ультимативная способность</color>, то его <color=yellow>время восстановления</color> мгновенно сокращается на  21%<sprite=5> . Срабатывает не чаще одного раза в 10 сек.",
+    "rawDesc": "При <color=yellow>применении</color> этого воспоминания <color=yellow>сила способностей</color> увеличивается на {0} на {1} сек. Если это воспоминание — <color=yellow>ультимативная способность</color>, то его <color=yellow>время восстановления</color> мгновенно сокращается на {2}. Срабатывает не чаще одного раза в {3} сек.",
+    "rawDescVars": [
+      {
+        "rendered": " 22<sprite=5> ",
+        "format": "#,##0",
+        "raw": "apEmpowerAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 21%<sprite=5> ",
+        "format": "P0",
+        "raw": "refundCooldownRatio",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Epiphany.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Flow": {
     "name": "Эссенция потока",
-    "description": "При нанесении <color=yellow>урона от света</color> любым Воспоминанием снижает <color=yellow>время перезарядки</color> этого Воспоминания на 6%<sprite=5>. Для абсолютного умения эффект составляет только 40%. Эффект <color=yellow>снижения времени перезарядки</color>, получаемый этим Воспоминанием, также применяется к установленным <color=yellow>Эссенциям</color>.",
+    "description": "При нанесении <color=yellow>урона от света</color> любым Воспоминанием снижает <color=yellow>время перезарядки</color> этого Воспоминания на  6%<sprite=5> . Для абсолютного умения эффект составляет только 40%. Эффект <color=yellow>снижения времени перезарядки</color>, получаемый этим Воспоминанием, также применяется к установленным <color=yellow>Эссенциям</color>.",
     "rawDesc": "При нанесении <color=yellow>урона от света</color> любым Воспоминанием снижает <color=yellow>время перезарядки</color> этого Воспоминания на {0}. Для абсолютного умения эффект составляет только {1}. Эффект <color=yellow>снижения времени перезарядки</color>, получаемый этим Воспоминанием, также применяется к установленным <color=yellow>Эссенциям</color>.",
     "rawDescVars": [
       {
-        "rendered": "6%<sprite=5>",
+        "rendered": " 6%<sprite=5> ",
         "format": "P0",
         "raw": "reduceRatio",
         "scalingType": "basic",
@@ -3080,11 +3199,11 @@
   },
   "Gem_R_Frost": {
     "name": "Эссенция инея",
-    "description": "При нанесении <color=yellow>урона от холода</color> этим Воспоминанием наносит <color=yellow>урон от холода</color> в размере 10%<sprite=5> от <color=yellow>макс. ОЗ</color> персонажа и <color=yellow>оглушает</color> цель на короткое время. Срабатывает один раз в 5 с. на одного врага. При каждом срабатывании навсегда увеличивает <color=yellow>макс. ОЗ</color> на 1.",
+    "description": "При нанесении <color=yellow>урона от холода</color> этим Воспоминанием наносит <color=yellow>урон от холода</color> в размере  10%<sprite=5>  от <color=yellow>макс. ОЗ</color> персонажа и <color=yellow>оглушает</color> цель на короткое время. Срабатывает один раз в 5 с. на одного врага. При каждом срабатывании навсегда увеличивает <color=yellow>макс. ОЗ</color> на 1.",
     "rawDesc": "При нанесении <color=yellow>урона от холода</color> этим Воспоминанием наносит <color=yellow>урон от холода</color> в размере {0} от <color=yellow>макс. ОЗ</color> персонажа и <color=yellow>оглушает</color> цель на короткое время. Срабатывает один раз в {1} с. на одного врага. При каждом срабатывании навсегда увеличивает <color=yellow>макс. ОЗ</color> на {2}.",
     "rawDescVars": [
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": " 10%<sprite=5> ",
         "format": "P0",
         "raw": "damageRatio",
         "scalingType": "basic",
@@ -3136,11 +3255,11 @@
   },
   "Gem_R_Glaciate": {
     "name": "Эссенция оледенения",
-    "description": "При <color=yellow>применении</color> этого Воспоминания испускает волну холода, нанося <sprite=1><color=#16D7FF>160%</color><sprite=5> <color=yellow>урона от холода</color> врагам. Чем выше качество эссенции, тем больше область действия.",
+    "description": "При <color=yellow>применении</color> этого Воспоминания испускает волну холода, нанося  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5>  <color=yellow>урона от холода</color> врагам. Чем выше качество эссенции, тем больше область действия.",
     "rawDesc": "При <color=yellow>применении</color> этого Воспоминания испускает волну холода, нанося {0} <color=yellow>урона от холода</color> врагам. Чем выше качество эссенции, тем больше область действия.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3165,11 +3284,11 @@
   },
   "Gem_R_Insatiable": {
     "name": "Эссенция ненасытности",
-    "description": "После применения этого Воспоминания увеличивает <color=yellow>силу атаки</color> на 15%<sprite=5> на 5 с. и при каждой <color=yellow>атаке</color> <color=yellow>исцеляет</color> 6<sprite=5> ОЗ.",
+    "description": "После применения этого Воспоминания увеличивает <color=yellow>силу атаки</color> на  15%<sprite=5>  на 5 с. и при каждой <color=yellow>атаке</color> <color=yellow>исцеляет</color>  6<sprite=5>  ОЗ.",
     "rawDesc": "После применения этого Воспоминания увеличивает <color=yellow>силу атаки</color> на {0} на {1} с. и при каждой <color=yellow>атаке</color> <color=yellow>исцеляет</color> {2} ОЗ.",
     "rawDescVars": [
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "bonusAttackDamagePercentage",
         "scalingType": "basic",
@@ -3195,7 +3314,7 @@
         }
       },
       {
-        "rendered": "6<sprite=5>",
+        "rendered": " 6<sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -3221,11 +3340,11 @@
   },
   "Gem_R_Momentum": {
     "name": "Эссенция импульса",
-    "description": "При каждой <color=yellow>атаке</color> на врага <color=yellow>снижает</color> <color=yellow>время перезарядки</color> этого Воспоминания на 0.4<sprite=5> с.",
+    "description": "При каждой <color=yellow>атаке</color> на врага <color=yellow>снижает</color> <color=yellow>время перезарядки</color> этого Воспоминания на  0.4<sprite=5>  с.",
     "rawDesc": "При каждой <color=yellow>атаке</color> на врага <color=yellow>снижает</color> <color=yellow>время перезарядки</color> этого Воспоминания на {0} с.",
     "rawDescVars": [
       {
-        "rendered": "0.4<sprite=5>",
+        "rendered": " 0.4<sprite=5> ",
         "format": "#,##0.#",
         "raw": "reductionAmount",
         "scalingType": "basic",
@@ -3248,13 +3367,40 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Mortality": {
+    "name": "Эссенция Смертности",
+    "description": "При <color=yellow>попадании</color> по врагу, не являющемуся боссом, это воспоминание с шансом  1.2%<sprite=5>  <color=yellow>казнит</color> его.",
+    "rawDesc": "При <color=yellow>попадании</color> по врагу, не являющемуся боссом, это воспоминание с шансом {0} <color=yellow>казнит</color> его.",
+    "rawDescVars": [
+      {
+        "rendered": " 1.2%<sprite=5> ",
+        "format": "#,##0.#%",
+        "raw": "killChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.006,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Mortality.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_NightSky": {
     "name": "Эссенция ночного неба",
-    "description": "При каждом <color=yellow>попадании</color> Воспоминанием по врагу увеличивает <color=yellow>скорость атаки</color> на 10%<sprite=5> на 3 с. (макс. до 20%<sprite=5>). В случае <color=yellow>урона от тьмы</color> увеличивает макс. до 40%<sprite=5>. Длительность эффекта сбрасывается при каждой <color=yellow>атаке</color> по врагу.",
+    "description": "При каждом <color=yellow>попадании</color> Воспоминанием по врагу увеличивает <color=yellow>скорость атаки</color> на  10%<sprite=5>  на 3 с. (макс. до  20%<sprite=5> ). В случае <color=yellow>урона от тьмы</color> увеличивает макс. до  40%<sprite=5> . Длительность эффекта сбрасывается при каждой <color=yellow>атаке</color> по врагу.",
     "rawDesc": "При каждом <color=yellow>попадании</color> Воспоминанием по врагу увеличивает <color=yellow>скорость атаки</color> на {0} на {1} с. (макс. до {2}). В случае <color=yellow>урона от тьмы</color> увеличивает макс. до {3}. Длительность эффекта сбрасывается при каждой <color=yellow>атаке</color> по врагу.",
     "rawDescVars": [
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": " 10%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "perHitAtkSpd",
         "scalingType": "basic",
@@ -3280,7 +3426,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "maxAtkSpdNormal",
         "scalingType": "basic",
@@ -3293,7 +3439,7 @@
         }
       },
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "maxAtkSpdDark",
         "scalingType": "basic",
@@ -3319,11 +3465,11 @@
   },
   "Gem_R_Panic": {
     "name": "Эссенция паники",
-    "description": "При получении любого <color=yellow>урона</color> это Воспоминание получает 30<sprite=5> <color=yellow>ускорения Воспоминания</color> на 3 с., в то же время увеличивает <color=yellow>скорость передвижения</color> на 20%<sprite=5>.",
+    "description": "При получении любого <color=yellow>урона</color> это Воспоминание получает  30<sprite=5>  <color=yellow>ускорения Воспоминания</color> на 3 с., в то же время увеличивает <color=yellow>скорость передвижения</color> на  20%<sprite=5> .",
     "rawDesc": "При получении любого <color=yellow>урона</color> это Воспоминание получает {0} <color=yellow>ускорения Воспоминания</color> на {1} с., в то же время увеличивает <color=yellow>скорость передвижения</color> на {2}.",
     "rawDescVars": [
       {
-        "rendered": "30<sprite=5>",
+        "rendered": " 30<sprite=5> ",
         "format": "#,##0",
         "raw": "memoryHaste",
         "scalingType": "basic",
@@ -3349,7 +3495,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -3374,7 +3520,7 @@
   },
   "Gem_R_Rejuvenation": {
     "name": "Эссенция омоложения",
-    "description": "Каждые 15 с. <color=yellow>усиливает</color> <color=yellow>применение</color> этого Воспоминания. <color=yellow>Исцеляет</color> <color=yellow>персонажу</color> <color=yellow>ОЗ</color> в размере 14%<sprite=5> от <color=yellow>урона</color>, нанесенного в течение 1.5 с. после <color=yellow>усиленного применения</color>.",
+    "description": "Каждые 15 с. <color=yellow>усиливает</color> <color=yellow>применение</color> этого Воспоминания. <color=yellow>Исцеляет</color> <color=yellow>персонажу</color> <color=yellow>ОЗ</color> в размере  14%<sprite=5>  от <color=yellow>урона</color>, нанесенного в течение 1.5 с. после <color=yellow>усиленного применения</color>.",
     "rawDesc": "Каждые {0} с. <color=yellow>усиливает</color> <color=yellow>применение</color> этого Воспоминания. <color=yellow>Исцеляет</color> <color=yellow>персонажу</color> <color=yellow>ОЗ</color> в размере {1} от <color=yellow>урона</color>, нанесенного в течение {2} с. после <color=yellow>усиленного применения</color>.",
     "rawDescVars": [
       {
@@ -3391,7 +3537,7 @@
         }
       },
       {
-        "rendered": "14%<sprite=5>",
+        "rendered": " 14%<sprite=5> ",
         "format": "P0",
         "raw": "conversionRatio",
         "scalingType": "basic",
@@ -3429,18 +3575,18 @@
   },
   "Gem_R_Ricochet": {
     "name": "Эссенция рикошета",
-    "description": "С шансом 50%<sprite=5> <color=yellow>урон</color> или <color=yellow>исцеление</color> от этого Воспоминания рикошетит на другую ближайшую цель, нанося 90%<sprite=5> <color=yellow>урона</color> или <color=yellow>исцеления</color>. При нанесении <color=yellow>урона</color> рикошет сохраняет тип элемента исходного урона.",
+    "description": "С шансом  50%<sprite=5>  <color=yellow>урон</color> или <color=yellow>исцеление</color> от этого Воспоминания рикошетит на другую ближайшую цель, нанося  90%<sprite=5>  <color=yellow>урона</color> или <color=yellow>исцеления</color>. При нанесении <color=yellow>урона</color> рикошет сохраняет тип элемента исходного урона.",
     "rawDesc": "С шансом {0} <color=yellow>урон</color> или <color=yellow>исцеление</color> от этого Воспоминания рикошетит на другую ближайшую цель, нанося {1} <color=yellow>урона</color> или <color=yellow>исцеления</color>. При нанесении <color=yellow>урона</color> рикошет сохраняет тип элемента исходного урона.",
     "rawDescVars": [
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "ricochetChance",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "90%<sprite=5>",
+        "rendered": " 90%<sprite=5> ",
         "format": "P0",
         "raw": "ricochetRatio",
         "scalingType": "basic",
@@ -3463,11 +3609,11 @@
   },
   "Gem_R_Rigidity": {
     "name": "Эссенция непреклонности",
-    "description": "При <color=yellow>попадании</color> этим Воспоминанием по врагу дает <color=yellow>щит</color>, равный 9<sprite=5>, на 2 с. В случае <color=yellow>урона от холода</color> увеличивает эффект на 80%.",
+    "description": "При <color=yellow>попадании</color> этим Воспоминанием по врагу дает <color=yellow>щит</color>, равный  9<sprite=5> , на 2 с. В случае <color=yellow>урона от холода</color> увеличивает эффект на 80%.",
     "rawDesc": "При <color=yellow>попадании</color> этим Воспоминанием по врагу дает <color=yellow>щит</color>, равный {0}, на {1} с. В случае <color=yellow>урона от холода</color> увеличивает эффект на {2}.",
     "rawDescVars": [
       {
-        "rendered": "9<sprite=5>",
+        "rendered": " 9<sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -3512,11 +3658,11 @@
   },
   "Gem_R_Scorched": {
     "name": "Эссенция опаления",
-    "description": "При <color=yellow>применении</color> этого Воспоминания призывает <color=yellow>огненные шары</color> x3<sprite=5>, наносящие <sprite=1><color=#16D7FF>47%</color><sprite=5> <color=yellow>урона от огня</color> врагу поблизости.",
+    "description": "При <color=yellow>применении</color> этого Воспоминания призывает <color=yellow>огненные шары</color> x 3<sprite=5> , наносящие  <sprite=1><color=#fff><gradient=sv_ap>47%</gradient></color><sprite=5>  <color=yellow>урона от огня</color> врагу поблизости.",
     "rawDesc": "При <color=yellow>применении</color> этого Воспоминания призывает <color=yellow>огненные шары</color> x{0}, наносящие {1} <color=yellow>урона от огня</color> врагу поблизости.",
     "rawDescVars": [
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0",
         "raw": "maxCount",
         "scalingType": "basic",
@@ -3529,7 +3675,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>47%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>47%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -3554,11 +3700,11 @@
   },
   "Gem_R_Shock": {
     "name": "Эссенция шока",
-    "description": "<color=yellow>Усиливает</color> каждую 4-ю <color=yellow>базовую атаку</color> и выстреливает <color=yellow>электрическим разрядом</color>, который отскакивает от врага ко врагу, нанося <sprite=1><color=#16D7FF>40%</color><sprite=5> <color=yellow>урона от света</color> до 2 р. За кажд. 20% <color=yellow>шанса критического удара</color> увеличивает максимальное количество ударов на 1.",
+    "description": "<color=yellow>Усиливает</color> каждую 4-ю <color=yellow>базовую атаку</color> и выстреливает <color=yellow>электрическим разрядом</color>, который отскакивает от врага ко врагу, нанося  <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5>  <color=yellow>урона от света</color> до 2 р. За кажд. 20% <color=yellow>шанса критического удара</color> увеличивает максимальное количество ударов на 1.",
     "rawDesc": "<color=yellow>Усиливает</color> каждую 4-ю <color=yellow>базовую атаку</color> и выстреливает <color=yellow>электрическим разрядом</color>, который отскакивает от врага ко врагу, нанося {0} <color=yellow>урона от света</color> до {1} р. За кажд. {2} <color=yellow>шанса критического удара</color> увеличивает максимальное количество ударов на 1.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>40%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "chainDamage",
         "scalingType": "basic",
@@ -3610,11 +3756,11 @@
   },
   "Gem_R_Snow": {
     "name": "Эссенция снега",
-    "description": "Дает щит, равный 40<sprite=5>, который перезаряжается, если персонаж не получает урон в течение 5 с. Во время действия щита периодически выстреливает снежком в случайного врага поблизости, нанося <sprite=1><color=#16D7FF>80%</color><sprite=5> <color=yellow>урона от холода</color>. Чем выше значение щита, тем выше скорость выстрела.",
+    "description": "Дает щит, равный  40<sprite=5> , который перезаряжается, если персонаж не получает урон в течение 5 с. Во время действия щита периодически выстреливает снежком в случайного врага поблизости, нанося  <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5>  <color=yellow>урона от холода</color>. Чем выше значение щита, тем выше скорость выстрела.",
     "rawDesc": "Дает щит, равный {0}, который перезаряжается, если персонаж не получает урон в течение {1} с. Во время действия щита периодически выстреливает снежком в случайного врага поблизости, нанося {2} <color=yellow>урона от холода</color>. Чем выше значение щита, тем выше скорость выстрела.",
     "rawDescVars": [
       {
-        "rendered": "40<sprite=5>",
+        "rendered": " 40<sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -3640,7 +3786,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>80%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3666,11 +3812,11 @@
   },
   "Gem_R_Spiral": {
     "name": "Эссенция вихря",
-    "description": "Периодически выстреливает огненным шаром в случайного ближайшего врага, нанося <sprite=1><color=#16D7FF>90%</color><sprite=5> <color=yellow>урона от огня</color>. Чем выше качество эссенции, тем выше скорость выстрелов.",
+    "description": "Периодически выстреливает огненным шаром в случайного ближайшего врага, нанося  <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5>  <color=yellow>урона от огня</color>. Чем выше качество эссенции, тем выше скорость выстрелов.",
     "rawDesc": "Периодически выстреливает огненным шаром в случайного ближайшего врага, нанося {0} <color=yellow>урона от огня</color>. Чем выше качество эссенции, тем выше скорость выстрелов.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3695,7 +3841,7 @@
   },
   "Gem_R_Stillness": {
     "name": "Эссенция Застоя",
-    "description": "Каждые 5 сек. <color=yellow>применение</color> этого воспоминания <color=yellow>усиливается</color>. При <color=yellow>усиленном применении</color> испускает свет, наносящий <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>урона светом</color> врагам и <color=yellow>оглушающий</color> их на 2 сек. Чем выше качество, тем больше радиус испускания.",
+    "description": "Каждые 5 сек. <color=yellow>применение</color> этого воспоминания <color=yellow>усиливается</color>. При <color=yellow>усиленном применении</color> испускает свет, наносящий  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  <color=yellow>урона светом</color> врагам и <color=yellow>оглушающий</color> их на 2 сек. Чем выше качество, тем больше радиус испускания.",
     "rawDesc": "Каждые {0} сек. <color=yellow>применение</color> этого воспоминания <color=yellow>усиливается</color>. При <color=yellow>усиленном применении</color> испускает свет, наносящий {1} <color=yellow>урона светом</color> врагам и <color=yellow>оглушающий</color> их на {2} сек. Чем выше качество, тем больше радиус испускания.",
     "rawDescVars": [
       {
@@ -3712,7 +3858,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3751,7 +3897,7 @@
   },
   "Gem_R_Wealth": {
     "name": "Эссенция богатства",
-    "description": "Если враг, получивший урон от этого Воспоминания, погибает в течение 2 с., он теряет золото x1.7<sprite=5>. Золото распределяется между всеми Путешественниками.",
+    "description": "Если враг, получивший урон от этого Воспоминания, погибает в течение 2 с., он теряет золото x 1.7<sprite=5> . Золото распределяется между всеми Путешественниками.",
     "rawDesc": "Если враг, получивший урон от этого Воспоминания, погибает в течение {0} с., он теряет золото x{1}. Золото распределяется между всеми Путешественниками.",
     "rawDescVars": [
       {
@@ -3768,7 +3914,7 @@
         }
       },
       {
-        "rendered": "1.7<sprite=5>",
+        "rendered": " 1.7<sprite=5> ",
         "format": "###,0.#",
         "raw": "killGold",
         "scalingType": "basic",
@@ -3791,11 +3937,11 @@
   },
   "Gem_R_Wound": {
     "name": "Эссенция раны",
-    "description": "При нанесении урона врагу этим Воспоминанием оставляет <color=yellow>метку</color>. При каждой <color=yellow>атаке</color> по <color=yellow>метке</color> наносит <sprite=1><color=#16D7FF>44%</color><sprite=5> <color=yellow>урона</color>, и после 3 атак <color=yellow>метка</color> взрывается, нанося <sprite=1><color=#16D7FF>275%</color><sprite=5> <color=yellow>урона</color> всем врагам поблизости.",
+    "description": "При нанесении урона врагу этим Воспоминанием оставляет <color=yellow>метку</color>. При каждой <color=yellow>атаке</color> по <color=yellow>метке</color> наносит  <sprite=1><color=#fff><gradient=sv_ap>44%</gradient></color><sprite=5>  <color=yellow>урона</color>, и после 3 атак <color=yellow>метка</color> взрывается, нанося  <sprite=1><color=#fff><gradient=sv_ap>275%</gradient></color><sprite=5>  <color=yellow>урона</color> всем врагам поблизости.",
     "rawDesc": "При нанесении урона врагу этим Воспоминанием оставляет <color=yellow>метку</color>. При каждой <color=yellow>атаке</color> по <color=yellow>метке</color> наносит {0} <color=yellow>урона</color>, и после {1} атак <color=yellow>метка</color> взрывается, нанося {2} <color=yellow>урона</color> всем врагам поблизости.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>44%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>44%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "hitDamage",
         "scalingType": "basic",
@@ -3821,7 +3967,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>275%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>275%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "explodeDamage",
         "scalingType": "basic",
@@ -3846,7 +3992,7 @@
   },
   "Gem_U_EternalFlame": {
     "name": "Вечное пламя",
-    "description": "При нанесении <color=yellow>урона от огня</color> этим Воспоминанием накладывает проклятие <color=yellow>вечного пламени</color> на цель на 5 с. Когда цель с проклятием <color=yellow>вечного пламени</color> получает <color=yellow>любой урон</color> от персонажа, количество накоплений <color=yellow>огня</color> увеличивается на 1.\nУвеличивает весь урон, наносимый этим Воспоминанием, на 2.0%<sprite=5> за каждое накопление <color=yellow>огня</color> на цели.",
+    "description": "При нанесении <color=yellow>урона от огня</color> этим Воспоминанием накладывает проклятие <color=yellow>вечного пламени</color> на цель на 5 с. Когда цель с проклятием <color=yellow>вечного пламени</color> получает <color=yellow>любой урон</color> от персонажа, количество накоплений <color=yellow>огня</color> увеличивается на 1.\nУвеличивает весь урон, наносимый этим Воспоминанием, на  2.0%<sprite=5>  за каждое накопление <color=yellow>огня</color> на цели.",
     "rawDesc": "При нанесении <color=yellow>урона от огня</color> этим Воспоминанием накладывает проклятие <color=yellow>вечного пламени</color> на цель на {0} с. Когда цель с проклятием <color=yellow>вечного пламени</color> получает <color=yellow>любой урон</color> от персонажа, количество накоплений <color=yellow>огня</color> увеличивается на 1.\nУвеличивает весь урон, наносимый этим Воспоминанием, на {1} за каждое накопление <color=yellow>огня</color> на цели.",
     "rawDescVars": [
       {
@@ -3863,7 +4009,7 @@
         }
       },
       {
-        "rendered": "2.0%<sprite=5>",
+        "rendered": " 2.0%<sprite=5> ",
         "format": "#,##0.0%",
         "raw": "ampPerFireStack",
         "scalingType": "basic",
@@ -3888,7 +4034,7 @@
   },
   "Gem_U_GlacialCore": {
     "name": "Ядро ледника",
-    "description": "При нанесении <color=yellow>урона</color> этим Воспоминанием раз в 5 с. <color=yellow>исцеляет</color> <color=yellow>ОЗ</color> персонажа, в размере 3.6%<sprite=5> от макс. ОЗ. Увеличивает эффект на 100% при нанесении <color=yellow>урона от холода</color>.\nВыстреливает во врагов поблизости <color=yellow>ледяными осколками</color>, наносящими <color=yellow>урон от холода</color> в размере 272%<sprite=5> от всех <color=yellow>исцеленных ОЗ</color>.",
+    "description": "При нанесении <color=yellow>урона</color> этим Воспоминанием раз в 5 с. <color=yellow>исцеляет</color> <color=yellow>ОЗ</color> персонажа, в размере  3.6%<sprite=5>  от макс. ОЗ. Увеличивает эффект на 100% при нанесении <color=yellow>урона от холода</color>.\nВыстреливает во врагов поблизости <color=yellow>ледяными осколками</color>, наносящими <color=yellow>урон от холода</color> в размере  272%<sprite=5>  от всех <color=yellow>исцеленных ОЗ</color>.",
     "rawDesc": "При нанесении <color=yellow>урона</color> этим Воспоминанием раз в {0} с. <color=yellow>исцеляет</color> <color=yellow>ОЗ</color> персонажа, в размере {1} от макс. ОЗ. Увеличивает эффект на {2} при нанесении <color=yellow>урона от холода</color>.\nВыстреливает во врагов поблизости <color=yellow>ледяными осколками</color>, наносящими <color=yellow>урон от холода</color> в размере {3} от всех <color=yellow>исцеленных ОЗ</color>.",
     "rawDescVars": [
       {
@@ -3905,7 +4051,7 @@
         }
       },
       {
-        "rendered": "3.6%<sprite=5>",
+        "rendered": " 3.6%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "healMaxHealthRatio",
         "scalingType": "basic",
@@ -3931,7 +4077,7 @@
         }
       },
       {
-        "rendered": "272%<sprite=5>",
+        "rendered": " 272%<sprite=5> ",
         "format": "P0",
         "raw": "healToDamageRatio",
         "scalingType": "basic",
@@ -3957,7 +4103,7 @@
   },
   "Gem_U_LastStarlight": {
     "name": "Последний звёздный свет",
-    "description": "Каждые 15 сек. <color=yellow>применение</color> этого воспоминания <color=yellow>усиливается</color>. При <color=yellow>усиленном применении</color> в точке применения создаётся чёрная дыра, которая в течение 5 сек. наносит <sprite=1><color=#16D7FF>160%</color><sprite=5> <color=yellow>урона светом</color> в секунду. \nОднако, если это не воспоминание с выбором области, чёрная дыра создаётся в месте расположения ближайшего врага по направлению вашего взгляда.",
+    "description": "Каждые 15 сек. <color=yellow>применение</color> этого воспоминания <color=yellow>усиливается</color>. При <color=yellow>усиленном применении</color> в точке применения создаётся чёрная дыра, которая в течение 5 сек. наносит  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5>  <color=yellow>урона светом</color> в секунду. \nОднако, если это не воспоминание с выбором области, чёрная дыра создаётся в месте расположения ближайшего врага по направлению вашего взгляда.",
     "rawDesc": "Каждые {0} сек. <color=yellow>применение</color> этого воспоминания <color=yellow>усиливается</color>. При <color=yellow>усиленном применении</color> в точке применения создаётся чёрная дыра, которая в течение {1} сек. наносит {2} <color=yellow>урона светом</color> в секунду. \nОднако, если это не воспоминание с выбором области, чёрная дыра создаётся в месте расположения ближайшего врага по направлению вашего взгляда.",
     "rawDescVars": [
       {
@@ -3987,7 +4133,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "tickDamage/tickInterval",
         "scalingType": "unknown",

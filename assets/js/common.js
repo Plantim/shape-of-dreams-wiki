@@ -1,5 +1,8 @@
 // assets/js/common.js
 
+// Variable globale pour la version du jeu
+const gameVersion = "1.2.1";
+
 // --- GESTION DE LA LANGUE (COMMUNE) ---
 const saveLanguage = (lang) => {
     localStorage.setItem('preferredLanguage', lang);
@@ -9,6 +12,21 @@ const getLanguage = () => {
     return localStorage.getItem('preferredLanguage') || navigator.language || 'en-US';
 };
 
+// --- CHARGEMENT DES GRADIENTS ---
+// Variable globale pour stocker les dégradés du jeu
+let textGradients = {};
+
+// Fonction à appeler au chargement de ton site/script pour initialiser les dégradés
+async function loadGradients() {
+    try {
+        const response = await fetch('assets/data/locales/gradients.json');
+        textGradients = await response.json();
+    } catch (e) {
+        console.error("Erreur lors du chargement des gradients :", e);
+    }
+}
+loadGradients();
+
 // --- FONCTIONS UTILITAIRES (COMMUNES) ---
 
 // Supprime les accents pour une comparaison plus simple.
@@ -16,19 +34,42 @@ const removeAccents = (str) => {
     return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 };
 
-// Transforme les balises personnalisées du JSON (couleurs, sprites) en vrai HTML.
-// assets/js/common.js
-
+// Transforme les balises personnalisées du JSON (couleurs, gradients, tailles, sprites) en HTML.
 function formatText(text) {
     if (!text) return '';
 
-    let formattedText = text.replace(/<color=(.*?)>/g, (match, color) => {
+    let formattedText = text;
+
+    // 1. Gestion des couleurs classiques (ex: <color=#16D7FF> ou <color=yellow>)
+    formattedText = formattedText.replace(/<color=(.*?)>/g, (match, color) => {
         const cssColor = color.startsWith('#') ? color : color.toLowerCase();
         return `<span style="color: ${cssColor}">`;
     });
     formattedText = formattedText.replace(/<\/color>/g, '</span>');
 
-    // Gère les sprites avec la logique d'infobulle corrigée
+    // 2. Gestion des Gradients
+    formattedText = formattedText.replace(/<gradient=(.*?)>(.*?)<\/gradient>/g, (match, gradientKey, textContent) => {
+        const colors = textGradients[gradientKey];
+
+        // Si la clé n'existe pas dans gradients.json, on retourne le texte blanc/brut
+        if (!colors || colors.length === 0) return textContent;
+
+        if (colors.length === 1) {
+            // Une seule couleur : rendu uni standard
+            return `<span style="color: ${colors[0]};">${textContent}</span>`;
+        } else {
+            // Deux couleurs ou plus : dégradé linéaire appliqué sur le texte via CSS
+            const gradientStr = `linear-gradient(90deg, ${colors.join(', ')})`;
+            return `<span style="background: ${gradientStr}; -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block;">${textContent}</span>`;
+        }
+    });
+
+    // 3. Gère les sprites avec la logique d'infobulle
+    formattedText = formattedText.replace(/<size=(.*?)>(.*?)<\/size>/g, (match, sizeValue, textContent) => {
+        return `<span style="font-size: ${sizeValue};">${textContent}</span>`;
+    });
+
+    // 4. Gère les sprites avec la logique d'infobulle
     formattedText = formattedText.replace(/<sprite=(\d+)( data-tooltip-formula=".*?")?>/g, (match, spriteId, tooltipAttr) => {
         const imgSrc = `assets/game/sprites/${spriteId}.png`;
         const imgHtml = `<img src="${imgSrc}" class="inline-sprite" alt="Sprite ${spriteId}">`;
@@ -82,7 +123,7 @@ const getKeywordDisplayName = (key, category, lang, allKeywords) => {
     return categoryDict[key] || key;
 };
 
-// NOUVELLE FONCTION CENTRALISÉE
+// Fonction pour obtenir le nom d'un voyageur traduit
 const getTravelerDisplayName = (travelerKey, lang, allTravelerNames) => {
     const englishKey = travelerKey.replace('Hero_', '');
     const langDict = allTravelerNames[lang] || allTravelerNames['en-US'] || {};
@@ -140,9 +181,6 @@ function getAchievementHtml(item, translations, allAchievements) {
 
 /**
  * Traite la description d'un item (Memory ou Essence) pour calculer et formater les valeurs dynamiques.
- * @param {object} item - L'objet memory ou essence contenant les données.
- * @param {number} scalingValue - La valeur qui fait évoluer les stats (ex: le niveau pour une memory, le % de qualité pour une essence).
- * @param {string} type - Le type d'item à traiter. Accepte 'memory' ou 'essence'.
  */
 function processDescription(item, scalingValue, type) {
     // Si l'item n'a pas de description dynamique, on utilise la description statique.
@@ -156,7 +194,32 @@ function processDescription(item, scalingValue, type) {
     // Si des variables dynamiques existent, on itère sur chacune d'elles.
     if (item.rawDescVars) {
         item.rawDescVars.forEach((descVar, index) => {
-            let valueToRender = descVar.rendered;
+            let originalRendered = descVar.rendered ? descVar.rendered.trim() : '';
+            let valueToRender = originalRendered;
+            let bonusPart = '';
+
+            // Gestion des chaînes combinées : On sépare la valeur AP principale du Bonus secondaire
+            if (originalRendered.includes('+') && originalRendered.includes('Bonus')) {
+                // Découpe au niveau de la balise <color=white><size=80%> + </size></color> ou simplement du '+'
+                const splitIndex = originalRendered.indexOf('<color=white>');
+                if (splitIndex !== -1) {
+                    valueToRender = originalRendered.substring(0, splitIndex).trim();
+                    bonusPart = originalRendered.substring(splitIndex);
+                } else {
+                    const plusIndex = originalRendered.indexOf('+');
+                    if (plusIndex !== -1) {
+                        valueToRender = originalRendered.substring(0, plusIndex).trim();
+                        bonusPart = originalRendered.substring(plusIndex);
+                    }
+                }
+                
+                // Si la flèche de scaling <sprite=5> s'est retrouvée isolée à la toute fin du bonusPart,
+                // on la récupère pour la recoller directement derrière la valeur AP modifiée.
+                if (bonusPart.includes('<sprite=5>')) {
+                    bonusPart = bonusPart.replace('<sprite=5>', '').trim();
+                    valueToRender += '<sprite=5>';
+                }
+            }
             
             // Si la valeur contient un sprite de type 5, on effectue le calcul.
             if (valueToRender.includes('<sprite=5>')) {
@@ -223,7 +286,7 @@ function processDescription(item, scalingValue, type) {
                         // ---- CAS : VALEURS ENTIERES ----
                         // Cas 1 & 1 bis : Format pour nombres entiers, sans décimales.
                         case "#,##0":
-                            if (descVar.rendered.includes('<color=')) {
+                            if (valueToRender.includes('<color=') || valueToRender.includes('<gradient=')) {
                                 // La valeur est dans une balise couleur (ratio AP/AD) -> Pourcentage
                                 valueToInsert = `${Math.round(calculatedValue * 100)}%`;
                                 valueToRender = valueToRender.replace('<sprite=5>', `<sprite=5 data-tooltip-formula="${formulaTextForTooltip}% ${tooltipLabel}">`);
@@ -233,7 +296,7 @@ function processDescription(item, scalingValue, type) {
                                 valueToRender = valueToRender.replace('<sprite=5>', `<sprite=5 data-tooltip-formula="${formulaTextForTooltip_div100} ${tooltipLabel}"> `);
                             }
                             break;
-                        // Cas 2 : Format pour les pourcentages entiers, sans décimales.
+                        // Cas 2 : Format pour les pourcentages entiers, sans décimales.    
                         case "P0":
                             valueToInsert = `${Math.round(calculatedValue * 100)}%`;
                             valueToRender = valueToRender.replace('<sprite=5>', `<sprite=5 data-tooltip-formula="${formulaTextForTooltip}% ${tooltipLabel}">`);
@@ -279,26 +342,58 @@ function processDescription(item, scalingValue, type) {
                             break;
                     }
                     
-                    // On retire le symbole de pourcentage de la chaîne avant le remplacement.
-                    const valueToReplace = valueToRender.includes('%') ? valueToRender.replace('%', '') : valueToRender;
-                    // On utilise la nouvelle variable `valueToInsert` pour le remplacement.
-                    if (valueToReplace.includes('<color=')) {
-                        // Si la valeur est dans une balise couleur, on cherche spécifiquement ce nombre.
+                    // On retire proprement le symbole % présent de base uniquement s'il n'est pas enveloppé dans une balise
+                    let valueToReplace = valueToRender;
+                    if (!valueToRender.includes('</color>') && !valueToRender.includes('</gradient>')) {
+                        valueToReplace = valueToRender.replace('%', '');
+                    }
+
+                    // Logique d'extraction et de remplacement robuste et insensible aux formats (gère entiers et décimales comme 12.5)
+                    if (valueToReplace.includes('<gradient=')) {
+                        const numericValueMatch = valueToReplace.match(/<gradient=.*?>(.*?)<\/gradient>/);
+                        if (numericValueMatch && numericValueMatch[1]) {
+                            valueToRender = valueToReplace.replace(numericValueMatch[1], valueToInsert);
+                        }
+                    } else if (valueToReplace.includes('<color=')) {
                         const numericValueMatch = valueToReplace.match(/<color=.*?>(.*?)<\/color>/);
                         if (numericValueMatch && numericValueMatch[1]) {
                             valueToRender = valueToReplace.replace(numericValueMatch[1], valueToInsert);
                         }
                     } else {
-                        // Sinon, on utilise la logique précédente pour les autres cas.
-                        valueToRender = valueToReplace.replace(/[\d.]*/, valueToInsert);
+                        // Cible précisément le premier bloc numérique entier ou décimal (ex: "40" ou "12.5")
+                        valueToRender = valueToReplace.replace(/\d+(?:\.\d+)?/, valueToInsert);
                     }
                 }
-            } // Fin du if (valueToRender.includes('<sprite=5>'))
+            }
             
-            // On remplace la balise {index} dans le modèle par la valeur que nous venons de déterminer.
-            description = description.replace(`{${index}}`, valueToRender);
+            // On réassemble la valeur AP calculée (avec sa flèche collée) et la partie Bonus secondaire
+            const finalAssembledValue = bonusPart ? `${valueToRender} ${bonusPart}` : valueToRender;
+            
+            description = description.replace(`{${index}}`, finalAssembledValue);
         });
     }
     // Enfin, on passe la description mise à jour à la fonction formatText pour gérer les couleurs et les sprites.
     return formatText(description);
+}
+
+// --- GESTION DE LA VERSION GLOBALE (COMMUNE) ---
+
+/**
+ * Met à jour le numéro de version du jeu et le label traduit sur toutes les pages
+ * @param {Object} T - L'objet de traduction de la langue courante
+ */
+function updateGlobalVersionDisplay(T) {
+    // 1. Injection du numéro de version du jeu
+    const topVersionNumber = document.getElementById('game-version-number');
+    if (topVersionNumber) {
+        topVersionNumber.textContent = gameVersion;
+    }
+
+    // 2. Injection du label traduit provenant du ui_strings.json
+    if (T && T.gameVersionLabel) {
+        const versionLabelEl = document.getElementById('game-version-label');
+        if (versionLabelEl) {
+            versionLabelEl.textContent = T.gameVersionLabel;
+        }
+    }
 }

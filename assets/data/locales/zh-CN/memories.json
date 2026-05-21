@@ -4,8 +4,8 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "向后跳跃，同时在原位置投下3个冲击炸弹，每个炸弹造成<sprite=1><color=#16D7FF>168%</color><sprite=5>的<color=yellow>伤害</color>，并使敌人在1秒内<color=yellow>眩晕</color>。",
-    "rawDesc": "向后跳跃，同时在原位置投下{0}个冲击炸弹，每个炸弹造成{1}的<color=yellow>伤害</color>，并使敌人在{2}秒内<color=yellow>眩晕</color>。",
+    "description": "向后跳跃，同时在原位置投下3个冲击炸弹，每个炸弹造成 <sprite=1><color=#fff><gradient=sv_ap>168%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并使敌人<color=yellow>眩晕</color>1秒。跳跃结束后，<color=yellow>移动速度</color>提升 20%<sprite=5> ，持续3秒。",
+    "rawDesc": "向后跳跃，同时在原位置投下{0}个冲击炸弹，每个炸弹造成{1}的<color=yellow>伤害</color>，并使敌人<color=yellow>眩晕</color>{2}秒。跳跃结束后，<color=yellow>移动速度</color>提升{3}，持续{4}秒。",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -21,7 +21,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>168%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>168%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -40,6 +40,32 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 20%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 5.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "speedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -67,25 +93,25 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "进入专注状态，在1.7<sprite=5>秒内，向敌人发射光线，每秒造成<sprite=1><color=#16D7FF>507%</color><sprite=5>的<color=yellow>光明伤害</color>，每秒<color=yellow>回复</color>周围体力百分比最低的己方<sprite=1><color=#16D7FF>73%</color><sprite=5>的体力。",
+    "description": "进入专注状态，在 1.7<sprite=5> 秒内，向敌人发射光线，每秒造成 <sprite=1><color=#fff><gradient=sv_ap>507%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>，每秒<color=yellow>回复</color>周围体力百分比最低的己方 <sprite=1><color=#fff><gradient=sv_ap>73%</gradient></color><sprite=5> 的体力。",
     "rawDesc": "进入专注状态，在{0}秒内，向敌人发射光线，每秒造成{1}的<color=yellow>光明伤害</color>，每秒<color=yellow>回复</color>周围体力百分比最低的己方{2}的体力。",
     "rawDescVars": [
       {
-        "rendered": "1.7<sprite=5>",
+        "rendered": " 1.7<sprite=5> ",
         "format": "#,##0.#",
         "raw": "(ticks-1)*tickInterval",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>507%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>507%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "tickDamage/tickInterval",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>73%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>73%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "tickHeal/tickInterval",
         "scalingType": "unknown",
@@ -112,7 +138,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "4秒内，沿移动路径留下使敌人<color=yellow>中毒</color>的有毒气体，持续3秒。持续期间，<color=yellow>移动速度</color>提升15%<sprite=5>，<color=yellow>中毒</color>的敌人每秒受到<sprite=1><color=#16D7FF>100%</color><sprite=5>的<color=yellow>伤害</color>。",
+    "description": "4秒内，沿移动路径留下使敌人<color=yellow>中毒</color>的有毒气体，持续3秒。持续期间，<color=yellow>移动速度</color>提升 15%<sprite=5> ，<color=yellow>中毒</color>的敌人每秒受到 <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> 的<color=yellow>伤害</color>。",
     "rawDesc": "{0}秒内，沿移动路径留下使敌人<color=yellow>中毒</color>的有毒气体，持续{1}秒。持续期间，<color=yellow>移动速度</color>提升{2}，<color=yellow>中毒</color>的敌人每秒受到{3}的<color=yellow>伤害</color>。",
     "rawDescVars": [
       {
@@ -142,7 +168,7 @@
         }
       },
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -155,7 +181,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "perTickDamage/Se_C_CorrosiveTrails_Poisoned::tickInterval",
         "scalingType": "unknown",
@@ -181,18 +207,18 @@
     "cooldownTime": 4.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "发射暗影之箭，造成<sprite=2><color=#FF8A2D>175%</color><sprite=5>的<color=yellow>暗影伤害</color>并触发<color=yellow>攻击效果</color>。最多可穿透2名敌人。",
+    "description": "发射暗影之箭，造成 <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>并触发<color=yellow>攻击效果</color>。最多可穿透2名敌人。",
     "rawDesc": "发射暗影之箭，造成{0}的<color=yellow>暗影伤害</color>并触发<color=yellow>攻击效果</color>。最多可穿透{1}名敌人。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>175%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.75,
+          "basicAD": 2.45,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -231,20 +257,33 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "刺穿前方的敌人，造成<sprite=2><color=#FF8A2D>210%</color><sprite=5>的<color=yellow>暗影伤害</color>，并触发<color=yellow>攻击效果</color>，将敌人聚拢到一起。",
-    "rawDesc": "刺穿前方的敌人，造成{0}的<color=yellow>暗影伤害</color>，并触发<color=yellow>攻击效果</color>，将敌人聚拢到一起。",
+    "description": "刺穿前方的敌人，造成 <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>，并触发<color=yellow>攻击效果</color>，将敌人聚拢到一起。对护盾的伤害增加100%。",
+    "rawDesc": "刺穿前方的敌人，造成{0}的<color=yellow>暗影伤害</color>，并触发<color=yellow>攻击效果</color>，将敌人聚拢到一起。对护盾的伤害增加{1}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>210%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 2.1,
+          "basicAD": 2.3,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "damageToShieldAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
         }
       }
     ],
@@ -270,11 +309,11 @@
     "cooldownTime": 9.0,
     "maxCharges": 2,
     "addedCharges": 999,
-    "description": "向前释放寒气，对敌人造成<sprite=1><color=#16D7FF>130%</color><sprite=5>的<color=yellow>寒气伤害</color>，并为自己和队友套上持续3秒、数值为<sprite=1><color=#16D7FF>90%</color><sprite=5>的<color=yellow>护盾</color>。若敌人已被<color=yellow>寒气</color>影响，<color=yellow>伤害</color>提升100%，并使其在1.5秒内陷入<color=yellow>禁锢</color>状态。\n\n<color=yellow>充能次数</color>会瞬间全部充满。",
+    "description": "向前释放寒气，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>，并为自己和队友套上持续3秒、数值为 <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> 的<color=yellow>护盾</color>。若敌人已被<color=yellow>寒气</color>影响，<color=yellow>伤害</color>提升100%，并使其在1.5秒内陷入<color=yellow>禁锢</color>状态。\n\n<color=yellow>充能次数</color>会瞬间全部充满。",
     "rawDesc": "向前释放寒气，对敌人造成{0}的<color=yellow>寒气伤害</color>，并为自己和队友套上持续{1}秒、数值为{2}的<color=yellow>护盾</color>。若敌人已被<color=yellow>寒气</color>影响，<color=yellow>伤害</color>提升{3}，并使其在{4}秒内陷入<color=yellow>禁锢</color>状态。\n\n<color=yellow>充能次数</color>会瞬间全部充满。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -300,7 +339,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -361,7 +400,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "猛击周围地面，使敌人眩晕1.5秒，并造成<sprite=1><color=#16D7FF>230%</color><sprite=5>的<color=yellow>寒气伤害</color>。每命中一名敌人，会获得1个<sprite=1><color=#16D7FF>60%</color><sprite=5>的护盾，持续3秒。",
+    "description": "猛击周围地面，使敌人眩晕1.5秒，并造成 <sprite=1><color=#fff><gradient=sv_ap>210%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>。每命中一名敌人，会获得1个 <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>2%</gradient></color><sprite=5> 的护盾，持续3秒。",
     "rawDesc": "猛击周围地面，使敌人眩晕{0}秒，并造成{1}的<color=yellow>寒气伤害</color>。每命中一名敌人，会获得1个{2}的护盾，持续{3}秒。",
     "rawDescVars": [
       {
@@ -378,26 +417,26 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>230%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>210%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.3,
+          "basicAP": 2.1,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>2%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "perHitShield",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.6,
+          "basicAP": 0.4,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
@@ -439,18 +478,18 @@
     "cooldownTime": 4.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "下次攻击将在1.2<sprite=5>秒内造成<sprite=1><color=#16D7FF>460%</color><sprite=5>的<color=yellow>伤害</color>，并使目标的<color=yellow>移动速度</color>降低70%。",
+    "description": "下次攻击将在 1.2<sprite=5> 秒内造成 <sprite=1><color=#fff><gradient=sv_ap>460%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并使目标的<color=yellow>移动速度</color>降低70%。",
     "rawDesc": "下次攻击将在{0}秒内造成{1}的<color=yellow>伤害</color>，并使目标的<color=yellow>移动速度</color>降低{2}。",
     "rawDescVars": [
       {
-        "rendered": "1.2<sprite=5>",
+        "rendered": " 1.2<sprite=5> ",
         "format": "#,##0.#",
         "raw": "ticks*ticksInterval",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>460%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>460%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "totalDamage",
         "scalingType": "basic",
@@ -495,7 +534,7 @@
     "cooldownTime": 6.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "为己方施加冰之盾，获得持续3秒的<sprite=1><color=#16D7FF>130%</color><sprite=5>的护盾效果。护盾被破坏时，对周围敌人造成<sprite=1><color=#16D7FF>160%</color><sprite=5>的<color=yellow>寒气伤害</color>。每命中一名敌人，为己方<color=yellow>回复</color><sprite=1><color=#16D7FF>60%</color><sprite=5>的体力。",
+    "description": "为己方施加冰之盾，获得持续3秒的 <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> 的护盾效果。护盾被破坏时，对周围敌人造成 <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>。每命中一名敌人，为己方<color=yellow>回复</color> <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> 的体力。",
     "rawDesc": "为己方施加冰之盾，获得持续{0}秒的{1}的护盾效果。护盾被破坏时，对周围敌人造成{2}的<color=yellow>寒气伤害</color>。每命中一名敌人，为己方<color=yellow>回复</color>{3}的体力。",
     "rawDescVars": [
       {
@@ -512,7 +551,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "shieldFactor",
         "scalingType": "basic",
@@ -525,7 +564,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -538,7 +577,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "perHealFactor",
         "scalingType": "basic",
@@ -573,17 +612,17 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "朝前挥出利爪，对敌人造成<sprite=1><color=#16D7FF>140%</color><sprite=5>的<color=yellow>寒气伤害</color>并使其<color=yellow>眩晕</color>0.5秒。还可以再挥一次，对敌人造成<sprite=1><color=#16D7FF>264%</color><sprite=5>的<color=yellow>寒气伤害</color>并再眩晕1秒。\n\n每次利爪命中敌人时，会根据伤害量为你回复12%的<color=yellow>生命值</color>。",
+    "description": "朝前挥出利爪，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>并使其<color=yellow>眩晕</color>0.5秒。还可以再挥一次，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>10%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>并再眩晕1秒。\n\n每次利爪命中敌人时，会根据伤害量为你回复12%的<color=yellow>生命值</color>。",
     "rawDesc": "朝前挥出利爪，对敌人造成{0}的<color=yellow>寒气伤害</color>并使其<color=yellow>眩晕</color>{1}秒。还可以再挥一次，对敌人造成{2}的<color=yellow>寒气伤害</color>并再眩晕{3}秒。\n\n每次利爪命中敌人时，会根据伤害量为你回复{4}的<color=yellow>生命值</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_C_IceClaw::dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.4,
+          "basicAP": 1.3,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -603,13 +642,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>264%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>10%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_C_IceClaw_Second::dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.64,
+          "basicAP": 2.4,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -664,11 +703,11 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "向前方短距离突进，挥舞青绿之剑，对前方敌人造成<color=yellow>伤害</color>。在<sprite=2><color=#FF8A2D>200%</color><sprite=5>和<sprite=1><color=#16D7FF>200%</color><sprite=5>中取更高的伤害，如果是<color=yellow>攻击力伤害</color>，则会触发<color=yellow>攻击效果</color>。",
+    "description": "向前方短距离突进，挥舞青绿之剑，对前方敌人造成<color=yellow>伤害</color>。在 <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> 和 <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> 中取更高的伤害，如果是<color=yellow>攻击力伤害</color>，则会触发<color=yellow>攻击效果</color>。",
     "rawDesc": "向前方短距离突进，挥舞青绿之剑，对前方敌人造成<color=yellow>伤害</color>。在{0}和{1}中取更高的伤害，如果是<color=yellow>攻击力伤害</color>，则会触发<color=yellow>攻击效果</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "adDamage",
         "scalingType": "basic",
@@ -681,7 +720,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "apDamage",
         "scalingType": "basic",
@@ -715,11 +754,11 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "为周围的己方赋予<sprite=1><color=#16D7FF>250%</color><sprite=5>的<color=yellow>护盾</color>，该护盾会在1.5秒内逐渐消失。",
+    "description": "为周围的己方赋予 <sprite=1><color=#fff><gradient=sv_ap>250%</gradient></color><sprite=5> 的<color=yellow>护盾</color>，该护盾会在1.5秒内逐渐消失。",
     "rawDesc": "为周围的己方赋予{0}的<color=yellow>护盾</color>，该护盾会在{1}秒内逐渐消失。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>250%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -764,11 +803,11 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>长按</color>施放键可为火焰弹充能。充能完成后，发射火焰弹。根据瞄准时间的长短，对命中的所有敌人造成<sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>400%</color><sprite=5>的<color=yellow>火焰伤害</color>。\n\n未完全充能时发射，最多可缩短80%的<color=yellow>冷却时间</color>。瞄准1.35秒后，命中范围的宽度和伤害达到最大值。",
+    "description": "<color=yellow>长按</color>施放键可为火焰弹充能。充能完成后，发射火焰弹。根据瞄准时间的长短，对命中的所有敌人造成 <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ~ <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>。\n\n未完全充能时发射，最多可缩短80%的<color=yellow>冷却时间</color>。瞄准1.35秒后，命中范围的宽度和伤害达到最大值。",
     "rawDesc": "<color=yellow>长按</color>施放键可为火焰弹充能。充能完成后，发射火焰弹。根据瞄准时间的长短，对命中的所有敌人造成{0}~{1}的<color=yellow>火焰伤害</color>。\n\n未完全充能时发射，最多可缩短{2}的<color=yellow>冷却时间</color>。瞄准{3}秒后，命中范围的宽度和伤害达到最大值。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageMin",
         "scalingType": "basic",
@@ -781,7 +820,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageMax",
         "scalingType": "basic",
@@ -839,11 +878,11 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "用手掌释放能量，对命中的所有敌人造成<sprite=1><color=#16D7FF>180%</color><sprite=5>点<color=yellow>伤害</color>，并击退敌人且使其眩晕1秒。如果目标处于无法阻挡状态或撞到墙壁，则额外造成<sprite=1><color=#16D7FF>504%</color><sprite=5>点<color=yellow>伤害</color>。",
+    "description": "用手掌释放能量，对命中的所有敌人造成 <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> 点<color=yellow>伤害</color>，并击退敌人且使其眩晕1秒。如果目标处于无法阻挡状态或撞到墙壁，则额外造成 <sprite=1><color=#fff><gradient=sv_ap>504%</gradient></color><sprite=5> 点<color=yellow>伤害</color>。",
     "rawDesc": "用手掌释放能量，对命中的所有敌人造成{0}点<color=yellow>伤害</color>，并击退敌人且使其眩晕{1}秒。如果目标处于无法阻挡状态或撞到墙壁，则额外造成{2}点<color=yellow>伤害</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -869,7 +908,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>504%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>504%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor*stunDmgRatio",
         "scalingType": "unknown",
@@ -896,11 +935,11 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "对目标区域的所有敌人造成<sprite=1><color=#16D7FF>280%</color><sprite=5>的<color=yellow>伤害</color>，每命中一名敌人，随机为一名己方<color=yellow>回复</color><sprite=1><color=#16D7FF>45%</color><sprite=5>的体力。如果目标是首领，治疗量提升为3倍。",
+    "description": "对目标区域的所有敌人造成 <sprite=1><color=#fff><gradient=sv_ap>280%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，每命中一名敌人，随机为一名己方<color=yellow>回复</color> <sprite=1><color=#fff><gradient=sv_ap>45%</gradient></color><sprite=5> 的体力。如果目标是首领，治疗量提升为3倍。",
     "rawDesc": "对目标区域的所有敌人造成{0}的<color=yellow>伤害</color>，每命中一名敌人，随机为一名己方<color=yellow>回复</color>{1}的体力。如果目标是首领，治疗量提升为3倍。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>280%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>280%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -913,7 +952,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>45%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>45%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -965,11 +1004,11 @@
     "cooldownTime": 4.0,
     "maxCharges": 3,
     "addedCharges": 1,
-    "description": "发射沁爽水枪，命中的友军将恢复<sprite=1><color=#16D7FF>70%</color><sprite=5><color=yellow>体力</color>并移除<color=yellow>火焰层数</color>。命中敌人则造成1<color=yellow>伤害</color>并使其<color=yellow>眩晕</color>1.5秒。<color=yellow>仅在战斗中</color><color=yellow>冷却时间</color>减少。\n\n如果目标是友方<color=yellow>召唤物</color>，回复量提升40%。",
+    "description": "发射沁爽水枪，命中的友军将恢复 <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> <color=yellow>体力</color>并移除<color=yellow>火焰层数</color>。命中敌人则造成1<color=yellow>伤害</color>并使其<color=yellow>眩晕</color>1.5秒。<color=yellow>仅在战斗中</color><color=yellow>冷却时间</color>减少。\n\n如果目标是友方<color=yellow>召唤物</color>，回复量提升40%。",
     "rawDesc": "发射沁爽水枪，命中的友军将恢复{0}<color=yellow>体力</color>并移除<color=yellow>火焰层数</color>。命中敌人则造成{1}<color=yellow>伤害</color>并使其<color=yellow>眩晕</color>{2}秒。<color=yellow>仅在战斗中</color><color=yellow>冷却时间</color>减少。\n\n如果目标是友方<color=yellow>召唤物</color>，回复量提升{3}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>70%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -1041,11 +1080,11 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "随机向周围的敌人落下4<sprite=5>颗流星。每颗流星造成<sprite=1><color=#16D7FF>70%</color><sprite=5>的<color=yellow>光明伤害</color>。",
+    "description": "随机向周围的敌人落下 4<sprite=5> 颗流星。每颗流星造成 <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>。",
     "rawDesc": "随机向周围的敌人落下{0}颗流星。每颗流星造成{1}的<color=yellow>光明伤害</color>。",
     "rawDescVars": [
       {
-        "rendered": "4<sprite=5>",
+        "rendered": " 4<sprite=5> ",
         "format": "#,##0",
         "raw": "baseCount",
         "scalingType": "basic",
@@ -1058,7 +1097,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>70%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgPerStar",
         "scalingType": "basic",
@@ -1090,11 +1129,11 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "向前快速冲刺并斩击敌人，造成<sprite=2><color=#FF8A2D>220%</color><sprite=5>的<color=yellow>伤害</color>，并触发50%的<color=yellow>攻击效果</color>。首次命中敌人时，<color=yellow>冷却时间</color>缩短40%。",
+    "description": "向前快速冲刺并斩击敌人，造成 <sprite=2><color=#fff><gradient=sv_ad>220%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并触发50%的<color=yellow>攻击效果</color>。首次命中敌人时，<color=yellow>冷却时间</color>缩短40%。",
     "rawDesc": "向前快速冲刺并斩击敌人，造成{0}的<color=yellow>伤害</color>，并触发{1}的<color=yellow>攻击效果</color>。首次命中敌人时，<color=yellow>冷却时间</color>缩短{2}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>220%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>220%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -1154,7 +1193,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "3.5秒内，<color=yellow>专注</color>挥舞长剑，对周围敌人每秒造成<sprite=2><color=#FF8A2D>240%</color><sprite=5>的<color=yellow>伤害</color>，并触发35%的<color=yellow>攻击效果</color>。<color=yellow>攻速</color>越快，挥剑越快。",
+    "description": "3.5秒内，<color=yellow>专注</color>挥舞长剑，对周围敌人每秒造成 <sprite=2><color=#fff><gradient=sv_ad>240%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并触发35%的<color=yellow>攻击效果</color>。<color=yellow>攻速</color>越快，挥剑越快。",
     "rawDesc": "{0}秒内，<color=yellow>专注</color>挥舞长剑，对周围敌人每秒造成{1}的<color=yellow>伤害</color>，并触发{2}的<color=yellow>攻击效果</color>。<color=yellow>攻速</color>越快，挥剑越快。",
     "rawDescVars": [
       {
@@ -1171,7 +1210,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>240%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>240%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor*2",
         "scalingType": "unknown",
@@ -1211,11 +1250,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "对单名敌人的前3次<color=yellow>攻击</color>将造成<sprite=1><color=#16D7FF>40%</color><sprite=5>的额外伤害，并赋予米斯特<sprite=1><color=#16D7FF>47%</color><sprite=5>的<color=yellow>护盾</color>，该效果将在1.5秒内消失。每隔6<sprite=5>秒，对同一敌人可再次触发该效果。",
+    "description": "对单名敌人的前3次<color=yellow>攻击</color>将造成 <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> 的额外伤害，并赋予米斯特 <sprite=1><color=#fff><gradient=sv_ap>47%</gradient></color><sprite=5> 的<color=yellow>护盾</color>，该效果将在1.5秒内消失。每隔 6<sprite=5> 秒，对同一敌人可再次触发该效果。",
     "rawDesc": "对单名敌人的前3次<color=yellow>攻击</color>将造成{0}的额外伤害，并赋予米斯特{1}的<color=yellow>护盾</color>，该效果将在{2}秒内消失。每隔{3}秒，对同一敌人可再次触发该效果。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>40%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1228,7 +1267,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>47%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>47%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -1254,7 +1293,7 @@
         }
       },
       {
-        "rendered": "6<sprite=5>",
+        "rendered": " 6<sprite=5> ",
         "format": "#,##0.#",
         "raw": "rechargeTime",
         "scalingType": "unknown",
@@ -1281,11 +1320,11 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "每5<sprite=5>秒，随机为周围的一名敌人附加<color=yellow>印记</color>。<color=yellow>攻击</color>带有<color=yellow>印记</color>的敌人时，可在1.5秒内获得25%的移动速度，并造成<sprite=2><color=#FF8A2D>35%</color><sprite=5>的额外伤害。\n通过<color=yellow>印记</color>连续进行攻击时，每次伤害提升50%点。<color=yellow>印记</color>在第6次攻击时爆炸，造成<sprite=2><color=#FF8A2D>200%</color><sprite=5>的伤害。",
+    "description": "每 5<sprite=5> 秒，随机为周围的一名敌人附加<color=yellow>印记</color>。<color=yellow>攻击</color>带有<color=yellow>印记</color>的敌人时，可在1.5秒内获得25%的移动速度，并造成 <sprite=2><color=#fff><gradient=sv_ad>35%</gradient></color><sprite=5> 的额外伤害。\n通过<color=yellow>印记</color>连续进行攻击时，每次伤害提升50%点。<color=yellow>印记</color>在第6次攻击时爆炸，造成 <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> 的伤害。",
     "rawDesc": "每{0}秒，随机为周围的一名敌人附加<color=yellow>印记</color>。<color=yellow>攻击</color>带有<color=yellow>印记</color>的敌人时，可在{1}秒内获得{2}的移动速度，并造成{3}的额外伤害。\n通过<color=yellow>印记</color>连续进行攻击时，每次伤害提升{4}点。<color=yellow>印记</color>在第{5}次攻击时爆炸，造成{6}的伤害。",
     "rawDescVars": [
       {
-        "rendered": "5<sprite=5>",
+        "rendered": " 5<sprite=5> ",
         "format": "#,##0.#",
         "raw": "cooldownTime",
         "scalingType": "unknown",
@@ -1318,7 +1357,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>35%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>35%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1357,7 +1396,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "explosionDmg",
         "scalingType": "basic",
@@ -1389,7 +1428,7 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>普通攻击</color>转变为远程攻击，施放<color=yellow>任意记忆</color>或<color=yellow>闪避技能</color>时可获得2层<color=yellow>黄金羽毛</color>，最多可叠加6层。<color=yellow>黄金羽毛</color>存在时，<color=yellow>攻速</color>提升20%。\n\n在有羽毛叠加的状态下<color=yellow>攻击</color>敌人时，会消耗1层羽毛，对其造成<sprite=1><color=#16D7FF>90%</color><sprite=5>的<color=yellow>伤害</color>，并为奥蕾娜<color=yellow>回复</color><sprite=1><color=#16D7FF>14%</color><sprite=5>的体力。在有羽毛叠加的状态下，为己方<color=yellow>回复</color>生命时，会消耗1层羽毛，额外为目标<color=yellow>回复</color><sprite=1><color=#16D7FF>22%</color><sprite=5>的体力。",
+    "description": "<color=yellow>普通攻击</color>转变为远程攻击，施放<color=yellow>任意记忆</color>或<color=yellow>闪避技能</color>时可获得2层<color=yellow>黄金羽毛</color>，最多可叠加6层。<color=yellow>黄金羽毛</color>存在时，<color=yellow>攻速</color>提升20%。\n\n在有羽毛叠加的状态下<color=yellow>攻击</color>敌人时，会消耗1层羽毛，对其造成 <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并为奥蕾娜<color=yellow>回复</color> <sprite=1><color=#fff><gradient=sv_ap>14%</gradient></color><sprite=5> 的体力。在有羽毛叠加的状态下，为己方<color=yellow>回复</color>生命时，会消耗1层羽毛，额外为目标<color=yellow>回复</color> <sprite=1><color=#fff><gradient=sv_ap>22%</gradient></color><sprite=5> 的体力。",
     "rawDesc": "<color=yellow>普通攻击</color>转变为远程攻击，施放<color=yellow>任意记忆</color>或<color=yellow>闪避技能</color>时可获得{0}层<color=yellow>黄金羽毛</color>，最多可叠加{1}层。<color=yellow>黄金羽毛</color>存在时，<color=yellow>攻速</color>提升{2}。\n\n在有羽毛叠加的状态下<color=yellow>攻击</color>敌人时，会消耗1层羽毛，对其造成{3}的<color=yellow>伤害</color>，并为奥蕾娜<color=yellow>回复</color>{4}的体力。在有羽毛叠加的状态下，为己方<color=yellow>回复</color>生命时，会消耗1层羽毛，额外为目标<color=yellow>回复</color>{5}的体力。",
     "rawDescVars": [
       {
@@ -1432,7 +1471,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageAmount",
         "scalingType": "basic",
@@ -1445,7 +1484,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>14%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>14%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "selfHealOnDamageAmount",
         "scalingType": "basic",
@@ -1458,7 +1497,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>22%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>22%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -1491,11 +1530,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>普通攻击</color>时，娜琪亚的所有<color=yellow>召唤兽</color>将<color=yellow>回复</color><color=yellow>体力上限</color>的3%<sprite=5>，并且<color=yellow>召唤持续时间</color>延长0.3<sprite=5>秒。娜琪亚获得的<color=yellow>攻速</color>、<color=yellow>移动速度</color>、<color=yellow>防御力</color>加成的50%<sprite=5>将<color=yellow>分享</color>给其<color=yellow>召唤兽</color>。",
+    "description": "<color=yellow>普通攻击</color>时，娜琪亚的所有<color=yellow>召唤兽</color>将<color=yellow>回复</color><color=yellow>体力上限</color>的 3%<sprite=5> ，并且<color=yellow>召唤持续时间</color>延长 0.3<sprite=5> 秒。娜琪亚获得的<color=yellow>攻速</color>、<color=yellow>移动速度</color>、<color=yellow>防御力</color>加成的 50%<sprite=5> 将<color=yellow>分享</color>给其<color=yellow>召唤兽</color>。",
     "rawDesc": "<color=yellow>普通攻击</color>时，娜琪亚的所有<color=yellow>召唤兽</color>将<color=yellow>回复</color><color=yellow>体力上限</color>的{0}，并且<color=yellow>召唤持续时间</color>延长{1}秒。娜琪亚获得的<color=yellow>攻速</color>、<color=yellow>移动速度</color>、<color=yellow>防御力</color>加成的{2}将<color=yellow>分享</color>给其<color=yellow>召唤兽</color>。",
     "rawDescVars": [
       {
-        "rendered": "3%<sprite=5>",
+        "rendered": " 3%<sprite=5> ",
         "format": "P0",
         "raw": "summonHealRatio",
         "scalingType": "basic",
@@ -1508,7 +1547,7 @@
         }
       },
       {
-        "rendered": "0.3<sprite=5>",
+        "rendered": " 0.3<sprite=5> ",
         "format": "#,##0.#",
         "raw": "summonAddedDuration",
         "scalingType": "basic",
@@ -1521,7 +1560,7 @@
         }
       },
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "shareRatio",
         "scalingType": "basic",
@@ -1551,11 +1590,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "施放<color=yellow>记忆</color>或使用<color=yellow>变光星</color>时，获得10<sprite=5>的<color=yellow>攻击力</color>，持续3秒。在此期间，自身<color=yellow>普通攻击</color>被强化，最多可弹射2名敌人，并附带50%的效果。",
+    "description": "施放<color=yellow>记忆</color>或使用<color=yellow>变光星</color>时，获得 10<sprite=5> 的<color=yellow>攻击力</color>，持续3秒。在此期间，自身<color=yellow>普通攻击</color>被强化，最多可弹射2名敌人，并附带50%的效果。",
     "rawDesc": "施放<color=yellow>记忆</color>或使用<color=yellow>变光星</color>时，获得{0}的<color=yellow>攻击力</color>，持续{1}秒。在此期间，自身<color=yellow>普通攻击</color>被强化，最多可弹射{2}名敌人，并附带{3}的效果。",
     "rawDescVars": [
       {
-        "rendered": "10<sprite=5>",
+        "rendered": " 10<sprite=5> ",
         "format": "#,##0",
         "raw": "damageBonus",
         "scalingType": "basic",
@@ -1626,11 +1665,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "攻击时造成<sprite=2><color=#FF8A2D>68%</color><sprite=5>的<color=yellow>额外伤害</color>，并且每命中一名敌人<color=yellow>回复</color>自身<sprite=2><color=#FF8A2D>16%</color><sprite=5>的体力。若以<color=yellow>首领</color>为目标，则<color=yellow>额外伤害</color>和<color=yellow>回复量</color>提升100%。",
+    "description": "攻击时造成 <sprite=2><color=#fff><gradient=sv_ad>68%</gradient></color><sprite=5> 的<color=yellow>额外伤害</color>，并且每命中一名敌人<color=yellow>回复</color>自身 <sprite=2><color=#fff><gradient=sv_ad>16%</gradient></color><sprite=5> 的体力。若以<color=yellow>首领</color>为目标，则<color=yellow>额外伤害</color>和<color=yellow>回复量</color>提升100%。",
     "rawDesc": "攻击时造成{0}的<color=yellow>额外伤害</color>，并且每命中一名敌人<color=yellow>回复</color>自身{1}的体力。若以<color=yellow>首领</color>为目标，则<color=yellow>额外伤害</color>和<color=yellow>回复量</color>提升{2}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>68%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>68%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageAmount",
         "scalingType": "basic",
@@ -1643,7 +1682,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>16%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>16%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -1689,11 +1728,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "攻击力提升5<sprite=5>，暴击率提升20%<sprite=5>。使用<color=yellow>记忆</color>或<color=yellow>敏捷闪避</color>后，下次进行2次<color=yellow>普通攻击</color>。",
-    "rawDesc": "攻击力提升{0}，暴击率提升{1}。使用<color=yellow>记忆</color>或<color=yellow>敏捷闪避</color>后，下次进行2次<color=yellow>普通攻击</color>。",
+    "description": "<color=yellow>攻击力</color>提升 5<sprite=5> ，<color=yellow>暴击率</color>提升 20%<sprite=5> 。使用<color=yellow>记忆</color>或<color=yellow>敏捷闪避</color>后，下一次<color=yellow>基础攻击</color>将发射两次。",
+    "rawDesc": "<color=yellow>攻击力</color>提升{0}，<color=yellow>暴击率</color>提升{1}。使用<color=yellow>记忆</color>或<color=yellow>敏捷闪避</color>后，下一次<color=yellow>基础攻击</color>将发射两次。",
     "rawDescVars": [
       {
-        "rendered": "5<sprite=5>",
+        "rendered": " 5<sprite=5> ",
         "format": "#,##0",
         "raw": "attackDamageBonus",
         "scalingType": "basic",
@@ -1706,7 +1745,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "P0",
         "raw": "critChanceBonus",
         "scalingType": "basic",
@@ -1738,29 +1777,55 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "施放<color=yellow>记忆</color>或使用<color=yellow>变光星</color>时，叠加1层<color=yellow>异种物质</color>。下次<color=yellow>普通攻击</color>时，消耗所有叠加层数并引发爆炸，每层对敌人造成<sprite=1><color=#16D7FF>125%</color><sprite=5>的<color=yellow>光明伤害</color>。最多可叠加4层。",
-    "rawDesc": "施放<color=yellow>记忆</color>或使用<color=yellow>变光星</color>时，叠加1层<color=yellow>异种物质</color>。下次<color=yellow>普通攻击</color>时，消耗所有叠加层数并引发爆炸，每层对敌人造成{0}的<color=yellow>光明伤害</color>。最多可叠加{1}层。",
+    "description": "施放<color=yellow>记忆</color>或使用<color=yellow>变光星</color>时，叠加1层<color=yellow>异种物质</color>，最多可叠加3层；施放<color=yellow>终极记忆</color>时，将直接叠满层数。下次<color=yellow>基础攻击</color>时，消耗所有叠加层数并引发爆炸，每层对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>。\n\n该爆炸的范围每次强化<color=yellow>异种物质</color>时增加5%，最多增加50%。",
+    "rawDesc": "施放<color=yellow>记忆</color>或使用<color=yellow>变光星</color>时，叠加1层<color=yellow>异种物质</color>，最多可叠加{0}层；施放<color=yellow>终极记忆</color>时，将直接叠满层数。下次<color=yellow>基础攻击</color>时，消耗所有叠加层数并引发爆炸，每层对敌人造成{1}的<color=yellow>光明伤害</color>。\n\n该爆炸的范围每次强化<color=yellow>异种物质</color>时增加{2}，最多增加{3}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>125%</color><sprite=5>",
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damagePerStack",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.25,
+          "basicAP": 1.1,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "4",
-        "format": "#,##0",
-        "raw": "maxStack",
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "scaleAmpPerUpgrade",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 4.0,
+          "basicConstant": 0.05,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "scaleAmpMax",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1788,11 +1853,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "娜琪亚为自己或己方<color=yellow>回复</color><color=yellow>体力</color>、赋予<color=yellow>护盾</color>或<color=yellow>增益效果</color>时，将使目标获得<color=yellow>羁绊</color>效果。获得<color=yellow>羁绊</color>的目标下次的<color=yellow>普通攻击</color>将被强化，对敌人造成<sprite=1><color=#16D7FF>140%</color><sprite=5>的<color=yellow>光明伤害</color>并引发<color=yellow>爆炸</color>。",
+    "description": "娜琪亚为自己或己方<color=yellow>回复</color><color=yellow>体力</color>、赋予<color=yellow>护盾</color>或<color=yellow>增益效果</color>时，将使目标获得<color=yellow>羁绊</color>效果。获得<color=yellow>羁绊</color>的目标下次的<color=yellow>普通攻击</color>将被强化，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>并引发<color=yellow>爆炸</color>。",
     "rawDesc": "娜琪亚为自己或己方<color=yellow>回复</color><color=yellow>体力</color>、赋予<color=yellow>护盾</color>或<color=yellow>增益效果</color>时，将使目标获得<color=yellow>羁绊</color>效果。获得<color=yellow>羁绊</color>的目标下次的<color=yellow>普通攻击</color>将被强化，对敌人造成{0}的<color=yellow>光明伤害</color>并引发<color=yellow>爆炸</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -1822,11 +1887,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>攻击力</color>提升12<sprite=5>点。第4次<color=yellow>普通攻击</color>必将<color=yellow>暴击</color>，并额外造成<sprite=1><color=#16D7FF>70%</color><sprite=5>的<color=yellow>光明伤害</color>。\n<color=yellow>攻击</color>敌人时，<color=yellow>攻速</color>在4秒内提升4%<sprite=5>，最多可提升24%<sprite=5>。当<color=yellow>攻速</color>达到最大时，每次<color=yellow>攻击</color><color=yellow>回复</color><color=yellow>损失体力</color>的1%<sprite=5>。",
+    "description": "<color=yellow>攻击力</color>提升 12<sprite=5> 点。第4次<color=yellow>普通攻击</color>必将<color=yellow>暴击</color>，并额外造成 <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>。\n<color=yellow>攻击</color>敌人时，<color=yellow>攻速</color>在4秒内提升 4%<sprite=5> ，最多可提升 24%<sprite=5> 。当<color=yellow>攻速</color>达到最大时，每次<color=yellow>攻击</color><color=yellow>回复</color><color=yellow>损失体力</color>的 1%<sprite=5> 。",
     "rawDesc": "<color=yellow>攻击力</color>提升{0}点。第4次<color=yellow>普通攻击</color>必将<color=yellow>暴击</color>，并额外造成{1}的<color=yellow>光明伤害</color>。\n<color=yellow>攻击</color>敌人时，<color=yellow>攻速</color>在{2}秒内提升{3}，最多可提升{4}。当<color=yellow>攻速</color>达到最大时，每次<color=yellow>攻击</color><color=yellow>回复</color><color=yellow>损失体力</color>的{5}。",
     "rawDescVars": [
       {
-        "rendered": "12<sprite=5>",
+        "rendered": " 12<sprite=5> ",
         "format": "#,##0",
         "raw": "adBonus",
         "scalingType": "basic",
@@ -1839,7 +1904,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>70%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -1865,7 +1930,7 @@
         }
       },
       {
-        "rendered": "4%<sprite=5>",
+        "rendered": " 4%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hastePerStack",
         "scalingType": "basic",
@@ -1878,14 +1943,14 @@
         }
       },
       {
-        "rendered": "24%<sprite=5>",
+        "rendered": " 24%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hastePerStack*maxStack",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "1%<sprite=5>",
+        "rendered": " 1%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "lostHpHealRatio",
         "scalingType": "basic",
@@ -1917,11 +1982,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>攻击速度</color>提升20%<sprite=5>。自身无法主动进行<color=yellow>基础攻击</color>，但<color=yellow>书</color>会自动对距离比斯穆特最近的敌人进行<color=yellow>基础攻击</color>，并造成<sprite=1><color=#16D7FF>70%</color><sprite=5>的<color=yellow>追加伤害</color>。",
+    "description": "<color=yellow>攻击速度</color>提升 20%<sprite=5> 。自身无法主动进行<color=yellow>基础攻击</color>，但<color=yellow>书</color>会自动对距离比斯穆特最近的敌人进行<color=yellow>基础攻击</color>，并造成 <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> 的<color=yellow>追加伤害</color>。",
     "rawDesc": "<color=yellow>攻击速度</color>提升{0}。自身无法主动进行<color=yellow>基础攻击</color>，但<color=yellow>书</color>会自动对距离比斯穆特最近的敌人进行<color=yellow>基础攻击</color>，并造成{1}的<color=yellow>追加伤害</color>。",
     "rawDescVars": [
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -1934,7 +1999,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>70%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "addedDamage",
         "scalingType": "basic",
@@ -1966,11 +2031,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>体力上限</color>提升80<sprite=5>点。第4次<color=yellow>普通攻击</color>提升<color=yellow>暴击</color>，并将敌人击退，使其<color=yellow>眩晕</color>1秒。<color=yellow>决意</color>命中敌人时，<color=yellow>维斯珀</color><color=yellow>回复</color>相当于<color=yellow>体力上限</color>3%<sprite=5>的体力。",
+    "description": "<color=yellow>体力上限</color>提升 80<sprite=5> 点。第4次<color=yellow>普通攻击</color>提升<color=yellow>暴击</color>，并将敌人击退，使其<color=yellow>眩晕</color>1秒。<color=yellow>决意</color>命中敌人时，<color=yellow>维斯珀</color><color=yellow>回复</color>相当于<color=yellow>体力上限</color> 3%<sprite=5> 的体力。",
     "rawDesc": "<color=yellow>体力上限</color>提升{0}点。第4次<color=yellow>普通攻击</color>提升<color=yellow>暴击</color>，并将敌人击退，使其<color=yellow>眩晕</color>{1}秒。<color=yellow>决意</color>命中敌人时，<color=yellow>维斯珀</color><color=yellow>回复</color>相当于<color=yellow>体力上限</color>{2}的体力。",
     "rawDescVars": [
       {
-        "rendered": "80<sprite=5>",
+        "rendered": " 80<sprite=5> ",
         "format": "#,##0",
         "raw": "healthBonus",
         "scalingType": "basic",
@@ -1996,7 +2061,7 @@
         }
       },
       {
-        "rendered": "3%<sprite=5>",
+        "rendered": " 3%<sprite=5> ",
         "format": "P0",
         "raw": "maxHpRatio",
         "scalingType": "basic",
@@ -2029,11 +2094,24 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "第4次<color=yellow>普通攻击</color>必定<color=yellow>暴击</color>，并引发爆炸。对敌人造成<sprite=1><color=#16D7FF>145%</color><sprite=5>的群体<color=yellow>火焰伤害</color>。<color=yellow>已被点燃的敌人</color>受到的爆炸伤害提升100%。",
-    "rawDesc": "第4次<color=yellow>普通攻击</color>必定<color=yellow>暴击</color>，并引发爆炸。对敌人造成{0}的群体<color=yellow>火焰伤害</color>。<color=yellow>已被点燃的敌人</color>受到的爆炸伤害提升{1}。",
+    "description": "<color=yellow>攻击速度</color>提升 15%<sprite=5> 。每第4次<color=yellow>基础攻击</color>必定<color=yellow>暴击</color>并爆炸，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>145%</gradient></color><sprite=5> 的范围<color=yellow>火焰伤害</color>。对<color=yellow>已被点燃的敌人</color>，爆炸伤害提升100%。",
+    "rawDesc": "<color=yellow>攻击速度</color>提升{0}。每第4次<color=yellow>基础攻击</color>必定<color=yellow>暴击</color>并爆炸，对敌人造成{1}的范围<color=yellow>火焰伤害</color>。对<color=yellow>已被点燃的敌人</color>，爆炸伤害提升{2}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>145%</color><sprite=5>",
+        "rendered": " 15%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "atkSpdPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 5.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>145%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "explosionDamage",
         "scalingType": "basic",
@@ -2079,11 +2157,11 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "无法获得<color=yellow>攻速</color>加成，但每1%<color=yellow>额外攻速</color>会使<color=yellow>攻击力</color>提升0.5<sprite=5>。\n使用<color=yellow>冲刺</color>或<color=yellow>瞬间移动</color>后，下一次<color=yellow>普通攻击</color>必定暴击。\n\n击杀任意<color=yellow>首领</color>时，回复<sprite=2><color=#FF8A2D>200%</color><sprite=5>点<color=yellow>生命值</color>。",
+    "description": "无法获得<color=yellow>攻速</color>加成，但每1%<color=yellow>额外攻速</color>会使<color=yellow>攻击力</color>提升 0.5<sprite=5> 。\n使用<color=yellow>冲刺</color>或<color=yellow>瞬间移动</color>后，下一次<color=yellow>普通攻击</color>必定暴击。\n\n击杀任意<color=yellow>首领</color>时，回复 <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> 点<color=yellow>生命值</color>。",
     "rawDesc": "无法获得<color=yellow>攻速</color>加成，但每1%<color=yellow>额外攻速</color>会使<color=yellow>攻击力</color>提升{0}。\n使用<color=yellow>冲刺</color>或<color=yellow>瞬间移动</color>后，下一次<color=yellow>普通攻击</color>必定暴击。\n\n击杀任意<color=yellow>首领</color>时，回复{1}点<color=yellow>生命值</color>。",
     "rawDescVars": [
       {
-        "rendered": "0.5<sprite=5>",
+        "rendered": " 0.5<sprite=5> ",
         "format": "#,##0.0",
         "raw": "atkSpdPercentageToAdRatio",
         "scalingType": "basic",
@@ -2096,7 +2174,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmountPerBossKill",
         "scalingType": "basic",
@@ -2128,7 +2206,7 @@
     "cooldownTime": 14.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "反转目标区域的重力，使范围内所有敌人悬浮1.6秒。之后猛击地面，造成<sprite=1><color=#16D7FF>400%</color><sprite=5>的<color=yellow>伤害</color>。",
+    "description": "反转目标区域的重力，使范围内所有敌人悬浮1.6秒。之后猛击地面，造成 <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> 的<color=yellow>伤害</color>。",
     "rawDesc": "反转目标区域的重力，使范围内所有敌人悬浮{0}秒。之后猛击地面，造成{1}的<color=yellow>伤害</color>。",
     "rawDescVars": [
       {
@@ -2139,7 +2217,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -2171,11 +2249,11 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "短距离<color=yellow>瞬间移动</color>，并对周围敌人造成<sprite=1><color=#16D7FF>244%</color><sprite=5>的<color=yellow>火焰伤害</color>。每命中一名敌人，<color=yellow>冷却时间</color>缩短13%。",
-    "rawDesc": "短距离<color=yellow>瞬间移动</color>，并对周围敌人造成{0}的<color=yellow>火焰伤害</color>。每命中一名敌人，<color=yellow>冷却时间</color>缩短{1}。",
+    "description": "短距离<color=yellow>瞬间移动</color>，并对周围敌人造成 <sprite=1><color=#fff><gradient=sv_ap>244%</gradient></color><sprite=5> <color=yellow>火焰伤害</color>。每命中一名敌人，<color=yellow>冷却时间</color>缩短13%。",
+    "rawDesc": "短距离<color=yellow>瞬间移动</color>，并对周围敌人造成{0}<color=yellow>火焰伤害</color>。每命中一名敌人，<color=yellow>冷却时间</color>缩短{1}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>244%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>244%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageAmount",
         "scalingType": "basic",
@@ -2201,7 +2279,7 @@
         }
       }
     ],
-    "shortDescription": "瞬间移动、群体火焰伤害",
+    "shortDescription": "瞬间移动，范围火焰伤害",
     "rarity": "Epic",
     "type": "Normal",
     "traveler": "",
@@ -2211,7 +2289,7 @@
       "Mobility"
     ],
     "image": "St_E_Blink.PNG",
-    "lore": "狩猎日志\n罗吉特执政第o年，o月oo日，天气：阴\n狩猎地点：希辛森林\n今日收获：少量野生草莓\n\n\n每当火焰燃烧，那天的景象便会再次清晰地浮现在眼前。\n妻子被那突如其来的烈焰无情吞噬，\n\n转瞬之间，便在刺眼的蓝色火焰中消弭无形。\n\n我仔细检查了所有的弹药与火药袋，但什么也没少。\n那火焰，燃烧得如此迅速，不生一丝烟雾，也无半点灼热，这绝非寻常之理。\n\n今天，当我透过瞄准镜，静静观察那些弓箭手时，发现了一件非常有趣的事情。\n\n原来那些路西德的家伙能够操纵蓝色火焰。\n\n……\n\n眼下，还需要更多信息。\n\n为了找回妻子，我必须谨慎行事。现在还不是意气用事、被复仇冲昏头脑的时候。",
+    "lore": "狩猎日志\n罗吉特执政第o年，o月oo日，天气：阴\n狩猎地点：希辛森林\n今日收获：少量野生草莓\n\n\n每当看到燃烧的火焰，那天的景象便历历在目。\n妻子突然被烈焰吞噬，消失无踪的身影。\n\n一切都发生在转瞬之间。她在刺眼的蓝色火焰中化为灰烬，消失了。\n\n我检查了所有的弹药和火药袋，但什么都没少。\n太奇怪了。世上哪有燃烧得那么快，却没有烟，甚至不带一丝热度的火焰。\n\n然后今天，我透过瞄准镜观察那些弓箭手时，发现了一件非常有趣的事。\n\n原来有些混蛋能操纵蓝色火焰。\n\n……\n\n总之，我需要更多情报。\n\n为了找回妻子，我必须小心行事。现在是时候把这沸腾的复仇心暂时压下去了。",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -2221,11 +2299,11 @@
     "cooldownTime": 16.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "施放弹跳的闪电，对首个目标造成<sprite=1><color=#16D7FF>400%</color><sprite=5>的<color=yellow>光明伤害</color>。最多弹跳5次，造成<sprite=1><color=#16D7FF>185%</color><sprite=5>的<color=yellow>光明伤害</color>。",
+    "description": "施放弹跳的闪电，对首个目标造成 <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>。最多弹跳5次，造成 <sprite=1><color=#fff><gradient=sv_ap>185%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>。",
     "rawDesc": "施放弹跳的闪电，对首个目标造成{0}的<color=yellow>光明伤害</color>。最多弹跳{1}次，造成{2}的<color=yellow>光明伤害</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "firstDamage",
         "scalingType": "basic",
@@ -2251,7 +2329,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>185%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>185%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "chainDamage",
         "scalingType": "basic",
@@ -2283,11 +2361,11 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在目标位置召唤血藤触手，将最多4<sprite=5>名敌人拉拽过来。触手会附着在敌人身上，造成<sprite=1><color=#16D7FF>80%</color><sprite=5>的<color=yellow>伤害</color>，并对被拉拽的敌人额外造成<sprite=1><color=#16D7FF>200%</color><sprite=5>的<color=yellow>伤害</color>。\n强化该记忆时，拉拽的<color=yellow>敌人数量</color>和<color=yellow>范围</color>将提升。",
+    "description": "在目标位置召唤血藤触手，将最多 4<sprite=5> 名敌人拉拽过来。触手会附着在敌人身上，造成 <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并对被拉拽的敌人额外造成 <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> 的<color=yellow>伤害</color>。\n强化该记忆时，拉拽的<color=yellow>敌人数量</color>和<color=yellow>范围</color>将提升。",
     "rawDesc": "在目标位置召唤血藤触手，将最多{0}名敌人拉拽过来。触手会附着在敌人身上，造成{1}的<color=yellow>伤害</color>，并对被拉拽的敌人额外造成{2}的<color=yellow>伤害</color>。\n强化该记忆时，拉拽的<color=yellow>敌人数量</color>和<color=yellow>范围</color>将提升。",
     "rawDescVars": [
       {
-        "rendered": "4<sprite=5>",
+        "rendered": " 4<sprite=5> ",
         "format": "#,##0",
         "raw": "maxTargetCount",
         "scalingType": "basic",
@@ -2300,7 +2378,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>80%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "firstDmgFactor",
         "scalingType": "basic",
@@ -2313,7 +2391,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "secondDmgFactor",
         "scalingType": "basic",
@@ -2345,11 +2423,11 @@
     "cooldownTime": 16.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "投掷巨枪，对命中敌人造成<sprite=2><color=#FF8A2D>450%</color><sprite=5>的<color=yellow>暗影伤害</color>。\n\n命中<color=yellow>英雄首领</color>时，伤害提升为其<color=yellow>体力上限</color>的15%并使巨枪插入目标，该记忆被<color=yellow>破坏</color>。<color=yellow>击杀</color>插有巨枪的英雄首领时，可获得其<color=yellow>专属记忆</color>或<color=yellow>精粹</color>。",
+    "description": "投掷巨枪，对命中敌人造成 <sprite=2><color=#fff><gradient=sv_ad>450%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>。\n\n命中<color=yellow>英雄首领</color>时，伤害提升为其<color=yellow>体力上限</color>的15%并使巨枪插入目标，该记忆被<color=yellow>破坏</color>。<color=yellow>击杀</color>插有巨枪的英雄首领时，可获得其<color=yellow>专属记忆</color>或<color=yellow>精粹</color>。",
     "rawDesc": "投掷巨枪，对命中敌人造成{0}的<color=yellow>暗影伤害</color>。\n\n命中<color=yellow>英雄首领</color>时，伤害提升为其<color=yellow>体力上限</color>的{1}并使巨枪插入目标，该记忆被<color=yellow>破坏</color>。<color=yellow>击杀</color>插有巨枪的英雄首领时，可获得其<color=yellow>专属记忆</color>或<color=yellow>精粹</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>450%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>450%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -2394,11 +2472,11 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "原地专注3秒。专注成功后，召唤<color=yellow>巨型火球</color>轰击目标区域，并向周围散射小型火球。巨型火球对目标造成<sprite=1><color=#16D7FF>1,600%</color><sprite=5>的<color=yellow>火焰伤害</color>，并使目标<color=yellow>眩晕</color>3秒。小型火球则造成<sprite=1><color=#16D7FF>150%</color>的<color=yellow>火焰伤害</color>。\n<color=yellow>该技能会同时影响敌我双方。</color>",
+    "description": "原地专注3秒。专注成功后，召唤<color=yellow>巨型火球</color>轰击目标区域，并向周围散射小型火球。巨型火球对目标造成 <sprite=1><color=#fff><gradient=sv_ap>1,600%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>，并使目标<color=yellow>眩晕</color>3秒。小型火球则造成<sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color>的<color=yellow>火焰伤害</color>。\n<color=yellow>该技能会同时影响敌我双方。</color>",
     "rawDesc": "原地专注3秒。专注成功后，召唤<color=yellow>巨型火球</color>轰击目标区域，并向周围散射小型火球。巨型火球对目标造成{0}的<color=yellow>火焰伤害</color>，并使目标<color=yellow>眩晕</color>{1}秒。小型火球则造成{2}的<color=yellow>火焰伤害</color>。\n<color=yellow>该技能会同时影响敌我双方。</color>",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>1,600%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>1,600%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -2424,7 +2502,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>150%</color>",
+        "rendered": "<sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color>",
         "format": "#,##0",
         "raw": "subDamage",
         "scalingType": "basic",
@@ -2457,8 +2535,8 @@
     "cooldownTime": 3.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在2秒内，<color=yellow>移动速度</color>提升25%<sprite=5>，之后牺牲自身最大生命值的40%，引发一次猛烈爆炸。被爆炸波及的敌人会受到<sprite=1><color=#16D7FF>850%</color><sprite=5>的<color=yellow>光明伤害</color>，并<color=yellow>眩晕</color>2.5秒。如果角色已死亡或因牺牲而死，<color=yellow>爆炸伤害</color>额外提升150%。",
-    "rawDesc": "在{0}秒内，<color=yellow>移动速度</color>提升{1}，之后牺牲自身最大生命值的{2}，引发一次猛烈爆炸。被爆炸波及的敌人会受到{3}的<color=yellow>光明伤害</color>，并<color=yellow>眩晕</color>{4}秒。如果角色已死亡或因牺牲而死，<color=yellow>爆炸伤害</color>额外提升{5}。",
+    "description": "蓄力2秒，使<color=yellow>移动速度</color>提升 25%<sprite=5> ，<color=yellow>防御力</color>提升 75<sprite=5> 。之后牺牲自身最大生命值的40%，引发一次猛烈爆炸。被爆炸波及的敌人会受到 <sprite=1><color=#fff><gradient=sv_ap>850%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>100%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>，并<color=yellow>眩晕</color>2.5秒。如果角色已死亡或因牺牲而死，<color=yellow>爆炸伤害</color>额外提升150%。",
+    "rawDesc": "蓄力{0}秒，使<color=yellow>移动速度</color>提升{1}，<color=yellow>防御力</color>提升{2}。之后牺牲自身最大生命值的{3}，引发一次猛烈爆炸。被爆炸波及的敌人会受到{4}的<color=yellow>光明伤害</color>，并<color=yellow>眩晕</color>{5}秒。如果角色已死亡或因牺牲而死，<color=yellow>爆炸伤害</color>额外提升{6}。",
     "rawDescVars": [
       {
         "rendered": "2",
@@ -2474,7 +2552,7 @@
         }
       },
       {
-        "rendered": "25%<sprite=5>",
+        "rendered": " 25%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -2487,6 +2565,19 @@
         }
       },
       {
+        "rendered": " 75<sprite=5> ",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 60.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 15.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
         "rendered": "40%",
         "format": "P0",
         "raw": "selfDamageRatioCalculated",
@@ -2494,7 +2585,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>850%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>850%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -2554,7 +2645,7 @@
     "cooldownTime": 11.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "持续2.5秒喷射火焰束。当敌人接触到火焰时，每秒会受到<sprite=1><color=#16D7FF>336%</color><sprite=5>的<color=yellow>火焰伤害</color>。",
+    "description": "持续2.5秒喷射火焰束。当敌人接触到火焰时，每秒会受到 <sprite=1><color=#fff><gradient=sv_ap>336%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>。",
     "rawDesc": "持续{0}秒喷射火焰束。当敌人接触到火焰时，每秒会受到{1}的<color=yellow>火焰伤害</color>。",
     "rawDescVars": [
       {
@@ -2565,7 +2656,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>336%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>336%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage/minHitInterval",
         "scalingType": "unknown",
@@ -2591,11 +2682,11 @@
     "cooldownTime": 12.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>攻击</color>敌人时，在目标身上刻下可无限叠加的<color=yellow>印记</color>。施放时，引爆自身刻下的所有<color=yellow>印记</color>，造成<sprite=2><color=#FF8A2D>100%</color><sprite=5>的<color=yellow>伤害</color>，并使<color=yellow>移动速度</color>降低60%，持续1.5秒。\n\n每增加一层，<color=yellow>印记</color>的爆炸伤害提升25%，如果敌人因爆炸死亡，则<color=yellow>回复</color><sprite=2><color=#FF8A2D>20%</color><sprite=5>的<color=yellow>体力</color>。",
+    "description": "<color=yellow>攻击</color>敌人时，在目标身上刻下可无限叠加的<color=yellow>印记</color>。施放时，引爆自身刻下的所有<color=yellow>印记</color>，造成 <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并使<color=yellow>移动速度</color>降低60%，持续1.5秒。\n\n每增加一层，<color=yellow>印记</color>的爆炸伤害提升25%，如果敌人因爆炸死亡，则<color=yellow>回复</color> <sprite=2><color=#fff><gradient=sv_ad>20%</gradient></color><sprite=5> 的<color=yellow>体力</color>。",
     "rawDesc": "<color=yellow>攻击</color>敌人时，在目标身上刻下可无限叠加的<color=yellow>印记</color>。施放时，引爆自身刻下的所有<color=yellow>印记</color>，造成{0}的<color=yellow>伤害</color>，并使<color=yellow>移动速度</color>降低{1}，持续{2}秒。\n\n每增加一层，<color=yellow>印记</color>的爆炸伤害提升{3}，如果敌人因爆炸死亡，则<color=yellow>回复</color>{4}的<color=yellow>体力</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "baseDamage",
         "scalingType": "basic",
@@ -2647,7 +2738,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>20%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>20%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healOnKill",
         "scalingType": "basic",
@@ -2680,11 +2771,11 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在目标敌人位置劈下一把巨大的大剑，对周围所有敌人造成<sprite=2><color=#FF8A2D>800%</color><sprite=5>的<color=yellow>伤害</color>。该伤害会根据自身<color=yellow>已损失生命值</color>最高提升至2倍，并根据目标的<color=yellow>已损失生命值</color>再提升至2倍，总共最多可提升至4倍。当生命值低于30%时，伤害增幅达到最大值。",
+    "description": "在目标敌人位置劈下一把巨大的大剑，对周围所有敌人造成 <sprite=2><color=#fff><gradient=sv_ad>800%</gradient></color><sprite=5> 的<color=yellow>伤害</color>。该伤害会根据自身<color=yellow>已损失生命值</color>最高提升至2倍，并根据目标的<color=yellow>已损失生命值</color>再提升至2倍，总共最多可提升至4倍。当生命值低于30%时，伤害增幅达到最大值。",
     "rawDesc": "在目标敌人位置劈下一把巨大的大剑，对周围所有敌人造成{0}的<color=yellow>伤害</color>。该伤害会根据自身<color=yellow>已损失生命值</color>最高提升至{1}倍，并根据目标的<color=yellow>已损失生命值</color>再提升至{2}倍，总共最多可提升至{3}倍。当生命值低于{4}时，伤害增幅达到最大值。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>800%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>800%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -2758,16 +2849,117 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "St_E_LizardlyBlessing": {
+    "name": "蜥蜴的祝福",
+    "cooldownTime": 8.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "在6秒内获得蜥蜴的祝福，<color=yellow>移动速度</color>提升25%，<color=yellow>攻击速度</color>提升 25%<sprite=5> ，受到的伤害增加 10%<sprite=5> 。在此期间，首次对单个敌人造成<color=yellow>伤害</color>时，会引发电击，造成 <sprite=1><color=#fff><gradient=sv_ap>125%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>，并且每次<color=yellow>击杀</color>敌人时都会获得 2<sprite=5> <color=yellow>金币</color>。",
+    "rawDesc": "在{0}秒内获得蜥蜴的祝福，<color=yellow>移动速度</color>提升{1}，<color=yellow>攻击速度</color>提升{2}，受到的伤害增加{3}。在此期间，首次对单个敌人造成<color=yellow>伤害</color>时，会引发电击，造成{4}的<color=yellow>光明伤害</color>，并且每次<color=yellow>击杀</color>敌人时都会获得{5}<color=yellow>金币</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "6",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "25%",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 25.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " 25%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 5.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " 10%<sprite=5> ",
+        "format": "P0",
+        "raw": "takenDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.07,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.03,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>125%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "firstDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.25,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " 2<sprite=5> ",
+        "format": "#.#",
+        "raw": "goldPerKillAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.5,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": "光明伤害，击杀时获得金币",
+    "rarity": "Epic",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Light"
+    ],
+    "image": "St_E_LizardlyBlessing.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "St_E_MassCleanse": {
     "name": "大规模净化",
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "净化目标区域，对敌人造成<sprite=1><color=#16D7FF>300%</color><sprite=5>的<color=yellow>光明伤害</color>，并为己方施加1.5秒的<color=yellow>势如破竹</color>效果，同时<color=yellow>移除</color>大部分<color=yellow>负面效果</color>。每为己方移除1个<color=yellow>元素效果</color>，将回复<sprite=1><color=#16D7FF>80%</color><sprite=5>的<color=yellow>体力</color>。",
-    "rawDesc": "净化目标区域，对敌人造成{0}的<color=yellow>光明伤害</color>，并为己方施加{1}秒的<color=yellow>势如破竹</color>效果，同时<color=yellow>移除</color>大部分<color=yellow>负面效果</color>。每为己方移除1个<color=yellow>元素效果</color>，将回复{2}的<color=yellow>体力</color>。",
+    "description": "净化目标区域，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>300%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>，并为己方施加1.5秒的<color=yellow>无法阻挡</color>效果，同时<color=yellow>移除</color>大部分<color=yellow>负面效果</color>。每为己方移除1个<color=yellow>元素效果</color>，将回复 <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5> 的<color=yellow>体力</color>。",
+    "rawDesc": "净化目标区域，对敌人造成{0}的<color=yellow>光明伤害</color>，并为己方施加{1}秒的<color=yellow>无法阻挡</color>效果，同时<color=yellow>移除</color>大部分<color=yellow>负面效果</color>。每为己方移除1个<color=yellow>元素效果</color>，将回复{2}的<color=yellow>体力</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>300%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -2793,7 +2985,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>80%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healPerElemental",
         "scalingType": "basic",
@@ -2819,18 +3011,18 @@
     "lore": "梦魇的疯狂正在悄然蔓延，\n森林的平衡已然失控。\n……病枝必须在腐蚀整片森林之前被斩断。\n此刻，我所要做的，是为守护秩序进行冷静且果断的净化。\n\n我心中残留的那一点点怜悯……至少现在，必须暂且收起。\n这就是——身为林中守卫的职责与使命。\n\n……\n\n亲爱的弟弟，但愿在你面前，\n我也能不负这份责任……",
     "achievementKey": "ACH_TRUE_SUPPORT",
     "achievementName": "王牌辅助",
-    "achievementDescription": "在1秒内，回复所有体力低于30%的己方旅行者。"
+    "achievementDescription": "在1秒内，将体力低于30%的旅行者的体力完全回满。"
   },
   "St_E_MysticDagger": {
     "name": "神秘匕首",
     "cooldownTime": 6.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "向首个命中的目标投掷<color=yellow>神秘匕首</color>，造成<sprite=1><color=#16D7FF>350%</color><sprite=5>的<color=yellow>伤害</color>，并触发<color=yellow>攻击效果</color>。<color=yellow>匕首</color>命中敌人时，所有记忆的<color=yellow>冷却时间</color>缩短1<sprite=5>秒。",
+    "description": "向首个命中的目标投掷<color=yellow>神秘匕首</color>，造成 <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并触发<color=yellow>攻击效果</color>。<color=yellow>匕首</color>命中敌人时，所有记忆的<color=yellow>冷却时间</color>缩短 1<sprite=5> 秒。",
     "rawDesc": "向首个命中的目标投掷<color=yellow>神秘匕首</color>，造成{0}的<color=yellow>伤害</color>，并触发<color=yellow>攻击效果</color>。<color=yellow>匕首</color>命中敌人时，所有记忆的<color=yellow>冷却时间</color>缩短{1}秒。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -2843,7 +3035,7 @@
         }
       },
       {
-        "rendered": "1<sprite=5>",
+        "rendered": " 1<sprite=5> ",
         "format": "#,##0.#",
         "raw": "reducedAmount",
         "scalingType": "unknown",
@@ -2869,7 +3061,7 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "聚集极寒之气后，向极广范围释放。受影响的友军将在10秒内获得<sprite=1><color=#16D7FF>300%</color><sprite=5>点<color=yellow>护盾</color>和100点<color=yellow>防御力</color>，敌人将被冻结，受到<sprite=1><color=#16D7FF>500%</color><sprite=5>点<color=yellow>寒气伤害</color>并<color=yellow>眩晕</color>15秒。\n\n如果敌人已受<color=yellow>寒气</color>影响，则该伤害将增加100%。",
+    "description": "聚集极寒之气后，向极广范围释放。受影响的友军将在10秒内获得 <sprite=1><color=#fff><gradient=sv_ap>300%</gradient></color><sprite=5> 点<color=yellow>护盾</color>和100点<color=yellow>防御力</color>，敌人将被冻结，受到 <sprite=1><color=#fff><gradient=sv_ap>500%</gradient></color><sprite=5> 点<color=yellow>寒气伤害</color>并<color=yellow>眩晕</color>15秒。\n\n如果敌人已受<color=yellow>寒气</color>影响，则该伤害将增加100%。",
     "rawDesc": "聚集极寒之气后，向极广范围释放。受影响的友军将在{0}秒内获得{1}点<color=yellow>护盾</color>和{2}点<color=yellow>防御力</color>，敌人将被冻结，受到{3}点<color=yellow>寒气伤害</color>并<color=yellow>眩晕</color>{4}秒。\n\n如果敌人已受<color=yellow>寒气</color>影响，则该伤害将增加{5}。",
     "rawDescVars": [
       {
@@ -2886,7 +3078,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>300%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>300%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -2912,7 +3104,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>500%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>500%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -2966,11 +3158,11 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "使上一次使用的<color=yellow>记忆</color>的<color=yellow>冷却时间</color>缩短5.5<sprite=5>秒。接下来8秒内施放的下1个<color=yellow>记忆</color>将被强化，对敌人首次命中时额外造成<sprite=1><color=#16D7FF>160%</color><sprite=5>的<color=yellow>伤害</color>。",
+    "description": "使上一次使用的<color=yellow>记忆</color>的<color=yellow>冷却时间</color>缩短 5.5<sprite=5> 秒。接下来8秒内施放的下1个<color=yellow>记忆</color>将被强化，对敌人首次命中时额外造成 <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> 的<color=yellow>伤害</color>。",
     "rawDesc": "使上一次使用的<color=yellow>记忆</color>的<color=yellow>冷却时间</color>缩短{0}秒。接下来{1}秒内施放的下1个<color=yellow>记忆</color>将被强化，对敌人首次命中时额外造成{2}的<color=yellow>伤害</color>。",
     "rawDescVars": [
       {
-        "rendered": "5.5<sprite=5>",
+        "rendered": " 5.5<sprite=5> ",
         "format": "#,##0.#",
         "raw": "reduceAmount",
         "scalingType": "basic",
@@ -2996,7 +3188,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3026,11 +3218,11 @@
     "cooldownTime": 9.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "挥舞火焰之剑快速斩击敌人，造成<sprite=1><color=#16D7FF>60%</color><sprite=5>的<color=yellow>火焰伤害</color>和额外<sprite=1><color=#16D7FF>240%</color><sprite=5>的<color=yellow>火焰伤害</color>。伤害和射程随<color=yellow>移动速度</color>提升。用此技能击杀敌人时，<color=yellow>冷却时间</color>将重置。",
+    "description": "挥舞火焰之剑快速斩击敌人，造成 <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>和额外 <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>。伤害和射程随<color=yellow>移动速度</color>提升。用此技能击杀敌人时，<color=yellow>冷却时间</color>将重置。",
     "rawDesc": "挥舞火焰之剑快速斩击敌人，造成{0}的<color=yellow>火焰伤害</color>和额外{1}的<color=yellow>火焰伤害</color>。伤害和射程随<color=yellow>移动速度</color>提升。用此技能击杀敌人时，<color=yellow>冷却时间</color>将重置。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "firstHitDmgAmount",
         "scalingType": "basic",
@@ -3043,7 +3235,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>240%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "secondHitDmgAmount",
         "scalingType": "basic",
@@ -3076,11 +3268,11 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "1.3<sprite=5>秒内，进入专注状态，向首次命中的敌人发射7<sprite=5>发<color=yellow>暗影弹</color>，每发造成<sprite=2><color=#FF8A2D>60%</color><sprite=5>的<color=yellow>暗影伤害</color>。\n<color=yellow>攻速</color>越高，精神专注时间越短，<color=yellow>暴击率</color>越高，发射次数越多。",
+    "description": " 1.3<sprite=5> 秒内，进入专注状态，向首次命中的敌人发射 7<sprite=5> 发<color=yellow>暗影弹</color>，每发造成 <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>。\n<color=yellow>攻速</color>越高，精神专注时间越短，<color=yellow>暴击率</color>越高，发射次数越多。",
     "rawDesc": "{0}秒内，进入专注状态，向首次命中的敌人发射{1}发<color=yellow>暗影弹</color>，每发造成{2}的<color=yellow>暗影伤害</color>。\n<color=yellow>攻速</color>越高，精神专注时间越短，<color=yellow>暴击率</color>越高，发射次数越多。",
     "rawDescVars": [
       {
-        "rendered": "1.3<sprite=5>",
+        "rendered": " 1.3<sprite=5> ",
         "format": "#,##0.#",
         "raw": "baseDuration",
         "scalingType": "basic",
@@ -3093,7 +3285,7 @@
         }
       },
       {
-        "rendered": "7<sprite=5>",
+        "rendered": " 7<sprite=5> ",
         "format": "#,##0",
         "raw": "baseShootCount",
         "scalingType": "basic",
@@ -3106,7 +3298,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>60%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3138,7 +3330,7 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "0.5秒后，挥出暗影之刃劈斩前方敌人，对其造成<sprite=2><color=#FF8A2D>65%</color><sprite=5>的<color=yellow>暗影伤害</color>。若命中外刃，则对敌人造成<sprite=2><color=#FF8A2D>250%</color><sprite=5>的<color=yellow>暗影伤害</color>，并触发50%的<color=yellow>攻击效果</color>。每命中一名敌人，将回复自身<color=yellow>损失体力</color>的8%。\n\n每命中一名被外刃击中的敌人，<color=yellow>冷却时间</color>将缩短20%。",
+    "description": "0.5秒后，挥出暗影之刃劈斩前方敌人，对其造成 <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>。若命中外刃，则对敌人造成 <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>，并触发50%的<color=yellow>攻击效果</color>。每命中一名敌人，将回复自身<color=yellow>损失体力</color>的8%。\n\n每命中一名被外刃击中的敌人，<color=yellow>冷却时间</color>将缩短20%。",
     "rawDesc": "{0}秒后，挥出暗影之刃劈斩前方敌人，对其造成{1}的<color=yellow>暗影伤害</color>。若命中外刃，则对敌人造成{2}的<color=yellow>暗影伤害</color>，并触发{3}的<color=yellow>攻击效果</color>。每命中一名敌人，将回复自身<color=yellow>损失体力</color>的{4}。\n\n每命中一名被外刃击中的敌人，<color=yellow>冷却时间</color>将缩短{5}。",
     "rawDescVars": [
       {
@@ -3155,7 +3347,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>65%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3168,7 +3360,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "outerDamage",
         "scalingType": "basic",
@@ -3240,11 +3432,11 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>长按</color>施放键，可在手中为暗影充能。充能完成后，朝前方冲锋，重击首个接触的敌人及其周围所有敌人。敌人根据充能时间，受到<sprite=2><color=#FF8A2D>100%</color><sprite=5>~<sprite=2><color=#FF8A2D>500%</color><sprite=5>的<color=yellow>暗影伤害</color>，并眩晕1秒。\n充能1.2秒后，冲刺距离和伤害达到最大值。",
-    "rawDesc": "<color=yellow>长按</color>施放键，可在手中为暗影充能。充能完成后，朝前方冲锋，重击首个接触的敌人及其周围所有敌人。敌人根据充能时间，受到{0}~{1}的<color=yellow>暗影伤害</color>，并眩晕{2}秒。\n充能{3}秒后，冲刺距离和伤害达到最大值。",
+    "description": "<color=yellow>长按</color>施放键，可在手中为暗影充能。充能完成后，朝前方冲锋，重击首个接触的敌人及其周围所有敌人。敌人根据充能时间，受到 <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ~ <sprite=2><color=#fff><gradient=sv_ad>600%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>，并眩晕1秒。每命中一个敌人，获得持续3秒、数值为 <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> 的<color=yellow>护盾</color>，若目标为<color=yellow>Boss</color>，护盾量额外增加200%。\n充能1.2秒后，冲刺距离和伤害达到最大值。",
+    "rawDesc": "<color=yellow>长按</color>施放键，可在手中为暗影充能。充能完成后，朝前方冲锋，重击首个接触的敌人及其周围所有敌人。敌人根据充能时间，受到{0}~{1}的<color=yellow>暗影伤害</color>，并眩晕{2}秒。每命中一个敌人，获得持续{3}秒、数值为{4}的<color=yellow>护盾</color>，若目标为<color=yellow>Boss</color>，护盾量额外增加{5}。\n充能{6}秒后，冲刺距离和伤害达到最大值。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "minDamage",
         "scalingType": "basic",
@@ -3257,14 +3449,14 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>500%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>600%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "maxDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 5.0,
+          "basicAD": 6.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -3276,6 +3468,45 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "shieldAmountPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.6,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "200%",
+        "format": "P0",
+        "raw": "shieldBossAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3319,7 +3550,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "7秒内，为武器赋予暗影之力，提升20%<sprite=5><color=yellow>暴击率</color>。并在<color=yellow>攻击</color>时额外造成<sprite=2><color=#FF8A2D>52%</color><sprite=5>的<color=yellow>暗影伤害</color>。<color=yellow>近战旅行者</color>的额外伤害提升25%。",
+    "description": "7秒内，为武器赋予暗影之力，提升 20%<sprite=5> <color=yellow>暴击率</color>。并在<color=yellow>攻击</color>时额外造成 <sprite=2><color=#fff><gradient=sv_ad>52%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>。<color=yellow>近战旅行者</color>的额外伤害提升25%。",
     "rawDesc": "{0}秒内，为武器赋予暗影之力，提升{1}<color=yellow>暴击率</color>。并在<color=yellow>攻击</color>时额外造成{2}的<color=yellow>暗影伤害</color>。<color=yellow>近战旅行者</color>的额外伤害提升{3}。",
     "rawDescVars": [
       {
@@ -3336,7 +3567,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "P0",
         "raw": "critChance",
         "scalingType": "basic",
@@ -3349,7 +3580,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>52%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>52%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "hitDamage",
         "scalingType": "basic",
@@ -3395,11 +3626,11 @@
     "cooldownTime": 6.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "短暂消失后在目标位置现身，对敌人进行斩击，造成<sprite=2><color=#FF8A2D>200%</color><sprite=5>的<color=yellow>暗影伤害</color>，并使其<color=yellow>眩晕</color>1秒，同时触发<color=yellow>攻击效果</color>。若目标体力低于50%，则所受伤害提升50%。",
+    "description": "短暂消失后在目标位置现身，对敌人进行斩击，造成 <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>，并使其<color=yellow>眩晕</color>1秒，同时触发<color=yellow>攻击效果</color>。若目标体力低于50%，则所受伤害提升50%。",
     "rawDesc": "短暂消失后在目标位置现身，对敌人进行斩击，造成{0}的<color=yellow>暗影伤害</color>，并使其<color=yellow>眩晕</color>{1}秒，同时触发<color=yellow>攻击效果</color>。若目标体力低于{2}，则所受伤害提升{3}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -3473,11 +3704,11 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "凝聚寒冬之力，跳跃至指定位置并重击地面，对该区域的所有敌人造成<sprite=1><color=#16D7FF>340%</color><sprite=5>的<color=yellow>寒气伤害</color>，并使其<color=yellow>眩晕</color>1.5秒。",
+    "description": "凝聚寒冬之力，跳跃至指定位置并重击地面，对该区域的所有敌人造成 <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>，并使其<color=yellow>眩晕</color>1.5秒。",
     "rawDesc": "凝聚寒冬之力，跳跃至指定位置并重击地面，对该区域的所有敌人造成{0}的<color=yellow>寒气伤害</color>，并使其<color=yellow>眩晕</color>{1}秒。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>340%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -3524,7 +3755,7 @@
     "cooldownTime": 14.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在目标区域每隔0.7秒降下4<sprite=5>次暴风雪，对敌人造成<sprite=1><color=#16D7FF>180%</color><sprite=5>的<color=yellow>寒气伤害</color>，并为队友提供<sprite=1><color=#16D7FF>60%</color><sprite=5>的<color=yellow>护盾</color>，护盾会在3.5秒内逐渐消失。\n最多可同时存在10个。",
+    "description": "在目标区域每隔0.7秒降下 4<sprite=5> 次暴风雪，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>，并为队友提供 <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> 的<color=yellow>护盾</color>，护盾会在3.5秒内逐渐消失。\n最多可同时存在10个。",
     "rawDesc": "在目标区域每隔{0}秒降下{1}次暴风雪，对敌人造成{2}的<color=yellow>寒气伤害</color>，并为队友提供{3}的<color=yellow>护盾</color>，护盾会在{4}秒内逐渐消失。\n最多可同时存在{5}个。",
     "rawDescVars": [
       {
@@ -3541,7 +3772,7 @@
         }
       },
       {
-        "rendered": "4<sprite=5>",
+        "rendered": " 4<sprite=5> ",
         "format": "#,##0",
         "raw": "waveCount",
         "scalingType": "basic",
@@ -3554,7 +3785,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -3567,7 +3798,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -3626,11 +3857,11 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "向前挥下利刃，对敌人造成<sprite=2><color=#FF8A2D>200%</color><sprite=5>的伤害，并在2秒内，使其<color=yellow>移动速度</color><color=yellow>降低</color>30%。\n\n若被利刃命中，敌人将在3秒内死亡，并掉落<color=yellow>肉块</color>。获得<color=yellow>肉块</color>可<color=yellow>回复</color><sprite=1><color=#16D7FF>25%</color><sprite=5>的<color=yellow>体力</color>，并使绝命一击的<color=yellow>伤害</color>永久提升1%。",
-    "rawDesc": "向前挥下利刃，对敌人造成{0}的伤害，并在{1}秒内，使其<color=yellow>移动速度</color><color=yellow>降低</color>{2}。\n\n若被利刃命中，敌人将在{3}秒内死亡，并掉落<color=yellow>肉块</color>。获得<color=yellow>肉块</color>可<color=yellow>回复</color>{4}的<color=yellow>体力</color>，并使绝命一击的<color=yellow>伤害</color>永久提升{5}。",
+    "description": "向前挥下利刃，对敌人造成 <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> 的伤害，并在2秒内，使其<color=yellow>移动速度</color><color=yellow>降低</color>30%。\n\n被利刃命中的敌人若在3秒内死亡，将掉落<color=yellow>肉块</color>。获得<color=yellow>肉块</color>可<color=yellow>回复</color> <sprite=1><color=#fff><gradient=sv_ap>25%</gradient></color><sprite=5> 的<color=yellow>体力</color>，并使绝命一击的<color=yellow>伤害</color>永久提升1%。",
+    "rawDesc": "向前挥下利刃，对敌人造成{0}的伤害，并在{1}秒内，使其<color=yellow>移动速度</color><color=yellow>降低</color>{2}。\n\n被利刃命中的敌人若在{3}秒内死亡，将掉落<color=yellow>肉块</color>。获得<color=yellow>肉块</color>可<color=yellow>回复</color>{4}的<color=yellow>体力</color>，并使绝命一击的<color=yellow>伤害</color>永久提升{5}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -3682,7 +3913,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>25%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>25%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -3728,7 +3959,7 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "消耗当前所持<color=yellow>金币</color>的1%，投掷<color=yellow>硬币</color>。<color=yellow>硬币</color>在首次命中敌人的区域<color=yellow>爆炸</color>，造成<sprite=1><color=#16D7FF>150%</color><sprite=5>的<color=yellow>光明伤害</color>，并使敌人<color=yellow>眩晕</color>1秒。\n\n爆炸后，<color=yellow>爆炸伤害</color>永久翻倍概率为50%，增益部分失效概率也为50%。",
+    "description": "消耗当前所持<color=yellow>金币</color>的1%，投掷<color=yellow>硬币</color>。<color=yellow>硬币</color>在首次命中敌人的区域<color=yellow>爆炸</color>，造成 <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>，并使敌人<color=yellow>眩晕</color>1秒。\n\n爆炸后，<color=yellow>爆炸伤害</color>永久翻倍概率为50%，增益部分失效概率也为50%。",
     "rawDesc": "消耗当前所持<color=yellow>金币</color>的{0}，投掷<color=yellow>硬币</color>。<color=yellow>硬币</color>在首次命中敌人的区域<color=yellow>爆炸</color>，造成{1}的<color=yellow>光明伤害</color>，并使敌人<color=yellow>眩晕</color>{2}秒。\n\n爆炸后，<color=yellow>爆炸伤害</color>永久翻倍概率为50%，增益部分失效概率也为50%。",
     "rawDescVars": [
       {
@@ -3745,7 +3976,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -3791,7 +4022,7 @@
     "cooldownTime": 13.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "指定己方或敌人，1.5秒后，在其位置引发<color=yellow>光辉爆炸</color>。光辉爆炸对周围敌人造成<sprite=1><color=#16D7FF>400%</color><sprite=5>的<color=yellow>光明伤害</color>，并使其<color=yellow>眩晕</color>1秒。若有敌人在爆炸中被<color=yellow>击杀</color>，则爆炸会被<color=yellow>重复</color>触发。",
+    "description": "指定己方或敌人，1.5秒后，在其位置引发<color=yellow>光辉爆炸</color>。光辉爆炸对周围敌人造成 <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>，并使其<color=yellow>眩晕</color>1秒。若有敌人在爆炸中被<color=yellow>击杀</color>，则爆炸会被<color=yellow>重复</color>触发。",
     "rawDesc": "指定己方或敌人，{0}秒后，在其位置引发<color=yellow>光辉爆炸</color>。光辉爆炸对周围敌人造成{1}的<color=yellow>光明伤害</color>，并使其<color=yellow>眩晕</color>{2}秒。若有敌人在爆炸中被<color=yellow>击杀</color>，则爆炸会被<color=yellow>重复</color>触发。",
     "rawDescVars": [
       {
@@ -3808,7 +4039,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -3854,11 +4085,11 @@
     "cooldownTime": 16.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "污染目标和其周围的精神，造成<sprite=1><color=#16D7FF>200%</color><sprite=5>的<color=yellow>暗影伤害</color>，并在其死亡前，造成每0.5秒<sprite=1><color=#16D7FF>60%</color><sprite=5>的<color=yellow>暗影伤害</color>。",
+    "description": "污染目标和其周围的精神，造成 <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>，并在其死亡前，造成每0.5秒 <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>。",
     "rawDesc": "污染目标和其周围的精神，造成{0}的<color=yellow>暗影伤害</color>，并在其死亡前，造成每{1}秒{2}的<color=yellow>暗影伤害</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "initDamageAmount",
         "scalingType": "basic",
@@ -3884,7 +4115,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "tickDamageAmount",
         "scalingType": "basic",
@@ -3916,7 +4147,7 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "6秒内，<color=yellow>攻速</color>提升15%<sprite=5>，<color=yellow>移动速度</color>提升10%，<color=yellow>攻击</color>时发射3支箭矢，每支箭矢造成<sprite=1><color=#16D7FF>35%</color><sprite=5>的伤害，并且首支箭矢会触发<color=yellow>攻击效果</color>。",
+    "description": "6秒内，<color=yellow>攻速</color>提升 15%<sprite=5> ，<color=yellow>移动速度</color>提升10%，<color=yellow>攻击</color>时发射3支箭矢，每支箭矢造成 <sprite=1><color=#fff><gradient=sv_ap>35%</gradient></color><sprite=5> 的伤害，并且首支箭矢会触发<color=yellow>攻击效果</color>。",
     "rawDesc": "{0}秒内，<color=yellow>攻速</color>提升{1}，<color=yellow>移动速度</color>提升{2}，<color=yellow>攻击</color>时发射{3}支箭矢，每支箭矢造成{4}的伤害，并且首支箭矢会触发<color=yellow>攻击效果</color>。",
     "rawDescVars": [
       {
@@ -3933,7 +4164,7 @@
         }
       },
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -3972,7 +4203,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>35%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>35%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "arrowDamage",
         "scalingType": "basic",
@@ -4004,7 +4235,7 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在3秒内变身为快速移动的<color=yellow>火焰球体</color>，获得50<sprite=5>的<color=yellow>防御力</color>并免疫<color=yellow>火焰伤害</color>。每当球体命中敌人时，会造成<sprite=1><color=#16D7FF>220%</color><sprite=5>的<color=yellow>火焰伤害</color>，并使变身的<color=yellow>持续时间</color><color=yellow>增加</color>0.2<sprite=5>秒，最多增加3<sprite=5>秒。",
+    "description": "在3秒内变身为快速移动的<color=yellow>火焰球体</color>，获得 50<sprite=5> 的<color=yellow>防御力</color>并免疫<color=yellow>火焰伤害</color>。每当球体命中敌人时，会造成 <sprite=1><color=#fff><gradient=sv_ap>220%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>，并使变身的<color=yellow>持续时间</color><color=yellow>增加</color> 0.2<sprite=5> 秒，最多增加 3<sprite=5> 秒。",
     "rawDesc": "在{0}秒内变身为快速移动的<color=yellow>火焰球体</color>，获得{1}的<color=yellow>防御力</color>并免疫<color=yellow>火焰伤害</color>。每当球体命中敌人时，会造成{2}的<color=yellow>火焰伤害</color>，并使变身的<color=yellow>持续时间</color><color=yellow>增加</color>{3}秒，最多增加{4}秒。",
     "rawDescVars": [
       {
@@ -4021,7 +4252,7 @@
         }
       },
       {
-        "rendered": "50<sprite=5>",
+        "rendered": " 50<sprite=5> ",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "basic",
@@ -4034,7 +4265,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>220%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>220%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -4047,7 +4278,7 @@
         }
       },
       {
-        "rendered": "0.2<sprite=5>",
+        "rendered": " 0.2<sprite=5> ",
         "format": "#,##0.#",
         "raw": "durationIncreasePerHit",
         "scalingType": "basic",
@@ -4060,7 +4291,7 @@
         }
       },
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0.#",
         "raw": "maxDurationIncrease",
         "scalingType": "basic",
@@ -4094,11 +4325,11 @@
     "cooldownTime": 6.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "向目标敌人发射幽灵子弹，造成<sprite=2><color=#FF8A2D>300%</color><sprite=5>的<color=yellow>伤害</color>并触发<color=yellow>攻击效果</color>。该伤害<color=yellow>击杀</color>时，获得5<sprite=5>的<color=yellow>梦之尘</color>。",
+    "description": "向目标敌人发射幽灵子弹，造成 <sprite=2><color=#fff><gradient=sv_ad>300%</gradient></color><sprite=5> 的<color=yellow>伤害</color>并触发<color=yellow>攻击效果</color>。该伤害<color=yellow>击杀</color>时，获得 5<sprite=5> 的<color=yellow>梦之尘</color>。",
     "rawDesc": "向目标敌人发射幽灵子弹，造成{0}的<color=yellow>伤害</color>并触发<color=yellow>攻击效果</color>。该伤害<color=yellow>击杀</color>时，获得{1}的<color=yellow>梦之尘</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>300%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>300%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -4111,7 +4342,7 @@
         }
       },
       {
-        "rendered": "5<sprite=5>",
+        "rendered": " 5<sprite=5> ",
         "format": "#,##0",
         "raw": "dreamDustAmount",
         "scalingType": "basic",
@@ -4440,30 +4671,30 @@
     "cooldownTime": 6.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>长按</color>施放键，将阳光聚焦在锤子上。聚焦完成后，猛击地面，对敌人造成<sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>450%</color><sprite=5>的<color=yellow>火焰伤害</color>，并使其<color=yellow>眩晕</color>0.5~1.5秒。\n\n聚焦期间无法移动，进入<color=yellow>势如破竹</color>状态，并获得60<sprite=5>点的<color=yellow>防御力</color>。",
-    "rawDesc": "<color=yellow>长按</color>施放键，将阳光聚焦在锤子上。聚焦完成后，猛击地面，对敌人造成{0}~{1}的<color=yellow>火焰伤害</color>，并使其<color=yellow>眩晕</color>{2}~{3}秒。\n\n聚焦期间无法移动，进入<color=yellow>势如破竹</color>状态，并获得{4}点的<color=yellow>防御力</color>。",
+    "description": "<color=yellow>长按</color>施放键，将阳光聚焦在锤子上。聚焦完成后，猛击地面，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>125%</gradient></color><sprite=5> ~ <sprite=1><color=#fff><gradient=sv_ap>380%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>17%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>，并使其<color=yellow>眩晕</color>0.5~1.5秒。\n\n聚焦期间无法移动，进入<color=yellow>无法阻挡</color>状态，并获得 60<sprite=5> 点的<color=yellow>防御力</color>。",
+    "rawDesc": "<color=yellow>长按</color>施放键，将阳光聚焦在锤子上。聚焦完成后，猛击地面，对敌人造成{0}~{1}的<color=yellow>火焰伤害</color>，并使其<color=yellow>眩晕</color>{2}~{3}秒。\n\n聚焦期间无法移动，进入<color=yellow>无法阻挡</color>状态，并获得{4}点的<color=yellow>防御力</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>125%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageMin",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.5,
+          "basicAP": 1.25,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>450%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>380%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>17%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageMax",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 4.5,
+          "basicAP": 3.8,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -4496,7 +4727,7 @@
         }
       },
       {
-        "rendered": "60<sprite=5>",
+        "rendered": " 60<sprite=5> ",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "basic",
@@ -4530,11 +4761,11 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "朝目标冲刺并猛击地面，对敌人造成<sprite=2><color=#FF8A2D>125%</color><sprite=5>的<color=yellow>光明伤害</color>，并触发50%的<color=yellow>攻击效果</color>。每次<color=yellow>攻击</color>敌人时，<color=yellow>冷却时间</color><color=yellow>缩短</color>8%。",
+    "description": "朝目标冲刺并猛击地面，对敌人造成 <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>，并触发50%的<color=yellow>攻击效果</color>。每次<color=yellow>攻击</color>敌人时，<color=yellow>冷却时间</color><color=yellow>缩短</color>8%。",
     "rawDesc": "朝目标冲刺并猛击地面，对敌人造成{0}的<color=yellow>光明伤害</color>，并触发{1}的<color=yellow>攻击效果</color>。每次<color=yellow>攻击</color>敌人时，<color=yellow>冷却时间</color><color=yellow>缩短</color>{2}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>125%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -4594,11 +4825,11 @@
     "cooldownTime": 9.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "发射往返的<color=yellow>以太</color>，对敌人造成<sprite=1><color=#16D7FF>160%</color><sprite=5>的<color=yellow>光明伤害</color>。再次施放时，使<color=yellow>以太</color><color=yellow>爆炸</color>，对敌人造成<sprite=1><color=#16D7FF>180%</color><sprite=5>的<color=yellow>光明伤害</color>，并对其施加3秒<color=yellow>禁锢</color>效果。",
+    "description": "发射往返的<color=yellow>以太</color>，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>。再次施放时，使<color=yellow>以太</color><color=yellow>爆炸</color>，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>，并对其施加3秒<color=yellow>禁锢</color>效果。",
     "rawDesc": "发射往返的<color=yellow>以太</color>，对敌人造成{0}的<color=yellow>光明伤害</color>。再次施放时，使<color=yellow>以太</color><color=yellow>爆炸</color>，对敌人造成{1}的<color=yellow>光明伤害</color>，并对其施加{2}秒<color=yellow>禁锢</color>效果。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_Q_EtherealInfluence_Projectile_Forward::damage",
         "scalingType": "basic",
@@ -4611,7 +4842,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "explodeDamage",
         "scalingType": "basic",
@@ -4657,11 +4888,11 @@
     "cooldownTime": 12.0,
     "maxCharges": 3,
     "addedCharges": 999,
-    "description": "朝目标冲刺，造成<sprite=2><color=#FF8A2D>140%</color><sprite=5>的<color=yellow>伤害</color>，并立即施展一次<color=yellow>普通攻击</color>，短暂提升<color=yellow>米斯特</color>的<color=yellow>移动速度</color>。用此<color=yellow>伤害</color>击杀目标时，回复15<sprite=5>点的体力，并且缩短15%的<color=yellow>冷却时间</color>。\n\n<color=yellow>充能次数</color>立刻全部回复。",
+    "description": "朝目标冲刺，造成 <sprite=2><color=#fff><gradient=sv_ad>140%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并立即施展一次<color=yellow>普通攻击</color>，短暂提升<color=yellow>米斯特</color>的<color=yellow>移动速度</color>。用此<color=yellow>伤害</color>击杀目标时，回复 15<sprite=5> 点的体力，并且缩短15%的<color=yellow>冷却时间</color>。\n\n<color=yellow>充能次数</color>立刻全部回复。",
     "rawDesc": "朝目标冲刺，造成{0}的<color=yellow>伤害</color>，并立即施展一次<color=yellow>普通攻击</color>，短暂提升<color=yellow>米斯特</color>的<color=yellow>移动速度</color>。用此<color=yellow>伤害</color>击杀目标时，回复{1}点的体力，并且缩短{2}的<color=yellow>冷却时间</color>。\n\n<color=yellow>充能次数</color>立刻全部回复。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>140%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>140%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -4674,7 +4905,7 @@
         }
       },
       {
-        "rendered": "15<sprite=5>",
+        "rendered": " 15<sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -4722,11 +4953,11 @@
     "cooldownTime": 0.25,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在前方引发金光爆炸，对敌人造成<sprite=1><color=#16D7FF>110%</color><sprite=5>的<color=yellow>光明伤害</color>，并<color=yellow>回复</color>己方<sprite=1><color=#16D7FF>28%</color><sprite=5>的体力。命中单一目标时，爆炸的<color=yellow>伤害</color>或<color=yellow>回复量</color>提升100%。\n\n施放时，3.5秒内<color=yellow>腐蚀</color>层数叠加，并<color=yellow>消耗</color>自身体力上限的5%。每层<color=yellow>腐蚀</color>使爆炸的<color=yellow>伤害</color>和<color=yellow>回复量</color>提升100%，但<color=yellow>消耗</color>的体力也会随体力上限的7%递增。",
+    "description": "在前方引发金光爆炸，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>，并<color=yellow>回复</color>己方 <sprite=1><color=#fff><gradient=sv_ap>28%</gradient></color><sprite=5> 的体力。命中单一目标时，爆炸的<color=yellow>伤害</color>或<color=yellow>回复量</color>提升100%。\n\n施放时，3.5秒内<color=yellow>腐蚀</color>层数叠加，并<color=yellow>消耗</color>自身体力上限的5%。每层<color=yellow>腐蚀</color>使爆炸的<color=yellow>伤害</color>和<color=yellow>回复量</color>提升100%，但<color=yellow>消耗</color>的体力也会随体力上限的7%递增。",
     "rawDesc": "在前方引发金光爆炸，对敌人造成{0}的<color=yellow>光明伤害</color>，并<color=yellow>回复</color>己方{1}的体力。命中单一目标时，爆炸的<color=yellow>伤害</color>或<color=yellow>回复量</color>提升{2}。\n\n施放时，{3}秒内<color=yellow>腐蚀</color>层数叠加，并<color=yellow>消耗</color>自身体力上限的{4}。每层<color=yellow>腐蚀</color>使爆炸的<color=yellow>伤害</color>和<color=yellow>回复量</color>提升{5}，但<color=yellow>消耗</color>的体力也会随体力上限的{6}递增。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>110%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageAmount",
         "scalingType": "basic",
@@ -4739,7 +4970,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>28%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>28%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -4838,11 +5069,11 @@
     "cooldownTime": 5.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "发射火焰弹并向后退，对前方敌人造成<sprite=1><color=#16D7FF>80%</color><sprite=5>的<color=yellow>火焰伤害</color>。若敌人较近，则会受到<sprite=1><color=#16D7FF>180%</color><sprite=5>的<color=yellow>火焰伤害</color>，并被击退。",
+    "description": "发射火焰弹并向后退，对前方敌人造成 <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>。若敌人较近，则会受到 <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>，并被击退。",
     "rawDesc": "发射火焰弹并向后退，对前方敌人造成{0}的<color=yellow>火焰伤害</color>。若敌人较近，则会受到{1}的<color=yellow>火焰伤害</color>，并被击退。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>80%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "factor",
         "scalingType": "basic",
@@ -4855,7 +5086,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "closeFactor",
         "scalingType": "basic",
@@ -4889,7 +5120,7 @@
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "接下来的4次普通攻击将提升攻速60%<sprite=5>，并额外造成<sprite=1><color=#16D7FF>100%</color><sprite=5>的<color=yellow>火焰伤害</color>，同时短暂提升<color=yellow>拉塞尔塔</color>的<color=yellow>移动速度</color>。",
+    "description": "接下来的4次普通攻击将提升攻速 60%<sprite=5> ，并额外造成 <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>，同时短暂提升<color=yellow>拉塞尔塔</color>的<color=yellow>移动速度</color>。",
     "rawDesc": "接下来的{0}次普通攻击将提升攻速{1}，并额外造成{2}的<color=yellow>火焰伤害</color>，同时短暂提升<color=yellow>拉塞尔塔</color>的<color=yellow>移动速度</color>。",
     "rawDescVars": [
       {
@@ -4906,7 +5137,7 @@
         }
       },
       {
-        "rendered": "60%<sprite=5>",
+        "rendered": " 60%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -4919,7 +5150,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -4953,11 +5184,11 @@
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "普通攻击时撕裂伤的形态会在<color=#f28a8a>赤形</color>和<color=#8ab2f2>青形</color>之间<color=yellow>切换</color>。施放技能时，根据当前形态触发不同效果。\n\n<color=#f28a8a>赤形：</color>向前冲刺一小段距离，斩击狭小区域内的敌人，造成<sprite=2><color=#FF8A2D>155%</color><sprite=5>的<color=yellow>暗影伤害</color>，并触发<color=yellow>攻击效果</color>。首次命中敌人时，<color=yellow>冷却时间</color>缩短35%秒。\n\n<color=#8ab2f2>青形：</color>跃向空中，并短暂进入<color=yellow>无敌</color>状态，然后挥舞利刃对周围所有敌人造成<sprite=2><color=#FF8A2D>200%</color><sprite=5>的<color=yellow>暗影伤害</color>，并触发<color=yellow>攻击效果</color>。",
-    "rawDesc": "普通攻击时撕裂伤的形态会在<color=#f28a8a>赤形</color>和<color=#8ab2f2>青形</color>之间<color=yellow>切换</color>。施放技能时，根据当前形态触发不同效果。\n\n<color=#f28a8a>赤形：</color>向前冲刺一小段距离，斩击狭小区域内的敌人，造成{0}的<color=yellow>暗影伤害</color>，并触发<color=yellow>攻击效果</color>。首次命中敌人时，<color=yellow>冷却时间</color>缩短{1}秒。\n\n<color=#8ab2f2>青形：</color>跃向空中，并短暂进入<color=yellow>无敌</color>状态，然后挥舞利刃对周围所有敌人造成{2}的<color=yellow>暗影伤害</color>，并触发<color=yellow>攻击效果</color>。",
+    "description": "基础攻击时，撕裂伤的形态会在<color=#f28a8a>赤形</color>和<color=#8ab2f2>青形</color>之间<color=yellow>切换</color>。施放时，根据当前形态触发不同效果。\n\n<color=#f28a8a>赤形：</color>向前短距冲刺，斩击小范围内的敌人，造成 <sprite=2><color=#fff><gradient=sv_ad>155%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>并触发<color=yellow>攻击效果</color>。首次命中敌人时，<color=yellow>冷却时间</color>缩短35%。\n\n<color=#8ab2f2>青形：</color>跃向空中并短暂进入<color=yellow>无敌</color>状态，然后挥舞刀刃对周围所有敌人造成 <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>并触发<color=yellow>攻击效果</color>。每命中一名敌人，<color=yellow>冷却时间</color>缩短15%，最多缩短60%。",
+    "rawDesc": "基础攻击时，撕裂伤的形态会在<color=#f28a8a>赤形</color>和<color=#8ab2f2>青形</color>之间<color=yellow>切换</color>。施放时，根据当前形态触发不同效果。\n\n<color=#f28a8a>赤形：</color>向前短距冲刺，斩击小范围内的敌人，造成{0}的<color=yellow>暗影伤害</color>并触发<color=yellow>攻击效果</color>。首次命中敌人时，<color=yellow>冷却时间</color>缩短{1}。\n\n<color=#8ab2f2>青形：</color>跃向空中并短暂进入<color=yellow>无敌</color>状态，然后挥舞刀刃对周围所有敌人造成{2}的<color=yellow>暗影伤害</color>并触发<color=yellow>攻击效果</color>。每命中一名敌人，<color=yellow>冷却时间</color>缩短{3}，最多缩短{4}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>155%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>155%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -4983,20 +5214,46 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "slashDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 2.0,
+          "basicAD": 2.3,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
+      },
+      {
+        "rendered": "15%",
+        "format": "P0",
+        "raw": "cooldownReductionPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "60%",
+        "format": "P0",
+        "raw": "cooldownReductionMax",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "伤害、双形态",
+    "shortDescription": "伤害，两种形态",
     "rarity": "Character",
     "type": "Normal",
     "traveler": "Hero_Husk",
@@ -5008,21 +5265,34 @@
       "Mobility"
     ],
     "image": "St_Q_Laceration.PNG",
-    "lore": "是挥刀出击，还是选择躲避？无论如何抉择，一切都不会有本质的变化。\n只是动作的形态发生了变化而已。",
+    "lore": "是挥刀出击，还是闪身躲避？无论作何选择，都不会改变什么。\n改变的，只是动作的形态罢了。",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
   },
   "St_Q_Lunge": {
-    "name": "突刺冲锋",
+    "name": "突刺",
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "朝前方冲刺，并向最近的敌人刺出佩剑。被佩剑命中的所有敌人将触发<color=yellow>攻击效果</color>，并受到到<sprite=2><color=#FF8A2D>200%</color><sprite=5>的伤害。每次触发<color=yellow>阿斯特丽德的杰作</color>，<color=yellow>冷却时间</color>缩短0.5秒。",
-    "rawDesc": "朝前方冲刺，并向最近的敌人刺出佩剑。被佩剑命中的所有敌人将触发<color=yellow>攻击效果</color>，并受到到{0}的伤害。每次触发<color=yellow>阿斯特丽德的杰作</color>，<color=yellow>冷却时间</color>缩短{1}秒。",
+    "description": "向前方闪避后，向最近的敌人刺出佩剑。佩剑命中敌人时，<color=yellow>敏捷步伐</color>的<color=yellow>冷却时间</color>缩短60%，并对所有命中的敌人触发<color=yellow>攻击效果</color>，造成 <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> 的伤害。每当<color=yellow>阿斯特丽德的杰作</color>触发时，<color=yellow>冷却时间</color>缩短0.5秒。",
+    "rawDesc": "向前方闪避后，向最近的敌人刺出佩剑。佩剑命中敌人时，<color=yellow>敏捷步伐</color>的<color=yellow>冷却时间</color>缩短{0}，并对所有命中的敌人触发<color=yellow>攻击效果</color>，造成{1}的伤害。每当<color=yellow>阿斯特丽德的杰作</color>触发时，<color=yellow>冷却时间</color>缩短{2}秒。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "rendered": "60%",
+        "format": "P0",
+        "raw": "dodgeCooldownReductionRatioOnHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -5048,7 +5318,7 @@
         }
       }
     ],
-    "shortDescription": "朝前方冲刺、攻击",
+    "shortDescription": "向前冲刺、攻击",
     "rarity": "Character",
     "type": "Normal",
     "traveler": "Hero_Mist",
@@ -5059,7 +5329,7 @@
       "Mobility"
     ],
     "image": "St_Q_Lunge.png",
-    "lore": "闪避， 转瞬之间。",
+    "lore": "闪避。转瞬之间。",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -5069,11 +5339,11 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>芬里尔</color>跃向目标位置，斩击敌人，造成<sprite=1><color=#16D7FF>200%</color><sprite=5>的<color=yellow>伤害</color>，并使其眩晕0.5秒。每命中一名敌人，<color=yellow>芬里尔</color><color=yellow>回复</color>体力上限的8%<sprite=5>。<color=yellow>芬里尔</color>每次攻击，都会使<color=yellow>冷却时间</color>缩短1秒。\n\n<color=yellow>持续效果</color>：<color=yellow>召唤</color>追随娜琪亚的<color=yellow>狼人芬里尔</color>上场。<color=yellow>芬里尔</color>持有321的体力和40<sprite=5>的防御力，对敌人发动爪击，造成<sprite=1><color=#16D7FF>130%</color><sprite=5>的<color=yellow>伤害</color>，并触发50%的<color=yellow>攻击效果</color>。",
+    "description": "<color=yellow>芬里尔</color>跃向目标位置，斩击敌人，造成 <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并使其眩晕0.5秒。每命中一名敌人，<color=yellow>芬里尔</color><color=yellow>回复</color>体力上限的 8%<sprite=5> 。<color=yellow>芬里尔</color>每次攻击，都会使<color=yellow>冷却时间</color>缩短1秒。\n\n<color=yellow>持续效果</color>：<color=yellow>召唤</color>追随娜琪亚的<color=yellow>狼人芬里尔</color>上场。<color=yellow>芬里尔</color>持有321的体力和 40<sprite=5> 的防御力，对敌人发动爪击，造成 <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并触发50%的<color=yellow>攻击效果</color>。",
     "rawDesc": "<color=yellow>芬里尔</color>跃向目标位置，斩击敌人，造成{0}的<color=yellow>伤害</color>，并使其眩晕{1}秒。每命中一名敌人，<color=yellow>芬里尔</color><color=yellow>回复</color>体力上限的{2}。<color=yellow>芬里尔</color>每次攻击，都会使<color=yellow>冷却时间</color>缩短{3}秒。\n\n<color=yellow>持续效果</color>：<color=yellow>召唤</color>追随娜琪亚的<color=yellow>狼人芬里尔</color>上场。<color=yellow>芬里尔</color>持有{4}的体力和{5}的防御力，对敌人发动爪击，造成{6}的<color=yellow>伤害</color>，并触发{7}的<color=yellow>攻击效果</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_Q_MoonlightPact_Land::dmgFactor",
         "scalingType": "basic",
@@ -5099,7 +5369,7 @@
         }
       },
       {
-        "rendered": "8%<sprite=5>",
+        "rendered": " 8%<sprite=5> ",
         "format": "P0",
         "raw": "healPerHitRatio",
         "scalingType": "basic",
@@ -5132,7 +5402,7 @@
         "data": {}
       },
       {
-        "rendered": "40<sprite=5>",
+        "rendered": " 40<sprite=5> ",
         "format": "#,##0",
         "raw": "armor",
         "scalingType": "basic",
@@ -5145,7 +5415,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_Q_MoonlightPact_Fenrir_Atk::dmgFactor",
         "scalingType": "basic",
@@ -5192,7 +5462,7 @@
     "cooldownTime": 4.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>消耗</color>自身体力上限的8%，向前方发射3次薄黄金碎片。黄金碎片可穿透目标，对命中的敌人造成<sprite=1><color=#16D7FF>95%</color><sprite=5>的<color=yellow>伤害</color>，并为己方恢复<sprite=1><color=#16D7FF>18%</color><sprite=5>的<color=yellow>体力</color>。",
+    "description": "<color=yellow>消耗</color>自身体力上限的8%，向前方发射3次薄黄金碎片。黄金碎片可穿透目标，对命中的敌人造成 <sprite=1><color=#fff><gradient=sv_ap>95%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并为己方恢复 <sprite=1><color=#fff><gradient=sv_ap>18%</gradient></color><sprite=5> 的<color=yellow>体力</color>。",
     "rawDesc": "<color=yellow>消耗</color>自身体力上限的{0}，向前方发射{1}次薄黄金碎片。黄金碎片可穿透目标，对命中的敌人造成{2}的<color=yellow>伤害</color>，并为己方恢复{3}的<color=yellow>体力</color>。",
     "rawDescVars": [
       {
@@ -5222,7 +5492,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>95%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>95%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageAmount",
         "scalingType": "basic",
@@ -5235,7 +5505,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>18%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>18%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -5267,8 +5537,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在目标位置创造1个逐渐变大并使敌人减速的星星，最长可专注3秒。在此期间无法攻击或使用记忆。再次施放<color=yellow>超新星</color>时，将引爆星星，并对敌人造成<sprite=1><color=#16D7FF>200%</color><sprite=5>的<color=yellow>光明伤害</color>。爆炸伤害会随着充能时间延长而提升，1.3秒后，伤害将提升至225%。",
-    "rawDesc": "在目标位置创造1个逐渐变大并使敌人减速的星星，最长可专注{0}秒。在此期间无法攻击或使用记忆。再次施放<color=yellow>超新星</color>时，将引爆星星，并对敌人造成{1}的<color=yellow>光明伤害</color>。爆炸伤害会随着充能时间延长而提升，{2}秒后，伤害将提升至{3}。",
+    "description": "在目标位置创造1个逐渐变大并使敌人减速的星星，最长可集中精神3秒。在此期间无法攻击或使用记忆。再次施放<color=yellow>超新星</color>时，将引爆星星，并对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>。爆炸伤害会随着充能时间延长而提升，1.3秒后，伤害将提升至225%。\n充能速度随尤巴尔的记忆加速提升而加快。",
+    "rawDesc": "在目标位置创造1个逐渐变大并使敌人减速的星星，最长可集中精神{0}秒。在此期间无法攻击或使用记忆。再次施放<color=yellow>超新星</color>时，将引爆星星，并对敌人造成{1}的<color=yellow>光明伤害</color>。爆炸伤害会随着充能时间延长而提升，{2}秒后，伤害将提升至{3}。\n充能速度随尤巴尔的记忆加速提升而加快。",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -5284,7 +5554,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -5342,11 +5612,11 @@
     "cooldownTime": 9.0,
     "maxCharges": 2,
     "addedCharges": 1,
-    "description": "在目标位置上<color=yellow>召唤</color>追随娜琪亚的<color=yellow>叶犬</color>，对敌人造成<sprite=1><color=#16D7FF>130%</color><sprite=5>的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>0.4秒。\n\n<color=yellow>叶犬</color>持有128的体力和40的防御力，最多在战场上停留25秒，对敌人发动爪击，造成<sprite=1><color=#16D7FF>60%</color><sprite=5>的<color=yellow>伤害</color>，并触发<color=yellow>攻击效果</color>。最多可同时持有5只叶犬。",
-    "rawDesc": "在目标位置上<color=yellow>召唤</color>追随娜琪亚的<color=yellow>叶犬</color>，对敌人造成{0}的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>{1}秒。\n\n<color=yellow>叶犬</color>持有{2}的体力和{3}的防御力，最多在战场上停留{4}秒，对敌人发动爪击，造成{5}的<color=yellow>伤害</color>，并触发<color=yellow>攻击效果</color>。最多可同时持有{6}只叶犬。",
+    "description": "在目标位置上<color=yellow>召唤</color>追随娜琪亚的<color=yellow>叶犬</color>，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>0.4秒。\n\n<color=yellow>叶犬</color>持有128的体力和40的防御力，最多在战场上停留25秒，对敌人发动爪击，造成 <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> 的<color=yellow>伤害</color>。最多可同时持有5只叶犬。",
+    "rawDesc": "在目标位置上<color=yellow>召唤</color>追随娜琪亚的<color=yellow>叶犬</color>，对敌人造成{0}的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>{1}秒。\n\n<color=yellow>叶犬</color>持有{2}的体力和{3}的防御力，最多在战场上停留{4}秒，对敌人发动爪击，造成{5}的<color=yellow>伤害</color>。最多可同时持有{6}只叶犬。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_Q_SylvanCall::dmgFactor",
         "scalingType": "basic",
@@ -5405,7 +5675,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_Q_SylvanCall_LeafHound_Atk::dmgFactor",
         "scalingType": "basic",
@@ -5452,7 +5722,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "按住施法键可为精神箭矢群充能。松开施法键后，将根据充能时间向附近敌人释放1~4<sprite=5>支精神箭矢。每支精神箭矢会对小范围内的敌人造成<sprite=2><color=#FF8A2D>200%</color><sprite=5>的<color=yellow>暗影伤害</color>。",
+    "description": "按住施法键可为精神箭矢群充能。松开施法键后，将根据充能时间向附近敌人释放1~ 4<sprite=5> 支精神箭矢。每支精神箭矢会对小范围内的敌人造成 <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>。",
     "rawDesc": "按住施法键可为精神箭矢群充能。松开施法键后，将根据充能时间向附近敌人释放{0}~{1}支精神箭矢。每支精神箭矢会对小范围内的敌人造成{2}的<color=yellow>暗影伤害</color>。",
     "rawDescVars": [
       {
@@ -5469,14 +5739,14 @@
         }
       },
       {
-        "rendered": "4<sprite=5>",
+        "rendered": " 4<sprite=5> ",
         "format": "#,##0",
         "raw": "clampedCount",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>200%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -5509,7 +5779,7 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在自身周围生成一个持续3秒的火焰之环。接触火焰之环的敌人每秒会受到<sprite=1><color=#16D7FF>350%</color><sprite=5>的<color=yellow>火焰伤害</color>。",
+    "description": "在自身周围生成一个持续3秒的火焰之环。接触火焰之环的敌人每秒会受到 <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>。",
     "rawDesc": "在自身周围生成一个持续{0}秒的火焰之环。接触火焰之环的敌人每秒会受到{1}的<color=yellow>火焰伤害</color>。",
     "rawDescVars": [
       {
@@ -5520,7 +5790,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor*5",
         "scalingType": "unknown",
@@ -5546,24 +5816,24 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "向附近敌人发射3<sprite=5>枚灵魂导弹。每枚导弹爆炸时，对敌人造成<sprite=1><color=#16D7FF>120%</color><sprite=5>的<color=yellow>光明伤害</color>，并使其<color=yellow>移动速度</color>降低60%，持续1秒。",
+    "description": "向附近敌人发射 3<sprite=5> 枚灵魂导弹。每枚导弹爆炸时，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>108%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>，并使其<color=yellow>移动速度</color>降低60%，持续1秒。",
     "rawDesc": "向附近敌人发射{0}枚灵魂导弹。每枚导弹爆炸时，对敌人造成{1}的<color=yellow>光明伤害</color>，并使其<color=yellow>移动速度</color>降低{2}，持续{3}秒。",
     "rawDescVars": [
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0",
         "raw": "clampedCount",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>108%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.2,
+          "basicAP": 1.08,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1
@@ -5615,24 +5885,24 @@
     "cooldownTime": 4.5,
     "maxCharges": 2,
     "addedCharges": 1,
-    "description": "挥舞魔法之剑攻击最近的敌人，造成<sprite=2><color=#FF8A2D>300%</color><sprite=5>的<color=yellow>伤害</color>并略微击退目标。剑命中敌人时，比斯穆特的<color=yellow>移动速度</color>提升15%<sprite=5>，持续1秒。",
+    "description": "挥舞魔法之剑攻击最近的敌人，造成 <sprite=2><color=#fff><gradient=sv_ad>240%</gradient></color><sprite=5> 的<color=yellow>伤害</color>并略微击退目标。剑命中敌人时，比斯穆特的<color=yellow>移动速度</color>提升 15%<sprite=5> ，持续1秒。",
     "rawDesc": "挥舞魔法之剑攻击最近的敌人，造成{0}的<color=yellow>伤害</color>并略微击退目标。剑命中敌人时，比斯穆特的<color=yellow>移动速度</color>提升{1}，持续{2}秒。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>300%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>240%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 3.0,
+          "basicAD": 2.4,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -5678,8 +5948,8 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "10秒内，剑身上会缠绕<color=yellow>剑气</color>。在此期间无法<color=yellow>施放</color><color=yellow>记忆</color>，但<color=yellow>攻击力</color>提升30%<sprite=5>，<color=yellow>攻击射程</color>提升，每次<color=yellow>普通攻击</color>会发射<color=yellow>剑气</color>，对敌人造成<sprite=1><color=#16D7FF>400%</color><sprite=5>的<color=yellow>暗影伤害</color>。每秒可施放1.5<sprite=5>次<color=yellow>普通攻击</color>，不受其他攻速效果影响。",
-    "rawDesc": "{0}秒内，剑身上会缠绕<color=yellow>剑气</color>。在此期间无法<color=yellow>施放</color><color=yellow>记忆</color>，但<color=yellow>攻击力</color>提升{1}，<color=yellow>攻击射程</color>提升，每次<color=yellow>普通攻击</color>会发射<color=yellow>剑气</color>，对敌人造成{2}的<color=yellow>暗影伤害</color>。每秒可施放{3}次<color=yellow>普通攻击</color>，不受其他攻速效果影响。",
+    "description": "在10秒内，剑身缠绕着破坏的<color=yellow>剑气</color>。在此期间无法<color=yellow>施放</color><color=yellow>记忆</color>，但<color=yellow>攻击力</color>提升 35%<sprite=5> ，<color=yellow>攻击射程</color>增加，且每次<color=yellow>基础攻击</color>都会发射<color=yellow>剑气</color>，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>。此时每秒可进行 1.5<sprite=5> 次<color=yellow>基础攻击</color>，不受其他攻击速度效果影响。\n\n持续期间，<color=yellow>闪避技能</color>的<color=yellow>记忆加速</color>提升 30<sprite=5> ，<color=yellow>最大充能数</color>增加2。",
+    "rawDesc": "在{0}秒内，剑身缠绕着破坏的<color=yellow>剑气</color>。在此期间无法<color=yellow>施放</color><color=yellow>记忆</color>，但<color=yellow>攻击力</color>提升{1}，<color=yellow>攻击射程</color>增加，且每次<color=yellow>基础攻击</color>都会发射<color=yellow>剑气</color>，对敌人造成{2}的<color=yellow>暗影伤害</color>。此时每秒可进行{3}次<color=yellow>基础攻击</color>，不受其他攻击速度效果影响。\n\n持续期间，<color=yellow>闪避技能</color>的<color=yellow>记忆加速</color>提升{4}，<color=yellow>最大充能数</color>增加{5}。",
     "rawDescVars": [
       {
         "rendered": "10",
@@ -5695,12 +5965,12 @@
         }
       },
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": " 35%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "adPercentage",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 25.0,
+          "basicConstant": 30.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 5.0,
@@ -5708,20 +5978,20 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 4.0,
+          "basicAP": 3.4,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "1.5<sprite=5>",
+        "rendered": " 1.5<sprite=5> ",
         "format": "0.#",
         "raw": "atkSpd",
         "scalingType": "basic",
@@ -5732,9 +6002,35 @@
           "basicLvl": 0.1,
           "basicAddedMultiplierPerLevel": 0.0
         }
+      },
+      {
+        "rendered": " 30<sprite=5> ",
+        "format": "#,##0",
+        "raw": "dodgeSkillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 24.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 6.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dodgeSkillAddedCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "普通攻击强化",
+    "shortDescription": "强化基础攻击",
     "rarity": "Character",
     "type": "Ultimate",
     "traveler": "Hero_Husk",
@@ -5755,11 +6051,11 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>维斯珀</color>接受太阳之力，引发爆炸，对周围敌人造成<sprite=1><color=#16D7FF>200%</color><sprite=5>的<color=yellow>火焰伤害</color>并强制他们攻击维斯珀。6秒内，<color=yellow>攻击速度</color>提升15%<sprite=5>，期间<color=yellow>攻击</color>会额外造成<sprite=2><color=#FF8A2D>40%</color><sprite=5>的<color=yellow>火焰伤害</color>。",
+    "description": "<color=yellow>维斯珀</color>接受太阳之力，引发爆炸，对周围敌人造成 <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>并强制他们攻击维斯珀。6秒内，<color=yellow>攻击速度</color>提升 15%<sprite=5> ，期间<color=yellow>攻击</color>会额外造成 <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>。",
     "rawDesc": "<color=yellow>维斯珀</color>接受太阳之力，引发爆炸，对周围敌人造成{0}的<color=yellow>火焰伤害</color>并强制他们攻击维斯珀。{1}秒内，<color=yellow>攻击速度</color>提升{2}，期间<color=yellow>攻击</color>会额外造成{3}的<color=yellow>火焰伤害</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -5785,7 +6081,7 @@
         }
       },
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -5798,7 +6094,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>40%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "bonusDamage",
         "scalingType": "basic",
@@ -5832,11 +6128,11 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "发射能够<color=yellow>穿透</color>敌人的弩箭，对敌人造成<sprite=2><color=#FF8A2D>250%</color><sprite=5>的<color=yellow>暗影伤害</color>并将其击退，同时触发<color=yellow>攻击效果</color>。每<color=yellow>穿透</color>一名敌人，下1名敌人所受的<color=yellow>伤害</color>提升35%。",
+    "description": "发射能够<color=yellow>穿透</color>敌人的弩箭，对敌人造成 <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>并将其击退，同时触发<color=yellow>攻击效果</color>。每<color=yellow>穿透</color>一名敌人，下1名敌人所受的<color=yellow>伤害</color>提升35%。",
     "rawDesc": "发射能够<color=yellow>穿透</color>敌人的弩箭，对敌人造成{0}的<color=yellow>暗影伤害</color>并将其击退，同时触发<color=yellow>攻击效果</color>。每<color=yellow>穿透</color>一名敌人，下1名敌人所受的<color=yellow>伤害</color>提升{1}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "hitDamage",
         "scalingType": "basic",
@@ -5884,11 +6180,11 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "进入<color=yellow>势如破竹</color>状态，向前<color=yellow>冲刺</color>，直到撞上墙壁。对冲撞到的敌人造成<sprite=1><color=#16D7FF>135%</color><sprite=5>的<color=yellow>伤害</color>，并将其拖行；撞墙后释放冲击波，对敌人造成<sprite=1><color=#16D7FF>420%</color><sprite=5>的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>1.5秒。\n施放技能时，获得相当于<color=yellow>体力上限</color>20%<sprite=5>的<color=yellow>护盾</color>，该护盾在冲刺结束3秒后消失。",
-    "rawDesc": "进入<color=yellow>势如破竹</color>状态，向前<color=yellow>冲刺</color>，直到撞上墙壁。对冲撞到的敌人造成{0}的<color=yellow>伤害</color>，并将其拖行；撞墙后释放冲击波，对敌人造成{1}的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>{2}秒。\n施放技能时，获得相当于<color=yellow>体力上限</color>{3}的<color=yellow>护盾</color>，该护盾在冲刺结束{4}秒后消失。",
+    "description": "进入<color=yellow>无法阻挡</color>状态，向前<color=yellow>冲刺</color>，直到撞上墙壁。对冲撞到的敌人造成 <sprite=1><color=#fff><gradient=sv_ap>135%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并将其拖行；撞墙后释放冲击波，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>420%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>22%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>1.5秒。\n施放技能时，获得相当于<color=yellow>体力上限</color> 20%<sprite=5> 的<color=yellow>护盾</color>，该护盾在冲刺结束3秒后消失。",
+    "rawDesc": "进入<color=yellow>无法阻挡</color>状态，向前<color=yellow>冲刺</color>，直到撞上墙壁。对冲撞到的敌人造成{0}的<color=yellow>伤害</color>，并将其拖行；撞墙后释放冲击波，对敌人造成{1}的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>{2}秒。\n施放技能时，获得相当于<color=yellow>体力上限</color>{3}的<color=yellow>护盾</color>，该护盾在冲刺结束{4}秒后消失。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>135%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>135%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "midChargeHitDamage",
         "scalingType": "basic",
@@ -5901,7 +6197,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>420%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>420%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>22%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -5927,7 +6223,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "P0",
         "raw": "shieldMaxHpRatio",
         "scalingType": "basic",
@@ -5975,7 +6271,7 @@
     "cooldownTime": 80.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "12秒内，获得<sprite=1><color=#16D7FF>150%</color><sprite=5>的护盾，并提升30%<sprite=5>的<color=yellow>法术强度</color>。在持续时间内，<color=yellow>大灾变</color>在目标位置投下陨石，最多可施放3次。陨石会使敌人短暂眩晕，并造成 <sprite=1><color=#16D7FF>250%</color><sprite=5>的<color=yellow>光明伤害</color>。",
+    "description": "12秒内，获得 <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> 的护盾，并提升 30%<sprite=5> 的<color=yellow>法术强度</color>。在持续时间内，<color=yellow>大灾变</color>在目标位置投下陨石，最多可施放3次。陨石会使敌人短暂眩晕，并造成  <sprite=1><color=#fff><gradient=sv_ap>250%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>。",
     "rawDesc": "{0}秒内，获得{1}的护盾，并提升{2}的<color=yellow>法术强度</color>。在持续时间内，<color=yellow>大灾变</color>在目标位置投下陨石，最多可施放{3}次。陨石会使敌人短暂眩晕，并造成 {4}的<color=yellow>光明伤害</color>。",
     "rawDescVars": [
       {
@@ -5992,7 +6288,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -6005,7 +6301,7 @@
         }
       },
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": " 30%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "bonusApPercent",
         "scalingType": "basic",
@@ -6031,7 +6327,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>250%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_R_Cataclysm_Meteor::dmgFactor",
         "scalingType": "basic",
@@ -6065,7 +6361,7 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在目标位置生成一个持续6秒的<color=yellow>分解魔法阵</color>。魔法阵内的敌人每秒受到<sprite=1><color=#16D7FF>150%</color><sprite=5>的<color=yellow>伤害</color>，魔法阵内的每名敌人每秒可为己方<color=yellow>回复</color><sprite=1><color=#16D7FF>44%</color><sprite=5>的体力。若命中<color=yellow>首领</color>，<color=yellow>伤害</color>与<color=yellow>治疗量</color>提升200%。",
+    "description": "在目标位置生成一个持续6秒的<color=yellow>分解魔法阵</color>。魔法阵内的敌人每秒受到 <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，魔法阵内的每名敌人每秒可为己方<color=yellow>回复</color> <sprite=1><color=#fff><gradient=sv_ap>44%</gradient></color><sprite=5> 的体力。若命中<color=yellow>首领</color>，<color=yellow>伤害</color>与<color=yellow>治疗量</color>提升200%。",
     "rawDesc": "在目标位置生成一个持续{0}秒的<color=yellow>分解魔法阵</color>。魔法阵内的敌人每秒受到{1}的<color=yellow>伤害</color>，魔法阵内的每名敌人每秒可为己方<color=yellow>回复</color>{2}的体力。若命中<color=yellow>首领</color>，<color=yellow>伤害</color>与<color=yellow>治疗量</color>提升{3}。",
     "rawDescVars": [
       {
@@ -6076,14 +6372,14 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor/tickInterval",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>44%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>44%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healPerEnemy/tickInterval",
         "scalingType": "unknown",
@@ -6123,11 +6419,11 @@
     "cooldownTime": 6.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "撕咬目标敌人，造成<sprite=1><color=#16D7FF>370%</color><sprite=5>的伤害，并回复<sprite=1><color=#16D7FF>75%</color><sprite=5>的体力。",
+    "description": "撕咬目标敌人，造成 <sprite=1><color=#fff><gradient=sv_ap>370%</gradient></color><sprite=5> 的伤害，并回复 <sprite=1><color=#fff><gradient=sv_ap>75%</gradient></color><sprite=5> 的体力。",
     "rawDesc": "撕咬目标敌人，造成{0}的伤害，并回复{1}的体力。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>370%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>370%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -6140,7 +6436,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>75%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>75%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -6173,7 +6469,7 @@
     "cooldownTime": 13.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在指定区域召唤<color=yellow>利刃风暴</color>，持续4秒。<color=yellow>利刃风暴</color>会迅速横扫周围，每0.5秒对敌人造成<sprite=1><color=#16D7FF>85%</color><sprite=5>与<sprite=2><color=#FF8A2D>85%</color><sprite=5>中较高的<color=yellow>伤害</color>，并追踪距离最近的敌人。",
+    "description": "在指定区域召唤<color=yellow>利刃风暴</color>，持续4秒。<color=yellow>利刃风暴</color>会迅速横扫周围，每0.5秒对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5> 与 <sprite=2><color=#fff><gradient=sv_ad>85%</gradient></color><sprite=5> 中较高的<color=yellow>伤害</color>，并追踪距离最近的敌人。",
     "rawDesc": "在指定区域召唤<color=yellow>利刃风暴</color>，持续{0}秒。<color=yellow>利刃风暴</color>会迅速横扫周围，每{1}秒对敌人造成{2}与{3}中较高的<color=yellow>伤害</color>，并追踪距离最近的敌人。",
     "rawDescVars": [
       {
@@ -6197,7 +6493,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>85%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "apDamage",
         "scalingType": "basic",
@@ -6210,7 +6506,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>85%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>85%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "adDamage",
         "scalingType": "basic",
@@ -6240,11 +6536,11 @@
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "向前跳跃，并强化自身下次<color=yellow>普通攻击</color>。下次<color=yellow>普通攻击</color>必定<color=yellow>暴击</color>，对目标造成<sprite=2><color=#FF8A2D>125%</color><sprite=5>的<color=yellow>额外伤害</color>，并将其击退。\n\n若施放<color=yellow>危险理论</color>时，自身的<color=yellow>当前体力</color>低于60%，则<color=yellow>额外伤害</color>提升100%，<color=yellow>冷却时间</color>降低25%。每命中一名敌人，自身体力<color=yellow>回复</color><sprite=1><color=#16D7FF>67%</color><sprite=5>。若目标为<color=yellow>首领</color>，则<color=yellow>额外伤害</color>和<color=yellow>回复量</color>提升100%。",
+    "description": "向前跳跃，并强化自身下次<color=yellow>普通攻击</color>。下次<color=yellow>普通攻击</color>必定<color=yellow>暴击</color>，对目标造成 <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5> 的<color=yellow>额外伤害</color>，并将其击退。\n\n若施放<color=yellow>危险理论</color>时，自身的<color=yellow>当前体力</color>低于60%，则<color=yellow>额外伤害</color>提升100%，<color=yellow>冷却时间</color>降低25%。每命中一名敌人，自身体力<color=yellow>回复</color> <sprite=1><color=#fff><gradient=sv_ap>67%</gradient></color><sprite=5> 。若目标为<color=yellow>首领</color>，则<color=yellow>额外伤害</color>和<color=yellow>回复量</color>提升100%。",
     "rawDesc": "向前跳跃，并强化自身下次<color=yellow>普通攻击</color>。下次<color=yellow>普通攻击</color>必定<color=yellow>暴击</color>，对目标造成{0}的<color=yellow>额外伤害</color>，并将其击退。\n\n若施放<color=yellow>危险理论</color>时，自身的<color=yellow>当前体力</color>低于{1}，则<color=yellow>额外伤害</color>提升{2}，<color=yellow>冷却时间</color>降低{3}。每命中一名敌人，自身体力<color=yellow>回复</color>{4}。若目标为<color=yellow>首领</color>，则<color=yellow>额外伤害</color>和<color=yellow>回复量</color>提升{5}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>125%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageAmount",
         "scalingType": "basic",
@@ -6296,7 +6592,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>67%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>67%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -6344,11 +6640,11 @@
     "cooldownTime": 4.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "挥舞炽焰鞭，对前方敌人造成<sprite=1><color=#16D7FF>200%</color><sprite=5>的<color=yellow>火焰伤害</color>，并短暂降低其<color=yellow>移动速度</color>。\n<color=yellow>施放</color>除<color=yellow>炽焰鞭</color>以外的其他记忆时，<color=yellow>冷却时间</color>将被重置。",
+    "description": "挥舞炽焰鞭，对前方敌人造成 <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>，并短暂降低其<color=yellow>移动速度</color>。\n<color=yellow>施放</color>除<color=yellow>炽焰鞭</color>以外的其他记忆时，<color=yellow>冷却时间</color>将被重置。",
     "rawDesc": "挥舞炽焰鞭，对前方敌人造成{0}的<color=yellow>火焰伤害</color>，并短暂降低其<color=yellow>移动速度</color>。\n<color=yellow>施放</color>除<color=yellow>炽焰鞭</color>以外的其他记忆时，<color=yellow>冷却时间</color>将被重置。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -6380,11 +6676,11 @@
     "cooldownTime": 6.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "接下来的两次<color=yellow>攻击</color>变快，并获得强化。第一次攻击会额外造成<sprite=1><color=#16D7FF>50%</color><sprite=5>的<color=yellow>寒气伤害</color>，并为自身赋予持续2秒的<sprite=1><color=#16D7FF>110%</color><sprite=5><color=yellow>护盾</color>。第二次攻击将额外造成<sprite=1><color=#16D7FF>180%</color><sprite=5>的<color=yellow>寒气伤害</color>。",
+    "description": "接下来的两次<color=yellow>攻击</color>变快，并获得强化。第一次攻击会额外造成 <sprite=1><color=#fff><gradient=sv_ap>50%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>，并为自身赋予持续2秒的 <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5> <color=yellow>护盾</color>。第二次攻击将额外造成 <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>。",
     "rawDesc": "接下来的两次<color=yellow>攻击</color>变快，并获得强化。第一次攻击会额外造成{0}的<color=yellow>寒气伤害</color>，并为自身赋予持续{1}秒的{2}<color=yellow>护盾</color>。第二次攻击将额外造成{3}的<color=yellow>寒气伤害</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>50%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>50%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "firstDmg",
         "scalingType": "basic",
@@ -6410,7 +6706,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>110%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "firstShieldAmount",
         "scalingType": "basic",
@@ -6423,7 +6719,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>180%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "secondDmg",
         "scalingType": "basic",
@@ -6457,24 +6753,24 @@
     "cooldownTime": 9.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "朝前方挥下冰锤，对敌人造成<sprite=1><color=#16D7FF>220%</color><sprite=5>的<color=yellow>寒气伤害</color>，并将其拉拽到自己身边。如果命中的是锤子的正中心，则对该敌人造成<sprite=1><color=#16D7FF>385%</color><sprite=5>的<color=yellow>寒气伤害</color>。",
+    "description": "朝前方挥下冰锤，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>，并将其拉拽到自己身边。如果命中的是锤子的正中心，则对该敌人造成 <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>14%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>。",
     "rawDesc": "朝前方挥下冰锤，对敌人造成{0}的<color=yellow>寒气伤害</color>，并将其拉拽到自己身边。如果命中的是锤子的正中心，则对该敌人造成{1}的<color=yellow>寒气伤害</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>220%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.2,
+          "basicAP": 2.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>385%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>14%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "(1+centerDamageAmp)*dmgFactor",
         "scalingType": "unknown",
@@ -6499,20 +6795,20 @@
   },
   "St_R_GreatFrostSword": {
     "name": "冰霜巨剑",
-    "cooldownTime": 11.0,
+    "cooldownTime": 9.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "召唤冰霜巨剑，对前方的敌人造成<sprite=1><color=#16D7FF>250%</color><sprite=5>的<color=yellow>寒气伤害</color>，并将其击退。若命中单一目标，<color=yellow>伤害</color>提升350%。",
+    "description": "召唤冰霜巨剑，对前方的敌人造成 <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>12%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>，并将其击退。若命中单一目标，<color=yellow>伤害</color>提升350%。",
     "rawDesc": "召唤冰霜巨剑，对前方的敌人造成{0}的<color=yellow>寒气伤害</color>，并将其击退。若命中单一目标，<color=yellow>伤害</color>提升{1}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>12%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 2.5,
+          "basicAP": 2.4,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -6553,11 +6849,11 @@
     "cooldownTime": 10.0,
     "maxCharges": 3,
     "addedCharges": 99,
-    "description": "对目标造成<sprite=1><color=#16D7FF>115%</color><sprite=5>的<color=yellow>火焰伤害</color>。若目标已被点燃，则伤害提升50%，并造成<color=yellow>群体伤害</color>。该技能可一次性全部充能。",
+    "description": "对目标造成 <sprite=1><color=#fff><gradient=sv_ap>115%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>。若目标已被点燃，则伤害提升50%，并造成<color=yellow>群体伤害</color>。该技能可一次性全部充能。",
     "rawDesc": "对目标造成{0}的<color=yellow>火焰伤害</color>。若目标已被点燃，则伤害提升{1}，并造成<color=yellow>群体伤害</color>。该技能可一次性全部充能。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>115%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>115%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -6602,7 +6898,7 @@
     "cooldownTime": 9.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "3.5内，消耗自身当前体力的12%并点燃身体。身体燃烧期间，<color=yellow>移动速度</color>提升20%<sprite=5>，并对周围的敌人每秒造成<sprite=1><color=#16D7FF>165%</color><sprite=5>的<color=yellow>火焰伤害</color>。",
+    "description": "3.5内，消耗自身当前体力的12%并点燃身体。身体燃烧期间，<color=yellow>移动速度</color>提升 20%<sprite=5> ，并对周围的敌人每秒造成 <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>9%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>。",
     "rawDesc": "{0}内，消耗自身当前体力的{1}并点燃身体。身体燃烧期间，<color=yellow>移动速度</color>提升{2}，并对周围的敌人每秒造成{3}的<color=yellow>火焰伤害</color>。",
     "rawDescVars": [
       {
@@ -6632,7 +6928,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -6645,7 +6941,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>165%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>9%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor*3",
         "scalingType": "unknown",
@@ -6673,7 +6969,7 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在4秒内<color=yellow>鼓舞</color>周围的所有己方。受到<color=yellow>鼓舞</color>影响的己方<color=yellow>攻速</color>提升10%<sprite=5>，并在<color=yellow>攻击</color>时造成<sprite=1><color=#16D7FF>13%</color><sprite=5>的<color=yellow>额外伤害</color>。自身获得200%的效果。",
+    "description": "在4秒内<color=yellow>鼓舞</color>周围的所有己方。受到<color=yellow>鼓舞</color>影响的己方<color=yellow>攻速</color>提升 10%<sprite=5> ，并在<color=yellow>攻击</color>时造成 <sprite=1><color=#fff><gradient=sv_ap>13%</gradient></color><sprite=5> 的<color=yellow>额外伤害</color>。自身获得200%的效果。",
     "rawDesc": "在{0}秒内<color=yellow>鼓舞</color>周围的所有己方。受到<color=yellow>鼓舞</color>影响的己方<color=yellow>攻速</color>提升{1}，并在<color=yellow>攻击</color>时造成{2}的<color=yellow>额外伤害</color>。自身获得{3}的效果。",
     "rawDescVars": [
       {
@@ -6690,7 +6986,7 @@
         }
       },
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": " 10%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "haste",
         "scalingType": "basic",
@@ -6703,7 +6999,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>13%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>13%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -6746,11 +7042,11 @@
     "cooldownTime": 13.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "短暂化身为<color=yellow>无敌</color>的<color=yellow>闪电</color>，在目标和周围敌人之间跳跃，造成<sprite=1><color=#16D7FF>120%</color><sprite=5>的<color=yellow>光明伤害</color>。最多可跳跃4次。\n\n<color=yellow>攻击</color>时，该记忆的<color=yellow>冷却时间</color>缩短5%。",
+    "description": "短暂化身为<color=yellow>无敌</color>的<color=yellow>闪电</color>，在目标和周围敌人之间跳跃，造成 <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>。最多可跳跃4次。\n\n<color=yellow>攻击</color>时，该记忆的<color=yellow>冷却时间</color>缩短5%。",
     "rawDesc": "短暂化身为<color=yellow>无敌</color>的<color=yellow>闪电</color>，在目标和周围敌人之间跳跃，造成{0}的<color=yellow>光明伤害</color>。最多可跳跃{1}次。\n\n<color=yellow>攻击</color>时，该记忆的<color=yellow>冷却时间</color>缩短{2}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -6811,7 +7107,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "命令娜琪亚的所有召唤兽移动到目标位置或攻击目标敌人。3秒内，娜琪亚和自身召唤兽的<color=yellow>攻速</color>提升18%<sprite=5>。",
+    "description": "命令娜琪亚的所有召唤兽移动到目标位置或攻击目标敌人。3秒内，娜琪亚和自身召唤兽的<color=yellow>攻速</color>提升 18%<sprite=5> 。",
     "rawDesc": "命令娜琪亚的所有召唤兽移动到目标位置或攻击目标敌人。{0}秒内，娜琪亚和自身召唤兽的<color=yellow>攻速</color>提升{1}。",
     "rawDescVars": [
       {
@@ -6828,7 +7124,7 @@
         }
       },
       {
-        "rendered": "18%<sprite=5>",
+        "rendered": " 18%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -6858,11 +7154,11 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "朝前方发射<color=yellow>光之球</color>，对敌人造成<sprite=1><color=#16D7FF>200%</color><sprite=5>的<color=yellow>光明伤害</color>。<color=yellow>光之球</color>命中敌人时，<color=yellow>生命之焰</color>会返回，接触到火焰的己方单位，每命中一名敌人，将<color=yellow>回复</color>己方<sprite=1><color=#16D7FF>25%</color><sprite=5>的体力。若命中<color=yellow>首领</color>，则<color=yellow>回复量</color>提升<sprite=1><color=#16D7FF>75%</color><sprite=5>。",
+    "description": "朝前方发射<color=yellow>光之球</color>，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>。<color=yellow>光之球</color>命中敌人时，<color=yellow>生命之焰</color>会返回，接触到火焰的己方单位，每命中一名敌人，将<color=yellow>回复</color>己方 <sprite=1><color=#fff><gradient=sv_ap>25%</gradient></color><sprite=5> 的体力。若命中<color=yellow>首领</color>，则<color=yellow>回复量</color>提升 <sprite=1><color=#fff><gradient=sv_ap>75%</gradient></color><sprite=5> 。",
     "rawDesc": "朝前方发射<color=yellow>光之球</color>，对敌人造成{0}的<color=yellow>光明伤害</color>。<color=yellow>光之球</color>命中敌人时，<color=yellow>生命之焰</color>会返回，接触到火焰的己方单位，每命中一名敌人，将<color=yellow>回复</color>己方{1}的体力。若命中<color=yellow>首领</color>，则<color=yellow>回复量</color>提升{2}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -6875,7 +7171,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>25%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>25%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmountPerEnemy",
         "scalingType": "basic",
@@ -6888,7 +7184,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>75%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>75%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmountPerEnemy*3",
         "scalingType": "unknown",
@@ -6915,7 +7211,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "0.6秒内，反弹来自前方的首次伤害，并对最多5<sprite=5>名敌人造成<color=yellow>伤害</color>。被命中的敌人将受到<sprite=1><color=#16D7FF>360%</color><sprite=5>的<color=yellow>伤害</color>并陷入<color=yellow>眩晕</color>状态，同时<color=yellow>阿斯特丽德的杰作</color>效果会被重置。成功反弹伤害后，会在短时间内对所有伤害<color=yellow>免疫</color>，并缩短<color=yellow>反弹</color>的<color=yellow>冷却时间</color>50%。 ",
+    "description": "0.6秒内，反弹来自前方的首次伤害，并对最多 5<sprite=5> 名敌人造成<color=yellow>伤害</color>。被命中的敌人将受到 <sprite=1><color=#fff><gradient=sv_ap>360%</gradient></color><sprite=5> 的<color=yellow>伤害</color>并陷入<color=yellow>眩晕</color>状态，同时<color=yellow>阿斯特丽德的杰作</color>效果会被重置。成功反弹伤害后，会在短时间内对所有伤害<color=yellow>免疫</color>，并缩短<color=yellow>反弹</color>的<color=yellow>冷却时间</color>50%。 ",
     "rawDesc": "{0}秒内，反弹来自前方的首次伤害，并对最多{1}名敌人造成<color=yellow>伤害</color>。被命中的敌人将受到{2}的<color=yellow>伤害</color>并陷入<color=yellow>眩晕</color>状态，同时<color=yellow>阿斯特丽德的杰作</color>效果会被重置。成功反弹伤害后，会在短时间内对所有伤害<color=yellow>免疫</color>，并缩短<color=yellow>反弹</color>的<color=yellow>冷却时间</color>{3}。 ",
     "rawDescVars": [
       {
@@ -6932,7 +7228,7 @@
         }
       },
       {
-        "rendered": "5<sprite=5>",
+        "rendered": " 5<sprite=5> ",
         "format": "#,##0",
         "raw": "maxEnemiesHit",
         "scalingType": "basic",
@@ -6945,7 +7241,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>360%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>360%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -6986,16 +7282,66 @@
     "achievementName": "行云流水",
     "achievementDescription": "使用米斯特，连续60次无伤击杀敌人。"
   },
+  "St_R_PhaseShift": {
+    "name": "相位移动",
+    "cooldownTime": 9.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "以友军或敌人为目标，与其交换位置。如果目标是敌人，则造成 <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> 点<color=yellow>伤害</color>并使其短暂<color=yellow>眩晕</color>，<color=yellow>无法阻挡</color>的目标不会被交换位置。片刻后产生<color=yellow>冲击波</color>，将周围的敌人拉向中心并造成 <sprite=1><color=#fff><gradient=sv_ap>135%</gradient></color><sprite=5> 点<color=yellow>伤害</color>。",
+    "rawDesc": "以友军或敌人为目标，与其交换位置。如果目标是敌人，则造成{0}点<color=yellow>伤害</color>并使其短暂<color=yellow>眩晕</color>，<color=yellow>无法阻挡</color>的目标不会被交换位置。片刻后产生<color=yellow>冲击波</color>，将周围的敌人拉向中心并造成{1}点<color=yellow>伤害</color>。",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>135%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "secondDmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.35,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "位置交换，范围冲击波",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "HardCC",
+      "Mobility"
+    ],
+    "image": "St_R_PhaseShift.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "St_R_PillarOfFlame": {
     "name": "烈焰之柱",
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在目标区域召唤烈焰之柱，立即对范围内所有敌人造成<sprite=1><color=#16D7FF>250%</color><sprite=5>的<color=yellow>火焰伤害</color>，随后在2.4秒内持续造成<sprite=1><color=#16D7FF>275%</color><sprite=5>的<color=yellow>火焰伤害</color>。",
+    "description": "在目标区域召唤烈焰之柱，立即对范围内所有敌人造成 <sprite=1><color=#fff><gradient=sv_ap>250%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>，随后在2.4秒内持续造成 <sprite=1><color=#fff><gradient=sv_ap>275%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>。",
     "rawDesc": "在目标区域召唤烈焰之柱，立即对范围内所有敌人造成{0}的<color=yellow>火焰伤害</color>，随后在{1}秒内持续造成{2}的<color=yellow>火焰伤害</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>250%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>250%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "initDamage",
         "scalingType": "basic",
@@ -7015,7 +7361,7 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>275%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>275%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "totalDamage",
         "scalingType": "basic",
@@ -7047,11 +7393,11 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>长按</color>施放键，进入瞄准姿态。瞄准结束后，发射穿甲弹，根据瞄准时间对命中的所有敌人按比例造成<sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>800%</color><sprite=5>的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>0.5~2.5秒。\n当瞄准时间达到1秒后，射程、眩晕时间和伤害达到最大值。",
-    "rawDesc": "<color=yellow>长按</color>施放键，进入瞄准姿态。瞄准结束后，发射穿甲弹，根据瞄准时间对命中的所有敌人按比例造成{0}~{1}的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>{2}~{3}秒。\n当瞄准时间达到{4}秒后，射程、眩晕时间和伤害达到最大值。",
+    "description": "<color=yellow>长按</color>施放键，进入瞄准姿态。瞄准结束后，发射穿甲弹，根据瞄准时间对命中的所有敌人按比例造成 <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ~ <sprite=1><color=#fff><gradient=sv_ap>800%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>0.5~2.5秒。该伤害<color=yellow>无视</color>目标的<color=yellow>防御力</color>。\n当瞄准时间达到1秒后，射程、眩晕时间和伤害达到最大值。",
+    "rawDesc": "<color=yellow>长按</color>施放键，进入瞄准姿态。瞄准结束后，发射穿甲弹，根据瞄准时间对命中的所有敌人按比例造成{0}~{1}的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>{2}~{3}秒。该伤害<color=yellow>无视</color>目标的<color=yellow>防御力</color>。\n当瞄准时间达到{4}秒后，射程、眩晕时间和伤害达到最大值。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageMin",
         "scalingType": "basic",
@@ -7064,7 +7410,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>800%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>800%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damageMax",
         "scalingType": "basic",
@@ -7125,7 +7471,7 @@
       "HardCC"
     ],
     "image": "St_R_PrecisionShot.png",
-    "lore": "部队解散后，拉塞尔塔依靠他的步枪和丰富的作战经验，即使只靠打猎和采集，也能轻松过上无忧的生活。",
+    "lore": "拉塞尔塔曾服役的部队解散后，凭借他的步枪和作战经验，仅靠狩猎和采集便足以让他过上富足的生活。",
     "achievementKey": "ACH_UNTOUCHABLE",
     "achievementName": "不可企及",
     "achievementDescription": "拉塞尔塔在体力高于85%时，击杀英雄首领。"
@@ -7135,7 +7481,7 @@
     "cooldownTime": 14.0,
     "maxCharges": 3,
     "addedCharges": 1,
-    "description": "快速发射3发穿透弹，对最多3名敌人造成<sprite=2><color=#FF8A2D>120%</color><sprite=5>的伤害。",
+    "description": "快速发射3发穿透弹，对最多3名敌人造成 <sprite=2><color=#fff><gradient=sv_ad>120%</gradient></color><sprite=5> 的伤害。",
     "rawDesc": "快速发射{0}发穿透弹，对最多{1}名敌人造成{2}的伤害。",
     "rawDescVars": [
       {
@@ -7165,7 +7511,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>120%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>120%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmg",
         "scalingType": "basic",
@@ -7195,11 +7541,11 @@
     "cooldownTime": 9.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "能在1.9<sprite=5>秒内抵挡来自前方敌人的伤害。每次抵挡伤害时，对前方最多4名敌人造成<sprite=1><color=#16D7FF>240%</color><sprite=5>的<color=yellow>伤害</color>。",
+    "description": "能在 1.9<sprite=5> 秒内抵挡来自前方敌人的伤害。每次抵挡伤害时，对前方最多4名敌人造成 <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><sprite=5> 的<color=yellow>伤害</color>。",
     "rawDesc": "能在{0}秒内抵挡来自前方敌人的伤害。每次抵挡伤害时，对前方最多{1}名敌人造成{2}的<color=yellow>伤害</color>。",
     "rawDescVars": [
       {
-        "rendered": "1.9<sprite=5>",
+        "rendered": " 1.9<sprite=5> ",
         "format": "#,##0.#",
         "raw": "duration",
         "scalingType": "basic",
@@ -7225,7 +7571,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>240%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -7255,8 +7601,8 @@
     "cooldownTime": 120.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在<color=yellow>维斯珀</color>周围的土地上降下持续10秒的<color=yellow>祝福</color>，对周围敌人造成<sprite=1><color=#16D7FF>500%</color><sprite=5>的<color=yellow>光明伤害</color>，并为己方赋予持续4秒的<sprite=1><color=#16D7FF>200%</color><sprite=5><color=yellow>护盾</color>。在受到祝福的土地上，己方<color=yellow>防御力</color>提升18<sprite=5>点，<color=yellow>攻速</color>提升20%<sprite=5>。\n\n<color=yellow>维斯珀</color>自身会获得200%的效果，并在此期间进入<color=yellow>势如破竹</color>状态。",
-    "rawDesc": "在<color=yellow>维斯珀</color>周围的土地上降下持续{0}秒的<color=yellow>祝福</color>，对周围敌人造成{1}的<color=yellow>光明伤害</color>，并为己方赋予持续{2}秒的{3}<color=yellow>护盾</color>。在受到祝福的土地上，己方<color=yellow>防御力</color>提升{4}点，<color=yellow>攻速</color>提升{5}。\n\n<color=yellow>维斯珀</color>自身会获得{6}的效果，并在此期间进入<color=yellow>势如破竹</color>状态。",
+    "description": "在<color=yellow>维斯珀</color>周围的土地上降下持续10秒的<color=yellow>祝福</color>，对周围敌人造成 <sprite=1><color=#fff><gradient=sv_ap>500%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>，并为己方赋予持续4秒的 <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> <color=yellow>护盾</color>。在受到祝福的土地上，己方<color=yellow>防御力</color>提升 18<sprite=5> 点，<color=yellow>攻速</color>提升 20%<sprite=5> 。\n\n<color=yellow>维斯珀</color>自身会获得200%的效果，并在此期间进入<color=yellow>无法阻挡</color>状态。",
+    "rawDesc": "在<color=yellow>维斯珀</color>周围的土地上降下持续{0}秒的<color=yellow>祝福</color>，对周围敌人造成{1}的<color=yellow>光明伤害</color>，并为己方赋予持续{2}秒的{3}<color=yellow>护盾</color>。在受到祝福的土地上，己方<color=yellow>防御力</color>提升{4}点，<color=yellow>攻速</color>提升{5}。\n\n<color=yellow>维斯珀</color>自身会获得{6}的效果，并在此期间进入<color=yellow>无法阻挡</color>状态。",
     "rawDescVars": [
       {
         "rendered": "10",
@@ -7272,7 +7618,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>500%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>500%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "startDamage",
         "scalingType": "basic",
@@ -7298,7 +7644,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "startShield",
         "scalingType": "basic",
@@ -7311,7 +7657,7 @@
         }
       },
       {
-        "rendered": "18<sprite=5>",
+        "rendered": " 18<sprite=5> ",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "basic",
@@ -7324,7 +7670,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -7371,7 +7717,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "朝前方发射5颗扩散的暗影子弹。每颗子弹造成<sprite=2><color=#FF8A2D>100%</color><sprite=5>的<color=yellow>暗影伤害</color>，并触发50%的<color=yellow>攻击效果</color>。",
+    "description": "朝前方发射5颗扩散的暗影子弹。每颗子弹造成 <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>，并触发50%的<color=yellow>攻击效果</color>。",
     "rawDesc": "朝前方发射{0}颗扩散的暗影子弹。每颗子弹造成{1}的<color=yellow>暗影伤害</color>，并触发{2}的<color=yellow>攻击效果</color>。",
     "rawDescVars": [
       {
@@ -7388,7 +7734,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -7435,7 +7781,7 @@
     "cooldownTime": 80.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "为娜琪亚和目标己方赋予12秒的<color=yellow>蛇之祝福</color>。受到<color=yellow>祝福</color>的己方获得55<sprite=5>的<color=yellow>防御力</color>，<color=yellow>攻速</color>提升25%<sprite=5>。此外，受到<color=yellow>祝福</color>的己方每次进行<color=yellow>普通攻击</color>时，会<color=yellow>回复</color><color=yellow>体力上限</color>的2.5%<sprite=5>，其攻击目标额外受到<sprite=1><color=#16D7FF>100%</color><sprite=5>的<color=yellow>伤害</color>，并陷入<color=yellow>眩晕</color>状态0.5秒。\n\n如果祝福的目标是<color=yellow>召唤兽</color>，则会回复其体力上限的25%。",
+    "description": "为娜琪亚和目标己方赋予12秒的<color=yellow>蛇之祝福</color>。受到<color=yellow>祝福</color>的己方获得 55<sprite=5> 的<color=yellow>防御力</color>，<color=yellow>攻速</color>提升 25%<sprite=5> 。此外，受到<color=yellow>祝福</color>的己方每次进行<color=yellow>普通攻击</color>时，会<color=yellow>回复</color><color=yellow>体力上限</color>的 2.5%<sprite=5> ，其攻击目标额外受到 <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并陷入<color=yellow>眩晕</color>状态0.5秒。\n\n如果祝福的目标是<color=yellow>召唤兽</color>，则会回复其体力上限的25%。",
     "rawDesc": "为娜琪亚和目标己方赋予{0}秒的<color=yellow>蛇之祝福</color>。受到<color=yellow>祝福</color>的己方获得{1}的<color=yellow>防御力</color>，<color=yellow>攻速</color>提升{2}。此外，受到<color=yellow>祝福</color>的己方每次进行<color=yellow>普通攻击</color>时，会<color=yellow>回复</color><color=yellow>体力上限</color>的{3}，其攻击目标额外受到{4}的<color=yellow>伤害</color>，并陷入<color=yellow>眩晕</color>状态{5}秒。\n\n如果祝福的目标是<color=yellow>召唤兽</color>，则会回复其体力上限的{6}。",
     "rawDescVars": [
       {
@@ -7452,7 +7798,7 @@
         }
       },
       {
-        "rendered": "55<sprite=5>",
+        "rendered": " 55<sprite=5> ",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "basic",
@@ -7465,7 +7811,7 @@
         }
       },
       {
-        "rendered": "25%<sprite=5>",
+        "rendered": " 25%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -7478,7 +7824,7 @@
         }
       },
       {
-        "rendered": "2.5%<sprite=5>",
+        "rendered": " 2.5%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "healMaxHpRatio",
         "scalingType": "basic",
@@ -7491,7 +7837,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -7552,7 +7898,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "0.7秒内，进入专注状态，这期间<color=yellow>移动速度</color>提升30%<sprite=5>。专注结束后，向周围随机敌人发射5枚追踪弹，每枚造成<sprite=2><color=#FF8A2D>50%</color><sprite=5>的<color=yellow>暗影伤害</color>，<color=yellow>攻速</color>在3秒内提升20%<sprite=5>。",
+    "description": "0.7秒内，进入专注状态，这期间<color=yellow>移动速度</color>提升 30%<sprite=5> 。专注结束后，向周围随机敌人发射5枚追踪弹，每枚造成 <sprite=2><color=#fff><gradient=sv_ad>50%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>，<color=yellow>攻速</color>在3秒内提升 20%<sprite=5> 。",
     "rawDesc": "{0}秒内，进入专注状态，这期间<color=yellow>移动速度</color>提升{1}。专注结束后，向周围随机敌人发射{2}枚追踪弹，每枚造成{3}的<color=yellow>暗影伤害</color>，<color=yellow>攻速</color>在{4}秒内提升{5}。",
     "rawDescVars": [
       {
@@ -7569,7 +7915,7 @@
         }
       },
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": " 30%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -7595,7 +7941,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>50%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>50%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -7621,7 +7967,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -7654,7 +8000,7 @@
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "快速移动后，向周围的敌人发射3个暗影碎片。每个碎片造成<sprite=2><color=#FF8A2D>65%</color><sprite=5>的<color=yellow>暗影伤害</color>，并触发50%的<color=yellow>攻击效果</color>。",
+    "description": "快速移动后，向周围的敌人发射3个暗影碎片。每个碎片造成 <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>，并触发50%的<color=yellow>攻击效果</color>。",
     "rawDesc": "快速移动后，向周围的敌人发射{0}个暗影碎片。每个碎片造成{1}的<color=yellow>暗影伤害</color>，并触发{2}的<color=yellow>攻击效果</color>。",
     "rawDescVars": [
       {
@@ -7671,7 +8017,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>65%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -7718,11 +8064,11 @@
     "cooldownTime": 13.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在指定区域降下闪电，对敌人造成<sprite=1><color=#16D7FF>400%</color><sprite=5>的<color=yellow>光明伤害</color>，并使其<color=yellow>眩晕</color>1秒。有50%的概率使敌人<color=yellow>燃烧</color>。",
+    "description": "在指定区域降下闪电，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>，并使其<color=yellow>眩晕</color>1秒。有50%的概率使敌人<color=yellow>燃烧</color>。",
     "rawDesc": "在指定区域降下闪电，对敌人造成{0}的<color=yellow>光明伤害</color>，并使其<color=yellow>眩晕</color>{1}秒。有{2}的概率使敌人<color=yellow>燃烧</color>。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -7782,11 +8128,11 @@
     "cooldownTime": 8.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>长按</color>施放键为电荷充能，并获得40<sprite=5>点护甲。充能完成后，引爆电荷，根据充能时间对敌人造成<sprite=1><color=#16D7FF>150%</color><sprite=5>~<sprite=1><color=#16D7FF>780%</color><sprite=5>点<color=yellow>光明伤害</color>并将其击退，在2秒内使其<color=yellow>移动速度</color>降低60%。获得的护甲将在引爆电荷1秒后消失。\n\n充能1秒后，伤害和范围将达到最大值。",
-    "rawDesc": "<color=yellow>长按</color>施放键为电荷充能，并获得{0}点护甲。充能完成后，引爆电荷，根据充能时间对敌人造成{1}~{2}点<color=yellow>光明伤害</color>并将其击退，在{3}秒内使其<color=yellow>移动速度</color>降低{4}。获得的护甲将在引爆电荷{5}秒后消失。\n\n充能{6}秒后，伤害和范围将达到最大值。",
+    "description": "<color=yellow>长按</color>施放键为闪电充能，并获得 40<sprite=5> 点护甲。充能完成后，引爆闪电，根据充能时间对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ~ <sprite=1><color=#fff><gradient=sv_ap>780%</gradient></color><sprite=5> 点<color=yellow>光明伤害</color>并将其击退，在2秒内使其<color=yellow>移动速度</color>降低60%。获得的护甲将在引爆闪电1秒后消失。\n\n充能1秒后，伤害和范围将达到最大值。",
+    "rawDesc": "<color=yellow>长按</color>施放键为闪电充能，并获得{0}点护甲。充能完成后，引爆闪电，根据充能时间对敌人造成{1}~{2}点<color=yellow>光明伤害</color>并将其击退，在{3}秒内使其<color=yellow>移动速度</color>降低{4}。获得的护甲将在引爆闪电{5}秒后消失。\n\n充能{6}秒后，伤害和范围将达到最大值。",
     "rawDescVars": [
       {
-        "rendered": "40<sprite=5>",
+        "rendered": " 40<sprite=5> ",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "basic",
@@ -7799,7 +8145,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "minDamage",
         "scalingType": "basic",
@@ -7812,7 +8158,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>780%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>780%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "maxDamage",
         "scalingType": "basic",
@@ -7898,7 +8244,7 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>尤巴尔</color>在1秒内进入<color=yellow>专注</color>状态，恢复内心的平静。在此期间，处于<color=yellow>无敌</color>状态，<color=yellow>移动速度</color>提升40%，同时其他所有记忆的<color=yellow>冷却时间</color>缩短3.5<sprite=5>秒。",
+    "description": "<color=yellow>尤巴尔</color>在1秒内进入<color=yellow>专注</color>状态，恢复内心的平静。在此期间，处于<color=yellow>无敌</color>状态，<color=yellow>移动速度</color>提升40%，同时其他所有记忆的<color=yellow>冷却时间</color>缩短 3.5<sprite=5> 秒。",
     "rawDesc": "<color=yellow>尤巴尔</color>在{0}秒内进入<color=yellow>专注</color>状态，恢复内心的平静。在此期间，处于<color=yellow>无敌</color>状态，<color=yellow>移动速度</color>提升{1}，同时其他所有记忆的<color=yellow>冷却时间</color>缩短{2}秒。",
     "rawDescVars": [
       {
@@ -7928,7 +8274,7 @@
         }
       },
       {
-        "rendered": "3.5<sprite=5>",
+        "rendered": " 3.5<sprite=5> ",
         "format": "#,##0.#",
         "raw": "totalReducedSeconds",
         "scalingType": "basic",
@@ -7961,11 +8307,11 @@
     "cooldownTime": 70.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "重置<color=yellow>敏捷步伐</color>与<color=yellow>阿斯特丽德的杰作</color>的冷却时间，对周围敌人造成<sprite=1><color=#16D7FF>400%</color><sprite=5>的伤害，并进入<color=yellow>觉醒状态</color>，持续12秒。\n\n<color=yellow>觉醒状态</color>期间，<color=yellow>攻击速度</color>提升25%<sprite=5>，每次<color=yellow>攻击</color>都会引发一次电击爆炸，对目标及其周围敌人造成<sprite=1><color=#16D7FF>90%</color><sprite=5>的<color=yellow>伤害</color>。若在<color=yellow>觉醒状态</color>下触发<color=yellow>阿斯特丽德的杰作</color>，则回复自身损失生命值的4%。",
+    "description": "重置<color=yellow>敏捷步伐</color>与<color=yellow>阿斯特丽德的杰作</color>的冷却时间，对周围敌人造成 <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> 的伤害，并进入<color=yellow>觉醒状态</color>，持续12秒。\n\n<color=yellow>觉醒状态</color>期间，<color=yellow>攻击速度</color>提升 25%<sprite=5> ，每次<color=yellow>攻击</color>都会引发一次电击爆炸，对目标及其周围敌人造成 <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> 的<color=yellow>伤害</color>。若在<color=yellow>觉醒状态</color>下触发<color=yellow>阿斯特丽德的杰作</color>，则回复自身损失生命值的4%。",
     "rawDesc": "重置<color=yellow>敏捷步伐</color>与<color=yellow>阿斯特丽德的杰作</color>的冷却时间，对周围敌人造成{0}的伤害，并进入<color=yellow>觉醒状态</color>，持续{1}秒。\n\n<color=yellow>觉醒状态</color>期间，<color=yellow>攻击速度</color>提升{2}，每次<color=yellow>攻击</color>都会引发一次电击爆炸，对目标及其周围敌人造成{3}的<color=yellow>伤害</color>。若在<color=yellow>觉醒状态</color>下触发<color=yellow>阿斯特丽德的杰作</color>，则回复自身损失生命值的{4}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -7991,7 +8337,7 @@
         }
       },
       {
-        "rendered": "25%<sprite=5>",
+        "rendered": " 25%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -8004,7 +8350,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -8049,7 +8395,7 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在8秒内，进入升空和<color=yellow>无敌</color>状态。操控缓慢移动的<color=yellow>均衡射线</color>，对敌人每秒造成<sprite=1><color=#16D7FF>350%</color><sprite=5>的<color=yellow>伤害</color>，或为己方每秒<color=yellow>回复</color><sprite=1><color=#16D7FF>150%</color><sprite=5>的体力。",
+    "description": "在8秒内，进入升空和<color=yellow>无敌</color>状态。操控缓慢移动的<color=yellow>均衡射线</color>，对敌人每秒造成 <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，或为己方每秒<color=yellow>回复</color> <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> 的体力。",
     "rawDesc": "在{0}秒内，进入升空和<color=yellow>无敌</color>状态。操控缓慢移动的<color=yellow>均衡射线</color>，对敌人每秒造成{1}的<color=yellow>伤害</color>，或为己方每秒<color=yellow>回复</color>{2}的体力。",
     "rawDescVars": [
       {
@@ -8066,7 +8412,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>350%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "enemyDamagePerSecond",
         "scalingType": "basic",
@@ -8079,7 +8425,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>150%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "allyHealPerSecond",
         "scalingType": "basic",
@@ -8111,7 +8457,7 @@
     "cooldownTime": 12.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "钻入地下，进入<color=yellow>无敌</color>状态，持续2.5秒。期间<color=yellow>移动速度</color>提升30%<sprite=5>。破土而出时，将周围敌人击飞，并使其<color=yellow>眩晕</color>1秒，造成<sprite=1><color=#16D7FF>550%</color><sprite=5>的<color=yellow>伤害</color>。\n再次施放以提前结束该效果。",
+    "description": "钻入地下，进入<color=yellow>无敌</color>状态，持续2.5秒。期间<color=yellow>移动速度</color>提升 30%<sprite=5> 。破土而出时，将周围敌人击飞，并使其<color=yellow>眩晕</color>1秒，造成 <sprite=1><color=#fff><gradient=sv_ap>550%</gradient></color><sprite=5> 的<color=yellow>伤害</color>。\n再次施放以提前结束该效果。",
     "rawDesc": "钻入地下，进入<color=yellow>无敌</color>状态，持续{0}秒。期间<color=yellow>移动速度</color>提升{1}。破土而出时，将周围敌人击飞，并使其<color=yellow>眩晕</color>{2}秒，造成{3}的<color=yellow>伤害</color>。\n再次施放以提前结束该效果。",
     "rawDescVars": [
       {
@@ -8128,7 +8474,7 @@
         }
       },
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": " 30%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -8154,7 +8500,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>550%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>550%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -8188,7 +8534,7 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在7秒内化身为<color=yellow>黑洞</color>，将所有敌人拉向自身，与黑洞接触的敌人每秒受到<sprite=1><color=#16D7FF>500%</color><sprite=5>的<color=yellow>光明伤害</color>。黑洞结束时会爆炸，对周围所有敌人造成<sprite=1><color=#16D7FF>1,200%</color><sprite=5>的<color=yellow>光明伤害</color>，并使其<color=yellow>眩晕</color>2.5秒。\n\n化身为黑洞期间，获得120<sprite=5>的<color=yellow>防御力</color>，并且不会死亡。",
+    "description": "在7秒内化身为<color=yellow>黑洞</color>，将所有敌人拉向自身，与黑洞接触的敌人每秒受到 <sprite=1><color=#fff><gradient=sv_ap>500%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>。黑洞结束时会爆炸，对周围所有敌人造成 <sprite=1><color=#fff><gradient=sv_ap>1,200%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>，并使其<color=yellow>眩晕</color>2.5秒。\n\n化身为黑洞期间，获得 120<sprite=5> 的<color=yellow>防御力</color>，并且不会死亡。",
     "rawDesc": "在{0}秒内化身为<color=yellow>黑洞</color>，将所有敌人拉向自身，与黑洞接触的敌人每秒受到{1}的<color=yellow>光明伤害</color>。黑洞结束时会爆炸，对周围所有敌人造成{2}的<color=yellow>光明伤害</color>，并使其<color=yellow>眩晕</color>{3}秒。\n\n化身为黑洞期间，获得{4}的<color=yellow>防御力</color>，并且不会死亡。",
     "rawDescVars": [
       {
@@ -8205,14 +8551,14 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>500%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>500%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "perTickDamage*4",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>1,200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>1,200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -8238,7 +8584,7 @@
         }
       },
       {
-        "rendered": "120<sprite=5>",
+        "rendered": " 120<sprite=5> ",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "basic",
@@ -8272,7 +8618,7 @@
     "cooldownTime": 15.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "6秒内，陷入狂怒状态。在此期间无法<color=yellow>施放</color>其他记忆，但会持续挥舞利爪，造成<sprite=2><color=#FF8A2D>100%</color><sprite=5>的<color=yellow>暗影伤害</color>，并<color=yellow>回复</color>自身<sprite=2><color=#FF8A2D>13%</color><sprite=5>的体力。自身体力40%以下时，回复量提升150%。首次被命中目标时，触发<color=yellow>攻击效果</color>。<color=yellow>攻速</color>越高，挥爪速度越快。",
+    "description": "6秒内，陷入狂怒状态。在此期间无法<color=yellow>施放</color>其他记忆，但会持续挥舞利爪，造成 <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>，并<color=yellow>回复</color>自身 <sprite=2><color=#fff><gradient=sv_ad>13%</gradient></color><sprite=5> 的体力。自身体力40%以下时，回复量提升150%。首次被命中目标时，触发<color=yellow>攻击效果</color>。<color=yellow>攻速</color>越高，挥爪速度越快。",
     "rawDesc": "{0}秒内，陷入狂怒状态。在此期间无法<color=yellow>施放</color>其他记忆，但会持续挥舞利爪，造成{1}的<color=yellow>暗影伤害</color>，并<color=yellow>回复</color>自身{2}的体力。自身体力{3}以下时，回复量提升{4}。首次被命中目标时，触发<color=yellow>攻击效果</color>。<color=yellow>攻速</color>越高，挥爪速度越快。",
     "rawDescVars": [
       {
@@ -8289,7 +8635,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -8302,7 +8648,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>13%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>13%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -8364,11 +8710,11 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "短暂进入<color=yellow>无敌</color>状态并专注，后朝前方发出强力咆哮，对所有敌人造成<sprite=2><color=#FF8A2D>1,300%</color><sprite=5>的<color=yellow>暗影伤害</color>，并使其<color=yellow>眩晕</color>3秒。\n\n每提升1级<color=yellow>追踪等级</color>，该<color=yellow>伤害</color>提升25%。",
+    "description": "短暂进入<color=yellow>无敌</color>状态并专注，后朝前方发出强力咆哮，对所有敌人造成 <sprite=2><color=#fff><gradient=sv_ad>1,300%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>，并使其<color=yellow>眩晕</color>3秒。\n\n每提升1级<color=yellow>追踪等级</color>，该<color=yellow>伤害</color>提升25%。",
     "rawDesc": "短暂进入<color=yellow>无敌</color>状态并专注，后朝前方发出强力咆哮，对所有敌人造成{0}的<color=yellow>暗影伤害</color>，并使其<color=yellow>眩晕</color>{1}秒。\n\n每提升1级<color=yellow>追踪等级</color>，该<color=yellow>伤害</color>提升{2}。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>1,300%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>1,300%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -8427,11 +8773,11 @@
     "cooldownTime": 13.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "专注发射强力光束，每秒对光束所及的所有敌人造成<sprite=1><color=#16D7FF>575%</color><sprite=5>的<color=yellow>光明伤害</color>。期间无法移动，但该技能可无限持续，直到手动取消为止。",
+    "description": "专注发射强力光束，每秒对光束所及的所有敌人造成 <sprite=1><color=#fff><gradient=sv_ap>575%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>。期间无法移动，但该技能可无限持续，直到手动取消为止。",
     "rawDesc": "专注发射强力光束，每秒对光束所及的所有敌人造成{0}的<color=yellow>光明伤害</color>。期间无法移动，但该技能可无限持续，直到手动取消为止。",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>575%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>575%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damagePerTick/damageInterval",
         "scalingType": "unknown",

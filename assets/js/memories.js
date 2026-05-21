@@ -95,6 +95,8 @@ const init = async (lang) => {
 
         // --- ÉTAPE 2: MODIFICATION DE LA PAGE (inchangée) ---
         const T = translations[lang] || translations['en-US'];
+        // Met à jour la version en haut
+        updateGlobalVersionDisplay(T);
         // Mettre à jour le titre de la page
         document.title = T.pageTitleMemories;
         document.getElementById('loading-text').textContent = T.loadingMemories;

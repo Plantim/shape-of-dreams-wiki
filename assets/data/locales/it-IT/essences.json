@@ -14,11 +14,11 @@
   },
   "Gem_C_Charcoal": {
     "name": "Essenza di Carbone",
-    "description": "Quando questo Ricordo <color=yellow>colpisce</color> un nemico, scaglia un frammento di carbone che infligge <sprite=1><color=#16D7FF>60%</color><sprite=5> di <color=yellow>danno</color>. Se il bersaglio è già <color=yellow>in fiamme</color>, infligge invece <sprite=1><color=#16D7FF>100%</color><sprite=5> di <color=yellow>danno da fuoco</color>.",
+    "description": "Quando questo Ricordo <color=yellow>colpisce</color> un nemico, scaglia un frammento di carbone che infligge  <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5>  di <color=yellow>danno</color>. Se il bersaglio è già <color=yellow>in fiamme</color>, infligge invece  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5>  di <color=yellow>danno da fuoco</color>.",
     "rawDesc": "Quando questo Ricordo <color=yellow>colpisce</color> un nemico, scaglia un frammento di carbone che infligge {0} di <color=yellow>danno</color>. Se il bersaglio è già <color=yellow>in fiamme</color>, infligge invece {1} di <color=yellow>danno da fuoco</color>.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "normalDamage",
         "scalingType": "basic",
@@ -31,7 +31,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "fireDamage",
         "scalingType": "basic",
@@ -56,11 +56,11 @@
   },
   "Gem_C_Confidence": {
     "name": "Essenza della Fiducia",
-    "description": "Il danno inflitto da questo Ricordo ai nemici vicini aumenta del 40%<sprite=5>.",
+    "description": "Il danno inflitto da questo Ricordo ai nemici vicini aumenta del  40%<sprite=5> .",
     "rawDesc": "Il danno inflitto da questo Ricordo ai nemici vicini aumenta del {0}.",
     "rawDescVars": [
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -85,11 +85,11 @@
   },
   "Gem_C_Efficiency": {
     "name": "Essenza dell'Efficienza",
-    "description": "Questo Ricordo ottiene <color=yellow>celerità del Ricordo</color> di 36<sprite=5>, riducendo il suo <color=yellow>tempo di recupero</color> del 26%<sprite=5>.",
+    "description": "Questo Ricordo ottiene <color=yellow>celerità del Ricordo</color> di  36<sprite=5> , riducendo il suo <color=yellow>tempo di recupero</color> del  26%<sprite=5> .",
     "rawDesc": "Questo Ricordo ottiene <color=yellow>celerità del Ricordo</color> di {0}, riducendo il suo <color=yellow>tempo di recupero</color> del {1}.",
     "rawDescVars": [
       {
-        "rendered": "36<sprite=5>",
+        "rendered": " 36<sprite=5> ",
         "format": "#,##0",
         "raw": "skillHaste",
         "scalingType": "basic",
@@ -102,7 +102,7 @@
         }
       },
       {
-        "rendered": "26%<sprite=5>",
+        "rendered": " 26%<sprite=5> ",
         "format": "P0",
         "raw": "reducedRatio",
         "scalingType": "unknown",
@@ -119,11 +119,11 @@
   },
   "Gem_C_Guidance": {
     "name": "Essenza della Guida",
-    "description": "La <color=yellow>quantità di cura</color> di questo Ricordo aumenta del 40%<sprite=5>. Il 30% della cura in eccesso di questo Ricordo viene convertito in uno <color=yellow>scudo</color> che dura 2 s.",
-    "rawDesc": "La <color=yellow>quantità di cura</color> di questo Ricordo aumenta del {0}. Il {1} della cura in eccesso di questo Ricordo viene convertito in uno <color=yellow>scudo</color> che dura {2} s.",
+    "description": "La <color=yellow>quantità di cura</color> di questo Ricordo aumenta del  40%<sprite=5> . Il 30% della cura in eccesso di questo Ricordo viene convertito in uno <color=yellow>scudo</color> che dura 2 s e applicato su di te.",
+    "rawDesc": "La <color=yellow>quantità di cura</color> di questo Ricordo aumenta del {0}. Il {1} della cura in eccesso di questo Ricordo viene convertito in uno <color=yellow>scudo</color> che dura {2} s e applicato su di te.",
     "rawDescVars": [
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "healAmp",
         "scalingType": "basic",
@@ -175,7 +175,7 @@
   },
   "Gem_C_Lethality": {
     "name": "Essenza della Letalità",
-    "description": "Il danno inflitto da questo Ricordo ai nemici con più del 70% di PV aumenta del 60%<sprite=5>.",
+    "description": "Il danno inflitto da questo Ricordo ai nemici con più del 70% di PV aumenta del  60%<sprite=5> .",
     "rawDesc": "Il danno inflitto da questo Ricordo ai nemici con più del {0} di PV aumenta del {1}.",
     "rawDescVars": [
       {
@@ -192,7 +192,7 @@
         }
       },
       {
-        "rendered": "60%<sprite=5>",
+        "rendered": " 60%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -215,11 +215,11 @@
   },
   "Gem_C_Love": {
     "name": "Essenza dell'Amore",
-    "description": "Quando questo Ricordo <color=yellow>recupera</color> <color=yellow>PV</color> o applica uno <color=yellow>scudo</color> a un alleato, aumenta la sua <color=yellow>velocità di movimento</color> e <color=yellow>velocità d'attacco</color> del 16%<sprite=5> per 2 s. L'effetto è ridotto del 50% se applicato a se stessi.",
+    "description": "Quando questo Ricordo <color=yellow>recupera</color> <color=yellow>PV</color> o applica uno <color=yellow>scudo</color> a un alleato, aumenta la sua <color=yellow>velocità di movimento</color> e <color=yellow>velocità d'attacco</color> del  16%<sprite=5>  per 2 s. L'effetto è ridotto del 50% se applicato a se stessi.",
     "rawDesc": "Quando questo Ricordo <color=yellow>recupera</color> <color=yellow>PV</color> o applica uno <color=yellow>scudo</color> a un alleato, aumenta la sua <color=yellow>velocità di movimento</color> e <color=yellow>velocità d'attacco</color> del {0} per {1} s. L'effetto è ridotto del {2} se applicato a se stessi.",
     "rawDescVars": [
       {
-        "rendered": "16%<sprite=5>",
+        "rendered": " 16%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "bonusAmount",
         "scalingType": "basic",
@@ -273,11 +273,11 @@
   },
   "Gem_C_Quicksilver": {
     "name": "Essenza di Mercurio",
-    "description": "<color=yellow>Lanciando</color> questo Ricordo o infliggendo <color=yellow>danno da fuoco</color> con esso, la tua <color=yellow>velocità di movimento</color> aumenta del30%<sprite=5> e torna gradualmente al valore originale in 2.5 s.",
+    "description": "<color=yellow>Lanciando</color> questo Ricordo o infliggendo <color=yellow>danno da fuoco</color> con esso, la tua <color=yellow>velocità di movimento</color> aumenta del 30%<sprite=5>  e torna gradualmente al valore originale in 2.5 s.",
     "rawDesc": "<color=yellow>Lanciando</color> questo Ricordo o infliggendo <color=yellow>danno da fuoco</color> con esso, la tua <color=yellow>velocità di movimento</color> aumenta del{0} e torna gradualmente al valore originale in {1} s.",
     "rawDescVars": [
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": " 30%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -316,18 +316,18 @@
   },
   "Gem_C_Regeneration": {
     "name": "Essenza della Rigenerazione",
-    "description": "Se questo Ricordo viene <color=yellow>lanciato</color> durante il <color=yellow>combattimento</color>, <color=yellow>recupera</color> 41<sprite=5> PV nell'arco di 7 s.",
+    "description": "Se questo Ricordo viene <color=yellow>lanciato</color> durante il <color=yellow>combattimento</color>, <color=yellow>recupera</color>  51<sprite=5>  PV nell'arco di 5 s.",
     "rawDesc": "Se questo Ricordo viene <color=yellow>lanciato</color> durante il <color=yellow>combattimento</color>, <color=yellow>recupera</color> {0} PV nell'arco di {1} s.",
     "rawDescVars": [
       {
-        "rendered": "41<sprite=5>",
+        "rendered": " 51<sprite=5> ",
         "format": "#,##0",
         "raw": "healPerTick * totalTicks",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "7",
+        "rendered": "5",
         "format": "#,##0.#",
         "raw": "totalTicks*tickInterval",
         "scalingType": "unknown",
@@ -346,16 +346,16 @@
   },
   "Gem_C_Responsibility": {
     "name": "Essenza della Responsabilità",
-    "description": "Ogni 10 s, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>. 1.2 s dopo un <color=yellow>lancio potenziato</color>, infligge <sprite=2><color=#FF8A2D>400%</color><sprite=5> di <color=yellow>danno</color> diviso tra tutti i nemici colpiti da quel lancio.",
+    "description": "Ogni 8 s, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>. 1.2 s dopo un <color=yellow>lancio potenziato</color>, infligge  <sprite=2><color=#fff><gradient=sv_ad>400%</gradient></color><sprite=5>  di <color=yellow>danno</color> diviso tra tutti i nemici colpiti da quel lancio.",
     "rawDesc": "Ogni {0} s, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>. {1} s dopo un <color=yellow>lancio potenziato</color>, infligge {2} di <color=yellow>danno</color> diviso tra tutti i nemici colpiti da quel lancio.",
     "rawDescVars": [
       {
-        "rendered": "10",
+        "rendered": "8",
         "format": "#,##0.#",
         "raw": "cooldownTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 8.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -376,7 +376,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>400%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "totalDamage",
         "scalingType": "basic",
@@ -399,7 +399,7 @@
   },
   "Gem_C_Sharp": {
     "name": "Essenza dell'Affilatura",
-    "description": "Lanciando questo <color=yellow>Ricordo</color>, scagli 5 frecce che infliggono <sprite=1><color=#16D7FF>90%</color><sprite=5> di <color=yellow>danno</color> a un nemico casuale.",
+    "description": "Lanciando questo <color=yellow>Ricordo</color>, scagli 5 frecce che infliggono  <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5>  di <color=yellow>danno</color> a un nemico casuale.",
     "rawDesc": "Lanciando questo <color=yellow>Ricordo</color>, scagli {0} frecce che infliggono {1} di <color=yellow>danno</color> a un nemico casuale.",
     "rawDescVars": [
       {
@@ -416,7 +416,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "arrowDamage",
         "scalingType": "basic",
@@ -439,16 +439,16 @@
   },
   "Gem_C_Shatter": {
     "name": "Essenza della Frantumazione",
-    "description": "Ogni 10 s, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>. Il danno inflitto ai nemici dal <color=yellow>lancio potenziato</color> aumenta del 40%<sprite=5>. Se è di <color=yellow>danno da luce</color>, aumenta invece del 72%<sprite=5>.",
+    "description": "Ogni 8 s, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>. Il danno inflitto ai nemici dal <color=yellow>lancio potenziato</color> aumenta del  40%<sprite=5> . Se è di <color=yellow>danno da luce</color>, aumenta invece del  72%<sprite=5> .",
     "rawDesc": "Ogni {0} s, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>. Il danno inflitto ai nemici dal <color=yellow>lancio potenziato</color> aumenta del {1}. Se è di <color=yellow>danno da luce</color>, aumenta invece del {2}.",
     "rawDescVars": [
       {
-        "rendered": "10",
+        "rendered": "8",
         "format": "#,##0.#",
         "raw": "cooldownTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 8.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -456,7 +456,7 @@
         }
       },
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -469,7 +469,7 @@
         }
       },
       {
-        "rendered": "72%<sprite=5>",
+        "rendered": " 72%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmpLight",
         "scalingType": "basic",
@@ -494,11 +494,11 @@
   },
   "Gem_C_Sulfur": {
     "name": "Essenza di Zolfo",
-    "description": "Tutti i <color=yellow>danni</color> inflitti da questo Ricordo aumentano del 15%<sprite=5> e sono convertiti in <color=yellow>danno da fuoco</color>. Il mio danno nel tempo da fuoco aumenta del 50%<sprite=5>.",
+    "description": "Tutti i <color=yellow>danni</color> inflitti da questo Ricordo aumentano del  15%<sprite=5>  e sono convertiti in <color=yellow>danno da fuoco</color>. Il mio danno nel tempo da fuoco aumenta del  50%<sprite=5> .",
     "rawDesc": "Tutti i <color=yellow>danni</color> inflitti da questo Ricordo aumentano del {0} e sono convertiti in <color=yellow>danno da fuoco</color>. Il mio danno nel tempo da fuoco aumenta del {1}.",
     "rawDescVars": [
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "P0",
         "raw": "ampAmount",
         "scalingType": "basic",
@@ -511,7 +511,7 @@
         }
       },
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "fireAmpBonus",
         "scalingType": "basic",
@@ -536,16 +536,16 @@
   },
   "Gem_C_Talc": {
     "name": "Essenza di Talco",
-    "description": "Ogni 10 s, il <color=yellow>lancio</color> di questo ricordo viene <color=yellow>potenziato</color>. Il <color=yellow>lancio potenziato</color> aumenta il danno inflitto a un singolo nemico di <sprite=1><color=#16D7FF>400%</color><sprite=5>.",
+    "description": "Ogni 8 s, il <color=yellow>lancio</color> di questo ricordo viene <color=yellow>potenziato</color>. Il <color=yellow>lancio potenziato</color> aumenta il danno inflitto a un singolo nemico di  <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> .",
     "rawDesc": "Ogni {0} s, il <color=yellow>lancio</color> di questo ricordo viene <color=yellow>potenziato</color>. Il <color=yellow>lancio potenziato</color> aumenta il danno inflitto a un singolo nemico di {1}.",
     "rawDescVars": [
       {
-        "rendered": "10",
+        "rendered": "8",
         "format": "#,##0.#",
         "raw": "cooldownTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 8.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -553,7 +553,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "addedDamage",
         "scalingType": "basic",
@@ -576,7 +576,7 @@
   },
   "Gem_C_Vengeance": {
     "name": "Essenza della Vendetta",
-    "description": "Quando subisci danni, scaglia 2 lame che infliggono <sprite=1><color=#16D7FF>102%</color><sprite=5> di <color=yellow>danno</color> ad alcuni nemici vicini. Dopo aver subito danni, il <color=yellow>danno</color> e la <color=yellow>cura</color> di questo Ricordo aumentano del 34%<sprite=5> per 5 s.",
+    "description": "Quando subisci danni, scaglia 2 lame che infliggono  <sprite=1><color=#fff><gradient=sv_ap>93%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>4%</gradient></color><sprite=5>  di <color=yellow>danno</color> ad alcuni nemici vicini. Dopo aver subito danni, il <color=yellow>danno</color> e la <color=yellow>cura</color> di questo Ricordo aumentano del  34%<sprite=5>  per 5 s.",
     "rawDesc": "Quando subisci danni, scaglia {0} lame che infliggono {1} di <color=yellow>danno</color> ad alcuni nemici vicini. Dopo aver subito danni, il <color=yellow>danno</color> e la <color=yellow>cura</color> di questo Ricordo aumentano del {2} per {3} s.",
     "rawDescVars": [
       {
@@ -593,20 +593,20 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>102%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>93%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>4%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.6,
+          "basicAP": 0.55,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.007
         }
       },
       {
-        "rendered": "34%<sprite=5>",
+        "rendered": " 34%<sprite=5> ",
         "format": "P0",
         "raw": "ampAmount",
         "scalingType": "basic",
@@ -644,7 +644,7 @@
   },
   "Gem_C_Void": {
     "name": "Essenza del Vuoto",
-    "description": "Dopo aver lanciato questo Ricordo, il prossimo <color=yellow>attacco</color> entro 4 s esploderà, infliggendo <sprite=2><color=#FF8A2D>150%</color><sprite=5> di <color=yellow>danno da oscurità</color> al bersaglio e ai nemici nelle vicinanze.",
+    "description": "Dopo aver lanciato questo Ricordo, il prossimo <color=yellow>attacco</color> entro 4 s esploderà, infliggendo  <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5>  di <color=yellow>danno da oscurità</color> al bersaglio e ai nemici nelle vicinanze.",
     "rawDesc": "Dopo aver lanciato questo Ricordo, il prossimo <color=yellow>attacco</color> entro {0} s esploderà, infliggendo {1} di <color=yellow>danno da oscurità</color> al bersaglio e ai nemici nelle vicinanze.",
     "rawDescVars": [
       {
@@ -661,7 +661,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -686,11 +686,11 @@
   },
   "Gem_C_Wind": {
     "name": "Essenza del Vento",
-    "description": "Lanciando questo Ricordo, la <color=yellow>velocità d'attacco</color> aumenta del 33%<sprite=5> per 5 s.",
+    "description": "Lanciando questo Ricordo, la <color=yellow>velocità d'attacco</color> aumenta del  33%<sprite=5>  per 5 s.",
     "rawDesc": "Lanciando questo Ricordo, la <color=yellow>velocità d'attacco</color> aumenta del {0} per {1} s.",
     "rawDescVars": [
       {
-        "rendered": "33%<sprite=5>",
+        "rendered": " 33%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -726,11 +726,11 @@
   },
   "Gem_E_Aftershock": {
     "name": "Essenza della Scossa Residua",
-    "description": "Quando <color=yellow>lanci</color> questo Ricordo, dopo un breve momento emetti un'<color=yellow>onda d'urto</color> che infligge <sprite=1><color=#16D7FF>200%</color><sprite=5> di <color=yellow>danno da gelo</color> ai nemici circostanti e li <color=yellow>stordisce</color> per 0.5 s.\nPer ogni nemico colpito da questa <color=yellow>onda d'urto</color>, ottieni 4<sprite=5> di <color=yellow>difesa</color>, fino a un massimo di 22<sprite=5>. Colpire un <color=yellow>boss</color> garantisce il massimo della <color=yellow>difesa</color>. Questa difesa persiste fino al prossimo <color=yellow>lancio</color> di questo Ricordo.",
+    "description": "Quando <color=yellow>lanci</color> questo Ricordo, dopo un breve momento emetti un'<color=yellow>onda d'urto</color> che infligge  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>20%</gradient></color><sprite=5>  di <color=yellow>danno da gelo</color> ai nemici circostanti e li <color=yellow>stordisce</color> per 0.5 s.\nPer ogni nemico colpito da questa <color=yellow>onda d'urto</color>, ottieni  4<sprite=5>  di <color=yellow>difesa</color>, fino a un massimo di  22<sprite=5> . Colpire un <color=yellow>boss</color> garantisce il massimo della <color=yellow>difesa</color>. Questa difesa persiste fino al prossimo <color=yellow>lancio</color> di questo Ricordo.",
     "rawDesc": "Quando <color=yellow>lanci</color> questo Ricordo, dopo un breve momento emetti un'<color=yellow>onda d'urto</color> che infligge {0} di <color=yellow>danno da gelo</color> ai nemici circostanti e li <color=yellow>stordisce</color> per {1} s.\nPer ogni nemico colpito da questa <color=yellow>onda d'urto</color>, ottieni {2} di <color=yellow>difesa</color>, fino a un massimo di {3}. Colpire un <color=yellow>boss</color> garantisce il massimo della <color=yellow>difesa</color>. Questa difesa persiste fino al prossimo <color=yellow>lancio</color> di questo Ricordo.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>20%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -756,7 +756,7 @@
         }
       },
       {
-        "rendered": "4<sprite=5>",
+        "rendered": " 4<sprite=5> ",
         "format": "#,##0",
         "raw": "armorPerHit",
         "scalingType": "basic",
@@ -769,7 +769,7 @@
         }
       },
       {
-        "rendered": "22<sprite=5>",
+        "rendered": " 22<sprite=5> ",
         "format": "#,##0",
         "raw": "armorPerHit*maxHitCount",
         "scalingType": "unknown",
@@ -784,9 +784,62 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_E_Apathy": {
+    "name": "Essenza dell'Apatia",
+    "description": "Tutti i danni inflitti dal Viaggiatore sono ridotti di 25%. Quando questo Ricordo infligge <color=yellow>Danno da Freddo</color> a un nemico, la tua <color=yellow>Difesa</color> aumenta di  22<sprite=5>  per 5 s.",
+    "rawDesc": "Tutti i danni inflitti dal Viaggiatore sono ridotti di {0}. Quando questo Ricordo infligge <color=yellow>Danno da Freddo</color> a un nemico, la tua <color=yellow>Difesa</color> aumenta di {1} per {2} s.",
+    "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "reducedDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 22<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedArmorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Apathy.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_E_Blossom": {
     "name": "Essenza della Fioritura",
-    "description": "Tutti i <color=yellow>danni</color> inflitti da questo Ricordo ai nemici sono ridotti di 70%. Ogni volta che questo Ricordo infligge <color=yellow>danno</color>, <color=yellow>recupera</color> i <color=yellow>PV</color> di un alleato casuale nelle vicinanze per un ammontare pari a 22%<sprite=5> del <color=yellow>danno inflitto</color>.",
+    "description": "Tutti i <color=yellow>danni</color> inflitti da questo Ricordo ai nemici sono ridotti di 70%. Ogni volta che questo Ricordo infligge <color=yellow>danno</color>, <color=yellow>recupera</color> i <color=yellow>PV</color> di un alleato casuale nelle vicinanze per un ammontare pari a  22%<sprite=5>  del <color=yellow>danno inflitto</color>.",
     "rawDesc": "Tutti i <color=yellow>danni</color> inflitti da questo Ricordo ai nemici sono ridotti di {0}. Ogni volta che questo Ricordo infligge <color=yellow>danno</color>, <color=yellow>recupera</color> i <color=yellow>PV</color> di un alleato casuale nelle vicinanze per un ammontare pari a {1} del <color=yellow>danno inflitto</color>.",
     "rawDescVars": [
       {
@@ -803,7 +856,7 @@
         }
       },
       {
-        "rendered": "22%<sprite=5>",
+        "rendered": " 22%<sprite=5> ",
         "format": "P0",
         "raw": "conversionRatio",
         "scalingType": "basic",
@@ -828,11 +881,11 @@
   },
   "Gem_E_Clemency": {
     "name": "Essenza della Clemenza",
-    "description": "Recupera i <color=yellow>propri</color> <color=yellow>PV</color> di una quantità pari al 4%<sprite=5> del <color=yellow>danno</color> inflitto da questo Ricordo.",
+    "description": "Recupera i <color=yellow>propri</color> <color=yellow>PV</color> di una quantità pari al  4%<sprite=5>  del <color=yellow>danno</color> inflitto da questo Ricordo.",
     "rawDesc": "Recupera i <color=yellow>propri</color> <color=yellow>PV</color> di una quantità pari al {0} del <color=yellow>danno</color> inflitto da questo Ricordo.",
     "rawDescVars": [
       {
-        "rendered": "4%<sprite=5>",
+        "rendered": " 4%<sprite=5> ",
         "format": "P0",
         "raw": "conversionRatio",
         "scalingType": "basic",
@@ -857,11 +910,11 @@
   },
   "Gem_E_Crimson": {
     "name": "Essenza Cremisi",
-    "description": "Ogni 4° <color=yellow>attacco base</color> viene <color=yellow>potenziato</color>, causando <color=yellow>Esplosione Scarlatta</color> che infligge <sprite=2><color=#FF8A2D>100%</color><sprite=5> di <color=yellow>danno da oscurità</color> ai nemici. Il raggio dell'esplosione aumenta in proporzione alla <color=yellow>probabilità critico</color>.\n<color=yellow>Recupera</color> <sprite=2><color=#FF8A2D>22%</color><sprite=5> PV per ogni nemico colpito dall'esplosione, e aumenta il recupero di 100% se il bersaglio è un <color=yellow>boss</color>.",
+    "description": "Ogni 4° <color=yellow>attacco base</color> viene <color=yellow>potenziato</color>, causando <color=yellow>Esplosione Scarlatta</color> che infligge  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5>  di <color=yellow>danno da oscurità</color> ai nemici. Il raggio dell'esplosione aumenta in proporzione alla <color=yellow>probabilità critico</color>.\n<color=yellow>Recupera</color>  <sprite=2><color=#fff><gradient=sv_ad>22%</gradient></color><sprite=5>  PV per ogni nemico colpito dall'esplosione, e aumenta il recupero di 100% se il bersaglio è un <color=yellow>boss</color>.",
     "rawDesc": "Ogni 4° <color=yellow>attacco base</color> viene <color=yellow>potenziato</color>, causando <color=yellow>Esplosione Scarlatta</color> che infligge {0} di <color=yellow>danno da oscurità</color> ai nemici. Il raggio dell'esplosione aumenta in proporzione alla <color=yellow>probabilità critico</color>.\n<color=yellow>Recupera</color> {1} PV per ogni nemico colpito dall'esplosione, e aumenta il recupero di {2} se il bersaglio è un <color=yellow>boss</color>.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -874,7 +927,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>22%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>22%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healPerHit",
         "scalingType": "basic",
@@ -913,16 +966,16 @@
   },
   "Gem_E_Direness": {
     "name": "Essenza della Disperazione",
-    "description": "Più bassi sono i miei <color=yellow>PV</color>, più breve sarà il <color=yellow>tempo di recupero</color> di questo Ricordo. Quando i miei <color=yellow>PV</color> sono al 30%, il tempo di recupero si riduce fino al 55%<sprite=5>.",
+    "description": "Più bassi sono i miei <color=yellow>PV</color>, più breve sarà il <color=yellow>tempo di recupero</color> di questo Ricordo. Quando i miei <color=yellow>PV</color> sono al 50%, il tempo di recupero si riduce fino al  55%<sprite=5> .",
     "rawDesc": "Più bassi sono i miei <color=yellow>PV</color>, più breve sarà il <color=yellow>tempo di recupero</color> di questo Ricordo. Quando i miei <color=yellow>PV</color> sono al {0}, il tempo di recupero si riduce fino al {1}.",
     "rawDescVars": [
       {
-        "rendered": "30%",
+        "rendered": "50%",
         "format": "P0",
         "raw": "maxAbilityHasteHpThreshold",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.3,
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -930,7 +983,7 @@
         }
       },
       {
-        "rendered": "55%<sprite=5>",
+        "rendered": " 55%<sprite=5> ",
         "format": "P0",
         "raw": "maxReducedRatio",
         "scalingType": "unknown",
@@ -947,7 +1000,7 @@
   },
   "Gem_E_Domination": {
     "name": "Essenza del Dominio",
-    "description": "La <color=yellow>Probabilità di Critico</color> aumenta di 20%. Ogni volta che infliggi un colpo critico a un nemico, il tuo <color=yellow>Danno Critico</color> aumenta di 0.3%, fino a un massimo di 20%<sprite=5>. ",
+    "description": "La <color=yellow>Probabilità di Critico</color> aumenta di 20%. Ogni volta che infliggi un colpo critico a un nemico, il tuo <color=yellow>Danno Critico</color> aumenta di 0.3%, fino a un massimo di  20%<sprite=5> . ",
     "rawDesc": "La <color=yellow>Probabilità di Critico</color> aumenta di {0}. Ogni volta che infliggi un colpo critico a un nemico, il tuo <color=yellow>Danno Critico</color> aumenta di {1}, fino a un massimo di {2}. ",
     "rawDescVars": [
       {
@@ -977,7 +1030,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "P0",
         "raw": "critAmpMaxValue",
         "scalingType": "basic",
@@ -1000,11 +1053,11 @@
   },
   "Gem_E_Fangs": {
     "name": "Essenza delle Zanne",
-    "description": "Ogni 4° <color=yellow>attacco base</color> colpisce come <color=yellow>critico</color>. Quando si attiva un <color=yellow>critico</color>, il <color=yellow>tempo di recupero</color> di questo Ricordo si riduce di 0.7<sprite=5> s e vengono scagliate due <color=yellow>Zanne</color> ai nemici vicini, infliggendo <sprite=2><color=#FF8A2D>60%</color><sprite=5> di <color=yellow>danno</color> ciascuna.",
+    "description": "Ogni 4° <color=yellow>attacco base</color> colpisce come <color=yellow>critico</color>. Quando si attiva un <color=yellow>critico</color>, il <color=yellow>tempo di recupero</color> di questo Ricordo si riduce di  0.7<sprite=5>  s e vengono scagliate due <color=yellow>Zanne</color> ai nemici vicini, infliggendo  <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5>  di <color=yellow>danno</color> ciascuna.",
     "rawDesc": "Ogni 4° <color=yellow>attacco base</color> colpisce come <color=yellow>critico</color>. Quando si attiva un <color=yellow>critico</color>, il <color=yellow>tempo di recupero</color> di questo Ricordo si riduce di {0} s e vengono scagliate due <color=yellow>Zanne</color> ai nemici vicini, infliggendo {1} di <color=yellow>danno</color> ciascuna.",
     "rawDescVars": [
       {
-        "rendered": "0.7<sprite=5>",
+        "rendered": " 0.7<sprite=5> ",
         "format": "#,##0.#",
         "raw": "cooldownReductionOnCrit",
         "scalingType": "basic",
@@ -1017,7 +1070,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>60%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1040,7 +1093,7 @@
   },
   "Gem_E_Fever": {
     "name": "Essenza della Febbre",
-    "description": "Quando infliggi di <color=yellow>danno da fuoco</color> con questo Ricordo, trasmetti <color=yellow>Febbre</color> al bersaglio. I nemici infetti da <color=yellow>Febbre</color> esplodono dopo 2 s, infliggendo <sprite=1><color=#16D7FF>130%</color><sprite=5> di <color=yellow>danno da fuoco</color> a se stessi e ai nemici circostanti. Per ogni <color=yellow>accumulo di fuoco</color> sul bersaglio, il raggio dell'esplosione aumenta del 30% e il danno da esplosione aumenta del 10%.",
+    "description": "Quando infliggi di <color=yellow>danno da fuoco</color> con questo Ricordo, trasmetti <color=yellow>Febbre</color> al bersaglio. I nemici infetti da <color=yellow>Febbre</color> esplodono dopo 2 s, infliggendo  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5>  di <color=yellow>danno da fuoco</color> a se stessi e ai nemici circostanti. Per ogni <color=yellow>accumulo di fuoco</color> sul bersaglio, il raggio dell'esplosione aumenta del 30% e il danno da esplosione aumenta del 10%.",
     "rawDesc": "Quando infliggi di <color=yellow>danno da fuoco</color> con questo Ricordo, trasmetti <color=yellow>Febbre</color> al bersaglio. I nemici infetti da <color=yellow>Febbre</color> esplodono dopo {0} s, infliggendo {1} di <color=yellow>danno da fuoco</color> a se stessi e ai nemici circostanti. Per ogni <color=yellow>accumulo di fuoco</color> sul bersaglio, il raggio dell'esplosione aumenta del {2} e il danno da esplosione aumenta del {3}.",
     "rawDescVars": [
       {
@@ -1057,7 +1110,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -1108,11 +1161,11 @@
   },
   "Gem_E_Flexibility": {
     "name": "Essenza della Flessibilità",
-    "description": "Quando questo Ricordo è in <color=yellow>tempo di recupero</color>, il 37%<sprite=5> del danno ricevuto viene <color=yellow>suddiviso</color> e distribuito su 4 s. Il danno <color=yellow>suddiviso</color> in questo modo è ridotto del 20%.",
+    "description": "Quando questo Ricordo è in <color=yellow>tempo di recupero</color>, il  37%<sprite=5>  del danno ricevuto viene <color=yellow>suddiviso</color> e distribuito su 4 s. Il danno <color=yellow>suddiviso</color> in questo modo è ridotto del 20%.",
     "rawDesc": "Quando questo Ricordo è in <color=yellow>tempo di recupero</color>, il {0} del danno ricevuto viene <color=yellow>suddiviso</color> e distribuito su {1} s. Il danno <color=yellow>suddiviso</color> in questo modo è ridotto del {2}.",
     "rawDescVars": [
       {
-        "rendered": "37%<sprite=5>",
+        "rendered": " 37%<sprite=5> ",
         "format": "P0",
         "raw": "divMultiplier",
         "scalingType": "unknown",
@@ -1143,16 +1196,16 @@
   },
   "Gem_E_Insensitivity": {
     "name": "Essenza dell'Insensibilità",
-    "description": "Dopo aver <color=yellow>lanciato</color> questo Ricordo, per 3 s, ogni volta che ti muovi di 2m lasci cadere una <color=yellow>bomba</color>. La bomba esplode dopo un breve periodo, infliggendo <sprite=1><color=#16D7FF>140%</color><sprite=5> di <color=yellow>danno da fuoco</color> ai nemici.",
+    "description": "Dopo aver <color=yellow>lanciato</color> questo Ricordo, per 4 s, ogni volta che ti muovi di 2m lasci cadere una <color=yellow>bomba</color>. La bomba esplode dopo un breve periodo, infliggendo  <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5>  di <color=yellow>danno da fuoco</color> ai nemici.",
     "rawDesc": "Dopo aver <color=yellow>lanciato</color> questo Ricordo, per {0} s, ogni volta che ti muovi di {1}m lasci cadere una <color=yellow>bomba</color>. La bomba esplode dopo un breve periodo, infliggendo {2} di <color=yellow>danno da fuoco</color> ai nemici.",
     "rawDescVars": [
       {
-        "rendered": "3",
+        "rendered": "4",
         "format": "#,##0.#",
         "raw": "duration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 3.0,
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1173,7 +1226,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -1198,11 +1251,11 @@
   },
   "Gem_E_Insight": {
     "name": "Essenza della Perspicacia",
-    "description": "Quando questo Ricordo infligge <color=yellow>danno</color> a un nemico, infligge <sprite=1><color=#16D7FF>200%</color><sprite=5> di <color=yellow>danno da luce</color> a un massimo di 3<sprite=5> nemici aggiuntivi e aumenta la <color=yellow>celerità del Ricordo</color> di 20<sprite=5> per 5 s. Si può attivare solo una volta ogni 3 s.",
+    "description": "Quando questo Ricordo infligge <color=yellow>danno</color> a un nemico, infligge  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  di <color=yellow>danno da luce</color> a un massimo di  3<sprite=5>  nemici aggiuntivi e aumenta la <color=yellow>celerità del Ricordo</color> di  20<sprite=5>  per 5 s. Si può attivare solo una volta ogni 3 s.",
     "rawDesc": "Quando questo Ricordo infligge <color=yellow>danno</color> a un nemico, infligge {0} di <color=yellow>danno da luce</color> a un massimo di {1} nemici aggiuntivi e aumenta la <color=yellow>celerità del Ricordo</color> di {2} per {3} s. Si può attivare solo una volta ogni {4} s.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1215,7 +1268,7 @@
         }
       },
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0",
         "raw": "maxHitCount",
         "scalingType": "basic",
@@ -1228,7 +1281,7 @@
         }
       },
       {
-        "rendered": "20<sprite=5>",
+        "rendered": " 20<sprite=5> ",
         "format": "#,##0",
         "raw": "gainedAbilityHaste",
         "scalingType": "basic",
@@ -1279,11 +1332,11 @@
   },
   "Gem_E_Inversion": {
     "name": "Essenza dell'Inversione",
-    "description": "Il <color=yellow>tempo di recupero</color> di questo Ricordo aumenta del 15%<sprite=5>, ma il <color=yellow>danno</color> inflitto ai nemici aumenta del 20%<sprite=5>. Il di <color=yellow>danno elementale</color> inflitto da questo Ricordo viene <color=yellow>invertito</color>. (Fuoco/Gelo, Luce/Oscurità)",
+    "description": "Il <color=yellow>tempo di recupero</color> di questo Ricordo aumenta del  15%<sprite=5> , ma il <color=yellow>danno</color> inflitto ai nemici aumenta del  20%<sprite=5> . Il di <color=yellow>danno elementale</color> inflitto da questo Ricordo viene <color=yellow>invertito</color>. (Fuoco/Gelo, Luce/Oscurità)",
     "rawDesc": "Il <color=yellow>tempo di recupero</color> di questo Ricordo aumenta del {0}, ma il <color=yellow>danno</color> inflitto ai nemici aumenta del {1}. Il di <color=yellow>danno elementale</color> inflitto da questo Ricordo viene <color=yellow>invertito</color>. (Fuoco/Gelo, Luce/Oscurità)",
     "rawDescVars": [
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "P0",
         "raw": "cooldownAmp",
         "scalingType": "basic",
@@ -1296,7 +1349,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -1319,11 +1372,11 @@
   },
   "Gem_E_Metal": {
     "name": "Essenza del Metallo",
-    "description": "Quando <color=yellow>elimini</color> un nemico, il <color=yellow>tempo di recupero</color> di questo Ricordo viene <color=yellow>ridotto</color> di 1<sprite=5> s.",
+    "description": "Quando <color=yellow>elimini</color> un nemico, il <color=yellow>tempo di recupero</color> di questo Ricordo viene <color=yellow>ridotto</color> di  1<sprite=5>  s.",
     "rawDesc": "Quando <color=yellow>elimini</color> un nemico, il <color=yellow>tempo di recupero</color> di questo Ricordo viene <color=yellow>ridotto</color> di {0} s.",
     "rawDescVars": [
       {
-        "rendered": "1<sprite=5>",
+        "rendered": " 1<sprite=5> ",
         "format": "#,##0.#",
         "raw": "cooldownReduction",
         "scalingType": "basic",
@@ -1346,16 +1399,16 @@
   },
   "Gem_E_Might": {
     "name": "Essenza del Gigante",
-    "description": "Aumenta i PV massimi di 260<sprite=5>. Il danno inflitto ai nemici da questo Ricordo aumenta del 1% per ogni 50 di <color=yellow>PV massimi</color>.",
+    "description": "Aumenta i PV massimi di  270<sprite=5> . Il danno inflitto ai nemici da questo Ricordo aumenta del 1% per ogni 70 di <color=yellow>PV massimi</color>.",
     "rawDesc": "Aumenta i PV massimi di {0}. Il danno inflitto ai nemici da questo Ricordo aumenta del {1} per ogni {2} di <color=yellow>PV massimi</color>.",
     "rawDescVars": [
       {
-        "rendered": "260<sprite=5>",
+        "rendered": " 270<sprite=5> ",
         "format": "#,##0",
         "raw": "healthBonus",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 130.0,
+          "basicConstant": 135.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -1376,12 +1429,12 @@
         }
       },
       {
-        "rendered": "50",
+        "rendered": "70",
         "format": "#,##0",
         "raw": "unitHealthAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 50.0,
+          "basicConstant": 70.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1399,11 +1452,11 @@
   },
   "Gem_E_Obsidian": {
     "name": "Essenza dell'Ossidiana",
-    "description": "Quando <color=yellow>lanciato</color>, questo Ricordo potenzia il tuo prossimo attacco, infliggendo <sprite=2><color=#FF8A2D>250%</color><sprite=5> <color=yellow>danno da oscurità</color> al bersaglio e riducendo il <color=yellow>tempo di recupero</color> di questo Ricordo di 1<sprite=5> s.",
+    "description": "Quando <color=yellow>lanciato</color>, questo Ricordo potenzia il tuo prossimo attacco, infliggendo  <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5>  <color=yellow>danno da oscurità</color> al bersaglio e riducendo il <color=yellow>tempo di recupero</color> di questo Ricordo di  1<sprite=5>  s.",
     "rawDesc": "Quando <color=yellow>lanciato</color>, questo Ricordo potenzia il tuo prossimo attacco, infliggendo {0} <color=yellow>danno da oscurità</color> al bersaglio e riducendo il <color=yellow>tempo di recupero</color> di questo Ricordo di {1} s.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1416,7 +1469,7 @@
         }
       },
       {
-        "rendered": "1<sprite=5>",
+        "rendered": " 1<sprite=5> ",
         "format": "#,##0.#",
         "raw": "reducedCooldown",
         "scalingType": "basic",
@@ -1442,7 +1495,7 @@
   },
   "Gem_E_Omega": {
     "name": "Essenza della Fine",
-    "description": "Quando questo Ricordo non è in <color=yellow>tempo di recupero</color>, ottiene un accumulo di <color=yellow>Finale</color> ogni secondo fino a un massimo di 20 accumuli. Se sono presenti accumuli, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>, aumentando il <color=yellow>danno</color> del 5%<sprite=5> per accumulo.",
+    "description": "Quando questo Ricordo non è in <color=yellow>tempo di recupero</color>, ottiene un accumulo di <color=yellow>Finale</color> ogni secondo fino a un massimo di 20 accumuli. Se sono presenti accumuli, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>, aumentando il <color=yellow>danno</color> del  5%<sprite=5>  per accumulo.",
     "rawDesc": "Quando questo Ricordo non è in <color=yellow>tempo di recupero</color>, ottiene un accumulo di <color=yellow>Finale</color> ogni secondo fino a un massimo di {0} accumuli. Se sono presenti accumuli, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>, aumentando il <color=yellow>danno</color> del {1} per accumulo.",
     "rawDescVars": [
       {
@@ -1459,7 +1512,7 @@
         }
       },
       {
-        "rendered": "5%<sprite=5>",
+        "rendered": " 5%<sprite=5> ",
         "format": "P0",
         "raw": "chargeRate",
         "scalingType": "unknown",
@@ -1476,11 +1529,11 @@
   },
   "Gem_E_Opportunity": {
     "name": "Essenza dell'Opportunità",
-    "description": "Quando <color=yellow>lanci</color> questo Ricordo, il <color=yellow>tempo di recupero</color> della tua <color=yellow>abilità di schivata</color> si riduce di 3<sprite=5> s. Si può attivare solo una volta ogni 8 s.",
+    "description": "Quando <color=yellow>lanci</color> questo Ricordo, il <color=yellow>tempo di recupero</color> della tua <color=yellow>abilità di schivata</color> si riduce di  3<sprite=5>  s. Si può attivare solo una volta ogni 8 s.",
     "rawDesc": "Quando <color=yellow>lanci</color> questo Ricordo, il <color=yellow>tempo di recupero</color> della tua <color=yellow>abilità di schivata</color> si riduce di {0} s. Si può attivare solo una volta ogni {1} s.",
     "rawDescVars": [
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0.#",
         "raw": "reductionAmount",
         "scalingType": "basic",
@@ -1518,11 +1571,11 @@
   },
   "Gem_E_OurStory_Completed": {
     "name": "La Nostra Storia (Completata!)",
-    "description": "<color=yellow>Potenza d'attacco</color> e <color=yellow>potenza magica</color> aumentano del 0 e tutti gli effetti benefici di <color=yellow>Corsa Distorta</color> aumentano del 0.",
+    "description": "<color=yellow>Potenza d'attacco</color> e <color=yellow>potenza magica</color> aumentano del  e tutti gli effetti benefici di <color=yellow>Corsa Distorta</color> aumentano del .",
     "rawDesc": "<color=yellow>Potenza d'attacco</color> e <color=yellow>potenza magica</color> aumentano del {0} e tutti gli effetti benefici di <color=yellow>Corsa Distorta</color> aumentano del {1}.",
     "rawDescVars": [
       {
-        "rendered": "0",
+        "rendered": "",
         "format": "#,##0'%'",
         "raw": "Gem_E_OurStory_Completed::statPercentage",
         "scalingType": "basic",
@@ -1535,7 +1588,7 @@
         }
       },
       {
-        "rendered": "0",
+        "rendered": "",
         "format": "#,##0",
         "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
         "scalingType": "unknown",
@@ -1605,7 +1658,7 @@
   },
   "Gem_E_Overload": {
     "name": "Essenza del Sovraccarico",
-    "description": "Quando <color=yellow>lanci</color> questo Ricordo, <color=yellow>sacrifichi</color> il 20% dei tuoi PV attuali per <color=yellow>potenziare</color> il <color=yellow>lancio</color>. Il <color=yellow>lancio potenziato</color> infligge il 45%<sprite=5> di <color=yellow>danno</color> e <color=yellow>cura</color> in più.",
+    "description": "Quando <color=yellow>lanci</color> questo Ricordo, <color=yellow>sacrifichi</color> il 20% dei tuoi PV attuali per <color=yellow>potenziare</color> il <color=yellow>lancio</color>. Il <color=yellow>lancio potenziato</color> infligge il  45%<sprite=5>  di <color=yellow>danno</color> e <color=yellow>cura</color> in più.",
     "rawDesc": "Quando <color=yellow>lanci</color> questo Ricordo, <color=yellow>sacrifichi</color> il {0} dei tuoi PV attuali per <color=yellow>potenziare</color> il <color=yellow>lancio</color>. Il <color=yellow>lancio potenziato</color> infligge il {1} di <color=yellow>danno</color> e <color=yellow>cura</color> in più.",
     "rawDescVars": [
       {
@@ -1622,7 +1675,7 @@
         }
       },
       {
-        "rendered": "45%<sprite=5>",
+        "rendered": " 45%<sprite=5> ",
         "format": "P0",
         "raw": "amp",
         "scalingType": "basic",
@@ -1647,11 +1700,11 @@
   },
   "Gem_E_Pain": {
     "name": "Essenza del Dolore",
-    "description": "Tutti i <color=yellow>danni</color> inflitti da questo Ricordo causano il 40%<sprite=5> di <color=yellow>danno ad area</color> intorno al bersaglio. Questo <color=yellow>danno ad area</color> condivide il tipo di elemento del danno originale.",
+    "description": "Tutti i <color=yellow>danni</color> inflitti da questo Ricordo causano il  40%<sprite=5>  di <color=yellow>danno ad area</color> intorno al bersaglio. Questo <color=yellow>danno ad area</color> condivide il tipo di elemento del danno originale.",
     "rawDesc": "Tutti i <color=yellow>danni</color> inflitti da questo Ricordo causano il {0} di <color=yellow>danno ad area</color> intorno al bersaglio. Questo <color=yellow>danno ad area</color> condivide il tipo di elemento del danno originale.",
     "rawDescVars": [
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "damageRatio",
         "scalingType": "basic",
@@ -1674,16 +1727,16 @@
   },
   "Gem_E_Predation": {
     "name": "Essenza del Predatore",
-    "description": "Questo Ricordo infligge 60%<sprite=5> di <color=yellow>danno</color> in più ai <color=yellow>boss</color> e ai <color=yellow>Cacciatori</color>. Sconfiggere un <color=yellow>Cacciatore</color> fa cadere 1 <color=yellow>Sfere di Potere</color>, sconfiggere un <color=yellow>boss</color> ne fa cadere 3. Raccogliere una <color=yellow>Sfera di Potere</color> aumenta permanentemente di 1 la <color=yellow>potenza d'attacco</color> o la <color=yellow>potenza magica</color> in modo casuale.",
-    "rawDesc": "Questo Ricordo infligge {0} di <color=yellow>danno</color> in più ai <color=yellow>boss</color> e ai <color=yellow>Cacciatori</color>. Sconfiggere un <color=yellow>Cacciatore</color> fa cadere {1} <color=yellow>Sfere di Potere</color>, sconfiggere un <color=yellow>boss</color> ne fa cadere {2}. Raccogliere una <color=yellow>Sfera di Potere</color> aumenta permanentemente di 1 la <color=yellow>potenza d'attacco</color> o la <color=yellow>potenza magica</color> in modo casuale.",
+    "description": "Questo Ricordo infligge  40%<sprite=5>  di <color=yellow>danno</color> in più ai <color=yellow>boss</color> e ai <color=yellow>Cacciatori</color>. Sconfiggere un <color=yellow>Cacciatore</color> fa cadere 1 <color=yellow>Sfera di Potere</color>, sconfiggere un <color=yellow>boss</color> ne fa cadere 3. Raccogliere una <color=yellow>Sfera di Potere</color> conferisce 1 <color=yellow>Danno d'Attacco</color>, 1 <color=yellow>Potere delle Abilità</color> o 5 <color=yellow>Salute massima</color>.",
+    "rawDesc": "Questo Ricordo infligge {0} di <color=yellow>danno</color> in più ai <color=yellow>boss</color> e ai <color=yellow>Cacciatori</color>. Sconfiggere un <color=yellow>Cacciatore</color> fa cadere 1 <color=yellow>Sfera di Potere</color>, sconfiggere un <color=yellow>boss</color> ne fa cadere {1}. Raccogliere una <color=yellow>Sfera di Potere</color> conferisce 1 <color=yellow>Danno d'Attacco</color>, 1 <color=yellow>Potere delle Abilità</color> o {2} <color=yellow>Salute massima</color>.",
     "rawDescVars": [
       {
-        "rendered": "60%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "amp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.3,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -1691,24 +1744,30 @@
         }
       },
       {
-        "rendered": "1",
+        "rendered": "3",
         "format": "#,##0",
-        "raw": "addedAp",
+        "raw": "bossMultiplier",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "addedHealth",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
-      },
-      {
-        "rendered": "3",
-        "format": "#,##0",
-        "raw": "addedAp*bossMultiplier",
-        "scalingType": "unknown",
-        "data": {}
       }
     ],
     "rarity": "Epic",
@@ -1721,11 +1780,11 @@
   },
   "Gem_E_Protection": {
     "name": "Essenza della Protezione",
-    "description": "Quando <color=yellow>lanci</color> questo Ricordo, ottieni 40<sprite=5> <color=yellow>difesa</color> per 3 s, riducendo i danni ricevuti e diventando <color=yellow>inarrestabile</color>. Si può attivare solo una volta ogni 5 s.",
+    "description": "Quando <color=yellow>lanci</color> questo Ricordo, ottieni  40<sprite=5>  <color=yellow>difesa</color> per 3 s, riducendo i danni ricevuti e diventando <color=yellow>inarrestabile</color>. Si può attivare solo una volta ogni 5 s.",
     "rawDesc": "Quando <color=yellow>lanci</color> questo Ricordo, ottieni {0} <color=yellow>difesa</color> per {1} s, riducendo i danni ricevuti e diventando <color=yellow>inarrestabile</color>. Si può attivare solo una volta ogni {2} s.",
     "rawDescVars": [
       {
-        "rendered": "40<sprite=5>",
+        "rendered": " 40<sprite=5> ",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "basic",
@@ -1774,24 +1833,24 @@
   },
   "Gem_E_Reflex": {
     "name": "Essenza del Riflesso",
-    "description": "Quando subisci qualsiasi <color=yellow>danno</color>, emetti un'ondata di freddo verso il nemico più vicino, infliggendo <sprite=1><color=#16D7FF>120%</color><sprite=5> di <color=yellow>Danno da Freddo</color> e respingendolo, aumentando la tua <color=yellow>Difesa</color> di 40<sprite=5> per 1.5 secondi.",
+    "description": "Quando subisci qualsiasi <color=yellow>danno</color>, emetti un'ondata di freddo verso il nemico più vicino, infliggendo  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>4%</gradient></color><sprite=5>  di <color=yellow>Danno da Freddo</color> e respingendolo, aumentando la tua <color=yellow>Difesa</color> di  40<sprite=5>  per 1.5 secondi.",
     "rawDesc": "Quando subisci qualsiasi <color=yellow>danno</color>, emetti un'ondata di freddo verso il nemico più vicino, infliggendo {0} di <color=yellow>Danno da Freddo</color> e respingendolo, aumentando la tua <color=yellow>Difesa</color> di {1} per {2} secondi.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>4%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.6,
+          "basicAP": 0.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.01
         }
       },
       {
-        "rendered": "40<sprite=5>",
+        "rendered": " 40<sprite=5> ",
         "format": "#,##0",
         "raw": "armorFlatAmount",
         "scalingType": "basic",
@@ -1829,11 +1888,11 @@
   },
   "Gem_E_Thunder": {
     "name": "Essenza del Tuono",
-    "description": "Quando <color=yellow>lanci</color> un'<color=yellow>altro Ricordo</color> o usi un'<color=yellow>abilità di schivata</color>, ottieni 1 accumulo di <color=yellow>tuono</color>, cumulabile fino a 7<sprite=5> volte. <color=yellow>Lanciando</color> questo Ricordo, consumi tutte gli accumuli di <color=yellow>tuono</color> per evocare fulmini sui nemici vicini per ogni accumulo. Ogni fulmine infligge <sprite=1><color=#16D7FF>117%</color><sprite=5> di <color=yellow>danno da luce</color>.",
+    "description": "Quando <color=yellow>lanci</color> un'<color=yellow>altro Ricordo</color> o usi un'<color=yellow>abilità di schivata</color>, ottieni 1 accumulo di <color=yellow>tuono</color>, cumulabile fino a  7<sprite=5>  volte. <color=yellow>Lanciando</color> questo Ricordo, consumi tutte gli accumuli di <color=yellow>tuono</color> per evocare fulmini sui nemici vicini per ogni accumulo. Ogni fulmine infligge  <sprite=1><color=#fff><gradient=sv_ap>117%</gradient></color><sprite=5>  di <color=yellow>danno da luce</color>.",
     "rawDesc": "Quando <color=yellow>lanci</color> un'<color=yellow>altro Ricordo</color> o usi un'<color=yellow>abilità di schivata</color>, ottieni 1 accumulo di <color=yellow>tuono</color>, cumulabile fino a {0} volte. <color=yellow>Lanciando</color> questo Ricordo, consumi tutte gli accumuli di <color=yellow>tuono</color> per evocare fulmini sui nemici vicini per ogni accumulo. Ogni fulmine infligge {1} di <color=yellow>danno da luce</color>.",
     "rawDescVars": [
       {
-        "rendered": "7<sprite=5>",
+        "rendered": " 7<sprite=5> ",
         "format": "#,##0",
         "raw": "maxCharge",
         "scalingType": "basic",
@@ -1846,7 +1905,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>117%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>117%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1871,7 +1930,7 @@
   },
   "Gem_E_Twilight": {
     "name": "Essenza della Penombra",
-    "description": "Converte il danno dei tuoi <color=yellow>attacchi base</color> in di <color=yellow>danno da oscurità</color>. Quando questo Ricordo infligge danno a un nemico con 3 o più <color=yellow>accumuli di oscurità</color>, li consuma tutti per infliggere <sprite=1><color=#16D7FF>54%</color><sprite=5> di <color=yellow>danno</color> per accumulo e <color=yellow>recupera</color> 6<sprite=5> PV per accumulo.",
+    "description": "Converte il danno dei tuoi <color=yellow>attacchi base</color> in di <color=yellow>danno da oscurità</color>. Quando questo Ricordo infligge danno a un nemico con 3 o più <color=yellow>accumuli di oscurità</color>, li consuma tutti per infliggere  <sprite=1><color=#fff><gradient=sv_ap>54%</gradient></color><sprite=5>  di <color=yellow>danno</color> per accumulo e <color=yellow>recupera</color>  6<sprite=5>  PV per accumulo.",
     "rawDesc": "Converte il danno dei tuoi <color=yellow>attacchi base</color> in di <color=yellow>danno da oscurità</color>. Quando questo Ricordo infligge danno a un nemico con {0} o più <color=yellow>accumuli di oscurità</color>, li consuma tutti per infliggere {1} di <color=yellow>danno</color> per accumulo e <color=yellow>recupera</color> {2} PV per accumulo.",
     "rawDescVars": [
       {
@@ -1888,7 +1947,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>54%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>54%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgPerStack",
         "scalingType": "basic",
@@ -1901,7 +1960,7 @@
         }
       },
       {
-        "rendered": "6<sprite=5>",
+        "rendered": " 6<sprite=5> ",
         "format": "#,##0",
         "raw": "healPerStack",
         "scalingType": "basic",
@@ -1926,11 +1985,11 @@
   },
   "Gem_E_Umbra": {
     "name": "Essenza dell'Ombra",
-    "description": "Il danno di questa memoria aumenta del 42%<sprite=5> della <color=yellow>Probabilità di Critico</color>. Se il <color=yellow>Danno</color> è <color=yellow>Danno Oscuro</color>, <color=yellow>ripristina</color> 6%<sprite=5> del danno inflitto come <color=yellow>Salute</color>.",
+    "description": "Il danno di questa memoria aumenta del  42%<sprite=5>  della <color=yellow>Probabilità di Critico</color>. Se il <color=yellow>Danno</color> è <color=yellow>Danno Oscuro</color>, <color=yellow>ripristina</color>  6%<sprite=5>  del danno inflitto come <color=yellow>Salute</color>.",
     "rawDesc": "Il danno di questa memoria aumenta del {0} della <color=yellow>Probabilità di Critico</color>. Se il <color=yellow>Danno</color> è <color=yellow>Danno Oscuro</color>, <color=yellow>ripristina</color> {1} del danno inflitto come <color=yellow>Salute</color>.",
     "rawDescVars": [
       {
-        "rendered": "42%<sprite=5>",
+        "rendered": " 42%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmpCritConversionRatio",
         "scalingType": "basic",
@@ -1943,7 +2002,7 @@
         }
       },
       {
-        "rendered": "6%<sprite=5>",
+        "rendered": " 6%<sprite=5> ",
         "format": "P0",
         "raw": "conversionRatio",
         "scalingType": "basic",
@@ -1968,11 +2027,11 @@
   },
   "Gem_E_Virtuousness": {
     "name": "Essenza della Virtù",
-    "description": "Il numero di cariche di questo Ricordo aumenta di 1<sprite=5>. Il numero di cariche aumenta di 1 ogni 150% di punti qualità.",
+    "description": "Il numero di cariche di questo Ricordo aumenta di  1<sprite=5> . Il numero di cariche aumenta di 1 ogni 150% di punti qualità.",
     "rawDesc": "Il numero di cariche di questo Ricordo aumenta di {0}. Il numero di cariche aumenta di 1 ogni {1} di punti qualità.",
     "rawDescVars": [
       {
-        "rendered": "1<sprite=5>",
+        "rendered": " 1<sprite=5> ",
         "format": "#,##0",
         "raw": "addedChargeInt",
         "scalingType": "unknown",
@@ -2002,18 +2061,18 @@
   },
   "Gem_L_CamillasGift": {
     "name": "Dono di Camilla",
-    "description": "Può essere <color=yellow>venduto</color> al negozio per ottenere 0 oro. Il <color=yellow>prezzo</color> <color=yellow>aumenta</color> di 0 ogni volta che ti sposti nel mondo successivo. Si rompe se i PV scendono sotto il 50% a causa dei danni nemici.",
+    "description": "Può essere <color=yellow>venduto</color> al negozio per ottenere  oro. Il <color=yellow>prezzo</color> <color=yellow>aumenta</color> di  ogni volta che ti sposti nel mondo successivo. Si rompe se i PV scendono sotto il 50% a causa dei danni nemici.",
     "rawDesc": "Può essere <color=yellow>venduto</color> al negozio per ottenere {0} oro. Il <color=yellow>prezzo</color> <color=yellow>aumenta</color> di {1} ogni volta che ti sposti nel mondo successivo. Si rompe se i PV scendono sotto il {2} a causa dei danni nemici.",
     "rawDescVars": [
       {
-        "rendered": "0",
+        "rendered": "",
         "format": "#,##0",
         "raw": "currentSellGold",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "0",
+        "rendered": "",
         "format": "#,##0",
         "raw": "sellGoldIncreasePerWorld",
         "scalingType": "basic",
@@ -2049,11 +2108,11 @@
   },
   "Gem_L_ChaosApple": {
     "name": "Mela del Caos",
-    "description": "Ogni volta che ti <color=yellow>muovi</color> attraverso una <color=yellow>Fenditura</color>, <color=yellow>trasforma</color> questo Ricordo in un altro Ricordo casuale. Il Ricordo <color=yellow>trasformato</color> non ha <color=yellow>tempo di recupero</color>, ma può essere <color=yellow>lanciato</color> solo 4<sprite=5> volte per stanza.",
+    "description": "Ogni volta che ti <color=yellow>muovi</color> attraverso una <color=yellow>Fenditura</color>, <color=yellow>trasforma</color> questo Ricordo in un altro Ricordo casuale. Il Ricordo <color=yellow>trasformato</color> non ha <color=yellow>tempo di recupero</color>, ma può essere <color=yellow>lanciato</color> solo  4<sprite=5>  volte per stanza.",
     "rawDesc": "Ogni volta che ti <color=yellow>muovi</color> attraverso una <color=yellow>Fenditura</color>, <color=yellow>trasforma</color> questo Ricordo in un altro Ricordo casuale. Il Ricordo <color=yellow>trasformato</color> non ha <color=yellow>tempo di recupero</color>, ma può essere <color=yellow>lanciato</color> solo {0} volte per stanza.",
     "rawDescVars": [
       {
-        "rendered": "4<sprite=5>",
+        "rendered": " 4<sprite=5> ",
         "format": "#,##0",
         "raw": "castPerRoomCount",
         "scalingType": "basic",
@@ -2076,11 +2135,11 @@
   },
   "Gem_L_DivineFaith": {
     "name": "Fede Divina",
-    "description": "Ogni volta che <color=yellow>elimini</color> un nemico con questo Ricordo, ottieni accumuli di <color=yellow>Fede</color> fino a un massimo di 75<sprite=5> accumuli. Ogni accumulo di <color=yellow>Fede</color> aumenta il <color=yellow>danno</color> inflitto ai nemici e il <color=yellow>recupero</color> fornito agli alleati da questo Ricordo di 0.5% e aumenta i PV massimi di 4.",
+    "description": "Ogni volta che <color=yellow>elimini</color> un nemico con questo Ricordo, ottieni accumuli di <color=yellow>Fede</color> fino a un massimo di  75<sprite=5>  accumuli. Ogni accumulo di <color=yellow>Fede</color> aumenta il <color=yellow>danno</color> inflitto ai nemici e il <color=yellow>recupero</color> fornito agli alleati da questo Ricordo di 0.4% e aumenta i PV massimi di 4.",
     "rawDesc": "Ogni volta che <color=yellow>elimini</color> un nemico con questo Ricordo, ottieni accumuli di <color=yellow>Fede</color> fino a un massimo di {0} accumuli. Ogni accumulo di <color=yellow>Fede</color> aumenta il <color=yellow>danno</color> inflitto ai nemici e il <color=yellow>recupero</color> fornito agli alleati da questo Ricordo di {1} e aumenta i PV massimi di {2}.",
     "rawDescVars": [
       {
-        "rendered": "75<sprite=5>",
+        "rendered": " 75<sprite=5> ",
         "format": "#,##0",
         "raw": "maxStacks",
         "scalingType": "basic",
@@ -2093,12 +2152,12 @@
         }
       },
       {
-        "rendered": "0.5%",
+        "rendered": "0.4%",
         "format": "0.#%",
         "raw": "dmgAmpPerStack",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.005,
+          "basicConstant": 0.004,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2129,11 +2188,11 @@
   },
   "Gem_L_Embertail": {
     "name": "Coda di Brace",
-    "description": "I miei <color=yellow>attacchi</color> rimbalzano e infliggono <sprite=1><color=#16D7FF>100%</color><sprite=5> di <color=yellow>danno da fuoco</color> a un nemico vicino. Per ogni nemico avvolto dalle fiamme nelle vicinanze, il <color=yellow>danno</color> e la <color=yellow>cura</color> di questo Ricordo aumentano del 8%<sprite=5> e il <color=yellow>tempo di recupero</color> si riduce più velocemente del 8%<sprite=5>. Il mio danno nel tempo da fuoco aumenta del 100%.",
+    "description": "I miei <color=yellow>attacchi</color> rimbalzano e infliggono  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5>  di <color=yellow>danno da fuoco</color> a un nemico vicino. Per ogni nemico avvolto dalle fiamme nelle vicinanze, il <color=yellow>danno</color> e la <color=yellow>cura</color> di questo Ricordo aumentano del  8%<sprite=5>  e il <color=yellow>tempo di recupero</color> si riduce più velocemente del  8%<sprite=5> . Il mio danno nel tempo da fuoco aumenta del 100%.",
     "rawDesc": "I miei <color=yellow>attacchi</color> rimbalzano e infliggono {0} di <color=yellow>danno da fuoco</color> a un nemico vicino. Per ogni nemico avvolto dalle fiamme nelle vicinanze, il <color=yellow>danno</color> e la <color=yellow>cura</color> di questo Ricordo aumentano del {1} e il <color=yellow>tempo di recupero</color> si riduce più velocemente del {2}. Il mio danno nel tempo da fuoco aumenta del {3}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -2146,7 +2205,7 @@
         }
       },
       {
-        "rendered": "8%<sprite=5>",
+        "rendered": " 8%<sprite=5> ",
         "format": "P0",
         "raw": "ampPerBurning",
         "scalingType": "basic",
@@ -2159,7 +2218,7 @@
         }
       },
       {
-        "rendered": "8%<sprite=5>",
+        "rendered": " 8%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "skillHastePerBurning",
         "scalingType": "basic",
@@ -2192,7 +2251,7 @@
   },
   "Gem_L_HeartOfGold": {
     "name": "Cuore d'Oro",
-    "description": "Quando <color=yellow>lanci</color> questo Ricordo, usa il 3% dell'oro posseduto per <color=yellow>potenziare</color> il lancio. Il <color=yellow>danno</color> e le <color=yellow>cure</color> del <color=yellow>lancio potenziato</color> aumentano del 12%<sprite=5> ogni 100 oro posseduto.\n",
+    "description": "Quando <color=yellow>lanci</color> questo Ricordo, usa il 3% dell'oro posseduto per <color=yellow>potenziare</color> il lancio. Il <color=yellow>danno</color> e le <color=yellow>cure</color> del <color=yellow>lancio potenziato</color> aumentano del  12%<sprite=5>  ogni 100 oro posseduto.\n",
     "rawDesc": "Quando <color=yellow>lanci</color> questo Ricordo, usa il {0} dell'oro posseduto per <color=yellow>potenziare</color> il lancio. Il <color=yellow>danno</color> e le <color=yellow>cure</color> del <color=yellow>lancio potenziato</color> aumentano del {1} ogni 100 oro posseduto.\n",
     "rawDescVars": [
       {
@@ -2209,7 +2268,7 @@
         }
       },
       {
-        "rendered": "12%<sprite=5>",
+        "rendered": " 12%<sprite=5> ",
         "format": "P0",
         "raw": "ampPerHundredGold",
         "scalingType": "basic",
@@ -2247,11 +2306,11 @@
   },
   "Gem_L_Paranoia": {
     "name": "Essenza della Paranoia",
-    "description": "Quando subisci un qualsiasi <color=yellow>danno</color>, questo Ricordo ottiene 150<sprite=5> di <color=yellow>celerità del Ricordo</color> per 6 s, riducendo il suo <color=yellow>tempo di recupero</color> del 60%<sprite=5>, ma viene <color=yellow>lanciato automaticamente</color> sui nemici vicini.",
+    "description": "Quando subisci un qualsiasi <color=yellow>danno</color>, questo Ricordo ottiene  150<sprite=5>  di <color=yellow>celerità del Ricordo</color> per 6 s, riducendo il suo <color=yellow>tempo di recupero</color> del  60%<sprite=5> , ma viene <color=yellow>lanciato automaticamente</color> sui nemici vicini.",
     "rawDesc": "Quando subisci un qualsiasi <color=yellow>danno</color>, questo Ricordo ottiene {0} di <color=yellow>celerità del Ricordo</color> per {1} s, riducendo il suo <color=yellow>tempo di recupero</color> del {2}, ma viene <color=yellow>lanciato automaticamente</color> sui nemici vicini.",
     "rawDescVars": [
       {
-        "rendered": "150<sprite=5>",
+        "rendered": " 150<sprite=5> ",
         "format": "#,##0",
         "raw": "skillHaste",
         "scalingType": "basic",
@@ -2277,7 +2336,7 @@
         }
       },
       {
-        "rendered": "60%<sprite=5>",
+        "rendered": " 60%<sprite=5> ",
         "format": "P0",
         "raw": "reducedRatio",
         "scalingType": "unknown",
@@ -2294,16 +2353,16 @@
   },
   "Gem_L_Perfect": {
     "name": "Perfezione",
-    "description": "Aumenta la potenza d'attacco di 7<sprite=5>, la potenza magica di 7<sprite=5>, i PV massimi di 35<sprite=5>, la velocità d'attacco del 10%<sprite=5>, la probabilità critico del 6%<sprite=5> e la celerità del Ricordo di 10<sprite=5>.",
+    "description": "Aumenta la potenza d'attacco di  6<sprite=5> , la potenza magica di  6<sprite=5> , i PV massimi di  31<sprite=5> , la velocità d'attacco del  9%<sprite=5> , la probabilità critico del  5%<sprite=5>  e la celerità del Ricordo di  9<sprite=5> .",
     "rawDesc": "Aumenta la potenza d'attacco di {0}, la potenza magica di {1}, i PV massimi di {2}, la velocità d'attacco del {3}, la probabilità critico del {4} e la celerità del Ricordo di {5}.",
     "rawDescVars": [
       {
-        "rendered": "7<sprite=5>",
+        "rendered": " 6<sprite=5> ",
         "format": "#,##0",
         "raw": "adAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 3.5,
+          "basicConstant": 3.15,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2311,12 +2370,12 @@
         }
       },
       {
-        "rendered": "7<sprite=5>",
+        "rendered": " 6<sprite=5> ",
         "format": "#,##0",
         "raw": "apAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 3.5,
+          "basicConstant": 3.15,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2324,12 +2383,12 @@
         }
       },
       {
-        "rendered": "35<sprite=5>",
+        "rendered": " 31<sprite=5> ",
         "format": "#,##0",
         "raw": "healthAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 17.5,
+          "basicConstant": 15.75,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2337,12 +2396,12 @@
         }
       },
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": " 9%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "attackSpeedAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 5.0,
+          "basicConstant": 4.5,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2350,12 +2409,12 @@
         }
       },
       {
-        "rendered": "6%<sprite=5>",
+        "rendered": " 5%<sprite=5> ",
         "format": "P0",
         "raw": "criticalChanceAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.03,
+          "basicConstant": 0.027,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2363,12 +2422,12 @@
         }
       },
       {
-        "rendered": "10<sprite=5>",
+        "rendered": " 9<sprite=5> ",
         "format": "#,##0",
         "raw": "skillHasteAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 5.0,
+          "basicConstant": 4.5,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2386,7 +2445,7 @@
   },
   "Gem_L_PureWhite": {
     "name": "Candido",
-    "description": "Ogni 10 s, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>. Il <color=yellow>lancio potenziato</color> spara 3 <color=yellow>proiettili</color> che infliggono <color=yellow>danno da luce</color> pari al 20%<sprite=5> del <color=yellow>danno</color> iniziale inflitto a ogni singolo nemico. Il numero di colpi aumenta in base al numero di <color=yellow>accumuli di luce</color> su ogni bersaglio.",
+    "description": "Ogni 10 s, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>. Il <color=yellow>lancio potenziato</color> spara 3 <color=yellow>proiettili</color> che infliggono <color=yellow>danno da luce</color> pari al  20%<sprite=5>  del <color=yellow>danno</color> iniziale inflitto a ogni singolo nemico. Il numero di colpi aumenta in base al numero di <color=yellow>accumuli di luce</color> su ogni bersaglio.",
     "rawDesc": "Ogni {0} s, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>. Il <color=yellow>lancio potenziato</color> spara {1} <color=yellow>proiettili</color> che infliggono <color=yellow>danno da luce</color> pari al {2} del <color=yellow>danno</color> iniziale inflitto a ogni singolo nemico. Il numero di colpi aumenta in base al numero di <color=yellow>accumuli di luce</color> su ogni bersaglio.",
     "rawDescVars": [
       {
@@ -2416,7 +2475,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "P0",
         "raw": "damageMultiplier",
         "scalingType": "basic",
@@ -2441,7 +2500,7 @@
   },
   "Gem_L_SolarEye": {
     "name": "Occhio del Sole",
-    "description": "Ogni 20 s, la <color=yellow>Canalizzazione</color> di questo Ricordo viene <color=yellow>potenziata</color>, e lancia <color=yellow>Luce Solare</color> su tutti i nemici circostanti già <color=yellow>In Fiamme</color>. La <color=yellow>Luce Solare</color> infligge <sprite=1><color=#16D7FF>360%</color><sprite=5> di <color=yellow>danno da fuoco</color> nell'arco di 1.5 s e aumenta gli accumuli di <color=yellow>ustione</color> di 9<sprite=5>.\nIl mio danno da fuoco nel tempo aumenta del 100%.",
+    "description": "Ogni 20 s, la <color=yellow>Canalizzazione</color> di questo Ricordo viene <color=yellow>potenziata</color>, e lancia <color=yellow>Luce Solare</color> su tutti i nemici circostanti già <color=yellow>In Fiamme</color>. La <color=yellow>Luce Solare</color> infligge  <sprite=1><color=#fff><gradient=sv_ap>360%</gradient></color><sprite=5>  di <color=yellow>danno da fuoco</color> nell'arco di 1.5 s e aumenta gli accumuli di <color=yellow>ustione</color> di  9<sprite=5> .\nIl mio danno da fuoco nel tempo aumenta del 100%.",
     "rawDesc": "Ogni {0} s, la <color=yellow>Canalizzazione</color> di questo Ricordo viene <color=yellow>potenziata</color>, e lancia <color=yellow>Luce Solare</color> su tutti i nemici circostanti già <color=yellow>In Fiamme</color>. La <color=yellow>Luce Solare</color> infligge {1} di <color=yellow>danno da fuoco</color> nell'arco di {2} s e aumenta gli accumuli di <color=yellow>ustione</color> di {3}.\nIl mio danno da fuoco nel tempo aumenta del {4}.",
     "rawDescVars": [
       {
@@ -2458,7 +2517,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>360%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>360%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor * tickCount",
         "scalingType": "unknown",
@@ -2472,7 +2531,7 @@
         "data": {}
       },
       {
-        "rendered": "9<sprite=5>",
+        "rendered": " 9<sprite=5> ",
         "format": "#,##0",
         "raw": "calTotalStack",
         "scalingType": "unknown",
@@ -2498,7 +2557,7 @@
   },
   "Gem_L_SuppressedArcanum": {
     "name": "Arcanum Represso",
-    "description": "Quando <color=yellow>lanci</color> questo Ricordo, sacrifichi il 5% dei PV massimi attuali per creare un'<color=yellow>Esplosione Dorata</color>. I nemici colpiti dall'<color=yellow>Esplosione</color> subiscono <sprite=1><color=#16D7FF>240%</color><sprite=5> di <color=yellow>danno da luce</color>, mentre gli alleati ricevono uno <color=yellow>scudo</color> di <sprite=1><color=#16D7FF>61%</color><sprite=5> che dura 2.5 s. Se i tuoi PV sono inferiori al 60%, il <color=yellow>valore dello scudo</color> di questo Ricordo aumenta del 50%.",
+    "description": "Quando <color=yellow>lanci</color> questo Ricordo, sacrifichi il 5% dei PV massimi attuali per creare un'<color=yellow>Esplosione Dorata</color>. I nemici colpiti dall'<color=yellow>Esplosione</color> subiscono  <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><sprite=5>  di <color=yellow>danno da luce</color>, mentre gli alleati ricevono uno <color=yellow>scudo</color> di  <sprite=1><color=#fff><gradient=sv_ap>61%</gradient></color><sprite=5>  che dura 2.5 s. Se i tuoi PV sono inferiori al 60%, il <color=yellow>valore dello scudo</color> di questo Ricordo aumenta del 50%.",
     "rawDesc": "Quando <color=yellow>lanci</color> questo Ricordo, sacrifichi il {0} dei PV massimi attuali per creare un'<color=yellow>Esplosione Dorata</color>. I nemici colpiti dall'<color=yellow>Esplosione</color> subiscono {1} di <color=yellow>danno da luce</color>, mentre gli alleati ricevono uno <color=yellow>scudo</color> di {2} che dura {3} s. Se i tuoi PV sono inferiori al {4}, il <color=yellow>valore dello scudo</color> di questo Ricordo aumenta del {5}.",
     "rawDescVars": [
       {
@@ -2515,7 +2574,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>240%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -2528,7 +2587,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>61%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>61%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -2593,7 +2652,7 @@
   },
   "Gem_R_Abyss": {
     "name": "Essenza dell'Abisso",
-    "description": "Tutti i <color=yellow>danni</color> inflitti da questo ricordo vengono convertiti in <color=yellow>Danno Oscuro</color>. Se il bersaglio <color=yellow>colpito</color> da questo ricordo ha 3 o più accumulazioni di <color=yellow>Oscurità</color>, attiva un <color=yellow>Effetto d'attacco</color> con una probabilità del 43%<sprite=5>.",
+    "description": "Tutti i <color=yellow>danni</color> inflitti da questo ricordo vengono convertiti in <color=yellow>Danno Oscuro</color>. Se il bersaglio <color=yellow>colpito</color> da questo ricordo ha 3 o più accumulazioni di <color=yellow>Oscurità</color>, attiva un <color=yellow>Effetto d'attacco</color> con una probabilità del  43%<sprite=5> .",
     "rawDesc": "Tutti i <color=yellow>danni</color> inflitti da questo ricordo vengono convertiti in <color=yellow>Danno Oscuro</color>. Se il bersaglio <color=yellow>colpito</color> da questo ricordo ha {0} o più accumulazioni di <color=yellow>Oscurità</color>, attiva un <color=yellow>Effetto d'attacco</color> con una probabilità del {1}.",
     "rawDescVars": [
       {
@@ -2610,7 +2669,7 @@
         }
       },
       {
-        "rendered": "43%<sprite=5>",
+        "rendered": " 43%<sprite=5> ",
         "format": "P0",
         "raw": "atkEffectChance",
         "scalingType": "unknown",
@@ -2630,11 +2689,11 @@
   },
   "Gem_R_Accuracy": {
     "name": "Essenza della Precisione",
-    "description": "Quando questo Ricordo infligge <color=yellow>danno</color> a un nemico distante, spara un <color=yellow>proiettile aggiuntivo</color> che infligge il 50%<sprite=5> di <color=yellow>danno</color>. Questo <color=yellow>proiettile</color> condivide lo stesso tipo di elemento del <color=yellow>danno</color> originale.",
+    "description": "Quando questo Ricordo infligge <color=yellow>danno</color> a un nemico distante, spara un <color=yellow>proiettile aggiuntivo</color> che infligge il  50%<sprite=5>  di <color=yellow>danno</color>. Questo <color=yellow>proiettile</color> condivide lo stesso tipo di elemento del <color=yellow>danno</color> originale.",
     "rawDesc": "Quando questo Ricordo infligge <color=yellow>danno</color> a un nemico distante, spara un <color=yellow>proiettile aggiuntivo</color> che infligge il {0} di <color=yellow>danno</color>. Questo <color=yellow>proiettile</color> condivide lo stesso tipo di elemento del <color=yellow>danno</color> originale.",
     "rawDescVars": [
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "damageRatio",
         "scalingType": "basic",
@@ -2657,7 +2716,7 @@
   },
   "Gem_R_Adventure": {
     "name": "Essenza dell'Avventura",
-    "description": "Ogni volta che ti <color=yellow>sposti</color> in un <color=yellow>nuovo luogo</color>, <color=yellow>aumenta</color> di +10% la <color=yellow>qualità</color> di un'altra <color=yellow>Essenza</color> equipaggiata in questo Ricordo e ottieni 19<sprite=5> oro.",
+    "description": "Ogni volta che ti <color=yellow>sposti</color> in un <color=yellow>nuovo luogo</color>, <color=yellow>aumenta</color> di +10% la <color=yellow>qualità</color> di un'altra <color=yellow>Essenza</color> equipaggiata in questo Ricordo e ottieni  19<sprite=5>  oro.",
     "rawDesc": "Ogni volta che ti <color=yellow>sposti</color> in un <color=yellow>nuovo luogo</color>, <color=yellow>aumenta</color> di +{0} la <color=yellow>qualità</color> di un'altra <color=yellow>Essenza</color> equipaggiata in questo Ricordo e ottieni {1} oro.",
     "rawDescVars": [
       {
@@ -2674,7 +2733,7 @@
         }
       },
       {
-        "rendered": "19<sprite=5>",
+        "rendered": " 19<sprite=5> ",
         "format": "#,##0",
         "raw": "goldAmount",
         "scalingType": "basic",
@@ -2697,11 +2756,11 @@
   },
   "Gem_R_Blade": {
     "name": "Essenza della Lama",
-    "description": "Ogni volta che questo Ricordo <color=yellow>colpisce</color> un nemico, evoca lame che lo tagliano 3<sprite=5> volte, infliggendo <sprite=2><color=#FF8A2D>58%</color><sprite=5> di danno ciascuna. Si può attivare solo una volta ogni 2 s per ogni nemico.",
+    "description": "Ogni volta che questo Ricordo <color=yellow>colpisce</color> un nemico, evoca lame che lo tagliano  3<sprite=5>  volte, infliggendo  <sprite=2><color=#fff><gradient=sv_ad>69%</gradient></color><sprite=5>  di danno ciascuna. Si può attivare solo una volta ogni 2 s per ogni nemico.",
     "rawDesc": "Ogni volta che questo Ricordo <color=yellow>colpisce</color> un nemico, evoca lame che lo tagliano {0} volte, infliggendo {1} di danno ciascuna. Si può attivare solo una volta ogni {2} s per ogni nemico.",
     "rawDescVars": [
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0",
         "raw": "baseCount",
         "scalingType": "basic",
@@ -2714,14 +2773,14 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>58%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>69%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 0.55,
+          "basicAD": 0.66,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.0005
         }
@@ -2750,11 +2809,11 @@
   },
   "Gem_R_Bleak": {
     "name": "Essenza della Desolazione",
-    "description": "Aumenta del 50%<sprite=5> il danno inflitto da questo Ricordo ai nemici sotto l'effetto di <color=yellow>gelo</color> o in stato di <color=yellow>rallentamento</color>, <color=yellow>immobilizzazione</color> o <color=yellow>stordimento</color>.",
+    "description": "Aumenta del  50%<sprite=5>  il danno inflitto da questo Ricordo ai nemici sotto l'effetto di <color=yellow>gelo</color> o in stato di <color=yellow>rallentamento</color>, <color=yellow>immobilizzazione</color> o <color=yellow>stordimento</color>.",
     "rawDesc": "Aumenta del {0} il danno inflitto da questo Ricordo ai nemici sotto l'effetto di <color=yellow>gelo</color> o in stato di <color=yellow>rallentamento</color>, <color=yellow>immobilizzazione</color> o <color=yellow>stordimento</color>.",
     "rawDescVars": [
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -2847,16 +2906,16 @@
   },
   "Gem_R_Celestial": {
     "name": "Essenza Celeste",
-    "description": "Ogni 10 s, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>. Quando il <color=yellow>lancio potenziato</color> colpisce per la prima volta un singolo nemico, evoca 4 stelle cadenti che infliggono <sprite=1><color=#16D7FF>130%</color><sprite=5> di <color=yellow>danno da luce</color>.",
+    "description": "Ogni 8 s, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>. Quando il <color=yellow>lancio potenziato</color> colpisce per la prima volta un singolo nemico, evoca 4 stelle cadenti che infliggono  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5>  di <color=yellow>danno da luce</color>.",
     "rawDesc": "Ogni {0} s, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>. Quando il <color=yellow>lancio potenziato</color> colpisce per la prima volta un singolo nemico, evoca {1} stelle cadenti che infliggono {2} di <color=yellow>danno da luce</color>.",
     "rawDescVars": [
       {
-        "rendered": "10",
+        "rendered": "8",
         "format": "#,##0.#",
         "raw": "cooldownTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 8.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2877,7 +2936,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "starDamage",
         "scalingType": "basic",
@@ -2902,11 +2961,11 @@
   },
   "Gem_R_Composure": {
     "name": "Essenza della Compostezza",
-    "description": "Quando <color=yellow>lanci</color> questo Ricordo, la tua <color=yellow>probabilità critico</color> aumenta del 30%<sprite=5> per 5 s. Questo effetto termina in anticipo se subisci danni da un nemico.",
+    "description": "Quando <color=yellow>lanci</color> questo Ricordo, la tua <color=yellow>probabilità critico</color> aumenta del  30%<sprite=5>  per 5 s. Questo effetto termina in anticipo se subisci danni da un nemico.",
     "rawDesc": "Quando <color=yellow>lanci</color> questo Ricordo, la tua <color=yellow>probabilità critico</color> aumenta del {0} per {1} s. Questo effetto termina in anticipo se subisci danni da un nemico.",
     "rawDescVars": [
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": " 30%<sprite=5> ",
         "format": "P0",
         "raw": "critBonus",
         "scalingType": "basic",
@@ -2942,11 +3001,11 @@
   },
   "Gem_R_Contempt": {
     "name": "Essenza del Disprezzo",
-    "description": "Il <color=yellow>danno</color> inflitto da questo Ricordo aumenta quanto più bassi sono i PV del nemico, fino a un massimo del 50%<sprite=5> di <color=yellow>aumento</color> quando i PV sono al 20%.",
+    "description": "Il <color=yellow>danno</color> inflitto da questo Ricordo aumenta quanto più bassi sono i PV del nemico, fino a un massimo del  50%<sprite=5>  di <color=yellow>aumento</color> quando i PV sono al 20%.",
     "rawDesc": "Il <color=yellow>danno</color> inflitto da questo Ricordo aumenta quanto più bassi sono i PV del nemico, fino a un massimo del {0} di <color=yellow>aumento</color> quando i PV sono al {1}.",
     "rawDescVars": [
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "amp",
         "scalingType": "basic",
@@ -2982,7 +3041,7 @@
   },
   "Gem_R_Dusk": {
     "name": "Essenza del Crepuscolo",
-    "description": "Quando lanci questo Ricordo, per 5 s, ogni volta che <color=yellow>attacchi</color> un nemico, scagli 2 <color=yellow>frammenti del crepuscolo</color> che infliggono <sprite=2><color=#FF8A2D>30%</color><sprite=5> di <color=yellow>danno da oscurità</color>.",
+    "description": "Quando lanci questo Ricordo, per 5 s, ogni volta che <color=yellow>attacchi</color> un nemico, scagli 2 <color=yellow>frammenti del crepuscolo</color> che infliggono  <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5>  di <color=yellow>danno da oscurità</color>.",
     "rawDesc": "Quando lanci questo Ricordo, per {0} s, ogni volta che <color=yellow>attacchi</color> un nemico, scagli {1} <color=yellow>frammenti del crepuscolo</color> che infliggono {2} di <color=yellow>danno da oscurità</color>.",
     "rawDescVars": [
       {
@@ -3012,7 +3071,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>30%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3036,13 +3095,73 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Epiphany": {
+    "name": "Essenza dell'Epifania",
+    "description": "Quando <color=yellow>lanci</color> questo Ricordo, il tuo <color=yellow>Potere delle Abilità</color> aumenta di  22<sprite=5>  per 5 s. Se questo Ricordo è un'<color=yellow>Abilità Suprema</color>, restituisce istantaneamente  21%<sprite=5>  del suo <color=yellow>Tempo di recupero</color>. Può attivarsi solo una volta ogni 10 s.",
+    "rawDesc": "Quando <color=yellow>lanci</color> questo Ricordo, il tuo <color=yellow>Potere delle Abilità</color> aumenta di {0} per {1} s. Se questo Ricordo è un'<color=yellow>Abilità Suprema</color>, restituisce istantaneamente {2} del suo <color=yellow>Tempo di recupero</color>. Può attivarsi solo una volta ogni {3} s.",
+    "rawDescVars": [
+      {
+        "rendered": " 22<sprite=5> ",
+        "format": "#,##0",
+        "raw": "apEmpowerAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 21%<sprite=5> ",
+        "format": "P0",
+        "raw": "refundCooldownRatio",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Epiphany.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Flow": {
     "name": "Essenza del Flusso",
-    "description": "Quando infliggi <color=yellow>danno da luce</color> con qualsiasi Ricordo, il <color=yellow>tempo di recupero</color> di questo ricordo si riduce del 6%<sprite=5>. Per le Abilità Supreme, l'effetto è solo del 40%. La riduzione del <color=yellow>tempo di recupero</color> che questo Ricordo riceve si applica anche alle <color=yellow>Essenze</color> equipaggiate.",
+    "description": "Quando infliggi <color=yellow>danno da luce</color> con qualsiasi Ricordo, il <color=yellow>tempo di recupero</color> di questo ricordo si riduce del  6%<sprite=5> . Per le Abilità Supreme, l'effetto è solo del 40%. La riduzione del <color=yellow>tempo di recupero</color> che questo Ricordo riceve si applica anche alle <color=yellow>Essenze</color> equipaggiate.",
     "rawDesc": "Quando infliggi <color=yellow>danno da luce</color> con qualsiasi Ricordo, il <color=yellow>tempo di recupero</color> di questo ricordo si riduce del {0}. Per le Abilità Supreme, l'effetto è solo del {1}. La riduzione del <color=yellow>tempo di recupero</color> che questo Ricordo riceve si applica anche alle <color=yellow>Essenze</color> equipaggiate.",
     "rawDescVars": [
       {
-        "rendered": "6%<sprite=5>",
+        "rendered": " 6%<sprite=5> ",
         "format": "P0",
         "raw": "reduceRatio",
         "scalingType": "basic",
@@ -3080,11 +3199,11 @@
   },
   "Gem_R_Frost": {
     "name": "Essenza del Gelo",
-    "description": "Quando infliggi <color=yellow>danno da gelo</color> con questo Ricordo, il <color=yellow>danno da gelo</color> è pari al 10%<sprite=5> dei <color=yellow>PV massimi</color> e <color=yellow>stordisci</color> brevemente il bersaglio. Si può attivare solo una volta ogni 5 s per nemico. Ad ogni attivazione, i tuoi <color=yellow>PV massimi</color> aumentano permanentemente di 1.",
+    "description": "Quando infliggi <color=yellow>danno da gelo</color> con questo Ricordo, il <color=yellow>danno da gelo</color> è pari al  10%<sprite=5>  dei <color=yellow>PV massimi</color> e <color=yellow>stordisci</color> brevemente il bersaglio. Si può attivare solo una volta ogni 5 s per nemico. Ad ogni attivazione, i tuoi <color=yellow>PV massimi</color> aumentano permanentemente di 1.",
     "rawDesc": "Quando infliggi <color=yellow>danno da gelo</color> con questo Ricordo, il <color=yellow>danno da gelo</color> è pari al {0} dei <color=yellow>PV massimi</color> e <color=yellow>stordisci</color> brevemente il bersaglio. Si può attivare solo una volta ogni {1} s per nemico. Ad ogni attivazione, i tuoi <color=yellow>PV massimi</color> aumentano permanentemente di {2}.",
     "rawDescVars": [
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": " 10%<sprite=5> ",
         "format": "P0",
         "raw": "damageRatio",
         "scalingType": "basic",
@@ -3136,11 +3255,11 @@
   },
   "Gem_R_Glaciate": {
     "name": "Essenza del Congelamento",
-    "description": "Quando <color=yellow>lanci</color> questo Ricordo, emana un'esplosione di gelo che infligge <sprite=1><color=#16D7FF>160%</color><sprite=5> di <color=yellow>danno da gelo</color> ai nemici. L'area d'effetto aumenta con la qualità.",
+    "description": "Quando <color=yellow>lanci</color> questo Ricordo, emana un'esplosione di gelo che infligge  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5>  di <color=yellow>danno da gelo</color> ai nemici. L'area d'effetto aumenta con la qualità.",
     "rawDesc": "Quando <color=yellow>lanci</color> questo Ricordo, emana un'esplosione di gelo che infligge {0} di <color=yellow>danno da gelo</color> ai nemici. L'area d'effetto aumenta con la qualità.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3165,11 +3284,11 @@
   },
   "Gem_R_Insatiable": {
     "name": "Essenza dell'Insaziabilità",
-    "description": "Dopo aver lanciato questo Ricordo, aumenta la <color=yellow>potenza d'attacco</color> del 15%<sprite=5> e <color=yellow>recupera</color> 6<sprite=5> PV ogni volta che effettui un <color=yellow>attacco</color> per 5 s.",
+    "description": "Dopo aver lanciato questo Ricordo, aumenta la <color=yellow>potenza d'attacco</color> del  15%<sprite=5>  e <color=yellow>recupera</color>  6<sprite=5>  PV ogni volta che effettui un <color=yellow>attacco</color> per 5 s.",
     "rawDesc": "Dopo aver lanciato questo Ricordo, aumenta la <color=yellow>potenza d'attacco</color> del {0} e <color=yellow>recupera</color> {1} PV ogni volta che effettui un <color=yellow>attacco</color> per {2} s.",
     "rawDescVars": [
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "bonusAttackDamagePercentage",
         "scalingType": "basic",
@@ -3182,7 +3301,7 @@
         }
       },
       {
-        "rendered": "6<sprite=5>",
+        "rendered": " 6<sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -3221,11 +3340,11 @@
   },
   "Gem_R_Momentum": {
     "name": "Essenza dello Slancio",
-    "description": "Ogni volta che <color=yellow>attacchi</color> un nemico, il <color=yellow>tempo di recupero</color> di questo Ricordo si <color=yellow>riduce</color> di 0.4<sprite=5> s.",
+    "description": "Ogni volta che <color=yellow>attacchi</color> un nemico, il <color=yellow>tempo di recupero</color> di questo Ricordo si <color=yellow>riduce</color> di  0.4<sprite=5>  s.",
     "rawDesc": "Ogni volta che <color=yellow>attacchi</color> un nemico, il <color=yellow>tempo di recupero</color> di questo Ricordo si <color=yellow>riduce</color> di {0} s.",
     "rawDescVars": [
       {
-        "rendered": "0.4<sprite=5>",
+        "rendered": " 0.4<sprite=5> ",
         "format": "#,##0.#",
         "raw": "reductionAmount",
         "scalingType": "basic",
@@ -3248,13 +3367,40 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Mortality": {
+    "name": "Essenza della Mortalità",
+    "description": "Quando questo Ricordo <color=yellow>colpisce</color> un nemico, ha una probabilità del  1.2%<sprite=5>  di <color=yellow>giustiziare</color> i nemici non boss.",
+    "rawDesc": "Quando questo Ricordo <color=yellow>colpisce</color> un nemico, ha una probabilità del {0} di <color=yellow>giustiziare</color> i nemici non boss.",
+    "rawDescVars": [
+      {
+        "rendered": " 1.2%<sprite=5> ",
+        "format": "#,##0.#%",
+        "raw": "killChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.006,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Mortality.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_NightSky": {
     "name": "Essenza del Cielo Notturno",
-    "description": "Ogni volta che questo Ricordo <color=yellow>colpisce</color> un nemico, la tua <color=yellow>velocità d'attacco</color> aumenta del 10%<sprite=5> per 3 s, fino a un massimo del 20%<sprite=5>. Se infliggi <color=yellow>danno da oscurità</color>, può aumentare fino a un massimo del 40%<sprite=5>. La durata di questo effetto si azzera ogni volta che <color=yellow>attacchi</color> un nemico.",
+    "description": "Ogni volta che questo Ricordo <color=yellow>colpisce</color> un nemico, la tua <color=yellow>velocità d'attacco</color> aumenta del  10%<sprite=5>  per 3 s, fino a un massimo del  20%<sprite=5> . Se infliggi <color=yellow>danno da oscurità</color>, può aumentare fino a un massimo del  40%<sprite=5> . La durata di questo effetto si azzera ogni volta che <color=yellow>attacchi</color> un nemico.",
     "rawDesc": "Ogni volta che questo Ricordo <color=yellow>colpisce</color> un nemico, la tua <color=yellow>velocità d'attacco</color> aumenta del {0} per {1} s, fino a un massimo del {2}. Se infliggi <color=yellow>danno da oscurità</color>, può aumentare fino a un massimo del {3}. La durata di questo effetto si azzera ogni volta che <color=yellow>attacchi</color> un nemico.",
     "rawDescVars": [
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": " 10%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "perHitAtkSpd",
         "scalingType": "basic",
@@ -3280,7 +3426,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "maxAtkSpdNormal",
         "scalingType": "basic",
@@ -3293,7 +3439,7 @@
         }
       },
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "maxAtkSpdDark",
         "scalingType": "basic",
@@ -3319,11 +3465,11 @@
   },
   "Gem_R_Panic": {
     "name": "Essenza del Panico",
-    "description": "Quando subisci qualsiasi <color=yellow>danno</color>, questo Ricordo ottiene 30<sprite=5> di <color=yellow>celerità del Ricordo</color> e la tua <color=yellow>velocità di movimento</color> aumenta del 20%<sprite=5> per 3 s.",
+    "description": "Quando subisci qualsiasi <color=yellow>danno</color>, questo Ricordo ottiene  30<sprite=5>  di <color=yellow>celerità del Ricordo</color> e la tua <color=yellow>velocità di movimento</color> aumenta del  20%<sprite=5>  per 3 s.",
     "rawDesc": "Quando subisci qualsiasi <color=yellow>danno</color>, questo Ricordo ottiene {0} di <color=yellow>celerità del Ricordo</color> e la tua <color=yellow>velocità di movimento</color> aumenta del {1} per {2} s.",
     "rawDescVars": [
       {
-        "rendered": "30<sprite=5>",
+        "rendered": " 30<sprite=5> ",
         "format": "#,##0",
         "raw": "memoryHaste",
         "scalingType": "basic",
@@ -3336,7 +3482,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -3374,7 +3520,7 @@
   },
   "Gem_R_Rejuvenation": {
     "name": "Essenza del Ringiovanimento",
-    "description": "Ogni 15 s, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>. Il <color=yellow>lancio potenziato</color> <color=yellow>cura</color> i <color=yellow>propri</color> <color=yellow>PV</color> per il 14%<sprite=5> del <color=yellow>danno</color> inflitto entro 1.5 s dopo il lancio.",
+    "description": "Ogni 15 s, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>. Il <color=yellow>lancio potenziato</color> <color=yellow>cura</color> i <color=yellow>propri</color> <color=yellow>PV</color> per il  14%<sprite=5>  del <color=yellow>danno</color> inflitto entro 1.5 s dopo il lancio.",
     "rawDesc": "Ogni {0} s, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>. Il <color=yellow>lancio potenziato</color> <color=yellow>cura</color> i <color=yellow>propri</color> <color=yellow>PV</color> per il {1} del <color=yellow>danno</color> inflitto entro {2} s dopo il lancio.",
     "rawDescVars": [
       {
@@ -3391,7 +3537,7 @@
         }
       },
       {
-        "rendered": "14%<sprite=5>",
+        "rendered": " 14%<sprite=5> ",
         "format": "P0",
         "raw": "conversionRatio",
         "scalingType": "basic",
@@ -3429,18 +3575,18 @@
   },
   "Gem_R_Ricochet": {
     "name": "Essenza del Rimbalzo",
-    "description": "Il <color=yellow>danno</color> o la <color=yellow>cura</color> di questo Ricordo ha una probabilità del 50%<sprite=5> di rimbalzare su un altro bersaglio nelle vicinanze, infliggendo <color=yellow>danno</color> o applicando <color=yellow>cura</color> pari al 90%<sprite=5>. Se è un <color=yellow>danno</color>, condivide il tipo elementale del danno originale.",
+    "description": "Il <color=yellow>danno</color> o la <color=yellow>cura</color> di questo Ricordo ha una probabilità del  50%<sprite=5>  di rimbalzare su un altro bersaglio nelle vicinanze, infliggendo <color=yellow>danno</color> o applicando <color=yellow>cura</color> pari al  90%<sprite=5> . Se è un <color=yellow>danno</color>, condivide il tipo elementale del danno originale.",
     "rawDesc": "Il <color=yellow>danno</color> o la <color=yellow>cura</color> di questo Ricordo ha una probabilità del {0} di rimbalzare su un altro bersaglio nelle vicinanze, infliggendo <color=yellow>danno</color> o applicando <color=yellow>cura</color> pari al {1}. Se è un <color=yellow>danno</color>, condivide il tipo elementale del danno originale.",
     "rawDescVars": [
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "ricochetChance",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "90%<sprite=5>",
+        "rendered": " 90%<sprite=5> ",
         "format": "P0",
         "raw": "ricochetRatio",
         "scalingType": "basic",
@@ -3463,11 +3609,11 @@
   },
   "Gem_R_Rigidity": {
     "name": "Essenza della Rigidità",
-    "description": "Quando questo Ricordo <color=yellow>colpisce</color> un nemico, ottieni uno <color=yellow>scudo</color> di 9<sprite=5> che dura per 2 s. Nel caso sia <color=yellow>danno da gelo</color>, questo effetto aumenta del 80%.",
+    "description": "Quando questo Ricordo <color=yellow>colpisce</color> un nemico, ottieni uno <color=yellow>scudo</color> di  9<sprite=5>  che dura per 2 s. Nel caso sia <color=yellow>danno da gelo</color>, questo effetto aumenta del 80%.",
     "rawDesc": "Quando questo Ricordo <color=yellow>colpisce</color> un nemico, ottieni uno <color=yellow>scudo</color> di {0} che dura per {1} s. Nel caso sia <color=yellow>danno da gelo</color>, questo effetto aumenta del {2}.",
     "rawDescVars": [
       {
-        "rendered": "9<sprite=5>",
+        "rendered": " 9<sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -3512,11 +3658,11 @@
   },
   "Gem_R_Scorched": {
     "name": "Essenza di Bruciatura",
-    "description": "Quando <color=yellow>lanci</color> questo Ricordo, invochi 3<sprite=5> <color=yellow>palle di fuoco</color> che infliggono <sprite=1><color=#16D7FF>47%</color><sprite=5> di <color=yellow>danno da fuoco</color> ai nemici nelle vicinanze.",
+    "description": "Quando <color=yellow>lanci</color> questo Ricordo, invochi  3<sprite=5>  <color=yellow>palle di fuoco</color> che infliggono  <sprite=1><color=#fff><gradient=sv_ap>47%</gradient></color><sprite=5>  di <color=yellow>danno da fuoco</color> ai nemici nelle vicinanze.",
     "rawDesc": "Quando <color=yellow>lanci</color> questo Ricordo, invochi {0} <color=yellow>palle di fuoco</color> che infliggono {1} di <color=yellow>danno da fuoco</color> ai nemici nelle vicinanze.",
     "rawDescVars": [
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0",
         "raw": "maxCount",
         "scalingType": "basic",
@@ -3529,7 +3675,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>47%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>47%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -3554,7 +3700,7 @@
   },
   "Gem_R_Shock": {
     "name": "Essenza dello Shock",
-    "description": "Ogni 4° <color=yellow>attacco base</color> viene <color=yellow>potenziato</color> e scagli un <color=yellow>Fulmine</color> che rimbalza tra i nemici, infliggendo fino a 2 volte <sprite=1><color=#16D7FF>40%</color><sprite=5> di <color=yellow>danno da luce</color>. Ogni 20% di <color=yellow>probabilità critico</color> aumenta il numero massimo di colpi di 1.",
+    "description": "Ogni 4° <color=yellow>attacco base</color> viene <color=yellow>potenziato</color> e scagli un <color=yellow>Fulmine</color> che rimbalza tra i nemici, infliggendo fino a 2 volte  <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5>  di <color=yellow>danno da luce</color>. Ogni 20% di <color=yellow>probabilità critico</color> aumenta il numero massimo di colpi di 1.",
     "rawDesc": "Ogni 4° <color=yellow>attacco base</color> viene <color=yellow>potenziato</color> e scagli un <color=yellow>Fulmine</color> che rimbalza tra i nemici, infliggendo fino a {0} volte {1} di <color=yellow>danno da luce</color>. Ogni {2} di <color=yellow>probabilità critico</color> aumenta il numero massimo di colpi di 1.",
     "rawDescVars": [
       {
@@ -3571,7 +3717,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>40%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "chainDamage",
         "scalingType": "basic",
@@ -3610,11 +3756,11 @@
   },
   "Gem_R_Snow": {
     "name": "Essenza della Neve",
-    "description": "Ottieni uno scudo di 40<sprite=5> che si ricarica dopo non aver subito danni per 5 s. Quando hai lo scudo, scagli periodicamente una palla di neve a un nemico casuale nelle vicinanze, infliggendo <sprite=1><color=#16D7FF>80%</color><sprite=5> di <color=yellow>danno da gelo</color>. La velocità di lancio aumenta con la quantità di scudo rimanente.",
+    "description": "Ottieni uno scudo di  40<sprite=5>  che si ricarica dopo non aver subito danni per 5 s. Quando hai lo scudo, scagli periodicamente una palla di neve a un nemico casuale nelle vicinanze, infliggendo  <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5>  di <color=yellow>danno da gelo</color>. La velocità di lancio aumenta con la quantità di scudo rimanente.",
     "rawDesc": "Ottieni uno scudo di {0} che si ricarica dopo non aver subito danni per {1} s. Quando hai lo scudo, scagli periodicamente una palla di neve a un nemico casuale nelle vicinanze, infliggendo {2} di <color=yellow>danno da gelo</color>. La velocità di lancio aumenta con la quantità di scudo rimanente.",
     "rawDescVars": [
       {
-        "rendered": "40<sprite=5>",
+        "rendered": " 40<sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -3640,7 +3786,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>80%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3666,11 +3812,11 @@
   },
   "Gem_R_Spiral": {
     "name": "Essenza del Vortice",
-    "description": "Scaglia periodicamente palle di fuoco verso un nemico casuale nelle vicinanze, infliggendo <sprite=1><color=#16D7FF>90%</color><sprite=5> di <color=yellow>danno da fuoco</color>. Maggiore è la qualità, più veloce sarà la frequenza di lancio.",
+    "description": "Scaglia periodicamente palle di fuoco verso un nemico casuale nelle vicinanze, infliggendo  <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5>  di <color=yellow>danno da fuoco</color>. Maggiore è la qualità, più veloce sarà la frequenza di lancio.",
     "rawDesc": "Scaglia periodicamente palle di fuoco verso un nemico casuale nelle vicinanze, infliggendo {0} di <color=yellow>danno da fuoco</color>. Maggiore è la qualità, più veloce sarà la frequenza di lancio.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3695,7 +3841,7 @@
   },
   "Gem_R_Stillness": {
     "name": "Essenza dell'Immobilità",
-    "description": "Ogni 5 secondi, il <color=yellow>lancio</color> di questa memoria viene <color=yellow>potenziato</color>. Durante il <color=yellow>lancio potenziato</color>, emana luce che infligge <sprite=1><color=#16D7FF>200%</color><sprite=5> di <color=yellow>danno da luce</color> ai nemici e li <color=yellow>stordisce</color> per 2 secondi. All'aumentare della qualità, il raggio di emanazione si espande.",
+    "description": "Ogni 5 secondi, il <color=yellow>lancio</color> di questa memoria viene <color=yellow>potenziato</color>. Durante il <color=yellow>lancio potenziato</color>, emana luce che infligge  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  di <color=yellow>danno da luce</color> ai nemici e li <color=yellow>stordisce</color> per 2 secondi. All'aumentare della qualità, il raggio di emanazione si espande.",
     "rawDesc": "Ogni {0} secondi, il <color=yellow>lancio</color> di questa memoria viene <color=yellow>potenziato</color>. Durante il <color=yellow>lancio potenziato</color>, emana luce che infligge {1} di <color=yellow>danno da luce</color> ai nemici e li <color=yellow>stordisce</color> per {2} secondi. All'aumentare della qualità, il raggio di emanazione si espande.",
     "rawDescVars": [
       {
@@ -3712,7 +3858,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3751,7 +3897,7 @@
   },
   "Gem_R_Wealth": {
     "name": "Essenza della Ricchezza",
-    "description": "Se un nemico danneggiato da questo Ricordo viene eliminato entro 2 s, lascia cadere 1.7<sprite=5> oro. L'oro è condiviso tra tutti i Viaggiatori.",
+    "description": "Se un nemico danneggiato da questo Ricordo viene eliminato entro 2 s, lascia cadere  1.7<sprite=5>  oro. L'oro è condiviso tra tutti i Viaggiatori.",
     "rawDesc": "Se un nemico danneggiato da questo Ricordo viene eliminato entro {0} s, lascia cadere {1} oro. L'oro è condiviso tra tutti i Viaggiatori.",
     "rawDescVars": [
       {
@@ -3768,7 +3914,7 @@
         }
       },
       {
-        "rendered": "1.7<sprite=5>",
+        "rendered": " 1.7<sprite=5> ",
         "format": "###,0.#",
         "raw": "killGold",
         "scalingType": "basic",
@@ -3791,11 +3937,11 @@
   },
   "Gem_R_Wound": {
     "name": "Essenza della Ferita",
-    "description": "Quando questo Ricordo infligge danno a un nemico, applica un <color=yellow>Marchio</color>. Ogni <color=yellow>attacco</color> contro il <color=yellow>Marchio</color> infligge <sprite=1><color=#16D7FF>44%</color><sprite=5> di <color=yellow>danno</color>. Dopo 3 attacchi, il <color=yellow>Marchio</color> esplode infliggendo <sprite=1><color=#16D7FF>275%</color><sprite=5> di <color=yellow>danno</color> a tutti i nemici nell'area.",
+    "description": "Quando questo Ricordo infligge danno a un nemico, applica un <color=yellow>Marchio</color>. Ogni <color=yellow>attacco</color> contro il <color=yellow>Marchio</color> infligge  <sprite=1><color=#fff><gradient=sv_ap>44%</gradient></color><sprite=5>  di <color=yellow>danno</color>. Dopo 3 attacchi, il <color=yellow>Marchio</color> esplode infliggendo  <sprite=1><color=#fff><gradient=sv_ap>275%</gradient></color><sprite=5>  di <color=yellow>danno</color> a tutti i nemici nell'area.",
     "rawDesc": "Quando questo Ricordo infligge danno a un nemico, applica un <color=yellow>Marchio</color>. Ogni <color=yellow>attacco</color> contro il <color=yellow>Marchio</color> infligge {0} di <color=yellow>danno</color>. Dopo {1} attacchi, il <color=yellow>Marchio</color> esplode infliggendo {2} di <color=yellow>danno</color> a tutti i nemici nell'area.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>44%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>44%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "hitDamage",
         "scalingType": "basic",
@@ -3821,7 +3967,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>275%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>275%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "explodeDamage",
         "scalingType": "basic",
@@ -3846,7 +3992,7 @@
   },
   "Gem_U_EternalFlame": {
     "name": "Fiamma Eterna",
-    "description": "Quando infliggi <color=yellow>danno da fuoco</color> con questo Ricordo, applichi la maledizione <color=yellow>Fiamma Eterna</color> al nemico per 5 s. Ogni volta che il nemico maledetto da <color=yellow>Fiamma Eterna</color> subisce <color=yellow>qualsiasi danno</color> da parte tua, aumenta di 1 gli accumuli di <color=yellow>ustione</color>.\nTutto il danno inflitto da questo Ricordo aumenta del 2.0%<sprite=5> per ogni accumulo di <color=yellow>ustione</color> sul bersaglio.",
+    "description": "Quando infliggi <color=yellow>danno da fuoco</color> con questo Ricordo, applichi la maledizione <color=yellow>Fiamma Eterna</color> al nemico per 5 s. Ogni volta che il nemico maledetto da <color=yellow>Fiamma Eterna</color> subisce <color=yellow>qualsiasi danno</color> da parte tua, aumenta di 1 gli accumuli di <color=yellow>ustione</color>.\nTutto il danno inflitto da questo Ricordo aumenta del  2.0%<sprite=5>  per ogni accumulo di <color=yellow>ustione</color> sul bersaglio.",
     "rawDesc": "Quando infliggi <color=yellow>danno da fuoco</color> con questo Ricordo, applichi la maledizione <color=yellow>Fiamma Eterna</color> al nemico per {0} s. Ogni volta che il nemico maledetto da <color=yellow>Fiamma Eterna</color> subisce <color=yellow>qualsiasi danno</color> da parte tua, aumenta di 1 gli accumuli di <color=yellow>ustione</color>.\nTutto il danno inflitto da questo Ricordo aumenta del {1} per ogni accumulo di <color=yellow>ustione</color> sul bersaglio.",
     "rawDescVars": [
       {
@@ -3863,7 +4009,7 @@
         }
       },
       {
-        "rendered": "2.0%<sprite=5>",
+        "rendered": " 2.0%<sprite=5> ",
         "format": "#,##0.0%",
         "raw": "ampPerFireStack",
         "scalingType": "basic",
@@ -3888,7 +4034,7 @@
   },
   "Gem_U_GlacialCore": {
     "name": "Nucleo Glaciale",
-    "description": "Una volta ogni 5 s, quando infliggi <color=yellow>danno</color> con questo Ricordo, <color=yellow>recuperi</color> il 3.6%<sprite=5> dei PV massimi. Se è <color=yellow>danno da gelo</color>, l'effetto aumenta del 100%.\nOgni volta che <color=yellow>recuperi</color> PV, scagli <color=yellow>frammenti di ghiaccio</color> ai nemici vicini che infliggono <color=yellow>danno da gelo</color> pari al 272%<sprite=5> della <color=yellow>cura</color> ricevuta.",
+    "description": "Una volta ogni 5 s, quando infliggi <color=yellow>danno</color> con questo Ricordo, <color=yellow>recuperi</color> il  3.6%<sprite=5>  dei PV massimi. Se è <color=yellow>danno da gelo</color>, l'effetto aumenta del 100%.\nOgni volta che <color=yellow>recuperi</color> PV, scagli <color=yellow>frammenti di ghiaccio</color> ai nemici vicini che infliggono <color=yellow>danno da gelo</color> pari al  272%<sprite=5>  della <color=yellow>cura</color> ricevuta.",
     "rawDesc": "Una volta ogni {0} s, quando infliggi <color=yellow>danno</color> con questo Ricordo, <color=yellow>recuperi</color> il {1} dei PV massimi. Se è <color=yellow>danno da gelo</color>, l'effetto aumenta del {2}.\nOgni volta che <color=yellow>recuperi</color> PV, scagli <color=yellow>frammenti di ghiaccio</color> ai nemici vicini che infliggono <color=yellow>danno da gelo</color> pari al {3} della <color=yellow>cura</color> ricevuta.",
     "rawDescVars": [
       {
@@ -3905,7 +4051,7 @@
         }
       },
       {
-        "rendered": "3.6%<sprite=5>",
+        "rendered": " 3.6%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "healMaxHealthRatio",
         "scalingType": "basic",
@@ -3931,7 +4077,7 @@
         }
       },
       {
-        "rendered": "272%<sprite=5>",
+        "rendered": " 272%<sprite=5> ",
         "format": "P0",
         "raw": "healToDamageRatio",
         "scalingType": "basic",
@@ -3957,7 +4103,7 @@
   },
   "Gem_U_LastStarlight": {
     "name": "Ultima Luce Stellare",
-    "description": "Ogni 15 secondi, il <color=yellow>Lancio</color> di questo Ricordo viene <color=yellow>Potenziato</color>. Con un <color=yellow>Lancio Potenziato</color>, crei un buco nero nel punto di lancio che infligge <sprite=1><color=#16D7FF>160%</color><sprite=5> <color=yellow>Danno da Luce</color> al secondo per 5 secondi. \nTuttavia, se non è un Ricordo con lancio a bersaglio, il buco nero viene creato sulla posizione del nemico più vicino nella direzione in cui guardi.",
+    "description": "Ogni 15 secondi, il <color=yellow>Lancio</color> di questo Ricordo viene <color=yellow>Potenziato</color>. Con un <color=yellow>Lancio Potenziato</color>, crei un buco nero nel punto di lancio che infligge  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5>  <color=yellow>Danno da Luce</color> al secondo per 5 secondi. \nTuttavia, se non è un Ricordo con lancio a bersaglio, il buco nero viene creato sulla posizione del nemico più vicino nella direzione in cui guardi.",
     "rawDesc": "Ogni {0} secondi, il <color=yellow>Lancio</color> di questo Ricordo viene <color=yellow>Potenziato</color>. Con un <color=yellow>Lancio Potenziato</color>, crei un buco nero nel punto di lancio che infligge {1} <color=yellow>Danno da Luce</color> al secondo per {2} secondi. \nTuttavia, se non è un Ricordo con lancio a bersaglio, il buco nero viene creato sulla posizione del nemico più vicino nella direzione in cui guardi.",
     "rawDescVars": [
       {
@@ -3974,7 +4120,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "tickDamage/tickInterval",
         "scalingType": "unknown",

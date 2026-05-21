@@ -14,11 +14,11 @@
   },
   "Gem_C_Charcoal": {
     "name": "Esencja Węgla Drzewnego",
-    "description": "Gdy to wspomnienie <color=yellow>Trafia</color> wroga, wystrzeliwuje odłamek węgla drzewnego, zadając <sprite=1><color=#16D7FF>60%</color><sprite=5> <color=yellow>Obrażeń</color>. Jeśli cel już jest <color=yellow>Podpalony</color>, zamiast tego zadanych zostaje <sprite=1><color=#16D7FF>100%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color>.",
+    "description": "Gdy to wspomnienie <color=yellow>Trafia</color> wroga, wystrzeliwuje odłamek węgla drzewnego, zadając  <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5>  <color=yellow>Obrażeń</color>. Jeśli cel już jest <color=yellow>Podpalony</color>, zamiast tego zadanych zostaje  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ognia</color>.",
     "rawDesc": "Gdy to wspomnienie <color=yellow>Trafia</color> wroga, wystrzeliwuje odłamek węgla drzewnego, zadając {0} <color=yellow>Obrażeń</color>. Jeśli cel już jest <color=yellow>Podpalony</color>, zamiast tego zadanych zostaje {1} <color=yellow>Obrażeń od Ognia</color>.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>60%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "normalDamage",
         "scalingType": "basic",
@@ -31,7 +31,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "fireDamage",
         "scalingType": "basic",
@@ -56,11 +56,11 @@
   },
   "Gem_C_Confidence": {
     "name": "Esencja Pewności Siebie",
-    "description": "To wspomnienie zwiększa liczbę obrażeń zadawanych pobliskim wrogom o 40%<sprite=5>.",
+    "description": "To wspomnienie zwiększa liczbę obrażeń zadawanych pobliskim wrogom o  40%<sprite=5> .",
     "rawDesc": "To wspomnienie zwiększa liczbę obrażeń zadawanych pobliskim wrogom o {0}.",
     "rawDescVars": [
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -85,11 +85,11 @@
   },
   "Gem_C_Efficiency": {
     "name": "Esencja Wydajności",
-    "description": "To wspomnienie zyskuje <color=yellow>Przyspieszenie Wspomnienia</color> o wartości 36<sprite=5>, a jego <color=yellow>Czas Odnawiania</color> zostaje skrócony o 26%<sprite=5>.",
+    "description": "To wspomnienie zyskuje <color=yellow>Przyspieszenie Wspomnienia</color> o wartości  36<sprite=5> , a jego <color=yellow>Czas Odnawiania</color> zostaje skrócony o  26%<sprite=5> .",
     "rawDesc": "To wspomnienie zyskuje <color=yellow>Przyspieszenie Wspomnienia</color> o wartości {0}, a jego <color=yellow>Czas Odnawiania</color> zostaje skrócony o {1}.",
     "rawDescVars": [
       {
-        "rendered": "36<sprite=5>",
+        "rendered": " 36<sprite=5> ",
         "format": "#,##0",
         "raw": "skillHaste",
         "scalingType": "basic",
@@ -102,7 +102,7 @@
         }
       },
       {
-        "rendered": "26%<sprite=5>",
+        "rendered": " 26%<sprite=5> ",
         "format": "P0",
         "raw": "reducedRatio",
         "scalingType": "unknown",
@@ -119,11 +119,11 @@
   },
   "Gem_C_Guidance": {
     "name": "Esencja Przewodnictwa",
-    "description": "<color=yellow>Stopień Leczenia</color> tego wspomnienia zostaje zwiększony o 40%<sprite=5>. Nadwyżka leczenia tego wspomnienia wynosi 30% i konwertowana jest na <color=yellow>Tarczę</color>, która utrzymuje się przez 2 sek.",
-    "rawDesc": "<color=yellow>Stopień Leczenia</color> tego wspomnienia zostaje zwiększony o {0}. Nadwyżka leczenia tego wspomnienia wynosi {1} i konwertowana jest na <color=yellow>Tarczę</color>, która utrzymuje się przez {2} sek.",
+    "description": "<color=yellow>Stopień Leczenia</color> tego wspomnienia zostaje zwiększony o  40%<sprite=5> . 30% nadwyżki leczenia z tego wspomnienia jest konwertowane na <color=yellow>Tarczę</color>, która utrzymuje się przez 2 sek. i zostaje nałożona na ciebie.",
+    "rawDesc": "<color=yellow>Stopień Leczenia</color> tego wspomnienia zostaje zwiększony o {0}. {1} nadwyżki leczenia z tego wspomnienia jest konwertowane na <color=yellow>Tarczę</color>, która utrzymuje się przez {2} sek. i zostaje nałożona na ciebie.",
     "rawDescVars": [
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "healAmp",
         "scalingType": "basic",
@@ -175,7 +175,7 @@
   },
   "Gem_C_Lethality": {
     "name": "Esencja Śmiertelności",
-    "description": "Wrogom, których zdrowie wynosi co najmniej 70%, to wspomnienie zadaje 60%<sprite=5> więcej obrażeń.",
+    "description": "Wrogom, których zdrowie wynosi co najmniej 70%, to wspomnienie zadaje  60%<sprite=5>  więcej obrażeń.",
     "rawDesc": "Wrogom, których zdrowie wynosi co najmniej {0}, to wspomnienie zadaje {1} więcej obrażeń.",
     "rawDescVars": [
       {
@@ -192,7 +192,7 @@
         }
       },
       {
-        "rendered": "60%<sprite=5>",
+        "rendered": " 60%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -215,11 +215,11 @@
   },
   "Gem_C_Love": {
     "name": "Esencja Miłości",
-    "description": "Gdy to wspomnienie <color=yellow>Odzyskuje</color> <color=yellow>Zdrowie</color> lub przyznaje <color=yellow>Tarczę</color> sojusznikowi, jego <color=yellow>Szybkość Ruchu</color> i <color=yellow>Szybkość Ataku</color> zwiększa się o 16%<sprite=5> na 2 sek. Efekt jest zmniejszony o 50%, gdy jest zastosowany względem siebie.",
+    "description": "Gdy to wspomnienie <color=yellow>Odzyskuje</color> <color=yellow>Zdrowie</color> lub przyznaje <color=yellow>Tarczę</color> sojusznikowi, jego <color=yellow>Szybkość Ruchu</color> i <color=yellow>Szybkość Ataku</color> zwiększa się o  16%<sprite=5>  na 2 sek. Efekt jest zmniejszony o 50%, gdy jest zastosowany względem siebie.",
     "rawDesc": "Gdy to wspomnienie <color=yellow>Odzyskuje</color> <color=yellow>Zdrowie</color> lub przyznaje <color=yellow>Tarczę</color> sojusznikowi, jego <color=yellow>Szybkość Ruchu</color> i <color=yellow>Szybkość Ataku</color> zwiększa się o {0} na {1} sek. Efekt jest zmniejszony o {2}, gdy jest zastosowany względem siebie.",
     "rawDescVars": [
       {
-        "rendered": "16%<sprite=5>",
+        "rendered": " 16%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "bonusAmount",
         "scalingType": "basic",
@@ -273,11 +273,11 @@
   },
   "Gem_C_Quicksilver": {
     "name": "Esencja Rtęci",
-    "description": "Po <color=yellow>Użyciu</color> tego wspomnienia lub zadaniu nim <color=yellow>Obrażeń od Ognia</color>, <color=yellow>Szybkość Ruchu</color> zwiększy się o 30%<sprite=5> i przez 2.5 sek. będzie wracać do normy.",
+    "description": "Po <color=yellow>Użyciu</color> tego wspomnienia lub zadaniu nim <color=yellow>Obrażeń od Ognia</color>, <color=yellow>Szybkość Ruchu</color> zwiększy się o  30%<sprite=5>  i przez 2.5 sek. będzie wracać do normy.",
     "rawDesc": "Po <color=yellow>Użyciu</color> tego wspomnienia lub zadaniu nim <color=yellow>Obrażeń od Ognia</color>, <color=yellow>Szybkość Ruchu</color> zwiększy się o {0} i przez {1} sek. będzie wracać do normy.",
     "rawDescVars": [
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": " 30%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -316,18 +316,18 @@
   },
   "Gem_C_Regeneration": {
     "name": "Esencja Regeneracji",
-    "description": "Dzięki <color=yellow>Użyciu</color> tego wspomnienia <color=yellow>w Bitwie</color>, w ciągu 7 sek. <color=yellow>Odzyskujesz</color> zdrowie o wartość 41<sprite=5>.",
+    "description": "Dzięki <color=yellow>Użyciu</color> tego wspomnienia <color=yellow>w Bitwie</color>, w ciągu 5 sek. <color=yellow>Odzyskujesz</color> zdrowie o wartość  51<sprite=5> .",
     "rawDesc": "Dzięki <color=yellow>Użyciu</color> tego wspomnienia <color=yellow>w Bitwie</color>, w ciągu {0} sek. <color=yellow>Odzyskujesz</color> zdrowie o wartość {1}.",
     "rawDescVars": [
       {
-        "rendered": "7",
+        "rendered": "5",
         "format": "#,##0.#",
         "raw": "totalTicks*tickInterval",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "41<sprite=5>",
+        "rendered": " 51<sprite=5> ",
         "format": "#,##0",
         "raw": "healPerTick * totalTicks",
         "scalingType": "unknown",
@@ -346,16 +346,16 @@
   },
   "Gem_C_Responsibility": {
     "name": "Esencja Odpowiedzialności",
-    "description": "Co 10 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. Po 1.2 sek. <color=yellow>Wzmocnionego Użycia</color> <sprite=2><color=#FF8A2D>400%</color><sprite=5> <color=yellow>Obrażeń</color> dzielonych jest pomiędzy wszystkich trafionych wrogów.",
+    "description": "Co 8 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. Po 1.2 sek. <color=yellow>Wzmocnionego Użycia</color>  <sprite=2><color=#fff><gradient=sv_ad>400%</gradient></color><sprite=5>  <color=yellow>Obrażeń</color> dzielonych jest pomiędzy wszystkich trafionych wrogów.",
     "rawDesc": "Co {0} sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. Po {1} sek. <color=yellow>Wzmocnionego Użycia</color> {2} <color=yellow>Obrażeń</color> dzielonych jest pomiędzy wszystkich trafionych wrogów.",
     "rawDescVars": [
       {
-        "rendered": "10",
+        "rendered": "8",
         "format": "#,##0.#",
         "raw": "cooldownTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 8.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -376,7 +376,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>400%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "totalDamage",
         "scalingType": "basic",
@@ -399,11 +399,11 @@
   },
   "Gem_C_Sharp": {
     "name": "Esencja Ostrości",
-    "description": "Podczas <color=yellow>Użycia</color> tego wspomnienia zadajesz <sprite=1><color=#16D7FF>90%</color><sprite=5> <color=yellow>Obrażeń</color> losowemu wrogowi, wystrzeliwując strzały x5.",
+    "description": "Podczas <color=yellow>Użycia</color> tego wspomnienia zadajesz  <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5>  <color=yellow>Obrażeń</color> losowemu wrogowi, wystrzeliwując strzały x5.",
     "rawDesc": "Podczas <color=yellow>Użycia</color> tego wspomnienia zadajesz {0} <color=yellow>Obrażeń</color> losowemu wrogowi, wystrzeliwując strzały x{1}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "arrowDamage",
         "scalingType": "basic",
@@ -439,16 +439,16 @@
   },
   "Gem_C_Shatter": {
     "name": "Esencja Rozbicia",
-    "description": "Co 10 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. <color=yellow>Wzmocnione Użycie</color> zwiększa liczbę obrażeń zadawanych wrogom o 40%<sprite=5>.W przypadku <color=yellow>Obrażeń od Światła</color> zwiększają się one o 72%<sprite=5>.",
+    "description": "Co 8 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. <color=yellow>Wzmocnione Użycie</color> zwiększa liczbę obrażeń zadawanych wrogom o  40%<sprite=5> .W przypadku <color=yellow>Obrażeń od Światła</color> zwiększają się one o  72%<sprite=5> .",
     "rawDesc": "Co {0} sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. <color=yellow>Wzmocnione Użycie</color> zwiększa liczbę obrażeń zadawanych wrogom o {1}.W przypadku <color=yellow>Obrażeń od Światła</color> zwiększają się one o {2}.",
     "rawDescVars": [
       {
-        "rendered": "10",
+        "rendered": "8",
         "format": "#,##0.#",
         "raw": "cooldownTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 8.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -456,7 +456,7 @@
         }
       },
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -469,7 +469,7 @@
         }
       },
       {
-        "rendered": "72%<sprite=5>",
+        "rendered": " 72%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmpLight",
         "scalingType": "basic",
@@ -494,11 +494,11 @@
   },
   "Gem_C_Sulfur": {
     "name": "Esencja Siarki",
-    "description": "Wszystkie <color=yellow>Obrażenia</color> zadawane przez to wspomnienie są zwiększane o 15%<sprite=5> i zamieniane na <color=yellow>Obrażenia od Ognia</color>. Moja obrażenia od ognia z czasem zwiększają się o 50%<sprite=5>.",
+    "description": "Wszystkie <color=yellow>Obrażenia</color> zadawane przez to wspomnienie są zwiększane o  15%<sprite=5>  i zamieniane na <color=yellow>Obrażenia od Ognia</color>. Moja obrażenia od ognia z czasem zwiększają się o  50%<sprite=5> .",
     "rawDesc": "Wszystkie <color=yellow>Obrażenia</color> zadawane przez to wspomnienie są zwiększane o {0} i zamieniane na <color=yellow>Obrażenia od Ognia</color>. Moja obrażenia od ognia z czasem zwiększają się o {1}.",
     "rawDescVars": [
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "P0",
         "raw": "ampAmount",
         "scalingType": "basic",
@@ -511,7 +511,7 @@
         }
       },
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "fireAmpBonus",
         "scalingType": "basic",
@@ -536,16 +536,16 @@
   },
   "Gem_C_Talc": {
     "name": "Esencja Talku",
-    "description": "Co 10 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. Pierwsza liczba obrażeń zadanych indywidualnemu przeciwnikowi poprzez <color=yellow>Wzmocnione Użycie</color> zwiększa się o <sprite=1><color=#16D7FF>400%</color><sprite=5>.",
+    "description": "Co 8 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. Pierwsza liczba obrażeń zadanych indywidualnemu przeciwnikowi poprzez <color=yellow>Wzmocnione Użycie</color> zwiększa się o  <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> .",
     "rawDesc": "Co {0} sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. Pierwsza liczba obrażeń zadanych indywidualnemu przeciwnikowi poprzez <color=yellow>Wzmocnione Użycie</color> zwiększa się o {1}.",
     "rawDescVars": [
       {
-        "rendered": "10",
+        "rendered": "8",
         "format": "#,##0.#",
         "raw": "cooldownTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 8.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -553,7 +553,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>400%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "addedDamage",
         "scalingType": "basic",
@@ -576,7 +576,7 @@
   },
   "Gem_C_Vengeance": {
     "name": "Esencja Zemsty",
-    "description": "Gdy otrzymasz jakiekolwiek obrażenia, wystrzeliwujesz w pobliskich wrogów Ostrza x2 zadające <sprite=1><color=#16D7FF>102%</color><sprite=5> <color=yellow>Obrażeń</color>. Po otrzymaniu obrażeń, <color=yellow>Liczba Obrażeń</color> i <color=yellow>Stopień Leczenia</color> tego wspomnienia wzrastają na 5 sek. o 34%<sprite=5>.",
+    "description": "Gdy otrzymasz jakiekolwiek obrażenia, wystrzeliwujesz w pobliskich wrogów Ostrza x2 zadające  <sprite=1><color=#fff><gradient=sv_ap>93%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Dodatkowe<sprite=3></color><color=#fff><gradient=sv_ahp>4%</gradient></color><sprite=5>  <color=yellow>Obrażeń</color>. Po otrzymaniu obrażeń, <color=yellow>Liczba Obrażeń</color> i <color=yellow>Stopień Leczenia</color> tego wspomnienia wzrastają na 5 sek. o  34%<sprite=5> .",
     "rawDesc": "Gdy otrzymasz jakiekolwiek obrażenia, wystrzeliwujesz w pobliskich wrogów Ostrza x{0} zadające {1} <color=yellow>Obrażeń</color>. Po otrzymaniu obrażeń, <color=yellow>Liczba Obrażeń</color> i <color=yellow>Stopień Leczenia</color> tego wspomnienia wzrastają na {2} sek. o {3}.",
     "rawDescVars": [
       {
@@ -593,13 +593,13 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>102%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>93%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Dodatkowe<sprite=3></color><color=#fff><gradient=sv_ahp>4%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.6,
+          "basicAP": 0.55,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.007
@@ -619,7 +619,7 @@
         }
       },
       {
-        "rendered": "34%<sprite=5>",
+        "rendered": " 34%<sprite=5> ",
         "format": "P0",
         "raw": "ampAmount",
         "scalingType": "basic",
@@ -644,7 +644,7 @@
   },
   "Gem_C_Void": {
     "name": "Esencja Pustki",
-    "description": "Po użyciu tej Pamięci, Twój następny <color=yellow>Atak</color> w ciągu 4 sek. eksploduje, zadając <sprite=2><color=#FF8A2D>150%</color><sprite=5> <color=yellow>Obrażeń od Ciemności</color> wybranemu celowi oraz przeciwnikom w jego pobliżu.",
+    "description": "Po użyciu tej Pamięci, Twój następny <color=yellow>Atak</color> w ciągu 4 sek. eksploduje, zadając  <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ciemności</color> wybranemu celowi oraz przeciwnikom w jego pobliżu.",
     "rawDesc": "Po użyciu tej Pamięci, Twój następny <color=yellow>Atak</color> w ciągu {0} sek. eksploduje, zadając {1} <color=yellow>Obrażeń od Ciemności</color> wybranemu celowi oraz przeciwnikom w jego pobliżu.",
     "rawDescVars": [
       {
@@ -661,7 +661,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>150%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -686,7 +686,7 @@
   },
   "Gem_C_Wind": {
     "name": "Esencja Wiatru",
-    "description": "Po użyciu tego wspomnienia, przez 5 sek. <color=yellow>Szybkość Ataku</color> wzrasta o 33%<sprite=5>.",
+    "description": "Po użyciu tego wspomnienia, przez 5 sek. <color=yellow>Szybkość Ataku</color> wzrasta o  33%<sprite=5> .",
     "rawDesc": "Po użyciu tego wspomnienia, przez {0} sek. <color=yellow>Szybkość Ataku</color> wzrasta o {1}.",
     "rawDescVars": [
       {
@@ -703,7 +703,7 @@
         }
       },
       {
-        "rendered": "33%<sprite=5>",
+        "rendered": " 33%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "hasteAmount",
         "scalingType": "basic",
@@ -726,11 +726,11 @@
   },
   "Gem_E_Aftershock": {
     "name": "Esencja Wstrząsu",
-    "description": "Po <color=yellow>Użyciu</color> tego wspomnienia, po chwili wystrzelona zostaje <color=yellow>Fala Uderzeniowa</color>, która zadaje <sprite=1><color=#16D7FF>200%</color><sprite=5><color=yellow>Obrażeń od Zimna</color> pobliskim wrogom i <color=yellow>Ogłusza</color> ich na 0.5 sek.\nZa każdego trafionego <color=yellow>Falą Uderzeniową</color> wroga otrzymujesz <color=yellow>Zbroję</color> x4<sprite=5>, maksymalnie do 22<sprite=5> <color=yellow>Zbroi</color>. Trafienie <color=yellow>Bossa</color> zapewnia <color=yellow>Zbroję</color> absolutną. Zbroja ta utrzymuje się do następnego <color=yellow>Użycia</color> tego wspomnienia.",
+    "description": "Po <color=yellow>Użyciu</color> tego wspomnienia, po chwili wystrzelona zostaje <color=yellow>Fala Uderzeniowa</color>, która zadaje  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Dodatkowe<sprite=3></color><color=#fff><gradient=sv_ahp>20%</gradient></color><sprite=5> <color=yellow>Obrażeń od Zimna</color> pobliskim wrogom i <color=yellow>Ogłusza</color> ich na 0.5 sek.\nZa każdego trafionego <color=yellow>Falą Uderzeniową</color> wroga otrzymujesz <color=yellow>Zbroję</color> x 4<sprite=5> , maksymalnie do  22<sprite=5>  <color=yellow>Zbroi</color>. Trafienie <color=yellow>Bossa</color> zapewnia <color=yellow>Zbroję</color> absolutną. Zbroja ta utrzymuje się do następnego <color=yellow>Użycia</color> tego wspomnienia.",
     "rawDesc": "Po <color=yellow>Użyciu</color> tego wspomnienia, po chwili wystrzelona zostaje <color=yellow>Fala Uderzeniowa</color>, która zadaje {0}<color=yellow>Obrażeń od Zimna</color> pobliskim wrogom i <color=yellow>Ogłusza</color> ich na {1} sek.\nZa każdego trafionego <color=yellow>Falą Uderzeniową</color> wroga otrzymujesz <color=yellow>Zbroję</color> x{2}, maksymalnie do {3} <color=yellow>Zbroi</color>. Trafienie <color=yellow>Bossa</color> zapewnia <color=yellow>Zbroję</color> absolutną. Zbroja ta utrzymuje się do następnego <color=yellow>Użycia</color> tego wspomnienia.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Dodatkowe<sprite=3></color><color=#fff><gradient=sv_ahp>20%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -756,7 +756,7 @@
         }
       },
       {
-        "rendered": "4<sprite=5>",
+        "rendered": " 4<sprite=5> ",
         "format": "#,##0",
         "raw": "armorPerHit",
         "scalingType": "basic",
@@ -769,7 +769,7 @@
         }
       },
       {
-        "rendered": "22<sprite=5>",
+        "rendered": " 22<sprite=5> ",
         "format": "#,##0",
         "raw": "armorPerHit*maxHitCount",
         "scalingType": "unknown",
@@ -784,9 +784,62 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_E_Apathy": {
+    "name": "Esencja Apatii",
+    "description": "Wszystkie obrażenia zadawane przez Podróżnika są zmniejszone o 25%. Jeśli ta Pamięć zada wrogowi <color=yellow>obrażenia od zimna</color>, <color=yellow>obrona</color> wzrasta o  22<sprite=5>  na 5 sek.",
+    "rawDesc": "Wszystkie obrażenia zadawane przez Podróżnika są zmniejszone o {0}. Jeśli ta Pamięć zada wrogowi <color=yellow>obrażenia od zimna</color>, <color=yellow>obrona</color> wzrasta o {1} na {2} sek.",
+    "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "reducedDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 22<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedArmorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Epic",
+    "tags": [],
+    "image": "Gem_E_Apathy.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_E_Blossom": {
     "name": "Esencja Kwitnienia",
-    "description": "Wszystkie <color=yellow>Obrażenia</color> zadawane przez to wspomnienie wrogom są zmniejszone o 70%. Gdy to wspomnienie zada <color=yellow>Obrażenia</color>, losowy pobliski sojusznik <color=yellow>Odzyskuje</color> <color=yellow>Zdrowie</color> równe 22%<sprite=5> z zadanych obrażeń.",
+    "description": "Wszystkie <color=yellow>Obrażenia</color> zadawane przez to wspomnienie wrogom są zmniejszone o 70%. Gdy to wspomnienie zada <color=yellow>Obrażenia</color>, losowy pobliski sojusznik <color=yellow>Odzyskuje</color> <color=yellow>Zdrowie</color> równe  22%<sprite=5>  z zadanych obrażeń.",
     "rawDesc": "Wszystkie <color=yellow>Obrażenia</color> zadawane przez to wspomnienie wrogom są zmniejszone o {0}. Gdy to wspomnienie zada <color=yellow>Obrażenia</color>, losowy pobliski sojusznik <color=yellow>Odzyskuje</color> <color=yellow>Zdrowie</color> równe {1} z zadanych obrażeń.",
     "rawDescVars": [
       {
@@ -803,7 +856,7 @@
         }
       },
       {
-        "rendered": "22%<sprite=5>",
+        "rendered": " 22%<sprite=5> ",
         "format": "P0",
         "raw": "conversionRatio",
         "scalingType": "basic",
@@ -828,11 +881,11 @@
   },
   "Gem_E_Clemency": {
     "name": "Esencja Łaski",
-    "description": "<color=yellow>Odzyskujesz</color> <color=yellow>Swoje</color> <color=yellow>Zdrowie</color> o wartość 4%<sprite=5> <color=yellow>Obrażeń</color> zadanych przez to wspomnienie.",
+    "description": "<color=yellow>Odzyskujesz</color> <color=yellow>Swoje</color> <color=yellow>Zdrowie</color> o wartość  4%<sprite=5>  <color=yellow>Obrażeń</color> zadanych przez to wspomnienie.",
     "rawDesc": "<color=yellow>Odzyskujesz</color> <color=yellow>Swoje</color> <color=yellow>Zdrowie</color> o wartość {0} <color=yellow>Obrażeń</color> zadanych przez to wspomnienie.",
     "rawDescVars": [
       {
-        "rendered": "4%<sprite=5>",
+        "rendered": " 4%<sprite=5> ",
         "format": "P0",
         "raw": "conversionRatio",
         "scalingType": "basic",
@@ -857,11 +910,11 @@
   },
   "Gem_E_Crimson": {
     "name": "Esencja Karmazynowa",
-    "description": "Co 4. <color=yellow>Atak Podstawowy</color> jest <color=yellow>Wzmocniony</color>, wywołując <color=yellow>Ciemnoczerwoną Eksplozję</color>, która zadaje przeciwnikom <sprite=2><color=#FF8A2D>100%</color><sprite=5> <color=yellow>Obrażeń od Ciemności</color>. Zasięg eksplozji rośnie wraz z <color=yellow>Szansą na Trafienie Krytyczne</color>. Za każdego wroga trafionego wybuchem <color=yellow>Odzyskujesz</color> <sprite=2><color=#FF8A2D>22%</color><sprite=5> życia, a jeśli trafi <color=yellow>Bossa</color>, ta ilość leczenia wzrasta o 100%.",
+    "description": "Co 4. <color=yellow>Atak Podstawowy</color> jest <color=yellow>Wzmocniony</color>, wywołując <color=yellow>Ciemnoczerwoną Eksplozję</color>, która zadaje przeciwnikom  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ciemności</color>. Zasięg eksplozji rośnie wraz z <color=yellow>Szansą na Trafienie Krytyczne</color>. Za każdego wroga trafionego wybuchem <color=yellow>Odzyskujesz</color>  <sprite=2><color=#fff><gradient=sv_ad>22%</gradient></color><sprite=5>  życia, a jeśli trafi <color=yellow>Bossa</color>, ta ilość leczenia wzrasta o 100%.",
     "rawDesc": "Co 4. <color=yellow>Atak Podstawowy</color> jest <color=yellow>Wzmocniony</color>, wywołując <color=yellow>Ciemnoczerwoną Eksplozję</color>, która zadaje przeciwnikom {0} <color=yellow>Obrażeń od Ciemności</color>. Zasięg eksplozji rośnie wraz z <color=yellow>Szansą na Trafienie Krytyczne</color>. Za każdego wroga trafionego wybuchem <color=yellow>Odzyskujesz</color> {1} życia, a jeśli trafi <color=yellow>Bossa</color>, ta ilość leczenia wzrasta o {2}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>100%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -874,7 +927,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>22%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>22%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "healPerHit",
         "scalingType": "basic",
@@ -913,16 +966,16 @@
   },
   "Gem_E_Direness": {
     "name": "Esencja Desperacji",
-    "description": "Im słabsze moje <color=yellow>Zdrowie</color>, tym krótszy <color=yellow>Czas Odnawiania</color> tego wspomnienia. Przy <color=yellow>Zdrowiu</color> o wartości 30% skraca się on maksymalnie o 55%<sprite=5>.",
+    "description": "Im słabsze moje <color=yellow>Zdrowie</color>, tym krótszy <color=yellow>Czas Odnawiania</color> tego wspomnienia. Przy <color=yellow>Zdrowiu</color> o wartości 50% skraca się on maksymalnie o  55%<sprite=5> .",
     "rawDesc": "Im słabsze moje <color=yellow>Zdrowie</color>, tym krótszy <color=yellow>Czas Odnawiania</color> tego wspomnienia. Przy <color=yellow>Zdrowiu</color> o wartości {0} skraca się on maksymalnie o {1}.",
     "rawDescVars": [
       {
-        "rendered": "30%",
+        "rendered": "50%",
         "format": "P0",
         "raw": "maxAbilityHasteHpThreshold",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.3,
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -930,7 +983,7 @@
         }
       },
       {
-        "rendered": "55%<sprite=5>",
+        "rendered": " 55%<sprite=5> ",
         "format": "P0",
         "raw": "maxReducedRatio",
         "scalingType": "unknown",
@@ -947,7 +1000,7 @@
   },
   "Gem_E_Domination": {
     "name": "Esencja Dominacji",
-    "description": "<color=yellow>Szansa na cios krytyczny</color> zwiększa się o 20%. Za każdym razem, gdy pakujesz kryta przeciwnikowi, Twoje <color=yellow>obrażenia krytyczne</color> rosną o 0.3%, aż do maksymalnie 20%<sprite=5>. ",
+    "description": "<color=yellow>Szansa na cios krytyczny</color> zwiększa się o 20%. Za każdym razem, gdy pakujesz kryta przeciwnikowi, Twoje <color=yellow>obrażenia krytyczne</color> rosną o 0.3%, aż do maksymalnie  20%<sprite=5> . ",
     "rawDesc": "<color=yellow>Szansa na cios krytyczny</color> zwiększa się o {0}. Za każdym razem, gdy pakujesz kryta przeciwnikowi, Twoje <color=yellow>obrażenia krytyczne</color> rosną o {1}, aż do maksymalnie {2}. ",
     "rawDescVars": [
       {
@@ -977,7 +1030,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "P0",
         "raw": "critAmpMaxValue",
         "scalingType": "basic",
@@ -1000,11 +1053,11 @@
   },
   "Gem_E_Fangs": {
     "name": "Esencja Kłów",
-    "description": "Co czwarty <color=yellow>Atak Podstawowy</color> zadaje <color=yellow>Trafienie Krytyczne</color>. Po aktywacji <color=yellow>Trafienia Krytycznego</color> <color=yellow>Czas Odnawiania</color> tego wspomnienia zostaje skrócony o 0.7<sprite=5> sek., a w pobliskich wrogów wystrzelone zostają 2 <color=yellow>Kły</color>, zadające każdemu <sprite=2><color=#FF8A2D>60%</color><sprite=5> <color=yellow>Obrażeń</color>.",
+    "description": "Co czwarty <color=yellow>Atak Podstawowy</color> zadaje <color=yellow>Trafienie Krytyczne</color>. Po aktywacji <color=yellow>Trafienia Krytycznego</color> <color=yellow>Czas Odnawiania</color> tego wspomnienia zostaje skrócony o  0.7<sprite=5>  sek., a w pobliskich wrogów wystrzelone zostają 2 <color=yellow>Kły</color>, zadające każdemu  <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5>  <color=yellow>Obrażeń</color>.",
     "rawDesc": "Co czwarty <color=yellow>Atak Podstawowy</color> zadaje <color=yellow>Trafienie Krytyczne</color>. Po aktywacji <color=yellow>Trafienia Krytycznego</color> <color=yellow>Czas Odnawiania</color> tego wspomnienia zostaje skrócony o {0} sek., a w pobliskich wrogów wystrzelone zostają 2 <color=yellow>Kły</color>, zadające każdemu {1} <color=yellow>Obrażeń</color>.",
     "rawDescVars": [
       {
-        "rendered": "0.7<sprite=5>",
+        "rendered": " 0.7<sprite=5> ",
         "format": "#,##0.#",
         "raw": "cooldownReductionOnCrit",
         "scalingType": "basic",
@@ -1017,7 +1070,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>60%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1040,7 +1093,7 @@
   },
   "Gem_E_Fever": {
     "name": "Esencja Gorączki",
-    "description": "To wspomnienie zadaje wrogowi <color=yellow>Obrażenia od Ognia</color>, wywołuje <color=yellow>Gorączkę</color>. Wróg z wywołaną <color=yellow>Gorączką</color> eksploduje po 2 sek., zadając sobie i pobliskim wrogom <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>Obrażenia od Ognia</color>. Zasięg eksplozji zwiększa się o 30%, a liczba obrażeń od eksplozji o 10% za każdy <color=yellow>Ładunek Ognia</color> zastosowany na celu.",
+    "description": "To wspomnienie zadaje wrogowi <color=yellow>Obrażenia od Ognia</color>, wywołuje <color=yellow>Gorączkę</color>. Wróg z wywołaną <color=yellow>Gorączką</color> eksploduje po 2 sek., zadając sobie i pobliskim wrogom  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5>  <color=yellow>Obrażenia od Ognia</color>. Zasięg eksplozji zwiększa się o 30%, a liczba obrażeń od eksplozji o 10% za każdy <color=yellow>Ładunek Ognia</color> zastosowany na celu.",
     "rawDesc": "To wspomnienie zadaje wrogowi <color=yellow>Obrażenia od Ognia</color>, wywołuje <color=yellow>Gorączkę</color>. Wróg z wywołaną <color=yellow>Gorączką</color> eksploduje po {0} sek., zadając sobie i pobliskim wrogom {1} <color=yellow>Obrażenia od Ognia</color>. Zasięg eksplozji zwiększa się o {2}, a liczba obrażeń od eksplozji o {3} za każdy <color=yellow>Ładunek Ognia</color> zastosowany na celu.",
     "rawDescVars": [
       {
@@ -1057,7 +1110,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -1108,11 +1161,11 @@
   },
   "Gem_E_Flexibility": {
     "name": "Esencja Elastyczności",
-    "description": "Gdy wspomnienie to jest w <color=yellow>Czasie Odnawiania</color>, otrzymana liczba obrażeń w wysokości 37%<sprite=5> jest <color=yellow>Dzielona</color> – obrażenia rozkładają się na okres 4 sek. Otrzymywana w ten sposób <color=yellow>Dzielona</color> liczba obrażeń jest zmniejszona o 20%.",
+    "description": "Gdy wspomnienie to jest w <color=yellow>Czasie Odnawiania</color>, otrzymana liczba obrażeń w wysokości  37%<sprite=5>  jest <color=yellow>Dzielona</color> – obrażenia rozkładają się na okres 4 sek. Otrzymywana w ten sposób <color=yellow>Dzielona</color> liczba obrażeń jest zmniejszona o 20%.",
     "rawDesc": "Gdy wspomnienie to jest w <color=yellow>Czasie Odnawiania</color>, otrzymana liczba obrażeń w wysokości {0} jest <color=yellow>Dzielona</color> – obrażenia rozkładają się na okres {1} sek. Otrzymywana w ten sposób <color=yellow>Dzielona</color> liczba obrażeń jest zmniejszona o {2}.",
     "rawDescVars": [
       {
-        "rendered": "37%<sprite=5>",
+        "rendered": " 37%<sprite=5> ",
         "format": "P0",
         "raw": "divMultiplier",
         "scalingType": "unknown",
@@ -1143,16 +1196,16 @@
   },
   "Gem_E_Insensitivity": {
     "name": "Esencja Obojętności",
-    "description": "Po <color=yellow>Użyciu</color> tego wspomnienia, przez 3 sek. rzucasz <color=yellow>Bomby</color> co 2m podczas każdego ruchu. Po krótkim czasie następuje eksplozja, zadająca wrogom <sprite=1><color=#16D7FF>140%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color>.",
+    "description": "Po <color=yellow>Użyciu</color> tego wspomnienia, przez 4 sek. rzucasz <color=yellow>Bomby</color> co 2m podczas każdego ruchu. Po krótkim czasie następuje eksplozja, zadająca wrogom  <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ognia</color>.",
     "rawDesc": "Po <color=yellow>Użyciu</color> tego wspomnienia, przez {0} sek. rzucasz <color=yellow>Bomby</color> co {1}m podczas każdego ruchu. Po krótkim czasie następuje eksplozja, zadająca wrogom {2} <color=yellow>Obrażeń od Ognia</color>.",
     "rawDescVars": [
       {
-        "rendered": "3",
+        "rendered": "4",
         "format": "#,##0.#",
         "raw": "duration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 3.0,
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1173,7 +1226,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>140%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -1198,11 +1251,11 @@
   },
   "Gem_E_Insight": {
     "name": "Esencja Wglądu",
-    "description": "Gdy wspomnienie to zada jakiekolwiek <color=yellow>Obrażenia</color> wrogowi, maksymalnie 3<sprite=5> z nich zadaje dodatkowo <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>Obrażeń od Światła</color>, a <color=yellow>Przyspieszenie Wspomnienia</color> zwiększa się na 5 sek. o 20<sprite=5>. Można je aktywować tylko raz na 3 sek.",
+    "description": "Gdy wspomnienie to zada jakiekolwiek <color=yellow>Obrażenia</color> wrogowi, maksymalnie  3<sprite=5>  z nich zadaje dodatkowo  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color>, a <color=yellow>Przyspieszenie Wspomnienia</color> zwiększa się na 5 sek. o  20<sprite=5> . Można je aktywować tylko raz na 3 sek.",
     "rawDesc": "Gdy wspomnienie to zada jakiekolwiek <color=yellow>Obrażenia</color> wrogowi, maksymalnie {0} z nich zadaje dodatkowo {1} <color=yellow>Obrażeń od Światła</color>, a <color=yellow>Przyspieszenie Wspomnienia</color> zwiększa się na {2} sek. o {3}. Można je aktywować tylko raz na {4} sek.",
     "rawDescVars": [
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0",
         "raw": "maxHitCount",
         "scalingType": "basic",
@@ -1215,7 +1268,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1241,7 +1294,7 @@
         }
       },
       {
-        "rendered": "20<sprite=5>",
+        "rendered": " 20<sprite=5> ",
         "format": "#,##0",
         "raw": "gainedAbilityHaste",
         "scalingType": "basic",
@@ -1279,11 +1332,11 @@
   },
   "Gem_E_Inversion": {
     "name": "Esencja Odwrócenia",
-    "description": "<color=yellow>Czas Odnawiania</color> tego wspomnienia zwiększa się o 15%<sprite=5>, ale jednocześnie <color=yellow>Liczba Obrażeń</color> zadawanych wrogom wzrasta o 20%<sprite=5>. <color=yellow>Obrażenia od Żywiołów</color> zadawane przez to wspomnienie zostają <color=yellow>Odwrócone</color>. (Ogień/Zimno, Światło/Ciemność)",
+    "description": "<color=yellow>Czas Odnawiania</color> tego wspomnienia zwiększa się o  15%<sprite=5> , ale jednocześnie <color=yellow>Liczba Obrażeń</color> zadawanych wrogom wzrasta o  20%<sprite=5> . <color=yellow>Obrażenia od Żywiołów</color> zadawane przez to wspomnienie zostają <color=yellow>Odwrócone</color>. (Ogień/Zimno, Światło/Ciemność)",
     "rawDesc": "<color=yellow>Czas Odnawiania</color> tego wspomnienia zwiększa się o {0}, ale jednocześnie <color=yellow>Liczba Obrażeń</color> zadawanych wrogom wzrasta o {1}. <color=yellow>Obrażenia od Żywiołów</color> zadawane przez to wspomnienie zostają <color=yellow>Odwrócone</color>. (Ogień/Zimno, Światło/Ciemność)",
     "rawDescVars": [
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "P0",
         "raw": "cooldownAmp",
         "scalingType": "basic",
@@ -1296,7 +1349,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -1319,11 +1372,11 @@
   },
   "Gem_E_Metal": {
     "name": "Esencja Metalu",
-    "description": "Gdy <color=yellow>Pokonasz</color> przeciwnika, <color=yellow>Czas Odnowienia</color> tej Pamięci skraca się o 1<sprite=5> sek.",
+    "description": "Gdy <color=yellow>Pokonasz</color> przeciwnika, <color=yellow>Czas Odnowienia</color> tej Pamięci skraca się o  1<sprite=5>  sek.",
     "rawDesc": "Gdy <color=yellow>Pokonasz</color> przeciwnika, <color=yellow>Czas Odnowienia</color> tej Pamięci skraca się o {0} sek.",
     "rawDescVars": [
       {
-        "rendered": "1<sprite=5>",
+        "rendered": " 1<sprite=5> ",
         "format": "#,##0.#",
         "raw": "cooldownReduction",
         "scalingType": "basic",
@@ -1346,16 +1399,16 @@
   },
   "Gem_E_Might": {
     "name": "Esencja Giganta",
-    "description": "Maksymalne zdrowie zwiększa się o 260<sprite=5>. Liczba obrażeń zadawanych wrogom przez to wspomnienie zwiększa się o 1% za każde 50 pkt. mojego <color=yellow>Maksymalnego Zdrowia</color>.",
+    "description": "Maksymalne zdrowie zwiększa się o  270<sprite=5> . Liczba obrażeń zadawanych wrogom przez to wspomnienie zwiększa się o 1% za każde 70 pkt. mojego <color=yellow>Maksymalnego Zdrowia</color>.",
     "rawDesc": "Maksymalne zdrowie zwiększa się o {0}. Liczba obrażeń zadawanych wrogom przez to wspomnienie zwiększa się o {1} za każde {2} pkt. mojego <color=yellow>Maksymalnego Zdrowia</color>.",
     "rawDescVars": [
       {
-        "rendered": "260<sprite=5>",
+        "rendered": " 270<sprite=5> ",
         "format": "#,##0",
         "raw": "healthBonus",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 130.0,
+          "basicConstant": 135.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -1376,12 +1429,12 @@
         }
       },
       {
-        "rendered": "50",
+        "rendered": "70",
         "format": "#,##0",
         "raw": "unitHealthAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 50.0,
+          "basicConstant": 70.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -1399,11 +1452,11 @@
   },
   "Gem_E_Obsidian": {
     "name": "Esencja Obsydianu",
-    "description": "Gdy <color=yellow>Użyjesz</color> tego wspomniena, twój następny atak zostaje wzmocniony, zadając celowi <sprite=2><color=#FF8A2D>250%</color><sprite=5><color=yellow>Obrażenia od Ciemności</color> i skracając <color=yellow>Czas Odnawiania</color> tego wspomnienia o 1<sprite=5>sek.",
+    "description": "Gdy <color=yellow>Użyjesz</color> tego wspomniena, twój następny atak zostaje wzmocniony, zadając celowi  <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> <color=yellow>Obrażenia od Ciemności</color> i skracając <color=yellow>Czas Odnawiania</color> tego wspomnienia o  1<sprite=5> sek.",
     "rawDesc": "Gdy <color=yellow>Użyjesz</color> tego wspomniena, twój następny atak zostaje wzmocniony, zadając celowi {0}<color=yellow>Obrażenia od Ciemności</color> i skracając <color=yellow>Czas Odnawiania</color> tego wspomnienia o {1}sek.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>250%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1416,7 +1469,7 @@
         }
       },
       {
-        "rendered": "1<sprite=5>",
+        "rendered": " 1<sprite=5> ",
         "format": "#,##0.#",
         "raw": "reducedCooldown",
         "scalingType": "basic",
@@ -1442,7 +1495,7 @@
   },
   "Gem_E_Omega": {
     "name": "Esencja Końca",
-    "description": "Gdy wspomnienie to nie jest w <color=yellow>Czasie Odnawiania</color>, co sekundę zyskujesz ładunek <color=yellow>Końca</color>, a maksymalnie do 20 ładunków. Gdy posiadasz ładunki, <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>, zwiększając <color=yellow>Liczbę Obrażeń</color> o 5%<sprite=5> za każdy ładunek.",
+    "description": "Gdy wspomnienie to nie jest w <color=yellow>Czasie Odnawiania</color>, co sekundę zyskujesz ładunek <color=yellow>Końca</color>, a maksymalnie do 20 ładunków. Gdy posiadasz ładunki, <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>, zwiększając <color=yellow>Liczbę Obrażeń</color> o  5%<sprite=5>  za każdy ładunek.",
     "rawDesc": "Gdy wspomnienie to nie jest w <color=yellow>Czasie Odnawiania</color>, co sekundę zyskujesz ładunek <color=yellow>Końca</color>, a maksymalnie do {0} ładunków. Gdy posiadasz ładunki, <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>, zwiększając <color=yellow>Liczbę Obrażeń</color> o {1} za każdy ładunek.",
     "rawDescVars": [
       {
@@ -1459,7 +1512,7 @@
         }
       },
       {
-        "rendered": "5%<sprite=5>",
+        "rendered": " 5%<sprite=5> ",
         "format": "P0",
         "raw": "chargeRate",
         "scalingType": "unknown",
@@ -1476,11 +1529,11 @@
   },
   "Gem_E_Opportunity": {
     "name": "Esencja Okazji",
-    "description": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, <color=yellow>Czas Odnawiania</color> <color=yellow>Sztuki Uniku</color> zostanie skrócony o 3<sprite=5> sek. Można je aktywować tylko raz na 8 sek.",
+    "description": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, <color=yellow>Czas Odnawiania</color> <color=yellow>Sztuki Uniku</color> zostanie skrócony o  3<sprite=5>  sek. Można je aktywować tylko raz na 8 sek.",
     "rawDesc": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, <color=yellow>Czas Odnawiania</color> <color=yellow>Sztuki Uniku</color> zostanie skrócony o {0} sek. Można je aktywować tylko raz na {1} sek.",
     "rawDescVars": [
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0.#",
         "raw": "reductionAmount",
         "scalingType": "basic",
@@ -1518,11 +1571,11 @@
   },
   "Gem_E_OurStory_Completed": {
     "name": "Nasza historia (zakończona!)",
-    "description": "<color=yellow>Moc Ataku</color> oraz <color=yellow>Moc Umiejętności</color> zwiększają się o 0, a wszystkie korzystne efekty <color=yellow>Zniekształconego Pędu</color> zwiększają się o 0.",
+    "description": "<color=yellow>Moc Ataku</color> oraz <color=yellow>Moc Umiejętności</color> zwiększają się o , a wszystkie korzystne efekty <color=yellow>Zniekształconego Pędu</color> zwiększają się o .",
     "rawDesc": "<color=yellow>Moc Ataku</color> oraz <color=yellow>Moc Umiejętności</color> zwiększają się o {0}, a wszystkie korzystne efekty <color=yellow>Zniekształconego Pędu</color> zwiększają się o {1}.",
     "rawDescVars": [
       {
-        "rendered": "0",
+        "rendered": "",
         "format": "#,##0'%'",
         "raw": "Gem_E_OurStory_Completed::statPercentage",
         "scalingType": "basic",
@@ -1535,7 +1588,7 @@
         }
       },
       {
-        "rendered": "0",
+        "rendered": "",
         "format": "#,##0",
         "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
         "scalingType": "unknown",
@@ -1605,7 +1658,7 @@
   },
   "Gem_E_Overload": {
     "name": "Esencja Przeciążenia",
-    "description": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, <color=yellow>Poświęcasz</color> 20% swojego obecnego zdrowia w celu <color=yellow>Wzmocnienia</color> <color=yellow>Użycia</color>. <color=yellow>Wzmocnienie Użycia</color> zwiększa zadawaną <color=yellow>Liczbę Obrażeń</color> i <color=yellow>Stopień Leczenia</color> o 45%<sprite=5>.",
+    "description": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, <color=yellow>Poświęcasz</color> 20% swojego obecnego zdrowia w celu <color=yellow>Wzmocnienia</color> <color=yellow>Użycia</color>. <color=yellow>Wzmocnienie Użycia</color> zwiększa zadawaną <color=yellow>Liczbę Obrażeń</color> i <color=yellow>Stopień Leczenia</color> o  45%<sprite=5> .",
     "rawDesc": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, <color=yellow>Poświęcasz</color> {0} swojego obecnego zdrowia w celu <color=yellow>Wzmocnienia</color> <color=yellow>Użycia</color>. <color=yellow>Wzmocnienie Użycia</color> zwiększa zadawaną <color=yellow>Liczbę Obrażeń</color> i <color=yellow>Stopień Leczenia</color> o {1}.",
     "rawDescVars": [
       {
@@ -1622,7 +1675,7 @@
         }
       },
       {
-        "rendered": "45%<sprite=5>",
+        "rendered": " 45%<sprite=5> ",
         "format": "P0",
         "raw": "amp",
         "scalingType": "basic",
@@ -1647,11 +1700,11 @@
   },
   "Gem_E_Pain": {
     "name": "Esencja Bólu",
-    "description": "Wszystkie <color=yellow>Obrażenia</color> zadawane przez to wspomnienie zadają dodatkowo 40%<sprite=5> <color=yellow>Obrażeń Obszarowych</color> wokół celu. <color=yellow>Obrażenia Obszarowe</color> reprezentują ten sam typ obrażeń i elementów co oryginalne obrażenia.",
+    "description": "Wszystkie <color=yellow>Obrażenia</color> zadawane przez to wspomnienie zadają dodatkowo  40%<sprite=5>  <color=yellow>Obrażeń Obszarowych</color> wokół celu. <color=yellow>Obrażenia Obszarowe</color> reprezentują ten sam typ obrażeń i elementów co oryginalne obrażenia.",
     "rawDesc": "Wszystkie <color=yellow>Obrażenia</color> zadawane przez to wspomnienie zadają dodatkowo {0} <color=yellow>Obrażeń Obszarowych</color> wokół celu. <color=yellow>Obrażenia Obszarowe</color> reprezentują ten sam typ obrażeń i elementów co oryginalne obrażenia.",
     "rawDescVars": [
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "damageRatio",
         "scalingType": "basic",
@@ -1674,16 +1727,16 @@
   },
   "Gem_E_Predation": {
     "name": "Esencja Drapieżnictwa",
-    "description": "To wspomnienie zwiększa <color=yellow>Obrażenia</color> zadawane <color=yellow>Bossom</color> i <color=yellow>Łowcom</color> o 60%<sprite=5>. Pokonując <color=yellow>Łowcę</color> wypadają <color=yellow>Kule Mocy</color> x1, a po zabiciu <color=yellow>Bossa</color> x3. Zebranie <color=yellow>Kuli Mocy</color> losowo na stałe zwiększa <color=yellow>Obrażenia Ataku</color> lub <color=yellow>Moc umiejętności</color> o 1.",
-    "rawDesc": "To wspomnienie zwiększa <color=yellow>Obrażenia</color> zadawane <color=yellow>Bossom</color> i <color=yellow>Łowcom</color> o {0}. Pokonując <color=yellow>Łowcę</color> wypadają <color=yellow>Kule Mocy</color> x{1}, a po zabiciu <color=yellow>Bossa</color> x{2}. Zebranie <color=yellow>Kuli Mocy</color> losowo na stałe zwiększa <color=yellow>Obrażenia Ataku</color> lub <color=yellow>Moc umiejętności</color> o 1.",
+    "description": "To wspomnienie zwiększa <color=yellow>Obrażenia</color> zadawane <color=yellow>Bossom</color> i <color=yellow>Łowcom</color> o  40%<sprite=5> . Po pokonaniu <color=yellow>Łowcy</color> wypada 1 <color=yellow>Kula Mocy</color>, a po zabiciu <color=yellow>Bossa</color> wypada ich 3. Zebranie <color=yellow>Kuli Mocy</color> zwiększa <color=yellow>Obrażenia Ataku</color> o 1, <color=yellow>Moc umiejętności</color> o 1 lub <color=yellow>Maksymalne zdrowie</color> o 5.",
+    "rawDesc": "To wspomnienie zwiększa <color=yellow>Obrażenia</color> zadawane <color=yellow>Bossom</color> i <color=yellow>Łowcom</color> o {0}. Po pokonaniu <color=yellow>Łowcy</color> wypada 1 <color=yellow>Kula Mocy</color>, a po zabiciu <color=yellow>Bossa</color> wypada ich {1}. Zebranie <color=yellow>Kuli Mocy</color> zwiększa <color=yellow>Obrażenia Ataku</color> o 1, <color=yellow>Moc umiejętności</color> o 1 lub <color=yellow>Maksymalne zdrowie</color> o {2}.",
     "rawDescVars": [
       {
-        "rendered": "60%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "P0",
         "raw": "amp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.3,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -1691,37 +1744,43 @@
         }
       },
       {
-        "rendered": "1",
+        "rendered": "3",
         "format": "#,##0",
-        "raw": "addedAp",
+        "raw": "bossMultiplier",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "addedHealth",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
-      },
-      {
-        "rendered": "3",
-        "format": "#,##0",
-        "raw": "addedAp*bossMultiplier",
-        "scalingType": "unknown",
-        "data": {}
       }
     ],
     "rarity": "Epic",
     "tags": [],
     "image": "Gem_E_Predation.png",
-    "lore": "Głód... zawsze głód.\nMoje gniazdo to góra kości.\nMięsa... pożywienia... wiecznie brak.\n\nAż tu nagle... coś nowego. Przyszło.\nZapach mięsa. Strach w powietrzu.\n\nKruszę kości. Rozszarpuję mięso. Połykam wrzaski.\nTo moja praca. To jest radość Przymusa.\n\nTy też... staniesz się kością.\nCzęścią mojego gniazda.\nPięknem krajobrazu Przymusa.\n\nChichot, chichot...",
+    "lore": "Głód... zawsze głód.\nMoje gniazdo to góra kości.\nMięsa... pożywienia... wiecznie brak.\n\nAż tu nagle... coś nowego. Przyszło.\nZapach mięsa. Strach w powietrzu.\n\nKruszę kości. Rozszarpuję mięso. Połykam wrzaski.\nTo moja praca. To jest radość Primusa.\n\nTy też... staniesz się kością.\nCzęścią mojego gniazda.\nPięknem krajobrazu Primusa.\n\nChichot, chichot...",
     "achievementKey": "ACH_WHOS_THE_PREY_NOW",
     "achievementName": "Kto tu jest teraz ofiarą?",
     "achievementDescription": "Eliminuj Tropiciela 70 razy."
   },
   "Gem_E_Protection": {
     "name": "Esencja Ochrony",
-    "description": "Po <color=yellow>Użyciu</color> tego wspomnienia otrzymujesz na 3 sek. <color=yellow>Zbroję</color> o wartości 40<sprite=5>, co zmniejsza otrzymywane obrażenia i zapewnia stan bycia <color=yellow>Niepowstrzymanym</color>. Efekt może być aktywowany tylko raz na 5 sek.",
+    "description": "Po <color=yellow>Użyciu</color> tego wspomnienia otrzymujesz na 3 sek. <color=yellow>Zbroję</color> o wartości  40<sprite=5> , co zmniejsza otrzymywane obrażenia i zapewnia stan bycia <color=yellow>Niepowstrzymanym</color>. Efekt może być aktywowany tylko raz na 5 sek.",
     "rawDesc": "Po <color=yellow>Użyciu</color> tego wspomnienia otrzymujesz na {0} sek. <color=yellow>Zbroję</color> o wartości {1}, co zmniejsza otrzymywane obrażenia i zapewnia stan bycia <color=yellow>Niepowstrzymanym</color>. Efekt może być aktywowany tylko raz na {2} sek.",
     "rawDescVars": [
       {
@@ -1738,7 +1797,7 @@
         }
       },
       {
-        "rendered": "40<sprite=5>",
+        "rendered": " 40<sprite=5> ",
         "format": "#,##0",
         "raw": "armorAmount",
         "scalingType": "basic",
@@ -1774,17 +1833,17 @@
   },
   "Gem_E_Reflex": {
     "name": "Esencja Refleksu",
-    "description": "Gdy dostaniesz jakiekolwiek <color=yellow>obrażenia</color>, wypluwasz zimno w stronę najbliższego przeciwnika, zadając <sprite=1><color=#16D7FF>120%</color><sprite=5> <color=yellow>obrażeń od Zimna</color> i odpychając go do tyłu, a przez 1.5 sekundy twoja <color=yellow>Obrona</color> wzrasta o 40<sprite=5>.",
+    "description": "Gdy dostaniesz jakiekolwiek <color=yellow>obrażenia</color>, wypluwasz zimno w stronę najbliższego przeciwnika, zadając  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Dodatkowe<sprite=3></color><color=#fff><gradient=sv_ahp>4%</gradient></color><sprite=5>  <color=yellow>obrażeń od Zimna</color> i odpychając go do tyłu, a przez 1.5 sekundy twoja <color=yellow>Obrona</color> wzrasta o  40<sprite=5> .",
     "rawDesc": "Gdy dostaniesz jakiekolwiek <color=yellow>obrażenia</color>, wypluwasz zimno w stronę najbliższego przeciwnika, zadając {0} <color=yellow>obrażeń od Zimna</color> i odpychając go do tyłu, a przez {1} sekundy twoja <color=yellow>Obrona</color> wzrasta o {2}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>120%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Dodatkowe<sprite=3></color><color=#fff><gradient=sv_ahp>4%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.6,
+          "basicAP": 0.5,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.01
@@ -1804,7 +1863,7 @@
         }
       },
       {
-        "rendered": "40<sprite=5>",
+        "rendered": " 40<sprite=5> ",
         "format": "#,##0",
         "raw": "armorFlatAmount",
         "scalingType": "basic",
@@ -1829,11 +1888,11 @@
   },
   "Gem_E_Thunder": {
     "name": "Esencja Grzmotu",
-    "description": "Gdy <color=yellow>Używasz</color> <color=yellow>Innego Wspomnienia</color> lub korzystasz z <color=yellow>Uniku</color>, zyskujesz 1 ładunek <color=yellow>Grzmotu</color>, a maksymalna ilość doładowań to 7<sprite=5>. Gdy <color=yellow>Używasz</color> tego wspomnienia, zużywasz wszystkie ładunki <color=yellow>Grzmotu</color>, rzucając tyle błyskawic na pobliskich wrogów, ile miałeś ładunków. Każda błyskawica zadaje <sprite=1><color=#16D7FF>117%</color><sprite=5> <color=yellow>Obrażeń od Światła</color>.",
+    "description": "Gdy <color=yellow>Używasz</color> <color=yellow>Innego Wspomnienia</color> lub korzystasz z <color=yellow>Uniku</color>, zyskujesz 1 ładunek <color=yellow>Grzmotu</color>, a maksymalna ilość doładowań to  7<sprite=5> . Gdy <color=yellow>Używasz</color> tego wspomnienia, zużywasz wszystkie ładunki <color=yellow>Grzmotu</color>, rzucając tyle błyskawic na pobliskich wrogów, ile miałeś ładunków. Każda błyskawica zadaje  <sprite=1><color=#fff><gradient=sv_ap>117%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color>.",
     "rawDesc": "Gdy <color=yellow>Używasz</color> <color=yellow>Innego Wspomnienia</color> lub korzystasz z <color=yellow>Uniku</color>, zyskujesz 1 ładunek <color=yellow>Grzmotu</color>, a maksymalna ilość doładowań to {0}. Gdy <color=yellow>Używasz</color> tego wspomnienia, zużywasz wszystkie ładunki <color=yellow>Grzmotu</color>, rzucając tyle błyskawic na pobliskich wrogów, ile miałeś ładunków. Każda błyskawica zadaje {1} <color=yellow>Obrażeń od Światła</color>.",
     "rawDescVars": [
       {
-        "rendered": "7<sprite=5>",
+        "rendered": " 7<sprite=5> ",
         "format": "#,##0",
         "raw": "maxCharge",
         "scalingType": "basic",
@@ -1846,7 +1905,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>117%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>117%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -1871,7 +1930,7 @@
   },
   "Gem_E_Twilight": {
     "name": "Esencja Zmroku",
-    "description": "<color=yellow>Ataki Podstawowe</color> zadają teraz <color=yellow>Obrażenia od Ciemności</color>. Gdy to wspomnienie zadaje obrażenia wrogowi, jeśli cel ma co najmniej <color=yellow>Ładunków Ciemności</color> x3, wszystkie te ładunki zostają zużyte, zadając <sprite=1><color=#16D7FF>54%</color><sprite=5> <color=yellow>Obrażeń</color> za każdy ładunek i <color=yellow>Odzyskując</color> zdrowie o wartości 6<sprite=5> za każdy ładunek.",
+    "description": "<color=yellow>Ataki Podstawowe</color> zadają teraz <color=yellow>Obrażenia od Ciemności</color>. Gdy to wspomnienie zadaje obrażenia wrogowi, jeśli cel ma co najmniej <color=yellow>Ładunków Ciemności</color> x3, wszystkie te ładunki zostają zużyte, zadając  <sprite=1><color=#fff><gradient=sv_ap>54%</gradient></color><sprite=5>  <color=yellow>Obrażeń</color> za każdy ładunek i <color=yellow>Odzyskując</color> zdrowie o wartości  6<sprite=5>  za każdy ładunek.",
     "rawDesc": "<color=yellow>Ataki Podstawowe</color> zadają teraz <color=yellow>Obrażenia od Ciemności</color>. Gdy to wspomnienie zadaje obrażenia wrogowi, jeśli cel ma co najmniej <color=yellow>Ładunków Ciemności</color> x{0}, wszystkie te ładunki zostają zużyte, zadając {1} <color=yellow>Obrażeń</color> za każdy ładunek i <color=yellow>Odzyskując</color> zdrowie o wartości {2} za każdy ładunek.",
     "rawDescVars": [
       {
@@ -1888,7 +1947,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>54%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>54%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgPerStack",
         "scalingType": "basic",
@@ -1901,7 +1960,7 @@
         }
       },
       {
-        "rendered": "6<sprite=5>",
+        "rendered": " 6<sprite=5> ",
         "format": "#,##0",
         "raw": "healPerStack",
         "scalingType": "basic",
@@ -1926,11 +1985,11 @@
   },
   "Gem_E_Umbra": {
     "name": "Esencja Cienia",
-    "description": "Obrażenia tej Pamięci rosną o 42%<sprite=5> za każdy punkt <color=yellow>szansy na kryta</color>. Jeśli te <color=yellow>obrażenia</color> to <color=yellow>Obrażenia od Ciemności</color>, to odzyskujesz <color=yellow>zdrowie</color> w wysokości 6%<sprite=5> zadanych obrażeń.",
+    "description": "Obrażenia tej Pamięci rosną o  42%<sprite=5>  za każdy punkt <color=yellow>szansy na kryta</color>. Jeśli te <color=yellow>obrażenia</color> to <color=yellow>Obrażenia od Ciemności</color>, to odzyskujesz <color=yellow>zdrowie</color> w wysokości  6%<sprite=5>  zadanych obrażeń.",
     "rawDesc": "Obrażenia tej Pamięci rosną o {0} za każdy punkt <color=yellow>szansy na kryta</color>. Jeśli te <color=yellow>obrażenia</color> to <color=yellow>Obrażenia od Ciemności</color>, to odzyskujesz <color=yellow>zdrowie</color> w wysokości {1} zadanych obrażeń.",
     "rawDescVars": [
       {
-        "rendered": "42%<sprite=5>",
+        "rendered": " 42%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmpCritConversionRatio",
         "scalingType": "basic",
@@ -1943,7 +2002,7 @@
         }
       },
       {
-        "rendered": "6%<sprite=5>",
+        "rendered": " 6%<sprite=5> ",
         "format": "P0",
         "raw": "conversionRatio",
         "scalingType": "basic",
@@ -1968,11 +2027,11 @@
   },
   "Gem_E_Virtuousness": {
     "name": "Esencja Szlachetności",
-    "description": "Liczba doładowań tego wspomnienia wzrasta o 1<sprite=5>. Za każdym razem, gdy jakość wzrasta o 150%, liczba ładowań wzrasta o 1.",
+    "description": "Liczba doładowań tego wspomnienia wzrasta o  1<sprite=5> . Za każdym razem, gdy jakość wzrasta o 150%, liczba ładowań wzrasta o 1.",
     "rawDesc": "Liczba doładowań tego wspomnienia wzrasta o {0}. Za każdym razem, gdy jakość wzrasta o {1}, liczba ładowań wzrasta o 1.",
     "rawDescVars": [
       {
-        "rendered": "1<sprite=5>",
+        "rendered": " 1<sprite=5> ",
         "format": "#,##0",
         "raw": "addedChargeInt",
         "scalingType": "unknown",
@@ -2002,18 +2061,18 @@
   },
   "Gem_L_CamillasGift": {
     "name": "Dar Kamilli",
-    "description": "Możesz dokonać <color=yellow>Sprzedaży</color> w sklepie, aby otrzymać Kawałki Złota x0. Za każdym razem, gdy przechodzisz do kolejnego świata, <color=yellow>Cena</color> <color=yellow>Wzrasta</color> o 0. Jeśli otrzymasz obrażenia od wrogów i twoje zdrowie spadnie poniżej 50%, przedmiot zostaje zniszczony.",
+    "description": "Możesz dokonać <color=yellow>Sprzedaży</color> w sklepie, aby otrzymać Kawałki Złota x. Za każdym razem, gdy przechodzisz do kolejnego świata, <color=yellow>Cena</color> <color=yellow>Wzrasta</color> o . Jeśli otrzymasz obrażenia od wrogów i twoje zdrowie spadnie poniżej 50%, przedmiot zostaje zniszczony.",
     "rawDesc": "Możesz dokonać <color=yellow>Sprzedaży</color> w sklepie, aby otrzymać Kawałki Złota x{0}. Za każdym razem, gdy przechodzisz do kolejnego świata, <color=yellow>Cena</color> <color=yellow>Wzrasta</color> o {1}. Jeśli otrzymasz obrażenia od wrogów i twoje zdrowie spadnie poniżej {2}, przedmiot zostaje zniszczony.",
     "rawDescVars": [
       {
-        "rendered": "0",
+        "rendered": "",
         "format": "#,##0",
         "raw": "currentSellGold",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "0",
+        "rendered": "",
         "format": "#,##0",
         "raw": "sellGoldIncreasePerWorld",
         "scalingType": "basic",
@@ -2049,11 +2108,11 @@
   },
   "Gem_L_ChaosApple": {
     "name": "Jabłko Chaosu",
-    "description": "Za każdym razem, gdy <color=yellow>Przemieszczasz się</color> przez <color=yellow>Szczelinę</color>, to wspomnienie zostaje <color=yellow>Zdegradowane</color> do innego losowego wspomnienia. <color=yellow>Czas Odnawiania</color> <color=yellow>Zdegradowanego</color> wspomnienia zostaje usunięty, ale możesz go <color=yellow>Użyć</color> tylko 4<sprite=5>razy na pokój.",
+    "description": "Za każdym razem, gdy <color=yellow>Przemieszczasz się</color> przez <color=yellow>Szczelinę</color>, to wspomnienie zostaje <color=yellow>Zdegradowane</color> do innego losowego wspomnienia. <color=yellow>Czas Odnawiania</color> <color=yellow>Zdegradowanego</color> wspomnienia zostaje usunięty, ale możesz go <color=yellow>Użyć</color> tylko  4<sprite=5> razy na pokój.",
     "rawDesc": "Za każdym razem, gdy <color=yellow>Przemieszczasz się</color> przez <color=yellow>Szczelinę</color>, to wspomnienie zostaje <color=yellow>Zdegradowane</color> do innego losowego wspomnienia. <color=yellow>Czas Odnawiania</color> <color=yellow>Zdegradowanego</color> wspomnienia zostaje usunięty, ale możesz go <color=yellow>Użyć</color> tylko {0}razy na pokój.",
     "rawDescVars": [
       {
-        "rendered": "4<sprite=5>",
+        "rendered": " 4<sprite=5> ",
         "format": "#,##0",
         "raw": "castPerRoomCount",
         "scalingType": "basic",
@@ -2076,11 +2135,11 @@
   },
   "Gem_L_DivineFaith": {
     "name": "Święta wiara",
-    "description": "Za każdym razem, gdy tym wspomnieniem <color=yellow>Eliminujesz</color> wroga, zyskujesz ładunek <color=yellow>Wiary</color>, do maksymalnie 75<sprite=5> ładunków. Na każdy ładunek <color=yellow>Wiary</color>, <color=yellow>Liczba Obrażeń</color> zadawanych przez to wspomnienie wrogom oraz <color=yellow>Odzyskane zdrowie</color> dawane sojusznikom wzrastają o 0.5%, a twoje maksymalne zdrowie zwiększa się o 4.",
+    "description": "Za każdym razem, gdy tym wspomnieniem <color=yellow>Eliminujesz</color> wroga, zyskujesz ładunek <color=yellow>Wiary</color>, do maksymalnie  75<sprite=5>  ładunków. Na każdy ładunek <color=yellow>Wiary</color>, <color=yellow>Liczba Obrażeń</color> zadawanych przez to wspomnienie wrogom oraz <color=yellow>Odzyskane zdrowie</color> dawane sojusznikom wzrastają o 0.4%, a twoje maksymalne zdrowie zwiększa się o 4.",
     "rawDesc": "Za każdym razem, gdy tym wspomnieniem <color=yellow>Eliminujesz</color> wroga, zyskujesz ładunek <color=yellow>Wiary</color>, do maksymalnie {0} ładunków. Na każdy ładunek <color=yellow>Wiary</color>, <color=yellow>Liczba Obrażeń</color> zadawanych przez to wspomnienie wrogom oraz <color=yellow>Odzyskane zdrowie</color> dawane sojusznikom wzrastają o {1}, a twoje maksymalne zdrowie zwiększa się o {2}.",
     "rawDescVars": [
       {
-        "rendered": "75<sprite=5>",
+        "rendered": " 75<sprite=5> ",
         "format": "#,##0",
         "raw": "maxStacks",
         "scalingType": "basic",
@@ -2093,12 +2152,12 @@
         }
       },
       {
-        "rendered": "0.5%",
+        "rendered": "0.4%",
         "format": "0.#%",
         "raw": "dmgAmpPerStack",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.005,
+          "basicConstant": 0.004,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -2129,11 +2188,11 @@
   },
   "Gem_L_Embertail": {
     "name": "Ognisty Ogon",
-    "description": "Mój <color=yellow>Atak</color> odbija się, zadając <sprite=1><color=#16D7FF>100%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color> jednemu z pobliskich wrogów. Za każdego pobliskiego wroga spowitego ogniem, <color=yellow>Liczba Obrażeń</color> i <color=yellow>Stopień Leczenia</color> tego wspomniena wzrastają o 8%<sprite=5>, a <color=yellow>Czas Odnawiania</color> szybko skraca się o 8%<sprite=5>. Moje obrażenia stałe zadawane ogniem wzrastają o 100%.",
+    "description": "Mój <color=yellow>Atak</color> odbija się, zadając  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ognia</color> jednemu z pobliskich wrogów. Za każdego pobliskiego wroga spowitego ogniem, <color=yellow>Liczba Obrażeń</color> i <color=yellow>Stopień Leczenia</color> tego wspomniena wzrastają o  8%<sprite=5> , a <color=yellow>Czas Odnawiania</color> szybko skraca się o  8%<sprite=5> . Moje obrażenia stałe zadawane ogniem wzrastają o 100%.",
     "rawDesc": "Mój <color=yellow>Atak</color> odbija się, zadając {0} <color=yellow>Obrażeń od Ognia</color> jednemu z pobliskich wrogów. Za każdego pobliskiego wroga spowitego ogniem, <color=yellow>Liczba Obrażeń</color> i <color=yellow>Stopień Leczenia</color> tego wspomniena wzrastają o {1}, a <color=yellow>Czas Odnawiania</color> szybko skraca się o {2}. Moje obrażenia stałe zadawane ogniem wzrastają o {3}.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>100%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -2146,7 +2205,7 @@
         }
       },
       {
-        "rendered": "8%<sprite=5>",
+        "rendered": " 8%<sprite=5> ",
         "format": "P0",
         "raw": "ampPerBurning",
         "scalingType": "basic",
@@ -2159,7 +2218,7 @@
         }
       },
       {
-        "rendered": "8%<sprite=5>",
+        "rendered": " 8%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "skillHastePerBurning",
         "scalingType": "basic",
@@ -2192,7 +2251,7 @@
   },
   "Gem_L_HeartOfGold": {
     "name": "Serce ze złota",
-    "description": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, korzystasz z 3% posiadanego złota, dla <color=yellow>Wzmocnienia</color> użycia. <color=yellow>Wzmocnione Użycie</color> zwiększa <color=yellow>Liczbę Obrażeń</color> i <color=yellow>Stopień Leczenia</color> proporcjonalnie do ilości posiadanego złota – o 12%<sprite=5> za każde 100 sztuk złota.\n",
+    "description": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, korzystasz z 3% posiadanego złota, dla <color=yellow>Wzmocnienia</color> użycia. <color=yellow>Wzmocnione Użycie</color> zwiększa <color=yellow>Liczbę Obrażeń</color> i <color=yellow>Stopień Leczenia</color> proporcjonalnie do ilości posiadanego złota – o  12%<sprite=5>  za każde 100 sztuk złota.\n",
     "rawDesc": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, korzystasz z {0} posiadanego złota, dla <color=yellow>Wzmocnienia</color> użycia. <color=yellow>Wzmocnione Użycie</color> zwiększa <color=yellow>Liczbę Obrażeń</color> i <color=yellow>Stopień Leczenia</color> proporcjonalnie do ilości posiadanego złota – o {1} za każde 100 sztuk złota.\n",
     "rawDescVars": [
       {
@@ -2209,7 +2268,7 @@
         }
       },
       {
-        "rendered": "12%<sprite=5>",
+        "rendered": " 12%<sprite=5> ",
         "format": "P0",
         "raw": "ampPerHundredGold",
         "scalingType": "basic",
@@ -2247,7 +2306,7 @@
   },
   "Gem_L_Paranoia": {
     "name": "Esencja Paranoi",
-    "description": "Gdy otrzymasz jakiekolwiek <color=yellow>Obrażenia</color>, na 6 sek. wspomnienie to zyskuje <color=yellow>Przyspieszenie Wspomnienia</color> o wartości 150<sprite=5>, a jego <color=yellow>Czas Odnawiania</color> zostaje zmniejszony o 60%<sprite=5>, ale następuje jego <color=yellow>Automatycznie Użycie</color> na pobliskich wrogach.",
+    "description": "Gdy otrzymasz jakiekolwiek <color=yellow>Obrażenia</color>, na 6 sek. wspomnienie to zyskuje <color=yellow>Przyspieszenie Wspomnienia</color> o wartości  150<sprite=5> , a jego <color=yellow>Czas Odnawiania</color> zostaje zmniejszony o  60%<sprite=5> , ale następuje jego <color=yellow>Automatycznie Użycie</color> na pobliskich wrogach.",
     "rawDesc": "Gdy otrzymasz jakiekolwiek <color=yellow>Obrażenia</color>, na {0} sek. wspomnienie to zyskuje <color=yellow>Przyspieszenie Wspomnienia</color> o wartości {1}, a jego <color=yellow>Czas Odnawiania</color> zostaje zmniejszony o {2}, ale następuje jego <color=yellow>Automatycznie Użycie</color> na pobliskich wrogach.",
     "rawDescVars": [
       {
@@ -2264,7 +2323,7 @@
         }
       },
       {
-        "rendered": "150<sprite=5>",
+        "rendered": " 150<sprite=5> ",
         "format": "#,##0",
         "raw": "skillHaste",
         "scalingType": "basic",
@@ -2277,7 +2336,7 @@
         }
       },
       {
-        "rendered": "60%<sprite=5>",
+        "rendered": " 60%<sprite=5> ",
         "format": "P0",
         "raw": "reducedRatio",
         "scalingType": "unknown",
@@ -2294,16 +2353,16 @@
   },
   "Gem_L_Perfect": {
     "name": "Doskonałość",
-    "description": "Moc Ataku zostaje zwiększona o 7<sprite=5>, Moc Umiejętności o 7<sprite=5>, Maksymalne Zdrowie o 35<sprite=5>, Szybkość Ataku o 10%<sprite=5>, Szansa na Trafienie Krytyczne o 6%<sprite=5>, a Przyspieszenie Wspomnienia o 10<sprite=5>.",
+    "description": "Moc Ataku zostaje zwiększona o  6<sprite=5> , Moc Umiejętności o  6<sprite=5> , Maksymalne Zdrowie o  31<sprite=5> , Szybkość Ataku o  9%<sprite=5> , Szansa na Trafienie Krytyczne o  5%<sprite=5> , a Przyspieszenie Wspomnienia o  9<sprite=5> .",
     "rawDesc": "Moc Ataku zostaje zwiększona o {0}, Moc Umiejętności o {1}, Maksymalne Zdrowie o {2}, Szybkość Ataku o {3}, Szansa na Trafienie Krytyczne o {4}, a Przyspieszenie Wspomnienia o {5}.",
     "rawDescVars": [
       {
-        "rendered": "7<sprite=5>",
+        "rendered": " 6<sprite=5> ",
         "format": "#,##0",
         "raw": "adAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 3.5,
+          "basicConstant": 3.15,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2311,12 +2370,12 @@
         }
       },
       {
-        "rendered": "7<sprite=5>",
+        "rendered": " 6<sprite=5> ",
         "format": "#,##0",
         "raw": "apAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 3.5,
+          "basicConstant": 3.15,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2324,12 +2383,12 @@
         }
       },
       {
-        "rendered": "35<sprite=5>",
+        "rendered": " 31<sprite=5> ",
         "format": "#,##0",
         "raw": "healthAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 17.5,
+          "basicConstant": 15.75,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2337,12 +2396,12 @@
         }
       },
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": " 9%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "attackSpeedAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 5.0,
+          "basicConstant": 4.5,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2350,12 +2409,12 @@
         }
       },
       {
-        "rendered": "6%<sprite=5>",
+        "rendered": " 5%<sprite=5> ",
         "format": "P0",
         "raw": "criticalChanceAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.03,
+          "basicConstant": 0.027,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2363,12 +2422,12 @@
         }
       },
       {
-        "rendered": "10<sprite=5>",
+        "rendered": " 9<sprite=5> ",
         "format": "#,##0",
         "raw": "skillHasteAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 5.0,
+          "basicConstant": 4.5,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2386,7 +2445,7 @@
   },
   "Gem_L_PureWhite": {
     "name": "Czysta biel",
-    "description": "Co 10 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. <color=yellow>Wzmocnione Użycie</color> wystrzeliwuje <color=yellow>Naboje</color> x3, które zadają <color=yellow>Obrażenia od Światła</color> równe początkowym <color=yellow>Obrażeniom</color> 20%<sprite=5> zadawanym indywidualnemu wrogowi. Liczba strzałów zwiększa się o liczbę <color=yellow>Ładunków Światła</color> na każdym celu.",
+    "description": "Co 10 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. <color=yellow>Wzmocnione Użycie</color> wystrzeliwuje <color=yellow>Naboje</color> x3, które zadają <color=yellow>Obrażenia od Światła</color> równe początkowym <color=yellow>Obrażeniom</color>  20%<sprite=5>  zadawanym indywidualnemu wrogowi. Liczba strzałów zwiększa się o liczbę <color=yellow>Ładunków Światła</color> na każdym celu.",
     "rawDesc": "Co {0} sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. <color=yellow>Wzmocnione Użycie</color> wystrzeliwuje <color=yellow>Naboje</color> x{1}, które zadają <color=yellow>Obrażenia od Światła</color> równe początkowym <color=yellow>Obrażeniom</color> {2} zadawanym indywidualnemu wrogowi. Liczba strzałów zwiększa się o liczbę <color=yellow>Ładunków Światła</color> na każdym celu.",
     "rawDescVars": [
       {
@@ -2416,7 +2475,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "P0",
         "raw": "damageMultiplier",
         "scalingType": "basic",
@@ -2441,7 +2500,7 @@
   },
   "Gem_L_SolarEye": {
     "name": "Oko Słońca",
-    "description": "Co 20 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>, zsyłając <color=yellow>Światło Słońca</color> na wszystkich pobliskich wrogów, którzy już <color=yellow>Płoną</color>. <color=yellow>Światło Słońca</color> przez 1.5 sek. zadaje łącznie <sprite=1><color=#16D7FF>360%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color> i zwiększa ładunki <color=yellow>Poparzenia</color> o 9<sprite=5>.\nStałe obrażenia zadawane moim ogniem wzrastają o 100%.",
+    "description": "Co 20 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>, zsyłając <color=yellow>Światło Słońca</color> na wszystkich pobliskich wrogów, którzy już <color=yellow>Płoną</color>. <color=yellow>Światło Słońca</color> przez 1.5 sek. zadaje łącznie  <sprite=1><color=#fff><gradient=sv_ap>360%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ognia</color> i zwiększa ładunki <color=yellow>Poparzenia</color> o  9<sprite=5> .\nStałe obrażenia zadawane moim ogniem wzrastają o 100%.",
     "rawDesc": "Co {0} sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>, zsyłając <color=yellow>Światło Słońca</color> na wszystkich pobliskich wrogów, którzy już <color=yellow>Płoną</color>. <color=yellow>Światło Słońca</color> przez {1} sek. zadaje łącznie {2} <color=yellow>Obrażeń od Ognia</color> i zwiększa ładunki <color=yellow>Poparzenia</color> o {3}.\nStałe obrażenia zadawane moim ogniem wzrastają o {4}.",
     "rawDescVars": [
       {
@@ -2465,14 +2524,14 @@
         "data": {}
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>360%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>360%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor * tickCount",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "9<sprite=5>",
+        "rendered": " 9<sprite=5> ",
         "format": "#,##0",
         "raw": "calTotalStack",
         "scalingType": "unknown",
@@ -2498,7 +2557,7 @@
   },
   "Gem_L_SuppressedArcanum": {
     "name": "Uciskane Arkanum",
-    "description": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, poświęcasz 5% swojego obecnego zdrowia, wywołując <color=yellow>Złotą Eksplozję</color>. Wrogowie w zasięgu <color=yellow>Eksplozji</color> otrzymują <sprite=1><color=#16D7FF>240%</color><sprite=5> <color=yellow>Obrażeń od Światła</color>, a sojusznicy - utrzymujące się przez 2.5 sek <color=yellow>Tarcze</color> o wartości <sprite=1><color=#16D7FF>61%</color><sprite=5>. Jeśli twoje zdrowie wynosi 60% lub mniej, <color=yellow>Ilość Tarcz</color> tego wspomnienia wzrasta o 50%.",
+    "description": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, poświęcasz 5% swojego obecnego zdrowia, wywołując <color=yellow>Złotą Eksplozję</color>. Wrogowie w zasięgu <color=yellow>Eksplozji</color> otrzymują  <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color>, a sojusznicy - utrzymujące się przez 2.5 sek <color=yellow>Tarcze</color> o wartości  <sprite=1><color=#fff><gradient=sv_ap>61%</gradient></color><sprite=5> . Jeśli twoje zdrowie wynosi 60% lub mniej, <color=yellow>Ilość Tarcz</color> tego wspomnienia wzrasta o 50%.",
     "rawDesc": "Gdy <color=yellow>Użyjesz</color> tego wspomnienia, poświęcasz {0} swojego obecnego zdrowia, wywołując <color=yellow>Złotą Eksplozję</color>. Wrogowie w zasięgu <color=yellow>Eksplozji</color> otrzymują {1} <color=yellow>Obrażeń od Światła</color>, a sojusznicy - utrzymujące się przez {2} sek <color=yellow>Tarcze</color> o wartości {3}. Jeśli twoje zdrowie wynosi {4} lub mniej, <color=yellow>Ilość Tarcz</color> tego wspomnienia wzrasta o {5}.",
     "rawDescVars": [
       {
@@ -2515,7 +2574,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>240%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>240%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -2541,7 +2600,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>61%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>61%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -2593,7 +2652,7 @@
   },
   "Gem_R_Abyss": {
     "name": "Esencja Otchłani",
-    "description": "Wszystkie <color=yellow>obrażenia</color> zadawane przez tę Pamięć zostają zamienione na <color=yellow>obrażenia od Ciemności</color>. Jeśli przeciwnik trafiony tą Pamięcią ma co najmniej 3 <color=yellow>nałożonych Ciemności</color>, masz 43%<sprite=5> szansy na odpalenie <color=yellow>Efektu Ataku</color>.",
+    "description": "Wszystkie <color=yellow>obrażenia</color> zadawane przez tę Pamięć zostają zamienione na <color=yellow>obrażenia od Ciemności</color>. Jeśli przeciwnik trafiony tą Pamięcią ma co najmniej 3 <color=yellow>nałożonych Ciemności</color>, masz  43%<sprite=5>  szansy na odpalenie <color=yellow>Efektu Ataku</color>.",
     "rawDesc": "Wszystkie <color=yellow>obrażenia</color> zadawane przez tę Pamięć zostają zamienione na <color=yellow>obrażenia od Ciemności</color>. Jeśli przeciwnik trafiony tą Pamięcią ma co najmniej {0} <color=yellow>nałożonych Ciemności</color>, masz {1} szansy na odpalenie <color=yellow>Efektu Ataku</color>.",
     "rawDescVars": [
       {
@@ -2610,7 +2669,7 @@
         }
       },
       {
-        "rendered": "43%<sprite=5>",
+        "rendered": " 43%<sprite=5> ",
         "format": "P0",
         "raw": "atkEffectChance",
         "scalingType": "unknown",
@@ -2630,11 +2689,11 @@
   },
   "Gem_R_Accuracy": {
     "name": "Esencja Precyzji",
-    "description": "Gdy wspomnienie to zadaje <color=yellow>Obrażenia</color> odległym wrogom, wystrzeliwany jest <color=yellow>Dodatkowe Pociski</color>, zadający 50%<sprite=5> <color=yellow>Obrażeń</color> danemu celowi. <color=yellow>Pociski</color> dziedziczą typ i elementy oryginalnych <color=yellow>Obrażeń</color>.",
+    "description": "Gdy wspomnienie to zadaje <color=yellow>Obrażenia</color> odległym wrogom, wystrzeliwany jest <color=yellow>Dodatkowe Pociski</color>, zadający  50%<sprite=5>  <color=yellow>Obrażeń</color> danemu celowi. <color=yellow>Pociski</color> dziedziczą typ i elementy oryginalnych <color=yellow>Obrażeń</color>.",
     "rawDesc": "Gdy wspomnienie to zadaje <color=yellow>Obrażenia</color> odległym wrogom, wystrzeliwany jest <color=yellow>Dodatkowe Pociski</color>, zadający {0} <color=yellow>Obrażeń</color> danemu celowi. <color=yellow>Pociski</color> dziedziczą typ i elementy oryginalnych <color=yellow>Obrażeń</color>.",
     "rawDescVars": [
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "damageRatio",
         "scalingType": "basic",
@@ -2657,7 +2716,7 @@
   },
   "Gem_R_Adventure": {
     "name": "Esencja Przygody",
-    "description": "Za każdym razem, gdy <color=yellow>Przemieszczasz się</color> do <color=yellow>Nowego Miejsca</color>, <color=yellow>Jakość</color> jednej z innych <color=yellow>Esencji</color> zamontowanych w tej Pamięci <color=yellow>Wzrasta</color> o +10%, a Ty zgarniesz 19<sprite=5> Złota.",
+    "description": "Za każdym razem, gdy <color=yellow>Przemieszczasz się</color> do <color=yellow>Nowego Miejsca</color>, <color=yellow>Jakość</color> jednej z innych <color=yellow>Esencji</color> zamontowanych w tej Pamięci <color=yellow>Wzrasta</color> o +10%, a Ty zgarniesz  19<sprite=5>  Złota.",
     "rawDesc": "Za każdym razem, gdy <color=yellow>Przemieszczasz się</color> do <color=yellow>Nowego Miejsca</color>, <color=yellow>Jakość</color> jednej z innych <color=yellow>Esencji</color> zamontowanych w tej Pamięci <color=yellow>Wzrasta</color> o +{0}, a Ty zgarniesz {1} Złota.",
     "rawDescVars": [
       {
@@ -2674,7 +2733,7 @@
         }
       },
       {
-        "rendered": "19<sprite=5>",
+        "rendered": " 19<sprite=5> ",
         "format": "#,##0",
         "raw": "goldAmount",
         "scalingType": "basic",
@@ -2697,24 +2756,24 @@
   },
   "Gem_R_Blade": {
     "name": "Esencja Ostrza",
-    "description": "Za każdym razem, gdy wspomnienie to <color=yellow>Trafia</color> wroga, przywołuje ono ostrza, które zadają <sprite=2><color=#FF8A2D>58%</color><sprite=5> Obrażeń i tną cel 3<sprite=5> razy. Może się aktywować na każdym wrogu tylko raz na 2 sek.",
+    "description": "Za każdym razem, gdy wspomnienie to <color=yellow>Trafia</color> wroga, przywołuje ono ostrza, które zadają  <sprite=2><color=#fff><gradient=sv_ad>69%</gradient></color><sprite=5>  Obrażeń i tną cel  3<sprite=5>  razy. Może się aktywować na każdym wrogu tylko raz na 2 sek.",
     "rawDesc": "Za każdym razem, gdy wspomnienie to <color=yellow>Trafia</color> wroga, przywołuje ono ostrza, które zadają {0} Obrażeń i tną cel {1} razy. Może się aktywować na każdym wrogu tylko raz na {2} sek.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=2><color=#FF8A2D>58%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>69%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 0.55,
+          "basicAD": 0.66,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.0005
         }
       },
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0",
         "raw": "baseCount",
         "scalingType": "basic",
@@ -2750,11 +2809,11 @@
   },
   "Gem_R_Bleak": {
     "name": "Esencja Spustoszenia",
-    "description": "To wspomnienie zadaje 50%<sprite=5> więcej obrażeń wrogom dotkniętym <color=yellow>Zimnem</color> lub będącym w stanie <color=yellow>Spowolnienia</color>, <color=yellow>Unieruchomienia</color> lub <color=yellow>Ogłuszenia</color>.",
+    "description": "To wspomnienie zadaje  50%<sprite=5>  więcej obrażeń wrogom dotkniętym <color=yellow>Zimnem</color> lub będącym w stanie <color=yellow>Spowolnienia</color>, <color=yellow>Unieruchomienia</color> lub <color=yellow>Ogłuszenia</color>.",
     "rawDesc": "To wspomnienie zadaje {0} więcej obrażeń wrogom dotkniętym <color=yellow>Zimnem</color> lub będącym w stanie <color=yellow>Spowolnienia</color>, <color=yellow>Unieruchomienia</color> lub <color=yellow>Ogłuszenia</color>.",
     "rawDescVars": [
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "dmgAmp",
         "scalingType": "basic",
@@ -2847,16 +2906,16 @@
   },
   "Gem_R_Celestial": {
     "name": "Esencja Ciała Niebieskiego",
-    "description": "Co 10 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. <color=yellow>Wzmocnione Użycie</color> objawia się rzucaniem 4 Spadającymi Gwiazdami, które zadają <sprite=1><color=#16D7FF>130%</color><sprite=5> <color=yellow>Obrażeń od Światła</color> za każdym razem, gdy po raz pierwszy trafiają indywidualnego wroga.",
+    "description": "Co 8 sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. <color=yellow>Wzmocnione Użycie</color> objawia się rzucaniem 4 Spadającymi Gwiazdami, które zadają  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color> za każdym razem, gdy po raz pierwszy trafiają indywidualnego wroga.",
     "rawDesc": "Co {0} sek. <color=yellow>Użycie</color> tego wspomnienia zostaje <color=yellow>Wzmocnione</color>. <color=yellow>Wzmocnione Użycie</color> objawia się rzucaniem {1} Spadającymi Gwiazdami, które zadają {2} <color=yellow>Obrażeń od Światła</color> za każdym razem, gdy po raz pierwszy trafiają indywidualnego wroga.",
     "rawDescVars": [
       {
-        "rendered": "10",
+        "rendered": "8",
         "format": "#,##0.#",
         "raw": "cooldownTime",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 8.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -2877,7 +2936,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>130%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "starDamage",
         "scalingType": "basic",
@@ -2902,7 +2961,7 @@
   },
   "Gem_R_Composure": {
     "name": "Esencja Opanowania",
-    "description": "Po <color=yellow>Użyciu</color> tego wspomnienia, przez 5 sek. <color=yellow>Szansa na Trafienie Krytyczne</color> wzrasta o 30%<sprite=5>. Otrzymanie obrażeń od wroga kończy ten efekt przedwcześnie.",
+    "description": "Po <color=yellow>Użyciu</color> tego wspomnienia, przez 5 sek. <color=yellow>Szansa na Trafienie Krytyczne</color> wzrasta o  30%<sprite=5> . Otrzymanie obrażeń od wroga kończy ten efekt przedwcześnie.",
     "rawDesc": "Po <color=yellow>Użyciu</color> tego wspomnienia, przez {0} sek. <color=yellow>Szansa na Trafienie Krytyczne</color> wzrasta o {1}. Otrzymanie obrażeń od wroga kończy ten efekt przedwcześnie.",
     "rawDescVars": [
       {
@@ -2919,7 +2978,7 @@
         }
       },
       {
-        "rendered": "30%<sprite=5>",
+        "rendered": " 30%<sprite=5> ",
         "format": "P0",
         "raw": "critBonus",
         "scalingType": "basic",
@@ -2942,7 +3001,7 @@
   },
   "Gem_R_Contempt": {
     "name": "Esencja Pogardy",
-    "description": "<color=yellow>Obrażenia</color> zadawane przez to wspomnienie wzrastają wraz ze spadkiem zdrowia celu – przy 20% zdrowia, obrażenia <color=yellow>Zwiększają się</color> maksymalnie o 50%<sprite=5>.",
+    "description": "<color=yellow>Obrażenia</color> zadawane przez to wspomnienie wzrastają wraz ze spadkiem zdrowia celu – przy 20% zdrowia, obrażenia <color=yellow>Zwiększają się</color> maksymalnie o  50%<sprite=5> .",
     "rawDesc": "<color=yellow>Obrażenia</color> zadawane przez to wspomnienie wzrastają wraz ze spadkiem zdrowia celu – przy {0} zdrowia, obrażenia <color=yellow>Zwiększają się</color> maksymalnie o {1}.",
     "rawDescVars": [
       {
@@ -2959,7 +3018,7 @@
         }
       },
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "amp",
         "scalingType": "basic",
@@ -2982,7 +3041,7 @@
   },
   "Gem_R_Dusk": {
     "name": "Esencja Zmierzchu",
-    "description": "Po użyciu tego wspomnienia, przez 5 sek. podczas każdego <color=yellow>Ataku</color> na wroga wystrzeliwujesz <color=yellow>Kawałki Zmierzchu</color> x2, zadające <sprite=2><color=#FF8A2D>30%</color><sprite=5> <color=yellow>Obrażeń od Ciemności</color>.",
+    "description": "Po użyciu tego wspomnienia, przez 5 sek. podczas każdego <color=yellow>Ataku</color> na wroga wystrzeliwujesz <color=yellow>Kawałki Zmierzchu</color> x2, zadające  <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ciemności</color>.",
     "rawDesc": "Po użyciu tego wspomnienia, przez {0} sek. podczas każdego <color=yellow>Ataku</color> na wroga wystrzeliwujesz <color=yellow>Kawałki Zmierzchu</color> x{1}, zadające {2} <color=yellow>Obrażeń od Ciemności</color>.",
     "rawDescVars": [
       {
@@ -3012,7 +3071,7 @@
         }
       },
       {
-        "rendered": "<sprite=2><color=#FF8A2D>30%</color><sprite=5>",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3036,13 +3095,73 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Epiphany": {
+    "name": "Esencja Oświecenia",
+    "description": "Po <color=yellow>użyciu</color> tej Pamięci <color=yellow>moc umiejętności</color> wzrasta o  22<sprite=5>  na 5 sek. Jeśli ta Pamięć jest <color=yellow>umiejętnością ostateczną</color>, natychmiast zwraca  21%<sprite=5>  jej <color=yellow>czasu odnowienia</color>. Może aktywować się tylko raz na 10 sek.",
+    "rawDesc": "Po <color=yellow>użyciu</color> tej Pamięci <color=yellow>moc umiejętności</color> wzrasta o {0} na {1} sek. Jeśli ta Pamięć jest <color=yellow>umiejętnością ostateczną</color>, natychmiast zwraca {2} jej <color=yellow>czasu odnowienia</color>. Może aktywować się tylko raz na {3} sek.",
+    "rawDescVars": [
+      {
+        "rendered": " 22<sprite=5> ",
+        "format": "#,##0",
+        "raw": "apEmpowerAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 21%<sprite=5> ",
+        "format": "P0",
+        "raw": "refundCooldownRatio",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Epiphany.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Flow": {
     "name": "Esencja Przepływu",
-    "description": "Gdy dowolne wspomnienie zadaje <color=yellow>Obrażenia od Światła</color>, <color=yellow>Czas Odnawiania</color> tego wspomnienia zostaje skrócony o 6%<sprite=5>. W przypadku skorzystania z Najwyższej Umiejętności, efekt wynosi tylko 40%. Efekt <color=yellow>Skrócenia Czasu Odnawiania</color> tego wspomnienia dotyczy również wmontowanych w nim <color=yellow>Esencji</color>.",
+    "description": "Gdy dowolne wspomnienie zadaje <color=yellow>Obrażenia od Światła</color>, <color=yellow>Czas Odnawiania</color> tego wspomnienia zostaje skrócony o  6%<sprite=5> . W przypadku skorzystania z Najwyższej Umiejętności, efekt wynosi tylko 40%. Efekt <color=yellow>Skrócenia Czasu Odnawiania</color> tego wspomnienia dotyczy również wmontowanych w nim <color=yellow>Esencji</color>.",
     "rawDesc": "Gdy dowolne wspomnienie zadaje <color=yellow>Obrażenia od Światła</color>, <color=yellow>Czas Odnawiania</color> tego wspomnienia zostaje skrócony o {0}. W przypadku skorzystania z Najwyższej Umiejętności, efekt wynosi tylko {1}. Efekt <color=yellow>Skrócenia Czasu Odnawiania</color> tego wspomnienia dotyczy również wmontowanych w nim <color=yellow>Esencji</color>.",
     "rawDescVars": [
       {
-        "rendered": "6%<sprite=5>",
+        "rendered": " 6%<sprite=5> ",
         "format": "P0",
         "raw": "reduceRatio",
         "scalingType": "basic",
@@ -3080,11 +3199,11 @@
   },
   "Gem_R_Frost": {
     "name": "Esencja Mrozu",
-    "description": "Gdy to wspomnienie zadaje <color=yellow>Obrażenia od Zimna</color>, zadaje dodatkowo <color=yellow>Obrażenia od Zimna</color> równe 10%<sprite=5> twojego <color=yellow>Maksymalnego Zdrowia</color> i na krótko <color=yellow>Ogłusza</color> cel. Można aktywować na każdym przeciwniku tylko raz na 5 sek. Za każdym razem, gdy efekt jest aktywowany, twoje <color=yellow>Maksymalne Zdrowie</color> zwiększa się trwale o 1.",
+    "description": "Gdy to wspomnienie zadaje <color=yellow>Obrażenia od Zimna</color>, zadaje dodatkowo <color=yellow>Obrażenia od Zimna</color> równe  10%<sprite=5>  twojego <color=yellow>Maksymalnego Zdrowia</color> i na krótko <color=yellow>Ogłusza</color> cel. Można aktywować na każdym przeciwniku tylko raz na 5 sek. Za każdym razem, gdy efekt jest aktywowany, twoje <color=yellow>Maksymalne Zdrowie</color> zwiększa się trwale o 1.",
     "rawDesc": "Gdy to wspomnienie zadaje <color=yellow>Obrażenia od Zimna</color>, zadaje dodatkowo <color=yellow>Obrażenia od Zimna</color> równe {0} twojego <color=yellow>Maksymalnego Zdrowia</color> i na krótko <color=yellow>Ogłusza</color> cel. Można aktywować na każdym przeciwniku tylko raz na {1} sek. Za każdym razem, gdy efekt jest aktywowany, twoje <color=yellow>Maksymalne Zdrowie</color> zwiększa się trwale o {2}.",
     "rawDescVars": [
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": " 10%<sprite=5> ",
         "format": "P0",
         "raw": "damageRatio",
         "scalingType": "basic",
@@ -3136,11 +3255,11 @@
   },
   "Gem_R_Glaciate": {
     "name": "Esencja Zlodowacenia",
-    "description": "Po <color=yellow>Użyciu</color> tego wspomnienia wyzwalana jest fala zimna, zadająca wrogom <sprite=1><color=#16D7FF>160%</color><sprite=5> <color=yellow>Obrażeń od Zimna</color>. Im wyższa jakość wspomnienia, tym większy zasięg fali.",
+    "description": "Po <color=yellow>Użyciu</color> tego wspomnienia wyzwalana jest fala zimna, zadająca wrogom  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Zimna</color>. Im wyższa jakość wspomnienia, tym większy zasięg fali.",
     "rawDesc": "Po <color=yellow>Użyciu</color> tego wspomnienia wyzwalana jest fala zimna, zadająca wrogom {0} <color=yellow>Obrażeń od Zimna</color>. Im wyższa jakość wspomnienia, tym większy zasięg fali.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3165,7 +3284,7 @@
   },
   "Gem_R_Insatiable": {
     "name": "Esencja Obżarstwa",
-    "description": "Po użyciu tego wspomnienia, przez 5 sek. <color=yellow>Moc Ataku</color> wzrasta o 15%<sprite=5>, a każdy <color=yellow>Atak</color> <color=yellow>Odzyskuje</color> zdrowie o wartości 6<sprite=5>.",
+    "description": "Po użyciu tego wspomnienia, przez 5 sek. <color=yellow>Moc Ataku</color> wzrasta o  15%<sprite=5> , a każdy <color=yellow>Atak</color> <color=yellow>Odzyskuje</color> zdrowie o wartości  6<sprite=5> .",
     "rawDesc": "Po użyciu tego wspomnienia, przez {0} sek. <color=yellow>Moc Ataku</color> wzrasta o {1}, a każdy <color=yellow>Atak</color> <color=yellow>Odzyskuje</color> zdrowie o wartości {2}.",
     "rawDescVars": [
       {
@@ -3182,7 +3301,7 @@
         }
       },
       {
-        "rendered": "15%<sprite=5>",
+        "rendered": " 15%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "bonusAttackDamagePercentage",
         "scalingType": "basic",
@@ -3195,7 +3314,7 @@
         }
       },
       {
-        "rendered": "6<sprite=5>",
+        "rendered": " 6<sprite=5> ",
         "format": "#,##0",
         "raw": "healAmount",
         "scalingType": "basic",
@@ -3221,11 +3340,11 @@
   },
   "Gem_R_Momentum": {
     "name": "Esencja Impetu",
-    "description": "Każdy <color=yellow>Atak</color> na wroga powoduje, że <color=yellow>Czas Odnawiania</color> tego wspomnienia zostaje <color=yellow>Skrócony</color> o 0.4<sprite=5> sek.",
+    "description": "Każdy <color=yellow>Atak</color> na wroga powoduje, że <color=yellow>Czas Odnawiania</color> tego wspomnienia zostaje <color=yellow>Skrócony</color> o  0.4<sprite=5>  sek.",
     "rawDesc": "Każdy <color=yellow>Atak</color> na wroga powoduje, że <color=yellow>Czas Odnawiania</color> tego wspomnienia zostaje <color=yellow>Skrócony</color> o {0} sek.",
     "rawDescVars": [
       {
-        "rendered": "0.4<sprite=5>",
+        "rendered": " 0.4<sprite=5> ",
         "format": "#,##0.#",
         "raw": "reductionAmount",
         "scalingType": "basic",
@@ -3248,9 +3367,36 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Mortality": {
+    "name": "Esencja Śmiertelności",
+    "description": "Gdy ta Pamięć <color=yellow>trafi</color> wroga, ma  1.2%<sprite=5>  szansy na <color=yellow>egzekucję</color> przeciwników niebędących bossami.",
+    "rawDesc": "Gdy ta Pamięć <color=yellow>trafi</color> wroga, ma {0} szansy na <color=yellow>egzekucję</color> przeciwników niebędących bossami.",
+    "rawDescVars": [
+      {
+        "rendered": " 1.2%<sprite=5> ",
+        "format": "#,##0.#%",
+        "raw": "killChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.006,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Mortality.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_NightSky": {
     "name": "Esencja Nocnego Nieba",
-    "description": "Za każdym razem, gdy wspomnienie to <color=yellow>Trafia</color> wroga, na 3 sek. <color=yellow>Szybkość Ataku</color> wzrasta o 10%<sprite=5>, a maksymalnie o 20%<sprite=5>. W przypadku <color=yellow>Obrażeń od Ciemności</color>, maksymalny wzrost wynosi 40%<sprite=5>. Czas trwania efektu odnawia się przy każdym <color=yellow>Ataku</color> na przeciwnika.",
+    "description": "Za każdym razem, gdy wspomnienie to <color=yellow>Trafia</color> wroga, na 3 sek. <color=yellow>Szybkość Ataku</color> wzrasta o  10%<sprite=5> , a maksymalnie o  20%<sprite=5> . W przypadku <color=yellow>Obrażeń od Ciemności</color>, maksymalny wzrost wynosi  40%<sprite=5> . Czas trwania efektu odnawia się przy każdym <color=yellow>Ataku</color> na przeciwnika.",
     "rawDesc": "Za każdym razem, gdy wspomnienie to <color=yellow>Trafia</color> wroga, na {0} sek. <color=yellow>Szybkość Ataku</color> wzrasta o {1}, a maksymalnie o {2}. W przypadku <color=yellow>Obrażeń od Ciemności</color>, maksymalny wzrost wynosi {3}. Czas trwania efektu odnawia się przy każdym <color=yellow>Ataku</color> na przeciwnika.",
     "rawDescVars": [
       {
@@ -3267,7 +3413,7 @@
         }
       },
       {
-        "rendered": "10%<sprite=5>",
+        "rendered": " 10%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "perHitAtkSpd",
         "scalingType": "basic",
@@ -3280,7 +3426,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "maxAtkSpdNormal",
         "scalingType": "basic",
@@ -3293,7 +3439,7 @@
         }
       },
       {
-        "rendered": "40%<sprite=5>",
+        "rendered": " 40%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "maxAtkSpdDark",
         "scalingType": "basic",
@@ -3319,7 +3465,7 @@
   },
   "Gem_R_Panic": {
     "name": "Esencja Paniki",
-    "description": "Gdy otrzymasz jakiekolwiek <color=yellow>Obrażenia</color>, na 3 sek. wspomnienie to zyskuje <color=yellow>Przyspieszenie Wspomnienia</color> o wartości 30<sprite=5>, a w tym czasie <color=yellow>Szybkość Ruchu</color> wzrasta o 20%<sprite=5>.",
+    "description": "Gdy otrzymasz jakiekolwiek <color=yellow>Obrażenia</color>, na 3 sek. wspomnienie to zyskuje <color=yellow>Przyspieszenie Wspomnienia</color> o wartości  30<sprite=5> , a w tym czasie <color=yellow>Szybkość Ruchu</color> wzrasta o  20%<sprite=5> .",
     "rawDesc": "Gdy otrzymasz jakiekolwiek <color=yellow>Obrażenia</color>, na {0} sek. wspomnienie to zyskuje <color=yellow>Przyspieszenie Wspomnienia</color> o wartości {1}, a w tym czasie <color=yellow>Szybkość Ruchu</color> wzrasta o {2}.",
     "rawDescVars": [
       {
@@ -3336,7 +3482,7 @@
         }
       },
       {
-        "rendered": "30<sprite=5>",
+        "rendered": " 30<sprite=5> ",
         "format": "#,##0",
         "raw": "memoryHaste",
         "scalingType": "basic",
@@ -3349,7 +3495,7 @@
         }
       },
       {
-        "rendered": "20%<sprite=5>",
+        "rendered": " 20%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
@@ -3374,7 +3520,7 @@
   },
   "Gem_R_Rejuvenation": {
     "name": "Esencja Odmłodzenia",
-    "description": "Co 15 sek., <color=yellow>Użycie</color> tej Pamięci zostaje <color=yellow>Wzmocnione</color>. Po <color=yellow>Wzmocnionym Użyciu</color> odzyskujesz <color=yellow>Zdrowie</color> równe 14%<sprite=5> zadanych <color=yellow>Obrażeń</color> w ciągu 1.5 sek. od aktywacji.",
+    "description": "Co 15 sek., <color=yellow>Użycie</color> tej Pamięci zostaje <color=yellow>Wzmocnione</color>. Po <color=yellow>Wzmocnionym Użyciu</color> odzyskujesz <color=yellow>Zdrowie</color> równe  14%<sprite=5>  zadanych <color=yellow>Obrażeń</color> w ciągu 1.5 sek. od aktywacji.",
     "rawDesc": "Co {0} sek., <color=yellow>Użycie</color> tej Pamięci zostaje <color=yellow>Wzmocnione</color>. Po <color=yellow>Wzmocnionym Użyciu</color> odzyskujesz <color=yellow>Zdrowie</color> równe {1} zadanych <color=yellow>Obrażeń</color> w ciągu {2} sek. od aktywacji.",
     "rawDescVars": [
       {
@@ -3391,7 +3537,7 @@
         }
       },
       {
-        "rendered": "14%<sprite=5>",
+        "rendered": " 14%<sprite=5> ",
         "format": "P0",
         "raw": "conversionRatio",
         "scalingType": "basic",
@@ -3429,18 +3575,18 @@
   },
   "Gem_R_Ricochet": {
     "name": "Esencja Rykoszetu",
-    "description": "<color=yellow>Obrażenia</color> lub <color=yellow>Stopień Leczenia</color>, które daje to wspomnienie, mają 50%<sprite=5> szans na odbicie się od innego pobliskiego celu, zadając 90%<sprite=5> <color=yellow>Obrażeń</color> lub <color=yellow>Leczenia</color>. Jeśli to <color=yellow>Obrażenia</color>, reprezentują one ten sam typ obrażeń i elementów co oryginalne obrażenia.",
+    "description": "<color=yellow>Obrażenia</color> lub <color=yellow>Stopień Leczenia</color>, które daje to wspomnienie, mają  50%<sprite=5>  szans na odbicie się od innego pobliskiego celu, zadając  90%<sprite=5>  <color=yellow>Obrażeń</color> lub <color=yellow>Leczenia</color>. Jeśli to <color=yellow>Obrażenia</color>, reprezentują one ten sam typ obrażeń i elementów co oryginalne obrażenia.",
     "rawDesc": "<color=yellow>Obrażenia</color> lub <color=yellow>Stopień Leczenia</color>, które daje to wspomnienie, mają {0} szans na odbicie się od innego pobliskiego celu, zadając {1} <color=yellow>Obrażeń</color> lub <color=yellow>Leczenia</color>. Jeśli to <color=yellow>Obrażenia</color>, reprezentują one ten sam typ obrażeń i elementów co oryginalne obrażenia.",
     "rawDescVars": [
       {
-        "rendered": "50%<sprite=5>",
+        "rendered": " 50%<sprite=5> ",
         "format": "P0",
         "raw": "ricochetChance",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "90%<sprite=5>",
+        "rendered": " 90%<sprite=5> ",
         "format": "P0",
         "raw": "ricochetRatio",
         "scalingType": "basic",
@@ -3463,11 +3609,11 @@
   },
   "Gem_R_Rigidity": {
     "name": "Esencja Stanowczości",
-    "description": "Gdy wspomnienie to <color=yellow>Trafia</color> wroga, zyskujesz <color=yellow>Tarcze</color> x9<sprite=5>, ochraniające przez 2 sek. Jeśli są to <color=yellow>Obrażenia od Zimna</color>, efekt ten zwiększa się o 80%.",
+    "description": "Gdy wspomnienie to <color=yellow>Trafia</color> wroga, zyskujesz <color=yellow>Tarcze</color> x 9<sprite=5> , ochraniające przez 2 sek. Jeśli są to <color=yellow>Obrażenia od Zimna</color>, efekt ten zwiększa się o 80%.",
     "rawDesc": "Gdy wspomnienie to <color=yellow>Trafia</color> wroga, zyskujesz <color=yellow>Tarcze</color> x{0}, ochraniające przez {1} sek. Jeśli są to <color=yellow>Obrażenia od Zimna</color>, efekt ten zwiększa się o {2}.",
     "rawDescVars": [
       {
-        "rendered": "9<sprite=5>",
+        "rendered": " 9<sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -3512,11 +3658,11 @@
   },
   "Gem_R_Scorched": {
     "name": "Esencja Zwęglenia",
-    "description": "Przy <color=yellow>Użyciu</color> tego wspomnienia rzucasz <color=yellow>Kule Ognia</color> x3<sprite=5>, które zadają <sprite=1><color=#16D7FF>47%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color> pobliskim wrogom.",
+    "description": "Przy <color=yellow>Użyciu</color> tego wspomnienia rzucasz <color=yellow>Kule Ognia</color> x 3<sprite=5> , które zadają  <sprite=1><color=#fff><gradient=sv_ap>47%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ognia</color> pobliskim wrogom.",
     "rawDesc": "Przy <color=yellow>Użyciu</color> tego wspomnienia rzucasz <color=yellow>Kule Ognia</color> x{0}, które zadają {1} <color=yellow>Obrażeń od Ognia</color> pobliskim wrogom.",
     "rawDescVars": [
       {
-        "rendered": "3<sprite=5>",
+        "rendered": " 3<sprite=5> ",
         "format": "#,##0",
         "raw": "maxCount",
         "scalingType": "basic",
@@ -3529,7 +3675,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>47%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>47%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
@@ -3554,7 +3700,7 @@
   },
   "Gem_R_Shock": {
     "name": "Esencja Szoku",
-    "description": "Co czwarty <color=yellow>Atak Podstawowy</color> jest <color=yellow>Wzmocniony</color> - wystrzelona zostaje <color=yellow>Błyskawica</color>, która odbija się od wrogów i maksymalnie 2 razy zadaje <sprite=1><color=#16D7FF>40%</color><sprite=5> <color=yellow>Obrażeń od Światła</color>. Na każde 20% <color=yellow>Szans na Trafienie Krytyczne</color>, maksymalna liczba zadawanych obrażeń zwiększa się o 1.",
+    "description": "Co czwarty <color=yellow>Atak Podstawowy</color> jest <color=yellow>Wzmocniony</color> - wystrzelona zostaje <color=yellow>Błyskawica</color>, która odbija się od wrogów i maksymalnie 2 razy zadaje  <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color>. Na każde 20% <color=yellow>Szans na Trafienie Krytyczne</color>, maksymalna liczba zadawanych obrażeń zwiększa się o 1.",
     "rawDesc": "Co czwarty <color=yellow>Atak Podstawowy</color> jest <color=yellow>Wzmocniony</color> - wystrzelona zostaje <color=yellow>Błyskawica</color>, która odbija się od wrogów i maksymalnie {0} razy zadaje {1} <color=yellow>Obrażeń od Światła</color>. Na każde {2} <color=yellow>Szans na Trafienie Krytyczne</color>, maksymalna liczba zadawanych obrażeń zwiększa się o 1.",
     "rawDescVars": [
       {
@@ -3571,7 +3717,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>40%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "chainDamage",
         "scalingType": "basic",
@@ -3610,7 +3756,7 @@
   },
   "Gem_R_Snow": {
     "name": "Esencja Śniegu",
-    "description": "Jeśli przez 5 sek. nie otrzymasz obrażeń, zyskujesz doładowujące się tarcze x40<sprite=5>. Gdy posiadasz tarcze, okresowo wystrzeliwujesz śnieżkę w losowego pobliskiego wroga, zadając mu <sprite=1><color=#16D7FF>80%</color><sprite=5> <color=yellow>Obrażeń od Zimna</color>. Im większa ilość tarcz, tym szybciej wystrzeliwujesz śnieżki.",
+    "description": "Jeśli przez 5 sek. nie otrzymasz obrażeń, zyskujesz doładowujące się tarcze x 40<sprite=5> . Gdy posiadasz tarcze, okresowo wystrzeliwujesz śnieżkę w losowego pobliskiego wroga, zadając mu  <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Zimna</color>. Im większa ilość tarcz, tym szybciej wystrzeliwujesz śnieżki.",
     "rawDesc": "Jeśli przez {0} sek. nie otrzymasz obrażeń, zyskujesz doładowujące się tarcze x{1}. Gdy posiadasz tarcze, okresowo wystrzeliwujesz śnieżkę w losowego pobliskiego wroga, zadając mu {2} <color=yellow>Obrażeń od Zimna</color>. Im większa ilość tarcz, tym szybciej wystrzeliwujesz śnieżki.",
     "rawDescVars": [
       {
@@ -3627,7 +3773,7 @@
         }
       },
       {
-        "rendered": "40<sprite=5>",
+        "rendered": " 40<sprite=5> ",
         "format": "#,##0",
         "raw": "shieldAmount",
         "scalingType": "basic",
@@ -3640,7 +3786,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>80%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>80%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3666,11 +3812,11 @@
   },
   "Gem_R_Spiral": {
     "name": "Esencja Wiru",
-    "description": "Okresowo, w losowego pobliskiego wroga, wystrzeliwane są kula ognia, zadające <sprite=1><color=#16D7FF>90%</color><sprite=5> <color=yellow>Obrażeń od Ognia</color>. Im wyższa jakość, tym szybciej kule są wystrzeliwane.",
+    "description": "Okresowo, w losowego pobliskiego wroga, wystrzeliwane są kula ognia, zadające  <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ognia</color>. Im wyższa jakość, tym szybciej kule są wystrzeliwane.",
     "rawDesc": "Okresowo, w losowego pobliskiego wroga, wystrzeliwane są kula ognia, zadające {0} <color=yellow>Obrażeń od Ognia</color>. Im wyższa jakość, tym szybciej kule są wystrzeliwane.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>90%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>90%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3695,7 +3841,7 @@
   },
   "Gem_R_Stillness": {
     "name": "Esencja Zatrzymania",
-    "description": "Co 5 sekundy ta pamięć zostaje <color=yellow>Wzmocniona</color>. Podczas <color=yellow>Wzmocnionego rzucenia</color> emanujesz światłem, zadając przeciwnikom <sprite=1><color=#16D7FF>200%</color><sprite=5> <color=yellow>obrażeń od Światła</color> i ogłuszając ich na 2 sekundy. Im wyższa jakość, tym większy zasięg światła.",
+    "description": "Co 5 sekundy ta pamięć zostaje <color=yellow>Wzmocniona</color>. Podczas <color=yellow>Wzmocnionego rzucenia</color> emanujesz światłem, zadając przeciwnikom  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  <color=yellow>obrażeń od Światła</color> i ogłuszając ich na 2 sekundy. Im wyższa jakość, tym większy zasięg światła.",
     "rawDesc": "Co {0} sekundy ta pamięć zostaje <color=yellow>Wzmocniona</color>. Podczas <color=yellow>Wzmocnionego rzucenia</color> emanujesz światłem, zadając przeciwnikom {1} <color=yellow>obrażeń od Światła</color> i ogłuszając ich na {2} sekundy. Im wyższa jakość, tym większy zasięg światła.",
     "rawDescVars": [
       {
@@ -3712,7 +3858,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>200%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
@@ -3751,7 +3897,7 @@
   },
   "Gem_R_Wealth": {
     "name": "Esencja Bogactwa",
-    "description": "Jeśli wróg otrzyma obrażenia od tego wspomnienia i zostanie wyeliminowany w ciągu 2 sek., upuści Złoto x1.7<sprite=5>. Złoto jest wóczas dzielone pomiędzy wszystkich Wędrowców.",
+    "description": "Jeśli wróg otrzyma obrażenia od tego wspomnienia i zostanie wyeliminowany w ciągu 2 sek., upuści Złoto x 1.7<sprite=5> . Złoto jest wóczas dzielone pomiędzy wszystkich Wędrowców.",
     "rawDesc": "Jeśli wróg otrzyma obrażenia od tego wspomnienia i zostanie wyeliminowany w ciągu {0} sek., upuści Złoto x{1}. Złoto jest wóczas dzielone pomiędzy wszystkich Wędrowców.",
     "rawDescVars": [
       {
@@ -3768,7 +3914,7 @@
         }
       },
       {
-        "rendered": "1.7<sprite=5>",
+        "rendered": " 1.7<sprite=5> ",
         "format": "###,0.#",
         "raw": "killGold",
         "scalingType": "basic",
@@ -3791,11 +3937,11 @@
   },
   "Gem_R_Wound": {
     "name": "Esencja Rany",
-    "description": "Gdy ta Pamięć zada obrażenia wrogowi, wypala na nim <color=yellow>Znak</color>. Każdy <color=yellow>Atak</color> na <color=yellow>Znak</color> zadaje <sprite=1><color=#16D7FF>44%</color><sprite=5> <color=yellow>Obrażeń</color>, a po 3 uderzeniach <color=yellow>Znak</color> eksploduje, raniąc wszystkich pobliskich przeciwników za <sprite=1><color=#16D7FF>275%</color><sprite=5> <color=yellow>Obrażeń</color>.",
+    "description": "Gdy ta Pamięć zada obrażenia wrogowi, wypala na nim <color=yellow>Znak</color>. Każdy <color=yellow>Atak</color> na <color=yellow>Znak</color> zadaje  <sprite=1><color=#fff><gradient=sv_ap>44%</gradient></color><sprite=5>  <color=yellow>Obrażeń</color>, a po 3 uderzeniach <color=yellow>Znak</color> eksploduje, raniąc wszystkich pobliskich przeciwników za  <sprite=1><color=#fff><gradient=sv_ap>275%</gradient></color><sprite=5>  <color=yellow>Obrażeń</color>.",
     "rawDesc": "Gdy ta Pamięć zada obrażenia wrogowi, wypala na nim <color=yellow>Znak</color>. Każdy <color=yellow>Atak</color> na <color=yellow>Znak</color> zadaje {0} <color=yellow>Obrażeń</color>, a po {1} uderzeniach <color=yellow>Znak</color> eksploduje, raniąc wszystkich pobliskich przeciwników za {2} <color=yellow>Obrażeń</color>.",
     "rawDescVars": [
       {
-        "rendered": "<sprite=1><color=#16D7FF>44%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>44%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "hitDamage",
         "scalingType": "basic",
@@ -3821,7 +3967,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>275%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>275%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "explodeDamage",
         "scalingType": "basic",
@@ -3846,7 +3992,7 @@
   },
   "Gem_U_EternalFlame": {
     "name": "Wieczny Płomień",
-    "description": "Gdy wspomnienie to zadaje wrogowi <color=yellow>Obrażenia od Ognia</color>, nakłada na niego klątwę <color=yellow>Wiecznego Płomienia</color> na 5 sek. Cel, pod wpływem klątwy <color=yellow>Wiecznego Płomienia</color>, otrzymuje 1 dodatkowy ładunek <color=yellow>Poparzenia</color> za każdym razem, gdy otrzyma ode mnie <color=yellow>Jakiekolwiek Obrażenia</color>.\nWszystkie obrażenia zadawane przez to wspomnienie wrogowi są zwiększane o 2.0%<sprite=5> za każdy ładunek <color=yellow>Poparzenia</color> umieszczony na celu.",
+    "description": "Gdy wspomnienie to zadaje wrogowi <color=yellow>Obrażenia od Ognia</color>, nakłada na niego klątwę <color=yellow>Wiecznego Płomienia</color> na 5 sek. Cel, pod wpływem klątwy <color=yellow>Wiecznego Płomienia</color>, otrzymuje 1 dodatkowy ładunek <color=yellow>Poparzenia</color> za każdym razem, gdy otrzyma ode mnie <color=yellow>Jakiekolwiek Obrażenia</color>.\nWszystkie obrażenia zadawane przez to wspomnienie wrogowi są zwiększane o  2.0%<sprite=5>  za każdy ładunek <color=yellow>Poparzenia</color> umieszczony na celu.",
     "rawDesc": "Gdy wspomnienie to zadaje wrogowi <color=yellow>Obrażenia od Ognia</color>, nakłada na niego klątwę <color=yellow>Wiecznego Płomienia</color> na {0} sek. Cel, pod wpływem klątwy <color=yellow>Wiecznego Płomienia</color>, otrzymuje 1 dodatkowy ładunek <color=yellow>Poparzenia</color> za każdym razem, gdy otrzyma ode mnie <color=yellow>Jakiekolwiek Obrażenia</color>.\nWszystkie obrażenia zadawane przez to wspomnienie wrogowi są zwiększane o {1} za każdy ładunek <color=yellow>Poparzenia</color> umieszczony na celu.",
     "rawDescVars": [
       {
@@ -3863,7 +4009,7 @@
         }
       },
       {
-        "rendered": "2.0%<sprite=5>",
+        "rendered": " 2.0%<sprite=5> ",
         "format": "#,##0.0%",
         "raw": "ampPerFireStack",
         "scalingType": "basic",
@@ -3888,7 +4034,7 @@
   },
   "Gem_U_GlacialCore": {
     "name": "Rdzeń lodowca",
-    "description": "Raz na 5 sek., gdy zadajesz <color=yellow>Obrażenia</color> tym wspomnieniem, <color=yellow>Odzyskujesz</color> <color=yellow>Zdrowie</color> równe 3.6%<sprite=5> twojego maksymalnego zdrowia. Jeśli są to <color=yellow>Obrażenia od Zimna</color>, efekt zostaje zwiększony o 100%.\nW pobliskich wrogów wystrzelone zostają <color=yellow>Kawałki Lodu</color>, które zadają <color=yellow>Obrażenia od Zimna</color>równe 272%<sprite=5> całego twojego <color=yellow>Odzyskanego Zdrowia</color>.",
+    "description": "Raz na 5 sek., gdy zadajesz <color=yellow>Obrażenia</color> tym wspomnieniem, <color=yellow>Odzyskujesz</color> <color=yellow>Zdrowie</color> równe  3.6%<sprite=5>  twojego maksymalnego zdrowia. Jeśli są to <color=yellow>Obrażenia od Zimna</color>, efekt zostaje zwiększony o 100%.\nW pobliskich wrogów wystrzelone zostają <color=yellow>Kawałki Lodu</color>, które zadają <color=yellow>Obrażenia od Zimna</color>równe  272%<sprite=5>  całego twojego <color=yellow>Odzyskanego Zdrowia</color>.",
     "rawDesc": "Raz na {0} sek., gdy zadajesz <color=yellow>Obrażenia</color> tym wspomnieniem, <color=yellow>Odzyskujesz</color> <color=yellow>Zdrowie</color> równe {1} twojego maksymalnego zdrowia. Jeśli są to <color=yellow>Obrażenia od Zimna</color>, efekt zostaje zwiększony o {2}.\nW pobliskich wrogów wystrzelone zostają <color=yellow>Kawałki Lodu</color>, które zadają <color=yellow>Obrażenia od Zimna</color>równe {3} całego twojego <color=yellow>Odzyskanego Zdrowia</color>.",
     "rawDescVars": [
       {
@@ -3905,7 +4051,7 @@
         }
       },
       {
-        "rendered": "3.6%<sprite=5>",
+        "rendered": " 3.6%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "healMaxHealthRatio",
         "scalingType": "basic",
@@ -3931,7 +4077,7 @@
         }
       },
       {
-        "rendered": "272%<sprite=5>",
+        "rendered": " 272%<sprite=5> ",
         "format": "P0",
         "raw": "healToDamageRatio",
         "scalingType": "basic",
@@ -3957,7 +4103,7 @@
   },
   "Gem_U_LastStarlight": {
     "name": "Ostatni Blask Gwiazd",
-    "description": "Co 15 sek. rzucenie tej Pamięci zostaje <color=yellow>Wzmocnione</color>. Przy <color=yellow>Wzmocnionym Rzuceniu</color> w miejscu użycia powstaje czarna dziura, która przez 5 sek. zadaje <sprite=1><color=#16D7FF>160%</color><sprite=5> <color=yellow>obrażeń od Światła</color> na sekundę. \nJeśli jednak Pamięć nie jest rzucana w wybranym miejscu, czarna dziura powstaje w miejscu najbliższego wroga w kierunku, w którym patrzysz.",
+    "description": "Co 15 sek. rzucenie tej Pamięci zostaje <color=yellow>Wzmocnione</color>. Przy <color=yellow>Wzmocnionym Rzuceniu</color> w miejscu użycia powstaje czarna dziura, która przez 5 sek. zadaje  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5>  <color=yellow>obrażeń od Światła</color> na sekundę. \nJeśli jednak Pamięć nie jest rzucana w wybranym miejscu, czarna dziura powstaje w miejscu najbliższego wroga w kierunku, w którym patrzysz.",
     "rawDesc": "Co {0} sek. rzucenie tej Pamięci zostaje <color=yellow>Wzmocnione</color>. Przy <color=yellow>Wzmocnionym Rzuceniu</color> w miejscu użycia powstaje czarna dziura, która przez {1} sek. zadaje {2} <color=yellow>obrażeń od Światła</color> na sekundę. \nJeśli jednak Pamięć nie jest rzucana w wybranym miejscu, czarna dziura powstaje w miejscu najbliższego wroga w kierunku, w którym patrzysz.",
     "rawDescVars": [
       {
@@ -3987,7 +4133,7 @@
         }
       },
       {
-        "rendered": "<sprite=1><color=#16D7FF>160%</color><sprite=5>",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "tickDamage/tickInterval",
         "scalingType": "unknown",

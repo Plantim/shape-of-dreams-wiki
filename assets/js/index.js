@@ -4,6 +4,9 @@ let translations = {};
 const translatePage = (lang) => {
     const T = translations[lang] || translations['en-US'];
     
+    // Met à jour la version en haut
+    updateGlobalVersionDisplay(T);
+    
     // Mettre à jour le titre de la page
     document.title = T.pageTitleHome;
 
