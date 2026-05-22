@@ -15,7 +15,6 @@ let activeTagFilter = '';
 let activeTravelerFilter = '';
 
 let searchQuery = ''; // Le texte actuellement tapé dans la barre de recherche.
-let activeStatFilter = ''; // filtre AD/AP Initialisé comme une chaîne vide
 
 // Nouvelle variable d'état pour le niveau
 let currentLevel = 0;
@@ -195,7 +194,7 @@ const populateFilters = () => {
     populateRarityFilter();
     populateElementsFilter();
     populateTagsFilter();
-    populateStatFilter();
+    populateStatFilter(applyFilters); // On passe "applyFilters" pour lier les boutons au tri des Mémoires (unifié dans common.js)
     populateTravelerFilter();
 };
 
@@ -304,54 +303,6 @@ const populateTagsFilter = () => {
     });
 };
 
-
-// Crée les boutons pour les filtres de statistiques (AP/AD).
-const populateStatFilter = () => {
-    const T = translations[getLanguage()] || translations['en-US']; // On récupère la langue actuelle
-    const statTypes = ['AP', 'AD']; // Les types de statistiques à filtrer
-    const statContainer = document.getElementById('stat-filters'); // Le conteneur où les boutons seront ajoutés.
-    
-    // On utilise la traduction dynamique au lieu du texte en dur
-    statContainer.innerHTML = `<span class="font-bold">${T.statFilter}</span>`; 
-
-    statTypes.forEach(stat => {
-        const button = document.createElement('button');
-        // On garde vos classes pour la cohérence du style
-        button.className = 'btn btn-sm stat-filter-btn rarity-filter-btn'; 
-        
-        // On applique la classe 'btn-active' si le filtre correspond
-        if (stat === activeStatFilter) {
-            button.classList.add('btn-active');
-        }
-        
-        
-        if (stat === 'AP') {
-            // Remplace le texte "AP" par l'image du sprite 1
-            button.innerHTML = `<img src="assets/game/sprites/1.png" class="inline-sprite" alt="AP Stat" style="width: 1.2em; height: 1.2em;" />`;
-        } else if (stat === 'AD') {
-            // Remplace le texte "AD" par l'image du sprite 2
-            button.innerHTML = `<img src="assets/game/sprites/2.png" class="inline-sprite" alt="AD Stat" style="width: 1.2em; height: 1.2em;" />`;
-        }
-
-        button.dataset.stat = stat;
-        statContainer.appendChild(button);
-    });
-
-    document.querySelectorAll('.stat-filter-btn').forEach(button => {
-        button.addEventListener('click', (event) => {
-            const stat = event.currentTarget.dataset.stat;
-            
-            // Si on clique sur le bouton déjà actif, on le désactive. Sinon, on l'active.
-            activeStatFilter = activeStatFilter === stat ? '' : stat;
-            
-            // On rafraîchit les boutons pour mettre à jour l'état visuel
-            populateStatFilter(); 
-            applyFilters();
-        });
-    });
-};
-
-
 // Crée les boutons pour les filtres de voyageurs.
 const populateTravelerFilter = () => {
     const T = translations[getLanguage()] || translations['en-US'];
@@ -434,24 +385,29 @@ const applyFilters = () => {
         // Filtre de Tag : au moins un des tags de la mémoire doit être dans la liste
         const tagMatch = !activeTagFilter || (memory.tags && memory.tags.map(t => t.toLowerCase()).includes(activeTagFilter));
         
-        // Filtre de Stat (inchangé, car c'est une sélection unique)
+        // Filtre de Stat (Prise en compte de AP, AD et HP)
         let statMatch = true;
-        // On vérifie le rawDescVars pour les valeurs basicAP et basicAD
+        // On vérifie le rawDescVars pour les valeurs basicAP, basicAD, basicConstant, etc.
         const hasDescVars = memory.rawDescVars && memory.rawDescVars.length > 0;
         
         if (activeStatFilter === 'AP') {
             statMatch = hasDescVars && memory.rawDescVars.some(descVar => 
-                // Condition 1: Vérifie les données AP (comme avant)
+                // Condition 1: Vérifie les données AP
                 (descVar.data && ((descVar.data.basicAP || 0) > 0 || (descVar.data.addedAP || 0) > 0)) ||
                 // Condition 2: OU vérifie la présence des sprites AP dans le texte rendu
                 (descVar.rendered && (descVar.rendered.includes('<sprite=1>') || descVar.rendered.includes('<sprite=4>')))
             );
         } else if (activeStatFilter === 'AD') {
             statMatch = hasDescVars && memory.rawDescVars.some(descVar => 
-                // Condition 1: Vérifie les données AD (comme avant)
+                // Condition 1: Vérifie les données AD
                 (descVar.data && ((descVar.data.basicAD || 0) > 0 || (descVar.data.addedAD || 0) > 0)) ||
                 // Condition 2: OU vérifie la présence du sprite AD dans le texte rendu
                 (descVar.rendered && descVar.rendered.includes('<sprite=2>'))
+            );
+        } else if (activeStatFilter === 'HP') {
+            statMatch = hasDescVars && memory.rawDescVars.some(descVar => 
+                // On vérifie uniquement si le texte généré pour cette variable contient l'icône HP
+                descVar.rendered && descVar.rendered.includes('<sprite=3>')
             );
         }
         

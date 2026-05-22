@@ -1,4 +1,6 @@
 # v1.0.1
+# Permet de changer le numéro de version du site web
+
 import re
 import os
 

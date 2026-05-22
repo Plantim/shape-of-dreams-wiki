@@ -1,4 +1,6 @@
 # v1.0
+# Importe les données du jeu pour pouvoir mettre à jour le site avec
+
 import os
 import shutil
 

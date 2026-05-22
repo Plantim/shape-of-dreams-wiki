@@ -15,7 +15,6 @@ let activeTagFilter = '';
 // NOTE : Le filtre de voyageur (activeTravelerFilter) est retiré.
 
 let searchQuery = ''; // Le texte actuellement tapé dans la barre de recherche.
-let activeStatFilter = 'All'; // Le filtre AP/AD actuellement sélectionné.
 
 // La variable de niveau est maintenue mais sera fixée à 0 car inutile pour les essences
 let qualityPercentage = 100; // Toujours 100% de base pour les essences
@@ -177,7 +176,7 @@ const populateFilters = () => {
     populateRarityFilter();
     populateElementsFilter();
     populateTagsFilter();
-    populateStatFilter();
+    populateStatFilter(applyFilters); // On passe "applyFilters" pour lier les boutons au tri des Essences (unifié dans common.js)
     // NOTE : populateTravelerFilter est retiré.
 };
 
@@ -268,52 +267,6 @@ const populateTagsFilter = () => {
     });
 };
 
-// Crée les boutons pour les filtres de statistiques (AP/AD).
-const populateStatFilter = () => {
-    const T = translations[getLanguage()] || translations['en-US']; // On récupère la langue actuelle
-    const statTypes = ['AP', 'AD']; // Les types de statistiques à filtrer
-    const statContainer = document.getElementById('stat-filters'); // Le conteneur où les boutons seront ajoutés.
-    
-    // On utilise la traduction dynamique au lieu du texte en dur
-    statContainer.innerHTML = `<span class="font-bold">${T.statFilter}</span>`; 
-
-    statTypes.forEach(stat => {
-        const button = document.createElement('button');
-        // On garde vos classes pour la cohérence du style
-        button.className = 'btn btn-sm stat-filter-btn rarity-filter-btn'; 
-        
-        // On applique la classe 'btn-active' si le filtre correspond
-        if (stat === activeStatFilter) {
-            button.classList.add('btn-active');
-        }
-        
-        // On utilise une image pour représenter AP/AD
-        if (stat === 'AP') {
-            // Remplace le texte "AP" par l'image du sprite 1
-            button.innerHTML = `<img src="assets/game/sprites/1.png" class="inline-sprite" alt="AP Stat" style="width: 1.2em; height: 1.2em;" />`;
-        } else if (stat === 'AD') {
-            // Remplace le texte "AD" par l'image du sprite 2
-            button.innerHTML = `<img src="assets/game/sprites/2.png" class="inline-sprite" alt="AD Stat" style="width: 1.2em; height: 1.2em;" />`;
-        }
-
-        button.dataset.stat = stat;
-        statContainer.appendChild(button);
-    });
-
-    document.querySelectorAll('.stat-filter-btn').forEach(button => {
-        button.addEventListener('click', (event) => {
-            const stat = event.currentTarget.dataset.stat;
-            
-            // Si on clique sur le bouton déjà actif, on le désactive. Sinon, on l'active.
-            activeStatFilter = activeStatFilter === stat ? '' : stat;
-            
-            // On rafraîchit les boutons pour mettre à jour l'état visuel
-            populateStatFilter(); 
-            applyFilters();
-        });
-    });
-};
-
 // NOTE : populateTravelerFilter est retiré.
 
 
@@ -338,7 +291,7 @@ const applyFilters = () => {
         // Test 4: Le filtre de tag (en excluant les éléments déjà gérés)
         const tagMatch = !activeTagFilter || (essence.tags && essence.tags.map(t => t.toLowerCase()).includes(activeTagFilter));
         
-        // TEST 5: Le filtre de statistiques (AP/AD)
+        // TEST 5: Le filtre de statistiques (AP/AD/HP)
         let statMatch = true;
         const hasDescVars = essence.rawDescVars && essence.rawDescVars.length > 0;
         
@@ -355,6 +308,11 @@ const applyFilters = () => {
                 (descVar.data && ((descVar.data.basicAD || 0) > 0 || (descVar.data.addedAD || 0) > 0)) ||
                 // Condition 2: OU vérifie la présence du sprite AD
                 (descVar.rendered && descVar.rendered.includes('<sprite=2>'))
+            );
+        } else if (activeStatFilter === 'HP') {
+            statMatch = hasDescVars && essence.rawDescVars.some(descVar => 
+                // Filtrage strict : l'essence doit avoir le sprite 3 des HP dans ses données calculées
+                descVar.rendered && descVar.rendered.includes('<sprite=3>')
             );
         }
 

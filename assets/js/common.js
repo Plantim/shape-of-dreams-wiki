@@ -397,3 +397,67 @@ function updateGlobalVersionDisplay(T) {
         }
     }
 }
+
+
+// On centralise la variable d'état du filtre de stat pour qu'elle soit accessible partout
+let activeStatFilter = ''; 
+
+/**
+ * Génère les boutons de filtres statistiques (AP/AD/HP)
+ * @param {Function} onFilterChange - La fonction à exécuter lorsque le filtre change (ex: applyFilters)
+ */
+
+// Crée les boutons pour les filtres de statistiques (AP/AD/HP).
+const populateStatFilter = (onFilterChange) => {
+    const T = translations[getLanguage()] || translations['en-US'];
+    const statTypes = ['AP', 'AD', 'HP'];
+    const statContainer = document.getElementById('stat-filters');
+    
+    if (!statContainer) return; // Sécurité si le conteneur n'existe pas sur une page
+    
+    // On utilise la traduction dynamique au lieu du texte en dur
+    statContainer.innerHTML = `<span class="font-bold">${T.statFilter}</span>`; 
+
+    statTypes.forEach(stat => {
+        const button = document.createElement('button');
+        // On garde vos classes pour la cohérence du style
+        button.className = 'btn btn-sm stat-filter-btn rarity-filter-btn'; 
+        
+        // On applique la classe 'btn-active' si le filtre correspond
+        if (stat === activeStatFilter) {
+            button.classList.add('btn-active');
+        }
+        
+        // Gestion des icônes selon la statistique
+        if (stat === 'AP') {
+            // Remplace le texte "AP" par l'image du sprite 1
+            button.innerHTML = `<img src="assets/game/sprites/1.png" class="inline-sprite" alt="AP Stat" style="width: 1.2em; height: 1.2em;" />`;
+        } else if (stat === 'AD') {
+            // Remplace le texte "AD" par l'image du sprite 2
+            button.innerHTML = `<img src="assets/game/sprites/2.png" class="inline-sprite" alt="AD Stat" style="width: 1.2em; height: 1.2em;" />`;
+        } else if (stat === 'HP') {
+            // Remplace le texte "HP" par l'image du sprite 3
+            button.innerHTML = `<img src="assets/game/sprites/3.png" class="inline-sprite" alt="HP Stat" style="width: 1.2em; height: 1.2em;" />`;
+        }
+
+        button.dataset.stat = stat;
+        statContainer.appendChild(button);
+    });
+
+    document.querySelectorAll('.stat-filter-btn').forEach(button => {
+        button.addEventListener('click', (event) => {
+            const stat = event.currentTarget.dataset.stat;
+            
+            // Logique de bascule (Toggle) - Si on clique sur le bouton déjà actif, on le désactive. Sinon, on l'active.
+            activeStatFilter = activeStatFilter === stat ? '' : stat;
+            
+            // On rafraîchit les boutons pour mettre à jour l'état visuel
+            populateStatFilter(onFilterChange); 
+            
+            // On notifie le fichier es6/js local (memories ou essences) qu'il faut filtrer
+            if (typeof onFilterChange === 'function') {
+                onFilterChange();
+            }
+        });
+    });
+};
