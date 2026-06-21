@@ -207,8 +207,8 @@
     "cooldownTime": 4.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Dispara uma flecha sombria que causa  <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5>  de <color=yellow>Dano de Escuridão</color> no inimigo e ativa <color=yellow>efeitos de ataque</color>. Perfura até 2 inimigo(s).",
-    "rawDesc": "Dispara uma flecha sombria que causa {0} de <color=yellow>Dano de Escuridão</color> no inimigo e ativa <color=yellow>efeitos de ataque</color>. Perfura até {1} inimigo(s).",
+    "description": "Dispara uma flecha sombria que causa  <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5>  de <color=yellow>Dano Sombrio</color> no inimigo e ativa <color=yellow>Efeito de Ataque</color>. Perfura até 2 inimigo(s).\nTem <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> de chance de aumentar o <color=yellow>Dano</color> em 80% e reduzir o <color=yellow>Tempo de recarga</color> em 50%.",
+    "rawDesc": "Dispara uma flecha sombria que causa {0} de <color=yellow>Dano Sombrio</color> no inimigo e ativa <color=yellow>Efeito de Ataque</color>. Perfura até {1} inimigo(s).\nTem {2} de chance de aumentar o <color=yellow>Dano</color> em {3} e reduzir o <color=yellow>Tempo de recarga</color> em {4}.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5> ",
@@ -235,9 +235,48 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "ampEmpoweredDmg",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "empoweredCooldownReductionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Disparo de flecha que causa Dano de Escuridão",
+    "shortDescription": "Disparo de flecha que causa Dano Sombrio",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -257,8 +296,8 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Perfura os inimigos à frente, causando  <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5>  de <color=yellow>Dano Sombrio</color>, ativando <color=yellow>Efeito de Ataque</color> e puxando-os para o centro. O dano a escudos aumenta em 100%.",
-    "rawDesc": "Perfura os inimigos à frente, causando {0} de <color=yellow>Dano Sombrio</color>, ativando <color=yellow>Efeito de Ataque</color> e puxando-os para o centro. O dano a escudos aumenta em {1}.",
+    "description": "Perfura os inimigos à frente, causando  <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5>  de <color=yellow>Dano Sombrio</color>, ativando <color=yellow>Efeito de Ataque</color> e puxando-os para o centro. O dano a escudos aumenta em 100%.\nTem <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> de chance de aumentar o <color=yellow>Dano</color> em 100% e <color=yellow>Recuperar</color>  <sprite=2><color=#fff><gradient=sv_ad>20%</gradient></color><sprite=5>  de <color=yellow>Vida</color> por inimigo atingido.",
+    "rawDesc": "Perfura os inimigos à frente, causando {0} de <color=yellow>Dano Sombrio</color>, ativando <color=yellow>Efeito de Ataque</color> e puxando-os para o centro. O dano a escudos aumenta em {1}.\nTem {2} de chance de aumentar o <color=yellow>Dano</color> em {3} e <color=yellow>Recuperar</color> {4} de <color=yellow>Vida</color> por inimigo atingido.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> ",
@@ -284,6 +323,45 @@
           "basicAD": 0,
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "dmgAmpByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>20%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healAmountByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
         }
       }
     ],
@@ -1777,13 +1855,39 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Ao conjurar uma <color=yellow>Memória</color> ou usar <color=yellow>Estrela Variável</color>, você ganha 1 acúmulo de <color=yellow>Matéria Exótica</color>, até um máximo de 3. Conjurar uma <color=yellow>Memória Suprema</color> concede o máximo de acúmulos. O próximo <color=yellow>Ataque Básico</color> consome todos os acúmulos, causando uma explosão que inflige  <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color> por acúmulo aos inimigos.\n\nO tamanho da explosão aumenta em 5% a cada aprimoramento de <color=yellow>Matéria Exótica</color>, até um máximo de 50%.",
-    "rawDesc": "Ao conjurar uma <color=yellow>Memória</color> ou usar <color=yellow>Estrela Variável</color>, você ganha 1 acúmulo de <color=yellow>Matéria Exótica</color>, até um máximo de {0}. Conjurar uma <color=yellow>Memória Suprema</color> concede o máximo de acúmulos. O próximo <color=yellow>Ataque Básico</color> consome todos os acúmulos, causando uma explosão que inflige {1} de <color=yellow>Dano de Luz</color> por acúmulo aos inimigos.\n\nO tamanho da explosão aumenta em {2} a cada aprimoramento de <color=yellow>Matéria Exótica</color>, até um máximo de {3}.",
+    "description": "Ao conjurar uma <color=yellow>Memória</color>, você ganha 1 acúmulo de <color=yellow>Matéria Exótica</color>, até um máximo de 4. Conjurar uma <color=yellow>Habilidade de Esquiva</color> concede 2 acúmulos em vez disso, e conjurar uma <color=yellow>Memória Suprema</color> concede 3 acúmulos. O próximo <color=yellow>Ataque Básico</color> consome todos os acúmulos, causando uma explosão que inflige  <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color> por acúmulo aos inimigos.\n\nO tamanho da explosão aumenta em 5% a cada aprimoramento de <color=yellow>Matéria Exótica</color>, até um máximo de 50%.",
+    "rawDesc": "Ao conjurar uma <color=yellow>Memória</color>, você ganha 1 acúmulo de <color=yellow>Matéria Exótica</color>, até um máximo de {0}. Conjurar uma <color=yellow>Habilidade de Esquiva</color> concede {1} acúmulos em vez disso, e conjurar uma <color=yellow>Memória Suprema</color> concede {2} acúmulos. O próximo <color=yellow>Ataque Básico</color> consome todos os acúmulos, causando uma explosão que inflige {3} de <color=yellow>Dano de Luz</color> por acúmulo aos inimigos.\n\nO tamanho da explosão aumenta em {4} a cada aprimoramento de <color=yellow>Matéria Exótica</color>, até um máximo de {5}.",
     "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dodgeCastStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
       {
         "rendered": "3",
         "format": "#,##0",
-        "raw": "maxStack",
+        "raw": "ultCastStacks",
         "scalingType": "basic",
         "data": {
           "basicConstant": 3.0,
@@ -1887,7 +1991,7 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Aumenta  12<sprite=5>  do <color=yellow>ATQ</color>. Todo 4.º <color=yellow>Ataque Básico</color> se torna um <color=yellow>Golpe Crítico</color> e causa  <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color> adicional.\nA cada <color=yellow>ataque</color> contra um inimigo, a <color=yellow>Velocidade de Ataque</color> aumenta em  4%<sprite=5>  durante 4s, aumentando até  24%<sprite=5> . Quando a <color=yellow>Velocidade de Ataque</color> é aumentada ao máximo, <color=yellow>recupera</color>  1%<sprite=5>  do <color=yellow>HP perdido</color> cada vez que <color=yellow>atacar</color> um inimigo.",
+    "description": "Aumenta  12<sprite=5>  do <color=yellow>ATQ</color>. Todo 4.º <color=yellow>Ataque Básico</color> se torna um <color=yellow>Golpe Crítico</color> e causa  <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color> adicional.\nA cada <color=yellow>ataque</color> contra um inimigo, a <color=yellow>Velocidade de Ataque</color> aumenta em  4%<sprite=5>  durante 4s, aumentando até  24%<sprite=5> . Quando a <color=yellow>Velocidade de Ataque</color> é aumentada ao máximo, <color=yellow>recupera</color>  2%<sprite=5>  do <color=yellow>HP perdido</color> cada vez que <color=yellow>atacar</color> um inimigo.",
     "rawDesc": "Aumenta {0} do <color=yellow>ATQ</color>. Todo 4.º <color=yellow>Ataque Básico</color> se torna um <color=yellow>Golpe Crítico</color> e causa {1} de <color=yellow>Dano de Luz</color> adicional.\nA cada <color=yellow>ataque</color> contra um inimigo, a <color=yellow>Velocidade de Ataque</color> aumenta em {2} durante {3}s, aumentando até {4}. Quando a <color=yellow>Velocidade de Ataque</color> é aumentada ao máximo, <color=yellow>recupera</color> {5} do <color=yellow>HP perdido</color> cada vez que <color=yellow>atacar</color> um inimigo.",
     "rawDescVars": [
       {
@@ -1896,10 +2000,10 @@
         "raw": "adBonus",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 9.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 2.0,
+          "basicLvl": 3.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -1950,12 +2054,12 @@
         "data": {}
       },
       {
-        "rendered": " 1%<sprite=5> ",
+        "rendered": " 2%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "lostHpHealRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.006,
+          "basicConstant": 0.016,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.004,
@@ -3432,22 +3536,9 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Pressione e segure</color> o botão de conjurar para recarregar a escuridão em suas mãos. Ao final, avança à frente, infligindo golpe forte no primeiro inimigo atingido e em todos ao seu redor. Aplica Atordoamento durante 1s e inflige entre  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5>  e  <sprite=2><color=#fff><gradient=sv_ad>600%</gradient></color><sprite=5>  de <color=yellow>Dano Sombrio</color> nos inimigos, proporcional ao tempo de recarga. A cada inimigo atingido, obtém uma <color=yellow>Barreira</color> de  <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5>  com duração de 3s; se o alvo for um <color=yellow>Chefe</color>, o valor da <color=yellow>Barreira</color> aumenta em 200%.\nA distância do avanço e o Dano atingem o valor máximo após recarregar durante 1.2s.",
-    "rawDesc": "<color=yellow>Pressione e segure</color> o botão de conjurar para recarregar a escuridão em suas mãos. Ao final, avança à frente, infligindo golpe forte no primeiro inimigo atingido e em todos ao seu redor. Aplica Atordoamento durante {0}s e inflige entre {1} e {2} de <color=yellow>Dano Sombrio</color> nos inimigos, proporcional ao tempo de recarga. A cada inimigo atingido, obtém uma <color=yellow>Barreira</color> de {3} com duração de {4}s; se o alvo for um <color=yellow>Chefe</color>, o valor da <color=yellow>Barreira</color> aumenta em {5}.\nA distância do avanço e o Dano atingem o valor máximo após recarregar durante {6}s.",
+    "description": "<color=yellow>Pressione e segure</color> o botão de conjurar para recarregar a escuridão em suas mãos. Ao final, avança à frente, infligindo golpe forte no primeiro inimigo atingido e em todos ao seu redor. Inflige entre  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5>  e  <sprite=2><color=#fff><gradient=sv_ad>600%</gradient></color><sprite=5>  de <color=yellow>Dano Sombrio</color> nos inimigos, proporcional ao tempo de recarga, aplica Atordoamento durante 1s e aciona <color=yellow>Efeito de Ataque</color>. A cada inimigo atingido, obtém uma <color=yellow>Barreira</color> de  <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5>  com duração de 3s; se o alvo for um <color=yellow>Chefe</color>, o valor da <color=yellow>Barreira</color> aumenta em 200%.\nA distância do avanço e o Dano atingem o valor máximo após recarregar durante 1.2s.",
+    "rawDesc": "<color=yellow>Pressione e segure</color> o botão de conjurar para recarregar a escuridão em suas mãos. Ao final, avança à frente, infligindo golpe forte no primeiro inimigo atingido e em todos ao seu redor. Inflige entre {0} e {1} de <color=yellow>Dano Sombrio</color> nos inimigos, proporcional ao tempo de recarga, aplica Atordoamento durante {2}s e aciona <color=yellow>Efeito de Ataque</color>. A cada inimigo atingido, obtém uma <color=yellow>Barreira</color> de {3} com duração de {4}s; se o alvo for um <color=yellow>Chefe</color>, o valor da <color=yellow>Barreira</color> aumenta em {5}.\nA distância do avanço e o Dano atingem o valor máximo após recarregar durante {6}s.",
     "rawDescVars": [
-      {
-        "rendered": "1",
-        "format": "#,##0.#",
-        "raw": "stunDuration",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 1.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
         "format": "#,##0",
@@ -3472,6 +3563,19 @@
           "basicAD": 6.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
         }
       },
       {
@@ -3550,7 +3654,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Aplica poder da escuridão na arma durante 7s, aumentando a <color=yellow>chance de Golpe Crítico</color> em  20%<sprite=5>  e causando  <sprite=2><color=#fff><gradient=sv_ad>52%</gradient></color><sprite=5>  de <color=yellow>Dano de Escuridão</color> adicional ao <color=yellow>atacar</color>. Aumenta 25% do Dano adicional de <color=yellow>Viajante à curta distância</color>.",
+    "description": "Aplica poder da escuridão na arma durante 7s, aumentando a <color=yellow>chance de Golpe Crítico</color> em  25%<sprite=5>  e causando  <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5>  de <color=yellow>Dano de Escuridão</color> adicional ao <color=yellow>atacar</color>. Aumenta 25% do Dano adicional de <color=yellow>Viajante à curta distância</color>.",
     "rawDesc": "Aplica poder da escuridão na arma durante {0}s, aumentando a <color=yellow>chance de Golpe Crítico</color> em {1} e causando {2} de <color=yellow>Dano de Escuridão</color> adicional ao <color=yellow>atacar</color>. Aumenta {3} do Dano adicional de <color=yellow>Viajante à curta distância</color>.",
     "rawDescVars": [
       {
@@ -3567,27 +3671,27 @@
         }
       },
       {
-        "rendered": " 20%<sprite=5> ",
+        "rendered": " 25%<sprite=5> ",
         "format": "P0",
         "raw": "critChance",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.18,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.02,
+          "basicLvl": 0.05,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>52%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "hitDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 0.52,
+          "basicAD": 0.3,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.15
         }
@@ -4761,42 +4865,29 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Avança em direção ao alvo e golpeia de cima a baixo com o martelo, causando  <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color> nos inimigos e ativando 50% de <color=yellow>efeito de ataque</color>. Cada <color=yellow>ataque</color> contra inimigo <color=yellow>reduz</color> 8% do <color=yellow>tempo de recarga</color>.",
-    "rawDesc": "Avança em direção ao alvo e golpeia de cima a baixo com o martelo, causando {0} de <color=yellow>Dano de Luz</color> nos inimigos e ativando {1} de <color=yellow>efeito de ataque</color>. Cada <color=yellow>ataque</color> contra inimigo <color=yellow>reduz</color> {2} do <color=yellow>tempo de recarga</color>.",
+    "description": "Avança em direção ao alvo e golpeia de cima a baixo com o martelo, causando  <sprite=2><color=#fff><gradient=sv_ad>175%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color> nos inimigos e ativando <color=yellow>efeito de ataque</color>. Cada <color=yellow>ataque</color> contra inimigo <color=yellow>reduz</color> 10% do <color=yellow>tempo de recarga</color>.",
+    "rawDesc": "Avança em direção ao alvo e golpeia de cima a baixo com o martelo, causando {0} de <color=yellow>Dano de Luz</color> nos inimigos e ativando <color=yellow>efeito de ataque</color>. Cada <color=yellow>ataque</color> contra inimigo <color=yellow>reduz</color> {1} do <color=yellow>tempo de recarga</color>.",
     "rawDescVars": [
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>175%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.25,
+          "basicAD": 1.75,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "50%",
-        "format": "P0",
-        "raw": "attackEffect",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "8%",
+        "rendered": "10%",
         "format": "P0",
         "raw": "cooldownReductionRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.08,
+          "basicConstant": 0.1,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4825,8 +4916,8 @@
     "cooldownTime": 9.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Dispara <color=yellow>éter</color> que avança e retorna, causando  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color> nos inimigos. Se conjurar novamente, o <color=yellow>éter</color> <color=yellow>explode</color>, causando  <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color> e <color=yellow>Contenção</color> nos inimigos durante 3s.",
-    "rawDesc": "Dispara <color=yellow>éter</color> que avança e retorna, causando {0} de <color=yellow>Dano de Luz</color> nos inimigos. Se conjurar novamente, o <color=yellow>éter</color> <color=yellow>explode</color>, causando {1} de <color=yellow>Dano de Luz</color> e <color=yellow>Contenção</color> nos inimigos durante {2}s.",
+    "description": "Dispara <color=yellow>éter</color> que avança e retorna, causando  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color> nos inimigos. Se conjurar novamente, o <color=yellow>éter</color> <color=yellow>explode</color>, causando  <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color> e <color=yellow>Contenção</color> nos inimigos durante 3s.\n\nSe esta <color=yellow>explosão</color> atingir um único alvo, o <color=yellow>Dano da explosão</color> aumenta em 75%.",
+    "rawDesc": "Dispara <color=yellow>éter</color> que avança e retorna, causando {0} de <color=yellow>Dano de Luz</color> nos inimigos. Se conjurar novamente, o <color=yellow>éter</color> <color=yellow>explode</color>, causando {1} de <color=yellow>Dano de Luz</color> e <color=yellow>Contenção</color> nos inimigos durante {2}s.\n\nSe esta <color=yellow>explosão</color> atingir um único alvo, o <color=yellow>Dano da explosão</color> aumenta em {3}.",
     "rawDescVars": [
       {
         "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
@@ -4861,6 +4952,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "75%",
+        "format": "P0",
+        "raw": "explodeAmpOnSingleTarget",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.75,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5537,8 +5641,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Cria uma estrela que cresce no local alvo, reduzindo a velocidade dos inimigos e, em seguida, canaliza por até 3s. Durante este período, não é possível atacar nem usar memórias. Reative <color=yellow>Supernova</color> para detonar a estrela, causando  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color> nos inimigos. A explosão se torna mais poderosa com o tempo de recarga da canalização, aumentando o Dano para 225% após 1.3s.\nA velocidade de recarga aumenta proporcionalmente à Aceleração de Memória de Yubar.",
-    "rawDesc": "Cria uma estrela que cresce no local alvo, reduzindo a velocidade dos inimigos e, em seguida, canaliza por até {0}s. Durante este período, não é possível atacar nem usar memórias. Reative <color=yellow>Supernova</color> para detonar a estrela, causando {1} de <color=yellow>Dano de Luz</color> nos inimigos. A explosão se torna mais poderosa com o tempo de recarga da canalização, aumentando o Dano para {2} após {3}s.\nA velocidade de recarga aumenta proporcionalmente à Aceleração de Memória de Yubar.",
+    "description": "Recarrega a <color=yellow>Habilidade de Esquiva</color> 1 vez e cria uma <color=yellow>estrela</color> que cresce no local alvo, reduzindo a velocidade dos inimigos e, em seguida, <color=yellow>Canaliza</color> por até 3s. Durante este período, não é possível <color=yellow>Atacar</color> nem conjurar <color=yellow>Memórias</color>. Se conjurar novamente, detona a <color=yellow>estrela</color>, causando  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color> nos inimigos.\n\nA explosão se torna mais poderosa com o <color=yellow>tempo de carregamento</color>, aumentando o <color=yellow>Dano</color> para 225% após 1.3s, e a velocidade de carregamento aumenta proporcionalmente à <color=yellow>Aceleração de Memória</color> de Yubar.",
+    "rawDesc": "Recarrega a <color=yellow>Habilidade de Esquiva</color> 1 vez e cria uma <color=yellow>estrela</color> que cresce no local alvo, reduzindo a velocidade dos inimigos e, em seguida, <color=yellow>Canaliza</color> por até {0}s. Durante este período, não é possível <color=yellow>Atacar</color> nem conjurar <color=yellow>Memórias</color>. Se conjurar novamente, detona a <color=yellow>estrela</color>, causando {1} de <color=yellow>Dano de Luz</color> nos inimigos.\n\nA explosão se torna mais poderosa com o <color=yellow>tempo de carregamento</color>, aumentando o <color=yellow>Dano</color> para {2} após {3}s, e a velocidade de carregamento aumenta proporcionalmente à <color=yellow>Aceleração de Memória</color> de Yubar.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -5612,7 +5716,7 @@
     "cooldownTime": 9.0,
     "maxCharges": 2,
     "addedCharges": 1,
-    "description": "<color=yellow>Invoca</color> um <color=yellow>Cão-folha</color> que segue Nachia na posição alvo, causando  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5>  de <color=yellow>dano</color> nos inimigos e <color=yellow>Atordoamento</color> durante 0.4.\n\nO <color=yellow>Cães-folha</color> possuem 128 de HP, 40 de DEF e permanece no campo de batalha por até 25s, arranhando inimigos e causando  <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5>  de <color=yellow>dano</color>. É possível manter até 5 deles.",
+    "description": "<color=yellow>Invoca</color> um <color=yellow>Cão-folha</color> que segue Nachia na posição alvo, causando  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5>  de <color=yellow>dano</color> nos inimigos e <color=yellow>Atordoamento</color> durante 0.4.\n\nO <color=yellow>Cães-folha</color> possuem 128 de HP,  20<sprite=5>  de DEF e permanece no campo de batalha por até 25s, arranhando inimigos e causando  <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5>  de <color=yellow>dano</color>. É possível manter até 5 deles.",
     "rawDesc": "<color=yellow>Invoca</color> um <color=yellow>Cão-folha</color> que segue Nachia na posição alvo, causando {0} de <color=yellow>dano</color> nos inimigos e <color=yellow>Atordoamento</color> durante {1}.\n\nO <color=yellow>Cães-folha</color> possuem {2} de HP, {3} de DEF e permanece no campo de batalha por até {4}s, arranhando inimigos e causando {5} de <color=yellow>dano</color>. É possível manter até {6} deles.",
     "rawDescVars": [
       {
@@ -5649,15 +5753,15 @@
         "data": {}
       },
       {
-        "rendered": "40",
+        "rendered": " 20<sprite=5> ",
         "format": "#,##0",
         "raw": "armor",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 40.0,
+          "basicConstant": 13.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 7.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5722,7 +5826,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Pressione e segure</color> o botão de conjurar para recarregar flechas da mente. Ao soltar, dispara entre 1 e  4<sprite=5>  flechas mentais nos inimigos próximos, proporcional ao tempo de recarga. Cada flecha mental causa  <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5>  de <color=yellow>Dano de Escuridão</color> nos inimigos em uma pequena área.",
+    "description": "<color=yellow>Pressione e segure</color> o botão de conjurar para recarregar flechas da mente. Ao soltar, dispara entre 1 e  4<sprite=5>  flechas mentais nos inimigos próximos, proporcional ao tempo de recarga. Cada flecha mental causa  <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><sprite=5>  de <color=yellow>Dano de Escuridão</color> nos inimigos em uma pequena área.",
     "rawDesc": "<color=yellow>Pressione e segure</color> o botão de conjurar para recarregar flechas da mente. Ao soltar, dispara entre {0} e {1} flechas mentais nos inimigos próximos, proporcional ao tempo de recarga. Cada flecha mental causa {2} de <color=yellow>Dano de Escuridão</color> nos inimigos em uma pequena área.",
     "rawDescVars": [
       {
@@ -5746,14 +5850,14 @@
         "data": {}
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 2.0,
+          "basicAD": 1.7,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5948,8 +6052,8 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Por 10s, sua espada é imbuída com uma <color=yellow>Aura de Espada</color> destrutiva. Durante este período, você não pode <color=yellow>conjurar</color> <color=yellow>Memórias</color>, mas seu <color=yellow>Dano de Ataque</color> aumenta em  35%<sprite=5> , seu <color=yellow>alcance de ataque</color> aumenta e cada <color=yellow>Ataque Básico</color> dispara uma <color=yellow>Aura de Espada</color> que causa  <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5>  de <color=yellow>Dano Sombrio</color> aos inimigos. Nesse estado, você pode realizar  1.5<sprite=5>  <color=yellow>Ataques Básicos</color> por segundo, e este efeito não é influenciado por outras fontes de Velocidade de Ataque.\n\nDurante o efeito, a <color=yellow>Aceleração de Memória</color> da sua <color=yellow>Habilidade de Esquiva</color> aumenta em  30<sprite=5>  e suas <color=yellow>Cargas Máximas</color> aumentam em 2.",
-    "rawDesc": "Por {0}s, sua espada é imbuída com uma <color=yellow>Aura de Espada</color> destrutiva. Durante este período, você não pode <color=yellow>conjurar</color> <color=yellow>Memórias</color>, mas seu <color=yellow>Dano de Ataque</color> aumenta em {1}, seu <color=yellow>alcance de ataque</color> aumenta e cada <color=yellow>Ataque Básico</color> dispara uma <color=yellow>Aura de Espada</color> que causa {2} de <color=yellow>Dano Sombrio</color> aos inimigos. Nesse estado, você pode realizar {3} <color=yellow>Ataques Básicos</color> por segundo, e este efeito não é influenciado por outras fontes de Velocidade de Ataque.\n\nDurante o efeito, a <color=yellow>Aceleração de Memória</color> da sua <color=yellow>Habilidade de Esquiva</color> aumenta em {4} e suas <color=yellow>Cargas Máximas</color> aumentam em {5}.",
+    "description": "Por 10s, sua espada é imbuída com uma <color=yellow>Aura de Espada</color> destrutiva. Durante este período, você não pode <color=yellow>conjurar</color> <color=yellow>Memórias</color>, mas seu <color=yellow>alcance de ataque</color> aumenta ligeiramente, seu <color=yellow>Dano de Ataque</color> aumenta em  35%<sprite=5>  e sua <color=yellow>Velocidade de Ataque</color> aumenta em  30%<sprite=5> , sendo que este aumento de Velocidade de Ataque não é afetado por <color=yellow>Morte a Cada Passo</color>. Cada <color=yellow>Ataque Básico</color> dispara uma <color=yellow>Aura de Espada</color> que causa  <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5>  de <color=yellow>Dano Sombrio</color> aos inimigos.\n\nDurante o efeito, a <color=yellow>Aceleração de Memória</color> da sua <color=yellow>Habilidade de Esquiva</color> aumenta em  30<sprite=5>  e suas <color=yellow>Cargas Máximas</color> aumentam em 2.",
+    "rawDesc": "Por {0}s, sua espada é imbuída com uma <color=yellow>Aura de Espada</color> destrutiva. Durante este período, você não pode <color=yellow>conjurar</color> <color=yellow>Memórias</color>, mas seu <color=yellow>alcance de ataque</color> aumenta ligeiramente, seu <color=yellow>Dano de Ataque</color> aumenta em {1} e sua <color=yellow>Velocidade de Ataque</color> aumenta em {2}, sendo que este aumento de Velocidade de Ataque não é afetado por <color=yellow>Morte a Cada Passo</color>. Cada <color=yellow>Ataque Básico</color> dispara uma <color=yellow>Aura de Espada</color> que causa {3} de <color=yellow>Dano Sombrio</color> aos inimigos.\n\nDurante o efeito, a <color=yellow>Aceleração de Memória</color> da sua <color=yellow>Habilidade de Esquiva</color> aumenta em {4} e suas <color=yellow>Cargas Máximas</color> aumentam em {5}.",
     "rawDescVars": [
       {
         "rendered": "10",
@@ -5978,29 +6082,29 @@
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> ",
+        "rendered": " 30%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "atkSpdPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 10.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.4,
+          "basicAP": 4.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": " 1.5<sprite=5> ",
-        "format": "0.#",
-        "raw": "atkSpd",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 1.4,
-          "basicAP": 0.0,
-          "basicAD": 0.0,
-          "basicLvl": 0.1,
-          "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
@@ -6128,8 +6232,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Dispara uma besta que <color=yellow>perfura</color> inimigos, causando  <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5>  de <color=yellow>Dano de Escuridão</color>, empurrando-os para trás e ativando <color=yellow>efeito de ataque</color>. Cada vez que <color=yellow>perfura</color> um inimigo, o <color=yellow>Dano</color> causado ao próximo inimigo aumenta em 35%.",
-    "rawDesc": "Dispara uma besta que <color=yellow>perfura</color> inimigos, causando {0} de <color=yellow>Dano de Escuridão</color>, empurrando-os para trás e ativando <color=yellow>efeito de ataque</color>. Cada vez que <color=yellow>perfura</color> um inimigo, o <color=yellow>Dano</color> causado ao próximo inimigo aumenta em {1}.",
+    "description": "Dispara uma besta que <color=yellow>perfura</color> inimigos, causando  <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5>  de <color=yellow>Dano Sombrio</color>, empurrando-os para trás e ativando <color=yellow>Efeito de Ataque</color>. Cada vez que <color=yellow>perfura</color> um inimigo, o <color=yellow>Dano</color> causado ao próximo inimigo aumenta em 35%.\nTem <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> de chance de aumentar o <color=yellow>Dano</color> em 100% e aplicar 5 de <color=yellow>Escuridão</color> ao alvo.",
+    "rawDesc": "Dispara uma besta que <color=yellow>perfura</color> inimigos, causando {0} de <color=yellow>Dano Sombrio</color>, empurrando-os para trás e ativando <color=yellow>Efeito de Ataque</color>. Cada vez que <color=yellow>perfura</color> um inimigo, o <color=yellow>Dano</color> causado ao próximo inimigo aumenta em {1}.\nTem {2} de chance de aumentar o <color=yellow>Dano</color> em {3} e aplicar {4} de <color=yellow>Escuridão</color> ao alvo.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> ",
@@ -6156,9 +6260,48 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "empoweredAmpDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "empoweredDarkStackCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Dano de Escuridão perfurante",
+    "shortDescription": "Dano Sombrio perfurante",
     "rarity": "Rare",
     "type": "Normal",
     "traveler": "",
@@ -6631,6 +6774,121 @@
     ],
     "image": "St_R_DangerousTheory.png",
     "lore": "Os covardes de Arcanum disseram que esta teoria era “inaceitavelmente perigosa”.\nIdiotas.\n\nEles não entenderam a elegância da teoria de que apenas a matéria em estado extremo produz os resultados mais explosivos. Estou apenas provando minha hipótese.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_DarkGrenade": {
+    "name": "Granada Sombria",
+    "cooldownTime": 9.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Lança uma Granada Sombria no local alvo. A granada explode, disparando 7 fragmentos sombrios em todas as direções. Cada fragmento aciona um <color=yellow>Efeito de Ataque</color> de 50% e causa  <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5>  de <color=yellow>Dano Sombrio</color> ao primeiro inimigo atingido. Se vários fragmentos atingirem o mesmo alvo, a partir do segundo fragmento, causarão 50% de dano.\nHá <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> de chance de o número de fragmentos sombrios disparados aumentar em 4 e <color=yellow>Atordoar</color> os inimigos por 1s.",
+    "rawDesc": "Lança uma Granada Sombria no local alvo. A granada explode, disparando {0} fragmentos sombrios em todas as direções. Cada fragmento aciona um <color=yellow>Efeito de Ataque</color> de {1} e causa {2} de <color=yellow>Dano Sombrio</color> ao primeiro inimigo atingido. Se vários fragmentos atingirem o mesmo alvo, a partir do segundo fragmento, causarão {3} de dano.\nHá {4} de chance de o número de fragmentos sombrios disparados aumentar em {5} e <color=yellow>Atordoar</color> os inimigos por {6}s.",
+    "rawDescVars": [
+      {
+        "rendered": "7",
+        "format": "#,##0",
+        "raw": "defaultShardCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 7.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "attackEffectStrength",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_DarkGrenade_Shard::damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "subsequentHitMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "addedEmpoweredShardCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Lançamento, Dano Sombrio em Área",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "St_R_DarkGrenade.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -7717,8 +7975,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Dispara espalhando 5 bala(s) da escuridão para a frente. Cada bala causa  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5>  de <color=yellow>Dano de Escuridão</color> e ativa 50% de <color=yellow>efeito de ataque</color>.",
-    "rawDesc": "Dispara espalhando {0} bala(s) da escuridão para a frente. Cada bala causa {1} de <color=yellow>Dano de Escuridão</color> e ativa {2} de <color=yellow>efeito de ataque</color>.",
+    "description": "Dispara espalhando 5 bala(s) da escuridão para a frente. Cada bala causa  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5>  de <color=yellow>Dano Sombrio</color> e ativa 50% de <color=yellow>Efeito de Ataque</color>.\nCom <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> de chance, dispara mais 4 bala(s) da escuridão.",
+    "rawDesc": "Dispara espalhando {0} bala(s) da escuridão para a frente. Cada bala causa {1} de <color=yellow>Dano Sombrio</color> e ativa {2} de <color=yellow>Efeito de Ataque</color>.\nCom {3} de chance, dispara mais {4} bala(s) da escuridão.",
     "rawDescVars": [
       {
         "rendered": "5",
@@ -7758,9 +8016,35 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "addedShootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Dano de Escuridão espalhado à frente",
+    "shortDescription": "Dano Sombrio espalhado à frente",
     "rarity": "Rare",
     "type": "Normal",
     "traveler": "",
@@ -7898,8 +8182,8 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Canaliza durante 0.7s, aumentando  30%<sprite=5>  da <color=yellow>Velocidade de Movimento</color> neste período. Ao finalizar a canalização, dispara míssil teleguiado x5 que causa  <sprite=2><color=#fff><gradient=sv_ad>50%</gradient></color><sprite=5>  de <color=yellow>Dano de Escuridão</color> a inimigos aleatórios ao redor, e aumenta  20%<sprite=5>  da <color=yellow>Velocidade de Ataque</color> durante 3s.",
-    "rawDesc": "Canaliza durante {0}s, aumentando {1} da <color=yellow>Velocidade de Movimento</color> neste período. Ao finalizar a canalização, dispara míssil teleguiado x{2} que causa {3} de <color=yellow>Dano de Escuridão</color> a inimigos aleatórios ao redor, e aumenta {4} da <color=yellow>Velocidade de Ataque</color> durante {5}s.",
+    "description": "Canaliza durante 0.7s, aumentando  30%<sprite=5>  da <color=yellow>Velocidade de Movimento</color> neste período. Ao finalizar a canalização, dispara míssil teleguiado x5 que causa  <sprite=2><color=#fff><gradient=sv_ad>50%</gradient></color><sprite=5>  de <color=yellow>Dano Sombrio</color> a inimigos aleatórios ao redor, e aumenta  20%<sprite=5>  da <color=yellow>Velocidade de Ataque</color> durante 3s.\nCom <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> de chance, a quantidade de mísseis disparados aumenta em 5.",
+    "rawDesc": "Canaliza durante {0}s, aumentando {1} da <color=yellow>Velocidade de Movimento</color> neste período. Ao finalizar a canalização, dispara míssil teleguiado x{2} que causa {3} de <color=yellow>Dano Sombrio</color> a inimigos aleatórios ao redor, e aumenta {4} da <color=yellow>Velocidade de Ataque</color> durante {5}s.\nCom {6} de chance, a quantidade de mísseis disparados aumenta em {7}.",
     "rawDescVars": [
       {
         "rendered": "0.7",
@@ -7978,9 +8262,35 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "addedEmpoweredMissileCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Dano de Escuridão, Aumento da Velocidade de Ataque",
+    "shortDescription": "Dano Sombrio, Aumento da Velocidade de Ataque",
     "rarity": "Rare",
     "type": "Normal",
     "traveler": "",
@@ -8000,8 +8310,8 @@
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Avança rapidamente e dispara 3 pedaço(s) da escuridão contra inimigos ao redor. Cada pedaço causa  <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5>  de <color=yellow>Dano de Escuridão</color> e ativa 50% de <color=yellow>efeito de ataque</color>.",
-    "rawDesc": "Avança rapidamente e dispara {0} pedaço(s) da escuridão contra inimigos ao redor. Cada pedaço causa {1} de <color=yellow>Dano de Escuridão</color> e ativa {2} de <color=yellow>efeito de ataque</color>.",
+    "description": "Avança rapidamente e dispara 3 pedaço(s) da escuridão contra inimigos ao redor. Cada pedaço causa  <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5>  de <color=yellow>Dano Sombrio</color> e ativa 50% de <color=yellow>Efeito de Ataque</color>.\nTem <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> de chance de aumentar a quantidade de pedaços disparados em 3.",
+    "rawDesc": "Avança rapidamente e dispara {0} pedaço(s) da escuridão contra inimigos ao redor. Cada pedaço causa {1} de <color=yellow>Dano Sombrio</color> e ativa {2} de <color=yellow>Efeito de Ataque</color>.\nTem {3} de chance de aumentar a quantidade de pedaços disparados em {4}.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -8041,6 +8351,32 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "addedSpawnCountByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "shortDescription": "Avanço e Ataque contra inimigos ao redor, Escuridão",
@@ -8064,8 +8400,8 @@
     "cooldownTime": 13.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Após um breve momento, faz cair um rio na área alvo, causando  <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color> nos inimigos e <color=yellow>Atordoamento</color> durante 1s. Tem 50% de chance de <color=yellow>queimar</color> inimigos.",
-    "rawDesc": "Após um breve momento, faz cair um rio na área alvo, causando {0} de <color=yellow>Dano de Luz</color> nos inimigos e <color=yellow>Atordoamento</color> durante {1}s. Tem {2} de chance de <color=yellow>queimar</color> inimigos.",
+    "description": "Após um breve momento, faz cair um raio na área alvo, causando  <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color> nos inimigos e <color=yellow>Atordoamento</color> durante 1s. Tem 50% de chance de <color=yellow>queimar</color> inimigos.",
+    "rawDesc": "Após um breve momento, faz cair um raio na área alvo, causando {0} de <color=yellow>Dano de Luz</color> nos inimigos e <color=yellow>Atordoamento</color> durante {1}s. Tem {2} de chance de <color=yellow>queimar</color> inimigos.",
     "rawDescVars": [
       {
         "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
@@ -8119,6 +8455,81 @@
     ],
     "image": "St_R_Smite.PNG",
     "lore": "A associação está cheia de velhos de mente fraca e decrépita.\nAté quando continuarão brincando com suas pequenas regras, vangloriando-se de suas supostas conquistas...?\n\nOntem à noite, ao observar uma árvore queimada, me ocorreu um pensamento.\nNão seriam as forças da natureza, como raios, também regidas por certas leis?\n\nSe eu descobrir essas leis, poderei controlar esse poder imenso.\nQue empolgante. Preciso começar essa pesquisa imediatamente.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_Somersault": {
+    "name": "Cambalhota",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Pula no ar por 0.5s, esquivando-se de ataques e ficando <color=yellow>Invulnerável</color>. A <color=yellow>Chance de Acerto Crítico</color> aumenta em  30%<sprite=5>  por 4s.\n\nAo realizar um <color=yellow>Ataque</color>, o <color=yellow>Tempo de recarga</color> desta Memória é reduzido em 0.3s.",
+    "rawDesc": "Pula no ar por {0}s, esquivando-se de ataques e ficando <color=yellow>Invulnerável</color>. A <color=yellow>Chance de Acerto Crítico</color> aumenta em {1} por {2}s.\n\nAo realizar um <color=yellow>Ataque</color>, o <color=yellow>Tempo de recarga</color> desta Memória é reduzido em {3}s.",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "jumpDodgeDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 30%<sprite=5> ",
+        "format": "P0",
+        "raw": "critChangeAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.1,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "effectDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0.3",
+        "format": "#,##0.#",
+        "raw": "cooldownReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": "Invulnerabilidade, Aumento de Chance de Acerto Crítico",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "HardCC"
+    ],
+    "image": "St_R_Somersault.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -8235,6 +8646,88 @@
     ],
     "image": "St_R_StaticDischarge.png",
     "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_SummonLittleBaam": {
+    "name": "Alma Gêmea",
+    "cooldownTime": 14.0,
+    "maxCharges": 3,
+    "addedCharges": 99,
+    "description": "<color=yellow>Invoca</color> o <color=yellow>Pequeno Baam</color>, fixando-o em um local alvo.\n\nO <color=yellow>Pequeno Baam</color> tem 119 de Vida e 50 de DEF, permanece no campo de batalha por até 20 s e ataca os inimigos próximos, causando  <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color>. É possível manter até 10 ativos.\n\nTodas as <color=yellow>Cargas</color> são restauradas de uma vez.",
+    "rawDesc": "<color=yellow>Invoca</color> o <color=yellow>Pequeno Baam</color>, fixando-o em um local alvo.\n\nO <color=yellow>Pequeno Baam</color> tem {0} de Vida e {1} de DEF, permanece no campo de batalha por até {2} s e ataca os inimigos próximos, causando {3} de <color=yellow>Dano de Luz</color>. É possível manter até {4} ativos.\n\nTodas as <color=yellow>Cargas</color> são restauradas de uma vez.",
+    "rawDescVars": [
+      {
+        "rendered": "119",
+        "format": "#,##0",
+        "raw": "summonHealth",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "50",
+        "format": "#,##0",
+        "raw": "armor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "20",
+        "format": "#,##0.#",
+        "raw": "maxDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_SummonLittleBaam_Baam_Atk::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.85,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Invoca o Pequeno Baam",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Summon"
+    ],
+    "image": "St_R_SummonLittleBaam.png",
+    "lore": "A captura de Baams selvagens foi feita de forma estritamente 'legal' e 'voluntária'.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""

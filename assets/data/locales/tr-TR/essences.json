@@ -3282,6 +3282,49 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Glass": {
+    "name": "Cam Özü",
+    "description": "<color=yellow>Çatışma Sırasında</color> bir <color=yellow>Kalkan</color> kazandığında, kazanılan kalkan miktarının  %12<sprite=5>  kadarı kadar Can <color=yellow>Yeniler</color>. Sahip olduğun her <color=yellow>Soğuk Hafızası</color> için bu hafızanın <color=yellow>Yenileme Miktarı</color>  %18<sprite=5>  artar.",
+    "rawDesc": "<color=yellow>Çatışma Sırasında</color> bir <color=yellow>Kalkan</color> kazandığında, kazanılan kalkan miktarının {0} kadarı kadar Can <color=yellow>Yeniler</color>. Sahip olduğun her <color=yellow>Soğuk Hafızası</color> için bu hafızanın <color=yellow>Yenileme Miktarı</color> {1} artar.",
+    "rawDescVars": [
+      {
+        "rendered": " %12<sprite=5> ",
+        "format": "P0",
+        "raw": "healByShieldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": " %18<sprite=5> ",
+        "format": "P0",
+        "raw": "healAmpPerColdSkill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "Gem_R_Glass.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Insatiable": {
     "name": "Doyumsuzluk Özü",
     "description": "Bu hafızayı kullandıktan sonra 5 saniye boyunca <color=yellow>Saldırı Gücü</color>  %15<sprite=5>  artar ve her <color=yellow>Saldırı</color> yaptığında  6<sprite=5>  can <color=yellow>İyileştirir</color>.",
@@ -3333,6 +3376,75 @@
       "Attack"
     ],
     "image": "Gem_R_Insatiable.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lava": {
+    "name": "Lav Özü",
+    "description": "Her 4 saniyede bir bu hafızanın <color=yellow>Kullanımı</color> <color=yellow>Güçlendirilir</color>. Güçlendirilmiş <color=yellow>Kullanım</color> ile bir düşmana ilk kez <color=yellow>Ateş Hasarı</color> verdiğinde, hedefin altında 4 saniye süren bir lav havuzu oluşturur. Lavın üzerindeki tüm düşmanlar saniyede  <sprite=1><color=#fff><gradient=sv_ap>%120</gradient></color><sprite=5>  <color=yellow>Ateş Hasarı</color> alır ve maruz kaldıkları <color=yellow>Ateş Hasarı</color> %30 artar. Aynı anda en fazla 5 lav havuzu aktif olabilir.",
+    "rawDesc": "Her {0} saniyede bir bu hafızanın <color=yellow>Kullanımı</color> <color=yellow>Güçlendirilir</color>. Güçlendirilmiş <color=yellow>Kullanım</color> ile bir düşmana ilk kez <color=yellow>Ateş Hasarı</color> verdiğinde, hedefin altında {1} saniye süren bir lav havuzu oluşturur. Lavın üzerindeki tüm düşmanlar saniyede {2} <color=yellow>Ateş Hasarı</color> alır ve maruz kaldıkları <color=yellow>Ateş Hasarı</color> {3} artar. Aynı anda en fazla {4} lav havuzu aktif olabilir.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Gem_R_Lava::cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Ai_R_Lava_LavaField::duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>%120</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_Lava_LavaField::dmgFactor/Ai_R_Lava_LavaField::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "%30",
+        "format": "P0",
+        "raw": "Se_R_Lava_Debuff::fireDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "maxLavaCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Lava.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -3518,6 +3630,48 @@
     "achievementName": "Sakin ol, yola devam.",
     "achievementDescription": "Canın %25’nin altındayken toplam 8 kez Kahraman Bossu öldür."
   },
+  "Gem_R_Purity": {
+    "name": "Saflık Özü",
+    "description": "Bu hafızayı <color=yellow>Kullanmak</color>, Gezgin'e uygulanan tüm <color=yellow>Element Etkisi</color> durumlarını temizler. Temizlenen her <color=yellow>Element Etkisi</color> başına  <sprite=1><color=#fff><gradient=sv_ap>%150</gradient></color><sprite=5>  Can <color=yellow>Yeniler</color>. Bu etki sadece 4 saniyede bir tetiklenebilir.",
+    "rawDesc": "Bu hafızayı <color=yellow>Kullanmak</color>, Gezgin'e uygulanan tüm <color=yellow>Element Etkisi</color> durumlarını temizler. Temizlenen her <color=yellow>Element Etkisi</color> başına {0} Can <color=yellow>Yeniler</color>. Bu etki sadece {1} saniyede bir tetiklenebilir.",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>%150</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healPerElemental",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Purity.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Rejuvenation": {
     "name": "Gençleşme Özü",
     "description": "Her 15 saniyede bir, bu hafızanın <color=yellow>kullanımı</color> <color=yellow>güçlenir</color>. <color=yellow>Güçlendirilmiş kullanım</color> sonrası 1.5 saniye içinde verilen <color=yellow>Hasar</color>ın  %14<sprite=5>  kadarı <color=yellow>kendi</color> <color=yellow>Canını</color> <color=yellow>iyileştirir</color>.",
@@ -3700,7 +3854,7 @@
   },
   "Gem_R_Shock": {
     "name": "Şok Özü",
-    "description": "Her 4. <color=yellow>Temel Saldırı</color> <color=yellow>güçlenir</color> ve düşmanlar arasında sıçrayarak en fazla 2 kez  <sprite=1><color=#fff><gradient=sv_ap>%40</gradient></color><sprite=5>  <color=yellow>Işık Hasarı</color> veren bir <color=yellow>Yıldırım</color> fırlatır. Her %20 <color=yellow>Kritik Vuruş İhtimali</color> için maksimum hasar sayısı 1 artar.",
+    "description": "Her 4. <color=yellow>Temel Saldırı</color> <color=yellow>güçlenir</color> ve düşmanlar arasında sıçrayarak en fazla 2 kez  <sprite=2><color=#fff><gradient=sv_ad>%40</gradient></color><sprite=5>  <color=yellow>Işık Hasarı</color> veren bir <color=yellow>Yıldırım</color> fırlatır. Her %20 <color=yellow>Kritik Vuruş İhtimali</color> için maksimum hasar sayısı 1 artar.",
     "rawDesc": "Her 4. <color=yellow>Temel Saldırı</color> <color=yellow>güçlenir</color> ve düşmanlar arasında sıçrayarak en fazla {0} kez {1} <color=yellow>Işık Hasarı</color> veren bir <color=yellow>Yıldırım</color> fırlatır. Her {2} <color=yellow>Kritik Vuruş İhtimali</color> için maksimum hasar sayısı 1 artar.",
     "rawDescVars": [
       {
@@ -3717,14 +3871,14 @@
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>%40</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>%40</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "chainDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.2,
-          "basicAD": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.01
         }

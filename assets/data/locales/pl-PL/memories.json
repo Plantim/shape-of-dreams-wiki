@@ -207,8 +207,8 @@
     "cooldownTime": 4.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Wystrzeliwuje Strzałę Ciemności, zadając wrogowi  <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ciemności</color> oraz aktywuje <color=yellow>Efekt Ataku</color>. Przebija maksymalnie do 2 wrogów.",
-    "rawDesc": "Wystrzeliwuje Strzałę Ciemności, zadając wrogowi {0} <color=yellow>Obrażeń od Ciemności</color> oraz aktywuje <color=yellow>Efekt Ataku</color>. Przebija maksymalnie do {1} wrogów.",
+    "description": "Wystrzeliwuje Strzałę Ciemności, zadając wrogowi  <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ciemności</color> oraz aktywuje <color=yellow>Efekt Ataku</color>. Przebija maksymalnie do 2 wrogów.\nZ <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> szansą <color=yellow>Obrażenia</color> zostają zwiększone o 80%, a <color=yellow>Czas Odnowienia</color> skrócony o 50%.",
+    "rawDesc": "Wystrzeliwuje Strzałę Ciemności, zadając wrogowi {0} <color=yellow>Obrażeń od Ciemności</color> oraz aktywuje <color=yellow>Efekt Ataku</color>. Przebija maksymalnie do {1} wrogów.\nZ {2} szansą <color=yellow>Obrażenia</color> zostają zwiększone o {3}, a <color=yellow>Czas Odnowienia</color> skrócony o {4}.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5> ",
@@ -230,6 +230,45 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "ampEmpoweredDmg",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "empoweredCooldownReductionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -257,8 +296,8 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Przebijasz wrogów z przodu, zadając  <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ciemności</color>, aktywując <color=yellow>Efekt Ataku</color> i przyciągając ich do środka. Obrażenia zadawane tarczom są zwiększone o 100%.",
-    "rawDesc": "Przebijasz wrogów z przodu, zadając {0} <color=yellow>Obrażeń od Ciemności</color>, aktywując <color=yellow>Efekt Ataku</color> i przyciągając ich do środka. Obrażenia zadawane tarczom są zwiększone o {1}.",
+    "description": "Przebijasz wrogów z przodu, zadając  <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ciemności</color>, aktywując <color=yellow>Efekt Ataku</color> i przyciągając ich do środka. Obrażenia zadawane tarczom są zwiększone o 100%.\nZ <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> szansą <color=yellow>Obrażenia</color> zostają zwiększone o 100%, a za każdego trafionego wroga <color=yellow>Odzyskujesz</color>  <sprite=2><color=#fff><gradient=sv_ad>20%</gradient></color><sprite=5>  <color=yellow>Zdrowia</color>.",
+    "rawDesc": "Przebijasz wrogów z przodu, zadając {0} <color=yellow>Obrażeń od Ciemności</color>, aktywując <color=yellow>Efekt Ataku</color> i przyciągając ich do środka. Obrażenia zadawane tarczom są zwiększone o {1}.\nZ {2} szansą <color=yellow>Obrażenia</color> zostają zwiększone o {3}, a za każdego trafionego wroga <color=yellow>Odzyskujesz</color> {4} <color=yellow>Zdrowia</color>.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> ",
@@ -284,6 +323,45 @@
           "basicAD": 0,
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "dmgAmpByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>20%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healAmountByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
         }
       }
     ],
@@ -1777,13 +1855,39 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Rzucenie <color=yellow>Pamięci</color> lub użycie <color=yellow>Błyszczącej Gwiazdy</color> zapewnia 1 ładunek <color=yellow>Egzotycznej Materii</color> (maks. 3), a rzucenie <color=yellow>Pamięci ostatecznej</color> natychmiast zapewnia maksymalną liczbę ładunków. Następny <color=yellow>Atak podstawowy</color> zużywa wszystkie ładunki, wywołując eksplozję, która zadaje wrogom  <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color> za każdy ładunek.\n\nRozmiar tej eksplozji zwiększa się o 5% za każde ulepszenie <color=yellow>Egzotycznej Materii</color>, do maks. 50%.",
-    "rawDesc": "Rzucenie <color=yellow>Pamięci</color> lub użycie <color=yellow>Błyszczącej Gwiazdy</color> zapewnia 1 ładunek <color=yellow>Egzotycznej Materii</color> (maks. {0}), a rzucenie <color=yellow>Pamięci ostatecznej</color> natychmiast zapewnia maksymalną liczbę ładunków. Następny <color=yellow>Atak podstawowy</color> zużywa wszystkie ładunki, wywołując eksplozję, która zadaje wrogom {1} <color=yellow>Obrażeń od Światła</color> za każdy ładunek.\n\nRozmiar tej eksplozji zwiększa się o {2} za każde ulepszenie <color=yellow>Egzotycznej Materii</color>, do maks. {3}.",
+    "description": "Rzucenie <color=yellow>Pamięci</color> zapewnia 1 ładunek <color=yellow>Egzotycznej Materii</color> (maks. 4). Użycie <color=yellow>Umiejętności uniku</color> zapewnia zamiast tego 2 ładunków, a rzucenie <color=yellow>Pamięci ostatecznej</color> zapewnia 3 ładunków. Następny <color=yellow>Atak podstawowy</color> zużywa wszystkie ładunki, wywołując eksplozję, która zadaje wrogom  <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color> za każdy ładunek.\n\nRozmiar tej eksplozji zwiększa się o 5% za każde ulepszenie <color=yellow>Egzotycznej Materii</color>, do maks. 50%.",
+    "rawDesc": "Rzucenie <color=yellow>Pamięci</color> zapewnia 1 ładunek <color=yellow>Egzotycznej Materii</color> (maks. {0}). Użycie <color=yellow>Umiejętności uniku</color> zapewnia zamiast tego {1} ładunków, a rzucenie <color=yellow>Pamięci ostatecznej</color> zapewnia {2} ładunków. Następny <color=yellow>Atak podstawowy</color> zużywa wszystkie ładunki, wywołując eksplozję, która zadaje wrogom {3} <color=yellow>Obrażeń od Światła</color> za każdy ładunek.\n\nRozmiar tej eksplozji zwiększa się o {4} za każde ulepszenie <color=yellow>Egzotycznej Materii</color>, do maks. {5}.",
     "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dodgeCastStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
       {
         "rendered": "3",
         "format": "#,##0",
-        "raw": "maxStack",
+        "raw": "ultCastStacks",
         "scalingType": "basic",
         "data": {
           "basicConstant": 3.0,
@@ -1887,7 +1991,7 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Moc Ataku</color> zwiększa się o  12<sprite=5> . Co czwarty <color=yellow>Atak Podstawowy</color> staje się <color=yellow>Trafieniem Krytycznym</color> i zadaje dodatkowo  <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color>.\nZa każdym razem, gdy przypuszczasz <color=yellow>Atak</color> na przeciwnika, <color=yellow>Szybkość Ataku</color> zwiększa się na 4 sek. o  4%<sprite=5> , do maksymalnie  24%<sprite=5> . Gdy <color=yellow>Szybkość Ataku</color> osiągnie maksimum, każdy <color=yellow>Atak</color> <color=yellow>Odzyskuje</color>  1%<sprite=5>  <color=yellow>Utraconego Zdrowia</color>.",
+    "description": "<color=yellow>Moc Ataku</color> zwiększa się o  12<sprite=5> . Co czwarty <color=yellow>Atak Podstawowy</color> staje się <color=yellow>Trafieniem Krytycznym</color> i zadaje dodatkowo  <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color>.\nZa każdym razem, gdy przypuszczasz <color=yellow>Atak</color> na przeciwnika, <color=yellow>Szybkość Ataku</color> zwiększa się na 4 sek. o  4%<sprite=5> , do maksymalnie  24%<sprite=5> . Gdy <color=yellow>Szybkość Ataku</color> osiągnie maksimum, każdy <color=yellow>Atak</color> <color=yellow>Odzyskuje</color>  2%<sprite=5>  <color=yellow>Utraconego Zdrowia</color>.",
     "rawDesc": "<color=yellow>Moc Ataku</color> zwiększa się o {0}. Co czwarty <color=yellow>Atak Podstawowy</color> staje się <color=yellow>Trafieniem Krytycznym</color> i zadaje dodatkowo {1} <color=yellow>Obrażeń od Światła</color>.\nZa każdym razem, gdy przypuszczasz <color=yellow>Atak</color> na przeciwnika, <color=yellow>Szybkość Ataku</color> zwiększa się na {2} sek. o {3}, do maksymalnie {4}. Gdy <color=yellow>Szybkość Ataku</color> osiągnie maksimum, każdy <color=yellow>Atak</color> <color=yellow>Odzyskuje</color> {5} <color=yellow>Utraconego Zdrowia</color>.",
     "rawDescVars": [
       {
@@ -1896,10 +2000,10 @@
         "raw": "adBonus",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 9.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 2.0,
+          "basicLvl": 3.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -1950,12 +2054,12 @@
         "data": {}
       },
       {
-        "rendered": " 1%<sprite=5> ",
+        "rendered": " 2%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "lostHpHealRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.006,
+          "basicConstant": 0.016,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.004,
@@ -3428,12 +3532,12 @@
     "achievementDescription": "Pokonaj Bliźniaczych Strażników, walcząc z obojgiem jednocześnie."
   },
   "St_E_StygianRush": {
-    "name": "암흑 쇄도",
+    "name": "Mroczna Szarża",
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Poprzez <color=yellow>Długie Przytrzymanie</color> klawisza użycia, twoja dłoń doładowuje się Ciemnością. Po naładowaniu, rzucasz się do przodu, uderzając pierwszego napotkanego wroga i wszystkich wrogów wokół niego. Wrogowie otrzymują  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ~ <sprite=2><color=#fff><gradient=sv_ad>600%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ciemności</color> proporcjonalnie do czasu ładowania i zostają ogłuszeni na 1 sek. Za każdego trafionego wroga otrzymujesz <color=yellow>Tarczę</color> o wartości  <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> , trwającą 3 sek. Jeśli celem jest <color=yellow>Boss</color>, wartość Tarczy wzrasta o 200%.\nPo naładowaniu przez 1.2 sek. dystans szarży i zadawane obrażenia osiągają maksimum.",
-    "rawDesc": "Poprzez <color=yellow>Długie Przytrzymanie</color> klawisza użycia, twoja dłoń doładowuje się Ciemnością. Po naładowaniu, rzucasz się do przodu, uderzając pierwszego napotkanego wroga i wszystkich wrogów wokół niego. Wrogowie otrzymują {0}~{1} <color=yellow>Obrażeń od Ciemności</color> proporcjonalnie do czasu ładowania i zostają ogłuszeni na {2} sek. Za każdego trafionego wroga otrzymujesz <color=yellow>Tarczę</color> o wartości {3}, trwającą {4} sek. Jeśli celem jest <color=yellow>Boss</color>, wartość Tarczy wzrasta o {5}.\nPo naładowaniu przez {6} sek. dystans szarży i zadawane obrażenia osiągają maksimum.",
+    "description": "Poprzez <color=yellow>Długie Przytrzymanie</color> klawisza użycia, twoja dłoń doładowuje się Ciemnością. Po naładowaniu, rzucasz się do przodu, uderzając pierwszego napotkanego wroga i wszystkich wrogów wokół niego. Zadaje wrogom  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ~ <sprite=2><color=#fff><gradient=sv_ad>600%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ciemności</color> proporcjonalnie do czasu ładowania, ogłusza ich na 1 sek. i aktywuje <color=yellow>Efekt Ataku</color>. Za każdego trafionego wroga otrzymujesz <color=yellow>Tarczę</color> o wartości  <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> , trwającą 3 sek. Jeśli celem jest <color=yellow>Boss</color>, wartość Tarczy wzrasta o 200%.\nPo naładowaniu przez 1.2 sek. dystans szarży i zadawane obrażenia osiągają maksimum.",
+    "rawDesc": "Poprzez <color=yellow>Długie Przytrzymanie</color> klawisza użycia, twoja dłoń doładowuje się Ciemnością. Po naładowaniu, rzucasz się do przodu, uderzając pierwszego napotkanego wroga i wszystkich wrogów wokół niego. Zadaje wrogom {0}~{1} <color=yellow>Obrażeń od Ciemności</color> proporcjonalnie do czasu ładowania, ogłusza ich na {2} sek. i aktywuje <color=yellow>Efekt Ataku</color>. Za każdego trafionego wroga otrzymujesz <color=yellow>Tarczę</color> o wartości {3}, trwającą {4} sek. Jeśli celem jest <color=yellow>Boss</color>, wartość Tarczy wzrasta o {5}.\nPo naładowaniu przez {6} sek. dystans szarży i zadawane obrażenia osiągają maksimum.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
@@ -3550,7 +3654,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Przez 7 sek. nasycasz broń Mocą Ciemności, zwiększając <color=yellow>Szansę na Trafienie Krytyczne</color> o  20%<sprite=5>  i zadając  <sprite=2><color=#fff><gradient=sv_ad>52%</gradient></color><sprite=5>  dodatkowych <color=yellow>Obrażeń od Ciemności</color> przy <color=yellow>Ataku</color>. Liczba obrażeń dodatkowych zadawanych przez <color=yellow>Wędrowców Krótkodystansowych</color> zwiększa się o 25%.",
+    "description": "Przez 7 sek. nasycasz broń Mocą Ciemności, zwiększając <color=yellow>Szansę na Trafienie Krytyczne</color> o  25%<sprite=5>  i zadając  <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5>  dodatkowych <color=yellow>Obrażeń od Ciemności</color> przy <color=yellow>Ataku</color>. Liczba obrażeń dodatkowych zadawanych przez <color=yellow>Wędrowców Krótkodystansowych</color> zwiększa się o 25%.",
     "rawDesc": "Przez {0} sek. nasycasz broń Mocą Ciemności, zwiększając <color=yellow>Szansę na Trafienie Krytyczne</color> o {1} i zadając {2} dodatkowych <color=yellow>Obrażeń od Ciemności</color> przy <color=yellow>Ataku</color>. Liczba obrażeń dodatkowych zadawanych przez <color=yellow>Wędrowców Krótkodystansowych</color> zwiększa się o {3}.",
     "rawDescVars": [
       {
@@ -3567,27 +3671,27 @@
         }
       },
       {
-        "rendered": " 20%<sprite=5> ",
+        "rendered": " 25%<sprite=5> ",
         "format": "P0",
         "raw": "critChance",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.18,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.02,
+          "basicLvl": 0.05,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>52%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "hitDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 0.52,
+          "basicAD": 0.3,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.15
         }
@@ -4761,42 +4865,29 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Szarżujesz na cel i uderzasz młotem, zadając  <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color> oraz aktywując <color=yellow>Efekt Ataku</color> o wartości 50%. Za każdym razem, gdy przypuszczasz <color=yellow>Atak</color> na wroga, <color=yellow>Czas Odnawiania</color> zostaje <color=yellow>Zmniejszony</color> o 8%.",
-    "rawDesc": "Szarżujesz na cel i uderzasz młotem, zadając {0} <color=yellow>Obrażeń od Światła</color> oraz aktywując <color=yellow>Efekt Ataku</color> o wartości {1}. Za każdym razem, gdy przypuszczasz <color=yellow>Atak</color> na wroga, <color=yellow>Czas Odnawiania</color> zostaje <color=yellow>Zmniejszony</color> o {2}.",
+    "description": "Szarżujesz na cel i uderzasz młotem, zadając  <sprite=2><color=#fff><gradient=sv_ad>175%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color> oraz aktywując <color=yellow>Efekt Ataku</color>. Za każdym razem, gdy przypuszczasz <color=yellow>Atak</color> na wroga, <color=yellow>Czas Odnowienia</color> zostaje <color=yellow>Zmniejszony</color> o 10%.",
+    "rawDesc": "Szarżujesz na cel i uderzasz młotem, zadając {0} <color=yellow>Obrażeń od Światła</color> oraz aktywując <color=yellow>Efekt Ataku</color>. Za każdym razem, gdy przypuszczasz <color=yellow>Atak</color> na wroga, <color=yellow>Czas Odnowienia</color> zostaje <color=yellow>Zmniejszony</color> o {1}.",
     "rawDescVars": [
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>175%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.25,
+          "basicAD": 1.75,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "50%",
-        "format": "P0",
-        "raw": "attackEffect",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "8%",
+        "rendered": "10%",
         "format": "P0",
         "raw": "cooldownReductionRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.08,
+          "basicConstant": 0.1,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4825,8 +4916,8 @@
     "cooldownTime": 9.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Wystrzeliwujesz <color=yellow>Eter</color>, który leci do przodu i wraca, zadając wrogom  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color>. Ponowne użycie powoduje <color=yellow>Eksplozję</color> <color=yellow>Eteru</color>, która zadaje wrogom  <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color> i <color=yellow>Unieruchamia</color> ich na 3 sek.",
-    "rawDesc": "Wystrzeliwujesz <color=yellow>Eter</color>, który leci do przodu i wraca, zadając wrogom {0} <color=yellow>Obrażeń od Światła</color>. Ponowne użycie powoduje <color=yellow>Eksplozję</color> <color=yellow>Eteru</color>, która zadaje wrogom {1} <color=yellow>Obrażeń od Światła</color> i <color=yellow>Unieruchamia</color> ich na {2} sek.",
+    "description": "Wystrzeliwujesz <color=yellow>Eter</color>, który leci do przodu i wraca, zadając wrogom  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color>. Ponowne użycie powoduje <color=yellow>Eksplozję</color> <color=yellow>Eteru</color>, która zadaje wrogom  <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color> i <color=yellow>Unieruchamia</color> ich na 3 sek.\n\nJeśli <color=yellow>Eksplozja</color> trafi pojedynczy cel, <color=yellow>Obrażenia od Eksplozji</color> rosną o 75%.",
+    "rawDesc": "Wystrzeliwujesz <color=yellow>Eter</color>, który leci do przodu i wraca, zadając wrogom {0} <color=yellow>Obrażeń od Światła</color>. Ponowne użycie powoduje <color=yellow>Eksplozję</color> <color=yellow>Eteru</color>, która zadaje wrogom {1} <color=yellow>Obrażeń od Światła</color> i <color=yellow>Unieruchamia</color> ich na {2} sek.\n\nJeśli <color=yellow>Eksplozja</color> trafi pojedynczy cel, <color=yellow>Obrażenia od Eksplozji</color> rosną o {3}.",
     "rawDescVars": [
       {
         "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
@@ -4861,6 +4952,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "75%",
+        "format": "P0",
+        "raw": "explodeAmpOnSingleTarget",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.75,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5537,8 +5641,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Na wybranej pozycji tworzysz Gwiazdę, która stopniowo się powiększa i spowalnia wrogów, po czym przez maksymalnie 3 sek. koncentrujesz umysł. W tym czasie nie możesz atakować, ani używać wspomnień. Ponowne użycie <color=yellow>Supernowej</color> powoduje eksplozję Gwiazdy, zadając wrogom  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color>. Siła eksplozji rośnie proporcjonalnie do czasu ładowania – po 1.3 sek. liczba Obrażenia zwiększa się do 225%.\nSzybkość ładowania rośnie proporcjonalnie do Przyspieszenia pamięci Yubara.",
-    "rawDesc": "Na wybranej pozycji tworzysz Gwiazdę, która stopniowo się powiększa i spowalnia wrogów, po czym przez maksymalnie {0} sek. koncentrujesz umysł. W tym czasie nie możesz atakować, ani używać wspomnień. Ponowne użycie <color=yellow>Supernowej</color> powoduje eksplozję Gwiazdy, zadając wrogom {1} <color=yellow>Obrażeń od Światła</color>. Siła eksplozji rośnie proporcjonalnie do czasu ładowania – po {2} sek. liczba Obrażenia zwiększa się do {3}.\nSzybkość ładowania rośnie proporcjonalnie do Przyspieszenia pamięci Yubara.",
+    "description": "Przywraca 1 ładunek <color=yellow>Umiejętności Uniku</color> i na wybranej pozycji tworzy <color=yellow>Gwiazdę</color>, która stopniowo się powiększa i spowalnia wrogów, po czym rozpoczyna <color=yellow>Kanalizowanie</color> na maksymalnie 3 sek. W tym czasie nie możesz używać <color=yellow>Ataku</color> ani <color=yellow>Pamięci</color>. Ponowne użycie powoduje eksplozję <color=yellow>Gwiazdy</color>, zadając wrogom  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color>.\n\nSiła eksplozji rośnie proporcjonalnie do <color=yellow>Czasu Ładowania</color> – po 1.3 sek. <color=yellow>Obrażenia</color> zwiększają się do 225%, a szybkość ładowania rośnie proporcjonalnie do <color=yellow>Przyspieszenia pamięci</color> Yubara.",
+    "rawDesc": "Przywraca 1 ładunek <color=yellow>Umiejętności Uniku</color> i na wybranej pozycji tworzy <color=yellow>Gwiazdę</color>, która stopniowo się powiększa i spowalnia wrogów, po czym rozpoczyna <color=yellow>Kanalizowanie</color> na maksymalnie {0} sek. W tym czasie nie możesz używać <color=yellow>Ataku</color> ani <color=yellow>Pamięci</color>. Ponowne użycie powoduje eksplozję <color=yellow>Gwiazdy</color>, zadając wrogom {1} <color=yellow>Obrażeń od Światła</color>.\n\nSiła eksplozji rośnie proporcjonalnie do <color=yellow>Czasu Ładowania</color> – po {2} sek. <color=yellow>Obrażenia</color> zwiększają się do {3}, a szybkość ładowania rośnie proporcjonalnie do <color=yellow>Przyspieszenia pamięci</color> Yubara.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -5612,7 +5716,7 @@
     "cooldownTime": 9.0,
     "maxCharges": 2,
     "addedCharges": 1,
-    "description": "<color=yellow>Przywołujesz</color> <color=yellow>Leśnego Psa</color> wiernego Nakii na wybraną pozycję, zadając wrogom  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5>  <color=yellow>Obrażeń</color> i <color=yellow>Ogłuszając</color> ich na 0.4 sek.\n\n<color=yellow>Leśny Pies</color> posiada Zdrowie o wartości 128 oraz Zbroję o wartości 40, pozostaje na Polu Bitwy maksymalnie przez 25 sek. i drapie wrogów, zadając  <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5>  <color=yellow>Obrażeń</color>. Możesz mieć maksymalnie 5 przywołańców jednocześnie.",
+    "description": "<color=yellow>Przywołujesz</color> <color=yellow>Leśnego Psa</color> wiernego Nakii na wybraną pozycję, zadając wrogom  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5>  <color=yellow>Obrażeń</color> i <color=yellow>Ogłuszając</color> ich na 0.4 sek.\n\n<color=yellow>Leśny Pies</color> posiada Zdrowie o wartości 128 oraz Zbroję o wartości  20<sprite=5> , pozostaje na Polu Bitwy maksymalnie przez 25 sek. i drapie wrogów, zadając  <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5>  <color=yellow>Obrażeń</color>. Możesz mieć maksymalnie 5 przywołańców jednocześnie.",
     "rawDesc": "<color=yellow>Przywołujesz</color> <color=yellow>Leśnego Psa</color> wiernego Nakii na wybraną pozycję, zadając wrogom {0} <color=yellow>Obrażeń</color> i <color=yellow>Ogłuszając</color> ich na {1} sek.\n\n<color=yellow>Leśny Pies</color> posiada Zdrowie o wartości {2} oraz Zbroję o wartości {3}, pozostaje na Polu Bitwy maksymalnie przez {4} sek. i drapie wrogów, zadając {5} <color=yellow>Obrażeń</color>. Możesz mieć maksymalnie {6} przywołańców jednocześnie.",
     "rawDescVars": [
       {
@@ -5649,15 +5753,15 @@
         "data": {}
       },
       {
-        "rendered": "40",
+        "rendered": " 20<sprite=5> ",
         "format": "#,##0",
         "raw": "armor",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 40.0,
+          "basicConstant": 13.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 7.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5722,7 +5826,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Poprzez <color=yellow>Długie Przytrzymanie</color> klawisza użycia ładujesz salwę Strzał Mentalnych. Po puszczeniu klawisza, wystrzeliwujesz od 1 do  4<sprite=5>  Strzał Mentalnych w pobliskich wrogów, proporcjonalnie do czasu ładowania. Każda strzała zadaje  <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ciemności</color> na wąskim obszarze.",
+    "description": "Poprzez <color=yellow>Długie Przytrzymanie</color> klawisza użycia ładujesz salwę Strzał Mentalnych. Po puszczeniu klawisza, wystrzeliwujesz od 1 do  4<sprite=5>  Strzał Mentalnych w pobliskich wrogów, proporcjonalnie do czasu ładowania. Każda strzała zadaje  <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ciemności</color> na wąskim obszarze.",
     "rawDesc": "Poprzez <color=yellow>Długie Przytrzymanie</color> klawisza użycia ładujesz salwę Strzał Mentalnych. Po puszczeniu klawisza, wystrzeliwujesz od {0} do {1} Strzał Mentalnych w pobliskich wrogów, proporcjonalnie do czasu ładowania. Każda strzała zadaje {2} <color=yellow>Obrażeń od Ciemności</color> na wąskim obszarze.",
     "rawDescVars": [
       {
@@ -5746,14 +5850,14 @@
         "data": {}
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 2.0,
+          "basicAD": 1.7,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5948,8 +6052,8 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Przez 10 sek. otaczasz swój miecz niszczycielską <color=yellow>energią miecza</color>. W tym czasie nie możesz <color=yellow>używać</color> <color=yellow>pamięci</color>, ale twoje <color=yellow>obrażenia ataku</color> zwiększają się o  35%<sprite=5> , <color=yellow>zasięg ataku</color> wzrasta, a każdy <color=yellow>atak podstawowy</color> wystrzeliwuje <color=yellow>energię miecza</color>, zadając wrogom  <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5>  <color=yellow>obrażeń od Ciemności</color>. Możesz wtedy wykonać  1.5<sprite=5>  <color=yellow>ataków podstawowych</color> na sekundę, niezależnie od innych efektów szybkości ataku.\n\nNa czas trwania <color=yellow>przyspieszenie pamięci</color> <color=yellow>umiejętności uniku</color> wzrasta o  30<sprite=5> , a jej <color=yellow>maksymalna liczba ładunków</color> o 2.",
-    "rawDesc": "Przez {0} sek. otaczasz swój miecz niszczycielską <color=yellow>energią miecza</color>. W tym czasie nie możesz <color=yellow>używać</color> <color=yellow>pamięci</color>, ale twoje <color=yellow>obrażenia ataku</color> zwiększają się o {1}, <color=yellow>zasięg ataku</color> wzrasta, a każdy <color=yellow>atak podstawowy</color> wystrzeliwuje <color=yellow>energię miecza</color>, zadając wrogom {2} <color=yellow>obrażeń od Ciemności</color>. Możesz wtedy wykonać {3} <color=yellow>ataków podstawowych</color> na sekundę, niezależnie od innych efektów szybkości ataku.\n\nNa czas trwania <color=yellow>przyspieszenie pamięci</color> <color=yellow>umiejętności uniku</color> wzrasta o {4}, a jej <color=yellow>maksymalna liczba ładunków</color> o {5}.",
+    "description": "Przez 10 sek. otaczasz swój miecz niszczycielską <color=yellow>energią miecza</color>. W tym czasie nie możesz <color=yellow>używać</color> <color=yellow>pamięci</color>, ale twój <color=yellow>zasięg ataku</color> nieznacznie wzrasta, <color=yellow>obrażenia ataku</color> zwiększają się o  35%<sprite=5> , a <color=yellow>szybkość ataku</color> o  30%<sprite=5> . Ten efekt zwiększenia szybkości ataku nie podlega wpływowi <color=yellow>Jeden Krok, Jedno Zabójstwo</color>. Każdy <color=yellow>atak podstawowy</color> wystrzeliwuje <color=yellow>energię miecza</color>, zadając wrogom  <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5>  <color=yellow>obrażeń od Ciemności</color>.\n\nNa czas trwania <color=yellow>przyspieszenie pamięci</color> <color=yellow>umiejętności uniku</color> wzrasta o  30<sprite=5> , a jej <color=yellow>maksymalna liczba ładunków</color> o 2.",
+    "rawDesc": "Przez {0} sek. otaczasz swój miecz niszczycielską <color=yellow>energią miecza</color>. W tym czasie nie możesz <color=yellow>używać</color> <color=yellow>pamięci</color>, ale twój <color=yellow>zasięg ataku</color> nieznacznie wzrasta, <color=yellow>obrażenia ataku</color> zwiększają się o {1}, a <color=yellow>szybkość ataku</color> o {2}. Ten efekt zwiększenia szybkości ataku nie podlega wpływowi <color=yellow>Jeden Krok, Jedno Zabójstwo</color>. Każdy <color=yellow>atak podstawowy</color> wystrzeliwuje <color=yellow>energię miecza</color>, zadając wrogom {3} <color=yellow>obrażeń od Ciemności</color>.\n\nNa czas trwania <color=yellow>przyspieszenie pamięci</color> <color=yellow>umiejętności uniku</color> wzrasta o {4}, a jej <color=yellow>maksymalna liczba ładunków</color> o {5}.",
     "rawDescVars": [
       {
         "rendered": "10",
@@ -5978,29 +6082,29 @@
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> ",
+        "rendered": " 30%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "atkSpdPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 10.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.4,
+          "basicAP": 4.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": " 1.5<sprite=5> ",
-        "format": "0.#",
-        "raw": "atkSpd",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 1.4,
-          "basicAP": 0.0,
-          "basicAD": 0.0,
-          "basicLvl": 0.1,
-          "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
@@ -6128,8 +6232,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Wystrzeliwujesz z Kuszy, strzały <color=yellow>Przebijają</color> wrogów, zadając  <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ciemności</color>, odpychając ich i aktywując <color=yellow>Efekt Ataku</color>. Za każdym razem, gdy strzała Kuszy <color=yellow>Przebija</color> wroga, <color=yellow>Liczba Obrażeń</color> zadawana kolejnemu wrogowi zwiększa się o 35%.",
-    "rawDesc": "Wystrzeliwujesz z Kuszy, strzały <color=yellow>Przebijają</color> wrogów, zadając {0} <color=yellow>Obrażeń od Ciemności</color>, odpychając ich i aktywując <color=yellow>Efekt Ataku</color>. Za każdym razem, gdy strzała Kuszy <color=yellow>Przebija</color> wroga, <color=yellow>Liczba Obrażeń</color> zadawana kolejnemu wrogowi zwiększa się o {1}.",
+    "description": "Wystrzeliwujesz z Kuszy, strzały <color=yellow>Przebijają</color> wrogów, zadając  <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ciemności</color>, odpychając ich i aktywując <color=yellow>Efekt Ataku</color>. Za każdym razem, gdy strzała Kuszy <color=yellow>Przebija</color> wroga, <color=yellow>Obrażenia</color> zadawane kolejnemu wrogowi zwiększają się o 35%.\nZ <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> szansą <color=yellow>Obrażenia</color> zostają zwiększone o 100%, a na cel zostaje nałożone 5 ładunków <color=yellow>Ciemności</color>.",
+    "rawDesc": "Wystrzeliwujesz z Kuszy, strzały <color=yellow>Przebijają</color> wrogów, zadając {0} <color=yellow>Obrażeń od Ciemności</color>, odpychając ich i aktywując <color=yellow>Efekt Ataku</color>. Za każdym razem, gdy strzała Kuszy <color=yellow>Przebija</color> wroga, <color=yellow>Obrażenia</color> zadawane kolejnemu wrogowi zwiększają się o {1}.\nZ {2} szansą <color=yellow>Obrażenia</color> zostają zwiększone o {3}, a na cel zostaje nałożone {4} ładunków <color=yellow>Ciemności</color>.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> ",
@@ -6151,6 +6255,45 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.35,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "empoweredAmpDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "empoweredDarkStackCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6631,6 +6774,121 @@
     ],
     "image": "St_R_DangerousTheory.png",
     "lore": "Tchórze z Arkanum mówili, że ta teoria jest „zbyt niebezpieczna, by ją zaakceptować”. \nIdioci.\n\nNie zrozumieli elegancji teorii, według której tylko materia postawiona w skrajnych warunkach daje najbardziej eksplozywne rezultaty. Ja po prostu udowadniam swoją hipotezę.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_DarkGrenade": {
+    "name": "Granat Ciemności",
+    "cooldownTime": 9.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Rzucasz granatem ciemności we wskazane miejsce. Granat eksploduje, rozrzucając we wszystkich kierunkach 7 odłamków ciemności. Każdy odłamek nakłada 50% <color=yellow>Efekt Ataku</color> i zadaje  <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5>  <color=yellow>Obrażenia od Ciemności</color> pierwszemu trafionemu wrogowi. Jeśli jeden cel zostanie trafiony wieloma odłamkami, każdy kolejny odłamek zadaje 50% obrażeń.\nIstnieje <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> szansy na wystrzelenie o 4 więcej odłamków ciemności, które nakładają <color=yellow>Ogłuszenie</color> na wrogów na 1 s.",
+    "rawDesc": "Rzucasz granatem ciemności we wskazane miejsce. Granat eksploduje, rozrzucając we wszystkich kierunkach {0} odłamków ciemności. Każdy odłamek nakłada {1} <color=yellow>Efekt Ataku</color> i zadaje {2} <color=yellow>Obrażenia od Ciemności</color> pierwszemu trafionemu wrogowi. Jeśli jeden cel zostanie trafiony wieloma odłamkami, każdy kolejny odłamek zadaje {3} obrażeń.\nIstnieje {4} szansy na wystrzelenie o {5} więcej odłamków ciemności, które nakładają <color=yellow>Ogłuszenie</color> na wrogów na {6} s.",
+    "rawDescVars": [
+      {
+        "rendered": "7",
+        "format": "#,##0",
+        "raw": "defaultShardCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 7.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "attackEffectStrength",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_DarkGrenade_Shard::damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "subsequentHitMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "addedEmpoweredShardCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Rzut, obszarowe obrażenia od ciemności",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "St_R_DarkGrenade.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -7898,8 +8156,8 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Przez 0.7 sek. koncentrujesz umysł, a w tym czasie <color=yellow>Szybkość Ruchu</color> zwiększa się o  30%<sprite=5> . Po zakończeniu koncentracji wystrzeliwujesz Pociski x5 Kierowane w losowych wrogów w pobliżu, zadając każdemu  <sprite=2><color=#fff><gradient=sv_ad>50%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ciemności</color>, a przez kolejne 3 sek. <color=yellow>Szybkość Ataku</color> zwiększa się o  20%<sprite=5> .",
-    "rawDesc": "Przez {0} sek. koncentrujesz umysł, a w tym czasie <color=yellow>Szybkość Ruchu</color> zwiększa się o {1}. Po zakończeniu koncentracji wystrzeliwujesz Pociski x{2} Kierowane w losowych wrogów w pobliżu, zadając każdemu {3} <color=yellow>Obrażeń od Ciemności</color>, a przez kolejne {4} sek. <color=yellow>Szybkość Ataku</color> zwiększa się o {5}.",
+    "description": "Przez 0.7 sek. koncentrujesz umysł, a w tym czasie <color=yellow>Szybkość Ruchu</color> zwiększa się o  30%<sprite=5> . Po zakończeniu koncentracji wystrzeliwujesz Pociski x5 Kierowane w losowych wrogów w pobliżu, zadając każdemu  <sprite=2><color=#fff><gradient=sv_ad>50%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ciemności</color>, a przez kolejne 3 sek. <color=yellow>Szybkość Ataku</color> zwiększa się o  20%<sprite=5> .\nMasz <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> szans na to, że liczba wystrzelonych pocisków zwiększy się o 5.",
+    "rawDesc": "Przez {0} sek. koncentrujesz umysł, a w tym czasie <color=yellow>Szybkość Ruchu</color> zwiększa się o {1}. Po zakończeniu koncentracji wystrzeliwujesz Pociski x{2} Kierowane w losowych wrogów w pobliżu, zadając każdemu {3} <color=yellow>Obrażeń od Ciemności</color>, a przez kolejne {4} sek. <color=yellow>Szybkość Ataku</color> zwiększa się o {5}.\nMasz {6} szans na to, że liczba wystrzelonych pocisków zwiększy się o {7}.",
     "rawDescVars": [
       {
         "rendered": "0.7",
@@ -7978,6 +8236,32 @@
           "basicLvl": 4.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "addedEmpoweredMissileCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "shortDescription": "Obrażenia od Ciemności, zwiększona Szybkość Ataku",
@@ -8000,8 +8284,8 @@
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Szybko przemieszczasz się, po czym wystrzeliwujesz fragmenty Cienia x3 w pobliskich wrogów. Każdy fragment zadaje  <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ciemności</color> i aktywuje <color=yellow>Efekt Ataku</color> o wartości 50%.",
-    "rawDesc": "Szybko przemieszczasz się, po czym wystrzeliwujesz fragmenty Cienia x{0} w pobliskich wrogów. Każdy fragment zadaje {1} <color=yellow>Obrażeń od Ciemności</color> i aktywuje <color=yellow>Efekt Ataku</color> o wartości {2}.",
+    "description": "Szybko przemieszczasz się, po czym wystrzeliwujesz fragmenty Cienia x3 w pobliskich wrogów. Każdy fragment zadaje  <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ciemności</color> i aktywuje <color=yellow>Efekt Ataku</color> o wartości 50%.\nZ szansą <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> liczba wystrzelonych fragmentów wzrasta o 3.",
+    "rawDesc": "Szybko przemieszczasz się, po czym wystrzeliwujesz fragmenty Cienia x{0} w pobliskich wrogów. Każdy fragment zadaje {1} <color=yellow>Obrażeń od Ciemności</color> i aktywuje <color=yellow>Efekt Ataku</color> o wartości {2}.\nZ szansą {3} liczba wystrzelonych fragmentów wzrasta o {4}.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -8036,6 +8320,32 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "addedSpawnCountByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8119,6 +8429,81 @@
     ],
     "image": "St_R_Smite.PNG",
     "lore": "W Akademii są tylko starzy, słabi duchem tetrycy.\nJak długo jeszcze będą się chełpić swoimi drobnymi osiągnięciami, bawiąc się w małe regułki...\n\nPatrząc na drzewo, które spłonęło wczoraj w nocy, naszła mnie myśl.\nCzyż siły natury, takie jak błyskawica, nie działają również według pewnych praw?\n\nJeśli odkryję te prawa, będę mógł zapanować nad tą potężną siłą.\nTo ekscytujące. Muszę natychmiast zabrać się za badania.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_Somersault": {
+    "name": "Salto",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Wyskakujesz w powietrze na 0.5 s, unikając ataków i zyskując status <color=yellow>Niewrażliwość</color>. Na 4 s twoja <color=yellow>Szansa na trafienie krytyczne</color> wzrasta o  30%<sprite=5> .\n\nKażdy <color=yellow>Atak</color> skraca <color=yellow>Czas Odnowienia</color> tej pamięci o 0.3 s.",
+    "rawDesc": "Wyskakujesz w powietrze na {0} s, unikając ataków i zyskując status <color=yellow>Niewrażliwość</color>. Na {1} s twoja <color=yellow>Szansa na trafienie krytyczne</color> wzrasta o {2}.\n\nKażdy <color=yellow>Atak</color> skraca <color=yellow>Czas Odnowienia</color> tej pamięci o {3} s.",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "jumpDodgeDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "effectDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 30%<sprite=5> ",
+        "format": "P0",
+        "raw": "critChangeAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.1,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "0.3",
+        "format": "#,##0.#",
+        "raw": "cooldownReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": "Niewrażliwość, zwiększona szansa na trafienie krytyczne",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "HardCC"
+    ],
+    "image": "St_R_Somersault.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -8235,6 +8620,88 @@
     ],
     "image": "St_R_StaticDischarge.png",
     "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_SummonLittleBaam": {
+    "name": "Bratnia Dusza",
+    "cooldownTime": 14.0,
+    "maxCharges": 3,
+    "addedCharges": 99,
+    "description": "<color=yellow>Przywołuje</color> <color=yellow>Małego Baama</color> w wybranym miejscu.\n\n<color=yellow>Mały Baam</color> posiada 119 Zdrowia i 50 Zbroi, pozostaje na polu bitwy przez maksymalnie 20 s i atakuje pobliskich wrogów, zadając  <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color>. Możesz utrzymać maksymalnie 10.\n\nWszystkie <color=yellow>Ładunki</color> odnawiają się jednocześnie.",
+    "rawDesc": "<color=yellow>Przywołuje</color> <color=yellow>Małego Baama</color> w wybranym miejscu.\n\n<color=yellow>Mały Baam</color> posiada {0} Zdrowia i {1} Zbroi, pozostaje na polu bitwy przez maksymalnie {2} s i atakuje pobliskich wrogów, zadając {3} <color=yellow>Obrażeń od Światła</color>. Możesz utrzymać maksymalnie {4}.\n\nWszystkie <color=yellow>Ładunki</color> odnawiają się jednocześnie.",
+    "rawDescVars": [
+      {
+        "rendered": "119",
+        "format": "#,##0",
+        "raw": "summonHealth",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "50",
+        "format": "#,##0",
+        "raw": "armor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "20",
+        "format": "#,##0.#",
+        "raw": "maxDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_SummonLittleBaam_Baam_Atk::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.85,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Przywołanie Małego Baama",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Summon"
+    ],
+    "image": "St_R_SummonLittleBaam.png",
+    "lore": "Schwytanie dzikiego Baama było całkowicie „legalne” i „dobrowolne”.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""

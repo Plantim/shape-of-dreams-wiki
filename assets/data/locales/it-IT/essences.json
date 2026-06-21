@@ -3282,6 +3282,49 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Glass": {
+    "name": "Essenza di Vetro",
+    "description": "Quando ottieni uno <color=yellow>Scudo</color> in <color=yellow>Combattimento</color>, <color=yellow>Cura</color> i tuoi PS di un valore pari al  12%<sprite=5>  dello <color=yellow>Scudo</color> ottenuto. Per ogni <color=yellow>Ricordo di Freddo</color> in tuo possesso, la <color=yellow>Cura</color> di questo ricordo aumenta di  18%<sprite=5> .",
+    "rawDesc": "Quando ottieni uno <color=yellow>Scudo</color> in <color=yellow>Combattimento</color>, <color=yellow>Cura</color> i tuoi PS di un valore pari al {0} dello <color=yellow>Scudo</color> ottenuto. Per ogni <color=yellow>Ricordo di Freddo</color> in tuo possesso, la <color=yellow>Cura</color> di questo ricordo aumenta di {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 12%<sprite=5> ",
+        "format": "P0",
+        "raw": "healByShieldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": " 18%<sprite=5> ",
+        "format": "P0",
+        "raw": "healAmpPerColdSkill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "Gem_R_Glass.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Insatiable": {
     "name": "Essenza dell'Insaziabilità",
     "description": "Dopo aver lanciato questo Ricordo, aumenta la <color=yellow>potenza d'attacco</color> del  15%<sprite=5>  e <color=yellow>recupera</color>  6<sprite=5>  PV ogni volta che effettui un <color=yellow>attacco</color> per 5 s.",
@@ -3333,6 +3376,75 @@
       "Attack"
     ],
     "image": "Gem_R_Insatiable.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lava": {
+    "name": "Essenza di Lava",
+    "description": "Ogni 4 s, il <color=yellow>Lancio</color> di questo ricordo viene <color=yellow>Potenziato</color>. Quando infliggi <color=yellow>Danno da fuoco</color> a un nemico per la prima volta con un <color=yellow>Lancio</color> potenziato, crei una pozza di lava sotto i piedi del bersaglio per 4 s. I nemici sulla lava subiscono  <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5>  <color=yellow>Danno da fuoco</color> al secondo e i danni che subiscono da <color=yellow>Danno da fuoco</color> aumentano di 30%. Puoi mantenere un massimo di 5 pozze di lava.",
+    "rawDesc": "Ogni {0} s, il <color=yellow>Lancio</color> di questo ricordo viene <color=yellow>Potenziato</color>. Quando infliggi <color=yellow>Danno da fuoco</color> a un nemico per la prima volta con un <color=yellow>Lancio</color> potenziato, crei una pozza di lava sotto i piedi del bersaglio per {1} s. I nemici sulla lava subiscono {2} <color=yellow>Danno da fuoco</color> al secondo e i danni che subiscono da <color=yellow>Danno da fuoco</color> aumentano di {3}. Puoi mantenere un massimo di {4} pozze di lava.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Gem_R_Lava::cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Ai_R_Lava_LavaField::duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_Lava_LavaField::dmgFactor/Ai_R_Lava_LavaField::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "Se_R_Lava_Debuff::fireDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "maxLavaCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Lava.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -3518,6 +3630,48 @@
     "achievementName": "Manteniamo la Calma",
     "achievementDescription": "Sconfiggi un totale di 8 boss epici con PV inferiori al 25%."
   },
+  "Gem_R_Purity": {
+    "name": "Essenza della Purezza",
+    "description": "Al <color=yellow>Lancio</color> di questo ricordo, rimuove tutti gli <color=yellow>Effetti elementali</color> applicati al Viaggiatore. <color=yellow>Cura</color>  <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5>  PS per ogni <color=yellow>Effetto elementale</color> rimosso. Può attivarsi solo una volta ogni 4 s.",
+    "rawDesc": "Al <color=yellow>Lancio</color> di questo ricordo, rimuove tutti gli <color=yellow>Effetti elementali</color> applicati al Viaggiatore. <color=yellow>Cura</color> {0} PS per ogni <color=yellow>Effetto elementale</color> rimosso. Può attivarsi solo una volta ogni {1} s.",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healPerElemental",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Purity.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Rejuvenation": {
     "name": "Essenza del Ringiovanimento",
     "description": "Ogni 15 s, il <color=yellow>lancio</color> di questo Ricordo viene <color=yellow>potenziato</color>. Il <color=yellow>lancio potenziato</color> <color=yellow>cura</color> i <color=yellow>propri</color> <color=yellow>PV</color> per il  14%<sprite=5>  del <color=yellow>danno</color> inflitto entro 1.5 s dopo il lancio.",
@@ -3700,7 +3854,7 @@
   },
   "Gem_R_Shock": {
     "name": "Essenza dello Shock",
-    "description": "Ogni 4° <color=yellow>attacco base</color> viene <color=yellow>potenziato</color> e scagli un <color=yellow>Fulmine</color> che rimbalza tra i nemici, infliggendo fino a 2 volte  <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5>  di <color=yellow>danno da luce</color>. Ogni 20% di <color=yellow>probabilità critico</color> aumenta il numero massimo di colpi di 1.",
+    "description": "Ogni 4° <color=yellow>attacco base</color> viene <color=yellow>potenziato</color> e scagli un <color=yellow>Fulmine</color> che rimbalza tra i nemici, infliggendo fino a 2 volte  <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5>  di <color=yellow>danno da luce</color>. Ogni 20% di <color=yellow>probabilità critico</color> aumenta il numero massimo di colpi di 1.",
     "rawDesc": "Ogni 4° <color=yellow>attacco base</color> viene <color=yellow>potenziato</color> e scagli un <color=yellow>Fulmine</color> che rimbalza tra i nemici, infliggendo fino a {0} volte {1} di <color=yellow>danno da luce</color>. Ogni {2} di <color=yellow>probabilità critico</color> aumenta il numero massimo di colpi di 1.",
     "rawDescVars": [
       {
@@ -3717,14 +3871,14 @@
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "chainDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.2,
-          "basicAD": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.01
         }

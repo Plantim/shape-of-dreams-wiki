@@ -3295,6 +3295,49 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Glass": {
+    "name": "ガラスのエッセンス",
+    "description": "<color=yellow>戦闘中</color>に<color=yellow>シールド</color>を獲得すると、得たシールド量の 12%<sprite=5> だけHPを<color=yellow>回復</color>します。所持している<color=yellow>冷気記憶</color>1つにつき、この記憶の<color=yellow>回復量</color>が 18%<sprite=5> 増加します。",
+    "rawDesc": "<color=yellow>戦闘中</color>に<color=yellow>シールド</color>を獲得すると、得たシールド量の{0}だけHPを<color=yellow>回復</color>します。所持している<color=yellow>冷気記憶</color>1つにつき、この記憶の<color=yellow>回復量</color>が{1}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": " 12%<sprite=5> ",
+        "format": "P0",
+        "raw": "healByShieldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": " 18%<sprite=5> ",
+        "format": "P0",
+        "raw": "healAmpPerColdSkill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "Gem_R_Glass.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Insatiable": {
     "name": "暴食のエッセンス",
     "description": "この記憶を発動した後、5秒の間、<color=yellow>攻撃力</color>が 15%<sprite=5> 増加し、<color=yellow>攻撃</color>するたびに 6<sprite=5> のHPを<color=yellow>回復</color>します。",
@@ -3346,6 +3389,75 @@
       "Attack"
     ],
     "image": "Gem_R_Insatiable.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lava": {
+    "name": "溶岩のエッセンス",
+    "description": "4秒ごとにこの記憶の<color=yellow>発動</color>が<color=yellow>強化</color>されます。強化された<color=yellow>発動</color>で最初に敵へ<color=yellow>火炎ダメージ</color>を与えると、対象の足元に4秒間持続する溶岩を生成します。溶岩上のすべての敵は毎秒 <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を受け、<color=yellow>火炎ダメージ</color>による被ダメージが30%増加します。溶岩は最大5個まで維持できます。",
+    "rawDesc": "{0}秒ごとにこの記憶の<color=yellow>発動</color>が<color=yellow>強化</color>されます。強化された<color=yellow>発動</color>で最初に敵へ<color=yellow>火炎ダメージ</color>を与えると、対象の足元に{1}秒間持続する溶岩を生成します。溶岩上のすべての敵は毎秒{2}の<color=yellow>火炎ダメージ</color>を受け、<color=yellow>火炎ダメージ</color>による被ダメージが{3}増加します。溶岩は最大{4}個まで維持できます。",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Gem_R_Lava::cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Ai_R_Lava_LavaField::duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_Lava_LavaField::dmgFactor/Ai_R_Lava_LavaField::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "Se_R_Lava_Debuff::fireDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "maxLavaCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Lava.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -3531,6 +3643,48 @@
     "achievementName": "冷静に落ち着いて行こう",
     "achievementDescription": "HPが25%以下の状態でヒロイックボスを合計8回撃破する。"
   },
+  "Gem_R_Purity": {
+    "name": "純粋のエッセンス",
+    "description": "この記憶を<color=yellow>発動</color>すると、旅人に付与されているすべての<color=yellow>属性効果</color>を除去します。除去した<color=yellow>属性効果</color>1つにつき、HPを <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> <color=yellow>回復</color>します。4秒に1回のみ発動できます。",
+    "rawDesc": "この記憶を<color=yellow>発動</color>すると、旅人に付与されているすべての<color=yellow>属性効果</color>を除去します。除去した<color=yellow>属性効果</color>1つにつき、HPを{0}<color=yellow>回復</color>します。{1}秒に1回のみ発動できます。",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healPerElemental",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Purity.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Rejuvenation": {
     "name": "若返りのエッセンス",
     "description": "15秒ごとに、この記憶の<color=yellow>発動</color>が<color=yellow>強化</color>されます。<color=yellow>強化された発動</color>により、発動後1.5秒以内に与える<color=yellow>ダメージ</color>の 14%<sprite=5> 分<color=yellow>自身</color>の<color=yellow>HP</color>を<color=yellow>回復</color>します。",
@@ -3713,7 +3867,7 @@
   },
   "Gem_R_Shock": {
     "name": "衝撃のエッセンス",
-    "description": "4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>強化</color>され、敵に跳ね返りながら、最大2回 <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与える<color=yellow>電撃</color>を発射します。<color=yellow>クリティカル率</color>20%ごとに最大ダメージ回数が1増加します。",
+    "description": "4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>強化</color>され、敵に跳ね返りながら、最大2回 <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与える<color=yellow>電撃</color>を発射します。<color=yellow>クリティカル率</color>20%ごとに最大ダメージ回数が1増加します。",
     "rawDesc": "4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>強化</color>され、敵に跳ね返りながら、最大{0}回{1}の<color=yellow>光ダメージ</color>を与える<color=yellow>電撃</color>を発射します。<color=yellow>クリティカル率</color>{2}ごとに最大ダメージ回数が1増加します。",
     "rawDescVars": [
       {
@@ -3730,14 +3884,14 @@
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "chainDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.2,
-          "basicAD": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.01
         }

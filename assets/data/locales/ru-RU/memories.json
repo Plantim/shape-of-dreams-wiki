@@ -207,8 +207,8 @@
     "cooldownTime": 4.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Выстреливает стрелой тьмы, наносящей  <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5>  <color=yellow>урона от тьмы</color> врагу и активирующей <color=yellow>эффект атаки</color>. Пробивает врагов (макс. 2).",
-    "rawDesc": "Выстреливает стрелой тьмы, наносящей {0} <color=yellow>урона от тьмы</color> врагу и активирующей <color=yellow>эффект атаки</color>. Пробивает врагов (макс. {1}).",
+    "description": "Выстреливает стрелой тьмы, наносящей  <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5>  <color=yellow>урона Тьмы</color> врагу и активирующей <color=yellow>эффект атаки</color>. Пробивает врагов (макс. 2).\nС вероятностью <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> <color=yellow>урон</color> увеличивается на 80%, а <color=yellow>время восстановления</color> сокращается на 50%.",
+    "rawDesc": "Выстреливает стрелой тьмы, наносящей {0} <color=yellow>урона Тьмы</color> врагу и активирующей <color=yellow>эффект атаки</color>. Пробивает врагов (макс. {1}).\nС вероятностью {2} <color=yellow>урон</color> увеличивается на {3}, а <color=yellow>время восстановления</color> сокращается на {4}.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5> ",
@@ -235,9 +235,48 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "ampEmpoweredDmg",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "empoweredCooldownReductionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Выстрел стрелой, наносящей урон от тьмы",
+    "shortDescription": "Выстрел стрелой, наносящей урон Тьмы",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -257,8 +296,8 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Пронзает врагов впереди, нанося  <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5>  <color=yellow>урона Тьмы</color> и активируя <color=yellow>эффект атаки</color>, затем притягивает их к центру. Урон по щитам увеличивается на 100%.",
-    "rawDesc": "Пронзает врагов впереди, нанося {0} <color=yellow>урона Тьмы</color> и активируя <color=yellow>эффект атаки</color>, затем притягивает их к центру. Урон по щитам увеличивается на {1}.",
+    "description": "Пронзает врагов впереди, нанося  <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5>  <color=yellow>урона Тьмы</color> и активируя <color=yellow>эффект атаки</color>, затем притягивает их к центру. Урон по щитам увеличивается на 100%.\nС вероятностью <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> <color=yellow>урон</color> увеличивается на 100%, и за каждого пораженного врага <color=yellow>восстанавливается</color>  <sprite=2><color=#fff><gradient=sv_ad>20%</gradient></color><sprite=5>  <color=yellow>здоровья</color>.",
+    "rawDesc": "Пронзает врагов впереди, нанося {0} <color=yellow>урона Тьмы</color> и активируя <color=yellow>эффект атаки</color>, затем притягивает их к центру. Урон по щитам увеличивается на {1}.\nС вероятностью {2} <color=yellow>урон</color> увеличивается на {3}, и за каждого пораженного врага <color=yellow>восстанавливается</color> {4} <color=yellow>здоровья</color>.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> ",
@@ -284,6 +323,45 @@
           "basicAD": 0,
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "dmgAmpByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>20%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healAmountByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
         }
       }
     ],
@@ -1777,13 +1855,39 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "При применении <color=yellow>Воспоминания</color> или <color=yellow>Мерцания</color> вы получаете 1 накопление <color=yellow>Экзотической материи</color> (макс. 3), а при применении <color=yellow>Ультимативного воспоминания</color> накопления мгновенно достигают максимума. Следующая <color=yellow>базовая атака</color> расходует все накопления, вызывая взрыв, который наносит врагам  <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5>  <color=yellow>урона светом</color> за каждое накопление.\n\nРазмер этого взрыва увеличивается на 5% за каждое улучшение <color=yellow>Экзотической материи</color>, вплоть до 50%.",
-    "rawDesc": "При применении <color=yellow>Воспоминания</color> или <color=yellow>Мерцания</color> вы получаете 1 накопление <color=yellow>Экзотической материи</color> (макс. {0}), а при применении <color=yellow>Ультимативного воспоминания</color> накопления мгновенно достигают максимума. Следующая <color=yellow>базовая атака</color> расходует все накопления, вызывая взрыв, который наносит врагам {1} <color=yellow>урона светом</color> за каждое накопление.\n\nРазмер этого взрыва увеличивается на {2} за каждое улучшение <color=yellow>Экзотической материи</color>, вплоть до {3}.",
+    "description": "При применении <color=yellow>Воспоминания</color> вы получаете 1 накопление <color=yellow>Экзотической материи</color> (макс. 4). При применении <color=yellow>навыка уклонения</color> вы получаете 2 накоплений, а при применении <color=yellow>Ультимативного воспоминания</color> — 3 накоплений. Следующая <color=yellow>базовая атака</color> расходует все накопления, вызывая взрыв, который наносит врагам  <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5>  <color=yellow>урона светом</color> за каждое накопление.\n\nРазмер этого взрыва увеличивается на 5% за каждое улучшение <color=yellow>Экзотической материи</color>, вплоть до 50%.",
+    "rawDesc": "При применении <color=yellow>Воспоминания</color> вы получаете 1 накопление <color=yellow>Экзотической материи</color> (макс. {0}). При применении <color=yellow>навыка уклонения</color> вы получаете {1} накоплений, а при применении <color=yellow>Ультимативного воспоминания</color> — {2} накоплений. Следующая <color=yellow>базовая атака</color> расходует все накопления, вызывая взрыв, который наносит врагам {3} <color=yellow>урона светом</color> за каждое накопление.\n\nРазмер этого взрыва увеличивается на {4} за каждое улучшение <color=yellow>Экзотической материи</color>, вплоть до {5}.",
     "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dodgeCastStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
       {
         "rendered": "3",
         "format": "#,##0",
-        "raw": "maxStack",
+        "raw": "ultCastStacks",
         "scalingType": "basic",
         "data": {
           "basicConstant": 3.0,
@@ -1887,7 +1991,7 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Увеличивает <color=yellow>силу атаки</color> на  12<sprite=5> . Каждая 4-я <color=yellow>базовая атака</color> становится <color=yellow>критическим ударом</color>, при этом наносит  <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5>  <color=yellow>урона от света</color>.\nС каждой <color=yellow>атакой</color> по врагу увеличивает <color=yellow>скорость атаки</color> на  4%<sprite=5>  на 4 с. Эффект суммируется до  24%<sprite=5> . При макс. <color=yellow>скорости атаки</color> каждая <color=yellow>атака</color> <color=yellow>исцеляет</color>  1%<sprite=5>  от <color=yellow>потерянных ОЗ</color>.",
+    "description": "Увеличивает <color=yellow>силу атаки</color> на  12<sprite=5> . Каждая 4-я <color=yellow>базовая атака</color> становится <color=yellow>критическим ударом</color>, при этом наносит  <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5>  <color=yellow>урона от света</color>.\nС каждой <color=yellow>атакой</color> по врагу увеличивает <color=yellow>скорость атаки</color> на  4%<sprite=5>  на 4 с. Эффект суммируется до  24%<sprite=5> . При макс. <color=yellow>скорости атаки</color> каждая <color=yellow>атака</color> <color=yellow>исцеляет</color>  2%<sprite=5>  от <color=yellow>потерянных ОЗ</color>.",
     "rawDesc": "Увеличивает <color=yellow>силу атаки</color> на {0}. Каждая 4-я <color=yellow>базовая атака</color> становится <color=yellow>критическим ударом</color>, при этом наносит {1} <color=yellow>урона от света</color>.\nС каждой <color=yellow>атакой</color> по врагу увеличивает <color=yellow>скорость атаки</color> на {2} на {3} с. Эффект суммируется до {4}. При макс. <color=yellow>скорости атаки</color> каждая <color=yellow>атака</color> <color=yellow>исцеляет</color> {5} от <color=yellow>потерянных ОЗ</color>.",
     "rawDescVars": [
       {
@@ -1896,10 +2000,10 @@
         "raw": "adBonus",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 9.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 2.0,
+          "basicLvl": 3.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -1950,12 +2054,12 @@
         "data": {}
       },
       {
-        "rendered": " 1%<sprite=5> ",
+        "rendered": " 2%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "lostHpHealRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.006,
+          "basicConstant": 0.016,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.004,
@@ -3428,12 +3532,12 @@
     "achievementDescription": "Сразиться с близнецами-хранителями одновременно и одержать победу."
   },
   "St_E_StygianRush": {
-    "name": "암흑 쇄도",
+    "name": "Тёмный рывок",
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "При <color=yellow>удерживании</color> кнопки применения заряжает тьму в руках. После полной зарядки устремляется вперед и наносит мощный удар по первому врагу на пути и всем врагам поблизости. Враги получают от  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5>  до  <sprite=2><color=#fff><gradient=sv_ad>600%</gradient></color><sprite=5>  <color=yellow>урона от тьмы</color>, пропорционально времени зарядки, и переходят в состояние оглушения на 1 с. За каждого поражённого врага получает <color=yellow>щит</color> на  <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> , действующий 3 с; если цель является <color=yellow>боссом</color>, величина щита увеличивается на 200%.\nМаксимальная дистанция прорыва и урон достигаются при зарядке в течение 1.2 с.",
-    "rawDesc": "При <color=yellow>удерживании</color> кнопки применения заряжает тьму в руках. После полной зарядки устремляется вперед и наносит мощный удар по первому врагу на пути и всем врагам поблизости. Враги получают от {0} до {1} <color=yellow>урона от тьмы</color>, пропорционально времени зарядки, и переходят в состояние оглушения на {2} с. За каждого поражённого врага получает <color=yellow>щит</color> на {3}, действующий {4} с; если цель является <color=yellow>боссом</color>, величина щита увеличивается на {5}.\nМаксимальная дистанция прорыва и урон достигаются при зарядке в течение {6} с.",
+    "description": "При <color=yellow>удерживании</color> кнопки применения заряжает тьму в руках. После полной зарядки устремляется вперед и наносит мощный удар по первому врагу на пути и всем врагам поблизости. Наносит врагам от  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5>  до  <sprite=2><color=#fff><gradient=sv_ad>600%</gradient></color><sprite=5>  <color=yellow>урона Тьмы</color> пропорционально времени зарядки, оглушает их на 1 с. и вызывает <color=yellow>эффект атаки</color>. За каждого поражённого врага получает <color=yellow>щит</color> на  <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> , действующий 3 с.; если цель является <color=yellow>боссом</color>, величина щита увеличивается на 200%.\nМаксимальная дистанция рывка и урон достигаются при зарядке в течение 1.2 с.",
+    "rawDesc": "При <color=yellow>удерживании</color> кнопки применения заряжает тьму в руках. После полной зарядки устремляется вперед и наносит мощный удар по первому врагу на пути и всем врагам поблизости. Наносит врагам от {0} до {1} <color=yellow>урона Тьмы</color> пропорционально времени зарядки, оглушает их на {2} с. и вызывает <color=yellow>эффект атаки</color>. За каждого поражённого врага получает <color=yellow>щит</color> на {3}, действующий {4} с.; если цель является <color=yellow>боссом</color>, величина щита увеличивается на {5}.\nМаксимальная дистанция рывка и урон достигаются при зарядке в течение {6} с.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
@@ -3550,7 +3654,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Наделяет оружие силой тьмы на 7 с., увеличивая <color=yellow>шанс критического удара</color> на  20%<sprite=5>  и нанося  <sprite=2><color=#fff><gradient=sv_ad>52%</gradient></color><sprite=5>  доп. <color=yellow>урона от тьмы</color> при <color=yellow>атаке</color>. Для <color=yellow>Путешественников ближнего боя</color> этот доп. урон увеличивается на 25%.",
+    "description": "Наделяет оружие силой тьмы на 7 с., увеличивая <color=yellow>шанс критического удара</color> на  25%<sprite=5>  и нанося  <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5>  доп. <color=yellow>урона от тьмы</color> при <color=yellow>атаке</color>. Для <color=yellow>Путешественников ближнего боя</color> этот доп. урон увеличивается на 25%.",
     "rawDesc": "Наделяет оружие силой тьмы на {0} с., увеличивая <color=yellow>шанс критического удара</color> на {1} и нанося {2} доп. <color=yellow>урона от тьмы</color> при <color=yellow>атаке</color>. Для <color=yellow>Путешественников ближнего боя</color> этот доп. урон увеличивается на {3}.",
     "rawDescVars": [
       {
@@ -3567,27 +3671,27 @@
         }
       },
       {
-        "rendered": " 20%<sprite=5> ",
+        "rendered": " 25%<sprite=5> ",
         "format": "P0",
         "raw": "critChance",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.18,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.02,
+          "basicLvl": 0.05,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>52%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "hitDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 0.52,
+          "basicAD": 0.3,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.15
         }
@@ -4761,42 +4865,29 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Прорывается к цели и ударяет молотом, нанося врагам  <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5>  <color=yellow>урона от света</color> и активируя 50% <color=yellow>эффекта атаки</color>. Каждая <color=yellow>атака</color> по врагу <color=yellow>снижает</color> <color=yellow>время перезарядки</color> на 8%.",
-    "rawDesc": "Прорывается к цели и ударяет молотом, нанося врагам {0} <color=yellow>урона от света</color> и активируя {1} <color=yellow>эффекта атаки</color>. Каждая <color=yellow>атака</color> по врагу <color=yellow>снижает</color> <color=yellow>время перезарядки</color> на {2}.",
+    "description": "Прорывается к цели и ударяет молотом, нанося врагам  <sprite=2><color=#fff><gradient=sv_ad>175%</gradient></color><sprite=5>  <color=yellow>Урона светом</color> и активируя <color=yellow>Эффект атаки</color>. Каждая <color=yellow>Атака</color> по врагу <color=yellow>снижает</color> <color=yellow>Время восстановления</color> на 10%.",
+    "rawDesc": "Прорывается к цели и ударяет молотом, нанося врагам {0} <color=yellow>Урона светом</color> и активируя <color=yellow>Эффект атаки</color>. Каждая <color=yellow>Атака</color> по врагу <color=yellow>снижает</color> <color=yellow>Время восстановления</color> на {1}.",
     "rawDescVars": [
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>175%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.25,
+          "basicAD": 1.75,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "50%",
-        "format": "P0",
-        "raw": "attackEffect",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "8%",
+        "rendered": "10%",
         "format": "P0",
         "raw": "cooldownReductionRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.08,
+          "basicConstant": 0.1,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4804,7 +4895,7 @@
         }
       }
     ],
-    "shortDescription": "Урон от света, прорыв",
+    "shortDescription": "Урон светом, прорыв",
     "rarity": "Character",
     "type": "Normal",
     "traveler": "Hero_Vesper",
@@ -4825,8 +4916,8 @@
     "cooldownTime": 9.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Выстреливает <color=yellow>эфиром</color>, который движется вперед и возвращается, нанося врагам  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5>  <color=yellow>урона от света</color>. При повторном применении вызывает <color=yellow>взрыв</color> <color=yellow>эфира</color>, наносящий  <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5>  <color=yellow>урона от света</color> и <color=yellow>сковывающий</color> врагов на 3 с.",
-    "rawDesc": "Выстреливает <color=yellow>эфиром</color>, который движется вперед и возвращается, нанося врагам {0} <color=yellow>урона от света</color>. При повторном применении вызывает <color=yellow>взрыв</color> <color=yellow>эфира</color>, наносящий {1} <color=yellow>урона от света</color> и <color=yellow>сковывающий</color> врагов на {2} с.",
+    "description": "Выстреливает <color=yellow>эфиром</color>, который движется вперед и возвращается, нанося врагам  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5>  <color=yellow>урона от света</color>. При повторном применении вызывает <color=yellow>взрыв</color> <color=yellow>эфира</color>, наносящий  <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5>  <color=yellow>урона от света</color> и <color=yellow>сковывающий</color> врагов на 3 с.\n\nЕсли этот <color=yellow>взрыв</color> поражает одиночную цель, <color=yellow>урон от взрыва</color> увеличивается на 75%.",
+    "rawDesc": "Выстреливает <color=yellow>эфиром</color>, который движется вперед и возвращается, нанося врагам {0} <color=yellow>урона от света</color>. При повторном применении вызывает <color=yellow>взрыв</color> <color=yellow>эфира</color>, наносящий {1} <color=yellow>урона от света</color> и <color=yellow>сковывающий</color> врагов на {2} с.\n\nЕсли этот <color=yellow>взрыв</color> поражает одиночную цель, <color=yellow>урон от взрыва</color> увеличивается на {3}.",
     "rawDescVars": [
       {
         "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
@@ -4866,6 +4957,19 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "75%",
+        "format": "P0",
+        "raw": "explodeAmpOnSingleTarget",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.75,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "shortDescription": "Урон от света, сковывание при повторном применении",
@@ -4878,7 +4982,7 @@
       "HardCC"
     ],
     "image": "St_Q_EtherealInfluence.png",
-    "lore": "Узри эту первозданную материю.\nОт твоей души до земли под ногами — она начало и конец всего сущего.\nСловно первое дыхание вселенной...",
+    "lore": "Узри эту первозданную материю. \nОт твоей души до земли под ногами — она начало и конец всего сущего. \nСловно первое дыхание вселенной...",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -5537,8 +5641,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Создает постепенно увеличивающуюся звезду в указанном месте, которая замедляет врагов, после чего сосредотачивается макс. до 3 с. В это время нельзя атаковать или использовать Воспоминания. При повторном использовании <color=yellow>Сверхновой</color> звезда взрывается, нанося врагам  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  <color=yellow>урона от света</color>. Мощность взрыва увеличивается пропорционально времени зарядки, достигая 225% урона через 1.3 с.\nСкорость зарядки увеличивается пропорционально Ускорению памяти Юбара.",
-    "rawDesc": "Создает постепенно увеличивающуюся звезду в указанном месте, которая замедляет врагов, после чего сосредотачивается макс. до {0} с. В это время нельзя атаковать или использовать Воспоминания. При повторном использовании <color=yellow>Сверхновой</color> звезда взрывается, нанося врагам {1} <color=yellow>урона от света</color>. Мощность взрыва увеличивается пропорционально времени зарядки, достигая {2} урона через {3} с.\nСкорость зарядки увеличивается пропорционально Ускорению памяти Юбара.",
+    "description": "Восстанавливает 1 заряд <color=yellow>навыка уклонения</color> и создает постепенно увеличивающуюся <color=yellow>звезду</color> в указанном месте, которая замедляет врагов, после чего <color=yellow>сосредотачивается</color> макс. до 3 с. В это время нельзя <color=yellow>атаковать</color> или применять <color=yellow>Воспоминания</color>. При повторном применении <color=yellow>звезда</color> взрывается, нанося врагам  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  <color=yellow>урона светом</color>.\n\nМощность взрыва увеличивается пропорционально <color=yellow>времени зарядки</color>, и через 1.3 с. <color=yellow>урон</color> увеличивается до 225%, а скорость зарядки увеличивается пропорционально <color=yellow>Ускорению памяти</color> Юбара.",
+    "rawDesc": "Восстанавливает 1 заряд <color=yellow>навыка уклонения</color> и создает постепенно увеличивающуюся <color=yellow>звезду</color> в указанном месте, которая замедляет врагов, после чего <color=yellow>сосредотачивается</color> макс. до {0} с. В это время нельзя <color=yellow>атаковать</color> или применять <color=yellow>Воспоминания</color>. При повторном применении <color=yellow>звезда</color> взрывается, нанося врагам {1} <color=yellow>урона светом</color>.\n\nМощность взрыва увеличивается пропорционально <color=yellow>времени зарядки</color>, и через {2} с. <color=yellow>урон</color> увеличивается до {3}, а скорость зарядки увеличивается пропорционально <color=yellow>Ускорению памяти</color> Юбара.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -5567,19 +5671,6 @@
         }
       },
       {
-        "rendered": "225%",
-        "format": "P0",
-        "raw": "maxDamageMultiplier",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 2.25,
-          "basicAP": 0.0,
-          "basicAD": 0.0,
-          "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.0
-        }
-      },
-      {
         "rendered": "1.3",
         "format": "#,##0.#",
         "raw": "chargeFullTime",
@@ -5591,9 +5682,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "225%",
+        "format": "P0",
+        "raw": "maxDamageMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.25,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
       }
     ],
-    "shortDescription": "Сильный урон от света после зарядки",
+    "shortDescription": "Сильный урон светом после зарядки",
     "rarity": "Character",
     "type": "Normal",
     "traveler": "Hero_Yubar",
@@ -5602,7 +5706,7 @@
       "Light"
     ],
     "image": "St_Q_SuperNova.png",
-    "lore": "Какой прекрасный и печальный парадокс.\nЗвезды сжигают себя, чтобы светить нам еще ярче,\nно именно этот момент и становится началом их вечного молчания.",
+    "lore": "Какой прекрасный и печальный парадокс. \nЗвезды сжигают себя, чтобы светить нам еще ярче, \nно именно этот момент и становится началом их вечного молчания.",
     "achievementKey": "ACH_NIGHT_OF_COUNTING_THE_STARS",
     "achievementName": "Звездная ночь",
     "achievementDescription": "Достичь 140 силы умений, играя за Юбара."
@@ -5612,7 +5716,7 @@
     "cooldownTime": 9.0,
     "maxCharges": 2,
     "addedCharges": 1,
-    "description": "<color=yellow>Призывает</color> <color=yellow>лесного пса</color>, последователя Накии, в указанное место, нанося врагам  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5>  <color=yellow>урона</color> и <color=yellow>оглушая</color> их на 0.4 с.\n\n<color=yellow>Лесной пес</color> имеет 128 ОЗ и 40 ЗЩТ, находится на поле боя до 25 с., царапает врагов, нанося  <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5>  <color=yellow>урона</color>. Макс. число лесных псов: 5.",
+    "description": "<color=yellow>Призывает</color> <color=yellow>лесного пса</color>, последователя Накии, в указанное место, нанося врагам  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5>  <color=yellow>урона</color> и <color=yellow>оглушая</color> их на 0.4 с.\n\n<color=yellow>Лесной пес</color> имеет 128 ОЗ и  20<sprite=5>  ЗЩТ, находится на поле боя до 25 с., царапает врагов, нанося  <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5>  <color=yellow>урона</color>. Макс. число лесных псов: 5.",
     "rawDesc": "<color=yellow>Призывает</color> <color=yellow>лесного пса</color>, последователя Накии, в указанное место, нанося врагам {0} <color=yellow>урона</color> и <color=yellow>оглушая</color> их на {1} с.\n\n<color=yellow>Лесной пес</color> имеет {2} ОЗ и {3} ЗЩТ, находится на поле боя до {4} с., царапает врагов, нанося {5} <color=yellow>урона</color>. Макс. число лесных псов: {6}.",
     "rawDescVars": [
       {
@@ -5649,15 +5753,15 @@
         "data": {}
       },
       {
-        "rendered": "40",
+        "rendered": " 20<sprite=5> ",
         "format": "#,##0",
         "raw": "armor",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 40.0,
+          "basicConstant": 13.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 7.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5722,7 +5826,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "При <color=yellow>удерживании</color> кнопки применения заряжает залп ментальных стрел. При отпускании клавиши выпускает от 1 до  4<sprite=5>  ментальных стрел по врагам поблизости (в зависимости от времени зарядки). Каждая ментальная стрела наносит <color=yellow>урон от тьмы</color> в размере  <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5>  врагам в небольшой зоне.",
+    "description": "При <color=yellow>удерживании</color> кнопки применения заряжает залп ментальных стрел. При отпускании клавиши выпускает от 1 до  4<sprite=5>  ментальных стрел по врагам поблизости (в зависимости от времени зарядки). Каждая ментальная стрела наносит <color=yellow>урон от тьмы</color> в размере  <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><sprite=5>  врагам в небольшой зоне.",
     "rawDesc": "При <color=yellow>удерживании</color> кнопки применения заряжает залп ментальных стрел. При отпускании клавиши выпускает от {0} до {1} ментальных стрел по врагам поблизости (в зависимости от времени зарядки). Каждая ментальная стрела наносит <color=yellow>урон от тьмы</color> в размере {2} врагам в небольшой зоне.",
     "rawDescVars": [
       {
@@ -5746,14 +5850,14 @@
         "data": {}
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 2.0,
+          "basicAD": 1.7,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5948,8 +6052,8 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "На 10 сек. окутывает меч разрушительной <color=yellow>энергией клинка</color>. В это время нельзя <color=yellow>применять</color> <color=yellow>воспоминания</color>, но <color=yellow>урон от атаки</color> увеличивается на  35%<sprite=5> , дальность атаки возрастает, а каждая <color=yellow>базовая атака</color> выпускает <color=yellow>энергию клинка</color>, нанося  <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5>  <color=yellow>урона Тьмы</color> врагам. В этом состоянии можно совершать  1.5<sprite=5>  <color=yellow>базовых атак</color> в секунду, игнорируя другие эффекты скорости атаки.\n\nВо время действия <color=yellow>ускорение памяти</color> <color=yellow>навыка уклонения</color> увеличивается на  30<sprite=5> , а его <color=yellow>максимальное количество зарядов</color> — на 2.",
-    "rawDesc": "На {0} сек. окутывает меч разрушительной <color=yellow>энергией клинка</color>. В это время нельзя <color=yellow>применять</color> <color=yellow>воспоминания</color>, но <color=yellow>урон от атаки</color> увеличивается на {1}, дальность атаки возрастает, а каждая <color=yellow>базовая атака</color> выпускает <color=yellow>энергию клинка</color>, нанося {2} <color=yellow>урона Тьмы</color> врагам. В этом состоянии можно совершать {3} <color=yellow>базовых атак</color> в секунду, игнорируя другие эффекты скорости атаки.\n\nВо время действия <color=yellow>ускорение памяти</color> <color=yellow>навыка уклонения</color> увеличивается на {4}, а его <color=yellow>максимальное количество зарядов</color> — на {5}.",
+    "description": "На 10 сек. окутывает меч разрушительной <color=yellow>энергией клинка</color>. В это время нельзя <color=yellow>применять</color> <color=yellow>воспоминания</color>, но <color=yellow>дальность атаки</color> немного возрастает, <color=yellow>урон от атаки</color> увеличивается на  35%<sprite=5> , а <color=yellow>скорость атаки</color> — на  30%<sprite=5> , при этом на данный эффект увеличения скорости атаки не влияет <color=yellow>Один шаг, одно убийство</color>. Каждая <color=yellow>базовая атака</color> выпускает <color=yellow>энергию клинка</color>, нанося  <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5>  <color=yellow>урона Тьмы</color> врагам.\n\nВо время действия <color=yellow>ускорение памяти</color> <color=yellow>навыка уклонения</color> увеличивается на  30<sprite=5> , а его <color=yellow>максимальное количество зарядов</color> — на 2.",
+    "rawDesc": "На {0} сек. окутывает меч разрушительной <color=yellow>энергией клинка</color>. В это время нельзя <color=yellow>применять</color> <color=yellow>воспоминания</color>, но <color=yellow>дальность атаки</color> немного возрастает, <color=yellow>урон от атаки</color> увеличивается на {1}, а <color=yellow>скорость атаки</color> — на {2}, при этом на данный эффект увеличения скорости атаки не влияет <color=yellow>Один шаг, одно убийство</color>. Каждая <color=yellow>базовая атака</color> выпускает <color=yellow>энергию клинка</color>, нанося {3} <color=yellow>урона Тьмы</color> врагам.\n\nВо время действия <color=yellow>ускорение памяти</color> <color=yellow>навыка уклонения</color> увеличивается на {4}, а его <color=yellow>максимальное количество зарядов</color> — на {5}.",
     "rawDescVars": [
       {
         "rendered": "10",
@@ -5978,29 +6082,29 @@
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> ",
+        "rendered": " 30%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "atkSpdPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 10.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.4,
+          "basicAP": 4.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": " 1.5<sprite=5> ",
-        "format": "0.#",
-        "raw": "atkSpd",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 1.4,
-          "basicAP": 0.0,
-          "basicAD": 0.0,
-          "basicLvl": 0.1,
-          "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
@@ -6128,8 +6232,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Выстреливает арбалетным болтом, который <color=yellow>пробивает</color> врагов, нанося  <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5>  <color=yellow>урона от тьмы</color>, отталкивая их и активируя <color=yellow>эффект атаки</color>. Каждый раз, когда болт <color=yellow>пронзает</color> врага, <color=yellow>урон</color> по следующему противнику увеличивается на 35%.",
-    "rawDesc": "Выстреливает арбалетным болтом, который <color=yellow>пробивает</color> врагов, нанося {0} <color=yellow>урона от тьмы</color>, отталкивая их и активируя <color=yellow>эффект атаки</color>. Каждый раз, когда болт <color=yellow>пронзает</color> врага, <color=yellow>урон</color> по следующему противнику увеличивается на {1}.",
+    "description": "Выстреливает арбалетным болтом, который <color=yellow>пробивает</color> врагов, нанося  <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5>  <color=yellow>урона Тьмы</color>, отталкивая их и активируя <color=yellow>эффект атаки</color>. Каждый раз, когда болт <color=yellow>пробивает</color> врага, <color=yellow>урон</color> по следующему противнику увеличивается на 35%.\nС вероятностью <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> <color=yellow>урон</color> увеличивается на 100%, и на цель накладывается 5 зарядов эффекта <color=yellow>Тьма</color>.",
+    "rawDesc": "Выстреливает арбалетным болтом, который <color=yellow>пробивает</color> врагов, нанося {0} <color=yellow>урона Тьмы</color>, отталкивая их и активируя <color=yellow>эффект атаки</color>. Каждый раз, когда болт <color=yellow>пробивает</color> врага, <color=yellow>урон</color> по следующему противнику увеличивается на {1}.\nС вероятностью {2} <color=yellow>урон</color> увеличивается на {3}, и на цель накладывается {4} зарядов эффекта <color=yellow>Тьма</color>.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> ",
@@ -6156,9 +6260,48 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "empoweredAmpDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "empoweredDarkStackCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Пробивающий урон от тьмы",
+    "shortDescription": "Пробивающий урон Тьмы",
     "rarity": "Rare",
     "type": "Normal",
     "traveler": "",
@@ -6631,6 +6774,121 @@
     ],
     "image": "St_R_DangerousTheory.png",
     "lore": "Трусы из Арканума назвали эту теорию «недопустимо опасной».\nГлупцы.\n\nОни не в силах постичь красоту моей идеи: лишь материя в экстремальном состоянии даёт самые взрывные результаты. А я всего лишь доказываю свою гипотезу",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_DarkGrenade": {
+    "name": "Темная граната",
+    "cooldownTime": 9.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Бросает темную гранату в указанную область. Граната взрывается, разбрасывая во все стороны 7 осколков тьмы. Каждый осколок накладывает <color=yellow>Эффект атаки</color> с силой 50% и наносит  <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5>  ед. <color=yellow>Урон Тьмы</color> первому пораженному врагу. Если в одну цель попадает несколько осколков, каждый последующий наносит 50% ед. урона.\nС вероятностью <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> количество осколков увеличивается на 4, а пораженные враги получают <color=yellow>Оглушение</color> на 1 сек.",
+    "rawDesc": "Бросает темную гранату в указанную область. Граната взрывается, разбрасывая во все стороны {0} осколков тьмы. Каждый осколок накладывает <color=yellow>Эффект атаки</color> с силой {1} и наносит {2} ед. <color=yellow>Урон Тьмы</color> первому пораженному врагу. Если в одну цель попадает несколько осколков, каждый последующий наносит {3} ед. урона.\nС вероятностью {4} количество осколков увеличивается на {5}, а пораженные враги получают <color=yellow>Оглушение</color> на {6} сек.",
+    "rawDescVars": [
+      {
+        "rendered": "7",
+        "format": "#,##0",
+        "raw": "defaultShardCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 7.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "attackEffectStrength",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_DarkGrenade_Shard::damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "subsequentHitMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "addedEmpoweredShardCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Бросок, массовый Урон Тьмы",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "St_R_DarkGrenade.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -7717,8 +7975,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Выстреливает снарядами тьмы x5, которые рассеиваются впереди. Каждый снаряд наносит  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5>  <color=yellow>урона от тьмы</color> и активирует 50% <color=yellow>эффекта атаки</color>.",
-    "rawDesc": "Выстреливает снарядами тьмы x{0}, которые рассеиваются впереди. Каждый снаряд наносит {1} <color=yellow>урона от тьмы</color> и активирует {2} <color=yellow>эффекта атаки</color>.",
+    "description": "Выстреливает снарядами тьмы x5, которые рассеиваются впереди. Каждый снаряд наносит  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5>  <color=yellow>урона Тьмы</color> и активирует 50% <color=yellow>эффекта атаки</color>.\nС вероятностью <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> выстреливает еще 4 снарядами тьмы.",
+    "rawDesc": "Выстреливает снарядами тьмы x{0}, которые рассеиваются впереди. Каждый снаряд наносит {1} <color=yellow>урона Тьмы</color> и активирует {2} <color=yellow>эффекта атаки</color>.\nС вероятностью {3} выстреливает еще {4} снарядами тьмы.",
     "rawDescVars": [
       {
         "rendered": "5",
@@ -7753,6 +8011,32 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "addedShootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -7898,8 +8182,8 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Сосредотачивается в течение 0.7 с., увеличивая <color=yellow>скорость передвижения</color> на  30%<sprite=5> . После сосредоточения выстреливает самонаводящимися снарядами x5, наносящими  <sprite=2><color=#fff><gradient=sv_ad>50%</gradient></color><sprite=5>  <color=yellow>урона от тьмы</color> случайным врагам поблизости, и увеличивает <color=yellow>скорость атаки</color> на  20%<sprite=5>  на 3 с.",
-    "rawDesc": "Сосредотачивается в течение {0} с., увеличивая <color=yellow>скорость передвижения</color> на {1}. После сосредоточения выстреливает самонаводящимися снарядами x{2}, наносящими {3} <color=yellow>урона от тьмы</color> случайным врагам поблизости, и увеличивает <color=yellow>скорость атаки</color> на {4} на {5} с.",
+    "description": "Сосредотачивается в течение 0.7 с., увеличивая <color=yellow>скорость передвижения</color> на  30%<sprite=5> . После сосредоточения выстреливает самонаводящимися снарядами x5, наносящими  <sprite=2><color=#fff><gradient=sv_ad>50%</gradient></color><sprite=5>  <color=yellow>урона от тьмы</color> случайным врагам поблизости, и увеличивает <color=yellow>скорость атаки</color> на  20%<sprite=5>  на 3 с.\nС вероятностью <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> количество выпускаемых снарядов увеличивается на 5.",
+    "rawDesc": "Сосредотачивается в течение {0} с., увеличивая <color=yellow>скорость передвижения</color> на {1}. После сосредоточения выстреливает самонаводящимися снарядами x{2}, наносящими {3} <color=yellow>урона от тьмы</color> случайным врагам поблизости, и увеличивает <color=yellow>скорость атаки</color> на {4} на {5} с.\nС вероятностью {6} количество выпускаемых снарядов увеличивается на {7}.",
     "rawDescVars": [
       {
         "rendered": "0.7",
@@ -7978,6 +8262,32 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "addedEmpoweredMissileCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "shortDescription": "Урон от тьмы, увеличение скорости атаки",
@@ -8000,8 +8310,8 @@
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Быстро передвигается, затем выстреливает осколками тьмы x3 по врагам поблизости. Каждый осколок наносит  <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5>  <color=yellow>урона от тьмы</color> и активирует 50% <color=yellow>эффекта атаки</color>.",
-    "rawDesc": "Быстро передвигается, затем выстреливает осколками тьмы x{0} по врагам поблизости. Каждый осколок наносит {1} <color=yellow>урона от тьмы</color> и активирует {2} <color=yellow>эффекта атаки</color>.",
+    "description": "Быстро передвигается, затем выстреливает осколками тьмы x3 по врагам поблизости. Каждый осколок наносит  <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5>  <color=yellow>урона от тьмы</color> и активирует 50% <color=yellow>эффекта атаки</color>.\nС вероятностью <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> количество выпускаемых осколков увеличивается на 3.",
+    "rawDesc": "Быстро передвигается, затем выстреливает осколками тьмы x{0} по врагам поблизости. Каждый осколок наносит {1} <color=yellow>урона от тьмы</color> и активирует {2} <color=yellow>эффекта атаки</color>.\nС вероятностью {3} количество выпускаемых осколков увеличивается на {4}.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -8036,6 +8346,32 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "addedSpawnCountByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8119,6 +8455,81 @@
     ],
     "image": "St_R_Smite.PNG",
     "lore": "В Академии одни только неразумные старики.\nСколько еще они будут хвалиться своими мелкими, ничтожными правилами...\n\nРазглядывая дерево, сгоревшее прошлой ночью, меня осенило.\nРазве силы природы, такие как молния, не подчиняются законам?\n\nЕсли мне удастся их понять, я смогу овладеть этой огромной мощью.\nЭта мысль завораживает меня. Нужно немедленно приступить к исследованиям.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_Somersault": {
+    "name": "Сальто",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Вы подпрыгиваете в воздух на 0.5 сек., уклоняясь от атак и получая статус <color=yellow>Неуязвимость</color>. На 4 сек. ваш <color=yellow>Шанс крит. удара</color> увеличивается на  30%<sprite=5> .\n\nКаждая <color=yellow>Атака</color> сокращает <color=yellow>Время восстановления</color> этого воспоминания на 0.3 сек.",
+    "rawDesc": "Вы подпрыгиваете в воздух на {0} сек., уклоняясь от атак и получая статус <color=yellow>Неуязвимость</color>. На {1} сек. ваш <color=yellow>Шанс крит. удара</color> увеличивается на {2}.\n\nКаждая <color=yellow>Атака</color> сокращает <color=yellow>Время восстановления</color> этого воспоминания на {3} сек.",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "jumpDodgeDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "effectDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 30%<sprite=5> ",
+        "format": "P0",
+        "raw": "critChangeAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.1,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "0.3",
+        "format": "#,##0.#",
+        "raw": "cooldownReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": "Неуязвимость, повышение шанса крит. удара",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "HardCC"
+    ],
+    "image": "St_R_Somersault.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -8235,6 +8646,88 @@
     ],
     "image": "St_R_StaticDischarge.png",
     "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_SummonLittleBaam": {
+    "name": "Родственная душа",
+    "cooldownTime": 14.0,
+    "maxCharges": 3,
+    "addedCharges": 99,
+    "description": "<color=yellow>Призывает</color> <color=yellow>Маленького Баама</color> в указанную точку.\n\n<color=yellow>Маленький Баам</color> имеет 119 здоровья и 50 <color=yellow>ЗЩТ</color>. Он находится на поле боя до 20 сек., атакуя ближайших врагов и нанося им  <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5>  <color=yellow>урона светом</color>. Одновременно можно поддерживать до 10 существ.\n\nВсе <color=yellow>Заряды</color> восстанавливаются одновременно.",
+    "rawDesc": "<color=yellow>Призывает</color> <color=yellow>Маленького Баама</color> в указанную точку.\n\n<color=yellow>Маленький Баам</color> имеет {0} здоровья и {1} <color=yellow>ЗЩТ</color>. Он находится на поле боя до {2} сек., атакуя ближайших врагов и нанося им {3} <color=yellow>урона светом</color>. Одновременно можно поддерживать до {4} существ.\n\nВсе <color=yellow>Заряды</color> восстанавливаются одновременно.",
+    "rawDescVars": [
+      {
+        "rendered": "119",
+        "format": "#,##0",
+        "raw": "summonHealth",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "50",
+        "format": "#,##0",
+        "raw": "armor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "20",
+        "format": "#,##0.#",
+        "raw": "maxDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_SummonLittleBaam_Baam_Atk::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.85,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Призыв Маленького Баама",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Summon"
+    ],
+    "image": "St_R_SummonLittleBaam.png",
+    "lore": "Поимка диких баамов происходила исключительно на «законных» и «добровольных» началах.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""

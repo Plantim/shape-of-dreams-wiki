@@ -207,8 +207,8 @@
     "cooldownTime": 4.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "闇の矢を発射して敵に <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動します。最大2体の敵を貫通します。",
-    "rawDesc": "闇の矢を発射して敵に{0}の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動します。最大{1}体の敵を貫通します。",
+    "description": "闇の矢を発射して敵に <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動します。最大2体の敵を貫通します。\n<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>の確率で<color=yellow>ダメージ量</color>が80%増加し、<color=yellow>クールダウン</color>が50%減少します。",
+    "rawDesc": "闇の矢を発射して敵に{0}の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動します。最大{1}体の敵を貫通します。\n{2}の確率で<color=yellow>ダメージ量</color>が{3}増加し、<color=yellow>クールダウン</color>が{4}減少します。",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5> ",
@@ -230,6 +230,45 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "ampEmpoweredDmg",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "empoweredCooldownReductionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -257,8 +296,8 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "前方の敵を突き刺し <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動させ、中央に集めます。シールドに対してはダメージが100%増加します。",
-    "rawDesc": "前方の敵を突き刺し{0}の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動させ、中央に集めます。シールドに対してはダメージが{1}増加します。",
+    "description": "前方の敵を突き刺し <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動させ、中央に集めます。シールドに対してはダメージが100%増加します。\n<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>の確率で<color=yellow>ダメージ量</color>が100%増加し、命中した敵1体につき<color=yellow>HP</color>を <sprite=2><color=#fff><gradient=sv_ad>20%</gradient></color><sprite=5> <color=yellow>回復</color>します。",
+    "rawDesc": "前方の敵を突き刺し{0}の<color=yellow>闇ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動させ、中央に集めます。シールドに対してはダメージが{1}増加します。\n{2}の確率で<color=yellow>ダメージ量</color>が{3}増加し、命中した敵1体につき<color=yellow>HP</color>を{4}<color=yellow>回復</color>します。",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> ",
@@ -284,6 +323,45 @@
           "basicAD": 0,
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "dmgAmpByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>20%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healAmountByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
         }
       }
     ],
@@ -1777,13 +1855,39 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>記憶</color>を<color=yellow>発動</color>するか<color=yellow>変光星</color>を使用すると<color=yellow>エキゾチック物質</color>スタックを1獲得し、最大3スタックまで保持でき、<color=yellow>究極記憶</color>を<color=yellow>発動</color>するとスタックが最大までチャージされます。次の<color=yellow>基本攻撃</color>時にすべてのスタックを消費して爆発を起こし、敵にスタック1につき <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。\n\nこの爆発の大きさは<color=yellow>エキゾチック物質</color>を強化するたびに5%増加し、最大50%まで増加します。",
-    "rawDesc": "<color=yellow>記憶</color>を<color=yellow>発動</color>するか<color=yellow>変光星</color>を使用すると<color=yellow>エキゾチック物質</color>スタックを1獲得し、最大{0}スタックまで保持でき、<color=yellow>究極記憶</color>を<color=yellow>発動</color>するとスタックが最大までチャージされます。次の<color=yellow>基本攻撃</color>時にすべてのスタックを消費して爆発を起こし、敵にスタック1につき{1}の<color=yellow>光ダメージ</color>を与えます。\n\nこの爆発の大きさは<color=yellow>エキゾチック物質</color>を強化するたびに{2}増加し、最大{3}まで増加します。",
+    "description": "<color=yellow>記憶</color>を<color=yellow>発動</color>すると<color=yellow>エキゾチック物質</color>スタックを1獲得し、最大4スタックまで保持できます。<color=yellow>回避スキル</color>を発動すると代わりに2スタックを、<color=yellow>究極記憶</color>を発動すると3スタックを獲得します。次の<color=yellow>基本攻撃</color>時にすべてのスタックを消費して爆発を起こし、敵にスタック1につき <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。\n\nこの爆発の大きさは<color=yellow>エキゾチック物質</color>を強化するたびに5%増加し、最大50%まで増加します。",
+    "rawDesc": "<color=yellow>記憶</color>を<color=yellow>発動</color>すると<color=yellow>エキゾチック物質</color>スタックを1獲得し、最大{0}スタックまで保持できます。<color=yellow>回避スキル</color>を発動すると代わりに{1}スタックを、<color=yellow>究極記憶</color>を発動すると{2}スタックを獲得します。次の<color=yellow>基本攻撃</color>時にすべてのスタックを消費して爆発を起こし、敵にスタック1につき{3}の<color=yellow>光ダメージ</color>を与えます。\n\nこの爆発の大きさは<color=yellow>エキゾチック物質</color>を強化するたびに{4}増加し、最大{5}まで増加します。",
     "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dodgeCastStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
       {
         "rendered": "3",
         "format": "#,##0",
-        "raw": "maxStack",
+        "raw": "ultCastStacks",
         "scalingType": "basic",
         "data": {
           "basicConstant": 3.0,
@@ -1887,7 +1991,7 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>攻撃力</color>が 12<sprite=5> 増加します。4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>クリティカル</color>となり、 <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> の追加<color=yellow>光ダメージ</color>を与えます。\n敵を<color=yellow>攻撃</color>するたびに、<color=yellow>攻撃速度</color>が4秒間 4%<sprite=5> 増加し、最大 24%<sprite=5> まで増加します。<color=yellow>攻撃速度</color>が最大まで増加した状態で<color=yellow>攻撃</color>すると、<color=yellow>失ったHP</color>の 1%<sprite=5> を<color=yellow>回復</color>します。",
+    "description": "<color=yellow>攻撃力</color>が 12<sprite=5> 増加します。4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>クリティカル</color>となり、 <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> の追加<color=yellow>光ダメージ</color>を与えます。\n敵を<color=yellow>攻撃</color>するたびに、<color=yellow>攻撃速度</color>が4秒間 4%<sprite=5> 増加し、最大 24%<sprite=5> まで増加します。<color=yellow>攻撃速度</color>が最大まで増加した状態で<color=yellow>攻撃</color>すると、<color=yellow>失ったHP</color>の 2%<sprite=5> を<color=yellow>回復</color>します。",
     "rawDesc": "<color=yellow>攻撃力</color>が{0}増加します。4回目ごとの<color=yellow>基本攻撃</color>が<color=yellow>クリティカル</color>となり、{1}の追加<color=yellow>光ダメージ</color>を与えます。\n敵を<color=yellow>攻撃</color>するたびに、<color=yellow>攻撃速度</color>が{2}秒間{3}増加し、最大{4}まで増加します。<color=yellow>攻撃速度</color>が最大まで増加した状態で<color=yellow>攻撃</color>すると、<color=yellow>失ったHP</color>の{5}を<color=yellow>回復</color>します。",
     "rawDescVars": [
       {
@@ -1896,10 +2000,10 @@
         "raw": "adBonus",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 9.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 2.0,
+          "basicLvl": 3.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -1950,12 +2054,12 @@
         "data": {}
       },
       {
-        "rendered": " 1%<sprite=5> ",
+        "rendered": " 2%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "lostHpHealRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.006,
+          "basicConstant": 0.016,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.004,
@@ -3432,8 +3536,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "発動キーを<color=yellow>長押し</color>すると、手に闇のエネルギーをチャージします。チャージが完了すると前方に突進し、最初に当たった敵とその周囲の敵すべてに強打を与えます。敵はチャージ時間に応じて <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ～ <sprite=2><color=#fff><gradient=sv_ad>600%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を受け、1秒間スタンします。敵に命中するたびに3秒間持続する <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> の<color=yellow>シールド</color>を獲得し、対象が<color=yellow>ボス</color>の場合はシールド量が200%増加します。\n1.2秒間チャージすると、ダッシュ距離とダメージ量が最大値に達します。",
-    "rawDesc": "発動キーを<color=yellow>長押し</color>すると、手に闇のエネルギーをチャージします。チャージが完了すると前方に突進し、最初に当たった敵とその周囲の敵すべてに強打を与えます。敵はチャージ時間に応じて{0}～{1}の<color=yellow>闇ダメージ</color>を受け、{2}秒間スタンします。敵に命中するたびに{3}秒間持続する{4}の<color=yellow>シールド</color>を獲得し、対象が<color=yellow>ボス</color>の場合はシールド量が{5}増加します。\n{6}秒間チャージすると、ダッシュ距離とダメージ量が最大値に達します。",
+    "description": "発動キーを<color=yellow>長押し</color>すると、手に闇のエネルギーをチャージします。チャージが完了すると前方に突進し、最初に当たった敵とその周囲の敵すべてに強打を与えます。敵にチャージ時間に応じて <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ～ <sprite=2><color=#fff><gradient=sv_ad>600%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、1秒間スタンさせて<color=yellow>攻撃効果</color>を発動します。敵に命中するたびに3秒間持続する <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> の<color=yellow>シールド</color>を獲得し、対象が<color=yellow>ボス</color>の場合はシールド量が200%増加します。\n1.2秒間チャージすると、ダッシュ距離とダメージ量が最大値に達します。",
+    "rawDesc": "発動キーを<color=yellow>長押し</color>すると、手に闇のエネルギーをチャージします。チャージが完了すると前方に突進し、最初に当たった敵とその周囲の敵すべてに強打を与えます。敵にチャージ時間に応じて{0}～{1}の<color=yellow>闇ダメージ</color>を与え、{2}秒間スタンさせて<color=yellow>攻撃効果</color>を発動します。敵に命中するたびに{3}秒間持続する{4}の<color=yellow>シールド</color>を獲得し、対象が<color=yellow>ボス</color>の場合はシールド量が{5}増加します。\n{6}秒間チャージすると、ダッシュ距離とダメージ量が最大値に達します。",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
@@ -3550,7 +3654,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "7秒の間、武器に闇の力を宿します。<color=yellow>クリティカル率</color>が 20%<sprite=5> 増加し、<color=yellow>攻撃</color>時に <sprite=2><color=#fff><gradient=sv_ad>52%</gradient></color><sprite=5> の追加<color=yellow>闇ダメージ</color>を与えます。<color=yellow>近接型の旅人</color>はこの追加ダメージ量が25%増加します。",
+    "description": "7秒の間、武器に闇の力を宿します。<color=yellow>クリティカル率</color>が 25%<sprite=5> 増加し、<color=yellow>攻撃</color>時に <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5> の追加<color=yellow>闇ダメージ</color>を与えます。<color=yellow>近接型の旅人</color>はこの追加ダメージ量が25%増加します。",
     "rawDesc": "{0}秒の間、武器に闇の力を宿します。<color=yellow>クリティカル率</color>が{1}増加し、<color=yellow>攻撃</color>時に{2}の追加<color=yellow>闇ダメージ</color>を与えます。<color=yellow>近接型の旅人</color>はこの追加ダメージ量が{3}増加します。",
     "rawDescVars": [
       {
@@ -3567,27 +3671,27 @@
         }
       },
       {
-        "rendered": " 20%<sprite=5> ",
+        "rendered": " 25%<sprite=5> ",
         "format": "P0",
         "raw": "critChance",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.18,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.02,
+          "basicLvl": 0.05,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>52%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "hitDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 0.52,
+          "basicAD": 0.3,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.15
         }
@@ -4761,42 +4865,29 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "対象にダッシュし、ハンマーを振り下ろして敵に <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動します。敵を<color=yellow>攻撃</color>するたびに、<color=yellow>クールダウン</color>が8%<color=yellow>減少</color>します。",
-    "rawDesc": "対象にダッシュし、ハンマーを振り下ろして敵に{0}の<color=yellow>光ダメージ</color>を与え、{1}の<color=yellow>攻撃効果</color>を発動します。敵を<color=yellow>攻撃</color>するたびに、<color=yellow>クールダウン</color>が{2}<color=yellow>減少</color>します。",
+    "description": "対象にダッシュし、ハンマーを振り下ろして敵に <sprite=2><color=#fff><gradient=sv_ad>175%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動します。敵を<color=yellow>攻撃</color>するたびに、<color=yellow>クールダウン</color>が10%<color=yellow>減少</color>します。",
+    "rawDesc": "対象にダッシュし、ハンマーを振り下ろして敵に{0}の<color=yellow>光ダメージ</color>を与え、<color=yellow>攻撃効果</color>を発動します。敵を<color=yellow>攻撃</color>するたびに、<color=yellow>クールダウン</color>が{1}<color=yellow>減少</color>します。",
     "rawDescVars": [
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>175%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.25,
+          "basicAD": 1.75,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "50%",
-        "format": "P0",
-        "raw": "attackEffect",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "8%",
+        "rendered": "10%",
         "format": "P0",
         "raw": "cooldownReductionRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.08,
+          "basicConstant": 0.1,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4825,8 +4916,8 @@
     "cooldownTime": 9.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "前方に飛んでいき戻ってくる<color=yellow>エーテル</color>を放ち、敵に <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。再度発動すると、<color=yellow>エーテル</color>が<color=yellow>爆発</color>し、敵に <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与え、3秒間<color=yellow>バインド</color>します。",
-    "rawDesc": "前方に飛んでいき戻ってくる<color=yellow>エーテル</color>を放ち、敵に{0}の<color=yellow>光ダメージ</color>を与えます。再度発動すると、<color=yellow>エーテル</color>が<color=yellow>爆発</color>し、敵に{1}の<color=yellow>光ダメージ</color>を与え、{2}秒間<color=yellow>バインド</color>します。",
+    "description": "前方に飛んでいき戻ってくる<color=yellow>エーテル</color>を放ち、敵に <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。再度発動すると、<color=yellow>エーテル</color>が<color=yellow>爆発</color>し、敵に <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与え、3秒間<color=yellow>バインド</color>します。\n\nこの<color=yellow>爆発</color>が単一の対象に命中した場合、<color=yellow>爆発ダメージ量</color>が75%増加します。",
+    "rawDesc": "前方に飛んでいき戻ってくる<color=yellow>エーテル</color>を放ち、敵に{0}の<color=yellow>光ダメージ</color>を与えます。再度発動すると、<color=yellow>エーテル</color>が<color=yellow>爆発</color>し、敵に{1}の<color=yellow>光ダメージ</color>を与え、{2}秒間<color=yellow>バインド</color>します。\n\nこの<color=yellow>爆発</color>が単一の対象に命中した場合、<color=yellow>爆発ダメージ量</color>が{3}増加します。",
     "rawDescVars": [
       {
         "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
@@ -4861,6 +4952,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "75%",
+        "format": "P0",
+        "raw": "explodeAmpOnSingleTarget",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.75,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5537,8 +5641,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "対象位置に、徐々に大きくなり敵を減速させる星を生成し、最大3秒間チャネリングします。この間、攻撃や記憶は使用できません。<color=yellow>超新星</color>を再度発動すると、星を爆発させ、敵に <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。この爆発はチャージ時間に比例して威力が増加し、1.3秒経過すると、ダメージ量が225%まで増加します。\nチャージ速度はユバールの記憶加速に比例して増加します。",
-    "rawDesc": "対象位置に、徐々に大きくなり敵を減速させる星を生成し、最大{0}秒間チャネリングします。この間、攻撃や記憶は使用できません。<color=yellow>超新星</color>を再度発動すると、星を爆発させ、敵に{1}の<color=yellow>光ダメージ</color>を与えます。この爆発はチャージ時間に比例して威力が増加し、{2}秒経過すると、ダメージ量が{3}まで増加します。\nチャージ速度はユバールの記憶加速に比例して増加します。",
+    "description": "<color=yellow>回避スキル</color>を1回チャージし、対象位置に、徐々に大きくなり敵を減速させる<color=yellow>星</color>を生成し、最大3秒間<color=yellow>記憶に集中</color>します。この間、<color=yellow>攻撃</color>や<color=yellow>記憶</color>を発動できません。再度発動すると、<color=yellow>星</color>を爆発させ、敵に <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。\n\nこの爆発は<color=yellow>チャージ時間</color>に比例して威力が増加し、1.3秒経過すると<color=yellow>ダメージ量</color>が225%まで増加し、チャージ速度はユバールの<color=yellow>記憶加速</color>に比例して増加します。",
+    "rawDesc": "<color=yellow>回避スキル</color>を1回チャージし、対象位置に、徐々に大きくなり敵を減速させる<color=yellow>星</color>を生成し、最大{0}秒間<color=yellow>記憶に集中</color>します。この間、<color=yellow>攻撃</color>や<color=yellow>記憶</color>を発動できません。再度発動すると、<color=yellow>星</color>を爆発させ、敵に{1}の<color=yellow>光ダメージ</color>を与えます。\n\nこの爆発は<color=yellow>チャージ時間</color>に比例して威力が増加し、{2}秒経過すると<color=yellow>ダメージ量</color>が{3}まで増加し、チャージ速度はユバールの<color=yellow>記憶加速</color>に比例して増加します。",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -5612,7 +5716,7 @@
     "cooldownTime": 9.0,
     "maxCharges": 2,
     "addedCharges": 1,
-    "description": "ナキアに従う<color=yellow>リーフハウンド</color>を対象位置に<color=yellow>召喚</color>し、敵に <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、0.4秒間<color=yellow>スタン</color>させます。\n\n<color=yellow>リーフハウンド</color>はHP128と防御力40を持ち、最大25秒間戦場に留まり、敵を引っ掻いて <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与えます。最大5匹まで維持できます。",
+    "description": "ナキアに従う<color=yellow>リーフハウンド</color>を対象位置に<color=yellow>召喚</color>し、敵に <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、0.4秒間<color=yellow>スタン</color>させます。\n\n<color=yellow>リーフハウンド</color>はHP128と防御力 20<sprite=5> を持ち、最大25秒間戦場に留まり、敵を引っ掻いて <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与えます。最大5匹まで維持できます。",
     "rawDesc": "ナキアに従う<color=yellow>リーフハウンド</color>を対象位置に<color=yellow>召喚</color>し、敵に{0}の<color=yellow>ダメージ</color>を与え、{1}秒間<color=yellow>スタン</color>させます。\n\n<color=yellow>リーフハウンド</color>はHP{2}と防御力{3}を持ち、最大{4}秒間戦場に留まり、敵を引っ掻いて{5}の<color=yellow>ダメージ</color>を与えます。最大{6}匹まで維持できます。",
     "rawDescVars": [
       {
@@ -5649,15 +5753,15 @@
         "data": {}
       },
       {
-        "rendered": "40",
+        "rendered": " 20<sprite=5> ",
         "format": "#,##0",
         "raw": "armor",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 40.0,
+          "basicConstant": 13.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 7.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5722,7 +5826,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "発動キーを<color=yellow>長押し</color>すると、精神の矢をチャージします。発動キーを離すと、近くの敵にチャージ時間に応じて1～ 4<sprite=5> 個の精神の矢を落とします。各精神の矢は狭い範囲の敵に <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与えます。",
+    "description": "発動キーを<color=yellow>長押し</color>すると、精神の矢をチャージします。発動キーを離すと、近くの敵にチャージ時間に応じて1～ 4<sprite=5> 個の精神の矢を落とします。各精神の矢は狭い範囲の敵に <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与えます。",
     "rawDesc": "発動キーを<color=yellow>長押し</color>すると、精神の矢をチャージします。発動キーを離すと、近くの敵にチャージ時間に応じて{0}～{1}個の精神の矢を落とします。各精神の矢は狭い範囲の敵に{2}の<color=yellow>闇ダメージ</color>を与えます。",
     "rawDescVars": [
       {
@@ -5746,14 +5850,14 @@
         "data": {}
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 2.0,
+          "basicAD": 1.7,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5948,8 +6052,8 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "10秒間、剣に破壊の<color=yellow>剣気</color>を纏います。この間は<color=yellow>記憶</color>を<color=yellow>発動</color>できませんが、<color=yellow>攻撃力</color>が 35%<sprite=5> 増加、さらに<color=yellow>攻撃範囲</color>が増加し、<color=yellow>基本攻撃</color>のたびに<color=yellow>剣気</color>を放ち敵に <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与えます。この間は毎秒 1.5<sprite=5> 回<color=yellow>基本攻撃</color>ができ、他の攻撃速度効果の影響を受けません。\n\n持続時間中、<color=yellow>回避スキル</color>の<color=yellow>記憶加速</color>が 30<sprite=5> 、<color=yellow>最大チャージ数</color>が2増加します。",
-    "rawDesc": "{0}秒間、剣に破壊の<color=yellow>剣気</color>を纏います。この間は<color=yellow>記憶</color>を<color=yellow>発動</color>できませんが、<color=yellow>攻撃力</color>が{1}増加、さらに<color=yellow>攻撃範囲</color>が増加し、<color=yellow>基本攻撃</color>のたびに<color=yellow>剣気</color>を放ち敵に{2}の<color=yellow>闇ダメージ</color>を与えます。この間は毎秒{3}回<color=yellow>基本攻撃</color>ができ、他の攻撃速度効果の影響を受けません。\n\n持続時間中、<color=yellow>回避スキル</color>の<color=yellow>記憶加速</color>が{4}、<color=yellow>最大チャージ数</color>が{5}増加します。",
+    "description": "10秒間、剣に破壊の<color=yellow>剣気</color>を纏います。この間は<color=yellow>記憶</color>を<color=yellow>発動</color>できませんが、<color=yellow>攻撃範囲</color>がわずかに増加し、<color=yellow>攻撃力</color>が 35%<sprite=5> 、<color=yellow>攻撃速度</color>が 30%<sprite=5> 増加します。この攻撃速度増加効果は<color=yellow>一歩一殺</color>の影響を受けません。<color=yellow>基本攻撃</color>のたびに<color=yellow>剣気</color>を放ち敵に <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与えます。\n\n持続時間中、<color=yellow>回避スキル</color>の<color=yellow>記憶加速</color>が 30<sprite=5> 、<color=yellow>最大チャージ数</color>が2増加します。",
+    "rawDesc": "{0}秒間、剣に破壊の<color=yellow>剣気</color>を纏います。この間は<color=yellow>記憶</color>を<color=yellow>発動</color>できませんが、<color=yellow>攻撃範囲</color>がわずかに増加し、<color=yellow>攻撃力</color>が{1}、<color=yellow>攻撃速度</color>が{2}増加します。この攻撃速度増加効果は<color=yellow>一歩一殺</color>の影響を受けません。<color=yellow>基本攻撃</color>のたびに<color=yellow>剣気</color>を放ち敵に{3}の<color=yellow>闇ダメージ</color>を与えます。\n\n持続時間中、<color=yellow>回避スキル</color>の<color=yellow>記憶加速</color>が{4}、<color=yellow>最大チャージ数</color>が{5}増加します。",
     "rawDescVars": [
       {
         "rendered": "10",
@@ -5978,29 +6082,29 @@
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> ",
+        "rendered": " 30%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "atkSpdPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 10.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.4,
+          "basicAP": 4.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": " 1.5<sprite=5> ",
-        "format": "0.#",
-        "raw": "atkSpd",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 1.4,
-          "basicAP": 0.0,
-          "basicAD": 0.0,
-          "basicLvl": 0.1,
-          "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
@@ -6128,8 +6232,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "敵を<color=yellow>貫通</color>するアーバレストを発射し、敵に <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、吹き飛ばしながら<color=yellow>攻撃効果</color>を発動します。敵を<color=yellow>貫通</color>するたびに、次の敵に与える<color=yellow>ダメージ量</color>が35%増加します。",
-    "rawDesc": "敵を<color=yellow>貫通</color>するアーバレストを発射し、敵に{0}の<color=yellow>闇ダメージ</color>を与え、吹き飛ばしながら<color=yellow>攻撃効果</color>を発動します。敵を<color=yellow>貫通</color>するたびに、次の敵に与える<color=yellow>ダメージ量</color>が{1}増加します。",
+    "description": "敵を<color=yellow>貫通</color>するアーバレストを発射し、敵に <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、吹き飛ばしながら<color=yellow>攻撃効果</color>を発動します。敵を<color=yellow>貫通</color>するたびに、次の敵に与える<color=yellow>ダメージ量</color>が35%増加します。\n<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>の確率で<color=yellow>ダメージ量</color>が100%増加し、対象に5の<color=yellow>闇</color>を付与します。",
+    "rawDesc": "敵を<color=yellow>貫通</color>するアーバレストを発射し、敵に{0}の<color=yellow>闇ダメージ</color>を与え、吹き飛ばしながら<color=yellow>攻撃効果</color>を発動します。敵を<color=yellow>貫通</color>するたびに、次の敵に与える<color=yellow>ダメージ量</color>が{1}増加します。\n{2}の確率で<color=yellow>ダメージ量</color>が{3}増加し、対象に{4}の<color=yellow>闇</color>を付与します。",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> ",
@@ -6151,6 +6255,45 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.35,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "empoweredAmpDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "empoweredDarkStackCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6631,6 +6774,121 @@
     ],
     "image": "St_R_DangerousTheory.png",
     "lore": "アルカナムの臆病者どもは、この理論を「許容できないほど危険だ」と言った。\n間抜けめ。\n\n極限状態に置かれた物質だけが、非常に爆発的な結果をもたらす...この理論の優雅さを理解できないなんて。私はただ自身の仮説を証明しているだけさ。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_DarkGrenade": {
+    "name": "闇の手榴弾",
+    "cooldownTime": 9.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "対象の位置に闇の手榴弾を投擲します。手榴弾は爆発し、四方に7個の闇の欠片を放ちます。各欠片は最初に命中した敵に50%の<color=yellow>攻撃効果</color>を発動し、 <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与えます。1体の対象に複数の欠片が命中した場合、2つ目以降の欠片は50%のダメージを与えます。\n<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>の確率で放つ闇の欠片の数が4個増加し、敵を1秒間<color=yellow>気絶</color>させます。",
+    "rawDesc": "対象の位置に闇の手榴弾を投擲します。手榴弾は爆発し、四方に{0}個の闇の欠片を放ちます。各欠片は最初に命中した敵に{1}の<color=yellow>攻撃効果</color>を発動し、{2}の<color=yellow>闇ダメージ</color>を与えます。1体の対象に複数の欠片が命中した場合、2つ目以降の欠片は{3}のダメージを与えます。\n{4}の確率で放つ闇の欠片の数が{5}個増加し、敵を{6}秒間<color=yellow>気絶</color>させます。",
+    "rawDescVars": [
+      {
+        "rendered": "7",
+        "format": "#,##0",
+        "raw": "defaultShardCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 7.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "attackEffectStrength",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_DarkGrenade_Shard::damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "subsequentHitMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "addedEmpoweredShardCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "投擲、範囲闇ダメージ",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "St_R_DarkGrenade.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -7717,8 +7975,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "前方に広がる闇の弾丸を5発発射します。各弾丸は <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動します。",
-    "rawDesc": "前方に広がる闇の弾丸を{0}発発射します。各弾丸は{1}の<color=yellow>闇ダメージ</color>を与え、{2}の<color=yellow>攻撃効果</color>を発動します。",
+    "description": "前方に広がる闇の弾丸を5発発射します。各弾丸は <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動します。\n<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>の確率で闇の弾丸をさらに4発発射します。",
+    "rawDesc": "前方に広がる闇の弾丸を{0}発発射します。各弾丸は{1}の<color=yellow>闇ダメージ</color>を与え、{2}の<color=yellow>攻撃効果</color>を発動します。\n{3}の確率で闇の弾丸をさらに{4}発発射します。",
     "rawDescVars": [
       {
         "rendered": "5",
@@ -7753,6 +8011,32 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "addedShootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -7898,8 +8182,8 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "0.7秒間チャネリングします。この間<color=yellow>移動速度</color>が 30%<sprite=5> 増加します。チャネリングが終わると、周囲のランダムな敵に <sprite=2><color=#fff><gradient=sv_ad>50%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与える誘導ミサイルを5発射し、3秒間<color=yellow>攻撃速度</color>が 20%<sprite=5> 増加します。",
-    "rawDesc": "{0}秒間チャネリングします。この間<color=yellow>移動速度</color>が{1}増加します。チャネリングが終わると、周囲のランダムな敵に{2}の<color=yellow>闇ダメージ</color>を与える誘導ミサイルを{3}発射し、{4}秒間<color=yellow>攻撃速度</color>が{5}増加します。",
+    "description": "0.7秒間チャネリングします。この間<color=yellow>移動速度</color>が 30%<sprite=5> 増加します。チャネリングが終わると、周囲のランダムな敵に <sprite=2><color=#fff><gradient=sv_ad>50%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与える誘導ミサイルを5発射し、3秒間<color=yellow>攻撃速度</color>が 20%<sprite=5> 増加します。\n<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>の確率で発射するミサイルの数が5増加します。",
+    "rawDesc": "{0}秒間チャネリングします。この間<color=yellow>移動速度</color>が{1}増加します。チャネリングが終わると、周囲のランダムな敵に{2}の<color=yellow>闇ダメージ</color>を与える誘導ミサイルを{3}発射し、{4}秒間<color=yellow>攻撃速度</color>が{5}増加します。\n{6}の確率で発射するミサイルの数が{7}増加します。",
     "rawDescVars": [
       {
         "rendered": "0.7",
@@ -7978,6 +8262,32 @@
           "basicLvl": 4.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "addedEmpoweredMissileCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "shortDescription": "闇ダメージ、攻撃速度増加",
@@ -8000,8 +8310,8 @@
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "素早く移動した後、周囲の敵に闇の破片を3個発射します。各破片は <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動させます。",
-    "rawDesc": "素早く移動した後、周囲の敵に闇の破片を{0}個発射します。各破片は{1}の<color=yellow>闇ダメージ</color>を与え、{2}の<color=yellow>攻撃効果</color>を発動させます。",
+    "description": "素早く移動した後、周囲の敵に闇の破片を3個発射します。各破片は <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与え、50%の<color=yellow>攻撃効果</color>を発動させます。\n<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>の確率で発射する破片の数が3増加します。",
+    "rawDesc": "素早く移動した後、周囲の敵に闇の破片を{0}個発射します。各破片は{1}の<color=yellow>闇ダメージ</color>を与え、{2}の<color=yellow>攻撃効果</color>を発動させます。\n{3}の確率で発射する破片の数が{4}増加します。",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -8036,6 +8346,32 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "addedSpawnCountByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8119,6 +8455,81 @@
     ],
     "image": "St_R_Smite.PNG",
     "lore": "学会には脆弱な精神に縛られた年寄りしかいない。\nたわいない法則を持ち出しては、自分たちの成果だと自慢する。この茶番はいつまで続くのだろうか…\n\n昨夜ふと、焼け落ちた木を見ていて思った。\n雷のような自然の力もまた、何らかの法則の下で動いているのではないか？\n\nその法則を解明できれば、この巨大な力も制御できるようになるはずだ。\nこれはそそられる。すぐに研究に取り掛からねば。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_Somersault": {
+    "name": "宙返り",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "0.5秒間空中に飛び上がって攻撃を回避し、<color=yellow>無敵</color>状態になります。4秒間<color=yellow>クリティカル率</color>が 30%<sprite=5> 増加します。\n\n<color=yellow>攻撃</color>時、この記憶の<color=yellow>クールダウン</color>が0.3秒減少します。",
+    "rawDesc": "{0}秒間空中に飛び上がって攻撃を回避し、<color=yellow>無敵</color>状態になります。{1}秒間<color=yellow>クリティカル率</color>が{2}増加します。\n\n<color=yellow>攻撃</color>時、この記憶の<color=yellow>クールダウン</color>が{3}秒減少します。",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "jumpDodgeDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "effectDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 30%<sprite=5> ",
+        "format": "P0",
+        "raw": "critChangeAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.1,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "0.3",
+        "format": "#,##0.#",
+        "raw": "cooldownReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": "無敵、クリティカル率増加",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "HardCC"
+    ],
+    "image": "St_R_Somersault.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -8235,6 +8646,88 @@
     ],
     "image": "St_R_StaticDischarge.png",
     "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_SummonLittleBaam": {
+    "name": "ソウルメイト",
+    "cooldownTime": 14.0,
+    "maxCharges": 3,
+    "addedCharges": 99,
+    "description": "<color=yellow>リトルバーム</color>を対象の位置に固定して<color=yellow>召喚</color>します。\n\n<color=yellow>リトルバーム</color>は119のHPと50の防御力を持ち、最大20秒間戦場に留まり、周囲の敵を攻撃して <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。最大10体まで維持できます。\n\n<color=yellow>チャージ回数</color>が一度にすべてチャージされます。",
+    "rawDesc": "<color=yellow>リトルバーム</color>を対象の位置に固定して<color=yellow>召喚</color>します。\n\n<color=yellow>リトルバーム</color>は{0}のHPと{1}の防御力を持ち、最大{2}秒間戦場に留まり、周囲の敵を攻撃して{3}の<color=yellow>光ダメージ</color>を与えます。最大{4}体まで維持できます。\n\n<color=yellow>チャージ回数</color>が一度にすべてチャージされます。",
+    "rawDescVars": [
+      {
+        "rendered": "119",
+        "format": "#,##0",
+        "raw": "summonHealth",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "50",
+        "format": "#,##0",
+        "raw": "armor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "20",
+        "format": "#,##0.#",
+        "raw": "maxDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_SummonLittleBaam_Baam_Atk::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.85,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "リトルバーム召喚",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Summon"
+    ],
+    "image": "St_R_SummonLittleBaam.png",
+    "lore": "野生のバームの捕獲は、徹底して「合法的」かつ「自発的」に行われました。",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""

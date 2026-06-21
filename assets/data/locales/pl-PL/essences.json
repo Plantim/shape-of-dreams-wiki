@@ -3282,6 +3282,49 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Glass": {
+    "name": "Esencja Szkła",
+    "description": "Gdy <color=yellow>w walce</color> otrzymasz <color=yellow>Tarczę</color>, <color=yellow>leczy</color> zdrowie równe  12%<sprite=5>  wartości zdobytej tarczy. Za każdą posiadaną <color=yellow>Pamięć Zimna</color>, <color=yellow>wartość leczenia</color> tej pamięci wzrasta o  18%<sprite=5> .",
+    "rawDesc": "Gdy <color=yellow>w walce</color> otrzymasz <color=yellow>Tarczę</color>, <color=yellow>leczy</color> zdrowie równe {0} wartości zdobytej tarczy. Za każdą posiadaną <color=yellow>Pamięć Zimna</color>, <color=yellow>wartość leczenia</color> tej pamięci wzrasta o {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 12%<sprite=5> ",
+        "format": "P0",
+        "raw": "healByShieldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": " 18%<sprite=5> ",
+        "format": "P0",
+        "raw": "healAmpPerColdSkill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "Gem_R_Glass.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Insatiable": {
     "name": "Esencja Obżarstwa",
     "description": "Po użyciu tego wspomnienia, przez 5 sek. <color=yellow>Moc Ataku</color> wzrasta o  15%<sprite=5> , a każdy <color=yellow>Atak</color> <color=yellow>Odzyskuje</color> zdrowie o wartości  6<sprite=5> .",
@@ -3333,6 +3376,75 @@
       "Attack"
     ],
     "image": "Gem_R_Insatiable.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lava": {
+    "name": "Esencja Lawy",
+    "description": "Co 4 sek. <color=yellow>rzucenie</color> tej pamięci zostaje <color=yellow>wzmocnione</color>. Gdy po raz pierwszy zadasz <color=yellow>Obrażenia od Ognia</color> wrogowi za pomocą wzmocnionego <color=yellow>rzucenia</color>, tworzy pod nim lawę, która utrzymuje się przez 4 sek. Wszyscy wrogowie na lawie otrzymują  <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Ognia</color> na sekundę, a otrzymywane przez nich <color=yellow>Obrażenia od Ognia</color> rosną o 30%. Można utrzymać maksymalnie 5 obszarów lawy.",
+    "rawDesc": "Co {0} sek. <color=yellow>rzucenie</color> tej pamięci zostaje <color=yellow>wzmocnione</color>. Gdy po raz pierwszy zadasz <color=yellow>Obrażenia od Ognia</color> wrogowi za pomocą wzmocnionego <color=yellow>rzucenia</color>, tworzy pod nim lawę, która utrzymuje się przez {1} sek. Wszyscy wrogowie na lawie otrzymują {2} <color=yellow>Obrażeń od Ognia</color> na sekundę, a otrzymywane przez nich <color=yellow>Obrażenia od Ognia</color> rosną o {3}. Można utrzymać maksymalnie {4} obszarów lawy.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Gem_R_Lava::cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Ai_R_Lava_LavaField::duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_Lava_LavaField::dmgFactor/Ai_R_Lava_LavaField::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "Se_R_Lava_Debuff::fireDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "maxLavaCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Lava.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -3518,6 +3630,48 @@
     "achievementName": "Zachowaj opanowanie i działaj spokojnie",
     "achievementDescription": "Eliminuj heroicznego Bossa 8 raz(y), mając mniej niż 25% zdrowia."
   },
+  "Gem_R_Purity": {
+    "name": "Esencja Czystości",
+    "description": "Po <color=yellow>rzuceniu</color> tej pamięci usuwa wszystkie <color=yellow>efekty żywiołów</color> nałożone na Podróżnika. <color=yellow>Leczy</color>  <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5>  zdrowia za każdy usunięty <color=yellow>efekt żywiołu</color>. Efekt może wystąpić tylko raz na 4 sek.",
+    "rawDesc": "Po <color=yellow>rzuceniu</color> tej pamięci usuwa wszystkie <color=yellow>efekty żywiołów</color> nałożone na Podróżnika. <color=yellow>Leczy</color> {0} zdrowia za każdy usunięty <color=yellow>efekt żywiołu</color>. Efekt może wystąpić tylko raz na {1} sek.",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healPerElemental",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Purity.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Rejuvenation": {
     "name": "Esencja Odmłodzenia",
     "description": "Co 15 sek., <color=yellow>Użycie</color> tej Pamięci zostaje <color=yellow>Wzmocnione</color>. Po <color=yellow>Wzmocnionym Użyciu</color> odzyskujesz <color=yellow>Zdrowie</color> równe  14%<sprite=5>  zadanych <color=yellow>Obrażeń</color> w ciągu 1.5 sek. od aktywacji.",
@@ -3700,7 +3854,7 @@
   },
   "Gem_R_Shock": {
     "name": "Esencja Szoku",
-    "description": "Co czwarty <color=yellow>Atak Podstawowy</color> jest <color=yellow>Wzmocniony</color> - wystrzelona zostaje <color=yellow>Błyskawica</color>, która odbija się od wrogów i maksymalnie 2 razy zadaje  <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color>. Na każde 20% <color=yellow>Szans na Trafienie Krytyczne</color>, maksymalna liczba zadawanych obrażeń zwiększa się o 1.",
+    "description": "Co czwarty <color=yellow>Atak Podstawowy</color> jest <color=yellow>Wzmocniony</color> - wystrzelona zostaje <color=yellow>Błyskawica</color>, która odbija się od wrogów i maksymalnie 2 razy zadaje  <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5>  <color=yellow>Obrażeń od Światła</color>. Na każde 20% <color=yellow>Szans na Trafienie Krytyczne</color>, maksymalna liczba zadawanych obrażeń zwiększa się o 1.",
     "rawDesc": "Co czwarty <color=yellow>Atak Podstawowy</color> jest <color=yellow>Wzmocniony</color> - wystrzelona zostaje <color=yellow>Błyskawica</color>, która odbija się od wrogów i maksymalnie {0} razy zadaje {1} <color=yellow>Obrażeń od Światła</color>. Na każde {2} <color=yellow>Szans na Trafienie Krytyczne</color>, maksymalna liczba zadawanych obrażeń zwiększa się o 1.",
     "rawDescVars": [
       {
@@ -3717,14 +3871,14 @@
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "chainDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.2,
-          "basicAD": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.01
         }

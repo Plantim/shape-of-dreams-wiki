@@ -207,8 +207,8 @@
     "cooldownTime": 4.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Tire une flèche de ténèbres, infligeant à un ennemi des <color=yellow>dégâts de ténèbres</color> de  <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5> , et active l'<color=yellow>Effet d'Attaque</color>. Transperce jusqu'à un maximum de 2 ennemis.",
-    "rawDesc": "Tire une flèche de ténèbres, infligeant à un ennemi des <color=yellow>dégâts de ténèbres</color> de {0}, et active l'<color=yellow>Effet d'Attaque</color>. Transperce jusqu'à un maximum de {1} ennemis.",
+    "description": "Tire une flèche de ténèbres, infligeant à un ennemi des <color=yellow>Dégâts des Ténèbres</color> de  <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5> , et active l'<color=yellow>Effet d'attaque</color>. Transperce jusqu'à un maximum de 2 ennemis.\nA <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> de chances d'augmenter les <color=yellow>Dégâts</color> de 80% et de réduire le <color=yellow>Temps de recharge</color> de 50%.",
+    "rawDesc": "Tire une flèche de ténèbres, infligeant à un ennemi des <color=yellow>Dégâts des Ténèbres</color> de {0}, et active l'<color=yellow>Effet d'attaque</color>. Transperce jusqu'à un maximum de {1} ennemis.\nA {2} de chances d'augmenter les <color=yellow>Dégâts</color> de {3} et de réduire le <color=yellow>Temps de recharge</color> de {4}.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5> ",
@@ -230,6 +230,45 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "ampEmpoweredDmg",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "empoweredCooldownReductionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -257,8 +296,8 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Transperce les ennemis à l'avant, infligeant des <color=yellow>Dégâts des Ténèbres</color> de  <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> , et active l'<color=yellow>Effet d'attaque</color>, tout en les rassemblant au milieu. Les dégâts infligés aux boucliers sont augmentés de 100%.",
-    "rawDesc": "Transperce les ennemis à l'avant, infligeant des <color=yellow>Dégâts des Ténèbres</color> de {0}, et active l'<color=yellow>Effet d'attaque</color>, tout en les rassemblant au milieu. Les dégâts infligés aux boucliers sont augmentés de {1}.",
+    "description": "Transperce les ennemis à l'avant, infligeant des <color=yellow>Dégâts des Ténèbres</color> de  <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> , et active l'<color=yellow>Effet d'attaque</color>, tout en les rassemblant au milieu. Les dégâts infligés aux boucliers sont augmentés de 100%.\nA <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> de chances d'augmenter les <color=yellow>Dégâts</color> de 100% et de <color=yellow>Restaurer</color>  <sprite=2><color=#fff><gradient=sv_ad>20%</gradient></color><sprite=5>  <color=yellow>PV</color> pour chaque ennemi touché.",
+    "rawDesc": "Transperce les ennemis à l'avant, infligeant des <color=yellow>Dégâts des Ténèbres</color> de {0}, et active l'<color=yellow>Effet d'attaque</color>, tout en les rassemblant au milieu. Les dégâts infligés aux boucliers sont augmentés de {1}.\nA {2} de chances d'augmenter les <color=yellow>Dégâts</color> de {3} et de <color=yellow>Restaurer</color> {4} <color=yellow>PV</color> pour chaque ennemi touché.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> ",
@@ -284,6 +323,45 @@
           "basicAD": 0,
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "dmgAmpByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>20%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healAmountByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
         }
       }
     ],
@@ -1777,13 +1855,39 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Lancer un <color=yellow>Souvenir</color> ou utiliser <color=yellow>Étoile Variable</color> octroie 1 cumul de <color=yellow>Matière Exotique</color>, jusqu'à un maximum de 3 cumuls. Lancer un <color=yellow>Souvenir ultime</color> charge les cumuls au maximum. La prochaine <color=yellow>Attaque de base</color> consomme tous les cumuls pour provoquer une explosion qui inflige  <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5>  de <color=yellow>Dégâts de lumière</color> par cumul aux ennemis.\n\nLa taille de cette explosion augmente de 5% à chaque amélioration de <color=yellow>Matière Exotique</color>, jusqu'à un maximum de 50%.",
-    "rawDesc": "Lancer un <color=yellow>Souvenir</color> ou utiliser <color=yellow>Étoile Variable</color> octroie 1 cumul de <color=yellow>Matière Exotique</color>, jusqu'à un maximum de {0} cumuls. Lancer un <color=yellow>Souvenir ultime</color> charge les cumuls au maximum. La prochaine <color=yellow>Attaque de base</color> consomme tous les cumuls pour provoquer une explosion qui inflige {1} de <color=yellow>Dégâts de lumière</color> par cumul aux ennemis.\n\nLa taille de cette explosion augmente de {2} à chaque amélioration de <color=yellow>Matière Exotique</color>, jusqu'à un maximum de {3}.",
+    "description": "Lancer un <color=yellow>Souvenir</color> octroie 1 cumul de <color=yellow>Matière Exotique</color>, jusqu'à un maximum de 4 cumuls. Lancer une <color=yellow>Compétence d'esquive</color> octroie 2 cumuls à la place, et lancer un <color=yellow>Souvenir ultime</color> octroie 3 cumuls. La prochaine <color=yellow>Attaque de base</color> consomme tous les cumuls pour provoquer une explosion qui inflige  <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5>  de <color=yellow>Dégâts de lumière</color> par cumul aux ennemis.\n\nLa taille de cette explosion augmente de 5% à chaque amélioration de <color=yellow>Matière Exotique</color>, jusqu'à un maximum de 50%.",
+    "rawDesc": "Lancer un <color=yellow>Souvenir</color> octroie 1 cumul de <color=yellow>Matière Exotique</color>, jusqu'à un maximum de {0} cumuls. Lancer une <color=yellow>Compétence d'esquive</color> octroie {1} cumuls à la place, et lancer un <color=yellow>Souvenir ultime</color> octroie {2} cumuls. La prochaine <color=yellow>Attaque de base</color> consomme tous les cumuls pour provoquer une explosion qui inflige {3} de <color=yellow>Dégâts de lumière</color> par cumul aux ennemis.\n\nLa taille de cette explosion augmente de {4} à chaque amélioration de <color=yellow>Matière Exotique</color>, jusqu'à un maximum de {5}.",
     "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dodgeCastStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
       {
         "rendered": "3",
         "format": "#,##0",
-        "raw": "maxStack",
+        "raw": "ultCastStacks",
         "scalingType": "basic",
         "data": {
           "basicConstant": 3.0,
@@ -1887,7 +1991,7 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Augmente l'<color=yellow>ATQ</color> de  12<sprite=5> . Chaque 4e <color=yellow>attaque de base</color> est un <color=yellow>coup CRIT</color> et inflige des <color=yellow>dégâts de lumière</color> supplémentaires de  <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> .\nÀ chaque <color=yellow>attaque</color> contre un ennemi, augmente la <color=yellow>VIT d'ATQ</color> de  4%<sprite=5>  pendant 4 sec, jusqu'à un maximum de  24%<sprite=5> . Lorsque la <color=yellow>VIT d'ATQ</color> est augmentée au maximum, <color=yellow>soigne</color>  1%<sprite=5>  des <color=yellow>PV perdus</color> à chacune de vos <color=yellow>attaques</color>.",
+    "description": "Augmente l'<color=yellow>ATQ</color> de  12<sprite=5> . Chaque 4e <color=yellow>attaque de base</color> est un <color=yellow>coup CRIT</color> et inflige des <color=yellow>dégâts de lumière</color> supplémentaires de  <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> .\nÀ chaque <color=yellow>attaque</color> contre un ennemi, augmente la <color=yellow>VIT d'ATQ</color> de  4%<sprite=5>  pendant 4 sec, jusqu'à un maximum de  24%<sprite=5> . Lorsque la <color=yellow>VIT d'ATQ</color> est augmentée au maximum, <color=yellow>soigne</color>  2%<sprite=5>  des <color=yellow>PV perdus</color> à chacune de vos <color=yellow>attaques</color>.",
     "rawDesc": "Augmente l'<color=yellow>ATQ</color> de {0}. Chaque 4e <color=yellow>attaque de base</color> est un <color=yellow>coup CRIT</color> et inflige des <color=yellow>dégâts de lumière</color> supplémentaires de {1}.\nÀ chaque <color=yellow>attaque</color> contre un ennemi, augmente la <color=yellow>VIT d'ATQ</color> de {2} pendant {3} sec, jusqu'à un maximum de {4}. Lorsque la <color=yellow>VIT d'ATQ</color> est augmentée au maximum, <color=yellow>soigne</color> {5} des <color=yellow>PV perdus</color> à chacune de vos <color=yellow>attaques</color>.",
     "rawDescVars": [
       {
@@ -1896,10 +2000,10 @@
         "raw": "adBonus",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 9.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 2.0,
+          "basicLvl": 3.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -1950,12 +2054,12 @@
         "data": {}
       },
       {
-        "rendered": " 1%<sprite=5> ",
+        "rendered": " 2%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "lostHpHealRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.006,
+          "basicConstant": 0.016,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.004,
@@ -3432,8 +3536,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Charge l'obscurité dans les mains en <color=yellow>maintenant longuement</color> la touche du déclenchement. Une fois chargée, fonce vers l'avant pour frapper le 1er ennemi croisé et tous les ennemis proches de la cible. Les ennemis subissent des <color=yellow>dégâts de ténèbres</color> proportionnels au temps de charge, allant de  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5>  à  <sprite=2><color=#fff><gradient=sv_ad>600%</gradient></color><sprite=5> , et sont étourdis pendant 1 sec. Par ennemi touché, gagne un <color=yellow>bouclier</color> de  <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5>  durant 3 sec ; si la cible est un <color=yellow>boss</color>, le bouclier est augmenté de 200%.\nLa distance de ruée et les dégâts atteignent leur maximum en chargeant pendant 1.2 sec.",
-    "rawDesc": "Charge l'obscurité dans les mains en <color=yellow>maintenant longuement</color> la touche du déclenchement. Une fois chargée, fonce vers l'avant pour frapper le 1er ennemi croisé et tous les ennemis proches de la cible. Les ennemis subissent des <color=yellow>dégâts de ténèbres</color> proportionnels au temps de charge, allant de {0} à {1}, et sont étourdis pendant {2} sec. Par ennemi touché, gagne un <color=yellow>bouclier</color> de {3} durant {4} sec ; si la cible est un <color=yellow>boss</color>, le bouclier est augmenté de {5}.\nLa distance de ruée et les dégâts atteignent leur maximum en chargeant pendant {6} sec.",
+    "description": "Charge l'obscurité dans les mains en <color=yellow>maintenant longuement</color> la touche du déclenchement. Une fois chargée, fonce vers l'avant pour frapper le 1er ennemi croisé et tous les ennemis proches de la cible. Inflige aux ennemis des <color=yellow>dégâts de ténèbres</color> proportionnels au temps de charge, allant de  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5>  à  <sprite=2><color=#fff><gradient=sv_ad>600%</gradient></color><sprite=5> , les étourdit pendant 1 sec et déclenche un <color=yellow>Effet d'attaque</color>. Par ennemi touché, gagne un <color=yellow>bouclier</color> de  <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5>  durant 3 sec ; si la cible est un <color=yellow>boss</color>, le bouclier est augmenté de 200%.\nLa distance de ruée et les dégâts atteignent leur maximum en chargeant pendant 1.2 sec.",
+    "rawDesc": "Charge l'obscurité dans les mains en <color=yellow>maintenant longuement</color> la touche du déclenchement. Une fois chargée, fonce vers l'avant pour frapper le 1er ennemi croisé et tous les ennemis proches de la cible. Inflige aux ennemis des <color=yellow>dégâts de ténèbres</color> proportionnels au temps de charge, allant de {0} à {1}, les étourdit pendant {2} sec et déclenche un <color=yellow>Effet d'attaque</color>. Par ennemi touché, gagne un <color=yellow>bouclier</color> de {3} durant {4} sec ; si la cible est un <color=yellow>boss</color>, le bouclier est augmenté de {5}.\nLa distance de ruée et les dégâts atteignent leur maximum en chargeant pendant {6} sec.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
@@ -3550,7 +3654,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Confère à l'arme le pouvoir des ténèbres pendant 7 sec, augmentant le <color=yellow>TAUX CRIT</color> de  20%<sprite=5> , et inflige des <color=yellow>dégâts de ténèbres</color> supplémentaires de  <sprite=2><color=#fff><gradient=sv_ad>52%</gradient></color><sprite=5>  à chaque <color=yellow>attaque</color>. Si vous êtes un <color=yellow>Voyageur de mêlée</color>, augmente ces dégâts supplémentaires de 25%.",
+    "description": "Confère à l'arme le pouvoir des ténèbres pendant 7 sec, augmentant le <color=yellow>TAUX CRIT</color> de  25%<sprite=5> , et inflige des <color=yellow>dégâts de ténèbres</color> supplémentaires de  <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5>  à chaque <color=yellow>attaque</color>. Si vous êtes un <color=yellow>Voyageur de mêlée</color>, augmente ces dégâts supplémentaires de 25%.",
     "rawDesc": "Confère à l'arme le pouvoir des ténèbres pendant {0} sec, augmentant le <color=yellow>TAUX CRIT</color> de {1}, et inflige des <color=yellow>dégâts de ténèbres</color> supplémentaires de {2} à chaque <color=yellow>attaque</color>. Si vous êtes un <color=yellow>Voyageur de mêlée</color>, augmente ces dégâts supplémentaires de {3}.",
     "rawDescVars": [
       {
@@ -3567,27 +3671,27 @@
         }
       },
       {
-        "rendered": " 20%<sprite=5> ",
+        "rendered": " 25%<sprite=5> ",
         "format": "P0",
         "raw": "critChance",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.18,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.02,
+          "basicLvl": 0.05,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>52%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "hitDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 0.52,
+          "basicAD": 0.3,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.15
         }
@@ -4761,42 +4865,29 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Fonce vers la cible et abat le marteau, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> de  <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5> , et active l'<color=yellow>Effet d'Attaque</color> de 50%. <color=yellow>Réduit</color> le <color=yellow>temps de recharge</color> de 8% à chaque <color=yellow>attaque</color> contre un ennemi.",
-    "rawDesc": "Fonce vers la cible et abat le marteau, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> de {0}, et active l'<color=yellow>Effet d'Attaque</color> de {1}. <color=yellow>Réduit</color> le <color=yellow>temps de recharge</color> de {2} à chaque <color=yellow>attaque</color> contre un ennemi.",
+    "description": "Fonce vers la cible et abat le marteau, infligeant aux ennemis  <sprite=2><color=#fff><gradient=sv_ad>175%</gradient></color><sprite=5>  de <color=yellow>Dégâts de lumière</color> et active l'<color=yellow>Effet d'attaque</color>. <color=yellow>Réduit</color> le <color=yellow>Temps de recharge</color> de 10% à chaque <color=yellow>Attaque</color> contre un ennemi.",
+    "rawDesc": "Fonce vers la cible et abat le marteau, infligeant aux ennemis {0} de <color=yellow>Dégâts de lumière</color> et active l'<color=yellow>Effet d'attaque</color>. <color=yellow>Réduit</color> le <color=yellow>Temps de recharge</color> de {1} à chaque <color=yellow>Attaque</color> contre un ennemi.",
     "rawDescVars": [
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>175%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.25,
+          "basicAD": 1.75,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "50%",
-        "format": "P0",
-        "raw": "attackEffect",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "8%",
+        "rendered": "10%",
         "format": "P0",
         "raw": "cooldownReductionRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.08,
+          "basicConstant": 0.1,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4825,8 +4916,8 @@
     "cooldownTime": 9.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Lance vers l'avant l'<color=yellow>éther</color> qui revient ensuite, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> de  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> . En déclenchant la Mémoire à nouveau, fait <color=yellow>exploser</color> l'<color=yellow>éther</color>, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> de  <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> , et les <color=yellow>entrave</color> pendant 3 sec.",
-    "rawDesc": "Lance vers l'avant l'<color=yellow>éther</color> qui revient ensuite, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> de {0}. En déclenchant la Mémoire à nouveau, fait <color=yellow>exploser</color> l'<color=yellow>éther</color>, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> de {1}, et les <color=yellow>entrave</color> pendant {2} sec.",
+    "description": "Lance vers l'avant l'<color=yellow>éther</color> qui revient ensuite, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> de  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> . En déclenchant à nouveau, fait <color=yellow>exploser</color> l'<color=yellow>éther</color>, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> de  <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> , et les <color=yellow>entrave</color> pendant 3 sec.\n\nSi cette <color=yellow>explosion</color> touche une cible unique, les <color=yellow>dégâts d'explosion</color> augmentent de 75%.",
+    "rawDesc": "Lance vers l'avant l'<color=yellow>éther</color> qui revient ensuite, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> de {0}. En déclenchant à nouveau, fait <color=yellow>exploser</color> l'<color=yellow>éther</color>, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> de {1}, et les <color=yellow>entrave</color> pendant {2} sec.\n\nSi cette <color=yellow>explosion</color> touche une cible unique, les <color=yellow>dégâts d'explosion</color> augmentent de {3}.",
     "rawDescVars": [
       {
         "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
@@ -4861,6 +4952,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "75%",
+        "format": "P0",
+        "raw": "explodeAmpOnSingleTarget",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.75,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5537,8 +5641,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Crée une étoile grandissante qui ralentit les ennemis, puis se concentre jusqu'à un maximum de 3 sec. Ne peut ni attaquer, ni utiliser les Mémoires pendant la concentration. En réutilisant <color=yellow>Supernova</color>, fait exploser l'étoile, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> de  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> . L'explosion se renforce proportionnellement au temps de charge, augmentant les dégâts jusqu'à 225% après 1.3 sec.\nLa vitesse de charge augmente proportionnellement à la Célérité de mémoire de Yubar.",
-    "rawDesc": "Crée une étoile grandissante qui ralentit les ennemis, puis se concentre jusqu'à un maximum de {0} sec. Ne peut ni attaquer, ni utiliser les Mémoires pendant la concentration. En réutilisant <color=yellow>Supernova</color>, fait exploser l'étoile, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> de {1}. L'explosion se renforce proportionnellement au temps de charge, augmentant les dégâts jusqu'à {2} après {3} sec.\nLa vitesse de charge augmente proportionnellement à la Célérité de mémoire de Yubar.",
+    "description": "Confère 1 charge de <color=yellow>Compétence d'esquive</color> et crée à l'emplacement ciblé une <color=yellow>étoile</color> grandissante qui ralentit les ennemis, puis <color=yellow>canalise</color> pendant un maximum de 3 sec. Ne peut ni <color=yellow>attaquer</color>, ni lancer de <color=yellow>Souvenirs</color> pendant ce temps. En déclenchant à nouveau, fait exploser l'<color=yellow>étoile</color>, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> de  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> .\n\nCette explosion se renforce proportionnellement au <color=yellow>temps de charge</color>, augmentant les <color=yellow>dégâts</color> jusqu'à 225% après 1.3 sec, et la vitesse de charge augmente proportionnellement à la <color=yellow>Célérité de mémoire</color> de Yubar.",
+    "rawDesc": "Confère 1 charge de <color=yellow>Compétence d'esquive</color> et crée à l'emplacement ciblé une <color=yellow>étoile</color> grandissante qui ralentit les ennemis, puis <color=yellow>canalise</color> pendant un maximum de {0} sec. Ne peut ni <color=yellow>attaquer</color>, ni lancer de <color=yellow>Souvenirs</color> pendant ce temps. En déclenchant à nouveau, fait exploser l'<color=yellow>étoile</color>, infligeant aux ennemis des <color=yellow>dégâts de lumière</color> de {1}.\n\nCette explosion se renforce proportionnellement au <color=yellow>temps de charge</color>, augmentant les <color=yellow>dégâts</color> jusqu'à {2} après {3} sec, et la vitesse de charge augmente proportionnellement à la <color=yellow>Célérité de mémoire</color> de Yubar.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -5612,7 +5716,7 @@
     "cooldownTime": 9.0,
     "maxCharges": 2,
     "addedCharges": 1,
-    "description": "<color=yellow>Invoque</color> à l'emplacement ciblé un <color=yellow>Toutou Feuillu</color> qui suit Nakia, infligeant aux ennemis des <color=yellow>dégâts</color> de  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> , et les <color=yellow>étourdit</color> pendant 0.4 sec.\n\nLe <color=yellow>Toutou Feuillu</color> possède des PV de 128 et la DÉF de 40. Il reste sur le champ de bataille pendant 25 sec maximum et griffe l'ennemi pour infliger des <color=yellow>dégâts</color> de  <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> . Un maximum de 5 Toutous Feuillus peuvent être maintenus.",
+    "description": "<color=yellow>Invoque</color> à l'emplacement ciblé un <color=yellow>Toutou Feuillu</color> qui suit Nakia, infligeant aux ennemis des <color=yellow>dégâts</color> de  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> , et les <color=yellow>étourdit</color> pendant 0.4 sec.\n\nLe <color=yellow>Toutou Feuillu</color> possède des PV de 128 et la DÉF de  20<sprite=5> . Il reste sur le champ de bataille pendant 25 sec maximum et griffe l'ennemi pour infliger des <color=yellow>dégâts</color> de  <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> . Un maximum de 5 Toutous Feuillus peuvent être maintenus.",
     "rawDesc": "<color=yellow>Invoque</color> à l'emplacement ciblé un <color=yellow>Toutou Feuillu</color> qui suit Nakia, infligeant aux ennemis des <color=yellow>dégâts</color> de {0}, et les <color=yellow>étourdit</color> pendant {1} sec.\n\nLe <color=yellow>Toutou Feuillu</color> possède des PV de {2} et la DÉF de {3}. Il reste sur le champ de bataille pendant {4} sec maximum et griffe l'ennemi pour infliger des <color=yellow>dégâts</color> de {5}. Un maximum de {6} Toutous Feuillus peuvent être maintenus.",
     "rawDescVars": [
       {
@@ -5649,15 +5753,15 @@
         "data": {}
       },
       {
-        "rendered": "40",
+        "rendered": " 20<sprite=5> ",
         "format": "#,##0",
         "raw": "armor",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 40.0,
+          "basicConstant": 13.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 7.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5722,7 +5826,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Charge des flèches psychiques en <color=yellow>maintenant longuement</color> la touche du déclenchement. En lâchant la touche, tire sur des ennemis proches 1 à  4<sprite=5>  flèches psychiques, proportionnellement au temps de charge. Chaque flèche psychique inflige des <color=yellow>dégâts de ténèbres</color> de  <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5>  aux ennemis dans une étroite zone.",
+    "description": "Charge des flèches psychiques en <color=yellow>maintenant longuement</color> la touche du déclenchement. En lâchant la touche, tire sur des ennemis proches 1 à  4<sprite=5>  flèches psychiques, proportionnellement au temps de charge. Chaque flèche psychique inflige des <color=yellow>dégâts de ténèbres</color> de  <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><sprite=5>  aux ennemis dans une étroite zone.",
     "rawDesc": "Charge des flèches psychiques en <color=yellow>maintenant longuement</color> la touche du déclenchement. En lâchant la touche, tire sur des ennemis proches {0} à {1} flèches psychiques, proportionnellement au temps de charge. Chaque flèche psychique inflige des <color=yellow>dégâts de ténèbres</color> de {2} aux ennemis dans une étroite zone.",
     "rawDescVars": [
       {
@@ -5746,14 +5850,14 @@
         "data": {}
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 2.0,
+          "basicAD": 1.7,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5948,8 +6052,8 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Pendant 10 s, imprègne l'épée d'une <color=yellow>lame d'énergie</color> destructrice. Pendant ce temps, vous ne pouvez pas <color=yellow>lancer</color> de <color=yellow>souvenirs</color>, mais vos <color=yellow>dégâts d'attaque</color> augmentent de  35%<sprite=5>  et votre <color=yellow>portée d'attaque</color> augmente. Chaque <color=yellow>attaque de base</color> projette une <color=yellow>lame d'énergie</color> qui inflige  <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5>  <color=yellow>dégâts de ténèbres</color>. Votre vitesse d'attaque est fixée à  1.5<sprite=5>  <color=yellow>attaques de base</color> par seconde et n'est pas affectée par d'autres effets.\n\nPendant la durée de l'effet, la <color=yellow>célérité de mémoire</color> de l'<color=yellow>esquive</color> augmente de  30<sprite=5>  et ses <color=yellow>charges maximales</color> de 2.",
-    "rawDesc": "Pendant {0} s, imprègne l'épée d'une <color=yellow>lame d'énergie</color> destructrice. Pendant ce temps, vous ne pouvez pas <color=yellow>lancer</color> de <color=yellow>souvenirs</color>, mais vos <color=yellow>dégâts d'attaque</color> augmentent de {1} et votre <color=yellow>portée d'attaque</color> augmente. Chaque <color=yellow>attaque de base</color> projette une <color=yellow>lame d'énergie</color> qui inflige {2} <color=yellow>dégâts de ténèbres</color>. Votre vitesse d'attaque est fixée à {3} <color=yellow>attaques de base</color> par seconde et n'est pas affectée par d'autres effets.\n\nPendant la durée de l'effet, la <color=yellow>célérité de mémoire</color> de l'<color=yellow>esquive</color> augmente de {4} et ses <color=yellow>charges maximales</color> de {5}.",
+    "description": "Pendant 10 s, imprègne l'épée d'une <color=yellow>lame d'énergie</color> destructrice. Pendant ce temps, vous ne pouvez pas <color=yellow>lancer</color> de <color=yellow>souvenirs</color>, mais votre <color=yellow>portée d'attaque</color> augmente légèrement, vos <color=yellow>dégâts d'attaque</color> augmentent de  35%<sprite=5>  et votre <color=yellow>vitesse d'attaque</color> augmente de  30%<sprite=5> . Cette augmentation de vitesse d'attaque n'est pas affectée par <color=yellow>Foulée Mortelle</color>. Chaque <color=yellow>attaque de base</color> projette une <color=yellow>lame d'énergie</color> qui inflige  <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5>  <color=yellow>dégâts de ténèbres</color>.\n\nPendant la durée de l'effet, la <color=yellow>célérité de mémoire</color> de l'<color=yellow>esquive</color> augmente de  30<sprite=5>  et ses <color=yellow>charges maximales</color> de 2.",
+    "rawDesc": "Pendant {0} s, imprègne l'épée d'une <color=yellow>lame d'énergie</color> destructrice. Pendant ce temps, vous ne pouvez pas <color=yellow>lancer</color> de <color=yellow>souvenirs</color>, mais votre <color=yellow>portée d'attaque</color> augmente légèrement, vos <color=yellow>dégâts d'attaque</color> augmentent de {1} et votre <color=yellow>vitesse d'attaque</color> augmente de {2}. Cette augmentation de vitesse d'attaque n'est pas affectée par <color=yellow>Foulée Mortelle</color>. Chaque <color=yellow>attaque de base</color> projette une <color=yellow>lame d'énergie</color> qui inflige {3} <color=yellow>dégâts de ténèbres</color>.\n\nPendant la durée de l'effet, la <color=yellow>célérité de mémoire</color> de l'<color=yellow>esquive</color> augmente de {4} et ses <color=yellow>charges maximales</color> de {5}.",
     "rawDescVars": [
       {
         "rendered": "10",
@@ -5978,29 +6082,29 @@
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> ",
+        "rendered": " 30%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "atkSpdPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 10.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.4,
+          "basicAP": 4.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": " 1.5<sprite=5> ",
-        "format": "0.#",
-        "raw": "atkSpd",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 1.4,
-          "basicAP": 0.0,
-          "basicAD": 0.0,
-          "basicLvl": 0.1,
-          "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
@@ -6128,8 +6232,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Tire avec une arbalète qui <color=yellow>transperce</color> les ennemis pour leur infliger des <color=yellow>dégâts de ténèbres</color> de  <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> , les repousser et activer l'<color=yellow>Effet d'Attaque</color>. À chaque fois qu'un ennemi est <color=yellow>transpercé</color>, augmente de 35% les <color=yellow>dégâts</color> infligés à l'ennemi suivant.",
-    "rawDesc": "Tire avec une arbalète qui <color=yellow>transperce</color> les ennemis pour leur infliger des <color=yellow>dégâts de ténèbres</color> de {0}, les repousser et activer l'<color=yellow>Effet d'Attaque</color>. À chaque fois qu'un ennemi est <color=yellow>transpercé</color>, augmente de {1} les <color=yellow>dégâts</color> infligés à l'ennemi suivant.",
+    "description": "Tire avec une arbalète qui <color=yellow>transperce</color> les ennemis pour leur infliger des <color=yellow>Dégâts des Ténèbres</color> de  <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> , les repousser et activer l'<color=yellow>Effet d'attaque</color>. À chaque fois qu'un ennemi est <color=yellow>transpercé</color>, augmente de 35% les <color=yellow>Dégâts</color> infligés à l'ennemi suivant.\nA <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> de chances d'augmenter les <color=yellow>Dégâts</color> de 100% et d'appliquer 5 <color=yellow>Ténèbres</color> à la cible.",
+    "rawDesc": "Tire avec une arbalète qui <color=yellow>transperce</color> les ennemis pour leur infliger des <color=yellow>Dégâts des Ténèbres</color> de {0}, les repousser et activer l'<color=yellow>Effet d'attaque</color>. À chaque fois qu'un ennemi est <color=yellow>transpercé</color>, augmente de {1} les <color=yellow>Dégâts</color> infligés à l'ennemi suivant.\nA {2} de chances d'augmenter les <color=yellow>Dégâts</color> de {3} et d'appliquer {4} <color=yellow>Ténèbres</color> à la cible.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> ",
@@ -6151,6 +6255,45 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.35,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "empoweredAmpDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "empoweredDarkStackCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6631,6 +6774,121 @@
     ],
     "image": "St_R_DangerousTheory.png",
     "lore": "Les lâches d'Arcanum ont qualifié cette théorie de 'dangereusement inacceptable'.\nLes imbéciles.\n\nIls n'ont rien compris à son élégance. Seule la matière poussée à l'extrême peut engendrer les résultats les plus explosifs. Et moi, je ne fais que prouver mon hypothèse.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_DarkGrenade": {
+    "name": "Grenade des Ténèbres",
+    "cooldownTime": 9.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Lance une grenade des Ténèbres vers l'emplacement ciblé. La grenade explose et projette 7 éclats de Ténèbres dans toutes les directions. Chaque éclat déclenche un <color=yellow>Effet d'attaque</color> de 50% et inflige  <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5>  de <color=yellow>Dégâts des Ténèbres</color> au premier ennemi touché. Si plusieurs éclats touchent la même cible, les éclats suivants infligent 50% de dégâts.\nIl y a <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> de chances que le nombre d'éclats de Ténèbres tirés augmente de 4 et qu'ils <color=yellow>Étourdissent</color> les ennemis pendant 1 s.",
+    "rawDesc": "Lance une grenade des Ténèbres vers l'emplacement ciblé. La grenade explose et projette {0} éclats de Ténèbres dans toutes les directions. Chaque éclat déclenche un <color=yellow>Effet d'attaque</color> de {1} et inflige {2} de <color=yellow>Dégâts des Ténèbres</color> au premier ennemi touché. Si plusieurs éclats touchent la même cible, les éclats suivants infligent {3} de dégâts.\nIl y a {4} de chances que le nombre d'éclats de Ténèbres tirés augmente de {5} et qu'ils <color=yellow>Étourdissent</color> les ennemis pendant {6} s.",
+    "rawDescVars": [
+      {
+        "rendered": "7",
+        "format": "#,##0",
+        "raw": "defaultShardCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 7.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "attackEffectStrength",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_DarkGrenade_Shard::damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "subsequentHitMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "addedEmpoweredShardCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Lancer, Dégâts des Ténèbres de zone",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "St_R_DarkGrenade.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -7717,8 +7975,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Tire 5 balle(s) de ténèbres qui se dispersent à l'avant. Chaque balle inflige des <color=yellow>dégâts de ténèbres</color> de  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5>  et active l'<color=yellow>Effet d'Attaque</color> de 50%.",
-    "rawDesc": "Tire {0} balle(s) de ténèbres qui se dispersent à l'avant. Chaque balle inflige des <color=yellow>dégâts de ténèbres</color> de {1} et active l'<color=yellow>Effet d'Attaque</color> de {2}.",
+    "description": "Tire 5 balle(s) de ténèbres qui se dispersent à l'avant. Chaque balle inflige des <color=yellow>dégâts de ténèbres</color> de  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5>  et active l'<color=yellow>Effet d'Attaque</color> de 50%.\nA <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> de chances de tirer 4 balle(s) de ténèbres supplémentaire(s).",
+    "rawDesc": "Tire {0} balle(s) de ténèbres qui se dispersent à l'avant. Chaque balle inflige des <color=yellow>dégâts de ténèbres</color> de {1} et active l'<color=yellow>Effet d'Attaque</color> de {2}.\nA {3} de chances de tirer {4} balle(s) de ténèbres supplémentaire(s).",
     "rawDescVars": [
       {
         "rendered": "5",
@@ -7753,6 +8011,32 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "addedShootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -7898,8 +8182,8 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Se concentre pendant 0.7 sec, augmentant la <color=yellow>VIT de DÉP</color> de  30%<sprite=5>  pendant cette durée. À la fin de la concentration, lance 5 missile(s) à tête chercheuse à un ennemi aléatoire proche, infligeant des <color=yellow>dégâts de ténèbres</color> de  <sprite=2><color=#fff><gradient=sv_ad>50%</gradient></color><sprite=5> , et augmente votre <color=yellow>VIT d'ATQ</color> de  20%<sprite=5>  pendant 3 sec.",
-    "rawDesc": "Se concentre pendant {0} sec, augmentant la <color=yellow>VIT de DÉP</color> de {1} pendant cette durée. À la fin de la concentration, lance {2} missile(s) à tête chercheuse à un ennemi aléatoire proche, infligeant des <color=yellow>dégâts de ténèbres</color> de {3}, et augmente votre <color=yellow>VIT d'ATQ</color> de {4} pendant {5} sec.",
+    "description": "Se concentre pendant 0.7 sec, augmentant la <color=yellow>VIT de DÉP</color> de  30%<sprite=5>  pendant cette durée. À la fin de la concentration, lance 5 missile(s) à tête chercheuse à un ennemi aléatoire proche, infligeant des <color=yellow>dégâts de ténèbres</color> de  <sprite=2><color=#fff><gradient=sv_ad>50%</gradient></color><sprite=5> , et augmente votre <color=yellow>VIT d'ATQ</color> de  20%<sprite=5>  pendant 3 sec.\nA <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> de chances d'augmenter le nombre de missiles tirés de 5.",
+    "rawDesc": "Se concentre pendant {0} sec, augmentant la <color=yellow>VIT de DÉP</color> de {1} pendant cette durée. À la fin de la concentration, lance {2} missile(s) à tête chercheuse à un ennemi aléatoire proche, infligeant des <color=yellow>dégâts de ténèbres</color> de {3}, et augmente votre <color=yellow>VIT d'ATQ</color> de {4} pendant {5} sec.\nA {6} de chances d'augmenter le nombre de missiles tirés de {7}.",
     "rawDescVars": [
       {
         "rendered": "0.7",
@@ -7978,6 +8262,32 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "addedEmpoweredMissileCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "shortDescription": "Dégâts de ténèbres, augmentation de VIT d'ATQ",
@@ -8000,8 +8310,8 @@
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Se déplace rapidement avant de tirer aux ennemis à l'avant 3 fragment(s) de ténèbres. Chaque fragment inflige des <color=yellow>dégâts de ténèbres</color> de  <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5>  et active l'<color=yellow>Effet d'Attaque</color> de 50%.",
-    "rawDesc": "Se déplace rapidement avant de tirer aux ennemis à l'avant {0} fragment(s) de ténèbres. Chaque fragment inflige des <color=yellow>dégâts de ténèbres</color> de {1} et active l'<color=yellow>Effet d'Attaque</color> de {2}.",
+    "description": "Se déplace rapidement avant de tirer aux ennemis à l'avant 3 fragment(s) de ténèbres. Chaque fragment inflige des <color=yellow>dégâts de ténèbres</color> de  <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5>  et active l'<color=yellow>Effet d'Attaque</color> de 50%.\nA <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> de chances d'augmenter le nombre de fragments tirés de 3.",
+    "rawDesc": "Se déplace rapidement avant de tirer aux ennemis à l'avant {0} fragment(s) de ténèbres. Chaque fragment inflige des <color=yellow>dégâts de ténèbres</color> de {1} et active l'<color=yellow>Effet d'Attaque</color> de {2}.\nA {3} de chances d'augmenter le nombre de fragments tirés de {4}.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -8036,6 +8346,32 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "addedSpawnCountByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8119,6 +8455,81 @@
     ],
     "image": "St_R_Smite.PNG",
     "lore": "L'académie est peuplée de vieux séniles à l'esprit faible.\nCombien de temps encore vont-ils se congratuler pour leurs petites règles insignifiantes...\n\nEn contemplant l'arbre calciné d'hier soir, une pensée m'est venue.\nLes forces de la nature, comme l'éclair, n'obéissent-elles pas aussi à des lois ?\n\nSi je parviens à les saisir, je pourrai maîtriser cette puissance immense.\nL'idée me subjugue. Je dois entamer mes recherches immédiatement.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_Somersault": {
+    "name": "Saut périlleux",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Vous sautez en l'air pendant 0.5 s, esquivant les attaques et devenant <color=yellow>Invincible</color>. Vos <color=yellow>Chances de coup critique</color> augmentent de  30%<sprite=5>  pendant 4 s.\n\nLors d'une <color=yellow>Attaque</color>, le <color=yellow>Temps de recharge</color> de ce souvenir est réduit de 0.3 s.",
+    "rawDesc": "Vous sautez en l'air pendant {0} s, esquivant les attaques et devenant <color=yellow>Invincible</color>. Vos <color=yellow>Chances de coup critique</color> augmentent de {1} pendant {2} s.\n\nLors d'une <color=yellow>Attaque</color>, le <color=yellow>Temps de recharge</color> de ce souvenir est réduit de {3} s.",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "jumpDodgeDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 30%<sprite=5> ",
+        "format": "P0",
+        "raw": "critChangeAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.1,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "effectDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0.3",
+        "format": "#,##0.#",
+        "raw": "cooldownReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": "Invincibilité, augmentation des chances de coup critique",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "HardCC"
+    ],
+    "image": "St_R_Somersault.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -8235,6 +8646,88 @@
     ],
     "image": "St_R_StaticDischarge.png",
     "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_SummonLittleBaam": {
+    "name": "Âme Sœur",
+    "cooldownTime": 14.0,
+    "maxCharges": 3,
+    "addedCharges": 99,
+    "description": "<color=yellow>Invoque</color> un <color=yellow>Petit Baam</color> fixé à l'emplacement ciblé.\n\nLe <color=yellow>Petit Baam</color> possède 119 PV et 50 de DÉF, reste sur le champ de bataille pendant un maximum de 20 s, et attaque les ennemis proches pour leur infliger des <color=yellow>Dégâts de lumière</color> de  <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5> . Vous pouvez en maintenir jusqu'à 10 à la fois.\n\nToutes les <color=yellow>Charges</color> sont restaurées en même temps.",
+    "rawDesc": "<color=yellow>Invoque</color> un <color=yellow>Petit Baam</color> fixé à l'emplacement ciblé.\n\nLe <color=yellow>Petit Baam</color> possède {0} PV et {1} de DÉF, reste sur le champ de bataille pendant un maximum de {2} s, et attaque les ennemis proches pour leur infliger des <color=yellow>Dégâts de lumière</color> de {3}. Vous pouvez en maintenir jusqu'à {4} à la fois.\n\nToutes les <color=yellow>Charges</color> sont restaurées en même temps.",
+    "rawDescVars": [
+      {
+        "rendered": "119",
+        "format": "#,##0",
+        "raw": "summonHealth",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "50",
+        "format": "#,##0",
+        "raw": "armor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "20",
+        "format": "#,##0.#",
+        "raw": "maxDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_SummonLittleBaam_Baam_Atk::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.85,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Invoque un Petit Baam",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Summon"
+    ],
+    "image": "St_R_SummonLittleBaam.png",
+    "lore": "La capture des Baams sauvages s'est faite de manière strictement « légale » et « volontaire ».",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""

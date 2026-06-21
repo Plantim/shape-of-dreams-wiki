@@ -3295,6 +3295,49 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Glass": {
+    "name": "Essence of Glass",
+    "description": "While <color=yellow>In Combat</color>, gaining a <color=yellow>Shield</color> <color=yellow>Heal</color>s Health equal to  12%<sprite=5>  of the Shield amount gained. This Memory's <color=yellow>Heal Amount</color> increases by  18%<sprite=5>  for each <color=yellow>Cold Memory</color> you own.",
+    "rawDesc": "While <color=yellow>In Combat</color>, gaining a <color=yellow>Shield</color> <color=yellow>Heal</color>s Health equal to {0} of the Shield amount gained. This Memory's <color=yellow>Heal Amount</color> increases by {1} for each <color=yellow>Cold Memory</color> you own.",
+    "rawDescVars": [
+      {
+        "rendered": " 12%<sprite=5> ",
+        "format": "P0",
+        "raw": "healByShieldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": " 18%<sprite=5> ",
+        "format": "P0",
+        "raw": "healAmpPerColdSkill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "Gem_R_Glass.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Insatiable": {
     "name": "Essence of Voracity",
     "description": "For 5 seconds after casting this Memory, <color=yellow>Attack Damage</color> is increased by  15%<sprite=5>  and <color=yellow>restore</color>  6<sprite=5>  Health per <color=yellow>attack</color>.",
@@ -3346,6 +3389,75 @@
       "Attack"
     ],
     "image": "Gem_R_Insatiable.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lava": {
+    "name": "Essence of Lava",
+    "description": "Every 4 seconds, <color=yellow>Cast</color>ing this Memory is <color=yellow>Empowered</color>. Dealing <color=yellow>Fire Damage</color> to an enemy for the first time with an Empowered <color=yellow>Cast</color> creates lava beneath them that lasts for 4 seconds. All enemies on the lava take  <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5>  <color=yellow>Fire Damage</color> per second, and their damage taken from <color=yellow>Fire Damage</color> increases by 30%. A maximum of 5 lava pools can be maintained.",
+    "rawDesc": "Every {0} seconds, <color=yellow>Cast</color>ing this Memory is <color=yellow>Empowered</color>. Dealing <color=yellow>Fire Damage</color> to an enemy for the first time with an Empowered <color=yellow>Cast</color> creates lava beneath them that lasts for {1} seconds. All enemies on the lava take {2} <color=yellow>Fire Damage</color> per second, and their damage taken from <color=yellow>Fire Damage</color> increases by {3}. A maximum of {4} lava pools can be maintained.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Gem_R_Lava::cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Ai_R_Lava_LavaField::duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_Lava_LavaField::dmgFactor/Ai_R_Lava_LavaField::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "Se_R_Lava_Debuff::fireDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "maxLavaCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Lava.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -3531,6 +3643,48 @@
     "achievementName": "Keep Calm and Carry On",
     "achievementDescription": "Defeat Heroic Bosses 8 times while your Health is below 25%."
   },
+  "Gem_R_Purity": {
+    "name": "Essence of Purity",
+    "description": "<color=yellow>Cast</color>ing this Memory removes all <color=yellow>Elemental Effects</color> applied to the Traveler. <color=yellow>Heal</color>s  <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5>  Health for each <color=yellow>Elemental Effect</color> removed. Can only trigger once every 4 seconds.",
+    "rawDesc": "<color=yellow>Cast</color>ing this Memory removes all <color=yellow>Elemental Effects</color> applied to the Traveler. <color=yellow>Heal</color>s {0} Health for each <color=yellow>Elemental Effect</color> removed. Can only trigger once every {1} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healPerElemental",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Purity.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Rejuvenation": {
     "name": "Essence of Rejuvenation",
     "description": "Every 15 seconds, this Memory's <color=yellow>cast</color> becomes <color=yellow>empowered</color>. For 1.5 seconds after casting the <color=yellow>empowered cast</color>, <color=yellow>restore</color>  14%<sprite=5>  of the <color=yellow>damage</color> dealt as your <color=yellow>Health</color>.",
@@ -3713,18 +3867,18 @@
   },
   "Gem_R_Shock": {
     "name": "Essence of Shock",
-    "description": "Every 4th <color=yellow>basic attack</color> becomes <color=yellow>empowered</color>, unleashing <color=yellow>Lightning</color> that bounces between enemies, dealing  <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5>  <color=yellow>Light damage</color> up to 2 times. For every 20% <color=yellow>Critical Strike Chance</color>, the maximum number of hits increases by 1.",
+    "description": "Every 4th <color=yellow>basic attack</color> becomes <color=yellow>empowered</color>, unleashing <color=yellow>Lightning</color> that bounces between enemies, dealing  <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5>  <color=yellow>Light damage</color> up to 2 times. For every 20% <color=yellow>Critical Strike Chance</color>, the maximum number of hits increases by 1.",
     "rawDesc": "Every 4th <color=yellow>basic attack</color> becomes <color=yellow>empowered</color>, unleashing <color=yellow>Lightning</color> that bounces between enemies, dealing {0} <color=yellow>Light damage</color> up to {1} times. For every {2} <color=yellow>Critical Strike Chance</color>, the maximum number of hits increases by 1.",
     "rawDescVars": [
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "chainDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.2,
-          "basicAD": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.01
         }

@@ -207,8 +207,8 @@
     "cooldownTime": 4.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "어둠 화살을 발사해 적에게  <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 주고 <color=yellow>공격 효과</color>를 발동합니다. 최대 2명의 적을 관통합니다.",
-    "rawDesc": "어둠 화살을 발사해 적에게 {0}의 <color=yellow>어둠 피해</color>를 주고 <color=yellow>공격 효과</color>를 발동합니다. 최대 {1}명의 적을 관통합니다.",
+    "description": "어둠 화살을 발사해 적에게  <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 주고 <color=yellow>공격 효과</color>를 발동합니다. 최대 2명의 적을 관통합니다.\n<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>의 확률로 <color=yellow>피해량</color>이 80% 증가하고 <color=yellow>재사용 대기시간</color>이 50% 감소합니다.",
+    "rawDesc": "어둠 화살을 발사해 적에게 {0}의 <color=yellow>어둠 피해</color>를 주고 <color=yellow>공격 효과</color>를 발동합니다. 최대 {1}명의 적을 관통합니다.\n{2}의 확률로 <color=yellow>피해량</color>이 {3} 증가하고 <color=yellow>재사용 대기시간</color>이 {4} 감소합니다.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5> ",
@@ -230,6 +230,45 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "ampEmpoweredDmg",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "empoweredCooldownReductionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -257,8 +296,8 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "전방의 적들을 찔러  <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 주고 <color=yellow>공격 효과</color>를 발동하며 가운데로 모읍니다. 보호막에게는 피해량이 100% 증가합니다.",
-    "rawDesc": "전방의 적들을 찔러 {0}의 <color=yellow>어둠 피해</color>를 주고 <color=yellow>공격 효과</color>를 발동하며 가운데로 모읍니다. 보호막에게는 피해량이 {1} 증가합니다.",
+    "description": "전방의 적들을 찔러  <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 주고 <color=yellow>공격 효과</color>를 발동하며 가운데로 모읍니다. 보호막에게는 피해량이 100% 증가합니다.\n<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>의 확률로 <color=yellow>피해량</color>이 100% 증가하고 적중한 적 하나당 <color=yellow>체력</color>을  <sprite=2><color=#fff><gradient=sv_ad>20%</gradient></color><sprite=5> 만큼 <color=yellow>회복</color>합니다.",
+    "rawDesc": "전방의 적들을 찔러 {0}의 <color=yellow>어둠 피해</color>를 주고 <color=yellow>공격 효과</color>를 발동하며 가운데로 모읍니다. 보호막에게는 피해량이 {1} 증가합니다.\n{2}의 확률로 <color=yellow>피해량</color>이 {3} 증가하고 적중한 적 하나당 <color=yellow>체력</color>을 {4}만큼 <color=yellow>회복</color>합니다.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> ",
@@ -284,6 +323,45 @@
           "basicAD": 0,
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "dmgAmpByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>20%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healAmountByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
         }
       }
     ],
@@ -1777,13 +1855,39 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>기억</color>을 <color=yellow>시전</color>하거나 <color=yellow>변광성</color>을 사용하면 <color=yellow>이종 물질</color> 중첩을 1 획득해 최대 3 중첩을 보유할 수 있으며, <color=yellow>궁극기 기억</color>을 <color=yellow>시전</color>하면 중첩이 최대로 충전됩니다. 다음 <color=yellow>기본 공격</color> 시 모든 중첩을 소모해 폭발을 일으켜 적들에게 중첩당  <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5> 의 <color=yellow>빛 피해</color>를 줍니다.\n\n이 폭발의 크기는 <color=yellow>이종 물질</color>을 강화할 때마다 5% 증가하여 최대 50% 증가합니다.",
-    "rawDesc": "<color=yellow>기억</color>을 <color=yellow>시전</color>하거나 <color=yellow>변광성</color>을 사용하면 <color=yellow>이종 물질</color> 중첩을 1 획득해 최대 {0} 중첩을 보유할 수 있으며, <color=yellow>궁극기 기억</color>을 <color=yellow>시전</color>하면 중첩이 최대로 충전됩니다. 다음 <color=yellow>기본 공격</color> 시 모든 중첩을 소모해 폭발을 일으켜 적들에게 중첩당 {1}의 <color=yellow>빛 피해</color>를 줍니다.\n\n이 폭발의 크기는 <color=yellow>이종 물질</color>을 강화할 때마다 {2} 증가하여 최대 {3} 증가합니다.",
+    "description": "<color=yellow>기억</color>을 <color=yellow>시전</color>하면 <color=yellow>이종 물질</color> 중첩을 1 획득해 최대 4 중첩을 보유할 수 있습니다. <color=yellow>회피 기술</color>을 시전하면 대신 2 중첩을, <color=yellow>궁극기 기억</color>을 시전하면 3 중첩을 얻습니다. 다음 <color=yellow>기본 공격</color> 시 모든 중첩을 소모해 폭발을 일으켜 적들에게 중첩당  <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5> 의 <color=yellow>빛 피해</color>를 줍니다.\n\n이 폭발의 크기는 <color=yellow>이종 물질</color>을 강화할 때마다 5% 증가하여 최대 50% 증가합니다.",
+    "rawDesc": "<color=yellow>기억</color>을 <color=yellow>시전</color>하면 <color=yellow>이종 물질</color> 중첩을 1 획득해 최대 {0} 중첩을 보유할 수 있습니다. <color=yellow>회피 기술</color>을 시전하면 대신 {1} 중첩을, <color=yellow>궁극기 기억</color>을 시전하면 {2} 중첩을 얻습니다. 다음 <color=yellow>기본 공격</color> 시 모든 중첩을 소모해 폭발을 일으켜 적들에게 중첩당 {3}의 <color=yellow>빛 피해</color>를 줍니다.\n\n이 폭발의 크기는 <color=yellow>이종 물질</color>을 강화할 때마다 {4} 증가하여 최대 {5} 증가합니다.",
     "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dodgeCastStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
       {
         "rendered": "3",
         "format": "#,##0",
-        "raw": "maxStack",
+        "raw": "ultCastStacks",
         "scalingType": "basic",
         "data": {
           "basicConstant": 3.0,
@@ -1887,7 +1991,7 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>공격력</color>이  12<sprite=5>  증가합니다. 매 4번째 <color=yellow>기본 공격</color>이 <color=yellow>치명타</color>가 되고  <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> 의 추가 <color=yellow>빛 피해</color>를 줍니다.\n적을 <color=yellow>공격</color>할 때마다 <color=yellow>공격 속도</color>가 4초 동안  4%<sprite=5>  증가하여 최대  24%<sprite=5>  증가합니다. <color=yellow>공격 속도</color>가 최대로 증가했을 때 <color=yellow>공격</color>할 때마다 <color=yellow>잃은 체력</color>의  1%<sprite=5> 를 <color=yellow>회복</color>합니다.",
+    "description": "<color=yellow>공격력</color>이  12<sprite=5>  증가합니다. 매 4번째 <color=yellow>기본 공격</color>이 <color=yellow>치명타</color>가 되고  <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5> 의 추가 <color=yellow>빛 피해</color>를 줍니다.\n적을 <color=yellow>공격</color>할 때마다 <color=yellow>공격 속도</color>가 4초 동안  4%<sprite=5>  증가하여 최대  24%<sprite=5>  증가합니다. <color=yellow>공격 속도</color>가 최대로 증가했을 때 <color=yellow>공격</color>할 때마다 <color=yellow>잃은 체력</color>의  2%<sprite=5> 를 <color=yellow>회복</color>합니다.",
     "rawDesc": "<color=yellow>공격력</color>이 {0} 증가합니다. 매 4번째 <color=yellow>기본 공격</color>이 <color=yellow>치명타</color>가 되고 {1}의 추가 <color=yellow>빛 피해</color>를 줍니다.\n적을 <color=yellow>공격</color>할 때마다 <color=yellow>공격 속도</color>가 {2}초 동안 {3} 증가하여 최대 {4} 증가합니다. <color=yellow>공격 속도</color>가 최대로 증가했을 때 <color=yellow>공격</color>할 때마다 <color=yellow>잃은 체력</color>의 {5}를 <color=yellow>회복</color>합니다.",
     "rawDescVars": [
       {
@@ -1896,10 +2000,10 @@
         "raw": "adBonus",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 9.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 2.0,
+          "basicLvl": 3.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -1950,12 +2054,12 @@
         "data": {}
       },
       {
-        "rendered": " 1%<sprite=5> ",
+        "rendered": " 2%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "lostHpHealRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.006,
+          "basicConstant": 0.016,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.004,
@@ -3432,8 +3536,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "시전 키를 <color=yellow>길게 누르고 있으면</color> 손에 어둠을 충전합니다. 충전이 끝나면 전방으로 쇄도하여 처음 닿는 적과 그 주변의 모든 적을 강타합니다. 적들은 충전 시간에 비례하여  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ~ <sprite=2><color=#fff><gradient=sv_ad>600%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 입고 1초 동안 기절합니다. 적중한 적 하나당 3초 동안 지속되는  <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> 의 <color=yellow>보호막</color>을 획득하며, 대상이 <color=yellow>보스</color>라면 보호막량이 200% 증가합니다.\n1.2초 동안 충전하면 돌진 거리와 피해량이 최대치에 도달합니다.",
-    "rawDesc": "시전 키를 <color=yellow>길게 누르고 있으면</color> 손에 어둠을 충전합니다. 충전이 끝나면 전방으로 쇄도하여 처음 닿는 적과 그 주변의 모든 적을 강타합니다. 적들은 충전 시간에 비례하여 {0}~{1}의 <color=yellow>어둠 피해</color>를 입고 {2}초 동안 기절합니다. 적중한 적 하나당 {3}초 동안 지속되는 {4}의 <color=yellow>보호막</color>을 획득하며, 대상이 <color=yellow>보스</color>라면 보호막량이 {5} 증가합니다.\n{6}초 동안 충전하면 돌진 거리와 피해량이 최대치에 도달합니다.",
+    "description": "시전 키를 <color=yellow>길게 누르고 있으면</color> 손에 어둠을 충전합니다. 충전이 끝나면 전방으로 쇄도하여 처음 닿는 적과 그 주변의 모든 적을 강타합니다. 적들에게 충전 시간에 비례하여  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ~ <sprite=2><color=#fff><gradient=sv_ad>600%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 주고 1초 동안 기절시키며 <color=yellow>공격 효과</color>를 발동합니다. 적중한 적 하나당 3초 동안 지속되는  <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5> 의 <color=yellow>보호막</color>을 획득하며, 대상이 <color=yellow>보스</color>라면 보호막량이 200% 증가합니다.\n1.2초 동안 충전하면 돌진 거리와 피해량이 최대치에 도달합니다.",
+    "rawDesc": "시전 키를 <color=yellow>길게 누르고 있으면</color> 손에 어둠을 충전합니다. 충전이 끝나면 전방으로 쇄도하여 처음 닿는 적과 그 주변의 모든 적을 강타합니다. 적들에게 충전 시간에 비례하여 {0}~{1}의 <color=yellow>어둠 피해</color>를 주고 {2}초 동안 기절시키며 <color=yellow>공격 효과</color>를 발동합니다. 적중한 적 하나당 {3}초 동안 지속되는 {4}의 <color=yellow>보호막</color>을 획득하며, 대상이 <color=yellow>보스</color>라면 보호막량이 {5} 증가합니다.\n{6}초 동안 충전하면 돌진 거리와 피해량이 최대치에 도달합니다.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
@@ -3550,7 +3654,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "7초 동안 어둠의 힘을 무기에 부여하여 <color=yellow>치명타 확률</color>이  20%<sprite=5>  증가하고 <color=yellow>공격</color> 시  <sprite=2><color=#fff><gradient=sv_ad>52%</gradient></color><sprite=5> 의 추가 <color=yellow>어둠 피해</color>를 입힙니다. <color=yellow>근거리 여행자</color>는 이 추가 피해량이 25% 증가합니다.",
+    "description": "7초 동안 어둠의 힘을 무기에 부여하여 <color=yellow>치명타 확률</color>이  25%<sprite=5>  증가하고 <color=yellow>공격</color> 시  <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5> 의 추가 <color=yellow>어둠 피해</color>를 입힙니다. <color=yellow>근거리 여행자</color>는 이 추가 피해량이 25% 증가합니다.",
     "rawDesc": "{0}초 동안 어둠의 힘을 무기에 부여하여 <color=yellow>치명타 확률</color>이 {1} 증가하고 <color=yellow>공격</color> 시 {2}의 추가 <color=yellow>어둠 피해</color>를 입힙니다. <color=yellow>근거리 여행자</color>는 이 추가 피해량이 {3} 증가합니다.",
     "rawDescVars": [
       {
@@ -3567,27 +3671,27 @@
         }
       },
       {
-        "rendered": " 20%<sprite=5> ",
+        "rendered": " 25%<sprite=5> ",
         "format": "P0",
         "raw": "critChance",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.18,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.02,
+          "basicLvl": 0.05,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>52%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "hitDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 0.52,
+          "basicAD": 0.3,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.15
         }
@@ -4761,42 +4865,29 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "대상에게 돌진하고 망치를 내려찍어 적들에게  <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5> 의 <color=yellow>빛 피해</color>를 주며 50%의 <color=yellow>공격 효과</color>를 발동합니다. 적을 <color=yellow>공격</color>할 때마다 <color=yellow>재사용 대기시간</color>이 8% <color=yellow>감소</color>합니다.",
-    "rawDesc": "대상에게 돌진하고 망치를 내려찍어 적들에게 {0}의 <color=yellow>빛 피해</color>를 주며 {1}의 <color=yellow>공격 효과</color>를 발동합니다. 적을 <color=yellow>공격</color>할 때마다 <color=yellow>재사용 대기시간</color>이 {2} <color=yellow>감소</color>합니다.",
+    "description": "대상에게 돌진하고 망치를 내려찍어 적들에게  <sprite=2><color=#fff><gradient=sv_ad>175%</gradient></color><sprite=5> 의 <color=yellow>빛 피해</color>를 주며 <color=yellow>공격 효과</color>를 발동합니다. 적을 <color=yellow>공격</color>할 때마다 <color=yellow>재사용 대기시간</color>이 10% <color=yellow>감소</color>합니다.",
+    "rawDesc": "대상에게 돌진하고 망치를 내려찍어 적들에게 {0}의 <color=yellow>빛 피해</color>를 주며 <color=yellow>공격 효과</color>를 발동합니다. 적을 <color=yellow>공격</color>할 때마다 <color=yellow>재사용 대기시간</color>이 {1} <color=yellow>감소</color>합니다.",
     "rawDescVars": [
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>175%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.25,
+          "basicAD": 1.75,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "50%",
-        "format": "P0",
-        "raw": "attackEffect",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "8%",
+        "rendered": "10%",
         "format": "P0",
         "raw": "cooldownReductionRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.08,
+          "basicConstant": 0.1,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4825,8 +4916,8 @@
     "cooldownTime": 9.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "앞으로 나아가다 돌아오는 <color=yellow>에테르</color>를 발사해 적들에게  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> 의 <color=yellow>빛 피해</color>를 줍니다. 다시 시전하면 <color=yellow>에테르</color>를 <color=yellow>폭발</color>시켜 적들에게  <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> 의 <color=yellow>빛 피해</color>를 주고 3초 동안 <color=yellow>속박</color>시킵니다.",
-    "rawDesc": "앞으로 나아가다 돌아오는 <color=yellow>에테르</color>를 발사해 적들에게 {0}의 <color=yellow>빛 피해</color>를 줍니다. 다시 시전하면 <color=yellow>에테르</color>를 <color=yellow>폭발</color>시켜 적들에게 {1}의 <color=yellow>빛 피해</color>를 주고 {2}초 동안 <color=yellow>속박</color>시킵니다.",
+    "description": "앞으로 나아가다 돌아오는 <color=yellow>에테르</color>를 발사해 적들에게  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> 의 <color=yellow>빛 피해</color>를 줍니다. 다시 시전하면 <color=yellow>에테르</color>를 <color=yellow>폭발</color>시켜 적들에게  <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5> 의 <color=yellow>빛 피해</color>를 주고 3초 동안 <color=yellow>속박</color>시킵니다.\n\n이 <color=yellow>폭발</color>에 단일 대상이 적중하면 <color=yellow>폭발 피해량</color>이 75% 증가합니다.",
+    "rawDesc": "앞으로 나아가다 돌아오는 <color=yellow>에테르</color>를 발사해 적들에게 {0}의 <color=yellow>빛 피해</color>를 줍니다. 다시 시전하면 <color=yellow>에테르</color>를 <color=yellow>폭발</color>시켜 적들에게 {1}의 <color=yellow>빛 피해</color>를 주고 {2}초 동안 <color=yellow>속박</color>시킵니다.\n\n이 <color=yellow>폭발</color>에 단일 대상이 적중하면 <color=yellow>폭발 피해량</color>이 {3} 증가합니다.",
     "rawDescVars": [
       {
         "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
@@ -4861,6 +4952,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "75%",
+        "format": "P0",
+        "raw": "explodeAmpOnSingleTarget",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.75,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5537,8 +5641,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "대상 위치에 점점 커지며 적들을 느려지게 하는 별을 창조한 후 최대 3초 동안 정신 집중합니다. 이 동안 공격하거나 기억을 사용할 수 없습니다. <color=yellow>초신성</color>을 재사용하면 별을 터트려 적들에게  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> 의 <color=yellow>빛 피해</color>를 줍니다. 이 폭발은 충전 시간에 비례해 강력해져 1.3초가 지나면 피해량이 225%까지 증가합니다.\n충전 속도는 유바르의 기억 가속에 비례하여 증가합니다.",
-    "rawDesc": "대상 위치에 점점 커지며 적들을 느려지게 하는 별을 창조한 후 최대 {0}초 동안 정신 집중합니다. 이 동안 공격하거나 기억을 사용할 수 없습니다. <color=yellow>초신성</color>을 재사용하면 별을 터트려 적들에게 {1}의 <color=yellow>빛 피해</color>를 줍니다. 이 폭발은 충전 시간에 비례해 강력해져 {2}초가 지나면 피해량이 {3}까지 증가합니다.\n충전 속도는 유바르의 기억 가속에 비례하여 증가합니다.",
+    "description": "<color=yellow>회피 기술</color>을 1회 충전하고 대상 위치에 점점 커지며 적들을 느려지게 하는 <color=yellow>별</color>을 창조한 후 최대 3초 동안 <color=yellow>정신 집중</color>합니다. 이 동안 <color=yellow>공격</color>하거나 <color=yellow>기억</color>을 시전할 수 없습니다. 다시 시전하면 <color=yellow>별</color>을 터트려 적들에게  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> 의 <color=yellow>빛 피해</color>를 줍니다.\n\n이 폭발은 <color=yellow>충전 시간</color>에 비례해 강력해져 1.3초가 지나면 <color=yellow>피해량</color>이 225%까지 증가하며, 충전 속도는 유바르의 <color=yellow>기억 가속</color>에 비례하여 증가합니다.",
+    "rawDesc": "<color=yellow>회피 기술</color>을 1회 충전하고 대상 위치에 점점 커지며 적들을 느려지게 하는 <color=yellow>별</color>을 창조한 후 최대 {0}초 동안 <color=yellow>정신 집중</color>합니다. 이 동안 <color=yellow>공격</color>하거나 <color=yellow>기억</color>을 시전할 수 없습니다. 다시 시전하면 <color=yellow>별</color>을 터트려 적들에게 {1}의 <color=yellow>빛 피해</color>를 줍니다.\n\n이 폭발은 <color=yellow>충전 시간</color>에 비례해 강력해져 {2}초가 지나면 <color=yellow>피해량</color>이 {3}까지 증가하며, 충전 속도는 유바르의 <color=yellow>기억 가속</color>에 비례하여 증가합니다.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -5612,7 +5716,7 @@
     "cooldownTime": 9.0,
     "maxCharges": 2,
     "addedCharges": 1,
-    "description": "나키아를 따르는 <color=yellow>잎강아지</color>를 대상 위치에 <color=yellow>소환</color>하여 적들에게  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> 의 <color=yellow>피해</color>를 주고 0.4초 동안 <color=yellow>기절</color>시킵니다.\n\n<color=yellow>잎강아지</color>는 128의 체력과 40의 방어력을 가지고, 최대 25초 동안 전장에 머무르며, 적을 할퀴어  <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> 의 <color=yellow>피해</color>를 줍니다. 최대 5마리를 유지할 수 있습니다.",
+    "description": "나키아를 따르는 <color=yellow>잎강아지</color>를 대상 위치에 <color=yellow>소환</color>하여 적들에게  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> 의 <color=yellow>피해</color>를 주고 0.4초 동안 <color=yellow>기절</color>시킵니다.\n\n<color=yellow>잎강아지</color>는 128의 체력과  20<sprite=5> 의 방어력을 가지고, 최대 25초 동안 전장에 머무르며, 적을 할퀴어  <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> 의 <color=yellow>피해</color>를 줍니다. 최대 5마리를 유지할 수 있습니다.",
     "rawDesc": "나키아를 따르는 <color=yellow>잎강아지</color>를 대상 위치에 <color=yellow>소환</color>하여 적들에게 {0}의 <color=yellow>피해</color>를 주고 {1}초 동안 <color=yellow>기절</color>시킵니다.\n\n<color=yellow>잎강아지</color>는 {2}의 체력과 {3}의 방어력을 가지고, 최대 {4}초 동안 전장에 머무르며, 적을 할퀴어 {5}의 <color=yellow>피해</color>를 줍니다. 최대 {6}마리를 유지할 수 있습니다.",
     "rawDescVars": [
       {
@@ -5649,15 +5753,15 @@
         "data": {}
       },
       {
-        "rendered": "40",
+        "rendered": " 20<sprite=5> ",
         "format": "#,##0",
         "raw": "armor",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 40.0,
+          "basicConstant": 13.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 7.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5722,7 +5826,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "시전 키를 <color=yellow>길게 누르고 있으면</color> 정신 화살 무리를 충전합니다. 시전 키를 떼면 근처 적들에게 충전 시간에 비례하여 1~ 4<sprite=5> 개의 정신 화살을 떨어트립니다. 각 정신 화살은 좁은 지역의 적들에게  <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 줍니다.",
+    "description": "시전 키를 <color=yellow>길게 누르고 있으면</color> 정신 화살 무리를 충전합니다. 시전 키를 떼면 근처 적들에게 충전 시간에 비례하여 1~ 4<sprite=5> 개의 정신 화살을 떨어트립니다. 각 정신 화살은 좁은 지역의 적들에게  <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 줍니다.",
     "rawDesc": "시전 키를 <color=yellow>길게 누르고 있으면</color> 정신 화살 무리를 충전합니다. 시전 키를 떼면 근처 적들에게 충전 시간에 비례하여 {0}~{1}개의 정신 화살을 떨어트립니다. 각 정신 화살은 좁은 지역의 적들에게 {2}의 <color=yellow>어둠 피해</color>를 줍니다.",
     "rawDescVars": [
       {
@@ -5746,14 +5850,14 @@
         "data": {}
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 2.0,
+          "basicAD": 1.7,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5948,8 +6052,8 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "10초 동안 검에 파괴의 <color=yellow>검기</color>를 두릅니다. 이 동안 <color=yellow>기억</color>을 <color=yellow>시전</color>할 수 없지만 <color=yellow>공격력</color>이  35%<sprite=5>  증가하고 <color=yellow>공격 사거리</color>가 증가하며 매 <color=yellow>기본 공격</color> 시 <color=yellow>검기</color>를 발사해 적들에게  <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 줍니다. 이때 초당  1.5<sprite=5> 회 <color=yellow>기본 공격</color>할 수 있으며, 다른 공격 속도 효과에 영향을 받지 않습니다.\n\n지속 시간 동안 <color=yellow>회피 기술</color>의 <color=yellow>기억 가속</color>이  30<sprite=5> , <color=yellow>최대 충전량</color>이 2 증가합니다.",
-    "rawDesc": "{0}초 동안 검에 파괴의 <color=yellow>검기</color>를 두릅니다. 이 동안 <color=yellow>기억</color>을 <color=yellow>시전</color>할 수 없지만 <color=yellow>공격력</color>이 {1} 증가하고 <color=yellow>공격 사거리</color>가 증가하며 매 <color=yellow>기본 공격</color> 시 <color=yellow>검기</color>를 발사해 적들에게 {2}의 <color=yellow>어둠 피해</color>를 줍니다. 이때 초당 {3}회 <color=yellow>기본 공격</color>할 수 있으며, 다른 공격 속도 효과에 영향을 받지 않습니다.\n\n지속 시간 동안 <color=yellow>회피 기술</color>의 <color=yellow>기억 가속</color>이 {4}, <color=yellow>최대 충전량</color>이 {5} 증가합니다.",
+    "description": "10초 동안 검에 파괴의 <color=yellow>검기</color>를 두릅니다. 이 동안 <color=yellow>기억</color>을 <color=yellow>시전</color>할 수 없지만 <color=yellow>공격 사거리</color>가 약간 증가하고 <color=yellow>공격력</color>이  35%<sprite=5> , <color=yellow>공격 속도</color>가  30%<sprite=5>  증가하며, 이 공격 속도 증가 효과는 <color=yellow>일보일살</color>에 영향을 받지 않습니다. 매 <color=yellow>기본 공격</color> 시 <color=yellow>검기</color>를 발사해 적들에게  <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 줍니다.\n\n지속 시간 동안 <color=yellow>회피 기술</color>의 <color=yellow>기억 가속</color>이  30<sprite=5> , <color=yellow>최대 충전량</color>이 2 증가합니다.",
+    "rawDesc": "{0}초 동안 검에 파괴의 <color=yellow>검기</color>를 두릅니다. 이 동안 <color=yellow>기억</color>을 <color=yellow>시전</color>할 수 없지만 <color=yellow>공격 사거리</color>가 약간 증가하고 <color=yellow>공격력</color>이 {1}, <color=yellow>공격 속도</color>가 {2} 증가하며, 이 공격 속도 증가 효과는 <color=yellow>일보일살</color>에 영향을 받지 않습니다. 매 <color=yellow>기본 공격</color> 시 <color=yellow>검기</color>를 발사해 적들에게 {3}의 <color=yellow>어둠 피해</color>를 줍니다.\n\n지속 시간 동안 <color=yellow>회피 기술</color>의 <color=yellow>기억 가속</color>이 {4}, <color=yellow>최대 충전량</color>이 {5} 증가합니다.",
     "rawDescVars": [
       {
         "rendered": "10",
@@ -5978,29 +6082,29 @@
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> ",
+        "rendered": " 30%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "atkSpdPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 10.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.4,
+          "basicAP": 4.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": " 1.5<sprite=5> ",
-        "format": "0.#",
-        "raw": "atkSpd",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 1.4,
-          "basicAP": 0.0,
-          "basicAD": 0.0,
-          "basicLvl": 0.1,
-          "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
@@ -6128,8 +6232,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "적들을 <color=yellow>관통</color>하는 쇠뇌를 발사하여 적들에게  <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 주고 밀쳐내며 <color=yellow>공격 효과</color>를 발동합니다. 적을 <color=yellow>관통</color>할 때마다 다음 적에게 주는 <color=yellow>피해량</color>이 35% 증가합니다.",
-    "rawDesc": "적들을 <color=yellow>관통</color>하는 쇠뇌를 발사하여 적들에게 {0}의 <color=yellow>어둠 피해</color>를 주고 밀쳐내며 <color=yellow>공격 효과</color>를 발동합니다. 적을 <color=yellow>관통</color>할 때마다 다음 적에게 주는 <color=yellow>피해량</color>이 {1} 증가합니다.",
+    "description": "적들을 <color=yellow>관통</color>하는 쇠뇌를 발사하여 적들에게  <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 주고 밀쳐내며 <color=yellow>공격 효과</color>를 발동합니다. 적을 <color=yellow>관통</color>할 때마다 다음 적에게 주는 <color=yellow>피해량</color>이 35% 증가합니다.\n<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>의 확률로 <color=yellow>피해량</color>이 100% 증가하고 대상에게 5만큼의 <color=yellow>어둠</color>을 부여합니다.",
+    "rawDesc": "적들을 <color=yellow>관통</color>하는 쇠뇌를 발사하여 적들에게 {0}의 <color=yellow>어둠 피해</color>를 주고 밀쳐내며 <color=yellow>공격 효과</color>를 발동합니다. 적을 <color=yellow>관통</color>할 때마다 다음 적에게 주는 <color=yellow>피해량</color>이 {1} 증가합니다.\n{2}의 확률로 <color=yellow>피해량</color>이 {3} 증가하고 대상에게 {4}만큼의 <color=yellow>어둠</color>을 부여합니다.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> ",
@@ -6151,6 +6255,45 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.35,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "empoweredAmpDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "empoweredDarkStackCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6631,6 +6774,121 @@
     ],
     "image": "St_R_DangerousTheory.png",
     "lore": "아르카눔의 겁쟁이들은 이 이론을 '용납할 수 없을 만큼 위험하다'고 했지. \n바보들.\n\n극한의 상태에 놓인 물질만이 가장 폭발적인 결과를 낳는다는 이론의 우아함을 이해하지 못한 거야. 난 그저 내 가설을 증명하고 있을 뿐.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_DarkGrenade": {
+    "name": "어둠 수류탄",
+    "cooldownTime": 9.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "대상 위치로 어둠 수류탄을 투척합니다. 수류탄은 폭발하며 사방으로 7개의 어둠 조각을 발사합니다. 각 조각은 처음 적중하는 적에게 50%의 <color=yellow>공격 효과</color>를 발동하고  <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 줍니다. 한 대상에게 여러 조각이 적중하면 두 번째 조각부터는 50%의 피해를 입힙니다.\n<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>의 확률로 발사하는 어둠 조각의 갯수가 4개 증가하며 적을 1초 동안 <color=yellow>기절</color>시킵니다.",
+    "rawDesc": "대상 위치로 어둠 수류탄을 투척합니다. 수류탄은 폭발하며 사방으로 {0}개의 어둠 조각을 발사합니다. 각 조각은 처음 적중하는 적에게 {1}의 <color=yellow>공격 효과</color>를 발동하고 {2}의 <color=yellow>어둠 피해</color>를 줍니다. 한 대상에게 여러 조각이 적중하면 두 번째 조각부터는 {3}의 피해를 입힙니다.\n{4}의 확률로 발사하는 어둠 조각의 갯수가 {5}개 증가하며 적을 {6}초 동안 <color=yellow>기절</color>시킵니다.",
+    "rawDescVars": [
+      {
+        "rendered": "7",
+        "format": "#,##0",
+        "raw": "defaultShardCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 7.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "attackEffectStrength",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_DarkGrenade_Shard::damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "subsequentHitMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "addedEmpoweredShardCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "투척, 광역 어둠 피해",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "St_R_DarkGrenade.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -7717,8 +7975,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "전방으로 퍼지는 5개의 어둠 탄환을 발사합니다. 각 탄환은  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 주고 50%의 <color=yellow>공격 효과</color>를 발동합니다.",
-    "rawDesc": "전방으로 퍼지는 {0}개의 어둠 탄환을 발사합니다. 각 탄환은 {1}의 <color=yellow>어둠 피해</color>를 주고 {2}의 <color=yellow>공격 효과</color>를 발동합니다.",
+    "description": "전방으로 퍼지는 5개의 어둠 탄환을 발사합니다. 각 탄환은  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 주고 50%의 <color=yellow>공격 효과</color>를 발동합니다.\n<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>의 확률로 어둠 탄환 4개를 더 발사합니다.",
+    "rawDesc": "전방으로 퍼지는 {0}개의 어둠 탄환을 발사합니다. 각 탄환은 {1}의 <color=yellow>어둠 피해</color>를 주고 {2}의 <color=yellow>공격 효과</color>를 발동합니다.\n{3}의 확률로 어둠 탄환 {4}개를 더 발사합니다.",
     "rawDescVars": [
       {
         "rendered": "5",
@@ -7753,6 +8011,32 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "addedShootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -7898,8 +8182,8 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "0.7초 동안 정신을 집중하고 이 동안 <color=yellow>이동 속도</color>가  30%<sprite=5>  증가합니다. 정신 집중이 끝나면 주변 무작위 적에게  <sprite=2><color=#fff><gradient=sv_ad>50%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 주는 유도 미사일을 5개 발사하고 3초 동안 <color=yellow>공격 속도</color>가  20%<sprite=5>  증가합니다.",
-    "rawDesc": "{0}초 동안 정신을 집중하고 이 동안 <color=yellow>이동 속도</color>가 {1} 증가합니다. 정신 집중이 끝나면 주변 무작위 적에게 {2}의 <color=yellow>어둠 피해</color>를 주는 유도 미사일을 {3}개 발사하고 {4}초 동안 <color=yellow>공격 속도</color>가 {5} 증가합니다.",
+    "description": "0.7초 동안 정신을 집중하고 이 동안 <color=yellow>이동 속도</color>가  30%<sprite=5>  증가합니다. 정신 집중이 끝나면 주변 무작위 적에게  <sprite=2><color=#fff><gradient=sv_ad>50%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 주는 유도 미사일을 5개 발사하고 3초 동안 <color=yellow>공격 속도</color>가  20%<sprite=5>  증가합니다.\n<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>의 확률로 발사하는 미사일의 갯수가 5개 증가합니다.",
+    "rawDesc": "{0}초 동안 정신을 집중하고 이 동안 <color=yellow>이동 속도</color>가 {1} 증가합니다. 정신 집중이 끝나면 주변 무작위 적에게 {2}의 <color=yellow>어둠 피해</color>를 주는 유도 미사일을 {3}개 발사하고 {4}초 동안 <color=yellow>공격 속도</color>가 {5} 증가합니다.\n{6}의 확률로 발사하는 미사일의 갯수가 {7}개 증가합니다.",
     "rawDescVars": [
       {
         "rendered": "0.7",
@@ -7978,6 +8262,32 @@
           "basicLvl": 4.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "addedEmpoweredMissileCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "shortDescription": "어둠 피해, 공격 속도 증가",
@@ -8000,8 +8310,8 @@
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "빠르게 이동한 후 주변의 적들에게 어둠의 파편을 3개 발사합니다. 각 파편은  <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 주고 50%의 <color=yellow>공격 효과</color>를 발동합니다.",
-    "rawDesc": "빠르게 이동한 후 주변의 적들에게 어둠의 파편을 {0}개 발사합니다. 각 파편은 {1}의 <color=yellow>어둠 피해</color>를 주고 {2}의 <color=yellow>공격 효과</color>를 발동합니다.",
+    "description": "빠르게 이동한 후 주변의 적들에게 어둠의 파편을 3개 발사합니다. 각 파편은  <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5> 의 <color=yellow>어둠 피해</color>를 주고 50%의 <color=yellow>공격 효과</color>를 발동합니다.\n<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>의 확률로 발사하는 파편의 갯수가 3 증가합니다.",
+    "rawDesc": "빠르게 이동한 후 주변의 적들에게 어둠의 파편을 {0}개 발사합니다. 각 파편은 {1}의 <color=yellow>어둠 피해</color>를 주고 {2}의 <color=yellow>공격 효과</color>를 발동합니다.\n{3}의 확률로 발사하는 파편의 갯수가 {4} 증가합니다.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -8041,6 +8351,32 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "addedSpawnCountByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "shortDescription": "돌진 및 주위 적 공격, 어둠",
@@ -8064,8 +8400,8 @@
     "cooldownTime": 13.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "잠시 후 해당 지역에 번개를 떨어트려 적들에게  <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> 의 <color=yellow>빛 피해</color>를 주고 1초 동안 <color=yellow>기절</color>시킵니다. 50%의 확률로 적들에게 <color=yellow>불</color>이 붙습니다.",
-    "rawDesc": "잠시 후 해당 지역에 번개를 떨어트려 적들에게 {0}의 <color=yellow>빛 피해</color>를 주고 {1}초 동안 <color=yellow>기절</color>시킵니다. {2}의 확률로 적들에게 <color=yellow>불</color>이 붙습니다.",
+    "description": "잠시 후 해당 지역에 번개를 떨어트려 적들에게  <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> 의 <color=yellow>빛 피해</color>를 주고 1초 동안 <color=yellow>기절</color>시킵니다. 50%의 로 적들에게 <color=yellow>불</color>이 붙습니다.",
+    "rawDesc": "잠시 후 해당 지역에 번개를 떨어트려 적들에게 {0}의 <color=yellow>빛 피해</color>를 주고 {1}초 동안 <color=yellow>기절</color>시킵니다. {2}의 로 적들에게 <color=yellow>불</color>이 붙습니다.",
     "rawDescVars": [
       {
         "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
@@ -8119,6 +8455,81 @@
     ],
     "image": "St_R_Smite.PNG",
     "lore": "학회에는 늙고 유약한 정신의 뒷방 늙은이들 밖에 없다.\n언제까지 작은 법칙만 가지고 놀면서 자신들의 성과랍시고 자화자찬할 것인지...\n\n문득 어젯밤에 불타버린 나무를 보면서 생각이 들었다.\n번개와 같은 자연의 힘 또한 어떠한 법칙 아래서 운용되고 있는 것이 아닌가?\n\n그 법칙을 알아낸다면 이 거대한 힘도 통제할 수 있게 될 것이다.\n흥분되는군. 바로 연구에 돌입해야겠어.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_Somersault": {
+    "name": "공중제비",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "0.5초 동안 공중에 뛰어올라 공격을 회피하고 <color=yellow>무적</color> 상태가 됩니다. 4초 동안 <color=yellow>치명타 확률</color>이  30%<sprite=5> 만큼 증가합니다.\n\n<color=yellow>공격</color> 시 이 기억의 <color=yellow>재사용 대기시간</color>이 0.3초 감소합니다.",
+    "rawDesc": "{0}초 동안 공중에 뛰어올라 공격을 회피하고 <color=yellow>무적</color> 상태가 됩니다. {1}초 동안 <color=yellow>치명타 확률</color>이 {2}만큼 증가합니다.\n\n<color=yellow>공격</color> 시 이 기억의 <color=yellow>재사용 대기시간</color>이 {3}초 감소합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "jumpDodgeDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "effectDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 30%<sprite=5> ",
+        "format": "P0",
+        "raw": "critChangeAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.1,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "0.3",
+        "format": "#,##0.#",
+        "raw": "cooldownReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": "무적, 치명타 확률 증가",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "HardCC"
+    ],
+    "image": "St_R_Somersault.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -8235,6 +8646,88 @@
     ],
     "image": "St_R_StaticDischarge.png",
     "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_SummonLittleBaam": {
+    "name": "영혼의 단짝",
+    "cooldownTime": 14.0,
+    "maxCharges": 3,
+    "addedCharges": 99,
+    "description": "<color=yellow>작은 바암</color>을 대상 위치에 고정하여 <color=yellow>소환</color>합니다.\n\n<color=yellow>작은 바암</color>은 119의 체력과 50의 방어력을 가지고, 최대 20초 동안 전장에 머무르며, 주변 적들을 공격하여  <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5> 의 <color=yellow>빛 피해</color>를 줍니다. 최대 10마리를 유지할 수 있습니다.\n\n<color=yellow>충전 횟수</color>가 한 번에 모두 충전됩니다.",
+    "rawDesc": "<color=yellow>작은 바암</color>을 대상 위치에 고정하여 <color=yellow>소환</color>합니다.\n\n<color=yellow>작은 바암</color>은 {0}의 체력과 {1}의 방어력을 가지고, 최대 {2}초 동안 전장에 머무르며, 주변 적들을 공격하여 {3}의 <color=yellow>빛 피해</color>를 줍니다. 최대 {4}마리를 유지할 수 있습니다.\n\n<color=yellow>충전 횟수</color>가 한 번에 모두 충전됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "119",
+        "format": "#,##0",
+        "raw": "summonHealth",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "50",
+        "format": "#,##0",
+        "raw": "armor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "20",
+        "format": "#,##0.#",
+        "raw": "maxDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_SummonLittleBaam_Baam_Atk::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.85,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "작은 바암 소환",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Summon"
+    ],
+    "image": "St_R_SummonLittleBaam.png",
+    "lore": "야생 바암의 포획은 철저하게 '합법적'이고 '자발적'으로 이루어졌습니다.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""

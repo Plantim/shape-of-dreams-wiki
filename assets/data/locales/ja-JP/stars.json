@@ -229,6 +229,55 @@
     ],
     "image": "Se_Star_D_CritDamage.png"
   },
+  "Se_Star_D_CritUpHitDecay": {
+    "name": "先天的な集中力",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      60,
+      60
+    ],
+    "requiredLevel": 75,
+    "isRequiredLevelTotalMastery": true,
+    "description": "<color=yellow>クリティカル率</color>を 25%<sprite=5> 獲得します。敵から<color=yellow>ダメージ</color>を受けると、この星で獲得した<color=yellow>クリティカル率</color>が永続的に1%減少します。火傷ダメージではこの減少効果は発動しません。",
+    "rawDesc": "<color=yellow>クリティカル率</color>を{0}獲得します。敵から<color=yellow>ダメージ</color>を受けると、この星で獲得した<color=yellow>クリティカル率</color>が永続的に{1}減少します。火傷ダメージではこの減少効果は発動しません。",
+    "rawDescVars": [
+      {
+        "rendered": " 25%<sprite=5> ",
+        "format": "P0",
+        "raw": "critChanceAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.25,
+            0.35,
+            0.45
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "1%",
+        "format": "#,##0'%'",
+        "raw": "decayCritPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_D_CritUpHitDecay.png"
+  },
   "Se_Star_D_DamageBonusOnAllElemental": {
     "name": "元素術師",
     "lore": null,
@@ -529,6 +578,42 @@
       }
     ],
     "image": "Se_Star_D_LowerASHigherAD.png"
+  },
+  "Se_Star_D_RiftFirstCastDamageUp": {
+    "name": "開戦の旗",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      80,
+      70,
+      70
+    ],
+    "requiredLevel": 70,
+    "isRequiredLevelTotalMastery": true,
+    "description": "亀裂を通って移動するたびに、最初に詠唱する記憶の<color=yellow>ダメージ量</color>が 90%<sprite=5> 増加します。",
+    "rawDesc": "亀裂を通って移動するたびに、最初に詠唱する記憶の<color=yellow>ダメージ量</color>が{0}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": " 90%<sprite=5> ",
+        "format": "P0",
+        "raw": "firstSkillDamageAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.9,
+            1.2,
+            1.5
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_D_RiftFirstCastDamageUp.png"
   },
   "Se_Star_D_ScalingAbilityPower": {
     "name": "成長した精神",
@@ -955,6 +1040,44 @@
     ],
     "image": "Se_Star_I_DismantleBonus.png"
   },
+  "Se_Star_I_DismantleDustToBonusGold": {
+    "name": "発想の転換",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": true,
+    "description": "記憶やエッセンスを分解する際、獲得する<color=yellow>ドリームダスト</color>の 15%<sprite=5> 分の<color=yellow>ゴールド</color>を獲得します。",
+    "rawDesc": "記憶やエッセンスを分解する際、獲得する<color=yellow>ドリームダスト</color>の{0}分の<color=yellow>ゴールド</color>を獲得します。",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "gainGoldRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25,
+            0.3
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_DismantleDustToBonusGold.png"
+  },
   "Se_Star_I_DreamDustOnKillChance": {
     "name": "分解と分析",
     "lore": null,
@@ -1005,6 +1128,104 @@
       }
     ],
     "image": "Se_Star_I_DreamDustOnKillChance.png"
+  },
+  "Se_Star_I_ExtraChaosOptionGoldOnUse": {
+    "name": "整列された混沌",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      50,
+      40,
+      30
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": true,
+    "description": "<color=yellow>混沌</color>の選択肢が1個増加し、混沌を使用すると 15<sprite=5> <color=yellow>ゴールド</color>を獲得します。",
+    "rawDesc": "<color=yellow>混沌</color>の選択肢が{0}個増加し、混沌を使用すると{1}<color=yellow>ゴールド</color>を獲得します。",
+    "rawDescVars": [
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedChoices",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 15<sprite=5> ",
+        "format": "#,##0",
+        "raw": "goldOnChaos",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            15.0,
+            20.0,
+            25.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_ExtraChaosOptionGoldOnUse.png"
+  },
+  "Se_Star_I_FirstBossGemDrop": {
+    "name": "誰かの宝物",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      80,
+      90
+    ],
+    "requiredLevel": 75,
+    "isRequiredLevelTotalMastery": true,
+    "description": "初めて<color=yellow>ヒロイックボス</color>を討伐すると、品質が10%のコモンエッセンスを 1<sprite=5> 個獲得します。",
+    "rawDesc": "初めて<color=yellow>ヒロイックボス</color>を討伐すると、品質が{0}のコモンエッセンスを{1}個獲得します。",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "spawnGemQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0",
+        "raw": "gemSpawnCount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_FirstBossGemDrop.png"
   },
   "Se_Star_I_FirstGemUpgrade": {
     "name": "ビギナーズラック",
@@ -1330,8 +1551,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": true,
-    "description": "商人が販売する商品の<color=yellow>ゴールド価格</color>が 10%<sprite=5> 減少します。",
-    "rawDesc": "商人が販売する商品の<color=yellow>ゴールド価格</color>が{0}減少します。",
+    "description": "ジョナスが販売する商品の<color=yellow>ゴールド価格</color>が 10%<sprite=5> 減少します。",
+    "rawDesc": "ジョナスが販売する商品の<color=yellow>ゴールド価格</color>が{0}減少します。",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -1368,8 +1589,8 @@
     ],
     "requiredLevel": 50,
     "isRequiredLevelTotalMastery": true,
-    "description": "冒険を開始する時や、次の世界へ移動するたびに<color=yellow>プラチナコイン</color>を 1<sprite=5> 個獲得し、最大3個まで所持できます。このコインを使用して商人の商品リストを更新できます。",
-    "rawDesc": "冒険を開始する時や、次の世界へ移動するたびに<color=yellow>プラチナコイン</color>を{0}個獲得し、最大{1}個まで所持できます。このコインを使用して商人の商品リストを更新できます。",
+    "description": "冒険を開始する時や、次の世界へ移動するたびに<color=yellow>プラチナコイン</color>を 1<sprite=5> 個獲得し、最大3個まで所持できます。このコインを使用してジョナスの商品リストを更新できます。",
+    "rawDesc": "冒険を開始する時や、次の世界へ移動するたびに<color=yellow>プラチナコイン</color>を{0}個獲得し、最大{1}個まで所持できます。このコインを使用してジョナスの商品リストを更新できます。",
     "rawDescVars": [
       {
         "rendered": " 1<sprite=5> ",
@@ -1928,6 +2149,62 @@
     ],
     "image": "Se_Star_L_IgnoreDelusion.png"
   },
+  "Se_Star_L_IncreaseMaxHealthByGuidance": {
+    "name": "偉大なる導き手様の惜しみない祝福",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      70,
+      60,
+      60,
+      60
+    ],
+    "requiredLevel": 50,
+    "isRequiredLevelTotalMastery": true,
+    "description": "導きの聖所を起動すると、<color=yellow>最大体力</color>が 20<sprite=5> 増加します。祝福された導きの聖所を起動すると、 50<sprite=5> 増加します。",
+    "rawDesc": "導きの聖所を起動すると、<color=yellow>最大体力</color>が{0}増加します。祝福された導きの聖所を起動すると、{1}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": " 20<sprite=5> ",
+        "format": "#,##0",
+        "raw": "defaultIncreaseMaxHealth",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            20.0,
+            25.0,
+            30.0,
+            35.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 50<sprite=5> ",
+        "format": "#,##0",
+        "raw": "blessedIncreaseMaxHealth",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            50.0,
+            60.0,
+            70.0,
+            80.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_IncreaseMaxHealthByGuidance.png"
+  },
   "Se_Star_L_MaxHealth": {
     "name": "持久力強化",
     "lore": null,
@@ -1965,6 +2242,55 @@
       }
     ],
     "image": "Se_Star_L_MaxHealth.png"
+  },
+  "Se_Star_L_MaxHealthUpHealDown": {
+    "name": "丈夫な皮膚",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      50,
+      60,
+      60
+    ],
+    "requiredLevel": 65,
+    "isRequiredLevelTotalMastery": true,
+    "description": "<color=yellow>最大体力</color>が 15%<sprite=5> 増加します。受ける<color=yellow>回復量</color>が50%減少します。",
+    "rawDesc": "<color=yellow>最大体力</color>が{0}増加します。受ける<color=yellow>回復量</color>が{1}減少します。",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "maxHealthAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "healReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_L_MaxHealthUpHealDown.png"
   },
   "Se_Star_L_PeriodicScalingArmor": {
     "name": "鱗の重ね着",
@@ -2016,6 +2342,55 @@
       }
     ],
     "image": "Se_Star_L_PeriodicScalingArmor.png"
+  },
+  "Se_Star_L_PostHitDamageImmune": {
+    "name": "臆病な人形",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      60,
+      60
+    ],
+    "requiredLevel": 60,
+    "isRequiredLevelTotalMastery": true,
+    "description": "<color=yellow>ダメージ</color>を受けた後、1秒間<color=yellow>ダメージ免疫</color>状態になります。 14<sprite=5> 秒に1回のみ発動します。",
+    "rawDesc": "<color=yellow>ダメージ</color>を受けた後、{0}秒間<color=yellow>ダメージ免疫</color>状態になります。{1}秒に1回のみ発動します。",
+    "rawDescVars": [
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "protectedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 14<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            14.0,
+            12.0,
+            10.0
+          ],
+          "strengthScaling": "Divide"
+        }
+      }
+    ],
+    "image": "Se_Star_L_PostHitDamageImmune.png"
   },
   "Se_Star_L_PotionChance": {
     "name": "アスクレピオス",
@@ -2890,8 +3265,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>商人</color>にダメージを与えるたびに4ゴールドを獲得し、最大 40<sprite=5> ゴールドまで獲得できます。",
-    "rawDesc": "<color=yellow>商人</color>にダメージを与えるたびに{0}ゴールドを獲得し、最大{1}ゴールドまで獲得できます。",
+    "description": "<color=yellow>ジョナス</color>にダメージを与えるたびに4ゴールドを獲得し、最大 40<sprite=5> ゴールドまで獲得できます。",
+    "rawDesc": "<color=yellow>ジョナス</color>にダメージを与えるたびに{0}ゴールドを獲得し、最大{1}ゴールドまで獲得できます。",
     "rawDescVars": [
       {
         "rendered": "4",
@@ -3571,16 +3946,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>歪な精神</color>のクールダウンが1秒増加しますが、その代わりに、最大チャージで発射すると矢の数が2増加します。",
+    "description": "<color=yellow>歪な精神</color>のクールダウンが1.5秒増加しますが、その代わりに、最大チャージで発射すると矢の数が3増加します。",
     "rawDesc": "<color=yellow>歪な精神</color>のクールダウンが{0}秒増加しますが、その代わりに、最大チャージで発射すると矢の数が{1}増加します。",
     "rawDescVars": [
       {
-        "rendered": "1",
+        "rendered": "1.5",
         "format": "#,##0.#",
         "raw": "cooldownPenalty",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 1.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3588,12 +3963,12 @@
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
         "raw": "bonusCount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3614,16 +3989,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>歪な精神</color>の矢の最大数が7増加しますが、その代わりに、チャージ中移動できなくなります。",
+    "description": "<color=yellow>歪な精神</color>の矢の最大数が4増加しますが、その代わりに、チャージ中移動できなくなります。",
     "rawDesc": "<color=yellow>歪な精神</color>の矢の最大数が{0}増加しますが、その代わりに、チャージ中移動できなくなります。",
     "rawDescVars": [
       {
-        "rendered": "7",
+        "rendered": "4",
         "format": "#,##0",
         "raw": "increased",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 7.0,
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3644,16 +4019,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>歪な精神</color>の矢を最大チャージせずに発射すると、クールダウンが50%減少します。",
+    "description": "<color=yellow>歪な精神</color>の矢を最大チャージせずに発射すると、クールダウンが40%減少します。",
     "rawDesc": "<color=yellow>歪な精神</color>の矢を最大チャージせずに発射すると、クールダウンが{0}減少します。",
     "rawDescVars": [
       {
-        "rendered": "50%",
+        "rendered": "40%",
         "format": "P0",
         "raw": "cooldownReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4253,8 +4628,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "商人が販売する品物の<color=yellow>ゴールド価格</color>が 5%<sprite=5> 減少します。",
-    "rawDesc": "商人が販売する品物の<color=yellow>ゴールド価格</color>が{0}減少します。",
+    "description": "ジョナスが販売する品物の<color=yellow>ゴールド価格</color>が 5%<sprite=5> 減少します。",
+    "rawDesc": "ジョナスが販売する品物の<color=yellow>ゴールド価格</color>が{0}減少します。",
     "rawDescVars": [
       {
         "rendered": " 5%<sprite=5> ",
@@ -4846,7 +5221,7 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>滅殺態勢</color>がクールダウン14秒の通常スキルに変更され、発動中に他の記憶を使用できるようになります。変更された滅殺態勢は、剣気のダメージと攻撃力増加量が40%減少し、4秒間持続します。また、回避スキルの記憶加速と最大チャージ数は増加しなくなります。",
+    "description": "<color=yellow>滅殺態勢</color>がクールダウン14秒の通常スキルに変更され、発動中に他の記憶を使用できるようになります。変更された滅殺態勢は、剣気のダメージと攻撃力増加量が50%減少し、4秒間持続します。また、回避スキルの記憶加速と最大チャージ数は増加しなくなります。",
     "rawDesc": "<color=yellow>滅殺態勢</color>がクールダウン{0}秒の通常スキルに変更され、発動中に他の記憶を使用できるようになります。変更された滅殺態勢は、剣気のダメージと攻撃力増加量が{1}減少し、{2}秒間持続します。また、回避スキルの記憶加速と最大チャージ数は増加しなくなります。",
     "rawDescVars": [
       {
@@ -4863,12 +5238,12 @@
         }
       },
       {
-        "rendered": "40%",
+        "rendered": "50%",
         "format": "P0",
         "raw": "strengthReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.4,
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4902,13 +5277,39 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>滅殺態勢</color>が剣気を放たなくなる代わりに、100%より頻繁に攻撃します。",
-    "rawDesc": "<color=yellow>滅殺態勢</color>が剣気を放たなくなる代わりに、{0}より頻繁に攻撃します。",
+    "description": "<color=yellow>滅殺態勢</color>の剣気ダメージ量が60%、剣気の射程が80%減少しますが、付与する攻撃速度と回避スキル記憶加速の量が100%増加します。",
+    "rawDesc": "<color=yellow>滅殺態勢</color>の剣気ダメージ量が{0}、剣気の射程が{1}減少しますが、付与する攻撃速度と回避スキル記憶加速の量が{2}増加します。",
     "rawDescVars": [
+      {
+        "rendered": "60%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "travelDistanceReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
       {
         "rendered": "100%",
         "format": "P0",
-        "raw": "speedAmp",
+        "raw": "buffAmp",
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.0,
@@ -5036,8 +5437,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "何らかのボスを撃破すると、 30%<sprite=5> の確率で<color=yellow>プラチナコイン</color>を獲得します。このコインを使用して商人の商品リストを更新できます。",
-    "rawDesc": "何らかのボスを撃破すると、{0}の確率で<color=yellow>プラチナコイン</color>を獲得します。このコインを使用して商人の商品リストを更新できます。",
+    "description": "何らかのボスを撃破すると、 30%<sprite=5> の確率で<color=yellow>プラチナコイン</color>を獲得します。このコインを使用してジョナスの商品リストを更新できます。",
+    "rawDesc": "何らかのボスを撃破すると、{0}の確率で<color=yellow>プラチナコイン</color>を獲得します。このコインを使用してジョナスの商品リストを更新できます。",
     "rawDescVars": [
       {
         "rendered": " 30%<sprite=5> ",
@@ -5071,8 +5472,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "商人を<color=yellow>脅迫</color>して商品価格を下げます。脅迫が50%の確率で成功すると商品のゴールド価格が 50%<sprite=5> 減少しますが、脅迫に失敗すると50%増加します。",
-    "rawDesc": "商人を<color=yellow>脅迫</color>して商品価格を下げます。脅迫が{0}の確率で成功すると商品のゴールド価格が{1}減少しますが、脅迫に失敗すると{2}増加します。",
+    "description": "ジョナスを<color=yellow>脅迫</color>して商品価格を下げます。脅迫が50%の確率で成功すると商品のゴールド価格が 50%<sprite=5> 減少しますが、脅迫に失敗すると50%増加します。",
+    "rawDesc": "ジョナスを<color=yellow>脅迫</color>して商品価格を下げます。脅迫が{0}の確率で成功すると商品のゴールド価格が{1}減少しますが、脅迫に失敗すると{2}増加します。",
     "rawDescVars": [
       {
         "rendered": "50%",
@@ -5873,8 +6274,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>商人</color>が販売する商品の<color=yellow>ゴールド価格</color>が 10%<sprite=5> 減少します。",
-    "rawDesc": "<color=yellow>商人</color>が販売する商品の<color=yellow>ゴールド価格</color>が{0}減少します。",
+    "description": "<color=yellow>ジョナス</color>が販売する商品の<color=yellow>ゴールド価格</color>が 10%<sprite=5> 減少します。",
+    "rawDesc": "<color=yellow>ジョナス</color>が販売する商品の<color=yellow>ゴールド価格</color>が{0}減少します。",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -5910,8 +6311,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "一部の<color=yellow>商人</color>が販売する商品の<color=yellow>ゴールド価格</color>が 50%<sprite=5> 増加しますが、販売する品目が2個増加します。",
-    "rawDesc": "一部の<color=yellow>商人</color>が販売する商品の<color=yellow>ゴールド価格</color>が{0}増加しますが、販売する品目が2個増加します。",
+    "description": "<color=yellow>ジョナス</color>が販売する商品の<color=yellow>ゴールド価格</color>が 50%<sprite=5> 増加しますが、販売する品目が2個増加します。",
+    "rawDesc": "<color=yellow>ジョナス</color>が販売する商品の<color=yellow>ゴールド価格</color>が{0}増加しますが、販売する品目が2個増加します。",
     "rawDescVars": [
       {
         "rendered": " 50%<sprite=5> ",
@@ -6820,8 +7221,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "冒険を開始する時に 150<sprite=5> の<color=yellow>ゴールド</color>を獲得しますが、商人が販売する商品のゴールド価格が10%増加します。",
-    "rawDesc": "冒険を開始する時に{0}の<color=yellow>ゴールド</color>を獲得しますが、商人が販売する商品のゴールド価格が{1}増加します。",
+    "description": "冒険を開始する時に 150<sprite=5> の<color=yellow>ゴールド</color>を獲得しますが、ジョナスが販売する商品のゴールド価格が10%増加します。",
+    "rawDesc": "冒険を開始する時に{0}の<color=yellow>ゴールド</color>を獲得しますが、ジョナスが販売する商品のゴールド価格が{1}増加します。",
     "rawDescVars": [
       {
         "rendered": " 150<sprite=5> ",
@@ -7715,8 +8116,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>激動の森</color>で商人が販売する商品のゴールド価格が 30%<sprite=5> 減少します。",
-    "rawDesc": "<color=yellow>激動の森</color>で商人が販売する商品のゴールド価格が{0}減少します。",
+    "description": "<color=yellow>激動の森</color>でジョナスが販売する商品のゴールド価格が 30%<sprite=5> 減少します。",
+    "rawDesc": "<color=yellow>激動の森</color>でジョナスが販売する商品のゴールド価格が{0}減少します。",
     "rawDescVars": [
       {
         "rendered": " 30%<sprite=5> ",
@@ -8564,7 +8965,7 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "最大HPが15%減少しますが、<color=yellow>規律</color>の発動射程が30%増加します。また、発動時に対象までの距離が遠いほど、ダメージ量が最大100%、ダメージ半径が最大50%まで増加します。",
+    "description": "最大HPが15%減少しますが、<color=yellow>規律</color>の発動射程が30%増加します。また、発動時に対象までの距離が遠いほど、ダメージ量が最大150%、ダメージ半径が最大50%まで増加します。",
     "rawDesc": "最大HPが{0}減少しますが、<color=yellow>規律</color>の発動射程が{1}増加します。また、発動時に対象までの距離が遠いほど、ダメージ量が最大{2}、ダメージ半径が最大{3}まで増加します。",
     "rawDescVars": [
       {
@@ -8594,12 +8995,12 @@
         }
       },
       {
-        "rendered": "100%",
+        "rendered": "150%",
         "format": "P0",
         "raw": "maxDamageAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 1.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8792,16 +9193,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>エルの聖域</color>をヴェスパーの位置ではなく、指定した位置に召喚します。最初の爆発が命中した味方1人につきクールダウンが10%、敵1体につき3%減少します。",
+    "description": "<color=yellow>エルの聖域</color>をヴェスパーの位置ではなく、指定した位置に召喚します。最初の爆発が命中した味方1人につきクールダウンが12%、敵1体につき6%減少します。",
     "rawDesc": "<color=yellow>エルの聖域</color>をヴェスパーの位置ではなく、指定した位置に召喚します。最初の爆発が命中した味方1人につきクールダウンが{0}、敵1体につき{1}減少します。",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "12%",
         "format": "P0",
         "raw": "reductionRatioOnAlly",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.12,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8809,12 +9210,12 @@
         }
       },
       {
-        "rendered": "3%",
+        "rendered": "6%",
         "format": "P0",
         "raw": "reductionRatioOnEnemy",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.03,
+          "basicConstant": 0.06,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8838,8 +9239,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "商人が販売する品物の<color=yellow>ゴールド価格</color>が 10%<sprite=5> 減少します。",
-    "rawDesc": "商人が販売する品物の<color=yellow>ゴールド価格</color>が{0}減少します。",
+    "description": "ジョナスが販売する品物の<color=yellow>ゴールド価格</color>が 10%<sprite=5> 減少します。",
+    "rawDesc": "ジョナスが販売する品物の<color=yellow>ゴールド価格</color>が{0}減少します。",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -9681,16 +10082,29 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>エーテルの影響力</color>の爆発ダメージが60%減少し、再発動する際に爆発が起こらなくなりますが、その代わりに、敵に命中するたびに自動で爆発が発生します。",
-    "rawDesc": "<color=yellow>エーテルの影響力</color>の爆発ダメージが{0}減少し、再発動する際に爆発が起こらなくなりますが、その代わりに、敵に命中するたびに自動で爆発が発生します。",
+    "description": "<color=yellow>エーテルの影響力</color>の飛翔体が光スタック3以上の敵に命中すると、50%のダメージを与える爆発が発生します。",
+    "rawDesc": "<color=yellow>エーテルの影響力</color>の飛翔体が光スタック{0}以上の敵に命中すると、{1}のダメージを与える爆発が発生します。",
     "rawDescVars": [
       {
-        "rendered": "60%",
-        "format": "P0",
-        "raw": "damageReduction",
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "requiredLightStacks",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.6,
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "explosionDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9711,16 +10125,29 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>エーテルの影響力</color>の爆発半径が25%増加します。",
-    "rawDesc": "<color=yellow>エーテルの影響力</color>の爆発半径が{0}増加します。",
+    "description": "<color=yellow>エーテルの影響力</color>の爆発半径が15%増加し、爆発が命中した敵1体につきクールダウンが7%減少します。",
+    "rawDesc": "<color=yellow>エーテルの影響力</color>の爆発半径が{0}増加し、爆発が命中した敵1体につきクールダウンが{1}減少します。",
     "rawDescVars": [
       {
-        "rendered": "25%",
+        "rendered": "15%",
         "format": "P0",
         "raw": "scaleAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.25,
+          "basicConstant": 0.15,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "7%",
+        "format": "P0",
+        "raw": "reducedCooldownRatioPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.07,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9771,16 +10198,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>超新星</color>の発動射程が40%、爆発半径が30%増加します。",
-    "rawDesc": "<color=yellow>超新星</color>の発動射程が{0}、爆発半径が{1}増加します。",
+    "description": "<color=yellow>超新星</color>のクールダウンが3秒増加するが、発動射程が30%、爆発半径が20%、最大チャージ回数が2増加します。",
+    "rawDesc": "<color=yellow>超新星</color>のクールダウンが{0}秒増加するが、発動射程が{1}、爆発半径が{2}、最大チャージ回数が{3}増加します。",
     "rawDescVars": [
       {
-        "rendered": "40%",
-        "format": "P0",
-        "raw": "rangeAmp",
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "cooldownPenalty",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.4,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9790,10 +10217,36 @@
       {
         "rendered": "30%",
         "format": "P0",
-        "raw": "radiusAmp",
+        "raw": "rangeAmp",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "radiusAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "gainedMaxCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9830,9 +10283,36 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>超新星</color>を使用すると、回避能力のクールダウンがリセットされます。",
-    "rawDesc": "<color=yellow>超新星</color>を使用すると、回避能力のクールダウンがリセットされます。",
-    "rawDescVars": [],
+    "description": "<color=yellow>超新星</color>の爆発が命中した敵1体につき、クールダウンが0.5秒減少し、次の超新星発動時のダメージ量が10%増加します。",
+    "rawDesc": "<color=yellow>超新星</color>の爆発が命中した敵1体につき、クールダウンが{0}秒減少し、次の超新星発動時のダメージ量が{1}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "reducedCooldownOnHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "nextCastDamageAmpOnHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Yubar_F_SN_DodgeReset.png"
   },
   "Se_Star_Yubar_F_TQ_EssenceCooldown": {
@@ -10049,11 +10529,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "敵を撃破した時、 0.5%<sprite=5> の確率で<color=yellow>スタークッキー</color>が生成されます。<color=yellow>スタークッキー</color>はユバールのHPを少し回復し、少量のゴールドとドリームダストを与えます。",
-    "rawDesc": "敵を撃破した時、{0}の確率で<color=yellow>スタークッキー</color>が生成されます。<color=yellow>スタークッキー</color>はユバールのHPを少し回復し、少量のゴールドとドリームダストを与えます。",
+    "description": "敵を撃破した時、 0.6%<sprite=5> の確率で、ボスを撃破した時は100%の確率で<color=yellow>スタークッキー</color>が生成されます。<color=yellow>スタークッキー</color>はユバールのHPを少し回復し、少量のゴールドとドリームダストを与えます。",
+    "rawDesc": "敵を撃破した時、{0}の確率で、ボスを撃破した時は{1}の確率で<color=yellow>スタークッキー</color>が生成されます。<color=yellow>スタークッキー</color>はユバールのHPを少し回復し、少量のゴールドとドリームダストを与えます。",
     "rawDescVars": [
       {
-        "rendered": " 0.5%<sprite=5> ",
+        "rendered": " 0.6%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "starCookieChance",
         "scalingType": "star",
@@ -10062,9 +10542,26 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.005,
-            0.008,
-            0.012
+            0.006,
+            0.01,
+            0.014
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "#,##0.#%",
+        "raw": "starCookieOnBossChance",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            1.0,
+            1.0,
+            1.0
           ],
           "strengthScaling": "Multiply"
         }

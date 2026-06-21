@@ -3295,6 +3295,49 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Glass": {
+    "name": "유리의 정수",
+    "description": "<color=yellow>전투 중</color>에 <color=yellow>보호막</color>을 획득하면 얻은 보호막량의  12%<sprite=5> 만큼 체력을 <color=yellow>회복</color>합니다. 내가 소지한 <color=yellow>냉기 기억</color> 하나당 이 기억의 <color=yellow>회복량</color>이  18%<sprite=5>  증가합니다.",
+    "rawDesc": "<color=yellow>전투 중</color>에 <color=yellow>보호막</color>을 획득하면 얻은 보호막량의 {0}만큼 체력을 <color=yellow>회복</color>합니다. 내가 소지한 <color=yellow>냉기 기억</color> 하나당 이 기억의 <color=yellow>회복량</color>이 {1} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 12%<sprite=5> ",
+        "format": "P0",
+        "raw": "healByShieldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": " 18%<sprite=5> ",
+        "format": "P0",
+        "raw": "healAmpPerColdSkill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "Gem_R_Glass.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Insatiable": {
     "name": "탐식의 정수",
     "description": "이 기억을 시전한 후 5초 동안 <color=yellow>공격력</color>이  15%<sprite=5>  증가하고 <color=yellow>공격</color>할 때마다  6<sprite=5> 의 체력을 <color=yellow>회복</color>합니다.",
@@ -3346,6 +3389,75 @@
       "Attack"
     ],
     "image": "Gem_R_Insatiable.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lava": {
+    "name": "용암의 정수",
+    "description": "4초마다 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>됩니다. 강화된 <color=yellow>시전</color>으로 처음 적에게 <color=yellow>화염 피해</color>를 주면 대상 적의 발 밑에 4초 동안 지속되는 용암을 생성합니다. 용암 위 모든 적들은 초당  <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> 의 <color=yellow>화염 피해</color>를 받으며, <color=yellow>화염 피해</color>로 받는 피해량이 30% 증가합니다. 용암은 최대 5개만 유지할 수 있습니다.",
+    "rawDesc": "{0}초마다 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>됩니다. 강화된 <color=yellow>시전</color>으로 처음 적에게 <color=yellow>화염 피해</color>를 주면 대상 적의 발 밑에 {1}초 동안 지속되는 용암을 생성합니다. 용암 위 모든 적들은 초당 {2}의 <color=yellow>화염 피해</color>를 받으며, <color=yellow>화염 피해</color>로 받는 피해량이 {3} 증가합니다. 용암은 최대 {4}개만 유지할 수 있습니다.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Gem_R_Lava::cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Ai_R_Lava_LavaField::duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_Lava_LavaField::dmgFactor/Ai_R_Lava_LavaField::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "Se_R_Lava_Debuff::fireDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "maxLavaCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Lava.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -3531,6 +3643,48 @@
     "achievementName": "진정하고 차분하게 가보자",
     "achievementDescription": "체력이 25% 이하인 상태로 영웅 보스를 총 8회 처치하십시오."
   },
+  "Gem_R_Purity": {
+    "name": "순수의 정수",
+    "description": "이 기억을 <color=yellow>시전</color>하면 여행자에게 적용된 모든 <color=yellow>원소 효과</color>를 제거합니다. 제거한 <color=yellow>원소 효과</color> 하나당 체력을  <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5>  <color=yellow>회복</color>합니다. 4초에 한 번만 발동할 수 있습니다.",
+    "rawDesc": "이 기억을 <color=yellow>시전</color>하면 여행자에게 적용된 모든 <color=yellow>원소 효과</color>를 제거합니다. 제거한 <color=yellow>원소 효과</color> 하나당 체력을 {0} <color=yellow>회복</color>합니다. {1}초에 한 번만 발동할 수 있습니다.",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healPerElemental",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Purity.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Rejuvenation": {
     "name": "회춘의 정수",
     "description": "15초마다 이 기억의 <color=yellow>시전</color>이 <color=yellow>강화</color>됩니다. <color=yellow>강화된 시전</color>이 시전 후 1.5초 안에 주는 <color=yellow>피해</color>의  14%<sprite=5> 만큼 <color=yellow>자신</color>의 <color=yellow>체력</color>을 <color=yellow>회복</color>합니다.",
@@ -3713,7 +3867,7 @@
   },
   "Gem_R_Shock": {
     "name": "충격의 정수",
-    "description": "매 4번째 <color=yellow>기본 공격</color>이 <color=yellow>강화</color>되어 적에게 튕겨 최대 2번  <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> 의 <color=yellow>빛 피해</color>를 주는 <color=yellow>전격</color>을 발사합니다. <color=yellow>치명타 확률</color> 20%마다 최대 피해 횟수가 1 증가합니다.",
+    "description": "매 4번째 <color=yellow>기본 공격</color>이 <color=yellow>강화</color>되어 적에게 튕겨 최대 2번  <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> 의 <color=yellow>빛 피해</color>를 주는 <color=yellow>전격</color>을 발사합니다. <color=yellow>치명타 확률</color> 20%마다 최대 피해 횟수가 1 증가합니다.",
     "rawDesc": "매 4번째 <color=yellow>기본 공격</color>이 <color=yellow>강화</color>되어 적에게 튕겨 최대 {0}번 {1}의 <color=yellow>빛 피해</color>를 주는 <color=yellow>전격</color>을 발사합니다. <color=yellow>치명타 확률</color> {2}마다 최대 피해 횟수가 1 증가합니다.",
     "rawDescVars": [
       {
@@ -3730,14 +3884,14 @@
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "chainDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.2,
-          "basicAD": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.01
         }

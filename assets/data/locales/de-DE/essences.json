@@ -3282,6 +3282,49 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Glass": {
+    "name": "Essenz des Glases",
+    "description": "Wenn du <color=yellow>im Kampf</color> einen <color=yellow>Schild</color> erhältst, wirst du um  12%<sprite=5>  der Schildmenge <color=yellow>geheilt</color>. Für jede <color=yellow>Kälte-Erinnerung</color> in deinem Besitz erhöht sich die <color=yellow>Heilung</color> dieser Erinnerung um  18%<sprite=5> .",
+    "rawDesc": "Wenn du <color=yellow>im Kampf</color> einen <color=yellow>Schild</color> erhältst, wirst du um {0} der Schildmenge <color=yellow>geheilt</color>. Für jede <color=yellow>Kälte-Erinnerung</color> in deinem Besitz erhöht sich die <color=yellow>Heilung</color> dieser Erinnerung um {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 12%<sprite=5> ",
+        "format": "P0",
+        "raw": "healByShieldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": " 18%<sprite=5> ",
+        "format": "P0",
+        "raw": "healAmpPerColdSkill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "Gem_R_Glass.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Insatiable": {
     "name": "Essenz der Unersättlichkeit",
     "description": "Nachdem diese Erinnerung gewirkt wurde, erhöht sich die <color=yellow>AK</color> für 5 Sek. um  15%<sprite=5>  und bei jedem <color=yellow>Angriff</color> wird  6<sprite=5>  LP <color=yellow>regeneriert</color>.",
@@ -3333,6 +3376,75 @@
       "Attack"
     ],
     "image": "Gem_R_Insatiable.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lava": {
+    "name": "Essenz der Lava",
+    "description": "Alle 4 Sekunden wird das <color=yellow>Wirken</color> dieser Erinnerung <color=yellow>verstärkt</color>. Wenn das verstärkte <color=yellow>Wirken</color> einem Feind zum ersten Mal <color=yellow>Feuerschaden</color> zufügt, entsteht unter ihm eine Lavapfütze, die 4 Sekunden lang anhält. Alle Feinde in der Lava erleiden  <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5>  <color=yellow>Feuerschaden</color> pro Sekunde und der erlittene <color=yellow>Feuerschaden</color> erhöht sich um 30%. Es können maximal 5 Lavapfützen gleichzeitig existieren.",
+    "rawDesc": "Alle {0} Sekunden wird das <color=yellow>Wirken</color> dieser Erinnerung <color=yellow>verstärkt</color>. Wenn das verstärkte <color=yellow>Wirken</color> einem Feind zum ersten Mal <color=yellow>Feuerschaden</color> zufügt, entsteht unter ihm eine Lavapfütze, die {1} Sekunden lang anhält. Alle Feinde in der Lava erleiden {2} <color=yellow>Feuerschaden</color> pro Sekunde und der erlittene <color=yellow>Feuerschaden</color> erhöht sich um {3}. Es können maximal {4} Lavapfützen gleichzeitig existieren.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Gem_R_Lava::cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Ai_R_Lava_LavaField::duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_Lava_LavaField::dmgFactor/Ai_R_Lava_LavaField::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "Se_R_Lava_Debuff::fireDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "maxLavaCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Lava.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -3518,6 +3630,48 @@
     "achievementName": "Bleib ruhig und gelassen",
     "achievementDescription": "Töte insgesamt 8 Helden-Boss(e) mit 25% oder weniger LP."
   },
+  "Gem_R_Purity": {
+    "name": "Essenz der Reinheit",
+    "description": "Wenn du diese Erinnerung <color=yellow>wirkst</color>, werden alle <color=yellow>Elementareffekte</color> vom Reisenden entfernt. <color=yellow>Heilt</color>  <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5>  Leben für jeden entfernten <color=yellow>Elementareffekt</color>. Kann nur einmal alle 4 Sekunden ausgelöst werden.",
+    "rawDesc": "Wenn du diese Erinnerung <color=yellow>wirkst</color>, werden alle <color=yellow>Elementareffekte</color> vom Reisenden entfernt. <color=yellow>Heilt</color> {0} Leben für jeden entfernten <color=yellow>Elementareffekt</color>. Kann nur einmal alle {1} Sekunden ausgelöst werden.",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healPerElemental",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Purity.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Rejuvenation": {
     "name": "Essenz der Verjüngung",
     "description": "Alle 15 Sek. wird die <color=yellow>Wirkung</color> dieser Erinnerung <color=yellow>verstärkt</color>. <color=yellow>Verstärkte Wirkung</color> <color=yellow>regeneriert</color> <color=yellow>deine</color> <color=yellow>LP</color> um  14%<sprite=5>  des <color=yellow>Schadens</color>, der innerhalb von 1.5 Sek. nach dem Wirken verursacht wird.",
@@ -3700,7 +3854,7 @@
   },
   "Gem_R_Shock": {
     "name": "Essenz des Schocks",
-    "description": "Jeder 4. <color=yellow>Basisangriff</color> wird <color=yellow>verstärkt</color> und feuert einen <color=yellow>Blitzschlag</color> ab, der zwischen Gegnern springt und bis zu 2 Mal  <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5>  <color=yellow>Lichtschaden</color> verursacht. Pro 20% <color=yellow>krit. Trefferchance</color> erhöht sich die max. Anzahl der Treffer um 1.",
+    "description": "Jeder 4. <color=yellow>Basisangriff</color> wird <color=yellow>verstärkt</color> und feuert einen <color=yellow>Blitzschlag</color> ab, der zwischen Gegnern springt und bis zu 2 Mal  <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5>  <color=yellow>Lichtschaden</color> verursacht. Pro 20% <color=yellow>krit. Trefferchance</color> erhöht sich die max. Anzahl der Treffer um 1.",
     "rawDesc": "Jeder 4. <color=yellow>Basisangriff</color> wird <color=yellow>verstärkt</color> und feuert einen <color=yellow>Blitzschlag</color> ab, der zwischen Gegnern springt und bis zu {0} Mal {1} <color=yellow>Lichtschaden</color> verursacht. Pro {2} <color=yellow>krit. Trefferchance</color> erhöht sich die max. Anzahl der Treffer um 1.",
     "rawDescVars": [
       {
@@ -3717,14 +3871,14 @@
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "chainDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.2,
-          "basicAD": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.01
         }

@@ -229,6 +229,55 @@
     ],
     "image": "Se_Star_D_CritDamage.png"
   },
+  "Se_Star_D_CritUpHitDecay": {
+    "name": "Врожденная концентрация",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      60,
+      60
+    ],
+    "requiredLevel": 75,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Дает  25%<sprite=5>  к <color=yellow>шансу критического удара</color>. При получении <color=yellow>урона</color> от врагов полученный от этой звезды <color=yellow>шанс критического удара</color> навсегда снижается на 1%. <color=yellow>Урон от ожогов</color> не вызывает этот эффект.",
+    "rawDesc": "Дает {0} к <color=yellow>шансу критического удара</color>. При получении <color=yellow>урона</color> от врагов полученный от этой звезды <color=yellow>шанс критического удара</color> навсегда снижается на {1}. <color=yellow>Урон от ожогов</color> не вызывает этот эффект.",
+    "rawDescVars": [
+      {
+        "rendered": " 25%<sprite=5> ",
+        "format": "P0",
+        "raw": "critChanceAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.25,
+            0.35,
+            0.45
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "1%",
+        "format": "#,##0'%'",
+        "raw": "decayCritPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_D_CritUpHitDecay.png"
+  },
   "Se_Star_D_DamageBonusOnAllElemental": {
     "name": "Элементалист",
     "lore": null,
@@ -529,6 +578,42 @@
       }
     ],
     "image": "Se_Star_D_LowerASHigherAD.png"
+  },
+  "Se_Star_D_RiftFirstCastDamageUp": {
+    "name": "Боевое знамя",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      80,
+      70,
+      70
+    ],
+    "requiredLevel": 70,
+    "isRequiredLevelTotalMastery": true,
+    "description": "После каждого перемещения через Разлом <color=yellow>урон</color> от первого примененного Воспоминания увеличивается на  90%<sprite=5> .",
+    "rawDesc": "После каждого перемещения через Разлом <color=yellow>урон</color> от первого примененного Воспоминания увеличивается на {0}.",
+    "rawDescVars": [
+      {
+        "rendered": " 90%<sprite=5> ",
+        "format": "P0",
+        "raw": "firstSkillDamageAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.9,
+            1.2,
+            1.5
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_D_RiftFirstCastDamageUp.png"
   },
   "Se_Star_D_ScalingAbilityPower": {
     "name": "Зрелый разум",
@@ -955,6 +1040,44 @@
     ],
     "image": "Se_Star_I_DismantleBonus.png"
   },
+  "Se_Star_I_DismantleDustToBonusGold": {
+    "name": "Нестандартное мышление",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": true,
+    "description": "При распылении Воспоминаний или Эссенций вы получаете <color=yellow>Золото</color> в размере  15%<sprite=5>  от добытой <color=yellow>Пыль Мечты</color>.",
+    "rawDesc": "При распылении Воспоминаний или Эссенций вы получаете <color=yellow>Золото</color> в размере {0} от добытой <color=yellow>Пыль Мечты</color>.",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "gainGoldRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25,
+            0.3
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_DismantleDustToBonusGold.png"
+  },
   "Se_Star_I_DreamDustOnKillChance": {
     "name": "Разбор и анализ",
     "lore": null,
@@ -1005,6 +1128,104 @@
       }
     ],
     "image": "Se_Star_I_DreamDustOnKillChance.png"
+  },
+  "Se_Star_I_ExtraChaosOptionGoldOnUse": {
+    "name": "Упорядоченный хаос",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      50,
+      40,
+      30
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Количество вариантов <color=yellow>Хаос</color> увеличивается на 1, а при использовании Хаоса вы получаете  15<sprite=5>  <color=yellow>Золото</color>.",
+    "rawDesc": "Количество вариантов <color=yellow>Хаос</color> увеличивается на {0}, а при использовании Хаоса вы получаете {1} <color=yellow>Золото</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedChoices",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 15<sprite=5> ",
+        "format": "#,##0",
+        "raw": "goldOnChaos",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            15.0,
+            20.0,
+            25.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_ExtraChaosOptionGoldOnUse.png"
+  },
+  "Se_Star_I_FirstBossGemDrop": {
+    "name": "Чье-то сокровище",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      80,
+      90
+    ],
+    "requiredLevel": 75,
+    "isRequiredLevelTotalMastery": true,
+    "description": "За первое убийство <color=yellow>Героического босса</color> вы получаете  1<sprite=5>  Обычных эссенций качества 10%.",
+    "rawDesc": "За первое убийство <color=yellow>Героического босса</color> вы получаете {0} Обычных эссенций качества {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0",
+        "raw": "gemSpawnCount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "spawnGemQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_I_FirstBossGemDrop.png"
   },
   "Se_Star_I_FirstGemUpgrade": {
     "name": "Удача новичка",
@@ -1330,8 +1551,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": true,
-    "description": "Снижает <color=yellow>стоимость</color> товаров у торговца на  10%<sprite=5> .",
-    "rawDesc": "Снижает <color=yellow>стоимость</color> товаров у торговца на {0}.",
+    "description": "Снижает <color=yellow>стоимость в золоте</color> товаров у Джонаса на  10%<sprite=5> .",
+    "rawDesc": "Снижает <color=yellow>стоимость в золоте</color> товаров у Джонаса на {0}.",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -1368,8 +1589,8 @@
     ],
     "requiredLevel": 50,
     "isRequiredLevelTotalMastery": true,
-    "description": "Получает <color=yellow>платиновые монеты</color> x 1<sprite=5>  в начале приключения и при переходе в следующий мир, максимум 3 монет. Эти монеты можно использовать для обновления ассортимента товаров у торговца.",
-    "rawDesc": "Получает <color=yellow>платиновые монеты</color> x{0} в начале приключения и при переходе в следующий мир, максимум {1} монет. Эти монеты можно использовать для обновления ассортимента товаров у торговца.",
+    "description": "Дает <color=yellow>платиновые монеты</color> x 1<sprite=5>  в начале приключения и при переходе в следующий мир, максимум 3 монет. Эти монеты можно использовать для обновления ассортимента товаров у Джонаса.",
+    "rawDesc": "Дает <color=yellow>платиновые монеты</color> x{0} в начале приключения и при переходе в следующий мир, максимум {1} монет. Эти монеты можно использовать для обновления ассортимента товаров у Джонаса.",
     "rawDescVars": [
       {
         "rendered": " 1<sprite=5> ",
@@ -1928,6 +2149,62 @@
     ],
     "image": "Se_Star_L_IgnoreDelusion.png"
   },
+  "Se_Star_L_IncreaseMaxHealthByGuidance": {
+    "name": "Щедрое благословение Великого Проводника",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      70,
+      60,
+      60,
+      60
+    ],
+    "requiredLevel": 50,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Активация Святилища Наставления увеличивает <color=yellow>Макс. здоровье</color> на  20<sprite=5> . Активация Благословенного Святилища Наставления увеличивает его на  50<sprite=5> .",
+    "rawDesc": "Активация Святилища Наставления увеличивает <color=yellow>Макс. здоровье</color> на {0}. Активация Благословенного Святилища Наставления увеличивает его на {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 20<sprite=5> ",
+        "format": "#,##0",
+        "raw": "defaultIncreaseMaxHealth",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            20.0,
+            25.0,
+            30.0,
+            35.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 50<sprite=5> ",
+        "format": "#,##0",
+        "raw": "blessedIncreaseMaxHealth",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            50.0,
+            60.0,
+            70.0,
+            80.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_IncreaseMaxHealthByGuidance.png"
+  },
   "Se_Star_L_MaxHealth": {
     "name": "Усиление выносливости",
     "lore": null,
@@ -1965,6 +2242,55 @@
       }
     ],
     "image": "Se_Star_L_MaxHealth.png"
+  },
+  "Se_Star_L_MaxHealthUpHealDown": {
+    "name": "Толстая кожа",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      50,
+      60,
+      60
+    ],
+    "requiredLevel": 65,
+    "isRequiredLevelTotalMastery": true,
+    "description": "<color=yellow>Макс. здоровье</color> увеличивается на  15%<sprite=5> . Получаемое <color=yellow>Исцеление</color> снижается на 50%.",
+    "rawDesc": "<color=yellow>Макс. здоровье</color> увеличивается на {0}. Получаемое <color=yellow>Исцеление</color> снижается на {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "maxHealthAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "healReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_L_MaxHealthUpHealDown.png"
   },
   "Se_Star_L_PeriodicScalingArmor": {
     "name": "Наложение чешуи",
@@ -2016,6 +2342,55 @@
       }
     ],
     "image": "Se_Star_L_PeriodicScalingArmor.png"
+  },
+  "Se_Star_L_PostHitDamageImmune": {
+    "name": "Трусливая кукла",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      60,
+      60
+    ],
+    "requiredLevel": 60,
+    "isRequiredLevelTotalMastery": true,
+    "description": "После получения <color=yellow>Урона</color> дает <color=yellow>Иммунитет к урону</color> на 1 сек. Эффект срабатывает раз в  14<sprite=5>  сек.",
+    "rawDesc": "После получения <color=yellow>Урона</color> дает <color=yellow>Иммунитет к урону</color> на {0} сек. Эффект срабатывает раз в {1} сек.",
+    "rawDescVars": [
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "protectedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 14<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            14.0,
+            12.0,
+            10.0
+          ],
+          "strengthScaling": "Divide"
+        }
+      }
+    ],
+    "image": "Se_Star_L_PostHitDamageImmune.png"
   },
   "Se_Star_L_PotionChance": {
     "name": "Асклепий",
@@ -2890,8 +3265,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "При каждом нанесении урона <color=yellow>торговцу</color> дает золото x4 (макс.  40<sprite=5> ).",
-    "rawDesc": "При каждом нанесении урона <color=yellow>торговцу</color> дает золото x{0} (макс. {1}).",
+    "description": "При каждом нанесении урона <color=yellow>Джонасу</color> дает золото x4 (макс.  40<sprite=5> ).",
+    "rawDesc": "При каждом нанесении урона <color=yellow>Джонасу</color> дает золото x{0} (макс. {1}).",
     "rawDescVars": [
       {
         "rendered": "4",
@@ -3571,16 +3946,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Увеличивает время перезарядки <color=yellow>Искаженного разума</color> на 1 с., но при выстреле полностью заряженными стрелами их количество увеличивается на 2.",
+    "description": "Увеличивает время перезарядки <color=yellow>Искаженного разума</color> на 1.5 с., но при выстреле полностью заряженными стрелами их количество увеличивается на 3.",
     "rawDesc": "Увеличивает время перезарядки <color=yellow>Искаженного разума</color> на {0} с., но при выстреле полностью заряженными стрелами их количество увеличивается на {1}.",
     "rawDescVars": [
       {
-        "rendered": "1",
+        "rendered": "1.5",
         "format": "#,##0.#",
         "raw": "cooldownPenalty",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 1.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3588,12 +3963,12 @@
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
         "raw": "bonusCount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3614,16 +3989,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Увеличивает макс. количество стрел <color=yellow>Искаженного разума</color> на 7, но при этом нельзя двигаться при зарядке.",
+    "description": "Увеличивает макс. количество стрел <color=yellow>Искаженного разума</color> на 4, но при этом нельзя двигаться при зарядке.",
     "rawDesc": "Увеличивает макс. количество стрел <color=yellow>Искаженного разума</color> на {0}, но при этом нельзя двигаться при зарядке.",
     "rawDescVars": [
       {
-        "rendered": "7",
+        "rendered": "4",
         "format": "#,##0",
         "raw": "increased",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 7.0,
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3644,16 +4019,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Снижает время перезарядки на 50% при выстреле частично заряженными стрелами <color=yellow>Искаженного разума</color>.",
+    "description": "Снижает время перезарядки на 40% при выстреле частично заряженными стрелами <color=yellow>Искаженного разума</color>.",
     "rawDesc": "Снижает время перезарядки на {0} при выстреле частично заряженными стрелами <color=yellow>Искаженного разума</color>.",
     "rawDescVars": [
       {
-        "rendered": "50%",
+        "rendered": "40%",
         "format": "P0",
         "raw": "cooldownReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4253,8 +4628,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Снижает <color=yellow>стоимость</color> товаров у торговца на  5%<sprite=5> .",
-    "rawDesc": "Снижает <color=yellow>стоимость</color> товаров у торговца на {0}.",
+    "description": "Снижает <color=yellow>стоимость в золоте</color> товаров у Джонаса на  5%<sprite=5> .",
+    "rawDesc": "Снижает <color=yellow>стоимость в золоте</color> товаров у Джонаса на {0}.",
     "rawDescVars": [
       {
         "rendered": " 5%<sprite=5> ",
@@ -4846,7 +5221,7 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Стойка уничтожения</color> становится обычной способностью со временем восстановления 14 сек., что позволяет использовать другие Воспоминания во время её действия. Урон от энергии клинка и бонус к урону от атаки уменьшаются на 40%, длительность составляет 4 сек., и способность больше не увеличивает ускорение памяти и максимальное количество зарядов навыка уклонения.",
+    "description": "<color=yellow>Стойка уничтожения</color> становится обычной способностью со временем восстановления 14 сек., что позволяет использовать другие Воспоминания во время её действия. Урон от энергии клинка и бонус к урону от атаки уменьшаются на 50%, длительность составляет 4 сек., и способность больше не увеличивает ускорение памяти и максимальное количество зарядов навыка уклонения.",
     "rawDesc": "<color=yellow>Стойка уничтожения</color> становится обычной способностью со временем восстановления {0} сек., что позволяет использовать другие Воспоминания во время её действия. Урон от энергии клинка и бонус к урону от атаки уменьшаются на {1}, длительность составляет {2} сек., и способность больше не увеличивает ускорение памяти и максимальное количество зарядов навыка уклонения.",
     "rawDescVars": [
       {
@@ -4863,12 +5238,12 @@
         }
       },
       {
-        "rendered": "40%",
+        "rendered": "50%",
         "format": "P0",
         "raw": "strengthReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.4,
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4902,13 +5277,39 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Стойка уничтожения</color> больше не выпускает энергию клинка, но позволяет атаковать на 100% чаще.",
-    "rawDesc": "<color=yellow>Стойка уничтожения</color> больше не выпускает энергию клинка, но позволяет атаковать на {0} чаще.",
+    "description": "Урон от энергии клинка <color=yellow>Стойки уничтожения</color> снижается на 60%, а дальность полета энергии клинка — на 80%, но даруемые скорость атаки и ускорение памяти навыка уклонения увеличиваются на 100%.",
+    "rawDesc": "Урон от энергии клинка <color=yellow>Стойки уничтожения</color> снижается на {0}, а дальность полета энергии клинка — на {1}, но даруемые скорость атаки и ускорение памяти навыка уклонения увеличиваются на {2}.",
     "rawDescVars": [
+      {
+        "rendered": "60%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "travelDistanceReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
       {
         "rendered": "100%",
         "format": "P0",
-        "raw": "speedAmp",
+        "raw": "buffAmp",
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.0,
@@ -5036,8 +5437,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "При побеже над любым боссом с шансом  30%<sprite=5>  дает <color=yellow>платиновую монету</color>. Эту монету можно использовать для обновления ассортимента товаров у торговца.",
-    "rawDesc": "При побеже над любым боссом с шансом {0} дает <color=yellow>платиновую монету</color>. Эту монету можно использовать для обновления ассортимента товаров у торговца.",
+    "description": "При победе над любым боссом с шансом  30%<sprite=5>  дает <color=yellow>платиновую монету</color>. Эту монету можно использовать для обновления ассортимента товаров у Джонаса.",
+    "rawDesc": "При победе над любым боссом с шансом {0} дает <color=yellow>платиновую монету</color>. Эту монету можно использовать для обновления ассортимента товаров у Джонаса.",
     "rawDescVars": [
       {
         "rendered": " 30%<sprite=5> ",
@@ -5071,8 +5472,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Запугивает</color> торговца, снижая стоимость товаров. Если запугивание успешно с вероятностью 50%, цены на товары снижаются на  50%<sprite=5> , но если запугивание не удается, цены увеличиваются на 50%.",
-    "rawDesc": "<color=yellow>Запугивает</color> торговца, снижая стоимость товаров. Если запугивание успешно с вероятностью {0}, цены на товары снижаются на {1}, но если запугивание не удается, цены увеличиваются на {2}.",
+    "description": "<color=yellow>Запугивает</color> Джонаса, снижая стоимость товаров. Если запугивание успешно с вероятностью 50%, цены на товары снижаются на  50%<sprite=5> , но если запугивание не удается, цены увеличиваются на 50%.",
+    "rawDesc": "<color=yellow>Запугивает</color> Джонаса, снижая стоимость товаров. Если запугивание успешно с вероятностью {0}, цены на товары снижаются на {1}, но если запугивание не удается, цены увеличиваются на {2}.",
     "rawDescVars": [
       {
         "rendered": "50%",
@@ -5873,8 +6274,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Снижает <color=yellow>стоимость</color> товаров у <color=yellow>торговца</color> на  10%<sprite=5> .",
-    "rawDesc": "Снижает <color=yellow>стоимость</color> товаров у <color=yellow>торговца</color> на {0}.",
+    "description": "Снижает <color=yellow>стоимость в золоте</color> товаров у <color=yellow>Джонаса</color> на  10%<sprite=5> .",
+    "rawDesc": "Снижает <color=yellow>стоимость в золоте</color> товаров у <color=yellow>Джонаса</color> на {0}.",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -5910,8 +6311,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "Увеличивает <color=yellow>стоимость</color> товаров у некоторых <color=yellow>торговцев</color> на  50%<sprite=5> , но при этом увеличивает количество продаваемых предметов на два.",
-    "rawDesc": "Увеличивает <color=yellow>стоимость</color> товаров у некоторых <color=yellow>торговцев</color> на {0}, но при этом увеличивает количество продаваемых предметов на два.",
+    "description": "Увеличивает <color=yellow>стоимость в золоте</color> товаров у <color=yellow>Джонаса</color> на  50%<sprite=5> , но при этом увеличивает количество продаваемых предметов на 2.",
+    "rawDesc": "Увеличивает <color=yellow>стоимость в золоте</color> товаров у <color=yellow>Джонаса</color> на {0}, но при этом увеличивает количество продаваемых предметов на 2.",
     "rawDescVars": [
       {
         "rendered": " 50%<sprite=5> ",
@@ -6808,7 +7209,7 @@
   },
   "Se_Star_Mist_I_StartGoldWithPenalty": {
     "name": "Благородное происхождение",
-    "lore": "",
+    "lore": "Семья Вердесильвер пала, но ее благородство ничуть не угасло.",
     "category": "Imagination",
     "heroType": "Hero_Mist",
     "maxLevel": 4,
@@ -6820,8 +7221,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "Приключение начинается с <color=yellow>золотом </color> x 150<sprite=5> , но стоимость товаров у торговцев увеличиваются на 10%.",
-    "rawDesc": "Приключение начинается с <color=yellow>золотом </color> x{0}, но стоимость товаров у торговцев увеличиваются на {1}.",
+    "description": "Приключение начинается с <color=yellow>золотом</color> x 150<sprite=5> , но стоимость товаров у Джонаса увеличивается на 10%.",
+    "rawDesc": "Приключение начинается с <color=yellow>золотом</color> x{0}, но стоимость товаров у Джонаса увеличивается на {1}.",
     "rawDescVars": [
       {
         "rendered": " 150<sprite=5> ",
@@ -7715,8 +8116,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "Снижает стоимость товары у торговца в <color=yellow>Лесу волнений</color> на  30%<sprite=5> .",
-    "rawDesc": "Снижает стоимость товары у торговца в <color=yellow>Лесу волнений</color> на {0}.",
+    "description": "Снижает стоимость товаров у Джонаса в <color=yellow>Лесу волнения</color> на  30%<sprite=5> .",
+    "rawDesc": "Снижает стоимость товаров у Джонаса в <color=yellow>Лесу волнения</color> на {0}.",
     "rawDescVars": [
       {
         "rendered": " 30%<sprite=5> ",
@@ -8564,7 +8965,7 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Снижает макс. ОЗ на 15%, но при этом увеличивает дальность применения <color=yellow>Дисциплины</color> на 30%. Кроме того, чем дальше находится цель при применении, тем больше урон (до 100%) и радиус урона (до 50%).",
+    "description": "Снижает макс. ОЗ на 15%, но при этом увеличивает дальность применения <color=yellow>Дисциплины</color> на 30%. Кроме того, чем дальше находится цель при применении, тем больше урон (до 150%) и радиус урона (до 50%).",
     "rawDesc": "Снижает макс. ОЗ на {0}, но при этом увеличивает дальность применения <color=yellow>Дисциплины</color> на {1}. Кроме того, чем дальше находится цель при применении, тем больше урон (до {2}) и радиус урона (до {3}).",
     "rawDescVars": [
       {
@@ -8594,12 +8995,12 @@
         }
       },
       {
-        "rendered": "100%",
+        "rendered": "150%",
         "format": "P0",
         "raw": "maxDamageAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 1.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8663,8 +9064,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Снижает дальность применения <color=yellow>Дисциплины</color> на 50%, но снижает заряд на 1 и оглушает пораженных врагов на 1 с.",
-    "rawDesc": "Снижает дальность применения <color=yellow>Дисциплины</color> на {0}, но снижает заряд на {1} и оглушает пораженных врагов на {2} с.",
+    "description": "Снижает дальность применения <color=yellow>Дисциплины</color> на 50%, но увеличивает количество зарядов на 1 и оглушает пораженных врагов на 1 сек.",
+    "rawDesc": "Снижает дальность применения <color=yellow>Дисциплины</color> на {0}, но увеличивает количество зарядов на {1} и оглушает пораженных врагов на {2} сек.",
     "rawDescVars": [
       {
         "rendered": "50%",
@@ -8792,16 +9193,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Призывает <color=yellow>Святилище Эля</color> в указанное место вместо позиции Веспера. Время восстановления сокращается на 10% за каждого союзника и на 3% за каждого врага, пораженного первым взрывом.",
+    "description": "Призывает <color=yellow>Святилище Эля</color> в указанное место вместо позиции Веспера. Время восстановления сокращается на 12% за каждого союзника и на 6% за каждого врага, пораженного первым взрывом.",
     "rawDesc": "Призывает <color=yellow>Святилище Эля</color> в указанное место вместо позиции Веспера. Время восстановления сокращается на {0} за каждого союзника и на {1} за каждого врага, пораженного первым взрывом.",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "12%",
         "format": "P0",
         "raw": "reductionRatioOnAlly",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.12,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8809,12 +9210,12 @@
         }
       },
       {
-        "rendered": "3%",
+        "rendered": "6%",
         "format": "P0",
         "raw": "reductionRatioOnEnemy",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.03,
+          "basicConstant": 0.06,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8838,8 +9239,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Снижает <color=yellow>стоимость в золоте</color> товаров у торговца на  10%<sprite=5> .",
-    "rawDesc": "Снижает <color=yellow>стоимость в золоте</color> товаров у торговца на {0}.",
+    "description": "Снижает <color=yellow>стоимость в золоте</color> товаров у Джонаса на  10%<sprite=5> .",
+    "rawDesc": "Снижает <color=yellow>стоимость в золоте</color> товаров у Джонаса на {0}.",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -9681,16 +10082,29 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Снижает урон от взрыва <color=yellow>Влияния эфира</color> на 60%. Взрыв нельзя вызвать повторным применением. При этом эфир автоматически взрывается при каждом попадании по врагу.",
-    "rawDesc": "Снижает урон от взрыва <color=yellow>Влияния эфира</color> на {0}. Взрыв нельзя вызвать повторным применением. При этом эфир автоматически взрывается при каждом попадании по врагу.",
+    "description": "Если снаряд <color=yellow>Влияния эфира</color> поражает врага с 3 или более зарядами света, происходит взрыв, наносящий 50% урона.",
+    "rawDesc": "Если снаряд <color=yellow>Влияния эфира</color> поражает врага с {0} или более зарядами света, происходит взрыв, наносящий {1} урона.",
     "rawDescVars": [
       {
-        "rendered": "60%",
-        "format": "P0",
-        "raw": "damageReduction",
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "requiredLightStacks",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.6,
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "explosionDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9711,16 +10125,29 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Увеличивает радиус взрыва <color=yellow>Влияния эфира</color> на 25%.",
-    "rawDesc": "Увеличивает радиус взрыва <color=yellow>Влияния эфира</color> на {0}.",
+    "description": "Радиус взрыва <color=yellow>Влияния эфира</color> увеличивается на 15%, а время восстановления сокращается на 7% за каждого пораженного взрывом врага.",
+    "rawDesc": "Радиус взрыва <color=yellow>Влияния эфира</color> увеличивается на {0}, а время восстановления сокращается на {1} за каждого пораженного взрывом врага.",
     "rawDescVars": [
       {
-        "rendered": "25%",
+        "rendered": "15%",
         "format": "P0",
         "raw": "scaleAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.25,
+          "basicConstant": 0.15,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "7%",
+        "format": "P0",
+        "raw": "reducedCooldownRatioPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.07,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9771,16 +10198,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Увеличивает дальность применения <color=yellow>Сверхновой</color> на 40%, а радиус взрыва — на 30%.",
-    "rawDesc": "Увеличивает дальность применения <color=yellow>Сверхновой</color> на {0}, а радиус взрыва — на {1}.",
+    "description": "Время восстановления <color=yellow>Сверхновой</color> увеличивается на 3 с., но дальность применения увеличивается на 30%, радиус взрыва — на 20%, а максимальное количество зарядов — на 2.",
+    "rawDesc": "Время восстановления <color=yellow>Сверхновой</color> увеличивается на {0} с., но дальность применения увеличивается на {1}, радиус взрыва — на {2}, а максимальное количество зарядов — на {3}.",
     "rawDescVars": [
       {
-        "rendered": "40%",
-        "format": "P0",
-        "raw": "rangeAmp",
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "cooldownPenalty",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.4,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9790,10 +10217,36 @@
       {
         "rendered": "30%",
         "format": "P0",
-        "raw": "radiusAmp",
+        "raw": "rangeAmp",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "radiusAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "gainedMaxCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9830,9 +10283,36 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "При применении <color=yellow>Сверхновой</color> сбрасывается время перезарядки уклонения.",
-    "rawDesc": "При применении <color=yellow>Сверхновой</color> сбрасывается время перезарядки уклонения.",
-    "rawDescVars": [],
+    "description": "Время восстановления сокращается на 0.5 с. за каждого врага, пораженного взрывом <color=yellow>Сверхновой</color>, а урон от следующего применения <color=yellow>Сверхновой</color> увеличивается на 10%.",
+    "rawDesc": "Время восстановления сокращается на {0} с. за каждого врага, пораженного взрывом <color=yellow>Сверхновой</color>, а урон от следующего применения <color=yellow>Сверхновой</color> увеличивается на {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "reducedCooldownOnHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "nextCastDamageAmpOnHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Yubar_F_SN_DodgeReset.png"
   },
   "Se_Star_Yubar_F_TQ_EssenceCooldown": {
@@ -10049,11 +10529,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "При победе над врагом с шансом  0.5%<sprite=5>  появляется <color=yellow>Звездное печенье</color>. <color=yellow>Звездное печенье</color> немного исцеляет ОЗ Юбара и дает небольшое количество золота и Пыли мечты.",
-    "rawDesc": "При победе над врагом с шансом {0} появляется <color=yellow>Звездное печенье</color>. <color=yellow>Звездное печенье</color> немного исцеляет ОЗ Юбара и дает небольшое количество золота и Пыли мечты.",
+    "description": "При победе над врагом с шансом  0.6%<sprite=5> , а при победе над боссом с шансом 100% появляется <color=yellow>Звездное печенье</color>. <color=yellow>Звездное печенье</color> немного исцеляет ОЗ Юбара и дает небольшое количество золота и Пыли Мечты.",
+    "rawDesc": "При победе над врагом с шансом {0}, а при победе над боссом с шансом {1} появляется <color=yellow>Звездное печенье</color>. <color=yellow>Звездное печенье</color> немного исцеляет ОЗ Юбара и дает небольшое количество золота и Пыли Мечты.",
     "rawDescVars": [
       {
-        "rendered": " 0.5%<sprite=5> ",
+        "rendered": " 0.6%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "starCookieChance",
         "scalingType": "star",
@@ -10062,9 +10542,26 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.005,
-            0.008,
-            0.012
+            0.006,
+            0.01,
+            0.014
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "#,##0.#%",
+        "raw": "starCookieOnBossChance",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            1.0,
+            1.0,
+            1.0
           ],
           "strengthScaling": "Multiply"
         }

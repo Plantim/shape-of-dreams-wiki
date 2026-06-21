@@ -229,6 +229,55 @@
     ],
     "image": "Se_Star_D_CritDamage.png"
   },
+  "Se_Star_D_CritUpHitDecay": {
+    "name": "Angeborene Konzentration",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      60,
+      60
+    ],
+    "requiredLevel": 75,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Erhöht die <color=yellow>Kritische Trefferchance</color> um  25%<sprite=5> . Wenn du <color=yellow>Schaden</color> von Feinden erleidest, verringert sich die durch diesen Stern erhaltene <color=yellow>Kritische Trefferchance</color> dauerhaft um 1%. <color=yellow>Brandschaden</color> löst diesen Effekt nicht aus.",
+    "rawDesc": "Erhöht die <color=yellow>Kritische Trefferchance</color> um {0}. Wenn du <color=yellow>Schaden</color> von Feinden erleidest, verringert sich die durch diesen Stern erhaltene <color=yellow>Kritische Trefferchance</color> dauerhaft um {1}. <color=yellow>Brandschaden</color> löst diesen Effekt nicht aus.",
+    "rawDescVars": [
+      {
+        "rendered": " 25%<sprite=5> ",
+        "format": "P0",
+        "raw": "critChanceAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.25,
+            0.35,
+            0.45
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "1%",
+        "format": "#,##0'%'",
+        "raw": "decayCritPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_D_CritUpHitDecay.png"
+  },
   "Se_Star_D_DamageBonusOnAllElemental": {
     "name": "Elementarmagier",
     "lore": null,
@@ -529,6 +578,42 @@
       }
     ],
     "image": "Se_Star_D_LowerASHigherAD.png"
+  },
+  "Se_Star_D_RiftFirstCastDamageUp": {
+    "name": "Schlachtbanner",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      80,
+      70,
+      70
+    ],
+    "requiredLevel": 70,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Nach jeder Reise durch einen Riss wird der <color=yellow>Schaden</color> der ersten gewirkten Erinnerung um  90%<sprite=5>  erhöht.",
+    "rawDesc": "Nach jeder Reise durch einen Riss wird der <color=yellow>Schaden</color> der ersten gewirkten Erinnerung um {0} erhöht.",
+    "rawDescVars": [
+      {
+        "rendered": " 90%<sprite=5> ",
+        "format": "P0",
+        "raw": "firstSkillDamageAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.9,
+            1.2,
+            1.5
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_D_RiftFirstCastDamageUp.png"
   },
   "Se_Star_D_ScalingAbilityPower": {
     "name": "Reifer Geist",
@@ -955,6 +1040,44 @@
     ],
     "image": "Se_Star_I_DismantleBonus.png"
   },
+  "Se_Star_I_DismantleDustToBonusGold": {
+    "name": "Umdenken",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Beim Zerlegen von Erinnerungen oder Essenzen erhaltet ihr <color=yellow>Gold</color> in Höhe von  15%<sprite=5>  des erhaltenen <color=yellow>Traumstaub</color>.",
+    "rawDesc": "Beim Zerlegen von Erinnerungen oder Essenzen erhaltet ihr <color=yellow>Gold</color> in Höhe von {0} des erhaltenen <color=yellow>Traumstaub</color>.",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "gainGoldRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25,
+            0.3
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_DismantleDustToBonusGold.png"
+  },
   "Se_Star_I_DreamDustOnKillChance": {
     "name": "Zerlegung und Analyse",
     "lore": null,
@@ -1005,6 +1128,104 @@
       }
     ],
     "image": "Se_Star_I_DreamDustOnKillChance.png"
+  },
+  "Se_Star_I_ExtraChaosOptionGoldOnUse": {
+    "name": "Geordnetes Chaos",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      50,
+      40,
+      30
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Die Auswahlmöglichkeiten für <color=yellow>Chaos</color> erhöhen sich um 1 und die Nutzung von Chaos gewährt  15<sprite=5>  <color=yellow>Gold</color>.",
+    "rawDesc": "Die Auswahlmöglichkeiten für <color=yellow>Chaos</color> erhöhen sich um {0} und die Nutzung von Chaos gewährt {1} <color=yellow>Gold</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedChoices",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 15<sprite=5> ",
+        "format": "#,##0",
+        "raw": "goldOnChaos",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            15.0,
+            20.0,
+            25.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_ExtraChaosOptionGoldOnUse.png"
+  },
+  "Se_Star_I_FirstBossGemDrop": {
+    "name": "Fremder Schatz",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      80,
+      90
+    ],
+    "requiredLevel": 75,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Besiegst du zum ersten Mal einen <color=yellow>Heroischen Boss</color>, erhältst du  1<sprite=5>  Gewöhnliche Essenzen der Qualität 10%.",
+    "rawDesc": "Besiegst du zum ersten Mal einen <color=yellow>Heroischen Boss</color>, erhältst du {0} Gewöhnliche Essenzen der Qualität {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0",
+        "raw": "gemSpawnCount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "spawnGemQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_I_FirstBossGemDrop.png"
   },
   "Se_Star_I_FirstGemUpgrade": {
     "name": "Anfängerglück",
@@ -1330,8 +1551,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": true,
-    "description": "Der <color=yellow>Preis</color> der von Händlern verkauften Waren wird um  10%<sprite=5>  verringert.",
-    "rawDesc": "Der <color=yellow>Preis</color> der von Händlern verkauften Waren wird um {0} verringert.",
+    "description": "Der <color=yellow>Goldpreis</color> der von Jonas verkauften Waren wird um  10%<sprite=5>  verringert.",
+    "rawDesc": "Der <color=yellow>Goldpreis</color> der von Jonas verkauften Waren wird um {0} verringert.",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -1368,8 +1589,8 @@
     ],
     "requiredLevel": 50,
     "isRequiredLevelTotalMastery": true,
-    "description": "Du erhältst  1<sprite=5>  <color=yellow>Platinmünzen</color> zu Beginn deines Abenteuers und jedes Mal, wenn du in die nächste Welt übergehst und kannst maximal 3 besitzen. Mit diesen Münzen kannst du das Warenangebot der Händler aktualisieren.",
-    "rawDesc": "Du erhältst {0} <color=yellow>Platinmünzen</color> zu Beginn deines Abenteuers und jedes Mal, wenn du in die nächste Welt übergehst und kannst maximal {1} besitzen. Mit diesen Münzen kannst du das Warenangebot der Händler aktualisieren.",
+    "description": "Du erhältst  1<sprite=5>  <color=yellow>Platinmünzen</color> zu Beginn deines Abenteuers und jedes Mal, wenn du in die nächste Welt übergehst, und kannst maximal 3 besitzen. Mit diesen Münzen kannst du das Warenangebot von Jonas aktualisieren.",
+    "rawDesc": "Du erhältst {0} <color=yellow>Platinmünzen</color> zu Beginn deines Abenteuers und jedes Mal, wenn du in die nächste Welt übergehst, und kannst maximal {1} besitzen. Mit diesen Münzen kannst du das Warenangebot von Jonas aktualisieren.",
     "rawDescVars": [
       {
         "rendered": " 1<sprite=5> ",
@@ -1928,6 +2149,62 @@
     ],
     "image": "Se_Star_L_IgnoreDelusion.png"
   },
+  "Se_Star_L_IncreaseMaxHealthByGuidance": {
+    "name": "Großzügiger Segen des Großen Wegweisers",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      70,
+      60,
+      60,
+      60
+    ],
+    "requiredLevel": 50,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Das Aktivieren eines Schreins der Führung erhöht das <color=yellow>Max. Leben</color> um  20<sprite=5> . Das Aktivieren eines gesegneten Schreins der Führung erhöht es um  50<sprite=5> .",
+    "rawDesc": "Das Aktivieren eines Schreins der Führung erhöht das <color=yellow>Max. Leben</color> um {0}. Das Aktivieren eines gesegneten Schreins der Führung erhöht es um {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 20<sprite=5> ",
+        "format": "#,##0",
+        "raw": "defaultIncreaseMaxHealth",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            20.0,
+            25.0,
+            30.0,
+            35.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 50<sprite=5> ",
+        "format": "#,##0",
+        "raw": "blessedIncreaseMaxHealth",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            50.0,
+            60.0,
+            70.0,
+            80.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_IncreaseMaxHealthByGuidance.png"
+  },
   "Se_Star_L_MaxHealth": {
     "name": "Ausdauerverstärkung",
     "lore": null,
@@ -1965,6 +2242,55 @@
       }
     ],
     "image": "Se_Star_L_MaxHealth.png"
+  },
+  "Se_Star_L_MaxHealthUpHealDown": {
+    "name": "Zähe Haut",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      50,
+      60,
+      60
+    ],
+    "requiredLevel": 65,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Das <color=yellow>Max. Leben</color> wird um  15%<sprite=5>  erhöht. Die erhaltene <color=yellow>Heilung</color> wird um 50% verringert.",
+    "rawDesc": "Das <color=yellow>Max. Leben</color> wird um {0} erhöht. Die erhaltene <color=yellow>Heilung</color> wird um {1} verringert.",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "maxHealthAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "healReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_L_MaxHealthUpHealDown.png"
   },
   "Se_Star_L_PeriodicScalingArmor": {
     "name": "Schuppenschicht",
@@ -2016,6 +2342,55 @@
       }
     ],
     "image": "Se_Star_L_PeriodicScalingArmor.png"
+  },
+  "Se_Star_L_PostHitDamageImmune": {
+    "name": "Feiglingspuppe",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      60,
+      60
+    ],
+    "requiredLevel": 60,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Nachdem du <color=yellow>Schaden</color> erlitten hast, erhältst du für 1 Sekunden <color=yellow>Schadensimmunität</color>. Kann nur einmal alle  14<sprite=5>  Sekunden ausgelöst werden.",
+    "rawDesc": "Nachdem du <color=yellow>Schaden</color> erlitten hast, erhältst du für {0} Sekunden <color=yellow>Schadensimmunität</color>. Kann nur einmal alle {1} Sekunden ausgelöst werden.",
+    "rawDescVars": [
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "protectedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 14<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            14.0,
+            12.0,
+            10.0
+          ],
+          "strengthScaling": "Divide"
+        }
+      }
+    ],
+    "image": "Se_Star_L_PostHitDamageImmune.png"
   },
   "Se_Star_L_PotionChance": {
     "name": "Asklepios",
@@ -2890,8 +3265,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Erhalte 4 Gold jedes Mal, wenn du einem <color=yellow>Händler</color> Schaden zufügst, bis zu einem Maximum von  40<sprite=5>  Gold.",
-    "rawDesc": "Erhalte {0} Gold jedes Mal, wenn du einem <color=yellow>Händler</color> Schaden zufügst, bis zu einem Maximum von {1} Gold.",
+    "description": "Erhalte 4 Gold jedes Mal, wenn du <color=yellow>Jonas</color> Schaden zufügst, bis zu einem Maximum von  40<sprite=5>  Gold.",
+    "rawDesc": "Erhalte {0} Gold jedes Mal, wenn du <color=yellow>Jonas</color> Schaden zufügst, bis zu einem Maximum von {1} Gold.",
     "rawDescVars": [
       {
         "rendered": "4",
@@ -3571,16 +3946,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Die Abklingzeit von <color=yellow>Verzerrter Geist</color> erhöht sich um 1 Sek., aber wenn du die Pfeile mit maximaler Ladung abfeuerst, erhöht sich die Anzahl der Pfeile um 2.",
+    "description": "Die Abklingzeit von <color=yellow>Verzerrter Geist</color> erhöht sich um 1.5 Sek., aber wenn du die Pfeile mit maximaler Ladung abfeuerst, erhöht sich die Anzahl der Pfeile um 3.",
     "rawDesc": "Die Abklingzeit von <color=yellow>Verzerrter Geist</color> erhöht sich um {0} Sek., aber wenn du die Pfeile mit maximaler Ladung abfeuerst, erhöht sich die Anzahl der Pfeile um {1}.",
     "rawDescVars": [
       {
-        "rendered": "1",
+        "rendered": "1.5",
         "format": "#,##0.#",
         "raw": "cooldownPenalty",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 1.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3588,12 +3963,12 @@
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
         "raw": "bonusCount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3614,16 +3989,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Die maximale Anzahl der Pfeile von <color=yellow>Verzerrter Geist</color> erhöht sich um 7, aber du kannst dich während des Aufladens nicht bewegen.",
+    "description": "Die maximale Anzahl der Pfeile von <color=yellow>Verzerrter Geist</color> erhöht sich um 4, aber du kannst dich während des Aufladens nicht bewegen.",
     "rawDesc": "Die maximale Anzahl der Pfeile von <color=yellow>Verzerrter Geist</color> erhöht sich um {0}, aber du kannst dich während des Aufladens nicht bewegen.",
     "rawDescVars": [
       {
-        "rendered": "7",
+        "rendered": "4",
         "format": "#,##0",
         "raw": "increased",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 7.0,
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3644,16 +4019,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Wenn <color=yellow>Verzerrter Geist</color> nur teilweise aufgeladen abgefeuert wird, verringert sich die Abklingzeit um 50%.",
+    "description": "Wenn <color=yellow>Verzerrter Geist</color> nur teilweise aufgeladen abgefeuert wird, verringert sich die Abklingzeit um 40%.",
     "rawDesc": "Wenn <color=yellow>Verzerrter Geist</color> nur teilweise aufgeladen abgefeuert wird, verringert sich die Abklingzeit um {0}.",
     "rawDescVars": [
       {
-        "rendered": "50%",
+        "rendered": "40%",
         "format": "P0",
         "raw": "cooldownReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4253,8 +4628,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Der <color=yellow>Preis</color> der von Händlern verkauften Waren wird um  5%<sprite=5>  verringert.",
-    "rawDesc": "Der <color=yellow>Preis</color> der von Händlern verkauften Waren wird um {0} verringert.",
+    "description": "Der <color=yellow>Goldpreis</color> der von Jonas verkauften Waren wird um  5%<sprite=5>  verringert.",
+    "rawDesc": "Der <color=yellow>Goldpreis</color> der von Jonas verkauften Waren wird um {0} verringert.",
     "rawDescVars": [
       {
         "rendered": " 5%<sprite=5> ",
@@ -4846,7 +5221,7 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Vernichtungshaltung</color> wird zu einer normalen Fähigkeit mit 14 Sek. Abklingzeit, die das Wirken anderer Erinnerungen erlaubt. Der Schaden der Schwertaura und die Erhöhung des Angriffsschadens sind um 40% reduziert, die Dauer beträgt 4 Sek. und die Boni auf Erinnerungstempo und maximale Aufladungen der Ausweichfähigkeit entfallen.",
+    "description": "<color=yellow>Vernichtungshaltung</color> wird zu einer normalen Fähigkeit mit 14 Sek. Abklingzeit, die das Wirken anderer Erinnerungen erlaubt. Der Schaden der Schwertaura und die Erhöhung des Angriffsschadens sind um 50% reduziert, die Dauer beträgt 4 Sek. und die Boni auf Erinnerungstempo und maximale Aufladungen der Ausweichfähigkeit entfallen.",
     "rawDesc": "<color=yellow>Vernichtungshaltung</color> wird zu einer normalen Fähigkeit mit {0} Sek. Abklingzeit, die das Wirken anderer Erinnerungen erlaubt. Der Schaden der Schwertaura und die Erhöhung des Angriffsschadens sind um {1} reduziert, die Dauer beträgt {2} Sek. und die Boni auf Erinnerungstempo und maximale Aufladungen der Ausweichfähigkeit entfallen.",
     "rawDescVars": [
       {
@@ -4863,12 +5238,12 @@
         }
       },
       {
-        "rendered": "40%",
+        "rendered": "50%",
         "format": "P0",
         "raw": "strengthReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.4,
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4902,13 +5277,39 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Vernichtungshaltung</color> feuert keine Schwertaura mehr ab, greift dafür aber 100% häufiger an.",
-    "rawDesc": "<color=yellow>Vernichtungshaltung</color> feuert keine Schwertaura mehr ab, greift dafür aber {0} häufiger an.",
+    "description": "Der Schaden der <color=yellow>Schwertaura</color> von <color=yellow>Vernichtungshaltung</color> wird um 60% und ihre Reichweite um 80% verringert, aber die gewährte Angriffsgeschwindigkeit und das Erinnerungstempo der Ausweichfähigkeit erhöhen sich um 100%.",
+    "rawDesc": "Der Schaden der <color=yellow>Schwertaura</color> von <color=yellow>Vernichtungshaltung</color> wird um {0} und ihre Reichweite um {1} verringert, aber die gewährte Angriffsgeschwindigkeit und das Erinnerungstempo der Ausweichfähigkeit erhöhen sich um {2}.",
     "rawDescVars": [
+      {
+        "rendered": "60%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "travelDistanceReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
       {
         "rendered": "100%",
         "format": "P0",
-        "raw": "speedAmp",
+        "raw": "buffAmp",
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.0,
@@ -5036,8 +5437,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "Beim Töten eines beliebigen Bosses besteht eine  30%<sprite=5>  Chance, eine <color=yellow>Platinmünze</color> zu erhalten. Diese Münze kann verwendet werden, um das Warenangebot eines Händlers zu aktualisieren.",
-    "rawDesc": "Beim Töten eines beliebigen Bosses besteht eine {0} Chance, eine <color=yellow>Platinmünze</color> zu erhalten. Diese Münze kann verwendet werden, um das Warenangebot eines Händlers zu aktualisieren.",
+    "description": "Beim Töten eines beliebigen Bosses besteht eine Chance von  30%<sprite=5> , eine <color=yellow>Platinmünze</color> zu erhalten. Diese Münze kann verwendet werden, um das Warenangebot von Jonas zu aktualisieren.",
+    "rawDesc": "Beim Töten eines beliebigen Bosses besteht eine Chance von {0}, eine <color=yellow>Platinmünze</color> zu erhalten. Diese Münze kann verwendet werden, um das Warenangebot von Jonas zu aktualisieren.",
     "rawDescVars": [
       {
         "rendered": " 30%<sprite=5> ",
@@ -5071,8 +5472,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Bedrohe</color> den Händler, um die Preise zu senken. Bei erfolgreicher Bedrohung mit einer Wahrscheinlichkeit von 50% werden die Goldpreise um  50%<sprite=5>  verringert, bei Misserfolg steigen sie um 50%.",
-    "rawDesc": "<color=yellow>Bedrohe</color> den Händler, um die Preise zu senken. Bei erfolgreicher Bedrohung mit einer Wahrscheinlichkeit von {0} werden die Goldpreise um {1} verringert, bei Misserfolg steigen sie um {2}.",
+    "description": "<color=yellow>Bedrohe</color> Jonas, um die Preise zu senken. Bei erfolgreicher Bedrohung mit einer Wahrscheinlichkeit von 50% wird der Goldpreis um  50%<sprite=5>  verringert, bei Misserfolg steigt er um 50%.",
+    "rawDesc": "<color=yellow>Bedrohe</color> Jonas, um die Preise zu senken. Bei erfolgreicher Bedrohung mit einer Wahrscheinlichkeit von {0} wird der Goldpreis um {1} verringert, bei Misserfolg steigt er um {2}.",
     "rawDescVars": [
       {
         "rendered": "50%",
@@ -5873,8 +6274,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Der <color=yellow>Preis</color> der von <color=yellow>Händlern</color> verkauften Waren wird um  10%<sprite=5>  verringert.",
-    "rawDesc": "Der <color=yellow>Preis</color> der von <color=yellow>Händlern</color> verkauften Waren wird um {0} verringert.",
+    "description": "Der <color=yellow>Goldpreis</color> der von <color=yellow>Jonas</color> verkauften Waren wird um  10%<sprite=5>  verringert.",
+    "rawDesc": "Der <color=yellow>Goldpreis</color> der von <color=yellow>Jonas</color> verkauften Waren wird um {0} verringert.",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -5910,8 +6311,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "Der <color=yellow>Preis</color> der von einigen <color=yellow>Händlern</color> verkauften Waren steigt um  50%<sprite=5> , aber sie bieten 2 zusätzliche Artikel an.",
-    "rawDesc": "Der <color=yellow>Preis</color> der von einigen <color=yellow>Händlern</color> verkauften Waren steigt um {0}, aber sie bieten 2 zusätzliche Artikel an.",
+    "description": "Der <color=yellow>Goldpreis</color> der von <color=yellow>Jonas</color> verkauften Waren steigt um  50%<sprite=5> , aber er bietet 2 zusätzliche Artikel an.",
+    "rawDesc": "Der <color=yellow>Goldpreis</color> der von <color=yellow>Jonas</color> verkauften Waren steigt um {0}, aber er bietet 2 zusätzliche Artikel an.",
     "rawDescVars": [
       {
         "rendered": " 50%<sprite=5> ",
@@ -6808,7 +7209,7 @@
   },
   "Se_Star_Mist_I_StartGoldWithPenalty": {
     "name": "Adlige Abstammung",
-    "lore": "",
+    "lore": "Das Haus Verdesilber ist zwar gefallen, aber ihre Erhabenheit ist kein bisschen verblasst.",
     "category": "Imagination",
     "heroType": "Hero_Mist",
     "maxLevel": 4,
@@ -6820,8 +7221,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "Erhalte  150<sprite=5>  <color=yellow>Gold</color> zu Beginn des Abenteuers, aber der Preis der von Händlern verkauften Waren steigt um 10%.",
-    "rawDesc": "Erhalte {0} <color=yellow>Gold</color> zu Beginn des Abenteuers, aber der Preis der von Händlern verkauften Waren steigt um {1}.",
+    "description": "Erhalte  150<sprite=5>  <color=yellow>Gold</color> zu Beginn des Abenteuers, aber der Goldpreis der von Jonas verkauften Waren steigt um 10%.",
+    "rawDesc": "Erhalte {0} <color=yellow>Gold</color> zu Beginn des Abenteuers, aber der Goldpreis der von Jonas verkauften Waren steigt um {1}.",
     "rawDescVars": [
       {
         "rendered": " 150<sprite=5> ",
@@ -7715,8 +8116,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "Im <color=yellow>Wald der Unruhe</color> sind die Preise der vom Händler verkauften Waren um  30%<sprite=5>  verringert.",
-    "rawDesc": "Im <color=yellow>Wald der Unruhe</color> sind die Preise der vom Händler verkauften Waren um {0} verringert.",
+    "description": "Im <color=yellow>Wald der Unruhe</color> ist der Goldpreis der von Jonas verkauften Waren um  30%<sprite=5>  verringert.",
+    "rawDesc": "Im <color=yellow>Wald der Unruhe</color> ist der Goldpreis der von Jonas verkauften Waren um {0} verringert.",
     "rawDescVars": [
       {
         "rendered": " 30%<sprite=5> ",
@@ -8564,7 +8965,7 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Max. LP wird um 15% verringert, aber die Wirkungsreichweite von <color=yellow>Disziplin</color> erhöht sich um 30%. Außerdem steigt der Schaden je nach Entfernung zum Ziel um bis zu 100% und der Schadensradius um bis zu 50%.",
+    "description": "Max. LP wird um 15% verringert, aber die Wirkungsreichweite von <color=yellow>Disziplin</color> erhöht sich um 30%. Außerdem steigt der Schaden je nach Entfernung zum Ziel um bis zu 150% und der Schadensradius um bis zu 50%.",
     "rawDesc": "Max. LP wird um {0} verringert, aber die Wirkungsreichweite von <color=yellow>Disziplin</color> erhöht sich um {1}. Außerdem steigt der Schaden je nach Entfernung zum Ziel um bis zu {2} und der Schadensradius um bis zu {3}.",
     "rawDescVars": [
       {
@@ -8594,12 +8995,12 @@
         }
       },
       {
-        "rendered": "100%",
+        "rendered": "150%",
         "format": "P0",
         "raw": "maxDamageAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 1.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8792,16 +9193,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Beschwört <color=yellow>Heiligtum von El</color> an einem bestimmten Ort anstatt an Vespers Position. Die Abklingzeit wird für jeden von der ersten Explosion getroffenen Verbündeten um 10% und für jeden getroffenen Gegner um 3% verringert.",
+    "description": "Beschwört <color=yellow>Heiligtum von El</color> an einem bestimmten Ort anstatt an Vespers Position. Die Abklingzeit wird für jeden von der ersten Explosion getroffenen Verbündeten um 12% und für jeden getroffenen Gegner um 6% verringert.",
     "rawDesc": "Beschwört <color=yellow>Heiligtum von El</color> an einem bestimmten Ort anstatt an Vespers Position. Die Abklingzeit wird für jeden von der ersten Explosion getroffenen Verbündeten um {0} und für jeden getroffenen Gegner um {1} verringert.",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "12%",
         "format": "P0",
         "raw": "reductionRatioOnAlly",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.12,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8809,12 +9210,12 @@
         }
       },
       {
-        "rendered": "3%",
+        "rendered": "6%",
         "format": "P0",
         "raw": "reductionRatioOnEnemy",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.03,
+          "basicConstant": 0.06,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8838,8 +9239,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Der <color=yellow>Goldpreis</color> der von Händlern verkauften Waren wird um  10%<sprite=5>  verringert.",
-    "rawDesc": "Der <color=yellow>Goldpreis</color> der von Händlern verkauften Waren wird um {0} verringert.",
+    "description": "Der <color=yellow>Goldpreis</color> der von Jonas verkauften Waren wird um  10%<sprite=5>  verringert.",
+    "rawDesc": "Der <color=yellow>Goldpreis</color> der von Jonas verkauften Waren wird um {0} verringert.",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -9681,16 +10082,29 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Der Explosionsschaden von <color=yellow>Ätherischer Einfluss</color> wird um 60% reduziert und kann nicht mehr durch erneute Wirkung ausgelöst werden, aber explodiert automatisch bei jedem Treffer auf einen Gegner.",
-    "rawDesc": "Der Explosionsschaden von <color=yellow>Ätherischer Einfluss</color> wird um {0} reduziert und kann nicht mehr durch erneute Wirkung ausgelöst werden, aber explodiert automatisch bei jedem Treffer auf einen Gegner.",
+    "description": "Wenn das Projektil von <color=yellow>Ätherischer Einfluss</color> einen Gegner mit 3 oder mehr Licht-Stapeln trifft, wird eine Explosion ausgelöst, die 50% Schaden verursacht.",
+    "rawDesc": "Wenn das Projektil von <color=yellow>Ätherischer Einfluss</color> einen Gegner mit {0} oder mehr Licht-Stapeln trifft, wird eine Explosion ausgelöst, die {1} Schaden verursacht.",
     "rawDescVars": [
       {
-        "rendered": "60%",
-        "format": "P0",
-        "raw": "damageReduction",
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "requiredLightStacks",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.6,
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "explosionDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9711,16 +10125,29 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Der Explosionsradius von <color=yellow>Ätherischer Einfluss</color> wird um 25% erhöht.",
-    "rawDesc": "Der Explosionsradius von <color=yellow>Ätherischer Einfluss</color> wird um {0} erhöht.",
+    "description": "Der Explosionsradius von <color=yellow>Ätherischer Einfluss</color> wird um 15% erhöht und die Abklingzeit wird für jeden von der Explosion getroffenen Gegner um 7% verringert.",
+    "rawDesc": "Der Explosionsradius von <color=yellow>Ätherischer Einfluss</color> wird um {0} erhöht und die Abklingzeit wird für jeden von der Explosion getroffenen Gegner um {1} verringert.",
     "rawDescVars": [
       {
-        "rendered": "25%",
+        "rendered": "15%",
         "format": "P0",
         "raw": "scaleAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.25,
+          "basicConstant": 0.15,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "7%",
+        "format": "P0",
+        "raw": "reducedCooldownRatioPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.07,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9771,16 +10198,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Die Wirkungsreichweite von <color=yellow>Supernova</color> wird um 40% und der Explosionsradius um 30% erhöht.",
-    "rawDesc": "Die Wirkungsreichweite von <color=yellow>Supernova</color> wird um {0} und der Explosionsradius um {1} erhöht.",
+    "description": "Die Abklingzeit von <color=yellow>Supernova</color> wird um 3 Sek. erhöht, dafür erhöhen sich die Wirkungsreichweite um 30%, der Explosionsradius um 20% und die maximalen Aufladungen um 2.",
+    "rawDesc": "Die Abklingzeit von <color=yellow>Supernova</color> wird um {0} Sek. erhöht, dafür erhöhen sich die Wirkungsreichweite um {1}, der Explosionsradius um {2} und die maximalen Aufladungen um {3}.",
     "rawDescVars": [
       {
-        "rendered": "40%",
-        "format": "P0",
-        "raw": "rangeAmp",
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "cooldownPenalty",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.4,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9790,10 +10217,36 @@
       {
         "rendered": "30%",
         "format": "P0",
-        "raw": "radiusAmp",
+        "raw": "rangeAmp",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "radiusAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "gainedMaxCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9830,9 +10283,36 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Das Wirken von <color=yellow>Supernova</color> setzt die Abklingzeit deiner Ausweichfähigkeit zurück.",
-    "rawDesc": "Das Wirken von <color=yellow>Supernova</color> setzt die Abklingzeit deiner Ausweichfähigkeit zurück.",
-    "rawDescVars": [],
+    "description": "Für jeden Gegner, der von der Explosion von <color=yellow>Supernova</color> getroffen wird, verringert sich die Abklingzeit um 0.5 Sek. und der Schaden beim nächsten Einsatz von Supernova erhöht sich um 10%.",
+    "rawDesc": "Für jeden Gegner, der von der Explosion von <color=yellow>Supernova</color> getroffen wird, verringert sich die Abklingzeit um {0} Sek. und der Schaden beim nächsten Einsatz von Supernova erhöht sich um {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "reducedCooldownOnHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "nextCastDamageAmpOnHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Yubar_F_SN_DodgeReset.png"
   },
   "Se_Star_Yubar_F_TQ_EssenceCooldown": {
@@ -10049,11 +10529,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "Bei Gegnertötungen besteht eine  0.5%<sprite=5>  Chance, dass ein <color=yellow>Sternenkeks</color> erscheint. <color=yellow>Sternenkekse</color> regenerieren Yubars LP leicht und gewähren eine kleine Menge Gold und Traumstaub.",
-    "rawDesc": "Bei Gegnertötungen besteht eine {0} Chance, dass ein <color=yellow>Sternenkeks</color> erscheint. <color=yellow>Sternenkekse</color> regenerieren Yubars LP leicht und gewähren eine kleine Menge Gold und Traumstaub.",
+    "description": "Bei Gegnertötungen besteht eine Chance von  0.6%<sprite=5>  und bei Bosstötungen eine Chance von 100%, dass ein <color=yellow>Sternenkeks</color> erscheint. <color=yellow>Sternenkekse</color> regenerieren Yubars LP leicht und gewähren eine kleine Menge Gold und Traumstaub.",
+    "rawDesc": "Bei Gegnertötungen besteht eine Chance von {0} und bei Bosstötungen eine Chance von {1}, dass ein <color=yellow>Sternenkeks</color> erscheint. <color=yellow>Sternenkekse</color> regenerieren Yubars LP leicht und gewähren eine kleine Menge Gold und Traumstaub.",
     "rawDescVars": [
       {
-        "rendered": " 0.5%<sprite=5> ",
+        "rendered": " 0.6%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "starCookieChance",
         "scalingType": "star",
@@ -10062,9 +10542,26 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.005,
-            0.008,
-            0.012
+            0.006,
+            0.01,
+            0.014
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "#,##0.#%",
+        "raw": "starCookieOnBossChance",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            1.0,
+            1.0,
+            1.0
           ],
           "strengthScaling": "Multiply"
         }

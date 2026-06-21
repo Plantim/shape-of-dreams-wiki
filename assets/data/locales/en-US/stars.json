@@ -229,6 +229,55 @@
     ],
     "image": "Se_Star_D_CritDamage.png"
   },
+  "Se_Star_D_CritUpHitDecay": {
+    "name": "Innate Focus",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      60,
+      60
+    ],
+    "requiredLevel": 75,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Gain  25%<sprite=5>  <color=yellow>Crit Chance</color>. Taking <color=yellow>Damage</color> from enemies permanently reduces this bonus by 1%. Burn Damage does not trigger this reduction.",
+    "rawDesc": "Gain {0} <color=yellow>Crit Chance</color>. Taking <color=yellow>Damage</color> from enemies permanently reduces this bonus by {1}. Burn Damage does not trigger this reduction.",
+    "rawDescVars": [
+      {
+        "rendered": " 25%<sprite=5> ",
+        "format": "P0",
+        "raw": "critChanceAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.25,
+            0.35,
+            0.45
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "1%",
+        "format": "#,##0'%'",
+        "raw": "decayCritPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_D_CritUpHitDecay.png"
+  },
   "Se_Star_D_DamageBonusOnAllElemental": {
     "name": "Elementalist",
     "lore": null,
@@ -529,6 +578,42 @@
       }
     ],
     "image": "Se_Star_D_LowerASHigherAD.png"
+  },
+  "Se_Star_D_RiftFirstCastDamageUp": {
+    "name": "Vanguard Banner",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      80,
+      70,
+      70
+    ],
+    "requiredLevel": 70,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Every time you travel through a Rift, the <color=yellow>Damage</color> of the first Memory you cast is increased by  90%<sprite=5> .",
+    "rawDesc": "Every time you travel through a Rift, the <color=yellow>Damage</color> of the first Memory you cast is increased by {0}.",
+    "rawDescVars": [
+      {
+        "rendered": " 90%<sprite=5> ",
+        "format": "P0",
+        "raw": "firstSkillDamageAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.9,
+            1.2,
+            1.5
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_D_RiftFirstCastDamageUp.png"
   },
   "Se_Star_D_ScalingAbilityPower": {
     "name": "Mature Mind",
@@ -955,6 +1040,44 @@
     ],
     "image": "Se_Star_I_DismantleBonus.png"
   },
+  "Se_Star_I_DismantleDustToBonusGold": {
+    "name": "Paradigm Shift",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Gain <color=yellow>Gold</color> equal to  15%<sprite=5>  of the <color=yellow>Dream Dust</color> obtained when dismantling Memories or Essences.",
+    "rawDesc": "Gain <color=yellow>Gold</color> equal to {0} of the <color=yellow>Dream Dust</color> obtained when dismantling Memories or Essences.",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "gainGoldRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25,
+            0.3
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_DismantleDustToBonusGold.png"
+  },
   "Se_Star_I_DreamDustOnKillChance": {
     "name": "Dismantle and Analyze",
     "lore": null,
@@ -1005,6 +1128,104 @@
       }
     ],
     "image": "Se_Star_I_DreamDustOnKillChance.png"
+  },
+  "Se_Star_I_ExtraChaosOptionGoldOnUse": {
+    "name": "Ordered Chaos",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      50,
+      40,
+      30
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Increases <color=yellow>Chaos</color> options by 1, and grants  15<sprite=5>  <color=yellow>Gold</color> when using Chaos.",
+    "rawDesc": "Increases <color=yellow>Chaos</color> options by {0}, and grants {1} <color=yellow>Gold</color> when using Chaos.",
+    "rawDescVars": [
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedChoices",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 15<sprite=5> ",
+        "format": "#,##0",
+        "raw": "goldOnChaos",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            15.0,
+            20.0,
+            25.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_ExtraChaosOptionGoldOnUse.png"
+  },
+  "Se_Star_I_FirstBossGemDrop": {
+    "name": "Someone's Treasure",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      80,
+      90
+    ],
+    "requiredLevel": 75,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Upon defeating the first <color=yellow>Heroic Boss</color>, you gain  1<sprite=5>  Common Essences of 10% quality.",
+    "rawDesc": "Upon defeating the first <color=yellow>Heroic Boss</color>, you gain {0} Common Essences of {1} quality.",
+    "rawDescVars": [
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0",
+        "raw": "gemSpawnCount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "spawnGemQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_I_FirstBossGemDrop.png"
   },
   "Se_Star_I_FirstGemUpgrade": {
     "name": "Beginner's Luck",
@@ -1330,8 +1551,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": true,
-    "description": "The <color=yellow>Gold price</color> of items sold by Merchants is reduced by  10%<sprite=5> .",
-    "rawDesc": "The <color=yellow>Gold price</color> of items sold by Merchants is reduced by {0}.",
+    "description": "The <color=yellow>Gold price</color> of items sold by Jonas is reduced by  10%<sprite=5> .",
+    "rawDesc": "The <color=yellow>Gold price</color> of items sold by Jonas is reduced by {0}.",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -1368,8 +1589,8 @@
     ],
     "requiredLevel": 50,
     "isRequiredLevelTotalMastery": true,
-    "description": "Gain  1<sprite=5>  <color=yellow>Platinum Coins</color> at the start of an adventure and whenever you move to a new world, up to a maximum of 3. Use these coins to refresh the Merchant's inventory.",
-    "rawDesc": "Gain {0} <color=yellow>Platinum Coins</color> at the start of an adventure and whenever you move to a new world, up to a maximum of {1}. Use these coins to refresh the Merchant's inventory.",
+    "description": "Gain  1<sprite=5>  <color=yellow>Platinum Coins</color> at the start of an adventure and whenever you move to a new world, up to a maximum of 3. Use these coins to refresh Jonas's inventory.",
+    "rawDesc": "Gain {0} <color=yellow>Platinum Coins</color> at the start of an adventure and whenever you move to a new world, up to a maximum of {1}. Use these coins to refresh Jonas's inventory.",
     "rawDescVars": [
       {
         "rendered": " 1<sprite=5> ",
@@ -1928,6 +2149,62 @@
     ],
     "image": "Se_Star_L_IgnoreDelusion.png"
   },
+  "Se_Star_L_IncreaseMaxHealthByGuidance": {
+    "name": "Boundless Blessing of the Great Guide",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      70,
+      60,
+      60,
+      60
+    ],
+    "requiredLevel": 50,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Activating a Shrine of Guidance increases <color=yellow>Max Health</color> by  20<sprite=5> . Activating a Blessed Shrine of Guidance increases it by  50<sprite=5> .",
+    "rawDesc": "Activating a Shrine of Guidance increases <color=yellow>Max Health</color> by {0}. Activating a Blessed Shrine of Guidance increases it by {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 20<sprite=5> ",
+        "format": "#,##0",
+        "raw": "defaultIncreaseMaxHealth",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            20.0,
+            25.0,
+            30.0,
+            35.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 50<sprite=5> ",
+        "format": "#,##0",
+        "raw": "blessedIncreaseMaxHealth",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            50.0,
+            60.0,
+            70.0,
+            80.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_IncreaseMaxHealthByGuidance.png"
+  },
   "Se_Star_L_MaxHealth": {
     "name": "Empowered Persistence",
     "lore": null,
@@ -1965,6 +2242,55 @@
       }
     ],
     "image": "Se_Star_L_MaxHealth.png"
+  },
+  "Se_Star_L_MaxHealthUpHealDown": {
+    "name": "Thick Skin",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      50,
+      60,
+      60
+    ],
+    "requiredLevel": 65,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Increases <color=yellow>Max Health</color> by  15%<sprite=5> . Reduces <color=yellow>Healing Received</color> by 50%.",
+    "rawDesc": "Increases <color=yellow>Max Health</color> by {0}. Reduces <color=yellow>Healing Received</color> by {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "maxHealthAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "healReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_L_MaxHealthUpHealDown.png"
   },
   "Se_Star_L_PeriodicScalingArmor": {
     "name": "Layered Scales",
@@ -2016,6 +2342,55 @@
       }
     ],
     "image": "Se_Star_L_PeriodicScalingArmor.png"
+  },
+  "Se_Star_L_PostHitDamageImmune": {
+    "name": "Cowardly Doll",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      60,
+      60
+    ],
+    "requiredLevel": 60,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Gain <color=yellow>Damage Immunity</color> for 1 seconds after taking <color=yellow>Damage</color>. Triggers once every  14<sprite=5>  seconds.",
+    "rawDesc": "Gain <color=yellow>Damage Immunity</color> for {0} seconds after taking <color=yellow>Damage</color>. Triggers once every {1} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "protectedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 14<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            14.0,
+            12.0,
+            10.0
+          ],
+          "strengthScaling": "Divide"
+        }
+      }
+    ],
+    "image": "Se_Star_L_PostHitDamageImmune.png"
   },
   "Se_Star_L_PotionChance": {
     "name": "Asclepius",
@@ -2890,8 +3265,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Gain 4 Gold each time you damage a <color=yellow>Merchant</color>, up to a maximum of  40<sprite=5>  Gold.",
-    "rawDesc": "Gain {0} Gold each time you damage a <color=yellow>Merchant</color>, up to a maximum of {1} Gold.",
+    "description": "Gain 4 Gold each time you damage <color=yellow>Jonas</color>, up to a maximum of  40<sprite=5>  Gold.",
+    "rawDesc": "Gain {0} Gold each time you damage <color=yellow>Jonas</color>, up to a maximum of {1} Gold.",
     "rawDescVars": [
       {
         "rendered": "4",
@@ -3571,16 +3946,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Increases <color=yellow>Distorted Mind</color>'s cooldown by 1 seconds, but firing at maximum charge increases the number of arrows by 2.",
+    "description": "Increases <color=yellow>Distorted Mind</color>'s cooldown by 1.5 seconds, but firing at maximum charge increases the number of arrows by 3.",
     "rawDesc": "Increases <color=yellow>Distorted Mind</color>'s cooldown by {0} seconds, but firing at maximum charge increases the number of arrows by {1}.",
     "rawDescVars": [
       {
-        "rendered": "1",
+        "rendered": "1.5",
         "format": "#,##0.#",
         "raw": "cooldownPenalty",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 1.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3588,12 +3963,12 @@
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
         "raw": "bonusCount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3614,16 +3989,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Increases the maximum number of arrows for <color=yellow>Distorted Mind</color> by 7, but you cannot move while charging.",
+    "description": "Increases the maximum number of arrows for <color=yellow>Distorted Mind</color> by 4, but you cannot move while charging.",
     "rawDesc": "Increases the maximum number of arrows for <color=yellow>Distorted Mind</color> by {0}, but you cannot move while charging.",
     "rawDescVars": [
       {
-        "rendered": "7",
+        "rendered": "4",
         "format": "#,##0",
         "raw": "increased",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 7.0,
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3644,16 +4019,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "When you release <color=yellow>Distorted Mind</color> without fully charging, its cooldown is reduced by 50%.",
+    "description": "When you release <color=yellow>Distorted Mind</color> without fully charging, its cooldown is reduced by 40%.",
     "rawDesc": "When you release <color=yellow>Distorted Mind</color> without fully charging, its cooldown is reduced by {0}.",
     "rawDescVars": [
       {
-        "rendered": "50%",
+        "rendered": "40%",
         "format": "P0",
         "raw": "cooldownReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4253,8 +4628,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "The <color=yellow>Gold price</color> of items sold by Merchants is reduced by  5%<sprite=5> .",
-    "rawDesc": "The <color=yellow>Gold price</color> of items sold by Merchants is reduced by {0}.",
+    "description": "The <color=yellow>Gold price</color> of items sold by Jonas is reduced by  5%<sprite=5> .",
+    "rawDesc": "The <color=yellow>Gold price</color> of items sold by Jonas is reduced by {0}.",
     "rawDescVars": [
       {
         "rendered": " 5%<sprite=5> ",
@@ -4846,7 +5221,7 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Annihilation Stance</color> becomes a regular ability with a 14 second cooldown, allowing you to use other Memories while it's active. Its Sword Energy damage and Attack Damage bonus are reduced by 40%, it lasts for 4 seconds, and it no longer increases your Dodge skill's Memory Haste and Max Charges.",
+    "description": "<color=yellow>Annihilation Stance</color> becomes a regular ability with a 14 second cooldown, allowing you to use other Memories while it's active. Its Sword Energy damage and Attack Damage bonus are reduced by 50%, it lasts for 4 seconds, and it no longer increases your Dodge skill's Memory Haste and Max Charges.",
     "rawDesc": "<color=yellow>Annihilation Stance</color> becomes a regular ability with a {0} second cooldown, allowing you to use other Memories while it's active. Its Sword Energy damage and Attack Damage bonus are reduced by {1}, it lasts for {2} seconds, and it no longer increases your Dodge skill's Memory Haste and Max Charges.",
     "rawDescVars": [
       {
@@ -4863,12 +5238,12 @@
         }
       },
       {
-        "rendered": "40%",
+        "rendered": "50%",
         "format": "P0",
         "raw": "strengthReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.4,
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4902,13 +5277,39 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Annihilation Stance</color> no longer fires Sword Energy, but instead attacks 100% more frequently.",
-    "rawDesc": "<color=yellow>Annihilation Stance</color> no longer fires Sword Energy, but instead attacks {0} more frequently.",
+    "description": "Reduces <color=yellow>Annihilation Stance</color>'s <color=yellow>Sword Energy</color> damage by 60% and its range by 80%, but increases the granted Attack Speed and Dodge skill <color=yellow>Memory Haste</color> by 100%.",
+    "rawDesc": "Reduces <color=yellow>Annihilation Stance</color>'s <color=yellow>Sword Energy</color> damage by {0} and its range by {1}, but increases the granted Attack Speed and Dodge skill <color=yellow>Memory Haste</color> by {2}.",
     "rawDescVars": [
+      {
+        "rendered": "60%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "travelDistanceReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
       {
         "rendered": "100%",
         "format": "P0",
-        "raw": "speedAmp",
+        "raw": "buffAmp",
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.0,
@@ -5036,8 +5437,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "When you defeat a boss, you have a  30%<sprite=5>  chance to obtain a <color=yellow>Platinum Coin</color>. This coin can refresh the Merchant's inventory.",
-    "rawDesc": "When you defeat a boss, you have a {0} chance to obtain a <color=yellow>Platinum Coin</color>. This coin can refresh the Merchant's inventory.",
+    "description": "When you defeat a boss, you have a  30%<sprite=5>  chance to obtain a <color=yellow>Platinum Coin</color>. This coin can refresh Jonas's inventory.",
+    "rawDesc": "When you defeat a boss, you have a {0} chance to obtain a <color=yellow>Platinum Coin</color>. This coin can refresh Jonas's inventory.",
     "rawDescVars": [
       {
         "rendered": " 30%<sprite=5> ",
@@ -5071,8 +5472,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Intimidate</color> Merchants to lower item prices. If you succeed (50% chance), the Gold price is reduced by  50%<sprite=5> . If you fail, it increases by 50%.",
-    "rawDesc": "<color=yellow>Intimidate</color> Merchants to lower item prices. If you succeed ({0} chance), the Gold price is reduced by {1}. If you fail, it increases by {2}.",
+    "description": "<color=yellow>Intimidate</color> Jonas to lower item prices. If you succeed (50% chance), the Gold price is reduced by  50%<sprite=5> . If you fail, it increases by 50%.",
+    "rawDesc": "<color=yellow>Intimidate</color> Jonas to lower item prices. If you succeed ({0} chance), the Gold price is reduced by {1}. If you fail, it increases by {2}.",
     "rawDescVars": [
       {
         "rendered": "50%",
@@ -5873,8 +6274,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "The <color=yellow>Gold price</color> of items sold by <color=yellow>Merchants</color> is reduced by  10%<sprite=5> .",
-    "rawDesc": "The <color=yellow>Gold price</color> of items sold by <color=yellow>Merchants</color> is reduced by {0}.",
+    "description": "The <color=yellow>Gold price</color> of items sold by <color=yellow>Jonas</color> is reduced by  10%<sprite=5> .",
+    "rawDesc": "The <color=yellow>Gold price</color> of items sold by <color=yellow>Jonas</color> is reduced by {0}.",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -5910,8 +6311,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "The <color=yellow>Gold price</color> of items sold by some <color=yellow>Merchants</color> is increased by  50%<sprite=5> , but they offer 2 additional items for sale.",
-    "rawDesc": "The <color=yellow>Gold price</color> of items sold by some <color=yellow>Merchants</color> is increased by {0}, but they offer 2 additional items for sale.",
+    "description": "The <color=yellow>Gold price</color> of items sold by <color=yellow>Jonas</color> is increased by  50%<sprite=5> , but he offers 2 additional items for sale.",
+    "rawDesc": "The <color=yellow>Gold price</color> of items sold by <color=yellow>Jonas</color> is increased by {0}, but he offers 2 additional items for sale.",
     "rawDescVars": [
       {
         "rendered": " 50%<sprite=5> ",
@@ -6820,8 +7221,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "You begin your adventure with  150<sprite=5>  <color=yellow>Gold</color>, but the Gold price of Merchant items is increased by 10%.",
-    "rawDesc": "You begin your adventure with {0} <color=yellow>Gold</color>, but the Gold price of Merchant items is increased by {1}.",
+    "description": "You begin your adventure with  150<sprite=5>  <color=yellow>Gold</color>, but the Gold price of items sold by Jonas is increased by 10%.",
+    "rawDesc": "You begin your adventure with {0} <color=yellow>Gold</color>, but the Gold price of items sold by Jonas is increased by {1}.",
     "rawDescVars": [
       {
         "rendered": " 150<sprite=5> ",
@@ -7715,8 +8116,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "The Gold price of items sold by merchants in the <color=yellow>Forest of Turbulence</color> is reduced by  30%<sprite=5> .",
-    "rawDesc": "The Gold price of items sold by merchants in the <color=yellow>Forest of Turbulence</color> is reduced by {0}.",
+    "description": "The Gold price of items sold by Jonas in the <color=yellow>Forest of Turbulence</color> is reduced by  30%<sprite=5> .",
+    "rawDesc": "The Gold price of items sold by Jonas in the <color=yellow>Forest of Turbulence</color> is reduced by {0}.",
     "rawDescVars": [
       {
         "rendered": " 30%<sprite=5> ",
@@ -8564,7 +8965,7 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Reduces Maximum Health by 15%, but increases <color=yellow>Discipline</color>'s cast range by 30%. The farther you are from your target, the more your damage and radius increase, up to 100% and 50%.",
+    "description": "Reduces Maximum Health by 15%, but increases <color=yellow>Discipline</color>'s cast range by 30%. The farther you are from your target, the more your damage and radius increase, up to 150% and 50%.",
     "rawDesc": "Reduces Maximum Health by {0}, but increases <color=yellow>Discipline</color>'s cast range by {1}. The farther you are from your target, the more your damage and radius increase, up to {2} and {3}.",
     "rawDescVars": [
       {
@@ -8594,12 +8995,12 @@
         }
       },
       {
-        "rendered": "100%",
+        "rendered": "150%",
         "format": "P0",
         "raw": "maxDamageAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 1.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8792,16 +9193,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Summons <color=yellow>El's Sanctuary</color> at a target location instead of Vesper's position. The cooldown is reduced by 10% for each ally and 3% for each enemy hit by the initial blast.",
+    "description": "Summons <color=yellow>El's Sanctuary</color> at a target location instead of Vesper's position. The cooldown is reduced by 12% for each ally and 6% for each enemy hit by the initial blast.",
     "rawDesc": "Summons <color=yellow>El's Sanctuary</color> at a target location instead of Vesper's position. The cooldown is reduced by {0} for each ally and {1} for each enemy hit by the initial blast.",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "12%",
         "format": "P0",
         "raw": "reductionRatioOnAlly",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.12,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8809,12 +9210,12 @@
         }
       },
       {
-        "rendered": "3%",
+        "rendered": "6%",
         "format": "P0",
         "raw": "reductionRatioOnEnemy",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.03,
+          "basicConstant": 0.06,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8838,8 +9239,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "The <color=yellow>Gold price</color> of items sold by Merchants is reduced by  10%<sprite=5> .",
-    "rawDesc": "The <color=yellow>Gold price</color> of items sold by Merchants is reduced by {0}.",
+    "description": "The <color=yellow>Gold price</color> of items sold by Jonas is reduced by  10%<sprite=5> .",
+    "rawDesc": "The <color=yellow>Gold price</color> of items sold by Jonas is reduced by {0}.",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -9681,16 +10082,29 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Ether's Influence</color>'s explosion damage is reduced by 60% and can no longer be detonated manually, but it now explodes automatically on hit.",
-    "rawDesc": "<color=yellow>Ether's Influence</color>'s explosion damage is reduced by {0} and can no longer be detonated manually, but it now explodes automatically on hit.",
+    "description": "When the projectile of <color=yellow>Ether's Influence</color> hits an enemy with 3 or more Light stacks, it triggers an explosion that deals 50% damage.",
+    "rawDesc": "When the projectile of <color=yellow>Ether's Influence</color> hits an enemy with {0} or more Light stacks, it triggers an explosion that deals {1} damage.",
     "rawDescVars": [
       {
-        "rendered": "60%",
-        "format": "P0",
-        "raw": "damageReduction",
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "requiredLightStacks",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.6,
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "explosionDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9711,16 +10125,29 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Ether's Influence</color>'s explosion radius is increased by 25%.",
-    "rawDesc": "<color=yellow>Ether's Influence</color>'s explosion radius is increased by {0}.",
+    "description": "<color=yellow>Ether's Influence</color>'s explosion radius is increased by 15%, and its Cooldown is reduced by 7% for each enemy hit by the explosion.",
+    "rawDesc": "<color=yellow>Ether's Influence</color>'s explosion radius is increased by {0}, and its Cooldown is reduced by {1} for each enemy hit by the explosion.",
     "rawDescVars": [
       {
-        "rendered": "25%",
+        "rendered": "15%",
         "format": "P0",
         "raw": "scaleAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.25,
+          "basicConstant": 0.15,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "7%",
+        "format": "P0",
+        "raw": "reducedCooldownRatioPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.07,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9771,16 +10198,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Increases <color=yellow>Supernova</color>'s cast range by 40% and explosion radius by 30%.",
-    "rawDesc": "Increases <color=yellow>Supernova</color>'s cast range by {0} and explosion radius by {1}.",
+    "description": "Increases <color=yellow>Supernova</color>'s Cooldown by 3 seconds, but increases its cast range by 30%, explosion radius by 20%, and maximum charges by 2.",
+    "rawDesc": "Increases <color=yellow>Supernova</color>'s Cooldown by {0} seconds, but increases its cast range by {1}, explosion radius by {2}, and maximum charges by {3}.",
     "rawDescVars": [
       {
-        "rendered": "40%",
-        "format": "P0",
-        "raw": "rangeAmp",
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "cooldownPenalty",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.4,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9790,10 +10217,36 @@
       {
         "rendered": "30%",
         "format": "P0",
-        "raw": "radiusAmp",
+        "raw": "rangeAmp",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "radiusAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "gainedMaxCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9830,9 +10283,36 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Casting <color=yellow>Supernova</color> resets the cooldown of Dodge.",
-    "rawDesc": "Casting <color=yellow>Supernova</color> resets the cooldown of Dodge.",
-    "rawDescVars": [],
+    "description": "For each enemy hit by <color=yellow>Supernova</color>'s explosion, the Cooldown is reduced by 0.5 seconds and the damage of the next Supernova cast increases by 10%.",
+    "rawDesc": "For each enemy hit by <color=yellow>Supernova</color>'s explosion, the Cooldown is reduced by {0} seconds and the damage of the next Supernova cast increases by {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "reducedCooldownOnHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "nextCastDamageAmpOnHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Yubar_F_SN_DodgeReset.png"
   },
   "Se_Star_Yubar_F_TQ_EssenceCooldown": {
@@ -10049,11 +10529,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "Defeating enemies has a  0.5%<sprite=5>  chance to create a <color=yellow>Star Cookie</color>. <color=yellow>Star Cookies</color> restore a small amount of Yubar's Health and grant a small amount of Gold and Dream Dust.",
-    "rawDesc": "Defeating enemies has a {0} chance to create a <color=yellow>Star Cookie</color>. <color=yellow>Star Cookies</color> restore a small amount of Yubar's Health and grant a small amount of Gold and Dream Dust.",
+    "description": "Defeating enemies has a  0.6%<sprite=5>  chance and defeating bosses has a 100% chance to create a <color=yellow>Star Cookie</color>. <color=yellow>Star Cookies</color> restore a small amount of Yubar's Health and grant a small amount of Gold and Dream Dust.",
+    "rawDesc": "Defeating enemies has a {0} chance and defeating bosses has a {1} chance to create a <color=yellow>Star Cookie</color>. <color=yellow>Star Cookies</color> restore a small amount of Yubar's Health and grant a small amount of Gold and Dream Dust.",
     "rawDescVars": [
       {
-        "rendered": " 0.5%<sprite=5> ",
+        "rendered": " 0.6%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "starCookieChance",
         "scalingType": "star",
@@ -10062,9 +10542,26 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.005,
-            0.008,
-            0.012
+            0.006,
+            0.01,
+            0.014
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "#,##0.#%",
+        "raw": "starCookieOnBossChance",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            1.0,
+            1.0,
+            1.0
           ],
           "strengthScaling": "Multiply"
         }

@@ -3295,6 +3295,49 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Glass": {
+    "name": "玻璃精粹",
+    "description": "<color=yellow>战斗中</color>获得<color=yellow>护盾</color>时，<color=yellow>恢复</color>相当于所获护盾量 12%<sprite=5> 的生命值。每拥有一段<color=yellow>寒气记忆</color>，此记忆的<color=yellow>恢复量</color>增加 18%<sprite=5> 。",
+    "rawDesc": "<color=yellow>战斗中</color>获得<color=yellow>护盾</color>时，<color=yellow>恢复</color>相当于所获护盾量{0}的生命值。每拥有一段<color=yellow>寒气记忆</color>，此记忆的<color=yellow>恢复量</color>增加{1}。",
+    "rawDescVars": [
+      {
+        "rendered": " 12%<sprite=5> ",
+        "format": "P0",
+        "raw": "healByShieldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": " 18%<sprite=5> ",
+        "format": "P0",
+        "raw": "healAmpPerColdSkill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "Gem_R_Glass.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Insatiable": {
     "name": "贪欲精粹",
     "description": "施放该记忆后，在5秒内，<color=yellow>攻击力</color>提升 15%<sprite=5> ，且每次<color=yellow>攻击</color>时<color=yellow>回复</color> 6<sprite=5> 点的体力。",
@@ -3346,6 +3389,75 @@
       "Attack"
     ],
     "image": "Gem_R_Insatiable.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lava": {
+    "name": "熔岩精粹",
+    "description": "每4秒，此记忆的<color=yellow>施放</color>将获得<color=yellow>强化</color>。使用强化的<color=yellow>施放</color>首次对敌人造成<color=yellow>火焰伤害</color>时，会在目标脚下生成持续4秒的熔岩。熔岩上的所有敌人每秒受到 <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> 点<color=yellow>火焰伤害</color>，且受到的<color=yellow>火焰伤害</color>增加30%。最多只能同时存在5个熔岩。",
+    "rawDesc": "每{0}秒，此记忆的<color=yellow>施放</color>将获得<color=yellow>强化</color>。使用强化的<color=yellow>施放</color>首次对敌人造成<color=yellow>火焰伤害</color>时，会在目标脚下生成持续{1}秒的熔岩。熔岩上的所有敌人每秒受到{2}点<color=yellow>火焰伤害</color>，且受到的<color=yellow>火焰伤害</color>增加{3}。最多只能同时存在{4}个熔岩。",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Gem_R_Lava::cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Ai_R_Lava_LavaField::duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_Lava_LavaField::dmgFactor/Ai_R_Lava_LavaField::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "Se_R_Lava_Debuff::fireDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "maxLavaCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Lava.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -3531,10 +3643,52 @@
     "achievementName": "冷静应对，稳步前行",
     "achievementDescription": "在体力低于25%的状态下，累计击杀英雄首领8次。"
   },
+  "Gem_R_Purity": {
+    "name": "纯净精粹",
+    "description": "<color=yellow>施放</color>此记忆时，移除旅行者身上的所有<color=yellow>元素效果</color>。每移除一个<color=yellow>元素效果</color>，<color=yellow>恢复</color> <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> 点生命值。每4秒只能触发一次。",
+    "rawDesc": "<color=yellow>施放</color>此记忆时，移除旅行者身上的所有<color=yellow>元素效果</color>。每移除一个<color=yellow>元素效果</color>，<color=yellow>恢复</color>{0}点生命值。每{1}秒只能触发一次。",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healPerElemental",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Purity.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Rejuvenation": {
     "name": "回春精粹",
-    "description": "每隔15秒，该记忆的<color=yellow>施放</color>会被<color=yellow>强化</color>一次。<color=yellow>强化施放</color>后1.5秒内造成的<color=yellow>伤害</color>，会为<color=yellow>自身</color><color=yellow>回复</color> 14%<sprite=5> 的<color=yellow>体力</color>。",
-    "rawDesc": "每隔{0}秒，该记忆的<color=yellow>施放</color>会被<color=yellow>强化</color>一次。<color=yellow>强化施放</color>后{1}秒内造成的<color=yellow>伤害</color>，会为<color=yellow>自身</color><color=yellow>回复</color>{2}的<color=yellow>体力</color>。",
+    "description": "每隔15秒，该记忆的<color=yellow>施放</color>会被<color=yellow>强化</color>一次。<color=yellow>强化施放</color>该记忆后1.5秒内造成的<color=yellow>伤害</color>，会为<color=yellow>自身</color><color=yellow>回复</color>所造成<color=yellow>伤害</color>的 14%<sprite=5> 的<color=yellow>体力</color>。",
+    "rawDesc": "每隔{0}秒，该记忆的<color=yellow>施放</color>会被<color=yellow>强化</color>一次。<color=yellow>强化施放</color>该记忆后{1}秒内造成的<color=yellow>伤害</color>，会为<color=yellow>自身</color><color=yellow>回复</color>所造成<color=yellow>伤害</color>的{2}的<color=yellow>体力</color>。",
     "rawDescVars": [
       {
         "rendered": "15",
@@ -3713,18 +3867,18 @@
   },
   "Gem_R_Shock": {
     "name": "震击精粹",
-    "description": "第4次<color=yellow>普通攻击</color>会被<color=yellow>强化</color>，并向敌人发射可弹跳的<color=yellow>闪击</color>，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>，最多2次。每20%的<color=yellow>暴击率</color>， 弹跳次数可增加1次。",
+    "description": "第4次<color=yellow>普通攻击</color>会被<color=yellow>强化</color>，并向敌人发射可弹跳的<color=yellow>闪击</color>，对敌人造成 <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>，最多2次。每20%的<color=yellow>暴击率</color>， 弹跳次数可增加1次。",
     "rawDesc": "第4次<color=yellow>普通攻击</color>会被<color=yellow>强化</color>，并向敌人发射可弹跳的<color=yellow>闪击</color>，对敌人造成{0}的<color=yellow>光明伤害</color>，最多{1}次。每{2}的<color=yellow>暴击率</color>， 弹跳次数可增加1次。",
     "rawDescVars": [
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "chainDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.2,
-          "basicAD": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.01
         }

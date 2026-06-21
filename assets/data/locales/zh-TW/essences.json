@@ -3295,6 +3295,49 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Glass": {
+    "name": "玻璃精粹",
+    "description": "<color=yellow>戰鬥中</color>獲得<color=yellow>護盾</color>時，<color=yellow>恢復</color>相當於獲得護盾量 12%<sprite=5> 的生命值。每擁有一個<color=yellow>冰寒記憶</color>，此記憶的<color=yellow>恢復量</color>增加 18%<sprite=5> 。",
+    "rawDesc": "<color=yellow>戰鬥中</color>獲得<color=yellow>護盾</color>時，<color=yellow>恢復</color>相當於獲得護盾量{0}的生命值。每擁有一個<color=yellow>冰寒記憶</color>，此記憶的<color=yellow>恢復量</color>增加{1}。",
+    "rawDescVars": [
+      {
+        "rendered": " 12%<sprite=5> ",
+        "format": "P0",
+        "raw": "healByShieldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": " 18%<sprite=5> ",
+        "format": "P0",
+        "raw": "healAmpPerColdSkill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "Gem_R_Glass.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Insatiable": {
     "name": "貪食精粹",
     "description": "施放此記憶後5秒內<color=yellow>攻擊力</color>增加 15%<sprite=5> ，並且每次<color=yellow>攻擊</color><color=yellow>恢復</color> 6<sprite=5> 的生命值。",
@@ -3346,6 +3389,75 @@
       "Attack"
     ],
     "image": "Gem_R_Insatiable.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lava": {
+    "name": "熔岩精粹",
+    "description": "每4秒，此記憶的<color=yellow>施放</color>將被<color=yellow>強化</color>。使用強化的<color=yellow>施放</color>首次對敵人造成<color=yellow>火焰傷害</color>時，會在目標敵人腳下生成持續4秒的熔岩。熔岩上的所有敵人每秒受到 <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> 的<color=yellow>火焰傷害</color>，且受到的<color=yellow>火焰傷害</color>增加30%。最多只能維持5個熔岩。",
+    "rawDesc": "每{0}秒，此記憶的<color=yellow>施放</color>將被<color=yellow>強化</color>。使用強化的<color=yellow>施放</color>首次對敵人造成<color=yellow>火焰傷害</color>時，會在目標敵人腳下生成持續{1}秒的熔岩。熔岩上的所有敵人每秒受到{2}的<color=yellow>火焰傷害</color>，且受到的<color=yellow>火焰傷害</color>增加{3}。最多只能維持{4}個熔岩。",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Gem_R_Lava::cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Ai_R_Lava_LavaField::duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_Lava_LavaField::dmgFactor/Ai_R_Lava_LavaField::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "Se_R_Lava_Debuff::fireDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "maxLavaCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Lava.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -3531,6 +3643,48 @@
     "achievementName": "保持冷靜，沉穩地前進吧",
     "achievementDescription": "在生命值低於25%以下的狀態下，累計擊殺英雄首領8次。"
   },
+  "Gem_R_Purity": {
+    "name": "純淨精粹",
+    "description": "<color=yellow>施放</color>此記憶時，移除旅行者身上的所有<color=yellow>元素效果</color>。每移除一個<color=yellow>元素效果</color>，<color=yellow>恢復</color> <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> 生命值。每4秒只能觸發一次。",
+    "rawDesc": "<color=yellow>施放</color>此記憶時，移除旅行者身上的所有<color=yellow>元素效果</color>。每移除一個<color=yellow>元素效果</color>，<color=yellow>恢復</color>{0}生命值。每{1}秒只能觸發一次。",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healPerElemental",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Purity.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Rejuvenation": {
     "name": "回春精粹",
     "description": "每隔15秒，這個記憶的<color=yellow>施放</color>會被<color=yellow>強化</color>一次。<color=yellow>強化施放</color>在施放後1.5秒內造成的<color=yellow>傷害</color>，其中 14%<sprite=5> 會轉為<color=yellow>自身</color><color=yellow>生命值</color>的<color=yellow>恢復</color>。",
@@ -3713,7 +3867,7 @@
   },
   "Gem_R_Shock": {
     "name": "震撼精粹",
-    "description": "每第4次<color=yellow>基本攻擊</color>會被<color=yellow>強化</color>，發射<color=yellow>電擊</color>彈射至敵人，最多造成2次 <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> 的<color=yellow>光明傷害</color>。每20%點<color=yellow>致命率</color>增加1次最大傷害次數。",
+    "description": "每第4次<color=yellow>基本攻擊</color>會被<color=yellow>強化</color>，發射<color=yellow>電擊</color>彈射至敵人，最多造成2次 <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> 的<color=yellow>光明傷害</color>。每20%點<color=yellow>致命率</color>增加1次最大傷害次數。",
     "rawDesc": "每第4次<color=yellow>基本攻擊</color>會被<color=yellow>強化</color>，發射<color=yellow>電擊</color>彈射至敵人，最多造成{0}次{1}的<color=yellow>光明傷害</color>。每{2}點<color=yellow>致命率</color>增加1次最大傷害次數。",
     "rawDescVars": [
       {
@@ -3730,14 +3884,14 @@
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "chainDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.2,
-          "basicAD": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.01
         }

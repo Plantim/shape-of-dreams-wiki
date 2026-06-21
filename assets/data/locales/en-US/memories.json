@@ -207,8 +207,8 @@
     "cooldownTime": 4.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Fires a dark bolt that deals  <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5>  <color=yellow>Dark damage</color> to enemies and triggers <color=yellow>attack effects</color>. Pierces up to 2 enemies.",
-    "rawDesc": "Fires a dark bolt that deals {0} <color=yellow>Dark damage</color> to enemies and triggers <color=yellow>attack effects</color>. Pierces up to {1} enemies.",
+    "description": "Fires a dark bolt that deals  <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5>  <color=yellow>Dark Damage</color> to enemies and triggers <color=yellow>Attack Effects</color>. Pierces up to 2 enemies.\nHas a <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> chance to increase <color=yellow>Damage</color> by 80% and reduce <color=yellow>Cooldown</color> by 50%.",
+    "rawDesc": "Fires a dark bolt that deals {0} <color=yellow>Dark Damage</color> to enemies and triggers <color=yellow>Attack Effects</color>. Pierces up to {1} enemies.\nHas a {2} chance to increase <color=yellow>Damage</color> by {3} and reduce <color=yellow>Cooldown</color> by {4}.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>245%</gradient></color><sprite=5> ",
@@ -235,9 +235,48 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "ampEmpoweredDmg",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "empoweredCooldownReductionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Fires an arrow that deals Dark damage",
+    "shortDescription": "Fires an arrow that deals Dark Damage",
     "rarity": "Common",
     "type": "Normal",
     "traveler": "",
@@ -257,8 +296,8 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Pierces enemies in front, dealing  <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5>  <color=yellow>Dark Damage</color>, triggering <color=yellow>Attack Effects</color>, and pulling them to the center. Deals 100% increased damage to shields.",
-    "rawDesc": "Pierces enemies in front, dealing {0} <color=yellow>Dark Damage</color>, triggering <color=yellow>Attack Effects</color>, and pulling them to the center. Deals {1} increased damage to shields.",
+    "description": "Pierces enemies in front, dealing  <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5>  <color=yellow>Dark Damage</color>, triggering <color=yellow>Attack Effects</color>, and pulling them to the center. Deals 100% increased damage to shields.\nHas a <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> chance to increase <color=yellow>Damage</color> by 100% and <color=yellow>Heal</color>  <sprite=2><color=#fff><gradient=sv_ad>20%</gradient></color><sprite=5>  <color=yellow>Health</color> per enemy hit.",
+    "rawDesc": "Pierces enemies in front, dealing {0} <color=yellow>Dark Damage</color>, triggering <color=yellow>Attack Effects</color>, and pulling them to the center. Deals {1} increased damage to shields.\nHas a {2} chance to increase <color=yellow>Damage</color> by {3} and <color=yellow>Heal</color> {4} <color=yellow>Health</color> per enemy hit.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>230%</gradient></color><sprite=5> ",
@@ -284,6 +323,45 @@
           "basicAD": 0,
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "dmgAmpByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>20%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healAmountByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
         }
       }
     ],
@@ -1777,13 +1855,39 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Gain 1 stack of <color=yellow>Exotic Matter</color> when you <color=yellow>Cast</color> a <color=yellow>Memory</color> or use <color=yellow>Flicker</color>, up to a max of 3 stacks. <color=yellow>Casting</color> an <color=yellow>Ultimate Memory</color> instantly grants max stacks. Your next <color=yellow>Basic Attack</color> consumes all stacks to create an explosion that deals  <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5>  <color=yellow>Light Damage</color> per stack to enemies.\n\nThe explosion's size increases by 5% each time <color=yellow>Exotic Matter</color> is upgraded, up to a max of 50%.",
-    "rawDesc": "Gain 1 stack of <color=yellow>Exotic Matter</color> when you <color=yellow>Cast</color> a <color=yellow>Memory</color> or use <color=yellow>Flicker</color>, up to a max of {0} stacks. <color=yellow>Casting</color> an <color=yellow>Ultimate Memory</color> instantly grants max stacks. Your next <color=yellow>Basic Attack</color> consumes all stacks to create an explosion that deals {1} <color=yellow>Light Damage</color> per stack to enemies.\n\nThe explosion's size increases by {2} each time <color=yellow>Exotic Matter</color> is upgraded, up to a max of {3}.",
+    "description": "Gain 1 stack of <color=yellow>Exotic Matter</color> when you <color=yellow>Cast</color> a <color=yellow>Memory</color>, up to a max of 4 stacks. Casting a <color=yellow>Dodge Skill</color> grants 2 stacks instead, and casting an <color=yellow>Ultimate Memory</color> grants 3 stacks. Your next <color=yellow>Basic Attack</color> consumes all stacks to create an explosion that deals  <sprite=1><color=#fff><gradient=sv_ap>110%</gradient></color><sprite=5>  <color=yellow>Light Damage</color> per stack to enemies.\n\nThe explosion's size increases by 5% each time <color=yellow>Exotic Matter</color> is upgraded, up to a max of 50%.",
+    "rawDesc": "Gain 1 stack of <color=yellow>Exotic Matter</color> when you <color=yellow>Cast</color> a <color=yellow>Memory</color>, up to a max of {0} stacks. Casting a <color=yellow>Dodge Skill</color> grants {1} stacks instead, and casting an <color=yellow>Ultimate Memory</color> grants {2} stacks. Your next <color=yellow>Basic Attack</color> consumes all stacks to create an explosion that deals {3} <color=yellow>Light Damage</color> per stack to enemies.\n\nThe explosion's size increases by {4} each time <color=yellow>Exotic Matter</color> is upgraded, up to a max of {5}.",
     "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dodgeCastStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
       {
         "rendered": "3",
         "format": "#,##0",
-        "raw": "maxStack",
+        "raw": "ultCastStacks",
         "scalingType": "basic",
         "data": {
           "basicConstant": 3.0,
@@ -1887,7 +1991,7 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Attack Damage</color> is increased by  12<sprite=5> . Every 4th <color=yellow>basic attack</color> becomes a <color=yellow>critical strike</color> and deals an additional  <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5>  <color=yellow>Light damage</color>.\nEach time you <color=yellow>attack</color> an enemy, <color=yellow>Attack Speed</color> is increased by  4%<sprite=5>  for 4 seconds, up to a maximum of  24%<sprite=5> . When <color=yellow>Attack Speed</color> is at the maximum, <color=yellow>attacking</color> an enemy <color=yellow>restores</color>  1%<sprite=5>  of your <color=yellow>missing Health</color>.",
+    "description": "<color=yellow>Attack Damage</color> is increased by  12<sprite=5> . Every 4th <color=yellow>basic attack</color> becomes a <color=yellow>critical strike</color> and deals an additional  <sprite=1><color=#fff><gradient=sv_ap>70%</gradient></color><sprite=5>  <color=yellow>Light damage</color>.\nEach time you <color=yellow>attack</color> an enemy, <color=yellow>Attack Speed</color> is increased by  4%<sprite=5>  for 4 seconds, up to a maximum of  24%<sprite=5> . When <color=yellow>Attack Speed</color> is at the maximum, <color=yellow>attacking</color> an enemy <color=yellow>restores</color>  2%<sprite=5>  of your <color=yellow>missing Health</color>.",
     "rawDesc": "<color=yellow>Attack Damage</color> is increased by {0}. Every 4th <color=yellow>basic attack</color> becomes a <color=yellow>critical strike</color> and deals an additional {1} <color=yellow>Light damage</color>.\nEach time you <color=yellow>attack</color> an enemy, <color=yellow>Attack Speed</color> is increased by {2} for {3} seconds, up to a maximum of {4}. When <color=yellow>Attack Speed</color> is at the maximum, <color=yellow>attacking</color> an enemy <color=yellow>restores</color> {5} of your <color=yellow>missing Health</color>.",
     "rawDescVars": [
       {
@@ -1896,10 +2000,10 @@
         "raw": "adBonus",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 9.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 2.0,
+          "basicLvl": 3.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -1950,12 +2054,12 @@
         "data": {}
       },
       {
-        "rendered": " 1%<sprite=5> ",
+        "rendered": " 2%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "lostHpHealRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.006,
+          "basicConstant": 0.016,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.004,
@@ -3432,8 +3536,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Hold</color> to charge darkness in your hands. When fully charged, dash forward and strike the first enemy hit and all nearby enemies. Enemies take  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> - <sprite=2><color=#fff><gradient=sv_ad>600%</gradient></color><sprite=5>  <color=yellow>Dark damage</color> based on charge time and are stunned for 1 seconds. Gain a <color=yellow>Shield</color> worth  <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5>  lasting 3 seconds for each enemy hit, increased by 200% if the target is a <color=yellow>Boss</color>.\nCharging for 1.2 seconds maximizes the dash's distance and damage.",
-    "rawDesc": "<color=yellow>Hold</color> to charge darkness in your hands. When fully charged, dash forward and strike the first enemy hit and all nearby enemies. Enemies take {0}-{1} <color=yellow>Dark damage</color> based on charge time and are stunned for {2} seconds. Gain a <color=yellow>Shield</color> worth {3} lasting {4} seconds for each enemy hit, increased by {5} if the target is a <color=yellow>Boss</color>.\nCharging for {6} seconds maximizes the dash's distance and damage.",
+    "description": "<color=yellow>Hold</color> to charge darkness in your hands. When fully charged, dash forward and strike the first enemy hit and all nearby enemies. Deals  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> - <sprite=2><color=#fff><gradient=sv_ad>600%</gradient></color><sprite=5>  <color=yellow>Dark Damage</color> to enemies based on charge time, stuns them for 1 seconds, and triggers <color=yellow>Attack Effects</color>. Gain a <color=yellow>Shield</color> worth  <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><sprite=5>  lasting 3 seconds for each enemy hit, increased by 200% if the target is a <color=yellow>Boss</color>.\nCharging for 1.2 seconds maximizes the dash's distance and damage.",
+    "rawDesc": "<color=yellow>Hold</color> to charge darkness in your hands. When fully charged, dash forward and strike the first enemy hit and all nearby enemies. Deals {0}-{1} <color=yellow>Dark Damage</color> to enemies based on charge time, stuns them for {2} seconds, and triggers <color=yellow>Attack Effects</color>. Gain a <color=yellow>Shield</color> worth {3} lasting {4} seconds for each enemy hit, increased by {5} if the target is a <color=yellow>Boss</color>.\nCharging for {6} seconds maximizes the dash's distance and damage.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5> ",
@@ -3550,7 +3654,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "For 7 seconds, imbues your weapon with the power of darkness, increasing <color=yellow>Critical Strike Chance</color> by  20%<sprite=5>  and dealing  <sprite=2><color=#fff><gradient=sv_ad>52%</gradient></color><sprite=5>  additional <color=yellow>Dark damage</color> on <color=yellow>attack</color>. <color=yellow>Melee Travelers</color> deal 25% increased additional damage.",
+    "description": "For 7 seconds, imbues your weapon with the power of darkness, increasing <color=yellow>Critical Strike Chance</color> by  25%<sprite=5>  and dealing  <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5>  additional <color=yellow>Dark damage</color> on <color=yellow>attack</color>. <color=yellow>Melee Travelers</color> deal 25% increased additional damage.",
     "rawDesc": "For {0} seconds, imbues your weapon with the power of darkness, increasing <color=yellow>Critical Strike Chance</color> by {1} and dealing {2} additional <color=yellow>Dark damage</color> on <color=yellow>attack</color>. <color=yellow>Melee Travelers</color> deal {3} increased additional damage.",
     "rawDescVars": [
       {
@@ -3567,27 +3671,27 @@
         }
       },
       {
-        "rendered": " 20%<sprite=5> ",
+        "rendered": " 25%<sprite=5> ",
         "format": "P0",
         "raw": "critChance",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.18,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.02,
+          "basicLvl": 0.05,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>52%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "hitDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 0.52,
+          "basicAD": 0.3,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.15
         }
@@ -4761,42 +4865,29 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Dash toward the target and slam your hammer, dealing  <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5>  <color=yellow>Light damage</color> to enemies and triggering 50% <color=yellow>attack effects</color>. Each time you <color=yellow>attack</color> an enemy, the <color=yellow>cooldown</color> is <color=yellow>reduced</color> by 8%.",
-    "rawDesc": "Dash toward the target and slam your hammer, dealing {0} <color=yellow>Light damage</color> to enemies and triggering {1} <color=yellow>attack effects</color>. Each time you <color=yellow>attack</color> an enemy, the <color=yellow>cooldown</color> is <color=yellow>reduced</color> by {2}.",
+    "description": "Dash toward the target and slam your hammer, dealing  <sprite=2><color=#fff><gradient=sv_ad>175%</gradient></color><sprite=5>  <color=yellow>Light Damage</color> to enemies and triggering <color=yellow>Attack Effects</color>. Each time you <color=yellow>Attack</color> an enemy, the <color=yellow>Cooldown</color> is <color=yellow>reduced</color> by 10%.",
+    "rawDesc": "Dash toward the target and slam your hammer, dealing {0} <color=yellow>Light Damage</color> to enemies and triggering <color=yellow>Attack Effects</color>. Each time you <color=yellow>Attack</color> an enemy, the <color=yellow>Cooldown</color> is <color=yellow>reduced</color> by {1}.",
     "rawDescVars": [
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>125%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>175%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.25,
+          "basicAD": 1.75,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "50%",
-        "format": "P0",
-        "raw": "attackEffect",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "8%",
+        "rendered": "10%",
         "format": "P0",
         "raw": "cooldownReductionRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.08,
+          "basicConstant": 0.1,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4804,7 +4895,7 @@
         }
       }
     ],
-    "shortDescription": "Light damage, dash",
+    "shortDescription": "Light Damage, Dash",
     "rarity": "Character",
     "type": "Normal",
     "traveler": "Hero_Vesper",
@@ -4815,7 +4906,7 @@
       "Mobility"
     ],
     "image": "St_Q_Discipline.png",
-    "lore": "Heretic, why do you flee?\nMy mace simply leads lost sheep back to the righteous path. No one escapes this teaching. If the price of learning is broken bones, then that is the price that must be paid.",
+    "lore": "Heretic, why do you flee? \nMy mace simply leads lost sheep back to the righteous path.\nNo one escapes this teaching. If the price of learning is broken bones, then that is the price that must be paid.",
     "achievementKey": "ACH_PEAK_PERFORMANCE",
     "achievementName": "Peak Performance",
     "achievementDescription": "Have 3 Dash or Teleport Memories at once as Vesper."
@@ -4825,8 +4916,8 @@
     "cooldownTime": 9.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Launch <color=yellow>Ether</color> that moves forward and returns, dealing  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5>  <color=yellow>Light damage</color> to enemies. Reactivate to cause <color=yellow>Ether</color> to <color=yellow>explode</color>, dealing  <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5>  <color=yellow>Light damage</color> and <color=yellow>rooting</color> enemies for 3 seconds.",
-    "rawDesc": "Launch <color=yellow>Ether</color> that moves forward and returns, dealing {0} <color=yellow>Light damage</color> to enemies. Reactivate to cause <color=yellow>Ether</color> to <color=yellow>explode</color>, dealing {1} <color=yellow>Light damage</color> and <color=yellow>rooting</color> enemies for {2} seconds.",
+    "description": "Launch <color=yellow>Ether</color> that moves forward and returns, dealing  <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5>  <color=yellow>Light Damage</color> to enemies. Reactivate to cause <color=yellow>Ether</color> to <color=yellow>explode</color>, dealing  <sprite=1><color=#fff><gradient=sv_ap>180%</gradient></color><sprite=5>  <color=yellow>Light Damage</color> and <color=yellow>rooting</color> enemies for 3 seconds.\n\nIf this <color=yellow>explosion</color> hits a single target, the <color=yellow>explosion damage</color> increases by 75%.",
+    "rawDesc": "Launch <color=yellow>Ether</color> that moves forward and returns, dealing {0} <color=yellow>Light Damage</color> to enemies. Reactivate to cause <color=yellow>Ether</color> to <color=yellow>explode</color>, dealing {1} <color=yellow>Light Damage</color> and <color=yellow>rooting</color> enemies for {2} seconds.\n\nIf this <color=yellow>explosion</color> hits a single target, the <color=yellow>explosion damage</color> increases by {3}.",
     "rawDescVars": [
       {
         "rendered": " <sprite=1><color=#fff><gradient=sv_ap>160%</gradient></color><sprite=5> ",
@@ -4866,9 +4957,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "75%",
+        "format": "P0",
+        "raw": "explodeAmpOnSingleTarget",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.75,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Light damage, reactivate to root",
+    "shortDescription": "Light Damage, reactivate to root",
     "rarity": "Character",
     "type": "Normal",
     "traveler": "Hero_Yubar",
@@ -5537,8 +5641,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Creates an expanding star at the target location that slows enemies, then channels for up to 3 seconds. You can't attack or use Memories while channeling. Reactivating <color=yellow>Supernova</color> detonates the star, dealing  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  <color=yellow>Light damage</color> to enemies. The explosion becomes more powerful with charge time, increasing damage up to 225% after 1.3 seconds.\nCharge speed increases proportionally to Yubar's Memory Haste.",
-    "rawDesc": "Creates an expanding star at the target location that slows enemies, then channels for up to {0} seconds. You can't attack or use Memories while channeling. Reactivating <color=yellow>Supernova</color> detonates the star, dealing {1} <color=yellow>Light damage</color> to enemies. The explosion becomes more powerful with charge time, increasing damage up to {2} after {3} seconds.\nCharge speed increases proportionally to Yubar's Memory Haste.",
+    "description": "Grants 1 charge of your <color=yellow>Dodge Skill</color> and creates an expanding <color=yellow>star</color> at the target location that slows enemies, then <color=yellow>channels</color> for up to 3 seconds. You can't <color=yellow>attack</color> or cast <color=yellow>Memories</color> while channeling. Reactivate to detonate the <color=yellow>star</color>, dealing  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  <color=yellow>Light Damage</color> to enemies.\n\nThe explosion becomes more powerful with <color=yellow>charge time</color>, increasing <color=yellow>damage</color> up to 225% after 1.3 seconds, and charge speed increases proportionally to Yubar's <color=yellow>Memory Haste</color>.",
+    "rawDesc": "Grants 1 charge of your <color=yellow>Dodge Skill</color> and creates an expanding <color=yellow>star</color> at the target location that slows enemies, then <color=yellow>channels</color> for up to {0} seconds. You can't <color=yellow>attack</color> or cast <color=yellow>Memories</color> while channeling. Reactivate to detonate the <color=yellow>star</color>, dealing {1} <color=yellow>Light Damage</color> to enemies.\n\nThe explosion becomes more powerful with <color=yellow>charge time</color>, increasing <color=yellow>damage</color> up to {2} after {3} seconds, and charge speed increases proportionally to Yubar's <color=yellow>Memory Haste</color>.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -5593,7 +5697,7 @@
         }
       }
     ],
-    "shortDescription": "Charge to deal powerful Light damage",
+    "shortDescription": "Charge to deal powerful Light Damage",
     "rarity": "Character",
     "type": "Normal",
     "traveler": "Hero_Yubar",
@@ -5612,7 +5716,7 @@
     "cooldownTime": 9.0,
     "maxCharges": 2,
     "addedCharges": 1,
-    "description": "<color=yellow>Summon</color> a <color=yellow>Leaf Hound</color> that follows Nachia at the target location, dealing  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5>  <color=yellow>damage</color> to enemies and <color=yellow>stunning</color> them for 0.4 seconds.\n\nThe <color=yellow>Leaf Hound</color> has 128 Health and 40 Armor, remains on the battlefield for up to 25 seconds, and claws enemies to deal  <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5>  <color=yellow>damage</color>. You can have up to 5 Leaf Hounds summoned at once.",
+    "description": "<color=yellow>Summon</color> a <color=yellow>Leaf Hound</color> that follows Nachia at the target location, dealing  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5>  <color=yellow>damage</color> to enemies and <color=yellow>stunning</color> them for 0.4 seconds.\n\nThe <color=yellow>Leaf Hound</color> has 128 Health and  20<sprite=5>  Armor, remains on the battlefield for up to 25 seconds, and claws enemies to deal  <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5>  <color=yellow>damage</color>. You can have up to 5 Leaf Hounds summoned at once.",
     "rawDesc": "<color=yellow>Summon</color> a <color=yellow>Leaf Hound</color> that follows Nachia at the target location, dealing {0} <color=yellow>damage</color> to enemies and <color=yellow>stunning</color> them for {1} seconds.\n\nThe <color=yellow>Leaf Hound</color> has {2} Health and {3} Armor, remains on the battlefield for up to {4} seconds, and claws enemies to deal {5} <color=yellow>damage</color>. You can have up to {6} Leaf Hounds summoned at once.",
     "rawDescVars": [
       {
@@ -5649,15 +5753,15 @@
         "data": {}
       },
       {
-        "rendered": "40",
+        "rendered": " 20<sprite=5> ",
         "format": "#,##0",
         "raw": "armor",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 40.0,
+          "basicConstant": 13.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 7.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5722,7 +5826,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Hold</color> to charge a volley of psychic arrows. Release to rain 1~ 4<sprite=5>  psychic arrows on nearby enemies, based on charge time. Each psychic arrow deals  <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5>  <color=yellow>Dark damage</color> to enemies in a small area.",
+    "description": "<color=yellow>Hold</color> to charge a volley of psychic arrows. Release to rain 1~ 4<sprite=5>  psychic arrows on nearby enemies, based on charge time. Each psychic arrow deals  <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><sprite=5>  <color=yellow>Dark damage</color> to enemies in a small area.",
     "rawDesc": "<color=yellow>Hold</color> to charge a volley of psychic arrows. Release to rain {0}~{1} psychic arrows on nearby enemies, based on charge time. Each psychic arrow deals {2} <color=yellow>Dark damage</color> to enemies in a small area.",
     "rawDescVars": [
       {
@@ -5746,14 +5850,14 @@
         "data": {}
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 2.0,
+          "basicAD": 1.7,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5948,8 +6052,8 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "For 10 seconds, envelop your blade with destructive <color=yellow>Sword Energy</color>. While this is active, you cannot <color=yellow>cast</color> <color=yellow>Memories</color>, but your <color=yellow>Attack Damage</color> increases by  35%<sprite=5> , your <color=yellow>Attack Range</color> is increased, and each <color=yellow>Basic Attack</color> fires <color=yellow>Sword Energy</color> that deals  <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5>  <color=yellow>Dark Damage</color> to enemies. You can perform  1.5<sprite=5>  <color=yellow>Basic Attacks</color> per second while this effect is active, and this rate is not affected by other Attack Speed effects.\n\nDuring this time, your <color=yellow>Dodge skill</color> gains  30<sprite=5>  <color=yellow>Memory Haste</color> and 2 <color=yellow>Max Charges</color>.",
-    "rawDesc": "For {0} seconds, envelop your blade with destructive <color=yellow>Sword Energy</color>. While this is active, you cannot <color=yellow>cast</color> <color=yellow>Memories</color>, but your <color=yellow>Attack Damage</color> increases by {1}, your <color=yellow>Attack Range</color> is increased, and each <color=yellow>Basic Attack</color> fires <color=yellow>Sword Energy</color> that deals {2} <color=yellow>Dark Damage</color> to enemies. You can perform {3} <color=yellow>Basic Attacks</color> per second while this effect is active, and this rate is not affected by other Attack Speed effects.\n\nDuring this time, your <color=yellow>Dodge skill</color> gains {4} <color=yellow>Memory Haste</color> and {5} <color=yellow>Max Charges</color>.",
+    "description": "For 10 seconds, envelop your blade with destructive <color=yellow>Sword Energy</color>. While this is active, you cannot <color=yellow>cast</color> <color=yellow>Memories</color>, but your <color=yellow>Attack Range</color> is slightly increased, your <color=yellow>Attack Damage</color> increases by  35%<sprite=5> , and your <color=yellow>Attack Speed</color> increases by  30%<sprite=5> . This Attack Speed increase is not affected by <color=yellow>One Step, One Kill</color>. Each <color=yellow>Basic Attack</color> fires <color=yellow>Sword Energy</color> that deals  <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5>  <color=yellow>Dark Damage</color> to enemies.\n\nDuring this time, your <color=yellow>Dodge skill</color> gains  30<sprite=5>  <color=yellow>Memory Haste</color> and 2 <color=yellow>Max Charges</color>.",
+    "rawDesc": "For {0} seconds, envelop your blade with destructive <color=yellow>Sword Energy</color>. While this is active, you cannot <color=yellow>cast</color> <color=yellow>Memories</color>, but your <color=yellow>Attack Range</color> is slightly increased, your <color=yellow>Attack Damage</color> increases by {1}, and your <color=yellow>Attack Speed</color> increases by {2}. This Attack Speed increase is not affected by <color=yellow>One Step, One Kill</color>. Each <color=yellow>Basic Attack</color> fires <color=yellow>Sword Energy</color> that deals {3} <color=yellow>Dark Damage</color> to enemies.\n\nDuring this time, your <color=yellow>Dodge skill</color> gains {4} <color=yellow>Memory Haste</color> and {5} <color=yellow>Max Charges</color>.",
     "rawDescVars": [
       {
         "rendered": "10",
@@ -5978,29 +6082,29 @@
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> ",
+        "rendered": " 30%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "atkSpdPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 10.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.4,
+          "basicAP": 4.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": " 1.5<sprite=5> ",
-        "format": "0.#",
-        "raw": "atkSpd",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 1.4,
-          "basicAP": 0.0,
-          "basicAD": 0.0,
-          "basicLvl": 0.1,
-          "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
@@ -6128,8 +6232,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Fires an arbalest bolt that <color=yellow>pierces</color> through enemies, dealing  <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5>  <color=yellow>Dark damage</color>, knocking them back, and triggering <color=yellow>attack effects</color>. Each time an enemy is <color=yellow>pierced</color>, the <color=yellow>damage</color> dealt to the next enemy increases by 35%.",
-    "rawDesc": "Fires an arbalest bolt that <color=yellow>pierces</color> through enemies, dealing {0} <color=yellow>Dark damage</color>, knocking them back, and triggering <color=yellow>attack effects</color>. Each time an enemy is <color=yellow>pierced</color>, the <color=yellow>damage</color> dealt to the next enemy increases by {1}.",
+    "description": "Fires an arbalest bolt that <color=yellow>Pierces</color> through enemies, dealing  <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5>  <color=yellow>Dark Damage</color>, knocking them back, and triggering <color=yellow>Attack Effects</color>. Each time an enemy is <color=yellow>Pierced</color>, the <color=yellow>Damage</color> dealt to the next enemy increases by 35%.\nHas a <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> chance to increase <color=yellow>Damage</color> by 100% and apply 5 <color=yellow>Darkness</color> to the target.",
+    "rawDesc": "Fires an arbalest bolt that <color=yellow>Pierces</color> through enemies, dealing {0} <color=yellow>Dark Damage</color>, knocking them back, and triggering <color=yellow>Attack Effects</color>. Each time an enemy is <color=yellow>Pierced</color>, the <color=yellow>Damage</color> dealt to the next enemy increases by {1}.\nHas a {2} chance to increase <color=yellow>Damage</color> by {3} and apply {4} <color=yellow>Darkness</color> to the target.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>250%</gradient></color><sprite=5> ",
@@ -6156,9 +6260,48 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "empoweredAmpDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "empoweredDarkStackCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Piercing Dark damage",
+    "shortDescription": "Piercing Dark Damage",
     "rarity": "Rare",
     "type": "Normal",
     "traveler": "",
@@ -6631,6 +6774,121 @@
     ],
     "image": "St_R_DangerousTheory.png",
     "lore": "The cowards at Arcanum called this theory \"unacceptably dangerous.\"\nFools.\n\nThey failed to grasp the elegance of the theory where matter, put under extreme conditions, produces the most explosive results. I am simply proving my hypothesis.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_DarkGrenade": {
+    "name": "Dark Grenade",
+    "cooldownTime": 9.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Throws a dark grenade at the target location. The grenade explodes, scattering 7 dark shards in all directions. Each shard triggers 50% <color=yellow>Attack Effect</color> and deals  <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5>  <color=yellow>Dark Damage</color> to the first enemy hit. If multiple shards hit the same target, subsequent shards deal 50% damage.\nHas a <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> chance to fire 4 additional dark shards and <color=yellow>Stun</color> enemies for 1 sec.",
+    "rawDesc": "Throws a dark grenade at the target location. The grenade explodes, scattering {0} dark shards in all directions. Each shard triggers {1} <color=yellow>Attack Effect</color> and deals {2} <color=yellow>Dark Damage</color> to the first enemy hit. If multiple shards hit the same target, subsequent shards deal {3} damage.\nHas a {4} chance to fire {5} additional dark shards and <color=yellow>Stun</color> enemies for {6} sec.",
+    "rawDescVars": [
+      {
+        "rendered": "7",
+        "format": "#,##0",
+        "raw": "defaultShardCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 7.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "attackEffectStrength",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_DarkGrenade_Shard::damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "subsequentHitMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "addedEmpoweredShardCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Throw, AoE Dark Damage",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "St_R_DarkGrenade.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -7717,8 +7975,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Fires 5 dark bullets that spread out in front. Each bullet deals  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5>  <color=yellow>Dark damage</color> and triggers 50% <color=yellow>attack effects</color>.",
-    "rawDesc": "Fires {0} dark bullets that spread out in front. Each bullet deals {1} <color=yellow>Dark damage</color> and triggers {2} <color=yellow>attack effects</color>.",
+    "description": "Fires 5 dark bullets that spread out in front. Each bullet deals  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><sprite=5>  <color=yellow>Dark Damage</color> and triggers 50% <color=yellow>Attack Effect</color>.\nHas a <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> chance to fire 4 additional dark bullets.",
+    "rawDesc": "Fires {0} dark bullets that spread out in front. Each bullet deals {1} <color=yellow>Dark Damage</color> and triggers {2} <color=yellow>Attack Effect</color>.\nHas a {3} chance to fire {4} additional dark bullets.",
     "rawDescVars": [
       {
         "rendered": "5",
@@ -7758,9 +8016,35 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "addedShootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": "Spreads Dark damage in front",
+    "shortDescription": "Spreads Dark Damage in front",
     "rarity": "Rare",
     "type": "Normal",
     "traveler": "",
@@ -7898,8 +8182,8 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Channels for 0.7 seconds to increase <color=yellow>Movement Speed</color> by  30%<sprite=5> . After channeling, launches 5 homing missiles that deal  <sprite=2><color=#fff><gradient=sv_ad>50%</gradient></color><sprite=5>  <color=yellow>Dark damage</color> to random nearby enemies and grants you  20%<sprite=5>  increased <color=yellow>Attack Speed</color> for 3 seconds.",
-    "rawDesc": "Channels for {0} seconds to increase <color=yellow>Movement Speed</color> by {1}. After channeling, launches {2} homing missiles that deal {3} <color=yellow>Dark damage</color> to random nearby enemies and grants you {4} increased <color=yellow>Attack Speed</color> for {5} seconds.",
+    "description": "Channels for 0.7 seconds to increase <color=yellow>Movement Speed</color> by  30%<sprite=5> . After channeling, launches 5 homing missiles that deal  <sprite=2><color=#fff><gradient=sv_ad>50%</gradient></color><sprite=5>  <color=yellow>Dark damage</color> to random nearby enemies and grants you  20%<sprite=5>  increased <color=yellow>Attack Speed</color> for 3 seconds.\nHas a <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> chance to fire 5 additional missiles.",
+    "rawDesc": "Channels for {0} seconds to increase <color=yellow>Movement Speed</color> by {1}. After channeling, launches {2} homing missiles that deal {3} <color=yellow>Dark damage</color> to random nearby enemies and grants you {4} increased <color=yellow>Attack Speed</color> for {5} seconds.\nHas a {6} chance to fire {7} additional missiles.",
     "rawDescVars": [
       {
         "rendered": "0.7",
@@ -7978,6 +8262,32 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "addedEmpoweredMissileCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "shortDescription": "Dark damage and increases Attack Speed",
@@ -8000,8 +8310,8 @@
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Quickly dash forward and fire 3 dark shards at nearby enemies. Each shard deals  <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5>  <color=yellow>Dark damage</color> and triggers 50% <color=yellow>attack effects</color>.",
-    "rawDesc": "Quickly dash forward and fire {0} dark shards at nearby enemies. Each shard deals {1} <color=yellow>Dark damage</color> and triggers {2} <color=yellow>attack effects</color>.",
+    "description": "Quickly dash forward and fire 3 dark shards at nearby enemies. Each shard deals  <sprite=2><color=#fff><gradient=sv_ad>65%</gradient></color><sprite=5>  <color=yellow>Dark damage</color> and triggers 50% <color=yellow>attack effects</color>.\nHas a <sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color> chance to increase the number of fired shards by 3.",
+    "rawDesc": "Quickly dash forward and fire {0} dark shards at nearby enemies. Each shard deals {1} <color=yellow>Dark damage</color> and triggers {2} <color=yellow>attack effects</color>.\nHas a {3} chance to increase the number of fired shards by {4}.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -8036,6 +8346,32 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>100%</gradient></color>",
+        "format": "#,##0'%'",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "addedSpawnCountByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8119,6 +8455,81 @@
     ],
     "image": "St_R_Smite.PNG",
     "lore": "The Society appears to be filled with elders stuck in their ways, their thinking growing fragile and stagnant. How long will they tinker with trivial rules, basking in their so-called achievements?\n\nObserving the tree scorched by lightning last night sparked an idea. Even such immense natural power must operate under certain laws, doesn't it?\n\nIf I can uncover these laws, I might be able to wield that force. Just the thought of it is thrilling. I must begin my research immediately.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_Somersault": {
+    "name": "Somersault",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Leap into the air for 0.5 sec, dodging attacks and becoming <color=yellow>Invincible</color>. <color=yellow>Critical Strike Chance</color> increases by  30%<sprite=5>  for 4 sec.\n\n<color=yellow>Attack</color>s reduce the <color=yellow>Cooldown</color> of this Memory by 0.3 sec.",
+    "rawDesc": "Leap into the air for {0} sec, dodging attacks and becoming <color=yellow>Invincible</color>. <color=yellow>Critical Strike Chance</color> increases by {1} for {2} sec.\n\n<color=yellow>Attack</color>s reduce the <color=yellow>Cooldown</color> of this Memory by {3} sec.",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "jumpDodgeDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 30%<sprite=5> ",
+        "format": "P0",
+        "raw": "critChangeAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.1,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "effectDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0.3",
+        "format": "#,##0.#",
+        "raw": "cooldownReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": "Invincibility, Critical Strike Chance Up",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "HardCC"
+    ],
+    "image": "St_R_Somersault.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -8235,6 +8646,88 @@
     ],
     "image": "St_R_StaticDischarge.png",
     "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_SummonLittleBaam": {
+    "name": "Soulmate",
+    "cooldownTime": 14.0,
+    "maxCharges": 3,
+    "addedCharges": 99,
+    "description": "<color=yellow>Summons</color> a stationary <color=yellow>Little Baam</color> at the target location.\n\n<color=yellow>Little Baam</color> has 119 Health and 50 Armor, stays on the battlefield for up to 20 seconds, and attacks nearby enemies, dealing  <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5>  <color=yellow>Light Damage</color>. You can maintain up to 10 at a time.\n\nAll <color=yellow>Charges</color> are restored at once.",
+    "rawDesc": "<color=yellow>Summons</color> a stationary <color=yellow>Little Baam</color> at the target location.\n\n<color=yellow>Little Baam</color> has {0} Health and {1} Armor, stays on the battlefield for up to {2} seconds, and attacks nearby enemies, dealing {3} <color=yellow>Light Damage</color>. You can maintain up to {4} at a time.\n\nAll <color=yellow>Charges</color> are restored at once.",
+    "rawDescVars": [
+      {
+        "rendered": "119",
+        "format": "#,##0",
+        "raw": "summonHealth",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "50",
+        "format": "#,##0",
+        "raw": "armor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "20",
+        "format": "#,##0.#",
+        "raw": "maxDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_SummonLittleBaam_Baam_Atk::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.85,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Summons Little Baam",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Summon"
+    ],
+    "image": "St_R_SummonLittleBaam.png",
+    "lore": "The capture of wild Baams was conducted in a strictly 'legal' and 'voluntary' manner.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""

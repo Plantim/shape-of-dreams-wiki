@@ -229,6 +229,55 @@
     ],
     "image": "Se_Star_D_CritDamage.png"
   },
+  "Se_Star_D_CritUpHitDecay": {
+    "name": "天生专注",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      60,
+      60
+    ],
+    "requiredLevel": 75,
+    "isRequiredLevelTotalMastery": true,
+    "description": "获得 25%<sprite=5> 的<color=yellow>暴击率</color>。受到敌人<color=yellow>伤害</color>时，由此星辰获得的<color=yellow>暴击率</color>将永久减少1%。<color=yellow>烧伤伤害</color>不会触发该衰减效果。",
+    "rawDesc": "获得{0}的<color=yellow>暴击率</color>。受到敌人<color=yellow>伤害</color>时，由此星辰获得的<color=yellow>暴击率</color>将永久减少{1}。<color=yellow>烧伤伤害</color>不会触发该衰减效果。",
+    "rawDescVars": [
+      {
+        "rendered": " 25%<sprite=5> ",
+        "format": "P0",
+        "raw": "critChanceAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.25,
+            0.35,
+            0.45
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "1%",
+        "format": "#,##0'%'",
+        "raw": "decayCritPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_D_CritUpHitDecay.png"
+  },
   "Se_Star_D_DamageBonusOnAllElemental": {
     "name": "元素术士",
     "lore": null,
@@ -529,6 +578,42 @@
       }
     ],
     "image": "Se_Star_D_LowerASHigherAD.png"
+  },
+  "Se_Star_D_RiftFirstCastDamageUp": {
+    "name": "开战旗帜",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      80,
+      70,
+      70
+    ],
+    "requiredLevel": 70,
+    "isRequiredLevelTotalMastery": true,
+    "description": "每次穿过裂隙移动后，首次施放的记忆<color=yellow>伤害量</color>增加 90%<sprite=5> 。",
+    "rawDesc": "每次穿过裂隙移动后，首次施放的记忆<color=yellow>伤害量</color>增加{0}。",
+    "rawDescVars": [
+      {
+        "rendered": " 90%<sprite=5> ",
+        "format": "P0",
+        "raw": "firstSkillDamageAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.9,
+            1.2,
+            1.5
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_D_RiftFirstCastDamageUp.png"
   },
   "Se_Star_D_ScalingAbilityPower": {
     "name": "成熟心智",
@@ -955,6 +1040,44 @@
     ],
     "image": "Se_Star_I_DismantleBonus.png"
   },
+  "Se_Star_I_DismantleDustToBonusGold": {
+    "name": "逆向思维",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": true,
+    "description": "分解记忆或精粹时，获得相当于所获<color=yellow>梦尘</color> 15%<sprite=5> 的<color=yellow>金币</color>。",
+    "rawDesc": "分解记忆或精粹时，获得相当于所获<color=yellow>梦尘</color>{0}的<color=yellow>金币</color>。",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "gainGoldRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25,
+            0.3
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_DismantleDustToBonusGold.png"
+  },
   "Se_Star_I_DreamDustOnKillChance": {
     "name": "分解剖析",
     "lore": null,
@@ -1005,6 +1128,104 @@
       }
     ],
     "image": "Se_Star_I_DreamDustOnKillChance.png"
+  },
+  "Se_Star_I_ExtraChaosOptionGoldOnUse": {
+    "name": "有序混沌",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      50,
+      40,
+      30
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": true,
+    "description": "<color=yellow>混沌</color>的选项增加1个，使用混沌时可获得 15<sprite=5> <color=yellow>金币</color>。",
+    "rawDesc": "<color=yellow>混沌</color>的选项增加{0}个，使用混沌时可获得{1}<color=yellow>金币</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedChoices",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 15<sprite=5> ",
+        "format": "#,##0",
+        "raw": "goldOnChaos",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            15.0,
+            20.0,
+            25.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_ExtraChaosOptionGoldOnUse.png"
+  },
+  "Se_Star_I_FirstBossGemDrop": {
+    "name": "无名之宝",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      80,
+      90
+    ],
+    "requiredLevel": 75,
+    "isRequiredLevelTotalMastery": true,
+    "description": "首次击败<color=yellow>英雄首领</color>时，获得 1<sprite=5> 个品质为10%的通用精粹。",
+    "rawDesc": "首次击败<color=yellow>英雄首领</color>时，获得{0}个品质为{1}的通用精粹。",
+    "rawDescVars": [
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0",
+        "raw": "gemSpawnCount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "spawnGemQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_I_FirstBossGemDrop.png"
   },
   "Se_Star_I_FirstGemUpgrade": {
     "name": "新手之幸",
@@ -1330,8 +1551,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": true,
-    "description": "商人出售物品的<color=yellow>金币价格</color>降低 10%<sprite=5> 。",
-    "rawDesc": "商人出售物品的<color=yellow>金币价格</color>降低{0}。",
+    "description": "乔纳斯出售物品的<color=yellow>金币价格</color>降低 10%<sprite=5> 。",
+    "rawDesc": "乔纳斯出售物品的<color=yellow>金币价格</color>降低{0}。",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -1368,8 +1589,8 @@
     ],
     "requiredLevel": 50,
     "isRequiredLevelTotalMastery": true,
-    "description": "每次开启冒险或进入下一个世界时，获得 1<sprite=5> 枚<color=yellow>白金硬币</color>，最多可持有3枚。用这些硬币可以刷新商人出售的商品。",
-    "rawDesc": "每次开启冒险或进入下一个世界时，获得{0}枚<color=yellow>白金硬币</color>，最多可持有{1}枚。用这些硬币可以刷新商人出售的商品。",
+    "description": "每次开启冒险或进入下一个世界时，获得 1<sprite=5> 枚<color=yellow>白金硬币</color>，最多可持有3枚。用这些硬币可以刷新乔纳斯出售的商品。",
+    "rawDesc": "每次开启冒险或进入下一个世界时，获得{0}枚<color=yellow>白金硬币</color>，最多可持有{1}枚。用这些硬币可以刷新乔纳斯出售的商品。",
     "rawDescVars": [
       {
         "rendered": " 1<sprite=5> ",
@@ -1928,6 +2149,62 @@
     ],
     "image": "Se_Star_L_IgnoreDelusion.png"
   },
+  "Se_Star_L_IncreaseMaxHealthByGuidance": {
+    "name": "伟大引导者的慷慨祝福",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      70,
+      60,
+      60,
+      60
+    ],
+    "requiredLevel": 50,
+    "isRequiredLevelTotalMastery": true,
+    "description": "激活引导圣坛时，<color=yellow>最大生命值</color>增加 20<sprite=5> 。激活受祝福的引导圣坛时，增加 50<sprite=5> 。",
+    "rawDesc": "激活引导圣坛时，<color=yellow>最大生命值</color>增加{0}。激活受祝福的引导圣坛时，增加{1}。",
+    "rawDescVars": [
+      {
+        "rendered": " 20<sprite=5> ",
+        "format": "#,##0",
+        "raw": "defaultIncreaseMaxHealth",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            20.0,
+            25.0,
+            30.0,
+            35.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 50<sprite=5> ",
+        "format": "#,##0",
+        "raw": "blessedIncreaseMaxHealth",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            50.0,
+            60.0,
+            70.0,
+            80.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_IncreaseMaxHealthByGuidance.png"
+  },
   "Se_Star_L_MaxHealth": {
     "name": "持续强化",
     "lore": null,
@@ -1965,6 +2242,55 @@
       }
     ],
     "image": "Se_Star_L_MaxHealth.png"
+  },
+  "Se_Star_L_MaxHealthUpHealDown": {
+    "name": "坚韧表皮",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      50,
+      60,
+      60
+    ],
+    "requiredLevel": 65,
+    "isRequiredLevelTotalMastery": true,
+    "description": "<color=yellow>最大生命值</color>增加 15%<sprite=5> 。受到的<color=yellow>恢复量</color>减少50%。",
+    "rawDesc": "<color=yellow>最大生命值</color>增加{0}。受到的<color=yellow>恢复量</color>减少{1}。",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "maxHealthAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "healReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_L_MaxHealthUpHealDown.png"
   },
   "Se_Star_L_PeriodicScalingArmor": {
     "name": "层鳞叠甲",
@@ -2016,6 +2342,55 @@
       }
     ],
     "image": "Se_Star_L_PeriodicScalingArmor.png"
+  },
+  "Se_Star_L_PostHitDamageImmune": {
+    "name": "胆小鬼人偶",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      60,
+      60
+    ],
+    "requiredLevel": 60,
+    "isRequiredLevelTotalMastery": true,
+    "description": "受到<color=yellow>伤害</color>后，获得<color=yellow>伤害免疫</color>状态，持续1秒。该效果每 14<sprite=5> 秒只能触发一次。",
+    "rawDesc": "受到<color=yellow>伤害</color>后，获得<color=yellow>伤害免疫</color>状态，持续{0}秒。该效果每{1}秒只能触发一次。",
+    "rawDescVars": [
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "protectedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 14<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            14.0,
+            12.0,
+            10.0
+          ],
+          "strengthScaling": "Divide"
+        }
+      }
+    ],
+    "image": "Se_Star_L_PostHitDamageImmune.png"
   },
   "Se_Star_L_PotionChance": {
     "name": "阿斯克勒庇俄斯",
@@ -2890,8 +3265,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "每次对<color=yellow>商人</color>造成伤害时，获得4金币，最多可获得 40<sprite=5> 金币。",
-    "rawDesc": "每次对<color=yellow>商人</color>造成伤害时，获得{0}金币，最多可获得{1}金币。",
+    "description": "每次对<color=yellow>乔纳斯</color>造成伤害时，获得4金币，最多可获得 40<sprite=5> 金币。",
+    "rawDesc": "每次对<color=yellow>乔纳斯</color>造成伤害时，获得{0}金币，最多可获得{1}金币。",
     "rawDescVars": [
       {
         "rendered": "4",
@@ -3571,16 +3946,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>扭曲心灵</color>的冷却时间延长1秒，但蓄满力发射时，箭矢数量会增加2支。",
+    "description": "<color=yellow>扭曲心灵</color>的冷却时间延长1.5秒，但蓄满力发射时，箭矢数量会增加3支。",
     "rawDesc": "<color=yellow>扭曲心灵</color>的冷却时间延长{0}秒，但蓄满力发射时，箭矢数量会增加{1}支。",
     "rawDescVars": [
       {
-        "rendered": "1",
+        "rendered": "1.5",
         "format": "#,##0.#",
         "raw": "cooldownPenalty",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 1.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3588,12 +3963,12 @@
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
         "raw": "bonusCount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3614,16 +3989,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>扭曲心灵</color>的箭矢数量上限增加7，但充能期间无法移动。",
+    "description": "<color=yellow>扭曲心灵</color>的箭矢数量上限增加4，但充能期间无法移动。",
     "rawDesc": "<color=yellow>扭曲心灵</color>的箭矢数量上限增加{0}，但充能期间无法移动。",
     "rawDescVars": [
       {
-        "rendered": "7",
+        "rendered": "4",
         "format": "#,##0",
         "raw": "increased",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 7.0,
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3644,16 +4019,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>扭曲心灵</color>的箭矢若未完全蓄力就发射，冷却时间缩短50%。",
+    "description": "<color=yellow>扭曲心灵</color>的箭矢若未完全蓄力就发射，冷却时间缩短40%。",
     "rawDesc": "<color=yellow>扭曲心灵</color>的箭矢若未完全蓄力就发射，冷却时间缩短{0}。",
     "rawDescVars": [
       {
-        "rendered": "50%",
+        "rendered": "40%",
         "format": "P0",
         "raw": "cooldownReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4253,8 +4628,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "商人出售物品的<color=yellow>金币价格</color>减少 5%<sprite=5> 。",
-    "rawDesc": "商人出售物品的<color=yellow>金币价格</color>减少{0}。",
+    "description": "乔纳斯出售物品的<color=yellow>金币价格</color>减少 5%<sprite=5> 。",
+    "rawDesc": "乔纳斯出售物品的<color=yellow>金币价格</color>减少{0}。",
     "rawDescVars": [
       {
         "rendered": " 5%<sprite=5> ",
@@ -4846,7 +5221,7 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>歼灭态势</color>将变为冷却时间为14秒的普通技能，且期间可以施放其他<color=yellow>记忆</color>。变更后，歼灭态势的剑气伤害和攻击力增益降低40%，持续4秒，且不再增加闪避技能的记忆加速和最大充能数。",
+    "description": "<color=yellow>歼灭态势</color>将变为冷却时间为14秒的普通技能，且期间可以施放其他<color=yellow>记忆</color>。变更后，歼灭态势的剑气伤害和攻击力增益降低50%，持续4秒，且不再增加闪避技能的记忆加速和最大充能数。",
     "rawDesc": "<color=yellow>歼灭态势</color>将变为冷却时间为{0}秒的普通技能，且期间可以施放其他<color=yellow>记忆</color>。变更后，歼灭态势的剑气伤害和攻击力增益降低{1}，持续{2}秒，且不再增加闪避技能的记忆加速和最大充能数。",
     "rawDescVars": [
       {
@@ -4863,12 +5238,12 @@
         }
       },
       {
-        "rendered": "40%",
+        "rendered": "50%",
         "format": "P0",
         "raw": "strengthReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.4,
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4902,13 +5277,39 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>歼灭态势</color>不再发射剑气，但攻击频率提升100%。",
-    "rawDesc": "<color=yellow>歼灭态势</color>不再发射剑气，但攻击频率提升{0}。",
+    "description": "<color=yellow>歼灭态势</color>的剑气伤害降低60%，剑气射程缩短80%，但赋予的攻击速度和闪避技能记忆加速提升100%。",
+    "rawDesc": "<color=yellow>歼灭态势</color>的剑气伤害降低{0}，剑气射程缩短{1}，但赋予的攻击速度和闪避技能记忆加速提升{2}。",
     "rawDescVars": [
+      {
+        "rendered": "60%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "travelDistanceReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
       {
         "rendered": "100%",
         "format": "P0",
-        "raw": "speedAmp",
+        "raw": "buffAmp",
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.0,
@@ -5036,8 +5437,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "击杀任意首领时，有 30%<sprite=5> 的概率获得<color=yellow>白金硬币</color>。可用该硬币来刷新商人出售的货品。",
-    "rawDesc": "击杀任意首领时，有{0}的概率获得<color=yellow>白金硬币</color>。可用该硬币来刷新商人出售的货品。",
+    "description": "击杀任意首领时，有 30%<sprite=5> 的概率获得<color=yellow>白金硬币</color>。可用该硬币来刷新乔纳斯出售的货品。",
+    "rawDesc": "击杀任意首领时，有{0}的概率获得<color=yellow>白金硬币</color>。可用该硬币来刷新乔纳斯出售的货品。",
     "rawDescVars": [
       {
         "rendered": " 30%<sprite=5> ",
@@ -5071,8 +5472,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "通过<color=yellow>威胁</color>商人来降低商品价格。威胁有50%的概率成功，成功时商品金币价格减少 50%<sprite=5> ，失败则增加50%。",
-    "rawDesc": "通过<color=yellow>威胁</color>商人来降低商品价格。威胁有{0}的概率成功，成功时商品金币价格减少{1}，失败则增加{2}。",
+    "description": "通过<color=yellow>威胁</color>乔纳斯来降低商品价格。威胁有50%的概率成功，成功时商品金币价格减少 50%<sprite=5> ，失败则增加50%。",
+    "rawDesc": "通过<color=yellow>威胁</color>乔纳斯来降低商品价格。威胁有{0}的概率成功，成功时商品金币价格减少{1}，失败则增加{2}。",
     "rawDescVars": [
       {
         "rendered": "50%",
@@ -5873,8 +6274,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>商人</color>出售物品的<color=yellow>金币价格</color>降低 10%<sprite=5> 。",
-    "rawDesc": "<color=yellow>商人</color>出售物品的<color=yellow>金币价格</color>降低{0}。",
+    "description": "<color=yellow>乔纳斯</color>出售物品的<color=yellow>金币价格</color>降低 10%<sprite=5> 。",
+    "rawDesc": "<color=yellow>乔纳斯</color>出售物品的<color=yellow>金币价格</color>降低{0}。",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -5910,8 +6311,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "部分<color=yellow>商人</color>出售物品的<color=yellow>金币价格</color>提升 50%<sprite=5> ，但可购买的商品数量增加2个。",
-    "rawDesc": "部分<color=yellow>商人</color>出售物品的<color=yellow>金币价格</color>提升{0}，但可购买的商品数量增加2个。",
+    "description": "<color=yellow>乔纳斯</color>出售物品的<color=yellow>金币价格</color>提升 50%<sprite=5> ，但可购买的商品数量增加2个。",
+    "rawDesc": "<color=yellow>乔纳斯</color>出售物品的<color=yellow>金币价格</color>提升{0}，但可购买的商品数量增加2个。",
     "rawDescVars": [
       {
         "rendered": " 50%<sprite=5> ",
@@ -6820,8 +7221,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "冒险开始时获得 150<sprite=5> <color=yellow>金币</color>，但商人出售物品的金币价格提高10%。",
-    "rawDesc": "冒险开始时获得{0}<color=yellow>金币</color>，但商人出售物品的金币价格提高{1}。",
+    "description": "冒险开始时获得 150<sprite=5> <color=yellow>金币</color>，但乔纳斯出售物品的金币价格提高10%。",
+    "rawDesc": "冒险开始时获得{0}<color=yellow>金币</color>，但乔纳斯出售物品的金币价格提高{1}。",
     "rawDescVars": [
       {
         "rendered": " 150<sprite=5> ",
@@ -7715,8 +8116,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "在<color=yellow>狂澜密林</color>中，商人出售物品的金币价格减少 30%<sprite=5> 。",
-    "rawDesc": "在<color=yellow>狂澜密林</color>中，商人出售物品的金币价格减少{0}。",
+    "description": "在<color=yellow>狂澜密林</color>中，乔纳斯出售物品的金币价格减少 30%<sprite=5> 。",
+    "rawDesc": "在<color=yellow>狂澜密林</color>中，乔纳斯出售物品的金币价格减少{0}。",
     "rawDescVars": [
       {
         "rendered": " 30%<sprite=5> ",
@@ -8564,7 +8965,7 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "体力上限降低15%，但<color=yellow>纪律</color>的施放距离扩大30%。施放时，距离目标越远，伤害越高。伤害最多可提升至100%，伤害范围最多扩大至50%。",
+    "description": "体力上限降低15%，但<color=yellow>纪律</color>的施放距离扩大30%。施放时，距离目标越远，伤害越高。伤害最多可提升至150%，伤害范围最多扩大至50%。",
     "rawDesc": "体力上限降低{0}，但<color=yellow>纪律</color>的施放距离扩大{1}。施放时，距离目标越远，伤害越高。伤害最多可提升至{2}，伤害范围最多扩大至{3}。",
     "rawDescVars": [
       {
@@ -8594,12 +8995,12 @@
         }
       },
       {
-        "rendered": "100%",
+        "rendered": "150%",
         "format": "P0",
         "raw": "maxDamageAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 1.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8792,16 +9193,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "在指定位置而非维斯珀的位置召唤<color=yellow>艾尔的圣域</color>。首次爆炸每命中一名友军，冷却时间减少10%，每命中一名敌人则减少3%。",
+    "description": "在指定位置而非维斯珀的位置召唤<color=yellow>艾尔的圣域</color>。首次爆炸每命中一名友军，冷却时间减少12%，每命中一名敌人则减少6%。",
     "rawDesc": "在指定位置而非维斯珀的位置召唤<color=yellow>艾尔的圣域</color>。首次爆炸每命中一名友军，冷却时间减少{0}，每命中一名敌人则减少{1}。",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "12%",
         "format": "P0",
         "raw": "reductionRatioOnAlly",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.12,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8809,12 +9210,12 @@
         }
       },
       {
-        "rendered": "3%",
+        "rendered": "6%",
         "format": "P0",
         "raw": "reductionRatioOnEnemy",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.03,
+          "basicConstant": 0.06,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8838,8 +9239,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "商人出售物品的<color=yellow>金币价格</color>减少 10%<sprite=5> 。",
-    "rawDesc": "商人出售物品的<color=yellow>金币价格</color>减少{0}。",
+    "description": "乔纳斯出售物品的<color=yellow>金币价格</color>减少 10%<sprite=5> 。",
+    "rawDesc": "乔纳斯出售物品的<color=yellow>金币价格</color>减少{0}。",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -9681,16 +10082,29 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>以太的影响</color>的爆炸伤害降低60%，且无法通过再次施法引爆，但每次命中敌人时会自动爆炸。",
-    "rawDesc": "<color=yellow>以太的影响</color>的爆炸伤害降低{0}，且无法通过再次施法引爆，但每次命中敌人时会自动爆炸。",
+    "description": "<color=yellow>以太的影响</color>的投射物命中光明层数达到3层以上的敌人时，会引发爆炸，造成50%的伤害。",
+    "rawDesc": "<color=yellow>以太的影响</color>的投射物命中光明层数达到{0}层以上的敌人时，会引发爆炸，造成{1}的伤害。",
     "rawDescVars": [
       {
-        "rendered": "60%",
-        "format": "P0",
-        "raw": "damageReduction",
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "requiredLightStacks",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.6,
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "explosionDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9711,16 +10125,29 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>以太的影响</color>的爆炸范围提升25%。",
-    "rawDesc": "<color=yellow>以太的影响</color>的爆炸范围提升{0}。",
+    "description": "<color=yellow>以太的影响</color>的爆炸范围提升15%，且爆炸每命中一名敌人，冷却时间缩短7%。",
+    "rawDesc": "<color=yellow>以太的影响</color>的爆炸范围提升{0}，且爆炸每命中一名敌人，冷却时间缩短{1}。",
     "rawDescVars": [
       {
-        "rendered": "25%",
+        "rendered": "15%",
         "format": "P0",
         "raw": "scaleAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.25,
+          "basicConstant": 0.15,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "7%",
+        "format": "P0",
+        "raw": "reducedCooldownRatioPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.07,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9771,16 +10198,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>超新星</color>的施放距离提升40%，爆炸范围提升30%。",
-    "rawDesc": "<color=yellow>超新星</color>的施放距离提升{0}，爆炸范围提升{1}。",
+    "description": "<color=yellow>超新星</color>的冷却时间增加3秒，但施放距离提升30%，爆炸范围提升20%，最大充能次数增加2。",
+    "rawDesc": "<color=yellow>超新星</color>的冷却时间增加{0}秒，但施放距离提升{1}，爆炸范围提升{2}，最大充能次数增加{3}。",
     "rawDescVars": [
       {
-        "rendered": "40%",
-        "format": "P0",
-        "raw": "rangeAmp",
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "cooldownPenalty",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.4,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9790,10 +10217,36 @@
       {
         "rendered": "30%",
         "format": "P0",
-        "raw": "radiusAmp",
+        "raw": "rangeAmp",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "radiusAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "gainedMaxCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9830,9 +10283,36 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "施放<color=yellow>超新星</color>时，重置闪避技能的冷却时间。",
-    "rawDesc": "施放<color=yellow>超新星</color>时，重置闪避技能的冷却时间。",
-    "rawDescVars": [],
+    "description": "<color=yellow>超新星</color>的爆炸每命中一名敌人，冷却时间缩短0.5秒，且下一次施放超新星的伤害量提升10%。",
+    "rawDesc": "<color=yellow>超新星</color>的爆炸每命中一名敌人，冷却时间缩短{0}秒，且下一次施放超新星的伤害量提升{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "reducedCooldownOnHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "nextCastDamageAmpOnHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Yubar_F_SN_DodgeReset.png"
   },
   "Se_Star_Yubar_F_TQ_EssenceCooldown": {
@@ -10049,11 +10529,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "击败敌人时，有 0.5%<sprite=5> 几率掉落<color=yellow>星星饼干</color>。<color=yellow>星星饼干</color>会为尤巴尔回复少量生命值，并获得部分金币与梦尘。",
-    "rawDesc": "击败敌人时，有{0}几率掉落<color=yellow>星星饼干</color>。<color=yellow>星星饼干</color>会为尤巴尔回复少量生命值，并获得部分金币与梦尘。",
+    "description": "击败敌人时有 0.6%<sprite=5> 几率，击败首领时有100%几率掉落<color=yellow>星星饼干</color>。<color=yellow>星星饼干</color>会为尤巴尔回复少量生命值，并获得部分金币与梦尘。",
+    "rawDesc": "击败敌人时有{0}几率，击败首领时有{1}几率掉落<color=yellow>星星饼干</color>。<color=yellow>星星饼干</color>会为尤巴尔回复少量生命值，并获得部分金币与梦尘。",
     "rawDescVars": [
       {
-        "rendered": " 0.5%<sprite=5> ",
+        "rendered": " 0.6%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "starCookieChance",
         "scalingType": "star",
@@ -10062,9 +10542,26 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.005,
-            0.008,
-            0.012
+            0.006,
+            0.01,
+            0.014
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "#,##0.#%",
+        "raw": "starCookieOnBossChance",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            1.0,
+            1.0,
+            1.0
           ],
           "strengthScaling": "Multiply"
         }

@@ -3282,6 +3282,49 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Glass": {
+    "name": "Essence de verre",
+    "description": "Lorsque vous obtenez un <color=yellow>bouclier</color> <color=yellow>en combat</color>, vous <color=yellow>récupérez</color> des PV à hauteur de  12%<sprite=5>  du montant du bouclier obtenu. Les <color=yellow>soins</color> de ce Souvenir augmentent de  18%<sprite=5>  pour chaque <color=yellow>Souvenir de Froid</color> en votre possession.",
+    "rawDesc": "Lorsque vous obtenez un <color=yellow>bouclier</color> <color=yellow>en combat</color>, vous <color=yellow>récupérez</color> des PV à hauteur de {0} du montant du bouclier obtenu. Les <color=yellow>soins</color> de ce Souvenir augmentent de {1} pour chaque <color=yellow>Souvenir de Froid</color> en votre possession.",
+    "rawDescVars": [
+      {
+        "rendered": " 12%<sprite=5> ",
+        "format": "P0",
+        "raw": "healByShieldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": " 18%<sprite=5> ",
+        "format": "P0",
+        "raw": "healAmpPerColdSkill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "Gem_R_Glass.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Insatiable": {
     "name": "Essence de Voracité",
     "description": "Après avoir déclenché cette Mémoire, augmente l'<color=yellow>ATQ</color> de  15%<sprite=5>  et à chaque <color=yellow>attaque</color> contre un ennemi, <color=yellow>soigne</color> les PV de  6<sprite=5> . Cet effet dure 5 sec.",
@@ -3333,6 +3376,75 @@
       "Attack"
     ],
     "image": "Gem_R_Insatiable.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lava": {
+    "name": "Essence de lave",
+    "description": "Toutes les 4 s, le <color=yellow>lancement</color> de ce Souvenir est <color=yellow>renforcé</color>. Infliger des <color=yellow>Dégâts de feu</color> à un ennemi pour la première fois avec un <color=yellow>lancement</color> renforcé crée une flaque de lave sous ses pieds qui dure 4 s. Tous les ennemis se trouvant sur la lave subissent  <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5>  <color=yellow>Dégâts de feu</color> par seconde, et les dégâts qu'ils subissent des <color=yellow>Dégâts de feu</color> augmentent de 30%. Vous pouvez maintenir un maximum de 5 flaques de lave.",
+    "rawDesc": "Toutes les {0} s, le <color=yellow>lancement</color> de ce Souvenir est <color=yellow>renforcé</color>. Infliger des <color=yellow>Dégâts de feu</color> à un ennemi pour la première fois avec un <color=yellow>lancement</color> renforcé crée une flaque de lave sous ses pieds qui dure {1} s. Tous les ennemis se trouvant sur la lave subissent {2} <color=yellow>Dégâts de feu</color> par seconde, et les dégâts qu'ils subissent des <color=yellow>Dégâts de feu</color> augmentent de {3}. Vous pouvez maintenir un maximum de {4} flaques de lave.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Gem_R_Lava::cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Ai_R_Lava_LavaField::duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_Lava_LavaField::dmgFactor/Ai_R_Lava_LavaField::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "Se_R_Lava_Debuff::fireDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "maxLavaCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Lava.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -3518,6 +3630,48 @@
     "achievementName": "Restons calmes et posés",
     "achievementDescription": "Éliminez 8 fois au total un boss héroïque lorsque vos PV sont inférieurs ou égaux à 25%."
   },
+  "Gem_R_Purity": {
+    "name": "Essence de pureté",
+    "description": "Lorsque vous <color=yellow>lancez</color> ce Souvenir, dissipe tous les <color=yellow>effets élémentaires</color> appliqués au Voyageur. Vous <color=yellow>récupérez</color>  <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5>  PV pour chaque <color=yellow>effet élémentaire</color> dissipé. Cet effet ne peut se déclencher qu'une fois toutes les 4 s.",
+    "rawDesc": "Lorsque vous <color=yellow>lancez</color> ce Souvenir, dissipe tous les <color=yellow>effets élémentaires</color> appliqués au Voyageur. Vous <color=yellow>récupérez</color> {0} PV pour chaque <color=yellow>effet élémentaire</color> dissipé. Cet effet ne peut se déclencher qu'une fois toutes les {1} s.",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healPerElemental",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Purity.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Rejuvenation": {
     "name": "Essence de Jouvence",
     "description": "<color=yellow>Améliore</color> le <color=yellow>déclenchement</color> de cette Mémoire toutes les 15 sec. <color=yellow>Soigne</color> <color=yellow>vos</color> <color=yellow>PV</color> à hauteur de  14%<sprite=5>  des <color=yellow>dégâts</color> infligés par le <color=yellow>déclenchement amélioré</color> dans les 1.5 sec qui suivent le déclenchement.",
@@ -3700,18 +3854,18 @@
   },
   "Gem_R_Shock": {
     "name": "Essence de Choc",
-    "description": "<color=yellow>Améliore</color> chaque 4e <color=yellow>attaque de base</color> et la fait ricocher sur un ennemi, émettant une <color=yellow>décharge fulgurante</color> qui inflige des <color=yellow>dégâts de lumière</color> de  <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> , jusqu'à un maximum de 2 fois. Augmente le nombre maximum de coups de 1 pour chaque 20% de <color=yellow>TAUX CRIT</color>.",
+    "description": "<color=yellow>Améliore</color> chaque 4e <color=yellow>attaque de base</color> et la fait ricocher sur un ennemi, émettant une <color=yellow>décharge fulgurante</color> qui inflige des <color=yellow>dégâts de lumière</color> de  <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> , jusqu'à un maximum de 2 fois. Augmente le nombre maximum de coups de 1 pour chaque 20% de <color=yellow>TAUX CRIT</color>.",
     "rawDesc": "<color=yellow>Améliore</color> chaque 4e <color=yellow>attaque de base</color> et la fait ricocher sur un ennemi, émettant une <color=yellow>décharge fulgurante</color> qui inflige des <color=yellow>dégâts de lumière</color> de {0}, jusqu'à un maximum de {1} fois. Augmente le nombre maximum de coups de 1 pour chaque {2} de <color=yellow>TAUX CRIT</color>.",
     "rawDescVars": [
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "chainDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.2,
-          "basicAD": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.01
         }

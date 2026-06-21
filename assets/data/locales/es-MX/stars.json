@@ -229,6 +229,55 @@
     ],
     "image": "Se_Star_D_CritDamage.png"
   },
+  "Se_Star_D_CritUpHitDecay": {
+    "name": "Concentración innata",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      60,
+      60
+    ],
+    "requiredLevel": 75,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Obtienes  25%<sprite=5>  de <color=yellow>Probabilidad de golpe crítico</color>. Al recibir <color=yellow>Daño</color> de un enemigo, la <color=yellow>Probabilidad de golpe crítico</color> obtenida por esta estrella se reduce permanentemente en 1%. El <color=yellow>Daño por quemadura</color> no activa esta reducción.",
+    "rawDesc": "Obtienes {0} de <color=yellow>Probabilidad de golpe crítico</color>. Al recibir <color=yellow>Daño</color> de un enemigo, la <color=yellow>Probabilidad de golpe crítico</color> obtenida por esta estrella se reduce permanentemente en {1}. El <color=yellow>Daño por quemadura</color> no activa esta reducción.",
+    "rawDescVars": [
+      {
+        "rendered": " 25%<sprite=5> ",
+        "format": "P0",
+        "raw": "critChanceAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.25,
+            0.35,
+            0.45
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "1%",
+        "format": "#,##0'%'",
+        "raw": "decayCritPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_D_CritUpHitDecay.png"
+  },
   "Se_Star_D_DamageBonusOnAllElemental": {
     "name": "Elementalista",
     "lore": null,
@@ -529,6 +578,42 @@
       }
     ],
     "image": "Se_Star_D_LowerASHigherAD.png"
+  },
+  "Se_Star_D_RiftFirstCastDamageUp": {
+    "name": "Estandarte de batalla",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      80,
+      70,
+      70
+    ],
+    "requiredLevel": 70,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Cada vez que viajas por una Fisura, el <color=yellow>Daño</color> de la primera Memoria que lances aumenta en  90%<sprite=5> .",
+    "rawDesc": "Cada vez que viajas por una Fisura, el <color=yellow>Daño</color> de la primera Memoria que lances aumenta en {0}.",
+    "rawDescVars": [
+      {
+        "rendered": " 90%<sprite=5> ",
+        "format": "P0",
+        "raw": "firstSkillDamageAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.9,
+            1.2,
+            1.5
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_D_RiftFirstCastDamageUp.png"
   },
   "Se_Star_D_ScalingAbilityPower": {
     "name": "Mente Madura",
@@ -955,6 +1040,44 @@
     ],
     "image": "Se_Star_I_DismantleBonus.png"
   },
+  "Se_Star_I_DismantleDustToBonusGold": {
+    "name": "Cambio de perspectiva",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Obtienes <color=yellow>Oro</color> equivalente al  15%<sprite=5>  del <color=yellow>Polvo de Sueños</color> obtenido al desmantelar Memorias o Esencias.",
+    "rawDesc": "Obtienes <color=yellow>Oro</color> equivalente al {0} del <color=yellow>Polvo de Sueños</color> obtenido al desmantelar Memorias o Esencias.",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "gainGoldRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25,
+            0.3
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_DismantleDustToBonusGold.png"
+  },
   "Se_Star_I_DreamDustOnKillChance": {
     "name": "Desintegración y Análisis",
     "lore": null,
@@ -1005,6 +1128,104 @@
       }
     ],
     "image": "Se_Star_I_DreamDustOnKillChance.png"
+  },
+  "Se_Star_I_ExtraChaosOptionGoldOnUse": {
+    "name": "Caos ordenado",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      50,
+      40,
+      30
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Las opciones de <color=yellow>Caos</color> aumentan en 1 y usar Caos te otorga  15<sprite=5>  de <color=yellow>Oro</color>.",
+    "rawDesc": "Las opciones de <color=yellow>Caos</color> aumentan en {0} y usar Caos te otorga {1} de <color=yellow>Oro</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedChoices",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 15<sprite=5> ",
+        "format": "#,##0",
+        "raw": "goldOnChaos",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            15.0,
+            20.0,
+            25.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_ExtraChaosOptionGoldOnUse.png"
+  },
+  "Se_Star_I_FirstBossGemDrop": {
+    "name": "Tesoro de alguien",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      80,
+      90
+    ],
+    "requiredLevel": 75,
+    "isRequiredLevelTotalMastery": true,
+    "description": "La primera vez que derrotes a un <color=yellow>Jefe Heroico</color>, obtendrás  1<sprite=5>  de Esencia Común de calidad 10%.",
+    "rawDesc": "La primera vez que derrotes a un <color=yellow>Jefe Heroico</color>, obtendrás {0} de Esencia Común de calidad {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0",
+        "raw": "gemSpawnCount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "spawnGemQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_I_FirstBossGemDrop.png"
   },
   "Se_Star_I_FirstGemUpgrade": {
     "name": "Suerte de Principiante",
@@ -1330,8 +1551,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": true,
-    "description": "El <color=yellow>costo</color> de los artículos vendidos por los mercaderes se reduce en  10%<sprite=5> .",
-    "rawDesc": "El <color=yellow>costo</color> de los artículos vendidos por los mercaderes se reduce en {0}.",
+    "description": "El <color=yellow>precio de oro</color> de los artículos vendidos por Jonas se reduce en  10%<sprite=5> .",
+    "rawDesc": "El <color=yellow>precio de oro</color> de los artículos vendidos por Jonas se reduce en {0}.",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -1368,8 +1589,8 @@
     ],
     "requiredLevel": 50,
     "isRequiredLevelTotalMastery": true,
-    "description": "Obtienes  1<sprite=5>  <color=yellow>monedas de platino</color> al comenzar la aventura y cada vez que avanzas al siguiente mundo, hasta un máximo de 3. Usa estas monedas para refrescar los artículos que vende el mercader.",
-    "rawDesc": "Obtienes {0} <color=yellow>monedas de platino</color> al comenzar la aventura y cada vez que avanzas al siguiente mundo, hasta un máximo de {1}. Usa estas monedas para refrescar los artículos que vende el mercader.",
+    "description": "Obtienes  1<sprite=5>  <color=yellow>monedas de platino</color> al comenzar la aventura y cada vez que avanzas al siguiente mundo, hasta un máximo de 3. Usa estas monedas para actualizar los artículos que vende Jonas.",
+    "rawDesc": "Obtienes {0} <color=yellow>monedas de platino</color> al comenzar la aventura y cada vez que avanzas al siguiente mundo, hasta un máximo de {1}. Usa estas monedas para actualizar los artículos que vende Jonas.",
     "rawDescVars": [
       {
         "rendered": " 1<sprite=5> ",
@@ -1928,6 +2149,62 @@
     ],
     "image": "Se_Star_L_IgnoreDelusion.png"
   },
+  "Se_Star_L_IncreaseMaxHealthByGuidance": {
+    "name": "Bendición generosa del Gran Guía",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      70,
+      60,
+      60,
+      60
+    ],
+    "requiredLevel": 50,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Al activar un Santuario de la Guía, tu <color=yellow>Vida máxima</color> aumenta en  20<sprite=5> . Al activar un Santuario de la Guía bendito, aumenta en  50<sprite=5> .",
+    "rawDesc": "Al activar un Santuario de la Guía, tu <color=yellow>Vida máxima</color> aumenta en {0}. Al activar un Santuario de la Guía bendito, aumenta en {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 20<sprite=5> ",
+        "format": "#,##0",
+        "raw": "defaultIncreaseMaxHealth",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            20.0,
+            25.0,
+            30.0,
+            35.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 50<sprite=5> ",
+        "format": "#,##0",
+        "raw": "blessedIncreaseMaxHealth",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            50.0,
+            60.0,
+            70.0,
+            80.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_IncreaseMaxHealthByGuidance.png"
+  },
   "Se_Star_L_MaxHealth": {
     "name": "Fortalecimiento de Resistencia",
     "lore": null,
@@ -1965,6 +2242,55 @@
       }
     ],
     "image": "Se_Star_L_MaxHealth.png"
+  },
+  "Se_Star_L_MaxHealthUpHealDown": {
+    "name": "Piel dura",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      50,
+      60,
+      60
+    ],
+    "requiredLevel": 65,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Tu <color=yellow>Vida máxima</color> aumenta en  15%<sprite=5> . La <color=yellow>Curación</color> recibida disminuye en 50%.",
+    "rawDesc": "Tu <color=yellow>Vida máxima</color> aumenta en {0}. La <color=yellow>Curación</color> recibida disminuye en {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "maxHealthAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "healReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_L_MaxHealthUpHealDown.png"
   },
   "Se_Star_L_PeriodicScalingArmor": {
     "name": "Escamas superpuestas",
@@ -2016,6 +2342,55 @@
       }
     ],
     "image": "Se_Star_L_PeriodicScalingArmor.png"
+  },
+  "Se_Star_L_PostHitDamageImmune": {
+    "name": "Muñeco cobarde",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      60,
+      60
+    ],
+    "requiredLevel": 60,
+    "isRequiredLevelTotalMastery": true,
+    "description": "Tras recibir <color=yellow>Daño</color>, obtienes <color=yellow>Inmunidad al daño</color> durante 1 segundos. Solo se activa una vez cada  14<sprite=5>  segundos.",
+    "rawDesc": "Tras recibir <color=yellow>Daño</color>, obtienes <color=yellow>Inmunidad al daño</color> durante {0} segundos. Solo se activa una vez cada {1} segundos.",
+    "rawDescVars": [
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "protectedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 14<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            14.0,
+            12.0,
+            10.0
+          ],
+          "strengthScaling": "Divide"
+        }
+      }
+    ],
+    "image": "Se_Star_L_PostHitDamageImmune.png"
   },
   "Se_Star_L_PotionChance": {
     "name": "Asclepio",
@@ -2890,8 +3265,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Cada vez que causes daño a un <color=yellow>mercader</color>, obtienes 4 de oro, hasta un máximo de  40<sprite=5>  de oro.",
-    "rawDesc": "Cada vez que causes daño a un <color=yellow>mercader</color>, obtienes {0} de oro, hasta un máximo de {1} de oro.",
+    "description": "Cada vez que causes daño a <color=yellow>Jonas</color>, obtienes 4 de oro, hasta un máximo de  40<sprite=5>  de oro.",
+    "rawDesc": "Cada vez que causes daño a <color=yellow>Jonas</color>, obtienes {0} de oro, hasta un máximo de {1} de oro.",
     "rawDescVars": [
       {
         "rendered": "4",
@@ -3571,16 +3946,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "El tiempo de reutilización de <color=yellow>Mente Distorsionada</color> aumenta en 1 segundo(s), pero si disparas con la carga máxima, el número de flechas aumenta en 2.",
+    "description": "El tiempo de reutilización de <color=yellow>Mente Distorsionada</color> aumenta en 1.5 segundo(s), pero si disparas con la carga máxima, el número de flechas aumenta en 3.",
     "rawDesc": "El tiempo de reutilización de <color=yellow>Mente Distorsionada</color> aumenta en {0} segundo(s), pero si disparas con la carga máxima, el número de flechas aumenta en {1}.",
     "rawDescVars": [
       {
-        "rendered": "1",
+        "rendered": "1.5",
         "format": "#,##0.#",
         "raw": "cooldownPenalty",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 1.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3588,12 +3963,12 @@
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
         "raw": "bonusCount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3614,16 +3989,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "El número máximo de flechas de <color=yellow>Mente Distorsionada</color> aumenta en 7, pero no puedes moverte mientras cargas.",
+    "description": "El número máximo de flechas de <color=yellow>Mente Distorsionada</color> aumenta en 4, pero no puedes moverte mientras cargas.",
     "rawDesc": "El número máximo de flechas de <color=yellow>Mente Distorsionada</color> aumenta en {0}, pero no puedes moverte mientras cargas.",
     "rawDescVars": [
       {
-        "rendered": "7",
+        "rendered": "4",
         "format": "#,##0",
         "raw": "increased",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 7.0,
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3644,16 +4019,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Si disparas las flechas de <color=yellow>Mente Distorsionada</color> sin cargarlas completamente, el tiempo de reutilización se reduce un 50%.",
+    "description": "Si disparas las flechas de <color=yellow>Mente Distorsionada</color> sin cargarlas completamente, el tiempo de reutilización se reduce un 40%.",
     "rawDesc": "Si disparas las flechas de <color=yellow>Mente Distorsionada</color> sin cargarlas completamente, el tiempo de reutilización se reduce un {0}.",
     "rawDescVars": [
       {
-        "rendered": "50%",
+        "rendered": "40%",
         "format": "P0",
         "raw": "cooldownReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4253,8 +4628,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "El <color=yellow>costo</color> de los artículos vendidos por los mercaderes se reduce en  5%<sprite=5> .",
-    "rawDesc": "El <color=yellow>costo</color> de los artículos vendidos por los mercaderes se reduce en {0}.",
+    "description": "El <color=yellow>precio de oro</color> de los artículos vendidos por Jonas se reduce en  5%<sprite=5> .",
+    "rawDesc": "El <color=yellow>precio de oro</color> de los artículos vendidos por Jonas se reduce en {0}.",
     "rawDescVars": [
       {
         "rendered": " 5%<sprite=5> ",
@@ -4846,7 +5221,7 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Postura de Aniquilación</color> se convierte en una habilidad común con un tiempo de reutilización de 14 segundos y te permite usar otras Memorias durante su efecto. El daño de la onda de espadas y el aumento de Daño de Ataque se reducen en 40%, dura 4 segundos y ya no aumenta la Celeridad de memoria ni las cargas máximas de la habilidad de evasión.",
+    "description": "<color=yellow>Postura de Aniquilación</color> se convierte en una habilidad común con un tiempo de reutilización de 14 segundos y te permite usar otras Memorias durante su efecto. El daño de la onda de espadas y el aumento de Daño de Ataque se reducen en 50%, dura 4 segundos y ya no aumenta la Celeridad de memoria ni las cargas máximas de la habilidad de evasión.",
     "rawDesc": "<color=yellow>Postura de Aniquilación</color> se convierte en una habilidad común con un tiempo de reutilización de {0} segundos y te permite usar otras Memorias durante su efecto. El daño de la onda de espadas y el aumento de Daño de Ataque se reducen en {1}, dura {2} segundos y ya no aumenta la Celeridad de memoria ni las cargas máximas de la habilidad de evasión.",
     "rawDescVars": [
       {
@@ -4863,12 +5238,12 @@
         }
       },
       {
-        "rendered": "40%",
+        "rendered": "50%",
         "format": "P0",
         "raw": "strengthReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.4,
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4902,13 +5277,39 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Con <color=yellow>Postura de Aniquilación</color>, en lugar de disparar ondas de espada, atacas un 100% más frecuentemente.",
-    "rawDesc": "Con <color=yellow>Postura de Aniquilación</color>, en lugar de disparar ondas de espada, atacas un {0} más frecuentemente.",
+    "description": "El daño de la onda de espadas de <color=yellow>Postura de Aniquilación</color> se reduce un 60% y su alcance se reduce un 80%, pero la velocidad de ataque y la celeridad de memoria de la habilidad de evasión que otorga aumentan un 100%.",
+    "rawDesc": "El daño de la onda de espadas de <color=yellow>Postura de Aniquilación</color> se reduce un {0} y su alcance se reduce un {1}, pero la velocidad de ataque y la celeridad de memoria de la habilidad de evasión que otorga aumentan un {2}.",
     "rawDescVars": [
+      {
+        "rendered": "60%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "travelDistanceReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
       {
         "rendered": "100%",
         "format": "P0",
-        "raw": "speedAmp",
+        "raw": "buffAmp",
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.0,
@@ -5036,8 +5437,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "Al derrotar cualquier jefe, tienes un  30%<sprite=5>  de probabilidad de obtener una <color=yellow>moneda de platino</color>. Puedes usar esta moneda para actualizar los artículos que vende el mercader.",
-    "rawDesc": "Al derrotar cualquier jefe, tienes un {0} de probabilidad de obtener una <color=yellow>moneda de platino</color>. Puedes usar esta moneda para actualizar los artículos que vende el mercader.",
+    "description": "Al derrotar a cualquier jefe, tienes un  30%<sprite=5>  de probabilidad de obtener una <color=yellow>moneda de platino</color>. Puedes usar esta moneda para actualizar los artículos que vende Jonas.",
+    "rawDesc": "Al derrotar a cualquier jefe, tienes un {0} de probabilidad de obtener una <color=yellow>moneda de platino</color>. Puedes usar esta moneda para actualizar los artículos que vende Jonas.",
     "rawDescVars": [
       {
         "rendered": " 30%<sprite=5> ",
@@ -5071,8 +5472,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Intimidas</color> al mercader para bajar los precios. Si tu intimidación tiene un éxito de 50%, el precio en oro de los objetos baja  50%<sprite=5> , pero si fallas sube 50%.",
-    "rawDesc": "<color=yellow>Intimidas</color> al mercader para bajar los precios. Si tu intimidación tiene un éxito de {0}, el precio en oro de los objetos baja {1}, pero si fallas sube {2}.",
+    "description": "<color=yellow>Intimidas</color> a Jonas para bajar los precios. Si la intimidación tiene éxito con un 50% de probabilidad, el precio de oro de los artículos se reduce en  50%<sprite=5> , pero si falla, aumenta en 50%.",
+    "rawDesc": "<color=yellow>Intimidas</color> a Jonas para bajar los precios. Si la intimidación tiene éxito con un {0} de probabilidad, el precio de oro de los artículos se reduce en {1}, pero si falla, aumenta en {2}.",
     "rawDescVars": [
       {
         "rendered": "50%",
@@ -5873,8 +6274,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "El <color=yellow>costo</color> de los artículos vendidos por los <color=yellow>mercaderes</color> se reduce en  10%<sprite=5> .",
-    "rawDesc": "El <color=yellow>costo</color> de los artículos vendidos por los <color=yellow>mercaderes</color> se reduce en {0}.",
+    "description": "El <color=yellow>precio de oro</color> de los artículos vendidos por <color=yellow>Jonas</color> se reduce en  10%<sprite=5> .",
+    "rawDesc": "El <color=yellow>precio de oro</color> de los artículos vendidos por <color=yellow>Jonas</color> se reduce en {0}.",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -5910,8 +6311,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "El <color=yellow>costo</color> de los artículos vendidos por algunos <color=yellow>mercaderes</color> aumenta en  50%<sprite=5> , pero ofrecen 2 artículos más.",
-    "rawDesc": "El <color=yellow>costo</color> de los artículos vendidos por algunos <color=yellow>mercaderes</color> aumenta en {0}, pero ofrecen 2 artículos más.",
+    "description": "El <color=yellow>precio de oro</color> de los artículos vendidos por <color=yellow>Jonas</color> aumenta en  50%<sprite=5> , pero ofrece 2 artículos más.",
+    "rawDesc": "El <color=yellow>precio de oro</color> de los artículos vendidos por <color=yellow>Jonas</color> aumenta en {0}, pero ofrece 2 artículos más.",
     "rawDescVars": [
       {
         "rendered": " 50%<sprite=5> ",
@@ -6808,7 +7209,7 @@
   },
   "Se_Star_Mist_I_StartGoldWithPenalty": {
     "name": "Linaje Noble",
-    "lore": "",
+    "lore": "La familia Verdesilver ha caído, pero su nobleza no se ha marchitado en lo más mínimo.",
     "category": "Imagination",
     "heroType": "Hero_Mist",
     "maxLevel": 4,
@@ -6820,8 +7221,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "Comienzas la aventura con  150<sprite=5>  de <color=yellow>oro</color>, pero el costo de los artículos vendidos por los mercaderes aumenta en 10%.",
-    "rawDesc": "Comienzas la aventura con {0} de <color=yellow>oro</color>, pero el costo de los artículos vendidos por los mercaderes aumenta en {1}.",
+    "description": "Comienzas la aventura con  150<sprite=5>  de <color=yellow>oro</color>, pero el precio de oro de los artículos vendidos por Jonas aumenta en 10%.",
+    "rawDesc": "Comienzas la aventura con {0} de <color=yellow>oro</color>, pero el precio de oro de los artículos vendidos por Jonas aumenta en {1}.",
     "rawDescVars": [
       {
         "rendered": " 150<sprite=5> ",
@@ -7715,8 +8116,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "En el <color=yellow>Bosque Turbulento</color>, el costo de los artículos vendidos por los mercaderes se reduce en  30%<sprite=5> .",
-    "rawDesc": "En el <color=yellow>Bosque Turbulento</color>, el costo de los artículos vendidos por los mercaderes se reduce en {0}.",
+    "description": "En el <color=yellow>Bosque Turbulento</color>, el precio de oro de los artículos vendidos por Jonas se reduce en  30%<sprite=5> .",
+    "rawDesc": "En el <color=yellow>Bosque Turbulento</color>, el precio de oro de los artículos vendidos por Jonas se reduce en {0}.",
     "rawDescVars": [
       {
         "rendered": " 30%<sprite=5> ",
@@ -8564,7 +8965,7 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "La salud máxima se reduce un 15%, pero el alcance de la conjuración de <color=yellow>Disciplina</color> aumenta un 30%. Además, cuanto mayor sea la distancia hasta el objetivo al conjurar, el daño aumenta hasta un máximo de 100% y el radio de daño hasta un máximo de 50%.",
+    "description": "La salud máxima se reduce un 15%, pero el alcance de la conjuración de <color=yellow>Disciplina</color> aumenta un 30%. Además, cuanto mayor sea la distancia hasta el objetivo al conjurar, el daño aumenta hasta un máximo de 150% y el radio de daño hasta un máximo de 50%.",
     "rawDesc": "La salud máxima se reduce un {0}, pero el alcance de la conjuración de <color=yellow>Disciplina</color> aumenta un {1}. Además, cuanto mayor sea la distancia hasta el objetivo al conjurar, el daño aumenta hasta un máximo de {2} y el radio de daño hasta un máximo de {3}.",
     "rawDescVars": [
       {
@@ -8594,12 +8995,12 @@
         }
       },
       {
-        "rendered": "100%",
+        "rendered": "150%",
         "format": "P0",
         "raw": "maxDamageAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 1.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8792,16 +9193,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Invoca el <color=yellow>Santuario de El</color> en una ubicación designada en lugar de la de Vesper. El tiempo de reutilización se reduce en 10% por cada aliado y en 3% por cada enemigo alcanzado por la explosión inicial.",
+    "description": "Invoca el <color=yellow>Santuario de El</color> en una ubicación designada en lugar de la de Vesper. El tiempo de reutilización se reduce en 12% por cada aliado y en 6% por cada enemigo alcanzado por la explosión inicial.",
     "rawDesc": "Invoca el <color=yellow>Santuario de El</color> en una ubicación designada en lugar de la de Vesper. El tiempo de reutilización se reduce en {0} por cada aliado y en {1} por cada enemigo alcanzado por la explosión inicial.",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "12%",
         "format": "P0",
         "raw": "reductionRatioOnAlly",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.12,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8809,12 +9210,12 @@
         }
       },
       {
-        "rendered": "3%",
+        "rendered": "6%",
         "format": "P0",
         "raw": "reductionRatioOnEnemy",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.03,
+          "basicConstant": 0.06,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8838,8 +9239,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "El <color=yellow>precio de oro</color> de los productos del mercader se reduce en  10%<sprite=5> .",
-    "rawDesc": "El <color=yellow>precio de oro</color> de los productos del mercader se reduce en {0}.",
+    "description": "El <color=yellow>precio de oro</color> de los artículos vendidos por Jonas se reduce en  10%<sprite=5> .",
+    "rawDesc": "El <color=yellow>precio de oro</color> de los artículos vendidos por Jonas se reduce en {0}.",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -9681,16 +10082,29 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "El daño de explosión de <color=yellow>Influencia Etérea</color> se reduce un 60% y ya no puedes volver a conjurar para detonarla, pero explota automáticamente cada vez que impacta a un enemigo.",
-    "rawDesc": "El daño de explosión de <color=yellow>Influencia Etérea</color> se reduce un {0} y ya no puedes volver a conjurar para detonarla, pero explota automáticamente cada vez que impacta a un enemigo.",
+    "description": "Cuando el proyectil de <color=yellow>Influencia Etérea</color> impacta a un enemigo con 3 o más acumulaciones de luz, provoca una explosión que inflige un 50% de daño.",
+    "rawDesc": "Cuando el proyectil de <color=yellow>Influencia Etérea</color> impacta a un enemigo con {0} o más acumulaciones de luz, provoca una explosión que inflige un {1} de daño.",
     "rawDescVars": [
       {
-        "rendered": "60%",
-        "format": "P0",
-        "raw": "damageReduction",
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "requiredLightStacks",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.6,
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "explosionDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9711,16 +10125,29 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "El radio de explosión de <color=yellow>Influencia Etérea</color> aumenta un 25%.",
-    "rawDesc": "El radio de explosión de <color=yellow>Influencia Etérea</color> aumenta un {0}.",
+    "description": "El radio de explosión de <color=yellow>Influencia Etérea</color> aumenta un 15%, y el tiempo de reutilización se reduce un 7% por cada enemigo alcanzado por la explosión.",
+    "rawDesc": "El radio de explosión de <color=yellow>Influencia Etérea</color> aumenta un {0}, y el tiempo de reutilización se reduce un {1} por cada enemigo alcanzado por la explosión.",
     "rawDescVars": [
       {
-        "rendered": "25%",
+        "rendered": "15%",
         "format": "P0",
         "raw": "scaleAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.25,
+          "basicConstant": 0.15,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "7%",
+        "format": "P0",
+        "raw": "reducedCooldownRatioPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.07,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9771,16 +10198,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "El alcance de la conjuración de <color=yellow>Supernova</color> aumenta un 40% y su radio de explosión aumenta un 30%.",
-    "rawDesc": "El alcance de la conjuración de <color=yellow>Supernova</color> aumenta un {0} y su radio de explosión aumenta un {1}.",
+    "description": "El tiempo de reutilización de <color=yellow>Supernova</color> aumenta 3 segundos, pero el alcance de la conjuración aumenta 30%, su radio de explosión aumenta 20% y sus cargas máximas aumentan 2.",
+    "rawDesc": "El tiempo de reutilización de <color=yellow>Supernova</color> aumenta {0} segundos, pero el alcance de la conjuración aumenta {1}, su radio de explosión aumenta {2} y sus cargas máximas aumentan {3}.",
     "rawDescVars": [
       {
-        "rendered": "40%",
-        "format": "P0",
-        "raw": "rangeAmp",
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "cooldownPenalty",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.4,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9790,10 +10217,36 @@
       {
         "rendered": "30%",
         "format": "P0",
-        "raw": "radiusAmp",
+        "raw": "rangeAmp",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "radiusAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "gainedMaxCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9830,9 +10283,36 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Al conjurar <color=yellow>Supernova</color>, se reinicia el tiempo de reutilización de la habilidad de evasión.",
-    "rawDesc": "Al conjurar <color=yellow>Supernova</color>, se reinicia el tiempo de reutilización de la habilidad de evasión.",
-    "rawDescVars": [],
+    "description": "El tiempo de reutilización se reduce 0.5 segundos por cada enemigo alcanzado por la explosión de <color=yellow>Supernova</color> y el daño de la siguiente conjuración de Supernova aumenta un 10%.",
+    "rawDesc": "El tiempo de reutilización se reduce {0} segundos por cada enemigo alcanzado por la explosión de <color=yellow>Supernova</color> y el daño de la siguiente conjuración de Supernova aumenta un {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "reducedCooldownOnHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "nextCastDamageAmpOnHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Yubar_F_SN_DodgeReset.png"
   },
   "Se_Star_Yubar_F_TQ_EssenceCooldown": {
@@ -10049,11 +10529,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "Al derrotar enemigos, hay una probabilidad de  0.5%<sprite=5>  de que aparezca una <color=yellow>Galleta Estelar</color>. Cada <color=yellow>Galleta Estelar</color> recupera un poco de salud a Yubar y da algo de oro y polvo de sueños.",
-    "rawDesc": "Al derrotar enemigos, hay una probabilidad de {0} de que aparezca una <color=yellow>Galleta Estelar</color>. Cada <color=yellow>Galleta Estelar</color> recupera un poco de salud a Yubar y da algo de oro y polvo de sueños.",
+    "description": "Al derrotar enemigos, hay una probabilidad de  0.6%<sprite=5> , y al derrotar jefes, una probabilidad de 100% de que aparezca una <color=yellow>Galleta Estelar</color>. Cada <color=yellow>Galleta Estelar</color> recupera un poco de salud a Yubar y da algo de oro y polvo de sueños.",
+    "rawDesc": "Al derrotar enemigos, hay una probabilidad de {0}, y al derrotar jefes, una probabilidad de {1} de que aparezca una <color=yellow>Galleta Estelar</color>. Cada <color=yellow>Galleta Estelar</color> recupera un poco de salud a Yubar y da algo de oro y polvo de sueños.",
     "rawDescVars": [
       {
-        "rendered": " 0.5%<sprite=5> ",
+        "rendered": " 0.6%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "starCookieChance",
         "scalingType": "star",
@@ -10062,9 +10542,26 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.005,
-            0.008,
-            0.012
+            0.006,
+            0.01,
+            0.014
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "#,##0.#%",
+        "raw": "starCookieOnBossChance",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            1.0,
+            1.0,
+            1.0
           ],
           "strengthScaling": "Multiply"
         }

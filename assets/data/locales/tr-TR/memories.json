@@ -207,8 +207,8 @@
     "cooldownTime": 4.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Bir karanlık ok atarak düşmana  <sprite=2><color=#fff><gradient=sv_ad>%245</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> verirsin ve <color=yellow>Saldırı Etkisi</color>ni tetiklersin. En fazla 2 düşmanı delip geçer.",
-    "rawDesc": "Bir karanlık ok atarak düşmana {0} <color=yellow>Karanlık Hasarı</color> verirsin ve <color=yellow>Saldırı Etkisi</color>ni tetiklersin. En fazla {1} düşmanı delip geçer.",
+    "description": "Bir karanlık ok atarak düşmana  <sprite=2><color=#fff><gradient=sv_ad>%245</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> verirsin ve <color=yellow>Saldırı Etkisi</color>ni tetiklersin. En fazla 2 düşmanı delip geçer.\n<sprite=10><color=#fff><gradient=sv_critp>%100</gradient></color> ihtimalle <color=yellow>Hasar</color> %80 artar ve <color=yellow>Bekleme Süresi</color> %50 azalır.",
+    "rawDesc": "Bir karanlık ok atarak düşmana {0} <color=yellow>Karanlık Hasarı</color> verirsin ve <color=yellow>Saldırı Etkisi</color>ni tetiklersin. En fazla {1} düşmanı delip geçer.\n{2} ihtimalle <color=yellow>Hasar</color> {3} artar ve <color=yellow>Bekleme Süresi</color> {4} azalır.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>%245</gradient></color><sprite=5> ",
@@ -230,6 +230,45 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>%100</gradient></color>",
+        "format": "'%'#,##0",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "%80",
+        "format": "P0",
+        "raw": "ampEmpoweredDmg",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%50",
+        "format": "P0",
+        "raw": "empoweredCooldownReductionRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -257,8 +296,8 @@
     "cooldownTime": 5.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Öndeki düşmanları delip geçerek  <sprite=2><color=#fff><gradient=sv_ad>%230</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> verirsin, <color=yellow>Saldırı Etkisi</color> tetikler ve onları ortaya toplarsın. Kalkanlara hasar %100 artar.",
-    "rawDesc": "Öndeki düşmanları delip geçerek {0} <color=yellow>Karanlık Hasarı</color> verirsin, <color=yellow>Saldırı Etkisi</color> tetikler ve onları ortaya toplarsın. Kalkanlara hasar {1} artar.",
+    "description": "Öndeki düşmanları delip geçerek  <sprite=2><color=#fff><gradient=sv_ad>%230</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> verirsin, <color=yellow>Saldırı Etkisi</color> tetikler ve onları ortaya toplarsın. Kalkanlara hasar %100 artar.\n<sprite=10><color=#fff><gradient=sv_critp>%100</gradient></color> ihtimalle <color=yellow>Hasar</color> %100 artar ve isabet alan her düşman başına  <sprite=2><color=#fff><gradient=sv_ad>%20</gradient></color><sprite=5>  kadar <color=yellow>Can</color> <color=yellow>Yeniler</color>.",
+    "rawDesc": "Öndeki düşmanları delip geçerek {0} <color=yellow>Karanlık Hasarı</color> verirsin, <color=yellow>Saldırı Etkisi</color> tetikler ve onları ortaya toplarsın. Kalkanlara hasar {1} artar.\n{2} ihtimalle <color=yellow>Hasar</color> {3} artar ve isabet alan her düşman başına {4} kadar <color=yellow>Can</color> <color=yellow>Yeniler</color>.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>%230</gradient></color><sprite=5> ",
@@ -284,6 +323,45 @@
           "basicAD": 0,
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>%100</gradient></color>",
+        "format": "'%'#,##0",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "%100",
+        "format": "P0",
+        "raw": "dmgAmpByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>%20</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healAmountByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
         }
       }
     ],
@@ -1777,13 +1855,39 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Bir <color=yellow>Hafıza</color> veya <color=yellow>Değişken Yıldız</color> <color=yellow>kullandığında</color> 1 <color=yellow>Egzotik Madde</color> yükü kazanırsın ve en fazla 3 yük biriktirebilirsin. Bir <color=yellow>Ulti Hafızası</color> <color=yellow>kullandığında</color> ise yüklerin tamamen dolar. Sonraki <color=yellow>Temel Saldırı</color> tüm yükleri tüketerek bir patlama yaratır ve düşmanlara yük başına  <sprite=1><color=#fff><gradient=sv_ap>%110</gradient></color><sprite=5>  <color=yellow>Işık Hasarı</color> verir.\n\nBu patlamanın boyutu, <color=yellow>Egzotik Madde</color> her güçlendirildiğinde %5 artarak en fazla %50 artar.",
-    "rawDesc": "Bir <color=yellow>Hafıza</color> veya <color=yellow>Değişken Yıldız</color> <color=yellow>kullandığında</color> 1 <color=yellow>Egzotik Madde</color> yükü kazanırsın ve en fazla {0} yük biriktirebilirsin. Bir <color=yellow>Ulti Hafızası</color> <color=yellow>kullandığında</color> ise yüklerin tamamen dolar. Sonraki <color=yellow>Temel Saldırı</color> tüm yükleri tüketerek bir patlama yaratır ve düşmanlara yük başına {1} <color=yellow>Işık Hasarı</color> verir.\n\nBu patlamanın boyutu, <color=yellow>Egzotik Madde</color> her güçlendirildiğinde {2} artarak en fazla {3} artar.",
+    "description": "Bir <color=yellow>Hafıza</color> <color=yellow>kullandığında</color> 1 <color=yellow>Egzotik Madde</color> yükü kazanırsın ve en fazla 4 yük biriktirebilirsin. Bir <color=yellow>Kaçınma Yeteneği</color> kullandığında bunun yerine 2 yük, bir <color=yellow>Ulti Hafızası</color> kullandığında ise 3 yük kazanırsın. Sonraki <color=yellow>Temel Saldırı</color> tüm yükleri tüketerek bir patlama yaratır ve düşmanlara yük başına  <sprite=1><color=#fff><gradient=sv_ap>%110</gradient></color><sprite=5>  <color=yellow>Işık Hasarı</color> verir.\n\nBu patlamanın boyutu, <color=yellow>Egzotik Madde</color> her güçlendirildiğinde %5 artarak en fazla %50 artar.",
+    "rawDesc": "Bir <color=yellow>Hafıza</color> <color=yellow>kullandığında</color> 1 <color=yellow>Egzotik Madde</color> yükü kazanırsın ve en fazla {0} yük biriktirebilirsin. Bir <color=yellow>Kaçınma Yeteneği</color> kullandığında bunun yerine {1} yük, bir <color=yellow>Ulti Hafızası</color> kullandığında ise {2} yük kazanırsın. Sonraki <color=yellow>Temel Saldırı</color> tüm yükleri tüketerek bir patlama yaratır ve düşmanlara yük başına {3} <color=yellow>Işık Hasarı</color> verir.\n\nBu patlamanın boyutu, <color=yellow>Egzotik Madde</color> her güçlendirildiğinde {4} artarak en fazla {5} artar.",
     "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dodgeCastStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
       {
         "rendered": "3",
         "format": "#,##0",
-        "raw": "maxStack",
+        "raw": "ultCastStacks",
         "scalingType": "basic",
         "data": {
           "basicConstant": 3.0,
@@ -1887,7 +1991,7 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Saldırı Gücü</color>  12<sprite=5>  artar. Her 4. <color=yellow>Normal Saldırın</color> <color=yellow>Kritik Vuruş</color> olur ve  <sprite=1><color=#fff><gradient=sv_ap>%70</gradient></color><sprite=5>  ek <color=yellow>Işık Hasarı</color> verir.\nBir düşmana <color=yellow>Saldırı</color> yaptığında, <color=yellow>Saldırı Hızı</color> 4 saniye boyunca  %4<sprite=5>  artar ve en fazla  %24<sprite=5>  artabilir. <color=yellow>Saldırı Hızı</color> maksimuma ulaştığında, her <color=yellow>Saldırı</color> yaptığında <color=yellow>Kaybedilen Canının</color>  1%<sprite=5>  kadarını <color=yellow>İyileştirir</color>.",
+    "description": "<color=yellow>Saldırı Gücü</color>  12<sprite=5>  artar. Her 4. <color=yellow>Normal Saldırın</color> <color=yellow>Kritik Vuruş</color> olur ve  <sprite=1><color=#fff><gradient=sv_ap>%70</gradient></color><sprite=5>  ek <color=yellow>Işık Hasarı</color> verir.\nBir düşmana <color=yellow>Saldırı</color> yaptığında, <color=yellow>Saldırı Hızı</color> 4 saniye boyunca  %4<sprite=5>  artar ve en fazla  %24<sprite=5>  artabilir. <color=yellow>Saldırı Hızı</color> maksimuma ulaştığında, her <color=yellow>Saldırı</color> yaptığında <color=yellow>Kaybedilen Canının</color>  2%<sprite=5>  kadarını <color=yellow>İyileştirir</color>.",
     "rawDesc": "<color=yellow>Saldırı Gücü</color> {0} artar. Her 4. <color=yellow>Normal Saldırın</color> <color=yellow>Kritik Vuruş</color> olur ve {1} ek <color=yellow>Işık Hasarı</color> verir.\nBir düşmana <color=yellow>Saldırı</color> yaptığında, <color=yellow>Saldırı Hızı</color> {2} saniye boyunca {3} artar ve en fazla {4} artabilir. <color=yellow>Saldırı Hızı</color> maksimuma ulaştığında, her <color=yellow>Saldırı</color> yaptığında <color=yellow>Kaybedilen Canının</color> {5} kadarını <color=yellow>İyileştirir</color>.",
     "rawDescVars": [
       {
@@ -1896,10 +2000,10 @@
         "raw": "adBonus",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 10.0,
+          "basicConstant": 9.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 2.0,
+          "basicLvl": 3.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -1950,12 +2054,12 @@
         "data": {}
       },
       {
-        "rendered": " 1%<sprite=5> ",
+        "rendered": " 2%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "lostHpHealRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.006,
+          "basicConstant": 0.016,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.004,
@@ -2157,8 +2261,8 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>Saldırı Hızı</color> bonusu alamazsın, bunun yerine her %1 <color=yellow>Ek Saldırı Hızı</color> başına <color=yellow>Saldırı Gücü</color>  0.5<sprite=5>  artar.\n<color=yellow>Hücum</color> veya <color=yellow>Işınlanma</color> sonrası bir sonraki <color=yellow>Normal Saldırın</color> kritik vuruş olur.\n\nHerhangi bir <color=yellow>Boss</color>u öldürdüğünde  <sprite=2><color=#fff><gradient=sv_ad>%200</gradient></color><sprite=5>  kadar <color=yellow>Can</color> <color=yellow>iyileştirirsin</color>.",
-    "rawDesc": "<color=yellow>Saldırı Hızı</color> bonusu alamazsın, bunun yerine her %1 <color=yellow>Ek Saldırı Hızı</color> başına <color=yellow>Saldırı Gücü</color> {0} artar.\n<color=yellow>Hücum</color> veya <color=yellow>Işınlanma</color> sonrası bir sonraki <color=yellow>Normal Saldırın</color> kritik vuruş olur.\n\nHerhangi bir <color=yellow>Boss</color>u öldürdüğünde {1} kadar <color=yellow>Can</color> <color=yellow>iyileştirirsin</color>.",
+    "description": "<color=yellow>Saldırı Hızı</color> bonusu alamazsın, bunun yerine her %1 <color=yellow>Ek Saldırı Hızı</color> başına <color=yellow>Saldırı Hasarı</color>  0.5<sprite=5>  artar.\n<color=yellow>Hücum</color> veya <color=yellow>Işınlanma</color> sonrası bir sonraki <color=yellow>Temel Saldırı</color> kritik vuruş olur.\n\nHerhangi bir <color=yellow>Boss</color>u öldürdüğünde  <sprite=2><color=#fff><gradient=sv_ad>%200</gradient></color><sprite=5>  kadar <color=yellow>Can</color> <color=yellow>iyileştirirsin</color>.",
+    "rawDesc": "<color=yellow>Saldırı Hızı</color> bonusu alamazsın, bunun yerine her %1 <color=yellow>Ek Saldırı Hızı</color> başına <color=yellow>Saldırı Hasarı</color> {0} artar.\n<color=yellow>Hücum</color> veya <color=yellow>Işınlanma</color> sonrası bir sonraki <color=yellow>Temel Saldırı</color> kritik vuruş olur.\n\nHerhangi bir <color=yellow>Boss</color>u öldürdüğünde {1} kadar <color=yellow>Can</color> <color=yellow>iyileştirirsin</color>.",
     "rawDescVars": [
       {
         "rendered": " 0.5<sprite=5> ",
@@ -3432,8 +3536,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Kullanım tuşu <color=yellow>basılı tutulduğunda</color> ele karanlık enerji şarj edilir. Şarj tamamlandığında öne doğru atılarak ilk temas ettiğin düşmanı ve çevresindeki tüm düşmanları yere serersin. Düşmanlar şarj süresine bağlı olarak  <sprite=2><color=#fff><gradient=sv_ad>%100</gradient></color><sprite=5> ~ <sprite=2><color=#fff><gradient=sv_ad>%600</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> alır ve 1 saniye sersemler. İsabet ettiğin her düşman için 3 saniye süren  <sprite=2><color=#fff><gradient=sv_ad>%60</gradient></color><sprite=5>  <color=yellow>Kalkan</color> kazanırsın; hedef <color=yellow>Patron</color> ise kalkan miktarı %200 artar.\n1.2 saniye boyunca şarj ettiğinde hücum mesafesi ve hasar maksimum seviyeye ulaşır.",
-    "rawDesc": "Kullanım tuşu <color=yellow>basılı tutulduğunda</color> ele karanlık enerji şarj edilir. Şarj tamamlandığında öne doğru atılarak ilk temas ettiğin düşmanı ve çevresindeki tüm düşmanları yere serersin. Düşmanlar şarj süresine bağlı olarak {0}~{1} <color=yellow>Karanlık Hasarı</color> alır ve {2} saniye sersemler. İsabet ettiğin her düşman için {3} saniye süren {4} <color=yellow>Kalkan</color> kazanırsın; hedef <color=yellow>Patron</color> ise kalkan miktarı {5} artar.\n{6} saniye boyunca şarj ettiğinde hücum mesafesi ve hasar maksimum seviyeye ulaşır.",
+    "description": "Kullanım tuşu <color=yellow>basılı tutulduğunda</color> ele karanlık enerji şarj edilir. Şarj tamamlandığında öne doğru atılarak ilk temas ettiğin düşmanı ve çevresindeki tüm düşmanları yere serersin. Düşmanlara şarj süresine bağlı olarak  <sprite=2><color=#fff><gradient=sv_ad>%100</gradient></color><sprite=5> ~ <sprite=2><color=#fff><gradient=sv_ad>%600</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> verir, 1 saniye sersemletir ve <color=yellow>Saldırı Etkisi</color>'ni tetiklersin. İsabet ettiğin her düşman için 3 saniye süren  <sprite=2><color=#fff><gradient=sv_ad>%60</gradient></color><sprite=5>  <color=yellow>Kalkan</color> kazanırsın; hedef <color=yellow>Patron</color> ise kalkan miktarı %200 artar.\n1.2 saniye boyunca şarj ettiğinde hücum mesafesi ve hasar maksimum seviyeye ulaşır.",
+    "rawDesc": "Kullanım tuşu <color=yellow>basılı tutulduğunda</color> ele karanlık enerji şarj edilir. Şarj tamamlandığında öne doğru atılarak ilk temas ettiğin düşmanı ve çevresindeki tüm düşmanları yere serersin. Düşmanlara şarj süresine bağlı olarak {0}~{1} <color=yellow>Karanlık Hasarı</color> verir, {2} saniye sersemletir ve <color=yellow>Saldırı Etkisi</color>'ni tetiklersin. İsabet ettiğin her düşman için {3} saniye süren {4} <color=yellow>Kalkan</color> kazanırsın; hedef <color=yellow>Patron</color> ise kalkan miktarı {5} artar.\n{6} saniye boyunca şarj ettiğinde hücum mesafesi ve hasar maksimum seviyeye ulaşır.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>%100</gradient></color><sprite=5> ",
@@ -3550,7 +3654,7 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "7 saniye boyunca silahına karanlık güç vererek <color=yellow>kritik vuruş ihtimalini</color>  %20<sprite=5>  artırır ve <color=yellow>saldırı</color> sırasında  <sprite=2><color=#fff><gradient=sv_ad>%52</gradient></color><sprite=5>  ek <color=yellow>karanlık hasarı</color> verirsin. <color=yellow>Yakın Dövüş Gezginleri</color> için bu ek hasar %25 artar.",
+    "description": "7 saniye boyunca silahına karanlık güç vererek <color=yellow>kritik vuruş ihtimalini</color>  %25<sprite=5>  artırır ve <color=yellow>saldırı</color> sırasında  <sprite=2><color=#fff><gradient=sv_ad>%30</gradient></color><sprite=5>  ek <color=yellow>karanlık hasarı</color> verirsin. <color=yellow>Yakın Dövüş Gezginleri</color> için bu ek hasar %25 artar.",
     "rawDesc": "{0} saniye boyunca silahına karanlık güç vererek <color=yellow>kritik vuruş ihtimalini</color> {1} artırır ve <color=yellow>saldırı</color> sırasında {2} ek <color=yellow>karanlık hasarı</color> verirsin. <color=yellow>Yakın Dövüş Gezginleri</color> için bu ek hasar {3} artar.",
     "rawDescVars": [
       {
@@ -3567,27 +3671,27 @@
         }
       },
       {
-        "rendered": " %20<sprite=5> ",
+        "rendered": " %25<sprite=5> ",
         "format": "P0",
         "raw": "critChance",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.18,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.02,
+          "basicLvl": 0.05,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>%52</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>%30</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "hitDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 0.52,
+          "basicAD": 0.3,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.15
         }
@@ -4761,42 +4865,29 @@
     "cooldownTime": 7.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Hedefe doğru hücum yapar çekicini indirerek düşmanlara  <sprite=2><color=#fff><gradient=sv_ad>%125</gradient></color><sprite=5>  <color=yellow>Işık Hasarı</color> verir ve %50 <color=yellow>Saldırı Etkisini</color> tetiklersin. Düşmana her <color=yellow>Saldırı</color> yaptığında, <color=yellow>Bekleme Süresi</color> %8 <color=yellow>azalır</color>.",
-    "rawDesc": "Hedefe doğru hücum yapar çekicini indirerek düşmanlara {0} <color=yellow>Işık Hasarı</color> verir ve {1} <color=yellow>Saldırı Etkisini</color> tetiklersin. Düşmana her <color=yellow>Saldırı</color> yaptığında, <color=yellow>Bekleme Süresi</color> {2} <color=yellow>azalır</color>.",
+    "description": "Hedefe doğru hücum yapar çekicini indirerek düşmanlara  <sprite=2><color=#fff><gradient=sv_ad>%175</gradient></color><sprite=5>  <color=yellow>Işık Hasarı</color> verir ve <color=yellow>Saldırı Etkisi</color> tetiklersin. Düşmana her <color=yellow>Saldırı</color> yaptığında, <color=yellow>Bekleme Süresi</color> %10 <color=yellow>azalır</color>.",
+    "rawDesc": "Hedefe doğru hücum yapar çekicini indirerek düşmanlara {0} <color=yellow>Işık Hasarı</color> verir ve <color=yellow>Saldırı Etkisi</color> tetiklersin. Düşmana her <color=yellow>Saldırı</color> yaptığında, <color=yellow>Bekleme Süresi</color> {1} <color=yellow>azalır</color>.",
     "rawDescVars": [
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>%125</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>%175</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 1.25,
+          "basicAD": 1.75,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": "%50",
-        "format": "P0",
-        "raw": "attackEffect",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "%8",
+        "rendered": "%10",
         "format": "P0",
         "raw": "cooldownReductionRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.08,
+          "basicConstant": 0.1,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4825,8 +4916,8 @@
     "cooldownTime": 9.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "İleriye doğru gidip geri dönen bir <color=yellow>Eter</color> atarak düşmanlara  <sprite=1><color=#fff><gradient=sv_ap>%160</gradient></color><sprite=5>  <color=yellow>Işık Hasarı</color> verirsin. Tekrar kullandığında <color=yellow>Eter</color>'i <color=yellow>patlatarak</color>, düşmanlara  <sprite=1><color=#fff><gradient=sv_ap>%180</gradient></color><sprite=5>  <color=yellow>Işık Hasarı</color> verir ve onları 3 saniye boyunca <color=yellow>kısıtlar</color>.",
-    "rawDesc": "İleriye doğru gidip geri dönen bir <color=yellow>Eter</color> atarak düşmanlara {0} <color=yellow>Işık Hasarı</color> verirsin. Tekrar kullandığında <color=yellow>Eter</color>'i <color=yellow>patlatarak</color>, düşmanlara {1} <color=yellow>Işık Hasarı</color> verir ve onları {2} saniye boyunca <color=yellow>kısıtlar</color>.",
+    "description": "İleriye doğru gidip geri dönen bir <color=yellow>Eter</color> atarak düşmanlara  <sprite=1><color=#fff><gradient=sv_ap>%160</gradient></color><sprite=5>  <color=yellow>Işık Hasarı</color> verirsin. Tekrar kullandığında <color=yellow>Eter</color>'i <color=yellow>patlatarak</color>, düşmanlara  <sprite=1><color=#fff><gradient=sv_ap>%180</gradient></color><sprite=5>  <color=yellow>Işık Hasarı</color> verir ve onları 3 saniye boyunca <color=yellow>kısıtlar</color>.\n\nBu <color=yellow>Patlama</color> tek bir hedefe isabet ederse, <color=yellow>Patlama Hasarı</color> %75 artar.",
+    "rawDesc": "İleriye doğru gidip geri dönen bir <color=yellow>Eter</color> atarak düşmanlara {0} <color=yellow>Işık Hasarı</color> verirsin. Tekrar kullandığında <color=yellow>Eter</color>'i <color=yellow>patlatarak</color>, düşmanlara {1} <color=yellow>Işık Hasarı</color> verir ve onları {2} saniye boyunca <color=yellow>kısıtlar</color>.\n\nBu <color=yellow>Patlama</color> tek bir hedefe isabet ederse, <color=yellow>Patlama Hasarı</color> {3} artar.",
     "rawDescVars": [
       {
         "rendered": " <sprite=1><color=#fff><gradient=sv_ap>%160</gradient></color><sprite=5> ",
@@ -4861,6 +4952,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%75",
+        "format": "P0",
+        "raw": "explodeAmpOnSingleTarget",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.75,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5537,8 +5641,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Hedef konumda giderek büyüyen ve düşmanları yavaşlatan bir yıldız yaratır, ardından en fazla 3 saniye boyunca odaklanırsın. Bu süre boyunca saldırı veya hafıza kullanamazsın. <color=yellow>Supernova</color>'yı tekrar kullanarak yıldızı patlatır ve düşmanlara  <sprite=1><color=#fff><gradient=sv_ap>%200</gradient></color><sprite=5>  <color=yellow>Işık Hasarı</color> verirsin. Bu patlama şarj süresine bağlı olarak güçlenir ve 1.3 saniye sonra hasar %225'e kadar artar.\nŞarj hızı, Yubar'ın Hafıza Hızıyla orantılı olarak artar.",
-    "rawDesc": "Hedef konumda giderek büyüyen ve düşmanları yavaşlatan bir yıldız yaratır, ardından en fazla {0} saniye boyunca odaklanırsın. Bu süre boyunca saldırı veya hafıza kullanamazsın. <color=yellow>Supernova</color>'yı tekrar kullanarak yıldızı patlatır ve düşmanlara {1} <color=yellow>Işık Hasarı</color> verirsin. Bu patlama şarj süresine bağlı olarak güçlenir ve {2} saniye sonra hasar {3}'e kadar artar.\nŞarj hızı, Yubar'ın Hafıza Hızıyla orantılı olarak artar.",
+    "description": "<color=yellow>Kaçınma Yeteneği</color>'ni 1 kez şarj eder ve hedef konumda giderek büyüyen ve düşmanları yavaşlatan bir <color=yellow>Yıldız</color> yaratır, ardından en fazla 3 saniye boyunca <color=yellow>Kanalize Etme</color> yaparsın. Bu süre boyunca <color=yellow>Saldırı</color> veya <color=yellow>Hafıza</color> kullanamazsın. Tekrar kullandığında <color=yellow>Yıldız</color>'ı patlatır ve düşmanlara  <sprite=1><color=#fff><gradient=sv_ap>%200</gradient></color><sprite=5>  <color=yellow>Işık Hasarı</color> verirsin.\n\nBu patlama <color=yellow>Şarj Süresi</color>'ne bağlı olarak güçlenir ve 1.3 saniye sonra <color=yellow>Hasar</color> %225'e kadar artar, şarj hızı ise Yubar'ın <color=yellow>Hafıza Hızı</color> ile orantılı olarak artar.",
+    "rawDesc": "<color=yellow>Kaçınma Yeteneği</color>'ni 1 kez şarj eder ve hedef konumda giderek büyüyen ve düşmanları yavaşlatan bir <color=yellow>Yıldız</color> yaratır, ardından en fazla {0} saniye boyunca <color=yellow>Kanalize Etme</color> yaparsın. Bu süre boyunca <color=yellow>Saldırı</color> veya <color=yellow>Hafıza</color> kullanamazsın. Tekrar kullandığında <color=yellow>Yıldız</color>'ı patlatır ve düşmanlara {1} <color=yellow>Işık Hasarı</color> verirsin.\n\nBu patlama <color=yellow>Şarj Süresi</color>'ne bağlı olarak güçlenir ve {2} saniye sonra <color=yellow>Hasar</color> {3}'e kadar artar, şarj hızı ise Yubar'ın <color=yellow>Hafıza Hızı</color> ile orantılı olarak artar.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -5612,7 +5716,7 @@
     "cooldownTime": 9.0,
     "maxCharges": 2,
     "addedCharges": 1,
-    "description": "Nachia'yı takip eden bir <color=yellow>Yapraklı Köpek</color>'i hedef konuma <color=yellow>çağırır</color>, düşmanlara  <sprite=1><color=#fff><gradient=sv_ap>%130</gradient></color><sprite=5>  <color=yellow>hasar</color> verir ve 0.4 saniye <color=yellow>sersemletir</color>.\n\n<color=yellow>Yapraklı Köpek</color> 128 can ve 40 savunmaya sahiptir, savaş alanında en fazla 25 saniye kalır, düşmanlara pençeleriyle  <sprite=1><color=#fff><gradient=sv_ap>%60</gradient></color><sprite=5>  <color=yellow>hasar</color> verir. En fazla 5 tane bulundurabilirsin.",
+    "description": "Nachia'yı takip eden bir <color=yellow>Yapraklı Köpek</color>'i hedef konuma <color=yellow>çağırır</color>, düşmanlara  <sprite=1><color=#fff><gradient=sv_ap>%130</gradient></color><sprite=5>  <color=yellow>hasar</color> verir ve 0.4 saniye <color=yellow>sersemletir</color>.\n\n<color=yellow>Yapraklı Köpek</color> 128 can ve  20<sprite=5>  savunmaya sahiptir, savaş alanında en fazla 25 saniye kalır, düşmanlara pençeleriyle  <sprite=1><color=#fff><gradient=sv_ap>%60</gradient></color><sprite=5>  <color=yellow>hasar</color> verir. En fazla 5 tane bulundurabilirsin.",
     "rawDesc": "Nachia'yı takip eden bir <color=yellow>Yapraklı Köpek</color>'i hedef konuma <color=yellow>çağırır</color>, düşmanlara {0} <color=yellow>hasar</color> verir ve {1} saniye <color=yellow>sersemletir</color>.\n\n<color=yellow>Yapraklı Köpek</color> {2} can ve {3} savunmaya sahiptir, savaş alanında en fazla {4} saniye kalır, düşmanlara pençeleriyle {5} <color=yellow>hasar</color> verir. En fazla {6} tane bulundurabilirsin.",
     "rawDescVars": [
       {
@@ -5649,15 +5753,15 @@
         "data": {}
       },
       {
-        "rendered": "40",
+        "rendered": " 20<sprite=5> ",
         "format": "#,##0",
         "raw": "armor",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 40.0,
+          "basicConstant": 13.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 7.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -5722,7 +5826,7 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Kullanım tuşu <color=yellow>basılı tutulduğunda</color> Zihinsel Ok Sürüsü şarj edilir. Tuş bırakıldığında, şarj süresine bağlı olarak yakındaki düşmanların üzerine 1~ 4<sprite=5>  adet zihinsel oku düşer. Her bir Zihinsel Ok, dar bir alandaki düşmanlara  <sprite=2><color=#fff><gradient=sv_ad>%200</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> verir.",
+    "description": "Kullanım tuşu <color=yellow>basılı tutulduğunda</color> Zihinsel Ok Sürüsü şarj edilir. Tuş bırakıldığında, şarj süresine bağlı olarak yakındaki düşmanların üzerine 1~ 4<sprite=5>  adet zihinsel oku düşer. Her bir Zihinsel Ok, dar bir alandaki düşmanlara  <sprite=2><color=#fff><gradient=sv_ad>%170</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> verir.",
     "rawDesc": "Kullanım tuşu <color=yellow>basılı tutulduğunda</color> Zihinsel Ok Sürüsü şarj edilir. Tuş bırakıldığında, şarj süresine bağlı olarak yakındaki düşmanların üzerine {0}~{1} adet zihinsel oku düşer. Her bir Zihinsel Ok, dar bir alandaki düşmanlara {2} <color=yellow>Karanlık Hasarı</color> verir.",
     "rawDescVars": [
       {
@@ -5746,14 +5850,14 @@
         "data": {}
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>%200</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>%170</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 2.0,
+          "basicAD": 1.7,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
@@ -5948,8 +6052,8 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "10 saniyeliğine kılıcını yıkımın <color=yellow>Kılıç Aurası</color> ile kaplar. Bu süre boyunca <color=yellow>Hafıza</color> <color=yellow>kullanamazsın</color> ama <color=yellow>Saldırı Gücün</color>  %35<sprite=5>  artar, <color=yellow>Saldırı Menzilin</color> artar ve her <color=yellow>Temel Saldırın</color> düşmanlara  <sprite=1><color=#fff><gradient=sv_ap>%340</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> veren bir <color=yellow>Kılıç Aurası</color> dalgası gönderir. Bu durumdayken saniyede  1.5<sprite=5>  <color=yellow>Temel Saldırı</color> yaparsın ve diğer saldırı hızı etkilerinden etkilenmezsin.\n\nEtki süresince <color=yellow>Kaçınma Yeteneğinin</color> <color=yellow>Hafıza Hızı</color>  30<sprite=5> , <color=yellow>Maksimum Yükü</color> ise 2 artar.",
-    "rawDesc": "{0} saniyeliğine kılıcını yıkımın <color=yellow>Kılıç Aurası</color> ile kaplar. Bu süre boyunca <color=yellow>Hafıza</color> <color=yellow>kullanamazsın</color> ama <color=yellow>Saldırı Gücün</color> {1} artar, <color=yellow>Saldırı Menzilin</color> artar ve her <color=yellow>Temel Saldırın</color> düşmanlara {2} <color=yellow>Karanlık Hasarı</color> veren bir <color=yellow>Kılıç Aurası</color> dalgası gönderir. Bu durumdayken saniyede {3} <color=yellow>Temel Saldırı</color> yaparsın ve diğer saldırı hızı etkilerinden etkilenmezsin.\n\nEtki süresince <color=yellow>Kaçınma Yeteneğinin</color> <color=yellow>Hafıza Hızı</color> {4}, <color=yellow>Maksimum Yükü</color> ise {5} artar.",
+    "description": "10 saniyeliğine kılıcını yıkımın <color=yellow>Kılıç Aurası</color> ile kaplar. Bu süre boyunca <color=yellow>Hafıza</color> <color=yellow>kullanamazsın</color> ama <color=yellow>Saldırı Menzilin</color> biraz artar, <color=yellow>Saldırı Hasarın</color>  %35<sprite=5> , <color=yellow>Saldırı Hızın</color>  %30<sprite=5>  artar ve bu saldırı hızı artış etkisi <color=yellow>Tek Adımda Tek Öldürüş</color> tarafından etkilenmez. Her <color=yellow>Temel Saldırın</color> düşmanlara  <sprite=1><color=#fff><gradient=sv_ap>%400</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> veren bir <color=yellow>Kılıç Aurası</color> dalgası gönderir.\n\nEtki süresince <color=yellow>Kaçınma Yeteneğinin</color> <color=yellow>Hafıza Hızı</color>  30<sprite=5> , <color=yellow>Maksimum Yükü</color> ise 2 artar.",
+    "rawDesc": "{0} saniyeliğine kılıcını yıkımın <color=yellow>Kılıç Aurası</color> ile kaplar. Bu süre boyunca <color=yellow>Hafıza</color> <color=yellow>kullanamazsın</color> ama <color=yellow>Saldırı Menzilin</color> biraz artar, <color=yellow>Saldırı Hasarın</color> {1}, <color=yellow>Saldırı Hızın</color> {2} artar ve bu saldırı hızı artış etkisi <color=yellow>Tek Adımda Tek Öldürüş</color> tarafından etkilenmez. Her <color=yellow>Temel Saldırın</color> düşmanlara {3} <color=yellow>Karanlık Hasarı</color> veren bir <color=yellow>Kılıç Aurası</color> dalgası gönderir.\n\nEtki süresince <color=yellow>Kaçınma Yeteneğinin</color> <color=yellow>Hafıza Hızı</color> {4}, <color=yellow>Maksimum Yükü</color> ise {5} artar.",
     "rawDescVars": [
       {
         "rendered": "10",
@@ -5978,29 +6082,29 @@
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>%340</gradient></color><sprite=5> ",
+        "rendered": " %30<sprite=5> ",
+        "format": "'%'#,##0",
+        "raw": "atkSpdPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 10.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>%400</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.4,
+          "basicAP": 4.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": " 1.5<sprite=5> ",
-        "format": "0.#",
-        "raw": "atkSpd",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 1.4,
-          "basicAP": 0.0,
-          "basicAD": 0.0,
-          "basicLvl": 0.1,
-          "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
@@ -6128,8 +6232,8 @@
     "cooldownTime": 11.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Düşmanları <color=yellow>delip geçen</color> bir arbalet atarak düşmanlara  <sprite=2><color=#fff><gradient=sv_ad>%250</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> verir, onları geri iter ve <color=yellow>Saldırı Etkisini</color> tetiklersin. Her düşmanı <color=yellow>delip geçtiğinde</color>, sonraki düşmana verilen <color=yellow>Hasar</color> %35 artar.",
-    "rawDesc": "Düşmanları <color=yellow>delip geçen</color> bir arbalet atarak düşmanlara {0} <color=yellow>Karanlık Hasarı</color> verir, onları geri iter ve <color=yellow>Saldırı Etkisini</color> tetiklersin. Her düşmanı <color=yellow>delip geçtiğinde</color>, sonraki düşmana verilen <color=yellow>Hasar</color> {1} artar.",
+    "description": "Düşmanları <color=yellow>delip geçen</color> bir arbalet atarak düşmanlara  <sprite=2><color=#fff><gradient=sv_ad>%250</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> verir, onları geri iter ve <color=yellow>Saldırı Etkisi</color>ni tetiklersin. Her düşmanı <color=yellow>delip geçtiğinde</color>, sonraki düşmana verilen <color=yellow>Hasar</color> %35 artar.\n<sprite=10><color=#fff><gradient=sv_critp>%100</gradient></color> ihtimalle <color=yellow>Hasar</color> %100 artar ve hedefe 5 <color=yellow>Karanlık</color> uygular.",
+    "rawDesc": "Düşmanları <color=yellow>delip geçen</color> bir arbalet atarak düşmanlara {0} <color=yellow>Karanlık Hasarı</color> verir, onları geri iter ve <color=yellow>Saldırı Etkisi</color>ni tetiklersin. Her düşmanı <color=yellow>delip geçtiğinde</color>, sonraki düşmana verilen <color=yellow>Hasar</color> {1} artar.\n{2} ihtimalle <color=yellow>Hasar</color> {3} artar ve hedefe {4} <color=yellow>Karanlık</color> uygular.",
     "rawDescVars": [
       {
         "rendered": " <sprite=2><color=#fff><gradient=sv_ad>%250</gradient></color><sprite=5> ",
@@ -6151,6 +6255,45 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.35,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>%100</gradient></color>",
+        "format": "'%'#,##0",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "%100",
+        "format": "P0",
+        "raw": "empoweredAmpDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "empoweredDarkStackCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -6631,6 +6774,121 @@
     ],
     "image": "St_R_DangerousTheory.png",
     "lore": "Arkanum'un korkakları bu teoriyi 'kabul edilemeyecek kadar tehlikeli' olarak nitelendirmişti \nAptallar.\n\nYalnızca en uç koşullara maruz bırakılan maddenin en patlayıcı sonucu doğurabileceğini söyleyen bu teorinin zarafetini anlayamadılar. Ben sadece hipotezimi kanıtlıyorum.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_DarkGrenade": {
+    "name": "Karanlık Bombası",
+    "cooldownTime": 9.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Hedef konuma bir karanlık bombası fırlatırsın. Bomba patlayarak etrafa 7 adet karanlık parçacığı saçar. Her bir parçacık isabet ettiği ilk düşmanda %50 <color=yellow>Saldırı Etkisi</color> tetikler ve  <sprite=2><color=#fff><gradient=sv_ad>%150</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> verir. Aynı hedefe birden fazla parçacık isabet ederse, ikinci parçacıktan itibaren %50 hasar verir.\n<sprite=10><color=#fff><gradient=sv_critp>%100</gradient></color> ihtimalle saçılan karanlık parçacığı sayısı 4 artar ve düşmanlara 1 saniyeliğine <color=yellow>Sersemletme</color> uygular.",
+    "rawDesc": "Hedef konuma bir karanlık bombası fırlatırsın. Bomba patlayarak etrafa {0} adet karanlık parçacığı saçar. Her bir parçacık isabet ettiği ilk düşmanda {1} <color=yellow>Saldırı Etkisi</color> tetikler ve {2} <color=yellow>Karanlık Hasarı</color> verir. Aynı hedefe birden fazla parçacık isabet ederse, ikinci parçacıktan itibaren {3} hasar verir.\n{4} ihtimalle saçılan karanlık parçacığı sayısı {5} artar ve düşmanlara {6} saniyeliğine <color=yellow>Sersemletme</color> uygular.",
+    "rawDescVars": [
+      {
+        "rendered": "7",
+        "format": "#,##0",
+        "raw": "defaultShardCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 7.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%50",
+        "format": "P0",
+        "raw": "attackEffectStrength",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>%150</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_DarkGrenade_Shard::damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "%50",
+        "format": "P0",
+        "raw": "subsequentHitMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>%100</gradient></color>",
+        "format": "'%'#,##0",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "addedEmpoweredShardCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Fırlatma, Alan Etkili Karanlık Hasarı",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Dark",
+      "Attack"
+    ],
+    "image": "St_R_DarkGrenade.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -7717,8 +7975,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Öne doğru yayılan 5 adet karanlık mermi ateşler. Her mermi  <sprite=2><color=#fff><gradient=sv_ad>%100</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> verir ve %50 <color=yellow>Saldırı Etkisini</color> tetikler.",
-    "rawDesc": "Öne doğru yayılan {0} adet karanlık mermi ateşler. Her mermi {1} <color=yellow>Karanlık Hasarı</color> verir ve {2} <color=yellow>Saldırı Etkisini</color> tetikler.",
+    "description": "Öne doğru yayılan 5 adet karanlık mermi ateşler. Her mermi  <sprite=2><color=#fff><gradient=sv_ad>%100</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> verir ve %50 <color=yellow>Saldırı Etkisini</color> tetikler.\n<sprite=10><color=#fff><gradient=sv_critp>%100</gradient></color> ihtimalle 4 adet daha karanlık mermi ateşler.",
+    "rawDesc": "Öne doğru yayılan {0} adet karanlık mermi ateşler. Her mermi {1} <color=yellow>Karanlık Hasarı</color> verir ve {2} <color=yellow>Saldırı Etkisini</color> tetikler.\n{3} ihtimalle {4} adet daha karanlık mermi ateşler.",
     "rawDescVars": [
       {
         "rendered": "5",
@@ -7753,6 +8011,32 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>%100</gradient></color>",
+        "format": "'%'#,##0",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "addedShootCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -7898,8 +8182,8 @@
     "cooldownTime": 10.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "0.7 saniye boyunca odaklanır ve bu süre boyunca <color=yellow>Hareket Hızı</color>  %30<sprite=5>  artar. Odaklanma sona erdiğinde, çevredeki rastgele düşmanlara  <sprite=2><color=#fff><gradient=sv_ad>%50</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> veren 5 adet güdümlü füze atar ve 3 saniye boyunca <color=yellow>Saldırı Hızı</color>  %20<sprite=5>  artar.",
-    "rawDesc": "{0} saniye boyunca odaklanır ve bu süre boyunca <color=yellow>Hareket Hızı</color> {1} artar. Odaklanma sona erdiğinde, çevredeki rastgele düşmanlara {2} <color=yellow>Karanlık Hasarı</color> veren {3} adet güdümlü füze atar ve {4} saniye boyunca <color=yellow>Saldırı Hızı</color> {5} artar.",
+    "description": "0.7 saniye boyunca odaklanır ve bu süre boyunca <color=yellow>Hareket Hızı</color>  %30<sprite=5>  artar. Odaklanma sona erdiğinde, çevredeki rastgele düşmanlara  <sprite=2><color=#fff><gradient=sv_ad>%50</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> veren 5 adet güdümlü füze atar ve 3 saniye boyunca <color=yellow>Saldırı Hızı</color>  %20<sprite=5>  artar.\n<sprite=10><color=#fff><gradient=sv_critp>%100</gradient></color> ihtimalle atılan füze sayısı 5 artar.",
+    "rawDesc": "{0} saniye boyunca odaklanır ve bu süre boyunca <color=yellow>Hareket Hızı</color> {1} artar. Odaklanma sona erdiğinde, çevredeki rastgele düşmanlara {2} <color=yellow>Karanlık Hasarı</color> veren {3} adet güdümlü füze atar ve {4} saniye boyunca <color=yellow>Saldırı Hızı</color> {5} artar.\n{6} ihtimalle atılan füze sayısı {7} artar.",
     "rawDescVars": [
       {
         "rendered": "0.7",
@@ -7978,6 +8262,32 @@
           "basicLvl": 4.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>%100</gradient></color>",
+        "format": "'%'#,##0",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "addedEmpoweredMissileCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "shortDescription": "Karanlık Hasarı, Saldırı Hızı Artışı",
@@ -8000,8 +8310,8 @@
     "cooldownTime": 7.5,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Hızla hareket ettikten sonra çevredeki düşmanlara 3 adet karanlık parçası atar. Her parça  <sprite=2><color=#fff><gradient=sv_ad>%65</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> verir ve %50 <color=yellow>Saldırı Etkisi</color> tetikler.",
-    "rawDesc": "Hızla hareket ettikten sonra çevredeki düşmanlara {0} adet karanlık parçası atar. Her parça {1} <color=yellow>Karanlık Hasarı</color> verir ve {2} <color=yellow>Saldırı Etkisi</color> tetikler.",
+    "description": "Hızla hareket ettikten sonra çevredeki düşmanlara 3 adet karanlık parçası atar. Her parça  <sprite=2><color=#fff><gradient=sv_ad>%65</gradient></color><sprite=5>  <color=yellow>Karanlık Hasarı</color> verir ve %50 <color=yellow>Saldırı Etkisi</color> tetikler.\n<sprite=10><color=#fff><gradient=sv_critp>%100</gradient></color> ihtimalle atılan parça sayısı 3 artar.",
+    "rawDesc": "Hızla hareket ettikten sonra çevredeki düşmanlara {0} adet karanlık parçası atar. Her parça {1} <color=yellow>Karanlık Hasarı</color> verir ve {2} <color=yellow>Saldırı Etkisi</color> tetikler.\n{3} ihtimalle atılan parça sayısı {4} artar.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -8036,6 +8346,32 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=10><color=#fff><gradient=sv_critp>%100</gradient></color>",
+        "format": "'%'#,##0",
+        "raw": "empowerChance",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "addedSpawnCountByEmpowered",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8119,6 +8455,81 @@
     ],
     "image": "St_R_Smite.PNG",
     "lore": "Akademide yaşlı ve zayıf ruhlu ihtiyarlardan başka kimse yok.\nNe zamana kadar küçük kurallarla oynayıp kendi başarılarıymış gibi kendilerini övecekler...\n\nDün gece yanıp kül olan ağaca bakarken birden aklıma geldi.\nYıldırım gibi doğa güçleri de bir kural çerçevesinde işlemiyor mu?\n\nEğer bu kuralı keşfedersem, bu muazzam gücü de kontrol edebilirim.\nHeyecan verici. Hemen araştırmaya başlamalıyım.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_Somersault": {
+    "name": "Takla",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "0.5 saniyeliğine havaya sıçrayarak saldırılardan kaçınır ve <color=yellow>Yenilmez</color> olursun. 4 saniyeliğine <color=yellow>Kritik Vuruş Şansı</color>  %30<sprite=5>  artar.\n\n<color=yellow>Saldırı</color> yaptığında bu hafızanın <color=yellow>Bekleme Süresi</color> 0.3 saniye azalır.",
+    "rawDesc": "{0} saniyeliğine havaya sıçrayarak saldırılardan kaçınır ve <color=yellow>Yenilmez</color> olursun. {1} saniyeliğine <color=yellow>Kritik Vuruş Şansı</color> {2} artar.\n\n<color=yellow>Saldırı</color> yaptığında bu hafızanın <color=yellow>Bekleme Süresi</color> {3} saniye azalır.",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "jumpDodgeDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "effectDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " %30<sprite=5> ",
+        "format": "P0",
+        "raw": "critChangeAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.1,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "0.3",
+        "format": "#,##0.#",
+        "raw": "cooldownReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": "Yenilmezlik, Kritik Vuruş Şansı Artışı",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "HardCC"
+    ],
+    "image": "St_R_Somersault.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""
@@ -8235,6 +8646,88 @@
     ],
     "image": "St_R_StaticDischarge.png",
     "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_SummonLittleBaam": {
+    "name": "Ruh Eşi",
+    "cooldownTime": 14.0,
+    "maxCharges": 3,
+    "addedCharges": 99,
+    "description": "<color=yellow>Küçük Baam</color>'ı hedef konuma sabitleyerek <color=yellow>çağırırsın</color>.\n\n<color=yellow>Küçük Baam</color> 119 cana ve 50 savunmaya sahiptir, savaş alanında en fazla 20 saniye kalır ve etrafındaki düşmanlara saldırarak  <sprite=1><color=#fff><gradient=sv_ap>%85</gradient></color><sprite=5>  <color=yellow>Işık Hasarı</color> verir. Aynı anda en fazla 10 tane tutulabilir.\n\n<color=yellow>Şarj Sayısı</color> tek seferde tamamen dolar.",
+    "rawDesc": "<color=yellow>Küçük Baam</color>'ı hedef konuma sabitleyerek <color=yellow>çağırırsın</color>.\n\n<color=yellow>Küçük Baam</color> {0} cana ve {1} savunmaya sahiptir, savaş alanında en fazla {2} saniye kalır ve etrafındaki düşmanlara saldırarak {3} <color=yellow>Işık Hasarı</color> verir. Aynı anda en fazla {4} tane tutulabilir.\n\n<color=yellow>Şarj Sayısı</color> tek seferde tamamen dolar.",
+    "rawDescVars": [
+      {
+        "rendered": "119",
+        "format": "#,##0",
+        "raw": "summonHealth",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "50",
+        "format": "#,##0",
+        "raw": "armor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 50.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "20",
+        "format": "#,##0.#",
+        "raw": "maxDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>%85</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_SummonLittleBaam_Baam_Atk::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.85,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0",
+        "raw": "maxCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Küçük Baam Çağırma",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Summon"
+    ],
+    "image": "St_R_SummonLittleBaam.png",
+    "lore": "Vahşi Baam'ın yakalanması tamamen 'yasal' ve 'gönüllü' olarak gerçekleşti.",
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""

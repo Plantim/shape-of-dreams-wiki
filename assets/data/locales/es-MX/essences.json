@@ -3282,6 +3282,49 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Glass": {
+    "name": "Esencia de Cristal",
+    "description": "Al obtener un <color=yellow>escudo</color> <color=yellow>en combate</color>, <color=yellow>recupera</color> salud equivalente al  12%<sprite=5>  de la cantidad de escudo obtenida. La <color=yellow>curación</color> de esta memoria aumenta en  18%<sprite=5>  por cada <color=yellow>Memoria de Frío</color> que poseas.",
+    "rawDesc": "Al obtener un <color=yellow>escudo</color> <color=yellow>en combate</color>, <color=yellow>recupera</color> salud equivalente al {0} de la cantidad de escudo obtenida. La <color=yellow>curación</color> de esta memoria aumenta en {1} por cada <color=yellow>Memoria de Frío</color> que poseas.",
+    "rawDescVars": [
+      {
+        "rendered": " 12%<sprite=5> ",
+        "format": "P0",
+        "raw": "healByShieldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": " 18%<sprite=5> ",
+        "format": "P0",
+        "raw": "healAmpPerColdSkill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "Gem_R_Glass.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Insatiable": {
     "name": "Esencia de Insaciabilidad",
     "description": "Después de conjurar esta memoria, aumenta el <color=yellow>daño de ataque</color> un  15%<sprite=5>  y <color=yellow>recupera</color>  6<sprite=5>  de salud con cada <color=yellow>ataque</color> durante 5 segundos.",
@@ -3333,6 +3376,75 @@
       "Attack"
     ],
     "image": "Gem_R_Insatiable.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lava": {
+    "name": "Esencia de Lava",
+    "description": "Cada 4 s, el <color=yellow>lanzamiento</color> de esta memoria se <color=yellow>potencia</color>. Al infligir <color=yellow>Daño de fuego</color> a un enemigo por primera vez con un <color=yellow>lanzamiento</color> potenciado, crea un charco de lava bajo sus pies que dura 4 s. Todos los enemigos sobre la lava reciben  <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5>  de <color=yellow>Daño de fuego</color> por segundo y el daño que reciben por <color=yellow>Daño de fuego</color> aumenta en 30%. Solo puede haber un máximo de 5 charcos de lava activos a la vez.",
+    "rawDesc": "Cada {0} s, el <color=yellow>lanzamiento</color> de esta memoria se <color=yellow>potencia</color>. Al infligir <color=yellow>Daño de fuego</color> a un enemigo por primera vez con un <color=yellow>lanzamiento</color> potenciado, crea un charco de lava bajo sus pies que dura {1} s. Todos los enemigos sobre la lava reciben {2} de <color=yellow>Daño de fuego</color> por segundo y el daño que reciben por <color=yellow>Daño de fuego</color> aumenta en {3}. Solo puede haber un máximo de {4} charcos de lava activos a la vez.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Gem_R_Lava::cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Ai_R_Lava_LavaField::duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_Lava_LavaField::dmgFactor/Ai_R_Lava_LavaField::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "Se_R_Lava_Debuff::fireDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "maxLavaCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Lava.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -3518,6 +3630,48 @@
     "achievementName": "Mantén la calma y sigue adelante",
     "achievementDescription": "Derrota a un jefe épico un total de 8 veces mientras tu salud está por debajo de 25%."
   },
+  "Gem_R_Purity": {
+    "name": "Esencia de Pureza",
+    "description": "Al <color=yellow>lanzar</color> esta memoria, elimina todos los <color=yellow>efectos elementales</color> aplicados al Viajero. <color=yellow>Recupera</color>  <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5>  de salud por cada <color=yellow>efecto elemental</color> eliminado. Solo se puede activar una vez cada 4 s.",
+    "rawDesc": "Al <color=yellow>lanzar</color> esta memoria, elimina todos los <color=yellow>efectos elementales</color> aplicados al Viajero. <color=yellow>Recupera</color> {0} de salud por cada <color=yellow>efecto elemental</color> eliminado. Solo se puede activar una vez cada {1} s.",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healPerElemental",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Purity.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Rejuvenation": {
     "name": "Esencia de Rejuvenecimiento",
     "description": "Cada 15 segundos, la <color=yellow>canalización</color> de esta memoria se <color=yellow>potencia</color>. La <color=yellow>canalización potenciada</color> <color=yellow>recupera</color> <color=yellow>vida</color> propia igual al  14%<sprite=5>  del <color=yellow>daño</color> causado en los 1.5 segundos después de canalizar.",
@@ -3700,18 +3854,18 @@
   },
   "Gem_R_Shock": {
     "name": "Esencia de Impacto",
-    "description": "Cada 4º <color=yellow>ataque básico</color> es <color=yellow>fortalecido</color> y dispara un <color=yellow>choque eléctrico</color> que rebota entre enemigos, causando <color=yellow>daño de luz</color> de  <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5>  hasta 2 veces. Por cada 20% de <color=yellow>probabilidad de golpe crítico</color>, el número máximo de impactos aumenta en 1.",
+    "description": "Cada 4º <color=yellow>ataque básico</color> es <color=yellow>fortalecido</color> y dispara un <color=yellow>choque eléctrico</color> que rebota entre enemigos, causando <color=yellow>daño de luz</color> de  <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5>  hasta 2 veces. Por cada 20% de <color=yellow>probabilidad de golpe crítico</color>, el número máximo de impactos aumenta en 1.",
     "rawDesc": "Cada 4º <color=yellow>ataque básico</color> es <color=yellow>fortalecido</color> y dispara un <color=yellow>choque eléctrico</color> que rebota entre enemigos, causando <color=yellow>daño de luz</color> de {0} hasta {1} veces. Por cada {2} de <color=yellow>probabilidad de golpe crítico</color>, el número máximo de impactos aumenta en 1.",
     "rawDescVars": [
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "chainDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.2,
-          "basicAD": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.01
         }

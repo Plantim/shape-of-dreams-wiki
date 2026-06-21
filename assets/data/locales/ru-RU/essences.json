@@ -3282,6 +3282,49 @@
     "achievementName": "",
     "achievementDescription": ""
   },
+  "Gem_R_Glass": {
+    "name": "Эссенция стекла",
+    "description": "При получении <color=yellow>щита</color> в <color=yellow>бою</color> <color=yellow>восстанавливает</color> здоровье в размере  12%<sprite=5>  от прочности полученного щита. За каждое имеющееся у вас <color=yellow>воспоминание холода</color> <color=yellow>объем восстановления</color> этого воспоминания увеличивается на  18%<sprite=5> .",
+    "rawDesc": "При получении <color=yellow>щита</color> в <color=yellow>бою</color> <color=yellow>восстанавливает</color> здоровье в размере {0} от прочности полученного щита. За каждое имеющееся у вас <color=yellow>воспоминание холода</color> <color=yellow>объем восстановления</color> этого воспоминания увеличивается на {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 12%<sprite=5> ",
+        "format": "P0",
+        "raw": "healByShieldRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      },
+      {
+        "rendered": " 18%<sprite=5> ",
+        "format": "P0",
+        "raw": "healAmpPerColdSkill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.002
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "Gem_R_Glass.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Insatiable": {
     "name": "Эссенция ненасытности",
     "description": "После применения этого Воспоминания увеличивает <color=yellow>силу атаки</color> на  15%<sprite=5>  на 5 с. и при каждой <color=yellow>атаке</color> <color=yellow>исцеляет</color>  6<sprite=5>  ОЗ.",
@@ -3333,6 +3376,75 @@
       "Attack"
     ],
     "image": "Gem_R_Insatiable.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lava": {
+    "name": "Эссенция лавы",
+    "description": "Каждые 4 сек. <color=yellow>применение</color> этого воспоминания получает <color=yellow>усиление</color>. При первом нанесении <color=yellow>урона от огня</color> врагу усиленным <color=yellow>применением</color> под ногами цели создается лужа лавы, которая существует 4 сек. Все враги в лаве получают  <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5>  <color=yellow>урона от огня</color> в секунду, а получаемый ими <color=yellow>урон от огня</color> увеличивается на 30%. Одновременно может существовать не более 5 луж лавы.",
+    "rawDesc": "Каждые {0} сек. <color=yellow>применение</color> этого воспоминания получает <color=yellow>усиление</color>. При первом нанесении <color=yellow>урона от огня</color> врагу усиленным <color=yellow>применением</color> под ногами цели создается лужа лавы, которая существует {1} сек. Все враги в лаве получают {2} <color=yellow>урона от огня</color> в секунду, а получаемый ими <color=yellow>урон от огня</color> увеличивается на {3}. Одновременно может существовать не более {4} луж лавы.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Gem_R_Lava::cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "Ai_R_Lava_LavaField::duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_R_Lava_LavaField::dmgFactor/Ai_R_Lava_LavaField::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "Se_R_Lava_Debuff::fireDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "maxLavaCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Fire"
+    ],
+    "image": "Gem_R_Lava.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
@@ -3518,6 +3630,48 @@
     "achievementName": "Сохраняйте спокойствие",
     "achievementDescription": "Победить героического босса 8 р. с ОЗ 25% или меньше."
   },
+  "Gem_R_Purity": {
+    "name": "Эссенция чистоты",
+    "description": "При <color=yellow>применении</color> этого воспоминания снимает все <color=yellow>стихийные эффекты</color>, наложенные на Путешественника. <color=yellow>Восстанавливает</color>  <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5>  ед. здоровья за каждый снятый <color=yellow>стихийный эффект</color>. Может срабатывать не чаще одного раза в 4 сек.",
+    "rawDesc": "При <color=yellow>применении</color> этого воспоминания снимает все <color=yellow>стихийные эффекты</color>, наложенные на Путешественника. <color=yellow>Восстанавливает</color> {0} ед. здоровья за каждый снятый <color=yellow>стихийный эффект</color>. Может срабатывать не чаще одного раза в {1} сек.",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healPerElemental",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.005
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Heal"
+    ],
+    "image": "Gem_R_Purity.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
   "Gem_R_Rejuvenation": {
     "name": "Эссенция омоложения",
     "description": "Каждые 15 с. <color=yellow>усиливает</color> <color=yellow>применение</color> этого Воспоминания. <color=yellow>Исцеляет</color> <color=yellow>персонажу</color> <color=yellow>ОЗ</color> в размере  14%<sprite=5>  от <color=yellow>урона</color>, нанесенного в течение 1.5 с. после <color=yellow>усиленного применения</color>.",
@@ -3700,18 +3854,18 @@
   },
   "Gem_R_Shock": {
     "name": "Эссенция шока",
-    "description": "<color=yellow>Усиливает</color> каждую 4-ю <color=yellow>базовую атаку</color> и выстреливает <color=yellow>электрическим разрядом</color>, который отскакивает от врага ко врагу, нанося  <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5>  <color=yellow>урона от света</color> до 2 р. За кажд. 20% <color=yellow>шанса критического удара</color> увеличивает максимальное количество ударов на 1.",
+    "description": "<color=yellow>Усиливает</color> каждую 4-ю <color=yellow>базовую атаку</color> и выстреливает <color=yellow>электрическим разрядом</color>, который отскакивает от врага ко врагу, нанося  <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5>  <color=yellow>урона от света</color> до 2 р. За кажд. 20% <color=yellow>шанса критического удара</color> увеличивает максимальное количество ударов на 1.",
     "rawDesc": "<color=yellow>Усиливает</color> каждую 4-ю <color=yellow>базовую атаку</color> и выстреливает <color=yellow>электрическим разрядом</color>, который отскакивает от врага ко врагу, нанося {0} <color=yellow>урона от света</color> до {1} р. За кажд. {2} <color=yellow>шанса критического удара</color> увеличивает максимальное количество ударов на 1.",
     "rawDescVars": [
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>40%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "chainDamage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 0.2,
-          "basicAD": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.2,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.01
         }

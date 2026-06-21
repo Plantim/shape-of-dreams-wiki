@@ -229,6 +229,55 @@
     ],
     "image": "Se_Star_D_CritDamage.png"
   },
+  "Se_Star_D_CritUpHitDecay": {
+    "name": "선천적인 집중력",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      60,
+      60
+    ],
+    "requiredLevel": 75,
+    "isRequiredLevelTotalMastery": true,
+    "description": "<color=yellow>치명타 확률</color>을  25%<sprite=5> 만큼 얻습니다. 적에게 <color=yellow>피해</color>를 입으면 이 별로 얻은 <color=yellow>치명타 확률</color>이 영구히 1%만큼 감소합니다. 화상 피해로는 이 감소 효과가 발동하지 않습니다.",
+    "rawDesc": "<color=yellow>치명타 확률</color>을 {0}만큼 얻습니다. 적에게 <color=yellow>피해</color>를 입으면 이 별로 얻은 <color=yellow>치명타 확률</color>이 영구히 {1}만큼 감소합니다. 화상 피해로는 이 감소 효과가 발동하지 않습니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 25%<sprite=5> ",
+        "format": "P0",
+        "raw": "critChanceAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.25,
+            0.35,
+            0.45
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "1%",
+        "format": "#,##0'%'",
+        "raw": "decayCritPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_D_CritUpHitDecay.png"
+  },
   "Se_Star_D_DamageBonusOnAllElemental": {
     "name": "원소술사",
     "lore": null,
@@ -529,6 +578,42 @@
       }
     ],
     "image": "Se_Star_D_LowerASHigherAD.png"
+  },
+  "Se_Star_D_RiftFirstCastDamageUp": {
+    "name": "개전 깃발",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      80,
+      70,
+      70
+    ],
+    "requiredLevel": 70,
+    "isRequiredLevelTotalMastery": true,
+    "description": "균열을 타고 이동할 때마다 처음 시전하는 기억의 <color=yellow>피해량</color>이  90%<sprite=5>  증가합니다.",
+    "rawDesc": "균열을 타고 이동할 때마다 처음 시전하는 기억의 <color=yellow>피해량</color>이 {0} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 90%<sprite=5> ",
+        "format": "P0",
+        "raw": "firstSkillDamageAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.9,
+            1.2,
+            1.5
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_D_RiftFirstCastDamageUp.png"
   },
   "Se_Star_D_ScalingAbilityPower": {
     "name": "성숙한 정신",
@@ -955,6 +1040,44 @@
     ],
     "image": "Se_Star_I_DismantleBonus.png"
   },
+  "Se_Star_I_DismantleDustToBonusGold": {
+    "name": "발상의 전환",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": true,
+    "description": "기억이나 정수를 분해할 때 획득하는 <color=yellow>꿈가루</color>의  15%<sprite=5> 만큼 <color=yellow>골드</color>를 획득합니다.",
+    "rawDesc": "기억이나 정수를 분해할 때 획득하는 <color=yellow>꿈가루</color>의 {0}만큼 <color=yellow>골드</color>를 획득합니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "gainGoldRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25,
+            0.3
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_DismantleDustToBonusGold.png"
+  },
   "Se_Star_I_DreamDustOnKillChance": {
     "name": "분해와 분석",
     "lore": null,
@@ -1005,6 +1128,104 @@
       }
     ],
     "image": "Se_Star_I_DreamDustOnKillChance.png"
+  },
+  "Se_Star_I_ExtraChaosOptionGoldOnUse": {
+    "name": "정렬된 혼돈",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      50,
+      40,
+      30
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": true,
+    "description": "<color=yellow>혼돈</color>의 선택지가 1개 증가하며, 혼돈을 사용하면  15<sprite=5>  <color=yellow>골드</color>를 획득합니다.",
+    "rawDesc": "<color=yellow>혼돈</color>의 선택지가 {0}개 증가하며, 혼돈을 사용하면 {1} <color=yellow>골드</color>를 획득합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedChoices",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 15<sprite=5> ",
+        "format": "#,##0",
+        "raw": "goldOnChaos",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            15.0,
+            20.0,
+            25.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_ExtraChaosOptionGoldOnUse.png"
+  },
+  "Se_Star_I_FirstBossGemDrop": {
+    "name": "누군가의 보물",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      80,
+      90
+    ],
+    "requiredLevel": 75,
+    "isRequiredLevelTotalMastery": true,
+    "description": "처음 <color=yellow>영웅 보스</color>를 처치하면 품질이 10%인 일반 정수를  1<sprite=5> 개 획득합니다.",
+    "rawDesc": "처음 <color=yellow>영웅 보스</color>를 처치하면 품질이 {0}인 일반 정수를 {1}개 획득합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "spawnGemQuality",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0",
+        "raw": "gemSpawnCount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_I_FirstBossGemDrop.png"
   },
   "Se_Star_I_FirstGemUpgrade": {
     "name": "초심자의 행운",
@@ -1330,8 +1551,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": true,
-    "description": "상인이 판매하는 물품의 <color=yellow>골드 가격</color>이  10%<sprite=5>  감소합니다.",
-    "rawDesc": "상인이 판매하는 물품의 <color=yellow>골드 가격</color>이 {0} 감소합니다.",
+    "description": "조너스가 판매하는 물품의 <color=yellow>골드 가격</color>이  10%<sprite=5>  감소합니다.",
+    "rawDesc": "조너스가 판매하는 물품의 <color=yellow>골드 가격</color>이 {0} 감소합니다.",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -1368,8 +1589,8 @@
     ],
     "requiredLevel": 50,
     "isRequiredLevelTotalMastery": true,
-    "description": "<color=yellow>백금 동전</color>을 모험을 시작할 때, 그리고 다음 세계로 이동할 때마다  1<sprite=5> 개 얻어 최대 3개를 소지할 수 있습니다. 이 동전을 사용하여 상인이 판매하는 품목을 새로고침할 수 있습니다.",
-    "rawDesc": "<color=yellow>백금 동전</color>을 모험을 시작할 때, 그리고 다음 세계로 이동할 때마다 {0}개 얻어 최대 {1}개를 소지할 수 있습니다. 이 동전을 사용하여 상인이 판매하는 품목을 새로고침할 수 있습니다.",
+    "description": "<color=yellow>백금 동전</color>을 모험을 시작할 때, 그리고 다음 세계로 이동할 때마다  1<sprite=5> 개 얻어 최대 3개를 소지할 수 있습니다. 이 동전을 사용하여 조너스가 판매하는 품목을 새로고침할 수 있습니다.",
+    "rawDesc": "<color=yellow>백금 동전</color>을 모험을 시작할 때, 그리고 다음 세계로 이동할 때마다 {0}개 얻어 최대 {1}개를 소지할 수 있습니다. 이 동전을 사용하여 조너스가 판매하는 품목을 새로고침할 수 있습니다.",
     "rawDescVars": [
       {
         "rendered": " 1<sprite=5> ",
@@ -1928,6 +2149,62 @@
     ],
     "image": "Se_Star_L_IgnoreDelusion.png"
   },
+  "Se_Star_L_IncreaseMaxHealthByGuidance": {
+    "name": "위대한 인도자님의 아낌 없는 축복",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 4,
+    "price": [
+      70,
+      60,
+      60,
+      60
+    ],
+    "requiredLevel": 50,
+    "isRequiredLevelTotalMastery": true,
+    "description": "인도의 성소를 작동하면 <color=yellow>최대 체력</color>이  20<sprite=5>  증가합니다. 축복받은 인도의 성소를 작동하면  50<sprite=5>  증가합니다.",
+    "rawDesc": "인도의 성소를 작동하면 <color=yellow>최대 체력</color>이 {0} 증가합니다. 축복받은 인도의 성소를 작동하면 {1} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 20<sprite=5> ",
+        "format": "#,##0",
+        "raw": "defaultIncreaseMaxHealth",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            20.0,
+            25.0,
+            30.0,
+            35.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 50<sprite=5> ",
+        "format": "#,##0",
+        "raw": "blessedIncreaseMaxHealth",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            50.0,
+            60.0,
+            70.0,
+            80.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_L_IncreaseMaxHealthByGuidance.png"
+  },
   "Se_Star_L_MaxHealth": {
     "name": "지속성 강화",
     "lore": null,
@@ -1965,6 +2242,55 @@
       }
     ],
     "image": "Se_Star_L_MaxHealth.png"
+  },
+  "Se_Star_L_MaxHealthUpHealDown": {
+    "name": "질긴 피부",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      50,
+      60,
+      60
+    ],
+    "requiredLevel": 65,
+    "isRequiredLevelTotalMastery": true,
+    "description": "<color=yellow>최대 체력</color>이  15%<sprite=5>  증가합니다. 받는 <color=yellow>회복량</color>이 50% 감소합니다.",
+    "rawDesc": "<color=yellow>최대 체력</color>이 {0} 증가합니다. 받는 <color=yellow>회복량</color>이 {1} 감소합니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "maxHealthAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "healReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_L_MaxHealthUpHealDown.png"
   },
   "Se_Star_L_PeriodicScalingArmor": {
     "name": "비늘 겹치기",
@@ -2016,6 +2342,55 @@
       }
     ],
     "image": "Se_Star_L_PeriodicScalingArmor.png"
+  },
+  "Se_Star_L_PostHitDamageImmune": {
+    "name": "겁쟁이 인형",
+    "lore": null,
+    "category": "Life",
+    "heroType": "",
+    "maxLevel": 3,
+    "price": [
+      70,
+      60,
+      60
+    ],
+    "requiredLevel": 60,
+    "isRequiredLevelTotalMastery": true,
+    "description": "<color=yellow>피해</color>를 받은 후 1초 동안 <color=yellow>피해 면역</color> 상태가 됩니다.  14<sprite=5> 초에 한 번만 발동합니다.",
+    "rawDesc": "<color=yellow>피해</color>를 받은 후 {0}초 동안 <color=yellow>피해 면역</color> 상태가 됩니다. {1}초에 한 번만 발동합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "protectedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 14<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            14.0,
+            12.0,
+            10.0
+          ],
+          "strengthScaling": "Divide"
+        }
+      }
+    ],
+    "image": "Se_Star_L_PostHitDamageImmune.png"
   },
   "Se_Star_L_PotionChance": {
     "name": "아스클레피오스",
@@ -2890,8 +3265,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>상인</color>에게 피해를 줄 때마다 4 골드를 획득하여 최대  40<sprite=5>  골드를 획득합니다.",
-    "rawDesc": "<color=yellow>상인</color>에게 피해를 줄 때마다 {0} 골드를 획득하여 최대 {1} 골드를 획득합니다.",
+    "description": "<color=yellow>조너스</color>에게 피해를 줄 때마다 4 골드를 획득하여 최대  40<sprite=5>  골드를 획득합니다.",
+    "rawDesc": "<color=yellow>조너스</color>에게 피해를 줄 때마다 {0} 골드를 획득하여 최대 {1} 골드를 획득합니다.",
     "rawDescVars": [
       {
         "rendered": "4",
@@ -3571,16 +3946,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>왜곡된 정신</color>의 재사용 대기시간이 1초 증가하지만 화살을 최대로 충전하여 발사하면 화살 갯수가 2 증가합니다.",
+    "description": "<color=yellow>왜곡된 정신</color>의 재사용 대기시간이 1.5초 증가하지만 화살을 최대로 충전하여 발사하면 화살 갯수가 3 증가합니다.",
     "rawDesc": "<color=yellow>왜곡된 정신</color>의 재사용 대기시간이 {0}초 증가하지만 화살을 최대로 충전하여 발사하면 화살 갯수가 {1} 증가합니다.",
     "rawDescVars": [
       {
-        "rendered": "1",
+        "rendered": "1.5",
         "format": "#,##0.#",
         "raw": "cooldownPenalty",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 1.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3588,12 +3963,12 @@
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
         "raw": "bonusCount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3614,16 +3989,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>왜곡된 정신</color>의 최대 화살 갯수가 7 증가하지만 충전 중에 움직일 수 없습니다.",
+    "description": "<color=yellow>왜곡된 정신</color>의 최대 화살 갯수가 4 증가하지만 충전 중에 움직일 수 없습니다.",
     "rawDesc": "<color=yellow>왜곡된 정신</color>의 최대 화살 갯수가 {0} 증가하지만 충전 중에 움직일 수 없습니다.",
     "rawDescVars": [
       {
-        "rendered": "7",
+        "rendered": "4",
         "format": "#,##0",
         "raw": "increased",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 7.0,
+          "basicConstant": 4.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -3644,16 +4019,16 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>왜곡된 정신</color>의 화살을 일부만 충전하여 발사하면 재사용 대기시간이 50% 감소합니다.",
+    "description": "<color=yellow>왜곡된 정신</color>의 화살을 일부만 충전하여 발사하면 재사용 대기시간이 40% 감소합니다.",
     "rawDesc": "<color=yellow>왜곡된 정신</color>의 화살을 일부만 충전하여 발사하면 재사용 대기시간이 {0} 감소합니다.",
     "rawDescVars": [
       {
-        "rendered": "50%",
+        "rendered": "40%",
         "format": "P0",
         "raw": "cooldownReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4253,8 +4628,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "상인이 판매하는 물품의 <color=yellow>골드 가격</color>이  5%<sprite=5>  감소합니다.",
-    "rawDesc": "상인이 판매하는 물품의 <color=yellow>골드 가격</color>이 {0} 감소합니다.",
+    "description": "조너스가 판매하는 물품의 <color=yellow>골드 가격</color>이  5%<sprite=5>  감소합니다.",
+    "rawDesc": "조너스가 판매하는 물품의 <color=yellow>골드 가격</color>이 {0} 감소합니다.",
     "rawDescVars": [
       {
         "rendered": " 5%<sprite=5> ",
@@ -4846,7 +5221,7 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>멸살 태세</color>가 14초의 재사용 대기시간을 지닌 일반 기술로 변경되며 도중에 다른 기억을 사용할 수 있게 됩니다. 변경된 멸살 태세는 검기의 피해량과 공격력 증가량이 40% 감소하고 4초 동안 지속되며, 회피 기술의 기억 가속과 최대 충전량을 증가시키지 않습니다.",
+    "description": "<color=yellow>멸살 태세</color>가 14초의 재사용 대기시간을 지닌 일반 기술로 변경되며 도중에 다른 기억을 사용할 수 있게 됩니다. 변경된 멸살 태세는 검기의 피해량과 공격력 증가량이 50% 감소하고 4초 동안 지속되며, 회피 기술의 기억 가속과 최대 충전량을 증가시키지 않습니다.",
     "rawDesc": "<color=yellow>멸살 태세</color>가 {0}초의 재사용 대기시간을 지닌 일반 기술로 변경되며 도중에 다른 기억을 사용할 수 있게 됩니다. 변경된 멸살 태세는 검기의 피해량과 공격력 증가량이 {1} 감소하고 {2}초 동안 지속되며, 회피 기술의 기억 가속과 최대 충전량을 증가시키지 않습니다.",
     "rawDescVars": [
       {
@@ -4863,12 +5238,12 @@
         }
       },
       {
-        "rendered": "40%",
+        "rendered": "50%",
         "format": "P0",
         "raw": "strengthReduction",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.4,
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -4902,13 +5277,39 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>멸살 태세</color>가 검기를 발사하지 않는 대신 100% 더 자주 공격합니다.",
-    "rawDesc": "<color=yellow>멸살 태세</color>가 검기를 발사하지 않는 대신 {0} 더 자주 공격합니다.",
+    "description": "<color=yellow>멸살 태세</color>의 검기 피해량이 60%, 검기의 사거리가 80% 감소하지만, 부여하는 공격 속도와 회피 기술 기억 가속의 양이 100% 증가합니다.",
+    "rawDesc": "<color=yellow>멸살 태세</color>의 검기 피해량이 {0}, 검기의 사거리가 {1} 감소하지만, 부여하는 공격 속도와 회피 기술 기억 가속의 양이 {2} 증가합니다.",
     "rawDescVars": [
+      {
+        "rendered": "60%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.6,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "travelDistanceReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
       {
         "rendered": "100%",
         "format": "P0",
-        "raw": "speedAmp",
+        "raw": "buffAmp",
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.0,
@@ -5036,8 +5437,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "아무 보스를 처치하면  30%<sprite=5> 의 확률로 <color=yellow>백금 동전</color>을 획득합니다. 이 동전을 사용하여 상인이 판매하는 품목을 새로고침할 수 있습니다.",
-    "rawDesc": "아무 보스를 처치하면 {0}의 확률로 <color=yellow>백금 동전</color>을 획득합니다. 이 동전을 사용하여 상인이 판매하는 품목을 새로고침할 수 있습니다.",
+    "description": "아무 보스를 처치하면  30%<sprite=5> 의 확률로 <color=yellow>백금 동전</color>을 획득합니다. 이 동전을 사용하여 조너스가 판매하는 품목을 새로고침할 수 있습니다.",
+    "rawDesc": "아무 보스를 처치하면 {0}의 확률로 <color=yellow>백금 동전</color>을 획득합니다. 이 동전을 사용하여 조너스가 판매하는 품목을 새로고침할 수 있습니다.",
     "rawDescVars": [
       {
         "rendered": " 30%<sprite=5> ",
@@ -5071,8 +5472,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "상인을 <color=yellow>협박</color>하여 물품 가격을 낮춥니다. 협박이 50%의 확률로 성공하면 물품의 골드 가격이  50%<sprite=5>  감소하지만, 협박에 실패하면 50% 증가합니다.",
-    "rawDesc": "상인을 <color=yellow>협박</color>하여 물품 가격을 낮춥니다. 협박이 {0}의 확률로 성공하면 물품의 골드 가격이 {1} 감소하지만, 협박에 실패하면 {2} 증가합니다.",
+    "description": "조너스를 <color=yellow>협박</color>하여 물품 가격을 낮춥니다. 협박이 50%의 확률로 성공하면 물품의 골드 가격이  50%<sprite=5>  감소하지만, 협박에 실패하면 50% 증가합니다.",
+    "rawDesc": "조너스를 <color=yellow>협박</color>하여 물품 가격을 낮춥니다. 협박이 {0}의 확률로 성공하면 물품의 골드 가격이 {1} 감소하지만, 협박에 실패하면 {2} 증가합니다.",
     "rawDescVars": [
       {
         "rendered": "50%",
@@ -5873,8 +6274,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>상인</color>이 판매하는 물품의 <color=yellow>골드 가격</color>이  10%<sprite=5>  감소합니다.",
-    "rawDesc": "<color=yellow>상인</color>이 판매하는 물품의 <color=yellow>골드 가격</color>이 {0} 감소합니다.",
+    "description": "<color=yellow>조너스</color>가 판매하는 물품의 <color=yellow>골드 가격</color>이  10%<sprite=5>  감소합니다.",
+    "rawDesc": "<color=yellow>조너스</color>가 판매하는 물품의 <color=yellow>골드 가격</color>이 {0} 감소합니다.",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -5910,8 +6311,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "일부 <color=yellow>상인</color>이 판매하는 물품의 <color=yellow>골드 가격</color>이  50%<sprite=5>  증가하지만 판매하는 품목이 2개 증가합니다.",
-    "rawDesc": "일부 <color=yellow>상인</color>이 판매하는 물품의 <color=yellow>골드 가격</color>이 {0} 증가하지만 판매하는 품목이 2개 증가합니다.",
+    "description": "<color=yellow>조너스</color>가 판매하는 물품의 <color=yellow>골드 가격</color>이  50%<sprite=5>  증가하지만 판매하는 품목이 2개 증가합니다.",
+    "rawDesc": "<color=yellow>조너스</color>가 판매하는 물품의 <color=yellow>골드 가격</color>이 {0} 증가하지만 판매하는 품목이 2개 증가합니다.",
     "rawDescVars": [
       {
         "rendered": " 50%<sprite=5> ",
@@ -6820,8 +7221,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "모험을 시작할 때  150<sprite=5> 의 <color=yellow>골드</color>를 획득하지만, 상인이 판매하는 물품의 골드 가격이 10% 증가합니다.",
-    "rawDesc": "모험을 시작할 때 {0}의 <color=yellow>골드</color>를 획득하지만, 상인이 판매하는 물품의 골드 가격이 {1} 증가합니다.",
+    "description": "모험을 시작할 때  150<sprite=5> 의 <color=yellow>골드</color>를 획득하지만, 조너스가 판매하는 물품의 골드 가격이 10% 증가합니다.",
+    "rawDesc": "모험을 시작할 때 {0}의 <color=yellow>골드</color>를 획득하지만, 조너스가 판매하는 물품의 골드 가격이 {1} 증가합니다.",
     "rawDescVars": [
       {
         "rendered": " 150<sprite=5> ",
@@ -7715,8 +8116,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>격동의 숲</color>에서 상인이 판매하는 물품의 골드 가격이  30%<sprite=5>  감소합니다.",
-    "rawDesc": "<color=yellow>격동의 숲</color>에서 상인이 판매하는 물품의 골드 가격이 {0} 감소합니다.",
+    "description": "<color=yellow>격동의 숲</color>에서 조너스가 판매하는 물품의 골드 가격이  30%<sprite=5>  감소합니다.",
+    "rawDesc": "<color=yellow>격동의 숲</color>에서 조너스가 판매하는 물품의 골드 가격이 {0} 감소합니다.",
     "rawDescVars": [
       {
         "rendered": " 30%<sprite=5> ",
@@ -8564,7 +8965,7 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "최대 체력이 15% 감소하지만 <color=yellow>규율</color>의 시전 사거리가 30% 증가합니다. 또한 시전 시 대상까지의 거리가 멀 수록 피해량이 최대 100%, 피해 반경이 최대 50%까지 증가합니다.",
+    "description": "최대 체력이 15% 감소하지만 <color=yellow>규율</color>의 시전 사거리가 30% 증가합니다. 또한 시전 시 대상까지의 거리가 멀 수록 피해량이 최대 150%, 피해 반경이 최대 50%까지 증가합니다.",
     "rawDesc": "최대 체력이 {0} 감소하지만 <color=yellow>규율</color>의 시전 사거리가 {1} 증가합니다. 또한 시전 시 대상까지의 거리가 멀 수록 피해량이 최대 {2}, 피해 반경이 최대 {3}까지 증가합니다.",
     "rawDescVars": [
       {
@@ -8594,12 +8995,12 @@
         }
       },
       {
-        "rendered": "100%",
+        "rendered": "150%",
         "format": "P0",
         "raw": "maxDamageAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.0,
+          "basicConstant": 1.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8792,16 +9193,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>엘의 성역</color>을 베스퍼의 위치 대신 지정하는 위치에 소환합니다. 첫 폭발에 적중한 아군 하나당 재사용 대기시간이 10%, 적 하나당 3% 감소합니다.",
+    "description": "<color=yellow>엘의 성역</color>을 베스퍼의 위치 대신 지정하는 위치에 소환합니다. 첫 폭발에 적중한 아군 하나당 재사용 대기시간이 12%, 적 하나당 6% 감소합니다.",
     "rawDesc": "<color=yellow>엘의 성역</color>을 베스퍼의 위치 대신 지정하는 위치에 소환합니다. 첫 폭발에 적중한 아군 하나당 재사용 대기시간이 {0}, 적 하나당 {1} 감소합니다.",
     "rawDescVars": [
       {
-        "rendered": "10%",
+        "rendered": "12%",
         "format": "P0",
         "raw": "reductionRatioOnAlly",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.12,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8809,12 +9210,12 @@
         }
       },
       {
-        "rendered": "3%",
+        "rendered": "6%",
         "format": "P0",
         "raw": "reductionRatioOnEnemy",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.03,
+          "basicConstant": 0.06,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8838,8 +9239,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "상인이 판매하는 물품의 <color=yellow>골드 가격</color>이  10%<sprite=5>  감소합니다.",
-    "rawDesc": "상인이 판매하는 물품의 <color=yellow>골드 가격</color>이 {0} 감소합니다.",
+    "description": "조너스가 판매하는 물품의 <color=yellow>골드 가격</color>이  10%<sprite=5>  감소합니다.",
+    "rawDesc": "조너스가 판매하는 물품의 <color=yellow>골드 가격</color>이 {0} 감소합니다.",
     "rawDescVars": [
       {
         "rendered": " 10%<sprite=5> ",
@@ -9681,16 +10082,29 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>에테르의 영향력</color>의 폭발 피해가 60% 감소하고 재시전하여 폭발시킬 수 없게 되지만, 적에게 적중할 때마다 자동으로 폭발이 일어납니다.",
-    "rawDesc": "<color=yellow>에테르의 영향력</color>의 폭발 피해가 {0} 감소하고 재시전하여 폭발시킬 수 없게 되지만, 적에게 적중할 때마다 자동으로 폭발이 일어납니다.",
+    "description": "<color=yellow>에테르의 영향력</color>의 투사체가 빛 중첩이 3 이상인 적에게 적중하면 50%의 피해를 주는 폭발이 발생합니다.",
+    "rawDesc": "<color=yellow>에테르의 영향력</color>의 투사체가 빛 중첩이 {0} 이상인 적에게 적중하면 {1}의 피해를 주는 폭발이 발생합니다.",
     "rawDescVars": [
       {
-        "rendered": "60%",
-        "format": "P0",
-        "raw": "damageReduction",
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "requiredLightStacks",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.6,
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "explosionDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9711,16 +10125,29 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>에테르의 영향력</color>의 폭발 반경이 25% 증가합니다.",
-    "rawDesc": "<color=yellow>에테르의 영향력</color>의 폭발 반경이 {0} 증가합니다.",
+    "description": "<color=yellow>에테르의 영향력</color>의 폭발 반경이 15% 증가하고, 폭발에 적중한 적 하나당 재사용 대기시간이 7% 감소합니다.",
+    "rawDesc": "<color=yellow>에테르의 영향력</color>의 폭발 반경이 {0} 증가하고, 폭발에 적중한 적 하나당 재사용 대기시간이 {1} 감소합니다.",
     "rawDescVars": [
       {
-        "rendered": "25%",
+        "rendered": "15%",
         "format": "P0",
         "raw": "scaleAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.25,
+          "basicConstant": 0.15,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "7%",
+        "format": "P0",
+        "raw": "reducedCooldownRatioPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.07,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9771,16 +10198,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>초신성</color>의 시전 사거리가 40%, 폭발 반경이 30% 증가합니다.",
-    "rawDesc": "<color=yellow>초신성</color>의 시전 사거리가 {0}, 폭발 반경이 {1} 증가합니다.",
+    "description": "<color=yellow>초신성</color>의 재사용 대기시간이 3초 증가하지만, 시전 사거리가 30%, 폭발 반경이 20%, 최대 충전 횟수가 2 증가합니다.",
+    "rawDesc": "<color=yellow>초신성</color>의 재사용 대기시간이 {0}초 증가하지만, 시전 사거리가 {1}, 폭발 반경이 {2}, 최대 충전 횟수가 {3} 증가합니다.",
     "rawDescVars": [
       {
-        "rendered": "40%",
-        "format": "P0",
-        "raw": "rangeAmp",
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "cooldownPenalty",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.4,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9790,10 +10217,36 @@
       {
         "rendered": "30%",
         "format": "P0",
-        "raw": "radiusAmp",
+        "raw": "rangeAmp",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "radiusAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "gainedMaxCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -9830,9 +10283,36 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>초신성</color>을 시전하면 회피 기술의 재사용 대기시간을 초기화합니다.",
-    "rawDesc": "<color=yellow>초신성</color>을 시전하면 회피 기술의 재사용 대기시간을 초기화합니다.",
-    "rawDescVars": [],
+    "description": "<color=yellow>초신성</color>의 폭발이 적중한 적 하나당 재사용 대기시간이 0.5초 감소하고 다음 초신성 시전의 피해량이 10% 증가합니다.",
+    "rawDesc": "<color=yellow>초신성</color>의 폭발이 적중한 적 하나당 재사용 대기시간이 {0}초 감소하고 다음 초신성 시전의 피해량이 {1} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "reducedCooldownOnHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "nextCastDamageAmpOnHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
     "image": "Se_Star_Yubar_F_SN_DodgeReset.png"
   },
   "Se_Star_Yubar_F_TQ_EssenceCooldown": {
@@ -10049,11 +10529,11 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": false,
-    "description": "적 처치 시  0.5%<sprite=5>  확률로 <color=yellow>별과자</color>가 생성됩니다. <color=yellow>별과자</color>는 유바르의 체력을 약간 회복하고 소량의 골드와 꿈가루를 제공합니다.",
-    "rawDesc": "적 처치 시 {0} 확률로 <color=yellow>별과자</color>가 생성됩니다. <color=yellow>별과자</color>는 유바르의 체력을 약간 회복하고 소량의 골드와 꿈가루를 제공합니다.",
+    "description": "적 처치 시  0.6%<sprite=5>  확률로, 보스 처치 시 100% 확률로 <color=yellow>별과자</color>가 생성됩니다. <color=yellow>별과자</color>는 유바르의 체력을 약간 회복하고 소량의 골드와 꿈가루를 제공합니다.",
+    "rawDesc": "적 처치 시 {0} 확률로, 보스 처치 시 {1} 확률로 <color=yellow>별과자</color>가 생성됩니다. <color=yellow>별과자</color>는 유바르의 체력을 약간 회복하고 소량의 골드와 꿈가루를 제공합니다.",
     "rawDescVars": [
       {
-        "rendered": " 0.5%<sprite=5> ",
+        "rendered": " 0.6%<sprite=5> ",
         "format": "#,##0.#%",
         "raw": "starCookieChance",
         "scalingType": "star",
@@ -10062,9 +10542,26 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.005,
-            0.008,
-            0.012
+            0.006,
+            0.01,
+            0.014
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "#,##0.#%",
+        "raw": "starCookieOnBossChance",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            1.0,
+            1.0,
+            1.0
           ],
           "strengthScaling": "Multiply"
         }
