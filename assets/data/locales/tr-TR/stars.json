@@ -1797,11 +1797,11 @@
     ],
     "requiredLevel": 40,
     "isRequiredLevelTotalMastery": true,
-    "description": "<color=yellow>Soğuk</color> etkisindeki düşmanlardan <color=yellow>alınan hasar</color>  %25<sprite=5>  azalır.",
+    "description": "<color=yellow>Soğuk</color> etkisindeki düşmanlardan <color=yellow>alınan hasar</color>  %19<sprite=5>  azalır.",
     "rawDesc": "<color=yellow>Soğuk</color> etkisindeki düşmanlardan <color=yellow>alınan hasar</color> {0} azalır.",
     "rawDescVars": [
       {
-        "rendered": " %25<sprite=5> ",
+        "rendered": " %19<sprite=5> ",
         "format": "P0",
         "raw": "reductionAmount",
         "scalingType": "star",
@@ -1810,10 +1810,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.25,
-            0.3,
-            0.35,
-            0.4
+            0.19,
+            0.21,
+            0.23,
+            0.25
           ],
           "strengthScaling": "Multiply"
         }
@@ -2089,11 +2089,11 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": true,
-    "description": "Bir düşmanı <color=yellow>alt ettiğinde</color> azami canının  %1.00<sprite=5>  kadarı yenilenir.",
+    "description": "Bir düşmanı <color=yellow>alt ettiğinde</color> azami canının  %1.40<sprite=5>  kadarı yenilenir.",
     "rawDesc": "Bir düşmanı <color=yellow>alt ettiğinde</color> azami canının {0} kadarı yenilenir.",
     "rawDescVars": [
       {
-        "rendered": " %1.00<sprite=5> ",
+        "rendered": " %1.40<sprite=5> ",
         "format": "P2",
         "raw": "healRatio",
         "scalingType": "star",
@@ -2102,10 +2102,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.01,
-            0.015,
-            0.02,
-            0.025
+            0.014,
+            0.016,
+            0.018,
+            0.02
           ],
           "strengthScaling": "Multiply"
         }
@@ -2244,7 +2244,7 @@
     "image": "Se_Star_L_MaxHealth.png"
   },
   "Se_Star_L_MaxHealthUpHealDown": {
-    "name": "Kalın Deri",
+    "name": "Fazla Kalın Deri",
     "lore": null,
     "category": "Life",
     "heroType": "",
@@ -2481,8 +2481,8 @@
     ],
     "requiredLevel": 70,
     "isRequiredLevelTotalMastery": true,
-    "description": "Dükkândan bir eşya aldığında veya sattığında bir <color=yellow>Can İksiri</color> kazanırsın. Her tüccar için en fazla  1<sprite=5>  defa tetiklenir.",
-    "rawDesc": "Dükkândan bir eşya aldığında veya sattığında bir <color=yellow>Can İksiri</color> kazanırsın. Her tüccar için en fazla {0} defa tetiklenir.",
+    "description": "Altınla bir eşya alıp sattığında bir <color=yellow>Can İksiri</color> kazanırsın. Her tüccar için en fazla  1<sprite=5>  defa tetiklenir.",
+    "rawDesc": "Altınla bir eşya alıp sattığında bir <color=yellow>Can İksiri</color> kazanırsın. Her tüccar için en fazla {0} defa tetiklenir.",
     "rawDescVars": [
       {
         "rendered": " 1<sprite=5> ",
@@ -2791,6 +2791,56 @@
       }
     ],
     "image": "Se_Star_Aurena_D_BonusStatOnLowHp.png"
+  },
+  "Se_Star_Aurena_F_CR_ChargedCast": {
+    "name": "Altın Miras",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Aurena",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Zincirleme Reaksiyon</color>, kullanım tuşuna basılı tutarak güç toplayabileceğin bir hafızaya dönüşür. En fazla 3 saniye boyunca güç toplayabilirsin. Şarj tamamlandığında yetenek olduğun yerde kullanılır ve şarj miktarına bağlı olarak etki alanı en fazla %25, hasar ve iyileştirme miktarı ise en fazla %50 artar.",
+    "rawDesc": "<color=yellow>Zincirleme Reaksiyon</color>, kullanım tuşuna basılı tutarak güç toplayabileceğin bir hafızaya dönüşür. En fazla {0} saniye boyunca güç toplayabilirsin. Şarj tamamlandığında yetenek olduğun yerde kullanılır ve şarj miktarına bağlı olarak etki alanı en fazla {1}, hasar ve iyileştirme miktarı ise en fazla {2} artar.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "maxChargeTime",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "%25",
+        "format": "P0",
+        "raw": "maxRangeMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%50",
+        "format": "P0",
+        "raw": "maxEffectMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Aurena_F_CR_ChargedCast.png"
   },
   "Se_Star_Aurena_F_CR_EarnGold": {
     "name": "Simya Ustası",
@@ -4213,6 +4263,62 @@
     ],
     "image": "Se_Star_Bismuth_F_IT_InnerDamage.png"
   },
+  "Se_Star_Bismuth_F_IT_SmallerRingAddDisplacement": {
+    "name": "Yakalamaca Oynayalım!",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Bismuth",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Cehennem Ateşi Hikayesi</color>'nin bekleme süresi 2 saniye artar ve hasarı %20 azalır, ancak bunun karşılığında yeteneği en fazla 2 kez tekrar kullanarak istediğin yöne doğru atılabilirsin.",
+    "rawDesc": "<color=yellow>Cehennem Ateşi Hikayesi</color>'nin bekleme süresi {0} saniye artar ve hasarı {1} azalır, ancak bunun karşılığında yeteneği en fazla {2} kez tekrar kullanarak istediğin yöne doğru atılabilirsin.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "increasedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%20",
+        "format": "P0",
+        "raw": "dmgReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dashCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Bismuth_F_IT_SmallerRingAddDisplacement.png"
+  },
   "Se_Star_Bismuth_F_IT_SmallerRingMoreDamage": {
     "name": "Yakın ve Kişisel",
     "lore": null,
@@ -4854,6 +4960,1210 @@
     ],
     "image": "Se_Star_Bismuth_L_SecondWindWithPenalty.png"
   },
+  "Se_Star_Cetus_D_AdApUpByBonusHp": {
+    "name": "Okkalı Yumruk",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 20,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>İlave Can</color> değerinin  %1<sprite=5>  kadarı <color=yellow>Yetenek Gücü</color> ve <color=yellow>Saldırı Hasarı</color> sağlar.",
+    "rawDesc": "<color=yellow>İlave Can</color> değerinin {0} kadarı <color=yellow>Yetenek Gücü</color> ve <color=yellow>Saldırı Hasarı</color> sağlar.",
+    "rawDescVars": [
+      {
+        "rendered": " %1<sprite=5> ",
+        "format": "P0",
+        "raw": "ampValue",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.01,
+            0.015,
+            0.02
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_AdApUpByBonusHp.png"
+  },
+  "Se_Star_Cetus_D_ApUpByColdSkillCounts": {
+    "name": "Keskin Dikenli Yüzgeç",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      20,
+      30,
+      30,
+      20
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Yetenek Gücü</color>  4<sprite=5>  artar. Sahip olduğun her <color=yellow>Soğuk Hasarı Hafızası</color> için ilave  1<sprite=5>  artar.",
+    "rawDesc": "<color=yellow>Yetenek Gücü</color> {0} artar. Sahip olduğun her <color=yellow>Soğuk Hasarı Hafızası</color> için ilave {1} artar.",
+    "rawDescVars": [
+      {
+        "rendered": " 4<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedFlat",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            4.0,
+            5.0,
+            6.0,
+            7.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "bonusPerSkill",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            1.0,
+            1.5,
+            2.0,
+            2.5
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_ApUpByColdSkillCounts.png"
+  },
+  "Se_Star_Cetus_D_StackStatsOnTakenDamage": {
+    "name": "Zihin Açan Acı",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      40,
+      50,
+      60,
+      70
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Hasar</color> aldığında 5 saniyeliğine <color=yellow>Yetenek Gücü</color> ve <color=yellow>Hafıza Hızı</color> 1 artar. Bu artış en fazla  6<sprite=5>  olabilir.",
+    "rawDesc": "<color=yellow>Hasar</color> aldığında {0} saniyeliğine <color=yellow>Yetenek Gücü</color> ve <color=yellow>Hafıza Hızı</color> {1} artar. Bu artış en fazla {2} olabilir.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "stackDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "bonusAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 6<sprite=5> ",
+        "format": "#,##0",
+        "raw": "maxBonusCount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            6.0,
+            9.0,
+            12.0,
+            15.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_StackStatsOnTakenDamage.png"
+  },
+  "Se_Star_Cetus_D_StatsUpWhileShielded": {
+    "name": "Mana Döngüsü",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 10,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Üzerinde bir <color=yellow>Kalkan</color> varken <color=yellow>Yetenek Gücü</color>  5<sprite=5>  ve <color=yellow>Hafıza Hızı</color>  6<sprite=5>  artar.",
+    "rawDesc": "Üzerinde bir <color=yellow>Kalkan</color> varken <color=yellow>Yetenek Gücü</color> {0} ve <color=yellow>Hafıza Hızı</color> {1} artar.",
+    "rawDescVars": [
+      {
+        "rendered": " 5<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedAp",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            5.0,
+            6.0,
+            7.0,
+            8.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 6<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedHaste",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            6.0,
+            8.0,
+            10.0,
+            12.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_StatsUpWhileShielded.png"
+  },
+  "Se_Star_Cetus_F_BA_CdReductionOnKill": {
+    "name": "Serinletici Darbe",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Geri Çekil!</color> ile isabet alan bir düşman 3 saniye içinde ölürse, bekleme süresi 0.7 saniye azalır.",
+    "rawDesc": "<color=yellow>Geri Çekil!</color> ile isabet alan bir düşman {0} saniye içinde ölürse, bekleme süresi {1} saniye azalır.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "trackingGracePeriod",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0.7",
+        "format": "#,##0.#",
+        "raw": "cdReductionAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.7,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BA_CdReductionOnKill.png"
+  },
+  "Se_Star_Cetus_F_BA_ChargeMsNoShield": {
+    "name": "Her Yerde Dimdik Yürü",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Geri Çekil!</color> Cetus'un kendisine Savunma ve Kalkan kazandırmaz ancak güç toplarken hareket hızı %30 artar.",
+    "rawDesc": "<color=yellow>Geri Çekil!</color> Cetus'un kendisine Savunma ve Kalkan kazandırmaz ancak güç toplarken hareket hızı {0} artar.",
+    "rawDescVars": [
+      {
+        "rendered": "%30",
+        "format": "'%'#,##0",
+        "raw": "moveSpeedBuffStrength",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BA_ChargeMsNoShield.png"
+  },
+  "Se_Star_Cetus_F_BA_LightningEcho": {
+    "name": "Çarpıcı Deneyim",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Geri Çekil!</color> yeteneğinden isabet alan düşmanlara kısa bir süre sonra yıldırım çarpar ve vuruş hasarının %40 kadarına eşdeğer Işık Hasarı verir, ancak bekleme süresi 4 saniye artar.",
+    "rawDesc": "<color=yellow>Geri Çekil!</color> yeteneğinden isabet alan düşmanlara kısa bir süre sonra yıldırım çarpar ve vuruş hasarının {0} kadarına eşdeğer Işık Hasarı verir, ancak bekleme süresi {1} saniye artar.",
+    "rawDescVars": [
+      {
+        "rendered": "%40",
+        "format": "P0",
+        "raw": "lightningEchoDmgMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTimePenalty",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BA_LightningEcho.png"
+  },
+  "Se_Star_Cetus_F_BI_FastChargeTakeDamageUp": {
+    "name": "Pervasız Büyü",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Devasa Buzul Parçası</color> güç toplama hızı %40 artar ancak kullanım sırasında Cetus'un düşmanlardan aldığı hasar %40 artar.",
+    "rawDesc": "<color=yellow>Devasa Buzul Parçası</color> güç toplama hızı {0} artar ancak kullanım sırasında Cetus'un düşmanlardan aldığı hasar {1} artar.",
+    "rawDescVars": [
+      {
+        "rendered": "%40",
+        "format": "P0",
+        "raw": "chargingSpeedAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%40",
+        "format": "P0",
+        "raw": "takenDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BI_FastChargeTakeDamageUp.png"
+  },
+  "Se_Star_Cetus_F_BI_MaxChargeTimePerLevel": {
+    "name": "Ezici Boyut",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Devasa Buzul Parçası</color> her güçlendirildiğinde maksimum güç toplama süresi 0.5 saniye artar.",
+    "rawDesc": "<color=yellow>Devasa Buzul Parçası</color> her güçlendirildiğinde maksimum güç toplama süresi {0} saniye artar.",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "maxChargeTimePerLevel",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BI_MaxChargeTimePerLevel.png"
+  },
+  "Se_Star_Cetus_F_BI_SelfDamageAoeCold": {
+    "name": "Sızan Güç",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Devasa Buzul Parçası</color> kullanırken saniyede maksimum canının %2 kadarı Soğuk Hasarı alırsın ancak etrafındaki düşmanlara her 0.5 saniyede bir buzul parçası hasarının %8 kadarı Soğuk Hasarı verirsin.",
+    "rawDesc": "<color=yellow>Devasa Buzul Parçası</color> kullanırken saniyede maksimum canının {0} kadarı Soğuk Hasarı alırsın ancak etrafındaki düşmanlara her {1} saniyede bir buzul parçası hasarının {2} kadarı Soğuk Hasarı verirsin.",
+    "rawDescVars": [
+      {
+        "rendered": "%2",
+        "format": "P0",
+        "raw": "selfTickDamageMaxHpRatio / tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "tickInterval",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%8",
+        "format": "P0",
+        "raw": "dealtTickDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.08,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BI_SelfDamageAoeCold.png"
+  },
+  "Se_Star_Cetus_F_EM_ChaseTarget": {
+    "name": "Silinmez Geçmiş",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Soğuğu Kucakla</color> en yakındaki düşmanı veya Cetus'u takip eder.",
+    "rawDesc": "<color=yellow>Soğuğu Kucakla</color> en yakındaki düşmanı veya Cetus'u takip eder.",
+    "rawDescVars": [],
+    "image": "Se_Star_Cetus_F_EM_ChaseTarget.png"
+  },
+  "Se_Star_Cetus_F_EM_DamageUpSelfDamage": {
+    "name": "Günahları Arındıran Acı",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Soğuğu Kucakla</color> hasarı %40 artar ancak Cetus'un kendisi <color=yellow>Soğuk Bölgesi</color> içindeyken <color=yellow>Kalkan</color> kazanmak yerine hasarın %5 kadarı Soğuk Hasarı olarak ona geri döner.",
+    "rawDesc": "<color=yellow>Soğuğu Kucakla</color> hasarı {0} artar ancak Cetus'un kendisi <color=yellow>Soğuk Bölgesi</color> içindeyken <color=yellow>Kalkan</color> kazanmak yerine hasarın {1} kadarı Soğuk Hasarı olarak ona geri döner.",
+    "rawDescVars": [
+      {
+        "rendered": "%40",
+        "format": "P0",
+        "raw": "damageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%5",
+        "format": "P0",
+        "raw": "takeDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_EM_DamageUpSelfDamage.png"
+  },
+  "Se_Star_Cetus_F_EM_InfiniteDuration": {
+    "name": "Sonsuz Kış",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Savaş sırasında <color=yellow>Soğuğu Kucakla</color> hasar ve kalkan verme döngüsü %100 artar, yarıçapı %35 azalır ve patlamaz ancak bir sonraki kullanıma kadar sonsuza dek aktif kalır.",
+    "rawDesc": "Savaş sırasında <color=yellow>Soğuğu Kucakla</color> hasar ve kalkan verme döngüsü {0} artar, yarıçapı {1} azalır ve patlamaz ancak bir sonraki kullanıma kadar sonsuza dek aktif kalır.",
+    "rawDescVars": [
+      {
+        "rendered": "%100",
+        "format": "P0",
+        "raw": "damageIntervalAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%35",
+        "format": "P0",
+        "raw": "scaleReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.35,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_EM_InfiniteDuration.png"
+  },
+  "Se_Star_Cetus_F_FR_CdReductionOnTakeDamage": {
+    "name": "Haz Veren Acı",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Cetus her hasar aldığında <color=yellow>Terbiye Dersi</color>'nin bekleme süresi %4 azalır. Eğer ulti ise, bu etkinin sadece %30 kadarı uygulanır.",
+    "rawDesc": "Cetus her hasar aldığında <color=yellow>Terbiye Dersi</color>'nin bekleme süresi {0} azalır. Eğer ulti ise, bu etkinin sadece {1} kadarı uygulanır.",
+    "rawDescVars": [
+      {
+        "rendered": "%4",
+        "format": "P0",
+        "raw": "reduceRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%30",
+        "format": "P0",
+        "raw": "ultRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_FR_CdReductionOnTakeDamage.png"
+  },
+  "Se_Star_Cetus_F_FR_ChangeToUltHitReset": {
+    "name": "Bitmeyen Ceza",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Terbiye Dersi</color> bir ultiye dönüşür ve süresi boyunca Durdurulamaz olursun; bu süre zarfında bir düşmana saldırdığında süre 0.3 saniye, bir düşmanı öldürdüğünde ise 1.5 saniye artar.",
+    "rawDesc": "<color=yellow>Terbiye Dersi</color> bir ultiye dönüşür ve süresi boyunca Durdurulamaz olursun; bu süre zarfında bir düşmana saldırdığında süre {0} saniye, bir düşmanı öldürdüğünde ise {1} saniye artar.",
+    "rawDescVars": [
+      {
+        "rendered": "0.3",
+        "format": "#,##0.#",
+        "raw": "durationIncreasePerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "durationIncreasePerKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_FR_ChangeToUltHitReset.png"
+  },
+  "Se_Star_Cetus_F_FR_RecastCdrNoKnockback": {
+    "name": "Kaygan Yumruk",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Terbiye Dersi</color> yeteneğinin tekrar kullanım etkisinin bekleme süresi %50 azalır ancak artık düşmanları geri savurmaz.",
+    "rawDesc": "<color=yellow>Terbiye Dersi</color> yeteneğinin tekrar kullanım etkisinin bekleme süresi {0} azalır ancak artık düşmanları geri savurmaz.",
+    "rawDescVars": [
+      {
+        "rendered": "%50",
+        "format": "P0",
+        "raw": "reduceRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_FR_RecastCdrNoKnockback.png"
+  },
+  "Se_Star_Cetus_I_ColdDiscountFireSurcharge": {
+    "name": "İnanılmaz İkna Kabiliyeti",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 20,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Jonas'ın sattığı <color=yellow>Soğuk Hafızası</color> ve <color=yellow>Soğuk Özü</color> fiyatları  %40<sprite=5>  azalır, ancak <color=yellow>Ateş Hafızası</color> ve <color=yellow>Ateş Özü</color> fiyatları %100 artar.",
+    "rawDesc": "Jonas'ın sattığı <color=yellow>Soğuk Hafızası</color> ve <color=yellow>Soğuk Özü</color> fiyatları {0} azalır, ancak <color=yellow>Ateş Hafızası</color> ve <color=yellow>Ateş Özü</color> fiyatları {1} artar.",
+    "rawDescVars": [
+      {
+        "rendered": " %40<sprite=5> ",
+        "format": "P0",
+        "raw": "discountRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.4,
+            0.5,
+            0.55,
+            0.6
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "%100",
+        "format": "P0",
+        "raw": "surchargeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_ColdDiscountFireSurcharge.png"
+  },
+  "Se_Star_Cetus_I_ColdSkillOnEnterWorld": {
+    "name": "Okyanus Bahşeder",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 10,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Her dünyayı ziyaret ettiğinde rastgele  1<sprite=5> . seviye bir <color=yellow>Soğuk Hafızası</color> elde edersin.",
+    "rawDesc": "Her dünyayı ziyaret ettiğinde rastgele {0}. seviye bir <color=yellow>Soğuk Hafızası</color> elde edersin.",
+    "rawDescVars": [
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0",
+        "raw": "dropColdSkillLevel",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": true,
+          "clampMin": 1.0,
+          "clampMax": 100.0,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_ColdSkillOnEnterWorld.png"
+  },
+  "Se_Star_Cetus_I_FirstColdGemQualityBoost": {
+    "name": "Tanıdık Güç",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      60,
+      40,
+      50,
+      50
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": false,
+    "description": "İlk kuşandığın <color=yellow>Soğuk Öz</color> kalitesi  %80<sprite=5>  kadar artar.",
+    "rawDesc": "İlk kuşandığın <color=yellow>Soğuk Öz</color> kalitesi {0} kadar artar.",
+    "rawDescVars": [
+      {
+        "rendered": " %80<sprite=5> ",
+        "format": "P0",
+        "raw": "bonusQuality",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.8,
+            1.0,
+            1.2,
+            1.4
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_FirstColdGemQualityBoost.png"
+  },
+  "Se_Star_Cetus_I_GetDreamDustOnBossKill": {
+    "name": "Yıkıcı İnceleme",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Herhangi bir <color=yellow>Patron</color> alt ettiğinde  40<sprite=5>  <color=yellow>Rüya Tozu</color> elde edersin.",
+    "rawDesc": "Herhangi bir <color=yellow>Patron</color> alt ettiğinde {0} <color=yellow>Rüya Tozu</color> elde edersin.",
+    "rawDescVars": [
+      {
+        "rendered": " 40<sprite=5> ",
+        "format": "#,##0",
+        "raw": "dropDreamDustAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            40.0,
+            50.0,
+            60.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_GetDreamDustOnBossKill.png"
+  },
+  "Se_Star_Cetus_I_StartWithResources": {
+    "name": "Kusursuz Hazırlık",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Maceraya başlarken  40<sprite=5>  <color=yellow>Altın</color> ve  40<sprite=5>  <color=yellow>Rüya Tozu</color> elde edersin.",
+    "rawDesc": "Maceraya başlarken {0} <color=yellow>Altın</color> ve {1} <color=yellow>Rüya Tozu</color> elde edersin.",
+    "rawDescVars": [
+      {
+        "rendered": " 40<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedGold",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            40.0,
+            50.0,
+            60.0,
+            70.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 40<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedDreamDust",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            40.0,
+            50.0,
+            60.0,
+            70.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_StartWithResources.png"
+  },
+  "Se_Star_Cetus_L_ArmorBuffOnShield": {
+    "name": "Dik Dur!",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      40,
+      40,
+      50,
+      50
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Verdiğin tüm hasar %15 azalır. Birine <color=yellow>Kalkan</color> sağladığında, hedef 3 saniyeliğine  11<sprite=5>  <color=yellow>Savunma</color> kazanır.",
+    "rawDesc": "Verdiğin tüm hasar {0} azalır. Birine <color=yellow>Kalkan</color> sağladığında, hedef {1} saniyeliğine {2} <color=yellow>Savunma</color> kazanır.",
+    "rawDescVars": [
+      {
+        "rendered": "%15",
+        "format": "P0",
+        "raw": "damagePenaltyReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 11<sprite=5> ",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            11.0,
+            14.0,
+            17.0,
+            20.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_ArmorBuffOnShield.png"
+  },
+  "Se_Star_Cetus_L_DodgeCdReductionOnHit": {
+    "name": "Adaptif Pullar",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      60,
+      40,
+      50
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Hasar</color> aldığında, <color=yellow>Kaçınma Yeteneği</color>nin bekleme süresi  %10<sprite=5>  azalır.",
+    "rawDesc": "<color=yellow>Hasar</color> aldığında, <color=yellow>Kaçınma Yeteneği</color>nin bekleme süresi {0} azalır.",
+    "rawDescVars": [
+      {
+        "rendered": " %10<sprite=5> ",
+        "format": "P0",
+        "raw": "reductionAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.1,
+            0.15,
+            0.2
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_DodgeCdReductionOnHit.png"
+  },
+  "Se_Star_Cetus_L_FrostResistAndBuff": {
+    "name": "Soğuk Bize İşlemez",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 20,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Alınan Soğuk Hasarı  %15<sprite=5>  azalır ve soğuktan etkilendiğinde <color=yellow>Saldırı Hızı</color> ile <color=yellow>Hareket Hızı</color> azalmak yerine  %9<sprite=5>  artar.",
+    "rawDesc": "Alınan Soğuk Hasarı {0} azalır ve soğuktan etkilendiğinde <color=yellow>Saldırı Hızı</color> ile <color=yellow>Hareket Hızı</color> azalmak yerine {1} artar.",
+    "rawDescVars": [
+      {
+        "rendered": " %15<sprite=5> ",
+        "format": "P0",
+        "raw": "reductionFromCold",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " %9<sprite=5> ",
+        "format": "P0",
+        "raw": "buffAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.09,
+            0.12,
+            0.15
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_FrostResistAndBuff.png"
+  },
+  "Se_Star_Cetus_L_HealOnApDamage": {
+    "name": "Sihir Dolu Damarlar",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      40,
+      40,
+      40,
+      50
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Düşmana verdiğin Yetenek Gücü hasarının  %0.8<sprite=5>  kadarı kadar can yenilersin.",
+    "rawDesc": "Düşmana verdiğin Yetenek Gücü hasarının {0} kadarı kadar can yenilersin.",
+    "rawDescVars": [
+      {
+        "rendered": " %0.8<sprite=5> ",
+        "format": "P1",
+        "raw": "healAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.008,
+            0.01,
+            0.012,
+            0.014
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_HealOnApDamage.png"
+  },
+  "Se_Star_Cetus_L_IncreaseDealtShield": {
+    "name": "Koruyucu Soğuk",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Sağladığın tüm <color=yellow>Kalkan</color> miktarı  %8<sprite=5>  artar.",
+    "rawDesc": "Sağladığın tüm <color=yellow>Kalkan</color> miktarı {0} artar.",
+    "rawDescVars": [
+      {
+        "rendered": " %8<sprite=5> ",
+        "format": "P0",
+        "raw": "shieldBonusAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.08,
+            0.12,
+            0.16,
+            0.2
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_IncreaseDealtShield.png"
+  },
+  "Se_Star_Cetus_L_MaxHpDamagePenalty": {
+    "name": "Devasa Deniz Yılankavisi",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Verdiğin tüm hasar %10 azalır. <color=yellow>Maksimum Can</color> değerin  90<sprite=5>  artar. ",
+    "rawDesc": "Verdiğin tüm hasar {0} azalır. <color=yellow>Maksimum Can</color> değerin {1} artar. ",
+    "rawDescVars": [
+      {
+        "rendered": "%10",
+        "format": "P0",
+        "raw": "damagePenaltyReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 90<sprite=5> ",
+        "format": "#,##0",
+        "raw": "healthAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            90.0,
+            110.0,
+            130.0,
+            150.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_MaxHpDamagePenalty.png"
+  },
+  "Se_Star_Cetus_L_ScalingHealth": {
+    "name": "Aralıksız Antrenman",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 10,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Her seviye atladığında <color=yellow>Maksimum Can</color> değerin  12<sprite=5>  artar.",
+    "rawDesc": "Her seviye atladığında <color=yellow>Maksimum Can</color> değerin {0} artar.",
+    "rawDescVars": [
+      {
+        "rendered": " 12<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedHealthPerLevel",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            12.0,
+            16.0,
+            20.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_ScalingHealth.png"
+  },
   "Se_Star_Husk_D_AttackDamage": {
     "name": "Varlığımın Amacı",
     "lore": null,
@@ -5191,8 +6501,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>İmha Duruşu</color> sırasında Temel Saldırın veya Kılıç Auran bir düşmana her isabet ettiğinde, etki süresi 0.2 saniye artar.",
-    "rawDesc": "<color=yellow>İmha Duruşu</color> sırasında Temel Saldırın veya Kılıç Auran bir düşmana her isabet ettiğinde, etki süresi {0} saniye artar.",
+    "description": "<color=yellow>İmha Duruşu</color> sırasında Temel Saldırın veya Kılıç Auran bir düşmana her isabet ettiğinde, etki süresi 0.2 saniye artar ve sahip olduğun tüm <color=yellow>Ultimatiler</color> %0.5 dolar.",
+    "rawDesc": "<color=yellow>İmha Duruşu</color> sırasında Temel Saldırın veya Kılıç Auran bir düşmana her isabet ettiğinde, etki süresi {0} saniye artar ve sahip olduğun tüm <color=yellow>Ultimatiler</color> {1} dolar.",
     "rawDescVars": [
       {
         "rendered": "0.2",
@@ -5206,57 +6516,14 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
-      }
-    ],
-    "image": "Se_Star_Husk_F_AS_AddedDurationOnHit.png"
-  },
-  "Se_Star_Husk_F_AS_NonUltimate": {
-    "name": "Kontrollü Çılgınlık",
-    "lore": "Ruhu boşalmış, içi boş bir Kabuk'a dönüştükten sonra, kendini daha da mükemmel bir şekilde kontrol edebiliyordu.",
-    "category": "Flexible",
-    "heroType": "Hero_Husk",
-    "maxLevel": 1,
-    "price": [
-      120
-    ],
-    "requiredLevel": 25,
-    "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>İmha Duruşu</color>, 14 saniyelik bekleme süresine sahip normal bir yeteneğe dönüşür ve bu sırada diğer Hafızaları kullanmana olanak tanır. Değiştirilmiş İmha Duruşu'nun Kılıç Aurası hasarı ve Saldırı Gücü artışı %50 azalır, 4 saniye sürer ve Kaçınma Yeteneğinin Hafıza Hızını ve Maksimum Yükünü artırmaz.",
-    "rawDesc": "<color=yellow>İmha Duruşu</color>, {0} saniyelik bekleme süresine sahip normal bir yeteneğe dönüşür ve bu sırada diğer Hafızaları kullanmana olanak tanır. Değiştirilmiş İmha Duruşu'nun Kılıç Aurası hasarı ve Saldırı Gücü artışı {1} azalır, {2} saniye sürer ve Kaçınma Yeteneğinin Hafıza Hızını ve Maksimum Yükünü artırmaz.",
-    "rawDescVars": [
-      {
-        "rendered": "14",
-        "format": "#,##0.#",
-        "raw": "cooldownTime",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 14.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
       },
       {
-        "rendered": "%50",
-        "format": "P0",
-        "raw": "strengthReduction",
+        "rendered": "%0.5",
+        "format": "P1",
+        "raw": "ultimateChargeGainRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "4",
-        "format": "#,##0.#",
-        "raw": "newDuration",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 4.0,
+          "basicConstant": 0.005,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5264,7 +6531,7 @@
         }
       }
     ],
-    "image": "Se_Star_Husk_F_AS_NonUltimate.png"
+    "image": "Se_Star_Husk_F_AS_AddedDurationOnHit.png"
   },
   "Se_Star_Husk_F_AS_NoShockwaveFasterAttack": {
     "name": "Çılgın Kılıç Dansı",
@@ -5277,8 +6544,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>İmha Duruşu</color>'nun Kılıç Aurası hasarı %60, Kılıç Aurası menzili %80 azalır ancak sağladığı Saldırı Hızı ve Kaçınma Yeteneği Hafıza Hızı %100 artar.",
-    "rawDesc": "<color=yellow>İmha Duruşu</color>'nun Kılıç Aurası hasarı {0}, Kılıç Aurası menzili {1} azalır ancak sağladığı Saldırı Hızı ve Kaçınma Yeteneği Hafıza Hızı {2} artar.",
+    "description": "<color=yellow>İmha Duruşu</color>'nun Kılıç Aurası hasarı %60, Kılıç Aurası menzili %80 azalır. <color=yellow>İmha Duruşu</color> sırasında <color=yellow>Kaçınma Yeteneğinin</color> <color=yellow>Hafıza Hızı</color> 30, <color=yellow>Maksimum Yükü</color> 2 artar. Bu Hafıza Hızı artışı, herhangi bir boss'u öldürdüğünde 12 kadar kalıcı olarak artar.",
+    "rawDesc": "<color=yellow>İmha Duruşu</color>'nun Kılıç Aurası hasarı {0}, Kılıç Aurası menzili {1} azalır. <color=yellow>İmha Duruşu</color> sırasında <color=yellow>Kaçınma Yeteneğinin</color> <color=yellow>Hafıza Hızı</color> {2}, <color=yellow>Maksimum Yükü</color> {3} artar. Bu Hafıza Hızı artışı, herhangi bir boss'u öldürdüğünde {4} kadar kalıcı olarak artar.",
     "rawDescVars": [
       {
         "rendered": "%60",
@@ -5307,9 +6574,317 @@
         }
       },
       {
-        "rendered": "%100",
+        "rendered": "30",
+        "format": "#,##0",
+        "raw": "dodgeMemoryHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dodgeAddedCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "12",
+        "format": "#,##0",
+        "raw": "dodgeMemoryHastePerBossKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 12.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_AS_NoShockwaveFasterAttack.png"
+  },
+  "Se_Star_Husk_F_AS_NonUltimate": {
+    "name": "Kontrollü Çılgınlık",
+    "lore": "Ruhu boşalmış, içi boş bir Kabuk'a dönüştükten sonra, kendini daha da mükemmel bir şekilde kontrol edebiliyordu.",
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>İmha Duruşu</color>, 12 saniyelik bekleme süresine sahip normal bir yeteneğe dönüşür. Değiştirilmiş İmha Duruşu'nun Kılıç Aurası hasarı ve Saldırı Gücü artışı %50 azalır ve 3.5 saniye sürer.",
+    "rawDesc": "<color=yellow>İmha Duruşu</color>, {0} saniyelik bekleme süresine sahip normal bir yeteneğe dönüşür. Değiştirilmiş İmha Duruşu'nun Kılıç Aurası hasarı ve Saldırı Gücü artışı {1} azalır ve {2} saniye sürer.",
+    "rawDescVars": [
+      {
+        "rendered": "12",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 12.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%50",
         "format": "P0",
-        "raw": "buffAmp",
+        "raw": "strengthReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3.5",
+        "format": "#,##0.#",
+        "raw": "newDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_AS_NonUltimate.png"
+  },
+  "Se_Star_Husk_F_DC_EndMovespeedToBonusAttackspeed": {
+    "name": "Acımasız Kılıç Oyunu",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Şaşırtmaca</color> sona erdiğinde, saldırı hızı 3 saniyeliğine Şaşırtmaca'nın sağladığı hareket hızı artışı kadar artar.",
+    "rawDesc": "<color=yellow>Şaşırtmaca</color> sona erdiğinde, saldırı hızı {0} saniyeliğine Şaşırtmaca'nın sağladığı hareket hızı artışı kadar artar.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "hasteDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DC_EndMovespeedToBonusAttackspeed.png"
+  },
+  "Se_Star_Husk_F_DC_EnhanceMaxStealthTime": {
+    "name": "Alacakaranlık",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Şaşırtmaca</color> yeteneğini her güçlendirdiğinde, maksimum gizlenme süresi 0.25 saniye artar.",
+    "rawDesc": "<color=yellow>Şaşırtmaca</color> yeteneğini her güçlendirdiğinde, maksimum gizlenme süresi {0} saniye artar.",
+    "rawDescVars": [
+      {
+        "rendered": "0.25",
+        "format": "0.##",
+        "raw": "addedStealthTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DC_EnhanceMaxStealthTime.png"
+  },
+  "Se_Star_Husk_F_DC_RecentDamageHoTWhileStealth": {
+    "name": "Huzurlu Karanlık",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Şaşırtmaca</color> etkinleştirildiğinde, kullanımdan önceki 4 saniye içinde alınan tüm hasarı 3 saniye boyunca iyileştirir. Ancak iyileştirme tamamlanmadan Şaşırtmaca sona ererse, iyileştirme de durur.",
+    "rawDesc": "<color=yellow>Şaşırtmaca</color> etkinleştirildiğinde, kullanımdan önceki {0} saniye içinde alınan tüm hasarı {1} saniye boyunca iyileştirir. Ancak iyileştirme tamamlanmadan Şaşırtmaca sona ererse, iyileştirme de durur.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "recentDamageTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "healOverTime",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "image": "Se_Star_Husk_F_DC_RecentDamageHoTWhileStealth.png"
+  },
+  "Se_Star_Husk_F_DE_HighAmpMissReset": {
+    "name": "Güç Odaklama",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Ölüm İşareti</color> yeteneğinin isabet halindeki hasar artışı artık her yeni dünyaya geçtiğinde sıfırlanmaz, ancak isabet başına artış %4 değerine düşer ve ıskalarsanız tüm artışı kaybedersiniz.",
+    "rawDesc": "<color=yellow>Ölüm İşareti</color> yeteneğinin isabet halindeki hasar artışı artık her yeni dünyaya geçtiğinde sıfırlanmaz, ancak isabet başına artış {0} değerine düşer ve ıskalarsanız tüm artışı kaybedersiniz.",
+    "rawDescVars": [
+      {
+        "rendered": "%4",
+        "format": "P0",
+        "raw": "newAmpGainPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DE_HighAmpMissReset.png"
+  },
+  "Se_Star_Husk_F_DE_HitHealMissPenalty": {
+    "name": "Simya",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Ölüm İşareti</color> bir düşmana ilk kez isabet ettiğinde hasar miktarının %10 kadarı kadar iyileşirsiniz, ancak ıskalarsanız maksimum can değerinizin %30 kadarı kadar hasar alırsınız.",
+    "rawDesc": "<color=yellow>Ölüm İşareti</color> bir düşmana ilk kez isabet ettiğinde hasar miktarının {0} kadarı kadar iyileşirsiniz, ancak ıskalarsanız maksimum can değerinizin {1} kadarı kadar hasar alırsınız.",
+    "rawDescVars": [
+      {
+        "rendered": "%10",
+        "format": "P0",
+        "raw": "healAmpByDmg",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%30",
+        "format": "P0",
+        "raw": "penaltyAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DE_HitHealMissPenalty.png"
+  },
+  "Se_Star_Husk_F_DE_MarkHitDodgeCDR": {
+    "name": "Kesinleşmiş Ölüm",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Ölüm İşareti</color> süresi 2 saniye artar ve işaretlenmiş hedefe verdiğim tüm karanlık hasarı %25 artar; ayrıca hedefe her saldırı yaptığımda kaçınma yeteneğinin bekleme süresi 1 saniye azalır.",
+    "rawDesc": "<color=yellow>Ölüm İşareti</color> süresi {0} saniye artar ve işaretlenmiş hedefe verdiğim tüm karanlık hasarı {1} artar; ayrıca hedefe her saldırı yaptığımda kaçınma yeteneğinin bekleme süresi {2} saniye azalır.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "increasedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%25",
+        "format": "P0",
+        "raw": "darkDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "dodgeReductionAmount",
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.0,
@@ -5320,7 +6895,50 @@
         }
       }
     ],
-    "image": "Se_Star_Husk_F_AS_NoShockwaveFasterAttack.png"
+    "image": "Se_Star_Husk_F_DE_MarkHitDodgeCDR.png"
+  },
+  "Se_Star_Husk_F_LA_BlueFormOnly": {
+    "name": "Mavi Dalga",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      180
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Parçalama</color> yeteneğinin Kızıl Formu kullanılamaz hale gelir ve Mavi Formun Hasar Almazlık süresi %50 artar. <color=yellow>Parçalama</color>'nın Mavi Formu, kullanım tuşuna basılı tutarak şarj edebileceğin bir hafızaya dönüşür. Tuşu erken bırakırsan Hasar Almazlık etkisi hemen biter ve anında kılıcını savurursun. Ne kadar uzun süre şarj edersen, etki alanı o kadar genişleyerek en fazla %20 değerine ulaşır.",
+    "rawDesc": "<color=yellow>Parçalama</color> yeteneğinin Kızıl Formu kullanılamaz hale gelir ve Mavi Formun Hasar Almazlık süresi {0} artar. <color=yellow>Parçalama</color>'nın Mavi Formu, kullanım tuşuna basılı tutarak şarj edebileceğin bir hafızaya dönüşür. Tuşu erken bırakırsan Hasar Almazlık etkisi hemen biter ve anında kılıcını savurursun. Ne kadar uzun süre şarj edersen, etki alanı o kadar genişleyerek en fazla {1} değerine ulaşır.",
+    "rawDescVars": [
+      {
+        "rendered": "%50",
+        "format": "P0",
+        "raw": "addedInvulnerableTimeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%20",
+        "format": "P0",
+        "raw": "addedRangeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_LA_BlueFormOnly.png"
   },
   "Se_Star_Husk_F_LA_DodgeResetOnRed": {
     "name": "Enerji Akışı",
@@ -5887,16 +7505,29 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>El Topu</color> her zaman düşmanları geri iter ve düşmanların <color=yellow>Hareket Hız</color>larını 4 saniye boyunca %75 azaltır.",
-    "rawDesc": "<color=yellow>El Topu</color> her zaman düşmanları geri iter ve düşmanların <color=yellow>Hareket Hız</color>larını {0} saniye boyunca {1} azaltır.",
+    "description": "<color=yellow>El Topu</color>nun menzili %25 artar ve isabet alan düşmanların hareket hızı 3 saniye boyunca %75 azalır.",
+    "rawDesc": "<color=yellow>El Topu</color>nun menzili {0} artar ve isabet alan düşmanların hareket hızı {1} saniye boyunca {2} azalır.",
     "rawDescVars": [
       {
-        "rendered": "4",
+        "rendered": "%25",
+        "format": "P0",
+        "raw": "scaleAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
         "format": "#,##0.#",
         "raw": "slowDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 4.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5921,7 +7552,7 @@
   },
   "Se_Star_Lacerta_F_HC_NearDamage": {
     "name": "Barasus'un Öfkesi",
-    "lore": "",
+    "lore": "Uzaktan gördüğü o ezici gücü asla unutmadı. Ve sonunda kendi elleriyle onu yeniden yarattı.",
     "category": "Flexible",
     "heroType": "Hero_Lacerta",
     "maxLevel": 1,
@@ -5930,16 +7561,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>El Topu</color>nun yakındaki düşmanlara verdiği hasar %150 artar.",
-    "rawDesc": "<color=yellow>El Topu</color>nun yakındaki düşmanlara verdiği hasar {0} artar.",
+    "description": "<color=yellow>El Topu</color>nun Lacerta ile düşmanı geriye ittiği mesafe %40 artar ve düşmanlar her zaman geriye savrulur.",
+    "rawDesc": "<color=yellow>El Topu</color>nun Lacerta ile düşmanı geriye ittiği mesafe {0} artar ve düşmanlar her zaman geriye savrulur.",
     "rawDescVars": [
       {
-        "rendered": "%150",
+        "rendered": "%40",
         "format": "P0",
-        "raw": "nearDamageAmp",
+        "raw": "knockbackAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5948,6 +7579,79 @@
       }
     ],
     "image": "Se_Star_Lacerta_F_HC_NearDamage.png"
+  },
+  "Se_Star_Lacerta_F_HC_NoDelayDoubleCast": {
+    "name": "Ejderha Nefesi",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Lacerta",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>El Topu</color>nun hasarı %40 azalır ve Lacerta'yı geriye savurmaz, ancak hazırlık süresi ortadan kalkar; böylece kullanır kullanmaz ateşlenir, maksimum şarj sayısı 1 artar ve şarjlar tek seferde dolar.",
+    "rawDesc": "<color=yellow>El Topu</color>nun hasarı {0} azalır ve Lacerta'yı geriye savurmaz, ancak hazırlık süresi ortadan kalkar; böylece kullanır kullanmaz ateşlenir, maksimum şarj sayısı {1} artar ve şarjlar tek seferde dolar.",
+    "rawDescVars": [
+      {
+        "rendered": "%40",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Lacerta_F_HC_NoDelayDoubleCast.png"
+  },
+  "Se_Star_Lacerta_F_HC_ResetOnDodge": {
+    "name": "Taktiksel Kaçış",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Lacerta",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>El Topu</color>nun bekleme süresi 2.5 saniye artar, ancak kaçış becerisi kullandığında El Topu'nun bekleme süresi sıfırlanır.",
+    "rawDesc": "<color=yellow>El Topu</color>nun bekleme süresi {0} saniye artar, ancak kaçış becerisi kullandığında El Topu'nun bekleme süresi sıfırlanır.",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "addedCooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Lacerta_F_HC_ResetOnDodge.png"
   },
   "Se_Star_Lacerta_F_IR_AoEDamage": {
     "name": "Patlayıcı Cephane",
@@ -6007,6 +7711,51 @@
       }
     ],
     "image": "Se_Star_Lacerta_F_IR_MoreShots.png"
+  },
+  "Se_Star_Lacerta_F_IR_RechargeAmmoAmpBurnDamage": {
+    "name": "Kavurucu Mermi",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Lacerta",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Yangın Mermisi</color> hasarı %50 azalır ancak hedefe 1 ek Ateş yükü uygular ve bir önceki hedeften farklı bir hedefe her isabet ettiğinde mermi sayısı 1 kez yenilenir.",
+    "rawDesc": "<color=yellow>Yangın Mermisi</color> hasarı {0} azalır ancak hedefe {1} ek Ateş yükü uygular ve bir önceki hedeften farklı bir hedefe her isabet ettiğinde mermi sayısı 1 kez yenilenir.",
+    "rawDescVars": [
+      {
+        "rendered": "%50",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "star",
+        "data": {
+          "levels": 1,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.5
+          ],
+          "strengthScaling": "None"
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedFireStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Lacerta_F_IR_RechargeAmmoAmpBurnDamage.png"
   },
   "Se_Star_Lacerta_F_PS_ChargeSpeed": {
     "name": "Usta Nişancılık",
@@ -6418,6 +8167,75 @@
       }
     ],
     "image": "Se_Star_Lacerta_L_SpeedAfterDodge.png"
+  },
+  "Se_Star_Mist_F_LG_ChainAttack": {
+    "name": "Çiseleyen Sis",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Mist",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Hamle</color>'nin bekleme süresi 1.5 saniye artar. Bir kaçış becerisi kullandıktan sonra 3 saniye içinde uygulanan bir sonraki <color=yellow>Hamle</color> güçlenerek düşmana 3 kez fazladan saplama yapar. Her saplama %35 hasar verir ve saldırı etkisini tetikler.",
+    "rawDesc": "<color=yellow>Hamle</color>'nin bekleme süresi {0} saniye artar. Bir kaçış becerisi kullandıktan sonra {1} saniye içinde uygulanan bir sonraki <color=yellow>Hamle</color> güçlenerek düşmana {2} kez fazladan saplama yapar. Her saplama {3} hasar verir ve saldırı etkisini tetikler.",
+    "rawDescVars": [
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "addedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "windowDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "stabCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%35",
+        "format": "P0",
+        "raw": "dmgRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.35,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Mist_F_LG_ChainAttack.png"
   },
   "Se_Star_Mist_I_CamillasGift": {
     "name": "Camilla'nın Hediyesi",
@@ -7156,6 +8974,49 @@
       }
     ],
     "image": "Se_Star_Mist_F_UD_HealLostHealth.png"
+  },
+  "Se_Star_Mist_F_UD_NonUltimate": {
+    "name": "Odaklanma Anı",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Mist",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Kırılmaz İrade</color> patlama yaratmaz, süresi ve hasarı %66 azalır ancak 14 saniye Bekleme Süresine sahip bir Sıradan Hafızaya dönüşür.",
+    "rawDesc": "<color=yellow>Kırılmaz İrade</color> patlama yaratmaz, süresi ve hasarı {0} azalır ancak {1} saniye Bekleme Süresine sahip bir Sıradan Hafızaya dönüşür.",
+    "rawDescVars": [
+      {
+        "rendered": "%66",
+        "format": "P0",
+        "raw": "effectReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.66,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "14",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 14.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Mist_F_UD_NonUltimate.png"
   },
   "Se_Star_Mist_I_BonusOnCatPet": {
     "name": "Kedi Sever",
@@ -8050,6 +9911,62 @@
     ],
     "image": "Se_Star_Nachia_F_SC_MoreSummons.png"
   },
+  "Se_Star_Nachia_F_SC_SummonDmgReduction": {
+    "name": "Sürü Lideri",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Nachia",
+    "maxLevel": 1,
+    "price": [
+      180
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Ormanın Çağrısı</color> ile çağrılan Yapraklı Köpek sayısı 4 veya daha fazla olduğunda, Nachia'nın Yetenek Gücü %15 artar ve Yapraklı Köpeklere 40 Savunma kazandırır.",
+    "rawDesc": "<color=yellow>Ormanın Çağrısı</color> ile çağrılan Yapraklı Köpek sayısı {0} veya daha fazla olduğunda, Nachia'nın Yetenek Gücü {1} artar ve Yapraklı Köpeklere {2} Savunma kazandırır.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "requiredCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%15",
+        "format": "'%'#,##0",
+        "raw": "abilityPowerPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 40.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Nachia_F_SC_SummonDmgReduction.png"
+  },
   "Se_Star_Nachia_I_ForestKillDreamDust": {
     "name": "Yaşam Avı",
     "lore": null,
@@ -8237,8 +10154,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Bir müttefiğe faydalı bir etki verdiğinde, hedef  1.5<sprite=5>  saniye boyunca <color=yellow>Durdurulamaz</color> olur. Bu etkinin her hedef için 5 saniye bekleme süresi vardır.",
-    "rawDesc": "Bir müttefiğe faydalı bir etki verdiğinde, hedef {0} saniye boyunca <color=yellow>Durdurulamaz</color> olur. Bu etkinin her hedef için {1} saniye bekleme süresi vardır.",
+    "description": "Bir müttefiğe faydalı bir etki verdiğinde, hedef  1.5<sprite=5>  saniye boyunca <color=yellow>Durdurulamaz</color> olur. Bu etkinin her hedef için 5 saniye bekleme süresi vardır ve hedef bir yaratıksa süresi %70 artar.",
+    "rawDesc": "Bir müttefiğe faydalı bir etki verdiğinde, hedef {0} saniye boyunca <color=yellow>Durdurulamaz</color> olur. Bu etkinin her hedef için {1} saniye bekleme süresi vardır ve hedef bir yaratıksa süresi {2} artar.",
     "rawDescVars": [
       {
         "rendered": " 1.5<sprite=5> ",
@@ -8264,6 +10181,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%70",
+        "format": "P0",
+        "raw": "ampToSummons",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.7,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8748,36 +10678,6 @@
     ],
     "image": "Se_Star_Vesper_D_ConvertAPToAD.png"
   },
-  "Se_Star_Vesper_F_BS_AddedDurationPerAtk": {
-    "name": "Sonsuz Çekiçleme",
-    "lore": null,
-    "category": "Flexible",
-    "heroType": "Hero_Vesper",
-    "maxLevel": 1,
-    "price": [
-      80
-    ],
-    "requiredLevel": 5,
-    "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Güneşin Kutsaması</color> etkisi altındayken yapılan her temel saldırı <color=yellow>Süre</color>yi 0.2 saniye artırır.",
-    "rawDesc": "<color=yellow>Güneşin Kutsaması</color> etkisi altındayken yapılan her temel saldırı <color=yellow>Süre</color>yi {0} saniye artırır.",
-    "rawDescVars": [
-      {
-        "rendered": "0.2",
-        "format": "#,##0.#",
-        "raw": "addedDuration",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.2,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      }
-    ],
-    "image": "Se_Star_Vesper_F_BS_AddedDurationPerAtk.png"
-  },
   "Se_Star_Vesper_F_BS_ADWithArmor": {
     "name": "Acı Çekmeden Kazanç Olmaz",
     "lore": null,
@@ -8820,6 +10720,79 @@
       }
     ],
     "image": "Se_Star_Vesper_F_BS_ADWithArmor.png"
+  },
+  "Se_Star_Vesper_F_BS_AddedDurationPerAtk": {
+    "name": "Sonsuz Çekiçleme",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Güneşin Kutsaması</color> etkisi altındayken yapılan her temel saldırı <color=yellow>Süre</color>yi 0.2 saniye artırır.",
+    "rawDesc": "<color=yellow>Güneşin Kutsaması</color> etkisi altındayken yapılan her temel saldırı <color=yellow>Süre</color>yi {0} saniye artırır.",
+    "rawDescVars": [
+      {
+        "rendered": "0.2",
+        "format": "#,##0.#",
+        "raw": "addedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_AddedDurationPerAtk.png"
+  },
+  "Se_Star_Vesper_F_BS_ExplosionOnEnd": {
+    "name": "Tövbe Edin!",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      160
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Güneş Vaftizi</color>'nin süresi %66 azalır ancak patlama hasarı %50 artar ve süresi bittiğinde bir kez daha patlar.",
+    "rawDesc": "<color=yellow>Güneş Vaftizi</color>'nin süresi {0} azalır ancak patlama hasarı {1} artar ve süresi bittiğinde bir kez daha patlar.",
+    "rawDescVars": [
+      {
+        "rendered": "%66",
+        "format": "P0",
+        "raw": "durationReduceMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.66,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%50",
+        "format": "P0",
+        "raw": "explosionDamageMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_ExplosionOnEnd.png"
   },
   "Se_Star_Vesper_F_BS_MovSpd": {
     "name": "Keyifli Sıcaklık",
@@ -9703,44 +11676,6 @@
     ],
     "image": "Se_Star_Yubar_D_APOnDodge.png"
   },
-  "Se_Star_Yubar_D_AbilityPower": {
-    "name": "Gece Gökyüzü İpeği",
-    "lore": null,
-    "category": "Destruction",
-    "heroType": "Hero_Yubar",
-    "maxLevel": 4,
-    "price": [
-      30,
-      30,
-      30,
-      40
-    ],
-    "requiredLevel": 0,
-    "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Yetenek Gücü</color>  5<sprite=5>  artar.",
-    "rawDesc": "<color=yellow>Yetenek Gücü</color> {0} artar.",
-    "rawDescVars": [
-      {
-        "rendered": " 5<sprite=5> ",
-        "format": "#,##0",
-        "raw": "bonusAmount",
-        "scalingType": "star",
-        "data": {
-          "levels": 4,
-          "isClamped": false,
-          "isInteger": true,
-          "values": [
-            5.0,
-            7.0,
-            9.0,
-            11.0
-          ],
-          "strengthScaling": "Multiply"
-        }
-      }
-    ],
-    "image": "Se_Star_Yubar_D_AbilityPower.png"
-  },
   "Se_Star_Yubar_D_ADAPWithPenalty": {
     "name": "Cam Top",
     "lore": "Bedeni artık kırılgan bir kaptır. Tabii ki, böyle düşünen herkes bir avuç toza dönüştü.",
@@ -9844,6 +11779,44 @@
       }
     ],
     "image": "Se_Star_Yubar_D_APPerLightSkill.png"
+  },
+  "Se_Star_Yubar_D_AbilityPower": {
+    "name": "Gece Gökyüzü İpeği",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Yubar",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Yetenek Gücü</color>  5<sprite=5>  artar.",
+    "rawDesc": "<color=yellow>Yetenek Gücü</color> {0} artar.",
+    "rawDescVars": [
+      {
+        "rendered": " 5<sprite=5> ",
+        "format": "#,##0",
+        "raw": "bonusAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            5.0,
+            7.0,
+            9.0,
+            11.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Yubar_D_AbilityPower.png"
   },
   "Se_Star_Yubar_D_BonusDamageToLight": {
     "name": "Yıldız Gözyaşı",
@@ -10082,16 +12055,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Eter Etkisi</color> mermisi, Işık yükü 3 veya daha fazla olan bir düşmana isabet ettiğinde %50 hasar veren bir patlama gerçekleşir.",
+    "description": "<color=yellow>Eter Etkisi</color> mermisi, Işık yükü 2 veya daha fazla olan bir düşmana isabet ettiğinde %50 hasar veren bir patlama gerçekleşir.",
     "rawDesc": "<color=yellow>Eter Etkisi</color> mermisi, Işık yükü {0} veya daha fazla olan bir düşmana isabet ettiğinde {1} hasar veren bir patlama gerçekleşir.",
     "rawDescVars": [
       {
-        "rendered": "3",
+        "rendered": "2",
         "format": "#,##0",
         "raw": "requiredLightStacks",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 3.0,
+          "basicConstant": 2.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -10157,6 +12130,22 @@
     ],
     "image": "Se_Star_Yubar_F_EI_BiggerExplosion.png"
   },
+  "Se_Star_Yubar_F_EI_DashNoProjectile": {
+    "name": "Eter Melodisi",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Yubar",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Eter Etkisi</color> atış yapmak yerine Yubar'ın kullanım yönüne doğru atılarak hasar vermesini sağlar.",
+    "rawDesc": "<color=yellow>Eter Etkisi</color> atış yapmak yerine Yubar'ın kullanım yönüne doğru atılarak hasar vermesini sağlar.",
+    "rawDescVars": [],
+    "image": "Se_Star_Yubar_F_EI_DashNoProjectile.png"
+  },
   "Se_Star_Yubar_F_EI_NoRootMoreDamage": {
     "name": "Akış Değişimi",
     "lore": null,
@@ -10198,22 +12187,9 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Supernova</color>'nın <color=yellow>Bekleme Süresi</color> 3 saniye artar ancak menzili %30, patlama yarıçapı %20 ve maksimum şarj sayısı 2 artar.",
-    "rawDesc": "<color=yellow>Supernova</color>'nın <color=yellow>Bekleme Süresi</color> {0} saniye artar ancak menzili {1}, patlama yarıçapı {2} ve maksimum şarj sayısı {3} artar.",
+    "description": "<color=yellow>Süpernova</color>'nın menzili %30, patlama yarıçapı %20 artar. Süpernova'yı her 3 kez yükselttiğinde Süpernova'nın maksimum şarj sayısı 1 artar.",
+    "rawDesc": "<color=yellow>Süpernova</color>'nın menzili {0}, patlama yarıçapı {1} artar. Süpernova'yı her {2} kez yükselttiğinde Süpernova'nın maksimum şarj sayısı 1 artar.",
     "rawDescVars": [
-      {
-        "rendered": "3",
-        "format": "#,##0.#",
-        "raw": "cooldownPenalty",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 3.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
       {
         "rendered": "%30",
         "format": "P0",
@@ -10241,12 +12217,12 @@
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
-        "raw": "gainedMaxCharges",
+        "raw": "upgradesPerMaxCharge",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -10283,16 +12259,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Supernova</color> patlamasının isabet ettiği her düşman için bekleme süresi 0.5 saniye azalır ve bir sonraki Supernova kullanımının hasarı %10 artar.",
-    "rawDesc": "<color=yellow>Supernova</color> patlamasının isabet ettiği her düşman için bekleme süresi {0} saniye azalır ve bir sonraki Supernova kullanımının hasarı {1} artar.",
+    "description": "<color=yellow>Süpernova</color> patlamasının isabet ettiği her düşman için bekleme süresi %8 azalır ve bir sonraki Süpernova kullanımının hasarı %10 artar.",
+    "rawDesc": "<color=yellow>Süpernova</color> patlamasının isabet ettiği her düşman için bekleme süresi {0} azalır ve bir sonraki Süpernova kullanımının hasarı {1} artar.",
     "rawDescVars": [
       {
-        "rendered": "0.5",
-        "format": "#,##0.#",
-        "raw": "reducedCooldownOnHit",
+        "rendered": "%8",
+        "format": "P0",
+        "raw": "reducedCooldownRatioOnHit",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 0.08,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -10314,6 +12290,36 @@
       }
     ],
     "image": "Se_Star_Yubar_F_SN_DodgeReset.png"
+  },
+  "Se_Star_Yubar_F_SN_PullEnemy": {
+    "name": "Graviton İlavesi",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Yubar",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Süpernova</color>'nın Hareket Hızı düşürme etkisi %20 artar ve kullanıldıktan kısa bir süre sonra yakındaki düşmanları çeker.",
+    "rawDesc": "<color=yellow>Süpernova</color>'nın Hareket Hızı düşürme etkisi {0} artar ve kullanıldıktan kısa bir süre sonra yakındaki düşmanları çeker.",
+    "rawDescVars": [
+      {
+        "rendered": "%20",
+        "format": "P0",
+        "raw": "slowAmpMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Yubar_F_SN_PullEnemy.png"
   },
   "Se_Star_Yubar_F_TQ_EssenceCooldown": {
     "name": "Yıldız Şarkısı",

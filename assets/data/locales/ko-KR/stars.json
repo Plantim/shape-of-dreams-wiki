@@ -1797,11 +1797,11 @@
     ],
     "requiredLevel": 40,
     "isRequiredLevelTotalMastery": true,
-    "description": "<color=yellow>냉기</color>를 느끼는 적들에게 <color=yellow>받는 피해</color>가  25%<sprite=5>  감소합니다.",
+    "description": "<color=yellow>냉기</color>를 느끼는 적들에게 <color=yellow>받는 피해</color>가  19%<sprite=5>  감소합니다.",
     "rawDesc": "<color=yellow>냉기</color>를 느끼는 적들에게 <color=yellow>받는 피해</color>가 {0} 감소합니다.",
     "rawDescVars": [
       {
-        "rendered": " 25%<sprite=5> ",
+        "rendered": " 19%<sprite=5> ",
         "format": "P0",
         "raw": "reductionAmount",
         "scalingType": "star",
@@ -1810,10 +1810,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.25,
-            0.3,
-            0.35,
-            0.4
+            0.19,
+            0.21,
+            0.23,
+            0.25
           ],
           "strengthScaling": "Multiply"
         }
@@ -1962,8 +1962,8 @@
     ],
     "requiredLevel": 20,
     "isRequiredLevelTotalMastery": true,
-    "description": "<color=yellow>치명적인 피해</color>를 받으면 해당 피해를 무시하고  1<sprite=5> 초 동안 <color=yellow>무적</color> 상태가 됩니다. 게임 당 한 번만 발동할 수 있습니다.",
-    "rawDesc": "<color=yellow>치명적인 피해</color>를 받으면 해당 피해를 무시하고 {0}초 동안 <color=yellow>무적</color> 상태가 됩니다. 게임 당 한 번만 발동할 수 있습니다.",
+    "description": "<color=yellow>치명적인 피해</color>를 받으면 해당 피해를 무시하고  1<sprite=5> 초 동안 <color=yellow>무적</color> 상태가 됩니다. 게임당 한 번만 발동할 수 있습니다.",
+    "rawDesc": "<color=yellow>치명적인 피해</color>를 받으면 해당 피해를 무시하고 {0}초 동안 <color=yellow>무적</color> 상태가 됩니다. 게임당 한 번만 발동할 수 있습니다.",
     "rawDescVars": [
       {
         "rendered": " 1<sprite=5> ",
@@ -2089,11 +2089,11 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": true,
-    "description": "적을 <color=yellow>처치</color>할 때마다 최대 체력의  1.00%<sprite=5> 만큼을 회복합니다.",
+    "description": "적을 <color=yellow>처치</color>할 때마다 최대 체력의  1.40%<sprite=5> 만큼을 회복합니다.",
     "rawDesc": "적을 <color=yellow>처치</color>할 때마다 최대 체력의 {0}만큼을 회복합니다.",
     "rawDescVars": [
       {
-        "rendered": " 1.00%<sprite=5> ",
+        "rendered": " 1.40%<sprite=5> ",
         "format": "P2",
         "raw": "healRatio",
         "scalingType": "star",
@@ -2102,10 +2102,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.01,
-            0.015,
-            0.02,
-            0.025
+            0.014,
+            0.016,
+            0.018,
+            0.02
           ],
           "strengthScaling": "Multiply"
         }
@@ -2244,7 +2244,7 @@
     "image": "Se_Star_L_MaxHealth.png"
   },
   "Se_Star_L_MaxHealthUpHealDown": {
-    "name": "질긴 피부",
+    "name": "너무 두꺼운 피부",
     "lore": null,
     "category": "Life",
     "heroType": "",
@@ -2481,8 +2481,8 @@
     ],
     "requiredLevel": 70,
     "isRequiredLevelTotalMastery": true,
-    "description": "상점에서 물품을 구매하거나 판매하면 <color=yellow>체력 포션</color>을 얻습니다. 각 상인마다 최대  1<sprite=5> 번 발동합니다.",
-    "rawDesc": "상점에서 물품을 구매하거나 판매하면 <color=yellow>체력 포션</color>을 얻습니다. 각 상인마다 최대 {0}번 발동합니다.",
+    "description": "금화로 물품을 구매하거나 판매하면 <color=yellow>체력 포션</color>을 얻습니다. 각 상인마다 최대  1<sprite=5> 번 발동합니다.",
+    "rawDesc": "금화로 물품을 구매하거나 판매하면 <color=yellow>체력 포션</color>을 얻습니다. 각 상인마다 최대 {0}번 발동합니다.",
     "rawDescVars": [
       {
         "rendered": " 1<sprite=5> ",
@@ -2791,6 +2791,56 @@
       }
     ],
     "image": "Se_Star_Aurena_D_BonusStatOnLowHp.png"
+  },
+  "Se_Star_Aurena_F_CR_ChargedCast": {
+    "name": "황금의 유산",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Aurena",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>연쇄 작용</color>이 시전 키를 길게 눌러 힘을 모을 수 있는 기억으로 변경됩니다. 최대 3초 동안 힘을 모을 수 있으며, 충전이 끝나면 제자리에서 시전되고 충전량에 비례해서 범위가 최대 25%, 피해량 및 회복량이 최대 50% 까지 증가합니다.",
+    "rawDesc": "<color=yellow>연쇄 작용</color>이 시전 키를 길게 눌러 힘을 모을 수 있는 기억으로 변경됩니다. 최대 {0}초 동안 힘을 모을 수 있으며, 충전이 끝나면 제자리에서 시전되고 충전량에 비례해서 범위가 최대 {1}, 피해량 및 회복량이 최대 {2} 까지 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "maxChargeTime",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "maxRangeMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "maxEffectMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Aurena_F_CR_ChargedCast.png"
   },
   "Se_Star_Aurena_F_CR_EarnGold": {
     "name": "연금술의 대가",
@@ -4213,6 +4263,62 @@
     ],
     "image": "Se_Star_Bismuth_F_IT_InnerDamage.png"
   },
+  "Se_Star_Bismuth_F_IT_SmallerRingAddDisplacement": {
+    "name": "술래잡기하자!",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Bismuth",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>지옥불 이야기</color>의 재사용 대기시간이 2초 증가하고 데미지가 20% 감소하는 대신, 최대 2번 재시전하여 원하는 방향으로 돌진할 수 있습니다.",
+    "rawDesc": "<color=yellow>지옥불 이야기</color>의 재사용 대기시간이 {0}초 증가하고 데미지가 {1} 감소하는 대신, 최대 {2}번 재시전하여 원하는 방향으로 돌진할 수 있습니다.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "increasedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "dmgReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dashCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Bismuth_F_IT_SmallerRingAddDisplacement.png"
+  },
   "Se_Star_Bismuth_F_IT_SmallerRingMoreDamage": {
     "name": "가깝고 친한 사이",
     "lore": null,
@@ -4486,7 +4592,7 @@
   },
   "Se_Star_Bismuth_I_RevealWorld": {
     "name": "마음의 눈",
-    "lore": "소녀가 책을 통해 세상을 바라보면, 아무것도 없던 빈 곳에 다음 모험이 기다리는 과자 집이 나타나곤 했답니다.",
+    "lore": "소녀가 책을 통해 세상을 바라보면, 아무 것도 없던 빈 곳에 다음 모험이 기다리는 과자 집이 나타나곤 했답니다.",
     "category": "Imagination",
     "heroType": "Hero_Bismuth",
     "maxLevel": 3,
@@ -4831,8 +4937,8 @@
     ],
     "requiredLevel": 10,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>치명적인 피해</color>를 받으면 해당 피해를 무시하고  1<sprite=5> 초 동안 <color=yellow>무적</color> 상태가 되는 대신, 무작위 기억이 파괴됩니다. 정체성 기억도 파괴될 수 있습니다. 게임 당 한 번만 발동할 수 있습니다.",
-    "rawDesc": "<color=yellow>치명적인 피해</color>를 받으면 해당 피해를 무시하고 {0}초 동안 <color=yellow>무적</color> 상태가 되는 대신, 무작위 기억이 파괴됩니다. 정체성 기억도 파괴될 수 있습니다. 게임 당 한 번만 발동할 수 있습니다.",
+    "description": "<color=yellow>치명적인 피해</color>를 받으면 해당 피해를 무시하고  1<sprite=5> 초 동안 <color=yellow>무적</color> 상태가 되는 대신, 무작위 기억이 파괴됩니다. 정체성 기억도 파괴될 수 있습니다. 게임당 한 번만 발동할 수 있습니다.",
+    "rawDesc": "<color=yellow>치명적인 피해</color>를 받으면 해당 피해를 무시하고 {0}초 동안 <color=yellow>무적</color> 상태가 되는 대신, 무작위 기억이 파괴됩니다. 정체성 기억도 파괴될 수 있습니다. 게임당 한 번만 발동할 수 있습니다.",
     "rawDescVars": [
       {
         "rendered": " 1<sprite=5> ",
@@ -4853,6 +4959,1210 @@
       }
     ],
     "image": "Se_Star_Bismuth_L_SecondWindWithPenalty.png"
+  },
+  "Se_Star_Cetus_D_AdApUpByBonusHp": {
+    "name": "묵직한 꿀밤",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 20,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>추가 체력</color>의  1.0%<sprite=5>  만큼 <color=yellow>주문력</color>과 <color=yellow>공격력</color>을 얻습니다.",
+    "rawDesc": "<color=yellow>추가 체력</color>의 {0} 만큼 <color=yellow>주문력</color>과 <color=yellow>공격력</color>을 얻습니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 1.0%<sprite=5> ",
+        "format": "P1",
+        "raw": "ampValue",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.01,
+            0.015,
+            0.02
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_AdApUpByBonusHp.png"
+  },
+  "Se_Star_Cetus_D_ApUpByColdSkillCounts": {
+    "name": "날카로운 가시 지느러미",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      20,
+      30,
+      30,
+      20
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>주문력</color>이  4<sprite=5>  만큼 증가합니다. 내가 소유한 <color=yellow>냉기 피해 기억</color> 하나당 추가로  1<sprite=5>  만큼 증가합니다.",
+    "rawDesc": "<color=yellow>주문력</color>이 {0} 만큼 증가합니다. 내가 소유한 <color=yellow>냉기 피해 기억</color> 하나당 추가로 {1} 만큼 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 4<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedFlat",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            4.0,
+            5.0,
+            6.0,
+            7.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "bonusPerSkill",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            1.0,
+            1.5,
+            2.0,
+            2.5
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_ApUpByColdSkillCounts.png"
+  },
+  "Se_Star_Cetus_D_StackStatsOnTakenDamage": {
+    "name": "정신을 맑게 하는 고통",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      40,
+      50,
+      60,
+      70
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>피해</color>를 받으면 5초 동안 <color=yellow>주문력</color>과 <color=yellow>기억 가속</color>이 1 만큼 증가해 최대  6<sprite=5>  증가합니다.",
+    "rawDesc": "<color=yellow>피해</color>를 받으면 {0}초 동안 <color=yellow>주문력</color>과 <color=yellow>기억 가속</color>이 {1} 만큼 증가해 최대 {2} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "stackDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "bonusAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 6<sprite=5> ",
+        "format": "#,##0",
+        "raw": "maxBonusCount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            6.0,
+            9.0,
+            12.0,
+            15.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_StackStatsOnTakenDamage.png"
+  },
+  "Se_Star_Cetus_D_StatsUpWhileShielded": {
+    "name": "마나 순환",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 10,
+    "isRequiredLevelTotalMastery": false,
+    "description": "나에게 <color=yellow>보호막</color>이 있을 때 <color=yellow>주문력</color>이  5<sprite=5>  만큼, <color=yellow>기억 가속</color>이  6<sprite=5>  만큼 증가합니다.",
+    "rawDesc": "나에게 <color=yellow>보호막</color>이 있을 때 <color=yellow>주문력</color>이 {0} 만큼, <color=yellow>기억 가속</color>이 {1} 만큼 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 5<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedAp",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            5.0,
+            6.0,
+            7.0,
+            8.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 6<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedHaste",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            6.0,
+            8.0,
+            10.0,
+            12.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_StatsUpWhileShielded.png"
+  },
+  "Se_Star_Cetus_F_BA_CdReductionOnKill": {
+    "name": "시원한 타격",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>물러서라!</color>에 적중한 적이 3초 안에 사망하면 재사용 대기시간이 0.7초 감소합니다.",
+    "rawDesc": "<color=yellow>물러서라!</color>에 적중한 적이 {0}초 안에 사망하면 재사용 대기시간이 {1}초 감소합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "trackingGracePeriod",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0.7",
+        "format": "#,##0.#",
+        "raw": "cdReductionAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.7,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BA_CdReductionOnKill.png"
+  },
+  "Se_Star_Cetus_F_BA_ChargeMsNoShield": {
+    "name": "어디서나 당당하게 걷기",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>물러서라!</color>가 케투스 본인에게는 방어력과 보호막을 부여하지 않지만 충전하는 도중 이동 속도가 30% 만큼 증가합니다.",
+    "rawDesc": "<color=yellow>물러서라!</color>가 케투스 본인에게는 방어력과 보호막을 부여하지 않지만 충전하는 도중 이동 속도가 {0} 만큼 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "30%",
+        "format": "#,##0'%'",
+        "raw": "moveSpeedBuffStrength",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BA_ChargeMsNoShield.png"
+  },
+  "Se_Star_Cetus_F_BA_LightningEcho": {
+    "name": "짜릿한 경험",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>물러서라!</color>에 타격당한 적들에게 잠시 후 번개를 내려 타격 피해량의 40%에 해당하는 빛 피해를 주지만, 재사용 대기시간이 4초 증가합니다.",
+    "rawDesc": "<color=yellow>물러서라!</color>에 타격당한 적들에게 잠시 후 번개를 내려 타격 피해량의 {0}에 해당하는 빛 피해를 주지만, 재사용 대기시간이 {1}초 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "lightningEchoDmgMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTimePenalty",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BA_LightningEcho.png"
+  },
+  "Se_Star_Cetus_F_BI_FastChargeTakeDamageUp": {
+    "name": "무모한 마법",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>거대한 빙하 조각</color>의 충전 속도가 40% 만큼 증가하지만, 시전 도중에 케투스가 적에게 받는 피해가 40% 만큼 증가합니다.",
+    "rawDesc": "<color=yellow>거대한 빙하 조각</color>의 충전 속도가 {0} 만큼 증가하지만, 시전 도중에 케투스가 적에게 받는 피해가 {1} 만큼 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "chargingSpeedAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "takenDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BI_FastChargeTakeDamageUp.png"
+  },
+  "Se_Star_Cetus_F_BI_MaxChargeTimePerLevel": {
+    "name": "위압적인 크기",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>거대한 빙하 조각</color>을 강화할 때마다 최대 충전 시간이 0.5초 증가합니다.",
+    "rawDesc": "<color=yellow>거대한 빙하 조각</color>을 강화할 때마다 최대 충전 시간이 {0}초 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "maxChargeTimePerLevel",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BI_MaxChargeTimePerLevel.png"
+  },
+  "Se_Star_Cetus_F_BI_SelfDamageAoeCold": {
+    "name": "새어나오는 힘",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>거대한 빙하 조각</color>을 시전하고 있을 때, 초당 최대 체력의 2% 만큼 냉기 피해를 입지만, 주변의 적들에게 0.5초마다 빙하 조각 피해량의 8% 만큼의 냉기 피해를 입힙니다.",
+    "rawDesc": "<color=yellow>거대한 빙하 조각</color>을 시전하고 있을 때, 초당 최대 체력의 {0} 만큼 냉기 피해를 입지만, 주변의 적들에게 {1}초마다 빙하 조각 피해량의 {2} 만큼의 냉기 피해를 입힙니다.",
+    "rawDescVars": [
+      {
+        "rendered": "2%",
+        "format": "P0",
+        "raw": "selfTickDamageMaxHpRatio / tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "tickInterval",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "8%",
+        "format": "P0",
+        "raw": "dealtTickDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.08,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BI_SelfDamageAoeCold.png"
+  },
+  "Se_Star_Cetus_F_EM_ChaseTarget": {
+    "name": "지울 수 없는 과거",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>추위를 받아들이시오</color>가 가장 가까운 적 혹은 케투스를 추적합니다.",
+    "rawDesc": "<color=yellow>추위를 받아들이시오</color>가 가장 가까운 적 혹은 케투스를 추적합니다.",
+    "rawDescVars": [],
+    "image": "Se_Star_Cetus_F_EM_ChaseTarget.png"
+  },
+  "Se_Star_Cetus_F_EM_DamageUpSelfDamage": {
+    "name": "죄를 씻는 고통",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>추위를 받아들이시오</color>의 피해량이 40% 증가하지만, 케투스 자신은 냉기 지역 안에 있을 때 보호막을 받는 대신 피해량의 5%만큼 냉기 피해를 입습니다.",
+    "rawDesc": "<color=yellow>추위를 받아들이시오</color>의 피해량이 {0} 증가하지만, 케투스 자신은 냉기 지역 안에 있을 때 보호막을 받는 대신 피해량의 {1}만큼 냉기 피해를 입습니다.",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "damageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "takeDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_EM_DamageUpSelfDamage.png"
+  },
+  "Se_Star_Cetus_F_EM_InfiniteDuration": {
+    "name": "영원한 겨울",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "전투 중에 <color=yellow>추위를 받아들이시오</color>의 피해 및 보호막 부여 주기가 100% 증가하고 반경이 35% 감소하며 폭발하지 않지만, 다음 시전 시까지 영원히 유지됩니다.",
+    "rawDesc": "전투 중에 <color=yellow>추위를 받아들이시오</color>의 피해 및 보호막 부여 주기가 {0} 증가하고 반경이 {1} 감소하며 폭발하지 않지만, 다음 시전 시까지 영원히 유지됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "damageIntervalAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "35%",
+        "format": "P0",
+        "raw": "scaleReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.35,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_EM_InfiniteDuration.png"
+  },
+  "Se_Star_Cetus_F_FR_CdReductionOnTakeDamage": {
+    "name": "희열을 부르는 고통",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "케투스가 피해를 입을 때마다 <color=yellow>예절 주입</color>의 재사용 대기시간이 4% 만큼 감소합니다. 궁극기라면 이 효과가 30%만 적용됩니다.",
+    "rawDesc": "케투스가 피해를 입을 때마다 <color=yellow>예절 주입</color>의 재사용 대기시간이 {0} 만큼 감소합니다. 궁극기라면 이 효과가 {1}만 적용됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "4%",
+        "format": "P0",
+        "raw": "reduceRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "ultRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_FR_CdReductionOnTakeDamage.png"
+  },
+  "Se_Star_Cetus_F_FR_ChangeToUltHitReset": {
+    "name": "멈추지 않는 형벌",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>예절 주입</color>이 궁극기로 변경되며 지속 시간 동안 저지 불가 상태가 되고, 이 동안 적을 공격하면 지속시간이 0.3초, 적을 처치하면 1.5초 증가합니다.",
+    "rawDesc": "<color=yellow>예절 주입</color>이 궁극기로 변경되며 지속 시간 동안 저지 불가 상태가 되고, 이 동안 적을 공격하면 지속시간이 {0}초, 적을 처치하면 {1}초 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "0.3",
+        "format": "#,##0.#",
+        "raw": "durationIncreasePerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "durationIncreasePerKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_FR_ChangeToUltHitReset.png"
+  },
+  "Se_Star_Cetus_F_FR_RecastCdrNoKnockback": {
+    "name": "미끄러운 주먹",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>예절 주입</color>의 재시전 효과의 재사용 대기시간이 50% 만큼 감소하지만, 더 이상 적을 밀쳐내지 않습니다.",
+    "rawDesc": "<color=yellow>예절 주입</color>의 재시전 효과의 재사용 대기시간이 {0} 만큼 감소하지만, 더 이상 적을 밀쳐내지 않습니다.",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "reduceRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_FR_RecastCdrNoKnockback.png"
+  },
+  "Se_Star_Cetus_I_ColdDiscountFireSurcharge": {
+    "name": "놀라운 설득력",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 20,
+    "isRequiredLevelTotalMastery": false,
+    "description": "조너스가 판매하는 <color=yellow>냉기 기억</color>과 <color=yellow>냉기 정수</color>의 가격이  40%<sprite=5>  감소하지만, <color=yellow>화염 기억</color>과 <color=yellow>화염 정수</color>의 가격은 100% 증가합니다.",
+    "rawDesc": "조너스가 판매하는 <color=yellow>냉기 기억</color>과 <color=yellow>냉기 정수</color>의 가격이 {0} 감소하지만, <color=yellow>화염 기억</color>과 <color=yellow>화염 정수</color>의 가격은 {1} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 40%<sprite=5> ",
+        "format": "P0",
+        "raw": "discountRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.4,
+            0.5,
+            0.55,
+            0.6
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "surchargeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_ColdDiscountFireSurcharge.png"
+  },
+  "Se_Star_Cetus_I_ColdSkillOnEnterWorld": {
+    "name": "바다는 베푼다",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 10,
+    "isRequiredLevelTotalMastery": false,
+    "description": "각 세계를 방문할 때마다  1<sprite=5>  레벨의 무작위 <color=yellow>냉기 기억</color>을 획득합니다.",
+    "rawDesc": "각 세계를 방문할 때마다 {0} 레벨의 무작위 <color=yellow>냉기 기억</color>을 획득합니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0",
+        "raw": "dropColdSkillLevel",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": true,
+          "clampMin": 1.0,
+          "clampMax": 100.0,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_ColdSkillOnEnterWorld.png"
+  },
+  "Se_Star_Cetus_I_FirstColdGemQualityBoost": {
+    "name": "익숙한 힘",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      60,
+      40,
+      50,
+      50
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": false,
+    "description": "처음 장착하는 <color=yellow>냉기 정수</color>의 품질이  80%<sprite=5>  만큼 증가합니다.",
+    "rawDesc": "처음 장착하는 <color=yellow>냉기 정수</color>의 품질이 {0} 만큼 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 80%<sprite=5> ",
+        "format": "P0",
+        "raw": "bonusQuality",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.8,
+            1.0,
+            1.2,
+            1.4
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_FirstColdGemQualityBoost.png"
+  },
+  "Se_Star_Cetus_I_GetDreamDustOnBossKill": {
+    "name": "파괴적 분석",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "아무 <color=yellow>보스</color>를 처치할 때마다  40<sprite=5>  만큼의 <color=yellow>꿈가루</color>를 획득합니다. ",
+    "rawDesc": "아무 <color=yellow>보스</color>를 처치할 때마다 {0} 만큼의 <color=yellow>꿈가루</color>를 획득합니다. ",
+    "rawDescVars": [
+      {
+        "rendered": " 40<sprite=5> ",
+        "format": "#,##0",
+        "raw": "dropDreamDustAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            40.0,
+            50.0,
+            60.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_GetDreamDustOnBossKill.png"
+  },
+  "Se_Star_Cetus_I_StartWithResources": {
+    "name": "철저한 준비",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "모험을 시작할 때  40<sprite=5>  만큼의 <color=yellow>골드</color>,  40<sprite=5>  만큼의 <color=yellow>꿈가루</color>를 획득합니다.",
+    "rawDesc": "모험을 시작할 때 {0} 만큼의 <color=yellow>골드</color>, {1} 만큼의 <color=yellow>꿈가루</color>를 획득합니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 40<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedGold",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            40.0,
+            50.0,
+            60.0,
+            70.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 40<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedDreamDust",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            40.0,
+            50.0,
+            60.0,
+            70.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_StartWithResources.png"
+  },
+  "Se_Star_Cetus_L_ArmorBuffOnShield": {
+    "name": "자세를 똑바로 해라!",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      40,
+      40,
+      50,
+      50
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "내가 주는 모든 피해가 15% 감소합니다. <color=yellow>보호막</color>을 주면 대상이 3초 동안  11<sprite=5> 만큼 <color=yellow>방어력</color>을 얻습니다.",
+    "rawDesc": "내가 주는 모든 피해가 {0} 감소합니다. <color=yellow>보호막</color>을 주면 대상이 {1}초 동안 {2}만큼 <color=yellow>방어력</color>을 얻습니다.",
+    "rawDescVars": [
+      {
+        "rendered": "15%",
+        "format": "P0",
+        "raw": "damagePenaltyReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 11<sprite=5> ",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            11.0,
+            14.0,
+            17.0,
+            20.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_ArmorBuffOnShield.png"
+  },
+  "Se_Star_Cetus_L_DodgeCdReductionOnHit": {
+    "name": "적응형 비늘",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      60,
+      40,
+      50
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>피해</color>를 받으면 <color=yellow>회피 기술</color>의 재사용 대기시간이  10%<sprite=5>  감소합니다.",
+    "rawDesc": "<color=yellow>피해</color>를 받으면 <color=yellow>회피 기술</color>의 재사용 대기시간이 {0} 감소합니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 10%<sprite=5> ",
+        "format": "P0",
+        "raw": "reductionAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.1,
+            0.15,
+            0.2
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_DodgeCdReductionOnHit.png"
+  },
+  "Se_Star_Cetus_L_FrostResistAndBuff": {
+    "name": "추위는 이제 두렵지 않아",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 20,
+    "isRequiredLevelTotalMastery": false,
+    "description": "받는 냉기 피해가  15%<sprite=5>  만큼 감소하며, 냉기에 영향을 받으면 <color=yellow>공격 속도</color>와 <color=yellow>이동 속도</color>가 감소하는 대신  9%<sprite=5>  만큼 증가합니다.",
+    "rawDesc": "받는 냉기 피해가 {0} 만큼 감소하며, 냉기에 영향을 받으면 <color=yellow>공격 속도</color>와 <color=yellow>이동 속도</color>가 감소하는 대신 {1} 만큼 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "reductionFromCold",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 9%<sprite=5> ",
+        "format": "P0",
+        "raw": "buffAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.09,
+            0.12,
+            0.15
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_FrostResistAndBuff.png"
+  },
+  "Se_Star_Cetus_L_HealOnApDamage": {
+    "name": "마력이 흐르는 핏줄",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      40,
+      40,
+      40,
+      50
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "내가 적에게 준 주문력 피해의  0.8%<sprite=5>  만큼 체력을 회복합니다.",
+    "rawDesc": "내가 적에게 준 주문력 피해의 {0} 만큼 체력을 회복합니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 0.8%<sprite=5> ",
+        "format": "P1",
+        "raw": "healAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.008,
+            0.01,
+            0.012,
+            0.014
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_HealOnApDamage.png"
+  },
+  "Se_Star_Cetus_L_IncreaseDealtShield": {
+    "name": "보호하는 냉기",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "내가 주는 모든 <color=yellow>보호막</color>량이  8%<sprite=5> 만큼 증가합니다.",
+    "rawDesc": "내가 주는 모든 <color=yellow>보호막</color>량이 {0}만큼 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 8%<sprite=5> ",
+        "format": "P0",
+        "raw": "shieldBonusAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.08,
+            0.12,
+            0.16,
+            0.2
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_IncreaseDealtShield.png"
+  },
+  "Se_Star_Cetus_L_MaxHpDamagePenalty": {
+    "name": "거대한 바다 앵귈리안",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "내가 주는 모든 피해가 10% 감소합니다. <color=yellow>최대 체력</color>이  90<sprite=5>  만큼 증가합니다. ",
+    "rawDesc": "내가 주는 모든 피해가 {0} 감소합니다. <color=yellow>최대 체력</color>이 {1} 만큼 증가합니다. ",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "damagePenaltyReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 90<sprite=5> ",
+        "format": "#,##0",
+        "raw": "healthAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            90.0,
+            110.0,
+            130.0,
+            150.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_MaxHpDamagePenalty.png"
+  },
+  "Se_Star_Cetus_L_ScalingHealth": {
+    "name": "쉬지 않는 훈련",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 10,
+    "isRequiredLevelTotalMastery": false,
+    "description": "레벨이 상승할 때마다 <color=yellow>최대 체력</color>이  12<sprite=5>  증가합니다.",
+    "rawDesc": "레벨이 상승할 때마다 <color=yellow>최대 체력</color>이 {0} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 12<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedHealthPerLevel",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            12.0,
+            16.0,
+            20.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_ScalingHealth.png"
   },
   "Se_Star_Husk_D_AttackDamage": {
     "name": "내 존재의 목적",
@@ -5191,8 +6501,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>멸살 태세</color> 도중에 기본 공격이나 검기에 적이 적중할 때마다 지속 시간이 0.2초 증가합니다.",
-    "rawDesc": "<color=yellow>멸살 태세</color> 도중에 기본 공격이나 검기에 적이 적중할 때마다 지속 시간이 {0}초 증가합니다.",
+    "description": "<color=yellow>멸살 태세</color> 도중에 기본 공격이나 검기에 적이 적중할 때마다 지속 시간이 0.2초 증가하고 보유한 모든 <color=yellow>궁극기</color>가 0.5% 충전됩니다.",
+    "rawDesc": "<color=yellow>멸살 태세</color> 도중에 기본 공격이나 검기에 적이 적중할 때마다 지속 시간이 {0}초 증가하고 보유한 모든 <color=yellow>궁극기</color>가 {1} 충전됩니다.",
     "rawDescVars": [
       {
         "rendered": "0.2",
@@ -5206,57 +6516,14 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
-      }
-    ],
-    "image": "Se_Star_Husk_F_AS_AddedDurationOnHit.png"
-  },
-  "Se_Star_Husk_F_AS_NonUltimate": {
-    "name": "통제된 광기",
-    "lore": "영혼이 비어버린 텅 빈 껍데기가 된 후로, 그는 오히려 더욱 완벽하게 자신을 통제할 수 있었습니다.",
-    "category": "Flexible",
-    "heroType": "Hero_Husk",
-    "maxLevel": 1,
-    "price": [
-      120
-    ],
-    "requiredLevel": 25,
-    "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>멸살 태세</color>가 14초의 재사용 대기시간을 지닌 일반 기술로 변경되며 도중에 다른 기억을 사용할 수 있게 됩니다. 변경된 멸살 태세는 검기의 피해량과 공격력 증가량이 50% 감소하고 4초 동안 지속되며, 회피 기술의 기억 가속과 최대 충전량을 증가시키지 않습니다.",
-    "rawDesc": "<color=yellow>멸살 태세</color>가 {0}초의 재사용 대기시간을 지닌 일반 기술로 변경되며 도중에 다른 기억을 사용할 수 있게 됩니다. 변경된 멸살 태세는 검기의 피해량과 공격력 증가량이 {1} 감소하고 {2}초 동안 지속되며, 회피 기술의 기억 가속과 최대 충전량을 증가시키지 않습니다.",
-    "rawDescVars": [
-      {
-        "rendered": "14",
-        "format": "#,##0.#",
-        "raw": "cooldownTime",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 14.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
       },
       {
-        "rendered": "50%",
-        "format": "P0",
-        "raw": "strengthReduction",
+        "rendered": "0.5%",
+        "format": "P1",
+        "raw": "ultimateChargeGainRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "4",
-        "format": "#,##0.#",
-        "raw": "newDuration",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 4.0,
+          "basicConstant": 0.005,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5264,7 +6531,7 @@
         }
       }
     ],
-    "image": "Se_Star_Husk_F_AS_NonUltimate.png"
+    "image": "Se_Star_Husk_F_AS_AddedDurationOnHit.png"
   },
   "Se_Star_Husk_F_AS_NoShockwaveFasterAttack": {
     "name": "광란의 검무",
@@ -5277,8 +6544,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>멸살 태세</color>의 검기 피해량이 60%, 검기의 사거리가 80% 감소하지만, 부여하는 공격 속도와 회피 기술 기억 가속의 양이 100% 증가합니다.",
-    "rawDesc": "<color=yellow>멸살 태세</color>의 검기 피해량이 {0}, 검기의 사거리가 {1} 감소하지만, 부여하는 공격 속도와 회피 기술 기억 가속의 양이 {2} 증가합니다.",
+    "description": "<color=yellow>멸살 태세</color>의 검기 피해량이 60%, 검기의 사거리가 80% 감소합니다. <color=yellow>멸살 태세</color> 도중 <color=yellow>회피 기술</color>의 <color=yellow>기억 가속</color>이 30, <color=yellow>최대 충전량</color>이 2 증가합니다. 이 기억 가속 증가량은 아무 보스를 처치할 때마다 12만큼 영구적으로 증가합니다.",
+    "rawDesc": "<color=yellow>멸살 태세</color>의 검기 피해량이 {0}, 검기의 사거리가 {1} 감소합니다. <color=yellow>멸살 태세</color> 도중 <color=yellow>회피 기술</color>의 <color=yellow>기억 가속</color>이 {2}, <color=yellow>최대 충전량</color>이 {3} 증가합니다. 이 기억 가속 증가량은 아무 보스를 처치할 때마다 {4}만큼 영구적으로 증가합니다.",
     "rawDescVars": [
       {
         "rendered": "60%",
@@ -5307,9 +6574,317 @@
         }
       },
       {
-        "rendered": "100%",
+        "rendered": "30",
+        "format": "#,##0",
+        "raw": "dodgeMemoryHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dodgeAddedCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "12",
+        "format": "#,##0",
+        "raw": "dodgeMemoryHastePerBossKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 12.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_AS_NoShockwaveFasterAttack.png"
+  },
+  "Se_Star_Husk_F_AS_NonUltimate": {
+    "name": "통제된 광기",
+    "lore": "영혼이 비어버린 텅 빈 껍데기가 된 후로, 그는 오히려 더욱 완벽하게 자신을 통제할 수 있었습니다.",
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>멸살 태세</color>가 12초의 재사용 대기시간을 지닌 일반 기술로 변경됩니다. 변경된 멸살 태세는 검기의 피해량과 공격력 증가량이 50% 감소하고 3.5초 동안 지속됩니다.",
+    "rawDesc": "<color=yellow>멸살 태세</color>가 {0}초의 재사용 대기시간을 지닌 일반 기술로 변경됩니다. 변경된 멸살 태세는 검기의 피해량과 공격력 증가량이 {1} 감소하고 {2}초 동안 지속됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "12",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 12.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
         "format": "P0",
-        "raw": "buffAmp",
+        "raw": "strengthReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3.5",
+        "format": "#,##0.#",
+        "raw": "newDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_AS_NonUltimate.png"
+  },
+  "Se_Star_Husk_F_DC_EndMovespeedToBonusAttackspeed": {
+    "name": "무자비한 칼놀림",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>교란</color>이 끝나면 교란으로 증가한 이동 속도 증가량 만큼 공격 속도가 3초 동안 증가합니다.",
+    "rawDesc": "<color=yellow>교란</color>이 끝나면 교란으로 증가한 이동 속도 증가량 만큼 공격 속도가 {0}초 동안 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "hasteDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DC_EndMovespeedToBonusAttackspeed.png"
+  },
+  "Se_Star_Husk_F_DC_EnhanceMaxStealthTime": {
+    "name": "황혼녘",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>교란</color>을 강화할 때마다 최대 은신 가능 시간이 0.25초 증가합니다.",
+    "rawDesc": "<color=yellow>교란</color>을 강화할 때마다 최대 은신 가능 시간이 {0}초 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "0.25",
+        "format": "0.##",
+        "raw": "addedStealthTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DC_EnhanceMaxStealthTime.png"
+  },
+  "Se_Star_Husk_F_DC_RecentDamageHoTWhileStealth": {
+    "name": "편안한 어둠",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>교란</color>을 발동하면 시전 이전 4초 내 입은 모든 피해를 3초에 걸쳐 회복합니다. 단 모두 회복하기 전 교란이 끝나면 회복도 종료됩니다.",
+    "rawDesc": "<color=yellow>교란</color>을 발동하면 시전 이전 {0}초 내 입은 모든 피해를 {1}초에 걸쳐 회복합니다. 단 모두 회복하기 전 교란이 끝나면 회복도 종료됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "recentDamageTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "healOverTime",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "image": "Se_Star_Husk_F_DC_RecentDamageHoTWhileStealth.png"
+  },
+  "Se_Star_Husk_F_DE_HighAmpMissReset": {
+    "name": "동력 집중",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>죽음의 표식</color>의 적중 시 피해 증가량이 더이상 다음 세계로 이동할 때마다 초기화되지 않지만, 적중 시 증가량이 4%로 감소하며 적중하지 못하는 경우 모든 증가량을 잃습니다.",
+    "rawDesc": "<color=yellow>죽음의 표식</color>의 적중 시 피해 증가량이 더이상 다음 세계로 이동할 때마다 초기화되지 않지만, 적중 시 증가량이 {0}로 감소하며 적중하지 못하는 경우 모든 증가량을 잃습니다.",
+    "rawDescVars": [
+      {
+        "rendered": "4%",
+        "format": "P0",
+        "raw": "newAmpGainPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DE_HighAmpMissReset.png"
+  },
+  "Se_Star_Husk_F_DE_HitHealMissPenalty": {
+    "name": "연단술",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>죽음의 표식</color>이 처음 적에게 적중하면 피해량의 10%만큼을 회복하지만, 적중하지 못하는 경우 최대 체력의 30%만큼 피해를 입습니다.",
+    "rawDesc": "<color=yellow>죽음의 표식</color>이 처음 적에게 적중하면 피해량의 {0}만큼을 회복하지만, 적중하지 못하는 경우 최대 체력의 {1}만큼 피해를 입습니다.",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "healAmpByDmg",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "penaltyAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DE_HitHealMissPenalty.png"
+  },
+  "Se_Star_Husk_F_DE_MarkHitDodgeCDR": {
+    "name": "확정된 죽음",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>죽음의 표식</color>의 지속 시간이 2초 증가하고 표식이 부여된 대상에게 내가 주는 모든 어둠 피해가 25% 증가하며, 대상을 공격할 때마다 회피 기술의 재사용 대기시간이 1초 감소합니다.",
+    "rawDesc": "<color=yellow>죽음의 표식</color>의 지속 시간이 {0}초 증가하고 표식이 부여된 대상에게 내가 주는 모든 어둠 피해가 {1} 증가하며, 대상을 공격할 때마다 회피 기술의 재사용 대기시간이 {2}초 감소합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "increasedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "darkDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "dodgeReductionAmount",
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.0,
@@ -5320,7 +6895,50 @@
         }
       }
     ],
-    "image": "Se_Star_Husk_F_AS_NoShockwaveFasterAttack.png"
+    "image": "Se_Star_Husk_F_DE_MarkHitDodgeCDR.png"
+  },
+  "Se_Star_Husk_F_LA_BlueFormOnly": {
+    "name": "청색 파동",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      180
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>열상</color>의 적형을 사용할 수 없게 되고, 청형의 무적 시간이 50% 증가합니다. <color=yellow>열상</color>의 청형이 시전 키를 길게 눌러 충전하는 기억으로 변경되며, 시전 키를 도중에 떼면 무적 효과가 빨리 끝나고 즉시 칼을 휘두릅니다. 길게 충전할 수록 범위가 최대 20%까지 증가합니다.",
+    "rawDesc": "<color=yellow>열상</color>의 적형을 사용할 수 없게 되고, 청형의 무적 시간이 {0} 증가합니다. <color=yellow>열상</color>의 청형이 시전 키를 길게 눌러 충전하는 기억으로 변경되며, 시전 키를 도중에 떼면 무적 효과가 빨리 끝나고 즉시 칼을 휘두릅니다. 길게 충전할 수록 범위가 최대 {1}까지 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "addedInvulnerableTimeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "addedRangeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_LA_BlueFormOnly.png"
   },
   "Se_Star_Husk_F_LA_DodgeResetOnRed": {
     "name": "기의 흐름",
@@ -5692,8 +7310,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>치명적인 피해</color>를 받으면 해당 피해를 무시하고  1<sprite=5> 초 동안 <color=yellow>무적</color> 상태가 되지만 최대 체력이 15% 감소합니다. 게임 당 한 번만 발동할 수 있습니다.",
-    "rawDesc": "<color=yellow>치명적인 피해</color>를 받으면 해당 피해를 무시하고 {0}초 동안 <color=yellow>무적</color> 상태가 되지만 최대 체력이 {1} 감소합니다. 게임 당 한 번만 발동할 수 있습니다.",
+    "description": "<color=yellow>치명적인 피해</color>를 받으면 해당 피해를 무시하고  1<sprite=5> 초 동안 <color=yellow>무적</color> 상태가 되지만 최대 체력이 15% 감소합니다. 게임당 한 번만 발동할 수 있습니다.",
+    "rawDesc": "<color=yellow>치명적인 피해</color>를 받으면 해당 피해를 무시하고 {0}초 동안 <color=yellow>무적</color> 상태가 되지만 최대 체력이 {1} 감소합니다. 게임당 한 번만 발동할 수 있습니다.",
     "rawDescVars": [
       {
         "rendered": " 1<sprite=5> ",
@@ -5887,16 +7505,29 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>핸드 캐논</color>이 무조건 적을 밀쳐내며 적들의 <color=yellow>이동 속도</color>를 4초 동안 75% 감소시킵니다.",
-    "rawDesc": "<color=yellow>핸드 캐논</color>이 무조건 적을 밀쳐내며 적들의 <color=yellow>이동 속도</color>를 {0}초 동안 {1} 감소시킵니다.",
+    "description": "<color=yellow>핸드 캐논</color>의 범위가 25% 증가하고 적중한 적들의 이동 속도가 3초 동안 75% 감소합니다.",
+    "rawDesc": "<color=yellow>핸드 캐논</color>의 범위가 {0} 증가하고 적중한 적들의 이동 속도가 {1}초 동안 {2} 감소합니다.",
     "rawDescVars": [
       {
-        "rendered": "4",
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "scaleAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
         "format": "#,##0.#",
         "raw": "slowDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 4.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5930,16 +7561,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>핸드 캐논</color>이 가까운 적에게 주는 피해가 150% 증가합니다.",
-    "rawDesc": "<color=yellow>핸드 캐논</color>이 가까운 적에게 주는 피해가 {0} 증가합니다.",
+    "description": "<color=yellow>핸드 캐논</color>이 라세르타와 적을 밀어내는 거리가 40% 증가하고, 적이 항상 밀려납니다.",
+    "rawDesc": "<color=yellow>핸드 캐논</color>이 라세르타와 적을 밀어내는 거리가 {0} 증가하고, 적이 항상 밀려납니다.",
     "rawDescVars": [
       {
-        "rendered": "150%",
+        "rendered": "40%",
         "format": "P0",
-        "raw": "nearDamageAmp",
+        "raw": "knockbackAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5948,6 +7579,79 @@
       }
     ],
     "image": "Se_Star_Lacerta_F_HC_NearDamage.png"
+  },
+  "Se_Star_Lacerta_F_HC_NoDelayDoubleCast": {
+    "name": "용의 숨결",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Lacerta",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>핸드 캐논</color>의 피해량이 40% 감소하고 라세르타를 밀쳐내지 않지만, 준비 시간이 제거되어 시전 즉시 발사되고 최대 충전량이 1회 증가하며 충전 횟수가 한 번에 충전됩니다.",
+    "rawDesc": "<color=yellow>핸드 캐논</color>의 피해량이 {0} 감소하고 라세르타를 밀쳐내지 않지만, 준비 시간이 제거되어 시전 즉시 발사되고 최대 충전량이 {1}회 증가하며 충전 횟수가 한 번에 충전됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Lacerta_F_HC_NoDelayDoubleCast.png"
+  },
+  "Se_Star_Lacerta_F_HC_ResetOnDodge": {
+    "name": "전술적 회피",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Lacerta",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>핸드 캐논</color>의 재사용 대기시간이 2.5초 증가하지만, 회피 기술을 사용하면 핸드 캐논의 재사용 대기시간이 초기화됩니다.",
+    "rawDesc": "<color=yellow>핸드 캐논</color>의 재사용 대기시간이 {0}초 증가하지만, 회피 기술을 사용하면 핸드 캐논의 재사용 대기시간이 초기화됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "addedCooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Lacerta_F_HC_ResetOnDodge.png"
   },
   "Se_Star_Lacerta_F_IR_AoEDamage": {
     "name": "폭발 탄약",
@@ -6007,6 +7711,51 @@
       }
     ],
     "image": "Se_Star_Lacerta_F_IR_MoreShots.png"
+  },
+  "Se_Star_Lacerta_F_IR_RechargeAmmoAmpBurnDamage": {
+    "name": "작열탄",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Lacerta",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>소이탄 장전</color>의 피해량이 50% 감소하지만 대상에게 화염 중첩을 1개 더 부여하며, 직전 대상과 다른 대상을 타격할 때 마다 탄환 수가 1회 충전됩니다.",
+    "rawDesc": "<color=yellow>소이탄 장전</color>의 피해량이 {0} 감소하지만 대상에게 화염 중첩을 {1}개 더 부여하며, 직전 대상과 다른 대상을 타격할 때 마다 탄환 수가 1회 충전됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "star",
+        "data": {
+          "levels": 1,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.5
+          ],
+          "strengthScaling": "None"
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedFireStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Lacerta_F_IR_RechargeAmmoAmpBurnDamage.png"
   },
   "Se_Star_Lacerta_F_PS_ChargeSpeed": {
     "name": "노련한 조준",
@@ -6419,6 +8168,75 @@
     ],
     "image": "Se_Star_Lacerta_L_SpeedAfterDodge.png"
   },
+  "Se_Star_Mist_F_LG_ChainAttack": {
+    "name": "안개비",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Mist",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>런지</color>의 재사용 대기시간이 1.5초 증가합니다. 회피 기술 사용 후 3초 안에 시전하는 다음 <color=yellow>런지</color>가 강화되어 3번 추가로 적을 찌릅니다. 각 찌르기는 35%의 피해를 주고 공격 효과를 발동합니다.",
+    "rawDesc": "<color=yellow>런지</color>의 재사용 대기시간이 {0}초 증가합니다. 회피 기술 사용 후 {1}초 안에 시전하는 다음 <color=yellow>런지</color>가 강화되어 {2}번 추가로 적을 찌릅니다. 각 찌르기는 {3}의 피해를 주고 공격 효과를 발동합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "addedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "windowDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "stabCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "35%",
+        "format": "P0",
+        "raw": "dmgRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.35,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Mist_F_LG_ChainAttack.png"
+  },
   "Se_Star_Mist_I_CamillasGift": {
     "name": "카밀라의 선물",
     "lore": "그녀의 후견인인 카밀라의 호의는 일방적이지 않았습니다. 분명, 미스트에게도 그녀는 소중한 인연으로 남아있습니다.",
@@ -6678,7 +8496,7 @@
   },
   "Se_Star_Mist_D_HunterDamage": {
     "name": "드디어 괜찮은 상대를 만났군",
-    "lore": "그녀는 비밀 결투와 공식 결투에서 단 한번도 패배한 적이 없습니다.",
+    "lore": "그녀는 비밀 결투와 공식 결투에서 단 한 번도 패배한 적이 없습니다.",
     "category": "Destruction",
     "heroType": "Hero_Mist",
     "maxLevel": 3,
@@ -7156,6 +8974,49 @@
       }
     ],
     "image": "Se_Star_Mist_F_UD_HealLostHealth.png"
+  },
+  "Se_Star_Mist_F_UD_NonUltimate": {
+    "name": "몰입의 순간",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Mist",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>부서지지 않는 의지</color>가 폭발을 일으키지 않으며 지속 시간 및 피해량이 66% 감소하지만, 14초의 재사용 대기시간을 가지는 일반 기억으로 변경됩니다.",
+    "rawDesc": "<color=yellow>부서지지 않는 의지</color>가 폭발을 일으키지 않으며 지속 시간 및 피해량이 {0} 감소하지만, {1}초의 재사용 대기시간을 가지는 일반 기억으로 변경됩니다.",
+    "rawDescVars": [
+      {
+        "rendered": "66%",
+        "format": "P0",
+        "raw": "effectReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.66,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "14",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 14.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Mist_F_UD_NonUltimate.png"
   },
   "Se_Star_Mist_I_BonusOnCatPet": {
     "name": "고양이 애호가",
@@ -8050,6 +9911,62 @@
     ],
     "image": "Se_Star_Nachia_F_SC_MoreSummons.png"
   },
+  "Se_Star_Nachia_F_SC_SummonDmgReduction": {
+    "name": "무리 우두머리",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Nachia",
+    "maxLevel": 1,
+    "price": [
+      180
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>숲의 부름</color>의 잎 강아지가 4마리 이상일 때, 나키아의 주문력이 15% 증가하고 잎 강아지들에게 40의 방어력을 부여합니다.",
+    "rawDesc": "<color=yellow>숲의 부름</color>의 잎 강아지가 {0}마리 이상일 때, 나키아의 주문력이 {1} 증가하고 잎 강아지들에게 {2}의 방어력을 부여합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "requiredCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "15%",
+        "format": "#,##0'%'",
+        "raw": "abilityPowerPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 40.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Nachia_F_SC_SummonDmgReduction.png"
+  },
   "Se_Star_Nachia_I_ForestKillDreamDust": {
     "name": "생명 거두기",
     "lore": null,
@@ -8237,8 +10154,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "아군에게 이로운 효과를 부여하면 대상이  1.5<sprite=5> 초 동안 <color=yellow>저지 불가</color> 상태가 됩니다. 이 효과는 대상마다 5초의 재사용 대기시간을 갖습니다.",
-    "rawDesc": "아군에게 이로운 효과를 부여하면 대상이 {0}초 동안 <color=yellow>저지 불가</color> 상태가 됩니다. 이 효과는 대상마다 {1}초의 재사용 대기시간을 갖습니다.",
+    "description": "아군에게 이로운 효과를 부여하면 대상이  1.5<sprite=5> 초 동안 <color=yellow>저지 불가</color> 상태가 됩니다. 이 효과는 대상마다 5초의 재사용 대기시간을 가지며, 대상이 소환수인 경우 지속 시간이 70% 증가합니다.",
+    "rawDesc": "아군에게 이로운 효과를 부여하면 대상이 {0}초 동안 <color=yellow>저지 불가</color> 상태가 됩니다. 이 효과는 대상마다 {1}초의 재사용 대기시간을 가지며, 대상이 소환수인 경우 지속 시간이 {2} 증가합니다.",
     "rawDescVars": [
       {
         "rendered": " 1.5<sprite=5> ",
@@ -8264,6 +10181,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "70%",
+        "format": "P0",
+        "raw": "ampToSummons",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.7,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8748,36 +10678,6 @@
     ],
     "image": "Se_Star_Vesper_D_ConvertAPToAD.png"
   },
-  "Se_Star_Vesper_F_BS_AddedDurationPerAtk": {
-    "name": "끝 없는 망치질",
-    "lore": null,
-    "category": "Flexible",
-    "heroType": "Hero_Vesper",
-    "maxLevel": 1,
-    "price": [
-      80
-    ],
-    "requiredLevel": 5,
-    "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>태양의 세례</color>에 영향을 받는 도중 기본 공격 시 <color=yellow>지속 시간</color>이 0.2초 증가합니다.",
-    "rawDesc": "<color=yellow>태양의 세례</color>에 영향을 받는 도중 기본 공격 시 <color=yellow>지속 시간</color>이 {0}초 증가합니다.",
-    "rawDescVars": [
-      {
-        "rendered": "0.2",
-        "format": "#,##0.#",
-        "raw": "addedDuration",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.2,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      }
-    ],
-    "image": "Se_Star_Vesper_F_BS_AddedDurationPerAtk.png"
-  },
   "Se_Star_Vesper_F_BS_ADWithArmor": {
     "name": "고통 없이는 얻는 것도 없다",
     "lore": null,
@@ -8820,6 +10720,79 @@
       }
     ],
     "image": "Se_Star_Vesper_F_BS_ADWithArmor.png"
+  },
+  "Se_Star_Vesper_F_BS_AddedDurationPerAtk": {
+    "name": "끝 없는 망치질",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>태양의 세례</color>에 영향을 받는 도중 기본 공격 시 <color=yellow>지속 시간</color>이 0.2초 증가합니다.",
+    "rawDesc": "<color=yellow>태양의 세례</color>에 영향을 받는 도중 기본 공격 시 <color=yellow>지속 시간</color>이 {0}초 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "0.2",
+        "format": "#,##0.#",
+        "raw": "addedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_AddedDurationPerAtk.png"
+  },
+  "Se_Star_Vesper_F_BS_ExplosionOnEnd": {
+    "name": "회개하라!",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      160
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>태양의 세례</color>의 지속 시간이 66% 감소하지만, 폭발 피해량이 50% 증가하며 지속 시간이 끝날 때 한 번 더 폭발합니다.",
+    "rawDesc": "<color=yellow>태양의 세례</color>의 지속 시간이 {0} 감소하지만, 폭발 피해량이 {1} 증가하며 지속 시간이 끝날 때 한 번 더 폭발합니다.",
+    "rawDescVars": [
+      {
+        "rendered": "66%",
+        "format": "P0",
+        "raw": "durationReduceMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.66,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "explosionDamageMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_ExplosionOnEnd.png"
   },
   "Se_Star_Vesper_F_BS_MovSpd": {
     "name": "기분 좋은 열기",
@@ -9703,44 +11676,6 @@
     ],
     "image": "Se_Star_Yubar_D_APOnDodge.png"
   },
-  "Se_Star_Yubar_D_AbilityPower": {
-    "name": "밤하늘의 주단",
-    "lore": null,
-    "category": "Destruction",
-    "heroType": "Hero_Yubar",
-    "maxLevel": 4,
-    "price": [
-      30,
-      30,
-      30,
-      40
-    ],
-    "requiredLevel": 0,
-    "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>주문력</color>이  5<sprite=5>  증가합니다.",
-    "rawDesc": "<color=yellow>주문력</color>이 {0} 증가합니다.",
-    "rawDescVars": [
-      {
-        "rendered": " 5<sprite=5> ",
-        "format": "#,##0",
-        "raw": "bonusAmount",
-        "scalingType": "star",
-        "data": {
-          "levels": 4,
-          "isClamped": false,
-          "isInteger": true,
-          "values": [
-            5.0,
-            7.0,
-            9.0,
-            11.0
-          ],
-          "strengthScaling": "Multiply"
-        }
-      }
-    ],
-    "image": "Se_Star_Yubar_D_AbilityPower.png"
-  },
   "Se_Star_Yubar_D_ADAPWithPenalty": {
     "name": "유리 대포",
     "lore": "그의 육신은 현재, 부서지기 쉬운 그릇일 뿐입니다. 물론, 그렇게 생각한 상대는 모두 한 줌의 먼지가 되었지요.",
@@ -9844,6 +11779,44 @@
       }
     ],
     "image": "Se_Star_Yubar_D_APPerLightSkill.png"
+  },
+  "Se_Star_Yubar_D_AbilityPower": {
+    "name": "밤하늘의 주단",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Yubar",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>주문력</color>이  5<sprite=5>  증가합니다.",
+    "rawDesc": "<color=yellow>주문력</color>이 {0} 증가합니다.",
+    "rawDescVars": [
+      {
+        "rendered": " 5<sprite=5> ",
+        "format": "#,##0",
+        "raw": "bonusAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            5.0,
+            7.0,
+            9.0,
+            11.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Yubar_D_AbilityPower.png"
   },
   "Se_Star_Yubar_D_BonusDamageToLight": {
     "name": "별의 눈물",
@@ -10082,16 +12055,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>에테르의 영향력</color>의 투사체가 빛 중첩이 3 이상인 적에게 적중하면 50%의 피해를 주는 폭발이 발생합니다.",
+    "description": "<color=yellow>에테르의 영향력</color>의 투사체가 빛 중첩이 2 이상인 적에게 적중하면 50%의 피해를 주는 폭발이 발생합니다.",
     "rawDesc": "<color=yellow>에테르의 영향력</color>의 투사체가 빛 중첩이 {0} 이상인 적에게 적중하면 {1}의 피해를 주는 폭발이 발생합니다.",
     "rawDescVars": [
       {
-        "rendered": "3",
+        "rendered": "2",
         "format": "#,##0",
         "raw": "requiredLightStacks",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 3.0,
+          "basicConstant": 2.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -10157,6 +12130,22 @@
     ],
     "image": "Se_Star_Yubar_F_EI_BiggerExplosion.png"
   },
+  "Se_Star_Yubar_F_EI_DashNoProjectile": {
+    "name": "에테르의 선율",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Yubar",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>에테르의 영향력</color>이 투사체를 발사하는 대신 유바르가 시전 방향으로 돌진하며 피해를 줍니다.",
+    "rawDesc": "<color=yellow>에테르의 영향력</color>이 투사체를 발사하는 대신 유바르가 시전 방향으로 돌진하며 피해를 줍니다.",
+    "rawDescVars": [],
+    "image": "Se_Star_Yubar_F_EI_DashNoProjectile.png"
+  },
   "Se_Star_Yubar_F_EI_NoRootMoreDamage": {
     "name": "흐름의 전환",
     "lore": null,
@@ -10198,22 +12187,9 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>초신성</color>의 재사용 대기시간이 3초 증가하지만, 시전 사거리가 30%, 폭발 반경이 20%, 최대 충전 횟수가 2 증가합니다.",
-    "rawDesc": "<color=yellow>초신성</color>의 재사용 대기시간이 {0}초 증가하지만, 시전 사거리가 {1}, 폭발 반경이 {2}, 최대 충전 횟수가 {3} 증가합니다.",
+    "description": "<color=yellow>초신성</color>의 시전 사거리가 30%, 폭발 반경이 20% 증가합니다. 초신성을 3번 강화할 때마다 초신성의 최대 충전 횟수가 1 증가합니다.",
+    "rawDesc": "<color=yellow>초신성</color>의 시전 사거리가 {0}, 폭발 반경이 {1} 증가합니다. 초신성을 {2}번 강화할 때마다 초신성의 최대 충전 횟수가 1 증가합니다.",
     "rawDescVars": [
-      {
-        "rendered": "3",
-        "format": "#,##0.#",
-        "raw": "cooldownPenalty",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 3.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
       {
         "rendered": "30%",
         "format": "P0",
@@ -10241,12 +12217,12 @@
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
-        "raw": "gainedMaxCharges",
+        "raw": "upgradesPerMaxCharge",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -10283,16 +12259,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>초신성</color>의 폭발이 적중한 적 하나당 재사용 대기시간이 0.5초 감소하고 다음 초신성 시전의 피해량이 10% 증가합니다.",
-    "rawDesc": "<color=yellow>초신성</color>의 폭발이 적중한 적 하나당 재사용 대기시간이 {0}초 감소하고 다음 초신성 시전의 피해량이 {1} 증가합니다.",
+    "description": "<color=yellow>초신성</color>의 폭발이 적중한 적 하나당 재사용 대기시간이 8% 감소하고 다음 초신성 시전의 피해량이 10% 증가합니다.",
+    "rawDesc": "<color=yellow>초신성</color>의 폭발이 적중한 적 하나당 재사용 대기시간이 {0} 감소하고 다음 초신성 시전의 피해량이 {1} 증가합니다.",
     "rawDescVars": [
       {
-        "rendered": "0.5",
-        "format": "#,##0.#",
-        "raw": "reducedCooldownOnHit",
+        "rendered": "8%",
+        "format": "P0",
+        "raw": "reducedCooldownRatioOnHit",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 0.08,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -10314,6 +12290,36 @@
       }
     ],
     "image": "Se_Star_Yubar_F_SN_DodgeReset.png"
+  },
+  "Se_Star_Yubar_F_SN_PullEnemy": {
+    "name": "중력자 더하기",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Yubar",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>초신성</color>의 이동 속도 감소 효과가 20% 증가하고 시전 시 잠시 후 근처의 적을 끌어당깁니다.",
+    "rawDesc": "<color=yellow>초신성</color>의 이동 속도 감소 효과가 {0} 증가하고 시전 시 잠시 후 근처의 적을 끌어당깁니다.",
+    "rawDescVars": [
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "slowAmpMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Yubar_F_SN_PullEnemy.png"
   },
   "Se_Star_Yubar_F_TQ_EssenceCooldown": {
     "name": "별의 노래",

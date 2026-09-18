@@ -1797,11 +1797,11 @@
     ],
     "requiredLevel": 40,
     "isRequiredLevelTotalMastery": true,
-    "description": "對感受到<color=yellow>寒氣</color>的敵人<color=yellow>受到的傷害</color>減少 25%<sprite=5> 。",
+    "description": "對感受到<color=yellow>寒氣</color>的敵人<color=yellow>受到的傷害</color>減少 19%<sprite=5> 。",
     "rawDesc": "對感受到<color=yellow>寒氣</color>的敵人<color=yellow>受到的傷害</color>減少{0}。",
     "rawDescVars": [
       {
-        "rendered": " 25%<sprite=5> ",
+        "rendered": " 19%<sprite=5> ",
         "format": "P0",
         "raw": "reductionAmount",
         "scalingType": "star",
@@ -1810,10 +1810,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.25,
-            0.3,
-            0.35,
-            0.4
+            0.19,
+            0.21,
+            0.23,
+            0.25
           ],
           "strengthScaling": "Multiply"
         }
@@ -2089,11 +2089,11 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": true,
-    "description": "每次 <color=yellow>擊殺</color> 敵人時，回復  1.00%<sprite=5>  的最大生命值。",
+    "description": "每次 <color=yellow>擊殺</color> 敵人時，回復  1.40%<sprite=5>  的最大生命值。",
     "rawDesc": "每次 <color=yellow>擊殺</color> 敵人時，回復 {0} 的最大生命值。",
     "rawDescVars": [
       {
-        "rendered": " 1.00%<sprite=5> ",
+        "rendered": " 1.40%<sprite=5> ",
         "format": "P2",
         "raw": "healRatio",
         "scalingType": "star",
@@ -2102,10 +2102,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.01,
-            0.015,
-            0.02,
-            0.025
+            0.014,
+            0.016,
+            0.018,
+            0.02
           ],
           "strengthScaling": "Multiply"
         }
@@ -2244,7 +2244,7 @@
     "image": "Se_Star_L_MaxHealth.png"
   },
   "Se_Star_L_MaxHealthUpHealDown": {
-    "name": "堅韌皮膚",
+    "name": "過厚的皮膚",
     "lore": null,
     "category": "Life",
     "heroType": "",
@@ -2481,8 +2481,8 @@
     ],
     "requiredLevel": 70,
     "isRequiredLevelTotalMastery": true,
-    "description": "在商店購買或販售物品時，可獲得 <color=yellow>生命藥水</color>。此效果對每位商人最多觸發  1<sprite=5>  次。",
-    "rawDesc": "在商店購買或販售物品時，可獲得 <color=yellow>生命藥水</color>。此效果對每位商人最多觸發 {0} 次。",
+    "description": "使用金幣購買或販售物品時，可獲得 <color=yellow>生命藥水</color>。此效果對每位商人最多觸發  1<sprite=5>  次。",
+    "rawDesc": "使用金幣購買或販售物品時，可獲得 <color=yellow>生命藥水</color>。此效果對每位商人最多觸發 {0} 次。",
     "rawDescVars": [
       {
         "rendered": " 1<sprite=5> ",
@@ -2792,6 +2792,56 @@
     ],
     "image": "Se_Star_Aurena_D_BonusStatOnLowHp.png"
   },
+  "Se_Star_Aurena_F_CR_ChargedCast": {
+    "name": "黃金的遺產",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Aurena",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>連鎖作用</color>變更為可長按施放鍵進行蓄力的記憶。最多可蓄力3秒，蓄力結束後會在原地施放，且根據蓄力時間，範圍最多增加至25%，傷害量與恢復量最多增加至50%。",
+    "rawDesc": "<color=yellow>連鎖作用</color>變更為可長按施放鍵進行蓄力的記憶。最多可蓄力{0}秒，蓄力結束後會在原地施放，且根據蓄力時間，範圍最多增加至{1}，傷害量與恢復量最多增加至{2}。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "maxChargeTime",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "maxRangeMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "maxEffectMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Aurena_F_CR_ChargedCast.png"
+  },
   "Se_Star_Aurena_F_CR_EarnGold": {
     "name": "鍊金術大師",
     "lore": null,
@@ -2969,7 +3019,7 @@
     "image": "Se_Star_Aurena_F_DT_TwiceWithPenalty.png"
   },
   "Se_Star_Aurena_F_DT_UnstoppableAndRemoveDelusion": {
-    "name": "불세출의 천재",
+    "name": "無雙天才",
     "lore": "她甚至將幻想的原理與機制都徹底理解了。",
     "category": "Flexible",
     "heroType": "Hero_Aurena",
@@ -4213,6 +4263,62 @@
     ],
     "image": "Se_Star_Bismuth_F_IT_InnerDamage.png"
   },
+  "Se_Star_Bismuth_F_IT_SmallerRingAddDisplacement": {
+    "name": "來玩捉迷藏吧！",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Bismuth",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>地獄火之說</color>的冷卻時間增加2秒，傷害減少20%，但最多可再次施放2次，朝指定方向衝刺。",
+    "rawDesc": "<color=yellow>地獄火之說</color>的冷卻時間增加{0}秒，傷害減少{1}，但最多可再次施放{2}次，朝指定方向衝刺。",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "increasedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "dmgReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dashCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Bismuth_F_IT_SmallerRingAddDisplacement.png"
+  },
   "Se_Star_Bismuth_F_IT_SmallerRingMoreDamage": {
     "name": "親近的關係",
     "lore": null,
@@ -4854,6 +4960,1210 @@
     ],
     "image": "Se_Star_Bismuth_L_SecondWindWithPenalty.png"
   },
+  "Se_Star_Cetus_D_AdApUpByBonusHp": {
+    "name": "沉重鐵拳",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 20,
+    "isRequiredLevelTotalMastery": false,
+    "description": "獲得相當於<color=yellow>額外生命值</color> 1.0%<sprite=5> 的<color=yellow>魔法攻擊</color>與<color=yellow>攻擊力</color>。",
+    "rawDesc": "獲得相當於<color=yellow>額外生命值</color>{0}的<color=yellow>魔法攻擊</color>與<color=yellow>攻擊力</color>。",
+    "rawDescVars": [
+      {
+        "rendered": " 1.0%<sprite=5> ",
+        "format": "P1",
+        "raw": "ampValue",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.01,
+            0.015,
+            0.02
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_AdApUpByBonusHp.png"
+  },
+  "Se_Star_Cetus_D_ApUpByColdSkillCounts": {
+    "name": "尖銳棘鰭",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      20,
+      30,
+      30,
+      20
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>魔法攻擊</color>增加 4<sprite=5> 。每擁有一個<color=yellow>冰寒傷害記憶</color>，額外增加 1<sprite=5> 。",
+    "rawDesc": "<color=yellow>魔法攻擊</color>增加{0}。每擁有一個<color=yellow>冰寒傷害記憶</color>，額外增加{1}。",
+    "rawDescVars": [
+      {
+        "rendered": " 4<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedFlat",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            4.0,
+            5.0,
+            6.0,
+            7.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "bonusPerSkill",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            1.0,
+            1.5,
+            2.0,
+            2.5
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_ApUpByColdSkillCounts.png"
+  },
+  "Se_Star_Cetus_D_StackStatsOnTakenDamage": {
+    "name": "清醒之痛",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      40,
+      50,
+      60,
+      70
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": false,
+    "description": "受到<color=yellow>傷害</color>時，在5秒內<color=yellow>魔法攻擊</color>和<color=yellow>記憶加速</color>增加1，最多增加 6<sprite=5> 。",
+    "rawDesc": "受到<color=yellow>傷害</color>時，在{0}秒內<color=yellow>魔法攻擊</color>和<color=yellow>記憶加速</color>增加{1}，最多增加{2}。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "stackDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "bonusAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 6<sprite=5> ",
+        "format": "#,##0",
+        "raw": "maxBonusCount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            6.0,
+            9.0,
+            12.0,
+            15.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_StackStatsOnTakenDamage.png"
+  },
+  "Se_Star_Cetus_D_StatsUpWhileShielded": {
+    "name": "魔力循環",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 10,
+    "isRequiredLevelTotalMastery": false,
+    "description": "擁有<color=yellow>護盾</color>時，<color=yellow>魔法攻擊</color>增加 5<sprite=5> ，<color=yellow>記憶加速</color>增加 6<sprite=5> 。",
+    "rawDesc": "擁有<color=yellow>護盾</color>時，<color=yellow>魔法攻擊</color>增加{0}，<color=yellow>記憶加速</color>增加{1}。",
+    "rawDescVars": [
+      {
+        "rendered": " 5<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedAp",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            5.0,
+            6.0,
+            7.0,
+            8.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 6<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedHaste",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            6.0,
+            8.0,
+            10.0,
+            12.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_StatsUpWhileShielded.png"
+  },
+  "Se_Star_Cetus_F_BA_CdReductionOnKill": {
+    "name": "爽快打擊",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "被<color=yellow>退下！</color>命中的敵人在3秒內死亡時，冷卻時間減少0.7秒。",
+    "rawDesc": "被<color=yellow>退下！</color>命中的敵人在{0}秒內死亡時，冷卻時間減少{1}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "trackingGracePeriod",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0.7",
+        "format": "#,##0.#",
+        "raw": "cdReductionAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.7,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BA_CdReductionOnKill.png"
+  },
+  "Se_Star_Cetus_F_BA_ChargeMsNoShield": {
+    "name": "隨處昂首闊步",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>退下！</color>不再賦予塞圖斯本人防禦力與護盾，但在蓄力期間移動速度增加30%。",
+    "rawDesc": "<color=yellow>退下！</color>不再賦予塞圖斯本人防禦力與護盾，但在蓄力期間移動速度增加{0}。",
+    "rawDescVars": [
+      {
+        "rendered": "30%",
+        "format": "#,##0'%'",
+        "raw": "moveSpeedBuffStrength",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BA_ChargeMsNoShield.png"
+  },
+  "Se_Star_Cetus_F_BA_LightningEcho": {
+    "name": "觸電體驗",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "稍後會對被<color=yellow>退下！</color>擊中的敵人降下閃電，造成相當於打擊傷害量40%的光明傷害，但冷卻時間增加4秒。",
+    "rawDesc": "稍後會對被<color=yellow>退下！</color>擊中的敵人降下閃電，造成相當於打擊傷害量{0}的光明傷害，但冷卻時間增加{1}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "lightningEchoDmgMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTimePenalty",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BA_LightningEcho.png"
+  },
+  "Se_Star_Cetus_F_BI_FastChargeTakeDamageUp": {
+    "name": "魯莽魔法",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>巨大冰塊</color>的蓄力速度提升40%，但在施放期間，塞圖斯受到的傷害增加40%。",
+    "rawDesc": "<color=yellow>巨大冰塊</color>的蓄力速度提升{0}，但在施放期間，塞圖斯受到的傷害增加{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "chargingSpeedAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "takenDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BI_FastChargeTakeDamageUp.png"
+  },
+  "Se_Star_Cetus_F_BI_MaxChargeTimePerLevel": {
+    "name": "壓倒性體積",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "每次強化<color=yellow>巨大冰塊</color>時，最大蓄力時間增加0.5秒。",
+    "rawDesc": "每次強化<color=yellow>巨大冰塊</color>時，最大蓄力時間增加{0}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "maxChargeTimePerLevel",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BI_MaxChargeTimePerLevel.png"
+  },
+  "Se_Star_Cetus_F_BI_SelfDamageAoeCold": {
+    "name": "溢出之力",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "施放<color=yellow>巨大冰塊</color>時，每秒會受到最大生命值2%的冰寒傷害，但每0.5秒會對周圍敵人造成相當於冰塊傷害量8%的冰寒傷害。",
+    "rawDesc": "施放<color=yellow>巨大冰塊</color>時，每秒會受到最大生命值{0}的冰寒傷害，但每{1}秒會對周圍敵人造成相當於冰塊傷害量{2}的冰寒傷害。",
+    "rawDescVars": [
+      {
+        "rendered": "2%",
+        "format": "P0",
+        "raw": "selfTickDamageMaxHpRatio / tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "tickInterval",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "8%",
+        "format": "P0",
+        "raw": "dealtTickDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.08,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BI_SelfDamageAoeCold.png"
+  },
+  "Se_Star_Cetus_F_EM_ChaseTarget": {
+    "name": "無法抹滅的過去",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>擁抱寒冷吧</color>會追蹤最近的敵人或塞圖斯。",
+    "rawDesc": "<color=yellow>擁抱寒冷吧</color>會追蹤最近的敵人或塞圖斯。",
+    "rawDescVars": [],
+    "image": "Se_Star_Cetus_F_EM_ChaseTarget.png"
+  },
+  "Se_Star_Cetus_F_EM_DamageUpSelfDamage": {
+    "name": "贖罪之痛",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>擁抱寒冷吧</color>的傷害量增加40%，但塞圖斯自身處於冰寒區域內時將無法獲得護盾，而是會受到相當於傷害量5%的冰寒傷害。",
+    "rawDesc": "<color=yellow>擁抱寒冷吧</color>的傷害量增加{0}，但塞圖斯自身處於冰寒區域內時將無法獲得護盾，而是會受到相當於傷害量{1}的冰寒傷害。",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "damageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "takeDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_EM_DamageUpSelfDamage.png"
+  },
+  "Se_Star_Cetus_F_EM_InfiniteDuration": {
+    "name": "永恆之冬",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "戰鬥中<color=yellow>擁抱寒冷吧</color>的傷害與護盾賦予週期增加100%，半徑減少35%，且不會爆炸，但會永久持續，直到下次施放為止。",
+    "rawDesc": "戰鬥中<color=yellow>擁抱寒冷吧</color>的傷害與護盾賦予週期增加{0}，半徑減少{1}，且不會爆炸，但會永久持續，直到下次施放為止。",
+    "rawDescVars": [
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "damageIntervalAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "35%",
+        "format": "P0",
+        "raw": "scaleReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.35,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_EM_InfiniteDuration.png"
+  },
+  "Se_Star_Cetus_F_FR_CdReductionOnTakeDamage": {
+    "name": "愉悅之痛",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "塞圖斯每次受到傷害時，<color=yellow>禮儀教育</color>的冷卻時間減少4%。若為終極技能，此效果僅套用30%。",
+    "rawDesc": "塞圖斯每次受到傷害時，<color=yellow>禮儀教育</color>的冷卻時間減少{0}。若為終極技能，此效果僅套用{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "4%",
+        "format": "P0",
+        "raw": "reduceRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "ultRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_FR_CdReductionOnTakeDamage.png"
+  },
+  "Se_Star_Cetus_F_FR_ChangeToUltHitReset": {
+    "name": "無盡刑罰",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>禮儀教育</color>變更為終極技能，在持續時間內處於無法阻擋狀態，且期間內攻擊敵人時，持續時間增加0.3秒，擊殺敵人時，持續時間增加1.5秒。",
+    "rawDesc": "<color=yellow>禮儀教育</color>變更為終極技能，在持續時間內處於無法阻擋狀態，且期間內攻擊敵人時，持續時間增加{0}秒，擊殺敵人時，持續時間增加{1}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "0.3",
+        "format": "#,##0.#",
+        "raw": "durationIncreasePerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "durationIncreasePerKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_FR_ChangeToUltHitReset.png"
+  },
+  "Se_Star_Cetus_F_FR_RecastCdrNoKnockback": {
+    "name": "滑溜之拳",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>禮儀教育</color>再次施放效果的冷卻時間減少50%，但不再擊退敵人。",
+    "rawDesc": "<color=yellow>禮儀教育</color>再次施放效果的冷卻時間減少{0}，但不再擊退敵人。",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "reduceRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_FR_RecastCdrNoKnockback.png"
+  },
+  "Se_Star_Cetus_I_ColdDiscountFireSurcharge": {
+    "name": "驚人的說服力",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 20,
+    "isRequiredLevelTotalMastery": false,
+    "description": "喬納斯販售的<color=yellow>冰寒記憶</color>與<color=yellow>冰寒精粹</color>價格降低 40%<sprite=5> ，但<color=yellow>火焰記憶</color>與<color=yellow>火焰精粹</color>的價格增加100%。",
+    "rawDesc": "喬納斯販售的<color=yellow>冰寒記憶</color>與<color=yellow>冰寒精粹</color>價格降低{0}，但<color=yellow>火焰記憶</color>與<color=yellow>火焰精粹</color>的價格增加{1}。",
+    "rawDescVars": [
+      {
+        "rendered": " 40%<sprite=5> ",
+        "format": "P0",
+        "raw": "discountRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.4,
+            0.5,
+            0.55,
+            0.6
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "surchargeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_ColdDiscountFireSurcharge.png"
+  },
+  "Se_Star_Cetus_I_ColdSkillOnEnterWorld": {
+    "name": "大海的饋贈",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 10,
+    "isRequiredLevelTotalMastery": false,
+    "description": "每次進入各個世界時，獲得一個隨機的 1<sprite=5> 級<color=yellow>冰寒記憶</color>。",
+    "rawDesc": "每次進入各個世界時，獲得一個隨機的{0}級<color=yellow>冰寒記憶</color>。",
+    "rawDescVars": [
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0",
+        "raw": "dropColdSkillLevel",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": true,
+          "clampMin": 1.0,
+          "clampMax": 100.0,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_ColdSkillOnEnterWorld.png"
+  },
+  "Se_Star_Cetus_I_FirstColdGemQualityBoost": {
+    "name": "熟悉的力量",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      60,
+      40,
+      50,
+      50
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": false,
+    "description": "首次裝備的<color=yellow>冰寒精粹</color>品質提升  80%<sprite=5> 。",
+    "rawDesc": "首次裝備的<color=yellow>冰寒精粹</color>品質提升 {0}。",
+    "rawDescVars": [
+      {
+        "rendered": " 80%<sprite=5> ",
+        "format": "P0",
+        "raw": "bonusQuality",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.8,
+            1.0,
+            1.2,
+            1.4
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_FirstColdGemQualityBoost.png"
+  },
+  "Se_Star_Cetus_I_GetDreamDustOnBossKill": {
+    "name": "破壞性分析",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "每次擊敗任何<color=yellow>首領</color>時，獲得 40<sprite=5> <color=yellow>夢塵</color>。",
+    "rawDesc": "每次擊敗任何<color=yellow>首領</color>時，獲得{0}<color=yellow>夢塵</color>。",
+    "rawDescVars": [
+      {
+        "rendered": " 40<sprite=5> ",
+        "format": "#,##0",
+        "raw": "dropDreamDustAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            40.0,
+            50.0,
+            60.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_GetDreamDustOnBossKill.png"
+  },
+  "Se_Star_Cetus_I_StartWithResources": {
+    "name": "萬全準備",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "開始冒險時，獲得 40<sprite=5> <color=yellow>金幣</color>與 40<sprite=5> <color=yellow>夢塵</color>。",
+    "rawDesc": "開始冒險時，獲得{0}<color=yellow>金幣</color>與{1}<color=yellow>夢塵</color>。",
+    "rawDescVars": [
+      {
+        "rendered": " 40<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedGold",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            40.0,
+            50.0,
+            60.0,
+            70.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 40<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedDreamDust",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            40.0,
+            50.0,
+            60.0,
+            70.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_StartWithResources.png"
+  },
+  "Se_Star_Cetus_L_ArmorBuffOnShield": {
+    "name": "站直了！",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      40,
+      40,
+      50,
+      50
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "造成的所有傷害減少15%。賦予<color=yellow>護盾</color>時，目標將在3秒內獲得 11<sprite=5> 點<color=yellow>防禦力</color>。",
+    "rawDesc": "造成的所有傷害減少{0}。賦予<color=yellow>護盾</color>時，目標將在{1}秒內獲得{2}點<color=yellow>防禦力</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "15%",
+        "format": "P0",
+        "raw": "damagePenaltyReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 11<sprite=5> ",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            11.0,
+            14.0,
+            17.0,
+            20.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_ArmorBuffOnShield.png"
+  },
+  "Se_Star_Cetus_L_DodgeCdReductionOnHit": {
+    "name": "適應性鱗片",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      60,
+      40,
+      50
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": false,
+    "description": "受到<color=yellow>傷害</color>時，<color=yellow>閃避技能</color>的冷卻時間縮短  10%<sprite=5> 。",
+    "rawDesc": "受到<color=yellow>傷害</color>時，<color=yellow>閃避技能</color>的冷卻時間縮短 {0}。",
+    "rawDescVars": [
+      {
+        "rendered": " 10%<sprite=5> ",
+        "format": "P0",
+        "raw": "reductionAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.1,
+            0.15,
+            0.2
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_DodgeCdReductionOnHit.png"
+  },
+  "Se_Star_Cetus_L_FrostResistAndBuff": {
+    "name": "無懼嚴寒",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 20,
+    "isRequiredLevelTotalMastery": false,
+    "description": "受到的冰寒傷害降低 15%<sprite=5> 。受到冰寒影響時，<color=yellow>攻擊速度</color>與<color=yellow>移動速度</color>不再降低，而是提升 9%<sprite=5> 。",
+    "rawDesc": "受到的冰寒傷害降低{0}。受到冰寒影響時，<color=yellow>攻擊速度</color>與<color=yellow>移動速度</color>不再降低，而是提升{1}。",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "reductionFromCold",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 9%<sprite=5> ",
+        "format": "P0",
+        "raw": "buffAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.09,
+            0.12,
+            0.15
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_FrostResistAndBuff.png"
+  },
+  "Se_Star_Cetus_L_HealOnApDamage": {
+    "name": "魔力血脈",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      40,
+      40,
+      40,
+      50
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "回復相當於對敵人造成的魔法攻擊傷害 0.8%<sprite=5> 的生命值。",
+    "rawDesc": "回復相當於對敵人造成的魔法攻擊傷害{0}的生命值。",
+    "rawDescVars": [
+      {
+        "rendered": " 0.8%<sprite=5> ",
+        "format": "P1",
+        "raw": "healAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.008,
+            0.01,
+            0.012,
+            0.014
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_HealOnApDamage.png"
+  },
+  "Se_Star_Cetus_L_IncreaseDealtShield": {
+    "name": "守護冰寒",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "提供的所有<color=yellow>護盾</color>量增加 8%<sprite=5> 。",
+    "rawDesc": "提供的所有<color=yellow>護盾</color>量增加{0}。",
+    "rawDescVars": [
+      {
+        "rendered": " 8%<sprite=5> ",
+        "format": "P0",
+        "raw": "shieldBonusAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.08,
+            0.12,
+            0.16,
+            0.2
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_IncreaseDealtShield.png"
+  },
+  "Se_Star_Cetus_L_MaxHpDamagePenalty": {
+    "name": "巨海鰻魚族",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "造成的所有傷害減少10%。<color=yellow>最大生命值</color>增加 90<sprite=5> 。",
+    "rawDesc": "造成的所有傷害減少{0}。<color=yellow>最大生命值</color>增加{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "damagePenaltyReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 90<sprite=5> ",
+        "format": "#,##0",
+        "raw": "healthAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            90.0,
+            110.0,
+            130.0,
+            150.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_MaxHpDamagePenalty.png"
+  },
+  "Se_Star_Cetus_L_ScalingHealth": {
+    "name": "不懈訓練",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 10,
+    "isRequiredLevelTotalMastery": false,
+    "description": "每次升級時，<color=yellow>最大生命值</color>增加 12<sprite=5> 。",
+    "rawDesc": "每次升級時，<color=yellow>最大生命值</color>增加{0}。",
+    "rawDescVars": [
+      {
+        "rendered": " 12<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedHealthPerLevel",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            12.0,
+            16.0,
+            20.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_ScalingHealth.png"
+  },
   "Se_Star_Husk_D_AttackDamage": {
     "name": "我存在的意義",
     "lore": null,
@@ -5191,8 +6501,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "在<color=yellow>滅殺態勢</color>期間，每當<color=yellow>基本攻擊</color>或劍氣命中敵人時，持續時間延長0.2秒。",
-    "rawDesc": "在<color=yellow>滅殺態勢</color>期間，每當<color=yellow>基本攻擊</color>或劍氣命中敵人時，持續時間延長{0}秒。",
+    "description": "在<color=yellow>滅殺態勢</color>期間，每當<color=yellow>基本攻擊</color>或劍氣命中敵人時，持續時間延長0.2秒，且持有的所有<color=yellow>終極技能</color>充能0.5%。",
+    "rawDesc": "在<color=yellow>滅殺態勢</color>期間，每當<color=yellow>基本攻擊</color>或劍氣命中敵人時，持續時間延長{0}秒，且持有的所有<color=yellow>終極技能</color>充能{1}。",
     "rawDescVars": [
       {
         "rendered": "0.2",
@@ -5206,57 +6516,14 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
-      }
-    ],
-    "image": "Se_Star_Husk_F_AS_AddedDurationOnHit.png"
-  },
-  "Se_Star_Husk_F_AS_NonUltimate": {
-    "name": "受控狂氣",
-    "lore": "成為靈魂空洞的空殼之後，他反而能更加完美地控制自己。",
-    "category": "Flexible",
-    "heroType": "Hero_Husk",
-    "maxLevel": 1,
-    "price": [
-      120
-    ],
-    "requiredLevel": 25,
-    "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>滅殺態勢</color>變為冷卻時間14秒的一般技能，且期間可使用其他<color=yellow>記憶</color>。變更後的滅殺態勢，其劍氣傷害與攻擊力加成減少50%，持續4秒，且不會增加迴避技能的<color=yellow>記憶加速</color>與最大充能數。",
-    "rawDesc": "<color=yellow>滅殺態勢</color>變為冷卻時間{0}秒的一般技能，且期間可使用其他<color=yellow>記憶</color>。變更後的滅殺態勢，其劍氣傷害與攻擊力加成減少{1}，持續{2}秒，且不會增加迴避技能的<color=yellow>記憶加速</color>與最大充能數。",
-    "rawDescVars": [
-      {
-        "rendered": "14",
-        "format": "#,##0.#",
-        "raw": "cooldownTime",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 14.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
       },
       {
-        "rendered": "50%",
-        "format": "P0",
-        "raw": "strengthReduction",
+        "rendered": "0.5%",
+        "format": "P1",
+        "raw": "ultimateChargeGainRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "4",
-        "format": "#,##0.#",
-        "raw": "newDuration",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 4.0,
+          "basicConstant": 0.005,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5264,7 +6531,7 @@
         }
       }
     ],
-    "image": "Se_Star_Husk_F_AS_NonUltimate.png"
+    "image": "Se_Star_Husk_F_AS_AddedDurationOnHit.png"
   },
   "Se_Star_Husk_F_AS_NoShockwaveFasterAttack": {
     "name": "狂亂劍舞",
@@ -5277,8 +6544,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>滅殺態勢</color>的劍氣傷害減少60%，劍氣距離減少80%，但賦予的攻擊速度與迴避技能記憶加速提升100%。",
-    "rawDesc": "<color=yellow>滅殺態勢</color>的劍氣傷害減少{0}，劍氣距離減少{1}，但賦予的攻擊速度與迴避技能記憶加速提升{2}。",
+    "description": "<color=yellow>滅殺態勢</color>的劍氣傷害減少60%，劍氣距離減少80%。在<color=yellow>滅殺態勢</color>期間，<color=yellow>迴避技能</color>的<color=yellow>記憶加速</color>增加30，<color=yellow>最大充能數</color>增加2。此記憶加速提升量會在每次擊殺任意首領時永久增加12。",
+    "rawDesc": "<color=yellow>滅殺態勢</color>的劍氣傷害減少{0}，劍氣距離減少{1}。在<color=yellow>滅殺態勢</color>期間，<color=yellow>迴避技能</color>的<color=yellow>記憶加速</color>增加{2}，<color=yellow>最大充能數</color>增加{3}。此記憶加速提升量會在每次擊殺任意首領時永久增加{4}。",
     "rawDescVars": [
       {
         "rendered": "60%",
@@ -5307,9 +6574,317 @@
         }
       },
       {
-        "rendered": "100%",
+        "rendered": "30",
+        "format": "#,##0",
+        "raw": "dodgeMemoryHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dodgeAddedCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "12",
+        "format": "#,##0",
+        "raw": "dodgeMemoryHastePerBossKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 12.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_AS_NoShockwaveFasterAttack.png"
+  },
+  "Se_Star_Husk_F_AS_NonUltimate": {
+    "name": "受控狂氣",
+    "lore": "成為靈魂空洞的空殼之後，他反而能更加完美地控制自己。",
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>滅殺態勢</color>變為冷卻時間12秒的一般技能。變更後的滅殺態勢，其劍氣傷害與攻擊力加成減少50%，持續3.5秒。",
+    "rawDesc": "<color=yellow>滅殺態勢</color>變為冷卻時間{0}秒的一般技能。變更後的滅殺態勢，其劍氣傷害與攻擊力加成減少{1}，持續{2}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "12",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 12.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
         "format": "P0",
-        "raw": "buffAmp",
+        "raw": "strengthReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3.5",
+        "format": "#,##0.#",
+        "raw": "newDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_AS_NonUltimate.png"
+  },
+  "Se_Star_Husk_F_DC_EndMovespeedToBonusAttackspeed": {
+    "name": "無情刀法",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>欺詐</color>結束後，攻擊速度將會提升，提升量等同於欺詐所增加的移動速度，持續3秒。",
+    "rawDesc": "<color=yellow>欺詐</color>結束後，攻擊速度將會提升，提升量等同於欺詐所增加的移動速度，持續{0}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "hasteDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DC_EndMovespeedToBonusAttackspeed.png"
+  },
+  "Se_Star_Husk_F_DC_EnhanceMaxStealthTime": {
+    "name": "黃昏",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "每次強化<color=yellow>欺詐</color>時，最大隱身時間增加0.25秒。",
+    "rawDesc": "每次強化<color=yellow>欺詐</color>時，最大隱身時間增加{0}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "0.25",
+        "format": "0.##",
+        "raw": "addedStealthTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DC_EnhanceMaxStealthTime.png"
+  },
+  "Se_Star_Husk_F_DC_RecentDamageHoTWhileStealth": {
+    "name": "靜謐之暗",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "發動<color=yellow>欺詐</color>時，將在3秒內持續回復施放前4秒內受到的所有傷害。但若在完全回復前<color=yellow>欺詐</color>狀態結束，回復效果也會隨之終止。",
+    "rawDesc": "發動<color=yellow>欺詐</color>時，將在{0}秒內持續回復施放前{1}秒內受到的所有傷害。但若在完全回復前<color=yellow>欺詐</color>狀態結束，回復效果也會隨之終止。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "healOverTime",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "recentDamageTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DC_RecentDamageHoTWhileStealth.png"
+  },
+  "Se_Star_Husk_F_DE_HighAmpMissReset": {
+    "name": "動力集中",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>死亡印記</color>的命中時傷害增加量不再於每次移動至下個世界時重置，但命中時的增加量降為4%，且若未命中，將失去所有增加量。",
+    "rawDesc": "<color=yellow>死亡印記</color>的命中時傷害增加量不再於每次移動至下個世界時重置，但命中時的增加量降為{0}，且若未命中，將失去所有增加量。",
+    "rawDescVars": [
+      {
+        "rendered": "4%",
+        "format": "P0",
+        "raw": "newAmpGainPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DE_HighAmpMissReset.png"
+  },
+  "Se_Star_Husk_F_DE_HitHealMissPenalty": {
+    "name": "煉丹術",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "當<color=yellow>死亡印記</color>首次擊中敵人時，回復相當於傷害量 10% 的生命值；但若未命中，則會受到相當於最大生命值 30% 的傷害。",
+    "rawDesc": "當<color=yellow>死亡印記</color>首次擊中敵人時，回復相當於傷害量 {0} 的生命值；但若未命中，則會受到相當於最大生命值 {1} 的傷害。",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "healAmpByDmg",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "penaltyAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DE_HitHealMissPenalty.png"
+  },
+  "Se_Star_Husk_F_DE_MarkHitDodgeCDR": {
+    "name": "確定的死亡",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>死亡印記</color>的持續時間增加2秒，且我對被賦予印記的目標造成的所有暗影傷害增加25%，每次攻擊該目標時，閃避技能的冷卻時間減少1秒。",
+    "rawDesc": "<color=yellow>死亡印記</color>的持續時間增加{0}秒，且我對被賦予印記的目標造成的所有暗影傷害增加{1}，每次攻擊該目標時，閃避技能的冷卻時間減少{2}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "increasedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "darkDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "dodgeReductionAmount",
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.0,
@@ -5320,7 +6895,50 @@
         }
       }
     ],
-    "image": "Se_Star_Husk_F_AS_NoShockwaveFasterAttack.png"
+    "image": "Se_Star_Husk_F_DE_MarkHitDodgeCDR.png"
+  },
+  "Se_Star_Husk_F_LA_BlueFormOnly": {
+    "name": "青色波動",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      180
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "無法再使用<color=yellow>撕裂傷</color>的赤形，且青形的無敵時間增加50%。<color=yellow>撕裂傷</color>的青形變更為可長按施放鍵進行蓄力的記憶，若中途鬆開施放鍵，無敵效果會提早結束並立即揮舞刀刃。蓄力時間越長，範圍越大，最多增加至20%。",
+    "rawDesc": "無法再使用<color=yellow>撕裂傷</color>的赤形，且青形的無敵時間增加{0}。<color=yellow>撕裂傷</color>的青形變更為可長按施放鍵進行蓄力的記憶，若中途鬆開施放鍵，無敵效果會提早結束並立即揮舞刀刃。蓄力時間越長，範圍越大，最多增加至{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "addedInvulnerableTimeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "addedRangeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_LA_BlueFormOnly.png"
   },
   "Se_Star_Husk_F_LA_DodgeResetOnRed": {
     "name": "氣之流轉",
@@ -5887,9 +7505,22 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>手持火炮</color>必定擊退敵人，並使敵人的<color=yellow>移動速度</color>減少75%，持續4秒。",
-    "rawDesc": "<color=yellow>手持火炮</color>必定擊退敵人，並使敵人的<color=yellow>移動速度</color>減少{0}，持續{1}秒。",
+    "description": "<color=yellow>手持火炮</color>的範圍增加25%，並使被擊中的敵人的移動速度減少75%，持續3秒。",
+    "rawDesc": "<color=yellow>手持火炮</color>的範圍增加{0}，並使被擊中的敵人的移動速度減少{1}，持續{2}秒。",
     "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "scaleAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
       {
         "rendered": "75%",
         "format": "#,##0'%'",
@@ -5904,12 +7535,12 @@
         }
       },
       {
-        "rendered": "4",
+        "rendered": "3",
         "format": "#,##0.#",
         "raw": "slowDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 4.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5930,16 +7561,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>手持火炮</color>對近距離敵人造成的傷害提高150%。",
-    "rawDesc": "<color=yellow>手持火炮</color>對近距離敵人造成的傷害提高{0}。",
+    "description": "<color=yellow>手持火炮</color>推開拉塞爾塔與敵人的距離增加40%，且敵人必定被擊退。",
+    "rawDesc": "<color=yellow>手持火炮</color>推開拉塞爾塔與敵人的距離增加{0}，且敵人必定被擊退。",
     "rawDescVars": [
       {
-        "rendered": "150%",
+        "rendered": "40%",
         "format": "P0",
-        "raw": "nearDamageAmp",
+        "raw": "knockbackAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5948,6 +7579,79 @@
       }
     ],
     "image": "Se_Star_Lacerta_F_HC_NearDamage.png"
+  },
+  "Se_Star_Lacerta_F_HC_NoDelayDoubleCast": {
+    "name": "龍之吐息",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Lacerta",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>手持火炮</color>的傷害減少40%，且不再擊退拉塞爾塔，但移除準備時間，施放後立即發射，最大充能次數增加1次，並一次充滿所有充能。",
+    "rawDesc": "<color=yellow>手持火炮</color>的傷害減少{0}，且不再擊退拉塞爾塔，但移除準備時間，施放後立即發射，最大充能次數增加{1}次，並一次充滿所有充能。",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Lacerta_F_HC_NoDelayDoubleCast.png"
+  },
+  "Se_Star_Lacerta_F_HC_ResetOnDodge": {
+    "name": "戰術閃避",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Lacerta",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>手持火炮</color>的冷卻時間增加2.5秒，但使用閃避技能時，手持火炮的冷卻時間將會重置。",
+    "rawDesc": "<color=yellow>手持火炮</color>的冷卻時間增加{0}秒，但使用閃避技能時，手持火炮的冷卻時間將會重置。",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "addedCooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Lacerta_F_HC_ResetOnDodge.png"
   },
   "Se_Star_Lacerta_F_IR_AoEDamage": {
     "name": "爆炸彈藥",
@@ -6007,6 +7711,51 @@
       }
     ],
     "image": "Se_Star_Lacerta_F_IR_MoreShots.png"
+  },
+  "Se_Star_Lacerta_F_IR_RechargeAmmoAmpBurnDamage": {
+    "name": "灼熱彈",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Lacerta",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>燃燒彈裝填</color>的傷害量減少50%，但會對目標額外附加1層火焰層數，且每次擊中與前一個目標不同的敵人時，彈藥數會充能1次。",
+    "rawDesc": "<color=yellow>燃燒彈裝填</color>的傷害量減少{0}，但會對目標額外附加{1}層火焰層數，且每次擊中與前一個目標不同的敵人時，彈藥數會充能1次。",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "star",
+        "data": {
+          "levels": 1,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.5
+          ],
+          "strengthScaling": "None"
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedFireStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Lacerta_F_IR_RechargeAmmoAmpBurnDamage.png"
   },
   "Se_Star_Lacerta_F_PS_ChargeSpeed": {
     "name": "老練瞄準",
@@ -6418,6 +8167,75 @@
       }
     ],
     "image": "Se_Star_Lacerta_L_SpeedAfterDodge.png"
+  },
+  "Se_Star_Mist_F_LG_ChainAttack": {
+    "name": "霧雨",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Mist",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>猛衝</color>的冷卻時間增加1.5秒。使用閃避技能後3秒內施放的下一個<color=yellow>猛衝</color>會被強化，額外刺擊敵人3次。每次刺擊造成35%傷害並觸發攻擊效果。",
+    "rawDesc": "<color=yellow>猛衝</color>的冷卻時間增加{0}秒。使用閃避技能後{1}秒內施放的下一個<color=yellow>猛衝</color>會被強化，額外刺擊敵人{2}次。每次刺擊造成{3}傷害並觸發攻擊效果。",
+    "rawDescVars": [
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "addedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "windowDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "stabCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "35%",
+        "format": "P0",
+        "raw": "dmgRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.35,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Mist_F_LG_ChainAttack.png"
   },
   "Se_Star_Mist_I_CamillasGift": {
     "name": "卡米拉的禮物",
@@ -7156,6 +8974,49 @@
       }
     ],
     "image": "Se_Star_Mist_F_UD_HealLostHealth.png"
+  },
+  "Se_Star_Mist_F_UD_NonUltimate": {
+    "name": "專注時刻",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Mist",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>堅不可摧的意志</color>不再引發爆炸，持續時間及傷害量減少66%，但會變更為冷卻時間為14秒的普通記憶。",
+    "rawDesc": "<color=yellow>堅不可摧的意志</color>不再引發爆炸，持續時間及傷害量減少{0}，但會變更為冷卻時間為{1}秒的普通記憶。",
+    "rawDescVars": [
+      {
+        "rendered": "66%",
+        "format": "P0",
+        "raw": "effectReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.66,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "14",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 14.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Mist_F_UD_NonUltimate.png"
   },
   "Se_Star_Mist_I_BonusOnCatPet": {
     "name": "貓咪愛好者",
@@ -8050,6 +9911,62 @@
     ],
     "image": "Se_Star_Nachia_F_SC_MoreSummons.png"
   },
+  "Se_Star_Nachia_F_SC_SummonDmgReduction": {
+    "name": "獸群領袖",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Nachia",
+    "maxLevel": 1,
+    "price": [
+      180
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "當<color=yellow>森林呼喚</color>的葉子狗達到4隻以上時，娜琪亞的魔法攻擊提升15%，並賦予葉子狗40的防禦力。",
+    "rawDesc": "當<color=yellow>森林呼喚</color>的葉子狗達到{0}隻以上時，娜琪亞的魔法攻擊提升{1}，並賦予葉子狗{2}的防禦力。",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "requiredCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "15%",
+        "format": "#,##0'%'",
+        "raw": "abilityPowerPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 40.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Nachia_F_SC_SummonDmgReduction.png"
+  },
   "Se_Star_Nachia_I_ForestKillDreamDust": {
     "name": "收割生命",
     "lore": null,
@@ -8237,8 +10154,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "對友軍賦予增益效果時，目標將進入<color=yellow>無法阻擋</color>狀態，持續 1.5<sprite=5> 秒。此效果對每個目標有5秒冷卻時間。",
-    "rawDesc": "對友軍賦予增益效果時，目標將進入<color=yellow>無法阻擋</color>狀態，持續{0}秒。此效果對每個目標有{1}秒冷卻時間。",
+    "description": "對友軍賦予增益效果時，目標將進入<color=yellow>無法阻擋</color>狀態，持續 1.5<sprite=5> 秒。此效果對每個目標有5秒冷卻時間，若目標為召喚物，持續時間增加70%。",
+    "rawDesc": "對友軍賦予增益效果時，目標將進入<color=yellow>無法阻擋</color>狀態，持續{0}秒。此效果對每個目標有{1}秒冷卻時間，若目標為召喚物，持續時間增加{2}。",
     "rawDescVars": [
       {
         "rendered": " 1.5<sprite=5> ",
@@ -8264,6 +10181,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "70%",
+        "format": "P0",
+        "raw": "ampToSummons",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.7,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8748,36 +10678,6 @@
     ],
     "image": "Se_Star_Vesper_D_ConvertAPToAD.png"
   },
-  "Se_Star_Vesper_F_BS_AddedDurationPerAtk": {
-    "name": "無盡的錘擊",
-    "lore": null,
-    "category": "Flexible",
-    "heroType": "Hero_Vesper",
-    "maxLevel": 1,
-    "price": [
-      80
-    ],
-    "requiredLevel": 5,
-    "isRequiredLevelTotalMastery": false,
-    "description": "在<color=yellow>太陽洗禮</color>效果期間，每次普通攻擊會使<color=yellow>持續時間</color>增加0.2秒。",
-    "rawDesc": "在<color=yellow>太陽洗禮</color>效果期間，每次普通攻擊會使<color=yellow>持續時間</color>增加{0}秒。",
-    "rawDescVars": [
-      {
-        "rendered": "0.2",
-        "format": "#,##0.#",
-        "raw": "addedDuration",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.2,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      }
-    ],
-    "image": "Se_Star_Vesper_F_BS_AddedDurationPerAtk.png"
-  },
   "Se_Star_Vesper_F_BS_ADWithArmor": {
     "name": "沒有痛苦就沒有收穫",
     "lore": null,
@@ -8820,6 +10720,79 @@
       }
     ],
     "image": "Se_Star_Vesper_F_BS_ADWithArmor.png"
+  },
+  "Se_Star_Vesper_F_BS_AddedDurationPerAtk": {
+    "name": "無盡的錘擊",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "在<color=yellow>太陽洗禮</color>效果期間，每次普通攻擊會使<color=yellow>持續時間</color>增加0.2秒。",
+    "rawDesc": "在<color=yellow>太陽洗禮</color>效果期間，每次普通攻擊會使<color=yellow>持續時間</color>增加{0}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "0.2",
+        "format": "#,##0.#",
+        "raw": "addedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_AddedDurationPerAtk.png"
+  },
+  "Se_Star_Vesper_F_BS_ExplosionOnEnd": {
+    "name": "悔改吧！",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      160
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>太陽洗禮</color>的持續時間減少66%，但爆炸傷害量增加50%，且在持續時間結束時會再次引發爆炸。",
+    "rawDesc": "<color=yellow>太陽洗禮</color>的持續時間減少{0}，但爆炸傷害量增加{1}，且在持續時間結束時會再次引發爆炸。",
+    "rawDescVars": [
+      {
+        "rendered": "66%",
+        "format": "P0",
+        "raw": "durationReduceMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.66,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "explosionDamageMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_ExplosionOnEnd.png"
   },
   "Se_Star_Vesper_F_BS_MovSpd": {
     "name": "熱血沸騰",
@@ -9703,44 +11676,6 @@
     ],
     "image": "Se_Star_Yubar_D_APOnDodge.png"
   },
-  "Se_Star_Yubar_D_AbilityPower": {
-    "name": "夜空的絲緞",
-    "lore": null,
-    "category": "Destruction",
-    "heroType": "Hero_Yubar",
-    "maxLevel": 4,
-    "price": [
-      30,
-      30,
-      30,
-      40
-    ],
-    "requiredLevel": 0,
-    "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>魔法攻擊</color>增加 5<sprite=5> 。",
-    "rawDesc": "<color=yellow>魔法攻擊</color>增加{0}。",
-    "rawDescVars": [
-      {
-        "rendered": " 5<sprite=5> ",
-        "format": "#,##0",
-        "raw": "bonusAmount",
-        "scalingType": "star",
-        "data": {
-          "levels": 4,
-          "isClamped": false,
-          "isInteger": true,
-          "values": [
-            5.0,
-            7.0,
-            9.0,
-            11.0
-          ],
-          "strengthScaling": "Multiply"
-        }
-      }
-    ],
-    "image": "Se_Star_Yubar_D_AbilityPower.png"
-  },
   "Se_Star_Yubar_D_ADAPWithPenalty": {
     "name": "玻璃大砲",
     "lore": "他的身體現在只是一個脆弱的容器。不過，輕視他的傢伙，最後都變成了一抔灰燼。",
@@ -9844,6 +11779,44 @@
       }
     ],
     "image": "Se_Star_Yubar_D_APPerLightSkill.png"
+  },
+  "Se_Star_Yubar_D_AbilityPower": {
+    "name": "夜空的絲緞",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Yubar",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>魔法攻擊</color>增加 5<sprite=5> 。",
+    "rawDesc": "<color=yellow>魔法攻擊</color>增加{0}。",
+    "rawDescVars": [
+      {
+        "rendered": " 5<sprite=5> ",
+        "format": "#,##0",
+        "raw": "bonusAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            5.0,
+            7.0,
+            9.0,
+            11.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Yubar_D_AbilityPower.png"
   },
   "Se_Star_Yubar_D_BonusDamageToLight": {
     "name": "星之淚",
@@ -10082,16 +12055,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>乙太的影響</color>的投射物命中光芒疊加達3層以上的敵人時，會引發爆炸並造成50%的傷害。",
+    "description": "<color=yellow>乙太的影響</color>的投射物命中光芒疊加達2層以上的敵人時，會引發爆炸並造成50%的傷害。",
     "rawDesc": "<color=yellow>乙太的影響</color>的投射物命中光芒疊加達{0}層以上的敵人時，會引發爆炸並造成{1}的傷害。",
     "rawDescVars": [
       {
-        "rendered": "3",
+        "rendered": "2",
         "format": "#,##0",
         "raw": "requiredLightStacks",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 3.0,
+          "basicConstant": 2.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -10157,6 +12130,22 @@
     ],
     "image": "Se_Star_Yubar_F_EI_BiggerExplosion.png"
   },
+  "Se_Star_Yubar_F_EI_DashNoProjectile": {
+    "name": "乙太的旋律",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Yubar",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>乙太的影響</color>不再發射投射物，改為尤巴爾朝施放方向衝刺並造成傷害。",
+    "rawDesc": "<color=yellow>乙太的影響</color>不再發射投射物，改為尤巴爾朝施放方向衝刺並造成傷害。",
+    "rawDescVars": [],
+    "image": "Se_Star_Yubar_F_EI_DashNoProjectile.png"
+  },
   "Se_Star_Yubar_F_EI_NoRootMoreDamage": {
     "name": "流向轉變",
     "lore": null,
@@ -10198,22 +12187,9 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>超新星</color>的冷卻時間增加3秒，但施放距離增加30%，爆炸範圍增加20%，最大充能次數增加2。",
-    "rawDesc": "<color=yellow>超新星</color>的冷卻時間增加{0}秒，但施放距離增加{1}，爆炸範圍增加{2}，最大充能次數增加{3}。",
+    "description": "<color=yellow>超新星</color>的施放距離增加30%，爆炸範圍增加20%。每強化超新星3次，超新星的最大充能次數便增加1。",
+    "rawDesc": "<color=yellow>超新星</color>的施放距離增加{0}，爆炸範圍增加{1}。每強化超新星{2}次，超新星的最大充能次數便增加1。",
     "rawDescVars": [
-      {
-        "rendered": "3",
-        "format": "#,##0.#",
-        "raw": "cooldownPenalty",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 3.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
       {
         "rendered": "30%",
         "format": "P0",
@@ -10241,12 +12217,12 @@
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
-        "raw": "gainedMaxCharges",
+        "raw": "upgradesPerMaxCharge",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -10283,16 +12259,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>超新星</color>的爆炸每命中一名敵人，冷卻時間減少0.5秒，且下次施放超新星的傷害量增加10%。",
-    "rawDesc": "<color=yellow>超新星</color>的爆炸每命中一名敵人，冷卻時間減少{0}秒，且下次施放超新星的傷害量增加{1}。",
+    "description": "<color=yellow>超新星</color>的爆炸每命中一名敵人，冷卻時間減少8%，且下次施放超新星的傷害量增加10%。",
+    "rawDesc": "<color=yellow>超新星</color>的爆炸每命中一名敵人，冷卻時間減少{0}，且下次施放超新星的傷害量增加{1}。",
     "rawDescVars": [
       {
-        "rendered": "0.5",
-        "format": "#,##0.#",
-        "raw": "reducedCooldownOnHit",
+        "rendered": "8%",
+        "format": "P0",
+        "raw": "reducedCooldownRatioOnHit",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 0.08,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -10314,6 +12290,36 @@
       }
     ],
     "image": "Se_Star_Yubar_F_SN_DodgeReset.png"
+  },
+  "Se_Star_Yubar_F_SN_PullEnemy": {
+    "name": "附加重力子",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Yubar",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>超新星</color>的移動速度減少效果增加20%，施放後短暫延遲會將附近的敵人牽引過來。",
+    "rawDesc": "<color=yellow>超新星</color>的移動速度減少效果增加{0}，施放後短暫延遲會將附近的敵人牽引過來。",
+    "rawDescVars": [
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "slowAmpMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Yubar_F_SN_PullEnemy.png"
   },
   "Se_Star_Yubar_F_TQ_EssenceCooldown": {
     "name": "星之歌",

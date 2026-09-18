@@ -1196,8 +1196,8 @@
   },
   "Gem_E_Insensitivity": {
     "name": "麻木精粹",
-    "description": "施放该记忆后，在接下来的4秒内，每移动2米会投下1个<color=yellow>炸弹</color>。炸弹会在短暂延迟后爆炸，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>。",
-    "rawDesc": "施放该记忆后，在接下来的{0}秒内，每移动{1}米会投下1个<color=yellow>炸弹</color>。炸弹会在短暂延迟后爆炸，对敌人造成{2}的<color=yellow>火焰伤害</color>。",
+    "description": "<color=yellow>战斗中</color>施放该记忆后，在接下来的4秒内，每移动2米会投下1个<color=yellow>炸弹</color>。炸弹会在短暂延迟后爆炸，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>。",
+    "rawDesc": "<color=yellow>战斗中</color>施放该记忆后，在接下来的{0}秒内，每移动{1}米会投下1个<color=yellow>炸弹</color>。炸弹会在短暂延迟后爆炸，对敌人造成{2}的<color=yellow>火焰伤害</color>。",
     "rawDescVars": [
       {
         "rendered": "4",
@@ -1332,20 +1332,20 @@
   },
   "Gem_E_Inversion": {
     "name": "反转精粹",
-    "description": "该记忆的<color=yellow>冷却时间</color>延长 15%<sprite=5> 的同时，对敌人造成的<color=yellow>伤害</color>也提升 20%<sprite=5> 。该记忆造成的<color=yellow>元素伤害</color>会被<color=yellow>反转</color>。（火焰/寒气、光明/暗影）",
+    "description": "该记忆的<color=yellow>冷却时间</color>延长20%的同时，对敌人造成的<color=yellow>伤害</color>也提升 20%<sprite=5> 。该记忆造成的<color=yellow>元素伤害</color>会被<color=yellow>反转</color>。（火焰/寒气、光明/暗影）",
     "rawDesc": "该记忆的<color=yellow>冷却时间</color>延长{0}的同时，对敌人造成的<color=yellow>伤害</color>也提升{1}。该记忆造成的<color=yellow>元素伤害</color>会被<color=yellow>反转</color>。（火焰/寒气、光明/暗影）",
     "rawDescVars": [
       {
-        "rendered": " 15%<sprite=5> ",
+        "rendered": "20%",
         "format": "P0",
         "raw": "cooldownAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.005
+          "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
@@ -1538,7 +1538,7 @@
     "lore": null,
     "achievementKey": "ACH_OMEGA_POINT",
     "achievementName": "欧米茄点数",
-    "achievementDescription": "在一次冒险中，仅施放一种记忆，进入纯白之梦。"
+    "achievementDescription": "在一次冒险中，仅施放一种记忆，取得胜利。"
   },
   "Gem_E_Opportunity": {
     "name": "机缘精粹",
@@ -1584,11 +1584,11 @@
   },
   "Gem_E_OurStory_Completed": {
     "name": "我们的故事（已完成！）",
-    "description": "<color=yellow>攻击力</color>与<color=yellow>法术强度</color>提升，<color=yellow>扭曲疾行</color>的所有增益效果提升。",
+    "description": "<color=yellow>攻击力</color>与<color=yellow>法术强度</color>提升0%，<color=yellow>扭曲疾行</color>的所有增益效果提升0%。",
     "rawDesc": "<color=yellow>攻击力</color>与<color=yellow>法术强度</color>提升{0}，<color=yellow>扭曲疾行</color>的所有增益效果提升{1}。",
     "rawDescVars": [
       {
-        "rendered": "",
+        "rendered": "0%",
         "format": "#,##0'%'",
         "raw": "Gem_E_OurStory_Completed::statPercentage",
         "scalingType": "basic",
@@ -1601,11 +1601,17 @@
         }
       },
       {
-        "rendered": "",
-        "format": "#,##0",
-        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
-        "scalingType": "unknown",
-        "data": {}
+        "rendered": "0%",
+        "format": "P0",
+        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "rarity": "Epic",
@@ -2074,18 +2080,18 @@
   },
   "Gem_L_CamillasGift": {
     "name": "卡米拉的礼物",
-    "description": "在商店<color=yellow>出售</color>可获得金币。每次前往下一个世界时，<color=yellow>价格</color>会<color=yellow>提升</color>。若受到敌人伤害，体力降至50%以下时，将会损坏。",
+    "description": "在商店<color=yellow>出售</color>可获得0金币。每次前往下一个世界时，<color=yellow>价格</color>会<color=yellow>提升</color>0。若受到敌人伤害，体力降至50%以下时，将会损坏。",
     "rawDesc": "在商店<color=yellow>出售</color>可获得{0}金币。每次前往下一个世界时，<color=yellow>价格</color>会<color=yellow>提升</color>{1}。若受到敌人伤害，体力降至{2}以下时，将会损坏。",
     "rawDescVars": [
       {
-        "rendered": "",
+        "rendered": "0",
         "format": "#,##0",
         "raw": "currentSellGold",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "",
+        "rendered": "0",
         "format": "#,##0",
         "raw": "sellGoldIncreasePerWorld",
         "scalingType": "basic",
@@ -4355,6 +4361,436 @@
       "Heal"
     ],
     "image": "Gem_U_SoulPrison.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Culinary": {
+    "name": "烹饪精粹",
+    "description": "被此记忆造成<color=yellow>伤害</color>的敌人若在3秒内死亡，将有 50%<sprite=5> 的概率掉落<color=yellow>烹饪食材</color>。收集到的<color=yellow>烹饪食材</color>可在<color=yellow>乔纳斯的大锅</color>处使用，以获取金币或属性加成。",
+    "rawDesc": "被此记忆造成<color=yellow>伤害</color>的敌人若在{0}秒内死亡，将有{1}的概率掉落<color=yellow>烹饪食材</color>。收集到的<color=yellow>烹饪食材</color>可在<color=yellow>乔纳斯的大锅</color>处使用，以获取金币或属性加成。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "killGraceTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 50%<sprite=5> ",
+        "format": "P0",
+        "raw": "DropChance",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Culinary.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Liberty": {
+    "name": "解放精粹",
+    "description": "施放此记忆时，在2.5秒内提升<color=yellow>攻击力</color> 8<sprite=5> 、<color=yellow>法术强度</color> 8<sprite=5> 、<color=yellow>最大生命值</color> 60<sprite=5> 。若此记忆为<color=yellow>终极技能</color>，则所赋予的属性数值与持续时间额外提升200%，且在此期间获得<color=yellow>无法阻挡</color>效果。",
+    "rawDesc": "施放此记忆时，在{0}秒内提升<color=yellow>攻击力</color>{1}、<color=yellow>法术强度</color>{2}、<color=yellow>最大生命值</color>{3}。若此记忆为<color=yellow>终极技能</color>，则所赋予的属性数值与持续时间额外提升{4}，且在此期间获得<color=yellow>无法阻挡</color>效果。",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "Se_Gem_L_Liberty_Buff::duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "adBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "apBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 60<sprite=5> ",
+        "format": "#,##0",
+        "raw": "maxHealthBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "200%",
+        "format": "P0",
+        "raw": "Se_Gem_L_Liberty_Buff::multiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Liberty.png",
+    "lore": null,
+    "achievementKey": "ACH_THE_ROAD_NOT_TAKEN",
+    "achievementName": "未选择的路",
+    "achievementDescription": "抵达无星之路。"
+  },
+  "Gem_L_Supersymmetry": {
+    "name": "超对称",
+    "description": "<color=yellow>最大生命值</color>变为1，但你将获得相当于<color=yellow>最大生命值</color> 100%<sprite=5> 的<color=yellow>护盾</color>。该<color=yellow>护盾</color>在4秒内未受到伤害时会<color=yellow>立即充满</color>，但每次<color=yellow>施放</color>任何<color=yellow>记忆</color>时，<color=yellow>护盾</color>都会受到相当于最大生命值 10%<sprite=5> 的<color=yellow>伤害</color>。",
+    "rawDesc": "<color=yellow>最大生命值</color>变为1，但你将获得相当于<color=yellow>最大生命值</color>{0}的<color=yellow>护盾</color>。该<color=yellow>护盾</color>在{1}秒内未受到伤害时会<color=yellow>立即充满</color>，但每次<color=yellow>施放</color>任何<color=yellow>记忆</color>时，<color=yellow>护盾</color>都会受到相当于最大生命值{2}的<color=yellow>伤害</color>。",
+    "rawDescVars": [
+      {
+        "rendered": " 100%<sprite=5> ",
+        "format": "P0",
+        "raw": "shieldHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "rechargeDelay",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 10%<sprite=5> ",
+        "format": "P0",
+        "raw": "castDamageHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Shield"
+    ],
+    "image": "Gem_L_Supersymmetry.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Control": {
+    "name": "操控精粹",
+    "description": "用此记忆对敌人造成<color=yellow>伤害</color>时，目标的<color=yellow>移动速度</color>会在3秒内降低 33%<sprite=5> 。",
+    "rawDesc": "用此记忆对敌人造成<color=yellow>伤害</color>时，目标的<color=yellow>移动速度</color>会在{0}秒内降低{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 33%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "SlowAmount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_R_Control.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Crucible": {
+    "name": "炼制精粹",
+    "description": "<color=yellow>暴击率</color>提升25%。<color=yellow>暴击基础攻击</color>命中时，该记忆下一次施放的伤害量提升 4%<sprite=5> ，治疗量提升 4%<sprite=5> ，最多叠加至 40%<sprite=5> 。",
+    "rawDesc": "<color=yellow>暴击率</color>提升{0}。<color=yellow>暴击基础攻击</color>命中时，该记忆下一次施放的伤害量提升{1}，治疗量提升{2}，最多叠加至{3}。",
+    "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "critChanceBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 4%<sprite=5> ",
+        "format": "P0",
+        "raw": "ampPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.02,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 4%<sprite=5> ",
+        "format": "P0",
+        "raw": "ampPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.02,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 40%<sprite=5> ",
+        "format": "P0",
+        "raw": "maxAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Crucible.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Hedgehog": {
+    "name": "刺猬精粹",
+    "description": "<color=yellow>施放</color>此记忆时，在你周围展开持续3秒的尖刺光环，对周围敌人造成每秒 <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5> 点伤害。受到任何伤害后，该光环的伤害值会在4秒内提升50%。",
+    "rawDesc": "<color=yellow>施放</color>此记忆时，在你周围展开持续{0}秒的尖刺光环，对周围敌人造成每秒{1}点伤害。受到任何伤害后，该光环的伤害值会在{2}秒内提升{3}。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "tickInterval * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Se_Gem_R_Hedgehog_Aura::dmgFactor/Se_Gem_R_Hedgehog_Aura::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "empoweredAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Melee"
+    ],
+    "image": "Gem_R_Hedgehog.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lightweight": {
+    "name": "轻盈精粹",
+    "description": "该记忆的<color=yellow>记忆加速</color>提升 54<sprite=5> ，但<color=yellow>伤害量</color>降低40%。",
+    "rawDesc": "该记忆的<color=yellow>记忆加速</color>提升{0}，但<color=yellow>伤害量</color>降低{1}。",
+    "rawDescVars": [
+      {
+        "rendered": " 54<sprite=5> ",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 27.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Lightweight.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Slippery": {
+    "name": "滑动精粹",
+    "description": "<color=yellow>移动速度</color>提升10%。该记忆造成的<color=yellow>伤害量</color>按<color=yellow>移动速度</color>加成的 100%<sprite=5> 提升。",
+    "rawDesc": "<color=yellow>移动速度</color>提升{0}。该记忆造成的<color=yellow>伤害量</color>按<color=yellow>移动速度</color>加成的{1}提升。",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "moveSpeedBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 100%<sprite=5> ",
+        "format": "P0",
+        "raw": "dmgPerMoveSpeedRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Slippery.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GuidingCompass_Charged": {
+    "name": "指引罗盘（已充能）",
+    "description": "<alpha=#77><i>正指向她所在之处。</i><alpha=#ff>",
+    "rawDesc": "<alpha=#77><i>正指向她所在之处。</i><alpha=#ff>",
+    "rawDescVars": [],
+    "rarity": "Unique",
+    "tags": [],
+    "image": "Gem_U_GuidingCompass_Charged.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GuidingCompass_NotCharged": {
+    "name": "指引罗盘",
+    "description": "<alpha=#77><i>已失去力量而无法运作。或许注入强大的力量就能修复它……</i><alpha=#ff>",
+    "rawDesc": "<alpha=#77><i>已失去力量而无法运作。或许注入强大的力量就能修复它……</i><alpha=#ff>",
+    "rawDescVars": [],
+    "rarity": "Unique",
+    "tags": [],
+    "image": "Gem_U_GuidingCompass_NotCharged.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",

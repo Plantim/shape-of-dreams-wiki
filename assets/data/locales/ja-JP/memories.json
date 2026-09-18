@@ -1378,7 +1378,7 @@
         "data": {}
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "攻撃時に追加ダメージ、シールド",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Mist",
@@ -1395,19 +1395,12 @@
   },
   "St_D_AstridsMasterpiecePriorite": {
     "name": "アストリッドの傑作 - プリオリテ",
-    "cooldownTime": 5.0,
+    "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": " 5<sprite=5> 秒ごとに周囲のランダムな敵に<color=yellow>マーク</color>を付与します。<color=yellow>マーク</color>を持つ敵を<color=yellow>攻撃</color>するたびに1.5秒間25%の移動速度を獲得し、 <sprite=2><color=#fff><gradient=sv_ad>35%</gradient></color><sprite=5> の追加ダメージを与えます。\n<color=yellow>マーク</color>は連続して攻撃するたびにダメージ量が50%増加し、6回目の攻撃で爆発して <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> のダメージを与えます。",
-    "rawDesc": "{0}秒ごとに周囲のランダムな敵に<color=yellow>マーク</color>を付与します。<color=yellow>マーク</color>を持つ敵を<color=yellow>攻撃</color>するたびに{1}秒間{2}の移動速度を獲得し、{3}の追加ダメージを与えます。\n<color=yellow>マーク</color>は連続して攻撃するたびにダメージ量が{4}増加し、{5}回目の攻撃で爆発して{6}のダメージを与えます。",
+    "description": "周囲のランダムな敵1体に<color=yellow>マーク</color>を付与します。<color=yellow>マーク</color>を持つ敵を<color=yellow>攻撃</color>するたびに1.5秒間 10%<sprite=5> の移動速度を獲得し、 <sprite=2><color=#fff><gradient=sv_ad>45%</gradient></color><sprite=5> の追加ダメージを与えます。\n<color=yellow>マーク</color>は連続して攻撃するたびにダメージ量が50%増加し、6回目の攻撃で爆発して <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> のダメージを与えます。",
+    "rawDesc": "周囲のランダムな敵1体に<color=yellow>マーク</color>を付与します。<color=yellow>マーク</color>を持つ敵を<color=yellow>攻撃</color>するたびに{0}秒間{1}の移動速度を獲得し、{2}の追加ダメージを与えます。\n<color=yellow>マーク</color>は連続して攻撃するたびにダメージ量が{3}増加し、{4}回目の攻撃で爆発して{5}のダメージを与えます。",
     "rawDescVars": [
-      {
-        "rendered": " 5<sprite=5> ",
-        "format": "#,##0.#",
-        "raw": "cooldownTime",
-        "scalingType": "unknown",
-        "data": {}
-      },
       {
         "rendered": "1.5",
         "format": "#,##0.#",
@@ -1422,27 +1415,27 @@
         }
       },
       {
-        "rendered": "25%",
+        "rendered": " 10%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 25.0,
+          "basicConstant": 5.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 5.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>35%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>45%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 0.35,
+          "basicAD": 0.45,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.325
         }
@@ -1487,7 +1480,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "攻撃時に追加ダメージ、移動速度増加",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Mist",
@@ -1651,7 +1644,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "召喚獣を回復、能力値ボーナスを共有",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Nachia",
@@ -1724,7 +1717,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "記憶発動時に跳ね返る攻撃",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Yubar",
@@ -1836,7 +1829,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "回避後に二重攻撃",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Lacerta",
@@ -1937,7 +1930,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "攻撃時に光の爆発",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Yubar",
@@ -1974,7 +1967,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "バフ使用時に味方を強化",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Nachia",
@@ -2067,7 +2060,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "攻撃速度増加、回復",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Vesper",
@@ -2178,7 +2171,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "4回目の攻撃時にスタン、回復",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Vesper",
@@ -2241,7 +2234,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "4回目ごとの攻撃で爆発",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Lacerta",
@@ -2291,7 +2284,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "攻撃速度を攻撃力に変換、ダッシュ時クリティカル",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Husk",
@@ -4119,7 +4112,7 @@
     "lore": null,
     "achievementKey": "ACH_FOUR_OF_A_KIND",
     "achievementName": "フォーカード",
-    "achievementDescription": "同じ種類の記憶を4つ所持した状態で純白の夢に進入する。"
+    "achievementDescription": "同じ種類の記憶を4つ所持した状態で勝利する。"
   },
   "St_L_LightExplosion": {
     "name": "ルミナスバースト",
@@ -5376,7 +5369,7 @@
   },
   "St_Q_Lunge": {
     "name": "ランジ",
-    "cooldownTime": 7.0,
+    "cooldownTime": 6.0,
     "maxCharges": 1,
     "addedCharges": 1,
     "description": "前方に回避した後、最も近い敵に向かってサーベルを突き刺します。サーベルが敵に命中すると、<color=yellow>クイックフット</color>の<color=yellow>クールダウン</color>が60%減少し、命中したすべての敵に<color=yellow>攻撃効果</color>を発動して <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> のダメージを与えます。<color=yellow>アストリッドの傑作</color>が発動するたびに<color=yellow>クールダウン</color>が0.5秒減少します。 ",
@@ -5559,7 +5552,7 @@
     "lore": "月光との誓約は本来、悪戯好きな弟の意地悪な混沌を鎮めるための、楽しいおふざけでした。\n月光は今もなお彼女の呼びかけに応じますが、その光に込められた重みは、昔とは異なります。",
     "achievementKey": "ACH_FULL_MOON",
     "achievementName": "満月",
-    "achievementDescription": "ナキアで純白の夢に合計2回進入する。"
+    "achievementDescription": "ナキアで合計2回勝利する。"
   },
   "St_Q_Reduction": {
     "name": "還元",
@@ -5641,8 +5634,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "<color=yellow>回避スキル</color>を1回チャージし、対象位置に、徐々に大きくなり敵を減速させる<color=yellow>星</color>を生成し、最大3秒間<color=yellow>記憶に集中</color>します。この間、<color=yellow>攻撃</color>や<color=yellow>記憶</color>を発動できません。再度発動すると、<color=yellow>星</color>を爆発させ、敵に <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。\n\nこの爆発は<color=yellow>チャージ時間</color>に比例して威力が増加し、1.3秒経過すると<color=yellow>ダメージ量</color>が225%まで増加し、チャージ速度はユバールの<color=yellow>記憶加速</color>に比例して増加します。",
-    "rawDesc": "<color=yellow>回避スキル</color>を1回チャージし、対象位置に、徐々に大きくなり敵を減速させる<color=yellow>星</color>を生成し、最大{0}秒間<color=yellow>記憶に集中</color>します。この間、<color=yellow>攻撃</color>や<color=yellow>記憶</color>を発動できません。再度発動すると、<color=yellow>星</color>を爆発させ、敵に{1}の<color=yellow>光ダメージ</color>を与えます。\n\nこの爆発は<color=yellow>チャージ時間</color>に比例して威力が増加し、{2}秒経過すると<color=yellow>ダメージ量</color>が{3}まで増加し、チャージ速度はユバールの<color=yellow>記憶加速</color>に比例して増加します。",
+    "description": "対象位置に、徐々に大きくなり敵を減速させる<color=yellow>星</color>を生成し、最大3秒間<color=yellow>記憶に集中</color>します。この間、<color=yellow>攻撃</color>や<color=yellow>記憶</color>を発動できません。再度発動すると、<color=yellow>星</color>を爆発させ、敵に <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。\n\nこの爆発は<color=yellow>チャージ時間</color>に比例して威力が増加し、1.3秒経過すると<color=yellow>ダメージ量</color>が225%まで増加し、チャージ速度はユバールの<color=yellow>記憶加速</color>に比例して増加します。発動するたびに<color=yellow>回避スキル</color>がすべてチャージされます。",
+    "rawDesc": "対象位置に、徐々に大きくなり敵を減速させる<color=yellow>星</color>を生成し、最大{0}秒間<color=yellow>記憶に集中</color>します。この間、<color=yellow>攻撃</color>や<color=yellow>記憶</color>を発動できません。再度発動すると、<color=yellow>星</color>を爆発させ、敵に{1}の<color=yellow>光ダメージ</color>を与えます。\n\nこの爆発は<color=yellow>チャージ時間</color>に比例して威力が増加し、{2}秒経過すると<color=yellow>ダメージ量</color>が{3}まで増加し、チャージ速度はユバールの<color=yellow>記憶加速</color>に比例して増加します。発動するたびに<color=yellow>回避スキル</color>がすべてチャージされます。",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -5716,17 +5709,17 @@
     "cooldownTime": 9.0,
     "maxCharges": 2,
     "addedCharges": 1,
-    "description": "ナキアに従う<color=yellow>リーフハウンド</color>を対象位置に<color=yellow>召喚</color>し、敵に <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、0.4秒間<color=yellow>スタン</color>させます。\n\n<color=yellow>リーフハウンド</color>はHP128と防御力 20<sprite=5> を持ち、最大25秒間戦場に留まり、敵を引っ掻いて <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与えます。最大5匹まで維持できます。",
+    "description": "ナキアに従う<color=yellow>リーフハウンド</color>を対象位置に<color=yellow>召喚</color>し、敵に <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、0.4秒間<color=yellow>スタン</color>させます。\n\n<color=yellow>リーフハウンド</color>はHP128と防御力 30<sprite=5> を持ち、最大25秒間戦場に留まり、敵を引っ掻いて <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与えます。最大5匹まで維持できます。",
     "rawDesc": "ナキアに従う<color=yellow>リーフハウンド</color>を対象位置に<color=yellow>召喚</color>し、敵に{0}の<color=yellow>ダメージ</color>を与え、{1}秒間<color=yellow>スタン</color>させます。\n\n<color=yellow>リーフハウンド</color>はHP{2}と防御力{3}を持ち、最大{4}秒間戦場に留まり、敵を引っ掻いて{5}の<color=yellow>ダメージ</color>を与えます。最大{6}匹まで維持できます。",
     "rawDescVars": [
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_Q_SylvanCall::dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.3,
+          "basicAP": 2.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -5753,12 +5746,12 @@
         "data": {}
       },
       {
-        "rendered": " 20<sprite=5> ",
+        "rendered": " 30<sprite=5> ",
         "format": "#,##0",
         "raw": "armor",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 13.0,
+          "basicConstant": 23.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 7.0,
@@ -6052,8 +6045,8 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "10秒間、剣に破壊の<color=yellow>剣気</color>を纏います。この間は<color=yellow>記憶</color>を<color=yellow>発動</color>できませんが、<color=yellow>攻撃範囲</color>がわずかに増加し、<color=yellow>攻撃力</color>が 35%<sprite=5> 、<color=yellow>攻撃速度</color>が 30%<sprite=5> 増加します。この攻撃速度増加効果は<color=yellow>一歩一殺</color>の影響を受けません。<color=yellow>基本攻撃</color>のたびに<color=yellow>剣気</color>を放ち敵に <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与えます。\n\n持続時間中、<color=yellow>回避スキル</color>の<color=yellow>記憶加速</color>が 30<sprite=5> 、<color=yellow>最大チャージ数</color>が2増加します。",
-    "rawDesc": "{0}秒間、剣に破壊の<color=yellow>剣気</color>を纏います。この間は<color=yellow>記憶</color>を<color=yellow>発動</color>できませんが、<color=yellow>攻撃範囲</color>がわずかに増加し、<color=yellow>攻撃力</color>が{1}、<color=yellow>攻撃速度</color>が{2}増加します。この攻撃速度増加効果は<color=yellow>一歩一殺</color>の影響を受けません。<color=yellow>基本攻撃</color>のたびに<color=yellow>剣気</color>を放ち敵に{3}の<color=yellow>闇ダメージ</color>を与えます。\n\n持続時間中、<color=yellow>回避スキル</color>の<color=yellow>記憶加速</color>が{4}、<color=yellow>最大チャージ数</color>が{5}増加します。",
+    "description": "10秒間、剣に破壊の<color=yellow>剣気</color>を纏います。この間は<color=yellow>攻撃範囲</color>がわずかに増加し、<color=yellow>攻撃力</color>が 35%<sprite=5> 、<color=yellow>攻撃速度</color>が 30%<sprite=5> 増加します。この攻撃速度増加効果は<color=yellow>一歩一殺</color>の影響を受けません。<color=yellow>基本攻撃</color>のたびに<color=yellow>剣気</color>を放ち敵に <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与えます。\n\n発動時、<color=yellow>回避スキル</color>がすべてチャージされます。",
+    "rawDesc": "{0}秒間、剣に破壊の<color=yellow>剣気</color>を纏います。この間は<color=yellow>攻撃範囲</color>がわずかに増加し、<color=yellow>攻撃力</color>が{1}、<color=yellow>攻撃速度</color>が{2}増加します。この攻撃速度増加効果は<color=yellow>一歩一殺</color>の影響を受けません。<color=yellow>基本攻撃</color>のたびに<color=yellow>剣気</color>を放ち敵に{3}の<color=yellow>闇ダメージ</color>を与えます。\n\n発動時、<color=yellow>回避スキル</color>がすべてチャージされます。",
     "rawDescVars": [
       {
         "rendered": "10",
@@ -6105,32 +6098,6 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": " 30<sprite=5> ",
-        "format": "#,##0",
-        "raw": "dodgeSkillHaste",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 24.0,
-          "basicAP": 0.0,
-          "basicAD": 0.0,
-          "basicLvl": 6.0,
-          "basicAddedMultiplierPerLevel": 0.0
-        }
-      },
-      {
-        "rendered": "2",
-        "format": "#,##0",
-        "raw": "dodgeSkillAddedCharges",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 2.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
         }
       }
     ],
@@ -7462,7 +7429,7 @@
     "lore": null,
     "achievementKey": "ACH_ME_LOVE_GLOWY_STUFF",
     "achievementName": "わぁ、キラキラ",
-    "achievementDescription": "光属性のアクティブ記憶を4個所持した状態で純白の夢に進入する。"
+    "achievementDescription": "光属性のアクティブ記憶を4個所持した状態で勝利する。"
   },
   "St_R_Parry": {
     "name": "パリィ",
@@ -8655,23 +8622,23 @@
     "cooldownTime": 14.0,
     "maxCharges": 3,
     "addedCharges": 99,
-    "description": "<color=yellow>リトルバーム</color>を対象の位置に固定して<color=yellow>召喚</color>します。\n\n<color=yellow>リトルバーム</color>は119のHPと50の防御力を持ち、最大20秒間戦場に留まり、周囲の敵を攻撃して <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。最大10体まで維持できます。\n\n<color=yellow>チャージ回数</color>が一度にすべてチャージされます。",
+    "description": "<color=yellow>リトルバーム</color>を対象の位置に固定して<color=yellow>召喚</color>します。\n\n<color=yellow>リトルバーム</color>は92のHPと40の防御力を持ち、最大20秒間戦場に留まり、周囲の敵を攻撃して <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。最大10体まで維持できます。\n\n<color=yellow>チャージ回数</color>が一度にすべてチャージされます。",
     "rawDesc": "<color=yellow>リトルバーム</color>を対象の位置に固定して<color=yellow>召喚</color>します。\n\n<color=yellow>リトルバーム</color>は{0}のHPと{1}の防御力を持ち、最大{2}秒間戦場に留まり、周囲の敵を攻撃して{3}の<color=yellow>光ダメージ</color>を与えます。最大{4}体まで維持できます。\n\n<color=yellow>チャージ回数</color>が一度にすべてチャージされます。",
     "rawDescVars": [
       {
-        "rendered": "119",
+        "rendered": "92",
         "format": "#,##0",
         "raw": "summonHealth",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "50",
+        "rendered": "40",
         "format": "#,##0",
         "raw": "armor",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 50.0,
+          "basicConstant": 40.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -8724,6 +8691,7 @@
     "traveler": "",
     "travelerMemoryLocation": "",
     "tags": [
+      "Light",
       "Summon"
     ],
     "image": "St_R_SummonLittleBaam.png",
@@ -8888,16 +8856,16 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "8秒間昇天し、<color=yellow>無敵</color>状態になります。この間、ゆっくりと動く<color=yellow>均衡の光線</color>を操作して、敵に毎秒 <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与えるか、味方のHPを毎秒 <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> <color=yellow>回復</color>させることができます。",
+    "description": "6秒間昇天し、<color=yellow>無敵</color>状態になります。この間、ゆっくりと動く<color=yellow>均衡の光線</color>を操作して、敵に毎秒 <sprite=1><color=#fff><gradient=sv_ap>460%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与えるか、味方のHPを毎秒 <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> <color=yellow>回復</color>させることができます。",
     "rawDesc": "{0}秒間昇天し、<color=yellow>無敵</color>状態になります。この間、ゆっくりと動く<color=yellow>均衡の光線</color>を操作して、敵に毎秒{1}の<color=yellow>ダメージ</color>を与えるか、味方のHPを毎秒{2}<color=yellow>回復</color>させることができます。",
     "rawDescVars": [
       {
-        "rendered": "8",
+        "rendered": "6",
         "format": "#,##0.#",
         "raw": "beamDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 8.0,
+          "basicConstant": 6.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8905,26 +8873,26 @@
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>460%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "enemyDamagePerSecond",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.5,
+          "basicAP": 4.6,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "allyHealPerSecond",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.5,
+          "basicAP": 2.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
@@ -9287,6 +9255,1662 @@
     ],
     "image": "St_U_WorldCracker.png",
     "lore": "ひと時、夢の存在の中で最も強烈だった者の記憶の痕跡。\nすべてのエレメントたちの王であり、神だった者の力の片鱗。\n\n神聖な光輝の権能を振るい、一撃で世界を灰にした彼は、\n世界の主へ挑んだが、敗北してからは行方が分かっていない。\n噂によると、ある次元に幽閉されほとんどの力を失い\n平々凡々たる王へと転落したという。\n\nしかし、囁きたちは言った。\n彼が持っていた隷属の証が消えた、と。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_BurningFist": {
+    "name": "燃え盛る拳",
+    "cooldownTime": 0.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>記憶</color>を<color=yellow>発動</color>した後、燃え盛る拳効果を獲得します。6秒以内に行う次の<color=yellow>基本攻撃</color>が<color=yellow>範囲火炎ダメージ</color>に変更され、ダメージ量が<sprite=2><color=#fff><gradient=sv_ad>25%</gradient></color>増加します。\nもし対象がすでに燃えている場合、もう一度打撃を与えて <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5> の<color=yellow>範囲火炎ダメージ</color>を与え、自身の体力を <sprite=2><color=#fff><gradient=sv_ad>75%</gradient></color><sprite=5> だけ<color=yellow>回復</color>し、50%の<color=yellow>攻撃効果</color>を発動します。",
+    "rawDesc": "<color=yellow>記憶</color>を<color=yellow>発動</color>した後、燃え盛る拳効果を獲得します。{0}秒以内に行う次の<color=yellow>基本攻撃</color>が<color=yellow>範囲火炎ダメージ</color>に変更され、ダメージ量が{1}増加します。\nもし対象がすでに燃えている場合、もう一度打撃を与えて{2}の<color=yellow>範囲火炎ダメージ</color>を与え、自身の体力を{3}だけ<color=yellow>回復</color>し、{4}の<color=yellow>攻撃効果</color>を発動します。",
+    "rawDescVars": [
+      {
+        "rendered": "6",
+        "format": "#,##0.#",
+        "raw": "disposeDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#fff><gradient=sv_ad>25%</gradient></color>",
+        "format": "#,##0",
+        "raw": "adBonusDmg",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.25,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>75%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.75,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "attackEffect",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "火炎ダメージ、回復",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Fire",
+      "Melee",
+      "Heal",
+      "Attack"
+    ],
+    "image": "St_D_BurningFist.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_ChargedAnguillian": {
+    "name": "チャージされたアンギリアン",
+    "cooldownTime": 0.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>魔法力</color>が 8<sprite=5> 増加します。何らかの<color=yellow>ダメージ</color>を受けるか<color=yellow>気ダメージ</color>を与えるたびに、5秒間持続する<color=yellow>チャージ</color>スタックを獲得し、最大12スタックまで維持できます。\n\n<color=yellow>チャージ</color>スタック1つにつき<color=yellow>チャージされたアンギリアン</color>の<color=yellow>魔法力</color>増加量が5%増加し、最大スタックの場合は 1.5<sprite=5> 秒ごとに周囲の3体の敵に電撃を放ち、 <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> の<color=yellow>光ダメージ</color>を与えます。",
+    "rawDesc": "<color=yellow>魔法力</color>が{0}増加します。何らかの<color=yellow>ダメージ</color>を受けるか<color=yellow>気ダメージ</color>を与えるたびに、{1}秒間持続する<color=yellow>チャージ</color>スタックを獲得し、最大{2}スタックまで維持できます。\n\n<color=yellow>チャージ</color>スタック1つにつき<color=yellow>チャージされたアンギリアン</color>の<color=yellow>魔法力</color>増加量が{3}増加し、最大スタックの場合は{4}秒ごとに周囲の{5}体の敵に電撃を放ち、{6}の<color=yellow>光ダメージ</color>を与えます。",
+    "rawDescVars": [
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "gainedAp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 4.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "decayTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "12",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 12.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "apAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 1.5<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "lightningInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "lightningMaxTargets",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "魔法力増加、光ダメージ",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "Identity",
+    "tags": [
+      "Light",
+      "Melee"
+    ],
+    "image": "St_D_ChargedAnguillian.png",
+    "lore": "一部のアンギリアンの血には、本来、雷の残滓が流れると伝えられている。\n冷気に蝕まれたケトゥスはその事実を忘れていたが、\n急流の風が古い記憶の欠片を呼び覚ましたのだ。",
+    "achievementKey": "ACH_FROM_ABYSS_TO_SUMMIT",
+    "achievementName": "深海から頂上まで",
+    "achievementDescription": "ケトゥスで純白の夢に進入してください。"
+  },
+  "St_D_ExplosionArtist": {
+    "name": "華麗なる芸術家",
+    "cooldownTime": 4.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>回避スキル</color>を発動すると火炎爆発を起こし、周囲の敵に <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を与える。\nこの爆発で対象が死亡するか、対象の<color=yellow>火炎</color>スタックが3個以上になった場合、対象の位置で<color=yellow>大爆発</color>を起こし、 <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> の<color=yellow>範囲火炎ダメージ</color>を与える。\n\n<color=yellow>大爆発</color>は連鎖することができ、各敵につき3秒に1回のみ大爆発が発生する。",
+    "rawDesc": "<color=yellow>回避スキル</color>を発動すると火炎爆発を起こし、周囲の敵に{0}の<color=yellow>火炎ダメージ</color>を与える。\nこの爆発で対象が死亡するか、対象の<color=yellow>火炎</color>スタックが{1}個以上になった場合、対象の位置で<color=yellow>大爆発</color>を起こし、{2}の<color=yellow>範囲火炎ダメージ</color>を与える。\n\n<color=yellow>大爆発</color>は連鎖することができ、各敵につき{3}秒に1回のみ大爆発が発生する。",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_D_ExplosionArtist_DodgeExplosion::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "largeExplosionRequiredFireStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_D_ExplosionArtist_LargeExplosion::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 4.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "largeExplosionCooldownPerTarget",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "連鎖火炎爆発",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Fire"
+    ],
+    "image": "St_D_ExplosionArtist.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_IceColdPresence": {
+    "name": "極寒の気迫",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "10秒ごとに<color=yellow>回避スキル</color>が<color=yellow>氷の突進</color>に置き換わります。<color=yellow>氷の突進</color>は前方へ突進し、短い間<color=yellow>無敵</color>を付与して周囲の敵に <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>10%</gradient></color><sprite=5> の<color=yellow>気ダメージ</color>を与えます。<color=yellow>氷の突進</color>が命中した敵1体につき、旅人の<color=yellow>最大体力</color>が永続的に 1<sprite=5> 増加します。 ",
+    "rawDesc": "{0}秒ごとに<color=yellow>回避スキル</color>が<color=yellow>氷の突進</color>に置き換わります。<color=yellow>氷の突進</color>は前方へ突進し、短い間<color=yellow>無敵</color>を付与して周囲の敵に{1}の<color=yellow>気ダメージ</color>を与えます。<color=yellow>氷の突進</color>が命中した敵1体につき、旅人の<color=yellow>最大体力</color>が永続的に{2}増加します。 ",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "baseCooldownTime",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>10%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.5,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "addedHealth",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.9,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.1,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": "回避スキル変更、気ダメージ、最大体力増加",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Cold"
+    ],
+    "image": "St_D_IceColdPresence.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_IcyVeins": {
+    "name": "氷の血脈",
+    "cooldownTime": 0.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "ケトゥスが<color=yellow>気ダメージ</color>を与えるたびに<color=yellow>冷血</color>スタックを獲得し、最大5まで蓄積できます。次の<color=yellow>攻撃</color>時に<color=yellow>冷血</color>スタックをすべて消費して冷気爆発を起こし、敵にスタックごとに <sprite=1><color=#fff><gradient=sv_ap>30%</gradient></color><sprite=5> の<color=yellow>気ダメージ</color>を与え、ケトゥスが3秒かけて減衰する <sprite=1><color=#fff><gradient=sv_ap>9%</gradient></color><sprite=5> の<color=yellow>シールド</color>を獲得します。",
+    "rawDesc": "ケトゥスが<color=yellow>気ダメージ</color>を与えるたびに<color=yellow>冷血</color>スタックを獲得し、最大{0}まで蓄積できます。次の<color=yellow>攻撃</color>時に<color=yellow>冷血</color>スタックをすべて消費して冷気爆発を起こし、敵にスタックごとに{1}の<color=yellow>気ダメージ</color>を与え、ケトゥスが{2}秒かけて減衰する{3}の<color=yellow>シールド</color>を獲得します。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>30%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.3,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>9%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "shieldPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.09,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      }
+    ],
+    "shortDescription": "気ダメージスタック、冷気爆発、シールド",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "Identity",
+    "tags": [
+      "Cold",
+      "Shield"
+    ],
+    "image": "St_D_IcyVeins.PNG",
+    "lore": "冷たい牢獄の実験台の上、忘れられぬ強烈な瞬間。\n拭い去れぬ冷気が血脈に染み込んでいったその瞬間を\n彼は最初の贖罪と見なした。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_ParryMaster": {
+    "name": "決闘の達人",
+    "cooldownTime": 4.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>回避スキル</color>が6秒のクールダウンを持つ<color=yellow>受け流し</color>に変更されます。<color=yellow>受け流し</color>を使うとごく短い間ダメージを防御でき、防御に成功するたびに<color=yellow>受け流し</color>の<color=yellow>チャージ回数</color>を1回分回復し、<color=yellow>攻撃力</color>と<color=yellow>魔法力</color>が8秒間 1<sprite=5> 増加します。この能力値上昇効果は最大5回まで重複します。",
+    "rawDesc": "<color=yellow>回避スキル</color>が6秒のクールダウンを持つ<color=yellow>受け流し</color>に変更されます。<color=yellow>受け流し</color>を使うとごく短い間ダメージを防御でき、防御に成功するたびに<color=yellow>受け流し</color>の<color=yellow>チャージ回数</color>を1回分回復し、<color=yellow>攻撃力</color>と<color=yellow>魔法力</color>が{0}秒間{1}増加します。この能力値上昇効果は最大{2}回まで重複します。",
+    "rawDescVars": [
+      {
+        "rendered": "8",
+        "format": "#,##0.#",
+        "raw": "Se_D_ParryMaster_Buff::duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0",
+        "raw": "bonusAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "回避スキルを受け流しに変更",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Mobility"
+    ],
+    "image": "St_D_ParryMaster.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_QuartetOfDeath": {
+    "name": "死の四重奏",
+    "cooldownTime": 4.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>基本攻撃</color>が命中するたびに、対象にスタックする<color=yellow>マーク</color>を付与する。4回目の<color=yellow>基本攻撃</color>ごとに、5秒間<color=yellow>攻撃速度</color>が10%増加し、すべての<color=yellow>マーク</color>を爆発させてスタックごとに <sprite=2><color=#fff><gradient=sv_ad>70%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与える。攻撃速度増加効果は無限にスタックできる。",
+    "rawDesc": "<color=yellow>基本攻撃</color>が命中するたびに、対象にスタックする<color=yellow>マーク</color>を付与する。4回目の<color=yellow>基本攻撃</color>ごとに、{0}秒間<color=yellow>攻撃速度</color>が{1}増加し、すべての<color=yellow>マーク</color>を爆発させてスタックごとに{2}の<color=yellow>闇ダメージ</color>を与える。攻撃速度増加効果は無限にスタックできる。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "Se_D_QuartetOfDeath_Buff::duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "speedBonusPercentagePerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>70%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "amountPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.7,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "4回目の攻撃ごとに攻撃速度増加",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Dark"
+    ],
+    "image": "St_D_QuartetOfDeath.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_ScarOfTheWind": {
+    "name": "風の傷",
+    "cooldownTime": 0.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>ダッシュ</color>、または<color=yellow>テレポート</color>時、次の<color=yellow>基本攻撃</color>がクリティカルになります。<color=yellow>回避スキル</color>を使用すると、次の<color=yellow>基本攻撃</color>がダッシュして敵を斬りつけ、 <sprite=2><color=#fff><gradient=sv_ad>75%</gradient></color><sprite=5> の<color=yellow>追加闇ダメージ</color>を与え、命中した敵1体につき空殻の体力を <sprite=2><color=#fff><gradient=sv_ad>11%</gradient></color><sprite=5> <color=yellow>回復</color>します。",
+    "rawDesc": "<color=yellow>ダッシュ</color>、または<color=yellow>テレポート</color>時、次の<color=yellow>基本攻撃</color>がクリティカルになります。<color=yellow>回避スキル</color>を使用すると、次の<color=yellow>基本攻撃</color>がダッシュして敵を斬りつけ、{0}の<color=yellow>追加闇ダメージ</color>を与え、命中した敵1体につき空殻の体力を{1}<color=yellow>回復</color>します。",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>75%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "bonusDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.75,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>11%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.11,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      }
+    ],
+    "shortDescription": "ダッシュ時クリティカル、回避後攻撃強化",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "Hero_Husk",
+    "travelerMemoryLocation": "Identity",
+    "tags": [
+      "Dark",
+      "Melee",
+      "Heal",
+      "Attack",
+      "Mobility"
+    ],
+    "image": "St_D_ScarOfTheWind.PNG",
+    "lore": "風が宿る。斬り裂き、突き進む。\n指先に咲く鮮血の感覚。\nされど、何も残らない。",
+    "achievementKey": "ACH_I_AM_SHELL",
+    "achievementName": "我は空殻なり",
+    "achievementDescription": "空殻で純白の夢に進入する。"
+  },
+  "St_D_SharedPain": {
+    "name": "苦痛の共有",
+    "cooldownTime": 4.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "各<color=yellow>記憶</color>の発動が敵に初めて<color=yellow>ダメージ</color>を与える時、そのダメージ量の 50%<sprite=5> に相当する<color=yellow>ダメージ</color>が近くの別の敵に転移し、最大 3<sprite=5> 回まで転移します。転移した<color=yellow>ダメージ</color>は元のダメージと元素の種類を共有します。",
+    "rawDesc": "各<color=yellow>記憶</color>の発動が敵に初めて<color=yellow>ダメージ</color>を与える時、そのダメージ量の{0}に相当する<color=yellow>ダメージ</color>が近くの別の敵に転移し、最大{1}回まで転移します。転移した<color=yellow>ダメージ</color>は元のダメージと元素の種類を共有します。",
+    "rawDescVars": [
+      {
+        "rendered": " 50%<sprite=5> ",
+        "format": "P0",
+        "raw": "shareDmgRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.35,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.15,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " 3<sprite=5> ",
+        "format": "#,##0",
+        "raw": "clampedCount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "記憶の連鎖ダメージ",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [],
+    "image": "St_D_SharedPain.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_L_HerosReturn": {
+    "name": "英雄の帰還",
+    "cooldownTime": 150.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>発動</color>時にこの記憶を<color=yellow>破壊</color>し、死亡したすべての旅人を<color=yellow>復活</color>させて<color=yellow>体力</color>を <sprite=1><color=#fff><gradient=sv_ap>800%</gradient></color><sprite=5> 回復させます。死亡していない旅人には<color=yellow>体力</color>を <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> 回復させ、<color=yellow>攻撃力</color>を 10<sprite=5> 、<color=yellow>魔法力</color>を 10<sprite=5> 永久に付与します。\n\n着用者が<color=yellow>死亡</color>すると自動で<color=yellow>発動</color>されます。",
+    "rawDesc": "<color=yellow>発動</color>時にこの記憶を<color=yellow>破壊</color>し、死亡したすべての旅人を<color=yellow>復活</color>させて<color=yellow>体力</color>を{0}回復させます。死亡していない旅人には<color=yellow>体力</color>を{1}回復させ、<color=yellow>攻撃力</color>を{2}、<color=yellow>魔法力</color>を{3}永久に付与します。\n\n着用者が<color=yellow>死亡</color>すると自動で<color=yellow>発動</color>されます。",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>800%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "deadHealAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 8.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "aliveHealAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 4.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": " 10<sprite=5> ",
+        "format": "#,##0",
+        "raw": "aliveAdGain",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 2.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " 10<sprite=5> ",
+        "format": "#,##0",
+        "raw": "aliveApGain",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 2.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": "復活、永続能力値付与",
+    "rarity": "Legendary",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "St_L_HerosReturn.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_L_SmallMoltenCore": {
+    "name": "小さな溶鉱炉",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "4秒間、<color=yellow>炎龍の赤ちゃん</color>の<color=yellow>基本攻撃</color>が<color=yellow>範囲ダメージ</color>を与え、<color=yellow>ダメージ量</color>が100%増加します。\n\n<color=yellow>持続効果:</color> 旅人に付き従う<color=yellow>炎龍の赤ちゃん</color>を<color=yellow>召喚</color>します。<color=yellow>炎龍の赤ちゃん</color>は229の体力と100の防御力を持ち、旅人が<color=yellow>攻撃</color>するたびに対象に <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を与え、<color=yellow>炎龍の赤ちゃん</color>が最大体力の5%を回復します。",
+    "rawDesc": "{0}秒間、<color=yellow>炎龍の赤ちゃん</color>の<color=yellow>基本攻撃</color>が<color=yellow>範囲ダメージ</color>を与え、<color=yellow>ダメージ量</color>が{1}増加します。\n\n<color=yellow>持続効果:</color> 旅人に付き従う<color=yellow>炎龍の赤ちゃん</color>を<color=yellow>召喚</color>します。<color=yellow>炎龍の赤ちゃん</color>は{2}の体力と{3}の防御力を持ち、旅人が<color=yellow>攻撃</color>するたびに対象に{4}の<color=yellow>火炎ダメージ</color>を与え、<color=yellow>炎龍の赤ちゃん</color>が最大体力の{5}を回復します。",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "empowerAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "229",
+        "format": "#,##0",
+        "raw": "summonHealth",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "100",
+        "format": "#,##0",
+        "raw": "armor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 100.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.4,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "healMaxHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "炎龍を召喚",
+    "rarity": "Legendary",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Fire",
+      "Attack",
+      "Summon"
+    ],
+    "image": "St_L_SmallMoltenCore.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_M_FrostyCharge": {
+    "name": "フロストチャージ",
+    "cooldownTime": 3.3,
+    "maxCharges": 2,
+    "addedCharges": 1,
+    "description": "前方へ突進して敵に<sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>10%</gradient></color>の<color=yellow>気ダメージ</color>を与え、敵の攻撃を回避します。",
+    "rawDesc": "前方へ突進して敵に{0}の<color=yellow>気ダメージ</color>を与え、敵の攻撃を回避します。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>10%</gradient></color>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": null,
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "Movement",
+    "tags": [
+      "Cold",
+      "Mobility"
+    ],
+    "image": "St_M_FrostyCharge.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_M_IceColdPresence": {
+    "name": "氷の突進",
+    "cooldownTime": 999.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>無敵</color>状態になり、短い距離を素早く<color=yellow>突進</color>して<color=yellow>気ダメージ</color>を与えます。",
+    "rawDesc": "<color=yellow>無敵</color>状態になり、短い距離を素早く<color=yellow>突進</color>して<color=yellow>気ダメージ</color>を与えます。",
+    "rawDescVars": [],
+    "shortDescription": "回避スキル",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Cold",
+      "Mobility"
+    ],
+    "image": "St_M_IceColdPresence.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_M_ParryMaster": {
+    "name": "受け流し",
+    "cooldownTime": 6.0,
+    "maxCharges": 2,
+    "addedCharges": 1,
+    "description": "<color=yellow>無敵</color>状態になり、敵の攻撃を無効化します。",
+    "rawDesc": "<color=yellow>無敵</color>状態になり、敵の攻撃を無効化します。",
+    "rawDescVars": [],
+    "shortDescription": null,
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [],
+    "image": "St_M_ParryMaster.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_Q_BigBorealChunk": {
+    "name": "巨大な氷河の欠片",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "発動キーを<color=yellow>長押し</color>すると、徐々に大きくなる<color=yellow>氷河の欠片</color>を生成します。チャージ中は 20<sprite=5> の<color=yellow>防御力</color>を獲得し、最大4秒間チャージでき、チャージが完了すると<color=yellow>氷河の欠片</color>を発射します。<color=yellow>氷河の欠片</color>は爆発し、すべての敵に <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> の<color=yellow>気ダメージ</color>を与えて1秒間<color=yellow>スタン</color>させます。\n\nチャージ時間1秒につき<color=yellow>爆発ダメージ</color>が100%増加し、<color=yellow>爆発範囲</color>も拡大します。",
+    "rawDesc": "発動キーを<color=yellow>長押し</color>すると、徐々に大きくなる<color=yellow>氷河の欠片</color>を生成します。チャージ中は{0}の<color=yellow>防御力</color>を獲得し、最大{1}秒間チャージでき、チャージが完了すると<color=yellow>氷河の欠片</color>を発射します。<color=yellow>氷河の欠片</color>は爆発し、すべての敵に{2}の<color=yellow>気ダメージ</color>を与えて{3}秒間<color=yellow>スタン</color>させます。\n\nチャージ時間1秒につき<color=yellow>爆発ダメージ</color>が{4}増加し、<color=yellow>爆発範囲</color>も拡大します。",
+    "rawDescVars": [
+      {
+        "rendered": " 20<sprite=5> ",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 15.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "maxChannelTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.2,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "damageAmpPerSecond",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "徐々に大きくなる氷河の欠片を生成、気ダメージ、スタン",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "Q",
+    "tags": [
+      "Cold"
+    ],
+    "image": "St_Q_BigBorealChunk.PNG",
+    "lore": "膨らみ続ける冷気を感じながら、ケトゥスは思った。\n背負った重みは、罪は、\n決して軽くなることはないだろう、と。",
+    "achievementKey": "ACH_ICEBERG_THE_GREAT_COMMUNICATOR",
+    "achievementName": "氷河、素晴らしい対話手段だ。",
+    "achievementDescription": "ケトゥスで魔法力200に到達してください。"
+  },
+  "St_Q_DeathMark": {
+    "name": "死の刻印",
+    "cooldownTime": 12.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "貫通する楔を放ち、敵に<color=yellow>攻撃効果</color>を発動して <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与えます。最後に楔が命中した敵に最大3秒間刻印を付与します。この間に<color=yellow>死の刻印</color>を<color=yellow>再発動</color>すると、空殻が対象の位置へ<color=yellow>瞬間移動</color>します。\n\n戦闘中に楔が初めて敵に命中すると<color=yellow>クールダウン</color>が50%減少し、楔のダメージが5%増加します。このダメージ増加量は次の世界へ移動するたびに初期化されます。",
+    "rawDesc": "貫通する楔を放ち、敵に<color=yellow>攻撃効果</color>を発動して{0}の<color=yellow>闇ダメージ</color>を与えます。最後に楔が命中した敵に最大{1}秒間刻印を付与します。この間に<color=yellow>死の刻印</color>を<color=yellow>再発動</color>すると、空殻が対象の位置へ<color=yellow>瞬間移動</color>します。\n\n戦闘中に楔が初めて敵に命中すると<color=yellow>クールダウン</color>が{2}減少し、楔のダメージが{3}増加します。このダメージ増加量は次の世界へ移動するたびに初期化されます。",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 3.4,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "lingerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "firstHitCooldownReduction",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "damageAmpGainOnFirstHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "闇ダメージ、瞬間移動、無限に増加するダメージ",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Husk",
+    "travelerMemoryLocation": "Q",
+    "tags": [
+      "Dark",
+      "Mobility"
+    ],
+    "image": "St_Q_DeathMark.PNG",
+    "lore": "標的は逃さない。今や、はるか昔から、そうであった。",
+    "achievementKey": "ACH_HOME_SWEET_HOME",
+    "achievementName": "見慣れた風景",
+    "achievementDescription": "空殻で一度も体力が50%を下回ることなく、ロータス高原に到達する。"
+  },
+  "St_Q_EmbracingTheChill": {
+    "name": "寒気を受け入れよ",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "対象エリアに3秒間、徐々に拡大する<color=yellow>冷気エリア</color>を生成します。エリア内の味方は0.5秒ごとに3秒間持続する <sprite=1><color=#fff><gradient=sv_ap>25%</gradient></color><sprite=5> の<color=yellow>シールド</color>を獲得し、敵は <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> の<color=yellow>気ダメージ</color>を受けます。\n\n持続時間が終了すると<color=yellow>冷気エリア</color>が爆発し、敵に <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> の<color=yellow>気ダメージ</color>を与えて1.5秒間<color=yellow>スタン</color>させます。",
+    "rawDesc": "対象エリアに{0}秒間、徐々に拡大する<color=yellow>冷気エリア</color>を生成します。エリア内の味方は{1}秒ごとに{2}秒間持続する{3}の<color=yellow>シールド</color>を獲得し、敵は{4}の<color=yellow>気ダメージ</color>を受けます。\n\n持続時間が終了すると<color=yellow>冷気エリア</color>が爆発し、敵に{5}の<color=yellow>気ダメージ</color>を与えて{6}秒間<color=yellow>スタン</color>させます。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "Ai_Q_EmbracingTheChill_AreaDoT::cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>25%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "shieldPerTick",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.25,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_Q_EmbracingTheChill_AreaDoT::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.4,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_Q_EmbracingTheChill_Explosion::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "気ダメージ、シールド、スタン",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "Q",
+    "tags": [
+      "Cold",
+      "HardCC",
+      "Shield"
+    ],
+    "image": "St_Q_EmbracingTheChill.png",
+    "lore": "消えぬ寒気に耐えかねたケトゥスは、震えを止め、あるがままに受け入れることにした。\nすると、もう寒くはなかった。\n彼はそれを「温かき意志」と呼んだ。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_AnnoyingBanner": {
+    "name": "うっとうしい旗",
+    "cooldownTime": 12.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "対象の位置に<color=yellow>旗</color>を召喚します。<color=yellow>旗</color>は92の体力と100の防御力を持ち、最大10秒間戦場に留まり、1.5秒ごとにうっとうしい音を発して <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、周囲の敵が旗を攻撃するように仕向けます。",
+    "rawDesc": "対象の位置に<color=yellow>旗</color>を召喚します。<color=yellow>旗</color>は{0}の体力と{1}の防御力を持ち、最大{2}秒間戦場に留まり、{3}秒ごとにうっとうしい音を発して{4}の<color=yellow>ダメージ</color>を与え、周囲の敵が旗を攻撃するように仕向けます。",
+    "rawDescVars": [
+      {
+        "rendered": "92",
+        "format": "#,##0",
+        "raw": "summonHealth",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "100",
+        "format": "#,##0",
+        "raw": "armor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 100.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "maxDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "tickInterval",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "tickDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "挑発する旗を召喚",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Summon"
+    ],
+    "image": "St_R_AnnoyingBanner.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_BackOff": {
+    "name": "下がれ！",
+    "cooldownTime": 7.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "周囲の味方を薄い氷で覆い、2秒間持続する <sprite=1><color=#fff><gradient=sv_ap>135%</gradient></color><sprite=5> の<color=yellow>シールド</color>と 8<sprite=5> の<color=yellow>防御力</color>を付与します。自身にはこの効果が50%増加します。\n\n発動キーを<color=yellow>長押し</color>すると杖に力を集中させ、キーを離すと振り回して、チャージ時間に比例して敵に <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5> ～ <sprite=2><color=#fff><gradient=sv_ad>450%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>22%</gradient></color><sprite=5> の<color=yellow>気ダメージ</color>を与えてノックバックさせ、1秒間<color=yellow>スタン</color>させます。",
+    "rawDesc": "周囲の味方を薄い氷で覆い、{0}秒間持続する{1}の<color=yellow>シールド</color>と{2}の<color=yellow>防御力</color>を付与します。自身にはこの効果が{3}増加します。\n\n発動キーを<color=yellow>長押し</color>すると杖に力を集中させ、キーを離すと振り回して、チャージ時間に比例して敵に{4}～{5}の<color=yellow>気ダメージ</color>を与えてノックバックさせ、{6}秒間<color=yellow>スタン</color>させます。",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "buffDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>135%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.35,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 3.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "casterAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>450%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>22%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "maxDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 4.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "味方保護、気ダメージ、スタン",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "R",
+    "tags": [
+      "Cold",
+      "Melee",
+      "HardCC",
+      "Attack"
+    ],
+    "image": "St_R_BackOff.png",
+    "lore": "ケトゥスが身を投げ出して仲間を庇う術を学んだのは、教団の訓練場ではなかった。牢獄で、守れなかった者たちの空いた席を通してだった。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_Deception": {
+    "name": "撹乱",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "短い距離を<color=yellow>瞬間移動</color>し、最大3秒間<color=yellow>ステルス</color>状態になり、その間<color=yellow>移動速度</color>が20%増加します。ステルスが解除される時、周囲の敵に <sprite=2><color=#fff><gradient=sv_ad>350%</gradient></color><sprite=5> の<color=yellow>闇ダメージ</color>を与えてノックバックさせます。\n\nステルス中に敵に近づきすぎると一時的に姿を現し、記憶を使用したり、基本攻撃を行ったり、ダメージを受けたりするとステルスが早く終了します。",
+    "rawDesc": "短い距離を<color=yellow>瞬間移動</color>し、最大{0}秒間<color=yellow>ステルス</color>状態になり、その間<color=yellow>移動速度</color>が{1}増加します。ステルスが解除される時、周囲の敵に{2}の<color=yellow>闇ダメージ</color>を与えてノックバックさせます。\n\nステルス中に敵に近づきすぎると一時的に姿を現し、記憶を使用したり、基本攻撃を行ったり、ダメージを受けたりするとステルスが早く終了します。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "stealthDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>350%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 3.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "瞬間移動、ステルス、闇ダメージ",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Husk",
+    "travelerMemoryLocation": "R",
+    "tags": [
+      "Dark",
+      "Mobility"
+    ],
+    "image": "St_R_Deception.png",
+    "lore": "見えない刃こそが最も恐ろしい。",
+    "achievementKey": "ACH_DOLL_OF_MANA",
+    "achievementName": "魔力を宿した人形",
+    "achievementDescription": "空殻で魔法力100に到達する。"
+  },
+  "St_R_FrozenFists": {
+    "name": "礼儀注入",
+    "cooldownTime": 13.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "7秒間、拳を握り袖をまくり上げます。この間、他の記憶を発動できなくなりますが、<color=yellow>攻撃速度</color>が 26%<sprite=5> 、<color=yellow>防御力</color>が 18<sprite=5> 増加し、<color=yellow>基本攻撃</color>が近接攻撃に変化して自身の<color=yellow>攻撃</color>が <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5> の<color=yellow>追加ダメージ</color>を与えます。\n\n持続時間中にこの記憶を<color=yellow>再発動</color>すると、前方へ突進して敵をノックバックさせ、 <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>3%</gradient></color><sprite=5> の<color=yellow>気ダメージ</color>を与え、命中した敵1体につき3秒かけて消失する <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>2%</gradient></color><sprite=5> の<color=yellow>シールド</color>を獲得します。このダメージ量とシールド量は、<color=yellow>任意のボス</color>を対象とする場合、200%増加します。",
+    "rawDesc": "{0}秒間、拳を握り袖をまくり上げます。この間、他の記憶を発動できなくなりますが、<color=yellow>攻撃速度</color>が{1}、<color=yellow>防御力</color>が{2}増加し、<color=yellow>基本攻撃</color>が近接攻撃に変化して自身の<color=yellow>攻撃</color>が{3}の<color=yellow>追加ダメージ</color>を与えます。\n\n持続時間中にこの記憶を<color=yellow>再発動</color>すると、前方へ突進して敵をノックバックさせ、{4}の<color=yellow>気ダメージ</color>を与え、命中した敵1体につき{5}秒かけて消失する{6}の<color=yellow>シールド</color>を獲得します。このダメージ量とシールド量は、<color=yellow>任意のボス</color>を対象とする場合、{7}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "7",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 7.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 26%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 5.714286,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " 18<sprite=5> ",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 3.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedDamageOnAttack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.7,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>3%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>2%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "shieldPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.6,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": "200%",
+        "format": "P0",
+        "raw": "bossAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "近接攻撃の構え、気ダメージ",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "R",
+    "tags": [
+      "Cold",
+      "Melee",
+      "HardCC",
+      "Shield",
+      "Attack",
+      "Mobility"
+    ],
+    "image": "St_R_FrozenFists.png",
+    "lore": "教団は暴力をもって教団の敵を罰する術を教えた。ケトゥスの肉体は、その手つきを今なお覚えていた。\nだが今や、その拳が向かう先は、ただ彼の意志のみに従うだろう。",
+    "achievementKey": "ACH_THE_CHILL_WASHES_AWAY_SINS",
+    "achievementName": "罪を洗い流す寒気",
+    "achievementDescription": "ケトゥスで雪山にいる敵を合計120体倒してください。"
+  },
+  "St_U_BigChomp": {
+    "name": "大噛みつき",
+    "cooldownTime": 8.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "前方の全ての<color=yellow>敵</color>と<color=yellow>味方</color>を噛みつき、 <sprite=2><color=#fff><gradient=sv_ad>370%</gradient></color><sprite=5> の<color=yellow>ダメージ</color>を与え、命中した対象1体につき <sprite=2><color=#fff><gradient=sv_ad>25%</gradient></color><sprite=5> の<color=yellow>体力</color>を<color=yellow>回復</color>し、3秒間持続する <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5> の<color=yellow>シールド</color>を獲得します。命中した対象1体につき<color=yellow>クールダウン</color>が1秒減少します。\n\n<color=yellow>味方</color>に対してはダメージが80%減少し、<color=yellow>ボス</color>に対しては回復量、シールド量、クールダウン減少量が250%増加します。",
+    "rawDesc": "前方の全ての<color=yellow>敵</color>と<color=yellow>味方</color>を噛みつき、{0}の<color=yellow>ダメージ</color>を与え、命中した対象1体につき{1}の<color=yellow>体力</color>を<color=yellow>回復</color>し、{2}秒間持続する{3}の<color=yellow>シールド</color>を獲得します。命中した対象1体につき<color=yellow>クールダウン</color>が{4}秒減少します。\n\n<color=yellow>味方</color>に対してはダメージが{5}減少し、<color=yellow>ボス</color>に対しては回復量、シールド量、クールダウン減少量が{6}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>370%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 3.7,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>25%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healPerHitAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.25,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "shieldPerHitAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.3,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "reduceCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "allyDamageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "250%",
+        "format": "P0",
+        "raw": "anyBossMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "敵または味方を噛みつく",
+    "rarity": "Unique",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Melee",
+      "Heal",
+      "Shield"
+    ],
+    "image": "St_U_BigChomp.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""

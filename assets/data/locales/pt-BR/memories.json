@@ -1378,7 +1378,7 @@
         "data": {}
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "Dano adicional ao atacar, Barreira",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Mist",
@@ -1395,29 +1395,22 @@
   },
   "St_D_AstridsMasterpiecePriorite": {
     "name": "Obra-prima de Astrid - Priorité",
-    "cooldownTime": 5.0,
+    "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "A cada  5<sprite=5> s, aplica <color=yellow>Marca</color> em inimigo aleatório próximo. A cada <color=yellow>ataque</color> contra um inimigo <color=yellow>marcado</color>, você ganha 25% de Velocidade de Movimento durante 1.5s e causa  <sprite=2><color=#fff><gradient=sv_ad>35%</gradient></color><sprite=5>  de dano adicional. \nA <color=yellow>Marca</color> aumenta 50% do Dano por ataque consecutivo e explode no 6.º ataque, causando  <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5>  de dano.",
-    "rawDesc": "A cada {0}s, aplica <color=yellow>Marca</color> em inimigo aleatório próximo. A cada <color=yellow>ataque</color> contra um inimigo <color=yellow>marcado</color>, você ganha {1} de Velocidade de Movimento durante {2}s e causa {3} de dano adicional. \nA <color=yellow>Marca</color> aumenta {4} do Dano por ataque consecutivo e explode no {5}.º ataque, causando {6} de dano.",
+    "description": "Aplica <color=yellow>Marca</color> em um inimigo aleatório próximo. A cada <color=yellow>ataque</color> contra um inimigo <color=yellow>marcado</color>, você ganha  10%<sprite=5>  de Velocidade de Movimento durante 1.5s e causa  <sprite=2><color=#fff><gradient=sv_ad>45%</gradient></color><sprite=5>  de dano adicional. \nA <color=yellow>Marca</color> aumenta 50% do Dano por ataque consecutivo e explode no 6.º ataque, causando  <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5>  de dano.",
+    "rawDesc": "Aplica <color=yellow>Marca</color> em um inimigo aleatório próximo. A cada <color=yellow>ataque</color> contra um inimigo <color=yellow>marcado</color>, você ganha {0} de Velocidade de Movimento durante {1}s e causa {2} de dano adicional. \nA <color=yellow>Marca</color> aumenta {3} do Dano por ataque consecutivo e explode no {4}.º ataque, causando {5} de dano.",
     "rawDescVars": [
       {
-        "rendered": " 5<sprite=5> ",
-        "format": "#,##0.#",
-        "raw": "cooldownTime",
-        "scalingType": "unknown",
-        "data": {}
-      },
-      {
-        "rendered": "25%",
+        "rendered": " 10%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 25.0,
+          "basicConstant": 5.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 5.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
@@ -1435,14 +1428,14 @@
         }
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>35%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>45%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 0.35,
+          "basicAD": 0.45,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.325
         }
@@ -1487,7 +1480,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "Dano adicional ao atacar, aumento de Velocidade de Movimento",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Mist",
@@ -1651,7 +1644,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "Recupera criaturas invocadas, compartilha bônus de atributos",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Nachia",
@@ -1668,8 +1661,8 @@
     "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Ao conjurar uma <color=yellow>memória</color> ou usar <color=yellow>Estrela Variável</color>, você ganha  10<sprite=5>  de <color=yellow>ATQ</color> durante 3s. Durante este período, seus <color=yellow>Ataques Básicos</color> são fortalecidos e acertam 50% a mais do efeito em até 2 alvo(s).",
-    "rawDesc": "Ao conjurar uma <color=yellow>memória</color> ou usar <color=yellow>Estrela Variável</color>, você ganha {0} de <color=yellow>ATQ</color> durante {1}s. Durante este período, seus <color=yellow>Ataques Básicos</color> são fortalecidos e acertam {2} a mais do efeito em até {3} alvo(s).",
+    "description": "Ao conjurar uma <color=yellow>memória</color> ou usar <color=yellow>Estrela Variável</color>, você ganha  10<sprite=5>  de <color=yellow>ATQ</color> durante 3s. Durante este período, seus <color=yellow>Ataques Básicos</color> são fortalecidos e ricocheteiam em até 2 alvos com 50% de eficácia.",
+    "rawDesc": "Ao conjurar uma <color=yellow>memória</color> ou usar <color=yellow>Estrela Variável</color>, você ganha {0} de <color=yellow>ATQ</color> durante {1}s. Durante este período, seus <color=yellow>Ataques Básicos</color> são fortalecidos e ricocheteiam em até {2} alvos com {3} de eficácia.",
     "rawDescVars": [
       {
         "rendered": " 10<sprite=5> ",
@@ -1698,19 +1691,6 @@
         }
       },
       {
-        "rendered": "50%",
-        "format": "P0",
-        "raw": "chainedStrength",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
         "rendered": "2",
         "format": "#,##0",
         "raw": "chainedTargets",
@@ -1722,9 +1702,22 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "chainedStrength",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "Ataque que ricocheteia ao conjurar memória",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Yubar",
@@ -1836,7 +1829,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "Ataque duplo após esquiva",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Lacerta",
@@ -1937,7 +1930,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "Explosão de luz ao atacar",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Yubar",
@@ -1974,7 +1967,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "Fortalece aliados ao usar reforços",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Nachia",
@@ -2067,7 +2060,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "Aumento de Velocidade de Ataque, recuperação",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Vesper",
@@ -2178,7 +2171,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "Atordoamento no 4.º ataque, recuperação",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Vesper",
@@ -2241,7 +2234,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "Explosão a cada 4º ataque",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Lacerta",
@@ -2291,7 +2284,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "Converte Velocidade de Ataque em Dano de Ataque, Crítico ao avançar",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Husk",
@@ -4119,7 +4112,7 @@
     "lore": null,
     "achievementKey": "ACH_FOUR_OF_A_KIND",
     "achievementName": "Quadra",
-    "achievementDescription": "Entre em Sonho Branco Puro com 4 memórias do mesmo tipo."
+    "achievementDescription": "Vença com 4 memórias do mesmo tipo."
   },
   "St_L_LightExplosion": {
     "name": "Explosão Luminosa",
@@ -5376,7 +5369,7 @@
   },
   "St_Q_Lunge": {
     "name": "Investida",
-    "cooldownTime": 7.0,
+    "cooldownTime": 6.0,
     "maxCharges": 1,
     "addedCharges": 1,
     "description": "Esquiva para frente e ataca com o sabre em direção ao inimigo mais próximo. Atingir um inimigo com o sabre reduz o <color=yellow>Tempo de recarga</color> de <color=yellow>Pés Ligeiros</color> em 60%, ativa <color=yellow>Efeito de Ataque</color> em todos os inimigos atingidos e causa  <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5>  de dano. Cada ativação da <color=yellow>Obra-prima de Astrid</color> reduz o <color=yellow>Tempo de recarga</color> em 0.5s.",
@@ -5559,7 +5552,7 @@
     "lore": "O pacto com o luar era, originalmente, uma brincadeira divertida para acalmar o caos travesso de seu irmão mais novo. \nO luar ainda responde ao seu chamado, mas o peso contido nessa luz não é o mesmo de antes.",
     "achievementKey": "ACH_FULL_MOON",
     "achievementName": "Lua Cheia",
-    "achievementDescription": "Entre em Sonho Branco Puro com Nachia 2x."
+    "achievementDescription": "Vença com Nachia 2x."
   },
   "St_Q_Reduction": {
     "name": "Restauração",
@@ -5641,8 +5634,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Recarrega a <color=yellow>Habilidade de Esquiva</color> 1 vez e cria uma <color=yellow>estrela</color> que cresce no local alvo, reduzindo a velocidade dos inimigos e, em seguida, <color=yellow>Canaliza</color> por até 3s. Durante este período, não é possível <color=yellow>Atacar</color> nem conjurar <color=yellow>Memórias</color>. Se conjurar novamente, detona a <color=yellow>estrela</color>, causando  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color> nos inimigos.\n\nA explosão se torna mais poderosa com o <color=yellow>tempo de carregamento</color>, aumentando o <color=yellow>Dano</color> para 225% após 1.3s, e a velocidade de carregamento aumenta proporcionalmente à <color=yellow>Aceleração de Memória</color> de Yubar.",
-    "rawDesc": "Recarrega a <color=yellow>Habilidade de Esquiva</color> 1 vez e cria uma <color=yellow>estrela</color> que cresce no local alvo, reduzindo a velocidade dos inimigos e, em seguida, <color=yellow>Canaliza</color> por até {0}s. Durante este período, não é possível <color=yellow>Atacar</color> nem conjurar <color=yellow>Memórias</color>. Se conjurar novamente, detona a <color=yellow>estrela</color>, causando {1} de <color=yellow>Dano de Luz</color> nos inimigos.\n\nA explosão se torna mais poderosa com o <color=yellow>tempo de carregamento</color>, aumentando o <color=yellow>Dano</color> para {2} após {3}s, e a velocidade de carregamento aumenta proporcionalmente à <color=yellow>Aceleração de Memória</color> de Yubar.",
+    "description": "Cria uma <color=yellow>estrela</color> que cresce no local alvo, reduzindo a velocidade dos inimigos e, em seguida, <color=yellow>Canaliza</color> por até 3s. Durante este período, não é possível <color=yellow>Atacar</color> nem conjurar <color=yellow>Memórias</color>. Se conjurar novamente, detona a <color=yellow>estrela</color>, causando  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color> nos inimigos.\n\nA explosão se torna mais poderosa com o <color=yellow>tempo de carregamento</color>, aumentando o <color=yellow>Dano</color> para 225% após 1.3s, e a velocidade de carregamento aumenta proporcionalmente à <color=yellow>Aceleração de Memória</color> de Yubar. Cada vez que a conjura, todas as <color=yellow>Habilidades de Esquiva</color> são recarregadas.",
+    "rawDesc": "Cria uma <color=yellow>estrela</color> que cresce no local alvo, reduzindo a velocidade dos inimigos e, em seguida, <color=yellow>Canaliza</color> por até {0}s. Durante este período, não é possível <color=yellow>Atacar</color> nem conjurar <color=yellow>Memórias</color>. Se conjurar novamente, detona a <color=yellow>estrela</color>, causando {1} de <color=yellow>Dano de Luz</color> nos inimigos.\n\nA explosão se torna mais poderosa com o <color=yellow>tempo de carregamento</color>, aumentando o <color=yellow>Dano</color> para {2} após {3}s, e a velocidade de carregamento aumenta proporcionalmente à <color=yellow>Aceleração de Memória</color> de Yubar. Cada vez que a conjura, todas as <color=yellow>Habilidades de Esquiva</color> são recarregadas.",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -5716,17 +5709,17 @@
     "cooldownTime": 9.0,
     "maxCharges": 2,
     "addedCharges": 1,
-    "description": "<color=yellow>Invoca</color> um <color=yellow>Cão-folha</color> que segue Nachia na posição alvo, causando  <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5>  de <color=yellow>dano</color> nos inimigos e <color=yellow>Atordoamento</color> durante 0.4.\n\nO <color=yellow>Cães-folha</color> possuem 128 de HP,  20<sprite=5>  de DEF e permanece no campo de batalha por até 25s, arranhando inimigos e causando  <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5>  de <color=yellow>dano</color>. É possível manter até 5 deles.",
+    "description": "<color=yellow>Invoca</color> um <color=yellow>Cão-folha</color> que segue Nachia na posição alvo, causando  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  de <color=yellow>dano</color> nos inimigos e <color=yellow>Atordoamento</color> durante 0.4.\n\nO <color=yellow>Cães-folha</color> possuem 128 de HP,  30<sprite=5>  de DEF e permanece no campo de batalha por até 25s, arranhando inimigos e causando  <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5>  de <color=yellow>dano</color>. É possível manter até 5 deles.",
     "rawDesc": "<color=yellow>Invoca</color> um <color=yellow>Cão-folha</color> que segue Nachia na posição alvo, causando {0} de <color=yellow>dano</color> nos inimigos e <color=yellow>Atordoamento</color> durante {1}.\n\nO <color=yellow>Cães-folha</color> possuem {2} de HP, {3} de DEF e permanece no campo de batalha por até {4}s, arranhando inimigos e causando {5} de <color=yellow>dano</color>. É possível manter até {6} deles.",
     "rawDescVars": [
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_Q_SylvanCall::dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.3,
+          "basicAP": 2.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -5753,12 +5746,12 @@
         "data": {}
       },
       {
-        "rendered": " 20<sprite=5> ",
+        "rendered": " 30<sprite=5> ",
         "format": "#,##0",
         "raw": "armor",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 13.0,
+          "basicConstant": 23.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 7.0,
@@ -5910,7 +5903,7 @@
       "Fire"
     ],
     "image": "St_QR_InfernalTales.png",
-    "lore": "Um dia, a menina leu uma história sobre um enorme dragão. “Eu também quero ser forte como um dragão!”, quando a menina pensou nisso, o velho livro folheou suas páginas alegremente. Logo, chamas como o hálito quente de um verdadeiro dragão surgiram do corpo da menina, e todas as pessoas ao redor logo dançaram com ela, sorrindo com mais brilho do que qualquer estrela.",
+    "lore": "Um dia, a menina leu uma história sobre um enorme dragão. \n\n'Eu também quero ser forte como um dragão!' \n\nQuando a menina pensou nisso, \no velho livro folheou suas páginas alegremente. \n\nLogo, chamas como o hálito quente de um verdadeiro dragão surgiram do corpo da menina, \ne todas as pessoas ao redor logo dançaram com ela, sorrindo com mais brilho do que qualquer estrela.",
     "achievementKey": "ACH_LIKE_A_BREEZE",
     "achievementName": "Mamão Com Açúcar",
     "achievementDescription": "Derrote um Chefe Épico sem sofrer dano com Bismuth."
@@ -6052,8 +6045,8 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Por 10s, sua espada é imbuída com uma <color=yellow>Aura de Espada</color> destrutiva. Durante este período, você não pode <color=yellow>conjurar</color> <color=yellow>Memórias</color>, mas seu <color=yellow>alcance de ataque</color> aumenta ligeiramente, seu <color=yellow>Dano de Ataque</color> aumenta em  35%<sprite=5>  e sua <color=yellow>Velocidade de Ataque</color> aumenta em  30%<sprite=5> , sendo que este aumento de Velocidade de Ataque não é afetado por <color=yellow>Morte a Cada Passo</color>. Cada <color=yellow>Ataque Básico</color> dispara uma <color=yellow>Aura de Espada</color> que causa  <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5>  de <color=yellow>Dano Sombrio</color> aos inimigos.\n\nDurante o efeito, a <color=yellow>Aceleração de Memória</color> da sua <color=yellow>Habilidade de Esquiva</color> aumenta em  30<sprite=5>  e suas <color=yellow>Cargas Máximas</color> aumentam em 2.",
-    "rawDesc": "Por {0}s, sua espada é imbuída com uma <color=yellow>Aura de Espada</color> destrutiva. Durante este período, você não pode <color=yellow>conjurar</color> <color=yellow>Memórias</color>, mas seu <color=yellow>alcance de ataque</color> aumenta ligeiramente, seu <color=yellow>Dano de Ataque</color> aumenta em {1} e sua <color=yellow>Velocidade de Ataque</color> aumenta em {2}, sendo que este aumento de Velocidade de Ataque não é afetado por <color=yellow>Morte a Cada Passo</color>. Cada <color=yellow>Ataque Básico</color> dispara uma <color=yellow>Aura de Espada</color> que causa {3} de <color=yellow>Dano Sombrio</color> aos inimigos.\n\nDurante o efeito, a <color=yellow>Aceleração de Memória</color> da sua <color=yellow>Habilidade de Esquiva</color> aumenta em {4} e suas <color=yellow>Cargas Máximas</color> aumentam em {5}.",
+    "description": "Por 10s, sua espada é imbuída com uma <color=yellow>Aura de Espada</color> destrutiva. Durante este período, seu <color=yellow>alcance de ataque</color> aumenta ligeiramente, seu <color=yellow>Dano de Ataque</color> aumenta em  35%<sprite=5>  e sua <color=yellow>Velocidade de Ataque</color> aumenta em  30%<sprite=5> , sendo que este aumento de Velocidade de Ataque não é afetado por <color=yellow>Morte a Cada Passo</color>. Cada <color=yellow>Ataque Básico</color> dispara uma <color=yellow>Aura de Espada</color> que causa  <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5>  de <color=yellow>Dano Sombrio</color> aos inimigos.\n\nAo conjurar, todas as <color=yellow>Habilidades de Esquiva</color> são recarregadas.",
+    "rawDesc": "Por {0}s, sua espada é imbuída com uma <color=yellow>Aura de Espada</color> destrutiva. Durante este período, seu <color=yellow>alcance de ataque</color> aumenta ligeiramente, seu <color=yellow>Dano de Ataque</color> aumenta em {1} e sua <color=yellow>Velocidade de Ataque</color> aumenta em {2}, sendo que este aumento de Velocidade de Ataque não é afetado por <color=yellow>Morte a Cada Passo</color>. Cada <color=yellow>Ataque Básico</color> dispara uma <color=yellow>Aura de Espada</color> que causa {3} de <color=yellow>Dano Sombrio</color> aos inimigos.\n\nAo conjurar, todas as <color=yellow>Habilidades de Esquiva</color> são recarregadas.",
     "rawDescVars": [
       {
         "rendered": "10",
@@ -6105,32 +6098,6 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": " 30<sprite=5> ",
-        "format": "#,##0",
-        "raw": "dodgeSkillHaste",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 24.0,
-          "basicAP": 0.0,
-          "basicAD": 0.0,
-          "basicLvl": 6.0,
-          "basicAddedMultiplierPerLevel": 0.0
-        }
-      },
-      {
-        "rendered": "2",
-        "format": "#,##0",
-        "raw": "dodgeSkillAddedCharges",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 2.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
         }
       }
     ],
@@ -7462,7 +7429,7 @@
     "lore": null,
     "achievementKey": "ACH_ME_LOVE_GLOWY_STUFF",
     "achievementName": "Que Brilhante!",
-    "achievementDescription": "Entre em Sonho Branco Puro com 4 memória(s) ativa(s) do elemento Luz."
+    "achievementDescription": "Vença com 4 memória(s) ativa(s) do elemento Luz."
   },
   "St_R_Parry": {
     "name": "Ricochete",
@@ -8655,23 +8622,23 @@
     "cooldownTime": 14.0,
     "maxCharges": 3,
     "addedCharges": 99,
-    "description": "<color=yellow>Invoca</color> o <color=yellow>Pequeno Baam</color>, fixando-o em um local alvo.\n\nO <color=yellow>Pequeno Baam</color> tem 119 de Vida e 50 de DEF, permanece no campo de batalha por até 20 s e ataca os inimigos próximos, causando  <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color>. É possível manter até 10 ativos.\n\nTodas as <color=yellow>Cargas</color> são restauradas de uma vez.",
+    "description": "<color=yellow>Invoca</color> o <color=yellow>Pequeno Baam</color>, fixando-o em um local alvo.\n\nO <color=yellow>Pequeno Baam</color> tem 92 de Vida e 40 de DEF, permanece no campo de batalha por até 20 s e ataca os inimigos próximos, causando  <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color>. É possível manter até 10 ativos.\n\nTodas as <color=yellow>Cargas</color> são restauradas de uma vez.",
     "rawDesc": "<color=yellow>Invoca</color> o <color=yellow>Pequeno Baam</color>, fixando-o em um local alvo.\n\nO <color=yellow>Pequeno Baam</color> tem {0} de Vida e {1} de DEF, permanece no campo de batalha por até {2} s e ataca os inimigos próximos, causando {3} de <color=yellow>Dano de Luz</color>. É possível manter até {4} ativos.\n\nTodas as <color=yellow>Cargas</color> são restauradas de uma vez.",
     "rawDescVars": [
       {
-        "rendered": "119",
+        "rendered": "92",
         "format": "#,##0",
         "raw": "summonHealth",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "50",
+        "rendered": "40",
         "format": "#,##0",
         "raw": "armor",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 50.0,
+          "basicConstant": 40.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -8724,6 +8691,7 @@
     "traveler": "",
     "travelerMemoryLocation": "",
     "tags": [
+      "Light",
       "Summon"
     ],
     "image": "St_R_SummonLittleBaam.png",
@@ -8888,16 +8856,16 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "Ascende durante 8s, adquirindo <color=yellow>Invencibilidade</color>. Durante esse tempo, é possível controlar o <color=yellow>Feixe de Luz do Equilíbrio</color> que se move lentamente para causar  <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><sprite=5>  de <color=yellow>dano</color> por segundo no inimigo, ou <color=yellow>recuperar</color>  <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5>  do HP de aliado por segundo.",
+    "description": "Ascende durante 6s, adquirindo <color=yellow>Invencibilidade</color>. Durante esse tempo, é possível controlar o <color=yellow>Feixe de Luz do Equilíbrio</color> que se move lentamente para causar  <sprite=1><color=#fff><gradient=sv_ap>460%</gradient></color><sprite=5>  de <color=yellow>dano</color> por segundo no inimigo, ou <color=yellow>recuperar</color>  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  do HP de aliado por segundo.",
     "rawDesc": "Ascende durante {0}s, adquirindo <color=yellow>Invencibilidade</color>. Durante esse tempo, é possível controlar o <color=yellow>Feixe de Luz do Equilíbrio</color> que se move lentamente para causar {1} de <color=yellow>dano</color> por segundo no inimigo, ou <color=yellow>recuperar</color> {2} do HP de aliado por segundo.",
     "rawDescVars": [
       {
-        "rendered": "8",
+        "rendered": "6",
         "format": "#,##0.#",
         "raw": "beamDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 8.0,
+          "basicConstant": 6.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8905,26 +8873,26 @@
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>460%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "enemyDamagePerSecond",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.5,
+          "basicAP": 4.6,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "allyHealPerSecond",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.5,
+          "basicAP": 2.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
@@ -9287,6 +9255,1662 @@
     ],
     "image": "St_U_WorldCracker.png",
     "lore": "Vestígio de memória de um ser que já foi uma das entidades oníricas mais poderosas.\nUm fragmento do poder daquele que foi rei e deus de todos os espíritos.\n\nEmpunhando o poder do brilho divino, ele reduziu mundos inteiros a cinzas com um único golpe,\nmas desapareceu após desafiar e ser derrotado pelo mestre do mundo.\nDizem que foi aprisionado em alguma dimensão, perdeu a maior parte de seu poder\ne se tornou apenas mais um rei comum.\n\nMas os sussurros diziam:\nA insígnia da servidão que ele portava havia desaparecido.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_BurningFist": {
+    "name": "Punho Ardente",
+    "cooldownTime": 0.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Após <color=yellow>Conjurar</color> uma <color=yellow>Memória</color>, você ganha o efeito Punho Ardente. Seu próximo <color=yellow>Ataque Básico</color> dentro de 6 s é alterado para <color=yellow>Dano de Fogo em Área</color> e tem seu dano aumentado em <sprite=2><color=#fff><gradient=sv_ad>25%</gradient></color>.\nSe o alvo já estiver em chamas, atinge-o mais uma vez, causando  <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5>  de <color=yellow>Dano de Fogo em Área</color>, <color=yellow>Cura</color>  <sprite=2><color=#fff><gradient=sv_ad>75%</gradient></color><sprite=5>  da sua Vida e aciona 50% de <color=yellow>Efeito de Ataque</color>.",
+    "rawDesc": "Após <color=yellow>Conjurar</color> uma <color=yellow>Memória</color>, você ganha o efeito Punho Ardente. Seu próximo <color=yellow>Ataque Básico</color> dentro de {0} s é alterado para <color=yellow>Dano de Fogo em Área</color> e tem seu dano aumentado em {1}.\nSe o alvo já estiver em chamas, atinge-o mais uma vez, causando {2} de <color=yellow>Dano de Fogo em Área</color>, <color=yellow>Cura</color> {3} da sua Vida e aciona {4} de <color=yellow>Efeito de Ataque</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "6",
+        "format": "#,##0.#",
+        "raw": "disposeDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#fff><gradient=sv_ad>25%</gradient></color>",
+        "format": "#,##0",
+        "raw": "adBonusDmg",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.25,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>75%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.75,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "attackEffect",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Dano de Fogo, Cura",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Fire",
+      "Melee",
+      "Heal",
+      "Attack"
+    ],
+    "image": "St_D_BurningFist.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_ChargedAnguillian": {
+    "name": "Anguiliano Carregado",
+    "cooldownTime": 0.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Aumenta o <color=yellow>Poder de Habilidade</color> em  8<sprite=5> . Sempre que receber qualquer <color=yellow>Dano</color> ou causar <color=yellow>Dano de Frio</color>, ganha um acúmulo de <color=yellow>Carga</color> que dura 5s, podendo manter até 12 acúmulos.\n\nPara cada acúmulo de <color=yellow>Carga</color>, o aumento de <color=yellow>Poder de Habilidade</color> de <color=yellow>Anguiliano Carregado</color> cresce em 5%. Com o máximo de acúmulos, dispara um choque elétrico a cada  1.5<sprite=5> s em 3 inimigos próximos, causando  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5>  de <color=yellow>Dano de Luz</color>.",
+    "rawDesc": "Aumenta o <color=yellow>Poder de Habilidade</color> em {0}. Sempre que receber qualquer <color=yellow>Dano</color> ou causar <color=yellow>Dano de Frio</color>, ganha um acúmulo de <color=yellow>Carga</color> que dura {1}s, podendo manter até {2} acúmulos.\n\nPara cada acúmulo de <color=yellow>Carga</color>, o aumento de <color=yellow>Poder de Habilidade</color> de <color=yellow>Anguiliano Carregado</color> cresce em {3}. Com o máximo de acúmulos, dispara um choque elétrico a cada {4}s em {5} inimigos próximos, causando {6} de <color=yellow>Dano de Luz</color>.",
+    "rawDescVars": [
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "gainedAp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 4.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "decayTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "12",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 12.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "apAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 1.5<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "lightningInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "lightningMaxTargets",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "Aumento de Poder de Habilidade, Dano de Luz",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "Identity",
+    "tags": [
+      "Light",
+      "Melee"
+    ],
+    "image": "St_D_ChargedAnguillian.png",
+    "lore": "Diz-se que, no sangue de alguns anguilianos, corre desde sempre o resquício de um raio.\nConsumido pelo frio, Cetus havia esquecido esse fato, \nmas os ventos do Véu dos Sonhos reavivaram os fragmentos de sua antiga memória.",
+    "achievementKey": "ACH_FROM_ABYSS_TO_SUMMIT",
+    "achievementName": "Do Abismo ao Cume",
+    "achievementDescription": "Entre no Sonho Imaculado com Cetus."
+  },
+  "St_D_ExplosionArtist": {
+    "name": "Artista Explosivo",
+    "cooldownTime": 4.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Ao usar uma <color=yellow>Habilidade de Esquiva</color>, causa uma explosão de fogo que dá  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5>  de <color=yellow>Dano de Fogo</color> aos inimigos próximos.\nSe o alvo morrer com esta explosão ou atingir 3 ou mais acúmulos de <color=yellow>Fogo</color>, causa uma <color=yellow>Grande Explosão</color> no local do alvo, dando  <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5>  de <color=yellow>Dano de Fogo em Área</color>.\n\nA <color=yellow>Grande Explosão</color> pode se encadear, mas só pode ocorrer uma vez a cada 3 segundos por inimigo.",
+    "rawDesc": "Ao usar uma <color=yellow>Habilidade de Esquiva</color>, causa uma explosão de fogo que dá {0} de <color=yellow>Dano de Fogo</color> aos inimigos próximos.\nSe o alvo morrer com esta explosão ou atingir {1} ou mais acúmulos de <color=yellow>Fogo</color>, causa uma <color=yellow>Grande Explosão</color> no local do alvo, dando {2} de <color=yellow>Dano de Fogo em Área</color>.\n\nA <color=yellow>Grande Explosão</color> pode se encadear, mas só pode ocorrer uma vez a cada {3} segundos por inimigo.",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_D_ExplosionArtist_DodgeExplosion::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "largeExplosionRequiredFireStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_D_ExplosionArtist_LargeExplosion::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 4.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "largeExplosionCooldownPerTarget",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Explosão de fogo em cadeia",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Fire"
+    ],
+    "image": "St_D_ExplosionArtist.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_IceColdPresence": {
+    "name": "Presença Gélida",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "A cada 10 s, sua <color=yellow>Habilidade de esquiva</color> é substituída por <color=yellow>Investida de Gelo</color>. <color=yellow>Investida de Gelo</color> avança, concedendo <color=yellow>Invulnerável</color> por um curto período e causando  <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Vida Adicional<sprite=3></color><color=#fff><gradient=sv_ahp>10%</gradient></color><sprite=5>  de <color=yellow>Dano de Frio</color> aos inimigos próximos. Para cada inimigo atingido por <color=yellow>Investida de Gelo</color>, a <color=yellow>Vida Máxima</color> do Viajante aumenta permanentemente em  1<sprite=5> . ",
+    "rawDesc": "A cada {0} s, sua <color=yellow>Habilidade de esquiva</color> é substituída por <color=yellow>Investida de Gelo</color>. <color=yellow>Investida de Gelo</color> avança, concedendo <color=yellow>Invulnerável</color> por um curto período e causando {1} de <color=yellow>Dano de Frio</color> aos inimigos próximos. Para cada inimigo atingido por <color=yellow>Investida de Gelo</color>, a <color=yellow>Vida Máxima</color> do Viajante aumenta permanentemente em {2}. ",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "baseCooldownTime",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Vida Adicional<sprite=3></color><color=#fff><gradient=sv_ahp>10%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.5,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "addedHealth",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.9,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.1,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": "Substitui Habilidade de esquiva, Dano de Frio, Aumento de Vida Máxima",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Cold"
+    ],
+    "image": "St_D_IceColdPresence.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_IcyVeins": {
+    "name": "Veias de Gelo",
+    "cooldownTime": 0.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Sempre que Cetus causar <color=yellow>Dano de Frio</color>, ganha um acúmulo de <color=yellow>Sangue Frio</color>, podendo acumular até 5 vezes. No próximo <color=yellow>Ataque</color>, consome todos os acúmulos de <color=yellow>Sangue Frio</color> para causar uma explosão de gelo, causando  <sprite=1><color=#fff><gradient=sv_ap>30%</gradient></color><sprite=5>  de <color=yellow>Dano de Frio</color> por acúmulo aos inimigos, e Cetus ganha um <color=yellow>Escudo</color> de  <sprite=1><color=#fff><gradient=sv_ap>9%</gradient></color><sprite=5>  que desaparece ao longo de 3s.",
+    "rawDesc": "Sempre que Cetus causar <color=yellow>Dano de Frio</color>, ganha um acúmulo de <color=yellow>Sangue Frio</color>, podendo acumular até {0} vezes. No próximo <color=yellow>Ataque</color>, consome todos os acúmulos de <color=yellow>Sangue Frio</color> para causar uma explosão de gelo, causando {1} de <color=yellow>Dano de Frio</color> por acúmulo aos inimigos, e Cetus ganha um <color=yellow>Escudo</color> de {2} que desaparece ao longo de {3}s.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>30%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.3,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>9%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "shieldPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.09,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Acúmulo de Dano de Frio, explosão de gelo, escudo",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "Identity",
+    "tags": [
+      "Cold",
+      "Shield"
+    ],
+    "image": "St_D_IcyVeins.PNG",
+    "lore": "Sobre a mesa de experimentos da fria prisão, um momento intenso e inesquecível. \nO instante em que o frio inextinguível se infiltrou em suas veias \nele o considerou como sua primeira expiação.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_ParryMaster": {
+    "name": "Mestre do Duelo",
+    "cooldownTime": 4.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "A <color=yellow>Habilidade de Esquiva</color> é alterada para <color=yellow>Aparar</color>, que tem um tempo de recarga de 6 s. Você pode usar <color=yellow>Aparar</color> para defender dano por um breve instante, e sempre que defender com sucesso, recupera 1 <color=yellow>Carga</color> de <color=yellow>Aparar</color> e seu <color=yellow>Dano de Ataque</color> e <color=yellow>Poder de Habilidade</color> aumentam em  1<sprite=5>  por 8 s. Esse aumento de atributos acumula até 5 vezes.",
+    "rawDesc": "A <color=yellow>Habilidade de Esquiva</color> é alterada para <color=yellow>Aparar</color>, que tem um tempo de recarga de 6 s. Você pode usar <color=yellow>Aparar</color> para defender dano por um breve instante, e sempre que defender com sucesso, recupera 1 <color=yellow>Carga</color> de <color=yellow>Aparar</color> e seu <color=yellow>Dano de Ataque</color> e <color=yellow>Poder de Habilidade</color> aumentam em {0} por {1} s. Esse aumento de atributos acumula até {2} vezes.",
+    "rawDescVars": [
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0",
+        "raw": "bonusAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "8",
+        "format": "#,##0.#",
+        "raw": "Se_D_ParryMaster_Buff::duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Troca a Habilidade de Esquiva por Aparar",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Mobility"
+    ],
+    "image": "St_D_ParryMaster.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_QuartetOfDeath": {
+    "name": "Quarteto da Morte",
+    "cooldownTime": 4.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Cada acerto de <color=yellow>Ataque Básico</color> deixa uma <color=yellow>Marca</color> acumulável no alvo. A cada 4º <color=yellow>Ataque Básico</color>, aumenta a <color=yellow>Velocidade de Ataque</color> em 10% por 5 segundos e detona todas as <color=yellow>Marca</color>, causando  <sprite=2><color=#fff><gradient=sv_ad>70%</gradient></color><sprite=5>  de <color=yellow>Dano Sombrio</color> por acúmulo. O efeito de aumento de Velocidade de Ataque pode acumular infinitamente.",
+    "rawDesc": "Cada acerto de <color=yellow>Ataque Básico</color> deixa uma <color=yellow>Marca</color> acumulável no alvo. A cada 4º <color=yellow>Ataque Básico</color>, aumenta a <color=yellow>Velocidade de Ataque</color> em {0} por {1} segundos e detona todas as <color=yellow>Marca</color>, causando {2} de <color=yellow>Dano Sombrio</color> por acúmulo. O efeito de aumento de Velocidade de Ataque pode acumular infinitamente.",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "speedBonusPercentagePerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "Se_D_QuartetOfDeath_Buff::duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>70%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "amountPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.7,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "Aumenta a Velocidade de Ataque a cada 4º ataque",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Dark"
+    ],
+    "image": "St_D_QuartetOfDeath.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_ScarOfTheWind": {
+    "name": "Cicatriz do Vento",
+    "cooldownTime": 0.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Seu próximo <color=yellow>Ataque Básico</color> após <color=yellow>avançar</color> ou <color=yellow>teletransportar</color> se tornará um Golpe Crítico. Ao usar uma <color=yellow>Habilidade de Esquiva</color>, seu próximo <color=yellow>Ataque Básico</color> avança e corta os inimigos, causando  <sprite=2><color=#fff><gradient=sv_ad>75%</gradient></color><sprite=5>  de <color=yellow>Dano Sombrio adicional</color> e <color=yellow>recupera</color>  <sprite=2><color=#fff><gradient=sv_ad>11%</gradient></color><sprite=5>  da Vida da Casca por inimigo atingido.",
+    "rawDesc": "Seu próximo <color=yellow>Ataque Básico</color> após <color=yellow>avançar</color> ou <color=yellow>teletransportar</color> se tornará um Golpe Crítico. Ao usar uma <color=yellow>Habilidade de Esquiva</color>, seu próximo <color=yellow>Ataque Básico</color> avança e corta os inimigos, causando {0} de <color=yellow>Dano Sombrio adicional</color> e <color=yellow>recupera</color> {1} da Vida da Casca por inimigo atingido.",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>75%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "bonusDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.75,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>11%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.11,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      }
+    ],
+    "shortDescription": "Crítico ao avançar, ataque reforçado após esquivar",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "Hero_Husk",
+    "travelerMemoryLocation": "Identity",
+    "tags": [
+      "Dark",
+      "Melee",
+      "Heal",
+      "Attack",
+      "Mobility"
+    ],
+    "image": "St_D_ScarOfTheWind.PNG",
+    "lore": "O vento se aninha. Corta e avança.\nA sensação do sangue florescendo na ponta dos dedos.\nMas nada permanece.",
+    "achievementKey": "ACH_I_AM_SHELL",
+    "achievementName": "Eu Sou a Casca",
+    "achievementDescription": "Entre no Sonho Puro com a Casca."
+  },
+  "St_D_SharedPain": {
+    "name": "Dor Compartilhada",
+    "cooldownTime": 4.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Quando a conjuração de cada <color=yellow>Memória</color> causa <color=yellow>Dano</color> a um inimigo pela primeira vez, um <color=yellow>Dano</color> equivalente a  50%<sprite=5>  desse valor é transferido para outro inimigo próximo, saltando em cadeia até  3<sprite=5>  vezes. O <color=yellow>Dano</color> transferido compartilha o mesmo tipo de elemento do dano original.",
+    "rawDesc": "Quando a conjuração de cada <color=yellow>Memória</color> causa <color=yellow>Dano</color> a um inimigo pela primeira vez, um <color=yellow>Dano</color> equivalente a {0} desse valor é transferido para outro inimigo próximo, saltando em cadeia até {1} vezes. O <color=yellow>Dano</color> transferido compartilha o mesmo tipo de elemento do dano original.",
+    "rawDescVars": [
+      {
+        "rendered": " 50%<sprite=5> ",
+        "format": "P0",
+        "raw": "shareDmgRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.35,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.15,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " 3<sprite=5> ",
+        "format": "#,##0",
+        "raw": "clampedCount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "Dano em cadeia da Memória",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [],
+    "image": "St_D_SharedPain.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_L_HerosReturn": {
+    "name": "Retorno do Herói",
+    "cooldownTime": 150.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Ao ser <color=yellow>Conjurada</color>, esta memória é <color=yellow>Destruída</color> e <color=yellow>Ressuscita</color> todos os Viajantes mortos, recuperando  <sprite=1><color=#fff><gradient=sv_ap>800%</gradient></color><sprite=5>  de <color=yellow>Vida</color>. Viajantes que não morreram recuperam  <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5>  de <color=yellow>Vida</color> e recebem permanentemente  10<sprite=5>  de <color=yellow>Dano de Ataque</color> e  10<sprite=5>  de <color=yellow>Poder de Habilidade</color>.\n\nÉ <color=yellow>Conjurada</color> automaticamente quando o portador <color=yellow>Morre</color>.",
+    "rawDesc": "Ao ser <color=yellow>Conjurada</color>, esta memória é <color=yellow>Destruída</color> e <color=yellow>Ressuscita</color> todos os Viajantes mortos, recuperando {0} de <color=yellow>Vida</color>. Viajantes que não morreram recuperam {1} de <color=yellow>Vida</color> e recebem permanentemente {2} de <color=yellow>Dano de Ataque</color> e {3} de <color=yellow>Poder de Habilidade</color>.\n\nÉ <color=yellow>Conjurada</color> automaticamente quando o portador <color=yellow>Morre</color>.",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>800%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "deadHealAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 8.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "aliveHealAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 4.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": " 10<sprite=5> ",
+        "format": "#,##0",
+        "raw": "aliveAdGain",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 2.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " 10<sprite=5> ",
+        "format": "#,##0",
+        "raw": "aliveApGain",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 2.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": "Ressurreição, atributos permanentes",
+    "rarity": "Legendary",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "St_L_HerosReturn.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_L_SmallMoltenCore": {
+    "name": "Pequena Fornalha",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Por 4 segundos, o <color=yellow>Ataque Básico</color> do <color=yellow>Bebê Dragão de Fogo</color> causa <color=yellow>Dano em Área</color> e tem seu <color=yellow>Dano</color> aumentado em 100%. \n\n<color=yellow>Efeito persistente:</color> <color=yellow>Invoca</color> um <color=yellow>Bebê Dragão de Fogo</color> que segue o Viajante. O <color=yellow>Bebê Dragão de Fogo</color> tem 229 de vida e 100 de DEF e, sempre que o Viajante <color=yellow>ataca</color>, causa  <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5>  de <color=yellow>Dano de Fogo</color> ao alvo, e o <color=yellow>Bebê Dragão de Fogo</color> recupera 5% da vida máxima.",
+    "rawDesc": "Por {0} segundos, o <color=yellow>Ataque Básico</color> do <color=yellow>Bebê Dragão de Fogo</color> causa <color=yellow>Dano em Área</color> e tem seu <color=yellow>Dano</color> aumentado em {1}. \n\n<color=yellow>Efeito persistente:</color> <color=yellow>Invoca</color> um <color=yellow>Bebê Dragão de Fogo</color> que segue o Viajante. O <color=yellow>Bebê Dragão de Fogo</color> tem {2} de vida e {3} de DEF e, sempre que o Viajante <color=yellow>ataca</color>, causa {4} de <color=yellow>Dano de Fogo</color> ao alvo, e o <color=yellow>Bebê Dragão de Fogo</color> recupera {5} da vida máxima.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "empowerAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "229",
+        "format": "#,##0",
+        "raw": "summonHealth",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "100",
+        "format": "#,##0",
+        "raw": "armor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 100.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.4,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "healMaxHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Invoca dragão de fogo",
+    "rarity": "Legendary",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Fire",
+      "Attack",
+      "Summon"
+    ],
+    "image": "St_L_SmallMoltenCore.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_M_FrostyCharge": {
+    "name": "Investida Gélida",
+    "cooldownTime": 3.3,
+    "maxCharges": 2,
+    "addedCharges": 1,
+    "description": "Avança, causando <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Vida Adicional<sprite=3></color><color=#fff><gradient=sv_ahp>10%</gradient></color> de <color=yellow>Dano de Frio</color> aos inimigos e esquivando-se dos ataques inimigos. ",
+    "rawDesc": "Avança, causando {0} de <color=yellow>Dano de Frio</color> aos inimigos e esquivando-se dos ataques inimigos. ",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Vida Adicional<sprite=3></color><color=#fff><gradient=sv_ahp>10%</gradient></color>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": null,
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "Movement",
+    "tags": [
+      "Cold",
+      "Mobility"
+    ],
+    "image": "St_M_FrostyCharge.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_M_IceColdPresence": {
+    "name": "Investida de Gelo",
+    "cooldownTime": 999.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Fica <color=yellow>Invulnerável</color> e realiza uma <color=yellow>Investida</color> rápida a uma curta distância, causando <color=yellow>Dano de Frio</color>.",
+    "rawDesc": "Fica <color=yellow>Invulnerável</color> e realiza uma <color=yellow>Investida</color> rápida a uma curta distância, causando <color=yellow>Dano de Frio</color>.",
+    "rawDescVars": [],
+    "shortDescription": "Habilidade de esquiva",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Cold",
+      "Mobility"
+    ],
+    "image": "St_M_IceColdPresence.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_M_ParryMaster": {
+    "name": "Aparar",
+    "cooldownTime": 6.0,
+    "maxCharges": 2,
+    "addedCharges": 1,
+    "description": "Torna-se <color=yellow>Invulnerável</color>, ignorando os ataques inimigos.",
+    "rawDesc": "Torna-se <color=yellow>Invulnerável</color>, ignorando os ataques inimigos.",
+    "rawDescVars": [],
+    "shortDescription": null,
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [],
+    "image": "St_M_ParryMaster.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_Q_BigBorealChunk": {
+    "name": "Bloco Boreal Gigante",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>Segure</color> a tecla de conjuração para criar um <color=yellow>bloco de gelo</color> crescente. Durante o carregamento, você ganha  20<sprite=5>  de <color=yellow>Defesa</color> e pode carregar por até 4s; ao terminar, o <color=yellow>bloco de gelo</color> é disparado. O <color=yellow>bloco de gelo</color> explode, causando  <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5>  de <color=yellow>Dano de Frio</color> a todos os inimigos e aplicando <color=yellow>Atordoamento</color> por 1s.\n\nO <color=yellow>dano da explosão</color> aumenta em 100% e a <color=yellow>área de explosão</color> também aumenta a cada 1s de carregamento.",
+    "rawDesc": "<color=yellow>Segure</color> a tecla de conjuração para criar um <color=yellow>bloco de gelo</color> crescente. Durante o carregamento, você ganha {0} de <color=yellow>Defesa</color> e pode carregar por até {1}s; ao terminar, o <color=yellow>bloco de gelo</color> é disparado. O <color=yellow>bloco de gelo</color> explode, causando {2} de <color=yellow>Dano de Frio</color> a todos os inimigos e aplicando <color=yellow>Atordoamento</color> por {3}s.\n\nO <color=yellow>dano da explosão</color> aumenta em {4} e a <color=yellow>área de explosão</color> também aumenta a cada 1s de carregamento.",
+    "rawDescVars": [
+      {
+        "rendered": " 20<sprite=5> ",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 15.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "maxChannelTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.2,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "damageAmpPerSecond",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Cria um bloco de gelo crescente, Dano de Frio, Atordoamento",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "Q",
+    "tags": [
+      "Cold"
+    ],
+    "image": "St_Q_BigBorealChunk.PNG",
+    "lore": "Sentindo o frio que só crescia, Cetus pensou.\nO peso que carrega, o pecado,\njamais se tornará mais leve.",
+    "achievementKey": "ACH_ICEBERG_THE_GREAT_COMMUNICATOR",
+    "achievementName": "Iceberg, o grande comunicador!",
+    "achievementDescription": "Alcance 200 de Poder de Habilidade com Cetus."
+  },
+  "St_Q_DeathMark": {
+    "name": "Marca da Morte",
+    "cooldownTime": 12.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Dispara uma estaca perfurante que aplica <color=yellow>Efeito de Ataque</color> e causa  <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5>  de <color=yellow>Dano Sombrio</color> aos inimigos. O último inimigo atingido pela estaca recebe uma marca por até 3s. Durante esse tempo, <color=yellow>Reconjurar</color> <color=yellow>Marca da Morte</color> faz com que a Casca se <color=yellow>Teleporte</color> para a localização do alvo.\n\nQuando a estaca atinge um inimigo pela primeira vez em combate, o <color=yellow>Tempo de recarga</color> é reduzido em 50% e o dano da estaca aumenta em 5%. Esse aumento de dano é reiniciado sempre que você avança para o próximo mundo.",
+    "rawDesc": "Dispara uma estaca perfurante que aplica <color=yellow>Efeito de Ataque</color> e causa {0} de <color=yellow>Dano Sombrio</color> aos inimigos. O último inimigo atingido pela estaca recebe uma marca por até {1}s. Durante esse tempo, <color=yellow>Reconjurar</color> <color=yellow>Marca da Morte</color> faz com que a Casca se <color=yellow>Teleporte</color> para a localização do alvo.\n\nQuando a estaca atinge um inimigo pela primeira vez em combate, o <color=yellow>Tempo de recarga</color> é reduzido em {2} e o dano da estaca aumenta em {3}. Esse aumento de dano é reiniciado sempre que você avança para o próximo mundo.",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 3.4,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "lingerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "firstHitCooldownReduction",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "damageAmpGainOnFirstHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Dano Sombrio, Teleporte, Dano infinitamente crescente",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Husk",
+    "travelerMemoryLocation": "Q",
+    "tags": [
+      "Dark",
+      "Mobility"
+    ],
+    "image": "St_Q_DeathMark.PNG",
+    "lore": "O alvo nunca escapa. E assim tem sido desde um passado remoto, distante demais.",
+    "achievementKey": "ACH_HOME_SWEET_HOME",
+    "achievementName": "Lar Doce Lar",
+    "achievementDescription": "Chegue ao Planalto do Lótus com a Casca sem deixar sua Vida cair abaixo de 50%."
+  },
+  "St_Q_EmbracingTheChill": {
+    "name": "Abrace o Frio",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Cria uma <color=yellow>área de frio</color> crescente no local alvo por 3s. Aliados na área recebem um <color=yellow>Escudo</color> de  <sprite=1><color=#fff><gradient=sv_ap>25%</gradient></color><sprite=5>  que dura 3s a cada 0.5s, enquanto inimigos sofrem  <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5>  de <color=yellow>Dano de Frio</color>.\n\nAo fim da duração, a <color=yellow>área de frio</color> explode, causando  <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5>  de <color=yellow>Dano de Frio</color> aos inimigos e aplicando <color=yellow>Atordoamento</color> por 1.5s.",
+    "rawDesc": "Cria uma <color=yellow>área de frio</color> crescente no local alvo por {0}s. Aliados na área recebem um <color=yellow>Escudo</color> de {1} que dura {2}s a cada {3}s, enquanto inimigos sofrem {4} de <color=yellow>Dano de Frio</color>.\n\nAo fim da duração, a <color=yellow>área de frio</color> explode, causando {5} de <color=yellow>Dano de Frio</color> aos inimigos e aplicando <color=yellow>Atordoamento</color> por {6}s.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>25%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "shieldPerTick",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.25,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "Ai_Q_EmbracingTheChill_AreaDoT::cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_Q_EmbracingTheChill_AreaDoT::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.4,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_Q_EmbracingTheChill_Explosion::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Dano de Frio, Escudo, Atordoamento",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "Q",
+    "tags": [
+      "Cold",
+      "HardCC",
+      "Shield"
+    ],
+    "image": "St_Q_EmbracingTheChill.png",
+    "lore": "Incapaz de suportar o frio que não desaparecia, Cetus decidiu parar de tremer e aceitá-lo como era.\nE então, deixou de sentir frio.\nEle chamou isso de 'a vontade calorosa'.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_AnnoyingBanner": {
+    "name": "Estandarte Irritante",
+    "cooldownTime": 12.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Invoca um <color=yellow>Estandarte</color> na posição do alvo. O <color=yellow>Estandarte</color> tem 92 de vida e 100 de DEF, permanece no campo de batalha por até 10 segundos e, a cada 1.5 segundos, emite um som irritante que causa  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5>  de <color=yellow>dano</color> e faz com que os inimigos próximos ataquem o estandarte.",
+    "rawDesc": "Invoca um <color=yellow>Estandarte</color> na posição do alvo. O <color=yellow>Estandarte</color> tem {0} de vida e {1} de DEF, permanece no campo de batalha por até {2} segundos e, a cada {3} segundos, emite um som irritante que causa {4} de <color=yellow>dano</color> e faz com que os inimigos próximos ataquem o estandarte.",
+    "rawDescVars": [
+      {
+        "rendered": "92",
+        "format": "#,##0",
+        "raw": "summonHealth",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "100",
+        "format": "#,##0",
+        "raw": "armor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 100.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "maxDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "tickInterval",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "tickDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "Invoca estandarte provocador",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Summon"
+    ],
+    "image": "St_R_AnnoyingBanner.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_BackOff": {
+    "name": "Cai Fora!",
+    "cooldownTime": 7.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Cobre os aliados próximos com uma fina camada de gelo, concedendo um <color=yellow>Escudo</color> de  <sprite=1><color=#fff><gradient=sv_ap>135%</gradient></color><sprite=5>  e  8<sprite=5>  de <color=yellow>DEF</color> por 2s. Para si mesmo, esse efeito aumenta em 50%.\n\n<color=yellow>Segure</color> a tecla de conjuração para concentrar poder no cajado e solte para balançá-lo, causando de  <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Vida Adicional<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5>  a  <sprite=2><color=#fff><gradient=sv_ad>450%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Vida Adicional<sprite=3></color><color=#fff><gradient=sv_ahp>22%</gradient></color><sprite=5>  de <color=yellow>Dano de Frio</color> proporcional ao tempo de carregamento, empurrando os inimigos e aplicando <color=yellow>Atordoamento</color> por 1s.",
+    "rawDesc": "Cobre os aliados próximos com uma fina camada de gelo, concedendo um <color=yellow>Escudo</color> de {0} e {1} de <color=yellow>DEF</color> por {2}s. Para si mesmo, esse efeito aumenta em {3}.\n\n<color=yellow>Segure</color> a tecla de conjuração para concentrar poder no cajado e solte para balançá-lo, causando de {4} a {5} de <color=yellow>Dano de Frio</color> proporcional ao tempo de carregamento, empurrando os inimigos e aplicando <color=yellow>Atordoamento</color> por {6}s.",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>135%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.35,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 3.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "buffDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "casterAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Vida Adicional<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>450%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Vida Adicional<sprite=3></color><color=#fff><gradient=sv_ahp>22%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "maxDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 4.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Protege aliados, Dano de Frio, Atordoamento",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "R",
+    "tags": [
+      "Cold",
+      "Melee",
+      "HardCC",
+      "Attack"
+    ],
+    "image": "St_R_BackOff.png",
+    "lore": "Não foi no campo de treinamento da Ordem que Cetus aprendeu a se lançar para proteger seus companheiros. Foi na prisão, através do lugar vazio deixado por aqueles que ele não conseguiu salvar.",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_Deception": {
+    "name": "Distração",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>Teleporta</color> uma curta distância e fica <color=yellow>Furtivo</color> por até 3 s, aumentando a <color=yellow>Velocidade de movimento</color> em 20% durante esse tempo. Ao sair do estado Furtivo, causa  <sprite=2><color=#fff><gradient=sv_ad>350%</gradient></color><sprite=5>  de <color=yellow>Dano Sombrio</color> aos inimigos próximos e os empurra para trás.\n\nSe você chegar muito perto de um inimigo enquanto estiver Furtivo, será revelado brevemente. Conjurar uma Memória, usar um Ataque Básico ou sofrer dano encerrará o efeito Furtivo prematuramente.",
+    "rawDesc": "<color=yellow>Teleporta</color> uma curta distância e fica <color=yellow>Furtivo</color> por até {0} s, aumentando a <color=yellow>Velocidade de movimento</color> em {1} durante esse tempo. Ao sair do estado Furtivo, causa {2} de <color=yellow>Dano Sombrio</color> aos inimigos próximos e os empurra para trás.\n\nSe você chegar muito perto de um inimigo enquanto estiver Furtivo, será revelado brevemente. Conjurar uma Memória, usar um Ataque Básico ou sofrer dano encerrará o efeito Furtivo prematuramente.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "stealthDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>350%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 3.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "Teleporte, Furtivo, Dano Sombrio",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Husk",
+    "travelerMemoryLocation": "R",
+    "tags": [
+      "Dark",
+      "Mobility"
+    ],
+    "image": "St_R_Deception.png",
+    "lore": "A lâmina que não se vê é a mais letal.",
+    "achievementKey": "ACH_DOLL_OF_MANA",
+    "achievementName": "Boneca de Mana",
+    "achievementDescription": "Alcance 100 de Poder de Habilidade com a Casca."
+  },
+  "St_R_FrozenFists": {
+    "name": "Injeção de Bons Modos",
+    "cooldownTime": 13.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Cerra os punhos e arregaça as mangas por 7s. Durante esse tempo, você não pode conjurar outras Memórias, mas a <color=yellow>Velocidade de Ataque</color> aumenta em  26%<sprite=5> , a <color=yellow>DEF</color> aumenta em  18<sprite=5> , o <color=yellow>Ataque Básico</color> é substituído por um ataque corpo a corpo e seus <color=yellow>Ataques</color> causam  <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Vida Adicional<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5>  de <color=yellow>Dano Adicional</color>.\n\n<color=yellow>Reconjurar</color> esta Memória durante a duração faz você avançar, empurrando os inimigos e causando  <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Vida Adicional<sprite=3></color><color=#fff><gradient=sv_ahp>3%</gradient></color><sprite=5>  de <color=yellow>Dano de Frio</color>, além de conceder um <color=yellow>Escudo</color> de  <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Vida Adicional<sprite=3></color><color=#fff><gradient=sv_ahp>2%</gradient></color><sprite=5>  que decai ao longo de 3s por inimigo atingido. Esse dano e a quantidade de escudo aumentam em 200% contra <color=yellow>Qualquer Chefe</color>.",
+    "rawDesc": "Cerra os punhos e arregaça as mangas por {0}s. Durante esse tempo, você não pode conjurar outras Memórias, mas a <color=yellow>Velocidade de Ataque</color> aumenta em {1}, a <color=yellow>DEF</color> aumenta em {2}, o <color=yellow>Ataque Básico</color> é substituído por um ataque corpo a corpo e seus <color=yellow>Ataques</color> causam {3} de <color=yellow>Dano Adicional</color>.\n\n<color=yellow>Reconjurar</color> esta Memória durante a duração faz você avançar, empurrando os inimigos e causando {4} de <color=yellow>Dano de Frio</color>, além de conceder um <color=yellow>Escudo</color> de {5} que decai ao longo de {6}s por inimigo atingido. Esse dano e a quantidade de escudo aumentam em {7} contra <color=yellow>Qualquer Chefe</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "7",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 7.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 26%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 5.714286,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " 18<sprite=5> ",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 3.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Vida Adicional<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedDamageOnAttack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.7,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Vida Adicional<sprite=3></color><color=#fff><gradient=sv_ahp>3%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Vida Adicional<sprite=3></color><color=#fff><gradient=sv_ahp>2%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "shieldPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.6,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "200%",
+        "format": "P0",
+        "raw": "bossAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Postura de ataque corpo a corpo, Dano de Frio",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "R",
+    "tags": [
+      "Cold",
+      "Melee",
+      "HardCC",
+      "Shield",
+      "Attack",
+      "Mobility"
+    ],
+    "image": "St_R_FrozenFists.png",
+    "lore": "A Ordem ensinava a punir seus inimigos por meio da violência. O corpo de Cetus ainda se lembrava daqueles gestos. \nMas agora, a direção para onde esses punhos apontam seguirá unicamente a sua vontade.",
+    "achievementKey": "ACH_THE_CHILL_WASHES_AWAY_SINS",
+    "achievementName": "Frio Purificador",
+    "achievementDescription": "Derrote um total de 120 inimigos na montanha nevada com Cetus."
+  },
+  "St_U_BigChomp": {
+    "name": "Mordida Feroz",
+    "cooldownTime": 8.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "Morde todos os <color=yellow>inimigos</color> e <color=yellow>aliados</color> à frente, causando  <sprite=2><color=#fff><gradient=sv_ad>370%</gradient></color><sprite=5>  de <color=yellow>dano</color>, <color=yellow>recuperando</color>  <sprite=2><color=#fff><gradient=sv_ad>25%</gradient></color><sprite=5>  de <color=yellow>vida</color> para cada alvo atingido e ganhando um <color=yellow>Escudo</color> de  <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5>  que dura 3 segundos. O <color=yellow>Tempo de recarga</color> é reduzido em 1 segundos para cada alvo atingido.\n\nContra <color=yellow>aliados</color>, o dano é reduzido em 80%, e contra <color=yellow>chefes</color>, a recuperação de vida, o valor do escudo e a redução do tempo de recarga aumentam em 250%.",
+    "rawDesc": "Morde todos os <color=yellow>inimigos</color> e <color=yellow>aliados</color> à frente, causando {0} de <color=yellow>dano</color>, <color=yellow>recuperando</color> {1} de <color=yellow>vida</color> para cada alvo atingido e ganhando um <color=yellow>Escudo</color> de {2} que dura {3} segundos. O <color=yellow>Tempo de recarga</color> é reduzido em {4} segundos para cada alvo atingido.\n\nContra <color=yellow>aliados</color>, o dano é reduzido em {5}, e contra <color=yellow>chefes</color>, a recuperação de vida, o valor do escudo e a redução do tempo de recarga aumentam em {6}.",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>370%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 3.7,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>25%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healPerHitAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.25,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "shieldPerHitAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.3,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "reduceCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "allyDamageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "250%",
+        "format": "P0",
+        "raw": "anyBossMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "Morde inimigos ou aliados",
+    "rarity": "Unique",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Melee",
+      "Heal",
+      "Shield"
+    ],
+    "image": "St_U_BigChomp.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""

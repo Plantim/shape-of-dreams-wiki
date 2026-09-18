@@ -1196,8 +1196,8 @@
   },
   "Gem_E_Insensitivity": {
     "name": "Essence of Insensitivity",
-    "description": "<color=yellow>Casting</color> this Memory drops a <color=yellow>bomb</color> for every 2m you travel over the next 4 seconds. Each bomb explodes after a brief delay, dealing  <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5>  <color=yellow>Fire damage</color> to enemies.",
-    "rawDesc": "<color=yellow>Casting</color> this Memory drops a <color=yellow>bomb</color> for every {0}m you travel over the next {1} seconds. Each bomb explodes after a brief delay, dealing {2} <color=yellow>Fire damage</color> to enemies.",
+    "description": "After <color=yellow>Casting</color> this Memory <color=yellow>in combat</color>, you drop a <color=yellow>bomb</color> for every 2m you travel over the next 4 seconds. Each bomb explodes after a brief delay, dealing  <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5>  <color=yellow>Fire damage</color> to enemies.",
+    "rawDesc": "After <color=yellow>Casting</color> this Memory <color=yellow>in combat</color>, you drop a <color=yellow>bomb</color> for every {0}m you travel over the next {1} seconds. Each bomb explodes after a brief delay, dealing {2} <color=yellow>Fire damage</color> to enemies.",
     "rawDescVars": [
       {
         "rendered": "2",
@@ -1332,20 +1332,20 @@
   },
   "Gem_E_Inversion": {
     "name": "Essence of Inversion",
-    "description": "This Memory's <color=yellow>cooldown</color> increases by  15%<sprite=5> , but it also deals  20%<sprite=5>  more <color=yellow>damage</color> to enemies. Its <color=yellow>elemental damage</color> is <color=yellow>inverted</color> (Fire/Cold, Light/Dark).",
+    "description": "This Memory's <color=yellow>cooldown</color> increases by 20%, but it also deals  20%<sprite=5>  more <color=yellow>damage</color> to enemies. Its <color=yellow>elemental damage</color> is <color=yellow>inverted</color> (Fire/Cold, Light/Dark).",
     "rawDesc": "This Memory's <color=yellow>cooldown</color> increases by {0}, but it also deals {1} more <color=yellow>damage</color> to enemies. Its <color=yellow>elemental damage</color> is <color=yellow>inverted</color> (Fire/Cold, Light/Dark).",
     "rawDescVars": [
       {
-        "rendered": " 15%<sprite=5> ",
+        "rendered": "20%",
         "format": "P0",
         "raw": "cooldownAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.005
+          "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
@@ -1538,7 +1538,7 @@
     "lore": null,
     "achievementKey": "ACH_OMEGA_POINT",
     "achievementName": "Omega Point",
-    "achievementDescription": "Enter the Pure White Dream while having cast only one type of Memory during a single adventure."
+    "achievementDescription": "Achieve victory while having cast only one type of Memory during a single adventure."
   },
   "Gem_E_Opportunity": {
     "name": "Essence of Opportunity",
@@ -1584,11 +1584,11 @@
   },
   "Gem_E_OurStory_Completed": {
     "name": "Our Story (Completed!)",
-    "description": "Increases <color=yellow>Attack Damage</color> and <color=yellow>Ability Power</color> by , and the effects of all buffs from <color=yellow>Distorting Rush</color> by .",
+    "description": "Increases <color=yellow>Attack Damage</color> and <color=yellow>Ability Power</color> by 0%, and the effects of all buffs from <color=yellow>Distorting Rush</color> by 0%.",
     "rawDesc": "Increases <color=yellow>Attack Damage</color> and <color=yellow>Ability Power</color> by {0}, and the effects of all buffs from <color=yellow>Distorting Rush</color> by {1}.",
     "rawDescVars": [
       {
-        "rendered": "",
+        "rendered": "0%",
         "format": "#,##0'%'",
         "raw": "Gem_E_OurStory_Completed::statPercentage",
         "scalingType": "basic",
@@ -1601,11 +1601,17 @@
         }
       },
       {
-        "rendered": "",
-        "format": "#,##0",
-        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
-        "scalingType": "unknown",
-        "data": {}
+        "rendered": "0%",
+        "format": "P0",
+        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "rarity": "Epic",
@@ -2074,18 +2080,18 @@
   },
   "Gem_L_CamillasGift": {
     "name": "Camilla's Gift",
-    "description": "Can be <color=yellow>sold</color> at the shop for  Gold. The <color=yellow>price</color> <color=yellow>increases</color> by  each time you move to a next world. It breaks if your Health drops below 50% from enemy damage.",
+    "description": "Can be <color=yellow>sold</color> at the shop for 0 Gold. The <color=yellow>price</color> <color=yellow>increases</color> by 0 each time you move to a next world. It breaks if your Health drops below 50% from enemy damage.",
     "rawDesc": "Can be <color=yellow>sold</color> at the shop for {0} Gold. The <color=yellow>price</color> <color=yellow>increases</color> by {1} each time you move to a next world. It breaks if your Health drops below {2} from enemy damage.",
     "rawDescVars": [
       {
-        "rendered": "",
+        "rendered": "0",
         "format": "#,##0",
         "raw": "currentSellGold",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "",
+        "rendered": "0",
         "format": "#,##0",
         "raw": "sellGoldIncreasePerWorld",
         "scalingType": "basic",
@@ -4355,6 +4361,436 @@
       "Heal"
     ],
     "image": "Gem_U_SoulPrison.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Culinary": {
+    "name": "Essence of Culinary",
+    "description": "If an enemy you dealt <color=yellow>Damage</color> to with this memory dies within 3 seconds, it has a  50%<sprite=5>  chance to drop <color=yellow>Cooking Ingredients</color>. Collected <color=yellow>Cooking Ingredients</color> can be used at <color=yellow>Jonas's Cauldron</color> to gain gold or stats.",
+    "rawDesc": "If an enemy you dealt <color=yellow>Damage</color> to with this memory dies within {0} seconds, it has a {1} chance to drop <color=yellow>Cooking Ingredients</color>. Collected <color=yellow>Cooking Ingredients</color> can be used at <color=yellow>Jonas's Cauldron</color> to gain gold or stats.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "killGraceTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 50%<sprite=5> ",
+        "format": "P0",
+        "raw": "DropChance",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Culinary.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Liberty": {
+    "name": "Essence of Liberty",
+    "description": "Casting this memory increases <color=yellow>Attack Damage</color> by  8<sprite=5> , <color=yellow>Ability Power</color> by  8<sprite=5> , and <color=yellow>Maximum Health</color> by  60<sprite=5>  for 2.5 seconds. If this memory is an <color=yellow>Ultimate</color>, the amount of stats granted and the duration are increased by 200%, and you become <color=yellow>Unstoppable</color> during this time.",
+    "rawDesc": "Casting this memory increases <color=yellow>Attack Damage</color> by {0}, <color=yellow>Ability Power</color> by {1}, and <color=yellow>Maximum Health</color> by {2} for {3} seconds. If this memory is an <color=yellow>Ultimate</color>, the amount of stats granted and the duration are increased by {4}, and you become <color=yellow>Unstoppable</color> during this time.",
+    "rawDescVars": [
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "adBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "apBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 60<sprite=5> ",
+        "format": "#,##0",
+        "raw": "maxHealthBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "Se_Gem_L_Liberty_Buff::duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "200%",
+        "format": "P0",
+        "raw": "Se_Gem_L_Liberty_Buff::multiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Liberty.png",
+    "lore": null,
+    "achievementKey": "ACH_THE_ROAD_NOT_TAKEN",
+    "achievementName": "The Road Not Taken",
+    "achievementDescription": "Reach the Starless Path."
+  },
+  "Gem_L_Supersymmetry": {
+    "name": "Supersymmetry",
+    "description": "Your <color=yellow>Max Health</color> is set to 1, but instead you gain a <color=yellow>Shield</color> equal to  100%<sprite=5>  of your <color=yellow>Max Health</color>. This <color=yellow>Shield</color> <color=yellow>instantly recharges</color> if you take no damage for 4 seconds, but every time you <color=yellow>cast</color> any <color=yellow>Memory</color>, the <color=yellow>Shield</color> takes <color=yellow>Damage</color> equal to  10%<sprite=5>  of your Max Health.",
+    "rawDesc": "Your <color=yellow>Max Health</color> is set to 1, but instead you gain a <color=yellow>Shield</color> equal to {0} of your <color=yellow>Max Health</color>. This <color=yellow>Shield</color> <color=yellow>instantly recharges</color> if you take no damage for {1} seconds, but every time you <color=yellow>cast</color> any <color=yellow>Memory</color>, the <color=yellow>Shield</color> takes <color=yellow>Damage</color> equal to {2} of your Max Health.",
+    "rawDescVars": [
+      {
+        "rendered": " 100%<sprite=5> ",
+        "format": "P0",
+        "raw": "shieldHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "rechargeDelay",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 10%<sprite=5> ",
+        "format": "P0",
+        "raw": "castDamageHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Shield"
+    ],
+    "image": "Gem_L_Supersymmetry.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Control": {
+    "name": "Essence of Control",
+    "description": "When this memory deals <color=yellow>Damage</color> to an enemy, the target's <color=yellow>Movement Speed</color> is reduced by  33%<sprite=5>  for 3 seconds.",
+    "rawDesc": "When this memory deals <color=yellow>Damage</color> to an enemy, the target's <color=yellow>Movement Speed</color> is reduced by {0} for {1} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": " 33%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "SlowAmount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_R_Control.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Crucible": {
+    "name": "Essence of the Crucible",
+    "description": "Increases <color=yellow>Critical Strike Chance</color> by 25%. When a <color=yellow>Critical Basic Attack</color> hits, the next cast of this memory deals  4%<sprite=5>  more damage and heals  4%<sprite=5>  more, stacking up to  40%<sprite=5> . ",
+    "rawDesc": "Increases <color=yellow>Critical Strike Chance</color> by {0}. When a <color=yellow>Critical Basic Attack</color> hits, the next cast of this memory deals {1} more damage and heals {2} more, stacking up to {3}. ",
+    "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "critChanceBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 4%<sprite=5> ",
+        "format": "P0",
+        "raw": "ampPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.02,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 4%<sprite=5> ",
+        "format": "P0",
+        "raw": "ampPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.02,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 40%<sprite=5> ",
+        "format": "P0",
+        "raw": "maxAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Crucible.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Hedgehog": {
+    "name": "Essence of the Hedgehog",
+    "description": "When you <color=yellow>cast</color> this memory, you unfurl an aura of spikes around you for 3 seconds, dealing  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5>  damage per second to nearby enemies. Whenever you take any damage, this aura's damage increases by 50% for 4 seconds.",
+    "rawDesc": "When you <color=yellow>cast</color> this memory, you unfurl an aura of spikes around you for {0} seconds, dealing {1} damage per second to nearby enemies. Whenever you take any damage, this aura's damage increases by {2} for {3} seconds.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "tickInterval * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Se_Gem_R_Hedgehog_Aura::dmgFactor/Se_Gem_R_Hedgehog_Aura::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "empoweredAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Melee"
+    ],
+    "image": "Gem_R_Hedgehog.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lightweight": {
+    "name": "Essence of Lightness",
+    "description": "Increases this memory's <color=yellow>Memory Haste</color> by  54<sprite=5> , but reduces its <color=yellow>Damage</color> by 40%.",
+    "rawDesc": "Increases this memory's <color=yellow>Memory Haste</color> by {0}, but reduces its <color=yellow>Damage</color> by {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 54<sprite=5> ",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 27.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Lightweight.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Slippery": {
+    "name": "Essence of Slipperiness",
+    "description": "Increases <color=yellow>Movement Speed</color> by 10%. This memory deals  100%<sprite=5>  more <color=yellow>Damage</color> based on your bonus <color=yellow>Movement Speed</color>.",
+    "rawDesc": "Increases <color=yellow>Movement Speed</color> by {0}. This memory deals {1} more <color=yellow>Damage</color> based on your bonus <color=yellow>Movement Speed</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "moveSpeedBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 100%<sprite=5> ",
+        "format": "P0",
+        "raw": "dmgPerMoveSpeedRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Slippery.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GuidingCompass_Charged": {
+    "name": "Guiding Compass (Charged)",
+    "description": "<alpha=#77><i>It points to where she is.</i><alpha=#ff>",
+    "rawDesc": "<alpha=#77><i>It points to where she is.</i><alpha=#ff>",
+    "rawDescVars": [],
+    "rarity": "Unique",
+    "tags": [],
+    "image": "Gem_U_GuidingCompass_Charged.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GuidingCompass_NotCharged": {
+    "name": "Guiding Compass",
+    "description": "<alpha=#77><i>It has lost its power and no longer works. Perhaps infusing it with a powerful force could fix it...</i><alpha=#ff>",
+    "rawDesc": "<alpha=#77><i>It has lost its power and no longer works. Perhaps infusing it with a powerful force could fix it...</i><alpha=#ff>",
+    "rawDescVars": [],
+    "rarity": "Unique",
+    "tags": [],
+    "image": "Gem_U_GuidingCompass_NotCharged.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",

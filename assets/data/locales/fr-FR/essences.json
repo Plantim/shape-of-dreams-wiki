@@ -993,7 +993,7 @@
     "rarity": "Epic",
     "tags": [],
     "image": "Gem_E_Direness.PNG",
-    "lore": "Comment puis-je être encore en vie...?\n\n...\n\nJ'étais pourtant enfermée dans la prison de l'Ordre de Lucide.\nCes chiens de l'ordre... Ils m'ont tendu un piège.\nC'est ma faute.\nJ'ai agi trop vite.\n\nMais c'est étrange.\nMon armure était en miettes, et je croyais avoir au moins deux côtes cassées...\nPourtant, je ne ressens rien. Au contraire... je me sens plus forte.\n\nOù suis-je...? Est-ce encore un tour de magie...?\n\n...\nC'est faible... mais je la perçois.\nAstrid, ma sœur...\nCette fois, je ne faillirai pas. Plus jamais.\n\nAttends-moi. J'arrive.",
+    "lore": "Comment puis-je être encore en vie...?\n\n...\n\nJ'étais pourtant enfermée dans la prison de l'Ordre.\nCes chiens de la Secte Lucide... Ils m'ont tendu un piège.\nC'est ma faute.\nJ'ai agi trop vite.\n\nMais c'est étrange.\nMon armure était en miettes, et je croyais avoir au moins deux côtes cassées...\nPourtant, je ne ressens rien. Au contraire... je me sens plus forte.\n\nOù suis-je...? Est-ce encore un tour de magie...?\n\n...\nC'est faible... mais je la perçois.\nAstrid, ma sœur...\nCette fois, je ne faillirai pas. Plus jamais.\n\nAttends-moi. J'arrive.",
     "achievementKey": "ACH_DESPERATE_HERO",
     "achievementName": "Héros désespéré",
     "achievementDescription": "Éliminez 30 ennemi(s) à la suite lorsque vos PV sont inférieurs ou égaux à 40%."
@@ -1196,8 +1196,8 @@
   },
   "Gem_E_Insensitivity": {
     "name": "Essence d'Insensibilité",
-    "description": "Après avoir <color=yellow>déclenché</color> cette Mémoire, lâche une <color=yellow>bombe</color> tous les 2 m parcourus pendant 4 sec. La bombe explose peu après, infligeant des <color=yellow>dégâts de feu</color> de  <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5>  aux ennemis.",
-    "rawDesc": "Après avoir <color=yellow>déclenché</color> cette Mémoire, lâche une <color=yellow>bombe</color> tous les {0} m parcourus pendant {1} sec. La bombe explose peu après, infligeant des <color=yellow>dégâts de feu</color> de {2} aux ennemis.",
+    "description": "Après avoir <color=yellow>déclenché</color> cette Mémoire <color=yellow>en combat</color>, lâche une <color=yellow>bombe</color> tous les 2 m parcourus pendant 4 sec. La bombe explose peu après, infligeant des <color=yellow>dégâts de feu</color> de  <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5>  aux ennemis.",
+    "rawDesc": "Après avoir <color=yellow>déclenché</color> cette Mémoire <color=yellow>en combat</color>, lâche une <color=yellow>bombe</color> tous les {0} m parcourus pendant {1} sec. La bombe explose peu après, infligeant des <color=yellow>dégâts de feu</color> de {2} aux ennemis.",
     "rawDescVars": [
       {
         "rendered": "2",
@@ -1332,20 +1332,20 @@
   },
   "Gem_E_Inversion": {
     "name": "Essence d'Inversion",
-    "description": "Augmente le <color=yellow>temps de recharge</color> de cette Mémoire de  15%<sprite=5> , mais en contrepartie, augmente les <color=yellow>dégâts</color> infligés aux ennemis de  20%<sprite=5> . <color=yellow>Inverse</color> les <color=yellow>dégâts d'éléments</color> infligés par cette Mémoire (feu/givre, lumière/ténèbres).",
+    "description": "Augmente le <color=yellow>temps de recharge</color> de cette Mémoire de 20%, mais en contrepartie, augmente les <color=yellow>dégâts</color> infligés aux ennemis de  20%<sprite=5> . <color=yellow>Inverse</color> les <color=yellow>dégâts d'éléments</color> infligés par cette Mémoire (feu/givre, lumière/ténèbres).",
     "rawDesc": "Augmente le <color=yellow>temps de recharge</color> de cette Mémoire de {0}, mais en contrepartie, augmente les <color=yellow>dégâts</color> infligés aux ennemis de {1}. <color=yellow>Inverse</color> les <color=yellow>dégâts d'éléments</color> infligés par cette Mémoire (feu/givre, lumière/ténèbres).",
     "rawDescVars": [
       {
-        "rendered": " 15%<sprite=5> ",
+        "rendered": "20%",
         "format": "P0",
         "raw": "cooldownAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.005
+          "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
@@ -1525,7 +1525,7 @@
     "lore": null,
     "achievementKey": "ACH_OMEGA_POINT",
     "achievementName": "Point oméga",
-    "achievementDescription": "Entrez dans le Rêve Immaculé en n'ayant déclenché qu'un seul type de Mémoire pendant l'aventure."
+    "achievementDescription": "Remportez la victoire en n'ayant déclenché qu'un seul type de Souvenir pendant l'aventure."
   },
   "Gem_E_Opportunity": {
     "name": "Essence d'Opportuniste",
@@ -1571,11 +1571,11 @@
   },
   "Gem_E_OurStory_Completed": {
     "name": "Notre Histoire (Complétée !)",
-    "description": "Augmente l'<color=yellow>ATQ</color> et le <color=yellow>SORT</color> de , et tous les effets bénéfiques de <color=yellow>Ruée Distordue</color> de .",
+    "description": "Augmente l'<color=yellow>ATQ</color> et le <color=yellow>SORT</color> de 0%, et tous les effets bénéfiques de <color=yellow>Ruée Distordue</color> de 0%.",
     "rawDesc": "Augmente l'<color=yellow>ATQ</color> et le <color=yellow>SORT</color> de {0}, et tous les effets bénéfiques de <color=yellow>Ruée Distordue</color> de {1}.",
     "rawDescVars": [
       {
-        "rendered": "",
+        "rendered": "0%",
         "format": "#,##0'%'",
         "raw": "Gem_E_OurStory_Completed::statPercentage",
         "scalingType": "basic",
@@ -1588,11 +1588,17 @@
         }
       },
       {
-        "rendered": "",
-        "format": "#,##0",
-        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
-        "scalingType": "unknown",
-        "data": {}
+        "rendered": "0%",
+        "format": "P0",
+        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "rarity": "Epic",
@@ -2061,18 +2067,18 @@
   },
   "Gem_L_CamillasGift": {
     "name": "Cadeau de Camilla",
-    "description": "Vous pouvez le <color=yellow>vendre</color> au magasin au prix de  Or. Le <color=yellow>prix</color> <color=yellow>augmente</color> de  à chaque fois que vous passez au monde suivant. Il se brise si vos PV deviennent inférieurs ou égaux à 50% en subissant des dégâts ennemis.",
+    "description": "Vous pouvez le <color=yellow>vendre</color> au magasin au prix de 0 Or. Le <color=yellow>prix</color> <color=yellow>augmente</color> de 0 à chaque fois que vous passez au monde suivant. Il se brise si vos PV deviennent inférieurs ou égaux à 50% en subissant des dégâts ennemis.",
     "rawDesc": "Vous pouvez le <color=yellow>vendre</color> au magasin au prix de {0} Or. Le <color=yellow>prix</color> <color=yellow>augmente</color> de {1} à chaque fois que vous passez au monde suivant. Il se brise si vos PV deviennent inférieurs ou égaux à {2} en subissant des dégâts ennemis.",
     "rawDescVars": [
       {
-        "rendered": "",
+        "rendered": "0",
         "format": "#,##0",
         "raw": "currentSellGold",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "",
+        "rendered": "0",
         "format": "#,##0",
         "raw": "sellGoldIncreasePerWorld",
         "scalingType": "basic",
@@ -4342,6 +4348,423 @@
       "Heal"
     ],
     "image": "Gem_U_SoulPrison.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Culinary": {
+    "name": "Essence de Cuisine",
+    "description": "Si un ennemi ayant subi des <color=yellow>dégâts</color> de ce souvenir meurt dans les 3 secondes, il a  50%<sprite=5>  de chances de lâcher un <color=yellow>Ingrédient de cuisine</color>. Les <color=yellow>Ingrédients de cuisine</color> récoltés peuvent être utilisés dans <color=yellow>Le Chaudron de Jonas</color> pour obtenir de l'or ou des statistiques.",
+    "rawDesc": "Si un ennemi ayant subi des <color=yellow>dégâts</color> de ce souvenir meurt dans les {0} secondes, il a {1} de chances de lâcher un <color=yellow>Ingrédient de cuisine</color>. Les <color=yellow>Ingrédients de cuisine</color> récoltés peuvent être utilisés dans <color=yellow>Le Chaudron de Jonas</color> pour obtenir de l'or ou des statistiques.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "killGraceTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 50%<sprite=5> ",
+        "format": "P0",
+        "raw": "DropChance",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Culinary.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Liberty": {
+    "name": "Essence de Libération",
+    "description": "Lancer ce souvenir augmente vos <color=yellow>Dégâts d'Attaque</color> de  8<sprite=5> , votre <color=yellow>Puissance des Compétences</color> de  8<sprite=5>  et vos <color=yellow>PV max</color> de  60<sprite=5>  pendant 2.5 sec. Si ce souvenir est un <color=yellow>Ultime</color>, la quantité de statistiques accordées et la durée augmentent de 200%, et vous devenez <color=yellow>Imparable</color> pendant ce temps.",
+    "rawDesc": "Lancer ce souvenir augmente vos <color=yellow>Dégâts d'Attaque</color> de {0}, votre <color=yellow>Puissance des Compétences</color> de {1} et vos <color=yellow>PV max</color> de {2} pendant {3} sec. Si ce souvenir est un <color=yellow>Ultime</color>, la quantité de statistiques accordées et la durée augmentent de {4}, et vous devenez <color=yellow>Imparable</color> pendant ce temps.",
+    "rawDescVars": [
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "adBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "apBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 60<sprite=5> ",
+        "format": "#,##0",
+        "raw": "maxHealthBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "Se_Gem_L_Liberty_Buff::duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "200%",
+        "format": "P0",
+        "raw": "Se_Gem_L_Liberty_Buff::multiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Liberty.png",
+    "lore": null,
+    "achievementKey": "ACH_THE_ROAD_NOT_TAKEN",
+    "achievementName": "La Route non empruntée",
+    "achievementDescription": "Atteignez le Chemin sans Étoiles."
+  },
+  "Gem_L_Supersymmetry": {
+    "name": "Supersymétrie",
+    "description": "Vos <color=yellow>PV max</color> sont réduits à 1, mais vous obtenez un <color=yellow>bouclier</color> équivalent à  100%<sprite=5>  de vos <color=yellow>PV max</color>. Ce <color=yellow>bouclier</color> se <color=yellow>recharge instantanément</color> si vous ne subissez aucun dégât pendant 4 sec, mais chaque fois que vous <color=yellow>lancez</color> un <color=yellow>souvenir</color>, le <color=yellow>bouclier</color> subit des <color=yellow>dégâts</color> équivalents à  10%<sprite=5>  de vos PV max.",
+    "rawDesc": "Vos <color=yellow>PV max</color> sont réduits à 1, mais vous obtenez un <color=yellow>bouclier</color> équivalent à {0} de vos <color=yellow>PV max</color>. Ce <color=yellow>bouclier</color> se <color=yellow>recharge instantanément</color> si vous ne subissez aucun dégât pendant {1} sec, mais chaque fois que vous <color=yellow>lancez</color> un <color=yellow>souvenir</color>, le <color=yellow>bouclier</color> subit des <color=yellow>dégâts</color> équivalents à {2} de vos PV max.",
+    "rawDescVars": [
+      {
+        "rendered": " 100%<sprite=5> ",
+        "format": "P0",
+        "raw": "shieldHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "rechargeDelay",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 10%<sprite=5> ",
+        "format": "P0",
+        "raw": "castDamageHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Shield"
+    ],
+    "image": "Gem_L_Supersymmetry.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Control": {
+    "name": "Essence de Contrôle",
+    "description": "Lorsque ce souvenir inflige des <color=yellow>dégâts</color> à un ennemi, la <color=yellow>vitesse de déplacement</color> de la cible est réduite de  33%<sprite=5>  pendant 3 sec.",
+    "rawDesc": "Lorsque ce souvenir inflige des <color=yellow>dégâts</color> à un ennemi, la <color=yellow>vitesse de déplacement</color> de la cible est réduite de {0} pendant {1} sec.",
+    "rawDescVars": [
+      {
+        "rendered": " 33%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "SlowAmount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_R_Control.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Crucible": {
+    "name": "Essence de Creuset",
+    "description": "Augmente la <color=yellow>Chance de coup critique</color> de 25%. Lorsqu'une <color=yellow>Attaque de base critique</color> touche, les prochains dégâts et soins de ce souvenir sont augmentés de  4%<sprite=5> , jusqu'à un maximum de  40%<sprite=5> .",
+    "rawDesc": "Augmente la <color=yellow>Chance de coup critique</color> de {0}. Lorsqu'une <color=yellow>Attaque de base critique</color> touche, les prochains dégâts et soins de ce souvenir sont augmentés de {1}, jusqu'à un maximum de {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "critChanceBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 4%<sprite=5> ",
+        "format": "P0",
+        "raw": "ampPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.02,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 40%<sprite=5> ",
+        "format": "P0",
+        "raw": "maxAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Crucible.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Hedgehog": {
+    "name": "Essence de Hérisson",
+    "description": "Lorsque vous <color=yellow>lancez</color> ce souvenir, une aura d'épines se déploie autour de vous pendant 3 sec, infligeant  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5>  dégâts par seconde aux ennemis alentour. Si vous subissez des dégâts, les dégâts de cette aura augmentent de 50% pendant 4 sec.",
+    "rawDesc": "Lorsque vous <color=yellow>lancez</color> ce souvenir, une aura d'épines se déploie autour de vous pendant {0} sec, infligeant {1} dégâts par seconde aux ennemis alentour. Si vous subissez des dégâts, les dégâts de cette aura augmentent de {2} pendant {3} sec.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "tickInterval * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Se_Gem_R_Hedgehog_Aura::dmgFactor/Se_Gem_R_Hedgehog_Aura::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "empoweredAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Melee"
+    ],
+    "image": "Gem_R_Hedgehog.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lightweight": {
+    "name": "Essence de Légèreté",
+    "description": "Augmente la <color=yellow>Célérité de mémoire</color> de ce souvenir de  54<sprite=5> , mais réduit ses <color=yellow>Dégâts</color> de 40%.",
+    "rawDesc": "Augmente la <color=yellow>Célérité de mémoire</color> de ce souvenir de {0}, mais réduit ses <color=yellow>Dégâts</color> de {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 54<sprite=5> ",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 27.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Lightweight.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Slippery": {
+    "name": "Essence de Glissement",
+    "description": "Augmente la <color=yellow>Vitesse de déplacement</color> de 10%. Les <color=yellow>Dégâts</color> infligés par ce souvenir augmentent de  100%<sprite=5>  du bonus de <color=yellow>Vitesse de déplacement</color>.",
+    "rawDesc": "Augmente la <color=yellow>Vitesse de déplacement</color> de {0}. Les <color=yellow>Dégâts</color> infligés par ce souvenir augmentent de {1} du bonus de <color=yellow>Vitesse de déplacement</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "moveSpeedBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 100%<sprite=5> ",
+        "format": "P0",
+        "raw": "dmgPerMoveSpeedRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Slippery.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GuidingCompass_Charged": {
+    "name": "Boussole Directrice (chargée)",
+    "description": "<alpha=#77><i>Elle indique l'endroit où elle se trouve.</i><alpha=#ff>",
+    "rawDesc": "<alpha=#77><i>Elle indique l'endroit où elle se trouve.</i><alpha=#ff>",
+    "rawDescVars": [],
+    "rarity": "Unique",
+    "tags": [],
+    "image": "Gem_U_GuidingCompass_Charged.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GuidingCompass_NotCharged": {
+    "name": "Boussole Directrice",
+    "description": "<alpha=#77><i>Elle a perdu son pouvoir et ne fonctionne plus. Peut-être qu'en y insufflant une puissance considérable, il serait possible de la réparer...</i><alpha=#ff>",
+    "rawDesc": "<alpha=#77><i>Elle a perdu son pouvoir et ne fonctionne plus. Peut-être qu'en y insufflant une puissance considérable, il serait possible de la réparer...</i><alpha=#ff>",
+    "rawDescVars": [],
+    "rarity": "Unique",
+    "tags": [],
+    "image": "Gem_U_GuidingCompass_NotCharged.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",

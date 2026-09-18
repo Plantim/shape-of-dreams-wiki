@@ -1196,8 +1196,8 @@
   },
   "Gem_E_Insensitivity": {
     "name": "無神經的精粹",
-    "description": "<color=yellow>施放</color>此記憶後，在4秒內，每移動2公尺會投下一顆<color=yellow>炸彈</color>。炸彈會在短暫延遲後爆炸，對敵人造成 <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5> 的<color=yellow>火焰傷害</color>。",
-    "rawDesc": "<color=yellow>施放</color>此記憶後，在{0}秒內，每移動{1}公尺會投下一顆<color=yellow>炸彈</color>。炸彈會在短暫延遲後爆炸，對敵人造成{2}的<color=yellow>火焰傷害</color>。",
+    "description": "<color=yellow>戰鬥中</color><color=yellow>施放</color>此記憶後，在4秒內，每移動2公尺會投下一顆<color=yellow>炸彈</color>。炸彈會在短暫延遲後爆炸，對敵人造成 <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5> 的<color=yellow>火焰傷害</color>。",
+    "rawDesc": "<color=yellow>戰鬥中</color><color=yellow>施放</color>此記憶後，在{0}秒內，每移動{1}公尺會投下一顆<color=yellow>炸彈</color>。炸彈會在短暫延遲後爆炸，對敵人造成{2}的<color=yellow>火焰傷害</color>。",
     "rawDescVars": [
       {
         "rendered": "4",
@@ -1332,20 +1332,20 @@
   },
   "Gem_E_Inversion": {
     "name": "反轉精粹",
-    "description": "此記憶的<color=yellow>冷卻時間</color>增加 15%<sprite=5> ，但對敵人造成的<color=yellow>傷害量</color>也增加 20%<sprite=5> 。此記憶造成的<color=yellow>元素傷害</color>會<color=yellow>反轉</color>。（火焰/冰寒，光明/黑暗）",
+    "description": "此記憶的<color=yellow>冷卻時間</color>增加20%，但對敵人造成的<color=yellow>傷害量</color>也增加 20%<sprite=5> 。此記憶造成的<color=yellow>元素傷害</color>會<color=yellow>反轉</color>。（火焰/冰寒，光明/黑暗）",
     "rawDesc": "此記憶的<color=yellow>冷卻時間</color>增加{0}，但對敵人造成的<color=yellow>傷害量</color>也增加{1}。此記憶造成的<color=yellow>元素傷害</color>會<color=yellow>反轉</color>。（火焰/冰寒，光明/黑暗）",
     "rawDescVars": [
       {
-        "rendered": " 15%<sprite=5> ",
+        "rendered": "20%",
         "format": "P0",
         "raw": "cooldownAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.005
+          "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
@@ -1538,7 +1538,7 @@
     "lore": null,
     "achievementKey": "ACH_OMEGA_POINT",
     "achievementName": "奧米加點數",
-    "achievementDescription": "在一次冒險中僅施放一種記憶，並進入純白之夢。"
+    "achievementDescription": "在一次冒險中僅施放一種記憶並獲得勝利。"
   },
   "Gem_E_Opportunity": {
     "name": "機會精粹",
@@ -1584,11 +1584,11 @@
   },
   "Gem_E_OurStory_Completed": {
     "name": "我們的故事（完成！）",
-    "description": "<color=yellow>攻擊力</color>與<color=yellow>魔法攻擊</color>提升，且<color=yellow>扭曲疾走</color>的所有增益效果提升。",
+    "description": "<color=yellow>攻擊力</color>與<color=yellow>魔法攻擊</color>提升0%，且<color=yellow>扭曲疾走</color>的所有增益效果提升0%。",
     "rawDesc": "<color=yellow>攻擊力</color>與<color=yellow>魔法攻擊</color>提升{0}，且<color=yellow>扭曲疾走</color>的所有增益效果提升{1}。",
     "rawDescVars": [
       {
-        "rendered": "",
+        "rendered": "0%",
         "format": "#,##0'%'",
         "raw": "Gem_E_OurStory_Completed::statPercentage",
         "scalingType": "basic",
@@ -1601,11 +1601,17 @@
         }
       },
       {
-        "rendered": "",
-        "format": "#,##0",
-        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
-        "scalingType": "unknown",
-        "data": {}
+        "rendered": "0%",
+        "format": "P0",
+        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "rarity": "Epic",
@@ -2074,18 +2080,18 @@
   },
   "Gem_L_CamillasGift": {
     "name": "卡米拉的禮物",
-    "description": "可以在商店<color=yellow>出售</color>獲得金幣。每次移動到下一個世界時，<color=yellow>價格</color>會<color=yellow>增加</color>。如果受到敵人傷害導致生命值低於50%，則會破碎。",
+    "description": "可以在商店<color=yellow>出售</color>獲得0金幣。每次移動到下一個世界時，<color=yellow>價格</color>會<color=yellow>增加</color>0。如果受到敵人傷害導致生命值低於50%，則會破碎。",
     "rawDesc": "可以在商店<color=yellow>出售</color>獲得{0}金幣。每次移動到下一個世界時，<color=yellow>價格</color>會<color=yellow>增加</color>{1}。如果受到敵人傷害導致生命值低於{2}，則會破碎。",
     "rawDescVars": [
       {
-        "rendered": "",
+        "rendered": "0",
         "format": "#,##0",
         "raw": "currentSellGold",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "",
+        "rendered": "0",
         "format": "#,##0",
         "raw": "sellGoldIncreasePerWorld",
         "scalingType": "basic",
@@ -4355,6 +4361,436 @@
       "Heal"
     ],
     "image": "Gem_U_SoulPrison.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Culinary": {
+    "name": "烹飪精粹",
+    "description": "若被此記憶造成<color=yellow>傷害</color>的敵人在3秒內死亡，則有 50%<sprite=5> 機率掉落<color=yellow>烹飪食材</color>。蒐集到的<color=yellow>烹飪食材</color>可在<color=yellow>喬納斯的大鍋</color>使用，以換取金幣或能力數值。",
+    "rawDesc": "若被此記憶造成<color=yellow>傷害</color>的敵人在{0}秒內死亡，則有{1}機率掉落<color=yellow>烹飪食材</color>。蒐集到的<color=yellow>烹飪食材</color>可在<color=yellow>喬納斯的大鍋</color>使用，以換取金幣或能力數值。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "killGraceTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 50%<sprite=5> ",
+        "format": "P0",
+        "raw": "DropChance",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Culinary.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Liberty": {
+    "name": "解放精粹",
+    "description": "施放此記憶後，於2.5秒內提升<color=yellow>攻擊力</color> 8<sprite=5> 、<color=yellow>魔法攻擊</color> 8<sprite=5> 、<color=yellow>最大生命值</color> 60<sprite=5> 。若此記憶為<color=yellow>終極技能</color>，所賦予的屬性數值與持續時間增加200%，且在此期間獲得<color=yellow>無法阻擋</color>效果。",
+    "rawDesc": "施放此記憶後，於{0}秒內提升<color=yellow>攻擊力</color>{1}、<color=yellow>魔法攻擊</color>{2}、<color=yellow>最大生命值</color>{3}。若此記憶為<color=yellow>終極技能</color>，所賦予的屬性數值與持續時間增加{4}，且在此期間獲得<color=yellow>無法阻擋</color>效果。",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "Se_Gem_L_Liberty_Buff::duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "adBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "apBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 60<sprite=5> ",
+        "format": "#,##0",
+        "raw": "maxHealthBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "200%",
+        "format": "P0",
+        "raw": "Se_Gem_L_Liberty_Buff::multiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Liberty.png",
+    "lore": null,
+    "achievementKey": "ACH_THE_ROAD_NOT_TAKEN",
+    "achievementName": "未曾踏上的路",
+    "achievementDescription": "抵達無星之路。"
+  },
+  "Gem_L_Supersymmetry": {
+    "name": "超對稱",
+    "description": "<color=yellow>最大生命值</color>變為1，作為代價，獲得相當於<color=yellow>最大生命值</color> 100%<sprite=5> 的<color=yellow>護盾</color>。此<color=yellow>護盾</color>在4秒內未受到傷害時會<color=yellow>立即重新充能</color>，但每次<color=yellow>施放</color>任何<color=yellow>記憶</color>時，<color=yellow>護盾</color>會受到相當於最大生命值 10%<sprite=5> 的<color=yellow>傷害</color>。",
+    "rawDesc": "<color=yellow>最大生命值</color>變為1，作為代價，獲得相當於<color=yellow>最大生命值</color>{0}的<color=yellow>護盾</color>。此<color=yellow>護盾</color>在{1}秒內未受到傷害時會<color=yellow>立即重新充能</color>，但每次<color=yellow>施放</color>任何<color=yellow>記憶</color>時，<color=yellow>護盾</color>會受到相當於最大生命值{2}的<color=yellow>傷害</color>。",
+    "rawDescVars": [
+      {
+        "rendered": " 100%<sprite=5> ",
+        "format": "P0",
+        "raw": "shieldHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "rechargeDelay",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 10%<sprite=5> ",
+        "format": "P0",
+        "raw": "castDamageHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Shield"
+    ],
+    "image": "Gem_L_Supersymmetry.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Control": {
+    "name": "操控精粹",
+    "description": "以此記憶對敵人造成<color=yellow>傷害</color>時，目標的<color=yellow>移動速度</color>在3秒內降低 33%<sprite=5> 。",
+    "rawDesc": "以此記憶對敵人造成<color=yellow>傷害</color>時，目標的<color=yellow>移動速度</color>在{0}秒內降低{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 33%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "SlowAmount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_R_Control.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Crucible": {
+    "name": "煉化精粹",
+    "description": "<color=yellow>暴擊率</color>提升25%。<color=yellow>暴擊基本攻擊</color>命中時，此記憶下次施放的傷害量提升 4%<sprite=5> 、回復量提升 4%<sprite=5> ，最高可疊加至 40%<sprite=5> 。",
+    "rawDesc": "<color=yellow>暴擊率</color>提升{0}。<color=yellow>暴擊基本攻擊</color>命中時，此記憶下次施放的傷害量提升{1}、回復量提升{2}，最高可疊加至{3}。",
+    "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "critChanceBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 4%<sprite=5> ",
+        "format": "P0",
+        "raw": "ampPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.02,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 4%<sprite=5> ",
+        "format": "P0",
+        "raw": "ampPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.02,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 40%<sprite=5> ",
+        "format": "P0",
+        "raw": "maxAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Crucible.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Hedgehog": {
+    "name": "刺蝟精粹",
+    "description": "<color=yellow>施放</color>此記憶時，在我周圍展開3秒的尖刺光環，對周圍敵人每秒造成 <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>額外<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5> 傷害。受到任何傷害時，此光環的傷害量在4秒內提升50%。",
+    "rawDesc": "<color=yellow>施放</color>此記憶時，在我周圍展開{0}秒的尖刺光環，對周圍敵人每秒造成{1}傷害。受到任何傷害時，此光環的傷害量在{2}秒內提升{3}。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "tickInterval * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>額外<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Se_Gem_R_Hedgehog_Aura::dmgFactor/Se_Gem_R_Hedgehog_Aura::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "empoweredAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Melee"
+    ],
+    "image": "Gem_R_Hedgehog.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lightweight": {
+    "name": "輕盈精粹",
+    "description": "此記憶的<color=yellow>記憶加速</color>提升 54<sprite=5> ，但<color=yellow>傷害量</color>隨之降低40%。",
+    "rawDesc": "此記憶的<color=yellow>記憶加速</color>提升{0}，但<color=yellow>傷害量</color>隨之降低{1}。",
+    "rawDescVars": [
+      {
+        "rendered": " 54<sprite=5> ",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 27.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Lightweight.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Slippery": {
+    "name": "滑溜精粹",
+    "description": "<color=yellow>移動速度</color>提升10%。依<color=yellow>移動速度</color>加成的 100%<sprite=5> ，提升此記憶造成的<color=yellow>傷害量</color>。",
+    "rawDesc": "<color=yellow>移動速度</color>提升{0}。依<color=yellow>移動速度</color>加成的{1}，提升此記憶造成的<color=yellow>傷害量</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "moveSpeedBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 100%<sprite=5> ",
+        "format": "P0",
+        "raw": "dmgPerMoveSpeedRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Slippery.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GuidingCompass_Charged": {
+    "name": "指引羅盤（已充能）",
+    "description": "<alpha=#77><i>正指向她所在之處。</i><alpha=#ff>",
+    "rawDesc": "<alpha=#77><i>正指向她所在之處。</i><alpha=#ff>",
+    "rawDescVars": [],
+    "rarity": "Unique",
+    "tags": [],
+    "image": "Gem_U_GuidingCompass_Charged.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GuidingCompass_NotCharged": {
+    "name": "指引羅盤",
+    "description": "<alpha=#77><i>失去了力量，無法運作。若能注入強大的力量，或許就能修復它……</i><alpha=#ff>",
+    "rawDesc": "<alpha=#77><i>失去了力量，無法運作。若能注入強大的力量，或許就能修復它……</i><alpha=#ff>",
+    "rawDescVars": [],
+    "rarity": "Unique",
+    "tags": [],
+    "image": "Gem_U_GuidingCompass_NotCharged.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",

@@ -1797,11 +1797,11 @@
     ],
     "requiredLevel": 40,
     "isRequiredLevelTotalMastery": true,
-    "description": "感受到<color=yellow>寒气</color>的敌人对玩家造成的伤害降低 25%<sprite=5> 。",
+    "description": "感受到<color=yellow>寒气</color>的敌人对玩家造成的伤害降低 19%<sprite=5> 。",
     "rawDesc": "感受到<color=yellow>寒气</color>的敌人对玩家造成的伤害降低{0}。",
     "rawDescVars": [
       {
-        "rendered": " 25%<sprite=5> ",
+        "rendered": " 19%<sprite=5> ",
         "format": "P0",
         "raw": "reductionAmount",
         "scalingType": "star",
@@ -1810,10 +1810,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.25,
-            0.3,
-            0.35,
-            0.4
+            0.19,
+            0.21,
+            0.23,
+            0.25
           ],
           "strengthScaling": "Multiply"
         }
@@ -2089,11 +2089,11 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": true,
-    "description": "每<color=yellow>击败</color>一名敌人，便恢复相当于最大生命值 1.00%<sprite=5> 的生命。",
+    "description": "每<color=yellow>击败</color>一名敌人，便恢复相当于最大生命值 1.40%<sprite=5> 的生命。",
     "rawDesc": "每<color=yellow>击败</color>一名敌人，便恢复相当于最大生命值{0}的生命。",
     "rawDescVars": [
       {
-        "rendered": " 1.00%<sprite=5> ",
+        "rendered": " 1.40%<sprite=5> ",
         "format": "P2",
         "raw": "healRatio",
         "scalingType": "star",
@@ -2102,10 +2102,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.01,
-            0.015,
-            0.02,
-            0.025
+            0.014,
+            0.016,
+            0.018,
+            0.02
           ],
           "strengthScaling": "Multiply"
         }
@@ -2244,7 +2244,7 @@
     "image": "Se_Star_L_MaxHealth.png"
   },
   "Se_Star_L_MaxHealthUpHealDown": {
-    "name": "坚韧表皮",
+    "name": "过厚的表皮",
     "lore": null,
     "category": "Life",
     "heroType": "",
@@ -2481,8 +2481,8 @@
     ],
     "requiredLevel": 70,
     "isRequiredLevelTotalMastery": true,
-    "description": "在商店购买或出售物品时，获得<color=yellow>生命药水</color>。每个商人处最多触发 1<sprite=5> 次。",
-    "rawDesc": "在商店购买或出售物品时，获得<color=yellow>生命药水</color>。每个商人处最多触发{0}次。",
+    "description": "使用金币购买或出售物品时，获得<color=yellow>生命药水</color>。每个商人处最多触发 1<sprite=5> 次。",
+    "rawDesc": "使用金币购买或出售物品时，获得<color=yellow>生命药水</color>。每个商人处最多触发{0}次。",
     "rawDescVars": [
       {
         "rendered": " 1<sprite=5> ",
@@ -2791,6 +2791,56 @@
       }
     ],
     "image": "Se_Star_Aurena_D_BonusStatOnLowHp.png"
+  },
+  "Se_Star_Aurena_F_CR_ChargedCast": {
+    "name": "黄金遗产",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Aurena",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>连锁反应</color>变为长按施放键进行蓄力的记忆。最多可蓄力3秒，蓄力结束后在原地施放，并根据蓄力程度，范围最多增加至25%，伤害与回复量最多增加至50%。",
+    "rawDesc": "<color=yellow>连锁反应</color>变为长按施放键进行蓄力的记忆。最多可蓄力{0}秒，蓄力结束后在原地施放，并根据蓄力程度，范围最多增加至{1}，伤害与回复量最多增加至{2}。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "maxChargeTime",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "maxRangeMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "maxEffectMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Aurena_F_CR_ChargedCast.png"
   },
   "Se_Star_Aurena_F_CR_EarnGold": {
     "name": "炼金术大师",
@@ -4213,6 +4263,62 @@
     ],
     "image": "Se_Star_Bismuth_F_IT_InnerDamage.png"
   },
+  "Se_Star_Bismuth_F_IT_SmallerRingAddDisplacement": {
+    "name": "来玩捉迷藏吧！",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Bismuth",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>地狱火奇谭</color>的冷却时间增加2秒，伤害降低20%，但作为补偿，最多可再次施放2次，向目标方向冲刺。",
+    "rawDesc": "<color=yellow>地狱火奇谭</color>的冷却时间增加{0}秒，伤害降低{1}，但作为补偿，最多可再次施放{2}次，向目标方向冲刺。",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "increasedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "dmgReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dashCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Bismuth_F_IT_SmallerRingAddDisplacement.png"
+  },
   "Se_Star_Bismuth_F_IT_SmallerRingMoreDamage": {
     "name": "亲密关系",
     "lore": null,
@@ -4854,6 +4960,1210 @@
     ],
     "image": "Se_Star_Bismuth_L_SecondWindWithPenalty.png"
   },
+  "Se_Star_Cetus_D_AdApUpByBonusHp": {
+    "name": "重拳出击",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 20,
+    "isRequiredLevelTotalMastery": false,
+    "description": "获得相当于<color=yellow>额外生命值</color> 1.0%<sprite=5> 的<color=yellow>法术强度</color>与<color=yellow>攻击力</color>。",
+    "rawDesc": "获得相当于<color=yellow>额外生命值</color>{0}的<color=yellow>法术强度</color>与<color=yellow>攻击力</color>。",
+    "rawDescVars": [
+      {
+        "rendered": " 1.0%<sprite=5> ",
+        "format": "P1",
+        "raw": "ampValue",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.01,
+            0.015,
+            0.02
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_AdApUpByBonusHp.png"
+  },
+  "Se_Star_Cetus_D_ApUpByColdSkillCounts": {
+    "name": "尖锐棘鳍",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      20,
+      30,
+      30,
+      20
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>法术强度</color>增加 4<sprite=5> 。每拥有一项<color=yellow>寒气伤害记忆</color>，额外增加 1<sprite=5> 。",
+    "rawDesc": "<color=yellow>法术强度</color>增加{0}。每拥有一项<color=yellow>寒气伤害记忆</color>，额外增加{1}。",
+    "rawDescVars": [
+      {
+        "rendered": " 4<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedFlat",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            4.0,
+            5.0,
+            6.0,
+            7.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "bonusPerSkill",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            1.0,
+            1.5,
+            2.0,
+            2.5
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_ApUpByColdSkillCounts.png"
+  },
+  "Se_Star_Cetus_D_StackStatsOnTakenDamage": {
+    "name": "醒神之痛",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      40,
+      50,
+      60,
+      70
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": false,
+    "description": "受到<color=yellow>伤害</color>时，<color=yellow>法术强度</color>和<color=yellow>记忆加速</color>增加1，持续5秒，最多增加 6<sprite=5> 。",
+    "rawDesc": "受到<color=yellow>伤害</color>时，<color=yellow>法术强度</color>和<color=yellow>记忆加速</color>增加{0}，持续{1}秒，最多增加{2}。",
+    "rawDescVars": [
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "bonusAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "stackDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 6<sprite=5> ",
+        "format": "#,##0",
+        "raw": "maxBonusCount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            6.0,
+            9.0,
+            12.0,
+            15.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_StackStatsOnTakenDamage.png"
+  },
+  "Se_Star_Cetus_D_StatsUpWhileShielded": {
+    "name": "法力流转",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 10,
+    "isRequiredLevelTotalMastery": false,
+    "description": "拥有<color=yellow>护盾</color>时，<color=yellow>法术强度</color>增加 5<sprite=5> ，<color=yellow>记忆加速</color>增加 6<sprite=5> 。",
+    "rawDesc": "拥有<color=yellow>护盾</color>时，<color=yellow>法术强度</color>增加{0}，<color=yellow>记忆加速</color>增加{1}。",
+    "rawDescVars": [
+      {
+        "rendered": " 5<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedAp",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            5.0,
+            6.0,
+            7.0,
+            8.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 6<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedHaste",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            6.0,
+            8.0,
+            10.0,
+            12.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_StatsUpWhileShielded.png"
+  },
+  "Se_Star_Cetus_F_BA_CdReductionOnKill": {
+    "name": "爽快打击",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "如果被<color=yellow>退后！</color>命中的敌人在3秒内死亡，冷却时间减少0.7秒。",
+    "rawDesc": "如果被<color=yellow>退后！</color>命中的敌人在{0}秒内死亡，冷却时间减少{1}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "trackingGracePeriod",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0.7",
+        "format": "#,##0.#",
+        "raw": "cdReductionAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.7,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BA_CdReductionOnKill.png"
+  },
+  "Se_Star_Cetus_F_BA_ChargeMsNoShield": {
+    "name": "无处不昂首阔步",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>退后！</color>不再赋予塞图斯自身防御力和护盾，但在蓄力期间移动速度增加30%。",
+    "rawDesc": "<color=yellow>退后！</color>不再赋予塞图斯自身防御力和护盾，但在蓄力期间移动速度增加{0}。",
+    "rawDescVars": [
+      {
+        "rendered": "30%",
+        "format": "#,##0'%'",
+        "raw": "moveSpeedBuffStrength",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BA_ChargeMsNoShield.png"
+  },
+  "Se_Star_Cetus_F_BA_LightningEcho": {
+    "name": "刺激体验",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "短暂延迟后，向被<color=yellow>退后！</color>击中的敌人降下闪电，造成相当于打击伤害量40%的光明伤害，但冷却时间增加4秒。",
+    "rawDesc": "短暂延迟后，向被<color=yellow>退后！</color>击中的敌人降下闪电，造成相当于打击伤害量{0}的光明伤害，但冷却时间增加{1}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "lightningEchoDmgMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTimePenalty",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BA_LightningEcho.png"
+  },
+  "Se_Star_Cetus_F_BI_FastChargeTakeDamageUp": {
+    "name": "鲁莽魔法",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>巨型冰川碎片</color>的蓄力速度提升40%，但在施放期间，塞图斯受到的伤害增加40%。",
+    "rawDesc": "<color=yellow>巨型冰川碎片</color>的蓄力速度提升{0}，但在施放期间，塞图斯受到的伤害增加{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "chargingSpeedAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "takenDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BI_FastChargeTakeDamageUp.png"
+  },
+  "Se_Star_Cetus_F_BI_MaxChargeTimePerLevel": {
+    "name": "压倒性尺寸",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "每次强化<color=yellow>巨型冰川碎片</color>时，最大蓄力时间增加0.5秒。",
+    "rawDesc": "每次强化<color=yellow>巨型冰川碎片</color>时，最大蓄力时间增加{0}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "maxChargeTimePerLevel",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BI_MaxChargeTimePerLevel.png"
+  },
+  "Se_Star_Cetus_F_BI_SelfDamageAoeCold": {
+    "name": "力量外泄",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "施放<color=yellow>巨型冰川碎片</color>时，每秒受到相当于最大生命值2%的寒气伤害，但每0.5秒对周围敌人造成相当于冰川碎片伤害量8%的寒气伤害。",
+    "rawDesc": "施放<color=yellow>巨型冰川碎片</color>时，每秒受到相当于最大生命值{0}的寒气伤害，但每{1}秒对周围敌人造成相当于冰川碎片伤害量{2}的寒气伤害。",
+    "rawDescVars": [
+      {
+        "rendered": "2%",
+        "format": "P0",
+        "raw": "selfTickDamageMaxHpRatio / tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "tickInterval",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "8%",
+        "format": "P0",
+        "raw": "dealtTickDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.08,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BI_SelfDamageAoeCold.png"
+  },
+  "Se_Star_Cetus_F_EM_ChaseTarget": {
+    "name": "无法抹去的过去",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>拥抱严寒</color>会追踪距离最近的敌人或塞图斯。",
+    "rawDesc": "<color=yellow>拥抱严寒</color>会追踪距离最近的敌人或塞图斯。",
+    "rawDescVars": [],
+    "image": "Se_Star_Cetus_F_EM_ChaseTarget.png"
+  },
+  "Se_Star_Cetus_F_EM_DamageUpSelfDamage": {
+    "name": "洗罪之痛",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>拥抱严寒</color>的伤害量增加40%，但塞图斯自身处于寒气领域内时，将不再获得护盾，而是受到相当于伤害量5%的寒气伤害。",
+    "rawDesc": "<color=yellow>拥抱严寒</color>的伤害量增加{0}，但塞图斯自身处于寒气领域内时，将不再获得护盾，而是受到相当于伤害量{1}的寒气伤害。",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "damageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "takeDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_EM_DamageUpSelfDamage.png"
+  },
+  "Se_Star_Cetus_F_EM_InfiniteDuration": {
+    "name": "永恒之冬",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "战斗中<color=yellow>拥抱严寒</color>的伤害与护盾赋予周期提升100%，半径减少35%，且不再爆炸，但会一直持续到下次施放为止。",
+    "rawDesc": "战斗中<color=yellow>拥抱严寒</color>的伤害与护盾赋予周期提升{0}，半径减少{1}，且不再爆炸，但会一直持续到下次施放为止。",
+    "rawDescVars": [
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "damageIntervalAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "35%",
+        "format": "P0",
+        "raw": "scaleReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.35,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_EM_InfiniteDuration.png"
+  },
+  "Se_Star_Cetus_F_FR_CdReductionOnTakeDamage": {
+    "name": "唤悦之痛",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "塞图斯每次受到伤害时，<color=yellow>礼仪注入</color>的冷却时间减少4%。若其为终极技能，则该效果仅生效30%。",
+    "rawDesc": "塞图斯每次受到伤害时，<color=yellow>礼仪注入</color>的冷却时间减少{0}。若其为终极技能，则该效果仅生效{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "4%",
+        "format": "P0",
+        "raw": "reduceRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "ultRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_FR_CdReductionOnTakeDamage.png"
+  },
+  "Se_Star_Cetus_F_FR_ChangeToUltHitReset": {
+    "name": "无尽惩戒",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>礼仪注入</color>变更为终极技能，在持续时间内变为无法阻挡状态，在此期间攻击敌人时持续时间增加0.3秒，击杀敌人时持续时间增加1.5秒。",
+    "rawDesc": "<color=yellow>礼仪注入</color>变更为终极技能，在持续时间内变为无法阻挡状态，在此期间攻击敌人时持续时间增加{0}秒，击杀敌人时持续时间增加{1}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "0.3",
+        "format": "#,##0.#",
+        "raw": "durationIncreasePerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "durationIncreasePerKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_FR_ChangeToUltHitReset.png"
+  },
+  "Se_Star_Cetus_F_FR_RecastCdrNoKnockback": {
+    "name": "滑溜之拳",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>礼仪注入</color>再次施放效果的冷却时间减少50%，但不再击退敌人。",
+    "rawDesc": "<color=yellow>礼仪注入</color>再次施放效果的冷却时间减少{0}，但不再击退敌人。",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "reduceRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_FR_RecastCdrNoKnockback.png"
+  },
+  "Se_Star_Cetus_I_ColdDiscountFireSurcharge": {
+    "name": "惊人的说服力",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 20,
+    "isRequiredLevelTotalMastery": false,
+    "description": "乔纳斯出售的<color=yellow>寒气记忆</color>和<color=yellow>寒气精粹</color>价格降低 40%<sprite=5> ，但<color=yellow>火焰记忆</color>和<color=yellow>火焰精粹</color>的价格增加100%。",
+    "rawDesc": "乔纳斯出售的<color=yellow>寒气记忆</color>和<color=yellow>寒气精粹</color>价格降低{0}，但<color=yellow>火焰记忆</color>和<color=yellow>火焰精粹</color>的价格增加{1}。",
+    "rawDescVars": [
+      {
+        "rendered": " 40%<sprite=5> ",
+        "format": "P0",
+        "raw": "discountRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.4,
+            0.5,
+            0.55,
+            0.6
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "surchargeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_ColdDiscountFireSurcharge.png"
+  },
+  "Se_Star_Cetus_I_ColdSkillOnEnterWorld": {
+    "name": "大海的馈赠",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 10,
+    "isRequiredLevelTotalMastery": false,
+    "description": "每次进入新世界时，获得一项随机的 1<sprite=5> 级<color=yellow>寒气记忆</color>。",
+    "rawDesc": "每次进入新世界时，获得一项随机的{0}级<color=yellow>寒气记忆</color>。",
+    "rawDescVars": [
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0",
+        "raw": "dropColdSkillLevel",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": true,
+          "clampMin": 1.0,
+          "clampMax": 100.0,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_ColdSkillOnEnterWorld.png"
+  },
+  "Se_Star_Cetus_I_FirstColdGemQualityBoost": {
+    "name": "熟悉的力量",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      60,
+      40,
+      50,
+      50
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": false,
+    "description": "首次装备的<color=yellow>寒气精粹</color>品质提升 80%<sprite=5> 。",
+    "rawDesc": "首次装备的<color=yellow>寒气精粹</color>品质提升{0}。",
+    "rawDescVars": [
+      {
+        "rendered": " 80%<sprite=5> ",
+        "format": "P0",
+        "raw": "bonusQuality",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.8,
+            1.0,
+            1.2,
+            1.4
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_FirstColdGemQualityBoost.png"
+  },
+  "Se_Star_Cetus_I_GetDreamDustOnBossKill": {
+    "name": "破坏性分析",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "每次击败任意<color=yellow>首领</color>时，获得 40<sprite=5> <color=yellow>梦尘</color>。",
+    "rawDesc": "每次击败任意<color=yellow>首领</color>时，获得{0}<color=yellow>梦尘</color>。",
+    "rawDescVars": [
+      {
+        "rendered": " 40<sprite=5> ",
+        "format": "#,##0",
+        "raw": "dropDreamDustAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            40.0,
+            50.0,
+            60.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_GetDreamDustOnBossKill.png"
+  },
+  "Se_Star_Cetus_I_StartWithResources": {
+    "name": "充分准备",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "开始冒险时，获得 40<sprite=5> <color=yellow>金币</color>和 40<sprite=5> <color=yellow>梦尘</color>。",
+    "rawDesc": "开始冒险时，获得{0}<color=yellow>金币</color>和{1}<color=yellow>梦尘</color>。",
+    "rawDescVars": [
+      {
+        "rendered": " 40<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedGold",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            40.0,
+            50.0,
+            60.0,
+            70.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 40<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedDreamDust",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            40.0,
+            50.0,
+            60.0,
+            70.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_StartWithResources.png"
+  },
+  "Se_Star_Cetus_L_ArmorBuffOnShield": {
+    "name": "端正姿态！",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      40,
+      40,
+      50,
+      50
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "我造成的所有伤害降低15%。提供<color=yellow>护盾</color>时，目标获得 11<sprite=5> 点<color=yellow>防御力</color>，持续3秒。",
+    "rawDesc": "我造成的所有伤害降低{0}。提供<color=yellow>护盾</color>时，目标获得{1}点<color=yellow>防御力</color>，持续{2}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "15%",
+        "format": "P0",
+        "raw": "damagePenaltyReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 11<sprite=5> ",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            11.0,
+            14.0,
+            17.0,
+            20.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_ArmorBuffOnShield.png"
+  },
+  "Se_Star_Cetus_L_DodgeCdReductionOnHit": {
+    "name": "适应性鳞片",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      60,
+      40,
+      50
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": false,
+    "description": "受到<color=yellow>伤害</color>时，<color=yellow>闪避技能</color>的冷却时间缩短 10%<sprite=5> 。",
+    "rawDesc": "受到<color=yellow>伤害</color>时，<color=yellow>闪避技能</color>的冷却时间缩短{0}。",
+    "rawDescVars": [
+      {
+        "rendered": " 10%<sprite=5> ",
+        "format": "P0",
+        "raw": "reductionAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.1,
+            0.15,
+            0.2
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_DodgeCdReductionOnHit.png"
+  },
+  "Se_Star_Cetus_L_FrostResistAndBuff": {
+    "name": "无惧严寒",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 20,
+    "isRequiredLevelTotalMastery": false,
+    "description": "受到的寒气伤害降低 15%<sprite=5> ，受到寒气影响时，<color=yellow>攻击速度</color>和<color=yellow>移动速度</color>不仅不会降低，反而会提升 9%<sprite=5> 。",
+    "rawDesc": "受到的寒气伤害降低{0}，受到寒气影响时，<color=yellow>攻击速度</color>和<color=yellow>移动速度</color>不仅不会降低，反而会提升{1}。",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "reductionFromCold",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 9%<sprite=5> ",
+        "format": "P0",
+        "raw": "buffAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.09,
+            0.12,
+            0.15
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_FrostResistAndBuff.png"
+  },
+  "Se_Star_Cetus_L_HealOnApDamage": {
+    "name": "魔力血脉",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      40,
+      40,
+      40,
+      50
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "恢复相当于对敌人所造成法术强度伤害 0.8%<sprite=5> 的生命值。",
+    "rawDesc": "恢复相当于对敌人所造成法术强度伤害{0}的生命值。",
+    "rawDescVars": [
+      {
+        "rendered": " 0.8%<sprite=5> ",
+        "format": "P1",
+        "raw": "healAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.008,
+            0.01,
+            0.012,
+            0.014
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_HealOnApDamage.png"
+  },
+  "Se_Star_Cetus_L_IncreaseDealtShield": {
+    "name": "庇护寒气",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "施加的所有<color=yellow>护盾</color>量提升 8%<sprite=5> 。",
+    "rawDesc": "施加的所有<color=yellow>护盾</color>量提升{0}。",
+    "rawDescVars": [
+      {
+        "rendered": " 8%<sprite=5> ",
+        "format": "P0",
+        "raw": "shieldBonusAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.08,
+            0.12,
+            0.16,
+            0.2
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_IncreaseDealtShield.png"
+  },
+  "Se_Star_Cetus_L_MaxHpDamagePenalty": {
+    "name": "巨海鳗鱼族",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "造成的所有伤害降低10%。<color=yellow>最大生命值</color>提升 90<sprite=5> 。 ",
+    "rawDesc": "造成的所有伤害降低{0}。<color=yellow>最大生命值</color>提升{1}。 ",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "damagePenaltyReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 90<sprite=5> ",
+        "format": "#,##0",
+        "raw": "healthAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            90.0,
+            110.0,
+            130.0,
+            150.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_MaxHpDamagePenalty.png"
+  },
+  "Se_Star_Cetus_L_ScalingHealth": {
+    "name": "不懈训练",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 10,
+    "isRequiredLevelTotalMastery": false,
+    "description": "每次升级时，<color=yellow>最大生命值</color>提升 12<sprite=5> 。",
+    "rawDesc": "每次升级时，<color=yellow>最大生命值</color>提升{0}。",
+    "rawDescVars": [
+      {
+        "rendered": " 12<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedHealthPerLevel",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            12.0,
+            16.0,
+            20.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_ScalingHealth.png"
+  },
   "Se_Star_Husk_D_AttackDamage": {
     "name": "我存在的意义",
     "lore": null,
@@ -5191,8 +6501,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "在<color=yellow>歼灭态势</color>下，基础攻击或剑气命中敌人时，持续时间延长0.2秒。",
-    "rawDesc": "在<color=yellow>歼灭态势</color>下，基础攻击或剑气命中敌人时，持续时间延长{0}秒。",
+    "description": "在<color=yellow>歼灭态势</color>下，基础攻击或剑气命中敌人时，持续时间延长0.2秒，并为持有的所有<color=yellow>终极技</color>充能0.5%。",
+    "rawDesc": "在<color=yellow>歼灭态势</color>下，基础攻击或剑气命中敌人时，持续时间延长{0}秒，并为持有的所有<color=yellow>终极技</color>充能{1}。",
     "rawDescVars": [
       {
         "rendered": "0.2",
@@ -5206,57 +6516,14 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
-      }
-    ],
-    "image": "Se_Star_Husk_F_AS_AddedDurationOnHit.png"
-  },
-  "Se_Star_Husk_F_AS_NonUltimate": {
-    "name": "受控的狂乱",
-    "lore": "在成为灵魂空洞的空壳之后，他反而能更加完美地掌控自己。",
-    "category": "Flexible",
-    "heroType": "Hero_Husk",
-    "maxLevel": 1,
-    "price": [
-      120
-    ],
-    "requiredLevel": 25,
-    "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>歼灭态势</color>将变为冷却时间为14秒的普通技能，且期间可以施放其他<color=yellow>记忆</color>。变更后，歼灭态势的剑气伤害和攻击力增益降低50%，持续4秒，且不再增加闪避技能的记忆加速和最大充能数。",
-    "rawDesc": "<color=yellow>歼灭态势</color>将变为冷却时间为{0}秒的普通技能，且期间可以施放其他<color=yellow>记忆</color>。变更后，歼灭态势的剑气伤害和攻击力增益降低{1}，持续{2}秒，且不再增加闪避技能的记忆加速和最大充能数。",
-    "rawDescVars": [
-      {
-        "rendered": "14",
-        "format": "#,##0.#",
-        "raw": "cooldownTime",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 14.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
       },
       {
-        "rendered": "50%",
-        "format": "P0",
-        "raw": "strengthReduction",
+        "rendered": "0.5%",
+        "format": "P1",
+        "raw": "ultimateChargeGainRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "4",
-        "format": "#,##0.#",
-        "raw": "newDuration",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 4.0,
+          "basicConstant": 0.005,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5264,7 +6531,7 @@
         }
       }
     ],
-    "image": "Se_Star_Husk_F_AS_NonUltimate.png"
+    "image": "Se_Star_Husk_F_AS_AddedDurationOnHit.png"
   },
   "Se_Star_Husk_F_AS_NoShockwaveFasterAttack": {
     "name": "狂乱剑舞",
@@ -5277,8 +6544,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>歼灭态势</color>的剑气伤害降低60%，剑气射程缩短80%，但赋予的攻击速度和闪避技能记忆加速提升100%。",
-    "rawDesc": "<color=yellow>歼灭态势</color>的剑气伤害降低{0}，剑气射程缩短{1}，但赋予的攻击速度和闪避技能记忆加速提升{2}。",
+    "description": "<color=yellow>歼灭态势</color>的剑气伤害降低60%，剑气射程缩短80%。在<color=yellow>歼灭态势</color>下，<color=yellow>闪避技能</color>的<color=yellow>记忆加速</color>提升30，<color=yellow>最大充能数</color>增加2。该记忆加速提升量在每次击杀任意首领时永久增加12。",
+    "rawDesc": "<color=yellow>歼灭态势</color>的剑气伤害降低{0}，剑气射程缩短{1}。在<color=yellow>歼灭态势</color>下，<color=yellow>闪避技能</color>的<color=yellow>记忆加速</color>提升{2}，<color=yellow>最大充能数</color>增加{3}。该记忆加速提升量在每次击杀任意首领时永久增加{4}。",
     "rawDescVars": [
       {
         "rendered": "60%",
@@ -5307,9 +6574,317 @@
         }
       },
       {
-        "rendered": "100%",
+        "rendered": "30",
+        "format": "#,##0",
+        "raw": "dodgeMemoryHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dodgeAddedCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "12",
+        "format": "#,##0",
+        "raw": "dodgeMemoryHastePerBossKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 12.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_AS_NoShockwaveFasterAttack.png"
+  },
+  "Se_Star_Husk_F_AS_NonUltimate": {
+    "name": "受控的狂乱",
+    "lore": "在成为灵魂空洞的空壳之后，他反而能更加完美地掌控自己。",
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>歼灭态势</color>将变为冷却时间为12秒的普通技能。变更后，歼灭态势的剑气伤害和攻击力增益降低50%，持续3.5秒。",
+    "rawDesc": "<color=yellow>歼灭态势</color>将变为冷却时间为{0}秒的普通技能。变更后，歼灭态势的剑气伤害和攻击力增益降低{1}，持续{2}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "12",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 12.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
         "format": "P0",
-        "raw": "buffAmp",
+        "raw": "strengthReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3.5",
+        "format": "#,##0.#",
+        "raw": "newDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_AS_NonUltimate.png"
+  },
+  "Se_Star_Husk_F_DC_EndMovespeedToBonusAttackspeed": {
+    "name": "无情刃舞",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>欺诈</color>结束时，攻击速度将提升，提升量等同于欺诈所增加的移动速度，持续3秒。",
+    "rawDesc": "<color=yellow>欺诈</color>结束时，攻击速度将提升，提升量等同于欺诈所增加的移动速度，持续{0}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "hasteDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DC_EndMovespeedToBonusAttackspeed.png"
+  },
+  "Se_Star_Husk_F_DC_EnhanceMaxStealthTime": {
+    "name": "暮色",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "每次强化<color=yellow>欺诈</color>时，最大隐身时间增加0.25秒。",
+    "rawDesc": "每次强化<color=yellow>欺诈</color>时，最大隐身时间增加{0}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "0.25",
+        "format": "0.##",
+        "raw": "addedStealthTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DC_EnhanceMaxStealthTime.png"
+  },
+  "Se_Star_Husk_F_DC_RecentDamageHoTWhileStealth": {
+    "name": "静谧之暗",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "触发<color=yellow>欺诈</color>时，将在3秒内持续恢复施放前4秒内受到的所有伤害。若在完全恢复前欺诈状态结束，恢复效果也将提前终止。",
+    "rawDesc": "触发<color=yellow>欺诈</color>时，将在{0}秒内持续恢复施放前{1}秒内受到的所有伤害。若在完全恢复前欺诈状态结束，恢复效果也将提前终止。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "healOverTime",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "recentDamageTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DC_RecentDamageHoTWhileStealth.png"
+  },
+  "Se_Star_Husk_F_DE_HighAmpMissReset": {
+    "name": "动力集中",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>死亡印记</color>的命中时伤害增加量不再于每次前往下一个世界时重置，但命中时的增加量降低为4%，且若未命中则失去所有增加量。",
+    "rawDesc": "<color=yellow>死亡印记</color>的命中时伤害增加量不再于每次前往下一个世界时重置，但命中时的增加量降低为{0}，且若未命中则失去所有增加量。",
+    "rawDescVars": [
+      {
+        "rendered": "4%",
+        "format": "P0",
+        "raw": "newAmpGainPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DE_HighAmpMissReset.png"
+  },
+  "Se_Star_Husk_F_DE_HitHealMissPenalty": {
+    "name": "炼丹术",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>死亡印记</color>首次击中敌人时，恢复相当于伤害量10%的生命值；若未命中，则受到相当于最大生命值30%的伤害。",
+    "rawDesc": "<color=yellow>死亡印记</color>首次击中敌人时，恢复相当于伤害量{0}的生命值；若未命中，则受到相当于最大生命值{1}的伤害。",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "healAmpByDmg",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "penaltyAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DE_HitHealMissPenalty.png"
+  },
+  "Se_Star_Husk_F_DE_MarkHitDodgeCDR": {
+    "name": "注定的死亡",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>死亡印记</color>的持续时间增加2秒，且我对带有印记的目标造成的所有暗影伤害增加25%，每次攻击目标时，闪避技能的冷却时间减少1秒。",
+    "rawDesc": "<color=yellow>死亡印记</color>的持续时间增加{0}秒，且我对带有印记的目标造成的所有暗影伤害增加{1}，每次攻击目标时，闪避技能的冷却时间减少{2}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "increasedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "darkDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "dodgeReductionAmount",
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.0,
@@ -5320,7 +6895,50 @@
         }
       }
     ],
-    "image": "Se_Star_Husk_F_AS_NoShockwaveFasterAttack.png"
+    "image": "Se_Star_Husk_F_DE_MarkHitDodgeCDR.png"
+  },
+  "Se_Star_Husk_F_LA_BlueFormOnly": {
+    "name": "青色波动",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      180
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "无法再使用<color=yellow>撕裂伤</color>的赤形，青形的无敌时间增加50%。<color=yellow>撕裂伤</color>的青形变为长按施放键进行蓄力的记忆，若中途松开施放键，无敌效果将提前结束并立即挥舞刀刃。蓄力时间越长，范围越大，最多增加至20%。",
+    "rawDesc": "无法再使用<color=yellow>撕裂伤</color>的赤形，青形的无敌时间增加{0}。<color=yellow>撕裂伤</color>的青形变为长按施放键进行蓄力的记忆，若中途松开施放键，无敌效果将提前结束并立即挥舞刀刃。蓄力时间越长，范围越大，最多增加至{1}。",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "addedInvulnerableTimeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "addedRangeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_LA_BlueFormOnly.png"
   },
   "Se_Star_Husk_F_LA_DodgeResetOnRed": {
     "name": "气之流转",
@@ -5887,16 +7505,29 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>手炮</color>必定击退敌人，并使敌人的<color=yellow>移动速度</color>在4秒内降低75%。",
-    "rawDesc": "<color=yellow>手炮</color>必定击退敌人，并使敌人的<color=yellow>移动速度</color>在{0}秒内降低{1}。",
+    "description": "<color=yellow>手炮</color>的范围增加25%，并使被击中的敌人的移动速度在3秒内降低75%。",
+    "rawDesc": "<color=yellow>手炮</color>的范围增加{0}，并使被击中的敌人的移动速度在{1}秒内降低{2}。",
     "rawDescVars": [
       {
-        "rendered": "4",
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "scaleAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
         "format": "#,##0.#",
         "raw": "slowDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 4.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5930,16 +7561,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>手炮</color>对近距离敌人造成的伤害提升150%。",
-    "rawDesc": "<color=yellow>手炮</color>对近距离敌人造成的伤害提升{0}。",
+    "description": "<color=yellow>手炮</color>击退拉塞尔塔与敌人的距离增加40%，且敌人必定被击退。",
+    "rawDesc": "<color=yellow>手炮</color>击退拉塞尔塔与敌人的距离增加{0}，且敌人必定被击退。",
     "rawDescVars": [
       {
-        "rendered": "150%",
+        "rendered": "40%",
         "format": "P0",
-        "raw": "nearDamageAmp",
+        "raw": "knockbackAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5948,6 +7579,79 @@
       }
     ],
     "image": "Se_Star_Lacerta_F_HC_NearDamage.png"
+  },
+  "Se_Star_Lacerta_F_HC_NoDelayDoubleCast": {
+    "name": "巨龙之息",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Lacerta",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>手炮</color>的伤害降低40%且不再击退拉塞尔塔，但准备时间被移除，施放后立即发射，最大充能次数增加1次，且一次性补满充能层数。",
+    "rawDesc": "<color=yellow>手炮</color>的伤害降低{0}且不再击退拉塞尔塔，但准备时间被移除，施放后立即发射，最大充能次数增加{1}次，且一次性补满充能层数。",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Lacerta_F_HC_NoDelayDoubleCast.png"
+  },
+  "Se_Star_Lacerta_F_HC_ResetOnDodge": {
+    "name": "战术闪避",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Lacerta",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>手炮</color>的冷却时间增加2.5秒，但使用闪避技能时，手炮的冷却时间将被重置。",
+    "rawDesc": "<color=yellow>手炮</color>的冷却时间增加{0}秒，但使用闪避技能时，手炮的冷却时间将被重置。",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "addedCooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Lacerta_F_HC_ResetOnDodge.png"
   },
   "Se_Star_Lacerta_F_IR_AoEDamage": {
     "name": "爆炸弹药",
@@ -6007,6 +7711,51 @@
       }
     ],
     "image": "Se_Star_Lacerta_F_IR_MoreShots.png"
+  },
+  "Se_Star_Lacerta_F_IR_RechargeAmmoAmpBurnDamage": {
+    "name": "灼热弹",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Lacerta",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>燃烧弹装填</color>的伤害量减少50%，但会给目标额外施加1层火焰叠加，且每次击中与前一个目标不同的目标时，弹药将充能1次。",
+    "rawDesc": "<color=yellow>燃烧弹装填</color>的伤害量减少{0}，但会给目标额外施加{1}层火焰叠加，且每次击中与前一个目标不同的目标时，弹药将充能1次。",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "star",
+        "data": {
+          "levels": 1,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.5
+          ],
+          "strengthScaling": "None"
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedFireStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Lacerta_F_IR_RechargeAmmoAmpBurnDamage.png"
   },
   "Se_Star_Lacerta_F_PS_ChargeSpeed": {
     "name": "百步穿杨",
@@ -6418,6 +8167,75 @@
       }
     ],
     "image": "Se_Star_Lacerta_L_SpeedAfterDodge.png"
+  },
+  "Se_Star_Mist_F_LG_ChainAttack": {
+    "name": "雾雨",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Mist",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>突刺</color>的冷却时间增加1.5秒。使用闪避技能后3秒内施放的下一次<color=yellow>突刺</color>获得强化，额外刺击敌人3次。每次刺击造成35%的伤害并触发攻击效果。",
+    "rawDesc": "<color=yellow>突刺</color>的冷却时间增加{0}秒。使用闪避技能后{1}秒内施放的下一次<color=yellow>突刺</color>获得强化，额外刺击敌人{2}次。每次刺击造成{3}的伤害并触发攻击效果。",
+    "rawDescVars": [
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "addedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "windowDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "stabCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "35%",
+        "format": "P0",
+        "raw": "dmgRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.35,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Mist_F_LG_ChainAttack.png"
   },
   "Se_Star_Mist_I_CamillasGift": {
     "name": "卡米拉的礼物",
@@ -7156,6 +8974,49 @@
       }
     ],
     "image": "Se_Star_Mist_F_UD_HealLostHealth.png"
+  },
+  "Se_Star_Mist_F_UD_NonUltimate": {
+    "name": "沉浸时刻",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Mist",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>不屈之志</color>不再引发爆炸，持续时间及伤害量减少66%，但会变更为冷却时间为14秒的通用记忆。",
+    "rawDesc": "<color=yellow>不屈之志</color>不再引发爆炸，持续时间及伤害量减少{0}，但会变更为冷却时间为{1}秒的通用记忆。",
+    "rawDescVars": [
+      {
+        "rendered": "66%",
+        "format": "P0",
+        "raw": "effectReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.66,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "14",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 14.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Mist_F_UD_NonUltimate.png"
   },
   "Se_Star_Mist_I_BonusOnCatPet": {
     "name": "爱猫达人",
@@ -8050,6 +9911,62 @@
     ],
     "image": "Se_Star_Nachia_F_SC_MoreSummons.png"
   },
+  "Se_Star_Nachia_F_SC_SummonDmgReduction": {
+    "name": "兽群首领",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Nachia",
+    "maxLevel": 1,
+    "price": [
+      180
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "当<color=yellow>森林的召唤</color>的叶犬达到4只或以上时，娜琪亚的法术强度提升15%，并赋予叶犬们40的防御力。",
+    "rawDesc": "当<color=yellow>森林的召唤</color>的叶犬达到{0}只或以上时，娜琪亚的法术强度提升{1}，并赋予叶犬们{2}的防御力。",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "requiredCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "15%",
+        "format": "#,##0'%'",
+        "raw": "abilityPowerPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 40.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Nachia_F_SC_SummonDmgReduction.png"
+  },
   "Se_Star_Nachia_I_ForestKillDreamDust": {
     "name": "收割生命",
     "lore": null,
@@ -8237,8 +10154,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "为己方施加增益效果时，目标在 1.5<sprite=5> 秒内进入<color=yellow>无法阻挡</color>状态，每个目标有5秒冷却时间。",
-    "rawDesc": "为己方施加增益效果时，目标在{0}秒内进入<color=yellow>无法阻挡</color>状态，每个目标有{1}秒冷却时间。",
+    "description": "为己方施加增益效果时，目标在 1.5<sprite=5> 秒内进入<color=yellow>无法阻挡</color>状态，每个目标有5秒冷却时间；若目标为召唤物，则持续时间提升70%。",
+    "rawDesc": "为己方施加增益效果时，目标在{0}秒内进入<color=yellow>无法阻挡</color>状态，每个目标有{1}秒冷却时间；若目标为召唤物，则持续时间提升{2}。",
     "rawDescVars": [
       {
         "rendered": " 1.5<sprite=5> ",
@@ -8264,6 +10181,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "70%",
+        "format": "P0",
+        "raw": "ampToSummons",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.7,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8748,36 +10678,6 @@
     ],
     "image": "Se_Star_Vesper_D_ConvertAPToAD.png"
   },
-  "Se_Star_Vesper_F_BS_AddedDurationPerAtk": {
-    "name": "无尽锤击",
-    "lore": null,
-    "category": "Flexible",
-    "heroType": "Hero_Vesper",
-    "maxLevel": 1,
-    "price": [
-      80
-    ],
-    "requiredLevel": 5,
-    "isRequiredLevelTotalMastery": false,
-    "description": "在<color=yellow>太阳的洗礼</color>效果下，每次普通攻击会让<color=yellow>持续时间</color>延长0.2秒。",
-    "rawDesc": "在<color=yellow>太阳的洗礼</color>效果下，每次普通攻击会让<color=yellow>持续时间</color>延长{0}秒。",
-    "rawDescVars": [
-      {
-        "rendered": "0.2",
-        "format": "#,##0.#",
-        "raw": "addedDuration",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.2,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      }
-    ],
-    "image": "Se_Star_Vesper_F_BS_AddedDurationPerAtk.png"
-  },
   "Se_Star_Vesper_F_BS_ADWithArmor": {
     "name": "不经历风雨，怎见彩虹",
     "lore": null,
@@ -8820,6 +10720,79 @@
       }
     ],
     "image": "Se_Star_Vesper_F_BS_ADWithArmor.png"
+  },
+  "Se_Star_Vesper_F_BS_AddedDurationPerAtk": {
+    "name": "无尽锤击",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "在<color=yellow>太阳的洗礼</color>效果下，每次普通攻击会让<color=yellow>持续时间</color>延长0.2秒。",
+    "rawDesc": "在<color=yellow>太阳的洗礼</color>效果下，每次普通攻击会让<color=yellow>持续时间</color>延长{0}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "0.2",
+        "format": "#,##0.#",
+        "raw": "addedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_AddedDurationPerAtk.png"
+  },
+  "Se_Star_Vesper_F_BS_ExplosionOnEnd": {
+    "name": "忏悔吧！",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      160
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>太阳的洗礼</color>的持续时间减少66%，但爆炸伤害量提升50%，且在持续时间结束时会再次爆炸。",
+    "rawDesc": "<color=yellow>太阳的洗礼</color>的持续时间减少{0}，但爆炸伤害量提升{1}，且在持续时间结束时会再次爆炸。",
+    "rawDescVars": [
+      {
+        "rendered": "66%",
+        "format": "P0",
+        "raw": "durationReduceMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.66,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "explosionDamageMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_ExplosionOnEnd.png"
   },
   "Se_Star_Vesper_F_BS_MovSpd": {
     "name": "热力四射",
@@ -9703,44 +11676,6 @@
     ],
     "image": "Se_Star_Yubar_D_APOnDodge.png"
   },
-  "Se_Star_Yubar_D_AbilityPower": {
-    "name": "夜空锦缎",
-    "lore": null,
-    "category": "Destruction",
-    "heroType": "Hero_Yubar",
-    "maxLevel": 4,
-    "price": [
-      30,
-      30,
-      30,
-      40
-    ],
-    "requiredLevel": 0,
-    "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>法术强度</color>提升 5<sprite=5> 。",
-    "rawDesc": "<color=yellow>法术强度</color>提升{0}。",
-    "rawDescVars": [
-      {
-        "rendered": " 5<sprite=5> ",
-        "format": "#,##0",
-        "raw": "bonusAmount",
-        "scalingType": "star",
-        "data": {
-          "levels": 4,
-          "isClamped": false,
-          "isInteger": true,
-          "values": [
-            5.0,
-            7.0,
-            9.0,
-            11.0
-          ],
-          "strengthScaling": "Multiply"
-        }
-      }
-    ],
-    "image": "Se_Star_Yubar_D_AbilityPower.png"
-  },
   "Se_Star_Yubar_D_ADAPWithPenalty": {
     "name": "玻璃大炮",
     "lore": "现在的他的肉体，不过是一副脆弱的外壳。可惜，低估他的人都变成了尘埃。",
@@ -9844,6 +11779,44 @@
       }
     ],
     "image": "Se_Star_Yubar_D_APPerLightSkill.png"
+  },
+  "Se_Star_Yubar_D_AbilityPower": {
+    "name": "夜空锦缎",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Yubar",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>法术强度</color>提升 5<sprite=5> 。",
+    "rawDesc": "<color=yellow>法术强度</color>提升{0}。",
+    "rawDescVars": [
+      {
+        "rendered": " 5<sprite=5> ",
+        "format": "#,##0",
+        "raw": "bonusAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            5.0,
+            7.0,
+            9.0,
+            11.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Yubar_D_AbilityPower.png"
   },
   "Se_Star_Yubar_D_BonusDamageToLight": {
     "name": "星之泪",
@@ -10082,16 +12055,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>以太的影响</color>的投射物命中光明层数达到3层以上的敌人时，会引发爆炸，造成50%的伤害。",
+    "description": "<color=yellow>以太的影响</color>的投射物命中光明层数达到2层以上的敌人时，会引发爆炸，造成50%的伤害。",
     "rawDesc": "<color=yellow>以太的影响</color>的投射物命中光明层数达到{0}层以上的敌人时，会引发爆炸，造成{1}的伤害。",
     "rawDescVars": [
       {
-        "rendered": "3",
+        "rendered": "2",
         "format": "#,##0",
         "raw": "requiredLightStacks",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 3.0,
+          "basicConstant": 2.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -10157,6 +12130,22 @@
     ],
     "image": "Se_Star_Yubar_F_EI_BiggerExplosion.png"
   },
+  "Se_Star_Yubar_F_EI_DashNoProjectile": {
+    "name": "以太的旋律",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Yubar",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>以太的影响</color>不再发射投射物，而是使尤巴尔向施放方向突进并造成伤害。",
+    "rawDesc": "<color=yellow>以太的影响</color>不再发射投射物，而是使尤巴尔向施放方向突进并造成伤害。",
+    "rawDescVars": [],
+    "image": "Se_Star_Yubar_F_EI_DashNoProjectile.png"
+  },
   "Se_Star_Yubar_F_EI_NoRootMoreDamage": {
     "name": "流势转变",
     "lore": null,
@@ -10198,22 +12187,9 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>超新星</color>的冷却时间增加3秒，但施放距离提升30%，爆炸范围提升20%，最大充能次数增加2。",
-    "rawDesc": "<color=yellow>超新星</color>的冷却时间增加{0}秒，但施放距离提升{1}，爆炸范围提升{2}，最大充能次数增加{3}。",
+    "description": "<color=yellow>超新星</color>的施放距离提升30%，爆炸范围提升20%。每强化超新星3次，超新星的最大充能次数增加1。",
+    "rawDesc": "<color=yellow>超新星</color>的施放距离提升{0}，爆炸范围提升{1}。每强化超新星{2}次，超新星的最大充能次数增加1。",
     "rawDescVars": [
-      {
-        "rendered": "3",
-        "format": "#,##0.#",
-        "raw": "cooldownPenalty",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 3.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
       {
         "rendered": "30%",
         "format": "P0",
@@ -10241,12 +12217,12 @@
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
-        "raw": "gainedMaxCharges",
+        "raw": "upgradesPerMaxCharge",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -10283,16 +12259,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>超新星</color>的爆炸每命中一名敌人，冷却时间缩短0.5秒，且下一次施放超新星的伤害量提升10%。",
-    "rawDesc": "<color=yellow>超新星</color>的爆炸每命中一名敌人，冷却时间缩短{0}秒，且下一次施放超新星的伤害量提升{1}。",
+    "description": "<color=yellow>超新星</color>的爆炸每命中一名敌人，冷却时间缩短8%，且下一次施放超新星的伤害量提升10%。",
+    "rawDesc": "<color=yellow>超新星</color>的爆炸每命中一名敌人，冷却时间缩短{0}，且下一次施放超新星的伤害量提升{1}。",
     "rawDescVars": [
       {
-        "rendered": "0.5",
-        "format": "#,##0.#",
-        "raw": "reducedCooldownOnHit",
+        "rendered": "8%",
+        "format": "P0",
+        "raw": "reducedCooldownRatioOnHit",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 0.08,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -10314,6 +12290,36 @@
       }
     ],
     "image": "Se_Star_Yubar_F_SN_DodgeReset.png"
+  },
+  "Se_Star_Yubar_F_SN_PullEnemy": {
+    "name": "附加引力子",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Yubar",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>超新星</color>的移动速度减缓效果提升20%，施放后短暂延迟会将附近的敌人牵引过来。",
+    "rawDesc": "<color=yellow>超新星</color>的移动速度减缓效果提升{0}，施放后短暂延迟会将附近的敌人牵引过来。",
+    "rawDescVars": [
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "slowAmpMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Yubar_F_SN_PullEnemy.png"
   },
   "Se_Star_Yubar_F_TQ_EssenceCooldown": {
     "name": "星之歌",

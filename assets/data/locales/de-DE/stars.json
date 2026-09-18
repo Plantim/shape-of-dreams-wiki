@@ -1797,11 +1797,11 @@
     ],
     "requiredLevel": 40,
     "isRequiredLevelTotalMastery": true,
-    "description": "<color=yellow>Erlittener Schaden</color> von Gegnern, die <color=yellow>Unterkühlt</color> sind, wird um  25%<sprite=5>  verringert.",
+    "description": "<color=yellow>Erlittener Schaden</color> von Gegnern, die <color=yellow>Unterkühlt</color> sind, wird um  19%<sprite=5>  verringert.",
     "rawDesc": "<color=yellow>Erlittener Schaden</color> von Gegnern, die <color=yellow>Unterkühlt</color> sind, wird um {0} verringert.",
     "rawDescVars": [
       {
-        "rendered": " 25%<sprite=5> ",
+        "rendered": " 19%<sprite=5> ",
         "format": "P0",
         "raw": "reductionAmount",
         "scalingType": "star",
@@ -1810,10 +1810,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.25,
-            0.3,
-            0.35,
-            0.4
+            0.19,
+            0.21,
+            0.23,
+            0.25
           ],
           "strengthScaling": "Multiply"
         }
@@ -2089,11 +2089,11 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": true,
-    "description": "Für jede <color=yellow>Tötung</color> eines Gegners stellst du  1.00%<sprite=5>  deines maximalen Lebens wieder her.",
+    "description": "Für jede <color=yellow>Tötung</color> eines Gegners stellst du  1.40%<sprite=5>  deines maximalen Lebens wieder her.",
     "rawDesc": "Für jede <color=yellow>Tötung</color> eines Gegners stellst du {0} deines maximalen Lebens wieder her.",
     "rawDescVars": [
       {
-        "rendered": " 1.00%<sprite=5> ",
+        "rendered": " 1.40%<sprite=5> ",
         "format": "P2",
         "raw": "healRatio",
         "scalingType": "star",
@@ -2102,10 +2102,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.01,
-            0.015,
-            0.02,
-            0.025
+            0.014,
+            0.016,
+            0.018,
+            0.02
           ],
           "strengthScaling": "Multiply"
         }
@@ -2244,7 +2244,7 @@
     "image": "Se_Star_L_MaxHealth.png"
   },
   "Se_Star_L_MaxHealthUpHealDown": {
-    "name": "Zähe Haut",
+    "name": "Zu dicke Haut",
     "lore": null,
     "category": "Life",
     "heroType": "",
@@ -2481,8 +2481,8 @@
     ],
     "requiredLevel": 70,
     "isRequiredLevelTotalMastery": true,
-    "description": "Wenn du im Laden einen Gegenstand kaufst oder verkaufst, erhältst du einen <color=yellow>Heiltrank</color>. Kann pro Händler bis zu  1<sprite=5> -mal ausgelöst werden.",
-    "rawDesc": "Wenn du im Laden einen Gegenstand kaufst oder verkaufst, erhältst du einen <color=yellow>Heiltrank</color>. Kann pro Händler bis zu {0}-mal ausgelöst werden.",
+    "description": "Wenn du einen Gegenstand mit Gold kaufst oder verkaufst, erhältst du einen <color=yellow>Heiltrank</color>. Kann pro Händler bis zu  1<sprite=5> -mal ausgelöst werden.",
+    "rawDesc": "Wenn du einen Gegenstand mit Gold kaufst oder verkaufst, erhältst du einen <color=yellow>Heiltrank</color>. Kann pro Händler bis zu {0}-mal ausgelöst werden.",
     "rawDescVars": [
       {
         "rendered": " 1<sprite=5> ",
@@ -2791,6 +2791,56 @@
       }
     ],
     "image": "Se_Star_Aurena_D_BonusStatOnLowHp.png"
+  },
+  "Se_Star_Aurena_F_CR_ChargedCast": {
+    "name": "Goldenes Vermächtnis",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Aurena",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Kettenreaktion</color> wird zu einer Erinnerung, die durch Gedrückthalten der Fähigkeitstaste aufgeladen werden kann. Sie kann bis zu 3 Sek. lang aufgeladen werden. Nach dem Aufladen wird sie auf der Stelle gewirkt. Abhängig von der Aufladedauer erhöhen sich der Wirkungsbereich um bis zu 25% sowie Schaden und Heilung um bis zu 50%.",
+    "rawDesc": "<color=yellow>Kettenreaktion</color> wird zu einer Erinnerung, die durch Gedrückthalten der Fähigkeitstaste aufgeladen werden kann. Sie kann bis zu {0} Sek. lang aufgeladen werden. Nach dem Aufladen wird sie auf der Stelle gewirkt. Abhängig von der Aufladedauer erhöhen sich der Wirkungsbereich um bis zu {1} sowie Schaden und Heilung um bis zu {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "maxChargeTime",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "maxRangeMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "maxEffectMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Aurena_F_CR_ChargedCast.png"
   },
   "Se_Star_Aurena_F_CR_EarnGold": {
     "name": "Meister der Alchemie",
@@ -4213,6 +4263,62 @@
     ],
     "image": "Se_Star_Bismuth_F_IT_InnerDamage.png"
   },
+  "Se_Star_Bismuth_F_IT_SmallerRingAddDisplacement": {
+    "name": "Lass uns Fangen spielen!",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Bismuth",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Die Abklingzeit von <color=yellow>Höllenfeuergeschichten</color> wird um 2 Sek. erhöht und der Schaden um 20% verringert. Im Gegenzug kannst du sie bis zu 2-mal erneut wirken, um in eine beliebige Richtung zu stürmen.",
+    "rawDesc": "Die Abklingzeit von <color=yellow>Höllenfeuergeschichten</color> wird um {0} Sek. erhöht und der Schaden um {1} verringert. Im Gegenzug kannst du sie bis zu {2}-mal erneut wirken, um in eine beliebige Richtung zu stürmen.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "increasedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "dmgReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dashCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Bismuth_F_IT_SmallerRingAddDisplacement.png"
+  },
   "Se_Star_Bismuth_F_IT_SmallerRingMoreDamage": {
     "name": "Nah und Persönlich",
     "lore": null,
@@ -4854,6 +4960,1210 @@
     ],
     "image": "Se_Star_Bismuth_L_SecondWindWithPenalty.png"
   },
+  "Se_Star_Cetus_D_AdApUpByBonusHp": {
+    "name": "Schwere Kopfnuss",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 20,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Gewährt <color=yellow>Fähigkeitsstärke</color> und <color=yellow>Angriffsschaden</color> in Höhe von  1.0%<sprite=5>  eures <color=yellow>Zusätzlichen Lebens</color>.",
+    "rawDesc": "Gewährt <color=yellow>Fähigkeitsstärke</color> und <color=yellow>Angriffsschaden</color> in Höhe von {0} eures <color=yellow>Zusätzlichen Lebens</color>.",
+    "rawDescVars": [
+      {
+        "rendered": " 1.0%<sprite=5> ",
+        "format": "P1",
+        "raw": "ampValue",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.01,
+            0.015,
+            0.02
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_AdApUpByBonusHp.png"
+  },
+  "Se_Star_Cetus_D_ApUpByColdSkillCounts": {
+    "name": "Scharfe Stachelflosse",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      20,
+      30,
+      30,
+      20
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Erhöht die <color=yellow>Fähigkeitsstärke</color> um  4<sprite=5> . Gewährt zusätzlich  1<sprite=5>  für jede <color=yellow>Kälteschaden-Erinnerung</color> in deinem Besitz.",
+    "rawDesc": "Erhöht die <color=yellow>Fähigkeitsstärke</color> um {0}. Gewährt zusätzlich {1} für jede <color=yellow>Kälteschaden-Erinnerung</color> in deinem Besitz.",
+    "rawDescVars": [
+      {
+        "rendered": " 4<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedFlat",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            4.0,
+            5.0,
+            6.0,
+            7.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "bonusPerSkill",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            1.0,
+            1.5,
+            2.0,
+            2.5
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_ApUpByColdSkillCounts.png"
+  },
+  "Se_Star_Cetus_D_StackStatsOnTakenDamage": {
+    "name": "Geistklärender Schmerz",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      40,
+      50,
+      60,
+      70
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Wenn ihr <color=yellow>Schaden</color> erleidet, werden <color=yellow>Fähigkeitsstärke</color> und <color=yellow>Erinnerungstempo</color> 5 Sek. lang um 1 erhöht, bis zu maximal  6<sprite=5> .",
+    "rawDesc": "Wenn ihr <color=yellow>Schaden</color> erleidet, werden <color=yellow>Fähigkeitsstärke</color> und <color=yellow>Erinnerungstempo</color> {0} Sek. lang um {1} erhöht, bis zu maximal {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "stackDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "bonusAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 6<sprite=5> ",
+        "format": "#,##0",
+        "raw": "maxBonusCount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            6.0,
+            9.0,
+            12.0,
+            15.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_StackStatsOnTakenDamage.png"
+  },
+  "Se_Star_Cetus_D_StatsUpWhileShielded": {
+    "name": "Manakreislauf",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 10,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Solange ihr einen <color=yellow>Schild</color> habt, wird <color=yellow>Fähigkeitsstärke</color> um  5<sprite=5>  und <color=yellow>Erinnerungstempo</color> um  6<sprite=5>  erhöht.",
+    "rawDesc": "Solange ihr einen <color=yellow>Schild</color> habt, wird <color=yellow>Fähigkeitsstärke</color> um {0} und <color=yellow>Erinnerungstempo</color> um {1} erhöht.",
+    "rawDescVars": [
+      {
+        "rendered": " 5<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedAp",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            5.0,
+            6.0,
+            7.0,
+            8.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 6<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedHaste",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            6.0,
+            8.0,
+            10.0,
+            12.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_StatsUpWhileShielded.png"
+  },
+  "Se_Star_Cetus_F_BA_CdReductionOnKill": {
+    "name": "Erfrischender Schlag",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Wenn ein von <color=yellow>Zurückbleiben!</color> getroffener Feind innerhalb von 3 Sekunden stirbt, wird die Abklingzeit um 0.7 Sekunden verringert.",
+    "rawDesc": "Wenn ein von <color=yellow>Zurückbleiben!</color> getroffener Feind innerhalb von {0} Sekunden stirbt, wird die Abklingzeit um {1} Sekunden verringert.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "trackingGracePeriod",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0.7",
+        "format": "#,##0.#",
+        "raw": "cdReductionAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.7,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BA_CdReductionOnKill.png"
+  },
+  "Se_Star_Cetus_F_BA_ChargeMsNoShield": {
+    "name": "Überall selbstbewusst auftreten",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Zurückbleiben!</color> gewährt Cetus selbst weder VK noch einen Schild, aber die Bewegungsgeschwindigkeit wird während des Aufladens um 30% erhöht.",
+    "rawDesc": "<color=yellow>Zurückbleiben!</color> gewährt Cetus selbst weder VK noch einen Schild, aber die Bewegungsgeschwindigkeit wird während des Aufladens um {0} erhöht.",
+    "rawDescVars": [
+      {
+        "rendered": "30%",
+        "format": "#,##0'%'",
+        "raw": "moveSpeedBuffStrength",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BA_ChargeMsNoShield.png"
+  },
+  "Se_Star_Cetus_F_BA_LightningEcho": {
+    "name": "Elektrisierende Erfahrung",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Feinde, die von <color=yellow>Zurückbleiben!</color> getroffen wurden, werden nach kurzer Zeit von einem Blitz getroffen, der Lichtschaden in Höhe von 40% des Trefferschadens verursacht. Die Abklingzeit ist jedoch um 4 Sekunden erhöht.",
+    "rawDesc": "Feinde, die von <color=yellow>Zurückbleiben!</color> getroffen wurden, werden nach kurzer Zeit von einem Blitz getroffen, der Lichtschaden in Höhe von {0} des Trefferschadens verursacht. Die Abklingzeit ist jedoch um {1} Sekunden erhöht.",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "lightningEchoDmgMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTimePenalty",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BA_LightningEcho.png"
+  },
+  "Se_Star_Cetus_F_BI_FastChargeTakeDamageUp": {
+    "name": "Tollkühne Magie",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Die Aufladegeschwindigkeit von <color=yellow>Riesiger Gletscherbrocken</color> ist um 40% erhöht, aber Cetus erleidet während des Wirkens 40% mehr Schaden durch Feinde.",
+    "rawDesc": "Die Aufladegeschwindigkeit von <color=yellow>Riesiger Gletscherbrocken</color> ist um {0} erhöht, aber Cetus erleidet während des Wirkens {1} mehr Schaden durch Feinde.",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "chargingSpeedAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "takenDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BI_FastChargeTakeDamageUp.png"
+  },
+  "Se_Star_Cetus_F_BI_MaxChargeTimePerLevel": {
+    "name": "Überwältigende Größe",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Jede Aufwertung von <color=yellow>Riesiger Gletscherbrocken</color> erhöht die maximale Aufladezeit um 0.5 Sekunden.",
+    "rawDesc": "Jede Aufwertung von <color=yellow>Riesiger Gletscherbrocken</color> erhöht die maximale Aufladezeit um {0} Sekunden.",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "maxChargeTimePerLevel",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BI_MaxChargeTimePerLevel.png"
+  },
+  "Se_Star_Cetus_F_BI_SelfDamageAoeCold": {
+    "name": "Entweichende Macht",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Während <color=yellow>Riesiger Gletscherbrocken</color> gewirkt wird, erleidest du pro Sekunde Kälteschaden in Höhe von 2% deines maximalen Lebens. Dafür fügst du umstehenden Feinden alle 0.5 Sekunden 8% des Schadens des Gletscherbrockens als Kälteschaden zu.",
+    "rawDesc": "Während <color=yellow>Riesiger Gletscherbrocken</color> gewirkt wird, erleidest du pro Sekunde Kälteschaden in Höhe von {0} deines maximalen Lebens. Dafür fügst du umstehenden Feinden alle {1} Sekunden {2} des Schadens des Gletscherbrockens als Kälteschaden zu.",
+    "rawDescVars": [
+      {
+        "rendered": "2%",
+        "format": "P0",
+        "raw": "selfTickDamageMaxHpRatio / tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "tickInterval",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "8%",
+        "format": "P0",
+        "raw": "dealtTickDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.08,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BI_SelfDamageAoeCold.png"
+  },
+  "Se_Star_Cetus_F_EM_ChaseTarget": {
+    "name": "Unauslöschliche Vergangenheit",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Umarme die Kälte</color> verfolgt den nächsten Feind oder Cetus.",
+    "rawDesc": "<color=yellow>Umarme die Kälte</color> verfolgt den nächsten Feind oder Cetus.",
+    "rawDescVars": [],
+    "image": "Se_Star_Cetus_F_EM_ChaseTarget.png"
+  },
+  "Se_Star_Cetus_F_EM_DamageUpSelfDamage": {
+    "name": "Läuternder Schmerz",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Der Schaden von <color=yellow>Umarme die Kälte</color> wird um 40% erhöht. Wenn Cetus sich jedoch im Kältebereich befindet, erhält er keinen Schild, sondern erleidet stattdessen Kälteschaden in Höhe von 5% des Schadens.",
+    "rawDesc": "Der Schaden von <color=yellow>Umarme die Kälte</color> wird um {0} erhöht. Wenn Cetus sich jedoch im Kältebereich befindet, erhält er keinen Schild, sondern erleidet stattdessen Kälteschaden in Höhe von {1} des Schadens.",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "damageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "takeDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_EM_DamageUpSelfDamage.png"
+  },
+  "Se_Star_Cetus_F_EM_InfiniteDuration": {
+    "name": "Ewiger Winter",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Während des Kampfes erhöht sich das Schadens- und Schildintervall von <color=yellow>Umarme die Kälte</color> um 100% und der Radius verringert sich um 35%. Es explodiert nicht mehr, bleibt dafür aber bis zum nächsten Einsatz dauerhaft bestehen.",
+    "rawDesc": "Während des Kampfes erhöht sich das Schadens- und Schildintervall von <color=yellow>Umarme die Kälte</color> um {0} und der Radius verringert sich um {1}. Es explodiert nicht mehr, bleibt dafür aber bis zum nächsten Einsatz dauerhaft bestehen.",
+    "rawDescVars": [
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "damageIntervalAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "35%",
+        "format": "P0",
+        "raw": "scaleReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.35,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_EM_InfiniteDuration.png"
+  },
+  "Se_Star_Cetus_F_FR_CdReductionOnTakeDamage": {
+    "name": "Wonnevoller Schmerz",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Jedes Mal, wenn Cetus Schaden erleidet, verringert sich die Abklingzeit von <color=yellow>Lektion in Manieren</color> um 4%. Wenn es eine ultimative Fähigkeit ist, wird dieser Effekt nur zu 30% angewendet.",
+    "rawDesc": "Jedes Mal, wenn Cetus Schaden erleidet, verringert sich die Abklingzeit von <color=yellow>Lektion in Manieren</color> um {0}. Wenn es eine ultimative Fähigkeit ist, wird dieser Effekt nur zu {1} angewendet.",
+    "rawDescVars": [
+      {
+        "rendered": "4%",
+        "format": "P0",
+        "raw": "reduceRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "ultRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_FR_CdReductionOnTakeDamage.png"
+  },
+  "Se_Star_Cetus_F_FR_ChangeToUltHitReset": {
+    "name": "Endlose Strafe",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Lektion in Manieren</color> wird zu einer ultimativen Fähigkeit. Während der Dauer bist du <color=yellow>Unaufhaltsam</color>, und wenn du in dieser Zeit einen Feind angreifst, erhöht sich die Dauer um 0.3 Sekunden, bei einem Kill um 1.5 Sekunden.",
+    "rawDesc": "<color=yellow>Lektion in Manieren</color> wird zu einer ultimativen Fähigkeit. Während der Dauer bist du <color=yellow>Unaufhaltsam</color>, und wenn du in dieser Zeit einen Feind angreifst, erhöht sich die Dauer um {0} Sekunden, bei einem Kill um {1} Sekunden.",
+    "rawDescVars": [
+      {
+        "rendered": "0.3",
+        "format": "#,##0.#",
+        "raw": "durationIncreasePerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "durationIncreasePerKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_FR_ChangeToUltHitReset.png"
+  },
+  "Se_Star_Cetus_F_FR_RecastCdrNoKnockback": {
+    "name": "Schlüpfrige Fäuste",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Die Abklingzeit für das erneute Wirken von <color=yellow>Lektion in Manieren</color> wird um 50% verringert, aber Feinde werden nicht mehr zurückgestoßen.",
+    "rawDesc": "Die Abklingzeit für das erneute Wirken von <color=yellow>Lektion in Manieren</color> wird um {0} verringert, aber Feinde werden nicht mehr zurückgestoßen.",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "reduceRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_FR_RecastCdrNoKnockback.png"
+  },
+  "Se_Star_Cetus_I_ColdDiscountFireSurcharge": {
+    "name": "Erstaunliche Überzeugungskraft",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 20,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Der Preis der von Jonas verkauften <color=yellow>Kälte-Erinnerung</color> und <color=yellow>Kälte-Essenz</color> wird um  40%<sprite=5>  verringert, jedoch steigt der Preis für <color=yellow>Feuer-Erinnerung</color> und <color=yellow>Feuer-Essenz</color> um 100%.",
+    "rawDesc": "Der Preis der von Jonas verkauften <color=yellow>Kälte-Erinnerung</color> und <color=yellow>Kälte-Essenz</color> wird um {0} verringert, jedoch steigt der Preis für <color=yellow>Feuer-Erinnerung</color> und <color=yellow>Feuer-Essenz</color> um {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 40%<sprite=5> ",
+        "format": "P0",
+        "raw": "discountRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.4,
+            0.5,
+            0.55,
+            0.6
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "surchargeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_ColdDiscountFireSurcharge.png"
+  },
+  "Se_Star_Cetus_I_ColdSkillOnEnterWorld": {
+    "name": "Der Ozean gibt",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 10,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Erhalte bei jedem Betreten einer Welt eine zufällige <color=yellow>Kälte-Erinnerung</color> der Stufe  1<sprite=5> .",
+    "rawDesc": "Erhalte bei jedem Betreten einer Welt eine zufällige <color=yellow>Kälte-Erinnerung</color> der Stufe {0}.",
+    "rawDescVars": [
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0",
+        "raw": "dropColdSkillLevel",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": true,
+          "clampMin": 1.0,
+          "clampMax": 100.0,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_ColdSkillOnEnterWorld.png"
+  },
+  "Se_Star_Cetus_I_FirstColdGemQualityBoost": {
+    "name": "Vertraute Macht",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      60,
+      40,
+      50,
+      50
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Die Qualität der ersten ausgerüsteten <color=yellow>Kälte-Essenz</color> erhöht sich um  80%<sprite=5> .",
+    "rawDesc": "Die Qualität der ersten ausgerüsteten <color=yellow>Kälte-Essenz</color> erhöht sich um {0}.",
+    "rawDescVars": [
+      {
+        "rendered": " 80%<sprite=5> ",
+        "format": "P0",
+        "raw": "bonusQuality",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.8,
+            1.0,
+            1.2,
+            1.4
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_FirstColdGemQualityBoost.png"
+  },
+  "Se_Star_Cetus_I_GetDreamDustOnBossKill": {
+    "name": "Destruktive Inspektion",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Erhalte  40<sprite=5>  <color=yellow>Traumstaub</color> für jeden besiegten <color=yellow>Boss</color>.",
+    "rawDesc": "Erhalte {0} <color=yellow>Traumstaub</color> für jeden besiegten <color=yellow>Boss</color>.",
+    "rawDescVars": [
+      {
+        "rendered": " 40<sprite=5> ",
+        "format": "#,##0",
+        "raw": "dropDreamDustAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            40.0,
+            50.0,
+            60.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_GetDreamDustOnBossKill.png"
+  },
+  "Se_Star_Cetus_I_StartWithResources": {
+    "name": "Gründliche Vorbereitung",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Erhalte zu Beginn eines Abenteuers  40<sprite=5>  <color=yellow>Gold</color> und  40<sprite=5>  <color=yellow>Traumstaub</color>.",
+    "rawDesc": "Erhalte zu Beginn eines Abenteuers {0} <color=yellow>Gold</color> und {1} <color=yellow>Traumstaub</color>.",
+    "rawDescVars": [
+      {
+        "rendered": " 40<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedGold",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            40.0,
+            50.0,
+            60.0,
+            70.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 40<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedDreamDust",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            40.0,
+            50.0,
+            60.0,
+            70.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_StartWithResources.png"
+  },
+  "Se_Star_Cetus_L_ArmorBuffOnShield": {
+    "name": "Haltung annehmen!",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      40,
+      40,
+      50,
+      50
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Sämtlicher von mir verursachter Schaden wird um 15% verringert. Wenn ich ein <color=yellow>Schild</color> gewähre, erhält das Ziel 3 Sekunden lang  11<sprite=5>  <color=yellow>VK</color>.",
+    "rawDesc": "Sämtlicher von mir verursachter Schaden wird um {0} verringert. Wenn ich ein <color=yellow>Schild</color> gewähre, erhält das Ziel {1} Sekunden lang {2} <color=yellow>VK</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "15%",
+        "format": "P0",
+        "raw": "damagePenaltyReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 11<sprite=5> ",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            11.0,
+            14.0,
+            17.0,
+            20.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_ArmorBuffOnShield.png"
+  },
+  "Se_Star_Cetus_L_DodgeCdReductionOnHit": {
+    "name": "Adaptive Schuppen",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      60,
+      40,
+      50
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Bei erlittenem <color=yellow>Schaden</color> wird die Abklingzeit der <color=yellow>Ausweichfähigkeit</color> um  10%<sprite=5>  verringert.",
+    "rawDesc": "Bei erlittenem <color=yellow>Schaden</color> wird die Abklingzeit der <color=yellow>Ausweichfähigkeit</color> um {0} verringert.",
+    "rawDescVars": [
+      {
+        "rendered": " 10%<sprite=5> ",
+        "format": "P0",
+        "raw": "reductionAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.1,
+            0.15,
+            0.2
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_DodgeCdReductionOnHit.png"
+  },
+  "Se_Star_Cetus_L_FrostResistAndBuff": {
+    "name": "Keine Angst mehr vor der Kälte",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 20,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Verringert erlittenen Kälteschaden um  15%<sprite=5> . Wenn du von Kälte betroffen bist, werden <color=yellow>Angriffsgeschwindigkeit</color> und <color=yellow>Bewegungsgeschwindigkeit</color> um  9%<sprite=5>  erhöht, anstatt verringert zu werden.",
+    "rawDesc": "Verringert erlittenen Kälteschaden um {0}. Wenn du von Kälte betroffen bist, werden <color=yellow>Angriffsgeschwindigkeit</color> und <color=yellow>Bewegungsgeschwindigkeit</color> um {1} erhöht, anstatt verringert zu werden.",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "reductionFromCold",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 9%<sprite=5> ",
+        "format": "P0",
+        "raw": "buffAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.09,
+            0.12,
+            0.15
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_FrostResistAndBuff.png"
+  },
+  "Se_Star_Cetus_L_HealOnApDamage": {
+    "name": "Magiedurchströmte Adern",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      40,
+      40,
+      40,
+      50
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Heilt mich um  0.8%<sprite=5>  des Schadens durch Fähigkeitsstärke, den ich Feinden zufüge.",
+    "rawDesc": "Heilt mich um {0} des Schadens durch Fähigkeitsstärke, den ich Feinden zufüge.",
+    "rawDescVars": [
+      {
+        "rendered": " 0.8%<sprite=5> ",
+        "format": "P1",
+        "raw": "healAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.008,
+            0.01,
+            0.012,
+            0.014
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_HealOnApDamage.png"
+  },
+  "Se_Star_Cetus_L_IncreaseDealtShield": {
+    "name": "Schützende Kälte",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Die Stärke von jedem durch mich gewährten <color=yellow>Schild</color> wird um  8%<sprite=5>  erhöht.",
+    "rawDesc": "Die Stärke von jedem durch mich gewährten <color=yellow>Schild</color> wird um {0} erhöht.",
+    "rawDescVars": [
+      {
+        "rendered": " 8%<sprite=5> ",
+        "format": "P0",
+        "raw": "shieldBonusAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.08,
+            0.12,
+            0.16,
+            0.2
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_IncreaseDealtShield.png"
+  },
+  "Se_Star_Cetus_L_MaxHpDamagePenalty": {
+    "name": "Riesiger Meeres-Anguillier",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Sämtlicher von mir verursachter Schaden wird um 10% verringert. Die <color=yellow>Max. HP</color> werden um  90<sprite=5>  erhöht. ",
+    "rawDesc": "Sämtlicher von mir verursachter Schaden wird um {0} verringert. Die <color=yellow>Max. HP</color> werden um {1} erhöht. ",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "damagePenaltyReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 90<sprite=5> ",
+        "format": "#,##0",
+        "raw": "healthAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            90.0,
+            110.0,
+            130.0,
+            150.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_MaxHpDamagePenalty.png"
+  },
+  "Se_Star_Cetus_L_ScalingHealth": {
+    "name": "Rastloses Training",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 10,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Bei jedem Levelaufstieg werden die <color=yellow>Max. HP</color> um  12<sprite=5>  erhöht.",
+    "rawDesc": "Bei jedem Levelaufstieg werden die <color=yellow>Max. HP</color> um {0} erhöht.",
+    "rawDescVars": [
+      {
+        "rendered": " 12<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedHealthPerLevel",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            12.0,
+            16.0,
+            20.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_ScalingHealth.png"
+  },
   "Se_Star_Husk_D_AttackDamage": {
     "name": "Zweck meiner Existenz",
     "lore": null,
@@ -5191,8 +6501,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Während <color=yellow>Vernichtungshaltung</color> erhöht sich die Dauer jedes Mal um 0.2 Sek., wenn ein Basisangriff oder eine Schwertaura einen Gegner trifft.",
-    "rawDesc": "Während <color=yellow>Vernichtungshaltung</color> erhöht sich die Dauer jedes Mal um {0} Sek., wenn ein Basisangriff oder eine Schwertaura einen Gegner trifft.",
+    "description": "Während <color=yellow>Vernichtungshaltung</color> erhöht sich die Dauer jedes Mal um 0.2 Sek., wenn ein Basisangriff oder eine Schwertaura einen Gegner trifft, und alle deine <color=yellow>Ultimates</color> werden um 0.5% aufgeladen.",
+    "rawDesc": "Während <color=yellow>Vernichtungshaltung</color> erhöht sich die Dauer jedes Mal um {0} Sek., wenn ein Basisangriff oder eine Schwertaura einen Gegner trifft, und alle deine <color=yellow>Ultimates</color> werden um {1} aufgeladen.",
     "rawDescVars": [
       {
         "rendered": "0.2",
@@ -5206,57 +6516,14 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
-      }
-    ],
-    "image": "Se_Star_Husk_F_AS_AddedDurationOnHit.png"
-  },
-  "Se_Star_Husk_F_AS_NonUltimate": {
-    "name": "Kontrollierter Wahnsinn",
-    "lore": "Seit er zu einer leeren Hülle ohne Seele wurde, konnte er sich stattdessen noch perfekter kontrollieren.",
-    "category": "Flexible",
-    "heroType": "Hero_Husk",
-    "maxLevel": 1,
-    "price": [
-      120
-    ],
-    "requiredLevel": 25,
-    "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Vernichtungshaltung</color> wird zu einer normalen Fähigkeit mit 14 Sek. Abklingzeit, die das Wirken anderer Erinnerungen erlaubt. Der Schaden der Schwertaura und die Erhöhung des Angriffsschadens sind um 50% reduziert, die Dauer beträgt 4 Sek. und die Boni auf Erinnerungstempo und maximale Aufladungen der Ausweichfähigkeit entfallen.",
-    "rawDesc": "<color=yellow>Vernichtungshaltung</color> wird zu einer normalen Fähigkeit mit {0} Sek. Abklingzeit, die das Wirken anderer Erinnerungen erlaubt. Der Schaden der Schwertaura und die Erhöhung des Angriffsschadens sind um {1} reduziert, die Dauer beträgt {2} Sek. und die Boni auf Erinnerungstempo und maximale Aufladungen der Ausweichfähigkeit entfallen.",
-    "rawDescVars": [
-      {
-        "rendered": "14",
-        "format": "#,##0.#",
-        "raw": "cooldownTime",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 14.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
       },
       {
-        "rendered": "50%",
-        "format": "P0",
-        "raw": "strengthReduction",
+        "rendered": "0.5%",
+        "format": "P1",
+        "raw": "ultimateChargeGainRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "4",
-        "format": "#,##0.#",
-        "raw": "newDuration",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 4.0,
+          "basicConstant": 0.005,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5264,7 +6531,7 @@
         }
       }
     ],
-    "image": "Se_Star_Husk_F_AS_NonUltimate.png"
+    "image": "Se_Star_Husk_F_AS_AddedDurationOnHit.png"
   },
   "Se_Star_Husk_F_AS_NoShockwaveFasterAttack": {
     "name": "Rasender Schwerttanz",
@@ -5277,8 +6544,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Der Schaden der <color=yellow>Schwertaura</color> von <color=yellow>Vernichtungshaltung</color> wird um 60% und ihre Reichweite um 80% verringert, aber die gewährte Angriffsgeschwindigkeit und das Erinnerungstempo der Ausweichfähigkeit erhöhen sich um 100%.",
-    "rawDesc": "Der Schaden der <color=yellow>Schwertaura</color> von <color=yellow>Vernichtungshaltung</color> wird um {0} und ihre Reichweite um {1} verringert, aber die gewährte Angriffsgeschwindigkeit und das Erinnerungstempo der Ausweichfähigkeit erhöhen sich um {2}.",
+    "description": "Der Schaden der <color=yellow>Schwertaura</color> von <color=yellow>Vernichtungshaltung</color> wird um 60% und ihre Reichweite um 80% verringert. Während <color=yellow>Vernichtungshaltung</color> erhöhen sich das <color=yellow>Erinnerungstempo</color> der <color=yellow>Ausweichfähigkeit</color> um 30 und die <color=yellow>maximalen Aufladungen</color> um 2. Diese Erhöhung des Erinnerungstempos steigt bei jedem Töten eines beliebigen Bosses dauerhaft um 12.",
+    "rawDesc": "Der Schaden der <color=yellow>Schwertaura</color> von <color=yellow>Vernichtungshaltung</color> wird um {0} und ihre Reichweite um {1} verringert. Während <color=yellow>Vernichtungshaltung</color> erhöhen sich das <color=yellow>Erinnerungstempo</color> der <color=yellow>Ausweichfähigkeit</color> um {2} und die <color=yellow>maximalen Aufladungen</color> um {3}. Diese Erhöhung des Erinnerungstempos steigt bei jedem Töten eines beliebigen Bosses dauerhaft um {4}.",
     "rawDescVars": [
       {
         "rendered": "60%",
@@ -5307,9 +6574,317 @@
         }
       },
       {
-        "rendered": "100%",
+        "rendered": "30",
+        "format": "#,##0",
+        "raw": "dodgeMemoryHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dodgeAddedCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "12",
+        "format": "#,##0",
+        "raw": "dodgeMemoryHastePerBossKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 12.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_AS_NoShockwaveFasterAttack.png"
+  },
+  "Se_Star_Husk_F_AS_NonUltimate": {
+    "name": "Kontrollierter Wahnsinn",
+    "lore": "Seit er zu einer leeren Hülle ohne Seele wurde, konnte er sich stattdessen noch perfekter kontrollieren.",
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Vernichtungshaltung</color> wird zu einer normalen Fähigkeit mit 12 Sek. Abklingzeit. Der Schaden der Schwertaura und die Erhöhung des Angriffsschadens sind um 50% reduziert und die Dauer beträgt 3.5 Sek.",
+    "rawDesc": "<color=yellow>Vernichtungshaltung</color> wird zu einer normalen Fähigkeit mit {0} Sek. Abklingzeit. Der Schaden der Schwertaura und die Erhöhung des Angriffsschadens sind um {1} reduziert und die Dauer beträgt {2} Sek.",
+    "rawDescVars": [
+      {
+        "rendered": "12",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 12.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
         "format": "P0",
-        "raw": "buffAmp",
+        "raw": "strengthReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3.5",
+        "format": "#,##0.#",
+        "raw": "newDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_AS_NonUltimate.png"
+  },
+  "Se_Star_Husk_F_DC_EndMovespeedToBonusAttackspeed": {
+    "name": "Gnadenlose Klingen",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Wenn <color=yellow>Täuschung</color> endet, erhöht sich die <color=yellow>Angriffsgeschwindigkeit</color> für 3 Sek. in Höhe der durch <color=yellow>Täuschung</color> erhaltenen <color=yellow>Bewegungsgeschwindigkeit</color>.",
+    "rawDesc": "Wenn <color=yellow>Täuschung</color> endet, erhöht sich die <color=yellow>Angriffsgeschwindigkeit</color> für {0} Sek. in Höhe der durch <color=yellow>Täuschung</color> erhaltenen <color=yellow>Bewegungsgeschwindigkeit</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "hasteDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DC_EndMovespeedToBonusAttackspeed.png"
+  },
+  "Se_Star_Husk_F_DC_EnhanceMaxStealthTime": {
+    "name": "Abenddämmerung",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Jedes Mal, wenn <color=yellow>Täuschung</color> verstärkt wird, erhöht sich die maximale Dauer von <color=yellow>Getarnt</color> um 0.25 Sek.",
+    "rawDesc": "Jedes Mal, wenn <color=yellow>Täuschung</color> verstärkt wird, erhöht sich die maximale Dauer von <color=yellow>Getarnt</color> um {0} Sek.",
+    "rawDescVars": [
+      {
+        "rendered": "0.25",
+        "format": "0.##",
+        "raw": "addedStealthTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DC_EnhanceMaxStealthTime.png"
+  },
+  "Se_Star_Husk_F_DC_RecentDamageHoTWhileStealth": {
+    "name": "Beruhigende Dunkelheit",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Wenn <color=yellow>Täuschung</color> aktiviert wird, wird jeglicher Schaden, der in den 4 Sek. vor dem Wirken erlitten wurde, über 3 Sek. geheilt. Endet <color=yellow>Täuschung</color> jedoch vorzeitig, wird auch die Heilung abgebrochen.",
+    "rawDesc": "Wenn <color=yellow>Täuschung</color> aktiviert wird, wird jeglicher Schaden, der in den {0} Sek. vor dem Wirken erlitten wurde, über {1} Sek. geheilt. Endet <color=yellow>Täuschung</color> jedoch vorzeitig, wird auch die Heilung abgebrochen.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "recentDamageTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "healOverTime",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "image": "Se_Star_Husk_F_DC_RecentDamageHoTWhileStealth.png"
+  },
+  "Se_Star_Husk_F_DE_HighAmpMissReset": {
+    "name": "Energiebündelung",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Die Schadenserhöhung bei Treffer von <color=yellow>Todesmarkierung</color> wird nicht länger beim Wechsel in die nächste Welt zurückgesetzt, allerdings sinkt die Erhöhung pro Treffer auf 4%, und bei einem Fehltreffer geht die gesamte Erhöhung verloren.",
+    "rawDesc": "Die Schadenserhöhung bei Treffer von <color=yellow>Todesmarkierung</color> wird nicht länger beim Wechsel in die nächste Welt zurückgesetzt, allerdings sinkt die Erhöhung pro Treffer auf {0}, und bei einem Fehltreffer geht die gesamte Erhöhung verloren.",
+    "rawDescVars": [
+      {
+        "rendered": "4%",
+        "format": "P0",
+        "raw": "newAmpGainPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DE_HighAmpMissReset.png"
+  },
+  "Se_Star_Husk_F_DE_HitHealMissPenalty": {
+    "name": "Alchemie",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Wenn <color=yellow>Todesmarkierung</color> zum ersten Mal einen Feind trifft, heilt sie um 10% des Schadens. Verfehlt sie jedoch, erleidest du Schaden in Höhe von 30% der Max. LP.",
+    "rawDesc": "Wenn <color=yellow>Todesmarkierung</color> zum ersten Mal einen Feind trifft, heilt sie um {0} des Schadens. Verfehlt sie jedoch, erleidest du Schaden in Höhe von {1} der Max. LP.",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "healAmpByDmg",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "penaltyAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DE_HitHealMissPenalty.png"
+  },
+  "Se_Star_Husk_F_DE_MarkHitDodgeCDR": {
+    "name": "Besiegelter Tod",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Die Wirkdauer von <color=yellow>Todesmarkierung</color> wird um 2 Sek. erhöht und der gesamte Dunkelheitsschaden, den ich einem markierten Ziel zufüge, wird um 25% erhöht. Bei jedem Angriff auf das Ziel wird die Abklingzeit der Ausweichfähigkeit um 1 Sek. verringert.",
+    "rawDesc": "Die Wirkdauer von <color=yellow>Todesmarkierung</color> wird um {0} Sek. erhöht und der gesamte Dunkelheitsschaden, den ich einem markierten Ziel zufüge, wird um {1} erhöht. Bei jedem Angriff auf das Ziel wird die Abklingzeit der Ausweichfähigkeit um {2} Sek. verringert.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "increasedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "darkDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "dodgeReductionAmount",
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.0,
@@ -5320,7 +6895,50 @@
         }
       }
     ],
-    "image": "Se_Star_Husk_F_AS_NoShockwaveFasterAttack.png"
+    "image": "Se_Star_Husk_F_DE_MarkHitDodgeCDR.png"
+  },
+  "Se_Star_Husk_F_LA_BlueFormOnly": {
+    "name": "Blaue Welle",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      180
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Die Rotform von <color=yellow>Risswunde</color> kann nicht mehr verwendet werden und die Dauer der Unverwundbarkeit der Blauform wird um 50% erhöht. Die Blauform von <color=yellow>Risswunde</color> wird zu einer Erinnerung, die durch Gedrückthalten der Fähigkeitstaste aufgeladen wird. Lässt du die Taste vorzeitig los, endet der Unverwundbarkeitseffekt früher und du schwingst sofort die Klinge. Je länger du auflädst, desto größer wird der Wirkungsbereich, bis zu einem Maximum von 20%.",
+    "rawDesc": "Die Rotform von <color=yellow>Risswunde</color> kann nicht mehr verwendet werden und die Dauer der Unverwundbarkeit der Blauform wird um {0} erhöht. Die Blauform von <color=yellow>Risswunde</color> wird zu einer Erinnerung, die durch Gedrückthalten der Fähigkeitstaste aufgeladen wird. Lässt du die Taste vorzeitig los, endet der Unverwundbarkeitseffekt früher und du schwingst sofort die Klinge. Je länger du auflädst, desto größer wird der Wirkungsbereich, bis zu einem Maximum von {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "addedInvulnerableTimeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "addedRangeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_LA_BlueFormOnly.png"
   },
   "Se_Star_Husk_F_LA_DodgeResetOnRed": {
     "name": "Energiefluss",
@@ -5887,9 +7505,35 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Handkanone</color> stößt Gegner garantiert zurück und verringert ihr <color=yellow>Bewegungstempo</color> um 75% für 4 Sek.",
-    "rawDesc": "<color=yellow>Handkanone</color> stößt Gegner garantiert zurück und verringert ihr <color=yellow>Bewegungstempo</color> um {0} für {1} Sek.",
+    "description": "Die Reichweite von <color=yellow>Handkanone</color> wird um 25% erhöht und das Bewegungstempo getroffener Gegner für 3 Sek. um 75% verringert.",
+    "rawDesc": "Die Reichweite von <color=yellow>Handkanone</color> wird um {0} erhöht und das Bewegungstempo getroffener Gegner für {1} Sek. um {2} verringert.",
     "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "scaleAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "slowDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
       {
         "rendered": "75%",
         "format": "#,##0'%'",
@@ -5902,26 +7546,13 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
-      },
-      {
-        "rendered": "4",
-        "format": "#,##0.#",
-        "raw": "slowDuration",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 4.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
       }
     ],
     "image": "Se_Star_Lacerta_F_HC_KnockbackAndSlow.png"
   },
   "Se_Star_Lacerta_F_HC_NearDamage": {
     "name": "Zorn des Barasuss",
-    "lore": "",
+    "lore": "Er hat die überwältigende Macht, die er aus der Ferne gesehen hat, nie vergessen. Und schließlich hat er sie mit eigenen Händen nachgebildet.",
     "category": "Flexible",
     "heroType": "Hero_Lacerta",
     "maxLevel": 1,
@@ -5930,16 +7561,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Der Schaden von <color=yellow>Handkanone</color> gegen nahe Gegner wird um 150% erhöht.",
-    "rawDesc": "Der Schaden von <color=yellow>Handkanone</color> gegen nahe Gegner wird um {0} erhöht.",
+    "description": "Die Distanz, um die <color=yellow>Handkanone</color> Lacerta und Gegner zurückstößt, wird um 40% erhöht, und Gegner werden immer zurückgestoßen.",
+    "rawDesc": "Die Distanz, um die <color=yellow>Handkanone</color> Lacerta und Gegner zurückstößt, wird um {0} erhöht, und Gegner werden immer zurückgestoßen.",
     "rawDescVars": [
       {
-        "rendered": "150%",
+        "rendered": "40%",
         "format": "P0",
-        "raw": "nearDamageAmp",
+        "raw": "knockbackAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5948,6 +7579,79 @@
       }
     ],
     "image": "Se_Star_Lacerta_F_HC_NearDamage.png"
+  },
+  "Se_Star_Lacerta_F_HC_NoDelayDoubleCast": {
+    "name": "Drachenatem",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Lacerta",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Der Schaden von <color=yellow>Handkanone</color> wird um 40% verringert und stößt Lacerta nicht mehr zurück, aber die Vorbereitungszeit entfällt, sodass die Waffe sofort beim Wirken feuert, die maximale Aufladung um 1 erhöht wird und alle Ladungen auf einmal aufgeladen werden.",
+    "rawDesc": "Der Schaden von <color=yellow>Handkanone</color> wird um {0} verringert und stößt Lacerta nicht mehr zurück, aber die Vorbereitungszeit entfällt, sodass die Waffe sofort beim Wirken feuert, die maximale Aufladung um {1} erhöht wird und alle Ladungen auf einmal aufgeladen werden.",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Lacerta_F_HC_NoDelayDoubleCast.png"
+  },
+  "Se_Star_Lacerta_F_HC_ResetOnDodge": {
+    "name": "Taktisches Ausweichen",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Lacerta",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Die <color=yellow>Abklingzeit</color> von <color=yellow>Handkanone</color> wird um 2.5 Sek. erhöht, aber durch den Einsatz einer Ausweichfähigkeit wird die Abklingzeit der Handkanone zurückgesetzt.",
+    "rawDesc": "Die <color=yellow>Abklingzeit</color> von <color=yellow>Handkanone</color> wird um {0} Sek. erhöht, aber durch den Einsatz einer Ausweichfähigkeit wird die Abklingzeit der Handkanone zurückgesetzt.",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "addedCooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Lacerta_F_HC_ResetOnDodge.png"
   },
   "Se_Star_Lacerta_F_IR_AoEDamage": {
     "name": "Explosivmunition",
@@ -6007,6 +7711,51 @@
       }
     ],
     "image": "Se_Star_Lacerta_F_IR_MoreShots.png"
+  },
+  "Se_Star_Lacerta_F_IR_RechargeAmmoAmpBurnDamage": {
+    "name": "Sengende Munition",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Lacerta",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Der Schaden von <color=yellow>Brandmunition</color> wird um 50% verringert, fügt dem Ziel jedoch 1 zusätzliche Feuer-Stapel zu. Jedes Mal, wenn ein anderes Ziel als das vorherige getroffen wird, wird die Munition um 1 Schuss aufgeladen.",
+    "rawDesc": "Der Schaden von <color=yellow>Brandmunition</color> wird um {0} verringert, fügt dem Ziel jedoch {1} zusätzliche Feuer-Stapel zu. Jedes Mal, wenn ein anderes Ziel als das vorherige getroffen wird, wird die Munition um 1 Schuss aufgeladen.",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "star",
+        "data": {
+          "levels": 1,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.5
+          ],
+          "strengthScaling": "None"
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedFireStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Lacerta_F_IR_RechargeAmmoAmpBurnDamage.png"
   },
   "Se_Star_Lacerta_F_PS_ChargeSpeed": {
     "name": "Erfahrenes Zielen",
@@ -6418,6 +8167,75 @@
       }
     ],
     "image": "Se_Star_Lacerta_L_SpeedAfterDodge.png"
+  },
+  "Se_Star_Mist_F_LG_ChainAttack": {
+    "name": "Nieselregen",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Mist",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Die Abklingzeit von <color=yellow>Ausfall</color> wird um 1.5 Sek. erhöht. Der nächste <color=yellow>Ausfall</color>, der innerhalb von 3 Sek. nach dem Einsatz einer Ausweich-Fähigkeit gewirkt wird, wird verstärkt und sticht 3-mal zusätzlich auf Gegner ein. Jeder Stich verursacht 35% Schaden und löst Angriffseffekte aus.",
+    "rawDesc": "Die Abklingzeit von <color=yellow>Ausfall</color> wird um {0} Sek. erhöht. Der nächste <color=yellow>Ausfall</color>, der innerhalb von {1} Sek. nach dem Einsatz einer Ausweich-Fähigkeit gewirkt wird, wird verstärkt und sticht {2}-mal zusätzlich auf Gegner ein. Jeder Stich verursacht {3} Schaden und löst Angriffseffekte aus.",
+    "rawDescVars": [
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "addedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "windowDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "stabCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "35%",
+        "format": "P0",
+        "raw": "dmgRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.35,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Mist_F_LG_ChainAttack.png"
   },
   "Se_Star_Mist_I_CamillasGift": {
     "name": "Camillas Geschenk",
@@ -7156,6 +8974,49 @@
       }
     ],
     "image": "Se_Star_Mist_F_UD_HealLostHealth.png"
+  },
+  "Se_Star_Mist_F_UD_NonUltimate": {
+    "name": "Moment des Fokus",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Mist",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Unzerbrechlicher Wille</color> löst keine Explosion mehr aus und die Dauer sowie der Schaden werden um 66% verringert. Dafür wird es zu einer gewöhnlichen Erinnerung mit einer Abklingzeit von 14 Sek.",
+    "rawDesc": "<color=yellow>Unzerbrechlicher Wille</color> löst keine Explosion mehr aus und die Dauer sowie der Schaden werden um {0} verringert. Dafür wird es zu einer gewöhnlichen Erinnerung mit einer Abklingzeit von {1} Sek.",
+    "rawDescVars": [
+      {
+        "rendered": "66%",
+        "format": "P0",
+        "raw": "effectReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.66,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "14",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 14.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Mist_F_UD_NonUltimate.png"
   },
   "Se_Star_Mist_I_BonusOnCatPet": {
     "name": "Katzenliebhaber",
@@ -8050,6 +9911,62 @@
     ],
     "image": "Se_Star_Nachia_F_SC_MoreSummons.png"
   },
+  "Se_Star_Nachia_F_SC_SummonDmgReduction": {
+    "name": "Rudelführer",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Nachia",
+    "maxLevel": 1,
+    "price": [
+      180
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Wenn 4 oder mehr Waldwelpen durch <color=yellow>Ruf des Waldes</color> aktiv sind, wird Nachias Fähigkeitsstärke um 15% erhöht und die Waldwelpen erhalten 40 VK.",
+    "rawDesc": "Wenn {0} oder mehr Waldwelpen durch <color=yellow>Ruf des Waldes</color> aktiv sind, wird Nachias Fähigkeitsstärke um {1} erhöht und die Waldwelpen erhalten {2} VK.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "requiredCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "15%",
+        "format": "#,##0'%'",
+        "raw": "abilityPowerPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 40.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Nachia_F_SC_SummonDmgReduction.png"
+  },
   "Se_Star_Nachia_I_ForestKillDreamDust": {
     "name": "Leben ernten",
     "lore": null,
@@ -8237,8 +10154,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Wenn du einem Verbündeten einen vorteilhaften Effekt gewährst, wird das Ziel für  1.5<sprite=5>  Sek. <color=yellow>Unaufhaltsam</color>. Dieser Effekt hat eine Abklingzeit von 5 Sek. pro Ziel.",
-    "rawDesc": "Wenn du einem Verbündeten einen vorteilhaften Effekt gewährst, wird das Ziel für {0} Sek. <color=yellow>Unaufhaltsam</color>. Dieser Effekt hat eine Abklingzeit von {1} Sek. pro Ziel.",
+    "description": "Wenn du einem Verbündeten einen vorteilhaften Effekt gewährst, wird das Ziel für  1.5<sprite=5>  Sek. <color=yellow>Unaufhaltsam</color>. Dieser Effekt hat eine Abklingzeit von 5 Sek. pro Ziel und die Dauer erhöht sich um 70%, wenn das Ziel ein Beschwörung ist.",
+    "rawDesc": "Wenn du einem Verbündeten einen vorteilhaften Effekt gewährst, wird das Ziel für {0} Sek. <color=yellow>Unaufhaltsam</color>. Dieser Effekt hat eine Abklingzeit von {1} Sek. pro Ziel und die Dauer erhöht sich um {2}, wenn das Ziel ein Beschwörung ist.",
     "rawDescVars": [
       {
         "rendered": " 1.5<sprite=5> ",
@@ -8264,6 +10181,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "70%",
+        "format": "P0",
+        "raw": "ampToSummons",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.7,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8748,36 +10678,6 @@
     ],
     "image": "Se_Star_Vesper_D_ConvertAPToAD.png"
   },
-  "Se_Star_Vesper_F_BS_AddedDurationPerAtk": {
-    "name": "Endloses Hämmern",
-    "lore": null,
-    "category": "Flexible",
-    "heroType": "Hero_Vesper",
-    "maxLevel": 1,
-    "price": [
-      80
-    ],
-    "requiredLevel": 5,
-    "isRequiredLevelTotalMastery": false,
-    "description": "Während <color=yellow>Taufe der Sonne</color> aktiv ist, verlängert jeder Basisangriff die <color=yellow>Dauer</color> um 0.2 Sek.",
-    "rawDesc": "Während <color=yellow>Taufe der Sonne</color> aktiv ist, verlängert jeder Basisangriff die <color=yellow>Dauer</color> um {0} Sek.",
-    "rawDescVars": [
-      {
-        "rendered": "0.2",
-        "format": "#,##0.#",
-        "raw": "addedDuration",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.2,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      }
-    ],
-    "image": "Se_Star_Vesper_F_BS_AddedDurationPerAtk.png"
-  },
   "Se_Star_Vesper_F_BS_ADWithArmor": {
     "name": "Kein Schmerz, kein Gewinn",
     "lore": null,
@@ -8820,6 +10720,79 @@
       }
     ],
     "image": "Se_Star_Vesper_F_BS_ADWithArmor.png"
+  },
+  "Se_Star_Vesper_F_BS_AddedDurationPerAtk": {
+    "name": "Endloses Hämmern",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Während <color=yellow>Taufe der Sonne</color> aktiv ist, verlängert jeder Basisangriff die <color=yellow>Dauer</color> um 0.2 Sek.",
+    "rawDesc": "Während <color=yellow>Taufe der Sonne</color> aktiv ist, verlängert jeder Basisangriff die <color=yellow>Dauer</color> um {0} Sek.",
+    "rawDescVars": [
+      {
+        "rendered": "0.2",
+        "format": "#,##0.#",
+        "raw": "addedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_AddedDurationPerAtk.png"
+  },
+  "Se_Star_Vesper_F_BS_ExplosionOnEnd": {
+    "name": "Bereut!",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      160
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Die Dauer von <color=yellow>Taufe der Sonne</color> wird um 66% verringert, aber der Explosionsschaden erhöht sich um 50%. Am Ende der Dauer kommt es zu einer weiteren Explosion.",
+    "rawDesc": "Die Dauer von <color=yellow>Taufe der Sonne</color> wird um {0} verringert, aber der Explosionsschaden erhöht sich um {1}. Am Ende der Dauer kommt es zu einer weiteren Explosion.",
+    "rawDescVars": [
+      {
+        "rendered": "66%",
+        "format": "P0",
+        "raw": "durationReduceMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.66,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "explosionDamageMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_ExplosionOnEnd.png"
   },
   "Se_Star_Vesper_F_BS_MovSpd": {
     "name": "Wohlige Hitze",
@@ -9703,44 +11676,6 @@
     ],
     "image": "Se_Star_Yubar_D_APOnDodge.png"
   },
-  "Se_Star_Yubar_D_AbilityPower": {
-    "name": "Teppich des Nachthimmels",
-    "lore": null,
-    "category": "Destruction",
-    "heroType": "Hero_Yubar",
-    "maxLevel": 4,
-    "price": [
-      30,
-      30,
-      30,
-      40
-    ],
-    "requiredLevel": 0,
-    "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Zauberkraft</color> wird um  5<sprite=5>  erhöht.",
-    "rawDesc": "<color=yellow>Zauberkraft</color> wird um {0} erhöht.",
-    "rawDescVars": [
-      {
-        "rendered": " 5<sprite=5> ",
-        "format": "#,##0",
-        "raw": "bonusAmount",
-        "scalingType": "star",
-        "data": {
-          "levels": 4,
-          "isClamped": false,
-          "isInteger": true,
-          "values": [
-            5.0,
-            7.0,
-            9.0,
-            11.0
-          ],
-          "strengthScaling": "Multiply"
-        }
-      }
-    ],
-    "image": "Se_Star_Yubar_D_AbilityPower.png"
-  },
   "Se_Star_Yubar_D_ADAPWithPenalty": {
     "name": "Glaskanone",
     "lore": "Sein Körper ist derzeit nur ein zerbrechliches Gefäß. Natürlich sind all jene, die so dachten, zu einer Handvoll Staub geworden.",
@@ -9844,6 +11779,44 @@
       }
     ],
     "image": "Se_Star_Yubar_D_APPerLightSkill.png"
+  },
+  "Se_Star_Yubar_D_AbilityPower": {
+    "name": "Teppich des Nachthimmels",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Yubar",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Zauberkraft</color> wird um  5<sprite=5>  erhöht.",
+    "rawDesc": "<color=yellow>Zauberkraft</color> wird um {0} erhöht.",
+    "rawDescVars": [
+      {
+        "rendered": " 5<sprite=5> ",
+        "format": "#,##0",
+        "raw": "bonusAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            5.0,
+            7.0,
+            9.0,
+            11.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Yubar_D_AbilityPower.png"
   },
   "Se_Star_Yubar_D_BonusDamageToLight": {
     "name": "Tränen der Sterne",
@@ -10082,16 +12055,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Wenn das Projektil von <color=yellow>Ätherischer Einfluss</color> einen Gegner mit 3 oder mehr Licht-Stapeln trifft, wird eine Explosion ausgelöst, die 50% Schaden verursacht.",
+    "description": "Wenn das Projektil von <color=yellow>Ätherischer Einfluss</color> einen Gegner mit 2 oder mehr Licht-Stapeln trifft, wird eine Explosion ausgelöst, die 50% Schaden verursacht.",
     "rawDesc": "Wenn das Projektil von <color=yellow>Ätherischer Einfluss</color> einen Gegner mit {0} oder mehr Licht-Stapeln trifft, wird eine Explosion ausgelöst, die {1} Schaden verursacht.",
     "rawDescVars": [
       {
-        "rendered": "3",
+        "rendered": "2",
         "format": "#,##0",
         "raw": "requiredLightStacks",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 3.0,
+          "basicConstant": 2.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -10157,6 +12130,22 @@
     ],
     "image": "Se_Star_Yubar_F_EI_BiggerExplosion.png"
   },
+  "Se_Star_Yubar_F_EI_DashNoProjectile": {
+    "name": "Melodie des Äthers",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Yubar",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Anstatt ein Projektil abzufeuern, stürmt Yubar bei <color=yellow>Ätherischer Einfluss</color> in Wirkrichtung und fügt Schaden zu.",
+    "rawDesc": "Anstatt ein Projektil abzufeuern, stürmt Yubar bei <color=yellow>Ätherischer Einfluss</color> in Wirkrichtung und fügt Schaden zu.",
+    "rawDescVars": [],
+    "image": "Se_Star_Yubar_F_EI_DashNoProjectile.png"
+  },
   "Se_Star_Yubar_F_EI_NoRootMoreDamage": {
     "name": "Flussumkehr",
     "lore": null,
@@ -10198,22 +12187,9 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Die Abklingzeit von <color=yellow>Supernova</color> wird um 3 Sek. erhöht, dafür erhöhen sich die Wirkungsreichweite um 30%, der Explosionsradius um 20% und die maximalen Aufladungen um 2.",
-    "rawDesc": "Die Abklingzeit von <color=yellow>Supernova</color> wird um {0} Sek. erhöht, dafür erhöhen sich die Wirkungsreichweite um {1}, der Explosionsradius um {2} und die maximalen Aufladungen um {3}.",
+    "description": "Die Wirkungsreichweite von <color=yellow>Supernova</color> erhöht sich um 30% und der Explosionsradius um 20%. Jedes 3. Mal, wenn Supernova verstärkt wird, erhöht sich die maximale Aufladungszahl von Supernova um 1.",
+    "rawDesc": "Die Wirkungsreichweite von <color=yellow>Supernova</color> erhöht sich um {0} und der Explosionsradius um {1}. Jedes {2}. Mal, wenn Supernova verstärkt wird, erhöht sich die maximale Aufladungszahl von Supernova um 1.",
     "rawDescVars": [
-      {
-        "rendered": "3",
-        "format": "#,##0.#",
-        "raw": "cooldownPenalty",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 3.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
       {
         "rendered": "30%",
         "format": "P0",
@@ -10241,12 +12217,12 @@
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
-        "raw": "gainedMaxCharges",
+        "raw": "upgradesPerMaxCharge",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -10283,16 +12259,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Für jeden Gegner, der von der Explosion von <color=yellow>Supernova</color> getroffen wird, verringert sich die Abklingzeit um 0.5 Sek. und der Schaden beim nächsten Einsatz von Supernova erhöht sich um 10%.",
-    "rawDesc": "Für jeden Gegner, der von der Explosion von <color=yellow>Supernova</color> getroffen wird, verringert sich die Abklingzeit um {0} Sek. und der Schaden beim nächsten Einsatz von Supernova erhöht sich um {1}.",
+    "description": "Für jeden Gegner, der von der Explosion von <color=yellow>Supernova</color> getroffen wird, verringert sich die Abklingzeit um 8% und der Schaden beim nächsten Einsatz von Supernova erhöht sich um 10%.",
+    "rawDesc": "Für jeden Gegner, der von der Explosion von <color=yellow>Supernova</color> getroffen wird, verringert sich die Abklingzeit um {0} und der Schaden beim nächsten Einsatz von Supernova erhöht sich um {1}.",
     "rawDescVars": [
       {
-        "rendered": "0.5",
-        "format": "#,##0.#",
-        "raw": "reducedCooldownOnHit",
+        "rendered": "8%",
+        "format": "P0",
+        "raw": "reducedCooldownRatioOnHit",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 0.08,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -10314,6 +12290,36 @@
       }
     ],
     "image": "Se_Star_Yubar_F_SN_DodgeReset.png"
+  },
+  "Se_Star_Yubar_F_SN_PullEnemy": {
+    "name": "Gravitationsschub",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Yubar",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Der Verlangsamungseffekt von <color=yellow>Supernova</color> wird um 20% erhöht. Nach dem Wirken werden Gegner in der Nähe nach kurzer Zeit herangezogen.",
+    "rawDesc": "Der Verlangsamungseffekt von <color=yellow>Supernova</color> wird um {0} erhöht. Nach dem Wirken werden Gegner in der Nähe nach kurzer Zeit herangezogen.",
+    "rawDescVars": [
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "slowAmpMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Yubar_F_SN_PullEnemy.png"
   },
   "Se_Star_Yubar_F_TQ_EssenceCooldown": {
     "name": "Lied der Sterne",

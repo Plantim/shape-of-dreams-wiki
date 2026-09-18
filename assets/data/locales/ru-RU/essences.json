@@ -993,7 +993,7 @@
     "rarity": "Epic",
     "tags": [],
     "image": "Gem_E_Direness.PNG",
-    "lore": "Как я все еще жив?..\n\n...\n\nЯ же точно был в тюрьме Ордена.\n...Значит, они расставили ловушки.\nЭто была моя ошибка.\nСлишком поторопился.\n\nСтранно.\nНагрудник был разбит, и пара ребер точно была сломана...\nА сейчас все в порядке. Более того... я чувствую себя сильнее.\n\nГде я?.. Это тоже какая-то магия?..\n\n...\nЯ слабо... но точно чувствую.\nАстрид, сестра моя...\nБольше я не совершу такой ошибки.\n\nПодожди немного, я уже иду.",
+    "lore": "Как я все еще жив?..\n\n...\n\nЯ же точно был заперт в тюрьме Ордена.\n...Проклятая Секта Люцидов, расставили ловушки.\nЭто была моя ошибка.\nСлишком поторопился.\n\nСтранно.\nНагрудник был разбит, и пара ребер точно была сломана...\nА сейчас все в порядке. Более того... я чувствую себя сильнее.\n\nГде я?.. Это тоже какая-то магия?..\n\n...\nЯ слабо... но точно чувствую.\nАстрид, сестра моя...\nБольше я не совершу такой ошибки.\n\nПодожди немного, я уже иду.",
     "achievementKey": "ACH_DESPERATE_HERO",
     "achievementName": "Отчаянный герой",
     "achievementDescription": "Победить врагов x30 подряд с ОЗ 40% или ниже."
@@ -1196,8 +1196,8 @@
   },
   "Gem_E_Insensitivity": {
     "name": "Эссенция бесчувственности",
-    "description": "После <color=yellow>применения</color> этого Воспоминания в течение 4 с. персонаж оставляет <color=yellow>бомбу</color> кажд. 2 м. Бомба взрывается через некоторое время, нанося  <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5>  <color=yellow>урона от огня</color> врагам.",
-    "rawDesc": "После <color=yellow>применения</color> этого Воспоминания в течение {0} с. персонаж оставляет <color=yellow>бомбу</color> кажд. {1} м. Бомба взрывается через некоторое время, нанося {2} <color=yellow>урона от огня</color> врагам.",
+    "description": "После <color=yellow>применения</color> этого Воспоминания <color=yellow>в бою</color> в течение 4 с. персонаж оставляет <color=yellow>бомбу</color> кажд. 2 м. Бомба взрывается через некоторое время, нанося  <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5>  <color=yellow>урона от огня</color> врагам.",
+    "rawDesc": "После <color=yellow>применения</color> этого Воспоминания <color=yellow>в бою</color> в течение {0} с. персонаж оставляет <color=yellow>бомбу</color> кажд. {1} м. Бомба взрывается через некоторое время, нанося {2} <color=yellow>урона от огня</color> врагам.",
     "rawDescVars": [
       {
         "rendered": "4",
@@ -1332,20 +1332,20 @@
   },
   "Gem_E_Inversion": {
     "name": "Эссенция инверсии",
-    "description": "Увеличивает <color=yellow>время перезарядки</color> этого Воспоминания на  15%<sprite=5> , но также увеличивает <color=yellow>урон</color>, наносимый врагам, на  20%<sprite=5> . <color=yellow>Урон от элементов</color>, наносимый этим Воспоминанием, <color=yellow>инвертируется</color>. (Огонь/холод, свет/тьма)",
+    "description": "Увеличивает <color=yellow>время перезарядки</color> этого Воспоминания на 20%, но также увеличивает <color=yellow>урон</color>, наносимый врагам, на  20%<sprite=5> . <color=yellow>Урон от элементов</color>, наносимый этим Воспоминанием, <color=yellow>инвертируется</color>. (Огонь/холод, свет/тьма)",
     "rawDesc": "Увеличивает <color=yellow>время перезарядки</color> этого Воспоминания на {0}, но также увеличивает <color=yellow>урон</color>, наносимый врагам, на {1}. <color=yellow>Урон от элементов</color>, наносимый этим Воспоминанием, <color=yellow>инвертируется</color>. (Огонь/холод, свет/тьма)",
     "rawDescVars": [
       {
-        "rendered": " 15%<sprite=5> ",
+        "rendered": "20%",
         "format": "P0",
         "raw": "cooldownAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.005
+          "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
@@ -1525,7 +1525,7 @@
     "lore": null,
     "achievementKey": "ACH_OMEGA_POINT",
     "achievementName": "Точка Омега",
-    "achievementDescription": "Войти в Белоснежный сон, применив только один тип Воспоминаний в течение всего приключения."
+    "achievementDescription": "Победить, применив только один тип Воспоминаний в течение всего приключения."
   },
   "Gem_E_Opportunity": {
     "name": "Эссенция возможности",
@@ -1571,11 +1571,11 @@
   },
   "Gem_E_OurStory_Completed": {
     "name": "Наша история (завершена!)",
-    "description": "Увеличивает <color=yellow>силу атаки</color> и <color=yellow>силу умений</color> на , положительные эффекты <color=yellow>Искажающего рывка</color> — на .",
+    "description": "Увеличивает <color=yellow>силу атаки</color> и <color=yellow>силу умений</color> на 0%, положительные эффекты <color=yellow>Искажающего рывка</color> — на 0%.",
     "rawDesc": "Увеличивает <color=yellow>силу атаки</color> и <color=yellow>силу умений</color> на {0}, положительные эффекты <color=yellow>Искажающего рывка</color> — на {1}.",
     "rawDescVars": [
       {
-        "rendered": "",
+        "rendered": "0%",
         "format": "#,##0'%'",
         "raw": "Gem_E_OurStory_Completed::statPercentage",
         "scalingType": "basic",
@@ -1588,11 +1588,17 @@
         }
       },
       {
-        "rendered": "",
-        "format": "#,##0",
-        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
-        "scalingType": "unknown",
-        "data": {}
+        "rendered": "0%",
+        "format": "P0",
+        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "rarity": "Epic",
@@ -2061,18 +2067,18 @@
   },
   "Gem_L_CamillasGift": {
     "name": "Дар Камиллы",
-    "description": "Можно <color=yellow>продать</color> в магазине за золото x. <color=yellow>Стоимость</color> <color=yellow>увеличивается</color> на  при каждом переходе в следующий мир. Разбивается, если ОЗ падают ниже 50% из-за урона от врагов.",
+    "description": "Можно <color=yellow>продать</color> в магазине за золото x0. <color=yellow>Стоимость</color> <color=yellow>увеличивается</color> на 0 при каждом переходе в следующий мир. Разбивается, если ОЗ падают ниже 50% из-за урона от врагов.",
     "rawDesc": "Можно <color=yellow>продать</color> в магазине за золото x{0}. <color=yellow>Стоимость</color> <color=yellow>увеличивается</color> на {1} при каждом переходе в следующий мир. Разбивается, если ОЗ падают ниже {2} из-за урона от врагов.",
     "rawDescVars": [
       {
-        "rendered": "",
+        "rendered": "0",
         "format": "#,##0",
         "raw": "currentSellGold",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "",
+        "rendered": "0",
         "format": "#,##0",
         "raw": "sellGoldIncreasePerWorld",
         "scalingType": "basic",
@@ -4342,6 +4348,423 @@
       "Heal"
     ],
     "image": "Gem_U_SoulPrison.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Culinary": {
+    "name": "Эссенция Кулинарии",
+    "description": "Если враг, получивший <color=yellow>урон</color> от этого воспоминания, погибает в течение 3 сек., с шансом  50%<sprite=5>  он роняет <color=yellow>кулинарный ингредиент</color>. Собранные <color=yellow>кулинарные ингредиенты</color> можно использовать в <color=yellow>Котле Джонаса</color>, получив золото или характеристики.",
+    "rawDesc": "Если враг, получивший <color=yellow>урон</color> от этого воспоминания, погибает в течение {0} сек., с шансом {1} он роняет <color=yellow>кулинарный ингредиент</color>. Собранные <color=yellow>кулинарные ингредиенты</color> можно использовать в <color=yellow>Котле Джонаса</color>, получив золото или характеристики.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "killGraceTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 50%<sprite=5> ",
+        "format": "P0",
+        "raw": "DropChance",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Culinary.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Liberty": {
+    "name": "Эссенция Освобождения",
+    "description": "При использовании этого воспоминания на 2.5 сек. <color=yellow>Урон от атаки</color> увеличивается на  8<sprite=5> , <color=yellow>Сила Способностей</color> — на  8<sprite=5> , а <color=yellow>Максимальное здоровье</color> — на  60<sprite=5> . Если это воспоминание является <color=yellow>Ультимативной способностью</color>, объём даруемых характеристик и длительность увеличиваются на 200%, а на это время вы становитесь <color=yellow>Неудержимым</color>.",
+    "rawDesc": "При использовании этого воспоминания на {0} сек. <color=yellow>Урон от атаки</color> увеличивается на {1}, <color=yellow>Сила Способностей</color> — на {2}, а <color=yellow>Максимальное здоровье</color> — на {3}. Если это воспоминание является <color=yellow>Ультимативной способностью</color>, объём даруемых характеристик и длительность увеличиваются на {4}, а на это время вы становитесь <color=yellow>Неудержимым</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "Se_Gem_L_Liberty_Buff::duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "adBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "apBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 60<sprite=5> ",
+        "format": "#,##0",
+        "raw": "maxHealthBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "200%",
+        "format": "P0",
+        "raw": "Se_Gem_L_Liberty_Buff::multiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Liberty.png",
+    "lore": null,
+    "achievementKey": "ACH_THE_ROAD_NOT_TAKEN",
+    "achievementName": "Дорога, которую не выбрали",
+    "achievementDescription": "Достигните Пути без звёзд."
+  },
+  "Gem_L_Supersymmetry": {
+    "name": "Суперсимметрия",
+    "description": "<color=yellow>Максимальное здоровье</color> становится равным 1, но взамен вы получаете <color=yellow>щит</color> в размере  100%<sprite=5>  от <color=yellow>максимального здоровья</color>. Этот <color=yellow>щит</color> <color=yellow>мгновенно перезаряжается</color>, если вы не получаете урон в течение 4 сек., но при каждом <color=yellow>применении</color> любого <color=yellow>воспоминания</color> <color=yellow>щит</color> получает <color=yellow>урон</color> в размере  10%<sprite=5>  от максимального здоровья.",
+    "rawDesc": "<color=yellow>Максимальное здоровье</color> становится равным 1, но взамен вы получаете <color=yellow>щит</color> в размере {0} от <color=yellow>максимального здоровья</color>. Этот <color=yellow>щит</color> <color=yellow>мгновенно перезаряжается</color>, если вы не получаете урон в течение {1} сек., но при каждом <color=yellow>применении</color> любого <color=yellow>воспоминания</color> <color=yellow>щит</color> получает <color=yellow>урон</color> в размере {2} от максимального здоровья.",
+    "rawDescVars": [
+      {
+        "rendered": " 100%<sprite=5> ",
+        "format": "P0",
+        "raw": "shieldHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "rechargeDelay",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 10%<sprite=5> ",
+        "format": "P0",
+        "raw": "castDamageHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Shield"
+    ],
+    "image": "Gem_L_Supersymmetry.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Control": {
+    "name": "Эссенция Контроля",
+    "description": "Когда этим воспоминанием вы наносите <color=yellow>урон</color> врагу, <color=yellow>скорость передвижения</color> цели снижается на  33%<sprite=5>  на 3 сек.",
+    "rawDesc": "Когда этим воспоминанием вы наносите <color=yellow>урон</color> врагу, <color=yellow>скорость передвижения</color> цели снижается на {0} на {1} сек.",
+    "rawDescVars": [
+      {
+        "rendered": " 33%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "SlowAmount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_R_Control.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Crucible": {
+    "name": "Эссенция закалки",
+    "description": "<color=yellow>Шанс крит. удара</color> увеличивается на 25%. При попадании <color=yellow>крит. базовой атакой</color> урон и исцеление от следующего применения этого воспоминания возрастают на  4%<sprite=5> , вплоть до  40%<sprite=5> .",
+    "rawDesc": "<color=yellow>Шанс крит. удара</color> увеличивается на {0}. При попадании <color=yellow>крит. базовой атакой</color> урон и исцеление от следующего применения этого воспоминания возрастают на {1}, вплоть до {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "critChanceBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 4%<sprite=5> ",
+        "format": "P0",
+        "raw": "ampPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.02,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 40%<sprite=5> ",
+        "format": "P0",
+        "raw": "maxAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Crucible.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Hedgehog": {
+    "name": "Эссенция Ежа",
+    "description": "При <color=yellow>применении</color> этого воспоминания вокруг вас на 3 сек. разворачивается аура шипов, наносящая ближайшим врагам  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Дополнительное<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5>  урона в секунду. При получении любого урона урон этой ауры увеличивается на 50% на 4 сек.",
+    "rawDesc": "При <color=yellow>применении</color> этого воспоминания вокруг вас на {0} сек. разворачивается аура шипов, наносящая ближайшим врагам {1} урона в секунду. При получении любого урона урон этой ауры увеличивается на {2} на {3} сек.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "tickInterval * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Дополнительное<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Se_Gem_R_Hedgehog_Aura::dmgFactor/Se_Gem_R_Hedgehog_Aura::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "empoweredAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Melee"
+    ],
+    "image": "Gem_R_Hedgehog.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lightweight": {
+    "name": "Эссенция лёгкости",
+    "description": "<color=yellow>Ускорение памяти</color> этого воспоминания увеличивается на  54<sprite=5> , но <color=yellow>урон</color> снижается на 40%.",
+    "rawDesc": "<color=yellow>Ускорение памяти</color> этого воспоминания увеличивается на {0}, но <color=yellow>урон</color> снижается на {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 54<sprite=5> ",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 27.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Lightweight.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Slippery": {
+    "name": "Эссенция скольжения",
+    "description": "<color=yellow>Скорость передвижения</color> повышается на 10%. <color=yellow>Урон</color> этого воспоминания увеличивается на  100%<sprite=5>  от бонуса к <color=yellow>скорости передвижения</color>.",
+    "rawDesc": "<color=yellow>Скорость передвижения</color> повышается на {0}. <color=yellow>Урон</color> этого воспоминания увеличивается на {1} от бонуса к <color=yellow>скорости передвижения</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "moveSpeedBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 100%<sprite=5> ",
+        "format": "P0",
+        "raw": "dmgPerMoveSpeedRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Slippery.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GuidingCompass_Charged": {
+    "name": "Направляющий компас (заряжен)",
+    "description": "<alpha=#77><i>Он указывает туда, где находится она.</i><alpha=#ff>",
+    "rawDesc": "<alpha=#77><i>Он указывает туда, где находится она.</i><alpha=#ff>",
+    "rawDescVars": [],
+    "rarity": "Unique",
+    "tags": [],
+    "image": "Gem_U_GuidingCompass_Charged.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GuidingCompass_NotCharged": {
+    "name": "Направляющий компас",
+    "description": "<alpha=#77><i>Он лишился силы и больше не работает. Возможно, если наполнить его мощной энергией, его удастся починить...</i><alpha=#ff>",
+    "rawDesc": "<alpha=#77><i>Он лишился силы и больше не работает. Возможно, если наполнить его мощной энергией, его удастся починить...</i><alpha=#ff>",
+    "rawDescVars": [],
+    "rarity": "Unique",
+    "tags": [],
+    "image": "Gem_U_GuidingCompass_NotCharged.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",

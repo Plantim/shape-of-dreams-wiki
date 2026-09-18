@@ -1,7 +1,7 @@
 // assets/js/common.js
 
 // Variable globale pour la version du jeu
-const gameVersion = "1.3.1";
+const gameVersion = "1.4.0";
 
 // --- GESTION DE LA LANGUE (COMMUNE) ---
 const saveLanguage = (lang) => {

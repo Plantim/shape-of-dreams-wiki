@@ -1797,11 +1797,11 @@
     ],
     "requiredLevel": 40,
     "isRequiredLevelTotalMastery": true,
-    "description": "Reduz  25%<sprite=5>  do <color=yellow>dano recebido</color> de inimigos já afetados por <color=yellow>Glaciação</color>.",
+    "description": "Reduz  19%<sprite=5>  do <color=yellow>dano recebido</color> de inimigos já afetados por <color=yellow>Glaciação</color>.",
     "rawDesc": "Reduz {0} do <color=yellow>dano recebido</color> de inimigos já afetados por <color=yellow>Glaciação</color>.",
     "rawDescVars": [
       {
-        "rendered": " 25%<sprite=5> ",
+        "rendered": " 19%<sprite=5> ",
         "format": "P0",
         "raw": "reductionAmount",
         "scalingType": "star",
@@ -1810,10 +1810,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.25,
-            0.3,
-            0.35,
-            0.4
+            0.19,
+            0.21,
+            0.23,
+            0.25
           ],
           "strengthScaling": "Multiply"
         }
@@ -2089,11 +2089,11 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": true,
-    "description": "Ao <color=yellow>abater</color> um inimigo, recupera  1.00%<sprite=5>  da sua Vida máxima.",
+    "description": "Ao <color=yellow>abater</color> um inimigo, recupera  1.40%<sprite=5>  da sua Vida máxima.",
     "rawDesc": "Ao <color=yellow>abater</color> um inimigo, recupera {0} da sua Vida máxima.",
     "rawDescVars": [
       {
-        "rendered": " 1.00%<sprite=5> ",
+        "rendered": " 1.40%<sprite=5> ",
         "format": "P2",
         "raw": "healRatio",
         "scalingType": "star",
@@ -2102,10 +2102,10 @@
           "isClamped": false,
           "isInteger": false,
           "values": [
-            0.01,
-            0.015,
-            0.02,
-            0.025
+            0.014,
+            0.016,
+            0.018,
+            0.02
           ],
           "strengthScaling": "Multiply"
         }
@@ -2244,7 +2244,7 @@
     "image": "Se_Star_L_MaxHealth.png"
   },
   "Se_Star_L_MaxHealthUpHealDown": {
-    "name": "Pele Dura",
+    "name": "Pele Grossa Demais",
     "lore": null,
     "category": "Life",
     "heroType": "",
@@ -2481,8 +2481,8 @@
     ],
     "requiredLevel": 70,
     "isRequiredLevelTotalMastery": true,
-    "description": "Comprar ou vender um item na loja concede uma <color=yellow>Poção de Vida</color>. Pode ser ativado até  1<sprite=5>  vezes por comerciante.",
-    "rawDesc": "Comprar ou vender um item na loja concede uma <color=yellow>Poção de Vida</color>. Pode ser ativado até {0} vezes por comerciante.",
+    "description": "Comprar ou vender um item com ouro concede uma <color=yellow>Poção de Vida</color>. Pode ser ativado até  1<sprite=5>  vezes por comerciante.",
+    "rawDesc": "Comprar ou vender um item com ouro concede uma <color=yellow>Poção de Vida</color>. Pode ser ativado até {0} vezes por comerciante.",
     "rawDescVars": [
       {
         "rendered": " 1<sprite=5> ",
@@ -2791,6 +2791,56 @@
       }
     ],
     "image": "Se_Star_Aurena_D_BonusStatOnLowHp.png"
+  },
+  "Se_Star_Aurena_F_CR_ChargedCast": {
+    "name": "Legado Dourado",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Aurena",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Reação Em Cadeia</color> se torna uma Memória que pode ser carregada ao segurar o botão de conjuração. Pode ser carregada por até 3s. Ao terminar a carga, é conjurada no mesmo lugar, e a área aumenta em até 25%, enquanto o Dano e a Cura aumentam em até 50%, proporcionalmente ao tempo de carga.",
+    "rawDesc": "<color=yellow>Reação Em Cadeia</color> se torna uma Memória que pode ser carregada ao segurar o botão de conjuração. Pode ser carregada por até {0}s. Ao terminar a carga, é conjurada no mesmo lugar, e a área aumenta em até {1}, enquanto o Dano e a Cura aumentam em até {2}, proporcionalmente ao tempo de carga.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "maxChargeTime",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "maxRangeMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "maxEffectMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Aurena_F_CR_ChargedCast.png"
   },
   "Se_Star_Aurena_F_CR_EarnGold": {
     "name": "Mestre da Alquimia",
@@ -4213,6 +4263,62 @@
     ],
     "image": "Se_Star_Bismuth_F_IT_InnerDamage.png"
   },
+  "Se_Star_Bismuth_F_IT_SmallerRingAddDisplacement": {
+    "name": "Vamos Brincar de Pega-pega!",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Bismuth",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "O Tempo de recarga de <color=yellow>História Infernal</color> aumenta em 2s e o dano diminui em 20%. Em troca, você pode reconjurá-la até 2 vezes para avançar na direção desejada.",
+    "rawDesc": "O Tempo de recarga de <color=yellow>História Infernal</color> aumenta em {0}s e o dano diminui em {1}. Em troca, você pode reconjurá-la até {2} vezes para avançar na direção desejada.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "increasedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "dmgReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dashCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Bismuth_F_IT_SmallerRingAddDisplacement.png"
+  },
   "Se_Star_Bismuth_F_IT_SmallerRingMoreDamage": {
     "name": "Relacionamento Próximo",
     "lore": null,
@@ -4854,6 +4960,1210 @@
     ],
     "image": "Se_Star_Bismuth_L_SecondWindWithPenalty.png"
   },
+  "Se_Star_Cetus_D_AdApUpByBonusHp": {
+    "name": "Sanduíche de Soco",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 20,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Ganha <color=yellow>Poder de Habilidade</color> e <color=yellow>Dano de Ataque</color> equivalentes a  1.0%<sprite=5>  da <color=yellow>Vida Adicional</color>.",
+    "rawDesc": "Ganha <color=yellow>Poder de Habilidade</color> e <color=yellow>Dano de Ataque</color> equivalentes a {0} da <color=yellow>Vida Adicional</color>.",
+    "rawDescVars": [
+      {
+        "rendered": " 1.0%<sprite=5> ",
+        "format": "P1",
+        "raw": "ampValue",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.01,
+            0.015,
+            0.02
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_AdApUpByBonusHp.png"
+  },
+  "Se_Star_Cetus_D_ApUpByColdSkillCounts": {
+    "name": "Barbatana Espinhosa Afiada",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      20,
+      30,
+      30,
+      20
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Seu <color=yellow>Poder de Habilidade</color> aumenta em  4<sprite=5> . Aumenta em mais  1<sprite=5>  para cada <color=yellow>Memória de Dano de Frio</color> que você possui.",
+    "rawDesc": "Seu <color=yellow>Poder de Habilidade</color> aumenta em {0}. Aumenta em mais {1} para cada <color=yellow>Memória de Dano de Frio</color> que você possui.",
+    "rawDescVars": [
+      {
+        "rendered": " 4<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedFlat",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            4.0,
+            5.0,
+            6.0,
+            7.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "bonusPerSkill",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            1.0,
+            1.5,
+            2.0,
+            2.5
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_ApUpByColdSkillCounts.png"
+  },
+  "Se_Star_Cetus_D_StackStatsOnTakenDamage": {
+    "name": "Dor Esclarecedora",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      40,
+      50,
+      60,
+      70
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Ao sofrer <color=yellow>Dano</color>, aumenta o <color=yellow>Poder de Habilidade</color> e a <color=yellow>Aceleração de Memória</color> em 1 por 5 s, acumulando até um máximo de  6<sprite=5> .",
+    "rawDesc": "Ao sofrer <color=yellow>Dano</color>, aumenta o <color=yellow>Poder de Habilidade</color> e a <color=yellow>Aceleração de Memória</color> em {0} por {1} s, acumulando até um máximo de {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "bonusAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "stackDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 6<sprite=5> ",
+        "format": "#,##0",
+        "raw": "maxBonusCount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            6.0,
+            9.0,
+            12.0,
+            15.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_StackStatsOnTakenDamage.png"
+  },
+  "Se_Star_Cetus_D_StatsUpWhileShielded": {
+    "name": "Circulação de Mana",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 10,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Enquanto estiver com um <color=yellow>Escudo</color>, aumenta o <color=yellow>Poder de Habilidade</color> em  5<sprite=5>  e a <color=yellow>Aceleração de Memória</color> em  6<sprite=5> .",
+    "rawDesc": "Enquanto estiver com um <color=yellow>Escudo</color>, aumenta o <color=yellow>Poder de Habilidade</color> em {0} e a <color=yellow>Aceleração de Memória</color> em {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 5<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedAp",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            5.0,
+            6.0,
+            7.0,
+            8.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 6<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedHaste",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            6.0,
+            8.0,
+            10.0,
+            12.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_D_StatsUpWhileShielded.png"
+  },
+  "Se_Star_Cetus_F_BA_CdReductionOnKill": {
+    "name": "Impacto Gélido",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Se um inimigo atingido por <color=yellow>Cai Fora!</color> for abatido em até 3s, o tempo de recarga é reduzido em 0.7s.",
+    "rawDesc": "Se um inimigo atingido por <color=yellow>Cai Fora!</color> for abatido em até {0}s, o tempo de recarga é reduzido em {1}s.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "trackingGracePeriod",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0.7",
+        "format": "#,##0.#",
+        "raw": "cdReductionAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.7,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BA_CdReductionOnKill.png"
+  },
+  "Se_Star_Cetus_F_BA_ChargeMsNoShield": {
+    "name": "Andar Imponente por Toda Parte",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Cai Fora!</color> não concede DEF nem Escudo ao próprio Cetus, mas a velocidade de movimento aumenta em 30% enquanto estiver carregando.",
+    "rawDesc": "<color=yellow>Cai Fora!</color> não concede DEF nem Escudo ao próprio Cetus, mas a velocidade de movimento aumenta em {0} enquanto estiver carregando.",
+    "rawDescVars": [
+      {
+        "rendered": "30%",
+        "format": "#,##0'%'",
+        "raw": "moveSpeedBuffStrength",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BA_ChargeMsNoShield.png"
+  },
+  "Se_Star_Cetus_F_BA_LightningEcho": {
+    "name": "Experiência Eletrizante",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Inimigos atingidos por <color=yellow>Cai Fora!</color> são atingidos por um raio logo em seguida, sofrendo Dano de Luz equivalente a 40% do dano do acerto, mas o tempo de recarga aumenta em 4s.",
+    "rawDesc": "Inimigos atingidos por <color=yellow>Cai Fora!</color> são atingidos por um raio logo em seguida, sofrendo Dano de Luz equivalente a {0} do dano do acerto, mas o tempo de recarga aumenta em {1}s.",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "lightningEchoDmgMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "cooldownTimePenalty",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BA_LightningEcho.png"
+  },
+  "Se_Star_Cetus_F_BI_FastChargeTakeDamageUp": {
+    "name": "Magia Imprudente",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "A velocidade de carregamento de <color=yellow>Bloco Boreal Gigante</color> aumenta em 40%, mas o dano recebido por Cetus durante a conjuração aumenta em 40%.",
+    "rawDesc": "A velocidade de carregamento de <color=yellow>Bloco Boreal Gigante</color> aumenta em {0}, mas o dano recebido por Cetus durante a conjuração aumenta em {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "chargingSpeedAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "takenDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BI_FastChargeTakeDamageUp.png"
+  },
+  "Se_Star_Cetus_F_BI_MaxChargeTimePerLevel": {
+    "name": "Tamanho Colossal",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Sempre que aprimorar <color=yellow>Bloco Boreal Gigante</color>, o tempo máximo de carregamento aumenta em 0.5s.",
+    "rawDesc": "Sempre que aprimorar <color=yellow>Bloco Boreal Gigante</color>, o tempo máximo de carregamento aumenta em {0}s.",
+    "rawDescVars": [
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "maxChargeTimePerLevel",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BI_MaxChargeTimePerLevel.png"
+  },
+  "Se_Star_Cetus_F_BI_SelfDamageAoeCold": {
+    "name": "Força Transbordante",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Enquanto conjura <color=yellow>Bloco Boreal Gigante</color>, você sofre 2% da sua Vida Máxima como dano de frio por segundo, mas causa 8% do dano do bloco de gelo como <color=yellow>Dano de Frio</color> aos inimigos próximos a cada 0.5s.",
+    "rawDesc": "Enquanto conjura <color=yellow>Bloco Boreal Gigante</color>, você sofre {0} da sua Vida Máxima como dano de frio por segundo, mas causa {1} do dano do bloco de gelo como <color=yellow>Dano de Frio</color> aos inimigos próximos a cada {2}s.",
+    "rawDescVars": [
+      {
+        "rendered": "2%",
+        "format": "P0",
+        "raw": "selfTickDamageMaxHpRatio / tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "8%",
+        "format": "P0",
+        "raw": "dealtTickDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.08,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "tickInterval",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_BI_SelfDamageAoeCold.png"
+  },
+  "Se_Star_Cetus_F_EM_ChaseTarget": {
+    "name": "Passado Inapagável",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Abrace o Frio</color> persegue o inimigo mais próximo ou o próprio Cetus.",
+    "rawDesc": "<color=yellow>Abrace o Frio</color> persegue o inimigo mais próximo ou o próprio Cetus.",
+    "rawDescVars": [],
+    "image": "Se_Star_Cetus_F_EM_ChaseTarget.png"
+  },
+  "Se_Star_Cetus_F_EM_DamageUpSelfDamage": {
+    "name": "Dor Purificadora",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "O dano de <color=yellow>Abrace o Frio</color> aumenta em 40%, mas, ao permanecer na área de frio, Cetus sofre dano de frio equivalente a 5% do dano em vez de receber um escudo.",
+    "rawDesc": "O dano de <color=yellow>Abrace o Frio</color> aumenta em {0}, mas, ao permanecer na área de frio, Cetus sofre dano de frio equivalente a {1} do dano em vez de receber um escudo.",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "damageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "takeDamageRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_EM_DamageUpSelfDamage.png"
+  },
+  "Se_Star_Cetus_F_EM_InfiniteDuration": {
+    "name": "Inverno Eterno",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Durante o combate, o intervalo de dano e concessão de escudo de <color=yellow>Abrace o Frio</color> aumenta em 100% e o raio diminui em 35%, e não explode mais, mas permanece ativo indefinidamente até a próxima conjuração.",
+    "rawDesc": "Durante o combate, o intervalo de dano e concessão de escudo de <color=yellow>Abrace o Frio</color> aumenta em {0} e o raio diminui em {1}, e não explode mais, mas permanece ativo indefinidamente até a próxima conjuração.",
+    "rawDescVars": [
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "damageIntervalAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "35%",
+        "format": "P0",
+        "raw": "scaleReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.35,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_EM_InfiniteDuration.png"
+  },
+  "Se_Star_Cetus_F_FR_CdReductionOnTakeDamage": {
+    "name": "Prazer na Dor",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Sempre que Cetus sofre dano, o tempo de recarga de <color=yellow>Injeção de Bons Modos</color> é reduzido em 4%. Se for uma Ultimate, este efeito será de apenas 30%.",
+    "rawDesc": "Sempre que Cetus sofre dano, o tempo de recarga de <color=yellow>Injeção de Bons Modos</color> é reduzido em {0}. Se for uma Ultimate, este efeito será de apenas {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "4%",
+        "format": "P0",
+        "raw": "reduceRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "ultRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_FR_CdReductionOnTakeDamage.png"
+  },
+  "Se_Star_Cetus_F_FR_ChangeToUltHitReset": {
+    "name": "Punição Implacável",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Injeção de Bons Modos</color> torna-se uma Ultimate. Você fica Imparável durante a duração e, nesse período, atacar um inimigo aumenta a duração em 0.3s, enquanto abater um inimigo aumenta em 1.5s.",
+    "rawDesc": "<color=yellow>Injeção de Bons Modos</color> torna-se uma Ultimate. Você fica Imparável durante a duração e, nesse período, atacar um inimigo aumenta a duração em {0}s, enquanto abater um inimigo aumenta em {1}s.",
+    "rawDescVars": [
+      {
+        "rendered": "0.3",
+        "format": "#,##0.#",
+        "raw": "durationIncreasePerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "durationIncreasePerKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_FR_ChangeToUltHitReset.png"
+  },
+  "Se_Star_Cetus_F_FR_RecastCdrNoKnockback": {
+    "name": "Punhos Escorregadios",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "O tempo de recarga da reconjuração de <color=yellow>Injeção de Bons Modos</color> é reduzido em 50%, mas não empurra mais os inimigos.",
+    "rawDesc": "O tempo de recarga da reconjuração de <color=yellow>Injeção de Bons Modos</color> é reduzido em {0}, mas não empurra mais os inimigos.",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "reduceRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_F_FR_RecastCdrNoKnockback.png"
+  },
+  "Se_Star_Cetus_I_ColdDiscountFireSurcharge": {
+    "name": "Persuasão Incrível",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      40,
+      40
+    ],
+    "requiredLevel": 20,
+    "isRequiredLevelTotalMastery": false,
+    "description": "O preço de <color=yellow>Memória de Frio</color> e <color=yellow>Essência de Frio</color> vendidos por Jonas diminui em  40%<sprite=5> , mas o preço de <color=yellow>Memória de Fogo</color> e <color=yellow>Essência de Fogo</color> aumenta em 100%.",
+    "rawDesc": "O preço de <color=yellow>Memória de Frio</color> e <color=yellow>Essência de Frio</color> vendidos por Jonas diminui em {0}, mas o preço de <color=yellow>Memória de Fogo</color> e <color=yellow>Essência de Fogo</color> aumenta em {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 40%<sprite=5> ",
+        "format": "P0",
+        "raw": "discountRatio",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.4,
+            0.5,
+            0.55,
+            0.6
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "surchargeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_ColdDiscountFireSurcharge.png"
+  },
+  "Se_Star_Cetus_I_ColdSkillOnEnterWorld": {
+    "name": "O Oceano Proverá",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 10,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Ao visitar cada mundo, você ganha uma <color=yellow>Memória de Frio</color> aleatória de nível  1<sprite=5> .",
+    "rawDesc": "Ao visitar cada mundo, você ganha uma <color=yellow>Memória de Frio</color> aleatória de nível {0}.",
+    "rawDescVars": [
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0",
+        "raw": "dropColdSkillLevel",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": true,
+          "clampMin": 1.0,
+          "clampMax": 100.0,
+          "isInteger": true,
+          "values": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_ColdSkillOnEnterWorld.png"
+  },
+  "Se_Star_Cetus_I_FirstColdGemQualityBoost": {
+    "name": "Força Familiar",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      60,
+      40,
+      50,
+      50
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": false,
+    "description": "A qualidade da primeira <color=yellow>Essência de Frio</color> equipada aumenta em  80%<sprite=5> .",
+    "rawDesc": "A qualidade da primeira <color=yellow>Essência de Frio</color> equipada aumenta em {0}.",
+    "rawDescVars": [
+      {
+        "rendered": " 80%<sprite=5> ",
+        "format": "P0",
+        "raw": "bonusQuality",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.8,
+            1.0,
+            1.2,
+            1.4
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_FirstColdGemQualityBoost.png"
+  },
+  "Se_Star_Cetus_I_GetDreamDustOnBossKill": {
+    "name": "Inspeção Destrutiva",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Sempre que derrotar qualquer <color=yellow>Chefe</color>, você ganha  40<sprite=5>  de <color=yellow>Pó dos Sonhos</color>.",
+    "rawDesc": "Sempre que derrotar qualquer <color=yellow>Chefe</color>, você ganha {0} de <color=yellow>Pó dos Sonhos</color>.",
+    "rawDescVars": [
+      {
+        "rendered": " 40<sprite=5> ",
+        "format": "#,##0",
+        "raw": "dropDreamDustAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            40.0,
+            50.0,
+            60.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_GetDreamDustOnBossKill.png"
+  },
+  "Se_Star_Cetus_I_StartWithResources": {
+    "name": "Preparação Minuciosa",
+    "lore": null,
+    "category": "Imagination",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Ao iniciar uma aventura, você ganha  40<sprite=5>  de <color=yellow>Ouro</color> e  40<sprite=5>  de <color=yellow>Pó dos Sonhos</color>.",
+    "rawDesc": "Ao iniciar uma aventura, você ganha {0} de <color=yellow>Ouro</color> e {1} de <color=yellow>Pó dos Sonhos</color>.",
+    "rawDescVars": [
+      {
+        "rendered": " 40<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedGold",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            40.0,
+            50.0,
+            60.0,
+            70.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 40<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedDreamDust",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            40.0,
+            50.0,
+            60.0,
+            70.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_I_StartWithResources.png"
+  },
+  "Se_Star_Cetus_L_ArmorBuffOnShield": {
+    "name": "Endireite a Postura!",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      40,
+      40,
+      50,
+      50
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Todo o dano que eu causo é reduzido em 15%. Ao conceder um <color=yellow>Escudo</color>, o alvo ganha  11<sprite=5>  de <color=yellow>DEF</color> por 3 segundos.",
+    "rawDesc": "Todo o dano que eu causo é reduzido em {0}. Ao conceder um <color=yellow>Escudo</color>, o alvo ganha {1} de <color=yellow>DEF</color> por {2} segundos.",
+    "rawDescVars": [
+      {
+        "rendered": "15%",
+        "format": "P0",
+        "raw": "damagePenaltyReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.15,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 11<sprite=5> ",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            11.0,
+            14.0,
+            17.0,
+            20.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_ArmorBuffOnShield.png"
+  },
+  "Se_Star_Cetus_L_DodgeCdReductionOnHit": {
+    "name": "Escamas Adaptativas",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      60,
+      40,
+      50
+    ],
+    "requiredLevel": 30,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Ao receber <color=yellow>Dano</color>, o Tempo de recarga da <color=yellow>Habilidade de Esquiva</color> é reduzido em  10%<sprite=5> .",
+    "rawDesc": "Ao receber <color=yellow>Dano</color>, o Tempo de recarga da <color=yellow>Habilidade de Esquiva</color> é reduzido em {0}.",
+    "rawDescVars": [
+      {
+        "rendered": " 10%<sprite=5> ",
+        "format": "P0",
+        "raw": "reductionAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.1,
+            0.15,
+            0.2
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_DodgeCdReductionOnHit.png"
+  },
+  "Se_Star_Cetus_L_FrostResistAndBuff": {
+    "name": "O Frio Não Me Assusta Mais",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 20,
+    "isRequiredLevelTotalMastery": false,
+    "description": "O dano de frio recebido é reduzido em  15%<sprite=5>  e, ao ser afetado por frio, sua <color=yellow>Velocidade de Ataque</color> e <color=yellow>Velocidade de movimento</color> aumentam em  9%<sprite=5>  em vez de diminuírem.",
+    "rawDesc": "O dano de frio recebido é reduzido em {0} e, ao ser afetado por frio, sua <color=yellow>Velocidade de Ataque</color> e <color=yellow>Velocidade de movimento</color> aumentam em {1} em vez de diminuírem.",
+    "rawDescVars": [
+      {
+        "rendered": " 15%<sprite=5> ",
+        "format": "P0",
+        "raw": "reductionFromCold",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.15,
+            0.2,
+            0.25
+          ],
+          "strengthScaling": "Multiply"
+        }
+      },
+      {
+        "rendered": " 9%<sprite=5> ",
+        "format": "P0",
+        "raw": "buffAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.09,
+            0.12,
+            0.15
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_FrostResistAndBuff.png"
+  },
+  "Se_Star_Cetus_L_HealOnApDamage": {
+    "name": "Veias Mágicas",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      40,
+      40,
+      40,
+      50
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Recupera Vida equivalente a  0.8%<sprite=5>  do dano de Poder de Habilidade causado aos inimigos.",
+    "rawDesc": "Recupera Vida equivalente a {0} do dano de Poder de Habilidade causado aos inimigos.",
+    "rawDescVars": [
+      {
+        "rendered": " 0.8%<sprite=5> ",
+        "format": "P1",
+        "raw": "healAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.008,
+            0.01,
+            0.012,
+            0.014
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_HealOnApDamage.png"
+  },
+  "Se_Star_Cetus_L_IncreaseDealtShield": {
+    "name": "Frio Protetor",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "A quantidade de <color=yellow>Escudo</color> que eu concedo aumenta em  8%<sprite=5> .",
+    "rawDesc": "A quantidade de <color=yellow>Escudo</color> que eu concedo aumenta em {0}.",
+    "rawDescVars": [
+      {
+        "rendered": " 8%<sprite=5> ",
+        "format": "P0",
+        "raw": "shieldBonusAmp",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.08,
+            0.12,
+            0.16,
+            0.2
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_IncreaseDealtShield.png"
+  },
+  "Se_Star_Cetus_L_MaxHpDamagePenalty": {
+    "name": "Anguiliano do Mar Gigante",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Todo o dano que eu causo é reduzido em 10%. A <color=yellow>Vida Máxima</color> aumenta em  90<sprite=5> . ",
+    "rawDesc": "Todo o dano que eu causo é reduzido em {0}. A <color=yellow>Vida Máxima</color> aumenta em {1}. ",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "damagePenaltyReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 90<sprite=5> ",
+        "format": "#,##0",
+        "raw": "healthAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            90.0,
+            110.0,
+            130.0,
+            150.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_MaxHpDamagePenalty.png"
+  },
+  "Se_Star_Cetus_L_ScalingHealth": {
+    "name": "Treinamento Incansável",
+    "lore": null,
+    "category": "Life",
+    "heroType": "Hero_Cetus",
+    "maxLevel": 3,
+    "price": [
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 10,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Sempre que subir de nível, a <color=yellow>Vida Máxima</color> aumenta em  12<sprite=5> .",
+    "rawDesc": "Sempre que subir de nível, a <color=yellow>Vida Máxima</color> aumenta em {0}.",
+    "rawDescVars": [
+      {
+        "rendered": " 12<sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedHealthPerLevel",
+        "scalingType": "star",
+        "data": {
+          "levels": 3,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            12.0,
+            16.0,
+            20.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Cetus_L_ScalingHealth.png"
+  },
   "Se_Star_Husk_D_AttackDamage": {
     "name": "Propósito da Minha Existência",
     "lore": null,
@@ -5191,8 +6501,8 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Durante a <color=yellow>Postura da Aniquilação</color>, a duração aumenta em 0.2s sempre que um Ataque Básico ou Aura de Espada atingir um inimigo.",
-    "rawDesc": "Durante a <color=yellow>Postura da Aniquilação</color>, a duração aumenta em {0}s sempre que um Ataque Básico ou Aura de Espada atingir um inimigo.",
+    "description": "Durante a <color=yellow>Postura da Aniquilação</color>, a duração aumenta em 0.2s sempre que um Ataque Básico ou Aura de Espada atingir um inimigo, e todos os seus <color=yellow>Definitivos</color> são carregados em 0.5%.",
+    "rawDesc": "Durante a <color=yellow>Postura da Aniquilação</color>, a duração aumenta em {0}s sempre que um Ataque Básico ou Aura de Espada atingir um inimigo, e todos os seus <color=yellow>Definitivos</color> são carregados em {1}.",
     "rawDescVars": [
       {
         "rendered": "0.2",
@@ -5206,57 +6516,14 @@
           "basicLvl": 0,
           "basicAddedMultiplierPerLevel": 0
         }
-      }
-    ],
-    "image": "Se_Star_Husk_F_AS_AddedDurationOnHit.png"
-  },
-  "Se_Star_Husk_F_AS_NonUltimate": {
-    "name": "Loucura Controlada",
-    "lore": "Depois de se tornar uma casca vazia e sem alma, ele, na verdade, conseguiu se controlar com ainda mais perfeição.",
-    "category": "Flexible",
-    "heroType": "Hero_Husk",
-    "maxLevel": 1,
-    "price": [
-      120
-    ],
-    "requiredLevel": 25,
-    "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Postura da Aniquilação</color> se torna uma habilidade comum com 14s de tempo de recarga, permitindo o uso de outras Memórias durante sua ativação. O dano da Aura de Espada e o aumento do Dano de Ataque são reduzidos em 50%, a duração é de 4s e ela não aumenta mais a Aceleração de Memória nem as Cargas Máximas da sua Habilidade de Esquiva.",
-    "rawDesc": "<color=yellow>Postura da Aniquilação</color> se torna uma habilidade comum com {0}s de tempo de recarga, permitindo o uso de outras Memórias durante sua ativação. O dano da Aura de Espada e o aumento do Dano de Ataque são reduzidos em {1}, a duração é de {2}s e ela não aumenta mais a Aceleração de Memória nem as Cargas Máximas da sua Habilidade de Esquiva.",
-    "rawDescVars": [
-      {
-        "rendered": "14",
-        "format": "#,##0.#",
-        "raw": "cooldownTime",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 14.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
       },
       {
-        "rendered": "50%",
-        "format": "P0",
-        "raw": "strengthReduction",
+        "rendered": "0.5%",
+        "format": "P1",
+        "raw": "ultimateChargeGainRatio",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
-      {
-        "rendered": "4",
-        "format": "#,##0.#",
-        "raw": "newDuration",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 4.0,
+          "basicConstant": 0.005,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5264,7 +6531,7 @@
         }
       }
     ],
-    "image": "Se_Star_Husk_F_AS_NonUltimate.png"
+    "image": "Se_Star_Husk_F_AS_AddedDurationOnHit.png"
   },
   "Se_Star_Husk_F_AS_NoShockwaveFasterAttack": {
     "name": "Dança da Lâmina Frenética",
@@ -5277,8 +6544,8 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "Reduz o dano da Aura de Espada de <color=yellow>Postura da Aniquilação</color> em 60% e o alcance da Aura de Espada em 80%, mas aumenta a Velocidade de Ataque e a Aceleração de Memória da Habilidade de Esquiva concedidas em 100%.",
-    "rawDesc": "Reduz o dano da Aura de Espada de <color=yellow>Postura da Aniquilação</color> em {0} e o alcance da Aura de Espada em {1}, mas aumenta a Velocidade de Ataque e a Aceleração de Memória da Habilidade de Esquiva concedidas em {2}.",
+    "description": "Reduz o dano da Aura de Espada de <color=yellow>Postura da Aniquilação</color> em 60% e o alcance da Aura de Espada em 80%. Durante a <color=yellow>Postura da Aniquilação</color>, a <color=yellow>Aceleração de Memória</color> da sua <color=yellow>Habilidade de Esquiva</color> aumenta em 30 e as <color=yellow>Cargas Máximas</color> aumentam em 2. Este aumento de Aceleração de Memória aumenta permanentemente em 12 sempre que você derrotar qualquer chefe.",
+    "rawDesc": "Reduz o dano da Aura de Espada de <color=yellow>Postura da Aniquilação</color> em {0} e o alcance da Aura de Espada em {1}. Durante a <color=yellow>Postura da Aniquilação</color>, a <color=yellow>Aceleração de Memória</color> da sua <color=yellow>Habilidade de Esquiva</color> aumenta em {2} e as <color=yellow>Cargas Máximas</color> aumentam em {3}. Este aumento de Aceleração de Memória aumenta permanentemente em {4} sempre que você derrotar qualquer chefe.",
     "rawDescVars": [
       {
         "rendered": "60%",
@@ -5307,9 +6574,317 @@
         }
       },
       {
-        "rendered": "100%",
+        "rendered": "30",
+        "format": "#,##0",
+        "raw": "dodgeMemoryHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "2",
+        "format": "#,##0",
+        "raw": "dodgeAddedCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "12",
+        "format": "#,##0",
+        "raw": "dodgeMemoryHastePerBossKill",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 12.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_AS_NoShockwaveFasterAttack.png"
+  },
+  "Se_Star_Husk_F_AS_NonUltimate": {
+    "name": "Loucura Controlada",
+    "lore": "Depois de se tornar uma casca vazia e sem alma, ele, na verdade, conseguiu se controlar com ainda mais perfeição.",
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Postura da Aniquilação</color> se torna uma habilidade comum com 12s de tempo de recarga. O dano da Aura de Espada e o aumento do Dano de Ataque são reduzidos em 50% e sua duração é de 3.5s.",
+    "rawDesc": "<color=yellow>Postura da Aniquilação</color> se torna uma habilidade comum com {0}s de tempo de recarga. O dano da Aura de Espada e o aumento do Dano de Ataque são reduzidos em {1} e sua duração é de {2}s.",
+    "rawDescVars": [
+      {
+        "rendered": "12",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 12.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
         "format": "P0",
-        "raw": "buffAmp",
+        "raw": "strengthReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3.5",
+        "format": "#,##0.#",
+        "raw": "newDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_AS_NonUltimate.png"
+  },
+  "Se_Star_Husk_F_DC_EndMovespeedToBonusAttackspeed": {
+    "name": "Lâmina Impiedosa",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Quando <color=yellow>Distração</color> termina, a Velocidade de Ataque aumenta por 3 s em um valor igual ao aumento de Velocidade de movimento concedido por Distração.",
+    "rawDesc": "Quando <color=yellow>Distração</color> termina, a Velocidade de Ataque aumenta por {0} s em um valor igual ao aumento de Velocidade de movimento concedido por Distração.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "hasteDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DC_EndMovespeedToBonusAttackspeed.png"
+  },
+  "Se_Star_Husk_F_DC_EnhanceMaxStealthTime": {
+    "name": "Crepúsculo",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Sempre que aprimorar <color=yellow>Distração</color>, o tempo máximo do estado Furtivo aumenta em 0.25 s.",
+    "rawDesc": "Sempre que aprimorar <color=yellow>Distração</color>, o tempo máximo do estado Furtivo aumenta em {0} s.",
+    "rawDescVars": [
+      {
+        "rendered": "0.25",
+        "format": "0.##",
+        "raw": "addedStealthTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DC_EnhanceMaxStealthTime.png"
+  },
+  "Se_Star_Husk_F_DC_RecentDamageHoTWhileStealth": {
+    "name": "Escuridão Confortável",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Ao ativar <color=yellow>Distração</color>, cura todo o dano sofrido nos 4 s anteriores à conjuração ao longo de 3 s. Porém, se Distração terminar antes da cura completa, o efeito também será encerrado.",
+    "rawDesc": "Ao ativar <color=yellow>Distração</color>, cura todo o dano sofrido nos {0} s anteriores à conjuração ao longo de {1} s. Porém, se Distração terminar antes da cura completa, o efeito também será encerrado.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "recentDamageTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "healOverTime",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "image": "Se_Star_Husk_F_DC_RecentDamageHoTWhileStealth.png"
+  },
+  "Se_Star_Husk_F_DE_HighAmpMissReset": {
+    "name": "Foco de Energia",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 15,
+    "isRequiredLevelTotalMastery": false,
+    "description": "O aumento de dano ao atingir de <color=yellow>Marca da Morte</color> não é mais reiniciado sempre que você avança para o próximo mundo, mas o aumento por acerto é reduzido para 4% e, se errar, você perde todo o aumento acumulado.",
+    "rawDesc": "O aumento de dano ao atingir de <color=yellow>Marca da Morte</color> não é mais reiniciado sempre que você avança para o próximo mundo, mas o aumento por acerto é reduzido para {0} e, se errar, você perde todo o aumento acumulado.",
+    "rawDescVars": [
+      {
+        "rendered": "4%",
+        "format": "P0",
+        "raw": "newAmpGainPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.04,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DE_HighAmpMissReset.png"
+  },
+  "Se_Star_Husk_F_DE_HitHealMissPenalty": {
+    "name": "Alquimia",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Quando <color=yellow>Marca da Morte</color> atinge um inimigo pela primeira vez, você recupera 10% do dano, mas se errar, sofre 30% da sua Vida Máxima como dano.",
+    "rawDesc": "Quando <color=yellow>Marca da Morte</color> atinge um inimigo pela primeira vez, você recupera {0} do dano, mas se errar, sofre {1} da sua Vida Máxima como dano.",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "P0",
+        "raw": "healAmpByDmg",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.1,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "30%",
+        "format": "P0",
+        "raw": "penaltyAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.3,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_DE_HitHealMissPenalty.png"
+  },
+  "Se_Star_Husk_F_DE_MarkHitDodgeCDR": {
+    "name": "Morte Certa",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "A duração de <color=yellow>Marca da Morte</color> aumenta em 2 s, todo o Dano Sombrio que você causa a um alvo marcado aumenta em 25% e, sempre que atacar o alvo, o tempo de recarga da habilidade de esquiva é reduzido em 1 s.",
+    "rawDesc": "A duração de <color=yellow>Marca da Morte</color> aumenta em {0} s, todo o Dano Sombrio que você causa a um alvo marcado aumenta em {1} e, sempre que atacar o alvo, o tempo de recarga da habilidade de esquiva é reduzido em {2} s.",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "increasedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "darkDamageAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "dodgeReductionAmount",
         "scalingType": "basic",
         "data": {
           "basicConstant": 1.0,
@@ -5320,7 +6895,50 @@
         }
       }
     ],
-    "image": "Se_Star_Husk_F_AS_NoShockwaveFasterAttack.png"
+    "image": "Se_Star_Husk_F_DE_MarkHitDodgeCDR.png"
+  },
+  "Se_Star_Husk_F_LA_BlueFormOnly": {
+    "name": "Onda Safira",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Husk",
+    "maxLevel": 1,
+    "price": [
+      180
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "A Forma Rubra de <color=yellow>Laceração</color> é desativada, e o tempo Invulnerável da Forma Safira aumenta em 50%. A Forma Safira de <color=yellow>Laceração</color> se torna uma Memória que pode ser carregada segurando o botão de conjuração. Se o botão for solto antes, o efeito Invulnerável termina mais cedo e a lâmina é brandida imediatamente. Quanto mais tempo carregar, maior será a área, aumentando em até 20%.",
+    "rawDesc": "A Forma Rubra de <color=yellow>Laceração</color> é desativada, e o tempo Invulnerável da Forma Safira aumenta em {0}. A Forma Safira de <color=yellow>Laceração</color> se torna uma Memória que pode ser carregada segurando o botão de conjuração. Se o botão for solto antes, o efeito Invulnerável termina mais cedo e a lâmina é brandida imediatamente. Quanto mais tempo carregar, maior será a área, aumentando em até {1}.",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "addedInvulnerableTimeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "addedRangeRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Husk_F_LA_BlueFormOnly.png"
   },
   "Se_Star_Husk_F_LA_DodgeResetOnRed": {
     "name": "Fluxo de Ki",
@@ -5887,9 +7505,22 @@
     ],
     "requiredLevel": 15,
     "isRequiredLevelTotalMastery": false,
-    "description": "<color=yellow>Canhão de Mão</color> sempre empurra inimigos, reduzindo a <color=yellow>Velocidade de Movimento</color> deles em 75% durante 4s.",
-    "rawDesc": "<color=yellow>Canhão de Mão</color> sempre empurra inimigos, reduzindo a <color=yellow>Velocidade de Movimento</color> deles em {0} durante {1}s.",
+    "description": "O alcance do <color=yellow>Canhão de Mão</color> aumenta em 25% e a velocidade de movimento dos inimigos atingidos é reduzida em 75% durante 3s.",
+    "rawDesc": "O alcance do <color=yellow>Canhão de Mão</color> aumenta em {0} e a velocidade de movimento dos inimigos atingidos é reduzida em {1} durante {2}s.",
     "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "scaleAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
       {
         "rendered": "75%",
         "format": "#,##0'%'",
@@ -5904,12 +7535,12 @@
         }
       },
       {
-        "rendered": "4",
+        "rendered": "3",
         "format": "#,##0.#",
         "raw": "slowDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 4.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5921,7 +7552,7 @@
   },
   "Se_Star_Lacerta_F_HC_NearDamage": {
     "name": "Fúria de Barasus",
-    "lore": "",
+    "lore": "Ele não esqueceu aquele poder avassalador que viu à distância. E finalmente o recriou com as próprias mãos.",
     "category": "Flexible",
     "heroType": "Hero_Lacerta",
     "maxLevel": 1,
@@ -5930,16 +7561,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "Aumenta 150% do dano causado em inimigo perto do <color=yellow>Canhão de Mão</color>.",
-    "rawDesc": "Aumenta {0} do dano causado em inimigo perto do <color=yellow>Canhão de Mão</color>.",
+    "description": "A distância que o <color=yellow>Canhão de Mão</color> empurra Lacerta e os inimigos aumenta em 40%, e os inimigos são sempre empurrados.",
+    "rawDesc": "A distância que o <color=yellow>Canhão de Mão</color> empurra Lacerta e os inimigos aumenta em {0}, e os inimigos são sempre empurrados.",
     "rawDescVars": [
       {
-        "rendered": "150%",
+        "rendered": "40%",
         "format": "P0",
-        "raw": "nearDamageAmp",
+        "raw": "knockbackAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 1.5,
+          "basicConstant": 0.4,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -5948,6 +7579,79 @@
       }
     ],
     "image": "Se_Star_Lacerta_F_HC_NearDamage.png"
+  },
+  "Se_Star_Lacerta_F_HC_NoDelayDoubleCast": {
+    "name": "Sopro do Dragão",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Lacerta",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "O dano do <color=yellow>Canhão de Mão</color> é reduzido em 40% e não empurra Lacerta para trás, mas o tempo de preparação é removido, disparando imediatamente ao conjurar, a carga máxima aumenta em 1 e todas as cargas são recarregadas de uma só vez.",
+    "rawDesc": "O dano do <color=yellow>Canhão de Mão</color> é reduzido em {0} e não empurra Lacerta para trás, mas o tempo de preparação é removido, disparando imediatamente ao conjurar, a carga máxima aumenta em {1} e todas as cargas são recarregadas de uma só vez.",
+    "rawDescVars": [
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedCharges",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Lacerta_F_HC_NoDelayDoubleCast.png"
+  },
+  "Se_Star_Lacerta_F_HC_ResetOnDodge": {
+    "name": "Esquiva Tática",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Lacerta",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "O tempo de recarga do <color=yellow>Canhão de Mão</color> aumenta em 2.5s, mas usar uma habilidade de esquiva reinicia o tempo de recarga do Canhão de Mão.",
+    "rawDesc": "O tempo de recarga do <color=yellow>Canhão de Mão</color> aumenta em {0}s, mas usar uma habilidade de esquiva reinicia o tempo de recarga do Canhão de Mão.",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "addedCooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Lacerta_F_HC_ResetOnDodge.png"
   },
   "Se_Star_Lacerta_F_IR_AoEDamage": {
     "name": "Munição Explosiva",
@@ -6007,6 +7711,51 @@
       }
     ],
     "image": "Se_Star_Lacerta_F_IR_MoreShots.png"
+  },
+  "Se_Star_Lacerta_F_IR_RechargeAmmoAmpBurnDamage": {
+    "name": "Munição Escaldante",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Lacerta",
+    "maxLevel": 1,
+    "price": [
+      100
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "O dano de <color=yellow>Munição Incendiária</color> é reduzido em 50%, mas aplica 1 acúmulo(s) adicional(is) de fogo ao alvo. Cada vez que atinge um alvo diferente do anterior, recarrega 1 munição.",
+    "rawDesc": "O dano de <color=yellow>Munição Incendiária</color> é reduzido em {0}, mas aplica {1} acúmulo(s) adicional(is) de fogo ao alvo. Cada vez que atinge um alvo diferente do anterior, recarrega 1 munição.",
+    "rawDescVars": [
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "star",
+        "data": {
+          "levels": 1,
+          "isClamped": false,
+          "isInteger": false,
+          "values": [
+            0.5
+          ],
+          "strengthScaling": "None"
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0",
+        "raw": "addedFireStacks",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Lacerta_F_IR_RechargeAmmoAmpBurnDamage.png"
   },
   "Se_Star_Lacerta_F_PS_ChargeSpeed": {
     "name": "Mira Experiente",
@@ -6418,6 +8167,75 @@
       }
     ],
     "image": "Se_Star_Lacerta_L_SpeedAfterDodge.png"
+  },
+  "Se_Star_Mist_F_LG_ChainAttack": {
+    "name": "Chuva de Névoa",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Mist",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Aumenta o tempo de recarga de <color=yellow>Investida</color> em 1.5s. Após usar uma habilidade de esquiva, a próxima <color=yellow>Investida</color> lançada em até 3s é aprimorada e atinge o inimigo mais 3 vezes. Cada ataque causa 35% de dano e ativa Efeito de Ataque.",
+    "rawDesc": "Aumenta o tempo de recarga de <color=yellow>Investida</color> em {0}s. Após usar uma habilidade de esquiva, a próxima <color=yellow>Investida</color> lançada em até {1}s é aprimorada e atinge o inimigo mais {2} vezes. Cada ataque causa {3} de dano e ativa Efeito de Ataque.",
+    "rawDescVars": [
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "addedCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "windowDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "stabCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "35%",
+        "format": "P0",
+        "raw": "dmgRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.35,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Mist_F_LG_ChainAttack.png"
   },
   "Se_Star_Mist_I_CamillasGift": {
     "name": "Presente de Camila",
@@ -7156,6 +8974,49 @@
       }
     ],
     "image": "Se_Star_Mist_F_UD_HealLostHealth.png"
+  },
+  "Se_Star_Mist_F_UD_NonUltimate": {
+    "name": "Momento de Imersão",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Mist",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 25,
+    "isRequiredLevelTotalMastery": false,
+    "description": "<color=yellow>Determinação Inabalável</color> não causa mais uma explosão e sua duração, assim como seu dano, são reduzidos em 66%. No entanto, ela se torna uma Memória Comum com um tempo de recarga de 14s.",
+    "rawDesc": "<color=yellow>Determinação Inabalável</color> não causa mais uma explosão e sua duração, assim como seu dano, são reduzidos em {0}. No entanto, ela se torna uma Memória Comum com um tempo de recarga de {1}s.",
+    "rawDescVars": [
+      {
+        "rendered": "66%",
+        "format": "P0",
+        "raw": "effectReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.66,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "14",
+        "format": "#,##0.#",
+        "raw": "cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 14.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Mist_F_UD_NonUltimate.png"
   },
   "Se_Star_Mist_I_BonusOnCatPet": {
     "name": "Amante de Gatos",
@@ -8050,6 +9911,62 @@
     ],
     "image": "Se_Star_Nachia_F_SC_MoreSummons.png"
   },
+  "Se_Star_Nachia_F_SC_SummonDmgReduction": {
+    "name": "Líder da Matilha",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Nachia",
+    "maxLevel": 1,
+    "price": [
+      180
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Quando houver 4 ou mais Cães-folha de <color=yellow>Chamado da Floresta</color>, o Poder de Habilidade de Nachia aumenta em 15% e os Cães-folha recebem 40 de DEF.",
+    "rawDesc": "Quando houver {0} ou mais Cães-folha de <color=yellow>Chamado da Floresta</color>, o Poder de Habilidade de Nachia aumenta em {1} e os Cães-folha recebem {2} de DEF.",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0",
+        "raw": "requiredCount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "15%",
+        "format": "#,##0'%'",
+        "raw": "abilityPowerPercentage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "40",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 40.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Nachia_F_SC_SummonDmgReduction.png"
+  },
   "Se_Star_Nachia_I_ForestKillDreamDust": {
     "name": "Ceifadora de Vidas",
     "lore": null,
@@ -8237,8 +10154,8 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Ao aplicar reforço em aliado, o alvo ganha <color=yellow>Invulnerabilidade</color> durante  1.5<sprite=5> s. Este efeito tem tempo de recarga de 5s para cada alvo.",
-    "rawDesc": "Ao aplicar reforço em aliado, o alvo ganha <color=yellow>Invulnerabilidade</color> durante {0}s. Este efeito tem tempo de recarga de {1}s para cada alvo.",
+    "description": "Ao aplicar reforço em aliado, o alvo ganha <color=yellow>Invulnerabilidade</color> durante  1.5<sprite=5> s. Este efeito tem tempo de recarga de 5s para cada alvo e, caso o alvo seja uma invocação, a duração aumenta em 70%.",
+    "rawDesc": "Ao aplicar reforço em aliado, o alvo ganha <color=yellow>Invulnerabilidade</color> durante {0}s. Este efeito tem tempo de recarga de {1}s para cada alvo e, caso o alvo seja uma invocação, a duração aumenta em {2}.",
     "rawDescVars": [
       {
         "rendered": " 1.5<sprite=5> ",
@@ -8264,6 +10181,19 @@
         "scalingType": "basic",
         "data": {
           "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "70%",
+        "format": "P0",
+        "raw": "ampToSummons",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.7,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8748,36 +10678,6 @@
     ],
     "image": "Se_Star_Vesper_D_ConvertAPToAD.png"
   },
-  "Se_Star_Vesper_F_BS_AddedDurationPerAtk": {
-    "name": "Marteladas Infinitas",
-    "lore": null,
-    "category": "Flexible",
-    "heroType": "Hero_Vesper",
-    "maxLevel": 1,
-    "price": [
-      80
-    ],
-    "requiredLevel": 5,
-    "isRequiredLevelTotalMastery": false,
-    "description": "Ataques básicos durante <color=yellow>Batismo do Sol</color> aumentam a <color=yellow>Duração</color> em 0.2s.",
-    "rawDesc": "Ataques básicos durante <color=yellow>Batismo do Sol</color> aumentam a <color=yellow>Duração</color> em {0}s.",
-    "rawDescVars": [
-      {
-        "rendered": "0.2",
-        "format": "#,##0.#",
-        "raw": "addedDuration",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 0.2,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      }
-    ],
-    "image": "Se_Star_Vesper_F_BS_AddedDurationPerAtk.png"
-  },
   "Se_Star_Vesper_F_BS_ADWithArmor": {
     "name": "Sem Dor, Sem Ganho",
     "lore": null,
@@ -8820,6 +10720,79 @@
       }
     ],
     "image": "Se_Star_Vesper_F_BS_ADWithArmor.png"
+  },
+  "Se_Star_Vesper_F_BS_AddedDurationPerAtk": {
+    "name": "Marteladas Infinitas",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      80
+    ],
+    "requiredLevel": 5,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Ataques básicos durante <color=yellow>Batismo do Sol</color> aumentam a <color=yellow>Duração</color> em 0.2s.",
+    "rawDesc": "Ataques básicos durante <color=yellow>Batismo do Sol</color> aumentam a <color=yellow>Duração</color> em {0}s.",
+    "rawDescVars": [
+      {
+        "rendered": "0.2",
+        "format": "#,##0.#",
+        "raw": "addedDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_AddedDurationPerAtk.png"
+  },
+  "Se_Star_Vesper_F_BS_ExplosionOnEnd": {
+    "name": "Arrependam-se!",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Vesper",
+    "maxLevel": 1,
+    "price": [
+      160
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "A duração de <color=yellow>Batismo do Sol</color> é reduzida em 66%, mas o dano da explosão aumenta em 50% e ocorre mais uma explosão quando a duração termina.",
+    "rawDesc": "A duração de <color=yellow>Batismo do Sol</color> é reduzida em {0}, mas o dano da explosão aumenta em {1} e ocorre mais uma explosão quando a duração termina.",
+    "rawDescVars": [
+      {
+        "rendered": "66%",
+        "format": "P0",
+        "raw": "durationReduceMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.66,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "explosionDamageMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Vesper_F_BS_ExplosionOnEnd.png"
   },
   "Se_Star_Vesper_F_BS_MovSpd": {
     "name": "Calor Revigorante",
@@ -9703,44 +11676,6 @@
     ],
     "image": "Se_Star_Yubar_D_APOnDodge.png"
   },
-  "Se_Star_Yubar_D_AbilityPower": {
-    "name": "Tapete do Céu Noturno",
-    "lore": null,
-    "category": "Destruction",
-    "heroType": "Hero_Yubar",
-    "maxLevel": 4,
-    "price": [
-      30,
-      30,
-      30,
-      40
-    ],
-    "requiredLevel": 0,
-    "isRequiredLevelTotalMastery": false,
-    "description": "Aumenta  5<sprite=5>  do <color=yellow>Poder de Habilidade</color>.",
-    "rawDesc": "Aumenta {0} do <color=yellow>Poder de Habilidade</color>.",
-    "rawDescVars": [
-      {
-        "rendered": " 5<sprite=5> ",
-        "format": "#,##0",
-        "raw": "bonusAmount",
-        "scalingType": "star",
-        "data": {
-          "levels": 4,
-          "isClamped": false,
-          "isInteger": true,
-          "values": [
-            5.0,
-            7.0,
-            9.0,
-            11.0
-          ],
-          "strengthScaling": "Multiply"
-        }
-      }
-    ],
-    "image": "Se_Star_Yubar_D_AbilityPower.png"
-  },
   "Se_Star_Yubar_D_ADAPWithPenalty": {
     "name": "Canhão de Vidro",
     "lore": "Seu corpo agora é apenas um recipiente frágil. Claro, todos que pensaram assim viraram um punhado de poeira.",
@@ -9844,6 +11779,44 @@
       }
     ],
     "image": "Se_Star_Yubar_D_APPerLightSkill.png"
+  },
+  "Se_Star_Yubar_D_AbilityPower": {
+    "name": "Tapete do Céu Noturno",
+    "lore": null,
+    "category": "Destruction",
+    "heroType": "Hero_Yubar",
+    "maxLevel": 4,
+    "price": [
+      30,
+      30,
+      30,
+      40
+    ],
+    "requiredLevel": 0,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Aumenta  5<sprite=5>  do <color=yellow>Poder de Habilidade</color>.",
+    "rawDesc": "Aumenta {0} do <color=yellow>Poder de Habilidade</color>.",
+    "rawDescVars": [
+      {
+        "rendered": " 5<sprite=5> ",
+        "format": "#,##0",
+        "raw": "bonusAmount",
+        "scalingType": "star",
+        "data": {
+          "levels": 4,
+          "isClamped": false,
+          "isInteger": true,
+          "values": [
+            5.0,
+            7.0,
+            9.0,
+            11.0
+          ],
+          "strengthScaling": "Multiply"
+        }
+      }
+    ],
+    "image": "Se_Star_Yubar_D_AbilityPower.png"
   },
   "Se_Star_Yubar_D_BonusDamageToLight": {
     "name": "Lágrima da Estrela",
@@ -10082,16 +12055,16 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Quando o projétil de <color=yellow>Influência Etérea</color> atinge um inimigo com 3 ou mais acúmulos de Luz, ocorre uma explosão que causa 50% de dano.",
+    "description": "Quando o projétil de <color=yellow>Influência Etérea</color> atinge um inimigo com 2 ou mais acúmulos de Luz, ocorre uma explosão que causa 50% de dano.",
     "rawDesc": "Quando o projétil de <color=yellow>Influência Etérea</color> atinge um inimigo com {0} ou mais acúmulos de Luz, ocorre uma explosão que causa {1} de dano.",
     "rawDescVars": [
       {
-        "rendered": "3",
+        "rendered": "2",
         "format": "#,##0",
         "raw": "requiredLightStacks",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 3.0,
+          "basicConstant": 2.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -10157,6 +12130,22 @@
     ],
     "image": "Se_Star_Yubar_F_EI_BiggerExplosion.png"
   },
+  "Se_Star_Yubar_F_EI_DashNoProjectile": {
+    "name": "Melodia Etérea",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Yubar",
+    "maxLevel": 1,
+    "price": [
+      120
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "Em vez de disparar um projétil, <color=yellow>Influência Etérea</color> faz com que Yubar avance na direção conjurada, causando dano.",
+    "rawDesc": "Em vez de disparar um projétil, <color=yellow>Influência Etérea</color> faz com que Yubar avance na direção conjurada, causando dano.",
+    "rawDescVars": [],
+    "image": "Se_Star_Yubar_F_EI_DashNoProjectile.png"
+  },
   "Se_Star_Yubar_F_EI_NoRootMoreDamage": {
     "name": "Mudança de Fluxo",
     "lore": null,
@@ -10198,22 +12187,9 @@
     ],
     "requiredLevel": 25,
     "isRequiredLevelTotalMastery": false,
-    "description": "Aumenta o <color=yellow>Tempo de recarga</color> de <color=yellow>Supernova</color> em 3s, mas aumenta o alcance de conjuração em 30%, o raio da explosão em 20% e o número máximo de cargas em 2.",
-    "rawDesc": "Aumenta o <color=yellow>Tempo de recarga</color> de <color=yellow>Supernova</color> em {0}s, mas aumenta o alcance de conjuração em {1}, o raio da explosão em {2} e o número máximo de cargas em {3}.",
+    "description": "Aumenta o alcance de conjuração de <color=yellow>Supernova</color> em 30% e o raio da explosão em 20%. A cada 3 vezes que aprimorar a Supernova, o número máximo de cargas da Supernova aumenta em 1.",
+    "rawDesc": "Aumenta o alcance de conjuração de <color=yellow>Supernova</color> em {0} e o raio da explosão em {1}. A cada {2} vezes que aprimorar a Supernova, o número máximo de cargas da Supernova aumenta em 1.",
     "rawDescVars": [
-      {
-        "rendered": "3",
-        "format": "#,##0.#",
-        "raw": "cooldownPenalty",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 3.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
-        }
-      },
       {
         "rendered": "30%",
         "format": "P0",
@@ -10241,12 +12217,12 @@
         }
       },
       {
-        "rendered": "2",
+        "rendered": "3",
         "format": "#,##0",
-        "raw": "gainedMaxCharges",
+        "raw": "upgradesPerMaxCharge",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 2.0,
+          "basicConstant": 3.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -10283,16 +12259,16 @@
     ],
     "requiredLevel": 5,
     "isRequiredLevelTotalMastery": false,
-    "description": "O Tempo de recarga é reduzido em 0.5s para cada inimigo atingido pela explosão de <color=yellow>Supernova</color>, e o Dano da próxima conjuração de <color=yellow>Supernova</color> aumenta em 10%.",
-    "rawDesc": "O Tempo de recarga é reduzido em {0}s para cada inimigo atingido pela explosão de <color=yellow>Supernova</color>, e o Dano da próxima conjuração de <color=yellow>Supernova</color> aumenta em {1}.",
+    "description": "O Tempo de recarga é reduzido em 8% para cada inimigo atingido pela explosão de <color=yellow>Supernova</color>, e o Dano da próxima conjuração de <color=yellow>Supernova</color> aumenta em 10%.",
+    "rawDesc": "O Tempo de recarga é reduzido em {0} para cada inimigo atingido pela explosão de <color=yellow>Supernova</color>, e o Dano da próxima conjuração de <color=yellow>Supernova</color> aumenta em {1}.",
     "rawDescVars": [
       {
-        "rendered": "0.5",
-        "format": "#,##0.#",
-        "raw": "reducedCooldownOnHit",
+        "rendered": "8%",
+        "format": "P0",
+        "raw": "reducedCooldownRatioOnHit",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.5,
+          "basicConstant": 0.08,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -10314,6 +12290,36 @@
       }
     ],
     "image": "Se_Star_Yubar_F_SN_DodgeReset.png"
+  },
+  "Se_Star_Yubar_F_SN_PullEnemy": {
+    "name": "Adição de Grávitons",
+    "lore": null,
+    "category": "Flexible",
+    "heroType": "Hero_Yubar",
+    "maxLevel": 1,
+    "price": [
+      140
+    ],
+    "requiredLevel": 35,
+    "isRequiredLevelTotalMastery": false,
+    "description": "O efeito de redução de <color=yellow>Velocidade de Movimento</color> de <color=yellow>Supernova</color> aumenta em 20%. Além disso, pouco depois de conjurada, ela puxa os inimigos próximos.",
+    "rawDesc": "O efeito de redução de <color=yellow>Velocidade de Movimento</color> de <color=yellow>Supernova</color> aumenta em {0}. Além disso, pouco depois de conjurada, ela puxa os inimigos próximos.",
+    "rawDescVars": [
+      {
+        "rendered": "20%",
+        "format": "P0",
+        "raw": "slowAmpMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "image": "Se_Star_Yubar_F_SN_PullEnemy.png"
   },
   "Se_Star_Yubar_F_TQ_EssenceCooldown": {
     "name": "Canção da Estrela",

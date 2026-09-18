@@ -1196,8 +1196,8 @@
   },
   "Gem_E_Insensitivity": {
     "name": "Duyarsız Öz",
-    "description": "Bu hafızayı <color=yellow>kullandıktan</color> sonra 4 saniye boyunca her 2m hareket ettiğinde bir <color=yellow>bomba</color> bırakırsın. Bomba kısa bir süre sonra patlayarak düşmanlara  <sprite=1><color=#fff><gradient=sv_ap>%140</gradient></color><sprite=5>  <color=yellow>Ateş Hasarı</color> verir.",
-    "rawDesc": "Bu hafızayı <color=yellow>kullandıktan</color> sonra {0} saniye boyunca her {1}m hareket ettiğinde bir <color=yellow>bomba</color> bırakırsın. Bomba kısa bir süre sonra patlayarak düşmanlara {2} <color=yellow>Ateş Hasarı</color> verir.",
+    "description": "<color=yellow>Savaş sırasında</color> bu hafızayı <color=yellow>kullandıktan</color> sonra 4 saniye boyunca her 2m hareket ettiğinde bir <color=yellow>bomba</color> bırakırsın. Bomba kısa bir süre sonra patlayarak düşmanlara  <sprite=1><color=#fff><gradient=sv_ap>%140</gradient></color><sprite=5>  <color=yellow>Ateş Hasarı</color> verir.",
+    "rawDesc": "<color=yellow>Savaş sırasında</color> bu hafızayı <color=yellow>kullandıktan</color> sonra {0} saniye boyunca her {1}m hareket ettiğinde bir <color=yellow>bomba</color> bırakırsın. Bomba kısa bir süre sonra patlayarak düşmanlara {2} <color=yellow>Ateş Hasarı</color> verir.",
     "rawDescVars": [
       {
         "rendered": "4",
@@ -1332,20 +1332,20 @@
   },
   "Gem_E_Inversion": {
     "name": "Ters Köşe Özü",
-    "description": "Bu hafızanın <color=yellow>Bekleme Süresi</color>  %15<sprite=5>  artar ancak düşmanlara verdiği <color=yellow>Hasar</color> da  %20<sprite=5>  artar. Bu hafızanın verdiği <color=yellow>Element Hasarı</color> <color=yellow>Tersine Çevrilir</color>. (Ateş/Buz, Işık/Karanlık)",
+    "description": "Bu hafızanın <color=yellow>Bekleme Süresi</color> %20 artar ancak düşmanlara verdiği <color=yellow>Hasar</color> da  %20<sprite=5>  artar. Bu hafızanın verdiği <color=yellow>Element Hasarı</color> <color=yellow>Tersine Çevrilir</color>. (Ateş/Buz, Işık/Karanlık)",
     "rawDesc": "Bu hafızanın <color=yellow>Bekleme Süresi</color> {0} artar ancak düşmanlara verdiği <color=yellow>Hasar</color> da {1} artar. Bu hafızanın verdiği <color=yellow>Element Hasarı</color> <color=yellow>Tersine Çevrilir</color>. (Ateş/Buz, Işık/Karanlık)",
     "rawDescVars": [
       {
-        "rendered": " %15<sprite=5> ",
+        "rendered": "%20",
         "format": "P0",
         "raw": "cooldownAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.005
+          "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
@@ -1525,7 +1525,7 @@
     "lore": null,
     "achievementKey": "ACH_OMEGA_POINT",
     "achievementName": "Omega Noktası",
-    "achievementDescription": "Macera boyunca sadece bir tür hafıza kullanarak Saf Beyaz Rüya'ya gir."
+    "achievementDescription": "Macera boyunca sadece bir tür hafıza kullanarak kazan."
   },
   "Gem_E_Opportunity": {
     "name": "Fırsat Özü",
@@ -1571,11 +1571,11 @@
   },
   "Gem_E_OurStory_Completed": {
     "name": "Bizim Hikayemiz (Tamamlandı!)",
-    "description": "<color=yellow>Saldırı Gücü</color> ve <color=yellow>Yetenek Gücü</color>  artar ve <color=yellow>Çarpıtan Koşu</color>'nun tüm faydalı etkileri  artar.",
+    "description": "<color=yellow>Saldırı Gücü</color> ve <color=yellow>Yetenek Gücü</color> %0 artar ve <color=yellow>Çarpıtan Koşu</color>'nun tüm faydalı etkileri %0 artar.",
     "rawDesc": "<color=yellow>Saldırı Gücü</color> ve <color=yellow>Yetenek Gücü</color> {0} artar ve <color=yellow>Çarpıtan Koşu</color>'nun tüm faydalı etkileri {1} artar.",
     "rawDescVars": [
       {
-        "rendered": "",
+        "rendered": "%0",
         "format": "'%'#,##0",
         "raw": "Gem_E_OurStory_Completed::statPercentage",
         "scalingType": "basic",
@@ -1588,11 +1588,17 @@
         }
       },
       {
-        "rendered": "",
-        "format": "#,##0",
-        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
-        "scalingType": "unknown",
-        "data": {}
+        "rendered": "%0",
+        "format": "P0",
+        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "rarity": "Epic",
@@ -2061,18 +2067,18 @@
   },
   "Gem_L_CamillasGift": {
     "name": "Camilla'nın Hediyesi",
-    "description": "Mağazada <color=yellow>Satarak</color>  altın kazanabilirsin. Bir sonraki dünyaya her geçişte <color=yellow>fiyatı</color>  <color=yellow>artar</color>. Düşmanlardan hasar alıp canın %50 veya altına düştüğünde kırılır.",
+    "description": "Mağazada <color=yellow>Satarak</color> 0 altın kazanabilirsin. Bir sonraki dünyaya her geçişte <color=yellow>fiyatı</color> 0 <color=yellow>artar</color>. Düşmanlardan hasar alıp canın %50 veya altına düştüğünde kırılır.",
     "rawDesc": "Mağazada <color=yellow>Satarak</color> {0} altın kazanabilirsin. Bir sonraki dünyaya her geçişte <color=yellow>fiyatı</color> {1} <color=yellow>artar</color>. Düşmanlardan hasar alıp canın {2} veya altına düştüğünde kırılır.",
     "rawDescVars": [
       {
-        "rendered": "",
+        "rendered": "0",
         "format": "#,##0",
         "raw": "currentSellGold",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "",
+        "rendered": "0",
         "format": "#,##0",
         "raw": "sellGoldIncreasePerWorld",
         "scalingType": "basic",
@@ -4342,6 +4348,436 @@
       "Heal"
     ],
     "image": "Gem_U_SoulPrison.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Culinary": {
+    "name": "Mutfak Özü",
+    "description": "Bu hafızayla <color=yellow>hasar</color> verdiğin bir düşman 3 saniye içinde ölürse  %50<sprite=5>  ihtimalle <color=yellow>yemek malzemesi</color> düşürür. Topladığın <color=yellow>yemek malzemelerini</color> <color=yellow>Jonas'ın Kazanı</color>'nda kullanarak altın veya statlar kazanabilirsin.",
+    "rawDesc": "Bu hafızayla <color=yellow>hasar</color> verdiğin bir düşman {0} saniye içinde ölürse {1} ihtimalle <color=yellow>yemek malzemesi</color> düşürür. Topladığın <color=yellow>yemek malzemelerini</color> <color=yellow>Jonas'ın Kazanı</color>'nda kullanarak altın veya statlar kazanabilirsin.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "killGraceTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " %50<sprite=5> ",
+        "format": "P0",
+        "raw": "DropChance",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Culinary.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Liberty": {
+    "name": "Özgürlük Özü",
+    "description": "Bu hafızayı kullandığında 2.5 saniye boyunca <color=yellow>Saldırı Hasarı</color>  8<sprite=5> , <color=yellow>Yetenek Gücü</color>  8<sprite=5>  ve <color=yellow>Maksimum Can</color>  60<sprite=5>  artar. Bu hafıza bir <color=yellow>Ultimate</color> ise verdiği özelliklerin miktarı ve süresi %200 artar, bu süre boyunca <color=yellow>Durdurulamaz</color> olursun. ",
+    "rawDesc": "Bu hafızayı kullandığında {0} saniye boyunca <color=yellow>Saldırı Hasarı</color> {1}, <color=yellow>Yetenek Gücü</color> {2} ve <color=yellow>Maksimum Can</color> {3} artar. Bu hafıza bir <color=yellow>Ultimate</color> ise verdiği özelliklerin miktarı ve süresi {4} artar, bu süre boyunca <color=yellow>Durdurulamaz</color> olursun. ",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "Se_Gem_L_Liberty_Buff::duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "adBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "apBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 60<sprite=5> ",
+        "format": "#,##0",
+        "raw": "maxHealthBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "%200",
+        "format": "P0",
+        "raw": "Se_Gem_L_Liberty_Buff::multiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Liberty.png",
+    "lore": null,
+    "achievementKey": "ACH_THE_ROAD_NOT_TAKEN",
+    "achievementName": "Gidilmemiş Yol",
+    "achievementDescription": "Yıldızsız Yol'a ulaşın."
+  },
+  "Gem_L_Supersymmetry": {
+    "name": "Süpersimetri",
+    "description": "<color=yellow>Maksimum can</color> 1 olur, bunun yerine <color=yellow>maksimum canının</color>  %100<sprite=5>  kadarı kadar <color=yellow>kalkan</color> kazanırsın. Bu <color=yellow>kalkan</color>, 4 saniye boyunca hasar almazsan <color=yellow>anında yeniden dolar</color>; ancak herhangi bir <color=yellow>hafızayı</color> <color=yellow>kullandığında</color> maksimum canının  %10<sprite=5>  kadarı kadar <color=yellow>kalkana</color> <color=yellow>hasar</color> alırsın.",
+    "rawDesc": "<color=yellow>Maksimum can</color> 1 olur, bunun yerine <color=yellow>maksimum canının</color> {0} kadarı kadar <color=yellow>kalkan</color> kazanırsın. Bu <color=yellow>kalkan</color>, {1} saniye boyunca hasar almazsan <color=yellow>anında yeniden dolar</color>; ancak herhangi bir <color=yellow>hafızayı</color> <color=yellow>kullandığında</color> maksimum canının {2} kadarı kadar <color=yellow>kalkana</color> <color=yellow>hasar</color> alırsın.",
+    "rawDescVars": [
+      {
+        "rendered": " %100<sprite=5> ",
+        "format": "P0",
+        "raw": "shieldHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "rechargeDelay",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " %10<sprite=5> ",
+        "format": "P0",
+        "raw": "castDamageHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Shield"
+    ],
+    "image": "Gem_L_Supersymmetry.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Control": {
+    "name": "Hâkimiyet Özü",
+    "description": "Bu hafızayla bir düşmana <color=yellow>hasar</color> verdiğinde, hedefin <color=yellow>hareket hızı</color> 3 saniye boyunca  %33<sprite=5>  azalır.",
+    "rawDesc": "Bu hafızayla bir düşmana <color=yellow>hasar</color> verdiğinde, hedefin <color=yellow>hareket hızı</color> {0} saniye boyunca {1} azalır.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " %33<sprite=5> ",
+        "format": "'%'#,##0",
+        "raw": "SlowAmount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_R_Control.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Crucible": {
+    "name": "Pota Özü",
+    "description": "<color=yellow>Kritik Vuruş İhtimali</color> %25 artar. <color=yellow>Kritik Temel Saldırı</color> isabet ettiğinde bu hafızanın bir sonraki kullanımının verdiği hasar  %4<sprite=5> , iyileştirme miktarı  %4<sprite=5>  artar ve en fazla  %40<sprite=5> 'e kadar yükselir. ",
+    "rawDesc": "<color=yellow>Kritik Vuruş İhtimali</color> {0} artar. <color=yellow>Kritik Temel Saldırı</color> isabet ettiğinde bu hafızanın bir sonraki kullanımının verdiği hasar {1}, iyileştirme miktarı {2} artar ve en fazla {3}'e kadar yükselir. ",
+    "rawDescVars": [
+      {
+        "rendered": "%25",
+        "format": "P0",
+        "raw": "critChanceBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " %4<sprite=5> ",
+        "format": "P0",
+        "raw": "ampPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.02,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " %4<sprite=5> ",
+        "format": "P0",
+        "raw": "ampPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.02,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " %40<sprite=5> ",
+        "format": "P0",
+        "raw": "maxAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Crucible.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Hedgehog": {
+    "name": "Kirpinin Özü",
+    "description": "Bu hafızayı <color=yellow>kullandığında</color>, 3 saniye boyunca çevrene bir diken aurası yayarsın ve etrafındaki düşmanlara saniyede  <sprite=1><color=#fff><gradient=sv_ap>%100</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>%5</gradient></color><sprite=5>  hasar verirsin. Herhangi bir hasar aldığında, 4 saniye boyunca bu auranın hasarı %50 artar.",
+    "rawDesc": "Bu hafızayı <color=yellow>kullandığında</color>, {0} saniye boyunca çevrene bir diken aurası yayarsın ve etrafındaki düşmanlara saniyede {1} hasar verirsin. Herhangi bir hasar aldığında, {2} saniye boyunca bu auranın hasarı {3} artar.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "tickInterval * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>%100</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>%5</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Se_Gem_R_Hedgehog_Aura::dmgFactor/Se_Gem_R_Hedgehog_Aura::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "%50",
+        "format": "P0",
+        "raw": "empoweredAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Melee"
+    ],
+    "image": "Gem_R_Hedgehog.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lightweight": {
+    "name": "Hafiflik Özü",
+    "description": "Bu hafızanın <color=yellow>Hafıza Hızı</color>  54<sprite=5>  kadar artar, ancak karşılığında <color=yellow>hasarı</color> %40 azalır.",
+    "rawDesc": "Bu hafızanın <color=yellow>Hafıza Hızı</color> {0} kadar artar, ancak karşılığında <color=yellow>hasarı</color> {1} azalır.",
+    "rawDescVars": [
+      {
+        "rendered": " 54<sprite=5> ",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 27.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "%40",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Lightweight.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Slippery": {
+    "name": "Kayganlık Özü",
+    "description": "<color=yellow>Hareket Hızı</color> %10 artar. Bu hafızanın verdiği <color=yellow>hasar</color>, <color=yellow>Hareket Hızı</color> bonusunun  %100<sprite=5>  kadarı oranında yükselir.",
+    "rawDesc": "<color=yellow>Hareket Hızı</color> {0} artar. Bu hafızanın verdiği <color=yellow>hasar</color>, <color=yellow>Hareket Hızı</color> bonusunun {1} kadarı oranında yükselir.",
+    "rawDescVars": [
+      {
+        "rendered": "%10",
+        "format": "'%'#,##0",
+        "raw": "moveSpeedBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " %100<sprite=5> ",
+        "format": "P0",
+        "raw": "dmgPerMoveSpeedRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Slippery.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GuidingCompass_Charged": {
+    "name": "Yol Gösteren Pusula (Dolu)",
+    "description": "<alpha=#77><i>Onun bulunduğu yeri işaret ediyor.</i><alpha=#ff>",
+    "rawDesc": "<alpha=#77><i>Onun bulunduğu yeri işaret ediyor.</i><alpha=#ff>",
+    "rawDescVars": [],
+    "rarity": "Unique",
+    "tags": [],
+    "image": "Gem_U_GuidingCompass_Charged.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GuidingCompass_NotCharged": {
+    "name": "Yol Gösteren Pusula",
+    "description": "<alpha=#77><i>Gücünü yitirmiş, artık çalışmıyor. Güçlü bir enerjiyle beslenirse belki tamir edilebilir...</i><alpha=#ff>",
+    "rawDesc": "<alpha=#77><i>Gücünü yitirmiş, artık çalışmıyor. Güçlü bir enerjiyle beslenirse belki tamir edilebilir...</i><alpha=#ff>",
+    "rawDescVars": [],
+    "rarity": "Unique",
+    "tags": [],
+    "image": "Gem_U_GuidingCompass_NotCharged.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",

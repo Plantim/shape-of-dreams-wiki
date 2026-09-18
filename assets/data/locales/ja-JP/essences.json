@@ -1196,8 +1196,8 @@
   },
   "Gem_E_Insensitivity": {
     "name": "無神経のエッセンス",
-    "description": "この記憶の<color=yellow>発動</color>後、4秒間、2m移動するたびに<color=yellow>爆弾</color>を落とします。爆弾はしばらくして爆発し、敵に <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を与えます。",
-    "rawDesc": "この記憶の<color=yellow>発動</color>後、{0}秒間、{1}m移動するたびに<color=yellow>爆弾</color>を落とします。爆弾はしばらくして爆発し、敵に{2}の<color=yellow>火炎ダメージ</color>を与えます。",
+    "description": "<color=yellow>戦闘中</color>にこの記憶を<color=yellow>発動</color>した後、4秒間、2m移動するたびに<color=yellow>爆弾</color>を落とします。爆弾はしばらくして爆発し、敵に <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5> の<color=yellow>火炎ダメージ</color>を与えます。",
+    "rawDesc": "<color=yellow>戦闘中</color>にこの記憶を<color=yellow>発動</color>した後、{0}秒間、{1}m移動するたびに<color=yellow>爆弾</color>を落とします。爆弾はしばらくして爆発し、敵に{2}の<color=yellow>火炎ダメージ</color>を与えます。",
     "rawDescVars": [
       {
         "rendered": "4",
@@ -1332,20 +1332,20 @@
   },
   "Gem_E_Inversion": {
     "name": "反転のエッセンス",
-    "description": "この記憶の<color=yellow>クールダウン</color>が 15%<sprite=5> 増加します。その代わり、敵に与える<color=yellow>ダメージ量</color>も 20%<sprite=5> 増加します。この記憶が与える<color=yellow>元素ダメージ</color>が<color=yellow>反転</color>します。(炎/冷気、光/闇)",
+    "description": "この記憶の<color=yellow>クールダウン</color>が20%増加します。その代わり、敵に与える<color=yellow>ダメージ量</color>も 20%<sprite=5> 増加します。この記憶が与える<color=yellow>元素ダメージ</color>が<color=yellow>反転</color>します。(炎/冷気、光/闇)",
     "rawDesc": "この記憶の<color=yellow>クールダウン</color>が{0}増加します。その代わり、敵に与える<color=yellow>ダメージ量</color>も{1}増加します。この記憶が与える<color=yellow>元素ダメージ</color>が<color=yellow>反転</color>します。(炎/冷気、光/闇)",
     "rawDescVars": [
       {
-        "rendered": " 15%<sprite=5> ",
+        "rendered": "20%",
         "format": "P0",
         "raw": "cooldownAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.005
+          "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
@@ -1538,7 +1538,7 @@
     "lore": null,
     "achievementKey": "ACH_OMEGA_POINT",
     "achievementName": "オメガポイント",
-    "achievementDescription": "一回の冒険中に一種類の記憶のみを使用した状態で純白の夢に進入する。"
+    "achievementDescription": "一回の冒険中に一種類の記憶のみを使用した状態で勝利する。"
   },
   "Gem_E_Opportunity": {
     "name": "機会のエッセンス",
@@ -1584,11 +1584,11 @@
   },
   "Gem_E_OurStory_Completed": {
     "name": "我らの物語 (完成！)",
-    "description": "<color=yellow>攻撃力</color>と<color=yellow>魔法力</color>が増加し、<color=yellow>歪める疾走</color>のすべてのバフが増加します。",
+    "description": "<color=yellow>攻撃力</color>と<color=yellow>魔法力</color>が0%増加し、<color=yellow>歪める疾走</color>のすべてのバフが0%増加します。",
     "rawDesc": "<color=yellow>攻撃力</color>と<color=yellow>魔法力</color>が{0}増加し、<color=yellow>歪める疾走</color>のすべてのバフが{1}増加します。",
     "rawDescVars": [
       {
-        "rendered": "",
+        "rendered": "0%",
         "format": "#,##0'%'",
         "raw": "Gem_E_OurStory_Completed::statPercentage",
         "scalingType": "basic",
@@ -1601,11 +1601,17 @@
         }
       },
       {
-        "rendered": "",
-        "format": "#,##0",
-        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
-        "scalingType": "unknown",
-        "data": {}
+        "rendered": "0%",
+        "format": "P0",
+        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "rarity": "Epic",
@@ -2074,18 +2080,18 @@
   },
   "Gem_L_CamillasGift": {
     "name": "カミラのプレゼント",
-    "description": "ショップで<color=yellow>売却</color>するとゴールド獲得できます。次の世界に移動するたびに<color=yellow>価格</color>が<color=yellow>増加</color>します。敵からのダメージにより、HPが50%以下になると壊れます。",
+    "description": "ショップで<color=yellow>売却</color>すると0ゴールド獲得できます。次の世界に移動するたびに<color=yellow>価格</color>が0<color=yellow>増加</color>します。敵からのダメージにより、HPが50%以下になると壊れます。",
     "rawDesc": "ショップで<color=yellow>売却</color>すると{0}ゴールド獲得できます。次の世界に移動するたびに<color=yellow>価格</color>が{1}<color=yellow>増加</color>します。敵からのダメージにより、HPが{2}以下になると壊れます。",
     "rawDescVars": [
       {
-        "rendered": "",
+        "rendered": "0",
         "format": "#,##0",
         "raw": "currentSellGold",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "",
+        "rendered": "0",
         "format": "#,##0",
         "raw": "sellGoldIncreasePerWorld",
         "scalingType": "basic",
@@ -4355,6 +4361,436 @@
       "Heal"
     ],
     "image": "Gem_U_SoulPrison.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Culinary": {
+    "name": "料理のエッセンス",
+    "description": "この記憶で<color=yellow>ダメージ</color>を与えた敵が3秒以内に死亡すると、 50%<sprite=5> の確率で<color=yellow>料理素材</color>をドロップします。集めた<color=yellow>料理素材</color>は<color=yellow>ジョナスの大釜</color>で使用して、ゴールドやステータスを獲得できます。",
+    "rawDesc": "この記憶で<color=yellow>ダメージ</color>を与えた敵が{0}秒以内に死亡すると、{1}の確率で<color=yellow>料理素材</color>をドロップします。集めた<color=yellow>料理素材</color>は<color=yellow>ジョナスの大釜</color>で使用して、ゴールドやステータスを獲得できます。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "killGraceTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 50%<sprite=5> ",
+        "format": "P0",
+        "raw": "DropChance",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Culinary.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Liberty": {
+    "name": "解放のエッセンス",
+    "description": "この記憶を発動すると、2.5秒間<color=yellow>攻撃力</color>が 8<sprite=5> 、<color=yellow>魔法力</color>が 8<sprite=5> 、<color=yellow>最大体力</color>が 60<sprite=5> 増加します。この記憶が<color=yellow>アルティメット</color>の場合、付与する能力値の量と持続時間が200%増加し、その間<color=yellow>アンストッパブル</color>になります。",
+    "rawDesc": "この記憶を発動すると、{0}秒間<color=yellow>攻撃力</color>が{1}、<color=yellow>魔法力</color>が{2}、<color=yellow>最大体力</color>が{3}増加します。この記憶が<color=yellow>アルティメット</color>の場合、付与する能力値の量と持続時間が{4}増加し、その間<color=yellow>アンストッパブル</color>になります。",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "Se_Gem_L_Liberty_Buff::duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "adBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "apBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 60<sprite=5> ",
+        "format": "#,##0",
+        "raw": "maxHealthBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "200%",
+        "format": "P0",
+        "raw": "Se_Gem_L_Liberty_Buff::multiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Liberty.png",
+    "lore": null,
+    "achievementKey": "ACH_THE_ROAD_NOT_TAKEN",
+    "achievementName": "選ばれなかった道",
+    "achievementDescription": "星なき道にたどり着く。"
+  },
+  "Gem_L_Supersymmetry": {
+    "name": "超対称性",
+    "description": "<color=yellow>最大体力</color>が1になる代わりに、<color=yellow>最大体力</color>の 100%<sprite=5> 分の<color=yellow>保護シールド</color>を獲得します。この<color=yellow>保護シールド</color>は4秒間ダメージを受けなければ<color=yellow>即座に再充填</color>されますが、いずれかの<color=yellow>記憶</color>を<color=yellow>詠唱</color>するたびに最大体力の 10%<sprite=5> 分の<color=yellow>ダメージ</color>を<color=yellow>保護シールド</color>に受けます。",
+    "rawDesc": "<color=yellow>最大体力</color>が1になる代わりに、<color=yellow>最大体力</color>の{0}分の<color=yellow>保護シールド</color>を獲得します。この<color=yellow>保護シールド</color>は{1}秒間ダメージを受けなければ<color=yellow>即座に再充填</color>されますが、いずれかの<color=yellow>記憶</color>を<color=yellow>詠唱</color>するたびに最大体力の{2}分の<color=yellow>ダメージ</color>を<color=yellow>保護シールド</color>に受けます。",
+    "rawDescVars": [
+      {
+        "rendered": " 100%<sprite=5> ",
+        "format": "P0",
+        "raw": "shieldHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "rechargeDelay",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 10%<sprite=5> ",
+        "format": "P0",
+        "raw": "castDamageHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Shield"
+    ],
+    "image": "Gem_L_Supersymmetry.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Control": {
+    "name": "制御のエッセンス",
+    "description": "この記憶で敵に<color=yellow>ダメージ</color>を与えると、対象の<color=yellow>移動速度</color>が3秒間 33%<sprite=5> 減少します。",
+    "rawDesc": "この記憶で敵に<color=yellow>ダメージ</color>を与えると、対象の<color=yellow>移動速度</color>が{0}秒間{1}減少します。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 33%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "SlowAmount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_R_Control.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Crucible": {
+    "name": "鍛錬のエッセンス",
+    "description": "<color=yellow>クリティカル率</color>が25%増加します。<color=yellow>クリティカル基本攻撃</color>が命中すると、この記憶の次回発動時のダメージ量が 4%<sprite=5> 、回復量が 4%<sprite=5> 増加し、最大 40%<sprite=5> まで増加します。",
+    "rawDesc": "<color=yellow>クリティカル率</color>が{0}増加します。<color=yellow>クリティカル基本攻撃</color>が命中すると、この記憶の次回発動時のダメージ量が{1}、回復量が{2}増加し、最大{3}まで増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "critChanceBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 4%<sprite=5> ",
+        "format": "P0",
+        "raw": "ampPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.02,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 4%<sprite=5> ",
+        "format": "P0",
+        "raw": "ampPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.02,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 40%<sprite=5> ",
+        "format": "P0",
+        "raw": "maxAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Crucible.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Hedgehog": {
+    "name": "ハリネズミのエッセンス",
+    "description": "この記憶を<color=yellow>詠唱</color>すると、3秒間自分の周囲にトゲのオーラを展開し、周囲の敵に毎秒 <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5> のダメージを与えます。ダメージを受けると、4秒間このオーラのダメージ量が50%増加します。",
+    "rawDesc": "この記憶を<color=yellow>詠唱</color>すると、{0}秒間自分の周囲にトゲのオーラを展開し、周囲の敵に毎秒{1}のダメージを与えます。ダメージを受けると、{2}秒間このオーラのダメージ量が{3}増加します。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "tickInterval * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>追加<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Se_Gem_R_Hedgehog_Aura::dmgFactor/Se_Gem_R_Hedgehog_Aura::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "empoweredAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Melee"
+    ],
+    "image": "Gem_R_Hedgehog.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lightweight": {
+    "name": "軽さのエッセンス",
+    "description": "この記憶の<color=yellow>記憶加速</color>が 54<sprite=5> 増加する代わりに、<color=yellow>ダメージ量</color>が40%減少します。",
+    "rawDesc": "この記憶の<color=yellow>記憶加速</color>が{0}増加する代わりに、<color=yellow>ダメージ量</color>が{1}減少します。",
+    "rawDescVars": [
+      {
+        "rendered": " 54<sprite=5> ",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 27.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Lightweight.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Slippery": {
+    "name": "滑りのエッセンス",
+    "description": "<color=yellow>移動速度</color>が10%上昇します。<color=yellow>移動速度</color>ボーナスの 100%<sprite=5> 分だけ、この記憶が与える<color=yellow>ダメージ量</color>が上昇します。",
+    "rawDesc": "<color=yellow>移動速度</color>が{0}上昇します。<color=yellow>移動速度</color>ボーナスの{1}分だけ、この記憶が与える<color=yellow>ダメージ量</color>が上昇します。",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "moveSpeedBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 100%<sprite=5> ",
+        "format": "P0",
+        "raw": "dmgPerMoveSpeedRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Slippery.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GuidingCompass_Charged": {
+    "name": "導きの羅針盤（充電済み）",
+    "description": "<alpha=#77><i>彼女のいる場所を指し示しています。</i><alpha=#ff>",
+    "rawDesc": "<alpha=#77><i>彼女のいる場所を指し示しています。</i><alpha=#ff>",
+    "rawDescVars": [],
+    "rarity": "Unique",
+    "tags": [],
+    "image": "Gem_U_GuidingCompass_Charged.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GuidingCompass_NotCharged": {
+    "name": "導きの羅針盤",
+    "description": "<alpha=#77><i>力を失い、作動しません。強力な力を吹き込めば、直せるかもしれません…</i><alpha=#ff>",
+    "rawDesc": "<alpha=#77><i>力を失い、作動しません。強力な力を吹き込めば、直せるかもしれません…</i><alpha=#ff>",
+    "rawDescVars": [],
+    "rarity": "Unique",
+    "tags": [],
+    "image": "Gem_U_GuidingCompass_NotCharged.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",

@@ -1378,7 +1378,7 @@
         "data": {}
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "攻击时造成额外伤害、护盾",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Mist",
@@ -1395,19 +1395,12 @@
   },
   "St_D_AstridsMasterpiecePriorite": {
     "name": "阿斯特丽德的杰作—先机",
-    "cooldownTime": 5.0,
+    "cooldownTime": 0.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "每 5<sprite=5> 秒，随机为周围的一名敌人附加<color=yellow>印记</color>。<color=yellow>攻击</color>带有<color=yellow>印记</color>的敌人时，可在1.5秒内获得25%的移动速度，并造成 <sprite=2><color=#fff><gradient=sv_ad>35%</gradient></color><sprite=5> 的额外伤害。\n通过<color=yellow>印记</color>连续进行攻击时，每次伤害提升50%点。<color=yellow>印记</color>在第6次攻击时爆炸，造成 <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> 的伤害。",
-    "rawDesc": "每{0}秒，随机为周围的一名敌人附加<color=yellow>印记</color>。<color=yellow>攻击</color>带有<color=yellow>印记</color>的敌人时，可在{1}秒内获得{2}的移动速度，并造成{3}的额外伤害。\n通过<color=yellow>印记</color>连续进行攻击时，每次伤害提升{4}点。<color=yellow>印记</color>在第{5}次攻击时爆炸，造成{6}的伤害。",
+    "description": "随机为周围的一名敌人附加<color=yellow>印记</color>。<color=yellow>攻击</color>带有<color=yellow>印记</color>的敌人时，可在1.5秒内获得 10%<sprite=5> 的移动速度，并造成 <sprite=2><color=#fff><gradient=sv_ad>45%</gradient></color><sprite=5> 的额外伤害。\n通过<color=yellow>印记</color>连续进行攻击时，每次伤害提升50%点。<color=yellow>印记</color>在第6次攻击时爆炸，造成 <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> 的伤害。",
+    "rawDesc": "随机为周围的一名敌人附加<color=yellow>印记</color>。<color=yellow>攻击</color>带有<color=yellow>印记</color>的敌人时，可在{0}秒内获得{1}的移动速度，并造成{2}的额外伤害。\n通过<color=yellow>印记</color>连续进行攻击时，每次伤害提升{3}点。<color=yellow>印记</color>在第{4}次攻击时爆炸，造成{5}的伤害。",
     "rawDescVars": [
-      {
-        "rendered": " 5<sprite=5> ",
-        "format": "#,##0.#",
-        "raw": "cooldownTime",
-        "scalingType": "unknown",
-        "data": {}
-      },
       {
         "rendered": "1.5",
         "format": "#,##0.#",
@@ -1422,27 +1415,27 @@
         }
       },
       {
-        "rendered": "25%",
+        "rendered": " 10%<sprite=5> ",
         "format": "#,##0'%'",
         "raw": "speedAmount",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 25.0,
+          "basicConstant": 5.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
-          "basicLvl": 0.0,
+          "basicLvl": 5.0,
           "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
-        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>35%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>45%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "damage",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
           "basicAP": 0.0,
-          "basicAD": 0.35,
+          "basicAD": 0.45,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.325
         }
@@ -1487,7 +1480,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "攻击时造成额外伤害、提升移动速度",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Mist",
@@ -1651,7 +1644,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "回复召唤兽，分享属性加成",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Nachia",
@@ -1724,7 +1717,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "施放记忆时弹射攻击",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Yubar",
@@ -1836,7 +1829,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "闪避后双重攻击",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Lacerta",
@@ -1937,7 +1930,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "攻击时光明爆炸",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Yubar",
@@ -1974,7 +1967,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "使用增益效果时强化己方",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Nachia",
@@ -2067,7 +2060,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "提升攻速，回复",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Vesper",
@@ -2178,7 +2171,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "第4次攻击时眩晕，回复",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Vesper",
@@ -2241,7 +2234,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "每第4次攻击爆炸",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Lacerta",
@@ -2291,7 +2284,7 @@
         }
       }
     ],
-    "shortDescription": null,
+    "shortDescription": "将攻速转化为攻击力，冲刺后触发暴击",
     "rarity": "Identity",
     "type": "Normal",
     "traveler": "Hero_Husk",
@@ -4119,7 +4112,7 @@
     "lore": null,
     "achievementKey": "ACH_FOUR_OF_A_KIND",
     "achievementName": "四连记忆",
-    "achievementDescription": "携带4个相同类型的记忆进入纯白之梦。"
+    "achievementDescription": "携带4个相同类型的记忆取得胜利。"
   },
   "St_L_LightExplosion": {
     "name": "光辉爆炸",
@@ -5376,7 +5369,7 @@
   },
   "St_Q_Lunge": {
     "name": "突刺",
-    "cooldownTime": 7.0,
+    "cooldownTime": 6.0,
     "maxCharges": 1,
     "addedCharges": 1,
     "description": "向前方闪避后，向最近的敌人刺出佩剑。佩剑命中敌人时，<color=yellow>敏捷步伐</color>的<color=yellow>冷却时间</color>缩短60%，并对所有命中的敌人触发<color=yellow>攻击效果</color>，造成 <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><sprite=5> 的伤害。每当<color=yellow>阿斯特丽德的杰作</color>触发时，<color=yellow>冷却时间</color>缩短0.5秒。",
@@ -5559,7 +5552,7 @@
     "lore": "与月光的誓约，最初不过是一场为安抚顽皮妹妹恶作剧的趣味游戏。\n如今月光依旧回应她的召唤，但那光芒所承载的分量，早已不同往昔。",
     "achievementKey": "ACH_FULL_MOON",
     "achievementName": "满月",
-    "achievementDescription": "使用娜琪亚累计2次进入纯白之梦。"
+    "achievementDescription": "使用娜琪亚累计取得2次胜利。"
   },
   "St_Q_Reduction": {
     "name": "还元",
@@ -5641,8 +5634,8 @@
     "cooldownTime": 8.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "充能1次<color=yellow>闪避技能</color>，并在目标位置创造1个逐渐变大并使敌人减速的<color=yellow>星星</color>，最长可<color=yellow>集中精神</color>3秒。在此期间无法<color=yellow>攻击</color>或施放<color=yellow>记忆</color>。再次施放时，将引爆<color=yellow>星星</color>，并对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>。\n\n爆炸伤害会随着<color=yellow>充能时间</color>延长而提升，1.3秒后，<color=yellow>伤害量</color>将提升至225%，充能速度随尤巴尔的<color=yellow>记忆加速</color>提升而加快。",
-    "rawDesc": "充能1次<color=yellow>闪避技能</color>，并在目标位置创造1个逐渐变大并使敌人减速的<color=yellow>星星</color>，最长可<color=yellow>集中精神</color>{0}秒。在此期间无法<color=yellow>攻击</color>或施放<color=yellow>记忆</color>。再次施放时，将引爆<color=yellow>星星</color>，并对敌人造成{1}的<color=yellow>光明伤害</color>。\n\n爆炸伤害会随着<color=yellow>充能时间</color>延长而提升，{2}秒后，<color=yellow>伤害量</color>将提升至{3}，充能速度随尤巴尔的<color=yellow>记忆加速</color>提升而加快。",
+    "description": "在目标位置创造1个逐渐变大并使敌人减速的<color=yellow>星星</color>，最长可<color=yellow>集中精神</color>3秒。在此期间无法<color=yellow>攻击</color>或施放<color=yellow>记忆</color>。再次施放时，将引爆<color=yellow>星星</color>，并对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>。\n\n爆炸伤害会随着<color=yellow>充能时间</color>延长而提升，1.3秒后，<color=yellow>伤害量</color>将提升至225%，充能速度随尤巴尔的<color=yellow>记忆加速</color>提升而加快。每次施放时，<color=yellow>闪避技能</color>都会充满能量。",
+    "rawDesc": "在目标位置创造1个逐渐变大并使敌人减速的<color=yellow>星星</color>，最长可<color=yellow>集中精神</color>{0}秒。在此期间无法<color=yellow>攻击</color>或施放<color=yellow>记忆</color>。再次施放时，将引爆<color=yellow>星星</color>，并对敌人造成{1}的<color=yellow>光明伤害</color>。\n\n爆炸伤害会随着<color=yellow>充能时间</color>延长而提升，{2}秒后，<color=yellow>伤害量</color>将提升至{3}，充能速度随尤巴尔的<color=yellow>记忆加速</color>提升而加快。每次施放时，<color=yellow>闪避技能</color>都会充满能量。",
     "rawDescVars": [
       {
         "rendered": "3",
@@ -5716,17 +5709,17 @@
     "cooldownTime": 9.0,
     "maxCharges": 2,
     "addedCharges": 1,
-    "description": "在目标位置上<color=yellow>召唤</color>追随娜琪亚的<color=yellow>叶犬</color>，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>0.4秒。\n\n<color=yellow>叶犬</color>持有128的体力和 20<sprite=5> 的防御力，最多在战场上停留25秒，对敌人发动爪击，造成 <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> 的<color=yellow>伤害</color>。最多可同时持有5只叶犬。",
+    "description": "在目标位置上<color=yellow>召唤</color>追随娜琪亚的<color=yellow>叶犬</color>，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>0.4秒。\n\n<color=yellow>叶犬</color>持有128的体力和 30<sprite=5> 的防御力，最多在战场上停留25秒，对敌人发动爪击，造成 <sprite=1><color=#fff><gradient=sv_ap>60%</gradient></color><sprite=5> 的<color=yellow>伤害</color>。最多可同时持有5只叶犬。",
     "rawDesc": "在目标位置上<color=yellow>召唤</color>追随娜琪亚的<color=yellow>叶犬</color>，对敌人造成{0}的<color=yellow>伤害</color>，并使其<color=yellow>眩晕</color>{1}秒。\n\n<color=yellow>叶犬</color>持有{2}的体力和{3}的防御力，最多在战场上停留{4}秒，对敌人发动爪击，造成{5}的<color=yellow>伤害</color>。最多可同时持有{6}只叶犬。",
     "rawDescVars": [
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>130%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "Ai_Q_SylvanCall::dmgFactor",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.3,
+          "basicAP": 2.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
@@ -5753,12 +5746,12 @@
         "data": {}
       },
       {
-        "rendered": " 20<sprite=5> ",
+        "rendered": " 30<sprite=5> ",
         "format": "#,##0",
         "raw": "armor",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 13.0,
+          "basicConstant": 23.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 7.0,
@@ -6052,8 +6045,8 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在10秒内，剑身缠绕着破坏的<color=yellow>剑气</color>。在此期间无法<color=yellow>施放</color><color=yellow>记忆</color>，但<color=yellow>攻击射程</color>略微增加，<color=yellow>攻击力</color>提升 35%<sprite=5> ，<color=yellow>攻击速度</color>提升 30%<sprite=5> ，且该攻击速度提升效果不受<color=yellow>步步封喉</color>影响。每次<color=yellow>基础攻击</color>都会发射<color=yellow>剑气</color>，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>。\n\n持续期间，<color=yellow>闪避技能</color>的<color=yellow>记忆加速</color>提升 30<sprite=5> ，<color=yellow>最大充能数</color>增加2。",
-    "rawDesc": "在{0}秒内，剑身缠绕着破坏的<color=yellow>剑气</color>。在此期间无法<color=yellow>施放</color><color=yellow>记忆</color>，但<color=yellow>攻击射程</color>略微增加，<color=yellow>攻击力</color>提升{1}，<color=yellow>攻击速度</color>提升{2}，且该攻击速度提升效果不受<color=yellow>步步封喉</color>影响。每次<color=yellow>基础攻击</color>都会发射<color=yellow>剑气</color>，对敌人造成{3}的<color=yellow>暗影伤害</color>。\n\n持续期间，<color=yellow>闪避技能</color>的<color=yellow>记忆加速</color>提升{4}，<color=yellow>最大充能数</color>增加{5}。",
+    "description": "在10秒内，剑身缠绕着破坏的<color=yellow>剑气</color>。在此期间<color=yellow>攻击射程</color>略微增加，<color=yellow>攻击力</color>提升 35%<sprite=5> ，<color=yellow>攻击速度</color>提升 30%<sprite=5> ，且该攻击速度提升效果不受<color=yellow>步步封喉</color>影响。每次<color=yellow>基础攻击</color>都会发射<color=yellow>剑气</color>，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>。\n\n施放时，<color=yellow>闪避技能</color>会充满能量。",
+    "rawDesc": "在{0}秒内，剑身缠绕着破坏的<color=yellow>剑气</color>。在此期间<color=yellow>攻击射程</color>略微增加，<color=yellow>攻击力</color>提升{1}，<color=yellow>攻击速度</color>提升{2}，且该攻击速度提升效果不受<color=yellow>步步封喉</color>影响。每次<color=yellow>基础攻击</color>都会发射<color=yellow>剑气</color>，对敌人造成{3}的<color=yellow>暗影伤害</color>。\n\n施放时，<color=yellow>闪避技能</color>会充满能量。",
     "rawDescVars": [
       {
         "rendered": "10",
@@ -6105,32 +6098,6 @@
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
-        }
-      },
-      {
-        "rendered": " 30<sprite=5> ",
-        "format": "#,##0",
-        "raw": "dodgeSkillHaste",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 24.0,
-          "basicAP": 0.0,
-          "basicAD": 0.0,
-          "basicLvl": 6.0,
-          "basicAddedMultiplierPerLevel": 0.0
-        }
-      },
-      {
-        "rendered": "2",
-        "format": "#,##0",
-        "raw": "dodgeSkillAddedCharges",
-        "scalingType": "basic",
-        "data": {
-          "basicConstant": 2.0,
-          "basicAP": 0,
-          "basicAD": 0,
-          "basicLvl": 0,
-          "basicAddedMultiplierPerLevel": 0
         }
       }
     ],
@@ -7462,7 +7429,7 @@
     "lore": null,
     "achievementKey": "ACH_ME_LOVE_GLOWY_STUFF",
     "achievementName": "闪闪发光",
-    "achievementDescription": "携带4个光明属性的主动记忆进入纯白之梦。"
+    "achievementDescription": "携带4个光明属性的主动记忆取得胜利。"
   },
   "St_R_Parry": {
     "name": "反弹",
@@ -8655,23 +8622,23 @@
     "cooldownTime": 14.0,
     "maxCharges": 3,
     "addedCharges": 99,
-    "description": "在目标位置固定<color=yellow>召唤</color><color=yellow>小巴姆</color>。\n\n<color=yellow>小巴姆</color>拥有119的生命值和50的防御力，最多在战场上停留20秒，攻击周围敌人造成 <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>。最多可维持10只。\n\n<color=yellow>充能次数</color>将一次性全部充满。",
+    "description": "在目标位置固定<color=yellow>召唤</color><color=yellow>小巴姆</color>。\n\n<color=yellow>小巴姆</color>拥有92的生命值和40的防御力，最多在战场上停留20秒，攻击周围敌人造成 <sprite=1><color=#fff><gradient=sv_ap>85%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>。最多可维持10只。\n\n<color=yellow>充能次数</color>将一次性全部充满。",
     "rawDesc": "在目标位置固定<color=yellow>召唤</color><color=yellow>小巴姆</color>。\n\n<color=yellow>小巴姆</color>拥有{0}的生命值和{1}的防御力，最多在战场上停留{2}秒，攻击周围敌人造成{3}的<color=yellow>光明伤害</color>。最多可维持{4}只。\n\n<color=yellow>充能次数</color>将一次性全部充满。",
     "rawDescVars": [
       {
-        "rendered": "119",
+        "rendered": "92",
         "format": "#,##0",
         "raw": "summonHealth",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "50",
+        "rendered": "40",
         "format": "#,##0",
         "raw": "armor",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 50.0,
+          "basicConstant": 40.0,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
@@ -8724,6 +8691,7 @@
     "traveler": "",
     "travelerMemoryLocation": "",
     "tags": [
+      "Light",
       "Summon"
     ],
     "image": "St_R_SummonLittleBaam.png",
@@ -8888,16 +8856,16 @@
     "cooldownTime": 100.0,
     "maxCharges": 1,
     "addedCharges": 1,
-    "description": "在8秒内，进入升空和<color=yellow>无敌</color>状态。操控缓慢移动的<color=yellow>均衡射线</color>，对敌人每秒造成 <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，或为己方每秒<color=yellow>回复</color> <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> 的体力。",
+    "description": "在6秒内，进入升空和<color=yellow>无敌</color>状态。操控缓慢移动的<color=yellow>均衡射线</color>，对敌人每秒造成 <sprite=1><color=#fff><gradient=sv_ap>460%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，或为己方每秒<color=yellow>回复</color> <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> 的体力。",
     "rawDesc": "在{0}秒内，进入升空和<color=yellow>无敌</color>状态。操控缓慢移动的<color=yellow>均衡射线</color>，对敌人每秒造成{1}的<color=yellow>伤害</color>，或为己方每秒<color=yellow>回复</color>{2}的体力。",
     "rawDescVars": [
       {
-        "rendered": "8",
+        "rendered": "6",
         "format": "#,##0.#",
         "raw": "beamDuration",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 8.0,
+          "basicConstant": 6.0,
           "basicAP": 0,
           "basicAD": 0,
           "basicLvl": 0,
@@ -8905,26 +8873,26 @@
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>350%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>460%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "enemyDamagePerSecond",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 3.5,
+          "basicAP": 4.6,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.25
         }
       },
       {
-        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><sprite=5> ",
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
         "format": "#,##0",
         "raw": "allyHealPerSecond",
         "scalingType": "basic",
         "data": {
           "basicConstant": 0.0,
-          "basicAP": 1.5,
+          "basicAP": 2.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
           "basicAddedMultiplierPerLevel": 0.1875
@@ -9287,6 +9255,1662 @@
     ],
     "image": "St_U_WorldCracker.png",
     "lore": "他曾是梦境中最强大的存在之一的记忆残痕——\n万灵之王与神祇的力量碎片。\n\n他曾执掌神圣光辉的权能，一击便足以将世界化作尘埃。\n却于挑战世界主宰时败北，从此隐匿无踪。\n传闻他被流放到某个空间，大部分力量早已消散，\n沦为一介平凡之王。\n\n但也有传言说，\n他曾持有的桎梏徽记都已经消失了。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_BurningFist": {
+    "name": "燃烧之拳",
+    "cooldownTime": 0.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>施放</color><color=yellow>记忆</color>后获得燃烧之拳效果。在6秒内的下一次<color=yellow>基础攻击</color>将变更为<color=yellow>范围火焰伤害</color>，并使伤害量增加<sprite=2><color=#fff><gradient=sv_ad>25%</gradient></color>。\n如果目标已处于燃烧状态，则会追加打击一次，造成 <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5> 的<color=yellow>范围火焰伤害</color>，并<color=yellow>恢复</color>自身 <sprite=2><color=#fff><gradient=sv_ad>75%</gradient></color><sprite=5> 点生命值，同时触发50%的<color=yellow>攻击效果</color>。",
+    "rawDesc": "<color=yellow>施放</color><color=yellow>记忆</color>后获得燃烧之拳效果。在{0}秒内的下一次<color=yellow>基础攻击</color>将变更为<color=yellow>范围火焰伤害</color>，并使伤害量增加{1}。\n如果目标已处于燃烧状态，则会追加打击一次，造成{2}的<color=yellow>范围火焰伤害</color>，并<color=yellow>恢复</color>自身{3}点生命值，同时触发{4}的<color=yellow>攻击效果</color>。",
+    "rawDescVars": [
+      {
+        "rendered": "6",
+        "format": "#,##0.#",
+        "raw": "disposeDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 6.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "<sprite=2><color=#fff><gradient=sv_ad>25%</gradient></color>",
+        "format": "#,##0",
+        "raw": "adBonusDmg",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.25,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>150%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>75%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.75,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "attackEffect",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "火焰伤害，恢复",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Fire",
+      "Melee",
+      "Heal",
+      "Attack"
+    ],
+    "image": "St_D_BurningFist.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_ChargedAnguillian": {
+    "name": "充能的鳗鱼族",
+    "cooldownTime": 0.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>法术强度</color>增加 8<sprite=5> 。每次受到任何<color=yellow>伤害</color>或造成<color=yellow>寒气伤害</color>时，获得持续5秒的<color=yellow>充能</color>层数，最多可叠加至12层。\n\n每层<color=yellow>充能</color>会使<color=yellow>充能的鳗鱼族</color>的<color=yellow>法术强度</color>加成提高5%，达到最大层数时，每 1.5<sprite=5> 秒会向周围3名敌人发射电击，造成 <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> 的<color=yellow>光明伤害</color>。",
+    "rawDesc": "<color=yellow>法术强度</color>增加{0}。每次受到任何<color=yellow>伤害</color>或造成<color=yellow>寒气伤害</color>时，获得持续{1}秒的<color=yellow>充能</color>层数，最多可叠加至{2}层。\n\n每层<color=yellow>充能</color>会使<color=yellow>充能的鳗鱼族</color>的<color=yellow>法术强度</color>加成提高{3}，达到最大层数时，每{4}秒会向周围{5}名敌人发射电击，造成{6}的<color=yellow>光明伤害</color>。",
+    "rawDescVars": [
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "gainedAp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 4.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "decayTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "12",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 12.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "apAmpPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 1.5<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "lightningInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "lightningMaxTargets",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "提升法术强度，造成光明伤害",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "Identity",
+    "tags": [
+      "Light",
+      "Melee"
+    ],
+    "image": "St_D_ChargedAnguillian.png",
+    "lore": "相传，部分鳗鱼族的血液中原本流淌着雷电的余韵。\n被寒气侵蚀的塞图斯早已将此遗忘，\n但急流之风却唤醒了那段往昔记忆的碎片。",
+    "achievementKey": "ACH_FROM_ABYSS_TO_SUMMIT",
+    "achievementName": "从深海到巅峰",
+    "achievementDescription": "使用塞图斯进入纯白之梦。"
+  },
+  "St_D_ExplosionArtist": {
+    "name": "华丽艺术家",
+    "cooldownTime": 4.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "施放<color=yellow>闪避技能</color>时引发火焰爆炸，对周围敌人造成 <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>。\n如果目标被该爆炸击杀，或目标的<color=yellow>火焰</color>叠层达到3层及以上，则会在目标位置引发<color=yellow>大爆炸</color>，造成 <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> 的<color=yellow>范围火焰伤害</color>。\n\n<color=yellow>大爆炸</color>可以连锁触发，对每个敌人每3秒只能触发一次大爆炸。",
+    "rawDesc": "施放<color=yellow>闪避技能</color>时引发火焰爆炸，对周围敌人造成{0}的<color=yellow>火焰伤害</color>。\n如果目标被该爆炸击杀，或目标的<color=yellow>火焰</color>叠层达到{1}层及以上，则会在目标位置引发<color=yellow>大爆炸</color>，造成{2}的<color=yellow>范围火焰伤害</color>。\n\n<color=yellow>大爆炸</color>可以连锁触发，对每个敌人每{3}秒只能触发一次大爆炸。",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_D_ExplosionArtist_DodgeExplosion::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "largeExplosionRequiredFireStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_D_ExplosionArtist_LargeExplosion::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 4.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0",
+        "raw": "largeExplosionCooldownPerTarget",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "连锁火焰爆炸",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Fire"
+    ],
+    "image": "St_D_ExplosionArtist.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_IceColdPresence": {
+    "name": "凛冬气魄",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "每10秒，<color=yellow>闪避技能</color>将替换为<color=yellow>寒冰冲刺</color>。<color=yellow>寒冰冲刺</color>会向前方冲刺，在短时间内赋予<color=yellow>无敌</color>状态，并对周围敌人造成 <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>10%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>。<color=yellow>寒冰冲刺</color>每击中一名敌人，旅行者的<color=yellow>最大生命值</color>永久增加 1<sprite=5> 。",
+    "rawDesc": "每{0}秒，<color=yellow>闪避技能</color>将替换为<color=yellow>寒冰冲刺</color>。<color=yellow>寒冰冲刺</color>会向前方冲刺，在短时间内赋予<color=yellow>无敌</color>状态，并对周围敌人造成{1}的<color=yellow>寒气伤害</color>。<color=yellow>寒冰冲刺</color>每击中一名敌人，旅行者的<color=yellow>最大生命值</color>永久增加{2}。",
+    "rawDescVars": [
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "baseCooldownTime",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>150%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>10%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.5,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0.#",
+        "raw": "addedHealth",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.9,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.1,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": "闪避技能替换，寒气伤害，最大生命值增加",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Cold"
+    ],
+    "image": "St_D_IceColdPresence.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_IcyVeins": {
+    "name": "冰冷血脉",
+    "cooldownTime": 0.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "塞图斯每次造成<color=yellow>寒气伤害</color>时，获得<color=yellow>冷血</color>层数，最多可叠加至5层。下次<color=yellow>攻击</color>时将消耗所有<color=yellow>冷血</color>层数引发寒气爆炸，对敌人造成每层 <sprite=1><color=#fff><gradient=sv_ap>30%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>，同时塞图斯将获得 <sprite=1><color=#fff><gradient=sv_ap>9%</gradient></color><sprite=5> 的<color=yellow>护盾</color>，该护盾将在3秒内逐渐消失。",
+    "rawDesc": "塞图斯每次造成<color=yellow>寒气伤害</color>时，获得<color=yellow>冷血</color>层数，最多可叠加至{0}层。下次<color=yellow>攻击</color>时将消耗所有<color=yellow>冷血</color>层数引发寒气爆炸，对敌人造成每层{1}的<color=yellow>寒气伤害</color>，同时塞图斯将获得{2}的<color=yellow>护盾</color>，该护盾将在{3}秒内逐渐消失。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>30%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.3,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>9%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "shieldPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.09,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "叠加寒气伤害，触发寒气爆炸，获得护盾",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "Identity",
+    "tags": [
+      "Cold",
+      "Shield"
+    ],
+    "image": "St_D_IcyVeins.PNG",
+    "lore": "在那寒冷监狱的实验台上，是那令他难以忘怀的强烈瞬间。\n那挥之不去的寒气渗入血脉的那一刻，\n他视之为自己的第一份赎罪。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_ParryMaster": {
+    "name": "决斗大师",
+    "cooldownTime": 4.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>闪避技能</color>替换为拥有6秒冷却时间的<color=yellow>招架</color>。使用<color=yellow>招架</color>可在极短时间内防御伤害，每次成功防御时，恢复1次<color=yellow>招架</color>的<color=yellow>充能次数</color>，并且<color=yellow>攻击力</color>和<color=yellow>法术强度</color>增加 1<sprite=5> ，持续8秒。此属性提升效果最多可叠加5次。",
+    "rawDesc": "<color=yellow>闪避技能</color>替换为拥有6秒冷却时间的<color=yellow>招架</color>。使用<color=yellow>招架</color>可在极短时间内防御伤害，每次成功防御时，恢复1次<color=yellow>招架</color>的<color=yellow>充能次数</color>，并且<color=yellow>攻击力</color>和<color=yellow>法术强度</color>增加{0}，持续{1}秒。此属性提升效果最多可叠加{2}次。",
+    "rawDescVars": [
+      {
+        "rendered": " 1<sprite=5> ",
+        "format": "#,##0",
+        "raw": "bonusAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "8",
+        "format": "#,##0.#",
+        "raw": "Se_D_ParryMaster_Buff::duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "5",
+        "format": "#,##0",
+        "raw": "maxStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "将闪避技能替换为招架",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Mobility"
+    ],
+    "image": "St_D_ParryMaster.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_QuartetOfDeath": {
+    "name": "死亡四重奏",
+    "cooldownTime": 4.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "每次<color=yellow>基础攻击</color>命中时，会给目标附加可叠加的<color=yellow>印记</color>。每第4次<color=yellow>基础攻击</color>会在5秒内使<color=yellow>攻击速度</color>提升10%，并引爆所有<color=yellow>印记</color>，每层印记造成 <sprite=2><color=#fff><gradient=sv_ad>70%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>。攻速提升效果可无限叠加。",
+    "rawDesc": "每次<color=yellow>基础攻击</color>命中时，会给目标附加可叠加的<color=yellow>印记</color>。每第4次<color=yellow>基础攻击</color>会在{0}秒内使<color=yellow>攻击速度</color>提升{1}，并引爆所有<color=yellow>印记</color>，每层印记造成{2}的<color=yellow>暗影伤害</color>。攻速提升效果可无限叠加。",
+    "rawDescVars": [
+      {
+        "rendered": "5",
+        "format": "#,##0.#",
+        "raw": "Se_D_QuartetOfDeath_Buff::duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "speedBonusPercentagePerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>70%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "amountPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.7,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "每第4次攻击时提升攻击速度",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Dark"
+    ],
+    "image": "St_D_QuartetOfDeath.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_D_ScarOfTheWind": {
+    "name": "风之伤",
+    "cooldownTime": 0.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>冲刺</color>或<color=yellow>瞬间移动</color>后，下一次<color=yellow>基础攻击</color>必定暴击。使用<color=yellow>闪避技能</color>后，下一次<color=yellow>基础攻击</color>会向前冲刺并斩击敌人，造成 <sprite=2><color=#fff><gradient=sv_ad>75%</gradient></color><sprite=5> 的<color=yellow>额外暗影伤害</color>，且每命中一个敌人，使空壳的生命值<color=yellow>回复</color> <sprite=2><color=#fff><gradient=sv_ad>11%</gradient></color><sprite=5> 。",
+    "rawDesc": "<color=yellow>冲刺</color>或<color=yellow>瞬间移动</color>后，下一次<color=yellow>基础攻击</color>必定暴击。使用<color=yellow>闪避技能</color>后，下一次<color=yellow>基础攻击</color>会向前冲刺并斩击敌人，造成{0}的<color=yellow>额外暗影伤害</color>，且每命中一个敌人，使空壳的生命值<color=yellow>回复</color>{1}。",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>75%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "bonusDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.75,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>11%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.11,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      }
+    ],
+    "shortDescription": "冲刺后触发暴击，闪避后强化攻击",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "Hero_Husk",
+    "travelerMemoryLocation": "Identity",
+    "tags": [
+      "Dark",
+      "Melee",
+      "Heal",
+      "Attack",
+      "Mobility"
+    ],
+    "image": "St_D_ScarOfTheWind.PNG",
+    "lore": "风附于刃。破空而进。\n指尖绽开鲜血的触感。\n然而，什么也不曾留下。",
+    "achievementKey": "ACH_I_AM_SHELL",
+    "achievementName": "我是空壳",
+    "achievementDescription": "使用空壳进入纯白之梦。"
+  },
+  "St_D_SharedPain": {
+    "name": "痛苦分担",
+    "cooldownTime": 4.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "每次施放<color=yellow>记忆</color>首次对敌人造成<color=yellow>伤害</color>时，相当于该伤害量 50%<sprite=5> 的<color=yellow>伤害</color>会转移给附近的其他敌人，最多转移 3<sprite=5> 次。转移的<color=yellow>伤害</color>与原始伤害共享元素类型。",
+    "rawDesc": "每次施放<color=yellow>记忆</color>首次对敌人造成<color=yellow>伤害</color>时，相当于该伤害量{0}的<color=yellow>伤害</color>会转移给附近的其他敌人，最多转移{1}次。转移的<color=yellow>伤害</color>与原始伤害共享元素类型。",
+    "rawDescVars": [
+      {
+        "rendered": " 50%<sprite=5> ",
+        "format": "P0",
+        "raw": "shareDmgRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.35,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.15,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " 3<sprite=5> ",
+        "format": "#,##0",
+        "raw": "clampedCount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "shortDescription": "记忆连锁伤害",
+    "rarity": "Identity",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [],
+    "image": "St_D_SharedPain.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_L_HerosReturn": {
+    "name": "英雄归来",
+    "cooldownTime": 150.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>施放</color>时<color=yellow>摧毁</color>该记忆，<color=yellow>复活</color>所有阵亡的旅行者并回复其 <sprite=1><color=#fff><gradient=sv_ap>800%</gradient></color><sprite=5> <color=yellow>生命值</color>。未阵亡的旅行者将回复 <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> <color=yellow>生命值</color>，并永久获得 10<sprite=5> <color=yellow>攻击力</color>和 10<sprite=5> <color=yellow>法术强度</color>。\n\n当持有者<color=yellow>死亡</color>时将自动<color=yellow>施放</color>。",
+    "rawDesc": "<color=yellow>施放</color>时<color=yellow>摧毁</color>该记忆，<color=yellow>复活</color>所有阵亡的旅行者并回复其{0}<color=yellow>生命值</color>。未阵亡的旅行者将回复{1}<color=yellow>生命值</color>，并永久获得{2}<color=yellow>攻击力</color>和{3}<color=yellow>法术强度</color>。\n\n当持有者<color=yellow>死亡</color>时将自动<color=yellow>施放</color>。",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>800%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "deadHealAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 8.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>400%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "aliveHealAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 4.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": " 10<sprite=5> ",
+        "format": "#,##0",
+        "raw": "aliveAdGain",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 2.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " 10<sprite=5> ",
+        "format": "#,##0",
+        "raw": "aliveApGain",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 8.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 2.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": "复活，永久属性加成",
+    "rarity": "Legendary",
+    "type": "Ultimate",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Heal",
+      "Shield"
+    ],
+    "image": "St_L_HerosReturn.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_L_SmallMoltenCore": {
+    "name": "小型熔炉",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "在4秒内，<color=yellow>火焰幼龙</color>的<color=yellow>普通攻击</color>会造成<color=yellow>范围伤害</color>，且<color=yellow>伤害量</color>提升100%。\n\n<color=yellow>持续效果：</color>召唤跟随旅行者的<color=yellow>火焰幼龙</color>。<color=yellow>火焰幼龙</color>拥有229的生命值和100的防御力，旅行者每次<color=yellow>攻击</color>时都会对目标造成 <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> 的<color=yellow>火焰伤害</color>，并且<color=yellow>火焰幼龙</color>会恢复自身最大生命值的5%。",
+    "rawDesc": "在{0}秒内，<color=yellow>火焰幼龙</color>的<color=yellow>普通攻击</color>会造成<color=yellow>范围伤害</color>，且<color=yellow>伤害量</color>提升{1}。\n\n<color=yellow>持续效果：</color>召唤跟随旅行者的<color=yellow>火焰幼龙</color>。<color=yellow>火焰幼龙</color>拥有{2}的生命值和{3}的防御力，旅行者每次<color=yellow>攻击</color>时都会对目标造成{4}的<color=yellow>火焰伤害</color>，并且<color=yellow>火焰幼龙</color>会恢复自身最大生命值的{5}。",
+    "rawDescVars": [
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "empowerAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "229",
+        "format": "#,##0",
+        "raw": "summonHealth",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "100",
+        "format": "#,##0",
+        "raw": "armor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 100.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.4,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "healMaxHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "召唤火焰龙",
+    "rarity": "Legendary",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Fire",
+      "Attack",
+      "Summon"
+    ],
+    "image": "St_L_SmallMoltenCore.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_M_FrostyCharge": {
+    "name": "冰霜冲锋",
+    "cooldownTime": 3.3,
+    "maxCharges": 2,
+    "addedCharges": 1,
+    "description": "向前方冲刺，对敌人造成<sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>10%</gradient></color>的<color=yellow>寒气伤害</color>并闪避敌人的攻击。",
+    "rawDesc": "向前方冲刺，对敌人造成{0}的<color=yellow>寒气伤害</color>并闪避敌人的攻击。",
+    "rawDescVars": [
+      {
+        "rendered": "<sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>10%</gradient></color>",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      }
+    ],
+    "shortDescription": null,
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "Movement",
+    "tags": [
+      "Cold",
+      "Mobility"
+    ],
+    "image": "St_M_FrostyCharge.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_M_IceColdPresence": {
+    "name": "寒冰冲刺",
+    "cooldownTime": 999.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "进入<color=yellow>无敌</color>状态，快速进行短距离<color=yellow>冲刺</color>，并造成<color=yellow>寒气伤害</color>。",
+    "rawDesc": "进入<color=yellow>无敌</color>状态，快速进行短距离<color=yellow>冲刺</color>，并造成<color=yellow>寒气伤害</color>。",
+    "rawDescVars": [],
+    "shortDescription": "闪避技能",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Cold",
+      "Mobility"
+    ],
+    "image": "St_M_IceColdPresence.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_M_ParryMaster": {
+    "name": "招架",
+    "cooldownTime": 6.0,
+    "maxCharges": 2,
+    "addedCharges": 1,
+    "description": "进入<color=yellow>无敌</color>状态，无视敌人的攻击。",
+    "rawDesc": "进入<color=yellow>无敌</color>状态，无视敌人的攻击。",
+    "rawDescVars": [],
+    "shortDescription": null,
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [],
+    "image": "St_M_ParryMaster.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_Q_BigBorealChunk": {
+    "name": "巨型冰川碎片",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "<color=yellow>长按</color>施放键，生成一块不断变大的<color=yellow>冰川碎片</color>。蓄力过程中获得 20<sprite=5> 的<color=yellow>防御力</color>，最多可蓄力4秒，蓄力结束后发射<color=yellow>冰川碎片</color>。<color=yellow>冰川碎片</color>会爆炸，对所有敌人造成 <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>并使其<color=yellow>眩晕</color>1秒。\n\n蓄力时间每增加1秒，<color=yellow>爆炸伤害</color>增加100%，<color=yellow>爆炸范围</color>也会随之扩大。",
+    "rawDesc": "<color=yellow>长按</color>施放键，生成一块不断变大的<color=yellow>冰川碎片</color>。蓄力过程中获得{0}的<color=yellow>防御力</color>，最多可蓄力{1}秒，蓄力结束后发射<color=yellow>冰川碎片</color>。<color=yellow>冰川碎片</color>会爆炸，对所有敌人造成{2}的<color=yellow>寒气伤害</color>并使其<color=yellow>眩晕</color>{3}秒。\n\n蓄力时间每增加1秒，<color=yellow>爆炸伤害</color>增加{4}，<color=yellow>爆炸范围</color>也会随之扩大。",
+    "rawDescVars": [
+      {
+        "rendered": " 20<sprite=5> ",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 15.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "maxChannelTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>120%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.2,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "100%",
+        "format": "P0",
+        "raw": "damageAmpPerSecond",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "生成不断变大的冰川碎片、寒气伤害、眩晕",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "Q",
+    "tags": [
+      "Cold"
+    ],
+    "image": "St_Q_BigBorealChunk.PNG",
+    "lore": "感受着愈发膨胀的寒气，塞图斯心想。\n所背负的重量，所背负的罪，\n绝不会有一丝减轻。",
+    "achievementKey": "ACH_ICEBERG_THE_GREAT_COMMUNICATOR",
+    "achievementName": "冰川，绝佳的交流工具。",
+    "achievementDescription": "使用塞图斯达到200点法术强度。"
+  },
+  "St_Q_DeathMark": {
+    "name": "死亡印记",
+    "cooldownTime": 12.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "发射具有穿透效果的尖刺，对敌人触发<color=yellow>攻击效果</color>并造成 <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>。为最后一个被尖刺击中的敌人赋予印记，最多持续3秒。在此期间<color=yellow>再次施放</color><color=yellow>死亡印记</color>，空壳将<color=yellow>瞬间移动</color>至目标位置。\n\n战斗中尖刺首次击中敌人时，<color=yellow>冷却时间</color>减少50%，且尖刺的伤害增加5%。该伤害增加量会在每次前往下一个世界时重置。",
+    "rawDesc": "发射具有穿透效果的尖刺，对敌人触发<color=yellow>攻击效果</color>并造成{0}的<color=yellow>暗影伤害</color>。为最后一个被尖刺击中的敌人赋予印记，最多持续{1}秒。在此期间<color=yellow>再次施放</color><color=yellow>死亡印记</color>，空壳将<color=yellow>瞬间移动</color>至目标位置。\n\n战斗中尖刺首次击中敌人时，<color=yellow>冷却时间</color>减少{2}，且尖刺的伤害增加{3}。该伤害增加量会在每次前往下一个世界时重置。",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>340%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "damage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 3.4,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "lingerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "firstHitCooldownReduction",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "5%",
+        "format": "P0",
+        "raw": "damageAmpGainOnFirstHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "暗影伤害，瞬间移动，无限叠加伤害",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Husk",
+    "travelerMemoryLocation": "Q",
+    "tags": [
+      "Dark",
+      "Mobility"
+    ],
+    "image": "St_Q_DeathMark.PNG",
+    "lore": "目标绝不放过。自那遥远的往昔起，便一直如此。",
+    "achievementKey": "ACH_HOME_SWEET_HOME",
+    "achievementName": "熟悉的风景",
+    "achievementDescription": "使用空壳，在生命值从未低于50%的情况下抵达芙蕖高原。"
+  },
+  "St_Q_EmbracingTheChill": {
+    "name": "拥抱严寒",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "在目标区域生成一个持续3秒且不断扩大的<color=yellow>寒气领域</color>。位于该区域内的友军每0.5秒获得持续3秒的 <sprite=1><color=#fff><gradient=sv_ap>25%</gradient></color><sprite=5> <color=yellow>护盾</color>，敌人则受到 <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>。\n\n持续时间结束后，<color=yellow>寒气领域</color>会爆炸，对敌人造成 <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>并使其<color=yellow>眩晕</color>1.5秒。",
+    "rawDesc": "在目标区域生成一个持续{0}秒且不断扩大的<color=yellow>寒气领域</color>。位于该区域内的友军每{1}秒获得持续{2}秒的{3}<color=yellow>护盾</color>，敌人则受到{4}的<color=yellow>寒气伤害</color>。\n\n持续时间结束后，<color=yellow>寒气领域</color>会爆炸，对敌人造成{5}的<color=yellow>寒气伤害</color>并使其<color=yellow>眩晕</color>{6}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "0.5",
+        "format": "#,##0.#",
+        "raw": "Ai_Q_EmbracingTheChill_AreaDoT::cooldownTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>25%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "shieldPerTick",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.25,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>40%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_Q_EmbracingTheChill_AreaDoT::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.4,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>200%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Ai_Q_EmbracingTheChill_Explosion::dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 2.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "寒气伤害、护盾、眩晕",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "Q",
+    "tags": [
+      "Cold",
+      "HardCC",
+      "Shield"
+    ],
+    "image": "St_Q_EmbracingTheChill.png",
+    "lore": "塞图斯再也无法忍受那挥之不去的寒意，于是停止颤抖，选择坦然接受它。\n如此一来，便不再觉得寒冷了。\n他将其称之为「温暖的意志」。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_AnnoyingBanner": {
+    "name": "恼人军旗",
+    "cooldownTime": 12.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "在目标位置召唤一面<color=yellow>军旗</color>。<color=yellow>军旗</color>拥有92的生命值和100的防御力，最多在战场停留10秒，每1.5秒发出恼人的声响，造成 <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> 的<color=yellow>伤害</color>并迫使周围敌人攻击军旗。",
+    "rawDesc": "在目标位置召唤一面<color=yellow>军旗</color>。<color=yellow>军旗</color>拥有{0}的生命值和{1}的防御力，最多在战场停留{2}秒，每{3}秒发出恼人的声响，造成{4}的<color=yellow>伤害</color>并迫使周围敌人攻击军旗。",
+    "rawDescVars": [
+      {
+        "rendered": "92",
+        "format": "#,##0",
+        "raw": "summonHealth",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "100",
+        "format": "#,##0",
+        "raw": "armor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 100.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "10",
+        "format": "#,##0.#",
+        "raw": "maxDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "1.5",
+        "format": "#,##0.#",
+        "raw": "tickInterval",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "tickDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "召唤嘲讽军旗",
+    "rarity": "Rare",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Summon"
+    ],
+    "image": "St_R_AnnoyingBanner.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_BackOff": {
+    "name": "退后！",
+    "cooldownTime": 7.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "用薄冰覆盖周围友军，赋予其持续2秒的 <sprite=1><color=#fff><gradient=sv_ap>135%</gradient></color><sprite=5> <color=yellow>护盾</color>和 8<sprite=5> <color=yellow>防御力</color>。自身获得的此效果增加50%。\n\n<color=yellow>长按</color>施放键将力量集中于法杖，松开按键时挥舞法杖，根据蓄力时间对敌人造成 <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5> ~ <sprite=2><color=#fff><gradient=sv_ad>450%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>22%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>并将其击退，同时使其<color=yellow>眩晕</color>1秒。",
+    "rawDesc": "用薄冰覆盖周围友军，赋予其持续{0}秒的{1}<color=yellow>护盾</color>和{2}<color=yellow>防御力</color>。自身获得的此效果增加{3}。\n\n<color=yellow>长按</color>施放键将力量集中于法杖，松开按键时挥舞法杖，根据蓄力时间对敌人造成{4}~{5}的<color=yellow>寒气伤害</color>并将其击退，同时使其<color=yellow>眩晕</color>{6}秒。",
+    "rawDescVars": [
+      {
+        "rendered": "2",
+        "format": "#,##0.#",
+        "raw": "buffDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>135%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "shieldAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 1.35,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 5.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 3.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "casterAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>200%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 2.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>450%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>22%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "maxDamage",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 4.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "stunDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "保护友军、寒气伤害、眩晕",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "R",
+    "tags": [
+      "Cold",
+      "Melee",
+      "HardCC",
+      "Attack"
+    ],
+    "image": "St_R_BackOff.png",
+    "lore": "塞图斯学会挺身而出为同伴挡下攻击，并非在教团的训练场上，而是在那座监狱里——从那些他未能守护之人留下的空缺中学到的。",
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "St_R_Deception": {
+    "name": "欺诈",
+    "cooldownTime": 10.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "向前<color=yellow>瞬间移动</color>一小段距离，并进入最多持续3秒的<color=yellow>隐身</color>状态，期间<color=yellow>移动速度</color>提升20%。脱离隐身状态时，对周围敌人造成 <sprite=2><color=#fff><gradient=sv_ad>350%</gradient></color><sprite=5> 的<color=yellow>暗影伤害</color>并将其击退。\n\n隐身期间如果过于靠近敌人，将会短暂暴露身形；施放记忆、进行基础攻击或受到伤害时，隐身状态将提前结束。",
+    "rawDesc": "向前<color=yellow>瞬间移动</color>一小段距离，并进入最多持续{0}秒的<color=yellow>隐身</color>状态，期间<color=yellow>移动速度</color>提升{1}。脱离隐身状态时，对周围敌人造成{2}的<color=yellow>暗影伤害</color>并将其击退。\n\n隐身期间如果过于靠近敌人，将会短暂暴露身形；施放记忆、进行基础攻击或受到伤害时，隐身状态将提前结束。",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "stealthDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": "20%",
+        "format": "#,##0'%'",
+        "raw": "speedAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>350%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 3.5,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      }
+    ],
+    "shortDescription": "瞬间移动，隐身，暗影伤害",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Husk",
+    "travelerMemoryLocation": "R",
+    "tags": [
+      "Dark",
+      "Mobility"
+    ],
+    "image": "St_R_Deception.png",
+    "lore": "无形之刃，最为致命。",
+    "achievementKey": "ACH_DOLL_OF_MANA",
+    "achievementName": "魔力人偶",
+    "achievementDescription": "使用空壳，使法术强度达到100。"
+  },
+  "St_R_FrozenFists": {
+    "name": "礼仪注入",
+    "cooldownTime": 13.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "在7秒内握紧双拳并卷起袖子。在此期间，无法施放其他记忆，但<color=yellow>攻击速度</color>提升 26%<sprite=5> ，<color=yellow>防御力</color>提升 18<sprite=5> ，<color=yellow>基础攻击</color>替换为近战攻击，且自身<color=yellow>攻击</color>造成 <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5> 的<color=yellow>额外伤害</color>。\n\n在持续时间内<color=yellow>再次施放</color>该记忆，可向前突进击退敌人，并造成 <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>3%</gradient></color><sprite=5> 的<color=yellow>寒气伤害</color>，每击中一名敌人，便获得 <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>2%</gradient></color><sprite=5> 的<color=yellow>护盾</color>，该护盾将在3秒内逐渐消失。当目标为<color=yellow>任意首领</color>时，该伤害和护盾量提升200%。",
+    "rawDesc": "在{0}秒内握紧双拳并卷起袖子。在此期间，无法施放其他记忆，但<color=yellow>攻击速度</color>提升{1}，<color=yellow>防御力</color>提升{2}，<color=yellow>基础攻击</color>替换为近战攻击，且自身<color=yellow>攻击</color>造成{3}的<color=yellow>额外伤害</color>。\n\n在持续时间内<color=yellow>再次施放</color>该记忆，可向前突进击退敌人，并造成{4}的<color=yellow>寒气伤害</color>，每击中一名敌人，便获得{5}的<color=yellow>护盾</color>，该护盾将在{6}秒内逐渐消失。当目标为<color=yellow>任意首领</color>时，该伤害和护盾量提升{7}。",
+    "rawDescVars": [
+      {
+        "rendered": "7",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 7.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 26%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "hasteAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 20.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 5.714286,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " 18<sprite=5> ",
+        "format": "#,##0",
+        "raw": "armorAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 15.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 3.0,
+          "basicAddedMultiplierPerLevel": 0.0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>170%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>8%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "addedDamageOnAttack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.7,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>3%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 1.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>60%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>额外<sprite=3></color><color=#fff><gradient=sv_ahp>2%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "shieldPerHit",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.6,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.125
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "shieldDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "200%",
+        "format": "P0",
+        "raw": "bossAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "近战攻击姿态，寒气伤害",
+    "rarity": "Character",
+    "type": "Normal",
+    "traveler": "Hero_Cetus",
+    "travelerMemoryLocation": "R",
+    "tags": [
+      "Cold",
+      "Melee",
+      "HardCC",
+      "Shield",
+      "Attack",
+      "Mobility"
+    ],
+    "image": "St_R_FrozenFists.png",
+    "lore": "教团教会了他如何以暴力惩戒教团之敌，塞图斯的身躯至今仍记得那一招一式。\n只是如今，那双拳头挥向何方，将全凭他自己的意志。",
+    "achievementKey": "ACH_THE_CHILL_WASHES_AWAY_SINS",
+    "achievementName": "涤罪之寒",
+    "achievementDescription": "使用塞图斯在雪山累计击杀120名敌人。"
+  },
+  "St_U_BigChomp": {
+    "name": "巨口撕咬",
+    "cooldownTime": 8.0,
+    "maxCharges": 1,
+    "addedCharges": 1,
+    "description": "撕咬前方所有<color=yellow>敌人</color>和<color=yellow>友军</color>，造成 <sprite=2><color=#fff><gradient=sv_ad>370%</gradient></color><sprite=5> 的<color=yellow>伤害</color>，每命中一个目标<color=yellow>恢复</color> <sprite=2><color=#fff><gradient=sv_ad>25%</gradient></color><sprite=5> 的<color=yellow>生命值</color>，并获得持续3秒、护盾值为 <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5> 的<color=yellow>护盾</color>。每命中一个目标，<color=yellow>冷却时间</color>减少1秒。\n\n对<color=yellow>友军</color>造成的伤害减少80%，对<color=yellow>首领</color>单位，恢复量、护盾量和冷却时间减少量提升250%。",
+    "rawDesc": "撕咬前方所有<color=yellow>敌人</color>和<color=yellow>友军</color>，造成{0}的<color=yellow>伤害</color>，每命中一个目标<color=yellow>恢复</color>{1}的<color=yellow>生命值</color>，并获得持续{2}秒、护盾值为{3}的<color=yellow>护盾</color>。每命中一个目标，<color=yellow>冷却时间</color>减少{4}秒。\n\n对<color=yellow>友军</color>造成的伤害减少{5}，对<color=yellow>首领</color>单位，恢复量、护盾量和冷却时间减少量提升{6}。",
+    "rawDescVars": [
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>370%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "dmgFactor",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 3.7,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.25
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>25%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "healPerHitAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.25,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " <sprite=2><color=#fff><gradient=sv_ad>30%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "shieldPerHitAmount",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0.0,
+          "basicAD": 0.3,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.1875
+        }
+      },
+      {
+        "rendered": "1",
+        "format": "#,##0.#",
+        "raw": "reduceCooldown",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 1.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "80%",
+        "format": "P0",
+        "raw": "allyDamageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.8,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "250%",
+        "format": "P0",
+        "raw": "anyBossMultiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "shortDescription": "撕咬敌人或友军",
+    "rarity": "Unique",
+    "type": "Normal",
+    "traveler": "",
+    "travelerMemoryLocation": "",
+    "tags": [
+      "Melee",
+      "Heal",
+      "Shield"
+    ],
+    "image": "St_U_BigChomp.png",
+    "lore": null,
     "achievementKey": "",
     "achievementName": "",
     "achievementDescription": ""

@@ -1196,8 +1196,8 @@
   },
   "Gem_E_Insensitivity": {
     "name": "Esencia de Insensibilidad",
-    "description": "Después de <color=yellow>conjurar</color> esta memoria, cada vez que te muevas 2m durante 4 segundos, dejarás caer una <color=yellow>bomba</color>. La bomba explota poco después, causando  <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5>  de <color=yellow>daño de fuego</color> a los enemigos.",
-    "rawDesc": "Después de <color=yellow>conjurar</color> esta memoria, cada vez que te muevas {0}m durante {1} segundos, dejarás caer una <color=yellow>bomba</color>. La bomba explota poco después, causando {2} de <color=yellow>daño de fuego</color> a los enemigos.",
+    "description": "Después de <color=yellow>conjurar</color> esta memoria <color=yellow>en combate</color>, cada vez que te muevas 2m durante 4 segundos, dejarás caer una <color=yellow>bomba</color>. La bomba explota poco después, causando  <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5>  de <color=yellow>daño de fuego</color> a los enemigos.",
+    "rawDesc": "Después de <color=yellow>conjurar</color> esta memoria <color=yellow>en combate</color>, cada vez que te muevas {0}m durante {1} segundos, dejarás caer una <color=yellow>bomba</color>. La bomba explota poco después, causando {2} de <color=yellow>daño de fuego</color> a los enemigos.",
     "rawDescVars": [
       {
         "rendered": "2",
@@ -1332,20 +1332,20 @@
   },
   "Gem_E_Inversion": {
     "name": "Esencia de Inversión",
-    "description": "El <color=yellow>tiempo de reutilización</color> de esta memoria aumenta un  15%<sprite=5> , pero el <color=yellow>daño</color> causado a los enemigos también aumenta un  20%<sprite=5> . El <color=yellow>daño elemental</color> que causa esta memoria se <color=yellow>invierte</color>. (Fuego/Frío, Luz/Oscuridad)",
+    "description": "El <color=yellow>tiempo de reutilización</color> de esta memoria aumenta un 20%, pero el <color=yellow>daño</color> causado a los enemigos también aumenta un  20%<sprite=5> . El <color=yellow>daño elemental</color> que causa esta memoria se <color=yellow>invierte</color>. (Fuego/Frío, Luz/Oscuridad)",
     "rawDesc": "El <color=yellow>tiempo de reutilización</color> de esta memoria aumenta un {0}, pero el <color=yellow>daño</color> causado a los enemigos también aumenta un {1}. El <color=yellow>daño elemental</color> que causa esta memoria se <color=yellow>invierte</color>. (Fuego/Frío, Luz/Oscuridad)",
     "rawDescVars": [
       {
-        "rendered": " 15%<sprite=5> ",
+        "rendered": "20%",
         "format": "P0",
         "raw": "cooldownAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.005
+          "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
@@ -1525,7 +1525,7 @@
     "lore": null,
     "achievementKey": "ACH_OMEGA_POINT",
     "achievementName": "Punto omega",
-    "achievementDescription": "Entra al Sueño Prístino habiendo conjurado solo un tipo de memoria durante la aventura."
+    "achievementDescription": "Gana habiendo conjurado solo un tipo de memoria durante la aventura."
   },
   "Gem_E_Opportunity": {
     "name": "Esencia de Oportunidad",
@@ -1571,11 +1571,11 @@
   },
   "Gem_E_OurStory_Completed": {
     "name": "Nuestra Historia (¡Completada!)",
-    "description": "Aumenta el <color=yellow>daño de ataque</color> y el <color=yellow>poder de habilidad</color> un , y aumenta todos los efectos beneficiosos de <color=yellow>Carrera Distorsionada</color> en .",
+    "description": "Aumenta el <color=yellow>daño de ataque</color> y el <color=yellow>poder de habilidad</color> un 0%, y aumenta todos los efectos beneficiosos de <color=yellow>Carrera Distorsionada</color> en 0%.",
     "rawDesc": "Aumenta el <color=yellow>daño de ataque</color> y el <color=yellow>poder de habilidad</color> un {0}, y aumenta todos los efectos beneficiosos de <color=yellow>Carrera Distorsionada</color> en {1}.",
     "rawDescVars": [
       {
-        "rendered": "",
+        "rendered": "0%",
         "format": "#,##0'%'",
         "raw": "Gem_E_OurStory_Completed::statPercentage",
         "scalingType": "basic",
@@ -1588,11 +1588,17 @@
         }
       },
       {
-        "rendered": "",
-        "format": "#,##0",
-        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
-        "scalingType": "unknown",
-        "data": {}
+        "rendered": "0%",
+        "format": "P0",
+        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "rarity": "Epic",
@@ -2061,18 +2067,18 @@
   },
   "Gem_L_CamillasGift": {
     "name": "Regalo de Camila",
-    "description": "Puedes obtener  de oro al <color=yellow>venderlo</color> en la tienda. El <color=yellow>costo</color> <color=yellow>aumenta</color>  cada vez que avanzas al mundo siguiente. Se destruye si tu salud cae por debajo de 50% debido al daño causado por los enemigos.",
+    "description": "Puedes obtener 0 de oro al <color=yellow>venderlo</color> en la tienda. El <color=yellow>costo</color> <color=yellow>aumenta</color> 0 cada vez que avanzas al mundo siguiente. Se destruye si tu salud cae por debajo de 50% debido al daño causado por los enemigos.",
     "rawDesc": "Puedes obtener {0} de oro al <color=yellow>venderlo</color> en la tienda. El <color=yellow>costo</color> <color=yellow>aumenta</color> {1} cada vez que avanzas al mundo siguiente. Se destruye si tu salud cae por debajo de {2} debido al daño causado por los enemigos.",
     "rawDescVars": [
       {
-        "rendered": "",
+        "rendered": "0",
         "format": "#,##0",
         "raw": "currentSellGold",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "",
+        "rendered": "0",
         "format": "#,##0",
         "raw": "sellGoldIncreasePerWorld",
         "scalingType": "basic",
@@ -4342,6 +4348,436 @@
       "Heal"
     ],
     "image": "Gem_U_SoulPrison.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Culinary": {
+    "name": "Esencia Culinaria",
+    "description": "Si un enemigo al que le hayas causado <color=yellow>Daño</color> con esta memoria muere en los siguientes 3 segundos, tiene un  50%<sprite=5>  de probabilidad de soltar <color=yellow>Ingredientes de Cocina</color>. Puedes usar los <color=yellow>Ingredientes de Cocina</color> reunidos en <color=yellow>El Caldero de Jonas</color> para obtener oro o estadísticas.",
+    "rawDesc": "Si un enemigo al que le hayas causado <color=yellow>Daño</color> con esta memoria muere en los siguientes {0} segundos, tiene un {1} de probabilidad de soltar <color=yellow>Ingredientes de Cocina</color>. Puedes usar los <color=yellow>Ingredientes de Cocina</color> reunidos en <color=yellow>El Caldero de Jonas</color> para obtener oro o estadísticas.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "killGraceTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 50%<sprite=5> ",
+        "format": "P0",
+        "raw": "DropChance",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Culinary.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Liberty": {
+    "name": "Esencia de Liberación",
+    "description": "Al lanzar esta memoria, aumenta tu <color=yellow>Daño de Ataque</color> en  8<sprite=5> , tu <color=yellow>Poder de Habilidad</color> en  8<sprite=5>  y tu <color=yellow>Vida Máxima</color> en  60<sprite=5>  durante 2.5 segundos. Si esta memoria es una <color=yellow>Habilidad Suprema</color>, la cantidad de estadísticas otorgadas y su duración aumentan en 200%, y te vuelves <color=yellow>Imparable</color> durante ese tiempo.",
+    "rawDesc": "Al lanzar esta memoria, aumenta tu <color=yellow>Daño de Ataque</color> en {0}, tu <color=yellow>Poder de Habilidad</color> en {1} y tu <color=yellow>Vida Máxima</color> en {2} durante {3} segundos. Si esta memoria es una <color=yellow>Habilidad Suprema</color>, la cantidad de estadísticas otorgadas y su duración aumentan en {4}, y te vuelves <color=yellow>Imparable</color> durante ese tiempo.",
+    "rawDescVars": [
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "adBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "apBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 60<sprite=5> ",
+        "format": "#,##0",
+        "raw": "maxHealthBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "Se_Gem_L_Liberty_Buff::duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "200%",
+        "format": "P0",
+        "raw": "Se_Gem_L_Liberty_Buff::multiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Liberty.png",
+    "lore": null,
+    "achievementKey": "ACH_THE_ROAD_NOT_TAKEN",
+    "achievementName": "El Camino No Tomado",
+    "achievementDescription": "Alcanza el Camino sin Estrellas."
+  },
+  "Gem_L_Supersymmetry": {
+    "name": "Supersimetría",
+    "description": "Tu <color=yellow>vida máxima</color> se reduce a 1, pero a cambio obtienes un <color=yellow>escudo</color> equivalente al  100%<sprite=5>  de tu <color=yellow>vida máxima</color>. Este <color=yellow>escudo</color> se <color=yellow>recarga al instante</color> si no recibes daño durante 4 segundos, pero cada vez que <color=yellow>lanzas</color> una <color=yellow>memoria</color>, el <color=yellow>escudo</color> recibe <color=yellow>daño</color> equivalente al  10%<sprite=5>  de tu vida máxima.",
+    "rawDesc": "Tu <color=yellow>vida máxima</color> se reduce a 1, pero a cambio obtienes un <color=yellow>escudo</color> equivalente al {0} de tu <color=yellow>vida máxima</color>. Este <color=yellow>escudo</color> se <color=yellow>recarga al instante</color> si no recibes daño durante {1} segundos, pero cada vez que <color=yellow>lanzas</color> una <color=yellow>memoria</color>, el <color=yellow>escudo</color> recibe <color=yellow>daño</color> equivalente al {2} de tu vida máxima.",
+    "rawDescVars": [
+      {
+        "rendered": " 100%<sprite=5> ",
+        "format": "P0",
+        "raw": "shieldHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "rechargeDelay",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 10%<sprite=5> ",
+        "format": "P0",
+        "raw": "castDamageHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Shield"
+    ],
+    "image": "Gem_L_Supersymmetry.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Control": {
+    "name": "Esencia del Control",
+    "description": "Al infligir <color=yellow>daño</color> a un enemigo con esta memoria, la <color=yellow>velocidad de movimiento</color> del objetivo se reduce  33%<sprite=5>  durante 3 segundos.",
+    "rawDesc": "Al infligir <color=yellow>daño</color> a un enemigo con esta memoria, la <color=yellow>velocidad de movimiento</color> del objetivo se reduce {0} durante {1} segundos.",
+    "rawDescVars": [
+      {
+        "rendered": " 33%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "SlowAmount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_R_Control.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Crucible": {
+    "name": "Esencia del Crisol",
+    "description": "Aumenta la <color=yellow>Probabilidad de golpe crítico</color> en 25%. Cuando un <color=yellow>Ataque básico crítico</color> impacta, la siguiente vez que lances esta memoria, su daño aumenta en  4%<sprite=5>  y su curación en  4%<sprite=5> , hasta un máximo de  40%<sprite=5> .",
+    "rawDesc": "Aumenta la <color=yellow>Probabilidad de golpe crítico</color> en {0}. Cuando un <color=yellow>Ataque básico crítico</color> impacta, la siguiente vez que lances esta memoria, su daño aumenta en {1} y su curación en {2}, hasta un máximo de {3}.",
+    "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "critChanceBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 4%<sprite=5> ",
+        "format": "P0",
+        "raw": "ampPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.02,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 4%<sprite=5> ",
+        "format": "P0",
+        "raw": "ampPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.02,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 40%<sprite=5> ",
+        "format": "P0",
+        "raw": "maxAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Crucible.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Hedgehog": {
+    "name": "Esencia del Erizo",
+    "description": "Al <color=yellow>lanzar</color> esta memoria, despliegas un aura de púas a tu alrededor durante 3 segundos que inflige  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Vida adicional<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5>  de daño por segundo a los enemigos cercanos. Al recibir cualquier daño, el daño de esta aura aumenta 50% durante 4 segundos.",
+    "rawDesc": "Al <color=yellow>lanzar</color> esta memoria, despliegas un aura de púas a tu alrededor durante {0} segundos que inflige {1} de daño por segundo a los enemigos cercanos. Al recibir cualquier daño, el daño de esta aura aumenta {2} durante {3} segundos.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "tickInterval * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Vida adicional<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Se_Gem_R_Hedgehog_Aura::dmgFactor/Se_Gem_R_Hedgehog_Aura::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "empoweredAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Melee"
+    ],
+    "image": "Gem_R_Hedgehog.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lightweight": {
+    "name": "Esencia de Ligereza",
+    "description": "La <color=yellow>Celeridad de memoria</color> de esta memoria aumenta en  54<sprite=5> , pero a cambio su <color=yellow>daño</color> disminuye en 40%.",
+    "rawDesc": "La <color=yellow>Celeridad de memoria</color> de esta memoria aumenta en {0}, pero a cambio su <color=yellow>daño</color> disminuye en {1}.",
+    "rawDescVars": [
+      {
+        "rendered": " 54<sprite=5> ",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 27.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Lightweight.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Slippery": {
+    "name": "Esencia de Resbalosidad",
+    "description": "Aumenta la <color=yellow>Velocidad de movimiento</color> en 10%. El <color=yellow>daño</color> que inflige esta memoria aumenta en  100%<sprite=5>  del bono de <color=yellow>Velocidad de movimiento</color>.",
+    "rawDesc": "Aumenta la <color=yellow>Velocidad de movimiento</color> en {0}. El <color=yellow>daño</color> que inflige esta memoria aumenta en {1} del bono de <color=yellow>Velocidad de movimiento</color>.",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "moveSpeedBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 100%<sprite=5> ",
+        "format": "P0",
+        "raw": "dmgPerMoveSpeedRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Slippery.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GuidingCompass_Charged": {
+    "name": "Brújula Guía (Cargada)",
+    "description": "<alpha=#77><i>Señala el lugar donde ella se encuentra.</i><alpha=#ff>",
+    "rawDesc": "<alpha=#77><i>Señala el lugar donde ella se encuentra.</i><alpha=#ff>",
+    "rawDescVars": [],
+    "rarity": "Unique",
+    "tags": [],
+    "image": "Gem_U_GuidingCompass_Charged.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GuidingCompass_NotCharged": {
+    "name": "Brújula Guía",
+    "description": "<alpha=#77><i>Ha perdido su poder y no funciona. Quizás se pueda reparar infundiéndole una energía poderosa...</i><alpha=#ff>",
+    "rawDesc": "<alpha=#77><i>Ha perdido su poder y no funciona. Quizás se pueda reparar infundiéndole una energía poderosa...</i><alpha=#ff>",
+    "rawDescVars": [],
+    "rarity": "Unique",
+    "tags": [],
+    "image": "Gem_U_GuidingCompass_NotCharged.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",

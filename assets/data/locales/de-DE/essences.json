@@ -993,7 +993,7 @@
     "rarity": "Epic",
     "tags": [],
     "image": "Gem_E_Direness.PNG",
-    "lore": "Wie bin ich noch am Leben...?\n\n...\n\nIch war definitiv im Gefängnis des Ordens eingesperrt.\n...Diese Bastarde von der Lucid-Orden, sie haben mir eine Falle gestellt. Mein Fehler. Ich war zu hastig.\n\nSeltsam.\nMein Brustpanzer war zerschmettert, und ich dachte, mindestens zwei Rippen wären gebrochen...\nAber es geht mir gut. Ich fühle mich sogar... stärker.\n\nWo bin ich hier...? Ist das auch Magie...?\n\n...\nSchwach... aber deutlich spüre ich es.\nAstrid, meine Schwester...\nIch werde nicht noch einmal versagen.\n\nWarte nur kurz, ich komme.",
+    "lore": "Wie bin ich noch am Leben...?\n\n...\n\nIch war definitiv im Gefängnis des Ordens eingesperrt.\n...Diese Bastarde von der Luziden Sekte, sie haben mir eine Falle gestellt.\nMein Fehler.\nIch war zu hastig.\n\nSeltsam.\nMein Brustpanzer war zerschmettert, und ich dachte, mindestens zwei Rippen wären gebrochen...\nAber es geht mir gut. Ich fühle mich sogar... stärker.\n\nWo bin ich hier...? Ist das auch Magie...?\n\n...\nSchwach... aber deutlich spüre ich es.\nAstrid, meine Schwester...\nIch werde nicht noch einmal versagen.\n\nWarte nur kurz, ich komme.",
     "achievementKey": "ACH_DESPERATE_HERO",
     "achievementName": "Verzweifelter Held",
     "achievementDescription": "Töte 30 Gegner in Folge, während deine LP 40% oder weniger beträgt."
@@ -1196,8 +1196,8 @@
   },
   "Gem_E_Insensitivity": {
     "name": "Essenz der Gefühllosigkeit",
-    "description": "Nach dem <color=yellow>Wirken</color> dieser Erinnerung lässt du für 4 Sek. bei jeder Bewegung von 2m eine <color=yellow>Bombe</color> fallen. Die Bombe explodiert nach kurzer Zeit und fügt Gegnern  <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5>  <color=yellow>Feuerschaden</color> zu.",
-    "rawDesc": "Nach dem <color=yellow>Wirken</color> dieser Erinnerung lässt du für {0} Sek. bei jeder Bewegung von {1}m eine <color=yellow>Bombe</color> fallen. Die Bombe explodiert nach kurzer Zeit und fügt Gegnern {2} <color=yellow>Feuerschaden</color> zu.",
+    "description": "Nach dem <color=yellow>Wirken</color> dieser Erinnerung <color=yellow>im Kampf</color> lässt du für 4 Sek. bei jeder Bewegung von 2m eine <color=yellow>Bombe</color> fallen. Die Bombe explodiert nach kurzer Zeit und fügt Gegnern  <sprite=1><color=#fff><gradient=sv_ap>140%</gradient></color><sprite=5>  <color=yellow>Feuerschaden</color> zu.",
+    "rawDesc": "Nach dem <color=yellow>Wirken</color> dieser Erinnerung <color=yellow>im Kampf</color> lässt du für {0} Sek. bei jeder Bewegung von {1}m eine <color=yellow>Bombe</color> fallen. Die Bombe explodiert nach kurzer Zeit und fügt Gegnern {2} <color=yellow>Feuerschaden</color> zu.",
     "rawDescVars": [
       {
         "rendered": "4",
@@ -1332,20 +1332,20 @@
   },
   "Gem_E_Inversion": {
     "name": "Essenz der Umkehrung",
-    "description": "Die <color=yellow>Abklingzeit</color> dieser Erinnerung erhöht sich um  15%<sprite=5> , aber der <color=yellow>Schaden</color>, den du Gegnern zufügst, erhöht sich ebenfalls um  20%<sprite=5> . Der <color=yellow>Elementarschaden</color> dieser Erinnerung wird <color=yellow>umgekehrt</color>. (Feuer/Kälte, Licht/Dunkelheit)",
+    "description": "Die <color=yellow>Abklingzeit</color> dieser Erinnerung erhöht sich um 20%, aber der <color=yellow>Schaden</color>, den du Gegnern zufügst, erhöht sich ebenfalls um  20%<sprite=5> . Der <color=yellow>Elementarschaden</color> dieser Erinnerung wird <color=yellow>umgekehrt</color>. (Feuer/Kälte, Licht/Dunkelheit)",
     "rawDesc": "Die <color=yellow>Abklingzeit</color> dieser Erinnerung erhöht sich um {0}, aber der <color=yellow>Schaden</color>, den du Gegnern zufügst, erhöht sich ebenfalls um {1}. Der <color=yellow>Elementarschaden</color> dieser Erinnerung wird <color=yellow>umgekehrt</color>. (Feuer/Kälte, Licht/Dunkelheit)",
     "rawDescVars": [
       {
-        "rendered": " 15%<sprite=5> ",
+        "rendered": "20%",
         "format": "P0",
         "raw": "cooldownAmp",
         "scalingType": "basic",
         "data": {
-          "basicConstant": 0.1,
+          "basicConstant": 0.2,
           "basicAP": 0.0,
           "basicAD": 0.0,
           "basicLvl": 0.0,
-          "basicAddedMultiplierPerLevel": 0.005
+          "basicAddedMultiplierPerLevel": 0.0
         }
       },
       {
@@ -1525,7 +1525,7 @@
     "lore": null,
     "achievementKey": "ACH_OMEGA_POINT",
     "achievementName": "Omega-Punkt",
-    "achievementDescription": "Betritt den weißen Traum, nachdem du nur eine Erinnerungsart gewirkt hast."
+    "achievementDescription": "Siege, nachdem du während eines Abenteuers nur eine Erinnerungsart gewirkt hast."
   },
   "Gem_E_Opportunity": {
     "name": "Essenz der Gelegenheit",
@@ -1571,11 +1571,11 @@
   },
   "Gem_E_OurStory_Completed": {
     "name": "Unsere Geschichte (vollendet!)",
-    "description": "Erhöht <color=yellow>AK</color> und <color=yellow>Zauberkraft</color> um  und alle vorteilhaften Effekte von <color=yellow>Verzerrter Sprint</color> um .",
+    "description": "Erhöht <color=yellow>AK</color> und <color=yellow>Zauberkraft</color> um 0% und alle vorteilhaften Effekte von <color=yellow>Verzerrter Sprint</color> um 0%.",
     "rawDesc": "Erhöht <color=yellow>AK</color> und <color=yellow>Zauberkraft</color> um {0} und alle vorteilhaften Effekte von <color=yellow>Verzerrter Sprint</color> um {1}.",
     "rawDescVars": [
       {
-        "rendered": "",
+        "rendered": "0%",
         "format": "#,##0'%'",
         "raw": "Gem_E_OurStory_Completed::statPercentage",
         "scalingType": "basic",
@@ -1588,11 +1588,17 @@
         }
       },
       {
-        "rendered": "",
-        "format": "#,##0",
-        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp*100",
-        "scalingType": "unknown",
-        "data": {}
+        "rendered": "0%",
+        "format": "P0",
+        "raw": "Gem_E_OurStory_Completed::dodgeEffectAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
       }
     ],
     "rarity": "Epic",
@@ -2061,18 +2067,18 @@
   },
   "Gem_L_CamillasGift": {
     "name": "Camillas Geschenk",
-    "description": "Kann im Laden <color=yellow>verkauft</color> werden, um  Gold zu erhalten. Bei jedem Weltenwechsel <color=yellow>steigt</color> der <color=yellow>Preis</color> um . Zerbricht, wenn deine LP durch Schaden der Gegner unter 50% fällt.",
+    "description": "Kann im Laden <color=yellow>verkauft</color> werden, um 0 Gold zu erhalten. Bei jedem Weltenwechsel <color=yellow>steigt</color> der <color=yellow>Preis</color> um 0. Zerbricht, wenn deine LP durch Schaden der Gegner unter 50% fällt.",
     "rawDesc": "Kann im Laden <color=yellow>verkauft</color> werden, um {0} Gold zu erhalten. Bei jedem Weltenwechsel <color=yellow>steigt</color> der <color=yellow>Preis</color> um {1}. Zerbricht, wenn deine LP durch Schaden der Gegner unter {2} fällt.",
     "rawDescVars": [
       {
-        "rendered": "",
+        "rendered": "0",
         "format": "#,##0",
         "raw": "currentSellGold",
         "scalingType": "unknown",
         "data": {}
       },
       {
-        "rendered": "",
+        "rendered": "0",
         "format": "#,##0",
         "raw": "sellGoldIncreasePerWorld",
         "scalingType": "basic",
@@ -4342,6 +4348,423 @@
       "Heal"
     ],
     "image": "Gem_U_SoulPrison.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Culinary": {
+    "name": "Essenz der Kochkunst",
+    "description": "Wenn ein Gegner, dem du mit dieser Erinnerung <color=yellow>Schaden</color> zugefügt hast, innerhalb von 3 Sekunden stirbt, lässt er mit  50%<sprite=5>  Wahrscheinlichkeit <color=yellow>Kochzutaten</color> fallen. Gesammelte <color=yellow>Kochzutaten</color> kannst du in <color=yellow>Jonas' Kessel</color> verwenden, um Gold oder Werte zu erhalten.",
+    "rawDesc": "Wenn ein Gegner, dem du mit dieser Erinnerung <color=yellow>Schaden</color> zugefügt hast, innerhalb von {0} Sekunden stirbt, lässt er mit {1} Wahrscheinlichkeit <color=yellow>Kochzutaten</color> fallen. Gesammelte <color=yellow>Kochzutaten</color> kannst du in <color=yellow>Jonas' Kessel</color> verwenden, um Gold oder Werte zu erhalten.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "killGraceTime",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 50%<sprite=5> ",
+        "format": "P0",
+        "raw": "DropChance",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Culinary.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_L_Liberty": {
+    "name": "Essenz der Befreiung",
+    "description": "Beim Wirken dieser Erinnerung werden für 2.5 Sek. <color=yellow>Angriffsschaden</color> um  8<sprite=5> , <color=yellow>Fähigkeitsstärke</color> um  8<sprite=5>  und <color=yellow>maximale Lebenspunkte</color> um  60<sprite=5>  erhöht. Handelt es sich bei dieser Erinnerung um eine <color=yellow>Ultimative Fähigkeit</color>, werden die gewährten Attributswerte und die Wirkdauer um 200% erhöht, und während dieser Zeit wirst du <color=yellow>Unaufhaltsam</color>. ",
+    "rawDesc": "Beim Wirken dieser Erinnerung werden für {0} Sek. <color=yellow>Angriffsschaden</color> um {1}, <color=yellow>Fähigkeitsstärke</color> um {2} und <color=yellow>maximale Lebenspunkte</color> um {3} erhöht. Handelt es sich bei dieser Erinnerung um eine <color=yellow>Ultimative Fähigkeit</color>, werden die gewährten Attributswerte und die Wirkdauer um {4} erhöht, und während dieser Zeit wirst du <color=yellow>Unaufhaltsam</color>. ",
+    "rawDescVars": [
+      {
+        "rendered": "2.5",
+        "format": "#,##0.#",
+        "raw": "Se_Gem_L_Liberty_Buff::duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "adBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 8<sprite=5> ",
+        "format": "#,##0",
+        "raw": "apBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 60<sprite=5> ",
+        "format": "#,##0",
+        "raw": "maxHealthBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 30.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "200%",
+        "format": "P0",
+        "raw": "Se_Gem_L_Liberty_Buff::multiplier",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 2.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [],
+    "image": "Gem_L_Liberty.png",
+    "lore": null,
+    "achievementKey": "ACH_THE_ROAD_NOT_TAKEN",
+    "achievementName": "Der nicht gewählte Pfad",
+    "achievementDescription": "Erreiche den sternenlosen Pfad."
+  },
+  "Gem_L_Supersymmetry": {
+    "name": "Supersymmetrie",
+    "description": "Deine <color=yellow>maximale Lebenspunkte</color> werden auf 1 gesetzt, dafür erhältst du einen <color=yellow>Schild</color> in Höhe von  100%<sprite=5>  deiner <color=yellow>maximalen Lebenspunkte</color>. Dieser <color=yellow>Schild</color> lädt sich <color=yellow>sofort wieder auf</color>, wenn du für 4 Sek. keinen Schaden erleidest, aber jedes Mal, wenn du eine <color=yellow>Erinnerung</color> <color=yellow>wirkst</color>, erleidet der <color=yellow>Schild</color> <color=yellow>Schaden</color> in Höhe von  10%<sprite=5>  deiner maximalen Lebenspunkte.",
+    "rawDesc": "Deine <color=yellow>maximale Lebenspunkte</color> werden auf 1 gesetzt, dafür erhältst du einen <color=yellow>Schild</color> in Höhe von {0} deiner <color=yellow>maximalen Lebenspunkte</color>. Dieser <color=yellow>Schild</color> lädt sich <color=yellow>sofort wieder auf</color>, wenn du für {1} Sek. keinen Schaden erleidest, aber jedes Mal, wenn du eine <color=yellow>Erinnerung</color> <color=yellow>wirkst</color>, erleidet der <color=yellow>Schild</color> <color=yellow>Schaden</color> in Höhe von {2} deiner maximalen Lebenspunkte.",
+    "rawDescVars": [
+      {
+        "rendered": " 100%<sprite=5> ",
+        "format": "P0",
+        "raw": "shieldHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "rechargeDelay",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 10%<sprite=5> ",
+        "format": "P0",
+        "raw": "castDamageHpRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.05,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Legendary",
+    "tags": [
+      "Shield"
+    ],
+    "image": "Gem_L_Supersymmetry.PNG",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Control": {
+    "name": "Essenz der Kontrolle",
+    "description": "Wenn du mit dieser Erinnerung einem Gegner <color=yellow>Schaden</color> zufügst, wird die <color=yellow>Bewegungsgeschwindigkeit</color> des Ziels für 3 Sek. um  33%<sprite=5>  verringert.",
+    "rawDesc": "Wenn du mit dieser Erinnerung einem Gegner <color=yellow>Schaden</color> zufügst, wird die <color=yellow>Bewegungsgeschwindigkeit</color> des Ziels für {0} Sek. um {1} verringert.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "duration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 3.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 33%<sprite=5> ",
+        "format": "#,##0'%'",
+        "raw": "SlowAmount",
+        "scalingType": "unknown",
+        "data": {}
+      }
+    ],
+    "rarity": "Common",
+    "tags": [],
+    "image": "Gem_R_Control.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Crucible": {
+    "name": "Essenz des Schmelztiegels",
+    "description": "<color=yellow>Kritische Trefferchance</color> wird um 25% erhöht. Wenn ein <color=yellow>Kritischer Basisangriff</color> trifft, werden Schaden und Heilung des nächsten Einsatzes dieser Erinnerung um  4%<sprite=5>  erhöht, bis zu maximal  40%<sprite=5> .",
+    "rawDesc": "<color=yellow>Kritische Trefferchance</color> wird um {0} erhöht. Wenn ein <color=yellow>Kritischer Basisangriff</color> trifft, werden Schaden und Heilung des nächsten Einsatzes dieser Erinnerung um {1} erhöht, bis zu maximal {2}.",
+    "rawDescVars": [
+      {
+        "rendered": "25%",
+        "format": "P0",
+        "raw": "critChanceBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.25,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 4%<sprite=5> ",
+        "format": "P0",
+        "raw": "ampPerStack",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.02,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": " 40%<sprite=5> ",
+        "format": "P0",
+        "raw": "maxAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.2,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Crucible.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Hedgehog": {
+    "name": "Essenz des Igels",
+    "description": "Wenn diese Erinnerung <color=yellow>gewirkt</color> wird, entfaltest du für 3 Sek. eine Stachel-Aura um dich herum, die nahen Gegnern  <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5>  Schaden pro Sekunde zufügt. Erleidest du Schaden, erhöht sich der Schaden dieser Aura für 4 Sek. um 50%.",
+    "rawDesc": "Wenn diese Erinnerung <color=yellow>gewirkt</color> wird, entfaltest du für {0} Sek. eine Stachel-Aura um dich herum, die nahen Gegnern {1} Schaden pro Sekunde zufügt. Erleidest du Schaden, erhöht sich der Schaden dieser Aura für {2} Sek. um {3}.",
+    "rawDescVars": [
+      {
+        "rendered": "3",
+        "format": "#,##0.#",
+        "raw": "tickInterval * tickCount",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": " <sprite=1><color=#fff><gradient=sv_ap>100%</gradient></color><color=white><size=80%> + </size></color><color=#7cf248>Bonus<sprite=3></color><color=#fff><gradient=sv_ahp>5%</gradient></color><sprite=5> ",
+        "format": "#,##0",
+        "raw": "Se_Gem_R_Hedgehog_Aura::dmgFactor/Se_Gem_R_Hedgehog_Aura::tickInterval",
+        "scalingType": "unknown",
+        "data": {}
+      },
+      {
+        "rendered": "4",
+        "format": "#,##0.#",
+        "raw": "empowerDuration",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 4.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": "50%",
+        "format": "P0",
+        "raw": "empoweredAmp",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [
+      "Melee"
+    ],
+    "image": "Gem_R_Hedgehog.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Lightweight": {
+    "name": "Essenz der Leichtigkeit",
+    "description": "Das <color=yellow>Erinnerungstempo</color> dieser Erinnerung wird um  54<sprite=5>  erhöht, dafür wird der <color=yellow>Schaden</color> um 40% verringert.",
+    "rawDesc": "Das <color=yellow>Erinnerungstempo</color> dieser Erinnerung wird um {0} erhöht, dafür wird der <color=yellow>Schaden</color> um {1} verringert.",
+    "rawDescVars": [
+      {
+        "rendered": " 54<sprite=5> ",
+        "format": "#,##0",
+        "raw": "skillHaste",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 27.0,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      },
+      {
+        "rendered": "40%",
+        "format": "P0",
+        "raw": "damageReduction",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.4,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Lightweight.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_R_Slippery": {
+    "name": "Essenz der Glätte",
+    "description": "<color=yellow>Bewegungsgeschwindigkeit</color> wird um 10% erhöht. Der von dieser Erinnerung verursachte <color=yellow>Schaden</color> steigt um  100%<sprite=5>  des <color=yellow>Bewegungsgeschwindigkeits</color>-Bonus.",
+    "rawDesc": "<color=yellow>Bewegungsgeschwindigkeit</color> wird um {0} erhöht. Der von dieser Erinnerung verursachte <color=yellow>Schaden</color> steigt um {1} des <color=yellow>Bewegungsgeschwindigkeits</color>-Bonus.",
+    "rawDescVars": [
+      {
+        "rendered": "10%",
+        "format": "#,##0'%'",
+        "raw": "moveSpeedBonus",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 10.0,
+          "basicAP": 0,
+          "basicAD": 0,
+          "basicLvl": 0,
+          "basicAddedMultiplierPerLevel": 0
+        }
+      },
+      {
+        "rendered": " 100%<sprite=5> ",
+        "format": "P0",
+        "raw": "dmgPerMoveSpeedRatio",
+        "scalingType": "basic",
+        "data": {
+          "basicConstant": 0.5,
+          "basicAP": 0.0,
+          "basicAD": 0.0,
+          "basicLvl": 0.0,
+          "basicAddedMultiplierPerLevel": 0.01
+        }
+      }
+    ],
+    "rarity": "Rare",
+    "tags": [],
+    "image": "Gem_R_Slippery.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GuidingCompass_Charged": {
+    "name": "Leitender Kompass (Aufgeladen)",
+    "description": "<alpha=#77><i>Er weist auf den Ort, an dem sie sich befindet.</i><alpha=#ff>",
+    "rawDesc": "<alpha=#77><i>Er weist auf den Ort, an dem sie sich befindet.</i><alpha=#ff>",
+    "rawDescVars": [],
+    "rarity": "Unique",
+    "tags": [],
+    "image": "Gem_U_GuidingCompass_Charged.png",
+    "lore": null,
+    "achievementKey": "",
+    "achievementName": "",
+    "achievementDescription": ""
+  },
+  "Gem_U_GuidingCompass_NotCharged": {
+    "name": "Leitender Kompass",
+    "description": "<alpha=#77><i>Er hat seine Kraft verloren und funktioniert nicht. Vielleicht lässt er sich reparieren, wenn man ihm mächtige Energie einflößt...</i><alpha=#ff>",
+    "rawDesc": "<alpha=#77><i>Er hat seine Kraft verloren und funktioniert nicht. Vielleicht lässt er sich reparieren, wenn man ihm mächtige Energie einflößt...</i><alpha=#ff>",
+    "rawDescVars": [],
+    "rarity": "Unique",
+    "tags": [],
+    "image": "Gem_U_GuidingCompass_NotCharged.png",
     "lore": null,
     "achievementKey": "",
     "achievementName": "",
